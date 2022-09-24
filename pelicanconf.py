@@ -1,12 +1,12 @@
 AUTHOR = 'Shovels'
 SITENAME = 'Shovels.ai'
-SITEURL = ''
+SITEURL = 'http://127.0.0.1:8000'
 
 PATH = 'content'
 
 TIMEZONE = 'US/Pacific'
-
 DEFAULT_LANG = 'en'
+THEME = "themes/shovels"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -29,3 +29,13 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+PATH_METADATA = '(?P<dirname>.*)/(?P<basename>.*)\..*'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}.html'
+FILENAME_METADATA = '(?P<title>.*)'
+
+JINJA2CONTENT_TEMPLATES = ['content']
+LOAD_CONTENT_CACHE = False
+
+DELETE_OUTPUT_DIRECTORY = True
