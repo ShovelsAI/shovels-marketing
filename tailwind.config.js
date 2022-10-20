@@ -2,11 +2,13 @@
 module.exports = {
   content: ["./themes/**/*.html", "./themes/**/*.js"],
   theme: {
-      extend: {
-        fontFamily: {
-          'marble': ['Marble', 'cursive']
-        },
+    extend: {
+      fontFamily: {
+        'marble': ['Marble', 'cursive']
       },
+    },
   },
-  plugins: [],
-  };
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+};

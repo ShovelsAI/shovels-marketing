@@ -11,3 +11,7 @@
   font-size: xx-large;
   margin-top: 25px;
 }
+
+.bg-tools {
+  background-image: url("theme/images/tools2.svg");
+}
