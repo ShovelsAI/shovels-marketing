@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./themes/**/*.html", "./themes/**/*.js"],
   theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          'marble': ['Marble', 'cursive']
+        },
+      },
   },
   plugins: [],
   };

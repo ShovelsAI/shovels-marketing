@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "marble";
+  src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
+}
+
+.nav-logo {
+  font-size: xx-large;
+  margin-top: 25px;
+}
