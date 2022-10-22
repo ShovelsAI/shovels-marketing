@@ -16,3 +16,7 @@
   background-image: url("theme/images/tools2.svg");
   opacity: 0.5;
 }
+
+.slide-description {
+  line-height: 3.5rem !important;
+}
