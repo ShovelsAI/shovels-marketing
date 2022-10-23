@@ -796,6 +796,14 @@ select {
   margin-bottom: 2.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -834,6 +842,14 @@ select {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .w-full {
@@ -900,6 +916,10 @@ select {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -934,6 +954,12 @@ select {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -952,6 +978,10 @@ select {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -1087,6 +1117,10 @@ select {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
 }
 
 .text-center {
@@ -1498,6 +1532,11 @@ select {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1513,8 +1552,16 @@ select {
     display: flex;
   }
 
+  .lg\:h-24 {
+    height: 6rem;
+  }
+
   .lg\:w-0 {
     width: 0px;
+  }
+
+  .lg\:w-24 {
+    width: 6rem;
   }
 
   .lg\:flex-1 {
