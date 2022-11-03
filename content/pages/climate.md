@@ -4,11 +4,11 @@ slug: climate
 <div class="bg-stone-100">
   <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8">
     <div class="max-w-xl">
-      <h1 class="text-5xl font-bold tracking-tight text-green-700 sm:text-6xl lg:text-7xl">We track the <span class="text-green-900">proliferation</span> of green building</h1>
+      <h1 class="text-5xl font-bold tracking-tight text-green-700 sm:text-6xl lg:text-8xl">We track the <span class="text-green-900">proliferation</span> of green building</h1>
       <p class="mt-5 text-xl text-green-900">We can tell you where it's happening and who's doing it</p>
     </div>
-    <div class="my-10 w-full max-w-xs">
-      <img src="/theme/images/climate.svg" />
+    <div class="my-10 w-full">
+      <img src="/theme/images/climate.svg" class="h-2/3 mx-auto" />
     </div>
   </div>
 </div>
