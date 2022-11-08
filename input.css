@@ -20,3 +20,7 @@
 .slide-description {
   line-height: 3.5rem !important;
 }
+
+.gradient {
+  background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
+}

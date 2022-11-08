@@ -1,70 +1,49 @@
-<div class="relative py-6 bg-stone-200">
-  <div>
-    <div class="hidden md:block mx-auto max-w-7xl px-4 sm:px-6">
-      <nav class="relative flex items-center justify-between sm:h-10 md:justify-center text-xl" aria-label="Global">
-        <div class="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
-          <div class="flex w-full items-center justify-between md:w-auto">
-            <a href="#">
-              <span class="sr-only">Shovels</span>
-              <a href="/" class="inline-flex items-center pt-3 pb-0 text-lg font-bold text-amber-900 font-marble nav-logo">Shovels</a>
-            </a>
-            <div class="-mr-2 flex items-center md:hidden">
-              <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <!-- Heroicon name: outline/bars-3 -->
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        
-        <div class="hidden md:flex md:space-x-10">
-          <a href="/banks" class="font-extrabold text-amber-800 hover:text-amber-900"><img src="/theme/images/bank.svg" class="max-h-10 inline-flex align-baseline" /> For Banks</a>
-          <a href="/builders" class="font-extrabold text-amber-800 hover:text-amber-900"><img src="/theme/images/hammer.svg" class="max-h-10 inline-flex align-baseline" /> For Builders</a>
-          <a href="/climate" class="font-extrabold text-amber-800 hover:text-amber-900"><img src="/theme/images/climate.svg" class="max-h-10 inline-flex align-baseline" /> For Climate</a>
-        </div>
-        <div class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
-          <span class="inline-flex rounded-md shadow">
-            <a href="https://app.shovels.ai" class="inline-flex items-center rounded-md border border-transparent text-stone-100 px-4 py-2 text-base font-medium bg-amber-600 hover:bg-amber-700">Log in</a>
-          </span>
-        </div>
-      </nav>
+<nav id="header" class="fixed w-full z-30 top-0 text-white">
+  <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+    <div class="pl-4 flex items-center">
+      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl font-marble nav-logo" href="/">
+        Shovels
+      </a>
     </div>
-
-    <!--
-      Mobile menu, show/hide based on menu open state.
-
-      Entering: "duration-150 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
-    <div class="p-2 transition md:hidden">
-      <div class="overflow-hidden">
-        <div class="flex items-center justify-between px-5 pt-4">
-          <div>
-            <a href="/" class="inline-flex items-center pt-4 pb-0 text-lg font-bold text-amber-900 font-marble nav-logo">Shovels</a>
-          </div>
-          <div class="-mr-2">
-            <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
-              <span class="sr-only">Close main menu</span>
-              <!-- Heroicon name: outline/x-mark -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        
-        <div class="space-y-1 px-2 pt-2 pb-3">
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">For Climate</a>
-        </div>
-        <a href="https://app.shovels.ai" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-amber-600 hover:bg-gray-100 hover:text-amber-700">Log in</a>
-      </div>
+    <div class="block lg:hidden pr-4">
+      <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+      <ul class="list-reset lg:flex justify-end flex-1 items-center">
+        <li class="mr-3">
+          <a class="inline-block text-black no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/banks">For Banks</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-black no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/builders">For Builders</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-black no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/climate">For Climate</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-black no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/about">About Us</a>
+        </li>
+      </ul>
+      <a
+        id="navAction"
+        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        href="https://app.shovels.ai"
+      >
+        Dashboard
+      </a>
     </div>
   </div>
-</div>
+  <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+</nav>
