@@ -899,6 +899,14 @@ select {
   margin-top: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1210,6 +1218,14 @@ select {
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-8 {
