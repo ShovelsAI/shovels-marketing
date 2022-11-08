@@ -1,5 +1,5 @@
-Title: For Climate
-slug: climate
+Title: About Shovels
+slug: about
 
 <div class="pt-24">
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
@@ -7,18 +7,26 @@ slug: climate
     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
       <p class="uppercase tracking-loose w-full"></p>
       <h1 class="my-4 text-5xl font-bold leading-tight">
-        We track the proliferation of green building
+        Why Now?
       </h1>
+      <p class="leading-normal text-2xl mb-8">
+      We hear over and over again how the entire construction industry is slow to adopt new
+      technology. The field is littered with startups who failed to get contractors to adopt a
+      new app.
+      </p>
+      <p class="leading-normal text-2xl mb-8">
+      Fortunately, we're not trying to be in the field. Instead, we're in the offices of the
+      people who decide who to hire and fund and we gather data from the municipalities that
+      issue and inspect building permits. This part of the construction industry is moving
+      online and we're able to take advantage of it.
+      </p>
       <p class="leading-normal text-2xl mb-8">
       We can tell you where it's happening and who's doing it.
       </p>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        <a href="#cta">Get Early Access</a>
-      </button>
     </div>
     <!--Right Col-->
     <div class="w-full md:w-3/5 py-6 text-center">
-      <img class="w-full md:w-4/5 z-50" src="/theme/images/for_climate.png" />
+      <img class="w-full md:w-4/5 z-50" src="/theme/images/hero.png" />
     </div>
   </div>
 </div>
@@ -41,27 +49,25 @@ slug: climate
     </g>
   </svg>
 </div>
-<section class="bg-white py-16">
-  <div class="container max-w-5xl mx-auto m-8">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-      Shovels tracks every solar, EV charger, heat pump HVAC, and battery installation
-    </h2>
-    <div class="w-full mb-4">
-      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-    </div>
-  </div>
-</section>
 <section class="bg-white border-b py-8">
   <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-    <h2 class="w-full my-4 text-4xl font-bold leading-tight text-center text-gray-800">
-      Using our permit and inspection data analyses we can tell you who the best
-      green building contractors are
-    </h2>
     <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
       <div class="flex-1 py-4 bg-white rounded-lg overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
-          <div class="w-full font-bold text-xl text-gray-800 px-6">
-            Download our daily feed of new contractor data
+          <div class="w-full text-xl text-gray-800 px-6">
+            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+              <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <img src="/theme/images/ryan.jpeg" class="p-16 rounded-full">
+                <p class="text-center font-bold">Ryan Buckley</p>
+                <p class="text-center">Co-Founder/CEO</p>
+              </div>
+              <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                Ryan was CEO of MightySignal, a B2B mobile SDK intelligence company.
+                He also co-founded Scripted, backed by Redpoint, Storm, and Crosslink.
+                Ryan holds Bachelor degrees from UC Berkeley and a MPP from the Harvard
+                Kennedy School and an MBA from MIT Sloan.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -69,17 +75,20 @@ slug: climate
     <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
       <div class="flex-1 py-4 bg-white rounded-lg overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
-          <div class="w-full font-bold text-xl text-gray-800 px-6">
-            Browse contractors with our user interface
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-      <div class="flex-1 py-4 bg-white rounded-lg overflow-hidden shadow">
-        <div class="flex flex-wrap no-underline hover:no-underline">
-          <div class="w-full font-bold text-xl text-gray-800 px-6">
-            Incorporate our API into your web application
+          <div class="w-full text-xl text-gray-800 px-6">
+            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+              <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <img src="/theme/images/luka.jpeg" class="p-16 rounded-full">
+                <p class="text-center font-bold">Luka Kacil</p>
+                <p class="text-center">Co-Founder/CTO</p>
+              </div>
+              <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                Luka was COO and ran all engineering operations for AppMonsta, which daily
+                collected huge amounts of data about mobile apps and their usage. He is
+                currently in the Executive MBA program at Quantic School of Business and
+                Technology.
+              </div>
+            </div>
           </div>
         </div>
       </div>
