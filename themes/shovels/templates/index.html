@@ -5,21 +5,19 @@
 <div class="pt-24">
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     <!--Left Col-->
-    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
       <p class="uppercase tracking-loose w-full"></p>
       <h1 class="my-4 text-5xl font-bold leading-tight">
-        We use permit inspection data to evaluate contractors!
+        We use permit inspection data to evaluate contractors
       </h1>
       <p class="leading-normal text-2xl mb-8">
       We harvest and analyze millions of permit and inspection records nationwide for builders
-      and the banks who finance them.
+      and the banks who finance them
       </p>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        <a href="#cta">Get Early Access!</a>
-      </button>
+      {% include 'cta.html' %}
     </div>
     <!--Right Col-->
-    <div class="w-full md:w-3/5 py-6 text-center">
+    <div class="w-full md:w-3/5 p-6 text-center">
       <img class="w-full md:w-4/5 z-50" src="/theme/images/hero.png" />
     </div>
   </div>
@@ -45,50 +43,47 @@
 </div>
 <section class="bg-white border-b py-8">
   <div class="container max-w-5xl mx-auto m-8">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-6">
       The contractor discovery and evaluation process is still broken
     </h2>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <div class="flex flex-wrap mt-10">
+    <div class="flex flex-wrap mt-20">
       <div class="w-5/6 sm:w-1/2 p-2 mt-6">
         <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-          Contracor hiring experience is fraught with risk
+          The contractor hiring experience is fraught with risk
         </h3>
-        <p class="text-gray-600 mb-8">
-          That's why your neighbors have so many horror stories about construction jobs gone
-          horribly wrong.
+        <p class="text-gray-600 mb-8 text-lg">
+          There's an agency problem in the trades; contractors know more about their fit for a project than you do
         </p>
       </div>
       <div class="w-full sm:w-1/2 p-2">
         <img class="object-cover rounded-lg" src="/theme/images/construction.png">
       </div>
     </div>
-    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row mt-20">
       <div class="w-full sm:w-1/2 p-2 mt-6">
         <img class="object-cover rounded-lg" src="/theme/images/inspection.png">
       </div>
       <div class="w-full sm:w-1/2 p-2 mt-6">
         <div class="align-middle">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            What happens to all permit and inspection data? Nothing.
+            We know what good and bad contractors look like
           </h3>
-          <p class="text-gray-600 mb-8">
-            That's about 3 million inspections per year just in California, and inspection data
-            holds critical insights.
+          <p class="text-gray-600 mb-8 text-lg">
+            We're calculating new metrics like inspection pass rate and construction speed using public permit and inspection records
           </p>
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap mt-20">
       <div class="w-5/6 sm:w-1/2 p-6">
         <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-          Shovels harvests and analyzes millions of permit and inspection records to discover
-          great contractors
+          We exist to de-risk contractor hiring and financing 
         </h3>
-        <p class="text-gray-600 mb-8">
-          We produce new metrics so builders can build and bankers can fund better.
+        <p class="text-gray-600 mb-8 text-lg">
+          Millions of permit and inspection records inform our models and analyses
         </p>
       </div>
       <div class="w-full sm:w-1/2 p-6">
@@ -106,9 +101,9 @@
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
     <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-      <div class="flex-1 bg-white rounded-t-lg rounded-b-none overflow-hidden shadow">
+      <div class="flex-1 bg-neutral-100 rounded-t-lg rounded-b-none overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
-          <p class="w-full text-gray-600 text-xs md:text-sm px-6 py-2">
+          <p class="text-gray-600 text-xs font-semibold md:text-sm px-6 py-2 m-5 rounded-full bg-cyan-300">
             For Climate
           </p>
           <div class="w-full font-bold text-xl text-gray-800 px-6">
@@ -120,19 +115,19 @@
         </div>
       </div>
       <div class="flex-none mt-auto bg-white rounded-b-lg rounded-t-none overflow-hidden shadow p-6">
-        <div class="flex items-center justify-start">
-          <a class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full
+        <div class="flex items-center justify-center">
+          <a class="mx-auto lg:mx-0 gradient text-gray-800 font-bold rounded-full
             my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform
-            transition hover:scale-105 duration-300 ease-in-out" href="climate.html">
+            transition hover:scale-105 duration-300 ease-in-out" href="/climate">
             More
           </a>
         </div>
       </div>
     </div>
     <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-      <div class="flex-1 bg-white rounded-t-lg rounded-b-none overflow-hidden shadow">
+      <div class="flex-1 bg-neutral-100 rounded-t-lg rounded-b-none overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
-          <p class="w-full text-gray-600 text-xs md:text-sm px-6 py-2">
+          <p class="text-gray-600 text-xs font-semibold md:text-sm px-6 py-2 m-5 rounded-full bg-cyan-300">
             For Builders
           </p>
           <div class="w-full font-bold text-xl text-gray-800 px-6">
@@ -145,18 +140,18 @@
       </div>
       <div class="flex-none mt-auto bg-white rounded-b-lg rounded-t-none overflow-hidden shadow p-6">
         <div class="flex items-center justify-center">
-          <a class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full
+          <a class="mx-auto lg:mx-0 gradient text-gray-800 font-bold rounded-full
             my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform
-            transition hover:scale-105 duration-300 ease-in-out" href="builders.html">
+            transition hover:scale-105 duration-300 ease-in-out" href="/builders">
             More
           </a>
         </div>
       </div>
     </div>
     <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-      <div class="flex-1 bg-white rounded-t-lg rounded-b-none overflow-hidden shadow">
+      <div class="flex-1 bg-neutral-100 rounded-t-lg rounded-b-none overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
-          <p class="w-full text-gray-600 text-xs md:text-sm px-6 py-2">
+          <p class="text-gray-600 text-xs font-semibold md:text-sm px-6 py-2 m-5 rounded-full bg-cyan-300">
             For Banks
           </p>
           <div class="w-full font-bold text-xl text-gray-800 px-6">
@@ -168,10 +163,10 @@
         </div>
       </div>
       <div class="flex-none mt-auto bg-white rounded-b-lg rounded-t-none overflow-hidden shadow p-6">
-        <div class="flex items-center justify-end">
-          <a class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full
+        <div class="flex items-center justify-center">
+          <a class="mx-auto lg:mx-0 gradient text-gray-800 font-bold rounded-full
             my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform
-            transition hover:scale-105 duration-300 ease-in-out" href="banks.html">
+            transition hover:scale-105 duration-300 ease-in-out" href="/banks">
             More
           </a>
         </div>
@@ -181,23 +176,23 @@
 </section>
 <section class="bg-white py-8">
   <div class="container max-w-5xl mx-auto m-8">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-6">
       We are an API-first DaaS that is built for data analysis
     </h2>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap mt-20">
       <div class="w-5/6 sm:w-1/2 p-6">
         <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
           Integrate with a single line of code
         </h3>
-        <p class="text-gray-600 mb-8">
+        <p class="text-gray-600 mb-8 text-lg">
         Or ask us for ready-to-use daily CSV exports!
         </p>
         <div class="w-full flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 p-2 bg-white rounded-lg shadow">
-            <div class="text-gray-600 text-xs mb-8 font-mono">$ curl -su "{API_KEY}:X" \</br>
+          <div class="flex-1 p-4 bg-neutral-100 rounded-lg">
+            <div class="text-gray-600 text-base font-mono overflow-scroll">$ curl -su "{API_KEY}:X" \</br>
 https://api.shovels.ai/v1/contractors/details.json?name={CONTRACTOR_ID}</div>
           </div>
         </div>
@@ -205,7 +200,7 @@ https://api.shovels.ai/v1/contractors/details.json?name={CONTRACTOR_ID}</div>
       <div class="w-full sm:w-1/2 p-6">
         <div class="w-full flex flex-col flex-grow flex-shrink">
           <div class="flex-1 p-2 bg-white rounded-lg shadow">
-            <div class="text-gray-600 text-xs mb-8 font-mono whitespace-pre">
+            <div class="text-gray-600 text-base p-4 font-mono">
               {
                 "name": "NEXTGEN EARTH INC",
                 "street": "1326 WILSHIRE AVE",
@@ -224,17 +219,17 @@ https://api.shovels.ai/v1/contractors/details.json?name={CONTRACTOR_ID}</div>
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row mt-20">
       <div class="w-full sm:w-1/2 p-6 mt-6">
         <img class="object-cover rounded-lg" src="/theme/images/dashboard.png">
       </div>
       <div class="w-full sm:w-1/2 p-6 mt-6">
         <div class="align-middle">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Or start evaluating contractors directly using our dashboard
+            Or evaluate contractors directly using our dashboard
           </h3>
-          <p class="text-gray-600 mb-8">
-            We made it easy to search and see all the relevant metrics.
+          <p class="text-gray-600 mb-8 text-lg">
+            We made it easy to search and see all the relevant metrics
           </p>
         </div>
       </div>
