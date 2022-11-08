@@ -22,391 +22,410 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body class="h-full">
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="bg-gray-50">
-      <div class="flex flex-col h-screen overflow-hidden">
-<div class="relative py-6 bg-stone-200">
-  <div>
-    <div class="hidden md:block mx-auto max-w-7xl px-4 sm:px-6">
-      <nav class="relative flex items-center justify-between sm:h-10 md:justify-center text-xl" aria-label="Global">
-        <div class="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
-          <div class="flex w-full items-center justify-between md:w-auto">
-            <a href="#">
-              <span class="sr-only">Shovels</span>
-              <a href="/" class="inline-flex items-center pt-3 pb-0 text-lg font-bold text-amber-900 font-marble nav-logo">Shovels</a>
-            </a>
-            <div class="-mr-2 flex items-center md:hidden">
-              <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <!-- Heroicon name: outline/bars-3 -->
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        
-        <div class="hidden md:flex md:space-x-10">
-          <a href="/banks" class="font-extrabold text-amber-800 hover:text-amber-900"><img src="/theme/images/bank.svg" class="max-h-10 inline-flex align-baseline" /> For Banks</a>
-          <a href="/builders" class="font-extrabold text-amber-800 hover:text-amber-900"><img src="/theme/images/hammer.svg" class="max-h-10 inline-flex align-baseline" /> For Builders</a>
-          <a href="/climate" class="font-extrabold text-amber-800 hover:text-amber-900"><img src="/theme/images/climate.svg" class="max-h-10 inline-flex align-baseline" /> For Climate</a>
-        </div>
-        <div class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
-          <span class="inline-flex rounded-md shadow">
-            <a href="https://app.shovels.ai" class="inline-flex items-center rounded-md border border-transparent text-stone-100 px-4 py-2 text-base font-medium bg-amber-600 hover:bg-amber-700">Log in</a>
-          </span>
-        </div>
-      </nav>
+<nav id="header" class="fixed w-full z-30 top-0 text-white">
+  <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+    <div class="pl-4 flex items-center">
+      <a class="toggleColour text-slate-700 no-underline hover:no-underline font-bold text-2xl lg:text-4xl font-marble nav-logo transform transition hover:scale-105 duration-300 ease-in-out" href="/">
+        Shovels
+      </a>
     </div>
-
-    <!--
-      Mobile menu, show/hide based on menu open state.
-
-      Entering: "duration-150 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
-    <div class="p-2 transition md:hidden">
-      <div class="overflow-hidden">
-        <div class="flex items-center justify-between px-5 pt-4">
-          <div>
-            <a href="/" class="inline-flex items-center pt-4 pb-0 text-lg font-bold text-amber-900 font-marble nav-logo">Shovels</a>
-          </div>
-          <div class="-mr-2">
-            <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
-              <span class="sr-only">Close main menu</span>
-              <!-- Heroicon name: outline/x-mark -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        
-        <div class="space-y-1 px-2 pt-2 pb-3">
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">For Climate</a>
-        </div>
-        <a href="https://app.shovels.ai" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-amber-600 hover:bg-gray-100 hover:text-amber-700">Log in</a>
-      </div>
+    <div class="block lg:hidden pr-4">
+      <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-slate-700 font-bold p-4 lg:p-0 z-20" id="nav-content">
+      <ul class="list-reset lg:flex justify-end flex-1 items-center">
+        <li class="mr-3">
+          <a class="inline-block no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/banks">For Banks</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/builders">For Builders</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/climate">For Climate</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block no-underline hover:text-gray-800
+                    hover:text-underline py-2 px-4"
+             href="/about">About Us</a>
+        </li>
+      </ul>
+      <a
+        id="navAction"
+        class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        href="https://app.shovels.ai"
+      >
+        Dashboard
+      </a>
     </div>
   </div>
-</div>        <div class="flex-1 overflow-y-scroll">
+</nav>
 
-  <div class="grid grid-cols-2 p-4 lg:p-24 bg-stone-200">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h1 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">We use permit inspection data</span>
-        <span class="block text-amber-600">to evaluate contractors</span>
+<div class="pt-24">
+  <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <!--Left Col-->
+    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
+      <p class="uppercase tracking-loose w-full"></p>
+      <h1 class="my-4 text-5xl font-bold leading-tight">
+        We use permit inspection data to evaluate contractors
       </h1>
+      <p class="leading-normal text-2xl mb-8">
+      We harvest and analyze millions of permit and inspection records nationwide for builders
+      and the banks who finance them
+      </p>
+<section id="cta" class="container">
+  <form action="https://formspree.io/f/xzbwjdro" class="sm:flex" method="POST">
+    <label for="email-address" class="sr-only">Email address</label>
+    <input id="email-address" name="email-address" type="email" autocomplete="email" required class="w-full sm:max-w-xs rounded-full border border-gray-300 px-5 py-3 shadow-sm placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 text-gray-600" placeholder="Enter your email">
+    <div class="mt-3 rounded-full shadow-sm sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+      <button type="submit" class="flex w-full items-center justify-center rounded-full border border-transparent bg-white px-5 py-3 text-gray-600 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out font-bold">Subscribe</button>
     </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <p class="text-2xl text-gray-500 leading-relaxed lg:text-4xl">We harvest and analyze millions of permit and inspection records nationwide for builders and the banks who finance them</p>
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">The contractor discovery and evaluation process</span>
-        <span class="block text-amber-600">is still broken</span>
-      </h2>
-    </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <p class="text-2xl text-gray-500 leading-relaxed lg:text-4xl">That's why your neighbors have so many horror stories about construction jobs gone horribly wrong</p>
+  </form>
+</section>    </div>
+    <!--Right Col-->
+    <div class="w-full md:w-3/5 p-6 text-center">
+      <img class="w-full md:w-4/5 z-50" src="/theme/images/hero.png" />
     </div>
   </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">California cities and counties process</span>
-        <span class="block text-amber-600">500,000 building permits every year</span>
-      </h2>
+</div>
+<div class="relative -mt-12 lg:-mt-24">
+  <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+        <path
+          d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+          opacity="0.100000001"
+        ></path>
+        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+      </g>
+      <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+        <path
+          d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+        ></path>
+      </g>
+    </g>
+  </svg>
+</div>
+<section class="bg-white border-b py-8">
+  <div class="container max-w-5xl mx-auto m-8">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-6">
+      The contractor discovery and evaluation process is still broken
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <p class="text-2xl text-gray-500 leading-relaxed lg:text-4xl">That's about 3 million inspections per year just in California, and inspection data holds critical insights</p>
+    <div class="flex flex-wrap mt-20">
+      <div class="w-5/6 sm:w-1/2 p-2 mt-6">
+        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+          The contractor hiring experience is fraught with risk
+        </h3>
+        <p class="text-gray-600 mb-8 text-lg">
+          There's an agency problem in the trades; contractors know more about their fit for a project than you do
+        </p>
+      </div>
+      <div class="w-full sm:w-1/2 p-2">
+        <img class="object-cover rounded-lg" src="/theme/images/construction.png">
+      </div>
     </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">What happens to all this <span class="text-amber-600">permit and inspection data?</span></span>
-      </h2>
-    </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <p class="text-3xl text-gray-500 leading-relaxed lg:text-7xl font-extrabold">Nothing.</p>
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800"><span class="font-bold font-marble" style="line-height: 0px !important;">Shovels</span> harvests and analyzes millions of permit and inspection records to <span class="text-amber-600">discover great contractors.</span></span>
-      </h2>
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-amber-800">Coder</h2>
-      <img src="/theme/images/coder.svg" />
-    </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-amber-800">Contractor</h2>
-      <img src="/theme/images/contractor.svg" />
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">We produce new metrics</span>
-        <span class="block text-amber-600">so builders can build and bankers can fund</span>
-        <span class="block text-amber-800">better</span>
-      </h2>
-    </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-amber-800">Contractor</h2>
-      <img src="/theme/images/contractor2.svg" />
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <img src="/theme/images/yelp.svg" class="w-40 mb-1"/>
-      <img src="/theme/images/pacific_remodel.png" class="text-center border-solid border-2 border-gray-400 drop-shadow-md mb-4"/>
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">4 stars</span>
-        <span class="block text-amber-800">7 reviews</span>
-        <span class="block text-gray-800">... that's it?</span>
-      </h2>
-    </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="font-marble text-amber-900" style="line-height: 0px !important;">Shovels</span>
-        <span class="block text-amber-800 mb-2 lg:mb-10">has new metrics</span>
-      </h2>
-      <div class="lg:grid lg:grid-cols-2">
-        <div>
-          <dl class="lg:divide-y text-lg lg:text-xl text-gray-500 align-top">
-            <div class="py-2 lg:py-4 lg:grid lg:grid-cols-2">
-              <dt class="">Inspection pass rate</dt>
-              <dd class="font-bold">0.4</dd>
-            </div>
-            <div class="py-2 lg:py-4 lg:grid lg:grid-cols-2">
-              <dt class="">Construction speed</dt>
-              <dd class="font-bold">105 square feet per month</dd>
-            </div>
-            <div class="py-2 lg:py-4 lg:grid lg:grid-cols-2">
-              <dt class="">Local job history</dt>
-              <dd class="font-bold">3 single family additions</dd>
-            </div>
-          </dl>
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row mt-20">
+      <div class="w-full sm:w-1/2 p-2 mt-6">
+        <img class="object-cover rounded-lg" src="/theme/images/inspection.png">
+      </div>
+      <div class="w-full sm:w-1/2 p-2 mt-6">
+        <div class="align-middle">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            We know what good and bad contractors look like
+          </h3>
+          <p class="text-gray-600 mb-8 text-lg">
+            We're calculating new metrics like inspection pass rate and construction speed using public permit and inspection records
+          </p>
         </div>
-        <div class="hidden lg:block"><img src="/theme/images/contractor_solo.svg" /></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap mt-20">
+      <div class="w-5/6 sm:w-1/2 p-6">
+        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+          We exist to de-risk contractor hiring and financing 
+        </h3>
+        <p class="text-gray-600 mb-8 text-lg">
+          Millions of permit and inspection records inform our models and analyses
+        </p>
+      </div>
+      <div class="w-full sm:w-1/2 p-6">
+        <img class="object-cover rounded-lg" src="/theme/images/shovels_robot.png">
       </div>
     </div>
   </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">We are an API-first DaaS</span>
-        <span class="block text-amber-600">that is built for data analysis</span>
-      </h2>
+</section>
+<section class="bg-gray-100 border-b py-8">
+  <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      Make Smarter Decisions With Shovels
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <code class="flex-grow overflow-y-auto">
-{"project_id": "BIMIR21-000008", "cap_id1": "21RES", "cap_id2": "00000", "cap_id3": "00008", "agency_code": "CCC"}<br/>
-{"project_id": "BIMIR21-000008", "details": ["GENTEC SERVICES INC", "GENTEC SERVICES INC", "PO BOX 2654", "LIVERMORE, CA, 94551", "CONTRACTOR  783310"]}<br/>
-{"project_id": "BIMIR21-000008", "description": "INSTALL KOHLER 20KW GENERATOR AND NEW 200A MANUAL TRANSFER SWITCH. GENERATOR WILL BE FED BY EXISTING 1.25\" DEDICATED NATURAL GAS LINE FROM METER.\r\n\r\n**7/1/2021 - REVISION TO SHOW APPROVED PVR  AND ESS ON PLANS. VSD**", "address": "400 TAHOS RD400 TAHOS RD", "project_type": "Building/Residential/MIR/Miscellaneous Residential", "status": "Finaled", "job_value": null, "enter_job_value": null, "parcel_number": "251192015", "housing_units": "1", "construction_type": "434-Additions, Alterations, and Conversions - Residential", "tra_city": "City of Orinda", "public_owned": "No", "number_of_buildings": "1", "total_sq_feet": null, "tax_rate_area": "18001"}
-      </code>
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+      <div class="flex-1 bg-neutral-100 rounded-t-lg rounded-b-none overflow-hidden shadow">
+        <div class="flex flex-wrap no-underline hover:no-underline">
+          <p class="text-gray-600 text-xs font-semibold md:text-sm px-6 py-2 m-5 rounded-full bg-cyan-300">
+            For Climate
+          </p>
+          <div class="w-full font-bold text-xl text-gray-800 px-6">
+            We track the proliferation of green building
+          </div>
+          <p class="text-gray-800 text-base px-6 mb-5">
+            We can tell you where it's happening and who's doing it.
+          </p>
+        </div>
+      </div>
+      <div class="flex-none mt-auto bg-white rounded-b-lg rounded-t-none overflow-hidden shadow p-6">
+        <div class="flex items-center justify-center">
+          <a class="mx-auto lg:mx-0 gradient text-gray-800 font-bold rounded-full
+            my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform
+            transition hover:scale-105 duration-300 ease-in-out" href="/climate">
+            More
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">Cities are moving permit and inspection details online.</span>
-        <span class="block text-amber-600">We're ready for it!</span>
-      </h2>
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+      <div class="flex-1 bg-neutral-100 rounded-t-lg rounded-b-none overflow-hidden shadow">
+        <div class="flex flex-wrap no-underline hover:no-underline">
+          <p class="text-gray-600 text-xs font-semibold md:text-sm px-6 py-2 m-5 rounded-full bg-cyan-300">
+            For Builders
+          </p>
+          <div class="w-full font-bold text-xl text-gray-800 px-6">
+            We help you expand your contractor network
+          </div>
+          <p class="text-gray-800 text-base px-6 mb-5">
+            Work with the best contractors no matter where you build.
+          </p>
+        </div>
+      </div>
+      <div class="flex-none mt-auto bg-white rounded-b-lg rounded-t-none overflow-hidden shadow p-6">
+        <div class="flex items-center justify-center">
+          <a class="mx-auto lg:mx-0 gradient text-gray-800 font-bold rounded-full
+            my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform
+            transition hover:scale-105 duration-300 ease-in-out" href="/builders">
+            More
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="mx-10 sm:mx-12 md:mx-24 justify-items-center">
-      <img src="/theme/images/accela.webp" class="max-w-xs pb-8" />
-      <img src="/theme/images/etrakit.gif" class="max-w-xs" />
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">We sell to banks and builders</span>
-        <span class="block text-amber-600">who evaluate contractors.</span>
-      </h2>
-    </div>
-    <div class="mx-10 sm:mx-12 md:mx-24 justify-items-center">
-      <p class="text-2xl text-gray-500 leading-relaxed lg:text-4xl">Hiring and financing contractors is risky; we create value by reducing the risk of choosing a bad contractor.</p>
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">Our revenue model is like ZoomInfo & G2:</span>
-        <span class="block text-amber-600">free to a point and expensive for lists and exports.</span>
-      </h2>
-    </div>
-    <div class="lg:grid lg:grid-cols-2 lg:grid-flow-row lg:gap-4">
-      <div><img src="/theme/images/zoominfo.png" class="max-w-xs pb-8" /></div>
-      <div><img src="/theme/images/g2.png" class="max-h-xs" style="max-height: 100px;" /></div>
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">Other players don’t offer the breadth or depth we have because</span>
-        <span class="block text-amber-600">they don’t mine inspections.</span>
-      </h2>
-    </div>
-    <div class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-4">
-      <div><img src="/theme/images/buildzoom.png" class="max-w-xs pb-8" style="max-height: 120px;" /></div>
-      <div><img src="/theme/images/angi.svg" class="max-h-xs pb-8" style="max-height: 120px;" /></div>
-      <div><img src="/theme/images/thumbtack.png" class="max-h-xs pb-8" style="max-height: 120px;" /></div>
-      <div><img src="/theme/images/corelogic.png" class="max-h-xs" style="max-height: 120px;" /></div>
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+      <div class="flex-1 bg-neutral-100 rounded-t-lg rounded-b-none overflow-hidden shadow">
+        <div class="flex flex-wrap no-underline hover:no-underline">
+          <p class="text-gray-600 text-xs font-semibold md:text-sm px-6 py-2 m-5 rounded-full bg-cyan-300">
+            For Banks
+          </p>
+          <div class="w-full font-bold text-xl text-gray-800 px-6">
+            We help you de-risk your construction loans
+          </div>
+          <p class="text-gray-800 text-base px-6 mb-5">
+            Avoid underwriting poor performers who build slow projects.
+          </p>
+        </div>
+      </div>
+      <div class="flex-none mt-auto bg-white rounded-b-lg rounded-t-none overflow-hidden shadow p-6">
+        <div class="flex items-center justify-center">
+          <a class="mx-auto lg:mx-0 gradient text-gray-800 font-bold rounded-full
+            my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform
+            transition hover:scale-105 duration-300 ease-in-out" href="/banks">
+            More
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-4 lg:p-24">
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">4 million contractors</span>
-        <span class="block text-amber-600">serve the 80 million homes in the US</span>
-      </h2>
+</section>
+<section class="bg-white py-8">
+  <div class="container max-w-5xl mx-auto m-8">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-6">
+      We are an API-first DaaS that is built for data analysis
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <div class="mx-10 sm:mx-12 md:mx-24">
-      <h2 class="text-4xl font-bold tracking-tight lg:text-7xl">
-        <span class="block text-amber-800">We're gonna rank all of them</span>
-      </h2>
-    </div>
-  </div>
-
-  <div class="bg-repeat-x bg-tools h-10 text-stone-500 bg-stone-100">
-  </div>
-
-  <div class="grid grid-cols-2 p-24">
-    <div class="">
-      <div class="lg:grid lg:grid-cols-2" style="min-height: 432px;">
-        <div class="max-auto">
-          <img class="h-40 w-40 rounded-full lg:h-24 lg:w-24" src="/theme/images/ryan.jpeg" alt="">
-          <div class="space-y-4 mt-4">
-            <div class="text-lg text-amber-800 sm:text-lg md:text-3xl">
-              <h3>Ryan Buckley</h3>
-              <p class="text-amber-600">Co-Founder / CEO</p>
+    <div class="flex flex-wrap mt-20">
+      <div class="w-5/6 sm:w-1/2 p-6">
+        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+          Integrate with a single line of code
+        </h3>
+        <p class="text-gray-600 mb-8 text-lg">
+        Or ask us for ready-to-use daily CSV exports!
+        </p>
+        <div class="w-full flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 p-4 bg-neutral-100 rounded-lg">
+            <div class="text-gray-600 text-base font-mono overflow-scroll">$ curl -su "{API_KEY}:X" \</br>
+https://api.shovels.ai/v1/contractors/details.json?name={CONTRACTOR_ID}</div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 p-6">
+        <div class="w-full flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 p-2 bg-white rounded-lg shadow">
+            <div class="text-gray-600 text-base p-4 font-mono">
+              {
+                "name": "NEXTGEN EARTH INC",
+                "street": "1326 WILSHIRE AVE",
+                "city": "SANTA ANA",
+                "zip": "92705",
+                "state": "CA",
+                "all_projects": 120,
+                "active_projects": 4,
+                "expired_projects": 23,
+                "average_job_value": "$13,500",
+                "inspections_pass_rate": 0.89,
+                "sq_ft_per_month": 640
+              }
             </div>
           </div>
         </div>
-        <div>
-          <p class="text-lg text-gray-500 sm:text-lg md:text-3xl pr-10">Ryan was CEO of MightySignal, a B2B mobile SDK intelligence company. He also co-founded Scripted, backed by Redpoint, Storm, and Crosslink. Ryan holds Bachelor degrees from UC Berkeley and a MPP from the Harvard Kennedy School and an MBA from MIT Sloan.</p>
-        </div>
-      </div>
-      <div class="grid grid-cols-4 gap-4 mt-10">
-        <div><img src="/theme/images/mightysignal.webp" class="h-14 mx-auto" /></div>
-        <div><img src="/theme/images/xenon.png" class="h-14 mx-auto" /></div>
-        <div><img src="/theme/images/cal.png" class="h-14 mx-auto" /></div>
-        <div><img src="/theme/images/mit.png" class="h-14 mx-auto" /></div>
       </div>
     </div>
-    <div class="">
-      <div class="lg:grid lg:grid-cols-2" style="min-height: 432px;">
-        <div class="mx-auto">
-          <img class="h-40 w-40 rounded-full lg:h-24 lg:w-24" src="/theme/images/luka.jpeg" alt="">
-          <div class="space-y-4 mt-4">
-            <div class="text-lg text-amber-800 sm:text-lg md:text-3xl">
-              <h3>Luka Kacil</h3>
-              <p class="text-amber-600">Co-Founder / CTO</p>
-            </div>
-          </div>
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row mt-20">
+      <div class="w-full sm:w-1/2 p-6 mt-6">
+        <img class="object-cover rounded-lg" src="/theme/images/dashboard.png">
+      </div>
+      <div class="w-full sm:w-1/2 p-6 mt-6">
+        <div class="align-middle">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Or evaluate contractors directly using our dashboard
+          </h3>
+          <p class="text-gray-600 mb-8 text-lg">
+            We made it easy to search and see all the relevant metrics
+          </p>
         </div>
-        <div>
-          <p class="text-lg text-gray-500 sm:text-lg md:text-3xl pr-10">Luka was COO and ran all engineering operations for AppMonsta, which scraped the entire Google Play and Apple App Stores daily. He is currently in the Executive MBA program at Quantic School of Business and Technology.</p>
-        </div>
-      </div> 
-      <div class="grid grid-cols-4 gap-4 mt-10">
-        <div><img src="/theme/images/appmonsta.png" class="h-14 mx-auto" /></div>
-        <div><img src="/theme/images/xenon.png" class="h-14 mx-auto" /></div>
-        <div><img src="/theme/images/quantic.png" class="h-14 mx-auto" /></div>
-        <div><img src="/theme/images/ljubljana.png" class="h-14 mx-auto" /></div>
       </div>
     </div>
   </div>
+</section>
 
-        </div>
-<footer class="bg-stone-200">
-  <div class="mx-auto max-w-7xl pt-8 pb-4 px-4 sm:px-6 lg:flex lg:items-center lg:px-8">
-    <div class="lg:w-0 lg:flex-1">
-      <h2 class="text-3xl font-bold tracking-tight text-amber-800 sm:text-4xl">Sign up for early access!</h2>
-      <p class="my-4 text-base text-gray-400">&copy; 2022 Shovels. All rights reserved.</p>
-    </div>
-    <div class="mt-8 lg:mt-0 lg:ml-8">
-      <form class="sm:flex" action="https://formspree.io/f/xzbwjdro" method="POST">
-        <label for="email-address" class="sr-only">Email address</label>
-        <input id="email-address" name="email-address" type="email" autocomplete="email" required class="w-full rounded-md border border-gray-300 px-5 py-3 placeholder-gray-400 shadow-sm focus:border-amber-500 focus:ring-1 focus:ring-amber-500 sm:max-w-xs" placeholder="Enter your email">
-        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-          <button type="submit" class="flex w-full items-center justify-center rounded-md border border-transparent bg-amber-600 py-3 px-5 text-base font-medium text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">Notify me</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</footer>      </div>
-    </div>
+
+<svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+      <g class="wave" fill="#ffffff">
+        <path
+          d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+        ></path>
+      </g>
+      <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+        <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+          <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+          <path
+            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+            opacity="0.100000001"
+          ></path>
+          <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+<div id="cta" class="mx-auto text-center pb-8 mb-12">
+  <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-slate-700">
+    Get early access now
+  </h2>
+  <form class="block pt-4 text-slate-800 text-lg" action="https://formspree.io/f/xzbwjdro" method="POST">
+    <input type="email" class="placeholder:text-slate-400 bg-white border border-slate-300 rounded-full py-2 pl-8 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 mr-6" placeholder="Email address" type="text" name="email"/>
+    <input type="submit" class="mx-auto lg:mx-0 bg-white font-normal text-base text-gray-600 rounded-full mb-8 px-8 py-2 shadow-sm focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" value="Sign me up">
+  </form>
+  <p class="mt-16">&copy; 2022 Shovels. All rights reserved.</p>
+</div>
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
   </body>
 </html>
