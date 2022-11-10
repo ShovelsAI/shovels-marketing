@@ -23,3 +23,44 @@
 .gradient {
   background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
 }
+
+.article {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.article li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.article ul {
+  margin-bottom: 15px;
+}
+
+.article p {
+  margin-bottom: 15px;
+}
+
+.article a {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.article h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.article h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.article h3 {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+div.article img {
+  width: 100%;
+}

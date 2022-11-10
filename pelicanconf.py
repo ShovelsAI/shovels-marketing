@@ -30,6 +30,26 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+USE_FOLDER_AS_CATEGORY = True
+ARTICLE_PATHS = ['posts']
+ARTICLE_EXCLUDES = ['pages']
+ARTICLE_URL = 'blog/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
+ARTICLE_ORDER_BY = 'date'
+SLUGIFY_SOURCE = 'title'
+ARCHIVES_SAVE_AS = 'blog/index.html'
+CATEGORY_URL = 'blog/category/{slug}/'
+CATEGORY_SAVE_AS = 'blog/category/{slug}/index.html'
+TAG_URL = 'blog/tag/{slug}/'
+TAG_SAVE_AS = 'blog/tag/{slug}/index.html'
+DRAFT_URL = 'blog/drafts/{slug}/'
+DRAFT_SAVE_AS = 'blog/drafts/{slug}/index.html'
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/{number}/','{base_name}/{number}/index.html'),
+)
+FORMATTED_FIELDS = ['summary', 'title']
+
 PATH_METADATA = '(?P<dirname>.*)/(?P<basename>.*)\..*'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
