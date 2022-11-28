@@ -915,6 +915,10 @@ select {
   margin-top: -0.25rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -1287,6 +1291,10 @@ select {
   padding-right: 2rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1428,9 +1436,9 @@ select {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
-.text-gray-100 {
+.text-slate-600 {
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .text-pink-800 {
@@ -1602,11 +1610,6 @@ div.article img {
 .hover\:text-amber-500:hover {
   --tw-text-opacity: 1;
   color: rgb(245 158 11 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-200:hover {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-900:hover {
