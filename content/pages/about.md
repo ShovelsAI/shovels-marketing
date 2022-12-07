@@ -4,7 +4,7 @@ slug: about
 <div class="pt-24">
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     <!--Left Col-->
-    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
+    <div class="w-full lg:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
       <p class="uppercase tracking-loose w-full"></p>
       <h1 class="my-4 text-5xl font-bold leading-tight">
         Why Now?
@@ -25,15 +25,15 @@ slug: about
       </p>
     </div>
     <!--Right Col-->
-    <div class="w-full md:w-3/5 py-6 text-center">
-      <img class="w-full md:w-4/5 z-50" src="/theme/images/hero.png" />
+    <div class="hidden lg:block w-full lg:w-3/5 py-20">
+      <img class="w-3/4 lg:w-3/5 z-50" src="/theme/images/hero.png" />
     </div>
   </div>
 </div>
 {% include 'wave.html' %}
 <section class="bg-white py-8">
   <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+    <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
       <div class="flex-1 py-4 bg-neutral-100 rounded-lg overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
           <div class="w-full text-xl text-gray-800 px-6">
@@ -54,7 +54,7 @@ slug: about
         </div>
       </div>
     </div>
-    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+    <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
       <div class="flex-1 py-4 bg-neutral-100 rounded-lg overflow-hidden shadow">
         <div class="flex flex-wrap no-underline hover:no-underline">
           <div class="w-full text-xl text-gray-800 px-6">

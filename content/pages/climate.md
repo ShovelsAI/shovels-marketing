@@ -21,7 +21,7 @@ slug: climate
   </div>
 </div>
 {% include 'wave.html' %}
-<section class="bg-white py-16">
+<section class="bg-white py-16 px-4 lg:px-8">
   <div class="container max-w-5xl mx-auto m-8">
     <h2 class="w-full my-4 text-5xl font-bold leading-tight text-center text-green-800">
       <span class="font-bold font-marble text-green-900" style="line-height: 0px !important;">Shovels</span> tracks every solar, EV charger, heat pump HVAC, and battery installation

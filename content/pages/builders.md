@@ -20,6 +20,13 @@ slug: builders
     </div>
   </div>
 </div>
-
+{% include 'wave.html' %}
+<section class="bg-white py-16 px-4 lg:px-8">
+  <div class="container max-w-5xl mx-auto m-8">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      Shovels analyzes permits and inspections so you can hire the best contractors for your jobs
+    </h2>
+  </div>
+</section>
 {% include 'definitions.html' %}
 {% include 'uses.html' %}
