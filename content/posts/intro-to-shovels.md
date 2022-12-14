@@ -1,5 +1,5 @@
 Title: Introduction to Shovels
-Subtitle: Your new opportunity is only a connection away
+Subtitle: Shovels launched in November 2022 to bring more transparency into construction and building data. 
 Date: 2022-11-08
 Modified: 2022-11-10
 Category: Company
