@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/all.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2022-11-10T00:00:00-08:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;Shovels launched in November 2022 to bring more transparency into construction and building data.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/all.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2022-12-14T00:00:00-08:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;Shovels launched in November 2022 to bring more transparency into construction and building data.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
 &lt;p&gt;&lt;br&gt;
 Hello friends, advisors, and (a few) relatives! &lt;/p&gt;
 &lt;p&gt;After a bit of a hiatus, I'm really excited to launch a new company along with an incredible team. &lt;/p&gt;
@@ -38,4 +38,60 @@ Hello friends, advisors, and (a few) relatives! &lt;/p&gt;
 &lt;p&gt;I am co-founder and CEO. I just stepped away as CEO of MightySignal after Airnow acquired us last year. We did a ton of data scraping and analysis there and my own (great, fortunately) experience with a major home remodel inspired Shovels. &lt;/p&gt;
 &lt;p&gt;Luka Kacil is my co-founder and CTO. He is supremely talented and someone I look forward to being in the trenches with. We met through MightySignal when we acquired his company, AppMonsta, back in 2019. He built and managed the tech stack to scrape all of the Google Play and Apple App stores daily.&lt;/p&gt;
 &lt;p&gt;We also have a small team of part-time folks doing hands-on work in data analysis and marketing support.&lt;/p&gt;
-&lt;hr&gt;</content><category term="Company"></category><category term="launch"></category></entry></feed>
+&lt;hr&gt;</content><category term="Company"></category><category term="launch"></category></entry><entry><title>December 2022 Newsletter</title><link href="https://www.shovels.ai/blog/december-2022-newsletter/" rel="alternate"></link><published>2022-12-13T00:00:00-08:00</published><updated>2022-12-14T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-12-13:/blog/december-2022-newsletter/</id><summary type="html">&lt;p&gt;We have a better problem statement and understanding of our customers!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Shovels Dec 2022 Newsletter&lt;/h2&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;I want to share a few things I've been thinking about recently with this business, but I'll start with an ask:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I need to talk to more real estate developers, especially if they're active in Contra Costa County or in the broader SF Bay Area. If you have a friendly one you can intro to me, I'd appreciate it! I want to understand how they vet and hire contractors.
+That aside, here's a quick summary and then I'll get into more detail on each item. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;I've improved the way I describe the problem we're solving and our solution for fixing it&lt;/li&gt;
+&lt;li&gt;We encountered some new challenges that are slowing us down -- but also increasing our resolve because hey, the harder it is, the more value we're creating&lt;/li&gt;
+&lt;li&gt;We had great conversations with people who match our three ideal customer profiles&lt;/li&gt;
+&lt;li&gt;I made a bunch of progress on boring back office operational stuff&lt;/li&gt;
+&lt;li&gt;Some fundraising progress was had&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Our problem and how we solve it&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is information asymmetry in the labor market for the trades, and this mismatch leads to transactions that make both sides worse off. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There, that's the problem! &lt;/p&gt;
+&lt;p&gt;It's one that homeowners, construction lenders, and real estate developers each have to deal with. The way we solve it is to aggregate building permit and related data and objectively assess the work that these guys do. We use source data to provide the transparency lacking in this market. &lt;/p&gt;
+&lt;p&gt;This approach is unique, and I'll describe why in the next section. &lt;/p&gt;
+&lt;h3&gt;New data challenges&lt;/h3&gt;
+&lt;p&gt;We knew aggregating this data would be hard. We didn't know it would be this hard. The challenge is several-fold:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are no clean public datasets for the detail we want to collect, so we have to find "interesting" ways to grab it.
+Once we have it, the data is inconsistent and incomplete. It needs a good amount of TLC. &lt;/li&gt;
+&lt;li&gt;The data is distributed among counties and cities, and isn't always online. Sometimes have to make public records requests to get it.  &lt;/li&gt;
+&lt;li&gt;But that's what makes this work valuable and worth doing. It's also why no one else has already done it. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It will get easier, too -- I'm hearing directly from city clerks that they're in the process of bringing building permits online. That's encouraging, both for my co-founder Luka, who has to deal with most of this, and for us generally because it means our timing is good. It feels like we're catching the wave for clean, accessible government data, and we can be among the players that bring this critical trend* fully ashore. &lt;/p&gt;
+&lt;h3&gt;Conversations with potential customers&lt;/h3&gt;
+&lt;p&gt;I spoke to several "bulls-eye" potential customers. They're exactly the profiles who would want to work with us. Here are a few takeaways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The contractor marketplaces (Thumbtack, BuildZoom, etc) seem to refer contractors with whom they have referral agreements. It leads to bad matches and creates distrust on the buy side. &lt;/li&gt;
+&lt;li&gt;Real estate developers already use public permit databases to see which contractors are active in a region. It's a tedious process that takes several hours to identify a single contractor. The time sink multiplies for every new jurisdiction they have to research.&lt;/li&gt;
+&lt;li&gt;There's no database available today to look up a property address and get its permit history. 
+What does this mean to me? We have work to do! &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These potential customers will remain "potential" until we can get more data coverage, which leads me to...&lt;/p&gt;
+&lt;h3&gt;Back office and fundraising&lt;/h3&gt;
+&lt;p&gt;Shovels, Inc. is now officially a Delaware C-corp. We have a bank account, a Stripe account, and real paying customers. I have a CRM flush with conversations to stay on top of. This is a real milestone.&lt;/p&gt;
+&lt;p&gt;To get us even further, we will need to raise a small seed round. I'm talking every day to friends who are making introductions, advisors who critique our pitch deck, and people in the angel and venture investing community who are taking a hard look at Shovels. &lt;/p&gt;
+&lt;p&gt;What I'm hearing so far is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We need to describe the market size better. Luka and I are working on this, but there's no specific market report for what we do. Our total available market calculation is a bit haphazard. I know it's huge, but I have yet to prove it :) &lt;/li&gt;
+&lt;li&gt;The more customers we get, the easier it will be to fundraise. I'm working on those customers.&lt;/li&gt;
+&lt;li&gt;Construction tech is a tricky area to fundraise. It's not your typical market and many investors shy away. They just don't get it. That's okay -- we're finding others who lean in right away. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We recently received our first offer. We were invited to join a venture studio that would handle a lot of the operations for us, effectively an "in-kind" investment of $500,000+. Ultimately we decided this one was not a great fit, so we're going to focus on raising a seed round instead. It was a good vote of confidence, though. &lt;/p&gt;
+&lt;p&gt;--&lt;/p&gt;
+&lt;p&gt;That's it for now. Luka is busy grabbing all the data we can in the SF Bay Area. I'm keeping the revenue and fundraising operation together. It's a grind, but I wouldn't rather be doing anything else. &lt;/p&gt;
+&lt;p&gt;Happy holidays! &lt;/p&gt;
+&lt;p&gt;Ryan&lt;/p&gt;
+&lt;p&gt;P.S. Our first newsletter is &lt;a href="https://www.shovels.ai/blog/introduction-to-shovels/"&gt;on the blog&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+* Why is taking building permits online critical? Let me ascend my climate change soapbox for a moment. Homes need to electrify. It's inevitable that every building will disconnect its gas line in the next 50 years. Getting there requires streamlining the bureaucratic mess that is building permits. We all hate it, so let's make it better. &lt;/p&gt;</content><category term="Company"></category><category term="company"></category></entry></feed>
