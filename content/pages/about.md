@@ -38,7 +38,7 @@ slug: about
         <div class="flex flex-wrap no-underline hover:no-underline">
           <div class="w-full text-xl text-gray-800 px-6">
             <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-              <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+              <div class="w-full md:w-1/3 p-6 flex-col flex-grow flex-shrink">
                 <img src="/theme/images/ryan.jpeg" class="p-16 rounded-full">
                 <p class="text-center font-bold">Ryan Buckley</p>
                 <p class="text-center">Co-Founder/CEO</p>
@@ -59,7 +59,7 @@ slug: about
         <div class="flex flex-wrap no-underline hover:no-underline">
           <div class="w-full text-xl text-gray-800 px-6">
             <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-              <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+              <div class="w-full md:w-1/3 p-6 flex-col flex-grow flex-shrink">
                 <img src="/theme/images/luka.jpeg" class="p-16 rounded-full">
                 <p class="text-center font-bold">Luka Kacil</p>
                 <p class="text-center">Co-Founder/CTO</p>
