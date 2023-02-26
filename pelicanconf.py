@@ -1,5 +1,5 @@
 AUTHOR = 'Shovels'
-SITENAME = 'Shovels'
+SITENAME = 'Shovels :)'
 SITEURL = 'http://127.0.0.1:8000'
 
 PATH = 'content'
@@ -49,7 +49,7 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/{number}/','{base_name}/{number}/index.html'),
 )
 FORMATTED_FIELDS = ['summary', 'title']
-
+STATIC_PATHS = ['images', 'pages']
 PATH_METADATA = '(?P<dirname>.*)/(?P<basename>.*)\..*'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
