@@ -1,79 +1,95 @@
-Title: About Shovels
+Title: About Shovels, Inc.
 slug: about
 
-<div class="pt-24">
-  <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-    <!--Left Col-->
-    <div class="w-full lg:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
-      <p class="uppercase tracking-loose w-full"></p>
-      <h1 class="my-4 text-5xl font-bold leading-tight">
-        Why Now?
-      </h1>
-      <p class="leading-normal text-2xl mb-8">
-      We hear over and over again how the entire construction industry is slow to adopt new
-      technology. The field is littered with startups who failed to get contractors to adopt a
-      new app.
-      </p>
-      <p class="leading-normal text-2xl mb-8">
-      Fortunately, we're not trying to be in the field. Instead, we're in the offices of the
-      people who decide who to hire and fund and we gather data from the municipalities that
-      issue and inspect building permits. This part of the construction industry is moving
-      online and we're able to take advantage of it.
-      </p>
-      <p class="leading-normal text-2xl mb-8">
-      We can tell you where it's happening and who's doing it.
-      </p>
-    </div>
-    <!--Right Col-->
-    <div class="hidden lg:block w-full lg:w-3/5 py-20">
-      <img class="w-3/4 lg:w-3/5 z-50" src="/theme/images/hero.png" />
+<div class="bg-slate-100 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The Shovels One-Pager</h1>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Shovels combines building permit data with building inspections, census, topography, weather, and real estate transactions to form the most comprehensive understanding of the building contractor market..</p>
     </div>
   </div>
 </div>
-{% include 'wave.html' %}
-<section class="bg-white py-8">
-  <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-    <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-      <div class="flex-1 py-4 bg-neutral-100 rounded-lg overflow-hidden shadow">
-        <div class="flex flex-wrap no-underline hover:no-underline">
-          <div class="w-full text-xl text-gray-800 px-6">
-            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-              <div class="w-full md:w-1/3 p-6 flex-col flex-grow flex-shrink">
-                <img src="/theme/images/ryan.jpeg" class="p-16 rounded-full">
-                <p class="text-center font-bold">Ryan Buckley</p>
-                <p class="text-center">Co-Founder/CEO</p>
-              </div>
-              <div class="w-full md:w-1/3 pt-8 lg:pt-16 pr-8 flex flex-col flex-grow flex-shrink leading-relaxed text-gray-700 text-center lg:text-left">
-                Ryan was CEO of MightySignal, a B2B mobile SDK intelligence company.
-                He also co-founded Scripted, backed by Redpoint, Storm, and Crosslink.
-                Ryan holds Bachelor degrees from UC Berkeley and a MPP from the Harvard
-                Kennedy School and an MBA from MIT Sloan.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-      <div class="flex-1 py-4 bg-neutral-100 rounded-lg overflow-hidden shadow">
-        <div class="flex flex-wrap no-underline hover:no-underline">
-          <div class="w-full text-xl text-gray-800 px-6">
-            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-              <div class="w-full md:w-1/3 p-6 flex-col flex-grow flex-shrink">
-                <img src="/theme/images/luka.jpeg" class="p-16 rounded-full">
-                <p class="text-center font-bold">Luka Kacil</p>
-                <p class="text-center">Co-Founder/CTO</p>
-              </div>
-              <div class="w-full md:w-1/3 pt-8 lg:pt-16 pr-8 flex flex-col flex-grow flex-shrink leading-relaxed text-gray-700 text-center lg:text-left">
-                Luka was COO and ran all engineering operations for AppMonsta, which daily
-                collected huge amounts of data about mobile apps and their usage. He is
-                currently in the Executive MBA program at Quantic School of Business and
-                Technology.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="sm:flex sm:items-center pt-12 ">
+    <div class="sm:flex-auto">
+      <h2 class="text-2xl font-semibold leading-6 text-gray-900">What we do</h2>
+      <p class="mt-2 text-base text-gray-700 max-w-2xl">Shovels compiles and analyzes public records on the following entities in the geographies we serve:</p>
     </div>
   </div>
-</section>
+  <div class="-mx-4 mt-8 sm:-mx-0 max-w-4xl">
+    <table class="min-w-full divide-y divide-gray-300">
+      <thead>
+        <tr>
+          <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-base font-semibold text-gray-900 sm:pl-0">Object</th>
+          <th scope="col" class="hidden px-3 py-3.5 text-left text-base font-semibold text-gray-900 lg:table-cell">Description</th>
+          <th scope="col" class="hidden px-3 py-3.5 text-left text-base font-semibold text-gray-900 sm:table-cell">Accessibility</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200 bg-white">
+        <tr>
+          <td class="w-full max-w-0 py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-0">
+            Building permit
+            <dl class="font-normal lg:hidden">
+              <dt class="sr-only">Description</dt>
+              <dd class="mt-1 truncate text-gray-700">Parsing and granular categorization of building permits</dd>
+              <dt class="sr-only sm:hidden">Accessibility</dt>
+              <dd class="mt-1 truncate text-gray-500 sm:hidden">Lookup by property address, parcel number, contractor name or license, or filter by attributes</dd>
+            </dl>
+          </td>
+          <td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Parsing and granular categorization of building permits</td>
+          <td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by property address, parcel number, contractor name or license, or filter by attributes</td>
+        </tr>
+        <tr>
+          <td class="w-full max-w-0 py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-0">
+            Building contractor
+            <dl class="font-normal lg:hidden">
+              <dt class="sr-only">Description</dt>
+              <dd class="mt-1 truncate text-gray-700">Associating contractors to permits and computing quality metrics</dd>
+              <dt class="sr-only sm:hidden">Accessibility</dt>
+              <dd class="mt-1 truncate text-gray-500 sm:hidden">Lookup by property address, parcel number, contractor name or license, or filter by attributes</dd>
+            </dl>
+          </td>
+          <td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Associating contractors to permits and computing quality metrics</td>
+          <td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by property address, parcel number, contractor name or license, or filter by attributes</td>
+        </tr>
+        <tr>
+          <td class="w-full max-w-0 py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-0">
+            Property
+            <dl class="font-normal lg:hidden">
+              <dt class="sr-only">Description</dt>
+              <dd class="mt-1 truncate text-gray-700">Listing of related permits and contractors</dd>
+              <dt class="sr-only sm:hidden">Accessibility</dt>
+              <dd class="mt-1 truncate text-gray-500 sm:hidden">Lookup by address or parcel number, or filter by attributes</dd>
+            </dl>
+          </td>
+          <td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Listing of related permits and contractors</td>
+          <td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by address or parcel number, or filter by attributes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="sm:flex sm:items-center pt-12 ">
+    <div class="sm:flex-auto max-w-2xl">
+      <h2 class="text-2xl font-semibold leading-6 text-gray-900">Our geographies</h2>
+      <p class="mt-2 text-base text-gray-700">We are currently in the nine counties around the San Francisco Bay Area with plans to expand throughout California and Florida by the end of Q1 2023. </p>
+    </div>
+  </div>
+  <div class="sm:flex sm:items-center pt-12 ">
+    <div class="sm:flex-auto">
+      <h2 class="text-2xl font-semibold leading-6 text-gray-900">Our advantage</h2>
+      <p class="mt-2 text-base text-gray-700">Our competitive advantage is our focus on data quality and completeness.</p>
+      <ul class="list-disc ml-4 max-w-2xl">
+        <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Completeness</span>: We use multiple vendors and our own data extraction expertise to ensure that all permits are gathered from every permitting jurisdiction in our geographies.</li>
+        <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Quality</span>: Permit data is notoriously messy. We go out of our way to cleanse and normalize data so it is easy to consume.</li>
+        <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Science</span>: We layer multiple datasets to discover new statistical relationships between permits, contractors, and properties.</li>
+        <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Recency</span>: We process millions of records continually and can serve daily, weekly, or monthly refreshes.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="sm:flex sm:items-center pt-12 ">
+    <div class="sm:flex-auto max-w-2xl">
+      <h2 class="text-2xl font-semibold leading-6 text-gray-900">Pricing</h2>
+      <p class="mt-2 text-base text-gray-700">We sell by geography and pricing depends on whether historical data is included, how often you need updates, and how you consume the data. Contact <a href="mailto:sales@shovels.ai">sales@shovels.ai</a> for more information! </p>
+    </div>
+  </div>
+</div>
