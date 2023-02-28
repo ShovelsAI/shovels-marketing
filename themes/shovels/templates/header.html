@@ -1,4 +1,5 @@
-<div class="max-w-7xl mx-auto flex items-center justify-between py-6 md:justify-start md:space-x-10">
+<div x-data="{ mobileOpen: false }">
+<div class="max-w-7xl mx-auto flex items-center justify-between py-6 px-2 md:justify-start md:space-x-10">
   <div class="flex justify-start lg:w-0 lg:flex-1">
     <a href="/">
       <span class="sr-only">Shovels</span>
@@ -8,7 +9,7 @@
     </a>
   </div>
   <div class="-my-2 -mr-2 md:hidden">
-    <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500" aria-expanded="false">
+    <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500" aria-expanded="false" @click="mobileOpen = true">
       <span class="sr-only">Open menu</span>
       <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -16,15 +17,15 @@
     </button>
   </div>
   <nav class="hidden space-x-10 md:flex">
-    <div class="relative" x-data="{ open: false }">
-      <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900" @click="open = ! open" @mouseover="open = true">
+    <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+      <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900" @click="open = ! open">
         <span>Solutions</span>
         <!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
         <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2" x-show="open" @mouseleave = "open = false">
+      <div class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2" x-show="open">
         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="/software" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
@@ -88,14 +89,14 @@
       </div>
     </div>
 
-    <div class="relative" x-data="{ open: false }">
-      <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900" @click="open = ! open" @mouseover="open = true">
+    <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+      <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900" @click="open = ! open">
         <span>Products</span>
         <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open" @mouseleave = "open = false">
+      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open">
         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="/permit-database" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
@@ -143,14 +144,14 @@
       </div>
     </div>
 
-    <div class="relative" x-data="{ open: false }">
-      <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900" @click="open = ! open" @mouseover="open = true">
+    <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+      <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900" @click="open = ! open">
         <span>About</span>
         <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open" @mouseleave = "open = false">
+      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open">
         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="/team" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
@@ -197,12 +198,13 @@
     </div>
 
     <a href="/blog" class="text-base font-medium text-gray-500 hover:text-gray-900">Blog</a>
-
   </nav>
+  <!--
   <div class="hidden items-center justify-end space-x-8 md:flex md:flex-1 lg:w-0">
     <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
     <a href="#" class="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-slate-100 py-2 px-4 text-base font-medium text-slate-700 hover:bg-slate-200">Sign up</a>
   </div>
+  -->
 </div>
 
 <!--
@@ -216,14 +218,16 @@ Leaving: "duration-100 ease-in"
   To: "opacity-0 scale-95"
 -->
 <div class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-  <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+  <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5" x-show="mobileOpen">
     <div class="px-5 pt-5 pb-6">
       <div class="flex items-center justify-between">
         <div>
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=slate&shade=600" alt="Your Company">
+          <a class="toggleColour text-slate-700 no-underline hover:no-underline font-bold text-2xl font-marble nav-logo transform transition hover:scale-105 duration-300 ease-in-out" href="/">
+            Shovels
+          </a>
         </div>
         <div class="-mr-2">
-          <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500">
+          <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500" @click="mobileOpen = false">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -233,61 +237,78 @@ Leaving: "duration-100 ease-in"
       </div>
       <div class="mt-6">
         <nav class="grid gap-y-8">
-          <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+          <a href="/software" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
             <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
             </svg>
-            <span class="ml-3 text-base font-medium text-gray-900">Analytics</span>
+            <span class="ml-3 text-base font-medium text-gray-900">Software</span>
           </a>
 
-          <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+          <a href="/climate" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
             <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
             </svg>
-            <span class="ml-3 text-base font-medium text-gray-900">Engagement</span>
+            <span class="ml-3 text-base font-medium text-gray-900">Climate</span>
           </a>
 
-          <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+          <a href="/construction-finance" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
             <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
             </svg>
-            <span class="ml-3 text-base font-medium text-gray-900">Security</span>
+            <span class="ml-3 text-base font-medium text-gray-900">Finance</span>
           </a>
 
-          <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+          <a href="/builders" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
             <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
             </svg>
-            <span class="ml-3 text-base font-medium text-gray-900">Integrations</span>
+            <span class="ml-3 text-base font-medium text-gray-900">Builders</span>
           </a>
 
-          <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+          <a href="/permit-database" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
             <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
             </svg>
-            <span class="ml-3 text-base font-medium text-gray-900">Automations</span>
+            <span class="ml-3 text-base font-medium text-gray-900">Permit Database</span>
+          </a>
+
+          <a href="/contractor-directory" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+            <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+            </svg>
+            <span class="ml-3 text-base font-medium text-gray-900">Contractor Directory</span>
+          </a>
+
+          <a href="/data-feed" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+            <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+              <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
+            </svg>
+            <span class="ml-3 text-base font-medium text-gray-900">Data Feed</span>
+          </a>
+
+          <a href="/api" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+            <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+            <span class="ml-3 text-base font-medium text-gray-900">API</span>
           </a>
         </nav>
       </div>
     </div>
     <div class="space-y-6 py-6 px-5">
       <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Pricing</a>
+        <a href="/team" class="text-base font-medium text-gray-900 hover:text-gray-700">Team</a>
 
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Docs</a>
+        <a href="/about" class="text-base font-medium text-gray-900 hover:text-gray-700">Company</a>
 
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Blog</a>
+        <a href="/blog" class="text-base font-medium text-gray-900 hover:text-gray-700">Blog</a>
 
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Contact Sales</a>
+        <a href="/privacy" class="text-base font-medium text-gray-900 hover:text-gray-700">Privacy</a>
 
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Help Center</a>
-
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Guides</a>
-
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Events</a>
-
-        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Security</a>
+        <a href="/terms" class="text-base font-medium text-gray-900 hover:text-gray-700">Terms & Conditions</a>
       </div>
+      <!--
       <div>
         <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700">Sign up</a>
         <p class="mt-6 text-center text-base font-medium text-gray-500">
@@ -295,6 +316,8 @@ Leaving: "duration-100 ease-in"
           <a href="#" class="text-slate-600 hover:text-slate-500">Sign in</a>
         </p>
       </div>
+      -->
     </div>
   </div>
+</div>
 </div>
