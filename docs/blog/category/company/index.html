@@ -10,6 +10,7 @@
     <!-- End Google Tag Manager -->
     <title>Shovels :) - Company category</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Pelican" />
     <link href="https://www.shovels.ai/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Shovels :) Full Atom Feed" />
     <link href="https://www.shovels.ai/feeds/company.atom.xml" type="application/atom+xml" rel="alternate" title="Shovels :) Categories Atom Feed" />
@@ -21,6 +22,10 @@
     <link rel="manifest" href="/theme/images/site.webmanifest">
     <link rel="mask-icon" href="/theme/images/safari-pinned-tab.svg" color="#5bbad5">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
@@ -360,8 +365,8 @@ Leaving: "duration-100 ease-in"
       <h1 class="max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The API for building permits and building contractors</h1>
       <p class="mt-6 text-lg leading-8 text-gray-600">Shovels solves the asymmetric information problem in the building trades by compiling and analyzing public records on building permits, building inspections, and building contractors for both residential and commercial applications.</p>
       <div class="mt-10 flex items-center gap-x-6">
-        <a href="#" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600">Get started</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+        <a href="/software" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600">Get started</a>
+        <a href="/company" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
       </div>
     </div>
     <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">  
@@ -471,22 +476,180 @@ Leaving: "duration-100 ease-in"
           </dl>
         </div>
       </div>
-      <div class="flex-1 p-2 bg-white rounded-lg shadow">
-        <div class="text-gray-600 text-base p-4 font-mono">
-          {
-            "name": "NEXTGEN EARTH INC",
-            "street": "1326 WILSHIRE AVE",
-            "city": "SANTA ANA",
-            "zip": "92705",
-            "state": "CA",
-            "all_projects": 120,
-            "active_projects": 4,
-            "expired_projects": 23,
-            "average_job_value": "$13,500",
-            "inspections_pass_rate": 0.89,
-            "sq_ft_per_month": 640
-          }
-        </div>
+      <div
+          x-data="{
+              selectedId: null,
+              init() {
+                  // Set the first available tab on the page on page load.
+                  this.$nextTick(() => this.select(this.$id('tab', 1)))
+              },
+              select(id) {
+                  this.selectedId = id
+              },
+              isSelected(id) {
+                  return this.selectedId === id
+              },
+              whichChild(el, parent) {
+                  return Array.from(parent.children).indexOf(el) + 1
+              }
+          }"
+          x-id="['tab']"
+          class="mx-auto max-w-3xl"
+      >
+          <ul
+              x-ref="tablist"
+              @keydown.right.prevent.stop="$focus.wrap().next()"
+              @keydown.home.prevent.stop="$focus.first()"
+              @keydown.page-up.prevent.stop="$focus.first()"
+              @keydown.left.prevent.stop="$focus.wrap().prev()"
+              @keydown.end.prevent.stop="$focus.last()"
+              @keydown.page-down.prevent.stop="$focus.last()"
+              role="tablist"
+              class="-mb-px flex items-stretch"
+          >
+              <li>
+                  <button
+                      :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+                      @click="select($el.id)"
+                      @mousedown.prevent
+                      @focus="select($el.id)"
+                      type="button"
+                      :tabindex="isSelected($el.id) ? 0 : -1"
+                      :aria-selected="isSelected($el.id)"
+                      :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
+                      class="inline-flex rounded-t-md border-t border-l border-r px-5 py-2.5"
+                      role="tab"
+                  >Property Permits</button>
+              </li>
+              <li>
+                  <button
+                      :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+                      @click="select($el.id)"
+                      @mousedown.prevent
+                      @focus="select($el.id)"
+                      type="button"
+                      :tabindex="isSelected($el.id) ? 0 : -1"
+                      :aria-selected="isSelected($el.id)"
+                      :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
+                      class="inline-flex rounded-t-md border-t border-l border-r px-5 py-2.5"
+                      role="tab"
+                  >Contractor Permits</button>
+              </li>
+              <li>
+                <button
+                    :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+                    @click="select($el.id)"
+                    @mousedown.prevent
+                    @focus="select($el.id)"
+                    type="button"
+                    :tabindex="isSelected($el.id) ? 0 : -1"
+                    :aria-selected="isSelected($el.id)"
+                    :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
+                    class="inline-flex rounded-t-md border-t border-l border-r px-5 py-2.5"
+                    role="tab"
+                >Contractor Details</button>
+            </li>
+          </ul>
+          <div role="tabpanels" class="max-w-lg rounded-b-md border border-gray-200 bg-white">
+              <section
+                  x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+                  :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+                  role="tabpanel"
+                  class="p-8"
+              >
+                  <h2 class="text-xl font-bold">Property Permits API</h2>
+                  <p class="my-2 text-gray-500">Retrieve all current and past permits pulled on a given US address. Lookup by address or parcel number.</p>
+                  <pre><code class="rounded-md language-json">{
+"property_address": "18491 Davis Ave",
+"property_city": "Los Gatos",
+"property_zip_code": "95030",
+"property_county": "Santa Clara",
+"property_state": "CA",
+"permits": [
+  {
+    "project_id": "DEV20-0118",
+    "status": "Finaled",
+    "start_date": "2020-01-21",
+    "end_date": "2021-04-12",
+    "duration_days": 447,
+    "inspection_pass_rate": 0.67,
+    "type": "Battery Storage System",
+    "details": "Install (1) 13.5kwh energy storage system and (n) 200amp main breaker and load center",
+    "address": "18491 Davis Ave",
+    "city": "Los Gatos",
+    "county": "Santa Clara",
+    "state": "CA"
+  },
+  {...}
+  ]
+}</code></pre>
+              </section>
+              <section
+                  x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+                  :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+                  role="tabpanel"
+                  class="p-8"
+              >
+                  <h2 class="text-xl font-bold">Contractor Permits API</h2>
+                  <p class="my-2 text-gray-500">Retrieve all current and past permits worked on by a contractor. Lookup by contractor license ID, contractor name, or contractor address.</p>
+                  <pre><code class="rounded-md language-json">{
+"contractor_name": "TESLA ENERGY OPERATIONS INC",
+"contractor_address": "901 Page Ave",
+"contractor_city": "Fremont",
+"contractor_zip_code": "94538",
+"contractor_county": "Alameda",
+"contractor_state": "CA",
+"contractor_phone": "(844) 837 5201",
+"contractor_license_no": "888104",
+"permits": [
+  {
+    "project_id": "DEV20-0118",
+    "status": "Finaled",
+    "start_date": "2020-01-21",
+    "end_date": "2021-04-12",
+    "duration_days": 447,
+    "inspection_pass_rate": 0.67,
+    "type": "Battery Storage System",
+    "details": "Install (1) 13.5kwh energy storage system and (n) 200amp main breaker and load center",
+    "address": "18491 Davis Ave",
+    "city": "Los Gatos",
+    "county": "Santa Clara",
+    "state": "CA"
+  },
+  {...}
+  ]
+}</code></pre>
+              </section>
+              <section
+                  x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+                  :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+                  role="tabpanel"
+                  class="p-8"
+              >
+                  <h2 class="text-xl font-bold">Contractor Details API</h2>
+                  <p class="my-2 text-gray-500">Retrieve all derived metrics, including breakdowns of activity by permit type. Filter by region or activity metrics. by contractor license ID, contractor name, or contractor address.</p>
+                  <pre><code class="rounded-md language-json">{
+  "contractor_name": "TESLA ENERGY OPERATIONS INC",
+  "contractor_address": "901 Page Ave",
+  "contractor_city": "Fremont",
+  "contractor_zip_code": "94538",
+  "contractor_county": "Alameda",
+  "contractor_state": "CA",
+  "contractor_phone": "(844) 837 5201",
+  "contractor_license_no": "888104",
+  "all_permits": 700,
+  "active_permits": 162,
+  "expired_permits": 55,
+  "avg_project_duration_days": 198.98,
+  "avg_inspection_pass_rate": 0.76,
+  "permit_types": [
+    "Battery Storage System",
+    "Solar Photovoltaic System",
+    "Electrical",
+  ]
+}</code></pre>
+              </section>
+          </div>
       </div>
     </div>
   </div>
