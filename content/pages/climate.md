@@ -48,9 +48,11 @@ slug: climate
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto">We track <span class="italic">all</span> contractors, so we also track the guys that install solar panels and heat pumps. With our unique inspection rate and construction speed metrics, we can tell you who is objectively the best.</p>
+            <!--
             <p class="mt-6">
               <a href="#" class="text-sm font-semibold leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
             </p>
+            -->
           </dd>
         </div>
         <div class="flex flex-col">
@@ -64,9 +66,11 @@ slug: climate
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto">Utilities, governments, and researchers want to know where electrification has already happened. We have that. We also will help you cross electrification activity against census data to make sure frontline communities aren't being left out.</p>
+            <!--
             <p class="mt-6">
               <a href="#" class="text-sm font-semibold leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
             </p>
+            -->
           </dd>
         </div>
         <div class="flex flex-col">
@@ -79,10 +83,12 @@ slug: climate
             Historical data
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Our data go back decades, sometimes further. Use Shovels to build electrification trends by year or season. See what happens during recessions and housing booms, and measure the effect of the Inflation Reduction Act of 2022.</p>
+            <p class="flex-auto">Our data go back decades. Use Shovels to build electrification trends by year or season. See what happens during recessions and housing booms, and measure the effect of the Inflation Reduction Act of 2022.</p>
+            <!--
             <p class="mt-6">
               <a href="#" class="text-sm font-semibold leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
             </p>
+            -->
           </dd>
         </div>
       </dl>

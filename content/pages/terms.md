@@ -1,18 +1,13 @@
 Title: Terms of Use
 slug: terms
 
-<div class="pt-36 pb-10">
-  <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
-    <div class="p-6 justify-end">
-      <img class="z-50" src="/theme/images/hero.png" style="height: 177px;" />
-    </div>
-    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
-      <h1 class="my-4 text-5xl font-bold leading-tight">Terms of Use</h1>
-    </div>
-  </div>
-</div>
 <section class="bg-white py-8">
   <div class="container max-w-5xl mx-auto m-8 text-gray-800 article">
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Terms & Conditions</h1>
+      </div>
+    </div>
     <p style='text-align:center'><b><span
     style='font-variant:small-caps'>Last revised on: November 28, 2022</span></b></p>
 

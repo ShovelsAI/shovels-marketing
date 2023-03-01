@@ -6,6 +6,8 @@ slug: team
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Shovels launched in 2022 with the support of a global network of top angel investors.</p>
+      <p class="mt-12 text-lg leading-8 text-gray-500">3515 Mt. Diablo Blvd Unit #51<br/>Lafayette, CA 94549</p>
+      <p class="mt-6 text-lg leading-8 text-gray-500">(800) 511-7457</p>
     </div>
     <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
       <li>
