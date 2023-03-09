@@ -4,10 +4,37 @@ slug: team
 <div class="bg-white py-24 md:py-32 lg:py-40">
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Leadership</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Shovels launched in 2022 with the support of a global network of top angel investors.</p>
-      <p class="mt-12 text-lg leading-8 text-gray-500">3515 Mt. Diablo Blvd Unit #51<br/>Lafayette, CA 94549</p>
-      <p class="mt-6 text-lg leading-8 text-gray-500">(800) 511-7457</p>
+      <dl class="mt-10 space-y-4 text-base leading-7 text-gray-500">
+        <div class="flex gap-x-4">
+          <dt class="flex-none">
+            <span class="sr-only">Address</span>
+            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+            </svg>
+          </dt>
+          <dd>3515 Mt. Diablo Blvd Unit #51<br/>Lafayette, CA 94549</dd>
+        </div>
+        <div class="flex gap-x-4">
+          <dt class="flex-none">
+            <span class="sr-only">Telephone</span>
+            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+          </dt>
+          <dd><a class="hover:text-gray-600" href="tel:+1 (800) 511-7457">+1 (800) 511-7457</a></dd>
+        </div>
+        <div class="flex gap-x-4">
+          <dt class="flex-none">
+            <span class="sr-only">Email</span>
+            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+          </dt>
+          <dd><a class="hover:text-gray-600" href="mailto:sales@shovels.ai">sales@shovels.ai</a></dd>
+        </div>
+      </dl>
     </div>
     <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
       <li>
@@ -38,7 +65,7 @@ slug: team
         <img class="aspect-[3/2] w-full rounded-2xl object-cover" src="{attach}images/luka.jpeg" alt="">
         <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Luka Kacil</h3>
         <p class="text-base leading-7 text-gray-600">Co-founder & CTO</p>
-        <p class="mt-4 text-base leading-7 text-gray-600">Luka was COO and ran all engineering operations for AppMonsta, which daily collected huge amounts of data about mobile apps and their usage. He received an Executive MBA from the Quantic School of Business and Technology.</p>
+        <p class="mt-4 text-base leading-7 text-gray-600">Luka was COO and ran all engineering operations for AppMonsta, which collected huge amounts of data about mobile apps and their daily usage. He received an Executive MBA from the Quantic School of Business and Technology.</p>
         <ul role="list" class="mt-6 flex gap-x-6">
           <li>
             <a href="https://lukakacil.com/" class="text-gray-400 hover:text-gray-500" target="_blank">
@@ -57,6 +84,30 @@ slug: team
             </a>
           </li>
         </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mx-auto grid max-w-7xl grid-cols-1 gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3 mt-20">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Open positions</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Shovels is hiring contract positions in data engineering and growth marketing.</p>
+    </div>
+    <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="aspect-[3/2] w-full rounded-2xl object-cover text-slate-400">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+        </svg>
+        <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Data Engineer</h3>
+        <p class="my-4 text-base leading-7 text-gray-600">Are you passionate about using data to solve complex problems? To drive sustainability and combat climate change? Shovels is looking for a talented engineer to join our rapidly growing team and help revolutionize the building contractor market.</p>
+        <a href="https://broadleaf-leech-f9b.notion.site/Data-Engineer-8c88bef8282d4d0ebdf74178c5e737d4" target="_blank" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 block w-full text-center">Read more and apply</a>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="aspect-[3/2] w-full rounded-2xl object-cover text-slate-400">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+        </svg>
+        <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Growth Marketer</h3>
+        <p class="my-4 text-base leading-7 text-gray-600">Shovels is a new company with a small team. As such, we need each person to play an outsized role in our development at these very early stages. From the outset, we’re going to focus heavily on marketing! That’s why this position is among our first hires.</p>
+        <a href="https://broadleaf-leech-f9b.notion.site/Growth-Marketer-4a35d1c91875485eaee25c72b77fedf1" target="_blank" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline block w-full text-center">Read more and apply</a>
       </li>
     </ul>
   </div>
