@@ -25,6 +25,9 @@ slug: climate
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Track building electrification permits and contractors</h1>
       <p class="mt-6 text-lg leading-8 text-gray-300">We see every solar, EV charger, heat pump HVAC, water heater, and battery installation. Integrate this data into your green contractor marketplace or green home renovation service.</p>
+      <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+        <a href="https://shovels.retool.com/apps/4251961c-bc3b-11ed-8e99-336f9ab94e13/The%20Green%20Contractor%20Directory" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank">Check out the demo</a>
+      </div>
     </div>
   </div>
 </div>
@@ -48,11 +51,9 @@ slug: climate
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto">We track <span class="italic">all</span> contractors, so we also track the guys that install solar panels and heat pumps. With our unique inspection rate and construction speed metrics, we can tell you who is objectively the best.</p>
-            <!--
             <p class="mt-6">
-              <a href="#" class="text-sm font-semibold leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
+              <a href="https://shovels.retool.com/apps/4251961c-bc3b-11ed-8e99-336f9ab94e13/The%20Green%20Contractor%20Directory" class="text-sm font-semibold leading-6 text-slate-600" target="_blank">View demo <span aria-hidden="true">→</span></a>
             </p>
-            -->
           </dd>
         </div>
         <div class="flex flex-col">
