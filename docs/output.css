@@ -2176,6 +2176,10 @@ div.article img {
   outline-color: #475569;
 }
 
+.focus-visible\:outline-white:focus-visible {
+  outline-color: #fff;
+}
+
 .group:hover .group-hover\:text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -2582,6 +2586,10 @@ div.article img {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-between {
