@@ -6,6 +6,9 @@ slug: api
     <div class="mx-auto max-w-2xl sm:text-center">
       <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">The building permit and contractor API</h1>
       <p class="mt-6 text-lg leading-8 text-gray-300">Ping by address, contractor name, or contractor license. Receive all the data. Our API is intuitive and fast.</p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="https://developer.shovels.ai" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank">💾 Shovels API Documentation →</a>
+      </div>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">
