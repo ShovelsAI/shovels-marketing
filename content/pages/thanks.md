@@ -7,7 +7,7 @@ slug: thanks
     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
       <p class="uppercase tracking-loose w-full"></p>
       <h1 class="my-4 text-5xl font-bold leading-tight">
-        Thanks
+        Thanks!
       </h1>
       <p class="leading-normal text-2xl mb-8">
       We appreciate your interest in Shovels! 
