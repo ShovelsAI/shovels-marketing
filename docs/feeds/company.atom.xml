@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels :) - Company</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/company.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2023-03-15T00:00:00-07:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;Shovels launched in November 2022 to bring more transparency into construction and building data.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels :) - Company</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/company.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2023-04-20T00:00:00-07:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;Shovels launched in November 2022 to bring more transparency into construction and building data.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
 &lt;p&gt;&lt;br&gt;
 Hello friends, advisors, and (a few) relatives! &lt;/p&gt;
 &lt;p&gt;After a bit of a hiatus, I'm really excited to launch a new company along with an incredible team. &lt;/p&gt;
@@ -175,4 +175,40 @@ What does this mean to me? We have work to do! &lt;/li&gt;
 &lt;p&gt;We have a very exciting product roadmap! We're going to expand our little &lt;a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"&gt;green contractor prototype&lt;/a&gt;. We're going to make all of the San Francisco Bay Area available; this demo currently has only 500 records.  &lt;/p&gt;
 &lt;p&gt;We're going to release an API (application programming interface -- a way for computer programmers to easily access this data) and put contractor landing pages up on our website. &lt;/p&gt;
 &lt;p&gt;Next quarter, we're going to layer on additional datasets to make the contractor information even more insightful. I'll share more details on these data layers soon.&lt;/p&gt;
-&lt;p&gt;In short, we're going deep on contractor data and we're starting in the SF Bay Area. I'll share more next month when more products are released! &lt;/p&gt;</content><category term="Company"></category><category term="company"></category></entry></feed>
+&lt;p&gt;In short, we're going deep on contractor data and we're starting in the SF Bay Area. I'll share more next month when more products are released! &lt;/p&gt;</content><category term="Company"></category><category term="company"></category></entry><entry><title>April 2023 Newsletter</title><link href="https://www.shovels.ai/blog/april-2023-newsletter/" rel="alternate"></link><published>2023-04-20T00:00:00-07:00</published><updated>2023-04-20T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-04-20:/blog/april-2023-newsletter/</id><summary type="html">&lt;p&gt;We've now raised about $1M and we're super close to releasing v2 of our prototype&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Shovels April 2023 Newsletter&lt;/h2&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hello!&lt;/p&gt;
+&lt;p&gt;Here are a few more updates since last time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We have now raised $960,000, up from $610,000 last month. We're very grateful for the investor support and ready to prove that customers are equally excited about what we're building. &lt;/li&gt;
+&lt;li&gt;I have more detail on the ICPs (ideal customer profiles) we're targeting. The picture continues to get clearer.&lt;/li&gt;
+&lt;li&gt;We're also excited about AI/GPT/LLMs, etc. I'll share a couple of snippets about how we're using this latest (justifiably) hyped up technology. &lt;/li&gt;
+&lt;li&gt;The new data is coming, and we have plans to go national. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Fundraise&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We're very pleased to add &lt;a href="https://www.coolclimatecollective.com/"&gt;Cool Climate Collective&lt;/a&gt;, &lt;a href="https://venture.angellist.com/zach-coelius/syndicate"&gt;Coelius Syndicate&lt;/a&gt;&lt;a href="https://www.coolclimatecollective.com/"&gt;,&lt;/a&gt; and &lt;a href="https://www.manaventures.vc/"&gt;Mana Ventures&lt;/a&gt; to our list of investors. We also added another friendly angel. We'll close this seed round at just over $1M, punt any new interest to the next round, and focus 100% on execution. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ideal Customer Profiles (ICPs)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We still do customer interviews every day. It's incredibly helpful. Although I'm eager to actually close deals, since it's taken longer to process the data we've acquired than we originally anticipated, I'm able to have more wide-ranging conversations. I'm not held back by what we have in hand.&lt;/p&gt;
+&lt;p&gt;I'm learning that there are all sorts of problems that can be addressed with permit data. We can go very deep into pre-construction timelines, serving information about approval steps, costs, and timing. My focus previously was on construction, what happens once the permit is approved. There's a whole other world of pre-construction data going back to when a permit is submitted.&lt;/p&gt;
+&lt;p&gt;Serving this market will require going deeper into planning departments, requesting data from public utilities, and even scanning planning commission minutes and agendas. We can't do all of this tomorrow, but it feels well within the scope of Shovels to tackle it eventually. &lt;/p&gt;
+&lt;p&gt;Thus, our latest ICPs look like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Construction loan portfolio manager at a bank&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Problem&lt;/em&gt;: Limited information about contractor quality when asked to underwrite a new loan&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shovels Solution&lt;/em&gt;: Contractor metrics and permits summary delivered as a PDF&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Construction loan fund controller&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Problem&lt;/em&gt;: No idea what else a contractor is working on when they're asked to approve a loan draw&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shovels Solutions&lt;/em&gt;: Current and past contractor metrics and permits history delivered as JSON via API, and webhooks for permit processing time changes in a set of jurisdictions&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Large condo developer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Problem&lt;/em&gt;: No visibility into pre-construction permit timelines in a given jurisdiction&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shovels Solution&lt;/em&gt;: Web app interface to look up detailed permit and planning approval timelines in different cities and counties&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Proptech CEO&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Problem&lt;/em&gt;: No programmatic way to see if a house has an active permit already&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shovels Solution&lt;/em&gt;: Permits delivered on a given address via API&lt;/p&gt;
+&lt;p&gt;Many of you fall into these buckets. If you want to chat, please get in touch! You know I like a good brainstorm. &lt;/p&gt;
+&lt;p&gt;As these ideas firm up further, I'll incorporate them "officially" into our website copy. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All the AI stuff&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I'll admit it -- I registered shovels.ai because it was the only decent "shovels" domain available. But I'm sure glad we got it! I had no idea AI was going to blow up like this in the months following.&lt;/p&gt;
+&lt;p&gt;The actual AI application here is pretty obvious. Permits come with a lot of data and not all of it is structured. The AI models do a fantastic job of quickly (meaning: without any contextual training) identifying what the permit is about (meaning: categorizing it). That's just out of the box. We can train AI models to get better over time. &lt;/p&gt;
+&lt;p&gt;There are front-end uses too. You could imagine asking a chat-like interface about permits on a property, permits performed by a contractor, or who should remodel your kitchen. A lot of people would be excited about this, and we have a role to play. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Going national&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We're working out a way for us to expand nationally very quickly. It's a direct result of the ICP discussions I've had recently: geographically-constrained data isn't nearly as valuable as national scope. It's a tricky dance but we're making headway and working towards a deal. I hope to be able to announce it next month! &lt;/p&gt;</content><category term="Company"></category><category term="company"></category></entry></feed>
