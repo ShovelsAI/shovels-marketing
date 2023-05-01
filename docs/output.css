@@ -969,6 +969,10 @@ select {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -1085,12 +1089,12 @@ select {
   height: 1.5rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-10 {
   height: 2.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-3 {
@@ -1123,6 +1127,10 @@ select {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-5 {
@@ -1788,14 +1796,14 @@ select {
   padding-bottom: 0.5rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-5 {
@@ -2085,14 +2093,14 @@ select {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-slate-700 {
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
-}
-
 .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .text-neutral-100 {
@@ -2580,6 +2588,10 @@ div.article img {
     display: none;
   }
 
+  .sm\:h-12 {
+    height: 3rem;
+  }
+
   .sm\:w-64 {
     width: 16rem;
   }
@@ -2992,11 +3004,6 @@ div.article img {
 
   .lg\:text-center {
     text-align: center;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
