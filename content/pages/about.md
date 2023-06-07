@@ -5,7 +5,7 @@ slug: about
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The Shovels One-Pager</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Shovels combines building permit data with building inspections, census, topography, weather, and real estate transactions to form the most comprehensive understanding of the building contractor market..</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Shovels combines building permit data with building inspections, census, topography, weather, and real estate transactions to form the most comprehensive understanding of the building contractor market.</p>
     </div>
   </div>
 </div>
@@ -71,7 +71,7 @@ slug: about
   <div class="sm:flex sm:items-center pt-12 ">
     <div class="sm:flex-auto max-w-2xl">
       <h2 class="text-2xl font-semibold leading-6 text-gray-900">Our geographies</h2>
-      <p class="mt-2 text-base text-gray-700">We are currently in the nine counties around the San Francisco Bay Area with plans to expand throughout California and Florida by the end of Q1 2023. </p>
+      <p class="mt-2 text-base text-gray-700">We will cover all of California by end of Q2 2023 and full national coverage in Q3 2023. </p>
     </div>
   </div>
   <div class="sm:flex sm:items-center pt-12 ">
