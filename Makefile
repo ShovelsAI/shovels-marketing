@@ -73,6 +73,7 @@ publish:
 	pelican content -o docs -s publishconf.py
 	cp output/output.css docs/output.css
 	echo "www.shovels.ai" > docs/CNAME
+	git add .
 	git commit -am "publishing"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
