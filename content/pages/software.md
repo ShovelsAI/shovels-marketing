@@ -35,7 +35,7 @@ slug: software
       <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
         <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Lead generation for local building supply companies</dt>
         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base leading-7 text-gray-600">When people remodel their homes, they need all sorts of stuff. Flooring, cabinet hardware, kitchen appliances, paint. All the things! Wouldn't local building supply companies like to know when the owner of a nearby 2,500 square foot home pulls a remodel permit? We'd think so. Shovels can power the critical data trigger for this exciting marketing application.</p>
+          <p class="text-base leading-7 text-gray-600">When people remodel their homes, they need all sorts of stuff. Flooring, cabinet hardware, kitchen appliances, paint. All the things! Wouldn't local building supply companies like to know when the owner of a nearby 2,500 square foot home pulls a remodel permit? We think so. Shovels can power the critical data trigger for this exciting go-to-market application.</p>
         </dd>
       </div>
       <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -64,7 +64,6 @@ slug: software
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Cool, right?<br>Tell us what you're building.</h2>
     <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
       <a href="mailto:sales@shovels.ai?subject=I'm building something cool" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600">Email us</a>
-      <a href="/climate" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
