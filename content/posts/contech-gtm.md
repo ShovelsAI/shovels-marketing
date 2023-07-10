@@ -6,10 +6,11 @@ Category: GTM
 Tags: gtm, building permits
 Authors: Ryan Buckley
 Summary: Grow your contech startup with this comprehensive guide to go-to-market strategies, covering topics such as identifying target markets, developing an effective plan, and leveraging building permits to identify potential customers.
+Slug: go-to-market-strategies-for-contech-companies
 
 This article provides a comprehensive overview of go-to-market strategies specifically tailored to contech companies. We'll cover key topics such as identifying target markets, developing an effective plan, and leveraging building permits to identify potential customers. With these strategies in hand, you can create a successful go-to-market plan that will help you reach your goals and grow your business.
 
-Check out our previous article on [proptech](https://www.shovels.ai/blog/go-to-market-strategies-for-proptech-companies/)[GTM](https://www.shovels.ai/blog/go-to-market-strategies-for-proptech-companies/)[strategies](https://www.shovels.ai/blog/go-to-market-strategies-for-proptech-companies/). And don't forget to check out our API docs at https://api.shovels.ai/docs for more information!
+Check out our article on [proptech GTM strategies]({filename}proptech-gtm.md). And don't forget to check out our API docs at https://api.shovels.ai/docs for more information!
 
 ## Overview of contech and go-to-market strategies
 
