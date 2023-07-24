@@ -26,13 +26,13 @@ Let's say you are a contech startup with a few million dollars in VC funding. Th
 
 Identifying your target market is an integral part of any successful go-to-market plan. Knowing who you are targeting, and understanding their needs, preferences, and behaviors allows you to craft a marketing message that will resonate with them and drive conversions. Here are some key steps that you should take when identifying your target market:
 
-1. Define and segment the target market: Start by defining the primary demographic characteristics for your ideal customer base – age, gender, income level, education level, etc. Then segment this broader group into distinct subgroups based on psychographic characteristics such as lifestyle and interests as well as geographic criteria like location or climate. This is basic Marketing 101 stuff.
+- Define and segment the target market: Start by defining the primary demographic characteristics for your ideal customer base – age, gender, income level, education level, etc. Then segment this broader group into distinct subgroups based on psychographic characteristics such as lifestyle and interests as well as geographic criteria like location or climate. This is basic Marketing 101 stuff.
 
-2. Research the needs of the target market: Once you have identified your target market segments, it's time to conduct research to understand what drives them. This could include surveying customers about their preferences or using data from online search behavior to identify what topics they are interested in learning more about. This research will help you define your message.
+- Research the needs of the target market: Once you have identified your target market segments, it's time to conduct research to understand what drives them. This could include surveying customers about their preferences or using data from online search behavior to identify what topics they are interested in learning more about. This research will help you define your message.
 
-3. Map out the customer journey: By understanding how customers interact with products or services throughout their journey (awareness stage through purchase), you can identify areas where they may be experiencing pain points that need solutions. Analyzing competitor activity can also provide insights into potential customer behavior so you can better customize your go-to-market strategies accordingly. Knowing if your target customers already use a competing product and what they think about that product can yield powerful insights.
+- Map out the customer journey: By understanding how customers interact with products or services throughout their journey (awareness stage through purchase), you can identify areas where they may be experiencing pain points that need solutions. Analyzing competitor activity can also provide insights into potential customer behavior so you can better customize your go-to-market strategies accordingly. Knowing if your target customers already use a competing product and what they think about that product can yield powerful insights.
 
-4. Use primary and secondary research methods: Primary research involves gathering information directly from customers through surveys or interviews while secondary research involves collecting existing data from sources such as industry reports or government statistics databases. Both types of research are important when it comes to developing an accurate picture of the target market so you can effectively tailor your go-to-market approach for maximum success.
+- Use primary and secondary research methods: Primary research involves gathering information directly from customers through surveys or interviews while secondary research involves collecting existing data from sources such as industry reports or government statistics databases. Both types of research are important when it comes to developing an accurate picture of the target market so you can effectively tailor your go-to-market approach for maximum success.
 
 By taking these steps to identify and understand their target market, you can create a successful go-to-market plan tailored to meet your unique goals and objectives.
 
@@ -40,13 +40,13 @@ By taking these steps to identify and understand their target market, you can cr
 
 Here are some key steps to help you create a successful go-to-market plan:
 
-1. Align the strategy with your company's mission and objectives: Your strategy should clearly define what you are trying to achieve and how you will accomplish your goals.
+- Align the strategy with your company's mission and objectives: Your strategy should clearly define what you are trying to achieve and how you will accomplish your goals.
 
-2. Create a timeline for implementation: A timeline helps make sure that tasks are completed on time, resources are allocated efficiently, and goals are met on schedule. Timelines also keep you organized in case something unexpected arises or needs adjustment along the way.
+- Create a timeline for implementation: A timeline helps make sure that tasks are completed on time, resources are allocated efficiently, and goals are met on schedule. Timelines also keep you organized in case something unexpected arises or needs adjustment along the way.
 
-3. Outline necessary resources: Developing an effective go-to-market plan requires having access to the right resources. These may include personnel, marketing materials, customer service support teams, technical assistance, and budget for data acquisition, depending upon your plan.
+- Outline necessary resources: Developing an effective go-to-market plan requires having access to the right resources. These may include personnel, marketing materials, customer service support teams, technical assistance, and budget for data acquisition, depending upon your plan.
 
-4. Track progress & adjust as necessary: As you implement your go-to-market strategy, it's important to track progress against set objectives throughout the process so that you can make any needed adjustments.
+- Track progress & adjust as necessary: As you implement your go-to-market strategy, it's important to track progress against set objectives throughout the process so that you can make any needed adjustments.
 
 ## Leveraging building permits to identify players in your target market
 

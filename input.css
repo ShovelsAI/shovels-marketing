@@ -35,6 +35,7 @@
 
 .article ul {
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .article p {
@@ -63,4 +64,8 @@
 
 div.article img {
   width: 100%;
+}
+
+.article ul > li {
+  margin-left: 20px !important;
 }
