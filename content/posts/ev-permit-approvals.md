@@ -1,7 +1,7 @@
-Title: The fastest and slowest EV charger permit approvals in California
+Title: EV charger permit processing times in California
 Subtitle: There's a wide disparity in the time it takes for EV charger permits to get approved in California. 
-Date: 2023-8-6
-Modified: 2023-8-6
+Date: 2023-8-10
+Modified: 2023-8-10
 Category: Data
 Tags: gtm, building permits, ev chargers, permit timeline
 Authors: Ryan Buckley
