@@ -103,7 +103,7 @@ In fact, the COVID question was interesting, so we looked across the board and c
 
 _Is there a correlation between the number of permits a jurisdiction processes and the speed of approval? In other words, do jurisdictions that process more EV permits tend to approve them faster or slower?_
 
-This result surprised. We assume that bureaucratic government departments are easily overwhelmed. As the number of permit applications increases, we expect that approval times would get slower. In fact, there's no relationship between the volume of permits and the processing times across the jurisdictions in California.
+This result surprised us. We assume that bureaucratic government departments are easily overwhelmed. As the number of permit applications increases, we expect that approval times would get slower. In fact, there's no relationship between the volume of permits and the processing times across the jurisdictions in California.
 
 ![Scatter of approval times and volumes]({static}/images/approval-times-scatter.png)
 
