@@ -16,7 +16,7 @@ Here are a few more updates since April.
 
 *   Our final fundraising total is $1,071,939.39. I'm happy to connect with any additional interest but we'll ultimately push it to the next round. 
 *   We hired a full-time data engineer and two summer interns.
-*   One of our interns made a chat AI interface to the [Shovels API](https://api.shovels.ai/docs). We're going to incorporate it into a new website we're building this summer. 
+*   One of our interns made a chat AI interface to the [Shovels API](https://api.shovels.ai/redoc). We're going to incorporate it into a new website we're building this summer. 
 *   We're thinking a lot about building and zoning laws. Aren't you?  
 *   National data coverage is right around the corner. 
 
