@@ -8,6 +8,7 @@ Do the regular initial setup. Create and activate a virtual env and then do:
 
 ```
 pip3 install -r requirements.txt
+npm i
 pelican -lr
 ```
 
