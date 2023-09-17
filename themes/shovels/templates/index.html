@@ -144,38 +144,49 @@
                   return Array.from(parent.children).indexOf(el) + 1
               }
           }" x-id="['tab']" class="mx-auto max-w-3xl">
+        
     <ul x-ref="tablist" @keydown.right.prevent.stop="$focus.wrap().next()" @keydown.home.prevent.stop="$focus.first()"
       @keydown.page-up.prevent.stop="$focus.first()" @keydown.left.prevent.stop="$focus.wrap().prev()"
       @keydown.end.prevent.stop="$focus.last()" @keydown.page-down.prevent.stop="$focus.last()" role="tablist"
-      class="-mb-px flex items-stretch">
+      class="-mb-px">
       <li>
         <button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)"
           @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1"
           :aria-selected="isSelected($el.id)"
-          :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
-          class="inline-flex rounded-t-md border-t border-l border-r px-5 py-2.5" role="tab">Property Permits</button>
+          :class="isSelected($el.id) ? 'bg-gray-900' : 'border-transparent'"
+          class="px-5 py-2.5" role="tab">
+          <h2 class="text-xl font-bold uppercase text-amber-300">Property Permits API</h2>
+          <p class="my-2 text-lime-50">Retrieve all current and past permits pulled on a given US address. Lookup by
+          address or parcel number.</p>
+        </button>
       </li>
       <li>
         <button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)"
           @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1"
           :aria-selected="isSelected($el.id)"
-          :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
-          class="inline-flex rounded-t-md border-t border-l border-r px-5 py-2.5" role="tab">Contractor Permits</button>
+          :class="isSelected($el.id) ? 'bg-gray-900' : 'border-transparent'"
+          class="px-5 py-2.5" role="tab">
+            <h2 class="text-xl font-bold uppercase text-amber-300">Contractor Permits API</h2>
+            <p class="my-2 text-lime-50">Retrieve all current and past permits worked on by a contractor. Lookup by
+            contractor license ID, contractor name, or contractor address.</p>
+        </button>
       </li>
       <li>
         <button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)"
           @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1"
           :aria-selected="isSelected($el.id)"
-          :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
-          class="inline-flex rounded-t-md border-t border-l border-r px-5 py-2.5" role="tab">Contractor Details</button>
+          :class="isSelected($el.id) ? 'bg-gray-900' : 'border-transparent'"
+          class="px-5 py-2.5" role="tab">
+            <h2 class="text-xl font-bold uppercase text-amber-300">Contractor Details API</h2>
+            <p class="my-2 text-lime-50">Retrieve all derived metrics, including breakdowns of activity by permit type.
+            Filter by region or activity metrics. by contractor license ID, contractor name, or contractor address.</p>
+        </button>
       </li>
     </ul>
     <div role="tabpanels" class="max-w-lg rounded-b-md border border-gray-200 bg-white">
       <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
         :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
-        <h2 class="text-xl font-bold">Property Permits API</h2>
-        <p class="my-2 text-gray-500">Retrieve all current and past permits pulled on a given US address. Lookup by
-          address or parcel number.</p>
+        
         <pre><code class="rounded-md language-json">{
 "property_address": "18491 Davis Ave",
 "property_city": "Los Gatos",
@@ -203,9 +214,6 @@
       </section>
       <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
         :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
-        <h2 class="text-xl font-bold">Contractor Permits API</h2>
-        <p class="my-2 text-gray-500">Retrieve all current and past permits worked on by a contractor. Lookup by
-          contractor license ID, contractor name, or contractor address.</p>
         <pre><code class="rounded-md language-json">{
 "contractor_name": "TESLA ENERGY OPERATIONS INC",
 "contractor_address": "901 Page Ave",
@@ -236,9 +244,7 @@
       </section>
       <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
         :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
-        <h2 class="text-xl font-bold">Contractor Details API</h2>
-        <p class="my-2 text-gray-500">Retrieve all derived metrics, including breakdowns of activity by permit type.
-          Filter by region or activity metrics. by contractor license ID, contractor name, or contractor address.</p>
+
         <pre><code class="rounded-md language-json">{
   "contractor_name": "TESLA ENERGY OPERATIONS INC",
   "contractor_address": "901 Page Ave",
