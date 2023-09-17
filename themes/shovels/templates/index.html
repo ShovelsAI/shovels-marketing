@@ -1,41 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="relative isolate overflow-hidden">
-    <path fill="url(#8ddc7edb-8983-4cd7-bccb-79ad21097d70)" fill-opacity=".2" d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z" />
-    <defs>
-      <linearGradient id="8ddc7edb-8983-4cd7-bccb-79ad21097d70" x1="1097.04" x2="-141.165" y1=".22" y2="363.075" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#776FFF" />
-        <stop offset="1" stop-color="#FF4694" />
-      </linearGradient>
-    </defs>
-  </svg>
-  <div></div>
-  <div class="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 pt-10 lg:pt-24 border-b-2 border-black">
-    <div class="mx-auto max-w-xl lg:mx-0 lg:flex-auto">
-      <h1 class="max-w-lg text-4xl font-semibold sm:text-6xl">Go-to-market data for the building trades
-      </h1>
-      <p class="mt-6 text-lg leading-8 text-gray-600">We tag and tie 100 million building permits with 4 million contractors nationwide so you can build software products and GTM solutions for your business.</p>
-      <div class="mt-10 flex items-center gap-x-6">
-        <a href="/software" class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-gray-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Get started <img src="theme/images/caret-right.svg" ></a>
-        <a href="/about" class="px-5 py-2 md:px-10 md:py-4 bg-stone-200 rounded justify-center items-center gap-2.5 inline-flex text-gray-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap" >Learn more <img src="theme/images/caret-right.svg"></span></a>
-      </div>
-    </div>
-    <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">  
-      <image src="theme/images/hero-character.svg">
+<!-- start of hero -->
+<div class="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 pt-10 lg:pt-24 ">
+  <div class="mx-auto max-w-xl lg:mx-0 lg:flex-auto">
+    <h1 class="max-w-lg text-4xl font-semibold sm:text-6xl">Go-to-market data for the building trades
+    </h1>
+    <p class="mt-6 text-lg leading-8 text-gray-600">We tag and tie 100 million building permits with 4 million
+      contractors nationwide so you can build software products and GTM solutions for your business.</p>
+    <div class="mt-10 flex items-center gap-x-6">
+      <a href="/software"
+        class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Get
+        started <img src="theme/images/caret-right.svg"></a>
+      <a href="/about"
+        class="px-5 py-2 md:px-10 md:py-4 bg-stone-200 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Learn
+        more <img src="theme/images/caret-right.svg"></span></a>
     </div>
   </div>
+  <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+    <image src="theme/images/hero-character.svg">
+  </div>
 </div>
+<div class="max-w-7xl m-auto border-b-2 border-black"></div>
+<!-- end of hero -->
+
 <div class="py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We ❤️ construction data --<br/> so you don't have to</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Before Shovels, gathering up all the building permits and contractors active in a particular region so you can identify the right homeowners and contractors was painful. Now it's easy. <span class="italic">That's the problem we're solving.</span></p>
+    <div class="">
+      <p class="mt-2 max-w-md text-3xl font-bold tracking-tight text-emerald-900 font-['Scandia'] sm:text-4xl">We <image class="inline" src="theme/images/green-heart.svg"></image> construction data --<br/> so you don't have to</p>
+      <p class="mt-6 max-w-md text-lg leading-8 text-gray-600">Before Shovels, gathering up all the building permits and contractors active in a particular region so you can identify the right homeowners and contractors was painful. Now it's easy. <span class="italic">That's the problem we're solving.</span></p>
     </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
+    <!-- start of selling points -->
+    <div class="mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-y-5 gap-x-4 lg:max-w-none lg:grid-cols-2 lg:gap-y-4">
+        <div class="relative pl-16 border-2 border-gray-900 p-6">
+          <dt class="text-base font-semibold leading-7 text-emerald-900 font-['Scandia']">
             <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-600">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
@@ -46,8 +45,8 @@
           <dd class="mt-2 text-base leading-7 text-gray-600">Shovels is designed to make it easy to integrate our contractor, permit, and market feeds and APIs. Our terms of use allow for resale and derivative works. Integrate Shovels and do great things!</dd>
         </div>
 
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
+        <div class="relative pl-16 border-2 border-gray-900 p-6">
+          <dt class="text-base font-semibold leading-7 text-emerald-900 font-['Scandia']">
             <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-600">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
@@ -58,8 +57,8 @@
           <dd class="mt-2 text-base leading-7 text-gray-600">This specific use of Shovels is worth calling out. We see all permit activity, but right now, it's especially important that home electrification is done right. We see where these permits get pulled and which contractors do the best electrification work.</dd>
         </div>
 
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
+        <div class="relative pl-16 border-2 border-gray-900 p-6">
+          <dt class="text-base font-semibold leading-7 text-emerald-900 font-['Scandia']">
             <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-600">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
@@ -70,8 +69,8 @@
           <dd class="mt-2 text-base leading-7 text-gray-600">Shovels is like a background check and a credit check on contractors, rolled up in one. You can come to us directly or use one of our partners. Whether it's a hard-money construction loan or an insurance application, we help you do the research.</dd>
         </div>
 
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
+        <div class="relative pl-16 border-2 border-gray-900 p-6">
+          <dt class="text-base font-semibold leading-7 text-emerald-900 font-['Scandia']">
             <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-600">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
@@ -83,6 +82,7 @@
         </div>
       </dl>
     </div>
+    <!-- send of selling points -->
   </div>
 </div>
 
@@ -91,7 +91,7 @@
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <div class="lg:pr-8 lg:pt-4">
         <div class="lg:max-w-lg">
-          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Shovels is built for construction go-to-market</p>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-emerald-900 font-['Scandia'] sm:text-4xl">Shovels is built for construction go-to-market</p>
           <p class="mt-6 text-lg leading-8 text-gray-600">We've gone out of our way to make our data easy to use across jurisdictions. A lot happens behind the scenes: cleaning, associating, normalizing, interpreting, and deriving fascinating new metrics. We do the heavy lifting so you can execute your GTM strategy with reliable construction data.</p>
           <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
             <div class="relative pl-9">
