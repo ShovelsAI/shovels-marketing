@@ -79,3 +79,19 @@ div.article img {
 .article ul > li {
   margin-left: 20px !important;
 }
+
+/* for the Home page's example API responses */
+.hljs {
+  background: #181c24 !important; 
+}
+.hljs-attr {
+  color: #e04c90 !important
+}
+.hljs-string,
+.hljs-section,
+.hljs-selector-class,
+.hljs-template-variable,
+.hljs-deletion,
+.hljs-punctuation {
+  color: white !important;
+}
