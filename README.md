@@ -12,7 +12,9 @@ npm i
 pelican -lr
 ```
 
-This will compile the static site into your `output` folder and host a simple HTTP server at that location. The console output will provide you with a link. 
+This will compile the static site into your `output` folder and host a simple HTTP server at that location. The console output will provide you with a link.
+
+Note that for development purposes, it would be the `themes/shovels` folder that you would need to interact with. `docs/` should not be modified manually. Read more under the Production section below.
 
 ## Production
 

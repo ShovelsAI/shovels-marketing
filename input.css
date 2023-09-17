@@ -7,6 +7,16 @@
   src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
 }
 
+/* TODO: add various weights */
+@font-face {
+  font-family: "Scandia";
+  src: url("theme/webfonts/Scandia-Regular.woff") format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-emerald-800;
+}
+
 .nav-logo {
   margin-top: 33px;
 }
@@ -68,4 +78,20 @@ div.article img {
 
 .article ul > li {
   margin-left: 20px !important;
+}
+
+/* for the Home page's example API responses */
+.hljs {
+  background: #181c24 !important; 
+}
+.hljs-attr {
+  color: #e04c90 !important
+}
+.hljs-string,
+.hljs-section,
+.hljs-selector-class,
+.hljs-template-variable,
+.hljs-deletion,
+.hljs-punctuation {
+  color: white !important;
 }
