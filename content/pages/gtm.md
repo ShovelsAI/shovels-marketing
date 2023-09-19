@@ -15,23 +15,23 @@ slug: go-to-market
   </div>
 </div>
 <div class="py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
+  <div class="mx-auto max-w-7xl px-6 lg:px-0">
+    <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sales and marketing tools for the building trades</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C products with the right message at the right time -- using building permits with Shovels.</p>
     </div>
-    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <div>
-        <dt class="font-semibold text-gray-900">B2C property buyer intent</dt>
-        <dd class="mt-1 text-gray-600">Find recent roofing, kitchen remodel, electrification, and ADU permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.</dd>
+    <dl class="mx-auto mt-16 max-w-4xl">
+      <div class="border border-gray-900 my-2 p-5 flex">
+        <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2C property buyer intent</dt>
+        <dd class="flex-1 mt-1 text-gray-600">Find recent roofing, kitchen remodel, electrification, and ADU permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.</dd>
       </div>
-      <div>
-        <dt class="font-semibold text-gray-900">B2B construction buyer intent</dt>
-        <dd class="mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of thousands or even millions of square feet. Discover who the contractors are and contact them by phone or email.</dd>
+      <div class="border border-gray-900 my-2 p-5 flex">
+        <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2B construction buyer intent</dt>
+        <dd class="flex-1 mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of thousands or even millions of square feet. Discover who the contractors are and contact them by phone or email.</dd>
       </div>
-      <div>
-        <dt class="font-semibold text-gray-900">Construction loan origination</dt>
-        <dd class="mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up. Get a list of recent home remodel permits in your territory and share your financial products with them.</dd>
+      <div class="border border-gray-900 my-2 p-5 flex">
+        <dt class="flex-1 font-semibold text-gray-900 text-2xl">Construction loan origination</dt>
+        <dd class="flex-1 mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up. Get a list of recent home remodel permits in your territory and share your financial products with them.</dd>
       </div>
     </dl>
   </div>
