@@ -1,7 +1,7 @@
 Title: Go-to-market data for the building trades
 slug: go-to-market
 
-<div class="relative isolate overflow-hidden py-24 sm:py-32">
+<div class="relative isolate overflow-hidden py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-0 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
       <h1 class="text-2xl font-medium tracking-tight sm:text-6xl max-">Use building permits to discover buyer intent
@@ -14,7 +14,7 @@ slug: go-to-market
     </div>
   </div>
 </div>
-<div class="py-24 sm:py-32">
+<div class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-0">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sales and marketing tools for the building trades</h2>
@@ -37,7 +37,7 @@ slug: go-to-market
   </div>
 </div>
 <div class="">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:flex lg:items-center lg:justify-between lg:px-8">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Want to go-to-market?<br>Tell us who you're targeting.</h2>
     <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
       <a href="/contact" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600">Contact us</a>
