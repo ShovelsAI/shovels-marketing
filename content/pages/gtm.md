@@ -21,15 +21,15 @@ slug: go-to-market
       <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C products with the right message at the right time -- using building permits with Shovels.</p>
     </div>
     <dl class="mx-auto mt-16 max-w-4xl">
-      <div class="border border-gray-900 my-2 p-5 flex">
+      <div class="border border-gray-900 my-2 p-10 flex">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2C property buyer intent</dt>
         <dd class="flex-1 mt-1 text-gray-600">Find recent roofing, kitchen remodel, electrification, and ADU permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.</dd>
       </div>
-      <div class="border border-gray-900 my-2 p-5 flex">
+      <div class="border border-gray-900 my-2 p-10 flex">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2B construction buyer intent</dt>
         <dd class="flex-1 mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of thousands or even millions of square feet. Discover who the contractors are and contact them by phone or email.</dd>
       </div>
-      <div class="border border-gray-900 my-2 p-5 flex">
+      <div class="border border-gray-900 my-2 p-10 flex">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">Construction loan origination</dt>
         <dd class="flex-1 mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up. Get a list of recent home remodel permits in your territory and share your financial products with them.</dd>
       </div>
