@@ -1,10 +1,11 @@
 Title: Go-to-market data for the building trades
 slug: go-to-market
 
-<div class="relative isolate overflow-hidden py-24 sm:py-28">
-  <div class="mx-auto max-w-7xl px-6 lg:px-0 flex flex-col md:flex-row md:justify-between">
+<!-- hero -->
+<div class="relative isolate overflow-hidden py-16">
+  <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
-      <h1 class="text-2xl font-medium tracking-tight sm:text-6xl max-">Use building permits to discover buyer intent
+      <h1 class="text-4xl font-bold tracking-tight">Use building permits to discover buyer intent
       </h1>
       <p class="mt-10 text-lg leading-8 text-gray-900">Building permits are a treasure trove of buyer intent
         information. Reach the right buyers for construction, climate, and property technology products at exactly the
@@ -16,14 +17,16 @@ slug: go-to-market
     </div>
   </div>
 </div>
+<!-- elaboration -->
 <div class="py-24 sm:py-28">
-  <div class="mx-auto max-w-7xl px-6 lg:px-0">
+  <div class="mx-auto max-w-7xl px-6">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sales and marketing tools for the building
         trades</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C products with the right message at
         the right time -- using building permits with Shovels.</p>
     </div>
+    <!-- 'table' -->
     <dl class="mx-auto mt-16 max-w-4xl">
       <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2C property buyer intent</dt>
@@ -45,6 +48,7 @@ slug: go-to-market
     </dl>
   </div>
 </div>
+<!-- contact form -->
 <div class="bg-emerald-800 text-center">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:items-center lg:justify-between lg:px-8">
     <h2 class="text-3xl font-bold tracking-wide leading-10 text-lime-50 sm:text-4xl">Want to go-to-market?<br>Tell us
