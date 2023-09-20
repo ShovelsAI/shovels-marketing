@@ -1,10 +1,10 @@
 Title: Go-to-market data for the building trades
 slug: go-to-market
 
-<div class="relative isolate overflow-hidden py-24 sm:py-28">
-  <div class="mx-auto max-w-7xl px-6 lg:px-0 flex flex-col md:flex-row md:justify-between">
+<div class="relative isolate overflow-hidden py-16">
+  <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
-      <h1 class="text-2xl font-medium tracking-tight sm:text-6xl max-">Use building permits to discover buyer intent
+      <h1 class="text-4xl font-bold tracking-tight">Use building permits to discover buyer intent
       </h1>
       <p class="mt-10 text-lg leading-8 text-gray-900">Building permits are a treasure trove of buyer intent
         information. Reach the right buyers for construction, climate, and property technology products at exactly the
