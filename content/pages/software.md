@@ -1,6 +1,7 @@
 Title: Property Data for Property Tech Companies
 slug: software
 
+<!-- hero -->
 <div class="relative isolate overflow-hidden py-16">
   <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
@@ -14,37 +15,29 @@ slug: software
     </div>
   </div>
 </div>
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl divide-y divide-gray-900/10 px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+<!-- elaboration -->
+<div class="py-24 sm:py-28">
+  <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Oh, the things you can build</h2>
-    <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-      <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Lead generation for local building supply companies</dt>
-        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base leading-7 text-gray-600">When people remodel their homes, they need all sorts of stuff. Flooring, cabinet hardware, kitchen appliances, paint. All the things! Wouldn't local building supply companies like to know when the owner of a nearby 2,500 square foot home pulls a remodel permit? We think so. Shovels can power the critical data trigger for this exciting go-to-market application.</p>
+    <!-- 'table' -->
+    <dl class="mx-auto mt-16 max-w-4xl">
+      <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">
+        <dt class="flex-1 font-semibold text-gray-900 text-2xl lg:pr-8">Lead generation for local building supply companies</dt>
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">When people remodel their homes, they need all sorts of stuff. Flooring, cabinet hardware, kitchen appliances, paint. All the things! Wouldn't local building supply companies like to know when the owner of a nearby 2,500 square foot home pulls a remodel permit? We think so. Shovels can power the critical data trigger for this exciting go-to-market application.
         </dd>
       </div>
-      <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">CRM for building contractors</dt>
-        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base leading-7 text-gray-600">Customer relationship management (CRM) software exists for building contractors. We think these CRMs should be smarter. When a contractor signs up, pull in all of their past and current permits. We can do that. Then, once their CRM is automatically populated with jobs, offer them leads based on those past jobs. We can show all homes with brand new permits, or homes that haven't had a permit in a while and probably are due for some upkeep. You build the CRM, we offer the data.</p>
-        </dd>
+      <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">
+        <dt class="flex-1 font-semibold text-gray-900 text-2xl lg:pr-8">CRM for building contractors</dt>
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Customer relationship management (CRM) software exists for building contractors. We think these CRMs should be smarter. When a contractor signs up, pull in all of their past and current permits. We can do that. Then, once their CRM is automatically populated with jobs, offer them leads based on those past jobs. We can show all homes with brand new permits, or homes that haven't had a permit in a while and probably are due for some upkeep. You build the CRM, we offer the data</dd>
       </div>
-      <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Update property valuations based on comps <span class="italic font-semibold">and</span> permits</dt>
-        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base leading-7 text-gray-600">Zillow and Redfin estimate the value of a home based on comps. Thus, the valuation only changes when nearby homes get sold. But what if you just remodeled the kitchen? Or added an ADU? Zillow should know this and recompute a property value, but they don't. You should build this, and we'll help. Opportunity *knocks*.</p>
-        </dd>
-      </div>
-      <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Green property score</dt>
-        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base leading-7 text-gray-600">Electrification is a thing. Homes are going green, and green means no methane (a.k.a. natural gas) appliances. Homes that have already installed heat pumps and solar panels will have a premium. We can tell which homes these are, flag them in our database, and you can incorporate this data into your green real estate tech product.</p>
-        </dd>
+      <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">
+        <dt class="flex-1 font-semibold text-gray-900 text-2xl lg:pr-8">Update property valuations based on comps</dt>
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Zillow and Redfin estimate the value of a home based on comps. Thus, the valuation only changes when nearby homes get sold. But what if you just remodeled the kitchen? Or added an ADU? Zillow should know this and recompute a property value, but they don't. You should build this, and we'll help. Opportunity *knocks*..</dd>
       </div>
     </dl>
   </div>
 </div>
+<!-- contact form -->
 <div class="bg-slate-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Cool, right?<br>Tell us what you're building.</h2>
