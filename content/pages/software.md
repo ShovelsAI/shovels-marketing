@@ -53,7 +53,7 @@ slug: software
 <!-- contact form -->
 <div class="bg-emerald-800 text-center">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:items-center lg:justify-between lg:px-8">
-    <h2 class="text-3xl font-bold tracking-wide leading-10 text-lime-50 sm:text-4xl">Cooo,right?
+    <h2 class="text-3xl font-bold tracking-wide leading-10 text-lime-50 sm:text-4xl">Cool,right?
       <br>Tell us
       what you're building.
     </h2>
