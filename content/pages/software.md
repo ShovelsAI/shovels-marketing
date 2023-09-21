@@ -2,7 +2,7 @@ Title: Property Data for Property Tech Companies
 slug: software
 
 <!-- hero -->
-<div class="relative isolate overflow-hidden py-16">
+<div class="relative isolate overflow-hidden my-16">
   <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
       <h1 class="text-4xl font-bold tracking-tight">Easily integrate permit and contractor data
@@ -18,9 +18,9 @@ slug: software
   </div>
 </div>
 <!-- elaboration -->
-<div class="py-24 sm:py-28">
+<div class="my-24">
   <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Oh, the things you can build</h2>
+    <h2 class="text-3xl font-bold leading-10 tracking-tight text-gray-900">Oh, the things you can build</h2>
     <!-- 'table' -->
     <dl class="mx-auto mt-16 max-w-4xl">
       <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">
