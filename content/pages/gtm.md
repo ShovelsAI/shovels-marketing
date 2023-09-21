@@ -2,7 +2,7 @@ Title: Go-to-market data for the building trades
 slug: go-to-market
 
 <!-- hero -->
-<div class="relative isolate overflow-hidden py-16">
+<div class="relative isolate overflow-hidden my-16">
   <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
       <h1 class="text-4xl font-bold tracking-tight">Use building permits to discover buyer intent
@@ -12,13 +12,13 @@ slug: go-to-market
         right time.
       </p>
     </div>
-    <div class="sm:mt-2 md:ml-20">
-      <img class="h-96" src="theme/images/gtm/hero.svg" alt="">
+    <div class="">
+      <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="">
     </div>
   </div>
 </div>
 <!-- elaboration -->
-<div class="py-24 sm:py-28">
+<div class="my-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sales and marketing tools for the building
