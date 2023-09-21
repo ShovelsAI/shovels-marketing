@@ -12,8 +12,8 @@ slug: go-to-market
         right time.
       </p>
     </div>
-    <div class="sm:mt-2 md:ml-20">
-      <img class="h-96" src="theme/images/gtm/hero.svg" alt="">
+    <div class="">
+      <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="">
     </div>
   </div>
 </div>
