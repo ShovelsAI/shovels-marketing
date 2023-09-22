@@ -2,7 +2,7 @@ Title: Property Data for Property Tech Companies
 slug: software
 
 <!-- hero -->
-<div class="relative isolate overflow-hidden my-16">
+<section class="relative isolate overflow-hidden my-16">
   <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
       <h1 class="text-4xl font-bold tracking-tight">Easily integrate permit and contractor data
@@ -16,9 +16,9 @@ slug: software
       <img class="max-h-[400px]" src="theme/images/software/hero.svg" alt="">
     </div>
   </div>
-</div>
+</section>
 <!-- elaboration -->
-<div class="my-24">
+<section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold leading-10 tracking-tight text-gray-900">Oh, the things you can build</h2>
     <!-- 'table' -->
@@ -49,9 +49,9 @@ slug: software
       </div>
     </dl>
   </div>
-</div>
+</section>
 <!-- contact form -->
-<div class="bg-emerald-800 text-center">
+<section class="bg-emerald-800 text-center">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:items-center lg:justify-between lg:px-8">
     <h2 class="text-3xl font-bold tracking-wide leading-10 text-lime-50 sm:text-4xl">Cool,right?
       <br>Tell us
@@ -95,4 +95,4 @@ slug: software
       </form>
     </div>
   </div>
-</div>
+</section>
