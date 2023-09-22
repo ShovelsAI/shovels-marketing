@@ -17,6 +17,24 @@ h1, h2, h3, h4, h5, h6 {
   @apply text-emerald-800;
 }
 
+/* start of Tailwind utility classes */
+.elaboration-title {
+  @apply text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl
+}
+.elaboration-container {
+  @apply mx-auto mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-4
+}
+.elaboration-card {
+  @apply border-2 border-gray-900 my-2 md:mr-3 p-10
+}
+.elaboration-card_title {
+  @apply uppercase text-emerald-800
+}
+.elaboration-card_text-container {
+  @apply mt-2 text-base leading-7 text-gray-900
+}
+/* end of Tailwind utility classes */
+
 .nav-logo {
   margin-top: 33px;
 }
