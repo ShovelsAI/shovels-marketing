@@ -32,7 +32,7 @@ slug: climate
       solar panel sizes and heat pump installations.</p>
   </div>
   <!-- 'table' -->
-  <dl class="elaboration-container">
+  <dl class="elaboration_container">
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">

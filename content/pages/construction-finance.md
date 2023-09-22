@@ -25,7 +25,7 @@ slug: construction-finance
       contractors</h2>
   </div>
   <!-- 'table' -->
-  <dl class="elaboration-container 3xl:grid-cols-4">
+  <dl class="elaboration_container 3xl:grid-cols-4">
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
