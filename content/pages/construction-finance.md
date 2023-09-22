@@ -2,19 +2,17 @@ Title: Contractor underwriting and loan management
 slug: construction-finance
 
 <!-- hero -->
-<section class="relative isolate overflow-hidden my-16">
-  <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
-    <div class="mx-auto max-w-lg lg:mx-0">
-      <h1 class="text-4xl font-bold tracking-tightsm:text-6xl text-gray-900">Include contractor metrics in construction
+<section class="hero_container">
+    <div class="hero_text-container">
+      <h1 class="hero_title">Include contractor metrics in construction
         finance decisions</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-900">Shovels provides the equivalent of a credit score or background
+      <p class="hero_description">Shovels provides the equivalent of a credit score or background
         check for building contractors. We parse through all their past and current projects to determine contractor
         quality and capacity, and how it is trending over time.</p>
     </div>
-    <div class="">
+    <div class="hero_image-container">
       <img class="max-h-[500px]" src="theme/images/finance/hero.svg" alt="">
     </div>
-  </div>
 </section>
 
 <!-- elaboration -->
