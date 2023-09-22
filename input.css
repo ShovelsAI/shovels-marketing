@@ -30,6 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 .elaboration-card_title {
   @apply uppercase text-emerald-800
 }
+.elaboration-card_text-container {
+  @apply mt-2 text-base leading-7 text-gray-900
+}
 /* end of Tailwind utility classes */
 
 .nav-logo {
