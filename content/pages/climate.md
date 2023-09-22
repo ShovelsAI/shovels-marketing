@@ -2,7 +2,7 @@ Title: Building Electrification Permits and Contractors
 slug: climate
 
 <!-- hero -->
-<div class="relative isolate overflow-hidden my-16">
+<section class="relative isolate overflow-hidden my-16">
   <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
       <h1 class="text-4xl font-bold tracking-tightsm:text-6xl text-gray-900">Track building electrification permits and
@@ -20,10 +20,10 @@ slug: climate
       <img class="max-h-[500px]" src="theme/images/climate/hero.svg" alt="">
     </div>
   </div>
-</div>
+</section>
 
 <!-- elaboration -->
-<div class="mx-auto my-24 max-w-7xl px-6">
+<section class="mx-auto my-24 max-w-7xl px-6">
   <div class="mx-auto max-w-2xl text-center">
     <h2 class="elaboration-title">
       We care about climate</h2>
@@ -87,4 +87,4 @@ slug: climate
       </dd>
     </div>
   </dl>
-</div>
+</section>

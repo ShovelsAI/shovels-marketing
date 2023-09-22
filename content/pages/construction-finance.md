@@ -2,7 +2,7 @@ Title: Contractor underwriting and loan management
 slug: construction-finance
 
 <!-- hero -->
-<div class="relative isolate overflow-hidden my-16">
+<section class="relative isolate overflow-hidden my-16">
   <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
     <div class="mx-auto max-w-lg lg:mx-0">
       <h1 class="text-4xl font-bold tracking-tightsm:text-6xl text-gray-900">Include contractor metrics in construction
@@ -15,10 +15,10 @@ slug: construction-finance
       <img class="max-h-[500px]" src="theme/images/finance/hero.svg" alt="">
     </div>
   </div>
-</div>
+</section>
 
 <!-- elaboration -->
-<div class="mx-auto my-24 max-w-7xl px-6">
+<section class="mx-auto my-24 max-w-7xl px-6">
   <div class="mx-auto max-w-2xl text-center">
     <h2 class="elaboration-title">
       We offer background checks for building
@@ -76,4 +76,4 @@ slug: construction-finance
       </dd>
     </div>
   </dl>
-</div>
+</section>
