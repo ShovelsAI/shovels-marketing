@@ -6,12 +6,10 @@ slug: go-to-market
   <div class="hero_text-container">
     <h1 class="hero_title">Use building permits to discover buyer intent
     </h1>
-    <p class="hero_description">Building permits are a treasure trove of buyer intent
-      information. Reach the right buyers for construction, climate, and property technology products at exactly the
-      right time.
+    <p class="hero_description">Building permits are a treasure trove of buyer intent information. Reach the right buyers for construction, climate, and property technology products at exactly the right time.
     </p>
   </div>
-  <div class="">
+  <div class="hero_image-container">
     <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="">
   </div>
 </section>

@@ -2,19 +2,16 @@ Title: Property Data for Property Tech Companies
 slug: software
 
 <!-- hero -->
-<section class="relative isolate overflow-hidden my-16">
-  <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
-    <div class="mx-auto max-w-lg lg:mx-0">
-      <h1 class="text-4xl font-bold tracking-tight">Easily integrate permit and contractor data
-      </h1>
-      <p class="mt-10 text-lg leading-8 text-gray-900">Integrate Shovels into your property technology or climate
-        technology product. We offer API endpoints and data feeds on commercial and residential properties and the
-        contractors who work on them.
-      </p>
-    </div>
-    <div class="">
-      <img class="max-h-[400px]" src="theme/images/software/hero.svg" alt="">
-    </div>
+<section class="hero_container">
+  <div class="hero_text-container">
+    <h1 class="hero_title">Easily integrate permit and contractor data
+    </h1>
+    <p class="hero_description">Integrate Shovels into your property technology or climate technology product. We offer
+      API endpoints and data feeds on commercial and residential properties and the contractors who work on them.
+    </p>
+  </div>
+  <div class="hero_image-container">
+    <img class="max-h-[400px]" src="theme/images/software/hero.svg" alt="">
   </div>
 </section>
 <!-- elaboration -->
