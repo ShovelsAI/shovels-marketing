@@ -26,20 +26,20 @@ slug: climate
 <div class="my-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <h2 class="elaboration-title">
         We care about climate</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Shovels is making a deliberate effort to support electrification
         progress. We're putting engineering and data science resources into parsing permits to specifically identify
         solar panel sizes and heat pump installations.</p>
     </div>
     <!-- 'table' -->
-    <dl class="mx-auto mt-16 max-w-5xl flex flex-col md:flex-row">
-      <div class="border border-gray-900 my-2 md:mr-3 p-10">
+    <dl class="elaboration-container">
+      <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
             <img src="theme/images/climate/icon_contractors.svg">
           </div>
-          <span class="uppercase text-emerald-800">Contractors</span>
+          <span class="elaboration-card_title">Contractors</span>
         </dt>
         <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
           <p class="flex-auto">We track <span class="italic">all</span> contractors, so we also track the guys that
@@ -51,12 +51,12 @@ slug: climate
           </p>
         </dd>
       </div>
-      <div class="border border-gray-900 my-2 md:mr-3 p-10">
+      <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
             <img src="theme/images/climate/icon_properties.svg">
           </div>
-          <span class="uppercase text-emerald-800">Properties</span>
+          <span class="elaboration-card_title">Properties</span>
         </dt>
         <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
           <p class="flex-auto">Utilities, governments, and researchers want to know where electrification has already
@@ -69,12 +69,12 @@ slug: climate
           -->
         </dd>
       </div>
-      <div class="border border-gray-900 my-2 md:mr-3 p-10">
+      <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
             <img src="theme/images/climate/icon_data.svg">
           </div>
-          <span class="uppercase text-emerald-800">Historical data</span>
+          <span class="elaboration-card_title">Historical data</span>
         </dt>
         <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
           <p class="flex-auto">Our data go back decades. Use Shovels to build electrification trends by year or
