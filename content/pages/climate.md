@@ -2,12 +2,11 @@ Title: Building Electrification Permits and Contractors
 slug: climate
 
 <!-- hero -->
-<section class="relative isolate overflow-hidden my-16">
-  <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:justify-between">
-    <div class="mx-auto max-w-lg lg:mx-0">
-      <h1 class="text-4xl font-bold tracking-tightsm:text-6xl text-gray-900">Track building electrification permits and
+<section class="hero_container">
+    <div class="hero_text-container">
+      <h1 class="hero_title">Track building electrification permits and
         contractors</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-900">We see every solar, EV charger, heat pump HVAC, water heater, and
+      <p class="hero_description">We see every solar, EV charger, heat pump HVAC, water heater, and
         battery installation. Integrate this data into your green contractor marketplace or green home renovation
         service.</p>
       <div class="mt-10 mb-20 flex items-center justify-center gap-x-6 lg:justify-start">
@@ -16,10 +15,9 @@ slug: climate
           target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg" </a>
       </div>
     </div>
-    <div class="">
+    <div class="hero_image-container">
       <img class="max-h-[500px]" src="theme/images/climate/hero.svg" alt="">
     </div>
-  </div>
 </section>
 
 <!-- elaboration -->
@@ -32,7 +30,7 @@ slug: climate
       solar panel sizes and heat pump installations.</p>
   </div>
   <!-- 'table' -->
-  <dl class="elaboration-container">
+  <dl class="elaboration_container">
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">

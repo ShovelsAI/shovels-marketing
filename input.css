@@ -18,14 +18,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* start of Tailwind utility classes */
-.elaboration-title {
-  @apply text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl
+.hero_container {
+  @apply mx-auto max-w-7xl px-6 lg:flex lg:items-start lg:gap-x-10 pt-10 lg:pt-24
 }
-.elaboration-container {
+.hero_text-container {
+  @apply mx-auto max-w-xl lg:mx-0 lg:flex-auto
+}
+.hero_title {
+  @apply max-w-lg text-4xl font-semibold
+}
+.hero_description {
+  @apply mt-6 text-lg leading-8 text-gray-600
+}
+.hero_image-container {
+  @apply mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow
+}
+.hero_image-container  > img {
+  @apply mx-auto
+}
+.elaboration-title {
+  @apply text-4xl font-bold tracking-tight text-emerald-800
+}
+.elaboration_container {
   @apply mx-auto mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-4
 }
 .elaboration-card {
-  @apply border-2 border-gray-900 my-2 md:mr-3 p-10
+  @apply border-2 border-gray-900 my-2 md:mr-3 p-10 font-['Scandia']
 }
 .elaboration-card_title {
   @apply uppercase text-emerald-800
