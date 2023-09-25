@@ -72,8 +72,16 @@ body.inverted {
 .elaboration-card_title {
   @apply uppercase text-emerald-800
 }
+.inverted .elaboration-card_title {
+  @apply text-amber-300
+}
+
 .elaboration-card_text-container {
-  @apply mt-2 text-base leading-7 text-gray-900
+  @apply mt-3 text-base leading-7 text-gray-900
+}
+
+.inverted .elaboration-card_text-container {
+  @apply text-stone-200
 }
 
 
