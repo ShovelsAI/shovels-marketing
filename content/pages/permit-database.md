@@ -6,21 +6,17 @@ Slug: permit-database
   <div class="hero_text-container">
     <h1 class="hero_title text-amber-300">The nationwide building permit database</h1>
     <p class="hero_description text-lime-50">Look up permits by address, parcel number, or contractor name or license number. We pull data from 20,000 jurisdictions.</p>
+    <div class="mt-10 mb-20">
+      <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
+      class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
+      target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg" </a>
+    </div>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/permit-database/hero.svg" alt="">
   </div>
 </section>
 
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-  <div class="mx-auto max-w-2xl sm:text-center">
-    <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">The nationwide building permit database</h1>
-    <p class="mt-6 text-lg leading-8 text-gray-300">Look up permits by address, parcel number, or contractor name or license number. We pull data from 20,000 jurisdictions.</p>
-    <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank">Check out the demo →</a>
-    </div>
-  </div>
-</div>
 <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
   <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
     <div class="relative pl-9">
