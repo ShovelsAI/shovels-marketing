@@ -9,7 +9,7 @@ slug: climate
       <p class="hero_description">We see every solar, EV charger, heat pump HVAC, water heater, and
         battery installation. Integrate this data into your green contractor marketplace or green home renovation
         service.</p>
-      <div class="mt-10 mb-20 flex items-center justify-center gap-x-6 lg:justify-start">
+      <div class="mt-10 mb-20">
         <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
           class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
           target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg" </a>

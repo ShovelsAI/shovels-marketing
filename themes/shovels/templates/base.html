@@ -55,16 +55,59 @@
     <meta name="theme-color" content="#ffffff">
     <script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('kn9Eq4Rv3Qx4RlvP'); </script>
   </head>
-  <body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif; background-color:#F6F1E5">
+  <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
+  <body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }" x-init="inverted = checkInverted()">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     {% include 'header.html' %}
 
     {% block content %}
     {% endblock %}
 
     {% include 'footer.html' %}
+    <script>
+      function handleBodyClass() {
+        const path = window.location.pathname;
+        const bodyElement = document.body;
+        console.log(bodyElement)
+        switch(path) {
+          case '/permit-database':
+          case '/contractor-directory':
+          case '/data-feed':
+          case '/api':
+            bodyElement.classList.add('inverted');
+            break;
+          default:
+            bodyElement.classList.remove('inverted');
+        }
+      }
+      
+      handleBodyClass();
+    
+      window.addEventListener('popstate', function(event) {
+        handleBodyClass();
+      });
+    </script>
+    
+    <script>
+      function checkInverted() {
+        const path = window.location.pathname;
+        const bodyElement = document.body;
+    
+        switch(path) {
+          case '/permit-database':
+          case '/contractor-directory':
+          case '/data-feed':
+          case '/api':
+            return true;
+            break;
+          default:
+            return false;
+        }
+      }
+    </script>
   </body>
 </html>

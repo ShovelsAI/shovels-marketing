@@ -4,7 +4,7 @@
     <a href="/">
       <span class="sr-only">Shovels</span>
       <a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
-        <img src="{{ SITEURL }}/theme/images/shovels-navbar-logo.svg" alt="Shovels logo" class="h-10 w-auto sm:h-12 text-emerald-900" />
+        <img id="navbar-logo" x-bind:src="inverted ? '{{ SITEURL }}/theme/images/shovels-navbar-logo-inverted.svg' : '{{ SITEURL }}/theme/images/shovels-navbar-logo.svg'" alt="Shovels logo" class="h-10 w-auto sm:h-12" />
       </a>
     </a>
   </div>
@@ -18,10 +18,10 @@
   </div>
   <nav class="hidden space-x-10 md:flex">
     <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
-      <button type="button" class="text-emerald-800 font-['Scandia'] group inline-flex items-center rounded-md text-base font-medium hover:text-emerald-900" @click="open = ! open">
+      <button type="button" class="navbar_item group" @click="open = ! open">
         <span>Solutions</span>
         <!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
-        <svg class="text-emerald-700 h-5 w-5 group-hover:text-emerald-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
@@ -99,9 +99,9 @@
     </div>
 
     <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
-      <button type="button" class="text-emerald-800 font-['Scandia'] group inline-flex items-center rounded-md text-base font-medium hover:text-emerald-900" @click="open = ! open">
+      <button type="button" class="navbar_item group" @click="open = ! open">
         <span>Products</span>
-        <svg class="text-emerald-700 h-5 w-5 group-hover:text-emerald-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
@@ -154,9 +154,9 @@
     </div>
 
     <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
-      <button type="button" class="text-emerald-800 font-['Scandia'] group inline-flex items-center rounded-md text-base font-medium hover:text-emerald-900" @click="open = ! open">
+      <button type="button" class="navbar_item group" @click="open = ! open">
         <span>About</span>
-        <svg class="text-gray-400 h-5 w-5 group-hover:text-emerald-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
@@ -206,9 +206,9 @@
       </div>
     </div>
 
-    <a href="{{ SITEURL }}/contact" class="text-base font-medium text-emerald-800  font-['Scandia'] hover:text-emerald-900">Contact</a>
+    <a href="{{ SITEURL }}/contact" class="navbar_item">Contact</a>
 
-    <a href="{{ SITEURL }}/blog" class="text-base font-medium text-emerald-800 font-['Scandia'] hover:text-emerald-900">Blog</a>
+    <a href="{{ SITEURL }}/blog" class="navbar_item">Blog</a>
   </nav>
   <!--
   <div class="hidden items-center justify-end space-x-8 md:flex md:flex-1 lg:w-0">
