@@ -51,7 +51,7 @@ slug: contractor-directory
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Our building permit data is refreshed and re-processed constantly. We retrieve updates from our source data partners and supplement with our own retrieval systems.</p>
+        <p class="flex-auto">Our contractor data is refreshed and re-processed constantly. We retrieve updates from our source data partners and supplement with our own retrieval systems.</p>
       </dd>
     </div>
     <div class="elaboration-card">
