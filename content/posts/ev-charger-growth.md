@@ -5,7 +5,7 @@ Modified: 2023-7-24
 Category: Data
 Tags: gtm, building permits, ev chargers
 Authors: Ryan Buckley
-Summary: Get a comprehensive overview of the current and future trends in energy transition activities, including EV charger infrastructure growth, with Shovels building permit API
+Summary: At Shovels, we provide developers with access to monthly EV charger installation data through our building permit API. This data reveals the tremendous growth and geographic distribution of EV charging infrastructure, with insights into the locations and companies involved. Understanding this data is crucial for businesses, developers, and governments to identify areas for expansion and to make informed decisions. With our API, developers can accurately map existing charger locations, analyze infrastructure, and even predict future demand for electric vehicles. 
 Slug: growth-of-ev-charging-in-california
 
 

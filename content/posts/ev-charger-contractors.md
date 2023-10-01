@@ -27,6 +27,7 @@ EV charger software companies:
 - [ChargeLab](https://chargelab.co/)
 - [Driivz](https://driivz.com/)
 - [NooDoe](https://www.noodoe.com/)
+- [AmpUp](https://ampup.io/)
 
 EV charger services companies:
 

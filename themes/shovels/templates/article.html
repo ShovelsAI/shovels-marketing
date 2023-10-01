@@ -11,8 +11,8 @@
     {{ translations.entry_hreflang(article) }}
   {% endif %}
 
-  {% if article.description %}
-    <meta name="description" content="{{article.description}}" />
+  {% if article.summary %}
+    <meta name="description" content="{{ article.summary }}" />
   {% endif %}
 
   {% for tag in article.tags %}

@@ -6,7 +6,7 @@ Category: Company
 Tags: launch
 Authors: Ryan Buckley
 Summary: Shovels launched in November 2022 to bring more transparency into construction and building data. 
-Description: Shovels launched in November 2022 to bring more transparency into construction and building data. 
+Description: I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions. By crunching the numbers, we offer a unique perspective on contractor skill level and job fit, enabling you to make informed decisions. Our prototype is already live, showcasing the power of Shovels with Contra Costa County data, and we're working towards expanding our coverage to seven Bay Area counties. I'm incredibly grateful for the talented team behind Shovels, including my co-founder and CTO, Luka Kacil.
 
 ## Ryan Buckley sent this newsletter about the launch of Shovels
 <br>

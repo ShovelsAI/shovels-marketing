@@ -5,7 +5,7 @@ Modified: 2023-8-17
 Category: Company
 Tags: company
 Authors: Ryan Buckley
-Summary: Lots of API updates and new states are launching this week
+Summary: Shovels, the leading provider of building permit and contractor API services, is expanding to Florida and Texas, with plans to cover all 47 remaining states by end of summer. We recently added date filters to our API, allowing users to easily access the most relevant data. Our team has also resolved any issues related to displaying dates in the API response. We are developing a new website that will offer registration and API key services, as well as a data explorer portal. Looking ahead, we are working on new market endpoints for building permits, providing valuable insights into current and historical trends by zip code. 
 
 
 Hello!

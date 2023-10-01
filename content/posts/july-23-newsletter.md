@@ -5,7 +5,7 @@ Modified: 2023-7-24
 Category: Company
 Tags: company
 Authors: Ryan Buckley
-Summary: 21M permits are now in California and early bird plans are available! 
+Summary: We overcame data processing challenges and loaded all of California into our internal database, with an API update coming soon. Additionally, we are actively following up with Florida, Texas, and New York, and we remain on track to expand nationwide by the end of summer. We have also created a dashboard showcasing building electrification permits in Contra Costa County and made predictions for EV charging permits in 2024.
 
 
 Greetings!
