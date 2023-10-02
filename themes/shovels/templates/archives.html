@@ -28,7 +28,7 @@
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
       {% for article in dates %}
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('{{ article.category }}')">
-        <img src="{% if article.image %}{{ article.imFage }}{% else %}/images/blog-card-default.png{% endif %}" alt="">
+        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="">
         <!-- card contents -->
         <div class="p-8">
           <div>
