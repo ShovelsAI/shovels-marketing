@@ -88,6 +88,9 @@
 
   {% include 'footer.html' %}
   <script>
+    function pathIsPartOfPathsList(list, path) {
+      return list.some(item => path.startsWith(item));
+    }
     const pathsWithInvertedTheme = [
       '/permit-database',
       '/contractor-directory',
@@ -96,16 +99,26 @@
       '/team',
       '/about',
     ];
+    const pathsWithSecondaryTheme = [
+      '/blog',
+    ];
+
     function handleBodyClass() {
       const path = window.location.pathname;
       const bodyElement = document.body;
 
-      if (pathsWithInvertedTheme.includes(path)) {
+      if (pathIsPartOfPathsList(pathsWithInvertedTheme, path)) {
         bodyElement.classList.add('inverted');
       } else {
         bodyElement.classList.remove('inverted');
       }
-
+      
+      if (pathIsPartOfPathsList(pathsWithSecondaryTheme, path)) {
+        bodyElement.classList.add('secondary');
+      } else {
+        bodyElement.classList.remove('secondary');
+      }
+      console.log(pathIsPartOfPathsList(pathsWithSecondaryTheme, path))
     }
 
     handleBodyClass();

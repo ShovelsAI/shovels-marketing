@@ -22,6 +22,10 @@ body.inverted {
   @apply bg-emerald-800;
 }
 
+body.secondary {
+  @apply bg-lime-50;
+}
+
 .navbar_item {
   @apply text-emerald-800 inline-flex items-center rounded-md text-base font-medium hover:text-emerald-900
 }
