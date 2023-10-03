@@ -99,9 +99,6 @@
       '/team',
       '/about',
     ];
-    const pathsWithSecondaryTheme = [
-      '/blog',
-    ];
 
     function handleBodyClass() {
       const path = window.location.pathname;
@@ -113,12 +110,6 @@
         bodyElement.classList.remove('inverted');
       }
       
-      if (pathIsPartOfPathsList(pathsWithSecondaryTheme, path)) {
-        bodyElement.classList.add('secondary');
-      } else {
-        bodyElement.classList.remove('secondary');
-      }
-      console.log(pathIsPartOfPathsList(pathsWithSecondaryTheme, path))
     }
 
     handleBodyClass();
