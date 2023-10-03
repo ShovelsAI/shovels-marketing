@@ -12,7 +12,7 @@
 <!-- categories -->
 <section class="mx-auto max-w-7xl px-6 lg:px-8">
   <ul class="flex flex-row">
-      <li class="rounded bg-stone-200 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
+      <li class="rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
        <a href="/blog">All</a>
       </li>
     {% for category, articles in categories %}
@@ -33,17 +33,14 @@
         </a>
         <!-- category -->
         <div class="p-8">
-          <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-stone-200 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
+          <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
         </div>
         <!-- title and date -->
         <div>
           <a href="{{ SITEURL }}/{{ article.url }}">
            <div class="pb-8 px-8">
               <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                
-                  <span class="absolute inset-0"></span>
                   {{ article.title }}
-                
               </h2>
               <time datetime="{{ article.date }}" class="text-black text-xs">{{ article.locale_date }}</time>
             </div>
