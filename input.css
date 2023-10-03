@@ -7,6 +7,89 @@
   src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
 }
 
+/* TODO: add various weights */
+@font-face {
+  font-family: "Scandia";
+  src: url("theme/webfonts/Scandia-Regular.woff") format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-emerald-800;
+}
+
+body {
+  @apply bg-lime-50;
+}
+/* start of Tailwind utility classes */
+body.inverted {
+  @apply bg-emerald-800;
+}
+
+.navbar_item {
+  @apply text-emerald-800 inline-flex items-center rounded-md text-base font-medium hover:text-emerald-900
+}
+
+.navbar_item > svg {
+  @apply group-hover:text-emerald-900
+}
+
+.inverted .navbar_item {
+  @apply text-lime-50 hover:text-lime-200
+}
+
+.inverted .navbar_item > svg {
+  @apply group-hover:text-lime-200
+}
+
+
+.hero_container {
+  @apply mx-auto max-w-7xl px-6 lg:flex lg:items-start lg:gap-x-10 pt-10 lg:pt-24
+}
+.hero_text-container {
+  @apply mx-auto max-w-xl lg:mx-0 lg:flex-auto
+}
+.hero_title {
+  @apply max-w-lg text-4xl font-semibold
+}
+.hero_description {
+  @apply mt-6 text-lg leading-8 text-gray-600
+}
+.inverted .hero_description {
+  @apply text-lime-50
+}
+.hero_image-container {
+  @apply mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow
+}
+.hero_image-container  > img {
+  @apply mx-auto
+}
+.elaboration-title {
+  @apply text-4xl font-bold tracking-tight text-emerald-800
+}
+.elaboration_container {
+  @apply mx-auto mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-4
+}
+.elaboration-card {
+  @apply border-2 border-gray-900 my-2 md:mr-3 p-10 font-['Scandia']
+}
+.elaboration-card_title {
+  @apply uppercase text-emerald-800
+}
+.inverted .elaboration-card_title {
+  @apply text-amber-300
+}
+
+.elaboration-card_text-container {
+  @apply mt-3 text-base leading-7 text-gray-900
+}
+
+.inverted .elaboration-card_text-container {
+  @apply text-stone-200
+}
+
+
+/* end of Tailwind utility classes */
+
 .nav-logo {
   margin-top: 33px;
 }
@@ -22,10 +105,6 @@
 
 .gradient {
   background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
-}
-
-.article {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 
 .article li {
@@ -68,4 +147,20 @@ div.article img {
 
 .article ul > li {
   margin-left: 20px !important;
+}
+
+/* for the Home page's example API responses */
+.hljs {
+  background: #181c24 !important; 
+}
+.hljs-attr {
+  color: #e04c90 !important
+}
+.hljs-string,
+.hljs-section,
+.hljs-selector-class,
+.hljs-template-variable,
+.hljs-deletion,
+.hljs-punctuation {
+  color: white !important;
 }

@@ -1,9 +1,9 @@
 Title: Privacy Policy
 slug: privacy
 
-<section class="bg-white py-8">
-  <div class="container max-w-5xl mx-auto m-8 text-gray-800 article">
-    <div class="bg-white py-24 sm:py-32">
+<section class="py-8 px-4 md:px-0">
+  <div class="container max-w-5xl mx-auto m-8 text-emerald-800 article">
+    <div class="mb-10">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Privacy Policy</h1>
       </div>
