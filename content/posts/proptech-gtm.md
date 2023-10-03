@@ -5,8 +5,8 @@ Modified: 2023-6-22
 Category: GTM
 Tags: gtm, building permits
 Authors: Ryan Buckley
-Summary: Learn how to create an effective go-to-market plan for proptech companies that will help them reach their target audiences and maximize success in this rapidly growing industry.
-Slug: go-to-market-strategies-for-proptech-companies
+Summary: Shovels can help you create an effective go-to-market plan that will ensure your message is heard loud and clear. From understanding the proptech landscape and developing target audience personas to creating a go-to-market plan using building permits and choosing the right technologies, we have you covered. We also highlight the importance of measuring and optimizing your go-to-market success through data analysis, A/B testing, and customer feedback. 
+
 
 Are you a proptech company looking to reach your target audience? It can be a challenge to penetrate the tech landscape and get your message out there. However, with the right strategies in place, you can create an effective go-to-market plan that will make sure your message is heard loud and clear. In this blog post, we'll outline the necessary steps to take for proptech companies to effectively reach their target audiences. We'll cover understanding the proptech landscape, developing target audience personas, creating a go-to-market plan using building permits, choosing the right technologies for your proptech company, and measuring and optimizing your go-to-market success. 
 

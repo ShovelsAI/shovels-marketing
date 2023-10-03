@@ -5,8 +5,7 @@ Modified: 2023-4-20
 Category: Company
 Tags: company
 Authors: Ryan Buckley
-Summary: We've now raised about $1M and we're super close to releasing v2 of our prototype
-Description: We've now raised about $1M and we're super close to releasing v2 of our prototype
+Summary: We've raised over $960,000 in our successful fundraising journey, thanks to amazing investor support. Customers are equally thrilled about what we're building! Using permit data, we're tackling construction challenges like pre-construction timelines, approval steps, and costs. Our AI-powered system quickly analyzes permit data, allowing you to ask a chat-like interface about permits or kitchen remodeling. We're going national, leaving geographically-constrained data behind. Join us as we revolutionize the construction industry one permit at a time!
 
 ## Shovels April 2023 Newsletter
 <br>

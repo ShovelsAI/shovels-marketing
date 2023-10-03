@@ -5,7 +5,7 @@ Modified: 2023-9-17
 Category: Company
 Tags: company
 Authors: Ryan Buckley
-Summary: 100M permits at your disposal
+Summary: I'm happy to share that we have processed all 100 million building permits nationwide. With the release of our markets endpoint, you can now see current and historical building permit counts for specific zip codes. We also revamped our API documentation to make it more user-friendly. We also updated our monthly API pricing.
 
 
 Greetings from Las Vegas. I'm on Day 5 and very happy to be heading home now. 😮‍💨

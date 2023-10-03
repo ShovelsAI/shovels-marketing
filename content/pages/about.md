@@ -109,8 +109,7 @@ slug: about
       </div>
       <!-- right -->
       <div class="max-w-2xl">
-        <p class="mt-2 text-base text-gray-700">We will cover all of California by end of Q2 2023 and full national
-          coverage in Q3 2023. </p>
+        <p class="mt-2 text-base text-gray-700">We have national coverage as of September 2023.</p>
       </div>
     </article>
 
