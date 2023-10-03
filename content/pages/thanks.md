@@ -1,7 +1,7 @@
 Title: Thank You!
 slug: thanks
 
-<div class="mt-24 pb-24 bg-white">
+<div class="mt-24 pb-24">
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     <!--Left Col-->
     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-slate-700 lg:pr-5">
