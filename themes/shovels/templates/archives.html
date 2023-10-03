@@ -12,7 +12,7 @@
 <!-- categories -->
 <section class="mx-auto max-w-7xl px-6 lg:px-8">
   <ul class="flex flex-row">
-      <li class="rounded bg-stone-200 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
+      <li class="rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
        <a href="/blog">All</a>
       </li>
     {% for category, articles in categories %}
@@ -28,25 +28,24 @@
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
       {% for article in dates %}
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('{{ article.category }}')">
-        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="">
-        <!-- card contents -->
+        <a href="{{ SITEURL }}/{{ article.url }}">
+          <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="" />
+        </a>
+        <!-- category -->
         <div class="p-8">
-          <div>
-            <a href="#" class="relative z-10 rounded bg-stone-200 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
-          </div>
-          <div class="group relative">
-            <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-              <a href="{{ SITEURL }}/{{ article.url }}">
-                <span class="absolute inset-0"></span>
-                {{ article.title }}
-              </a>
-            </h2>
-          </div>
-          <div class="">
-            <time datetime="{{ article.date }}" class="text-black text-xs">{{ article.locale_date }}</time>
-          </div>
+          <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
         </div>
-
+        <!-- title and date -->
+        <div>
+          <a href="{{ SITEURL }}/{{ article.url }}">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  {{ article.title }}
+              </h2>
+              <time datetime="{{ article.date }}" class="text-black text-xs">{{ article.locale_date }}</time>
+            </div>
+          </a>
+        </div>
       </article>
       {% endfor %}
     </div>
