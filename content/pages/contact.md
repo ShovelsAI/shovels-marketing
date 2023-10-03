@@ -1,8 +1,8 @@
 Title: Contact Shovels
 slug: contact
 
-<div class="mx-auto max-w-2xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
-  <h2 class="text-4xl font-bold tracking-tight text-emerald-800">Let’s talk about construction data</h2>
+<div class="mx-auto max-w-4xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+  <h2 class="text-5xl font-bold tracking-tight text-emerald-800">Let's talk about construction data</h2>
   <p class="mt-2 text-lg leading-8 text-gray-600">We want to help you integrate Shovels into your software product.</p>
   <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
     <form action="https://formspree.io/f/mnqykork" method="POST" class="lg:flex-auto">
