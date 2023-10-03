@@ -11,7 +11,7 @@ slug: software
     </p>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[400px]" src="theme/images/software/hero.svg" alt="">
+    <img class="max-h-[400px]" src="theme/images/software/hero.svg" alt="Shovels building permit API">
   </div>
 </section>
 <!-- elaboration -->

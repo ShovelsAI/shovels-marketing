@@ -10,7 +10,7 @@ slug: builders
       influenced by commissions or pay-per-lead fees.</p>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/builders/hero.svg" alt="">
+    <img class="max-h-[500px]" src="theme/images/builders/hero.svg" alt="Shovels building permit API">
   </div>
 </section>
 
@@ -101,7 +101,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_star.svg" alt="Shovels building permit API">
         </div>
         <span class="elaboration-card_title">Constantly refreshed</span>
       </dt>

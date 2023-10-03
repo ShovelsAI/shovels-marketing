@@ -13,7 +13,7 @@ Slug: permit-database
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/permit-database/hero.svg" alt="">
+    <img class="max-h-[500px]" src="theme/images/permit-database/hero.svg" alt="Shovels building permits">
   </div>
 </section>
 
@@ -24,7 +24,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg">
+          <img src="theme/images/permit-database/icon_jurisdiction.svg" alt="Shovels building permit API">
         </div>
         <span class="elaboration-card_title">Pay by jurisdiction</span>
       </dt>

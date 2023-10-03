@@ -10,7 +10,7 @@ slug: go-to-market
     </p>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="">
+    <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="Shovels.ai building permits">
   </div>
 </section>
 <!-- elaboration -->

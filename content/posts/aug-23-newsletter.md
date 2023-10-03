@@ -49,7 +49,7 @@ Here's one insight: **We learned that Oakland approves EV charger permits 30X fa
 
 You can [read more about it here]({filename}ev-permit-approvals.md). 
 
-[![]({static}/images/bottom5.png)]({filename}ev-permit-approvals.md)
+[![Bottom 5 jurisdictions]({static}/images/bottom5.png)]({filename}ev-permit-approvals.md)
 
 Thanks for sticking with us. We're working hard to deliver the best building permit and contractor API in the country. And we're really close to covering the whole thing. 
 

@@ -45,7 +45,7 @@ slug: contact
     </form>
     <!--
     <div class="lg:mt-6 lg:w-80 lg:flex-none">
-      <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-gray-600.svg" alt="">
+      <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-gray-600.svg" alt="Shovels building permit API">
       <figure class="mt-10">
         <blockquote class="text-lg font-semibold leading-8 text-emerald-800">
           <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
