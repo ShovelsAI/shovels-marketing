@@ -6,6 +6,7 @@ Category: Data
 Tags: gtm, building contractors, ev chargers
 Authors: Ryan Buckley
 Summary: In this final article of our series on EV charger activity in California, we explore the growth of EV charger contractors. We highlight the flourishing EV charger space and provide examples of companies operating in different parts of the ecosystem. Additionally, we showcase the jurisdictions with the most active EV charger contractors and analyze the increasing trend of new contractor activity. The data underscores the growing demand for EV chargers and the expanding market for contractors in this exciting industry.
+Image: /images/ev-contractors-grid.png
 
 
 

@@ -29,7 +29,7 @@
       {% for article in dates %}
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('{{ article.category }}')">
         <a href="{{ SITEURL }}/{{ article.url }}">
-          <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="" />
+          <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="" class="object-cover h-48 w-96"/>
         </a>
         <!-- category -->
         <div class="p-8">
