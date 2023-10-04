@@ -11,7 +11,7 @@ slug: construction-finance
         quality and capacity, and how it is trending over time.</p>
     </div>
     <div class="hero_image-container">
-      <img class="max-h-[500px]" src="theme/images/finance/hero.svg" alt="">
+      <img class="max-h-[500px]" src="theme/images/finance/hero.svg" alt="Shovels building permit API">
     </div>
 </section>
 

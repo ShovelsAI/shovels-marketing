@@ -14,7 +14,7 @@ slug: team
           x-on:mouseenter="ryan = true" x-on:mouseleave="ryan = false"
       >
         <div x-show="!ryan">
-          <img class="w-full" src="theme/images/team/ryan.svg" alt="">
+          <img class="w-full" src="theme/images/team/ryan.svg" alt="Ryan Buckley from Shovels">
           <div class="p-6">
             <h3 class="text-lg font-semibold leading-8 text-stone-200">Ryan Buckley</h3>
             <p class="text-base leading-7 uppercase text-amber-300">Co-founder & CEO</p>
@@ -46,7 +46,7 @@ slug: team
             x-on:mouseenter="luka = true" x-on:mouseleave="luka = false"
       >
         <div x-show="!luka">
-          <img class="w-full" src="theme/images/team/luka.svg" alt="">
+          <img class="w-full" src="theme/images/team/luka.svg" alt="Luka Kacil from Shovels">
           <div class="p-6">
             <h3 class="text-lg font-semibold leading-8 text-stone-200">Luka Kacil</h3>
             <p class="text-base leading-7 uppercase text-amber-300">Co-founder & CTO</p>
@@ -78,7 +78,7 @@ slug: team
           x-on:mouseenter="petra = true" x-on:mouseleave="petra = false"
       >
         <div x-show="!petra">
-          <img class="w-full" src="theme/images/team/petra.svg" alt="">
+          <img class="w-full" src="theme/images/team/petra.svg" alt="Petra Kopic from Shovels">
           <div class="p-6">
             <h3 class="text-lg font-semibold leading-8 text-stone-200">Petra Kopić</h3>
             <p class="text-base leading-7 uppercase text-amber-300">Data Engineer</p>
