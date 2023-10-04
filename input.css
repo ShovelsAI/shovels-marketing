@@ -20,6 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 body {
   @apply bg-lime-50;
 }
+
+/* below prevents the 'flash' on page load */
+[x-cloak] {
+  display: none !important;
+}
+
 /* start of Tailwind utility classes */
 body.inverted {
   @apply bg-emerald-800;
