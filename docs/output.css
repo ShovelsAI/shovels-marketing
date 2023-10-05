@@ -2346,6 +2346,12 @@ body {
   background-color: rgb(247 254 231 / var(--tw-bg-opacity));
 }
 
+/* below prevents the 'flash' on page load */
+
+[x-cloak] {
+  display: none !important;
+}
+
 /* start of Tailwind utility classes */
 
 body.inverted {
