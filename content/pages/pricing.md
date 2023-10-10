@@ -9,7 +9,7 @@ slug: pricing
     </p>
   </div>
   <!-- boxes -->
-  <div class="rounded border-2 border-black border-opacity-50 p-10 mt-20">
+  <div class="rounded border-2 border-black border-opacity-50 p-10 mt-20 overflow-x-auto">
     <table class="min-w-full">
       <!-- Header Row -->
       <thead>
@@ -94,26 +94,26 @@ slug: pricing
             <!-- deliberately empty -->
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] bg-opacity-60 py-4 px-4 rounded"
+            <a class="bg-[#E9E1CE] flex bg-opacity-60 py-4 px-4 rounded"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Permits%2C%20Low&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%2C%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
-              <span>Contact Sales</span>
+              <span class="whitespace-nowrap">Contact Sales</span>
               <img class="inline ml-1" src="theme/images/caret-right.svg">
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] bg-opacity-60 py-4 px-4 rounded"
+            <a class="bg-[#E9E1CE] flex bg-opacity-60 py-4 px-4 rounded"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Permits%2C%20Medium&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%2C%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
-              <span>Contact Sales</span>
+              <span class="whitespace-nowrap">Contact Sales</span>
               <img class="inline ml-1" src="theme/images/caret-right.svg">
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] bg-opacity-60 py-4 px-4 rounded"
+            <a class="bg-[#E9E1CE] flex bg-opacity-60 py-4 px-4 rounded"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Permits%2C%20High&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%2C%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
-              <span>Contact Sales</span>
+              <span class="whitespace-nowrap">Contact Sales</span>
               <img class="inline ml-1" src="theme/images/caret-right.svg">
             </a>
           </td>
