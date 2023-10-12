@@ -4,8 +4,8 @@ slug: pricing
 <div class="mx-auto max-w-5xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
   <!-- heading -->
   <div class="text-center mb-14">
-    <h1 class="text-3xl md:text-5xl font-medium">Choose the right plan!</h1>
-    <p class="mt-4 text-base leading-loose text-gray-900">Offering permit and contractor data. Or a bundle of both.
+    <h1 class="text-3xl md:text-5xl font-medium">The API for building permits and building contractors</h1>
+    <p class="mt-4 text-base leading-loose text-gray-900">We offer permit and contractor data, or a bundle of both.
     </p>
   </div>
   <!-- Permits table -->
@@ -75,7 +75,7 @@ slug: pricing
             <span class="text-gray-900">National</span>
           </td>
         </tr>
-        <tr class="bg-[#E9E1CE] bg-opacity-40">
+        <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
           <td class="py-3 px-5 text-right bg-lime-50">
             <span class="text-neutral-400 text-base">Permit lookups</span>
           </td>
@@ -88,7 +88,7 @@ slug: pricing
           <td class="text-center">
             <span class="text-gray-900">20,000</span>
           </td>
-        </tr>
+        </tr>-->
         <tr>
           <td>
             <!-- deliberately empty -->
@@ -160,7 +160,7 @@ slug: pricing
             <span class="text-gray-900">National</span>
           </td>
         </tr>
-        <tr class="bg-[#E9E1CE] bg-opacity-40">
+        <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
           <td class="py-3 px-5 text-right bg-lime-50">
             <span class="text-neutral-400 text-base">Permit lookups</span>
           </td>
@@ -173,7 +173,7 @@ slug: pricing
           <td class="text-center">
             <span class="text-gray-900">20,000</span>
           </td>
-        </tr>
+        </tr>-->
         <tr>
           <td>
             <!-- deliberately empty -->
@@ -231,6 +231,20 @@ slug: pricing
       </thead>
       <!-- Body Rows -->
       <tbody>
+        <tr class="bg-[#E9E1CE] bg-opacity-40">
+          <td class="py-3 px-5 text-right bg-lime-50">
+            <span class="text-neutral-400 text-base">Commercial Permits</span>
+          </td>
+          <td class="text-center">
+            <span class="text-zinc-400">&mdash;</span>
+          </td>
+          <td class="text-center">
+            <span class="text-zinc-400">&mdash;</span>
+          </td>
+          <td>
+            <img class="max-h-7 m-auto" src="theme/images/pricing/checkmark.svg" alt="checkmark">
+          </td>
+        </tr>
         <tr>
           <td class="py-3 px-5 text-right">
             <span class="text-neutral-400 text-base">Geography</span>
@@ -245,7 +259,7 @@ slug: pricing
             <span class="text-gray-900">National</span>
           </td>
         </tr>
-        <tr class="bg-[#E9E1CE] bg-opacity-40">
+        <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
           <td class="py-3 px-5 text-right bg-lime-50">
             <span class="text-neutral-400 text-base">Permit lookups</span>
           </td>
@@ -258,7 +272,7 @@ slug: pricing
           <td class="text-center">
             <span class="text-gray-900">20,000</span>
           </td>
-        </tr>
+        </tr>-->
         <tr>
           <td>
             <!-- deliberately empty -->
