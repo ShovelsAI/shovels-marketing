@@ -12,6 +12,12 @@
   font-family: "Scandia";
   src: url("theme/webfonts/Scandia-Regular.woff") format('woff');
 }
+@font-face {
+  font-family: "Scandia";
+  src: url("theme/webfonts/Scandia-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
 h1, h2, h3, h4, h5, h6 {
   @apply text-emerald-800;
