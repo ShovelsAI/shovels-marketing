@@ -231,13 +231,13 @@
               <h3 class="text-base font-medium text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" class="font-medium text-emerald-900 hover:text-gray-700"><p>How to use the Shovels API</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/" class="font-medium text-emerald-900 hover:text-gray-700"><p>The growth of EV contractors in California</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/september-2023-newsletter/" class="font-medium text-emerald-900 hover:text-gray-700"><p>September 2023 Newsletter</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/august-2023-newsletter/" class="font-medium text-emerald-900 hover:text-gray-700"><p>August 2023 Newsletter</p></a>
                   </li>
               </ul>
             </div>
@@ -401,6 +401,9 @@ Leaving: "duration-100 ease-in"
         <a href="/blog/?category=Company">Company</a>
       </li>
       <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
+        <a href="/blog/?category=Customer Success">Customer Success</a>
+      </li>
+      <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
         <a href="/blog/?category=Data">Data</a>
       </li>
       <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
@@ -412,6 +415,26 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Customer Success')">
+        <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/">
+          <img src="/images/api-blog.jpg" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Customer Success" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Customer Success</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>How to use the Shovels API</p>
+              </h2>
+              <time datetime="2023-10-13 00:00:00-07:00" class="text-black text-xs">Fri 13 October 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Data')">
         <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/">
           <img src="/images/ev-contractors-grid.png" alt="" class="object-cover h-48 w-96"/>

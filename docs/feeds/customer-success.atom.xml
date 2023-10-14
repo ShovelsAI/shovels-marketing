@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2023-10-13T00:00:00-07:00</updated><entry><title>How to use the Shovels API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-api/</id><summary type="html">&lt;p&gt;ADD IT HERE&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;That is excellent news, and we are here to help. &lt;/p&gt;
+&lt;h2&gt;Authentication&lt;/h2&gt;
+&lt;p&gt;We use header key-based authentication. There are two steps to authenticate:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get your API key at &lt;a href="https://app.shovels.ai" target="_blank"&gt;https://app.shovels.ai&lt;/a&gt; . You will see it on your dashboard when you register and log in. &lt;/li&gt;
+&lt;li&gt;Add your key to this HTTP header when you make a request: &lt;code&gt;X-API-Key: YOUR_API_KEY_HERE&lt;/code&gt;. &lt;a href="https://realpython.com/python-requests/#request-headers" target="_blank"&gt;Click here&lt;/a&gt;  for more information about making HTTP requests with headers using Python. &lt;em&gt;(Note: you can use any programming language; we like Python 🐍)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Filters&lt;/h2&gt;
+&lt;p&gt;We learned early on that our customers wanted two types of filters:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;By activity&lt;/strong&gt;: Filter building activity by the &lt;em&gt;type&lt;/em&gt; of activity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;By date&lt;/strong&gt;: Show the activity in between two dates, and always display the most recent activity first&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Tags&lt;/h3&gt;
+&lt;p&gt;Let's look at the building activity filter first. We call types of activity &lt;em&gt;tags&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We offer 33 unique tags as of this publication date in October 2023. That number will increase over time! &lt;/p&gt;
+&lt;p&gt;To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1842205445" target="_blank"&gt;Data Dictionary&lt;/a&gt; . We'll try to keep this updated. &lt;/p&gt;
+&lt;p&gt;To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the &lt;a href="https://api.shovels.ai/redoc#tag/List/operation/get_all_available_tags_v1_list_tags_get" target="_blank"&gt;Get All Available Tags&lt;/a&gt;  endpoint.&lt;/p&gt;
+&lt;p&gt;To make this extra super clear, let's go through some examples. I'm going to show the code snippets using Curl, a command-line tool available natively in every operating system. Just open a new command-line prompt (e.g. Terminal on MacOS) to use it. &lt;/p&gt;
+&lt;h4&gt;Get details on every heat pump installation in a zip code&lt;/h4&gt;
+&lt;p&gt;Let's use 94123, my old neighborhood in San Francisco. Start by finding the right tag (using the methodology above) for heat pumps: &lt;code&gt;heat_pump&lt;/code&gt; should do the trick!&lt;/p&gt;
+&lt;p&gt;Next, find the endpoint. &lt;a href="https://api.shovels.ai/redoc#tag/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank"&gt;Get Permits By Zip Code&lt;/a&gt;  sounds about right! &lt;/p&gt;
+&lt;p&gt;Make the request. Here's the Curl command.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/permits/zip?zip_code=94123&amp;amp;tags=heat_pump&amp;amp;page=1&amp;amp;size=50&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And it worked! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;items&amp;quot;: [
+    {
+      &amp;quot;id&amp;quot;: &amp;quot;07ec97288669e01793a9dbb47c352400&amp;quot;,
+      &amp;quot;address&amp;quot;: {
+        &amp;quot;street_no&amp;quot;: &amp;quot;3550&amp;quot;,
+        &amp;quot;street&amp;quot;: &amp;quot;BAKER ST&amp;quot;,
+        &amp;quot;city&amp;quot;: &amp;quot;SAN FRANCISCO&amp;quot;,
+        &amp;quot;zip_code&amp;quot;: &amp;quot;94123&amp;quot;,
+        &amp;quot;state&amp;quot;: &amp;quot;CA&amp;quot;,
+        &amp;quot;lat&amp;quot;: 37.804016,
+        &amp;quot;long&amp;quot;: -122.44678
+      }
+    },
+    {
+      &amp;quot;id&amp;quot;: &amp;quot;179c87dcfa6f499edff389c2272f819b&amp;quot;,
+      &amp;quot;address&amp;quot;: {
+        &amp;quot;street_no&amp;quot;: &amp;quot;12&amp;quot;,
+        &amp;quot;street&amp;quot;: &amp;quot;RICO WAY&amp;quot;,
+        &amp;quot;city&amp;quot;: &amp;quot;SAN FRANCISCO&amp;quot;,
+        &amp;quot;zip_code&amp;quot;: &amp;quot;94123&amp;quot;,
+        &amp;quot;state&amp;quot;: &amp;quot;CA&amp;quot;,
+        &amp;quot;lat&amp;quot;: 37.805016,
+        &amp;quot;long&amp;quot;: -122.438484
+      }
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So what do we do with all those &lt;code&gt;id&lt;/code&gt; values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the &lt;code&gt;id&lt;/code&gt; and pass it into our &lt;a href="https://api.shovels.ai/redoc#tag/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank"&gt;Get Permit by ID&lt;/a&gt;  endpoint.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And we get this in response:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;jurisdiction&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;San&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Francisco&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;issue_date&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;2017-09-07&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;final_date&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;null,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;type&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;Plumbing&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;inspections_pass_rate&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;null,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;fees&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;null,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;address_id&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;1973404EE7003B21&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;description&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;Work&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;category&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;new&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;rooftop&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;heatpump&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;ductwork&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;rooftop,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;24,000&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;btu&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;contractor_id&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;null,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;number&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;PMW20170907784&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;status&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;Active&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;id&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;179c87dcfa6f499edff389c2272f819b&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;address&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;street_no&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;12&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;street&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;RICO&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;WAY&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;city&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;SAN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;FRANCISCO&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;zip_code&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;94123&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;state&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;CA&amp;quot;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;lat&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;37.805016,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;&amp;quot;long&amp;quot;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;-122.438484&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tags&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;air_source_heat_pump&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;heat_pump&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;utilities&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Neato! If we wanted to store all these heat pump installs in a database or spreadsheet, we could write more code for that. I recommend asking ChatGPT to do it for you.&lt;/p&gt;
+&lt;h4&gt;Get all the heat pump HVAC installers in a zip code&lt;/h4&gt;
+&lt;p&gt;What if you don't care about the permits or the homes, and you just want to know who did the install? We can help with that, too! &lt;/p&gt;
+&lt;p&gt;Our handy &lt;a href="https://api.shovels.ai/redoc#tag/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get" target="_blank"&gt;Get Permits By Activity Zip Code&lt;/a&gt;  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. &lt;/p&gt;
+&lt;p&gt;For this API call, let's find all the heat pump HVAC installers who did work in the first two quarters of 2023. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/contractors/activity/zip?zip_code=94103&amp;amp;tags=heat_pump&amp;amp;start_date=2023-01-01&amp;amp;end_date=2023-07-01&amp;amp;page=1&amp;amp;size=50&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note that our dates take the form &lt;code&gt;YYYY-MM-DD&lt;/code&gt;. This is important!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The response now is:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;id&amp;quot;: &amp;quot;adfbb85fa395444c9516dcfe97ffcfb5&amp;quot;,
+  &amp;quot;name&amp;quot;: &amp;quot;DENIZ SALON&amp;quot;,
+  &amp;quot;business_name&amp;quot;: &amp;quot;KA - BI CONSTRUCTION INC.&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Same deal. The &lt;code&gt;id&lt;/code&gt; shown is our internal Shovels contractor ID. Let's hit our &lt;a href="https://api.shovels.ai/redoc#tag/Contractors/operation/get_contractor_by_id_v1_contractors__id__get" target="_blank"&gt;Get Contractor by Id&lt;/a&gt;  endpoint with it to get those contractor details! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/contractors/adfbb85fa395444c9516dcfe97ffcfb5&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And the details are:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;license&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;944398&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;DENIZ SALON&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;email&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;denizsalon@yahoo.com,salon642002@yahoo.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;BAYSHORE HY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;business_name&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;KA - BI CONSTRUCTION INC.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;adfbb85fa395444c9516dcfe97ffcfb5&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;phone&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;6502914299&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;1290&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;BURLINGAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;CA&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Dates&lt;/h3&gt;
+&lt;p&gt;Building permits have dates galore. We show file dates, issue dates, and final dates. File dates are when the permit was sent to the jurisdiction. Issue dates are when the permits are approved for construction, and the final dates is when the jurisdiction finally signs off on the finished work. &lt;/p&gt;
+&lt;p&gt;Our date filters, called &lt;code&gt;start_date&lt;/code&gt; and &lt;code&gt;end_date&lt;/code&gt;, are based solely on the file date.&lt;/p&gt;
+&lt;p&gt;To show how this works, let's look at permits filed in New York in August 2023. We can use our &lt;a href="https://api.shovels.ai/redoc#tag/Permits/operation/get_permits_by_state_v1_permits_state_get" target="_blank"&gt;Get Permits by State&lt;/a&gt;  endpoint! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/permits/state?state=NY&amp;amp;start_date=2023-08-01&amp;amp;end_date=2023-08-31&amp;amp;page=1&amp;amp;size=50&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We could use tags here too, but I chose not to. Here's what the first two permits look like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;id&amp;quot;: &amp;quot;e101ca8b62f825a1199fb370365b85d7&amp;quot;,
+  &amp;quot;address&amp;quot;: {
+    &amp;quot;street_no&amp;quot;: &amp;quot;3&amp;quot;,
+    &amp;quot;street&amp;quot;: &amp;quot;NEW HAMPSHIRE AVE&amp;quot;,
+    &amp;quot;city&amp;quot;: &amp;quot;EAST GREENBUSH&amp;quot;,
+    &amp;quot;zip_code&amp;quot;: &amp;quot;12144&amp;quot;,
+    &amp;quot;state&amp;quot;: &amp;quot;NY&amp;quot;,
+    &amp;quot;lat&amp;quot;: 42.625023,
+    &amp;quot;long&amp;quot;: -73.725845
+  }
+},
+{
+  &amp;quot;id&amp;quot;: &amp;quot;d0c345961c8c446f3e56655c0ddfca8a&amp;quot;,
+  &amp;quot;address&amp;quot;: {
+    &amp;quot;street_no&amp;quot;: &amp;quot;410&amp;quot;,
+    &amp;quot;street&amp;quot;: &amp;quot;ROCKAWAY AVE&amp;quot;,
+    &amp;quot;city&amp;quot;: &amp;quot;HEMPSTEAD&amp;quot;,
+    &amp;quot;zip_code&amp;quot;: &amp;quot;11581&amp;quot;,
+    &amp;quot;state&amp;quot;: &amp;quot;NY&amp;quot;,
+    &amp;quot;lat&amp;quot;: 40.658535,
+    &amp;quot;long&amp;quot;: -73.70126
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I could look up the details on these the same way I described above. No need to repeat! &lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This API is meant to be fast to learn and easy to work with. If you have any questions (really!) we want to know and provide support so we can make it easier to use.&lt;/p&gt;
+&lt;p&gt;And if you find that you're looking for an endpoint that we're not offering yet, let us know. We just might build it. &lt;/p&gt;
+&lt;p&gt;Cheers! &lt;/p&gt;</content><category term="Customer Success"></category><category term="api"></category></entry></feed>
