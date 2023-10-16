@@ -119,6 +119,24 @@ body.inverted {
   background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
 }
 
+/* start of article classes */
+
+.article h1 {
+  @apply my-10
+}
+
+.article h2 {
+  @apply my-7
+}
+
+.article h3 {
+  @apply my-5
+}
+
+.article h4 {
+  @apply text-lg my-3
+}
+
 .article li {
   list-style-type: disc;
   list-style-position: inside;
@@ -160,6 +178,8 @@ div.article img {
 .article ul > li {
   margin-left: 20px !important;
 }
+
+/* end of article classes */
 
 /* for the Home page's example API responses */
 .hljs {
