@@ -13,7 +13,7 @@ slug: data-feed
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg" alt="">
+    <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">
   </div>
 </section>
 

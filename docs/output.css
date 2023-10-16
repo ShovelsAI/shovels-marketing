@@ -890,6 +890,11 @@ select {
   margin-bottom: 6rem;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1010,6 +1015,10 @@ select {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mt-24 {
@@ -1134,6 +1143,10 @@ select {
 
 .max-h-\[400px\] {
   max-height: 400px;
+}
+
+.max-h-7 {
+  max-height: 1.75rem;
 }
 
 .w-96 {
@@ -1569,6 +1582,10 @@ select {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1660,6 +1677,10 @@ select {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-opacity-50 {
+  --tw-border-opacity: 0.5;
 }
 
 .bg-\[\#E9E1CE\] {
@@ -1760,6 +1781,14 @@ select {
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
 .object-cover {
@@ -1890,6 +1919,11 @@ select {
   padding-right: 0.875rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1948,8 +1982,16 @@ select {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-justify {
   text-align: justify;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .font-\[\'Scandia\'\] {
@@ -2082,6 +2124,10 @@ select {
   letter-spacing: 0.025em;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-emerald-800 {
   --tw-text-opacity: 1;
   color: rgb(6 95 70 / var(--tw-text-opacity));
@@ -2165,6 +2211,16 @@ select {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
+}
+
+.text-zinc-400 {
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .text-slate-400 {
@@ -2336,6 +2392,16 @@ select {
   src: url("theme/webfonts/Scandia-Regular.woff") format('woff');
 }
 
+@font-face {
+  font-family: "Scandia";
+
+  src: url("theme/webfonts/Scandia-Bold.woff") format('woff');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
 h1,  h2,  h3,  h4,  h5,  h6 {
   --tw-text-opacity: 1;
   color: rgb(6 95 70 / var(--tw-text-opacity));
@@ -2344,6 +2410,12 @@ h1,  h2,  h3,  h4,  h5,  h6 {
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(247 254 231 / var(--tw-bg-opacity));
+}
+
+/* below prevents the 'flash' on page load */
+
+[x-cloak] {
+  display: none !important;
 }
 
 /* start of Tailwind utility classes */
@@ -3082,6 +3154,11 @@ div.article img {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

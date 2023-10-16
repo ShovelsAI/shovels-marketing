@@ -13,7 +13,7 @@ slug: contractor-directory
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/contractor-directory/hero.svg" alt="">
+    <img class="max-h-[500px]" src="theme/images/contractor-directory/hero.svg">
   </div>
 </section>
 

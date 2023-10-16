@@ -28,6 +28,8 @@
   <link rel="mask-icon" href="/theme/images/safari-pinned-tab.svg" color="#5bbad5">
   <script defer src="/theme/js/alpine.js"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -67,7 +69,7 @@
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2" x-show="open">
+      <div class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2" x-show="open" x-cloak>
         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="https://www.shovels.ai/go-to-market" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
@@ -147,7 +149,7 @@
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open">
+      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open" x-cloak>
         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="https://www.shovels.ai/permit-database" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
@@ -202,7 +204,7 @@
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open">
+      <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-show="open" x-cloak>
         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="https://www.shovels.ai/team" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
@@ -244,9 +246,13 @@
       </div>
     </div>
 
+    <a href="https://www.shovels.ai/pricing" class="navbar_item">Pricing</a>
+
     <a href="https://www.shovels.ai/contact" class="navbar_item">Contact</a>
 
     <a href="https://www.shovels.ai/blog" class="navbar_item">Blog</a>
+
+    <a href="https://app.shovels.ai" class="navbar_item hover:scale-105 duration-300 ease-in-out" target="_blank">Register</a>
   </nav>
   <!--
   <div class="hidden items-center justify-end space-x-8 md:flex md:flex-1 lg:w-0">
@@ -360,17 +366,13 @@ Leaving: "duration-100 ease-in"
 
         <a href="https://www.shovels.ai/privacy" class="text-base font-medium text-emerald-900 hover:text-gray-700">Privacy</a>
 
+        <a href="https://www.shovels.ai/pricing" class="text-base font-medium text-emerald-900 hover:text-gray-700">Pricing</a>
+
         <a href="https://www.shovels.ai/terms" class="text-base font-medium text-emerald-900 hover:text-gray-700">Terms & Conditions</a>
       </div>
-      <!--
       <div>
-        <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700">Sign up</a>
-        <p class="mt-6 text-center text-base font-medium text-emerald-800">
-          Existing customer?
-          <a href="#" class="text-slate-600 hover:text-slate-500">Sign in</a>
-        </p>
+        <a href="https://app.shovels.ai" class="flex w-full items-center justify-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700">Sign up</a>
       </div>
-      -->
     </div>
   </div>
 </div>
@@ -380,11 +382,10 @@ Leaving: "duration-100 ease-in"
   <div class="hero_text-container">
     <h1 class="hero_title">Go-to-market data for the building trades
     </h1>
-    <p class="hero_description">We tag and tie 100 million building permits with 4 million
-      contractors nationwide so you can build software products and GTM solutions for your business.</p>
+    <p class="hero_description">Shovels analyzes 100M building permits to help companies sell software and hardware products to homeowners and building contractors.</p>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="/software"
-        class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Get started <img src="theme/images/caret-right.svg"></a>
+      <a href="https://app.shovels.ai"
+        class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
       <a href="/about"
         class="px-5 py-2 md:px-10 md:py-4 bg-stone-200 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Learn
         more <img src="theme/images/caret-right.svg"></span></a>
@@ -551,29 +552,29 @@ Leaving: "duration-100 ease-in"
             :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="">
             
             <pre><code class="rounded-md language-json">{
-              "property_address": "18491 Davis Ave",
-              "property_city": "Los Gatos",
-              "property_zip_code": "95030",
-              "property_county": "Santa Clara",
-              "property_state": "CA",
-              "permits": [
-                {
-                  "project_id": "DEV20-0118",
-                  "status": "Finaled",
-                  "start_date": "2020-01-21",
-                  "end_date": "2021-04-12",
-                  "duration_days": 447,
-                  "inspection_pass_rate": 0.67,
-                  "type": "Battery Storage System",
-                  "details": "Install (1) 13.5kwh energy storage system and (n) 200amp main breaker and load center",
-                  "address": "18491 Davis Ave",
-                  "city": "Los Gatos",
-                  "county": "Santa Clara",
-                  "state": "CA"
-                },
-                {...}
-                ]
-              }</code></pre>
+    "property_address": "18491 Davis Ave",
+    "property_city": "Los Gatos",
+    "property_zip_code": "95030",
+    "property_county": "Santa Clara",
+    "property_state": "CA",
+    "permits": [
+      {
+        "project_id": "DEV20-0118",
+        "status": "Finaled",
+        "start_date": "2020-01-21",
+        "end_date": "2021-04-12",
+        "duration_days": 447,
+        "inspection_pass_rate": 0.67,
+        "type": "Battery Storage System",
+        "details": "Install (1) 13.5kwh energy storage system and (n) 200amp main breaker and load center",
+        "address": "18491 Davis Ave",
+        "city": "Los Gatos",
+        "county": "Santa Clara",
+        "state": "CA"
+      },
+      {...}
+      ]
+    }</code></pre>
           </section>
           <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
             :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
@@ -609,25 +610,25 @@ Leaving: "duration-100 ease-in"
                       :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
 
                       <pre><code class="rounded-md language-json">{
-                "contractor_name": "TESLA ENERGY OPERATIONS INC",
-                "contractor_address": "901 Page Ave",
-                "contractor_city": "Fremont",
-                "contractor_zip_code": "94538",
-                "contractor_county": "Alameda",
-                "contractor_state": "CA",
-                "contractor_phone": "(844) 837 5201",
-                "contractor_license_no": "888104",
-                "all_permits": 700,
-                "active_permits": 162,
-                "expired_permits": 55,
-                "avg_project_duration_days": 198.98,
-                "avg_inspection_pass_rate": 0.76,
-                "permit_types": [
-                  "Battery Storage System",
-                  "Solar Photovoltaic System",
-                  "Electrical",
-                ]
-              }</code></pre>
+    "contractor_name": "TESLA ENERGY OPERATIONS INC",
+    "contractor_address": "901 Page Ave",
+    "contractor_city": "Fremont",
+    "contractor_zip_code": "94538",
+    "contractor_county": "Alameda",
+    "contractor_state": "CA",
+    "contractor_phone": "(844) 837 5201",
+    "contractor_license_no": "888104",
+    "all_permits": 700,
+    "active_permits": 162,
+    "expired_permits": 55,
+    "avg_project_duration_days": 198.98,
+    "avg_inspection_pass_rate": 0.76,
+    "permit_types": [
+      "Battery Storage System",
+      "Solar Photovoltaic System",
+      "Electrical",
+    ]
+  }</code></pre>
           </section>
         </div>
   </div>

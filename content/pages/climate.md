@@ -16,7 +16,7 @@ slug: climate
       </div>
     </div>
     <div class="hero_image-container">
-      <img class="max-h-[500px]" src="theme/images/climate/hero.svg" alt="">
+      <img class="max-h-[500px]" src="theme/images/climate/hero.svg">
     </div>
 </section>
 

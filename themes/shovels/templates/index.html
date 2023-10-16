@@ -6,11 +6,10 @@
   <div class="hero_text-container">
     <h1 class="hero_title">Go-to-market data for the building trades
     </h1>
-    <p class="hero_description">We tag and tie 100 million building permits with 4 million
-      contractors nationwide so you can build software products and GTM solutions for your business.</p>
+    <p class="hero_description">Shovels analyzes 100M building permits to help companies sell software and hardware products to homeowners and building contractors.</p>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="/software"
-        class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Get started <img src="theme/images/caret-right.svg"></a>
+      <a href="https://app.shovels.ai"
+        class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
       <a href="/about"
         class="px-5 py-2 md:px-10 md:py-4 bg-stone-200 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Learn
         more <img src="theme/images/caret-right.svg"></span></a>
@@ -177,29 +176,29 @@
             :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="">
             
             <pre><code class="rounded-md language-json">{
-              "property_address": "18491 Davis Ave",
-              "property_city": "Los Gatos",
-              "property_zip_code": "95030",
-              "property_county": "Santa Clara",
-              "property_state": "CA",
-              "permits": [
-                {
-                  "project_id": "DEV20-0118",
-                  "status": "Finaled",
-                  "start_date": "2020-01-21",
-                  "end_date": "2021-04-12",
-                  "duration_days": 447,
-                  "inspection_pass_rate": 0.67,
-                  "type": "Battery Storage System",
-                  "details": "Install (1) 13.5kwh energy storage system and (n) 200amp main breaker and load center",
-                  "address": "18491 Davis Ave",
-                  "city": "Los Gatos",
-                  "county": "Santa Clara",
-                  "state": "CA"
-                },
-                {...}
-                ]
-              }</code></pre>
+    "property_address": "18491 Davis Ave",
+    "property_city": "Los Gatos",
+    "property_zip_code": "95030",
+    "property_county": "Santa Clara",
+    "property_state": "CA",
+    "permits": [
+      {
+        "project_id": "DEV20-0118",
+        "status": "Finaled",
+        "start_date": "2020-01-21",
+        "end_date": "2021-04-12",
+        "duration_days": 447,
+        "inspection_pass_rate": 0.67,
+        "type": "Battery Storage System",
+        "details": "Install (1) 13.5kwh energy storage system and (n) 200amp main breaker and load center",
+        "address": "18491 Davis Ave",
+        "city": "Los Gatos",
+        "county": "Santa Clara",
+        "state": "CA"
+      },
+      {...}
+      ]
+    }</code></pre>
           </section>
           <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
             :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
@@ -235,25 +234,25 @@
                       :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
 
                       <pre><code class="rounded-md language-json">{
-                "contractor_name": "TESLA ENERGY OPERATIONS INC",
-                "contractor_address": "901 Page Ave",
-                "contractor_city": "Fremont",
-                "contractor_zip_code": "94538",
-                "contractor_county": "Alameda",
-                "contractor_state": "CA",
-                "contractor_phone": "(844) 837 5201",
-                "contractor_license_no": "888104",
-                "all_permits": 700,
-                "active_permits": 162,
-                "expired_permits": 55,
-                "avg_project_duration_days": 198.98,
-                "avg_inspection_pass_rate": 0.76,
-                "permit_types": [
-                  "Battery Storage System",
-                  "Solar Photovoltaic System",
-                  "Electrical",
-                ]
-              }</code></pre>
+    "contractor_name": "TESLA ENERGY OPERATIONS INC",
+    "contractor_address": "901 Page Ave",
+    "contractor_city": "Fremont",
+    "contractor_zip_code": "94538",
+    "contractor_county": "Alameda",
+    "contractor_state": "CA",
+    "contractor_phone": "(844) 837 5201",
+    "contractor_license_no": "888104",
+    "all_permits": 700,
+    "active_permits": 162,
+    "expired_permits": 55,
+    "avg_project_duration_days": 198.98,
+    "avg_inspection_pass_rate": 0.76,
+    "permit_types": [
+      "Battery Storage System",
+      "Solar Photovoltaic System",
+      "Electrical",
+    ]
+  }</code></pre>
           </section>
         </div>
   </div>
