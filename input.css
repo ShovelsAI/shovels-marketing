@@ -61,7 +61,7 @@ body.inverted {
   @apply mx-auto max-w-xl lg:mx-0 lg:flex-auto
 }
 .hero_title {
-  @apply max-w-lg text-4xl font-semibold
+  @apply max-w-lg text-5xl font-medium
 }
 .hero_description {
   @apply mt-6 text-lg leading-8 text-gray-600
