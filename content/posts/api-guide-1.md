@@ -5,7 +5,7 @@ Modified: 2023-10-13
 Category: Customer Success
 Tags: api
 Authors: Ryan Buckley
-Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs "tags" to categorize 33 distinct types of building activities.
+Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.
 Image: /images/api-blog.jpg
 
 
@@ -47,7 +47,7 @@ Next, find the endpoint. [Get Permits By Zip Code](https://api.shovels.ai/redoc#
 
 Make the request. Here's the Curl command.
 
-```
+```bash
 curl -X 'GET' \
   'https://api.shovels.ai/v1/permits/zip?zip_code=94123&tags=heat_pump&page=1&size=50' \
   -H 'accept: application/json' \
@@ -89,7 +89,7 @@ And it worked!
 
 So what do we do with all those `id` values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the `id` and pass it into our [Get Permit by ID](https://api.shovels.ai/redoc#tag/Permits/operation/get_permit_by_id_v1_permits__id__get){:target="_blank"}  endpoint.
 
-```
+```bash
 curl -X 'GET' \
   'https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b' \
   -H 'accept: application/json' \

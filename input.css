@@ -61,7 +61,7 @@ body.inverted {
   @apply mx-auto max-w-xl lg:mx-0 lg:flex-auto
 }
 .hero_title {
-  @apply max-w-lg text-4xl font-semibold
+  @apply max-w-lg text-5xl font-medium
 }
 .hero_description {
   @apply mt-6 text-lg leading-8 text-gray-600
@@ -119,6 +119,32 @@ body.inverted {
   background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
 }
 
+/* start of article classes */
+
+.article h1 {
+  @apply text-[2em] my-10
+}
+
+.article h2 {
+  @apply text-2xl my-7
+}
+
+.article h3 {
+  @apply text-xl my-5
+}
+
+.article h4 {
+  @apply text-lg my-3
+}
+
+.article p {
+  @apply my-3
+}
+
+.article .highlight {
+  @apply my-5
+}
+
 .article li {
   list-style-type: disc;
   list-style-position: inside;
@@ -129,28 +155,9 @@ body.inverted {
   margin-top: 15px;
 }
 
-.article p {
-  margin-bottom: 15px;
-}
-
 .article a {
   font-weight: bold;
   color: darkblue;
-}
-
-.article h1 {
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.article h2 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.article h3 {
-  font-size: 1.25em;
-  margin-bottom: 15px;
 }
 
 div.article img {
@@ -160,6 +167,8 @@ div.article img {
 .article ul > li {
   margin-left: 20px !important;
 }
+
+/* end of article classes */
 
 /* for the Home page's example API responses */
 .hljs {
