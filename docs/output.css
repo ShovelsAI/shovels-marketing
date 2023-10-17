@@ -2496,9 +2496,9 @@ body.inverted {
 
 .hero_title {
   max-width: 32rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
 }
 
 .hero_description {
@@ -2625,6 +2625,45 @@ body.inverted {
   background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
 }
 
+/* start of article classes */
+
+.article h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 2em;
+}
+
+.article h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.article h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.article h4 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.article p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.article .highlight {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .article li {
   list-style-type: disc;
   list-style-position: inside;
@@ -2635,28 +2674,9 @@ body.inverted {
   margin-top: 15px;
 }
 
-.article p {
-  margin-bottom: 15px;
-}
-
 .article a {
   font-weight: bold;
   color: darkblue;
-}
-
-.article h1 {
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.article h2 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.article h3 {
-  font-size: 1.25em;
-  margin-bottom: 15px;
 }
 
 div.article img {
@@ -2666,6 +2686,8 @@ div.article img {
 .article ul > li {
   margin-left: 20px !important;
 }
+
+/* end of article classes */
 
 /* for the Home page's example API responses */
 
