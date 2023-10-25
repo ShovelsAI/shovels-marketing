@@ -146,6 +146,20 @@ slug: pricing
       </thead>
       <!-- Body Rows -->
       <tbody>
+        <tr class="bg-[#E9E1CE] bg-opacity-40">
+          <td class="py-3 px-5 text-right bg-lime-50">
+            <span class="text-neutral-400 text-base">Commercial Permits</span>
+          </td>
+          <td class="text-center">
+            <span class="text-zinc-400">&mdash;</span>
+          </td>
+          <td class="text-center">
+            <span class="text-zinc-400">&mdash;</span>
+          </td>
+          <td>
+            <img class="max-h-7 m-auto" src="theme/images/pricing/checkmark.svg" alt="checkmark">
+          </td>
+        </tr>
         <tr>
           <td class="py-3 px-5 text-right">
             <span class="text-neutral-400 text-base">Geography</span>

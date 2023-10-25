@@ -26,10 +26,10 @@ slug: contractor-directory
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_jurisdiction.svg">
         </div>
-        <span class="elaboration-card_title">Pay by jurisdiction</span>
+        <span class="elaboration-card_title">All you can ping</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Price increases by geography, not by lookup. Get unlimited searches in the geographies where you need them.</p>
+        <p class="flex-auto">We're the only contractor API offering flat prices for single-state or national scope.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -37,10 +37,10 @@ slug: contractor-directory
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_lookup.svg">
         </div>
-        <span class="elaboration-card_title">Look up by name or license number</span>
+        <span class="elaboration-card_title">Look up by service area</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Evaluating bids? Look them up on Shovels to see current and past permit performance before you commit.</p>
+        <p class="flex-auto">When you hire a contractor, you don't care about their business address; you care about their service area. We track this.</p>
       </dd>
     </div>
     <div class="elaboration-card">

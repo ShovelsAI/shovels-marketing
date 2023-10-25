@@ -27,10 +27,10 @@ slug: data-feed
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_jurisdiction.svg">
         </div>
-        <span class="elaboration-card_title">Pay by jurisdiction</span>
+        <span class="elaboration-card_title">All you can ping</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Price increases by geography, not by lookup. Get unlimited searches in the geographies where you need them.</p>
+        <p class="flex-auto">We're the only permit API offering flat prices for single-state or national scope.</p>
       </dd>
     </div>
     <div class="elaboration-card">
