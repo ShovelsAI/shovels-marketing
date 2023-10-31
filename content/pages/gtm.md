@@ -1,12 +1,12 @@
-Title: Go-to-market data for the building trades
+Title: Go-to-market data for climate tech
 slug: go-to-market
 
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title">Use building permits to discover buyer intent
+    <h1 class="hero_title">Use building permits to discover climate tech buyers
     </h1>
-    <p class="hero_description">Building permits are a treasure trove of buyer intent information. Reach the right buyers for construction, climate, and property technology products at exactly the right time.
+    <p class="hero_description">Building permits are a treasure trove of buyer intent information. Reach the right buyers for heat pump, solar, EV charger, battery, and other home products at exactly the right time.
     </p>
   </div>
   <div class="hero_image-container">
@@ -17,29 +17,23 @@ slug: go-to-market
 <section class="my-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sales and marketing tools for the building
-        trades</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C products with the right message at
-        the right time -- using building permits with Shovels.</p>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Critical sales and marketing intelligence for climate tech</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C climate products with the right message at the right time -- using building permits.</p>
     </div>
     <!-- 'table' -->
     <dl class="mx-auto mt-16 max-w-4xl">
       <div class="border border-gray-900 bg-white my-2 p-10 flex flex-col md:flex-row">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2C property buyer intent</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Find recent roofing, kitchen remodel, electrification, and ADU permits.
-          Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Find recent roofing, kitchen remodel, electrification, and ADU permits.Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.
         </dd>
       </div>
       <div class="border border-gray-900 bg-white my-2 p-10 flex flex-col md:flex-row">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">B2B construction buyer intent</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of
-          thousands or even millions of square feet. Discover who the contractors are and contact them by phone or
-          email.</dd>
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of tens or hundreds of thousands of square feet. Discover who the contractors are and contact them by phone or email.</dd>
       </div>
       <div class="border border-gray-900 bg-white my-2 p-10 flex flex-col md:flex-row">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl">Construction loan origination</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up. Get
-          a list of recent home remodel permits in your territory and share your financial products with them.</dd>
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up for their building electrification projects. Get a list of recent home  permits in any ZIP code and share your climate tech products with them.</dd>
       </div>
     </dl>
   </div>
@@ -62,9 +56,9 @@ slug: go-to-market
             </div>
           </div>
           <div class="mt-5">
-            <label for="email-address" class="sr-only">Email</label>
+            <label for="email" class="sr-only">Email</label>
             <div class="mt-2.5">
-              <input type="email" name="email-address" id="email-address" autocomplete="email-address"
+              <input type="email" name="email" id="email" autocomplete="email"
                 class="block w-full rounded border-0 p-4 text-gray-900 bg-lime-50 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm text-lg sm:leading-loose"
                 placeholder="Email">
             </div>

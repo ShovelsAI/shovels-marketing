@@ -51,8 +51,7 @@ slug: software
 <section class="bg-emerald-800 text-center">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:items-center lg:justify-between lg:px-8">
     <h2 class="text-3xl font-bold tracking-wide leading-10 text-lime-50 sm:text-4xl">Cool,right?
-      <br>Tell us
-      what you're building.
+      <br>Tell us what you're building.
     </h2>
     <div class="mt-20 max-w-xl mx-auto">
       <form action="https://formspree.io/f/mnqykork" method="POST">
@@ -67,9 +66,9 @@ slug: software
             </div>
           </div>
           <div class="mt-5">
-            <label for="email-address" class="sr-only">Email</label>
+            <label for="email" class="sr-only">Email</label>
             <div class="mt-2.5">
-              <input type="email" name="email-address" id="email-address" autocomplete="email-address"
+              <input type="email" name="email" id="email" autocomplete="email"
                 class="block w-full rounded border-0 p-4 text-gray-900 bg-lime-50 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm text-lg sm:leading-loose"
                 placeholder="Email">
             </div>
