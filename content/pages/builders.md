@@ -1,13 +1,11 @@
-Title: Find and hire building contractors
+Title: Find building contractors by their service area
 slug: builders
 
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title">Unbiased contractor recommendations</h1>
-    <p class="hero_description">Shovels helps regional commercial and residential real estate
-      developers find general contractors and subcontractors for construction projects. Our recommendations are not
-      influenced by commissions or pay-per-lead fees.</p>
+    <h1 class="hero_title">Search by service area and experience</h1>
+    <p class="hero_description">Shovels helps climate tech companies create installer networks based on their building electrification expertise and their service area, not their business address. Our contractor recommendations are not influenced by commissions or pay-per-lead fees.</p>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/builders/hero.svg" alt="Shovels building permit API">
@@ -19,10 +17,9 @@ slug: builders
   <div class="mx-auto max-w-2xl text-center">
     <h2 class="elaboration-title">
       We do things differently</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-600">The other guys (Thumbtack, HomeAdvisor, Houzz, BuildZoom) have
-      financial relationships with the contractors they recommend. We don't.</p>
-    <p class="mt-6 text-base leading-7 text-gray-600 font-semibold">Our recommendations are driven purely by the
-      data.</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">The other guys (Thumbtack, HomeAdvisor, Houzz, BuildZoom) have financial relationships with the contractors they recommend. <span class="font-extrabold">We don't make money from referrals</span>.</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">The other find contractors based on their business address. We use building permits to return results by where they work.<span class="font-extrabold">We search their service areas</span>.</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600 font-extrabold">Our recommendations are driven purely by the data.</p>
   </div>
   <!-- 'table' -->
   <dl class="elaboration_container 3xl:grid-cols-4">
@@ -117,7 +114,7 @@ slug: builders
         <span class="elaboration-card_title">Nationwide</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We have access to permits in over 20,000 jurisdictions, covering 80% of the US population. Coverage is especially strong in major metro areas.</p>
+        <p class="flex-auto">We have access to permits in over 2,000 jurisdictions, covering 80% of the US population. Coverage is especially strong in major metro areas.</p>
       </dd>
     </div>
   </dl>
