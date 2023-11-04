@@ -14,7 +14,7 @@ slug: api
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">
+    <img class="max-h-[500px]" src="theme/images/api/hero.svg">
   </div>
 </section>
 

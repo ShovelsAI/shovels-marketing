@@ -1,16 +1,18 @@
-Title: Building Contractor Directory
+Title: Nationwide Building Contractor API
 slug: contractor-directory
 
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title text-amber-300">The nationwide contractor directory</h1>
-    <p class="hero_description text-lime-50">Look up contractors by name or license number. Filter by job history, construction speed, and inspection pass rate.</p>
+    <h1 class="hero_title text-amber-300">The nationwide building contractor API</h1>
+    <p class="hero_description text-lime-50">Look up contractors by their service area, not their business address. Filter by their permit history, construction speed, and inspection pass rate.</p>
+    <!--
     <div class="mt-10 mb-20">
       <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
       class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
       target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
+    -->
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/contractor-directory/hero.svg">
@@ -81,10 +83,10 @@ slug: contractor-directory
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_feeds.svg">
         </div>
-        <span class="elaboration-card_title">Data feeds and APIs</span>
+        <span class="elaboration-card_title">CSVs and APIs</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">You can always consume Shovels data directly through our data feeds and APIs for fast and efficient integration into your applications.</p>
+        <p class="flex-auto">You can always consume Shovels data directly through our CSV reports and APIs for fast and efficient integration into your applications.</p>
       </dd>
     </div>
   </dl>
