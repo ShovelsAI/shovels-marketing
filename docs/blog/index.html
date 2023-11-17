@@ -231,13 +231,13 @@
               <h3 class="text-base font-medium text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" class="font-medium text-emerald-900 hover:text-gray-700"><p>How to use the Shovels API</p></a>
+                    <a href="https://www.shovels.ai/blog/exploring-commercial-building-permits/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Exploring commercial building permits</p></a>
                   </li>
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/" class="font-medium text-emerald-900 hover:text-gray-700"><p>The growth of EV contractors in California</p></a>
+                    <a href="https://www.shovels.ai/blog/navigating-commercial-buildouts/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Navigating commercial buildouts</p></a>
                   </li>
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/september-2023-newsletter/" class="font-medium text-emerald-900 hover:text-gray-700"><p>September 2023 Newsletter</p></a>
+                    <a href="https://www.shovels.ai/blog/revitalizing-urban-landscapes-in-the-age-of-proptech/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Revitalizing urban landscapes in the age of proptech</p></a>
                   </li>
               </ul>
             </div>
@@ -409,12 +409,115 @@ Leaving: "duration-100 ease-in"
       <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
         <a href="/blog/?category=GTM">GTM</a>
       </li>
+      <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
+        <a href="/blog/?category=Podcast">Podcast</a>
+      </li>
   </ul>
 </section>
 <!-- article cards -->
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/exploring-commercial-building-permits/">
+          <img src="/images/podcast7.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/exploring-commercial-building-permits/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Exploring commercial building permits</p>
+              </h2>
+              <time datetime="2023-11-13 00:00:00-08:00" class="text-black text-xs">Mon 13 November 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/navigating-commercial-buildouts/">
+          <img src="/images/podcast8.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/navigating-commercial-buildouts/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Navigating commercial buildouts</p>
+              </h2>
+              <time datetime="2023-11-13 00:00:00-08:00" class="text-black text-xs">Mon 13 November 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/revitalizing-urban-landscapes-in-the-age-of-proptech/">
+          <img src="/images/podcast6.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/revitalizing-urban-landscapes-in-the-age-of-proptech/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Revitalizing urban landscapes in the age of proptech</p>
+              </h2>
+              <time datetime="2023-11-06 00:00:00-08:00" class="text-black text-xs">Mon 06 November 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/navigating-the-sales-and-crm-landscape-in-proptech/">
+          <img src="/images/podcast5.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/navigating-the-sales-and-crm-landscape-in-proptech/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Navigating the sales and CRM landscape in proptech</p>
+              </h2>
+              <time datetime="2023-10-31 00:00:00-07:00" class="text-black text-xs">Tue 31 October 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/unlocking-hiring-secrets-in-proptech/">
+          <img src="/images/podcast4.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/unlocking-hiring-secrets-in-proptech/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Unlocking hiring secrets in proptech</p>
+              </h2>
+              <time datetime="2023-10-25 00:00:00-07:00" class="text-black text-xs">Wed 25 October 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Customer Success')">
         <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/">
           <img src="/images/api-blog.jpg" alt="" class="object-cover h-48 w-96"/>
@@ -435,6 +538,46 @@ Leaving: "duration-100 ease-in"
           </a>
         </div>
       </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/positioning-in-proptech/">
+          <img src="/images/podcast3.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/positioning-in-proptech/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Positioning in proptech</p>
+              </h2>
+              <time datetime="2023-10-08 00:00:00-07:00" class="text-black text-xs">Sun 08 October 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/fundraising-in-proptech/">
+          <img src="/images/podcast2.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/fundraising-in-proptech/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Fundraising in proptech</p>
+              </h2>
+              <time datetime="2023-10-01 00:00:00-07:00" class="text-black text-xs">Sun 01 October 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Data')">
         <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/">
           <img src="/images/ev-contractors-grid.png" alt="" class="object-cover h-48 w-96"/>
@@ -451,6 +594,26 @@ Leaving: "duration-100 ease-in"
                   <p>The growth of EV contractors in California</p>
               </h2>
               <time datetime="2023-10-01 00:00:00-07:00" class="text-black text-xs">Sun 01 October 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/using-no-code-solutions-in-proptech/">
+          <img src="/images/podcast1.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/using-no-code-solutions-in-proptech/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Using no-code solutions in proptech</p>
+              </h2>
+              <time datetime="2023-09-22 00:00:00-07:00" class="text-black text-xs">Fri 22 September 2023</time>
             </div>
           </a>
         </div>
