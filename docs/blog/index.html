@@ -231,13 +231,13 @@
               <h3 class="text-base font-medium text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/do-rebate-programs-matter-to-contractors-in-the-sf-bay-area/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Do rebate programs matter to contractors in the SF Bay Area?</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/exploring-commercial-building-permits/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Exploring commercial building permits</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/navigating-commercial-buildouts/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Navigating commercial buildouts</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/revitalizing-urban-landscapes-in-the-age-of-proptech/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Revitalizing urban landscapes in the age of proptech</p></a>
                   </li>
               </ul>
             </div>
@@ -418,6 +418,26 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Data')">
+        <a href="https://www.shovels.ai/blog/do-rebate-programs-matter-to-contractors-in-the-sf-bay-area/">
+          <img src="/images/contractors_comparison_chart.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Data" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Data</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/do-rebate-programs-matter-to-contractors-in-the-sf-bay-area/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Do rebate programs matter to contractors in the SF Bay Area?</p>
+              </h2>
+              <time datetime="2023-11-19 00:00:00-08:00" class="text-black text-xs">Sun 19 November 2023</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
         <a href="https://www.shovels.ai/blog/exploring-commercial-building-permits/">
           <img src="/images/podcast7.png" alt="" class="object-cover h-48 w-96"/>
