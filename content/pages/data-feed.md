@@ -8,7 +8,7 @@ slug: data-feed
     <p class="hero_description text-lime-50">If you need to process large amounts of permit and contractor data, a data feed is far more efficient than an API. We got you covered.</p>
     <div class="mt-10 mb-20">
       <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
-      class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-['Scandia'] whitespace-nowrap"
+      class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg  font-medium whitespace-nowrap hover:opacity-[.85]"
       target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
   </div>
