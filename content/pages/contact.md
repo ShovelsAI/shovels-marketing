@@ -39,7 +39,7 @@ slug: contact
         </div>
       </div>
       <div class="mt-10">
-        <button type="submit" class="w-full px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-['Scandia'] whitespace-nowrap">Let's talk</button>
+        <button type="submit" class="w-full px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-['Scandia'] whitespace-nowrap">Let's talk</button>
       </div>
       <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="/privacy" class=" text-gray-600" target="_blank">privacy&nbsp;policy</a>.</p>
     </form>
