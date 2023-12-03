@@ -7,7 +7,7 @@ slug: contractors/test
     <div class="w-full md:w-3/12 lg:pr-8">
       <!-- Profile Card -->
       <div class="bg-white">
-        <h1 class="text-gray-900 font-bold text-3xl leading-8 my-1">Top 🐶 Construction</h1>
+        <h1 class="text-gray-900  text-3xl leading-8 my-1">Top 🐶 Construction</h1>
         <p class="text-gray-500 hover:text-gray-600 leading-6 mb-4">A top contractor active in Lafayette who specializes in 500+ sq ft remodels.</p>
         <div class="flex flex-wrap gap-2">
           <div class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs  text-gray-800">Home Addition</div>
@@ -42,7 +42,7 @@ slug: contractors/test
         </dl>
       </div>
       <div class="bg-white mt-4 lg:mt-10">
-        <h2 class="flex items-center space-x-3 font-bold text-gray-900 text-xl leading-8 mb-2">Similar Contractors</h2>
+        <h2 class="flex items-center space-x-3  text-gray-900 text-xl leading-8 mb-2">Similar Contractors</h2>
         <div class="grid grid-cols-3 gap-2">
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
             <span class="text-xl  leading-none text-white">TW</span>

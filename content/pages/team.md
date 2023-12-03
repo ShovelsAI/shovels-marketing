@@ -3,7 +3,7 @@ slug: team
 
 <div class="py-24">
   <div class="px-6 lg:px-8 text-center mb-10">
-    <h2 class="text-5xl font-bold tracking-tight text-amber-300">Team Shovels</h2>
+    <h2 class="text-5xl  tracking-tight text-amber-300">Team Shovels</h2>
     <p class="mt-6 text-stone-200 text-lg leading-10 max-w-md mx-auto">Shovels launched in 2022 with the support of a global network of top angel investors.</p>
   </div>
   <div class="mx-auto max-w-5xl gap-y-20 gap-x-8 px-6 lg:px-8" >
@@ -103,7 +103,7 @@ slug: team
   <!--
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3 mt-20">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Open positions</h2>
+      <h2 class="text-3xl  tracking-tight text-gray-900 sm:text-4xl">Open positions</h2>
       <p class="mt-6 text-lg leading-8 ">Shovels is hiring contract positions in data engineering and growth marketing.</p>
     </div>
     <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">

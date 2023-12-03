@@ -17,7 +17,7 @@ slug: go-to-market
 <section class="my-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Critical sales and marketing intelligence for climate tech</h2>
+      <h2 class="text-3xl  tracking-tight text-gray-900 sm:text-4xl">Critical sales and marketing intelligence for climate tech</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C climate products with the right message at the right time -- using building permits.</p>
     </div>
     <!-- 'table' -->

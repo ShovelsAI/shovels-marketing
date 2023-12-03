@@ -4,7 +4,7 @@ slug: about
 <div class="py-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="max-w-md">
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-amber-300">The Shovels One-Pager</h1>
+      <h1 class="mt-2 text-4xl  tracking-tight text-amber-300">The Shovels One-Pager</h1>
       <p class="mt-10 text-lg leading-6 text-stone-200">Shovels combines building permit data with building inspections,
         census, topography, weather, and real estate transactions to form the most comprehensive understanding of the
         building contractor market.</p>
@@ -17,7 +17,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">What we do</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">What we do</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
@@ -105,7 +105,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Our geographies</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our geographies</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
@@ -118,7 +118,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Our advantage</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our advantage</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
@@ -145,7 +145,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Pricing</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Pricing</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">

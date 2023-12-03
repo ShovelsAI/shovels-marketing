@@ -16,7 +16,7 @@ slug: software
 <!-- elaboration -->
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-3xl font-bold leading-10 tracking-tight text-gray-900">Oh, the things you can build</h2>
+    <h2 class="text-3xl  leading-10 tracking-tight text-gray-900">Oh, the things you can build</h2>
     <!-- 'table' -->
     <dl class="mx-auto mt-16 max-w-4xl">
       <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">

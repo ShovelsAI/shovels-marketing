@@ -38,7 +38,7 @@ slug: climate
         <p class="flex-auto">It's hard to know who's available. We track <span class="italic">all</span> contractors, and we know how many active jobs a contractor has and how long it usually takes them to complete a job, allowing you to filter by service area and availability. Unlike Yelp and others, we can search by where contractors work, not where they live.</p>
         <p class="mt-6">
           <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/"
-            class="text-sm font-bold leading-6 text-slate-600" target="_blank">EV contractor case study <img class="inline font-normal ml-1" src="theme/images/caret-right.svg"></a>
+            class="text-sm  leading-6 text-slate-600" target="_blank">EV contractor case study <img class="inline font-normal ml-1" src="theme/images/caret-right.svg"></a>
         </p>
       </dd>
     </div>
