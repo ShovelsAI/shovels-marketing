@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #F6F1E5;
+  font-size: 21px;
 }
 
 /* below prevents the 'flash' on page load */
