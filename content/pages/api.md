@@ -8,7 +8,7 @@ slug: api
     <p class="hero_description text-lime-50">Ping by address, contractor name, or contractor license. Receive all the data. Our API is intuitive and fast.</p>
     <div class="mt-10 mb-20 flex items-center gap-x-6">
       <a href="https://app.shovels.ai"
-        class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
+        class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85]" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
       <a href="https://api.shovels.ai/redoc"
         class="px-5 py-2 md:px-10 md:py-4 bg-stone-200 rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
     </div>
