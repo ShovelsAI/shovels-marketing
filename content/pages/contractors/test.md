@@ -10,34 +10,34 @@ slug: contractors/test
         <h1 class="text-gray-900 font-bold text-3xl leading-8 my-1">Top 🐶 Construction</h1>
         <p class="text-gray-500 hover:text-gray-600 leading-6 mb-4">A top contractor active in Lafayette who specializes in 500+ sq ft remodels.</p>
         <div class="flex flex-wrap gap-2">
-          <div class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">Home Addition</div>
-          <div class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800">Kitchen Renovation</div>
-          <div class="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">Major Remodel</div>
-          <div class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">Top 1% Pass rate</div>
-          <div class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">Top 1% Speed</div>
+          <div class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs  text-gray-800">Home Addition</div>
+          <div class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs  text-red-800">Kitchen Renovation</div>
+          <div class="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs  text-yellow-800">Major Remodel</div>
+          <div class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs  text-green-800">Top 1% Pass rate</div>
+          <div class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs  text-blue-800">Top 1% Speed</div>
         </div>
         <dl class="divide-y divide-gray-200 border-gray-200 mt-5">
-          <div class="flex justify-between py-3 text-sm font-medium">
+          <div class="flex justify-between py-3 text-sm ">
             <dt class="text-gray-500">Email</dt>
             <dd class="whitespace-nowrap text-gray-900">bryon@crowleycon.com</dd>
           </div>
-          <div class="flex justify-between py-3 text-sm font-medium">
+          <div class="flex justify-between py-3 text-sm ">
             <dt class="text-gray-500">Phone</dt>
             <dd class="whitespace-nowrap text-gray-900">925-555-5555</dd>
           </div>
-          <div class="flex justify-between py-3 text-sm font-medium">
+          <div class="flex justify-between py-3 text-sm ">
             <dt class="text-gray-500">Address</dt>
             <dd class="whitespace-nowrap text-gray-900">Lafayette, CA</dd>
           </div>
-          <div class="flex justify-between py-3 text-sm font-medium">
+          <div class="flex justify-between py-3 text-sm ">
             <dt class="text-gray-500">License #</dt>
             <dd class="whitespace-nowrap text-gray-900 hover:font-underline">
               <a href="#" target="_blank">CA - 1234567</a>
             </dd>
           </div>
-          <div class="flex justify-between py-3 text-sm font-medium">
+          <div class="flex justify-between py-3 text-sm ">
             <dt class="text-gray-500">License Status</dt>
-            <dd><span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">Active</span></dd>
+            <dd><span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs  text-green-800">Active</span></dd>
           </div>
         </dl>
       </div>
@@ -45,22 +45,22 @@ slug: contractors/test
         <h2 class="flex items-center space-x-3 font-bold text-gray-900 text-xl leading-8 mb-2">Similar Contractors</h2>
         <div class="grid grid-cols-3 gap-2">
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xl font-medium leading-none text-white">TW</span>
+            <span class="text-xl  leading-none text-white">TW</span>
           </span>
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xl font-medium leading-none text-white">TW</span>
+            <span class="text-xl  leading-none text-white">TW</span>
           </span>
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xl font-medium leading-none text-white">TW</span>
+            <span class="text-xl  leading-none text-white">TW</span>
           </span>
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xl font-medium leading-none text-white">TW</span>
+            <span class="text-xl  leading-none text-white">TW</span>
           </span>
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xl font-medium leading-none text-white">TW</span>
+            <span class="text-xl  leading-none text-white">TW</span>
           </span>
           <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xl font-medium leading-none text-white">TW</span>
+            <span class="text-xl  leading-none text-white">TW</span>
           </span>
         </div>
       </div>
@@ -73,19 +73,19 @@ slug: contractors/test
         </dl>
         <dl class="mb-5 grid grid-cols-1 gap-5 sm:grid-cols-4">
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
-            <dt class="truncate text-sm font-medium text-gray-500">Active Permits</dt>
+            <dt class="truncate text-sm  text-gray-500">Active Permits</dt>
             <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">5</dd>
           </div>
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
-            <dt class="truncate text-sm font-medium text-gray-500">Typical Capacity</dt>
+            <dt class="truncate text-sm  text-gray-500">Typical Capacity</dt>
             <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">6</dd>
           </div>
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
-            <dt class="truncate text-sm font-medium text-gray-500">Inspection Pass Rate</dt>
+            <dt class="truncate text-sm  text-gray-500">Inspection Pass Rate</dt>
             <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">86%</dd>
           </div>
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
-            <dt class="truncate text-sm font-medium text-gray-500">Typical Duration</dt>
+            <dt class="truncate text-sm  text-gray-500">Typical Duration</dt>
             <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">250 days</dd>
           </div>
         </dl>
@@ -128,29 +128,29 @@ slug: contractors/test
                 <div id='myDiv'></div>
                 <div class="pl-4">
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <div class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">Home Addition</div>
-                    <div class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800">Kitchen Renovation</div>
-                    <div class="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">Major Remodel</div>
+                    <div class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs  text-gray-800">Home Addition</div>
+                    <div class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs  text-red-800">Kitchen Renovation</div>
+                    <div class="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs  text-yellow-800">Major Remodel</div>
                   </div>
                   <dl class="grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-2">
                     <div class="sm:col-span-1">
-                      <dt class="text-sm font-medium text-gray-500">Full address</dt>
+                      <dt class="text-sm  text-gray-500">Full address</dt>
                       <dd class="mt-1 text-sm text-gray-900">123 Main St, Lafayette, CA 94549</dd>
                     </div>
                     <div class="sm:col-span-1">
-                      <dt class="text-sm font-medium text-gray-500">Square footage</dt>
+                      <dt class="text-sm  text-gray-500">Square footage</dt>
                       <dd class="mt-1 text-sm text-gray-900">1500</dd>
                     </div>
                     <div class="sm:col-span-1">
-                      <dt class="text-sm font-medium text-gray-500">Number of structures</dt>
+                      <dt class="text-sm  text-gray-500">Number of structures</dt>
                       <dd class="mt-1 text-sm text-gray-900">2</dd>
                     </div>
                     <div class="sm:col-span-1">
-                      <dt class="text-sm font-medium text-gray-500">Fees</dt>
+                      <dt class="text-sm  text-gray-500">Fees</dt>
                       <dd class="mt-1 text-sm text-gray-900">$120,000</dd>
                     </div>
                     <div class="sm:col-span-2">
-                      <dt class="text-sm font-medium text-gray-500">About</dt>
+                      <dt class="text-sm  text-gray-500">About</dt>
                       <dd class="mt-1 text-sm text-gray-900">Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.</dd>
                     </div>
                   </dl>

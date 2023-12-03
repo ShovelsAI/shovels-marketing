@@ -21,7 +21,7 @@ slug: about
       </div>
       <!-- right -->
       <div class="max-w-2xl">
-        <p class="mt-2 font-medium text-gray-900 max-w-lg">Shovels compiles and analyzes public records on the following
+        <p class="mt-2  text-gray-900 max-w-lg">Shovels compiles and analyzes public records on the following
           entities in the geographies we serve:</p>
         <table class="min-w-full divide-y divide-gray-300 mt-10 max-w-2xl">
           <thead>
@@ -37,7 +37,7 @@ slug: about
           <tbody class="divide-y divide-gray-200">
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Building permit
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -56,7 +56,7 @@ slug: about
             </tr>
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Building contractor
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -77,7 +77,7 @@ slug: about
             </tr>
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Property
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>

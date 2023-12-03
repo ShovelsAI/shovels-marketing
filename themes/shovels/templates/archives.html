@@ -12,11 +12,11 @@
 <!-- categories -->
 <section class="mx-auto max-w-7xl px-6 lg:px-8">
   <ul class="flex flex-row">
-      <li class="rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
+      <li class="rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
        <a href="/blog">All</a>
       </li>
     {% for category, articles in categories %}
-      <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
+      <li class="rounded bg-amber-300  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
         <a href="/blog/?category={{category}}">{{ category }}</a>
       </li>
     {% endfor %}
@@ -33,7 +33,7 @@
         </a>
         <!-- category -->
         <div class="p-8">
-          <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
+          <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
         </div>
         <!-- title and date -->
         <div>

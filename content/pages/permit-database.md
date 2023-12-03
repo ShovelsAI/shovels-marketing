@@ -8,7 +8,7 @@ Slug: permit-database
     <p class="hero_description text-lime-50">Look up permits by address, parcel number, or contractor name or license number. We pull data from 20,000 jurisdictions.</p>
     <div class="mt-10 mb-20">
       <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
-      class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
+      class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-['Scandia'] whitespace-nowrap"
       target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
   </div>

@@ -4,7 +4,7 @@ slug: pricing
 <div class="mx-auto max-w-5xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
   <!-- heading -->
   <div class="text-center mb-14">
-    <h1 class="text-3xl md:text-5xl font-medium">The API for building permits and building contractors</h1>
+    <h1 class="text-3xl md:text-5xl ">The API for building permits and building contractors</h1>
     <p class="mt-4 text-base leading-loose text-gray-900">We offer permit and contractor data, or a bundle of both.
     </p>
   </div>
@@ -15,19 +15,19 @@ slug: pricing
       <thead>
         <tr>
           <th class="py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-3xl font-medium">Permits</span>
+            <span class="text-emerald-800 text-3xl ">Permits</span>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$349/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">Low</p>
+            <p class="text-black text-xl ">$349/mo</p>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$849/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">Medium</p>
+            <p class="text-black text-xl ">$849/mo</p>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">High</p>
-            <p class="text-black text-xl font-medium">$2,499/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">High</p>
+            <p class="text-black text-xl ">$2,499/mo</p>
           </th>
         </tr>
       </thead>
@@ -128,19 +128,19 @@ slug: pricing
       <thead>
         <tr>
           <th class="py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-3xl font-medium">Contractors</span>
+            <span class="text-emerald-800 text-3xl ">Contractors</span>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$249/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">Low</p>
+            <p class="text-black text-xl ">$249/mo</p>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$649/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">Medium</p>
+            <p class="text-black text-xl ">$649/mo</p>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">High</p>
-            <p class="text-black text-xl font-medium">$1,999/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">High</p>
+            <p class="text-black text-xl ">$1,999/mo</p>
           </th>
         </tr>
       </thead>
@@ -227,19 +227,19 @@ slug: pricing
       <thead>
         <tr>
           <th class="py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-3xl font-medium">Bundle</span>
+            <span class="text-emerald-800 text-3xl ">Bundle</span>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$499/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">Low</p>
+            <p class="text-black text-xl ">$499/mo</p>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$1,249/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">Medium</p>
+            <p class="text-black text-xl ">$1,249/mo</p>
           </th>
           <th class="py-3">
-            <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">High</p>
-            <p class="text-black text-xl font-medium">$2,999/mo</p>
+            <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">High</p>
+            <p class="text-black text-xl ">$2,999/mo</p>
           </th>
         </tr>
       </thead>
