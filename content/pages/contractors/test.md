@@ -74,19 +74,19 @@ slug: contractors/test
         <dl class="mb-5 grid grid-cols-1 gap-5 sm:grid-cols-4">
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
             <dt class="truncate text-sm  text-gray-500">Active Permits</dt>
-            <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">5</dd>
+            <dd class="mt-1 text-3xl  tracking-tight text-gray-900">5</dd>
           </div>
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
             <dt class="truncate text-sm  text-gray-500">Typical Capacity</dt>
-            <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">6</dd>
+            <dd class="mt-1 text-3xl  tracking-tight text-gray-900">6</dd>
           </div>
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
             <dt class="truncate text-sm  text-gray-500">Inspection Pass Rate</dt>
-            <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">86%</dd>
+            <dd class="mt-1 text-3xl  tracking-tight text-gray-900">86%</dd>
           </div>
           <div class="overflow-hidden rounded-lg bg-slate-50 px-4 py-5 shadow sm:p-6">
             <dt class="truncate text-sm  text-gray-500">Typical Duration</dt>
-            <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">250 days</dd>
+            <dd class="mt-1 text-3xl  tracking-tight text-gray-900">250 days</dd>
           </div>
         </dl>
       </div>
@@ -97,7 +97,7 @@ slug: contractors/test
             <dt>
               <button type="button" x-description="Expand/collapse question button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-1" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
                 <div>
-                  <p class="text-base font-semibold leading-7">1500 sq ft addition in Lafayette</p>
+                  <p class="text-base  leading-7">1500 sq ft addition in Lafayette</p>
                   <div class="sm:flex mt-2">
                     <p class="flex items-center text-sm text-gray-500">
                       <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -163,7 +163,7 @@ slug: contractors/test
             <dt>
               <button type="button" x-description="Expand/collapse question button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-1" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
                 <div>
-                  <p class="text-base font-semibold leading-7">1500 sq ft addition in Lafayette</p>
+                  <p class="text-base  leading-7">1500 sq ft addition in Lafayette</p>
                   <div class="sm:flex mt-2">
                     <p class="flex items-center text-sm text-gray-500">
                       <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

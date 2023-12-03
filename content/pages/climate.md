@@ -52,7 +52,7 @@ slug: climate
       <dd class="elaboration-card_text-container">
         <p class="flex-auto">Utilities, governments, and researchers want to know where electrification is happening. We have that. We can help you build lists of homes with recent building electrification activity so you can promote your climate software and hardware products.</p>
         <p class="mt-6">
-          <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/" class="text-sm font-semibold leading-6 text-slate-600">EV charger case study <span aria-hidden="true">→</span></a>
+          <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/" class="text-sm  leading-6 text-slate-600">EV charger case study <span aria-hidden="true">→</span></a>
         </p>
       </dd>
     </div>
@@ -67,7 +67,7 @@ slug: climate
         <p class="flex-auto">Our data go back decades. Use Shovels to build electrification trends by year or season. See what happens during recessions and housing booms, and measure the effect of the Inflation Reduction Act of 2022.</p>
         <!--
         <p class="mt-6">
-          <a href="#" class="text-sm font-semibold leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
+          <a href="#" class="text-sm  leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
         </p>
         -->
       </dd>

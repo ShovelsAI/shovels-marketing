@@ -26,11 +26,11 @@ slug: about
         <table class="min-w-full divide-y divide-gray-300 mt-10 max-w-2xl">
           <thead>
             <tr>
-              <th scope="col" class="text-left text-base font-semibold text-stone-400 uppercase sm:pl-0">Object
+              <th scope="col" class="text-left text-base  text-stone-400 uppercase sm:pl-0">Object
               </th>
-              <th scope="col" class="hidden px-3 text-left text-base font-semibold text-stone-400 uppercase lg:table-cell">
+              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase lg:table-cell">
                 Description</th>
-              <th scope="col" class="hidden px-3 text-left text-base font-semibold text-stone-400 uppercase sm:table-cell">
+              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase sm:table-cell">
                 Accessibility</th>
             </tr>
           </thead>
@@ -125,16 +125,16 @@ slug: about
         <p class="mt-2 text-base text-gray-700">Our competitive advantage is our focus on data quality and completeness.
         </p>
         <ul class="list-disc ml-4 max-w-2xl">
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Completeness</span>: We use multiple
+          <li class="mt-3 text-base text-gray-700"><span class="">Completeness</span>: We use multiple
             vendors and our own data extraction expertise to ensure that all permits are gathered from every permitting
             jurisdiction in our geographies.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Quality</span>: Permit data is
+          <li class="mt-3 text-base text-gray-700"><span class="">Quality</span>: Permit data is
             notoriously
             messy. We go out of our way to cleanse and normalize data so it is easy to consume.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Science</span>: We layer multiple
+          <li class="mt-3 text-base text-gray-700"><span class="">Science</span>: We layer multiple
             datasets
             to discover new statistical relationships between permits, contractors, and properties.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Recency</span>: We process millions of
+          <li class="mt-3 text-base text-gray-700"><span class="">Recency</span>: We process millions of
             records continually and can serve daily, weekly, or monthly refreshes.</li>
         </ul>
       </div>
