@@ -1,7 +1,7 @@
 Title: Exploring commercial building permits
 Subtitle: Diving into the complexities and insights of commercial building permits
-Date: 2023-11-13
-Modified: 2023-11-13
+Date: 2023-11-08
+Modified: 2023-11-08
 Category: Podcast
 Tags: podcast, building permit, building contractor
 Authors: Ryan Buckley

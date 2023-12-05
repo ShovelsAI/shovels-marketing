@@ -1,7 +1,7 @@
 Title: Navigating the sales and CRM landscape in proptech
 Subtitle: Understanding the unique challenges and strategies in proptech sales and CRM integration
-Date: 2023-10-31
-Modified: 2023-10-31
+Date: 2023-10-27
+Modified: 2023-10-27
 Category: Podcast
 Tags: podcast, sales, crm
 Authors: Ryan Buckley
