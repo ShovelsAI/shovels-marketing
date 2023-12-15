@@ -1,4 +1,4 @@
-Title: Revitalizing urban landscapes in the age of proptech
+Title: Episode 6: Revitalizing urban landscapes in the age of proptech
 Subtitle: Exploring the transformation of urban spaces and the role of technology in shaping real estate trends
 Date: 2023-11-02
 Modified: 2023-11-02

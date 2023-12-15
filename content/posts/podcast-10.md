@@ -1,4 +1,4 @@
-Title: Navigating email marketing challenges
+Title: Episode 10: Navigating email marketing challenges
 Subtitle: Unraveling the complexities of effective email marketing in the proptech landscape
 Date: 2023-11-29
 Modified: 2023-11-29

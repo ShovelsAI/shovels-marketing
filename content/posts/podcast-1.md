@@ -1,4 +1,4 @@
-Title: Using no-code solutions in proptech
+Title: Episode 1: Using no-code solutions in proptech
 Subtitle: We explore the pros and cons of both Bubble and FlutterFlow
 Date: 2023-9-22
 Modified: 2023-9-22

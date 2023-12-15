@@ -1,4 +1,4 @@
-Title: Positioning in proptech
+Title: Episode 3: Positioning in proptech
 Subtitle: Exploring strategic positioning in proptech through a bakery analogy
 Date: 2023-10-13
 Modified: 2023-10-13

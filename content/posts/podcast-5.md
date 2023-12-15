@@ -1,4 +1,4 @@
-Title: Navigating the sales and CRM landscape in proptech
+Title: Episode 5: Navigating the sales and CRM landscape in proptech
 Subtitle: Understanding the unique challenges and strategies in proptech sales and CRM integration
 Date: 2023-10-27
 Modified: 2023-10-27

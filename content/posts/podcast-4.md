@@ -1,4 +1,4 @@
-Title: Unlocking hiring secrets in proptech
+Title: Episode 4: Unlocking hiring secrets in proptech
 Subtitle: Unveiling the art of effective team building in the dynamic world of proptech.
 Date: 2023-10-20
 Modified: 2023-10-20

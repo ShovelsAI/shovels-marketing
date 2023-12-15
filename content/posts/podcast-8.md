@@ -1,4 +1,4 @@
-Title: Navigating commercial buildouts
+Title: Episode 8: Navigating commercial buildouts
 Subtitle: Exploring the journey from concept to construction in proptech
 Date: 2023-11-15
 Modified: 2023-11-15

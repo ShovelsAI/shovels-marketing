@@ -1,4 +1,4 @@
-Title: Exploring commercial building permits
+Title: Episode 7: Exploring commercial building permits
 Subtitle: Diving into the complexities and insights of commercial building permits
 Date: 2023-11-08
 Modified: 2023-11-08

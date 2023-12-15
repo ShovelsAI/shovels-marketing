@@ -19,7 +19,7 @@ There's a lot to cover, so I'll summarize first and then get into some detail fo
 - We increased our price to $1,000/mo per metro area.
 - We also continue to work through data challenges -- to be expected in this corner of the Internet. 
 
-![Heroes]({attach}heroes.jpeg)
+![Heroes]({static}/images/heroes.jpeg)
 
 This is a pic of Luka and me amid a hero's journey through the mystical and enchanted world of building permit databases. 
 

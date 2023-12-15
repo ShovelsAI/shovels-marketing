@@ -1,4 +1,4 @@
-Title: Exploring AI in proptech
+Title: Episode 9: Exploring AI in proptech
 Subtitle: A deep dive into using AI for enhancing proptech strategies
 Date: 2023-11-21
 Modified: 2023-11-21
