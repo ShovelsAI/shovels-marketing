@@ -30,7 +30,7 @@ slug: software
       </div>
       <div class="border border-gray-900 my-2 p-10 flex flex-col md:flex-row">
         <dt class="flex-1 font-semibold text-gray-900 text-2xl lg:pr-8">Update property valuations based on comps</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Zillow and Redfin estimate the value of a home based on comps. Thus, the valuation only changes when nearby homes get sold. But what if you just remodeled the kitchen? Or added an ADU? Zillow should know this and recompute a property value, but they don't. You should build this, and we'll help. Opportunity *knocks*..</dd>
+        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Zillow and Redfin estimate the value of a home based on comps. Thus, the valuation only changes when nearby homes get sold. But what if you just remodeled the kitchen? Or added an ADU? Zillow should know this and recompute a property value, but they don't. You should build this, and we'll help. Opportunity *knocks*...</dd>
       </div>
     </dl>
   </div>
