@@ -3,7 +3,7 @@ slug: contact
 
 <div class="mx-auto max-w-4xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
   <h2 class="text-5xl font-bold tracking-tight text-emerald-800">Let's talk about construction data</h2>
-  <p class="mt-2 text-lg leading-8 text-gray-600">We want to help you integrate Shovels into your software product.</p>
+  <p class="mt-2 text-lg leading-8 text-gray-600">We want to help you sell more stuff.</p>
   <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
     <form action="https://formspree.io/f/mnqykork" method="POST" class="lg:flex-auto">
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -41,7 +41,7 @@ slug: contact
       <div class="mt-10">
         <button type="submit" class="w-full px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap">Let's talk</button>
       </div>
-      <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="/privacy" class="font-semibold text-gray-600" target="_blank">privacy&nbsp;policy</a>.</p>
+      <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="/privacy" class="font-semibold text-gray-600" target="_blank">privacy&nbsp;policy</a>. You can also call us at 1-800-511-7457.</p>
     </form>
     <!--
     <div class="lg:mt-6 lg:w-80 lg:flex-none">

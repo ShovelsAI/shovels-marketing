@@ -119,7 +119,7 @@ slug: about
       </div>
       <!-- right -->
       <div class="max-w-2xl">
-        <p class="mt-2 text-base text-gray-700">We sell by geography and pricing depends on whether historical data is included, how often you need updates, and how you consume the data. Contact <a href="mailto:sales@shovels.ai">sales@shovels.ai</a> for more information! </p>
+        <p class="mt-2 text-base text-gray-700">We sell by geography and pricing depends on whether historical data is included, how often you need updates, and how you consume the data. Contact <a href="mailto:sales@shovels.ai">sales@shovels.ai</a> or call 1-800-511-7457 for more information! </p>
       </div>
     </article>
   </div>
