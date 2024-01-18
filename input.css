@@ -52,7 +52,7 @@ body.inverted {
 }
 
 .navbar_item {
-  @apply text-emerald-800 inline-flex items-center rounded-md text-base font-medium hover:text-emerald-900
+  @apply text-emerald-800 inline-flex items-center rounded-md text-base hover:text-emerald-900
 }
 
 .navbar_item > svg {
