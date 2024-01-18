@@ -1,9 +1,9 @@
-Title: Navigating commercial buildouts
+Title: Episode 8: Navigating commercial buildouts
 Subtitle: Exploring the journey from concept to construction in proptech
-Date: 2023-11-13
-Modified: 2023-11-13
+Date: 2023-11-15
+Modified: 2023-11-15
 Category: Podcast
-Tags: podcast, building permit, building contractor
+Tags: podcast, commercial permit, proptech
 Authors: Ryan Buckley
 Summary: In Episode 8 of "What We Learned This Week In Proptech," Fernando Pizarro and I explored the intricate process of commercial buildouts, discussing the importance of choosing the right space, the role of brokers, architects, and contractors, and the complexities of permitting. We also highlighted the transformative impact of technology in streamlining these processes, reflecting on the potential efficiencies it brings to the proptech industry.
 Image: /images/podcast8.png

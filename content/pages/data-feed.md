@@ -6,11 +6,6 @@ slug: data-feed
   <div class="hero_text-container">
     <h1 class="hero_title text-amber-300">Store permit and construction data locally</h1>
     <p class="hero_description text-lime-50">If you need to process large amounts of permit and contractor data, a data feed is far more efficient than an API. We got you covered.</p>
-    <div class="mt-10 mb-20">
-      <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
-      class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg  font-medium whitespace-nowrap hover:opacity-[.85]"
-      target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
-    </div>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">

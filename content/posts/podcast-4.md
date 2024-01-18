@@ -1,7 +1,7 @@
-Title: Unlocking hiring secrets in proptech
+Title: Episode 4: Unlocking hiring secrets in proptech
 Subtitle: Unveiling the art of effective team building in the dynamic world of proptech.
-Date: 2023-10-25
-Modified: 2023-10-25
+Date: 2023-10-20
+Modified: 2023-10-20
 Category: Podcast
 Tags: podcast, no-code, coding
 Authors: Ryan Buckley

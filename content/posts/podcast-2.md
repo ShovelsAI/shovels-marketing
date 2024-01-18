@@ -1,4 +1,4 @@
-Title: Fundraising in proptech
+Title: Episode 2: Fundraising in proptech
 Subtitle: We discuss the opportunities and challenges fundraising in proptech in 2023
 Date: 2023-10-01
 Modified: 2023-10-01
