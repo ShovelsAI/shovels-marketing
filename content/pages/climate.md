@@ -9,7 +9,7 @@ slug: climate
         battery installation. Use this data to build lead lists and create installer networks based on contractor service area.</p>
       <div class="mt-10 mb-20">
         <a href="https://app.shovels.ai"
-          class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
+          class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85]"
           target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
       </div>
     </div>
@@ -38,7 +38,7 @@ slug: climate
         <p class="flex-auto">It's hard to know who's available. We track <span class="italic">all</span> contractors, and we know how many active jobs a contractor has and how long it usually takes them to complete a job, allowing you to filter by service area and availability. Unlike Yelp and others, we can search by where contractors work, not where they live.</p>
         <p class="mt-6">
           <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/"
-            class="text-sm font-bold leading-6 text-slate-600" target="_blank">EV contractor case study <img class="inline font-normal ml-1" src="theme/images/caret-right.svg"></a>
+            class="text-sm  leading-6 text-slate-600" target="_blank">EV contractor case study <img class="inline font-normal ml-1" src="theme/images/caret-right.svg"></a>
         </p>
       </dd>
     </div>
@@ -52,7 +52,7 @@ slug: climate
       <dd class="elaboration-card_text-container">
         <p class="flex-auto">Utilities, governments, and researchers want to know where electrification is happening. We have that. We can help you build lists of homes with recent building electrification activity so you can promote your climate software and hardware products.</p>
         <p class="mt-6">
-          <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/" class="text-sm font-semibold leading-6 text-slate-600">EV charger case study <span aria-hidden="true">→</span></a>
+          <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/" class="text-sm  leading-6 text-slate-600">EV charger case study <span aria-hidden="true">→</span></a>
         </p>
       </dd>
     </div>
@@ -67,7 +67,7 @@ slug: climate
         <p class="flex-auto">Our data go back decades. Use Shovels to build electrification trends by year or season. See what happens during recessions and housing booms, and measure the effect of the Inflation Reduction Act of 2022.</p>
         <!--
         <p class="mt-6">
-          <a href="#" class="text-sm font-semibold leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
+          <a href="#" class="text-sm  leading-6 text-slate-600">Learn more <span aria-hidden="true">→</span></a>
         </p>
         -->
       </dd>

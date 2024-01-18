@@ -4,7 +4,7 @@ slug: about
 <div class="py-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="max-w-md">
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-amber-300">The Shovels One-Pager</h1>
+      <h1 class="mt-2 text-4xl  tracking-tight text-amber-300">The Shovels One-Pager</h1>
       <p class="mt-10 text-lg leading-6 text-stone-200">Shovels combines building permit data with building inspections,
         census, topography, weather, and real estate transactions to form the most comprehensive understanding of the
         building contractor market.</p>
@@ -17,27 +17,27 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">What we do</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">What we do</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
-        <p class="mt-2 font-medium text-gray-900 max-w-lg">Shovels compiles and analyzes public records on the following
+        <p class="mt-2  text-gray-900 max-w-lg">Shovels compiles and analyzes public records on the following
           entities in the geographies we serve:</p>
         <table class="min-w-full divide-y divide-gray-300 mt-10 max-w-2xl">
           <thead>
             <tr>
-              <th scope="col" class="text-left text-base font-semibold text-stone-400 uppercase sm:pl-0">Object
+              <th scope="col" class="text-left text-base  text-stone-400 uppercase sm:pl-0">Object
               </th>
-              <th scope="col" class="hidden px-3 text-left text-base font-semibold text-stone-400 uppercase lg:table-cell">
+              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase lg:table-cell">
                 Description</th>
-              <th scope="col" class="hidden px-3 text-left text-base font-semibold text-stone-400 uppercase sm:table-cell">
+              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase sm:table-cell">
                 Accessibility</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Building permit
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -56,7 +56,7 @@ slug: about
             </tr>
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Building contractor
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -77,7 +77,7 @@ slug: about
             </tr>
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Property
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -105,7 +105,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Our geographies</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our geographies</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
@@ -118,23 +118,23 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Our advantage</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our advantage</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
         <p class="mt-2 text-base text-gray-700">Our competitive advantage is our focus on data quality and completeness.
         </p>
         <ul class="list-disc ml-4 max-w-2xl">
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Completeness</span>: We use multiple
+          <li class="mt-3 text-base text-gray-700"><span class="">Completeness</span>: We use multiple
             vendors and our own data extraction expertise to ensure that all permits are gathered from every permitting
             jurisdiction in our geographies.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Quality</span>: Permit data is
+          <li class="mt-3 text-base text-gray-700"><span class="">Quality</span>: Permit data is
             notoriously
             messy. We go out of our way to cleanse and normalize data so it is easy to consume.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Science</span>: We layer multiple
+          <li class="mt-3 text-base text-gray-700"><span class="">Science</span>: We layer multiple
             datasets
             to discover new statistical relationships between permits, contractors, and properties.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Recency</span>: We process millions of
+          <li class="mt-3 text-base text-gray-700"><span class="">Recency</span>: We process millions of
             records continually and can serve daily, weekly, or monthly refreshes.</li>
         </ul>
       </div>
@@ -145,7 +145,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Pricing</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Pricing</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">

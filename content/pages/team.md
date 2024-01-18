@@ -3,7 +3,7 @@ slug: team
 
 <div class="py-24">
   <div class="px-6 lg:px-8 text-center mb-10">
-    <h2 class="text-5xl font-bold tracking-tight text-amber-300">Team Shovels</h2>
+    <h2 class="text-5xl  tracking-tight text-amber-300">Team Shovels</h2>
     <p class="mt-6 text-stone-200 text-lg leading-10 max-w-md mx-auto">Shovels launched in 2022 with the support of a global network of top angel investors.</p>
   </div>
   <div class="mx-auto max-w-5xl gap-y-20 gap-x-8 px-6 lg:px-8" >
@@ -16,7 +16,7 @@ slug: team
         <div x-show="!ryan">
           <img class="w-full" src="theme/images/team/ryan.svg" alt="Ryan Buckley from Shovels">
           <div class="p-6">
-            <h3 class="text-lg font-semibold leading-8 text-stone-200">Ryan Buckley</h3>
+            <h3 class="text-lg  leading-8 text-stone-200">Ryan Buckley</h3>
             <p class="text-base leading-7 uppercase text-amber-300">Co-founder & CEO</p>
           </div>
         </div>
@@ -48,7 +48,7 @@ slug: team
         <div x-show="!luka">
           <img class="w-full" src="theme/images/team/luka.svg" alt="Luka Kacil from Shovels">
           <div class="p-6">
-            <h3 class="text-lg font-semibold leading-8 text-stone-200">Luka Kacil</h3>
+            <h3 class="text-lg  leading-8 text-stone-200">Luka Kacil</h3>
             <p class="text-base leading-7 uppercase text-amber-300">Co-founder & CTO</p>
           </div>
         </div>
@@ -80,7 +80,7 @@ slug: team
         <div x-show="!petra">
           <img class="w-full" src="theme/images/team/petra.svg" alt="Petra Kopic from Shovels">
           <div class="p-6">
-            <h3 class="text-lg font-semibold leading-8 text-stone-200">Petra Kopić</h3>
+            <h3 class="text-lg  leading-8 text-stone-200">Petra Kopić</h3>
             <p class="text-base leading-7 uppercase text-amber-300">Data Engineer</p>
           </div>
         </div>
@@ -103,7 +103,7 @@ slug: team
   <!--
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3 mt-20">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Open positions</h2>
+      <h2 class="text-3xl  tracking-tight text-gray-900 sm:text-4xl">Open positions</h2>
       <p class="mt-6 text-lg leading-8 ">Shovels is hiring contract positions in data engineering and growth marketing.</p>
     </div>
     <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
@@ -111,17 +111,17 @@ slug: team
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="aspect-[3/2] w-full rounded-2xl object-cover text-slate-400">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
         </svg>
-        <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Data Engineer</h3>
+        <h3 class="mt-6 text-lg  leading-8 text-gray-900">Data Engineer</h3>
         <p class="my-4 text-base leading-7 ">Are you passionate about using data to solve complex problems? To drive sustainability and combat climate change? Shovels is looking for a talented engineer to join our rapidly growing team and help revolutionize the building contractor market.</p>
-        <a href="https://broadleaf-leech-f9b.notion.site/Data-Engineer-8c88bef8282d4d0ebdf74178c5e737d4" target="_blank" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 block w-full text-center">Read more and apply</a>
+        <a href="https://broadleaf-leech-f9b.notion.site/Data-Engineer-8c88bef8282d4d0ebdf74178c5e737d4" target="_blank" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm  text-white shadow-sm hover:bg-slate-500 block w-full text-center">Read more and apply</a>
       </li>
       <li>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="aspect-[3/2] w-full rounded-2xl object-cover text-slate-400">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
         </svg>
-        <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Growth Marketer</h3>
+        <h3 class="mt-6 text-lg  leading-8 text-gray-900">Growth Marketer</h3>
         <p class="my-4 text-base leading-7 ">Shovels is a new company with a small team. As such, we need each person to play an outsized role in our development at these very early stages. From the outset, we’re going to focus heavily on marketing! That’s why this position is among our first hires.</p>
-        <a href="https://broadleaf-leech-f9b.notion.site/Growth-Marketer-4a35d1c91875485eaee25c72b77fedf1" target="_blank" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline block w-full text-center">Read more and apply</a>
+        <a href="https://broadleaf-leech-f9b.notion.site/Growth-Marketer-4a35d1c91875485eaee25c72b77fedf1" target="_blank" class="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm  text-white shadow-sm hover:bg-slate-500 focus-visible:outline block w-full text-center">Read more and apply</a>
       </li>
     </ul>
   </div>
