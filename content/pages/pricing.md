@@ -231,11 +231,11 @@ slug: pricing
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$499/mo</p>
+            <p class="text-black text-xl font-medium">$699/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$1,249/mo</p>
+            <p class="text-black text-xl font-medium">$1,499/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">High</p>
