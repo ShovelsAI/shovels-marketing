@@ -63,7 +63,7 @@ Which house would you prefer now? I know my answer.
 
 This is a new way of looking at neighborhoods. I don't believe this data exists anywhere else. We want to help you get it out there! 
 
-![Neigbohood improvement index]({static}/images/neighborhood-index.jpg)
+![Neighborhood improvement index]({static}/images/neighborhood-index.jpg)
 
 Here's a heat map at the zip code level in my neck of the woods (we could also do this block-by-block) showing relative investment in ADUs, kitchens, and other additions. The SQL query that drives it is pretty cool too, but I'll just leave you with the map.
 

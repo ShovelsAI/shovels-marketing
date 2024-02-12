@@ -13,10 +13,9 @@ Slug: permit-database
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/permit-database/hero.svg" alt="Shovels building permits">
+    <img class="max-h-[500px]" src="theme/images/permit-database/permits-filter.png" alt="Shovels building permits">
   </div>
 </section>
-
 <!-- elaboration -->
 <section class="mx-auto my-24 max-w-7xl px-6">
   <!-- 'table' -->
@@ -26,10 +25,10 @@ Slug: permit-database
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_jurisdiction.svg" alt="Shovels building permit API">
         </div>
-        <span class="elaboration-card_title">All you can ping</span>
+        <span class="elaboration-card_title">Over 125M permits</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We're the only permit database API offering flat prices for single-state or national scope.</p>
+        <p class="flex-auto">We add between 5 and 10 million new building permits to the permit database every month, and you get access to all of them.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -37,10 +36,10 @@ Slug: permit-database
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_lookup.svg">
         </div>
-        <span class="elaboration-card_title">Look up by contractor</span>
+        <span class="elaboration-card_title">Find permits with contractors</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Our permit database connects to our contractor database so you can also lookup permits by contractor name or license ID.</p>
+        <p class="flex-auto">Our permit database connects to our contractor database so you can also lookup permits that have a contractor. Click on the contractor to see the contractor profile.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -51,7 +50,7 @@ Slug: permit-database
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Our building permit data is refreshed and re-processed constantly. We retrieve updates from our source data partners and supplement with our own retrieval systems.</p>
+        <p class="flex-auto">Our building permit data is refreshed and re-processed monthly. We retrieve updates from our source data partners and supplement with our own retrieval systems.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -59,10 +58,10 @@ Slug: permit-database
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_fees.svg">
         </div>
-        <span class="elaboration-card_title">Permit fees</span>
+        <span class="elaboration-card_title">Filter by permit fees</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We include permit fees wherever it's available, showing you how fees vary by jurisdiction and permit type.</p>
+        <p class="flex-auto">We include permit fees wherever it's available, showing you how fees vary by jurisdiction and permit type. Filter for permits by fee amounts.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -70,10 +69,10 @@ Slug: permit-database
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_timeline.svg">
         </div>
-        <span class="elaboration-card_title">Permit processing timeline</span>
+        <span class="elaboration-card_title">Search by keyword</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We can track permit approval timing in some jurisdictions, helping you predict how long it takes from permit submission to final approval.</p>
+        <p class="flex-auto">Are you looking for brand name mentions or other appliance detail? Use our keyword search to quickly search across over 100M permits.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -81,10 +80,10 @@ Slug: permit-database
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_feeds.svg">
         </div>
-        <span class="elaboration-card_title">Data feeds and APIs</span>
+        <span class="elaboration-card_title">Find any type of permit</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">You can always consume Shovels data directly through our data feeds and APIs for fast and efficient integration into your applications.</p>
+        <p class="flex-auto">Our AI-based classification system tags permits by the type of work that was done, so you can filter to find exactly the building permits you need.</p>
       </dd>
     </div>
   </dl>

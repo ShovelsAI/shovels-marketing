@@ -4,18 +4,16 @@ slug: contractor-directory
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title text-amber-300">The nationwide building contractor API</h1>
+    <h1 class="hero_title text-amber-300">The nationwide building contractor directory</h1>
     <p class="hero_description text-lime-50">Look up contractors by their service area, not their business address. Filter by their permit history, construction speed, and inspection pass rate.</p>
-    <!--
     <div class="mt-10 mb-20">
-      <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff"
+      <a href="https://app.shovels.ai"
       class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
-      target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
+      target="_blank">Register to demo <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
-    -->
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/contractor-directory/hero.svg">
+    <img class="max-h-[500px]" src="theme/images/contractor-directory/shane.png">
   </div>
 </section>
 
@@ -28,10 +26,10 @@ slug: contractor-directory
         <div class="mb-6">
           <img src="theme/images/permit-database/icon_jurisdiction.svg">
         </div>
-        <span class="elaboration-card_title">All you can ping</span>
+        <span class="elaboration-card_title">2.5M contractors</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We're the only contractor API offering flat prices for single-state or national scope.</p>
+        <p class="flex-auto">Our contractor directory is derived from our national building permit database. We use advanced data science to clean and deduplicate contractors across over 100M building permits in the United States.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -42,7 +40,7 @@ slug: contractor-directory
         <span class="elaboration-card_title">Look up by service area</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">When you hire a contractor, you don't care about their business address; you care about their service area. We track this.</p>
+        <p class="flex-auto">When you hire a contractor, you don't care about their business address; you care about their service area. We know where contractors work because we use their building permits.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -53,7 +51,7 @@ slug: contractor-directory
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Our contractor data is refreshed and re-processed constantly. We retrieve updates from our source data partners and supplement with our own retrieval systems.</p>
+        <p class="flex-auto">Our contractor data is refreshed and re-processed monthly. We retrieve updates from our building permit database and supplement with state contractor license files.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -86,7 +84,7 @@ slug: contractor-directory
         <span class="elaboration-card_title">CSVs and APIs</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">You can always consume Shovels data directly through our CSV reports and APIs for fast and efficient integration into your applications.</p>
+        <p class="flex-auto">You can download to CSV directly from Shovels to analyze or transfer into your other applications.</p>
       </dd>
     </div>
   </dl>
