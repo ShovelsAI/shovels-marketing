@@ -392,7 +392,7 @@ What does this mean to me? We have work to do! &lt;/li&gt;
 &lt;p&gt;The other home is in a neighborhood bustling with solar installs, new ADUs, and kitchen remodels. The homeowners are doubling down on their purchases, in it for the long haul. &lt;/p&gt;
 &lt;p&gt;Which house would you prefer now? I know my answer.&lt;/p&gt;
 &lt;p&gt;This is a new way of looking at neighborhoods. I don't believe this data exists anywhere else. We want to help you get it out there! &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Neigbohood improvement index" src="https://www.shovels.ai/images/neighborhood-index.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Neighborhood improvement index" src="https://www.shovels.ai/images/neighborhood-index.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Here's a heat map at the zip code level in my neck of the woods (we could also do this block-by-block) showing relative investment in ADUs, kitchens, and other additions. The SQL query that drives it is pretty cool too, but I'll just leave you with the map.&lt;/p&gt;
 &lt;h1&gt;Beautiful API documentation&lt;/h1&gt;
 &lt;p&gt;The first company I co-founded was &lt;a href="https://www.scripted.com/"&gt;Scripted&lt;/a&gt;. I'm a business guy, but I've always been fascinated by programming. I guess that's why I landed in tech. &lt;/p&gt;

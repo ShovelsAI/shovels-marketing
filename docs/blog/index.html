@@ -249,13 +249,13 @@
               <h3 class="text-base font-medium text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/episode-14-davos-and-the-doe/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Episode 14: Davos and the DOE</p></a>
+                    <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/" class="font-medium text-emerald-900 hover:text-gray-700"><p>How to use the Shovels app</p></a>
                   </li>
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/episode-13-the-sitzerburnett-decision/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Episode 13: The Sitzer/Burnett decision</p></a>
+                    <a href="https://www.shovels.ai/blog/episode-16-the-proptech-macro-investing-environment/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Episode 16: The proptech macro investing environment</p></a>
                   </li>
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/january-2024-newsletter/" class="font-medium text-emerald-900 hover:text-gray-700"><p>January 2024 Newsletter</p></a>
+                    <a href="https://www.shovels.ai/blog/episode-15-the-sexiest-topic-weve-done-so-far-zoning/" class="font-medium text-emerald-900 hover:text-gray-700"><p>Episode 15: The sexiest topic we've done so far: Zoning</p></a>
                   </li>
               </ul>
             </div>
@@ -436,6 +436,66 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Customer Success')">
+        <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/">
+          <img src="/images/boulder-commercial.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Customer Success" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Customer Success</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>How to use the Shovels app</p>
+              </h2>
+              <time datetime="2024-02-12 00:00:00-08:00" class="text-black text-xs">Mon 12 February 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/episode-16-the-proptech-macro-investing-environment/">
+          <img src="/images/podcast16a.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/episode-16-the-proptech-macro-investing-environment/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Episode 16: The proptech macro investing environment</p>
+              </h2>
+              <time datetime="2024-02-05 00:00:00-08:00" class="text-black text-xs">Mon 05 February 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/episode-15-the-sexiest-topic-weve-done-so-far-zoning/">
+          <img src="/images/podcast15.png" alt="" class="object-cover h-48 w-96"/>
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/episode-15-the-sexiest-topic-weve-done-so-far-zoning/">
+           <div class="pb-8 px-8">
+              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <p>Episode 15: The sexiest topic we've done so far: Zoning</p>
+              </h2>
+              <time datetime="2024-01-29 00:00:00-08:00" class="text-black text-xs">Mon 29 January 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
         <a href="https://www.shovels.ai/blog/episode-14-davos-and-the-doe/">
           <img src="/images/podcast14.png" alt="" class="object-cover h-48 w-96"/>
