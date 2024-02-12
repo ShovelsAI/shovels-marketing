@@ -9,12 +9,12 @@ slug: climate
         battery installation. Use this data to build lead lists and create installer networks based on contractor service area.</p>
       <div class="mt-10 mb-20">
         <a href="https://app.shovels.ai"
-          class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85]"
+          class="shovels-button"
           target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
       </div>
     </div>
     <div class="hero_image-container">
-      <img class="max-h-[500px]" src="theme/images/climate/hero.svg">
+      <img class="max-h-[600px]" src="theme/images/climate/hero.svg">
     </div>
 </section>
 
