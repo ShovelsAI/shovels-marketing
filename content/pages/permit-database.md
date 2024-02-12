@@ -24,7 +24,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg" alt="Shovels building permit API">
+          <img src="theme/images/permit-database/ping.svg" alt="Shovels building permit API">
         </div>
         <span class="elaboration-card_title">All you can ping</span>
       </dt>
@@ -35,7 +35,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/permit-database/lookup.png">
         </div>
         <span class="elaboration-card_title">Look up by contractor</span>
       </dt>
@@ -46,7 +46,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/permit-database/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -57,7 +57,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/permit-database/fees.png">
         </div>
         <span class="elaboration-card_title">Permit fees</span>
       </dt>
@@ -68,7 +68,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/permit-database/timeline.png">
         </div>
         <span class="elaboration-card_title">Permit processing timeline</span>
       </dt>
@@ -79,7 +79,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/permit-database/api.png">
         </div>
         <span class="elaboration-card_title">Data feeds and APIs</span>
       </dt>
