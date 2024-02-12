@@ -8,7 +8,7 @@ slug: construction-finance
       <p class="hero_description">Shovels provides the equivalent of a credit score or background check for building contractors. We parse through all their past and current projects to determine contractor quality and capacity, and how it is trending over time.</p>
     </div>
     <div class="hero_image-container">
-      <img class="max-h-[500px]" src="theme/images/finance/hero.svg" alt="Shovels building permit API">
+      <img class="max-h-[600px]" src="theme/images/finance/hero.svg" alt="Shovels building permit API">
     </div>
 </section>
 
