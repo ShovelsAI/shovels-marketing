@@ -33,19 +33,21 @@ The answer became clear. We needed to build our own software product.
 
 ## The need for a building data application
 
-We are not the first aggregate and sell building permit data. If you look for it, you can find a half dozen other companies that have been doing this long before we started thinking about it in October 2022. 
+We are not the first to aggregate and sell building permit data. If you look for it, you can find a half dozen other companies that have been doing this long before we started thinking about doing it in October 2022. 
 
-However, those incumbents are stodgy old data services. They barely have an API and prefer to sell annual licenses to heavy datasets that only data engineers can parse and access. It’s not a startup-friendly approach, and when we looked these guys up, we weren’t impressed. We knew that the first step would be to launch an API. We did that for permits in August 2023, and we followed up a couple of months later with our contractor API. 
+However, those incumbents are mostly stodgy old data services. They barely have an API and prefer to sell annual licenses to heavy datasets that only data engineers can parse and access. It’s not a startup-friendly approach, and when we looked these guys up, we weren’t impressed. 
 
-But like I said, it wasn’t enough. An API is not user-friendly. Most people in the building trades don’t know what it means. A lot of you reading this may not be familiar with the concept either. We were limited in who we could sell to, and the market continued to be underserved. 
+We knew that the first step for Shovels would be to launch an API. We did that for permits in August 2023, and we followed up a couple of months later with our contractor API. 
+
+But like I said, it wasn’t enough. An API is not user-friendly. Most people in the building trades don’t know what it is. A lot of you reading this may not be familiar with the concept either. We were limited in who we could sell to, and the market continued to be underserved. 
 
 By late 2023, we had the bandwidth to build our own software application using our own public API. We started building using a relatively new technology called Flutter. I’ll explain why this is important.
 
-Flutter is an open-source software development kit released by Google in 2015. Originally intended to be cross-platform, allowing developers to release both Android and iOS applications from a single codebase, it expanded in 2019 to also support web applications. Flutter 3 was released in March 2022. This is what we’re on today, and it will allow us to also release MacOS and Linux applications, in addition to web and mobile.
+Flutter is an open-source software development kit released by Google in 2015. Originally intended to be cross-platform, allowing developers to release both Android and iOS applications from a single codebase, it expanded in 2019 to also support web applications. Flutter 3 was released in March 2022. This is what we’re on today, and it will allow us to also release MacOS and Linux applications, in addition to web, Android, and iOS apps.
 
-I think Flutter and technologies like it are awesome and I’m glad to be among the first companies to fully embrace it. We know that many people in the building trades live on their smartphones. They’re always on the move, so a mobile application would probably be the best experience for them. Flutter allows us to support our web application and mobile applications from a single codebase so we can develop and release faster. 
+I think Flutter and technologies like it are awesome and I’m glad to be among the first companies to fully embrace it. We know that many people in the building trades live on their smartphones. They’re always on the move, so a mobile application makes sense. Flutter allows us to support our web application and mobile applications from a single codebase so we can develop and release faster than anyone else. 
 
-We’re launching our web application today, but you can expect us to follow up with Android and iOS applications very soon! 
+We’re launching our web application today, but you can expect us to follow up with Android and iOS apps very soon! 
 
 ## Features of the Shovels app
 
@@ -75,20 +77,20 @@ You can click on any of these addresses to see the same level of detail shown in
 
 A few other notes on our Permit Database:
 
-- Search by keyword: You can put any text you want in here and we’ll scan the descriptions of over 120M permits to find the ones that match.
-- Search by state or zip: Right now you, you can only limit the geography by ZIP code and state. Soon, you’ll also be able to search by city, county, or the permit jurisdiction.
-- Filter on permit fees and job value: If you want to further refine your search, you can set minimum thresholds of permit fees and job values. The permit fees are collected by the county and the job values are self-reported, usually by the contractor. Note that not every jurisdiction collects these values, but if they do, we’ll have them.
-- Download to a CSV file. Every one of our tables includes a download feature so you can take this data into your other software products and make magic happen.
+- **Search by keyword**: You can put any text you want in here and we’ll scan the descriptions of over 120M permits to find the ones that match.
+- **Search by state or zip**: Right now you, you can only limit the geography by ZIP code and state. Soon, you’ll also be able to search by city, county, or the permit jurisdiction.
+- **Filter on permit fees and job value**: If you want to further refine your search, you can set minimum thresholds of permit fees and job values. The permit fees are collected by the county and the job values are self-reported, usually by the contractor. Note that not every jurisdiction collects these values, but if they do, we’ll have them.
+- **Download to a CSV file**: Each of our tables includes a download feature so you can take this data into your other software products and make magic happen.
 
 ### Contractor Directory
 
 Our third feature is also suitable for personal use. Have you ever needed to find a contractor and wished you could just see who all of your neighbors used for that remodel, or cottage, or solar installation? The benefits of hiring someone who’s been in your neighborhood before are several:
 
-- Most houses in a neighborhood were built around the same time, often by the same company. Therefore, they have similar attics, crawl spaces, and wiring. It helps when a contractor knows what your house feels like before he shows up.
+- Most houses in a neighborhood were built around the same time, often by the same developer. Therefore, they have similar attics, crawl spaces, and wiring. It helps when a contractor knows what your house feels like before he shows up.
 - Permitting can be challenging, so it’s best to hire a contractor who knows what to expect of your local building department. If they know him, they may treat his permit requests differently. These little things matter!
 - Contractors who know your neighborhood are invested. They want to do a good job, because they want you to recommend them. It’s best to hire someone who wants to expand their business in your neighborhood.
 
-And you know what won’t tell you who works in your neighborhood? Yelp. Or Google. Or Nextdoor (unless you put up a post and ask, but not everyone checks every day.) The only reliable, consistent, accurate way to find which contractors work in your neighborhood is to look at the permits. 
+Do you know what *won’t* tell you who works in your neighborhood? Yelp. Or Google. Or Nextdoor (unless you put up a post and ask.) The only reliable, consistent, accurate way to find which contractors work in your neighborhood is to use building permits. 
 
 So that’s what we do. 
 
@@ -100,7 +102,7 @@ Makes sense, right? Seems like something like this should have been out there lo
 
 ## What’s coming out next?
 
-It’s important to note that everything we’re doing here is available on [our public API](https://api.shovels.ai/redoc). We are building this app using the *same* endpoints that our customers can access. 
+It’s important to note that everything we’re doing here is available on [our public API](https://api.shovels.ai/redoc). We are building this app using the *same* endpoints that our customers can access. This software app is kind of like an API demo, too.
 
 We’re already working on V2 of our API. The V2 will have a bunch of cool new stuff like:
 
@@ -113,7 +115,7 @@ That’s just a sneak preview! Before we can update our app, we have to update t
 
 ## Does this cost anything, by the way?
 
-Yes! We are going to charge $499/mo per account for access to all of this amazing data. You’ll get a generous trial period, though, and all of our updates. 
+Yes! We are going to charge $499/mo per account for access to all of this amazing data. You’ll get a generous trial period, though, and all of our constant updates. 
 
 When we release the V2, price will probably go up, but we’ll won’t raise prices on our early customers. 
 
