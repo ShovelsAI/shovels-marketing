@@ -26,7 +26,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg">
+          <img src="theme/images/contractor-directory/ping.svg">
         </div>
         <span class="elaboration-card_title">All you can ping</span>
       </dt>
@@ -37,7 +37,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/contractor-directory/area.png">
         </div>
         <span class="elaboration-card_title">Look up by service area</span>
       </dt>
@@ -48,7 +48,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/contractor-directory/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -59,7 +59,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/contractor-directory/metrics.png">
         </div>
         <span class="elaboration-card_title">Quality metrics</span>
       </dt>
@@ -70,7 +70,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/contractor-directory/job.png">
         </div>
         <span class="elaboration-card_title">Job availability</span>
       </dt>
@@ -81,7 +81,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/permit-database/api.png">
         </div>
         <span class="elaboration-card_title">CSVs and APIs</span>
       </dt>
