@@ -10,7 +10,7 @@ slug: team
     <ul role="list"
         x-data="{ ryan: false, luka: false, petra: false }"
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
-      <li class="border-2 border-gray-900"
+      <li class="border-2 rounded border-gray-900"
           x-on:mouseenter="ryan = true" x-on:mouseleave="ryan = false"
       >
         <div x-show="!ryan">
@@ -42,7 +42,7 @@ slug: team
           </ul>
         </div>
       </li>
-      <li class="border-2 border-gray-900"
+      <li class="border-2 rounded border-gray-900"
             x-on:mouseenter="luka = true" x-on:mouseleave="luka = false"
       >
         <div x-show="!luka">
@@ -74,7 +74,7 @@ slug: team
         </ul>
         </div>
       </li>
-      <li class="border-2 border-gray-900"
+      <li class="border-2 rounded border-gray-900"
           x-on:mouseenter="petra = true" x-on:mouseleave="petra = false"
       >
         <div x-show="!petra">
