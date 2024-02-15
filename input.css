@@ -119,8 +119,11 @@ body.inverted {
   @apply text-stone-200
 }
 
-.shovels-button {
-  @apply px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85];
+@layer components {
+  .shovels-button {
+    @apply px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85];
+  }
+  
 }
 
 /* end of Tailwind utility classes */
