@@ -81,7 +81,7 @@ slug: about
         <hr class="border border-stone-200">
       </div>
     </article>
-    <hr class="border-2 border-gray-900 my-12">
+    <hr class="border border-gray-900 my-12">
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
@@ -92,7 +92,7 @@ slug: about
         <p class="mt-2 text-base text-gray-700">We have coverage in 48 states. See more detail in our <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank" class="font-semibold hover:text-amber-500">Data Dictionary.</a></p>
       </div>
     </article>
-    <hr class="border-2 border-gray-900 my-12">
+    <hr class="border border-gray-900 my-12">
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
@@ -111,7 +111,7 @@ slug: about
         </ul>
       </div>
     </article>
-    <hr class="border-2 border-gray-900 my-12">
+    <hr class="border border-gray-900 my-12">
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
