@@ -14,20 +14,20 @@ slug: pricing
       <!-- Header Row -->
       <thead>
         <tr>
-          <th class="py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-3xl ">Permits</span>
+          <th class="font-medium py-3 px-5 text-right align-bottom">
+            <span class="text-emerald-800 text-[42px]">Permits</span>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$499/mo</p>
+            <p class="text-black text-[32px] font-normal">$499/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$999/mo</p>
+            <p class="text-black text-[32px] font-normal">$999/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">High</p>
-            <p class="text-black text-xl ">$2,499/mo</p>
+            <p class="text-black text-[32px] font-normal">$2,499/mo</p>
           </th>
         </tr>
       </thead>
@@ -48,7 +48,7 @@ slug: pricing
           </td>
         </tr>
         <tr class="bg-[#E9E1CE] bg-opacity-40">
-          <td class="py-3 px-5 text-right bg-lime-50">
+          <td class="py-3 px-5 text-right bg-[#F6F1E5]">
             <span class="text-neutral-400 text-base">Commercial Permits</span>
           </td>
           <td class="text-center">
@@ -76,7 +76,7 @@ slug: pricing
           </td>
         </tr>
         <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
-          <td class="py-3 px-5 text-right bg-lime-50">
+          <td class="py-3 px-5 text-right bg-[#F6F1E5]">
             <span class="text-neutral-400 text-base">Permit lookups</span>
           </td>
           <td class="text-center">
@@ -94,7 +94,7 @@ slug: pricing
             <!-- deliberately empty -->
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Permits%2C%20Low&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -102,7 +102,7 @@ slug: pricing
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Permits%2C%20Medium&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -110,7 +110,7 @@ slug: pricing
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Permits%2C%20High&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -127,27 +127,27 @@ slug: pricing
       <!-- Header Row -->
       <thead>
         <tr>
-          <th class="py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-3xl ">Contractors</span>
+          <th class="font-medium py-3 px-5 text-right align-bottom">
+            <span class="text-emerald-800 text-[42px]">Contractors</span>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$349/mo</p>
+            <p class="text-black text-[32px] font-normal">$349/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$849/mo</p>
+            <p class="text-black text-[32px] font-normal">$849/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">High</p>
-            <p class="text-black text-xl ">$1,999/mo</p>
+            <p class="text-black text-[32px] font-normal">$1,999/mo</p>
           </th>
         </tr>
       </thead>
       <!-- Body Rows -->
       <tbody>
         <tr class="bg-[#E9E1CE] bg-opacity-40">
-          <td class="py-3 px-5 text-right bg-lime-50">
+          <td class="py-3 px-5 text-right bg-[#F6F1E5]">
             <span class="text-neutral-400 text-base">Commercial Permits</span>
           </td>
           <td class="text-center">
@@ -175,7 +175,7 @@ slug: pricing
           </td>
         </tr>
         <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
-          <td class="py-3 px-5 text-right bg-lime-50">
+          <td class="py-3 px-5 text-right bg-[#F6F1E5]">
             <span class="text-neutral-400 text-base">Permit lookups</span>
           </td>
           <td class="text-center">
@@ -193,7 +193,7 @@ slug: pricing
             <!-- deliberately empty -->
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Contractors%2C%20Low&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -201,7 +201,7 @@ slug: pricing
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Contractors%2C%20Medium&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -209,7 +209,7 @@ slug: pricing
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Contractors%2C%20High&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -226,27 +226,27 @@ slug: pricing
       <!-- Header Row -->
       <thead>
         <tr>
-          <th class="py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-3xl ">Bundle</span>
+          <th class="font-medium py-3 px-5 text-right align-bottom">
+            <span class="text-emerald-800 text-[42px]">Bundle</span>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
-            <p class="text-black text-xl font-medium">$699/mo</p>
+            <p class="text-black text-[32px] font-normal">$699/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Medium</p>
-            <p class="text-black text-xl font-medium">$1,499/mo</p>
+            <p class="text-black text-[32px] font-normal">$1,499/mo</p>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider ">High</p>
-            <p class="text-black text-xl ">$2,999/mo</p>
+            <p class="text-black text-[32px] font-normal">$2,999/mo</p>
           </th>
         </tr>
       </thead>
       <!-- Body Rows -->
       <tbody>
         <tr class="bg-[#E9E1CE] bg-opacity-40">
-          <td class="py-3 px-5 text-right bg-lime-50">
+          <td class="py-3 px-5 text-right bg-[#F6F1E5]">
             <span class="text-neutral-400 text-base">Commercial Permits</span>
           </td>
           <td class="text-center">
@@ -274,7 +274,7 @@ slug: pricing
           </td>
         </tr>
         <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
-          <td class="py-3 px-5 text-right bg-lime-50">
+          <td class="py-3 px-5 text-right bg-[#F6F1E5]">
             <span class="text-neutral-400 text-base">Permit lookups</span>
           </td>
           <td class="text-center">
@@ -292,7 +292,7 @@ slug: pricing
             <!-- deliberately empty -->
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Bundle%2C%20Low&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -300,7 +300,7 @@ slug: pricing
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Bundle%2C%20Medium&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
@@ -308,7 +308,7 @@ slug: pricing
             </a>
           </td>
           <td class="py-8 px-1">
-            <a class="bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded"
+            <a class="pricing-button"
               href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Bundle%2C%20High&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
             >
               <span class="whitespace-nowrap">Contact Sales</span>

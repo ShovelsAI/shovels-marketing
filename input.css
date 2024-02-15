@@ -43,7 +43,7 @@ dt {
 
 body {
   background-color: #F6F1E5;
-  font-size: 21px;
+  /* font-size: 21px; */
 }
 
 /* below prevents the 'flash' on page load */
@@ -123,7 +123,9 @@ body.inverted {
   .shovels-button {
     @apply px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85];
   }
-  
+  .pricing-button {
+    @apply bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded font-medium text-lg
+  }
 }
 
 /* end of Tailwind utility classes */
@@ -144,6 +146,7 @@ body.inverted {
 .gradient {
   background: linear-gradient(120deg, #77daeb 0%,#ffd3b3 100%);
 }
+
 
 /* start of article classes */
 
