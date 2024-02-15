@@ -20,7 +20,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg">
+          <img src="theme/images/data-feed/ping.png">
         </div>
         <span class="elaboration-card_title">All you can ping</span>
       </dt>
@@ -31,7 +31,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/data-feed/json.png">
         </div>
         <span class="elaboration-card_title">Convenient JSONL format</span>
       </dt>
@@ -42,7 +42,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/data-feed/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -53,7 +53,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/data-feed/metrics.png">
         </div>
         <span class="elaboration-card_title">Quality metrics</span>
       </dt>
@@ -64,7 +64,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/data-feed/schema.png">
         </div>
         <span class="elaboration-card_title">Custom schema</span>
       </dt>
@@ -75,7 +75,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/data-feed/terms.png">
         </div>
         <span class="elaboration-card_title">Flexible terms</span>
       </dt>
