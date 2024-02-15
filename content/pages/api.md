@@ -25,7 +25,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg">
+          <img src="theme/images/api/ping.png">
         </div>
         <span class="elaboration-card_title">All you can ping</span>
       </dt>
@@ -36,7 +36,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/api/json.png">
         </div>
         <span class="elaboration-card_title">Convenient JSON format</span>
       </dt>
@@ -47,7 +47,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/api/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -58,7 +58,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/api/metrics.png">
         </div>
         <span class="elaboration-card_title">Quality metrics</span>
       </dt>
@@ -69,7 +69,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/api/schema.png">
         </div>
         <span class="elaboration-card_title">Custom schema</span>
       </dt>
@@ -80,7 +80,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/api/terms.png">
         </div>
         <span class="elaboration-card_title">Flexible terms</span>
       </dt>
