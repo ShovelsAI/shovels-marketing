@@ -8,7 +8,7 @@ Slug: permit-database
     <p class="hero_description text-lime-50">Look up permits by address, parcel number, or contractor name or license number. We pull data from 20,000 jurisdictions.</p>
     <div class="mt-10 mb-20">
       <a href="https://app.shovels.ai"
-      class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
+      class="shovels-button"
       target="_blank">Register to demo <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
   </div>
@@ -23,7 +23,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg" alt="Shovels building permit API">
+          <img src="theme/images/permit-database/ping.svg" alt="Shovels building permit API">
         </div>
         <span class="elaboration-card_title">Over 125M permits</span>
       </dt>
@@ -34,7 +34,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/permit-database/lookup.png">
         </div>
         <span class="elaboration-card_title">Find permits with contractors</span>
       </dt>
@@ -45,7 +45,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/permit-database/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -56,7 +56,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/permit-database/fees.png">
         </div>
         <span class="elaboration-card_title">Filter by permit fees</span>
       </dt>
@@ -67,7 +67,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/permit-database/timeline.png">
         </div>
         <span class="elaboration-card_title">Search by keyword</span>
       </dt>
@@ -78,7 +78,7 @@ Slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/permit-database/api.png">
         </div>
         <span class="elaboration-card_title">Find any type of permit</span>
       </dt>

@@ -8,8 +8,8 @@ slug: contractor-directory
     <p class="hero_description text-lime-50">Look up contractors by their service area, not their business address. Filter by their permit history, construction speed, and inspection pass rate.</p>
     <div class="mt-10 mb-20">
       <a href="https://app.shovels.ai"
-      class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap"
-      target="_blank">Register to demo <img class="inline" src="theme/images/caret-right.svg"> </a>
+      class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-medium whitespace-nowrap"
+      target="_blank">Try it <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
   </div>
   <div class="hero_image-container">
@@ -24,7 +24,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg">
+          <img src="theme/images/contractor-directory/ping.svg">
         </div>
         <span class="elaboration-card_title">2.5M contractors</span>
       </dt>
@@ -35,7 +35,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/contractor-directory/area.png">
         </div>
         <span class="elaboration-card_title">Look up by service area</span>
       </dt>
@@ -46,7 +46,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/contractor-directory/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -57,7 +57,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/contractor-directory/metrics.png">
         </div>
         <span class="elaboration-card_title">Quality metrics</span>
       </dt>
@@ -68,7 +68,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/contractor-directory/job.png">
         </div>
         <span class="elaboration-card_title">Job availability</span>
       </dt>
@@ -79,7 +79,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/permit-database/api.png">
         </div>
         <span class="elaboration-card_title">CSVs and APIs</span>
       </dt>

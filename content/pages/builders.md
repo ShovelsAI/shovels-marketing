@@ -8,7 +8,7 @@ slug: builders
     <p class="hero_description">Shovels helps climate tech companies create installer networks based on their building electrification expertise and their service area, not their business address. Our contractor recommendations are not influenced by commissions or pay-per-lead fees.</p>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/builders/hero.svg" alt="Shovels building permit API">
+    <img class="max-h-[600px]" src="theme/images/builders/hero.svg" alt="Shovels building permit API">
   </div>
 </section>
 
@@ -26,7 +26,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_unbiased.svg">
         </div>
         <span class="elaboration-card_title">Unbiased recommendations</span>
       </dt>
@@ -51,7 +51,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_data-driven.svg">
         </div>
         <span class="elaboration-card_title">Data-driven by inspection data</span>
       </dt>
@@ -64,7 +64,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_speed.svg">
         </div>
         <span class="elaboration-card_title">Construction speed</span>
       </dt>
@@ -76,7 +76,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_api.png">
         </div>
         <span class="elaboration-card_title">API and Data Feed</span>
       </dt>
@@ -87,7 +87,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_project.svg">
         </div>
         <span class="elaboration-card_title">Project performance predictions</span>
       </dt>
@@ -98,7 +98,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg" alt="Shovels building permit API">
+          <img src="theme/images/builders/icon_refreshed.svg" alt="Shovels building permit API">
         </div>
         <span class="elaboration-card_title">Constantly refreshed</span>
       </dt>
@@ -109,7 +109,7 @@ slug: builders
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/builders/icon_star.svg">
+          <img src="theme/images/builders/icon_nationwide.svg">
         </div>
         <span class="elaboration-card_title">Nationwide</span>
       </dt>

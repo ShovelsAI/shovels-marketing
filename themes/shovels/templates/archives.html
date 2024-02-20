@@ -4,21 +4,24 @@
 <section class="py-8 md:py-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto">
-      <h2 class="text-5xl font-bold leading-tight text-emerald-800">The Shovels Blog</h2>
-      <p class="mt-2 text-lg leading-8 text-gray-900 max-w-lg">We write about proptech, climatetech, and entrepreneurship.</p>
+      <h2 class="text-5xl  leading-tight text-emerald-800">The Shovels Blog</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-900 max-w-lg">We write about proptech, climatetech, and
+        entrepreneurship.</p>
     </div>
   </div>
 </section>
 <!-- categories -->
 <section class="mx-auto max-w-7xl px-6 lg:px-8">
   <ul class="flex flex-row">
-      <li class="rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
-       <a href="/blog">All</a>
-      </li>
+    <li data-category="all" class="rounded bg-[#E8BD51] text-gray-900 hover:[#E9E1CE] text-xs px-3 py-2 cursor-pointer mr-3 category-li">
+      <a href="/blog">All</a>
+    </li>
     {% for category, articles in categories %}
-      <li class="rounded bg-amber-300 font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2 cursor-pointer mr-3">
-        <a href="/blog/?category={{category}}">{{ category }}</a>
-      </li>
+    <li
+      data-category="{{ category }}"
+      class="rounded bg-[#E8BD51]  text-gray-900 hover:bg-[#E9E1CE] text-xs px-3 py-2 cursor-pointer mr-3 category-li">
+      <a href="/blog/?category={{category}}">{{ category }}</a>
+    </li>
     {% endfor %}
   </ul>
 </section>
@@ -29,18 +32,21 @@
       {% for article in dates %}
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('{{ article.category }}')">
         <a href="{{ SITEURL }}/{{ article.url }}">
-          <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="" class="object-cover h-48 w-96"/>
+          <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt=""
+            class="object-cover h-48 w-96" />
         </a>
         <!-- category -->
         <div class="p-8">
-          <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] font-medium text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
+          <a href="/blog/?category={{article.category}}"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{
+            article.category }}</a>
         </div>
         <!-- title and date -->
         <div>
           <a href="{{ SITEURL }}/{{ article.url }}">
-           <div class="pb-8 px-8">
-              <h2 class="my-6 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  {{ article.title }}
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600">
+                {{ article.title }}
               </h2>
               <time datetime="{{ article.date }}" class="text-black text-xs">{{ article.locale_date }}</time>
             </div>
@@ -62,5 +68,22 @@
       }
     }
   }
+  // Apply background color for active category tag
+  document.addEventListener('DOMContentLoaded', function () {
+    const categoryLinks = document.querySelectorAll('.category-li');
+    const currentCategory = new URLSearchParams(window.location.search).get('category');
+    console.log(currentCategory)
+    categoryLinks.forEach(link => {
+      console.log(link)
+      if (link.getAttribute('data-category') === currentCategory || (!currentCategory && link.getAttribute('data-category') === 'all')) {
+        // Apply active background color
+        link.classList.add('bg-[#E9E1CE]', 'hover:bg-stone-100');
+      } else {
+        // Ensure non-active links have the default background color
+        link.classList.add('bg-[#E8BD51]', 'hover:bg-[#E9E1CE]');
+        link.classList.remove('bg-[#E9E1CE]', 'hover:bg-stone-100');
+      }
+    });
+  });
 </script>
 {% endblock %}

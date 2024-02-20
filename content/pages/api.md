@@ -8,9 +8,9 @@ slug: api
     <p class="hero_description text-lime-50">Ping by address, contractor name, or contractor license. Receive all the data. Our API is intuitive and fast.</p>
     <div class="mt-10 mb-20 flex items-center gap-x-6">
       <a href="https://app.shovels.ai"
-        class="px-5 py-2 md:px-10 md:py-4 bg-amber-300 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
+        class="shovels-button" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
       <a href="https://api.shovels.ai/redoc"
-        class="px-5 py-2 md:px-10 md:py-4 bg-stone-200 rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg font-medium font-['Scandia'] whitespace-nowrap" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
+        class="shovels-button bg-stone-200" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
     </div>
   </div>
   <div class="hero_image-container">
@@ -25,7 +25,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_jurisdiction.svg">
+          <img src="theme/images/api/ping.png">
         </div>
         <span class="elaboration-card_title">All you can ping</span>
       </dt>
@@ -36,7 +36,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_lookup.svg">
+          <img src="theme/images/api/json.png">
         </div>
         <span class="elaboration-card_title">Convenient JSON format</span>
       </dt>
@@ -47,7 +47,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_accurate.svg">
+          <img src="theme/images/api/accurate.png">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -58,7 +58,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_fees.svg">
+          <img src="theme/images/api/metrics.png">
         </div>
         <span class="elaboration-card_title">Quality metrics</span>
       </dt>
@@ -69,7 +69,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_timeline.svg">
+          <img src="theme/images/api/schema.png">
         </div>
         <span class="elaboration-card_title">Custom schema</span>
       </dt>
@@ -80,7 +80,7 @@ slug: api
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/icon_feeds.svg">
+          <img src="theme/images/api/terms.png">
         </div>
         <span class="elaboration-card_title">Flexible terms</span>
       </dt>

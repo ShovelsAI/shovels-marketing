@@ -6,7 +6,7 @@ slug: terms
   <div class="container max-w-5xl mx-auto m-8 text-emerald-800 article">
     <div class="mb-10">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Terms & Conditions</h1>
+        <h1 class="mt-2 text-4xl  tracking-tight text-gray-900 sm:text-6xl">Terms & Conditions</h1>
       </div>
     </div>
     <p style='text-align:center'><b><span

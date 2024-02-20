@@ -4,7 +4,7 @@ slug: about
 <div class="py-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="max-w-md">
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-amber-300">The Shovels One-Pager</h1>
+      <h1 class="mt-2 text-4xl tracking-tight text-amber-300">The Shovels One-Pager</h1>
       <p class="mt-10 text-lg leading-6 text-stone-200">Shovels analyzes over 100M building permits to help climate tech companies market to homeowners and build installer networks.</p>
     </div>
   </div>
@@ -15,7 +15,7 @@ slug: about
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">What we do</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">What we do</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
@@ -23,18 +23,18 @@ slug: about
         <table class="min-w-full divide-y divide-gray-300 mt-10 max-w-2xl">
           <thead>
             <tr>
-              <th scope="col" class="text-left text-base font-semibold text-stone-400 uppercase sm:pl-0">Object
+              <th scope="col" class="text-left text-base  text-stone-400 uppercase sm:pl-0">Object
               </th>
-              <th scope="col" class="hidden px-3 text-left text-base font-semibold text-stone-400 uppercase lg:table-cell">
+              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase lg:table-cell">
                 Description</th>
-              <th scope="col" class="hidden px-3 text-left text-base font-semibold text-stone-400 uppercase sm:table-cell">
+              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase sm:table-cell">
                 Accessibility</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Building permit
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -48,7 +48,7 @@ slug: about
             </tr>
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Building contractor
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -63,7 +63,7 @@ slug: about
             </tr>
             <tr>
               <td
-                class="w-full max-w-0 py-4 text-base font-medium text-black sm:w-auto sm:max-w-none sm:pl-0">
+                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
                 Property
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
@@ -81,22 +81,22 @@ slug: about
         <hr class="border border-stone-200">
       </div>
     </article>
-    <hr class="border-2 border-gray-900 my-12">
+    <hr class="border border-gray-900 my-12">
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Our geographies</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our geographies</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
         <p class="mt-2 text-base text-gray-700">We have coverage in 48 states. See more detail in our <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank" class="font-semibold hover:text-amber-500">Data Dictionary.</a></p>
       </div>
     </article>
-    <hr class="border-2 border-gray-900 my-12">
+    <hr class="border border-gray-900 my-12">
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Our advantage</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our advantage</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
@@ -111,11 +111,11 @@ slug: about
         </ul>
       </div>
     </article>
-    <hr class="border-2 border-gray-900 my-12">
+    <hr class="border border-gray-900 my-12">
     <article class="flex flex-col md:flex-row my-12">
       <!-- left -->
       <div class="lg:w-96 mr-10">
-        <h2 class="text-lg font-bold text-emerald-800 tracking-wide uppercase">Pricing</h2>
+        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Pricing</h2>
       </div>
       <!-- right -->
       <div class="max-w-2xl">
