@@ -78,7 +78,7 @@ You can click on any of these addresses to see the same level of detail shown in
 A few other notes on our Permit Database:
 
 - **Search by keyword**: You can put any text you want in here and we’ll scan the descriptions of over 120M permits to find the ones that match.
-- **Search by state or zip**: Right now you, you can only limit the geography by ZIP code and state. Soon, you’ll also be able to search by city, county, or the permit jurisdiction.
+- **Search by state or zip**: Right now you can only limit the geography by ZIP code and state. Soon, you’ll also be able to search by city, county, or the permit jurisdiction.
 - **Filter on permit fees and job value**: If you want to further refine your search, you can set minimum thresholds of permit fees and job values. The permit fees are collected by the county and the job values are self-reported, usually by the contractor. Note that not every jurisdiction collects these values, but if they do, we’ll have them.
 - **Download to a CSV file**: Each of our tables includes a download feature so you can take this data into your other software products and make magic happen.
 
