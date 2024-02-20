@@ -41,24 +41,8 @@ slug: contact
       <div class="mt-10">
         <button type="submit" class="w-full px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-medium whitespace-nowrap">Let's talk</button>
       </div>
-      <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="/privacy" class="font-semibold text-gray-600" target="_blank">privacy&nbsp;policy</a>. You can also call us at 1-800-511-7457.</p>
+      <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="/privacy" class="font-semibold text-gray-600" target="_blank">privacy&nbsp;policy</a>. You can also call us at 1-800-511-7457 or <a href="https://app.lemcal.com/@shovels/shovels-demo" class="font-semibold text-gray-600" target="_blank">book a demo</a>.
+      </p>
     </form>
-    <!--
-    <div class="lg:mt-6 lg:w-80 lg:flex-none">
-      <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-gray-600.svg" alt="Shovels building permit API">
-      <figure class="mt-10">
-        <blockquote class="text-lg  leading-8 text-emerald-800">
-          <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
-        </blockquote>
-        <figcaption class="mt-10 flex gap-x-6">
-          <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80" class="h-12 w-12 flex-none rounded-full bg-gray-50">
-          <div>
-            <div class="text-base  text-emerald-800">Brenna Goyette</div>
-            <div class="text-sm leading-6 text-gray-600">CEO of Workcation</div>
-          </div>
-        </figcaption>
-      </figure>
-    </div>
-    -->
   </div>
 </div>

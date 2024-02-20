@@ -75,20 +75,20 @@ slug: pricing
             <span class="text-gray-900">National</span>
           </td>
         </tr>
-        <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
+        <tr class="bg-[#E9E1CE] bg-opacity-40">
           <td class="py-3 px-5 text-right bg-[#F6F1E5]">
-            <span class="text-neutral-400 text-base">Permit lookups</span>
+            <span class="text-neutral-400 text-base">Monthly Query Limit</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">1,000</span>
+            <span class="text-gray-900">100,000</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">5,000</span>
+            <span class="text-gray-900">250,000</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">20,000</span>
+            <span class="text-gray-900">1,000,000</span>
           </td>
-        </tr>-->
+        </tr>
         <tr>
           <td>
             <!-- deliberately empty -->
@@ -174,20 +174,20 @@ slug: pricing
             <span class="text-gray-900">National</span>
           </td>
         </tr>
-        <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
+        <tr class="bg-[#E9E1CE] bg-opacity-40">
           <td class="py-3 px-5 text-right bg-[#F6F1E5]">
-            <span class="text-neutral-400 text-base">Permit lookups</span>
+            <span class="text-neutral-400 text-base">Monthly Query Limit</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">1,000</span>
+            <span class="text-gray-900">100,000</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">5,000</span>
+            <span class="text-gray-900">250,000</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">20,000</span>
+            <span class="text-gray-900">1,000,000</span>
           </td>
-        </tr>-->
+        </tr>
         <tr>
           <td>
             <!-- deliberately empty -->
@@ -273,20 +273,20 @@ slug: pricing
             <span class="text-gray-900">National</span>
           </td>
         </tr>
-        <!--<tr class="bg-[#E9E1CE] bg-opacity-40">
+        <tr class="bg-[#E9E1CE] bg-opacity-40">
           <td class="py-3 px-5 text-right bg-[#F6F1E5]">
-            <span class="text-neutral-400 text-base">Permit lookups</span>
+            <span class="text-neutral-400 text-base">Monthly Query Limit</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">1,000</span>
+            <span class="text-gray-900">200,000</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">5,000</span>
+            <span class="text-gray-900">500,000</span>
           </td>
           <td class="text-center">
-            <span class="text-gray-900">20,000</span>
+            <span class="text-gray-900">2,000,000</span>
           </td>
-        </tr>-->
+        </tr>
         <tr>
           <td>
             <!-- deliberately empty -->
