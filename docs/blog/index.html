@@ -249,13 +249,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/" class=" text-emerald-900 hover:text-gray-700"><p>How to use the Shovels app</p></a>
+                    <a href="https://www.shovels.ai/blog/episode-19-the-books-that-saved-us/" class=" text-emerald-900 hover:text-gray-700"><p>Episode 19: The books that saved us</p></a>
                   </li>
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/episode-16-the-proptech-macro-investing-environment/" class=" text-emerald-900 hover:text-gray-700"><p>Episode 16: The proptech macro investing environment</p></a>
+                    <a href="https://www.shovels.ai/blog/episode-18-outbound-sales-masterclass/" class=" text-emerald-900 hover:text-gray-700"><p>Episode 18: Outbound sales masterclass</p></a>
                   </li>
                   <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/episode-15-the-sexiest-topic-weve-done-so-far-zoning/" class=" text-emerald-900 hover:text-gray-700"><p>Episode 15: The sexiest topic we've done so far: Zoning</p></a>
+                    <a href="https://www.shovels.ai/blog/episode-17-the-super-bowl-pre-game-show/" class=" text-emerald-900 hover:text-gray-700"><p>Episode 17: The Super Bowl pre-game show</p></a>
                   </li>
               </ul>
             </div>
@@ -447,6 +447,72 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/episode-19-the-books-that-saved-us/">
+          <img src="/images/podcast19.png" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/episode-19-the-books-that-saved-us/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Episode 19: The books that saved us</p>
+              </h2>
+              <time datetime="2024-02-27 00:00:00-08:00" class="text-black text-xs">Tue 27 February 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/episode-18-outbound-sales-masterclass/">
+          <img src="/images/podcast18.png" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/episode-18-outbound-sales-masterclass/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Episode 18: Outbound sales masterclass</p>
+              </h2>
+              <time datetime="2024-02-20 00:00:00-08:00" class="text-black text-xs">Tue 20 February 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Podcast')">
+        <a href="https://www.shovels.ai/blog/episode-17-the-super-bowl-pre-game-show/">
+          <img src="/images/podcast17.png" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Podcast"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Podcast</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/episode-17-the-super-bowl-pre-game-show/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Episode 17: The Super Bowl pre-game show</p>
+              </h2>
+              <time datetime="2024-02-13 00:00:00-08:00" class="text-black text-xs">Tue 13 February 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Customer Success')">
         <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/">
           <img src="/images/boulder-commercial.png" alt=""

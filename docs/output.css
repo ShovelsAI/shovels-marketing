@@ -2750,8 +2750,9 @@ body.inverted {
 }
 
 .article li {
+  font-size: 21px;
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .article ul {
