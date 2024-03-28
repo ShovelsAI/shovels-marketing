@@ -5,7 +5,7 @@ slug: about
   <div class="mx-auto max-w-7xl px-6">
     <div class="max-w-md">
       <h1 class="mt-2 text-4xl tracking-tight text-amber-300">The Shovels One-Pager</h1>
-      <p class="mt-10 text-lg leading-6 text-stone-200">Shovels analyzes over 100M building permits to help climate tech companies market to homeowners and build installer networks.</p>
+      <p class="mt-10 text-lg leading-6 text-stone-200">Shovels makes building permit data useful. We track over 130M building permits to help companies explore and profile homeowners and building contractors.</p>
     </div>
   </div>
 </div>
