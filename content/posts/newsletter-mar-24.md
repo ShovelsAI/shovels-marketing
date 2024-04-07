@@ -88,7 +88,7 @@ Here's a chart showing the distribution of the percentage of homes with permits 
 
 What's causing the difference? We don't know yet!
 
-![Distribution of permit density by ZIP code]({static}/images/permit-distribution.png)
+![Distribution of permit density by ZIP code]({static}/images/permits-distribution.png)
 
 This is long enough
 ===================

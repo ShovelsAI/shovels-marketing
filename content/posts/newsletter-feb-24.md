@@ -41,7 +41,7 @@ Are you too excited to continue reading? I get it. [Click here](https://app.shov
 
 The Shovels app introduces our three data features: **addresses**, **permits**, and **contractors**.
 
-![]({static}/images/permit-filter.png)
+![]({static}/images/permits-filter.png)
 
 In this screenshot, we're looking up all active air source heat pump permits in California that mention the brand Mitsubishi. It's popular! I looked up Fujitsu (what we have) too and didn't see nearly as many. 
 
