@@ -545,7 +545,7 @@ What does this mean to me? We have work to do! &lt;/li&gt;
 &lt;h1&gt;&lt;strong&gt;🥳 Introducing: Shovels app v1.0 🥳&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;Are you too excited to continue reading? I get it. &lt;a href="https://app.shovels.ai"&gt;Click here&lt;/a&gt; to see it for yourself. &lt;/p&gt;
 &lt;p&gt;The Shovels app introduces our three data features: &lt;strong&gt;addresses&lt;/strong&gt;, &lt;strong&gt;permits&lt;/strong&gt;, and &lt;strong&gt;contractors&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://www.shovels.ai/images/permit-filter.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://www.shovels.ai/images/permits-filter.png"&gt;&lt;/p&gt;
 &lt;p&gt;In this screenshot, we're looking up all active air source heat pump permits in California that mention the brand Mitsubishi. It's popular! I looked up Fujitsu (what we have) too and didn't see nearly as many. &lt;/p&gt;
 &lt;p&gt;The other potential uses are endless:&lt;/p&gt;
 &lt;ul&gt;
@@ -622,6 +622,6 @@ What does this mean to me? We have work to do! &lt;/li&gt;
 &lt;p&gt;I'm not enough of a data scientist to give this justice (and apparently ChatGPT isn't either -- it wasn't very helpful this time) but with our table sharing (see above), perhaps &lt;em&gt;you&lt;/em&gt; can crack this riddle?&lt;/p&gt;
 &lt;p&gt;Here's a chart showing the distribution of the percentage of homes with permits since 2023 by ZIP code. What I mean by that is how much variance is there in "permits per capita" nationwide? Most ZIPs have low permit density, but a few are very active ones.&lt;/p&gt;
 &lt;p&gt;What's causing the difference? We don't know yet!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Distribution of permit density by ZIP code" src="https://www.shovels.ai/images/permit-distribution.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Distribution of permit density by ZIP code" src="https://www.shovels.ai/images/permits-distribution.png"&gt;&lt;/p&gt;
 &lt;h1&gt;This is long enough&lt;/h1&gt;
 &lt;p&gt;Next month I plan to announce our iOS app and give a teaser for our V2 API and describe how it will improve the Shovels web and mobile apps.&lt;/p&gt;</content><category term="Company"></category><category term="company"></category><category term="newsletter"></category></entry></feed>

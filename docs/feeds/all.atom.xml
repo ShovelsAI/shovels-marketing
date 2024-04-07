@@ -1267,7 +1267,7 @@ particularly valuable for small teams or solo entrepreneurs who need to deploy f
 &lt;h1&gt;&lt;strong&gt;🥳 Introducing: Shovels app v1.0 🥳&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;Are you too excited to continue reading? I get it. &lt;a href="https://app.shovels.ai"&gt;Click here&lt;/a&gt; to see it for yourself. &lt;/p&gt;
 &lt;p&gt;The Shovels app introduces our three data features: &lt;strong&gt;addresses&lt;/strong&gt;, &lt;strong&gt;permits&lt;/strong&gt;, and &lt;strong&gt;contractors&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://www.shovels.ai/images/permit-filter.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://www.shovels.ai/images/permits-filter.png"&gt;&lt;/p&gt;
 &lt;p&gt;In this screenshot, we're looking up all active air source heat pump permits in California that mention the brand Mitsubishi. It's popular! I looked up Fujitsu (what we have) too and didn't see nearly as many. &lt;/p&gt;
 &lt;p&gt;The other potential uses are endless:&lt;/p&gt;
 &lt;ul&gt;
@@ -1483,7 +1483,7 @@ particularly valuable for small teams or solo entrepreneurs who need to deploy f
 &lt;p&gt;I'm not enough of a data scientist to give this justice (and apparently ChatGPT isn't either -- it wasn't very helpful this time) but with our table sharing (see above), perhaps &lt;em&gt;you&lt;/em&gt; can crack this riddle?&lt;/p&gt;
 &lt;p&gt;Here's a chart showing the distribution of the percentage of homes with permits since 2023 by ZIP code. What I mean by that is how much variance is there in "permits per capita" nationwide? Most ZIPs have low permit density, but a few are very active ones.&lt;/p&gt;
 &lt;p&gt;What's causing the difference? We don't know yet!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Distribution of permit density by ZIP code" src="https://www.shovels.ai/images/permit-distribution.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Distribution of permit density by ZIP code" src="https://www.shovels.ai/images/permits-distribution.png"&gt;&lt;/p&gt;
 &lt;h1&gt;This is long enough&lt;/h1&gt;
 &lt;p&gt;Next month I plan to announce our iOS app and give a teaser for our V2 API and describe how it will improve the Shovels web and mobile apps.&lt;/p&gt;</content><category term="Company"></category><category term="company"></category><category term="newsletter"></category></entry><entry><title>The list of every building permit jurisdiction in the US</title><link href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/" rel="alternate"></link><published>2024-04-06T00:00:00-07:00</published><updated>2024-04-06T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-04-06:/blog/list-of-all-building-permit-jurisdictions/</id><summary type="html">&lt;p&gt;Shovels is thrilled to announce the open-sourcing of an elusive dataset we discovered only recently. Our database includes over ten thousand building permit jurisdictions, and associates each jurisdiction with a county and state.&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are thrilled to announce another open-source dataset from the Shovels vault. Our latest file is a comprehensive mapping of state, county, and building permit jurisdictions.&lt;/p&gt;
 &lt;h2&gt;What is this list of building permit jurisdictions?&lt;/h2&gt;
