@@ -249,13 +249,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/" class=" text-emerald-900 hover:text-gray-700"><p>Case Study: Revolutionizing Lead Generation for Beam</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/" class=" text-emerald-900 hover:text-gray-700"><p>The list of every building permit jurisdiction in the US</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/march-2024-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>March 2024 Newsletter</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/episode-19-the-books-that-saved-us/" class=" text-emerald-900 hover:text-gray-700"><p>Episode 19: The books that saved us</p></a>
                   </li>
               </ul>
             </div>
@@ -417,6 +417,11 @@ Leaving: "duration-100 ease-in"
       <a href="/blog">All</a>
     </li>
     <li
+      data-category="Case Study"
+      class="rounded bg-[#E8BD51]  text-gray-900 hover:bg-[#E9E1CE] text-xs px-3 py-2 cursor-pointer mr-3 category-li">
+      <a href="/blog/?category=Case Study">Case Study</a>
+    </li>
+    <li
       data-category="Company"
       class="rounded bg-[#E8BD51]  text-gray-900 hover:bg-[#E9E1CE] text-xs px-3 py-2 cursor-pointer mr-3 category-li">
       <a href="/blog/?category=Company">Company</a>
@@ -447,6 +452,28 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Case Study')">
+        <a href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/">
+          <img src="/images/case-study-beam.png" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Case Study"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Case Study</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Case Study: Revolutionizing Lead Generation for Beam</p>
+              </h2>
+              <time datetime="2024-04-08 00:00:00-07:00" class="text-black text-xs">Mon 08 April 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Data')">
         <a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/">
           <img src="/images/building-permit-list.png" alt=""
