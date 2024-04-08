@@ -5,7 +5,7 @@ Modified: 2024-4-6
 Category: Data
 Tags: building permits, AHJ, permit jurisdiction
 Authors: Ryan Buckley
-Summary: Shovels is thrilled to announce the open-sourcing of an elusive dataset we discovered only recently. Our database includes over ten thousand building permit jurisdictions, and associates each jurisdiction with a county and state.
+Summary: Shovels is open-sourcing of a comprehensive list of building permit jurisdictions that we discovered only recently. Our new database includes over ten thousand building permit jurisdictions and associates each jurisdiction with a county and state.
 Slug: list-of-all-building-permit-jurisdictions
 Image: /images/building-permit-list.png
 
@@ -34,11 +34,9 @@ We got curious and decided to ask this data a few questions. How many AHJ's are 
 
 On average, there are about ten permit jurisdictions per county. If a county has a million residents, that means each permit jurisdiction serves about 100,000 people. 
 
-Pennsylvania stands out with the highest number of permit jurisdictions, totaling 1575. No other state comes close! It's unclear why PA needs so many of them. Based on population, California 
+Pennsylvania stands out with the highest number of permit jurisdictions, totaling 1575. No other state comes close! It's unclear why Pennsylvania needs so many of them. For example, although Pennsylvania has the same population as Ohio, it has almost 3X the number of building permit jurisdictions. 
 
-Washington, DC has the least, with just one jurisdiction. Given that DC is a city-state, this result is not surprising. 
-
-What is surprising is that although Pennsylvania has the same population as Ohio, it has more than 3X the number of building permit jurisdictions. This chart makes the outliers easy to see.
+This chart makes the outliers easy to see.
 
 ![Population vs Jurisdiction Count]({static}/images/jurisdictions-vs-population.png)
 
@@ -100,7 +98,7 @@ Here's a table of every state, its population, number of jurisdictions, and the 
 
 ## Conclusion
 
-Our is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. We hope this helps. 
+Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. We hope this helps. 
 
 Stay tuned for updates and join us in shaping the future of building permit data! Explore the dataset, unleash its potential, and let's do great things together.
 
