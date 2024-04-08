@@ -10,13 +10,13 @@ Slug: list-of-all-building-permit-jurisdictions
 Image: /images/building-permit-list.png
 
 
-We are thrilled to announce another open-source dataset from the Shovels vault. Our latest file is a comprehensive mapping of state, county, and building permit jurisdictions.
+We are thrilled to announce [another Kaggle dataset](https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states){:target="_blank"} from the Shovels vault. Our [latest file]({static}/images/jurisdiction_mappings.csv) is a comprehensive mapping of state, county, and building permit jurisdictions.
 
 ## What is this list of building permit jurisdictions?
 
-Our dataset includes over 10,000 building permit jurisdictions (AHJs -- authority-having jurisdictions), and relates each jurisdiction to its respective state and county. 
+The file includes over 10,000 building permit jurisdictions (AHJs -- authority-having jurisdictions), and relates each jurisdiction to its respective state and county. 
 
-We found this mapping buried in an obscure government website. We noticed that when we clicked on a state, a select box appeared with all of the counties in that state. This mapping is widely available from the US Census and many other open data sources. 
+We found this mapping buried in an [obscure government website](https://socds.huduser.gov/permits/){:target="_blank"}. We noticed that when we clicked on a state, a select box appeared with all of the counties in that state. This mapping is widely available from the US Census and many other open data sources. 
 
 But when we clicked on the county, another select box appeared with every building permit jurisdiction in the county. *That* got our attention. Before this discovery, we didn't know of a single source of truth for how many AHJs are out there for building permits. Now we can count at least 10,000 of them.
 
@@ -100,12 +100,8 @@ Here's a table of every state, its population, number of jurisdictions, and the 
 
 Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. We hope this helps. 
 
-Stay tuned for updates and join us in shaping the future of building permit data! Explore the dataset, unleash its potential, and let's do great things together.
+Here are the links again: 
 
---
-
-Oh, you probably wanted the data. 
-
-See it [on Kaggle](https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states) or [download the CSV]({static}/images/jurisdiction_mappings.csv).
+Grab it [on Kaggle](https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states){:target="_blank"} or [download the CSV]({static}/images/jurisdiction_mappings.csv).
 
 
