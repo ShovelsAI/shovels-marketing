@@ -30,7 +30,7 @@ We figure many folks who work in cities and counties don't know every AHJ within
 
 ## How many building permit jurisdictions are in each state? 
 
-We got curious and decided to ask this data a few questions. How many AHJs are in each state? Does that jurisdiction correlate with population? We had to merge in some public census data to figure this out. 
+We got curious and decided to ask this data a few questions. How many AHJs are in each state? Does that jurisdiction count correlate with population? We had to merge in some public census data to figure this out. 
 
 On average, there are about ten permit jurisdictions per county. If a county has a million residents, that means each permit jurisdiction serves about 100,000 people. 
 
@@ -40,7 +40,7 @@ This chart makes the outliers easy to see.
 
 ![Population vs Jurisdiction Count]({static}/images/jurisdictions-vs-population.png)
 
-Here's a table of every state, its population, number of jurisdictions, and the ratio of jurisdictions per 100,000 residents.
+And here's a table of every state, its population, number of jurisdictions, and the ratio of jurisdictions per 100,000 residents.
 
 | State                |   Population |   Permit Jurisdictions |   Jurisdictions per 100,000 Residents |
 |:---------------------|-------------:|-----------------------:|--------------------------------------:|
@@ -98,7 +98,7 @@ Here's a table of every state, its population, number of jurisdictions, and the 
 
 ## Conclusion
 
-Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. We hope this helps. 
+Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. It's a step in the right direction. 
 
 Here are the links again: 
 
