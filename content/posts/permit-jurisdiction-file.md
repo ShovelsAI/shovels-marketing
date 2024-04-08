@@ -14,11 +14,11 @@ We are thrilled to announce another open-source dataset from the Shovels vault. 
 
 ## What is this list of building permit jurisdictions?
 
-Our dataset includes over 10,000 building permit jurisdictions (AHJ's -- authority-having jurisdictions), and relates each jurisdiction to its respective state and county. 
+Our dataset includes over 10,000 building permit jurisdictions (AHJs -- authority-having jurisdictions), and relates each jurisdiction to its respective state and county. 
 
 We found this mapping buried in an obscure government website. We noticed that when we clicked on a state, a select box appeared with all of the counties in that state. This mapping is widely available from the US Census and many other open data sources. 
 
-But when we clicked on the county, another select box appeared with every building permit jurisdiction in the county. *That* got our attention. Before this discovery, we didn't know of a single source of truth for how many AHJ's are out there for building permits. Now we can count at least 10,000 of them.
+But when we clicked on the county, another select box appeared with every building permit jurisdiction in the county. *That* got our attention. Before this discovery, we didn't know of a single source of truth for how many AHJs are out there for building permits. Now we can count at least 10,000 of them.
 
 ## Who needs a list of every building permit jurisdiction? 
 
@@ -30,7 +30,7 @@ We figure many folks who work in cities and counties don't know every AHJ within
 
 ## How many building permit jurisdictions are in each state? 
 
-We got curious and decided to ask this data a few questions. How many AHJ's are in each state? Does that jurisdiction correlate with population? We had to merge in some public census data to figure this out. 
+We got curious and decided to ask this data a few questions. How many AHJs are in each state? Does that jurisdiction correlate with population? We had to merge in some public census data to figure this out. 
 
 On average, there are about ten permit jurisdictions per county. If a county has a million residents, that means each permit jurisdiction serves about 100,000 people. 
 
