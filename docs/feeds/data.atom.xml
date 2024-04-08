@@ -297,12 +297,12 @@
 &lt;p&gt;The list we are open-sourcing today includes every building permit jurisdiction. If a city or town is on this list, then they issue their own building permits. If a city or town is not on this list, then it's safe to conclude that their AHJ is the county. &lt;/p&gt;
 &lt;p&gt;We figure many folks who work in cities and counties don't know every AHJ within their boundaries. Now they do.&lt;/p&gt;
 &lt;h2&gt;How many building permit jurisdictions are in each state?&lt;/h2&gt;
-&lt;p&gt;We got curious and decided to ask this data a few questions. How many AHJs are in each state? Does that jurisdiction correlate with population? We had to merge in some public census data to figure this out. &lt;/p&gt;
+&lt;p&gt;We got curious and decided to ask this data a few questions. How many AHJs are in each state? Does that jurisdiction count correlate with population? We had to merge in some public census data to figure this out. &lt;/p&gt;
 &lt;p&gt;On average, there are about ten permit jurisdictions per county. If a county has a million residents, that means each permit jurisdiction serves about 100,000 people. &lt;/p&gt;
 &lt;p&gt;Pennsylvania stands out with the highest number of permit jurisdictions, totaling 1575. No other state comes close! It's unclear why Pennsylvania needs so many of them. For example, although Pennsylvania has the same population as Ohio, it has almost 3X the number of building permit jurisdictions. &lt;/p&gt;
 &lt;p&gt;This chart makes the outliers easy to see.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Population vs Jurisdiction Count" src="https://www.shovels.ai/images/jurisdictions-vs-population.png"&gt;&lt;/p&gt;
-&lt;p&gt;Here's a table of every state, its population, number of jurisdictions, and the ratio of jurisdictions per 100,000 residents.&lt;/p&gt;
+&lt;p&gt;And here's a table of every state, its population, number of jurisdictions, and the ratio of jurisdictions per 100,000 residents.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -622,6 +622,6 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. We hope this helps. &lt;/p&gt;
+&lt;p&gt;Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. It's a step in the right direction. &lt;/p&gt;
 &lt;p&gt;Here are the links again: &lt;/p&gt;
 &lt;p&gt;Grab it &lt;a href="https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states" target="_blank"&gt;on Kaggle&lt;/a&gt; or &lt;a href="https://www.shovels.ai/images/jurisdiction_mappings.csv"&gt;download the CSV&lt;/a&gt;.&lt;/p&gt;</content><category term="Data"></category><category term="building permits"></category><category term="AHJ"></category><category term="permit jurisdiction"></category></entry></feed>
