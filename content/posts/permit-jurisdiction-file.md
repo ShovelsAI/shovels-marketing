@@ -22,7 +22,7 @@ But when we clicked on the county, another select box appeared with every buildi
 
 ## Who needs a list of every building permit jurisdiction? 
 
-When architects, developers, and homeowners start a new project, the first question they might ask is, "Where do I file my building permits?" The answer is far from obvious; many cities don't have building departments; they delegate building permitting to the county.
+When architects, developers, and homeowners start a new project, the first question they might ask is, "Where do I file my building permits?" The answer is far from obvious! Many cities don't have building departments; they delegate building permitting to the county.
 
 The list we are open-sourcing today includes every building permit jurisdiction. If a city or town is on this list, then they issue their own building permits. If a city or town is not on this list, then it's safe to conclude that their AHJ is the county. 
 
