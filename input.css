@@ -166,7 +166,7 @@ body.inverted {
 }
 
 .article p {
-  @apply my-3 text-[21px] leading-8
+  @apply my-3 text-[18px] leading-8
 }
 
 .article .highlight {
