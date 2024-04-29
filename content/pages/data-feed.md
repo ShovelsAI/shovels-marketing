@@ -4,8 +4,8 @@ slug: data-feed
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title text-amber-300">Store permit and construction data locally</h1>
-    <p class="hero_description text-lime-50">If you need to process large amounts of permit and contractor data, a data feed is far more efficient than an API. We got you covered.</p>
+    <h1 class="hero_title text-amber-300">Building permit and contractor data where you need it</h1>
+    <p class="hero_description text-lime-50">Shovels can push over 100 million building permit and contractor records directly into your Snowflake, Big Query, or Databricks accounts. We also sell the underlying parquet data.</p>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">
@@ -22,10 +22,10 @@ slug: data-feed
         <div class="mb-6">
           <img src="theme/images/data-feed/ping.png">
         </div>
-        <span class="elaboration-card_title">All you can ping</span>
+        <span class="elaboration-card_title">Add permits to Snowflake</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We're the only permit API offering flat prices for single-state or national scope.</p>
+        <p class="flex-auto">To get our permit data in Snowflake, we just need your public org and account identifiers. No extra engineering or security support required.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -33,10 +33,10 @@ slug: data-feed
         <div class="mb-6">
           <img src="theme/images/data-feed/json.png">
         </div>
-        <span class="elaboration-card_title">Convenient JSONL format</span>
+        <span class="elaboration-card_title">Add permits to Big Query</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We provide secure access to data feeds in convenient JSON lines (JSONL) format for easy streaming and parsing into your data systems.</p>
+        <p class="flex-auto">To get permit data into your Big Query account, we just need a Google service account. The tables will arrive pre-formatted and ready to query.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -44,10 +44,10 @@ slug: data-feed
         <div class="mb-6">
           <img src="theme/images/data-feed/accurate.png">
         </div>
-        <span class="elaboration-card_title">Always accurate</span>
+        <span class="elaboration-card_title">Parquet format</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Our contractor data is refreshed and re-processed constantly. We retrieve updates from our source data partners and supplement with our own retrieval systems.</p>
+        <p class="flex-auto">We know that dealing with CSV files is a massive headache, especially with complex data and confusing serializations. That's why we like parquet and prefer to send building contractor and permit data in this format.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -55,10 +55,10 @@ slug: data-feed
         <div class="mb-6">
           <img src="theme/images/data-feed/metrics.png">
         </div>
-        <span class="elaboration-card_title">Quality metrics</span>
+        <span class="elaboration-card_title">Automatic updates</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We include our derivative metrics (inspection pass rates and green permit types, for example) wherever it's available.</p>
+        <p class="flex-auto">With our private table sharing service, updates are done automatically. When we have new production data, it flows into your Snowflake, Big Query, or Databricks account automatically.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -69,7 +69,7 @@ slug: data-feed
         <span class="elaboration-card_title">Custom schema</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We can customize schema delivery for an additional monthly fee.</p>
+        <p class="flex-auto">For super custom reporting, we can run SQL locally and format your report exactly the way you want it. For these requests, we'll deliver as CSV and offer both one-time and monthly options.</p>
       </dd>
     </div>
     <div class="elaboration-card">

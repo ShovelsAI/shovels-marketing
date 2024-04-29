@@ -150,7 +150,8 @@ body.inverted {
 /* start of article classes */
 
 .article h1 {
-  @apply text-[2em] my-10
+  @apply text-[2em] my-10;
+  line-height: normal
 }
 
 .article h2 {
@@ -201,7 +202,7 @@ div.article img {
 
 /* for the Home page's example API responses */
 .hljs {
-  background: #181c24 !important; 
+  background: #f3f3f3 !important; 
 }
 .hljs-attr {
   color: #e04c90 !important

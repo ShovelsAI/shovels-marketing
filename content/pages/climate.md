@@ -35,7 +35,7 @@ slug: climate
         <span class="elaboration-card_title">Installer networks</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">It's hard to know who's available. We track <span class="italic">all</span> contractors, and we know how many active jobs a contractor has and how long it usually takes them to complete a job, allowing you to filter by service area and availability. Unlike Yelp and others, we can search by where contractors work, not where they live.</p>
+        <p class="flex-auto">It's hard to know who's available. We track <span class="italic">all</span> contractors, and we know how many active jobs a contractor has and how long it usually takes them to complete a job, allowing you to filter by service area and availability.</p> <p class="flex-auto mt-4">Unlike Yelp and others, we search by where contractors work, not where they live.</p>
         <p class="mt-6">
           <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/"
             class="text-sm  leading-6 text-slate-600" target="_blank">EV contractor case study <img class="inline font-normal ml-1" src="theme/images/caret-right.svg"></a>
@@ -50,9 +50,9 @@ slug: climate
         <span class="elaboration-card_title">Properties</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Utilities, governments, and researchers want to know where electrification is happening. We have that. We can help you build lists of homes with recent building electrification activity so you can promote your climate software and hardware products.</p>
+        <p class="flex-auto">Utilities, governments, and researchers want to know where electrification is happening. We have that.</p><p class="flex-auto mt-4">We can help you build lists of homes with recent building electrification activity so you can promote your climate software and hardware products.</p>
         <p class="mt-6">
-          <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/" class="text-sm  leading-6 text-slate-600">EV charger case study <span aria-hidden="true">→</span></a>
+          <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/" class="text-sm  leading-6 text-slate-600">EV charger case study <img class="inline font-normal ml-1" src="theme/images/caret-right.svg"></a>
         </p>
       </dd>
     </div>

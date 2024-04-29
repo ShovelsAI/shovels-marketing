@@ -4,15 +4,13 @@ slug: team
 <div class="py-24">
   <div class="px-6 lg:px-8 text-center mb-10">
     <h2 class="text-5xl  tracking-tight text-amber-300">Team Shovels</h2>
-    <p class="mt-6 text-stone-200 text-lg leading-10 max-w-md mx-auto">Shovels launched in 2022 with the support of a global network of top angel investors.</p>
+    <p class="mt-6 text-stone-200 text-lg max-w-md mx-auto">Shovels launched in 2022 with the support of a global network of top angel investors.</p>
   </div>
   <div class="mx-auto max-w-5xl gap-y-20 gap-x-8 px-6 lg:px-8" >
     <ul role="list"
-        x-data="{ ryan: false, luka: false, petra: false }"
-        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
-      <li class="border-2 rounded border-gray-900"
-          x-on:mouseenter="ryan = true" x-on:mouseleave="ryan = false"
-      >
+        x-data="{ ryan: false, luka: false, petra: false, betty: false }"
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
+      <li x-on:mouseenter="ryan = true" x-on:mouseleave="ryan = false">
         <div x-show="!ryan">
           <img class="w-full" src="theme/images/team/ryan.svg" alt="Ryan Buckley from Shovels">
           <div class="p-6">
@@ -42,9 +40,7 @@ slug: team
           </ul>
         </div>
       </li>
-      <li class="border-2 rounded border-gray-900"
-            x-on:mouseenter="luka = true" x-on:mouseleave="luka = false"
-      >
+      <li x-on:mouseenter="luka = true" x-on:mouseleave="luka = false">
         <div x-show="!luka">
           <img class="w-full" src="theme/images/team/luka.svg" alt="Luka Kacil from Shovels">
           <div class="p-6">
@@ -74,9 +70,7 @@ slug: team
         </ul>
         </div>
       </li>
-      <li class="border-2 rounded border-gray-900"
-          x-on:mouseenter="petra = true" x-on:mouseleave="petra = false"
-      >
+      <li x-on:mouseenter="petra = true" x-on:mouseleave="petra = false">
         <div x-show="!petra">
           <img class="w-full" src="theme/images/team/petra.svg" alt="Petra Kopic from Shovels">
           <div class="p-6">
@@ -85,10 +79,32 @@ slug: team
           </div>
         </div>
         <div x-show="petra" class="p-6">
-          <p class="mt-4 text-base leading-7 text-stone-200">Petra was most recently a data scientist at CIAL Dun & Bradstreet where she ran data pipelines on complex business data. At Shovels, she runs data pipelines on our permit analysis infrastructure.</p>
+          <p class="mt-4 text-base leading-7 text-stone-200">Petra was most recently a data scientist at CIAL Dun & Bradstreet where she ran data pipelines on complex business data. At Shovels, she runs data pipelines on our permit analysis infrastructure. Petra holds a Master's degree in mathematics from Technical University Munich.</p>
           <ul role="list" class="mt-6 flex gap-x-6">
             <li>
               <a href="https://www.linkedin.com/in/petra-kopic/" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li x-on:mouseenter="betty = true" x-on:mouseleave="betty = false">
+        <div x-show="!betty">
+          <img class="w-full" src="theme/images/team/betty.svg" alt="Betty Wan from Shovels">
+          <div class="p-6">
+            <h3 class="text-lg  leading-8 text-stone-200">Betty Wan</h3>
+            <p class="text-base leading-7 uppercase text-amber-300">VP of Growth</p>
+          </div>
+        </div>
+        <div x-show="betty" class="p-6">
+          <p class="mt-4 text-base leading-7 text-stone-200">Betty spent much of her career in mobile data and advertising at companies including Wildfire, Google, Liftoff, and Bidease. She also invests in tea companies and real estate. At Shovels, Betty optimizes our entire revenue stack. Betty studied at Cornell University.</p>
+          <ul role="list" class="mt-6 flex gap-x-6">
+            <li>
+              <a href="https://www.linkedin.com/in/bettywan7/" class="text-gray-400 hover:text-gray-500" target="_blank">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
