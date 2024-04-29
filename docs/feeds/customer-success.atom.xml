@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2024-02-12T00:00:00-08:00</updated><entry><title>How to use the Shovels API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2024-04-24T00:00:00-07:00</updated><entry><title>How to use the Shovels API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;That is excellent news, and we are here to help. &lt;/p&gt;
 &lt;h2&gt;Authentication&lt;/h2&gt;
 &lt;p&gt;We use header key-based authentication. There are two steps to authenticate:&lt;/p&gt;
@@ -246,4 +246,47 @@
 &lt;h2&gt;Does this cost anything, by the way?&lt;/h2&gt;
 &lt;p&gt;Yes! We are going to charge $499/mo per account for access to all of this amazing data. You’ll get a generous trial period, though, and all of our constant updates. &lt;/p&gt;
 &lt;p&gt;When we release the V2, price will probably go up, but we’ll won’t raise prices on our early customers. &lt;/p&gt;
-&lt;p&gt;Check it out! &lt;a href="https://app.shovels.ai"&gt;https://app.shovels.ai&lt;/a&gt;&lt;/p&gt;</content><category term="Customer Success"></category><category term="app"></category><category term="launch"></category></entry></feed>
+&lt;p&gt;Check it out! &lt;a href="https://app.shovels.ai"&gt;https://app.shovels.ai&lt;/a&gt;&lt;/p&gt;</content><category term="Customer Success"></category><category term="app"></category><category term="launch"></category></entry><entry><title>How to use the Shovels AI GPT</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-ai-gpt/" rel="alternate"></link><published>2024-04-24T00:00:00-07:00</published><updated>2024-04-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-04-24:/blog/how-to-use-the-shovels-ai-gpt/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Harnessing the Power of Shovels AI Custom GPT for Efficient Permit and Contractor Searches&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;Introduction to Shovels AI Custom GPT&lt;/h2&gt;
+&lt;p&gt;In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The &lt;a href="https://chat.openai.com/g/g-apAxK8WGu-shovels-ai"&gt;Shovels custom GPT&lt;/a&gt; is a sophisticated tool designed to streamline this process. It interacts with the &lt;a href="https://api.shovels.ai/redoc"&gt;Shovels API&lt;/a&gt;, providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. &lt;/p&gt;
+&lt;p&gt;This blog post will guide you on how to effectively use this tool, with some cool examples.&lt;/p&gt;
+&lt;h2&gt;Key Features of Shovels AI Custom GPT&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Coverage&lt;/strong&gt;: Access data related to building permits and contractors in nearly every U.S. state.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tag-based Searches&lt;/strong&gt;: Perform searches based on specific types of work such as roofing, windows, pools, or EV chargers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State and Zip Code Filters&lt;/strong&gt;: Limit your search to specific states or zip codes to find localized information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Date Filters&lt;/strong&gt;: Search permits based on the start and end dates of permit filings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Getting Started with Your Query&lt;/h2&gt;
+&lt;p&gt;To get the most out of Shovels AI, start by determining the type of information you need. Here are some steps to follow:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Choose Your Query Type&lt;/strong&gt;: Decide whether you need information on building permits or contractors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Specify Location&lt;/strong&gt;: You can filter your search by state or zip code. For example, if you're interested in construction activities in Texas, mention it in your prompt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Select a Tag (if applicable)&lt;/strong&gt;: If you're looking for specific types of permits, like those for electrical work, you will need to tell the GPT what you want.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Example Queries&lt;/h2&gt;
+&lt;h3&gt;Query 1: Searching for Roofing Permits in a Zip Code&lt;/h3&gt;
+&lt;p&gt;Suppose you want to find all recent roofing permits in the 90210 zip code. Here’s how you can use the tool:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;Show&lt;/span&gt; &lt;span class="nv"&gt;me&lt;/span&gt; &lt;span class="nv"&gt;all&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;roofing&lt;/span&gt; &lt;span class="nv"&gt;permits&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;zip&lt;/span&gt; &lt;span class="mi"&gt;90210&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The GPT will then provide a list of roofing permits in this area, detailing the permits’ descriptions, filing dates, and associated contractors if available. Sometimes it won't give the contractors, though. If that happens, ask for them. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;List the contractors too
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Query 2: Finding Contractors Specialized in Pool Installations&lt;/h3&gt;
+&lt;p&gt;If you need a contractor for a new pool installation in Orlando, Florida, you need to look up some ZIP codes in Orlando. As of this writing, Shovels does not currently support city-based searches. Once you have the zip code, you can proceed! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;Show&lt;/span&gt; &lt;span class="nv"&gt;me&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;contractors&lt;/span&gt; &lt;span class="nv"&gt;who&lt;/span&gt; &lt;span class="nv"&gt;did&lt;/span&gt; &lt;span class="nv"&gt;pool&lt;/span&gt; &lt;span class="nv"&gt;permits&lt;/span&gt; &lt;span class="nv"&gt;this&lt;/span&gt; &lt;span class="nv"&gt;year&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="mi"&gt;32805&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will result in a list of contractors who have recently installed pools in 32805.&lt;/p&gt;
+&lt;h2&gt;Tips for Effective Searches&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ensure Complete Addresses&lt;/strong&gt;: When searching by address, make sure to provide the full address including street number, name, and zip code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Tags&lt;/strong&gt;: Be specific about what types of permits you want. The GPT does a pretty good job of choosing the right Shovels permit tag.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Dates&lt;/strong&gt;: Remember to include a date range if you want one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The Shovels custom GPT is an easy way for anyone looking to access detailed, localized information on permits and contractors quickly. By following the steps outlined in this blog, you can quickly get the data you want.&lt;/p&gt;</content><category term="Customer Success"></category><category term="ai"></category><category term="chatgpt"></category><category term="openai"></category></entry></feed>

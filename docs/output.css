@@ -1253,6 +1253,10 @@ select {
   width: 0.5rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -1552,13 +1556,13 @@ select {
   row-gap: 1.5rem;
 }
 
-.gap-y-20 {
-  row-gap: 5rem;
-}
-
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2718,6 +2722,7 @@ body.inverted {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   font-size: 2em;
+  line-height: normal;
 }
 
 .article h2 {
@@ -2782,7 +2787,7 @@ div.article img {
 /* for the Home page's example API responses */
 
 .hljs {
-  background: #181c24 !important;
+  background: #f3f3f3 !important;
 }
 
 .hljs-attr {
@@ -2887,6 +2892,11 @@ div.article img {
 .hover\:text-emerald-900:hover {
   --tw-text-opacity: 1;
   color: rgb(6 78 59 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-600:hover {
@@ -3021,10 +3031,6 @@ div.article img {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-4 {
