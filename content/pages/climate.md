@@ -11,7 +11,7 @@ slug: climate
         <a href="https://app.shovels.ai"
         class="shovels-button"
         target="_blank">Register <img class="inline" src="theme/images/caret-right.svg"> </a>
-        <a href="https://play.google.com/store/apps/details?id=com.shovels.shovels1"
+        <a href="{static}/pdfs/Case_Study_Carbon_Free_Homes.pdf"
         class="py-4 leading-1 inline-flex items-center gap-x-2 shadow-sm"
         target="_blank">White Paper<img src="theme/images/caret-right.svg"></span>
         </a>
