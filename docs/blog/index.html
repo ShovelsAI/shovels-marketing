@@ -238,13 +238,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/case-study-empowering-carbon-free-homes/" class=" text-emerald-900 hover:text-gray-700"><p>Case Study: Empowering Carbon Free Homes</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-ai-gpt/" class=" text-emerald-900 hover:text-gray-700"><p>How to use the Shovels AI GPT</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/april-2024-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>April 2024 Newsletter</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/" class=" text-emerald-900 hover:text-gray-700"><p>Case Study: Revolutionizing Lead Generation for Beam</p></a>
                   </li>
               </ul>
             </div>
@@ -433,6 +433,28 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Case Study')">
+        <a href="https://www.shovels.ai/blog/case-study-empowering-carbon-free-homes/">
+          <img src="/images/case-study-carbon-free-homes.png" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Case Study"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Case Study</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/case-study-empowering-carbon-free-homes/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Case Study: Empowering Carbon Free Homes</p>
+              </h2>
+              <time datetime="2024-05-13 00:00:00-07:00" class="text-black text-xs">Mon 13 May 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Customer Success')">
         <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-ai-gpt/">
           <img src="/images/shovelsgpt.png" alt=""
