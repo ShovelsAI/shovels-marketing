@@ -7,10 +7,14 @@ slug: climate
       <h1 class="hero_title">Sell building electrification products and create installer networks</h1>
       <p class="hero_description">We see every solar, EV charger, heat pump HVAC, water heater, and
         battery installation. Use this data to build lead lists and create installer networks based on contractor service area.</p>
-      <div class="mt-10 mb-20">
+      <div class="mt-10 mb-20 flex gap-x-6 justify-start">
         <a href="https://app.shovels.ai"
-          class="shovels-button"
-          target="_blank">Check out the demo <img class="inline" src="theme/images/caret-right.svg"> </a>
+        class="shovels-button"
+        target="_blank">Register <img class="inline" src="theme/images/caret-right.svg"> </a>
+        <a href="https://play.google.com/store/apps/details?id=com.shovels.shovels1"
+        class="py-4 leading-1 inline-flex items-center gap-x-2 shadow-sm"
+        target="_blank">White Paper<img src="theme/images/caret-right.svg"></span>
+        </a>
       </div>
     </div>
     <div class="hero_image-container">
