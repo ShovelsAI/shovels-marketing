@@ -14,7 +14,7 @@ Image: /images/shovelsgpt.png
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Introduction to Shovels AI Custom GPT
-In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The [Shovels custom GPT](https://chat.openai.com/g/g-apAxK8WGu-shovels-ai) is a sophisticated tool designed to streamline this process. It interacts with the [Shovels API](https://api.shovels.ai/redoc), providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. 
+In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The [Shovels custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) is a sophisticated tool designed to streamline this process. It interacts with the [Shovels API](https://shovels.redoc.ly), providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. 
 
 This blog post will guide you on how to effectively use this tool, with some cool examples.
 

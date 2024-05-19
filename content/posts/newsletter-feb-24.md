@@ -15,14 +15,14 @@ I've been looking forward to writing this newsletter for more than a year.
 
 *   Anyone can register at [https://app.shovels.ai](https://app.shovels.ai)! All you need is an email address. Here's [a blog post](https://www.shovels.ai/blog/how-to-use-the-shovels-app/) about it!
 *   It's free for now. There still are a few bugs I know about, and you'll find a few more. It's free because I want your feedback. I figure we'll start charging for access before the next newsletter.
-*   Our [custom GPT](https://chat.openai.com/g/g-apAxK8WGu-shovels-ai) is getting LOTS of use too. Who knew making building permit and contractor data accessible would be such a useful thing? (We did 😇)[](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
+*   Our [custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) is getting LOTS of use too. Who knew making building permit and contractor data accessible would be such a useful thing? (We did 😇)[](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
 
 The case for software
 =====================
 
 Shovels is a data company. That's our DNA. We're not very proficient (yet) at building software. We'll develop that skill as we go, but what will always set us apart is our devotion to clean, reliable, and useful data.
 
-We launched our nationwide [building permit API](https://api.shovels.ai/redoc#tag/Permits) in August 2023. We followed that release with a [nationwide contractor API](https://api.shovels.ai/redoc#tag/Contractors) in November 2023. We now have a bunch of paying customers and meaningful revenue. 
+We launched our nationwide [building permit API](https://shovels.redoc.ly/#operation/Permits) in August 2023. We followed that release with a [nationwide contractor API](https://shovels.redoc.ly/#operation/Contractors) in November 2023. We now have a bunch of paying customers and meaningful revenue. 
 
 Just getting this far is a big deal! And we'll continue to serve our current and new API customers. We ❤️ API deals.
 

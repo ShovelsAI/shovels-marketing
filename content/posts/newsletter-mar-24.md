@@ -71,7 +71,7 @@ It's a new month, and with that, a bunch of new fixes. Here's our March release 
 *   **Improvements in contractor grouping**: We're using more comprehensive details, including addresses and phone numbers, to cluster contractor branches into groups.
 *   **A new address dataset**: We added over three million exact geo locations to our permits table. We are closing down the gap of unlinked permits (permits without geo coordinates).
 *   **Improvements in our internal docs**: We move fast but we also recognize that investing in good documentation now will save us headaches later. We created a new internal knowledge base.
-*   **API enhancements**: We introduced a [new API call](https://api.shovels.ai/redoc#tag/Permits/operation/get_permits_by_id_v1_permits_get) that allows for the specification of multiple permits in a single request.
+*   **API enhancements**: We introduced a [new API call](https://shovels.redoc.ly/#operation/Permits/operation/get_permits_by_id_v1_permits_get) that allows for the specification of multiple permits in a single request.
 *   **Database optimization**: In response to API usage patterns, we've restructured our database architecture. No more timeouts!
 *   **API monitoring**: We have integrated with an awesome tool to help us track API usage, errors, and patterns.
 

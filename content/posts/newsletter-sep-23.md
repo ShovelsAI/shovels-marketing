@@ -15,8 +15,8 @@ I feel proud today. The Shovels team, all three of us, had a very productive two
 
 *   **🚀 We processed 100M building permits! We can run custom SQL queries and export CSV files for residential and commercial buildings nationwide. 🚀**
 *   States currently available in the API: California, Texas, Florida, and New York. Now that the rest are processed, we'll begin loading them into the API too. 
-*   Speaking of API, we released our [markets endpoint](https://api.shovels.ai/redoc#tag/Markets/operation/get_market_activity_by_zip_code_v1_markets_permits_zip_get). We count current and historical building permit counts on all of our zip codes sliced by any of our tags. I'll describe an interesting application for this data below! 
-*   We also released [new prettier API docs](https://api.shovels.ai/redoc). Why does this matter? I'll tell you.
+*   Speaking of API, we released our [markets endpoint](https://shovels.redoc.ly/#operation/Markets/operation/get_market_activity_by_zip_code_v1_markets_permits_zip_get). We count current and historical building permit counts on all of our zip codes sliced by any of our tags. I'll describe an interesting application for this data below! 
+*   We also released [new prettier API docs](https://shovels.redoc.ly). Why does this matter? I'll tell you.
 *   Our pricing matrix is good to go. You'll know what cost to expect when you're ready to get on this building permit data bandwagon. 
 
 100 million building permits
@@ -78,7 +78,7 @@ I admire companies like Stripe and Clearbit who make it easy for developers to u
 
 That's why we are going to make Shovels the most developer-friendly construction data API in the country.
 
-Our [new API docs](https://api.shovels.ai/redoc) are searchable, have input and output samples, and a new page structure. Enjoy! 
+Our [new API docs](https://shovels.redoc.ly) are searchable, have input and output samples, and a new page structure. Enjoy! 
 
 Money talk
 ==========

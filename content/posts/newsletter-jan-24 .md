@@ -13,7 +13,7 @@ Nice, I get to be the 32nd person to wish you a happy new year in a marketing ne
 
 With that out of the way, let's get down to business!
 
-*   With the help of ChatGPT, we are officially putting the AI in Shovels.ai. Preview [our custom GPT](https://chat.openai.com/g/g-apAxK8WGu-shovels-ai) before it goes behind a paywall later this month. Tell it to look up some permits! 
+*   With the help of ChatGPT, we are officially putting the AI in Shovels.ai. Preview [our custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) before it goes behind a paywall later this month. Tell it to look up some permits! 
 *   We added a bunch of new contractors and then de-duplicated them so searching by name is less confusing. We also improved the way permits are queried by zip code!
 *   And more things to do with permit data: calculate permit approval times (soon with even more granularity). [](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
 
@@ -22,7 +22,7 @@ With that out of the way, let's get down to business!
 
 It might be true that we are shovels.ai because the .com was taken, but we've always known artificial intelligence would play a major role here.
 
-OpenAI went and made doing that a whole lot easier by releasing custom GPTs late last year. These used to be called plugins, and they enable ChatGPT to interact with APIs like ours. So, we configured a custom GPT to use all of our API endpoints and [released it to the public](https://chat.openai.com/g/g-apAxK8WGu-shovels-ai)!
+OpenAI went and made doing that a whole lot easier by releasing custom GPTs late last year. These used to be called plugins, and they enable ChatGPT to interact with APIs like ours. So, we configured a custom GPT to use all of our API endpoints and [released it to the public](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai)!
 
 We hear that OpenAI is going to release a GPT Store later this month. When that happens, we'll put the ShovelsAI GPT in there. But for now, anyone with a ChatGPT Plus account ($20/mo) can use our GPT.
 
@@ -35,7 +35,7 @@ And, uhh... yea, it's pretty crazy. Here's what you can do:
 
 We're going to release some more endpoints so you can filter by permit status, fees, and such. We'll also make it easier to filter by city (we only do zips and states right now).
 
-We're super excited about this new way to use Shovels! [Check it out](https://chat.openai.com/g/g-apAxK8WGu-shovels-ai)! 
+We're super excited about this new way to use Shovels! [Check it out](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai)! 
 
 **🥳 A new product release worthy of 2024 🥳**
 ==============================================
