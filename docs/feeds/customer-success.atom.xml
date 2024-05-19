@@ -17,11 +17,11 @@
 &lt;p&gt;Let's look at the building activity filter first. We call types of activity &lt;em&gt;tags&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;We offer 33 unique tags as of this publication date in October 2023. That number will increase over time! &lt;/p&gt;
 &lt;p&gt;To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1842205445" target="_blank"&gt;Data Dictionary&lt;/a&gt; . We'll try to keep this updated. &lt;/p&gt;
-&lt;p&gt;To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the &lt;a href="https://api.shovels.ai/redoc#tag/List/operation/get_all_available_tags_v1_list_tags_get" target="_blank"&gt;Get All Available Tags&lt;/a&gt;  endpoint.&lt;/p&gt;
+&lt;p&gt;To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the &lt;a href="https://shovels.redoc.ly/#operation/List/operation/get_all_available_tags_v1_list_tags_get" target="_blank"&gt;Get All Available Tags&lt;/a&gt;  endpoint.&lt;/p&gt;
 &lt;p&gt;To make this extra super clear, let's go through some examples. I'm going to show the code snippets using Curl, a command-line tool available natively in every operating system. Just open a new command-line prompt (e.g. Terminal on MacOS) to use it. &lt;/p&gt;
 &lt;h4&gt;Get details on every heat pump installation in a zip code&lt;/h4&gt;
 &lt;p&gt;Let's use 94123, my old neighborhood in San Francisco. Start by finding the right tag (using the methodology above) for heat pumps: &lt;code&gt;heat_pump&lt;/code&gt; should do the trick!&lt;/p&gt;
-&lt;p&gt;Next, find the endpoint. &lt;a href="https://api.shovels.ai/redoc#tag/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank"&gt;Get Permits By Zip Code&lt;/a&gt;  sounds about right! &lt;/p&gt;
+&lt;p&gt;Next, find the endpoint. &lt;a href="https://shovels.redoc.ly/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank"&gt;Get Permits By Zip Code&lt;/a&gt;  sounds about right! &lt;/p&gt;
 &lt;p&gt;Make the request. Here's the Curl command.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
   &lt;span class="s1"&gt;&amp;#39;https://api.shovels.ai/v1/permits/zip?zip_code=94123&amp;amp;tags=heat_pump&amp;amp;page=1&amp;amp;size=50&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
@@ -60,7 +60,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;So what do we do with all those &lt;code&gt;id&lt;/code&gt; values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the &lt;code&gt;id&lt;/code&gt; and pass it into our &lt;a href="https://api.shovels.ai/redoc#tag/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank"&gt;Get Permit by ID&lt;/a&gt;  endpoint.&lt;/p&gt;
+&lt;p&gt;So what do we do with all those &lt;code&gt;id&lt;/code&gt; values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the &lt;code&gt;id&lt;/code&gt; and pass it into our &lt;a href="https://shovels.redoc.ly/#operation/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank"&gt;Get Permit by ID&lt;/a&gt;  endpoint.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
   &lt;span class="s1"&gt;&amp;#39;https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
   -H &lt;span class="s1"&gt;&amp;#39;accept: application/json&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
@@ -101,7 +101,7 @@
 &lt;p&gt;Neato! If we wanted to store all these heat pump installs in a database or spreadsheet, we could write more code for that. I recommend asking ChatGPT to do it for you.&lt;/p&gt;
 &lt;h4&gt;Get all the heat pump HVAC installers in a zip code&lt;/h4&gt;
 &lt;p&gt;What if you don't care about the permits or the homes, and you just want to know who did the install? We can help with that, too! &lt;/p&gt;
-&lt;p&gt;Our handy &lt;a href="https://api.shovels.ai/redoc#tag/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get" target="_blank"&gt;Get Permits By Activity Zip Code&lt;/a&gt;  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. &lt;/p&gt;
+&lt;p&gt;Our handy &lt;a href="https://shovels.redoc.ly/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get" target="_blank"&gt;Get Permits By Activity Zip Code&lt;/a&gt;  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. &lt;/p&gt;
 &lt;p&gt;For this API call, let's find all the heat pump HVAC installers who did work in the first two quarters of 2023. &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
   &amp;#39;https://api.shovels.ai/v1/contractors/activity/zip?zip_code=94103&amp;amp;tags=heat_pump&amp;amp;start_date=2023-01-01&amp;amp;end_date=2023-07-01&amp;amp;page=1&amp;amp;size=50&amp;#39; \
@@ -118,7 +118,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Same deal. The &lt;code&gt;id&lt;/code&gt; shown is our internal Shovels contractor ID. Let's hit our &lt;a href="https://api.shovels.ai/redoc#tag/Contractors/operation/get_contractor_by_id_v1_contractors__id__get" target="_blank"&gt;Get Contractor by Id&lt;/a&gt;  endpoint with it to get those contractor details! &lt;/p&gt;
+&lt;p&gt;Same deal. The &lt;code&gt;id&lt;/code&gt; shown is our internal Shovels contractor ID. Let's hit our &lt;a href="https://shovels.redoc.ly/#operation/Contractors/operation/get_contractor_by_id_v1_contractors__id__get" target="_blank"&gt;Get Contractor by Id&lt;/a&gt;  endpoint with it to get those contractor details! &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
   &amp;#39;https://api.shovels.ai/v1/contractors/adfbb85fa395444c9516dcfe97ffcfb5&amp;#39; \
   -H &amp;#39;accept: application/json&amp;#39; \
@@ -143,7 +143,7 @@
 &lt;h3&gt;Dates&lt;/h3&gt;
 &lt;p&gt;Building permits have dates galore. We show file dates, issue dates, and final dates. File dates are when the permit was sent to the jurisdiction. Issue dates are when the permits are approved for construction, and the final dates is when the jurisdiction finally signs off on the finished work. &lt;/p&gt;
 &lt;p&gt;Our date filters, called &lt;code&gt;start_date&lt;/code&gt; and &lt;code&gt;end_date&lt;/code&gt;, are based solely on the file date.&lt;/p&gt;
-&lt;p&gt;To show how this works, let's look at permits filed in New York in August 2023. We can use our &lt;a href="https://api.shovels.ai/redoc#tag/Permits/operation/get_permits_by_state_v1_permits_state_get" target="_blank"&gt;Get Permits by State&lt;/a&gt;  endpoint! &lt;/p&gt;
+&lt;p&gt;To show how this works, let's look at permits filed in New York in August 2023. We can use our &lt;a href="https://shovels.redoc.ly/#operation/Permits/operation/get_permits_by_state_v1_permits_state_get" target="_blank"&gt;Get Permits by State&lt;/a&gt;  endpoint! &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
   &amp;#39;https://api.shovels.ai/v1/permits/state?state=NY&amp;amp;start_date=2023-08-01&amp;amp;end_date=2023-08-31&amp;amp;page=1&amp;amp;size=50&amp;#39; \
   -H &amp;#39;accept: application/json&amp;#39; \
@@ -234,7 +234,7 @@
 &lt;p&gt;Here I’m looking for every commercial contractor in the same Boulder ZIP code. How do we know a contractor is “commercial”? We know by their permits. This feature searches for commercial permits and then returns all of the contractors on those permits.&lt;/p&gt;
 &lt;p&gt;Makes sense, right? Seems like something like this should have been out there long ago, right? We agree.&lt;/p&gt;
 &lt;h2&gt;What’s coming out next?&lt;/h2&gt;
-&lt;p&gt;It’s important to note that everything we’re doing here is available on &lt;a href="https://api.shovels.ai/redoc"&gt;our public API&lt;/a&gt;. We are building this app using the &lt;em&gt;same&lt;/em&gt; endpoints that our customers can access. This software app is kind of like an API demo, too.&lt;/p&gt;
+&lt;p&gt;It’s important to note that everything we’re doing here is available on &lt;a href="https://shovels.redoc.ly"&gt;our public API&lt;/a&gt;. We are building this app using the &lt;em&gt;same&lt;/em&gt; endpoints that our customers can access. This software app is kind of like an API demo, too.&lt;/p&gt;
 &lt;p&gt;We’re already working on V2 of our API. The V2 will have a bunch of cool new stuff like:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Searching for permits using lat / long coordinates. That way you can drag the map and we’ll automatically update the permit results!&lt;/li&gt;
@@ -250,7 +250,7 @@
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h2&gt;Introduction to Shovels AI Custom GPT&lt;/h2&gt;
-&lt;p&gt;In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The &lt;a href="https://chat.openai.com/g/g-apAxK8WGu-shovels-ai"&gt;Shovels custom GPT&lt;/a&gt; is a sophisticated tool designed to streamline this process. It interacts with the &lt;a href="https://api.shovels.ai/redoc"&gt;Shovels API&lt;/a&gt;, providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. &lt;/p&gt;
+&lt;p&gt;In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The &lt;a href="https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai"&gt;Shovels custom GPT&lt;/a&gt; is a sophisticated tool designed to streamline this process. It interacts with the &lt;a href="https://shovels.redoc.ly"&gt;Shovels API&lt;/a&gt;, providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. &lt;/p&gt;
 &lt;p&gt;This blog post will guide you on how to effectively use this tool, with some cool examples.&lt;/p&gt;
 &lt;h2&gt;Key Features of Shovels AI Custom GPT&lt;/h2&gt;
 &lt;ul&gt;
