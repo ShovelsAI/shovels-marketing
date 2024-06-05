@@ -13,7 +13,7 @@ I've been looking forward to writing this newsletter for more than a year.
 
 🥳 Today we invite you to sign up for our first major software release! 🥳
 
-*   Anyone can register at [https://app.shovels.ai](https://app.shovels.ai)! All you need is an email address. Here's [a blog post](https://www.shovels.ai/blog/how-to-use-the-shovels-app/) about it!
+*   Anyone can register at [https://beta.shovels.ai](https://beta.shovels.ai)! All you need is an email address. Here's [a blog post](https://www.shovels.ai/blog/how-to-use-the-shovels-app/) about it!
 *   It's free for now. There still are a few bugs I know about, and you'll find a few more. It's free because I want your feedback. I figure we'll start charging for access before the next newsletter.
 *   Our [custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) is getting LOTS of use too. Who knew making building permit and contractor data accessible would be such a useful thing? (We did 😇)[](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
 
@@ -37,7 +37,7 @@ So, now we have software.
 **🥳 Introducing: Shovels app v1.0 🥳**
 =======================================
 
-Are you too excited to continue reading? I get it. [Click here](https://app.shovels.ai) to see it for yourself. 
+Are you too excited to continue reading? I get it. [Click here](https://beta.shovels.ai) to see it for yourself. 
 
 The Shovels app introduces our three data features: **addresses**, **permits**, and **contractors**.
 

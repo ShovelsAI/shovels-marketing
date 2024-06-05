@@ -9,7 +9,7 @@ Summary: We launched our Android app in Google Play and made a bunch of data pip
 Image: /images/screenshots.png
 
 
-Last month we launched [our web app](https:/app.shovels.ai). This month we're offering even more ways to get your hands on our building permit and contractor data!
+Last month we launched [our web app](https:/beta.shovels.ai). This month we're offering even more ways to get your hands on our building permit and contractor data!
 
 And we want to meet you IRL.
 

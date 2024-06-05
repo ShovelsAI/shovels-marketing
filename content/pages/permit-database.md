@@ -7,7 +7,7 @@ Slug: permit-database
     <h1 class="hero_title text-amber-300">The nationwide building permit and contractor database</h1>
     <p class="hero_description text-lime-50">Look up permits by address, parcel number, or contractor name with our web and mobile apps</p>
     <div class="mt-10 mb-20 flex gap-x-6 justify-start">
-      <a href="https://app.shovels.ai"
+      <a href="https://beta.shovels.ai"
       class="shovels-button"
       target="_blank">Web app <img class="inline" src="theme/images/caret-right.svg"> </a>
       <a href="https://play.google.com/store/apps/details?id=com.shovels.shovels1"
