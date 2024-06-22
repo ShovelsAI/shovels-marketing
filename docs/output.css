@@ -1281,6 +1281,10 @@ select {
   max-width: 28rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1291,10 +1295,6 @@ select {
 
 .max-w-0 {
   max-width: 0rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .max-w-5xl {
@@ -1762,6 +1762,11 @@ select {
   background-color: rgb(6 95 70 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-teal-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
@@ -2053,13 +2058,13 @@ select {
   line-height: 1.25rem;
 }
 
-.text-\[42px\] {
-  font-size: 42px;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
 }
 
 .text-\[23px\] {
@@ -2738,7 +2743,7 @@ div.article img {
 /* for the Home page's example API responses */
 
 .hljs {
-  background: #f3f3f3 !important;
+  background: #000 !important;
 }
 
 .hljs-attr {
@@ -2991,6 +2996,11 @@ div.article img {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .sm\:text-6xl {
