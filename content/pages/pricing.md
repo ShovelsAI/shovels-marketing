@@ -1,4 +1,4 @@
-Title: Pricing
+Title: API Pricing
 slug: pricing
 
 <div class="mx-auto max-w-5xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
@@ -15,7 +15,7 @@ slug: pricing
       <thead>
         <tr>
           <th class="font-medium py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-[42px]">Permits</span>
+            <span class="text-emerald-800 text-[42px]">Permits API</span>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
@@ -128,7 +128,7 @@ slug: pricing
       <thead>
         <tr>
           <th class="font-medium py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-[42px]">Contractors</span>
+            <span class="text-emerald-800 text-[42px]">Contractors API</span>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
@@ -227,7 +227,7 @@ slug: pricing
       <thead>
         <tr>
           <th class="font-medium py-3 px-5 text-right align-bottom">
-            <span class="text-emerald-800 text-[42px]">Bundle</span>
+            <span class="text-emerald-800 text-[42px]">Bundle API</span>
           </th>
           <th class="py-3">
             <p class="text-amber-300 text-base uppercase my-2 tracking-wider font-medium">Low</p>
