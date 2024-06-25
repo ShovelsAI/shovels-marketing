@@ -77,6 +77,22 @@ slug: climate
       </dd>
     </div>
   </dl>
+<!-- 'table' -->
+  <dl class="mx-auto mt-16 max-w-7xl">
+    <div class="border-2 rounded border-gray-900 my-2 p-10 flex flex-col md:flex-row">
+      <dt class="flex-1 font-medium text-[42px]">B2C heat pump buyer intent</dt>
+      <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Find recent EV charger, solar, battery, and insulation permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.
+      </dd>
+    </div>
+    <div class="border-2 rounded border-gray-900 my-2 p-10 flex flex-col md:flex-row">
+      <dt class="flex-1 font-medium text-[42px]">B2B building contractor channel development</dt>
+      <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of tens or hundreds of thousands of square feet. Discover who the contractors are and contact them by phone or email.</dd>
+    </div>
+    <div class="border-2 rounded border-gray-900 my-2 p-10 flex flex-col md:flex-row">
+      <dt class="flex-1 font-medium text-[42px]">Green home loan origination</dt>
+      <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up for their building electrification projects. Get a list of recent home  permits in any ZIP code and share your climate tech products with them.</dd>
+    </div>
+  </dl>
 </section>
 <section class="bg-emerald-800 text-center">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:items-center lg:justify-between lg:px-8">

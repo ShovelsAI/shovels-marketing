@@ -4,9 +4,9 @@ slug: go-to-market
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title">Use building permits to sell your climate tech product
+    <h1 class="hero_title">Use building permits to sell your building products
     </h1>
-    <p class="hero_description">Building permits are a treasure trove of buyer intent information. Reach the right buyers for heat pump, solar, EV charger, battery, and other home products at exactly the right time.
+    <p class="hero_description">Building permits are a treasure trove of buyer intent information. Reach the right buyers for large and small construction projects at exactly the right time.
     </p>
   </div>
   <div class="hero_image-container">
@@ -17,23 +17,64 @@ slug: go-to-market
 <section class="my-24">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Critical sales and marketing intelligence for climate tech</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for B2B and B2C climate products with the right message at the right time -- using building permits.</p>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Critical sales and marketing intelligence for building product suppliers</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Reach buyers for commercial and residential construction projects with the right message at the right time -- using building permits.</p>
     </div>
-    <!-- 'table' -->
-    <dl class="mx-auto mt-16 max-w-7xl">
-      <div class="border-2 rounded border-gray-900 my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1 font-medium text-[42px]">B2C heat pump buyer intent</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Find recent EV charger, solar, battery, and insulation permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.
+    <dl class="elaboration_container">
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_permits.svg">
+          </div>
+          <span class="elaboration-card_title">Recent permits</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">See all the new permits a contractor has recently started. Use this data to identify qualified residential or commercial contractors.</p>
         </dd>
       </div>
-      <div class="border-2 rounded border-gray-900 my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1 font-medium text-[42px]">B2B building contractor channel development</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of tens or hundreds of thousands of square feet. Discover who the contractors are and contact them by phone or email.</dd>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_metrics.svg">
+          </div>
+          <span class="elaboration-card_title">Super clean data</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">We put a lot of work into cleaning addresses and de-duplicating contractors. We deliver parquet files or push directly into Snowflake, Databricks, and Big Query. Nobody does this better than Shovels.</p>
+        </dd>
       </div>
-      <div class="border-2 rounded border-gray-900 my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1 font-medium text-[42px]">Green home loan origination</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Homeowners often pull permits before they have the financing lined up for their building electrification projects. Get a list of recent home  permits in any ZIP code and share your climate tech products with them.</dd>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_integrations.svg">
+          </div>
+          <span class="elaboration-card_title">Easy integrations</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Integrate Shovels directly into your in-house application or 3rd party software. Our APIs are intuitive and fast.</p>
+        </dd>
+      </div>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_updates.svg">
+          </div>
+          <span class="elaboration-card_title">AI-based classifications</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">We use the latest LLM technology to read and classify building permits as electrical, plumbing, or new construction.</p>
+        </dd>
+      </div>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_heart.svg">
+          </div>
+          <span class="elaboration-card_title">Preferred by data teams</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Ask your data team whether they prefer to receive permit data as raw JSON or parquet, CSV or Snowflake. We know the answer 😇 (It's parquet and Snowflake.)</p>
+        </dd>
       </div>
     </dl>
   </div>
