@@ -5,7 +5,7 @@ slug: data-feed
 <section class="hero_container">
   <div class="hero_text-container">
     <h1 class="hero_title text-amber-300">Building permit and contractor data where you need it</h1>
-    <p class="hero_description text-lime-50">Shovels can push over 100 million building permit and contractor records directly into your Snowflake, Big Query, or Databricks accounts. We also sell the underlying parquet data.</p>
+    <p class="hero_description text-lime-50">Shovels can push the full nationwide history of building permit and contractor records directly into your Snowflake, Big Query, or Databricks accounts. We can also provide parquet files.</p>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">
@@ -80,7 +80,7 @@ slug: data-feed
         <span class="elaboration-card_title">Flexible terms</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We won't make your legal team nitpick every line of our terms and conditions. Terms are designed to give you flexibility to reuse and even resell Shovels output.</p>
+        <p class="flex-auto">We won't make your legal team nitpick every line of our terms and conditions. Terms are designed to give you flexibility to reuse and even resell Shovels data.</p>
       </dd>
     </div>
   </dl>

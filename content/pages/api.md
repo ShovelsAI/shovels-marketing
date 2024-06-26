@@ -8,7 +8,7 @@ slug: api
     <p class="hero_description text-lime-50">Ping by address, contractor name, or contractor license. Receive all the data. Our API is intuitive and fast.</p>
     <div class="mt-10 mb-20 flex items-center gap-x-6">
       <a href="https://beta.shovels.ai"
-        class="shovels-button" target="_blank">Register <img src="theme/images/caret-right.svg"></a>
+        class="shovels-button" target="_blank">Free trial <img src="theme/images/caret-right.svg"></a>
       <a href="https://shovels.redoc.ly"
         class="shovels-button bg-stone-200" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
     </div>

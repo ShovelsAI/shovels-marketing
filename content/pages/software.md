@@ -4,9 +4,9 @@ slug: software
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title">Easily integrate electrification building permit and contractor data
+    <h1 class="hero_title">Easily integrate building permit and contractor data into your app
     </h1>
-    <p class="hero_description">Integrate Shovels into your property technology or climate technology product. We offer API endpoints and data feeds on commercial and residential properties and the building contractors who work on them.
+    <p class="hero_description">Integrate Shovels into your construction software product. We offer API endpoints and databases for commercial and residential properties and the building contractors who work on them.
     </p>
   </div>
   <div class="hero_image-container">
@@ -29,7 +29,7 @@ slug: software
         <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Customer relationship management (CRM) software exists for building contractors. We think these CRMs should be smarter. When a contractor signs up, pull in all of their past and current permits. We can do that. Then, once their CRM is automatically populated with jobs, offer them leads based on those past jobs. We can show all homes with brand new permits, or homes that haven't had a permit in a while and probably are due for some upkeep. You build the CRM, we offer the data</dd>
       </div>
       <div class="elaboration-card my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1text-2xl lg:pr-8">Update property valuations based on comps</dt>
+        <dt class="flex-1 text-2xl lg:pr-8">Update property valuations based on comps</dt>
         <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Zillow and Redfin estimate the value of a home based on comps. Thus, the valuation only changes when nearby homes get sold. But what if you just remodeled the kitchen? Or added an ADU? Zillow should know this and recompute a property value, but they don't. You should build this, and we'll help. Opportunity *knocks*...</dd>
       </div>
     </dl>

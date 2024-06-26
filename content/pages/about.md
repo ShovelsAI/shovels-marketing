@@ -5,7 +5,7 @@ slug: about
   <div class="mx-auto max-w-7xl px-6">
     <div class="max-w-md">
       <h1 class="mt-2 text-4xl tracking-tight text-amber-300">The Shovels One-Pager</h1>
-      <p class="mt-10 text-lg leading-6 text-stone-200">Shovels makes building permit data useful. We track over 130M building permits to help companies explore and profile homeowners and building contractors.</p>
+      <p class="mt-10 text-lg leading-6 text-stone-200">Shovels is the building permit intelligence platform for residential and commercial construction. We add millions of new building permits each month and use AI to clean, classify, and connect building permits to addresses, properties, contractors, residents, and building owners to help construction companies sell more products.</p>
     </div>
   </div>
 </div>
@@ -67,7 +67,7 @@ slug: about
                 Property
                 <dl class="font-normal lg:hidden">
                   <dt class="sr-only">Description</dt>
-                  <dd class="mt-1 text-gray-700">Listing of related permits and contractors</dd>
+                  <dd class="mt-1 text-gray-700">Listing of related permits and contractors and property attributes</dd>
                   <dt class="sr-only sm:hidden">Accessibility</dt>
                   <dd class="mt-1 text-gray-500 sm:hidden">Lookup by address or parcel number, or filter by attributes</dd>
                 </dl>
