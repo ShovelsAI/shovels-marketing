@@ -1245,10 +1245,6 @@ select {
   width: 0.5rem;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-14 {
   width: 3.5rem;
 }
@@ -2828,11 +2824,6 @@ div.article img {
 .hover\:text-emerald-900:hover {
   --tw-text-opacity: 1;
   color: rgb(6 78 59 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-100:hover {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-600:hover {
