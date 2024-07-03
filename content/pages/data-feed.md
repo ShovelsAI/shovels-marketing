@@ -6,6 +6,10 @@ slug: data-feed
   <div class="hero_text-container">
     <h1 class="hero_title text-amber-300">Building permit and contractor data where you need it</h1>
     <p class="hero_description text-lime-50">Shovels can push the full nationwide history of building permit and contractor records directly into your Snowflake, Big Query, or Databricks accounts. We can also provide parquet files.</p>
+    <div class="mt-10 flex items-center gap-x-6">
+      <a href="{{ SITEURL }}/contact"
+        class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85]" target="_blank">Contact Sales <img src="theme/images/caret-right.svg"></a>
+    </div>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">
