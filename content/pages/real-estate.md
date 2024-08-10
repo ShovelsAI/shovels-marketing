@@ -1,11 +1,11 @@
-Title: Find building contractors by their service area
-slug: builders
+Title: Find the best building sites using building permits
+slug: real-estate
 
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title">Search by service area and experience</h1>
-    <p class="hero_description">Shovels helps climate tech companies create installer networks based on their building electrification expertise and their service area, not their business address. Our contractor recommendations are not influenced by commissions or pay-per-lead fees.</p>
+    <h1 class="hero_title">Improve your site selection process</h1>
+    <p class="hero_description">Building permits tell you what’s changing nearby and how long it takes to put shovels in the ground. Shovels brings these insights to the surface so you can determine the best locations for your business.</p>
   </div>
   <div class="hero_image-container">
     <img class="max-h-[600px]" src="theme/images/builders/hero.svg" alt="Shovels building permit API">
@@ -15,11 +15,8 @@ slug: builders
 <!-- elaboration -->
 <section class="mx-auto my-24 max-w-7xl px-6">
   <div class="mx-auto max-w-2xl text-center">
-    <h2 class="elaboration-title">
-      We do things differently</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-600">The other guys (Thumbtack, HomeAdvisor, Houzz, BuildZoom) have financial relationships with the contractors they recommend. <span class="font-extrabold">We don't make money from referrals</span>.</p>
-    <p class="mt-6 text-lg leading-8 text-gray-600">The other find contractors based on their business address. We use building permits to return results by where they work.<span class="font-extrabold">We search their service areas</span>.</p>
-    <p class="mt-6 text-lg leading-8 text-gray-600 font-extrabold">Our recommendations are driven purely by the data.</p>
+    <h2 class="elaboration-title">Neighborhood Vitality Index (NVI)</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Through our partnership with Esri, Shovels calculates NVI by comparing the relative permit density of home improvement projects by census tract in every major metropolitan area in the country. Use NVI to find the most actively improving neighborhoods.</p>
   </div>
   <!-- 'table' -->
   <dl class="elaboration_container 3xl:grid-cols-4">
@@ -28,12 +25,10 @@ slug: builders
         <div class="mb-6">
           <img src="theme/images/builders/icon_unbiased.svg">
         </div>
-        <span class="elaboration-card_title">Unbiased recommendations</span>
+        <span class="elaboration-card_title">Calculate permit approval speeds</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">We follow the data. So should you. Our rankings are not influenced by commissions or fees
-          of
-          any kind.</p>
+        <p class="flex-auto">Shovels tracks how long it takes for specific types of permits to be approved by each jurisdiction. Use permit approval time as a factor in your site selection process.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -41,24 +36,10 @@ slug: builders
         <div class="mb-6">
           <img src="theme/images/builders/icon_star.svg">
         </div>
-        <span class="elaboration-card_title">Ratings by permit type</span>
+        <span class="elaboration-card_title">Keep track of permit status changes</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Shovels is the only contractor directory that rates contractors by the types of permits
-          they've worked on.</p>
-      </dd>
-    </div>
-    <div class="elaboration-card">
-      <dt class="">
-        <div class="mb-6">
-          <img src="theme/images/builders/icon_data-driven.svg">
-        </div>
-        <span class="elaboration-card_title">Data-driven by inspection data</span>
-      </dt>
-      <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Shovels is the only building contractor directory that calculates an inspection pass rate
-          to
-          objectively assess quality.</p>
+        <p class="flex-auto">Shovels continually updates the statuses on existing permits. Check to see when a permit status changes and get alerts from Shovels when it happens.</p>
       </dd>
     </div>
     <div class="elaboration-card">
@@ -66,11 +47,10 @@ slug: builders
         <div class="mb-6">
           <img src="theme/images/builders/icon_speed.svg">
         </div>
-        <span class="elaboration-card_title">Construction speed</span>
+        <span class="elaboration-card_title">Permit approval speed and construction speed</span>
       </dt>
       <dd class="elaboration-card_text-container">
-        <p class="flex-auto">Shovels is the only building contractor directory that calculates how long a permit took to
-          complete and uses that data to rate contractors.</p>
+        <p class="flex-auto">Shovels is the only building contractor directory that calculates how long a permit took to get approved and completed.</p>
       </dd>
     </div>
     <div class="elaboration-card">

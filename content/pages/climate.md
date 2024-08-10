@@ -18,16 +18,24 @@ slug: climate
       </div>
     </div>
     <div class="hero_image-container">
-      <img class="max-h-[600px]" src="theme/images/climate/hero.svg">
+      <div class="border-2 border-gray-300 p-2 max-w-[580px]">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JnSNd5ojQ5s?si=CheXcd38MINq_yAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
 </section>
-
 <!-- elaboration -->
 <section class="mx-auto my-24 max-w-7xl px-6">
-  <div class="mx-auto max-w-2xl text-center">
-    <h2 class="elaboration-title">
-      We care about climate</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-600">Shovels is making a deliberate effort to support electrification progress. We're putting engineering and data science resources into parsing permits to specifically identify building electrification activity.</p>
+  <div class="flex">
+    <div class="hero_text-container">
+      <div class="mx-auto max-w-2xl">
+        <h2 class="elaboration-title">
+          We care about climate</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Shovels is making a deliberate effort to support electrification progress. We're putting engineering and data science resources into parsing permits to specifically identify building electrification activity.</p>
+      </div>
+    </div>
+    <div class="hero_text-container">
+      <img class="max-h-[600px]" src="theme/images/climate/hero.svg">
+    </div>
   </div>
   <!-- 'table' -->
   <dl class="elaboration_container">

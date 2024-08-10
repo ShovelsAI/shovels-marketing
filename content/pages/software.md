@@ -1,36 +1,89 @@
 Title: Property Data for Property Tech Companies
 slug: software
 
+
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
-    <h1 class="hero_title">Easily integrate building permit and contractor data into your app
-    </h1>
-    <p class="hero_description">Integrate Shovels into your construction software product. We offer API endpoints and databases for commercial and residential properties and the building contractors who work on them.
-    </p>
+    <h1 class="hero_title">Find the right contractors for your software products</h1>
+    <p class="hero_description">Use Shovels to segment your contractor accounts by revenue, permit count, and service area, or to find new contractors.</p>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[520px]" src="theme/images/software/hero.svg" alt="Shovels building permit API">
+    <div class="border-2 border-gray-300 p-2 max-w-[580px]">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xd1PP_hCElQ?si=LQePAE7KqFHcSBFm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 <!-- elaboration -->
 <section class="my-24">
   <div class="mx-auto max-w-7xl px-6">
-    <h2 class="text-[23px] uppercase leading-10 tracking-tight">Oh, the things you can build</h2>
     <!-- 'table' -->
-    <dl class="mx-auto mt-4">
-      <div class="elaboration-card my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1 text-2xl lg:pr-8">Lead generation for local building supply companies</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">When people remodel their homes, they need all sorts of stuff. Flooring, cabinet hardware, kitchen appliances, paint. All the things! Wouldn't local building supply companies like to know when the owner of a nearby 2,500 square foot home pulls a remodel permit? We think so. Shovels can power the critical data trigger for this exciting go-to-market application.
+    <dl class="elaboration_container">
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_permits.svg">
+          </div>
+          <span class="elaboration-card_title">Enhance your CRM with permit data</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Increase what you know about the contractors in your CRM. Pull in all of their past and current permits. Use this data for timely sales outreach, pipeline management, application verification, job creation/management, lead generation, and more.</p>
         </dd>
       </div>
-      <div class="elaboration-card my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1 text-2xl lg:pr-8">CRM for building contractors</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Customer relationship management (CRM) software exists for building contractors. We think these CRMs should be smarter. When a contractor signs up, pull in all of their past and current permits. We can do that. Then, once their CRM is automatically populated with jobs, offer them leads based on those past jobs. We can show all homes with brand new permits, or homes that haven't had a permit in a while and probably are due for some upkeep. You build the CRM, we offer the data</dd>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/software/icon_clock.svg">
+          </div>
+          <span class="elaboration-card_title">Include permit history as a product feature</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Permit data can enhance your product offering. Include permit data review as part of your product onboarding flow, or attach permit history on all projects in your platform, to name a few.</p>
+        </dd>
       </div>
-      <div class="elaboration-card my-2 p-10 flex flex-col md:flex-row">
-        <dt class="flex-1 text-2xl lg:pr-8">Update property valuations based on comps</dt>
-        <dd class="flex-1 mt-5 md:mt-1 text-gray-600">Zillow and Redfin estimate the value of a home based on comps. Thus, the valuation only changes when nearby homes get sold. But what if you just remodeled the kitchen? Or added an ADU? Zillow should know this and recompute a property value, but they don't. You should build this, and we'll help. Opportunity *knocks*...</dd>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/software/icon_pin.svg">
+          </div>
+          <span class="elaboration-card_title">Build installer networks by service area</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Our contractor records are sourced directly from building permits, focusing on service addresses rather than business locations, ensuring high accuracy and fill rates.</p>
+        </dd>
+      </div>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/builders/icon_star.svg">
+          </div>
+          <span class="elaboration-card_title">Stay ahead of the competition</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Shovels has nationwide coverage. Get ahead of permit and contractor activity through our permit feeds to make sure you don’t miss out on what the competition is working on.</p>
+        </dd>
+      </div>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/finance/icon_updates.svg">
+          </div>
+          <span class="elaboration-card_title">Find high quality contractors</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">We identify top contractors by analyzing building permits and inspection records, so we see the contractors that do great work, not just the ones on third-party review sites like Yelp or Google Maps.</p>
+        </dd>
+      </div>
+      <div class="elaboration-card">
+        <dt class="">
+          <div class="mb-6">
+            <img src="theme/images/builders/icon_unbiased.svg">
+          </div>
+          <span class="elaboration-card_title">Easy sharing to your data lake</span>
+        </dt>
+        <dd class="elaboration-card_text-container">
+          <p class="flex-auto">Shovels is ready-to-go. You don't need a Ph.D. in data science to import our files into your data lake. In fact, we can push it there directly as a private table share.</p>
+        </dd>
       </div>
     </dl>
   </div>
@@ -38,6 +91,6 @@ slug: software
 <section class="bg-emerald-800 text-center">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:items-center lg:justify-between lg:px-8">
     {% from 'cta.html' import cta %} 
-    {{ cta("Cool, right?<br>Tell us what you're building.") }}
+    {{ cta("Tell us what you're building.") }}
   </div>
 </section>
