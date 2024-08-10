@@ -9,7 +9,7 @@ Summary: The Shovels API provides an intuitive platform for proptech enthusiasts
 Image: /images/autodesk.png
 
 
-We've had an exciting July here at Shovels. We are added new customers, expanded our coverage, and found new use cases for our products. As part of our mission to make permit data useful, we are constantly exploring ways to integrate into the construction industry’s existing tools and systems –- and in July  we took a major step forward with Autodesk. 
+We had an exciting July here at Shovels. We added new customers, expanded our coverage, and found new use cases for our products. As part of our mission to make permit data useful, we constantly explore ways to integrate into the construction industry’s existing tools and systems –- and in July  we took a major step forward with Autodesk. 
 
 **Shovels is now an [official partner with Autodesk’s Construction Cloud](https://www.autodesk.com/blogs/construction/14-new-integrations-for-autodesk-construction-cloud/)\!** 
 
