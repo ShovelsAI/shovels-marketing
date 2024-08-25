@@ -21,6 +21,37 @@ For pages that have an 'inverted' theme, the logic of that inversion is done via
 - based on the route, through a <script> in `base.html` which applies a `.inverted` class to the body if it is a route that uses an inverted theme
 - through tailwind utility classes using the `.inverted` parent selector in `input.css`
 
+### New blog post
+
+To make changes to interior pages, we use the /content folder. This is structured as follows:
+
+```
+/images -- contains the images for the posts
+/pages -- contains the static content
+/pdfs -- contains PDFs for downloading
+/posts -- contains the blog posts
+```
+
+We'll just use the /images and /posts folders to make a new blog post.
+
+Start by adding a new file to the /posts folder. I sometimes duplicate an existing file. 
+
+All pages in the post folder should have the same headers. 
+
+```markdown
+Title: Shovels partners with Autodesk Construction Cloud
+Subtitle: Get permit data in Autodesk Construction Cloud
+Date: 2024-8-9
+Modified: 2024-8-9
+Category: Company
+Tags: construction software, autodesk construction cloud,
+Authors: Ryan Buckley
+Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.
+Image: /images/autodesk.png
+```
+
+Edit these and put the markdown below this settings section.
+
 ## Production
 
 We currently host on GitHub Pages in the ShovelsAI GitHub organization. GitHub requires the output folder to be `docs` so we have to use a different command.
