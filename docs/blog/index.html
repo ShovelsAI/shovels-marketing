@@ -253,13 +253,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/shovels-partners-with-wattcarbon/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels partners with WattCarbon</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/shovels-partners-with-autodesk-construction-cloud/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels partners with Autodesk Construction Cloud</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/july-2024-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>July 2024 Newsletter</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/june-2024-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>June 2024 Newsletter</p></a>
                   </li>
               </ul>
             </div>
@@ -447,6 +447,28 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Company')">
+        <a href="https://www.shovels.ai/blog/shovels-partners-with-wattcarbon/">
+          <img src="/images/shovels-wattcarbon-hero.png" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Company"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Company</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/shovels-partners-with-wattcarbon/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Shovels partners with WattCarbon</p>
+              </h2>
+              <time datetime="2024-08-22 00:00:00-07:00" class="text-black text-xs">Thu 22 August 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Company')">
         <a href="https://www.shovels.ai/blog/shovels-partners-with-autodesk-construction-cloud/">
           <img src="/images/autodesk.png" alt=""
@@ -1624,58 +1646,58 @@ Leaving: "duration-100 ease-in"
       <div class="grid grid-cols-2 gap-8 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm  leading-6 text-amber-300">Solutions</h3>
+            <h3 class="text-sm  leading-6 text-amber-300">Customers</h3>
             <ul role="list" class="mt-6">
               <li>
-                <a href="https://www.shovels.ai/go-to-market" class="text-sm leading-6 hover:text-amber-500">GTM</a>
+                <a href="https://www.shovels.ai/software" class="text-sm leading-6 hover:text-amber-500">Construction Technology</a>
               </li>
               <li>
-                <a href="https://www.shovels.ai/software" class="text-sm leading-6 hover:text-amber-500">Software</a>
+                <a href="https://www.shovels.ai/climate" class="text-sm leading-6 hover:text-amber-500">Energy & Climate</a>
               </li>
               <li>
-                <a href="https://www.shovels.ai/climate" class="text-sm leading-6 hover:text-amber-500">Climate</a>
+                <a href="https://www.shovels.ai/building-materials" class="text-sm leading-6 hover:text-amber-500">Building Material Suppliers</a>
               </li>
               <li>
-                <a href="https://www.shovels.ai/construction-finance" class="text-sm leading-6 hover:text-amber-500">Finance</a>
-              </li>
-              <li>
-                <a href="https://www.shovels.ai/builders" class="text-sm leading-6 hover:text-amber-500">Builders</a>
+                <a href="https://www.shovels.ai/real-estate" class="text-sm leading-6 hover:text-amber-500">Real Estate</a>
               </li>
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm  leading-6 text-amber-300">Products</h3>
+            <h3 class="text-sm  leading-6 text-amber-300">Solutions</h3>
             <ul role="list" class="mt-6">
               <li>
-                <a href="https://www.shovels.ai/permit-database" class="text-sm leading-6 hover:text-amber-500">Permit Database</a>
+                <a href="https://www.shovels.ai/data-feed" class="text-sm leading-6 hover:text-amber-500">Enterprise</a>
               </li>
               <li>
                 <a href="https://www.shovels.ai/api" class="text-sm leading-6 hover:text-amber-500">API</a>
               </li>
               <li>
-                <a href="https://www.shovels.ai/data-feed" class="text-sm leading-6 hover:text-amber-500">Data Feed</a>
+                <a href="https://www.shovels.ai/permit-database" class="text-sm leading-6 hover:text-amber-500">Online</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm  leading-6 text-amber-300">About</h3>
+            <h3 class="text-sm  leading-6 text-amber-300">Resources</h3>
             <ul role="list" class="mt-6">
               <li>
-                <a href="https://www.shovels.ai/team" class="text-sm leading-6 hover:text-amber-500">Team</a>
-              </li>
-              <li>
-                <a href="https://www.shovels.ai/about" class="text-sm leading-6 hover:text-amber-500">Company</a>
-              </li>
-              <li>
                 <a href="https://www.shovels.ai/blog" class="text-sm leading-6 hover:text-amber-500">Blog</a>
+              </li>
+              <li>
+                <a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&state=&city=&county_or_jurisdiction=&zip_code=&date_filter=" class="text-sm leading-6 hover:text-amber-500" target="_blank">Coverage Dashboard</a>
+              </li>
+              <li>
+                <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" class="text-sm leading-6 hover:text-amber-500" target="_blank">Data Dictionary</a>
               </li>
               <li>
                 <a href="https://shovels.redoc.ly" class="text-sm leading-6 hover:text-amber-500" target="_blank">API Documentation</a>
               </li>
               <li>
-                <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" class="text-sm leading-6 hover:text-amber-500" target="_blank">Data Dictionary</a>
+                <a href="https://www.shovels.ai/team" class="text-sm leading-6 hover:text-amber-500" target="_blank">Team Shovels</a>
+              </li>
+              <li>
+                <a href="https://www.shovels.ai/about" class="text-sm leading-6 hover:text-amber-500" target="_blank">About Shovels</a>
               </li>
             </ul>
           </div>
