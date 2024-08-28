@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2024-04-24T00:00:00-07:00</updated><entry><title>How to use the Shovels API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2024-09-03T00:00:00-07:00</updated><entry><title>How to use the Shovels API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;That is excellent news, and we are here to help. &lt;/p&gt;
 &lt;h2&gt;Authentication&lt;/h2&gt;
 &lt;p&gt;We use header key-based authentication. There are two steps to authenticate:&lt;/p&gt;
@@ -289,4 +289,208 @@
 &lt;li&gt;&lt;strong&gt;Use Dates&lt;/strong&gt;: Remember to include a date range if you want one.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The Shovels custom GPT is an easy way for anyone looking to access detailed, localized information on permits and contractors quickly. By following the steps outlined in this blog, you can quickly get the data you want.&lt;/p&gt;</content><category term="Customer Success"></category><category term="ai"></category><category term="chatgpt"></category><category term="openai"></category></entry></feed>
+&lt;p&gt;The Shovels custom GPT is an easy way for anyone looking to access detailed, localized information on permits and contractors quickly. By following the steps outlined in this blog, you can quickly get the data you want.&lt;/p&gt;</content><category term="Customer Success"></category><category term="ai"></category><category term="chatgpt"></category><category term="openai"></category></entry><entry><title>Shovels 101: Finding Address Permit History</title><link href="https://www.shovels.ai/blog/shovels-101-finding-address-permit-history/" rel="alternate"></link><published>2024-08-29T00:00:00-07:00</published><updated>2024-08-29T00:00:00-07:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-08-29:/blog/shovels-101-finding-address-permit-history/</id><summary type="html">&lt;p&gt;The Shovels API gives you insight into permit history by per address. Users can follow these three steps to retrieve this information. This data can help with contractor and jurisdiction analysis.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Understanding a property’s permit history is critical to any project. Whether you’re researching a new property to acquire, or double-checking what previous owners have done to one you already own, it’s important info to have. &lt;/p&gt;
+&lt;p&gt;With the &lt;a href="https://shovels.redoc.ly/"&gt;Shovels API&lt;/a&gt; in your toolbox, finding permits specific to a given address is a breeze. &lt;/p&gt;
+&lt;h2&gt;Authentication and Setup&lt;/h2&gt;
+&lt;p&gt;If you don’t already have a &lt;strong&gt;Shovels Web App&lt;/strong&gt; account (welcome!), then head over and setup a &lt;a href="https://www.shovels.ai/api"&gt;Free Trial&lt;/a&gt;. Go to the &lt;strong&gt;Settings&lt;/strong&gt; page to get your API Key, read over our API Docs, and open your preferred terminal, shell, or editor. &lt;/p&gt;
+&lt;p&gt;For a more in-depth introduction to using our API, please check out our blog post guide on &lt;a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/"&gt;How to use the Shovels API&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;This guide will assume a basic familiarity with cURL, JSON parsing, and our API schema. Example query snippets will use cURL, but our API docs have examples in a variety of other languages too.&lt;/p&gt;
+&lt;h2&gt;Using the Shovels API&lt;/h2&gt;
+&lt;p&gt;To set the scene, imagine that you’re a prospective buyer wanting to do your due diligence on an intriguing property. The building was constructed in the last 15 years, and it’s important to you that the previous owners have kept everything above board with the required permits and inspections handled. &lt;/p&gt;
+&lt;p&gt;With the Shovels API, you can get from address to detailed permit history based on the jurisdiction’s own books with three API calls.&lt;/p&gt;
+&lt;h2&gt;Step 1: Finding the Address&lt;/h2&gt;
+&lt;p&gt;Using the &lt;a href="https://shovels.redoc.ly/#operation/search_addresses_v1_addresses_search_get"&gt;GET Search Addresses&lt;/a&gt;  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). &lt;/p&gt;
+&lt;p&gt;A sample query, for a “123 Main St”, should look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -i -X GET &amp;#39;https://api.shovels.ai/v1/addresses/search?q=123%20MAIN%ST&amp;#39; 
+    -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[!Important]
+Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address string, and that the correct endpoint here is &lt;em&gt;/addresses/&lt;/em&gt;, NOT ~~/address/~~.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Assuming your other syntax and API key is input correctly, this request should return the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;ST. FRANCISVILLE&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;12345&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;LA&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;SO MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;ST. ALBANS&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:null,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;VT&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;NACOGDOCHES&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;75961&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;TX&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;AGAWAM&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;01001&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;MA&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;HOPKINTON&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;02804&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;RI&amp;quot;
+    }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The returned list of addresses is ordered by relevance and formatted according to USPS standard. In this case, of all the matching addresses in the US, &lt;strong&gt;five of them have relevant permit histories&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Pick which address you want to dig deeper into, and &lt;strong&gt;proceed to step 2&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!Note]
+Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;amp;county_or_jurisdiction=&amp;amp;state=&amp;amp;tab=133-permit-types&amp;amp;zip_code="&gt;Coverage Map&lt;/a&gt;, or many others). If your desired address isn’t included, then please reach out to us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll take a look. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Step 2: Retrieve Permits for the Address&lt;/h2&gt;
+&lt;p&gt;Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. &lt;/p&gt;
+&lt;p&gt;Using the &lt;a href="https://shovels.redoc.ly/#operation/get_permits_by_address_v1_permits_address_get"&gt;GET Permits by Address&lt;/a&gt; endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. &lt;/p&gt;
+&lt;p&gt;Again, a sample query, for “123 Main St, Agawam, MA 01001”, would look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -i -X GET &amp;#39;https://api.shovels.ai/v1/permits/address?street_no=123&amp;amp;street=MAIN%20ST&amp;amp;state=MA&amp;amp;city=AGAWAM&amp;amp;zip_code=01001&amp;#39;
+    -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[!Important]
+The multiple parameters required for this endpoint are noted with the AND &lt;code&gt;&amp;amp;&lt;/code&gt; operator.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This second request should return the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+    &amp;quot;items&amp;quot;:
+    [
+        &amp;quot;5c4015a630e941b6&amp;quot;,
+        &amp;quot;0eb49a17aa7e8791&amp;quot;,
+        &amp;quot;77d2073b694190dd&amp;quot;,
+        &amp;quot;cd66d9dda0662b59&amp;quot;,
+        &amp;quot;5575716497ab9bd6&amp;quot;
+    ],
+    &amp;quot;page&amp;quot;:1,
+    &amp;quot;size&amp;quot;:5,
+    &amp;quot;next_page&amp;quot;:null
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;which shows that there are 5 permits on record for this address. These Permit IDs are unique to the Shovels platform, but can be used to retrieve the detailed permit details.&lt;/p&gt;
+&lt;p&gt;To do so, &lt;strong&gt;proceed to Step 3&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Step 3: Return Detailed Permit History&lt;/h2&gt;
+&lt;p&gt;Using the &lt;a href="https://shovels.redoc.ly/#operation/get_permits_by_id_v1_permits_get"&gt;GET Permits by ID&lt;/a&gt; endpoint, you can search for a single (or string array) of permit IDs. &lt;/p&gt;
+&lt;p&gt;In this sample, to request the first permit payload would look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -i -X GET &amp;#39;https://api.shovels.ai/v1/permits?id=5c4015a630e941b6&amp;#39; 
+    -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[!Important]
+Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;/strong&gt;, which is denoted in the cURL request by the &lt;code&gt;&amp;amp;id=string&lt;/code&gt; clause for each additional permit ID. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The third request for the single permit should return the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;5c4015a630e941b6&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Replace existing 12&amp;#39; x 14&amp;#39; deck with a 20&amp;#39; x 20&amp;#39; deck (estimated cost $8,000), zone res a2, receipt  No.58233&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;number&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;17961&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;jurisdiction&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Agawam Town&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;job_value&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Building&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;subtype&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Building permit - new&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;fees&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;active&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;file_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2014-04-14&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;issue_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;final_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;construction_duration&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;approval_duration&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;inspections_pass_rate&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;contractor_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;123&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;MAIN ST&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;AGAWAM&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;01001&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zip_code_ext&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nb nb-Type"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;MA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;latlng&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="mf"&gt;42.087486267089844&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;72.6227035522461&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;accessory_structure&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And there you have it! This information can be exported for whatever outside needs you have, and this process can be easily repeated for any addresses and permits needed. &lt;/p&gt;
+&lt;p&gt;The same information is searchable via our Web App at https://beta.shovels.ai/.&lt;/p&gt;
+&lt;p&gt;For enterprise-level usage, get our full dataset with deeper insights, dashboards, and flat files. However you need to retrieve this data, we’ll make it happen.&lt;/p&gt;
+&lt;h2&gt;Troubleshooting Tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A full list of our error codes are described in our API docs &lt;a href="https://shovels.redoc.ly/#section/API-Details"&gt;here&lt;/a&gt;. Most errors are 404s, which frequently mean either the address is input incorrectly, or there isn’t a permit record on file to match the search terms.&lt;ul&gt;
+&lt;li&gt;If you are able to find the correct address in our &lt;strong&gt;Web App&lt;/strong&gt;, then double check the syntax of the request. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you run into any other questions, please email us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll help you!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We hope this guide is helpful (and we’ve got more on the way). Our API is meant to be intuitive and easy to use, so we definitely want to know any and all hiccups you encounter. If there’s an endpoint that we don’t support yet, or any other feedback for our platform, we’d love to hear it. &lt;/p&gt;
+&lt;p&gt;We’re building out Shovels API v2 right now, and your requests might make the next release. &lt;/p&gt;
+&lt;p&gt;Happy Building!&lt;/p&gt;</content><category term="Customer Success"></category><category term="api"></category></entry><entry><title>Shovels 101: Permit Statuses</title><link href="https://www.shovels.ai/blog/shovels-101-permit-statuses/" rel="alternate"></link><published>2024-09-03T00:00:00-07:00</published><updated>2024-09-03T00:00:00-07:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-09-03:/blog/shovels-101-permit-statuses/</id><summary type="html">&lt;p&gt;The Shovels ecosystem breaks down construction permit status based on jurisdiction regulation and construction cycles. Permits can be In Review, Active, Final, or Inactive. Users can investigate permit status via Shovels to analyze wider trends in contractor performance and jurisdiction activity.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Permits are hard enough to acquire on their own, so we want to take the confusion out of understanding a permit’s status. &lt;/p&gt;
+&lt;p&gt;In our mission to make permit data as clean and straightforward as possible, let’s quickly review Permit Statuses and how they map from our ecosystem to the actual construction process.&lt;/p&gt;
+&lt;h2&gt;Permit Status Definitions&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Flowchart describing Shovels permit status lifecycle, going from &amp;quot;In Review&amp;quot; to a cycle of &amp;quot;Active&amp;quot; and &amp;quot;Inactive&amp;quot;, ending with &amp;quot;Final&amp;quot;" src="/images/permit-status-flowchart.png"&gt;&lt;/p&gt;
+&lt;p&gt;In the Shovels ecosystem, there are &lt;strong&gt;four&lt;/strong&gt; statuses that Permits can be in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;in_review&lt;/code&gt;: From the moment the permit is filed with the local jurisdiction, until it is approved. This is defined by the &lt;code&gt;file_date&lt;/code&gt;  object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;active&lt;/code&gt;: From the moment the permit is approved, until project completion or some other intermediate restriction. This is defined by the &lt;code&gt;issue_date&lt;/code&gt;  object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;final&lt;/code&gt;: When the permit is completed, and submitted back to the jurisdiction upon job completion. This is defined by the &lt;code&gt;final_date&lt;/code&gt; object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inactive&lt;/code&gt;: If any part of the process stalls or gets restricted from progression, then the permit status moves to &lt;code&gt;inactive&lt;/code&gt;. Disqualifying reasons and reporting time will vary by jurisdiction and local regulation, but can include failing to meet project inspections, the permit may expire before completion or &lt;a href="https://ecode360.com/6567722#6567722"&gt;inactivity for more than 6 months (180 days)&lt;/a&gt;, and many others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more system definitions (beyond permit statuses), check out our &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=249471341#gid=249471341"&gt;Data Dictionary&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;Timeline&lt;/h2&gt;
+&lt;p&gt;Now that we’ve got the definitions out of the way, let’s put them into practice with a sample project timeline. We’ll add in the relevant variables and objects that our system uses to track the permit progress where relevant.&lt;/p&gt;
+&lt;p&gt;“John and Jane Doe remodeled their house in Agawam, MA and contracted out the work to a local contractor, Acme Construction, LLC.”&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Acme Construction, LLC have gathered all the paperwork and due diligence for the project, and are submitting the permit to the local jurisdiction, the Hampden County Building Department. They receive their permit number and file date, and in the next few days, this permit will show up in the Shovels database as &lt;code&gt;in_review&lt;/code&gt;. &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file_date&lt;/code&gt; would be &lt;strong&gt;2022-05-02&lt;/strong&gt; (May 4th, 2023), for those keeping track at home.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A few weeks later, Acme Construction, LLC’s permit for single-family residence remodel is approved, and they’re cleared to begin construction. Great news, and now, their corresponding permit will show as &lt;code&gt;active&lt;/code&gt;.&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;issue_date&lt;/code&gt; would be &lt;strong&gt;2022-05-26&lt;/strong&gt;, and &lt;code&gt;approval_time&lt;/code&gt; would be 24 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;8 months in to the project, and Acme Construction, LLC has made huge progress. However, they didn’t pass one of their inspections, and aren’t able to resume work until that underlying issue has been fixed. When this data is submitted to the jurisdiction alongside their permit files, the Shovels database will now classify this permit as &lt;code&gt;inactive&lt;/code&gt;. &lt;ul&gt;
+&lt;li&gt;Provisional &lt;code&gt;construction_duration&lt;/code&gt; would be calculated from &lt;code&gt;issue_date&lt;/code&gt; to the date of the failed inspection (&lt;strong&gt;2023-01-29&lt;/strong&gt;), as 250 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;6 months later, and Acme Construction, LLC has fixed the issue and passed their inspection. Once updated with the HC Building Dept, this permit will return to active.&lt;ul&gt;
+&lt;li&gt;Construction resumes on &lt;strong&gt;2023-07-29&lt;/strong&gt; and &lt;code&gt;construction_duration&lt;/code&gt; count will now continue, until project completion. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;7 months later, and everything is completed! All inspections have been passed, and John and Jane have their new remodeled house all ready to move back in. Once that paperwork is completed, then the Shovels database will show the permit as &lt;code&gt;final&lt;/code&gt;. &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;final_date&lt;/code&gt; would be &lt;strong&gt;2024-02-29&lt;/strong&gt;, with a &lt;code&gt;total_duration&lt;/code&gt; of 664 days, and &lt;code&gt;construction_duration&lt;/code&gt; of 465 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Analysis&lt;/h2&gt;
+&lt;p&gt;These data points can be extremely helpful for further analysis of jurisdiction and contractor efficiency. For instance, Acme Construction, LLC’s work for Mr. and Mrs. Doe’s remodel could be compared against other remodel jobs they’ve done in the past, or even against other contractors with the same licensing and job types. &lt;/p&gt;
+&lt;p&gt;At the same time, jurisdiction’s approval times can be compared based on job type or seasonal application windows, which may give further insight into developmental opportunities in that region. &lt;/p&gt;
+&lt;p&gt;The possibilities are endless.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Permit Status is an important data point to everyone involved in the construction and proptech industries, and we want to make sure that our system is as easy to understand as possible. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shovels 101&lt;/strong&gt; will be our tutorial series, and we've got a bunch of topics lined up for future publication. If there's anything you want us to cover, further questions about permit statuses, or any other fields in our dataset, let us know at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Happy Building!&lt;/p&gt;</content><category term="Customer Success"></category><category term="permit status"></category><category term="web app"></category></entry></feed>
