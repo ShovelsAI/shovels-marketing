@@ -41,7 +41,7 @@ Are you too excited to continue reading? I get it. [Click here](https://beta.sho
 
 The Shovels app introduces our three data features: **addresses**, **permits**, and **contractors**.
 
-![]({static}/images/permits-filter.png)
+![Shovels online building permits filter]({static}/images/permits-filter.png)
 
 In this screenshot, we're looking up all active air source heat pump permits in California that mention the brand Mitsubishi. It's popular! I looked up Fujitsu (what we have) too and didn't see nearly as many. 
 
@@ -57,7 +57,7 @@ Now, wouldn't it be interesting to see which contractors did these Mitsubishi he
 
 We have contractor profiles!
 
-![]({static}/images/shane.png)
+![Map of building contractor in San Francisco]({static}/images/shane.png)
 
 Here we see every permit that Shane Patrick O'Malley (don't know him, hope he's nice!) has worked on. Shane does a ton of work in San Francisco. If you're curious, you can click on each of his permits and learn everything you need to know about each job.
 
@@ -65,7 +65,7 @@ To find more Shanes, hit the Contractors filter where you can look up all the he
 
 Or if you just want to look up the permits on an address, you can do that too. Click on Addresses.
 
-![]({static}/images/addresses.png)
+![List of building permits on an address]({static}/images/addresses.png)
 
 On the address profile page we're eventually going to show a bunch of property attributes, all of the permits, and all of the contractors. Contractor profiles are going to show a summary of all of their permits by type, stage, and eventually all of their business branches too. 
 
