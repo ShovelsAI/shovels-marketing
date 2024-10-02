@@ -2567,7 +2567,8 @@ body.inverted {
   list-style-position: outside;
 }
 
-.article ul {
+.article ul,
+.article ol {
   margin-bottom: 15px;
   margin-top: 15px;
 }
