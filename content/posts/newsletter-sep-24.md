@@ -15,7 +15,7 @@ It was wonderful to shake hands and say hi in Anaheim and Las Vegas. If you miss
 
 And, as promised to those we met at Blueprint, send an email to [sales@shovels.ai](mailto:sales@shovels.ai) to get  **two months free** on a  *new*  annual plan.
 
-- -
+----------------------------------------------------------------
 
 I write this on a short reprieve from travel. This week is Climate Week in NYC and the meeting calendar is packed. Then I return and do a final product and marketing push before the launch of our new API and web app!
 
