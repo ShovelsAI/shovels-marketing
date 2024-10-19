@@ -27,7 +27,7 @@ For today’s analysis, we’re going to be querying our model based on two key 
 1. Permits filed this year; or `file_date = 2024%`. 
 2. Solar-inclusive projects (anything that includes solar technology); or `solar = true`.
 
-> **Notes**: Fields like these, along with other variables used in our model, can be reviewed in our [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349). 
+> **Note**: Fields like these, along with other variables used in our model, can be reviewed in our [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349). 
 
 We can dig deeper than those to get into specifics of things like **Contractor Availability** or **Average Approval Time** later on, but for now these two filters will serve as the foundation of this dataset. 
 
