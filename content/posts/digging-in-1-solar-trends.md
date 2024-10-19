@@ -27,8 +27,7 @@ For today’s analysis, we’re going to be querying our model based on two key 
 1. Permits filed this year; or `file_date = 2024%`. 
 2. Solar-inclusive projects (anything that includes solar technology); or `solar = true`.
 
-> [!NOTE]
-> Fields like these, along with other variables used in our model, can be reviewed in our [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349). 
+> **Notes**: Fields like these, along with other variables used in our model, can be reviewed in our [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349). 
 
 We can dig deeper than those to get into specifics of things like **Contractor Availability** or **Average Approval Time** later on, but for now these two filters will serve as the foundation of this dataset. 
 
@@ -70,8 +69,7 @@ The trendline here shows that things are slowing down, but only in comparison to
 
 Maybe other green technologies like [heat pumps](https://techcleanca.com/) are relatively underrated, and ripe for a strong market push?
 
-> [!Tip]
-> Free Shovels Advice: if you’re a solar supplier or in a solar-adjacent market, now would be **a very good time** to confirm those outbound pipelines are fired up to prepare for the early Fall installation push. 
+> **Free Shovels Advice**: if you’re a solar supplier or in a solar-adjacent market, now would be **a very good time** to confirm those outbound pipelines are fired up to prepare for the early Fall installation push. 
 > 
 > Shovels has in-depth contractor profiles and data that you could use for that very purpose — [reach out today](mailto:sales@shovels.ai)!
 
