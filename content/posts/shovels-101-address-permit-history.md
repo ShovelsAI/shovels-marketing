@@ -37,8 +37,7 @@ curl -i -X GET 'https://api.shovels.ai/v1/addresses/search?q=123%20MAIN%ST'
 	-H 'X-API-Key: YOUR_API_KEY_HERE'
 ```
 
-> [!Important]
-> Remember to use `%20` to denote any spaces in the address string, and that the correct endpoint here is */addresses/*, NOT ~~/address/~~.
+> **Important**: Remember to use `%20` to denote any spaces in the address string, and that the correct endpoint here is */addresses/*, NOT ~~/address/~~.
 
 Assuming your other syntax and API key is input correctly, this request should return the following:
 
@@ -91,8 +90,7 @@ The returned list of addresses is ordered by relevance and formatted according t
 
 Pick which address you want to dig deeper into, and **proceed to step 2**.
 
-> [!Note]
-> Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction [Coverage Map](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&county_or_jurisdiction=&state=&tab=133-permit-types&zip_code=), or many others). If your desired address isn’t included, then please reach out to us at [support@shovels.ai](mailto:support@shovels.ai) and we’ll take a look. 
+> **Note**: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction [Coverage Map](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&county_or_jurisdiction=&state=&tab=133-permit-types&zip_code=), or many others). If your desired address isn’t included, then please reach out to us at [support@shovels.ai](mailto:support@shovels.ai) and we’ll take a look. 
 
 ## Step 2: Retrieve Permits for the Address
 
@@ -107,8 +105,7 @@ curl -i -X GET 'https://api.shovels.ai/v1/permits/address?street_no=123&street=M
 	-H 'X-API-Key: YOUR_API_KEY_HERE'
 ```
 
-> [!Important]
-> The multiple parameters required for this endpoint are noted with the AND `&` operator.
+> **Important**: The multiple parameters required for this endpoint are noted with the AND `&` operator.
 
 This second request should return the following:
 
@@ -143,8 +140,7 @@ curl -i -X GET 'https://api.shovels.ai/v1/permits?id=5c4015a630e941b6'
 	-H 'X-API-Key: YOUR_API_KEY_HERE'
 ```
 
-> [!Important]
-> Searching for multiple permits at once requires a string **array**, which is denoted in the cURL request by the `&id=string` clause for each additional permit ID. 
+> **Important**: Searching for multiple permits at once requires a string **array**, which is denoted in the cURL request by the `&id=string` clause for each additional permit ID. 
 
 The third request for the single permit should return the following:
 
