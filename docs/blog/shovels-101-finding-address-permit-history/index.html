@@ -419,8 +419,7 @@ Leaving: "duration-100 ease-in"
     -H 'X-API-Key: YOUR_API_KEY_HERE'
 </code></pre></div>
 <blockquote>
-<p>[!Important]
-Remember to use <code>%20</code> to denote any spaces in the address string, and that the correct endpoint here is <em>/addresses/</em>, NOT ~~/address/~~.</p>
+<p><strong>Important</strong>: Remember to use <code>%20</code> to denote any spaces in the address string, and that the correct endpoint here is <em>/addresses/</em>, NOT ~~/address/~~.</p>
 </blockquote>
 <p>Assuming your other syntax and API key is input correctly, this request should return the following:</p>
 <div class="highlight"><pre><span></span><code>[
@@ -469,8 +468,7 @@ Remember to use <code>%20</code> to denote any spaces in the address string, and
 <p>The returned list of addresses is ordered by relevance and formatted according to USPS standard. In this case, of all the matching addresses in the US, <strong>five of them have relevant permit histories</strong>. </p>
 <p>Pick which address you want to dig deeper into, and <strong>proceed to step 2</strong>.</p>
 <blockquote>
-<p>[!Note]
-Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction <a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;county_or_jurisdiction=&amp;state=&amp;tab=133-permit-types&amp;zip_code=">Coverage Map</a>, or many others). If your desired address isn’t included, then please reach out to us at <a href="mailto:support@shovels.ai">support@shovels.ai</a> and we’ll take a look. </p>
+<p><strong>Note</strong>: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction <a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;county_or_jurisdiction=&amp;state=&amp;tab=133-permit-types&amp;zip_code=">Coverage Map</a>, or many others). If your desired address isn’t included, then please reach out to us at <a href="mailto:support@shovels.ai">support@shovels.ai</a> and we’ll take a look. </p>
 </blockquote>
 <h2>Step 2: Retrieve Permits for the Address</h2>
 <p>Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. </p>
@@ -480,8 +478,7 @@ Permit availability rates can vary drastically for a number of reasons (offline 
     -H 'X-API-Key: YOUR_API_KEY_HERE'
 </code></pre></div>
 <blockquote>
-<p>[!Important]
-The multiple parameters required for this endpoint are noted with the AND <code>&amp;</code> operator.</p>
+<p><strong>Important</strong>: The multiple parameters required for this endpoint are noted with the AND <code>&amp;</code> operator.</p>
 </blockquote>
 <p>This second request should return the following:</p>
 <div class="highlight"><pre><span></span><code>{
@@ -507,8 +504,7 @@ The multiple parameters required for this endpoint are noted with the AND <code>
     -H 'X-API-Key: YOUR_API_KEY_HERE'
 </code></pre></div>
 <blockquote>
-<p>[!Important]
-Searching for multiple permits at once requires a string <strong>array</strong>, which is denoted in the cURL request by the <code>&amp;id=string</code> clause for each additional permit ID. </p>
+<p><strong>Important</strong>: Searching for multiple permits at once requires a string <strong>array</strong>, which is denoted in the cURL request by the <code>&amp;id=string</code> clause for each additional permit ID. </p>
 </blockquote>
 <p>The third request for the single permit should return the following:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>

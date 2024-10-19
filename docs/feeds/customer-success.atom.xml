@@ -306,8 +306,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[!Important]
-Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address string, and that the correct endpoint here is &lt;em&gt;/addresses/&lt;/em&gt;, NOT ~~/address/~~.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address string, and that the correct endpoint here is &lt;em&gt;/addresses/&lt;/em&gt;, NOT ~~/address/~~.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Assuming your other syntax and API key is input correctly, this request should return the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[
@@ -357,8 +356,7 @@ Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address
 &lt;p&gt;The returned list of addresses is ordered by relevance and formatted according to USPS standard. In this case, of all the matching addresses in the US, &lt;strong&gt;five of them have relevant permit histories&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;Pick which address you want to dig deeper into, and &lt;strong&gt;proceed to step 2&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!Note]
-Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;amp;county_or_jurisdiction=&amp;amp;state=&amp;amp;tab=133-permit-types&amp;amp;zip_code="&gt;Coverage Map&lt;/a&gt;, or many others). If your desired address isn’t included, then please reach out to us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll take a look. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;amp;county_or_jurisdiction=&amp;amp;state=&amp;amp;tab=133-permit-types&amp;amp;zip_code="&gt;Coverage Map&lt;/a&gt;, or many others). If your desired address isn’t included, then please reach out to us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll take a look. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Step 2: Retrieve Permits for the Address&lt;/h2&gt;
 &lt;p&gt;Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. &lt;/p&gt;
@@ -369,8 +367,7 @@ Permit availability rates can vary drastically for a number of reasons (offline 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[!Important]
-The multiple parameters required for this endpoint are noted with the AND &lt;code&gt;&amp;amp;&lt;/code&gt; operator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: The multiple parameters required for this endpoint are noted with the AND &lt;code&gt;&amp;amp;&lt;/code&gt; operator.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This second request should return the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
@@ -398,8 +395,7 @@ The multiple parameters required for this endpoint are noted with the AND &lt;co
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[!Important]
-Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;/strong&gt;, which is denoted in the cURL request by the &lt;code&gt;&amp;amp;id=string&lt;/code&gt; clause for each additional permit ID. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;/strong&gt;, which is denoted in the cURL request by the &lt;code&gt;&amp;amp;id=string&lt;/code&gt; clause for each additional permit ID. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The third request for the single permit should return the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;

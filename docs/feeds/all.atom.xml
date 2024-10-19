@@ -2192,8 +2192,7 @@ This month's update is all about community!&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[!Important]
-Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address string, and that the correct endpoint here is &lt;em&gt;/addresses/&lt;/em&gt;, NOT ~~/address/~~.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address string, and that the correct endpoint here is &lt;em&gt;/addresses/&lt;/em&gt;, NOT ~~/address/~~.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Assuming your other syntax and API key is input correctly, this request should return the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[
@@ -2243,8 +2242,7 @@ Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address
 &lt;p&gt;The returned list of addresses is ordered by relevance and formatted according to USPS standard. In this case, of all the matching addresses in the US, &lt;strong&gt;five of them have relevant permit histories&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;Pick which address you want to dig deeper into, and &lt;strong&gt;proceed to step 2&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!Note]
-Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;amp;county_or_jurisdiction=&amp;amp;state=&amp;amp;tab=133-permit-types&amp;amp;zip_code="&gt;Coverage Map&lt;/a&gt;, or many others). If your desired address isn’t included, then please reach out to us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll take a look. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;amp;county_or_jurisdiction=&amp;amp;state=&amp;amp;tab=133-permit-types&amp;amp;zip_code="&gt;Coverage Map&lt;/a&gt;, or many others). If your desired address isn’t included, then please reach out to us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll take a look. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Step 2: Retrieve Permits for the Address&lt;/h2&gt;
 &lt;p&gt;Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. &lt;/p&gt;
@@ -2255,8 +2253,7 @@ Permit availability rates can vary drastically for a number of reasons (offline 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[!Important]
-The multiple parameters required for this endpoint are noted with the AND &lt;code&gt;&amp;amp;&lt;/code&gt; operator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: The multiple parameters required for this endpoint are noted with the AND &lt;code&gt;&amp;amp;&lt;/code&gt; operator.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This second request should return the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
@@ -2284,8 +2281,7 @@ The multiple parameters required for this endpoint are noted with the AND &lt;co
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[!Important]
-Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;/strong&gt;, which is denoted in the cURL request by the &lt;code&gt;&amp;amp;id=string&lt;/code&gt; clause for each additional permit ID. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;/strong&gt;, which is denoted in the cURL request by the &lt;code&gt;&amp;amp;id=string&lt;/code&gt; clause for each additional permit ID. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The third request for the single permit should return the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -2392,8 +2388,7 @@ Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;
 &lt;li&gt;Solar-inclusive projects (anything that includes solar technology); or &lt;code&gt;solar = true&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-Fields like these, along with other variables used in our model, can be reviewed in our &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349"&gt;Data Dictionary&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Fields like these, along with other variables used in our model, can be reviewed in our &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349"&gt;Data Dictionary&lt;/a&gt;. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;We can dig deeper than those to get into specifics of things like &lt;strong&gt;Contractor Availability&lt;/strong&gt; or &lt;strong&gt;Average Approval Time&lt;/strong&gt; later on, but for now these two filters will serve as the foundation of this dataset. &lt;/p&gt;
 &lt;p&gt;While there are solar projects all over the country, it’s clear that the vast majority of activity is here in California, so let’s take a closer look.&lt;/p&gt;
@@ -2416,8 +2411,7 @@ Fields like these, along with other variables used in our model, can be reviewed
 &lt;p&gt;The trendline here shows that things are slowing down, but only in comparison to the previous years’ highs. Using other construction data to determine solar saturation and wider construction trends in your specific market, Shovels could provide actionable insights into timing and lead-gen opportunities. &lt;/p&gt;
 &lt;p&gt;Maybe other green technologies like &lt;a href="https://techcleanca.com/"&gt;heat pumps&lt;/a&gt; are relatively underrated, and ripe for a strong market push?&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!Tip]
-Free Shovels Advice: if you’re a solar supplier or in a solar-adjacent market, now would be &lt;strong&gt;a very good time&lt;/strong&gt; to confirm those outbound pipelines are fired up to prepare for the early Fall installation push. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Free Shovels Advice&lt;/strong&gt;: if you’re a solar supplier or in a solar-adjacent market, now would be &lt;strong&gt;a very good time&lt;/strong&gt; to confirm those outbound pipelines are fired up to prepare for the early Fall installation push. &lt;/p&gt;
 &lt;p&gt;Shovels has in-depth contractor profiles and data that you could use for that very purpose — &lt;a href="mailto:sales@shovels.ai"&gt;reach out today&lt;/a&gt;!&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Derivative metrics that can inform projections and trends are the name of the game, and a core tenet of the Shovels model and datasets. While solar construction is close-to-heart, we cover all range of project types — if it requires a building permit (and the jurisdiction digitizes their records), then we’ll have it for consumption. If we don't, let us know and we'll get it for you.&lt;/p&gt;
