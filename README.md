@@ -24,6 +24,8 @@ This is a static site generated with [Pelican](https://docs.getpelican.com/en/4.
      ```
    c. Confirm it's active in the terminal. It should show `(.${environment_name) $ shovels-marketing`
 
+**Notes**: if your named virtual environment is anything other than `venv` or `.venv`, please ask to have the [Ignore](/.gitignore) page updated accordingly. 
+
 ## Development
 
 For initial installation, execute these three commands to download required dependencies and Pelican. 
