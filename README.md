@@ -1,10 +1,32 @@
 # Shovels.ai Marketing Site
 
-This is a static site generated with Pelican. 
+This is a static site generated with [Pelican](https://docs.getpelican.com/en/4.5.1/quickstart.html). 
+
+### Prerequisites (assuming VS Code)
+
+1. Install `Git` for VS Code
+2. Update missing python packages for any missing dependencies (via homebrew, if Mac OS)
+   a. including `npm` for Node.js
+
+## Installation
+
+1. Clone the `shovelsAI/shovels-marketing` githup repo
+  i. validate Github user
+2. Fork a branch of `shovels-marketing/main`
+3. Create a [Virtual Environment](https://code.visualstudio.com/docs/python/environments#_create-a-virtual-environment-in-the-terminal) in the VS Code Terminal
+
+   a. (For Mac) `python3 -m venv .${environment_name}`
+
+   b. Activate the virtual environment, with the following command:
+
+     ```
+     source .${environment_name}/bin/activate
+     ```
+   c. Confirm it's active in the terminal. It should show `(.${environment_name) $ shovels-marketing`
 
 ## Development
 
-Do the regular initial setup. Create and activate a virtual env and then do:
+For initial installation, execute these three commands to download required dependencies and Pelican. 
 
 ```
 pip3 install -r requirements.txt
@@ -13,6 +35,8 @@ pelican -lr
 ```
 
 This will compile the static site into your `output` folder and host a simple HTTP server at that location. The console output will provide you with a link.
+
+This installation process should **not** need to be repeated, unless you rebuild your cloned repo, virtual environment, or editor. 
 
 Note that for development purposes, it would be the `themes/shovels` folder that you would need to interact with. `docs/` should not be modified manually. Read more under the Production section below.
 
@@ -23,7 +47,7 @@ For pages that have an 'inverted' theme, the logic of that inversion is done via
 
 ### New blog post
 
-To make changes to interior pages, we use the /content folder. This is structured as follows:
+To make changes to interior pages, we use the `/content` folder. This is structured as follows:
 
 ```
 /images -- contains the images for the posts
@@ -32,9 +56,9 @@ To make changes to interior pages, we use the /content folder. This is structure
 /posts -- contains the blog posts
 ```
 
-We'll just use the /images and /posts folders to make a new blog post.
+We'll just use the `/images` and `/posts` folders to make a new blog post.
 
-Start by adding a new file to the /posts folder. I sometimes duplicate an existing file. 
+Start by adding a new file to the `/posts` folder. I sometimes duplicate an existing file. 
 
 All pages in the post folder should have the same headers. 
 
@@ -50,7 +74,9 @@ Summary: The Shovels API provides an intuitive platform for proptech enthusiasts
 Image: /images/autodesk.png
 ```
 
-Edit these and put the markdown below this settings section.
+Edit these and put the markdown content below this settings section.
+
+Once the .md file is committed and merged into `/shovels-marketing/main`, view the output locally in your browser at `https://localhost:8000` to verify formatting and rendering. 
 
 ## Production
 
