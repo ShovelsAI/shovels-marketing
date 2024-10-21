@@ -18,4 +18,5 @@ node_modules
 
 # python
 venv
+.venv
 seo_report.html
