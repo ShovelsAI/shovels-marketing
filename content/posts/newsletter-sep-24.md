@@ -1,5 +1,5 @@
 Title: September 2024 Newsletter
-Subtitle: 100M permits at your disposal 
+Subtitle: 150M permits at your disposal
 Date: 2024-9-17
 Modified: 2024-9-17
 Category: Company
