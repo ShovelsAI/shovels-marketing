@@ -24,7 +24,7 @@ Hybridization improves a product by keeping the best pieces of it’s individual
 
 ## Enrichment
 
-Even with a perfect harvest, where quality is unmatched and efficiency is optimized, more can always be added to improve the final product. Try baking something without eggs, dairy, or sugar, and let us know how it goes (and tastes -- sorry vegans!)
+Even with a perfect harvest, where quality is unmatched and efficiency is optimized, more can always be added to improve the final product. Try baking something without eggs, dairy, or sugar, and let us know how it goes (and tastes — sorry vegans!)
 
 Data and dough are similar in this regard, in that they benefit enormously from enrichment. 
 
@@ -36,7 +36,7 @@ Needless to say, simple enrichment is anything but. Simple means focused, in sco
 
 Speaking of, we wanted to share a little sneak-peak at some things coming up soon. 
 
-First of all, all of this new data means new API endpoints. We’re releasing **V2.0** of our API plus a brand new web app, **Shovels Online**, *this* week(!!) on October 24th. If you’ve been using the beta thus far, thank you for your patience — this new version is so much better. 
+All of this new data means new API endpoints. We’re releasing **V2.0** of our API, plus a brand new web app, **Shovels Online**, *this* week(!!) on October 24th. If you’ve been using the beta thus far, thank you for your patience — this new version is so much better. 
 
 (If you happen to be in the Bay Area, we’re having a launch party that very evening: [reach out to us](mailto:sales@shovels.ai) directly and we’ll add you to the guest list.)
 
