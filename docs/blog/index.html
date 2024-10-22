@@ -253,13 +253,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/welcome-to-shovels-v2/" class=" text-emerald-900 hover:text-gray-700"><p>Welcome to Shovels V2</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/harvest-season-at-shovels/" class=" text-emerald-900 hover:text-gray-700"><p>Harvest Season at Shovels</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/understanding-permit-data-fields/" class=" text-emerald-900 hover:text-gray-700"><p>Understanding Permit Data Fields</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/why-dont-all-addresses-have-permit-history/" class=" text-emerald-900 hover:text-gray-700"><p>Why Don't All Addresses Have Permit History?</p></a>
                   </li>
               </ul>
             </div>
@@ -447,6 +447,28 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <article class="border-2 border-gray-900" x-show="isMatchingCategory('Company')">
+        <a href="https://www.shovels.ai/blog/welcome-to-shovels-v2/">
+          <img src="/images/welcome-to-shovels-v2-hero.jpg" alt=""
+            class="object-cover h-48 w-96" />
+        </a>
+        <!-- category -->
+        <div class="p-8">
+          <a href="/blog/?category=Company"
+            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">Company</a>
+        </div>
+        <!-- title and date -->
+        <div>
+          <a href="https://www.shovels.ai/blog/welcome-to-shovels-v2/">
+            <div class="pb-8 px-8">
+              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
+                <p>Welcome to Shovels V2</p>
+              </h2>
+              <time datetime="2024-10-22 00:00:00-07:00" class="text-black text-xs">Tue 22 October 2024</time>
+            </div>
+          </a>
+        </div>
+      </article>
       <article class="border-2 border-gray-900" x-show="isMatchingCategory('Company')">
         <a href="https://www.shovels.ai/blog/harvest-season-at-shovels/">
           <img src="/images/harvest-season-hero.jpg" alt=""
