@@ -17,7 +17,7 @@ That is excellent news, and we are here to help.
 
 We use header key-based authentication. There are two steps to authenticate:
 
-1. Get your API key at [https://beta.shovels.ai](https://beta.shovels.ai){:target="_blank"} . You will see it on your dashboard when you register and log in. 
+1. Get your API key at [https://app.shovels.ai](https://app.shovels.ai){:target="_blank"} . You will see it on your dashboard when you register and log in. 
 2. Add your key to this HTTP header when you make a request: `X-API-Key: YOUR_API_KEY_HERE`. [Click here](https://realpython.com/python-requests/#request-headers){:target="_blank"}  for more information about making HTTP requests with headers using Python. *(Note: you can use any programming language; we like Python 🐍)*
 
 ## Filters

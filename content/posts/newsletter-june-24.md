@@ -13,9 +13,9 @@ Image: /images/heat-pumps-in-ny.png
 <br>
 This month we started rebuilding a few things. The results are exciting!
 
-*   We rebuilt and re-released our web application. You can check it out now at [https://beta.shovels.ai](https://beta.shovels.ai). It just kinda needed to happen.
+*   We rebuilt and re-released our web application. You can check it out now at [https://app.shovels.ai](https://app.shovels.ai). It just kinda needed to happen.
 *   We rebuilt our [API docs](https://shovels.redoc.ly/) too. 
-*   Speaking of API, we added city to the [permit search API](https://shovels.redoc.ly/#operation/search_permits_description_v1_permits_search_get) and the [contractor search API](https://shovels.redoc.ly/#operation/get_contractors_by_activity_city_v1_contractors_activity_city_get) (and the [new app](https://beta.shovels.ai) and our [ShovelsGPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai)). 
+*   Speaking of API, we added city to the [permit search API](https://shovels.redoc.ly/#operation/search_permits_description_v1_permits_search_get) and the [contractor search API](https://shovels.redoc.ly/#operation/get_contractors_by_activity_city_v1_contractors_activity_city_get) (and the [new app](https://app.shovels.ai) and our [ShovelsGPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai)). 
 *   You can now also search contractors by their license classification  ⚡️
 *   We re-classified every building permit in Texas and the results are amazing. More details and the math behind this is below. The rest of the country is next.
 *   2 million more permits and 1.3 million new geo-tagged addresses. We also added 19 new jurisdictions. 
@@ -42,7 +42,7 @@ I didn't know it at the time, but this compatibility leads to a lot of limitatio
 
 Also, and this is where you come in, it became clear awfully fast that you don't care about mobile apps. And that meant my Flutter choice was the wrong one.
 
-There were a lot of benefits to this exercise, though. Building our app, "dogfooding" our API, led to the changes you'll see in V2 (more about that [in this newsletter]({filename}newsletter-apr-24.md)). It also made us very comfortable decoupling the web framework from our data backend. We're leaning into that even more with our [brand new beta](https://beta.shovels.ai/). 
+There were a lot of benefits to this exercise, though. Building our app, "dogfooding" our API, led to the changes you'll see in V2 (more about that [in this newsletter]({filename}newsletter-apr-24.md)). It also made us very comfortable decoupling the web framework from our data backend. We're leaning into that even more with our [brand new beta](https://app.shovels.ai/). 
 
 We're using a fancy new front-end platform to build it. You'll feel the difference right away. 
 

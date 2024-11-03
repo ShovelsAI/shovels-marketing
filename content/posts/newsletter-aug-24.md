@@ -30,7 +30,7 @@ Okay, enough looking backward -- here's what's coming up next!
 - On the tech front, we added *start_date* and *end_date* to our database table shares and they'll launch in the API this week. It's a much better way to filter and query.
 - We added *primary_email* and *primary_phone* to the contractors table. Many of you asked for this. We delivered!
 - We also made more progress on contractor de-duplication. This will continue to be a work in progress -- and we will continue to be the very best at it.
-- The wireframes on our new and improved web application are **DONE**. Let the building begin! Our new app is going to be awesome. I know this because of all the feedback you've given us on [the beta](https://beta.shovels.ai/). We're still on track to release in **mid-October**.
+- The wireframes on our new and improved web application are **DONE**. Let the building begin! Our new app is going to be awesome. I know this because of all the feedback you've given us on [the beta](https://app.shovels.ai/). We're still on track to release in **mid-October**.
 - We can now merge permit data into geospatial files like parcels and census tracts. More on this site selection use case below!
 - Finally, shout out to [Alex Katzman](https://www.linkedin.com/in/alexkatzman/) from [Growth Inflection](https://growthinflection.com/) for coming up with a phrase that you're going to see a lot more of: "shovel-ready data." Indeed, the difference between us and the others is just that: **Our data is shovel-ready**.
 

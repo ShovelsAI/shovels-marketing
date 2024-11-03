@@ -9,7 +9,7 @@ Summary: Shovels app, a web application that provides access to building permit 
 Image: /images/boulder-commercial.png
 
 
-We are very excited to announce the launch of V1 of [the Shovels app](https://beta.shovels.ai). This is a web application you can access on any desktop or mobile browser. Now you can access our building permit and contractor data without an API standing in the way. 
+We are very excited to announce the launch of V1 of [the Shovels app](https://app.shovels.ai). This is a web application you can access on any desktop or mobile browser. Now you can access our building permit and contractor data without an API standing in the way. 
 
 I’m going to share the history of how we got here and why building software is a pretty big deal for us. Then I’ll share what we’re releasing today and, importantly, what’s in store for the future. 
 
@@ -119,4 +119,4 @@ Yes! We are going to charge $499/mo per account for access to all of this amazin
 
 When we release the V2, price will probably go up, but we’ll won’t raise prices on our early customers. 
 
-Check it out! [https://beta.shovels.ai](https://beta.shovels.ai)
+Check it out! [https://app.shovels.ai](https://app.shovels.ai)

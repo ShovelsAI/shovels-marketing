@@ -16,7 +16,7 @@ However, a new war began since our last newsletter, and I think first of the chi
 With that... back to permits. 
 
 *   Last month, I said we'd work on loading every state into the API. This month, I get to tell you it's done! Yay! 
-*   To celebrate this launch, we're making it easier to get API keys. You don't need to ask us first. Just register an account with [our sweet new app](https://beta.shovels.ai) and get your API key 💪
+*   To celebrate this launch, we're making it easier to get API keys. You don't need to ask us first. Just register an account with [our sweet new app](https://app.shovels.ai) and get your API key 💪
 *   Don't know how to use an API? That's cool, for most of my life, I didn't either. I have a solution for you, too. Read below. 
 *   If you do like APIs, don't forget about our [pretty API docs](https://shovels.redoc.ly) 😍 and check out our [API starter guide](https://www.shovels.ai/blog/how-to-use-the-shovels-api/).[](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
 
@@ -53,7 +53,7 @@ API keys galore
 
 I've always thought that to be truly developer-friendly, a company should not stand in between developers and the API. The docs should be great, the API should be fast, and when inspiration strikes, software developers shouldn't have to wait for an API key.
 
-So we've built an app to give you an API key whenever you want one. Just make an account at [https://beta.shovels.ai](https://beta.shovels.ai). You'll see your shiny new API key on the dashboard.
+So we've built an app to give you an API key whenever you want one. Just make an account at [https://app.shovels.ai](https://app.shovels.ai). You'll see your shiny new API key on the dashboard.
 
 _Note: We built this thing for the web using a new mobile app technology called Flutter. That means we're going to release native mobile apps, too!_
 

@@ -223,6 +223,6 @@ We have three different delivery methods, which are suited for different busines
 
 But if you really want to get granular, then our enterprise-ready [Data Feed](https://www.shovels.ai/data-feed) will be best. You can either access the entire Shovels dataset in your warehouse of choice, or you can get the raw data in flat file and query it yourself. 
 
-No matter the use case, Shovels can get you what you need. Check out our [Free Trial](https://beta.shovels.ai), or get in touch with [Sales](mailto:sales@shovels.ai) for data sample and demo call. 
+No matter the use case, Shovels can get you what you need. Check out our [Free Trial](https://app.shovels.ai), or get in touch with [Sales](mailto:sales@shovels.ai) for data sample and demo call. 
 
 Happy Digging!

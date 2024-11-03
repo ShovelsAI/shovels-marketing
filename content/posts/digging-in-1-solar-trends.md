@@ -83,6 +83,6 @@ If that kind of scale is what you’re looking for, then our [Enterprise](https:
 
 On the other hand, we have a [robust API](https://www.shovels.ai/api) for direct integration of our data to your own platform(s). 
 
-Check out our [Free Trial](https://beta.shovels.ai) today to see how our platform works, or get in contact with us for a demo and sample dataset of your preferred market at [sales@shovels.ai](mailto:sales@shovels.ai). 
+Check out our [Free Trial](https://app.shovels.ai) today to see how our platform works, or get in contact with us for a demo and sample dataset of your preferred market at [sales@shovels.ai](mailto:sales@shovels.ai). 
 
 Happy Digging, and let us know how you enjoyed RE+ in Anaheim this year!

@@ -9,7 +9,7 @@ Summary: We added some new tools to the Shovels web app. We also now have a nati
 Image: /images/permits-screenshot.jpg
 
 
-You can now look up permits by type and ZIP code or by postal address using [the Shovels app](https://beta.shovels.ai).
+You can now look up permits by type and ZIP code or by postal address using [the Shovels app](https://app.shovels.ai).
 
 Our goal here is not to build the killer building permit SaaS app (that may come later). It's just to help you understand what's sitting in our database and give you some ideas about what to do with this data.
 

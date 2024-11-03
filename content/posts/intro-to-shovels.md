@@ -49,7 +49,7 @@ Fortunately, we're not trying to be in the field. Instead, we're in the offices 
 
 The prototype is live! It only has Contra Costa County data (about five years worth) but it's enough to see who the major builders are and it shows their key metrics. 
 
-Try it out: https://beta.shovels.ai/register/. 
+Try it out: https://app.shovels.ai/register/. 
 
 ### What we're building next
 

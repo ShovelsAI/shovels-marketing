@@ -24,4 +24,4 @@ Comparing the results of the independent expert teams and their direct classific
 
 With our classification and data cleaning in place, our business intelligence trifecta — on homeowners, on contractors, and on the wider construction market — is “shovel-ready”. In fact, our **Web App**, **API**, and **Data Feeds** are already in use across both small businesses and enterprises.
 
-Check out our [Free Trial](https://beta.shovels.ai) if you’d like to get started with our Web App or API, or reach out to [Sales](mailto:sales@shovels.ai) for a sample file of your desired market and segment!
+Check out our [Free Trial](https://app.shovels.ai) if you’d like to get started with our Web App or API, or reach out to [Sales](mailto:sales@shovels.ai) for a sample file of your desired market and segment!

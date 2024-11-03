@@ -180,7 +180,7 @@ The third request for the single permit should return the following:
 
 And there you have it! This information can be exported for whatever outside needs you have, and this process can be easily repeated for any addresses and permits needed. 
 
-The same information is searchable via our Web App at https://beta.shovels.ai/.
+The same information is searchable via our Web App at https://app.shovels.ai/.
 
 For enterprise-level usage, get our full dataset with deeper insights, dashboards, and flat files. However you need to retrieve this data, we’ll make it happen.
 
