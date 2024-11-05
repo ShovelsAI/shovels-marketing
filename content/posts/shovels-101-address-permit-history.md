@@ -1,7 +1,7 @@
 Title: Shovels 101: Finding Address Permit History
 Subtitle: The definitive guide to using the Shovels API to find address permit history
 Date: 2024-08-29
-Modified: 2024-08-29
+Modified: 2024-11-04
 Category: Customer Success
 Tags: api
 Authors: Alex Brown
@@ -14,7 +14,7 @@ With the [Shovels API](https://shovels.redoc.ly/) in your toolbox, finding permi
 
 ## Authentication and Setup
 
-If you don’t already have a **Shovels Web App** account (welcome!), then head over and setup a [Free Trial](https://www.shovels.ai/api). Go to the **Settings** page to get your API Key, read over our API Docs, and open your preferred terminal, shell, or editor. 
+If you don’t already have a **Shovels Web App** account (welcome!), then head over and setup a [Free Trial](https://app.shovels.ai). Go to the **Settings** page to get your API Key, read over our API Docs, and open your preferred terminal, shell, or editor. 
 
 For a more in-depth introduction to using our API, please check out our blog post guide on [How to use the Shovels API](https://www.shovels.ai/blog/how-to-use-the-shovels-api/). 
 
