@@ -26,7 +26,7 @@ The mirror is broken and replaced with a window, allowing for arriving at your d
 
 ![A screenshot of the Shovels Online web application's Map View](/image/shovels-online-map-view.png)
 
-The other major upgrade is the complete overhaul of our geo-spatial identifiers. With the introduction of the `geo_id`, we have given every county, city, jurisdiction, address, and parcel in the US a uniquely ID. Permits are now mapped against the relevant `geo_id`s all the way up the stack, and so the corresponding Contractors inherit that searchability too. 
+The other major upgrade is the complete overhaul of our geo-spatial identifiers. With the introduction of the `geo_id`, we have given every county, city, jurisdiction, address, and parcel in the US a unique ID. Permits are now mapped against the relevant `geo_id`s all the way up the stack, and so the corresponding Contractors inherit that searchability too. 
 
 We’ve been eager to make connecting the contractor-dots easier in Shovels Online, and have listened to when our customers (you!) asked. We’re happy to have pulled it off, and can’t wait to see what crazy lead gen shenanigans you figure out that we could not have dreamed of.
 
