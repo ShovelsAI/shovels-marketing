@@ -24,7 +24,7 @@ The old Contractor search was a bit of a one-way mirror. Search for a permit (or
 
 The mirror is broken and replaced with a window, allowing for arriving at your desired data from either direction. Find the contractor that works on the type of property, or find the type of contractor by the projects they’ve done. Dealer’s choice.
 
-![A screenshot of the Shovels Online web application's Map View](/image/shovels-online-map-view.png)
+![A screenshot of the Shovels Online web application's Map View](/images/shovels-online-map-view.png)
 
 The other major upgrade is the complete overhaul of our geo-spatial identifiers. With the introduction of the `geo_id`, we have given every county, city, jurisdiction, address, and parcel in the US a unique ID. Permits are now mapped against the relevant `geo_id`s all the way up the stack, and so the corresponding Contractors inherit that searchability too. 
 
@@ -40,7 +40,7 @@ Maybe you found a really good lead, but something was going weird with the “Do
 
 Now, you can save your progress in either a `Saved Profile`  or `Saved Filter`.
 
-![A screenshot of the Shovels Online web application's Saved Profile page](/image/shovels-online-saved-profiles.png)
+![A screenshot of the Shovels Online web application's Saved Profile page](/images/shovels-online-saved-profiles.png)
 
 `Saved Profile` is all about keeping track of the individual search results you find, whether they’re Permits, Addresses, Contractors, or even Counties and Jurisdictions. Click the bookmark icon in the top left, and come back to it another day. 
 
