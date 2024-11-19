@@ -9,7 +9,7 @@ slug: api
     <div class="mt-10 mb-20 flex items-center gap-x-6">
       <a href="https://app.shovels.ai"
         class="shovels-button" target="_blank">Free trial <img src="theme/images/caret-right.svg"></a>
-      <a href="https://shovels.redoc.ly"
+      <a href="https://shovels-v2.redoc.ly"
         class="shovels-button bg-stone-200" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
     </div>
   </div>

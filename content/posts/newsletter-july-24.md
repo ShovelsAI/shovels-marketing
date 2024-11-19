@@ -68,7 +68,7 @@ From the Engineering desk
 Here are a few of the engineering tasks we finished last month. 
 
 *   **AI Permit tagging**: Our new AI-enhanced tagging process is now active in the data pipeline, processing 120 million permits so far. This upgrade allows us to classify new permits more swiftly and efficiently, utilizing the latest AI methods to deliver industry-leading results.
-*   **Enhanced address search**: We introduced a new [address search API endpoint](https://shovels.redoc.ly/#operation/search_addresses_v1_addresses_search_get). It is designed to simplify free-form address search for our customers and provide normalized addresses that can be used in other API calls supporting address parameters. This update aims to improve the user experience when using our API.
+*   **Enhanced address search**: We introduced a new [address search API endpoint](https://shovels-v2.redoc.ly/#operation/search_addresses_v1_addresses_search_get). It is designed to simplify free-form address search for our customers and provide normalized addresses that can be used in other API calls supporting address parameters. This update aims to improve the user experience when using our API.
 *   **Advanced contractor data handling**: Our contractor's dataset constantly evolves with new data and advanced data engineering techniques. To enable seamless customer integration, we now provide a full changelog detailing all changes from one month to the next.
 
 Things to do with permits: make a coverage heat map

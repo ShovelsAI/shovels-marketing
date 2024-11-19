@@ -22,7 +22,7 @@ The case for software
 
 Shovels is a data company. That's our DNA. We're not very proficient (yet) at building software. We'll develop that skill as we go, but what will always set us apart is our devotion to clean, reliable, and useful data.
 
-We launched our nationwide [building permit API](https://shovels.redoc.ly/#operation/Permits) in August 2023. We followed that release with a [nationwide contractor API](https://shovels.redoc.ly/#operation/Contractors) in November 2023. We now have a bunch of paying customers and meaningful revenue. 
+We launched our nationwide [building permit API](https://shovels-v2.redoc.ly/#operation/Permits) in August 2023. We followed that release with a [nationwide contractor API](https://shovels-v2.redoc.ly/#operation/Contractors) in November 2023. We now have a bunch of paying customers and meaningful revenue. 
 
 Just getting this far is a big deal! And we'll continue to serve our current and new API customers. We ❤️ API deals.
 

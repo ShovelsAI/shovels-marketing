@@ -102,7 +102,7 @@ Makes sense, right? Seems like something like this should have been out there lo
 
 ## What’s coming out next?
 
-It’s important to note that everything we’re doing here is available on [our public API](https://shovels.redoc.ly). We are building this app using the *same* endpoints that our customers can access. This software app is kind of like an API demo, too.
+It’s important to note that everything we’re doing here is available on [our public API](https://shovels-v2.redoc.ly). We are building this app using the *same* endpoints that our customers can access. This software app is kind of like an API demo, too.
 
 We’re already working on V2 of our API. The V2 will have a bunch of cool new stuff like:
 
