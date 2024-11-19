@@ -218,7 +218,7 @@
 <p class="mt-1 text-sm text-emerald-800">Review all of the fields that Shovels offers on building permits, contractors, and properties.</p>
 </div>
 </a>
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://shovels.redoc.ly/" target="_blank">
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://shovels-v2.redoc.ly/" target="_blank">
 <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
@@ -421,11 +421,11 @@ Leaving: "duration-100 ease-in"
 <p>Let's look at the building activity filter first. We call types of activity <em>tags</em>.</p>
 <p>We offer 33 unique tags as of this publication date in October 2023. That number will increase over time! </p>
 <p>To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1842205445" target="_blank">Data Dictionary</a> . We'll try to keep this updated. </p>
-<p>To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the <a href="https://shovels.redoc.ly/#operation/List/operation/get_all_available_tags_v1_list_tags_get" target="_blank">Get All Available Tags</a>  endpoint.</p>
+<p>To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the <a href="https://shovels-v2.redoc.ly/#operation/List/operation/get_all_available_tags_v1_list_tags_get" target="_blank">Get All Available Tags</a>  endpoint.</p>
 <p>To make this extra super clear, let's go through some examples. I'm going to show the code snippets using Curl, a command-line tool available natively in every operating system. Just open a new command-line prompt (e.g. Terminal on MacOS) to use it. </p>
 <h4>Get details on every heat pump installation in a zip code</h4>
 <p>Let's use 94123, my old neighborhood in San Francisco. Start by finding the right tag (using the methodology above) for heat pumps: <code>heat_pump</code> should do the trick!</p>
-<p>Next, find the endpoint. <a href="https://shovels.redoc.ly/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank">Get Permits By Zip Code</a>  sounds about right! </p>
+<p>Next, find the endpoint. <a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank">Get Permits By Zip Code</a>  sounds about right! </p>
 <p>Make the request. Here's the Curl command.</p>
 <div class="highlight"><pre><span></span><code>curl -X <span class="s1">'GET'</span> <span class="se">\</span>
   <span class="s1">'https://api.shovels.ai/v1/permits/zip?zip_code=94123&amp;tags=heat_pump&amp;page=1&amp;size=50'</span> <span class="se">\</span>
@@ -462,7 +462,7 @@ Leaving: "duration-100 ease-in"
   ]
 }
 </code></pre></div>
-<p>So what do we do with all those <code>id</code> values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the <code>id</code> and pass it into our <a href="https://shovels.redoc.ly/#operation/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank">Get Permit by ID</a>  endpoint.</p>
+<p>So what do we do with all those <code>id</code> values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the <code>id</code> and pass it into our <a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank">Get Permit by ID</a>  endpoint.</p>
 <div class="highlight"><pre><span></span><code>curl -X <span class="s1">'GET'</span> <span class="se">\</span>
   <span class="s1">'https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b'</span> <span class="se">\</span>
   -H <span class="s1">'accept: application/json'</span> <span class="se">\</span>
@@ -501,7 +501,7 @@ Leaving: "duration-100 ease-in"
 <p>Neato! If we wanted to store all these heat pump installs in a database or spreadsheet, we could write more code for that. I recommend asking ChatGPT to do it for you.</p>
 <h4>Get all the heat pump HVAC installers in a zip code</h4>
 <p>What if you don't care about the permits or the homes, and you just want to know who did the install? We can help with that, too! </p>
-<p>Our handy <a href="https://shovels.redoc.ly/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get" target="_blank">Get Permits By Activity Zip Code</a>  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. </p>
+<p>Our handy <a href="https://shovels-v2.redoc.ly/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get" target="_blank">Get Permits By Activity Zip Code</a>  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. </p>
 <p>For this API call, let's find all the heat pump HVAC installers who did work in the first two quarters of 2023. </p>
 <div class="highlight"><pre><span></span><code>curl -X 'GET' \
   'https://api.shovels.ai/v1/contractors/activity/zip?zip_code=94103&amp;tags=heat_pump&amp;start_date=2023-01-01&amp;end_date=2023-07-01&amp;page=1&amp;size=50' \
@@ -516,7 +516,7 @@ Leaving: "duration-100 ease-in"
   "business_name": "KA - BI CONSTRUCTION INC."
 }
 </code></pre></div>
-<p>Same deal. The <code>id</code> shown is our internal Shovels contractor ID. Let's hit our <a href="https://shovels.redoc.ly/#operation/Contractors/operation/get_contractor_by_id_v1_contractors__id__get" target="_blank">Get Contractor by Id</a>  endpoint with it to get those contractor details! </p>
+<p>Same deal. The <code>id</code> shown is our internal Shovels contractor ID. Let's hit our <a href="https://shovels-v2.redoc.ly/#operation/Contractors/operation/get_contractor_by_id_v1_contractors__id__get" target="_blank">Get Contractor by Id</a>  endpoint with it to get those contractor details! </p>
 <div class="highlight"><pre><span></span><code>curl -X 'GET' \
   'https://api.shovels.ai/v1/contractors/adfbb85fa395444c9516dcfe97ffcfb5' \
   -H 'accept: application/json' \
@@ -539,7 +539,7 @@ Leaving: "duration-100 ease-in"
 <h3>Dates</h3>
 <p>Building permits have dates galore. We show file dates, issue dates, and final dates. File dates are when the permit was sent to the jurisdiction. Issue dates are when the permits are approved for construction, and the final dates is when the jurisdiction finally signs off on the finished work. </p>
 <p>Our date filters, called <code>start_date</code> and <code>end_date</code>, are based solely on the file date.</p>
-<p>To show how this works, let's look at permits filed in New York in August 2023. We can use our <a href="https://shovels.redoc.ly/#operation/Permits/operation/get_permits_by_state_v1_permits_state_get" target="_blank">Get Permits by State</a>  endpoint! </p>
+<p>To show how this works, let's look at permits filed in New York in August 2023. We can use our <a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permits_by_state_v1_permits_state_get" target="_blank">Get Permits by State</a>  endpoint! </p>
 <div class="highlight"><pre><span></span><code>curl -X 'GET' \
   'https://api.shovels.ai/v1/permits/state?state=NY&amp;start_date=2023-08-01&amp;end_date=2023-08-31&amp;page=1&amp;size=50' \
   -H 'accept: application/json' \
@@ -633,7 +633,7 @@ Leaving: "duration-100 ease-in"
 <a class="text-sm leading-6 hover:text-amber-500" href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank">Data Dictionary</a>
 </li>
 <li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels.redoc.ly" target="_blank">API Documentation</a>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels-v2.redoc.ly" target="_blank">API Documentation</a>
 </li>
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/team" target="_blank">Team Shovels</a>

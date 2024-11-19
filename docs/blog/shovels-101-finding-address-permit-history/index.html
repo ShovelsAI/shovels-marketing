@@ -218,7 +218,7 @@
 <p class="mt-1 text-sm text-emerald-800">Review all of the fields that Shovels offers on building permits, contractors, and properties.</p>
 </div>
 </a>
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://shovels.redoc.ly/" target="_blank">
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://shovels-v2.redoc.ly/" target="_blank">
 <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
@@ -404,7 +404,7 @@ Leaving: "duration-100 ease-in"
 <div class="mx-auto max-w-3xl leading-loose text-gray-700">
 <article class="w-full article">
 <p>Understanding a property’s permit history is critical to any project. Whether you’re researching a new property to acquire, or double-checking what previous owners have done to one you already own, it’s important info to have. </p>
-<p>With the <a href="https://shovels.redoc.ly/">Shovels API</a> in your toolbox, finding permits specific to a given address is a breeze. </p>
+<p>With the <a href="https://shovels-v2.redoc.ly/">Shovels API</a> in your toolbox, finding permits specific to a given address is a breeze. </p>
 <h2>Authentication and Setup</h2>
 <p>If you don’t already have a <strong>Shovels Web App</strong> account (welcome!), then head over and setup a <a href="https://app.shovels.ai">Free Trial</a>. Go to the <strong>Settings</strong> page to get your API Key, read over our API Docs, and open your preferred terminal, shell, or editor. </p>
 <p>For a more in-depth introduction to using our API, please check out our blog post guide on <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/">How to use the Shovels API</a>. </p>
@@ -413,7 +413,7 @@ Leaving: "duration-100 ease-in"
 <p>To set the scene, imagine that you’re a prospective buyer wanting to do your due diligence on an intriguing property. The building was constructed in the last 15 years, and it’s important to you that the previous owners have kept everything above board with the required permits and inspections handled. </p>
 <p>With the Shovels API, you can get from address to detailed permit history based on the jurisdiction’s own books with three API calls.</p>
 <h2>Step 1: Finding the Address</h2>
-<p>Using the <a href="https://shovels.redoc.ly/#operation/search_addresses_v1_addresses_search_get">GET Search Addresses</a>  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). </p>
+<p>Using the <a href="https://shovels-v2.redoc.ly/#operation/search_addresses_v1_addresses_search_get">GET Search Addresses</a>  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). </p>
 <p>A sample query, for a “123 Main St”, should look something like this:</p>
 <div class="highlight"><pre><span></span><code>curl -i -X GET 'https://api.shovels.ai/v1/addresses/search?q=123%20MAIN%ST' 
     -H 'X-API-Key: YOUR_API_KEY_HERE'
@@ -472,7 +472,7 @@ Leaving: "duration-100 ease-in"
 </blockquote>
 <h2>Step 2: Retrieve Permits for the Address</h2>
 <p>Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. </p>
-<p>Using the <a href="https://shovels.redoc.ly/#operation/get_permits_by_address_v1_permits_address_get">GET Permits by Address</a> endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. </p>
+<p>Using the <a href="https://shovels-v2.redoc.ly/#operation/get_permits_by_address_v1_permits_address_get">GET Permits by Address</a> endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. </p>
 <p>Again, a sample query, for “123 Main St, Agawam, MA 01001”, would look something like this:</p>
 <div class="highlight"><pre><span></span><code>curl -i -X GET 'https://api.shovels.ai/v1/permits/address?street_no=123&amp;street=MAIN%20ST&amp;state=MA&amp;city=AGAWAM&amp;zip_code=01001'
     -H 'X-API-Key: YOUR_API_KEY_HERE'
@@ -498,7 +498,7 @@ Leaving: "duration-100 ease-in"
 <p>which shows that there are 5 permits on record for this address. These Permit IDs are unique to the Shovels platform, but can be used to retrieve the detailed permit details.</p>
 <p>To do so, <strong>proceed to Step 3</strong>.</p>
 <h2>Step 3: Return Detailed Permit History</h2>
-<p>Using the <a href="https://shovels.redoc.ly/#operation/get_permits_by_id_v1_permits_get">GET Permits by ID</a> endpoint, you can search for a single (or string array) of permit IDs. </p>
+<p>Using the <a href="https://shovels-v2.redoc.ly/#operation/get_permits_by_id_v1_permits_get">GET Permits by ID</a> endpoint, you can search for a single (or string array) of permit IDs. </p>
 <p>In this sample, to request the first permit payload would look something like this:</p>
 <div class="highlight"><pre><span></span><code>curl -i -X GET 'https://api.shovels.ai/v1/permits?id=5c4015a630e941b6' 
     -H 'X-API-Key: YOUR_API_KEY_HERE'
@@ -544,7 +544,7 @@ Leaving: "duration-100 ease-in"
 <p>For enterprise-level usage, get our full dataset with deeper insights, dashboards, and flat files. However you need to retrieve this data, we’ll make it happen.</p>
 <h2>Troubleshooting Tips</h2>
 <ul>
-<li>A full list of our error codes are described in our API docs <a href="https://shovels.redoc.ly/#section/API-Details">here</a>. Most errors are 404s, which frequently mean either the address is input incorrectly, or there isn’t a permit record on file to match the search terms.<ul>
+<li>A full list of our error codes are described in our API docs <a href="https://shovels-v2.redoc.ly/#section/API-Details">here</a>. Most errors are 404s, which frequently mean either the address is input incorrectly, or there isn’t a permit record on file to match the search terms.<ul>
 <li>If you are able to find the correct address in our <strong>Web App</strong>, then double check the syntax of the request. </li>
 </ul>
 </li>
@@ -611,7 +611,7 @@ Leaving: "duration-100 ease-in"
 <a class="text-sm leading-6 hover:text-amber-500" href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank">Data Dictionary</a>
 </li>
 <li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels.redoc.ly" target="_blank">API Documentation</a>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels-v2.redoc.ly" target="_blank">API Documentation</a>
 </li>
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/team" target="_blank">Team Shovels</a>
