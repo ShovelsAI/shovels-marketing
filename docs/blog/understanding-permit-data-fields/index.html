@@ -247,6 +247,15 @@
 <p class="mt-1 text-sm text-emerald-800">The history to date and the history we're making.</p>
 </div>
 </a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/careers">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Careers</p>
+<p class="mt-1 text-sm text-emerald-800">Join our team and help us build the future of construction.</p>
+</div>
+</a>
 </div>
 <div class="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
 <div>
@@ -412,161 +421,161 @@ Leaving: "duration-100 ease-in"
 <p>That’s where the <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349">Data Dictionary</a> comes in. This publicly-available spreadsheet (check the multiple tabs across the bottom for more info) gives an exhaustive breakdown of all the fields, variables, and parameters that our dataset contains. </p>
 <p>For the purposes of this tutorial, I’ll include a sample permit payload for a single permit from Agawam, MA. This includes all available fields for permits, beyond just the ones included in the Shovels <strong>Web App</strong> or <strong>API</strong>. For definitions of any of these, check out the Data Dictionary.</p>
 <p>Bear with me please, there are a lot of fields…</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>
-<span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8ee111a1199934d5"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"PERMIT_NUMBER"</span><span class="p">:</span><span class="w"> </span><span class="s2">"E-21-99"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"CBSA"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Springfield, MA"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"CBSA_FIPS"</span><span class="p">:</span><span class="w"> </span><span class="mi">44140</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"COUNTY_FIPS"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"STATE_FIPS"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"STATUS_ORIGINAL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"complete"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APN"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"FILE_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"FINAL_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Agawam Rentals Llc"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Po Box 246"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hadley"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MA"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="mi">1035</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"OWNER_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPLICANT_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ARCHITECT_LICENSE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ENGINEER_LICENSE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESIGNER_LICENSE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NEW_DWELLING"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NEW_ADU"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ACCESSORY_STRUCTURE"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"POOL_SPA"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ROOM_ADDITION"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"KITCHEN_REMODEL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"BATH_REMODEL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"REROOF"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"UTILITIES"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"WINDOW_DOOR"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"FOUNDATION"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SITEWORK"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DEMOLITION"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"EXTERIOR_REMODEL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"TENANT_IMPROVEMENT"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"RESIDENTIAL"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"AIR_SOURCE_HEAT_PUMP"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"GROUND_SOURCE_HEAT_PUMP"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"EV_CHARGER"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR_BATTERY_STORAGE"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ELECTRICAL_PANEL_UPGRADE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ELECTRICAL_SERVICE_UPGRADE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"EFFICIENCY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"HEAT_PUMP_WATER_HEATER"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"INDUCTION_STOVE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"WIND"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"COMMERCIAL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"MULTIFAMILY"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"PUBLIC_WORK"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_SOLAR_PANELS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR_PANEL_POWER"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR_SYSTEM_CAPACITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"UTILITY_CAPACITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ACCESSORY_STRUCTURE_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ATTACHED_DETACHED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"CONDITION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"BATH_ITEMS_INSTALLED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"REMODEL_MATERIALS_USED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DEMO_FULL_PARTIAL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"EXTERIOR_REMODEL_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"FOUNDATION_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basement"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"FOUNDATION_WORK_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"KITCHEN_ITEMS_INSTALLED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ADU_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basement"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"CONSTRUCTION_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ADU_LEGALIZATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DWELLING_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"POOL_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"REROOF_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"REROOF_MATERIAL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ROOM_ADDITION_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SITEWORK_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR_INSTALL_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR_BRAND"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SOLAR_BATTERY_INCLUDED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"UTILITY_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mini split, water heaters"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"WINDOW_DOOR_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SIZE_SQUARE_FEET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_BEDS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_BATHS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_UNITS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_BUILDINGS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_FLOORS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SIZE_SQUARES"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_ROOMS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_WINDOWS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"NUM_DOORS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"COUNTY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hampden County"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"JURISDICTION"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Agawam Town"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Electrical"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"SUBTYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Additions/alterations - residential"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"STATUS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ISSUE_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DESCRIPTION"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wire mini split system, install bath fan in 2nd floor bath, wire 2 electric water heaters and install 2 receptacles for washing machines in basement"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"JOB_VALUE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"FEES"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APT_NUMBER"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"HEAT_PUMP"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"WATER_HEATER"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"HVAC"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HIGH ST"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"STREET_NO"</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="mi">1001</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ZIPCODE_EXT"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AGAWAM"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MA"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"DISTRICT"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HAMPDEN"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"LONG"</span><span class="p">:</span><span class="w"> </span><span class="mf">-72.632972717</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"LAT"</span><span class="p">:</span><span class="w"> </span><span class="mf">42.097988129</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"ADDRESS_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jy207ojc0Jk"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"INTL_ADDRESS_NORMALIZED"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"CONSTRUCTION_DURATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"APPROVAL_DURATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"INSPECTION_PASS_RATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"INSPECTION_PASSED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"INTL_CONTRACTOR_LINKED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"_META_LOADED_AT"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-09-16 01:38:53.371 -0700"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"_META_SOURCE_FILE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nationwide/permits/20240912_224317_00015_ph49q_2c6b1418-b9d6-482e-82aa-570deb28ab0b"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"START_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"END_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24"</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"TOTAL_DURATION"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">   </span><span class="nt">"RNO"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="w"> </span><span class="p">}</span><span class="w"></span>
-<span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nt">"ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8ee111a1199934d5"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"PERMIT_NUMBER"</span><span class="p">:</span><span class="w"> </span><span class="s2">"E-21-99"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"CBSA"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Springfield, MA"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"CBSA_FIPS"</span><span class="p">:</span><span class="w"> </span><span class="mi">44140</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"COUNTY_FIPS"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"STATE_FIPS"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"STATUS_ORIGINAL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"complete"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APN"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"FILE_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"FINAL_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Agawam Rentals Llc"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Po Box 246"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hadley"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MA"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="mi">1035</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"OWNER_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPLICANT_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ARCHITECT_LICENSE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ENGINEER_LICENSE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_PHONE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_EMAIL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESIGNER_LICENSE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NEW_DWELLING"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NEW_ADU"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ACCESSORY_STRUCTURE"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"POOL_SPA"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ROOM_ADDITION"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"KITCHEN_REMODEL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"BATH_REMODEL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"REROOF"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"UTILITIES"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"WINDOW_DOOR"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"FOUNDATION"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SITEWORK"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DEMOLITION"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"EXTERIOR_REMODEL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"TENANT_IMPROVEMENT"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"RESIDENTIAL"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"AIR_SOURCE_HEAT_PUMP"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"GROUND_SOURCE_HEAT_PUMP"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"EV_CHARGER"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR_BATTERY_STORAGE"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ELECTRICAL_PANEL_UPGRADE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ELECTRICAL_SERVICE_UPGRADE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"EFFICIENCY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"HEAT_PUMP_WATER_HEATER"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"INDUCTION_STOVE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"WIND"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"COMMERCIAL"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"MULTIFAMILY"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"PUBLIC_WORK"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_SOLAR_PANELS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR_PANEL_POWER"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR_SYSTEM_CAPACITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"UTILITY_CAPACITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ACCESSORY_STRUCTURE_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ATTACHED_DETACHED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"CONDITION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"BATH_ITEMS_INSTALLED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"REMODEL_MATERIALS_USED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DEMO_FULL_PARTIAL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"EXTERIOR_REMODEL_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"FOUNDATION_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basement"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"FOUNDATION_WORK_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"KITCHEN_ITEMS_INSTALLED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ADU_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basement"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"CONSTRUCTION_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ADU_LEGALIZATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DWELLING_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"POOL_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"REROOF_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"REROOF_MATERIAL"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ROOM_ADDITION_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SITEWORK_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR_INSTALL_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR_BRAND"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SOLAR_BATTERY_INCLUDED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"UTILITY_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mini split, water heaters"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"WINDOW_DOOR_TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SIZE_SQUARE_FEET"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_BEDS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_BATHS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_UNITS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_BUILDINGS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_FLOORS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SIZE_SQUARES"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_ROOMS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_WINDOWS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"NUM_DOORS"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"COUNTY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hampden County"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"JURISDICTION"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Agawam Town"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"TYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Electrical"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"SUBTYPE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Additions/alterations - residential"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"STATUS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ISSUE_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DESCRIPTION"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wire mini split system, install bath fan in 2nd floor bath, wire 2 electric water heaters and install 2 receptacles for washing machines in basement"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"JOB_VALUE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"FEES"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APT_NUMBER"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"HEAT_PUMP"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"WATER_HEATER"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"HVAC"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"STREET"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HIGH ST"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"STREET_NO"</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ZIPCODE"</span><span class="p">:</span><span class="w"> </span><span class="mi">1001</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ZIPCODE_EXT"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"CITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AGAWAM"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"STATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MA"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"DISTRICT"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HAMPDEN"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"LONG"</span><span class="p">:</span><span class="w"> </span><span class="mf">-72.632972717</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"LAT"</span><span class="p">:</span><span class="w"> </span><span class="mf">42.097988129</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"ADDRESS_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jy207ojc0Jk"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"INTL_ADDRESS_NORMALIZED"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"CONSTRUCTION_DURATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"APPROVAL_DURATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"INSPECTION_PASS_RATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"INSPECTION_PASSED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"INTL_CONTRACTOR_LINKED"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"_META_LOADED_AT"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-09-16 01:38:53.371 -0700"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"_META_SOURCE_FILE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nationwide/permits/20240912_224317_00015_ph49q_2c6b1418-b9d6-482e-82aa-570deb28ab0b"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"START_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"END_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"TOTAL_DURATION"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"RNO"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
 </code></pre></div>
 <p>As you can see, there’s a lot of detail here. Many of these are the key details that most of our insights are based on, yet still there are a ton of blank fields.</p>
 <p>Let’s dig in to these unfilled fields. </p>

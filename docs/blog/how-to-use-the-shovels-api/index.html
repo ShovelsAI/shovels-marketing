@@ -245,6 +245,15 @@
 <p class="mt-1 text-sm text-emerald-800">The history to date and the history we're making.</p>
 </div>
 </a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/careers">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Careers</p>
+<p class="mt-1 text-sm text-emerald-800">Join our team and help us build the future of construction.</p>
+</div>
+</a>
 </div>
 <div class="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
 <div>
@@ -427,76 +436,76 @@ Leaving: "duration-100 ease-in"
 <p>Let's use 94123, my old neighborhood in San Francisco. Start by finding the right tag (using the methodology above) for heat pumps: <code>heat_pump</code> should do the trick!</p>
 <p>Next, find the endpoint. <a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank">Get Permits By Zip Code</a>  sounds about right! </p>
 <p>Make the request. Here's the Curl command.</p>
-<div class="highlight"><pre><span></span><code>curl -X <span class="s1">'GET'</span> <span class="se">\</span>
-  <span class="s1">'https://api.shovels.ai/v1/permits/zip?zip_code=94123&amp;tags=heat_pump&amp;page=1&amp;size=50'</span> <span class="se">\</span>
-  -H <span class="s1">'accept: application/json'</span> <span class="se">\</span>
-  -H <span class="s1">'X-API-Key: YOUR_API_KEY_HERE'</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span><span class="s1">'GET'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s1">'https://api.shovels.ai/v1/permits/zip?zip_code=94123&amp;tags=heat_pump&amp;page=1&amp;size=50'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'X-API-Key: YOUR_API_KEY_HERE'</span>
 </code></pre></div>
 <p>And it worked! </p>
-<div class="highlight"><pre><span></span><code>{
-  "items": [
-    {
-      "id": "07ec97288669e01793a9dbb47c352400",
-      "address": {
-        "street_no": "3550",
-        "street": "BAKER ST",
-        "city": "SAN FRANCISCO",
-        "zip_code": "94123",
-        "state": "CA",
-        "lat": 37.804016,
-        "long": -122.44678
-      }
-    },
-    {
-      "id": "179c87dcfa6f499edff389c2272f819b",
-      "address": {
-        "street_no": "12",
-        "street": "RICO WAY",
-        "city": "SAN FRANCISCO",
-        "zip_code": "94123",
-        "state": "CA",
-        "lat": 37.805016,
-        "long": -122.438484
-      }
-    }
-  ]
-}
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s">"id"</span><span class="p">:</span><span class="w"> </span><span class="s">"07ec97288669e01793a9dbb47c352400"</span><span class="p">,</span>
+<span class="w">      </span><span class="s">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s">"street_no"</span><span class="p">:</span><span class="w"> </span><span class="s">"3550"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"street"</span><span class="p">:</span><span class="w"> </span><span class="s">"BAKER ST"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"city"</span><span class="p">:</span><span class="w"> </span><span class="s">"SAN FRANCISCO"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s">"94123"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"state"</span><span class="p">:</span><span class="w"> </span><span class="s">"CA"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"lat"</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">37.804016</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"long"</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">122.44678</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s">"id"</span><span class="p">:</span><span class="w"> </span><span class="s">"179c87dcfa6f499edff389c2272f819b"</span><span class="p">,</span>
+<span class="w">      </span><span class="s">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s">"street_no"</span><span class="p">:</span><span class="w"> </span><span class="s">"12"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"street"</span><span class="p">:</span><span class="w"> </span><span class="s">"RICO WAY"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"city"</span><span class="p">:</span><span class="w"> </span><span class="s">"SAN FRANCISCO"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s">"94123"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"state"</span><span class="p">:</span><span class="w"> </span><span class="s">"CA"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"lat"</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">37.805016</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"long"</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">122.438484</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>So what do we do with all those <code>id</code> values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the <code>id</code> and pass it into our <a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank">Get Permit by ID</a>  endpoint.</p>
-<div class="highlight"><pre><span></span><code>curl -X <span class="s1">'GET'</span> <span class="se">\</span>
-  <span class="s1">'https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b'</span> <span class="se">\</span>
-  -H <span class="s1">'accept: application/json'</span> <span class="se">\</span>
-  -H <span class="s1">'X-API-Key: YOUR_API_KEY_HERE'</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span><span class="s1">'GET'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s1">'https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'X-API-Key: YOUR_API_KEY_HERE'</span>
 </code></pre></div>
 <p>And we get this in response:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="err">"jurisdiction":</span><span class="w"> </span><span class="err">"San</span><span class="w"> </span><span class="err">Francisco",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"issue_date":</span><span class="w"> </span><span class="err">"2017-09-07",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"final_date":</span><span class="w"> </span><span class="err">null,</span><span class="w"></span>
-<span class="w">  </span><span class="err">"type":</span><span class="w"> </span><span class="err">"Plumbing",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"inspections_pass_rate":</span><span class="w"> </span><span class="err">null,</span><span class="w"></span>
-<span class="w">  </span><span class="err">"fees":</span><span class="w"> </span><span class="err">null,</span><span class="w"></span>
-<span class="w">  </span><span class="err">"address_id":</span><span class="w"> </span><span class="err">"1973404EE7003B21",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"description":</span><span class="w"> </span><span class="err">"Work</span><span class="w"> </span><span class="n">category</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="err">new</span><span class="w"> </span><span class="err">rooftop</span><span class="w"> </span><span class="err">heatpump</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">ductwork</span><span class="w"> </span><span class="err">on</span><span class="w"> </span><span class="err">rooftop,</span><span class="w"> </span><span class="err">24,000</span><span class="w"> </span><span class="err">btu",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"contractor_id":</span><span class="w"> </span><span class="err">null,</span><span class="w"></span>
-<span class="w">  </span><span class="err">"number":</span><span class="w"> </span><span class="err">"PMW20170907784",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"status":</span><span class="w"> </span><span class="err">"Active",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"id":</span><span class="w"> </span><span class="err">"179c87dcfa6f499edff389c2272f819b",</span><span class="w"></span>
-<span class="w">  </span><span class="err">"address":</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
-<span class="w">    </span><span class="err">"street_no":</span><span class="w"> </span><span class="err">"12",</span><span class="w"></span>
-<span class="w">    </span><span class="err">"street":</span><span class="w"> </span><span class="err">"RICO</span><span class="w"> </span><span class="err">WAY",</span><span class="w"></span>
-<span class="w">    </span><span class="err">"city":</span><span class="w"> </span><span class="err">"SAN</span><span class="w"> </span><span class="err">FRANCISCO",</span><span class="w"></span>
-<span class="w">    </span><span class="err">"zip_code":</span><span class="w"> </span><span class="err">"94123",</span><span class="w"></span>
-<span class="w">    </span><span class="err">"state":</span><span class="w"> </span><span class="err">"CA",</span><span class="w"></span>
-<span class="w">    </span><span class="err">"lat":</span><span class="w"> </span><span class="err">37.805016,</span><span class="w"></span>
-<span class="w">    </span><span class="err">"long":</span><span class="w"> </span><span class="err">-122.438484</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="o">,</span><span class="w"></span>
-<span class="w">  </span><span class="s2">"tags"</span><span class="o">:</span><span class="w"> </span><span class="cp">[</span><span class="w"></span>
-<span class="w">    </span><span class="s2">"air_source_heat_pump"</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s2">"heat_pump"</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s2">"utilities"</span><span class="w"></span>
-<span class="w">  </span><span class="cp">]</span><span class="w"></span>
-<span class="err">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s">"jurisdiction"</span><span class="p">:</span><span class="w"> </span><span class="s">"San Francisco"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="s">"2017-09-07"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"final_date"</span><span class="p">:</span><span class="w"> </span><span class="nx">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"type"</span><span class="p">:</span><span class="w"> </span><span class="s">"Plumbing"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"inspections_pass_rate"</span><span class="p">:</span><span class="w"> </span><span class="nx">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"fees"</span><span class="p">:</span><span class="w"> </span><span class="nx">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="s">"1973404EE7003B21"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"description"</span><span class="p">:</span><span class="w"> </span><span class="s">"Work category: 1m; new rooftop heatpump with ductwork on rooftop, 24,000 btu"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"contractor_id"</span><span class="p">:</span><span class="w"> </span><span class="nx">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"number"</span><span class="p">:</span><span class="w"> </span><span class="s">"PMW20170907784"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"status"</span><span class="p">:</span><span class="w"> </span><span class="s">"Active"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"id"</span><span class="p">:</span><span class="w"> </span><span class="s">"179c87dcfa6f499edff389c2272f819b"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s">"street_no"</span><span class="p">:</span><span class="w"> </span><span class="s">"12"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"street"</span><span class="p">:</span><span class="w"> </span><span class="s">"RICO WAY"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"city"</span><span class="p">:</span><span class="w"> </span><span class="s">"SAN FRANCISCO"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s">"94123"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"state"</span><span class="p">:</span><span class="w"> </span><span class="s">"CA"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"lat"</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">37.805016</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"long"</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">122.438484</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s">"air_source_heat_pump"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"heat_pump"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"utilities"</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Neato! If we wanted to store all these heat pump installs in a database or spreadsheet, we could write more code for that. I recommend asking ChatGPT to do it for you.</p>
 <h4>Get all the heat pump HVAC installers in a zip code</h4>
@@ -523,18 +532,18 @@ Leaving: "duration-100 ease-in"
   -H 'X-API-Key: YOUR_API_KEY_HERE'
 </code></pre></div>
 <p>And the details are:</p>
-<div class="highlight"><pre><span></span><code><span class="err">{</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"license"</span><span class="err">:</span><span class="w"> </span><span class="ss">"944398"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"name"</span><span class="err">:</span><span class="w"> </span><span class="ss">"DENIZ SALON"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"email"</span><span class="err">:</span><span class="w"> </span><span class="ss">"denizsalon@yahoo.com,salon642002@yahoo.com"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"street"</span><span class="err">:</span><span class="w"> </span><span class="ss">"BAYSHORE HY"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"business_name"</span><span class="err">:</span><span class="w"> </span><span class="ss">"KA - BI CONSTRUCTION INC."</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"id"</span><span class="err">:</span><span class="w"> </span><span class="ss">"adfbb85fa395444c9516dcfe97ffcfb5"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"phone"</span><span class="err">:</span><span class="w"> </span><span class="ss">"6502914299"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"street_no"</span><span class="err">:</span><span class="w"> </span><span class="ss">"1290"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"city"</span><span class="err">:</span><span class="w"> </span><span class="ss">"BURLINGAME"</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="ss">"state"</span><span class="err">:</span><span class="w"> </span><span class="ss">"CA"</span><span class="w"></span>
-<span class="err">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="err">{</span>
+<span class="w">  </span><span class="ss">"license"</span><span class="err">:</span><span class="w"> </span><span class="ss">"944398"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"name"</span><span class="err">:</span><span class="w"> </span><span class="ss">"DENIZ SALON"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"email"</span><span class="err">:</span><span class="w"> </span><span class="ss">"denizsalon@yahoo.com,salon642002@yahoo.com"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"street"</span><span class="err">:</span><span class="w"> </span><span class="ss">"BAYSHORE HY"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"business_name"</span><span class="err">:</span><span class="w"> </span><span class="ss">"KA - BI CONSTRUCTION INC."</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"id"</span><span class="err">:</span><span class="w"> </span><span class="ss">"adfbb85fa395444c9516dcfe97ffcfb5"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"phone"</span><span class="err">:</span><span class="w"> </span><span class="ss">"6502914299"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"street_no"</span><span class="err">:</span><span class="w"> </span><span class="ss">"1290"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"city"</span><span class="err">:</span><span class="w"> </span><span class="ss">"BURLINGAME"</span><span class="p">,</span>
+<span class="w">  </span><span class="ss">"state"</span><span class="err">:</span><span class="w"> </span><span class="ss">"CA"</span>
+<span class="err">}</span>
 </code></pre></div>
 <h3>Dates</h3>
 <p>Building permits have dates galore. We show file dates, issue dates, and final dates. File dates are when the permit was sent to the jurisdiction. Issue dates are when the permits are approved for construction, and the final dates is when the jurisdiction finally signs off on the finished work. </p>
@@ -546,30 +555,30 @@ Leaving: "duration-100 ease-in"
   -H 'X-API-Key: YOUR_API_KEY_HERE'
 </code></pre></div>
 <p>We could use tags here too, but I chose not to. Here's what the first two permits look like:</p>
-<div class="highlight"><pre><span></span><code>{
-  "id": "e101ca8b62f825a1199fb370365b85d7",
-  "address": {
-    "street_no": "3",
-    "street": "NEW HAMPSHIRE AVE",
-    "city": "EAST GREENBUSH",
-    "zip_code": "12144",
-    "state": "NY",
-    "lat": 42.625023,
-    "long": -73.725845
-  }
-},
-{
-  "id": "d0c345961c8c446f3e56655c0ddfca8a",
-  "address": {
-    "street_no": "410",
-    "street": "ROCKAWAY AVE",
-    "city": "HEMPSTEAD",
-    "zip_code": "11581",
-    "state": "NY",
-    "lat": 40.658535,
-    "long": -73.70126
-  }
-}
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s">"id"</span><span class="p">:</span><span class="w"> </span><span class="s">"e101ca8b62f825a1199fb370365b85d7"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s">"street_no"</span><span class="p">:</span><span class="w"> </span><span class="s">"3"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"street"</span><span class="p">:</span><span class="w"> </span><span class="s">"NEW HAMPSHIRE AVE"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"city"</span><span class="p">:</span><span class="w"> </span><span class="s">"EAST GREENBUSH"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s">"12144"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"state"</span><span class="p">:</span><span class="w"> </span><span class="s">"NY"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"lat"</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">42.625023</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"long"</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">73.725845</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="s">"id"</span><span class="p">:</span><span class="w"> </span><span class="s">"d0c345961c8c446f3e56655c0ddfca8a"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s">"street_no"</span><span class="p">:</span><span class="w"> </span><span class="s">"410"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"street"</span><span class="p">:</span><span class="w"> </span><span class="s">"ROCKAWAY AVE"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"city"</span><span class="p">:</span><span class="w"> </span><span class="s">"HEMPSTEAD"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s">"11581"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"state"</span><span class="p">:</span><span class="w"> </span><span class="s">"NY"</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"lat"</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">40.658535</span><span class="p">,</span>
+<span class="w">    </span><span class="s">"long"</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">73.70126</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>I could look up the details on these the same way I described above. No need to repeat! </p>
 <h2>Conclusion</h2>

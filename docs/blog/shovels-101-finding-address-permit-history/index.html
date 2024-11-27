@@ -245,6 +245,15 @@
 <p class="mt-1 text-sm text-emerald-800">The history to date and the history we're making.</p>
 </div>
 </a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/careers">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Careers</p>
+<p class="mt-1 text-sm text-emerald-800">Join our team and help us build the future of construction.</p>
+</div>
+</a>
 </div>
 <div class="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
 <div>
@@ -415,8 +424,8 @@ Leaving: "duration-100 ease-in"
 <h2>Step 1: Finding the Address</h2>
 <p>Using the <a href="https://shovels-v2.redoc.ly/#operation/search_addresses_v1_addresses_search_get">GET Search Addresses</a>  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). </p>
 <p>A sample query, for a “123 Main St”, should look something like this:</p>
-<div class="highlight"><pre><span></span><code>curl -i -X GET 'https://api.shovels.ai/v1/addresses/search?q=123%20MAIN%ST' 
-    -H 'X-API-Key: YOUR_API_KEY_HERE'
+<div class="highlight"><pre><span></span><code><span class="nx">curl</span><span class="w"> </span><span class="o">-</span><span class="nx">i</span><span class="w"> </span><span class="o">-</span><span class="nx">X</span><span class="w"> </span><span class="nx">GET</span><span class="w"> </span><span class="err">'</span><span class="nx">https</span><span class="p">:</span><span class="c1">//api.shovels.ai/v1/addresses/search?q=123%20MAIN%ST' </span>
+<span class="w">    </span><span class="o">-</span><span class="nx">H</span><span class="w"> </span><span class="err">'</span><span class="nx">X</span><span class="o">-</span><span class="nx">API</span><span class="o">-</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="nx">YOUR_API_KEY_HERE</span><span class="err">'</span>
 </code></pre></div>
 <blockquote>
 <p><strong>Important</strong>: Remember to use <code>%20</code> to denote any spaces in the address string, and that the correct endpoint here is <em>/addresses/</em>, NOT ~~/address/~~.</p>
@@ -474,8 +483,8 @@ Leaving: "duration-100 ease-in"
 <p>Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. </p>
 <p>Using the <a href="https://shovels-v2.redoc.ly/#operation/get_permits_by_address_v1_permits_address_get">GET Permits by Address</a> endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. </p>
 <p>Again, a sample query, for “123 Main St, Agawam, MA 01001”, would look something like this:</p>
-<div class="highlight"><pre><span></span><code>curl -i -X GET 'https://api.shovels.ai/v1/permits/address?street_no=123&amp;street=MAIN%20ST&amp;state=MA&amp;city=AGAWAM&amp;zip_code=01001'
-    -H 'X-API-Key: YOUR_API_KEY_HERE'
+<div class="highlight"><pre><span></span><code><span class="nx">curl</span><span class="w"> </span><span class="o">-</span><span class="nx">i</span><span class="w"> </span><span class="o">-</span><span class="nx">X</span><span class="w"> </span><span class="nx">GET</span><span class="w"> </span><span class="err">'</span><span class="nx">https</span><span class="p">:</span><span class="c1">//api.shovels.ai/v1/permits/address?street_no=123&amp;street=MAIN%20ST&amp;state=MA&amp;city=AGAWAM&amp;zip_code=01001'</span>
+<span class="w">    </span><span class="o">-</span><span class="nx">H</span><span class="w"> </span><span class="err">'</span><span class="nx">X</span><span class="o">-</span><span class="nx">API</span><span class="o">-</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="nx">YOUR_API_KEY_HERE</span><span class="err">'</span>
 </code></pre></div>
 <blockquote>
 <p><strong>Important</strong>: The multiple parameters required for this endpoint are noted with the AND <code>&amp;</code> operator.</p>
@@ -507,37 +516,37 @@ Leaving: "duration-100 ease-in"
 <p><strong>Important</strong>: Searching for multiple permits at once requires a string <strong>array</strong>, which is denoted in the cURL request by the <code>&amp;id=string</code> clause for each additional permit ID. </p>
 </blockquote>
 <p>The third request for the single permit should return the following:</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="s2">"5c4015a630e941b6"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"Replace existing 12' x 14' deck with a 20' x 20' deck (estimated cost $8,000), zone res a2, receipt  No.58233"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"number"</span><span class="p">:</span><span class="s2">"17961"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"jurisdiction"</span><span class="p">:</span><span class="s2">"Agawam Town"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"job_value"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"Building"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"subtype"</span><span class="p">:</span><span class="s2">"Building permit - new"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"fees"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"active"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"file_date"</span><span class="p">:</span><span class="s2">"2014-04-14"</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"final_date"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"construction_duration"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"approval_duration"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"inspections_pass_rate"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"contractor_id"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"address"</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p">{</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"street_no"</span><span class="p">:</span><span class="s2">"123"</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"street"</span><span class="p">:</span><span class="s2">"MAIN ST"</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"city"</span><span class="p">:</span><span class="s2">"AGAWAM"</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="s2">"01001"</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"zip_code_ext"</span><span class="p">:</span><span class="nb nb-Type">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"MA"</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">"latlng"</span><span class="p">:[</span><span class="mf">42.087486267089844</span><span class="p">,</span><span class="o">-</span><span class="mf">72.6227035522461</span><span class="p">]</span><span class="w"></span>
-<span class="w">            </span><span class="p">},</span><span class="w"></span>
-<span class="w">        </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p">[</span><span class="s2">"accessory_structure"</span><span class="p">,</span><span class="s2">"residential"</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"id"</span><span class="p">:</span><span class="s">"5c4015a630e941b6"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"description"</span><span class="p">:</span><span class="s">"Replace existing 12' x 14' deck with a 20' x 20' deck (estimated cost $8,000), zone res a2, receipt  No.58233"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"number"</span><span class="p">:</span><span class="s">"17961"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"jurisdiction"</span><span class="p">:</span><span class="s">"Agawam Town"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"job_value"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"type"</span><span class="p">:</span><span class="s">"Building"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"subtype"</span><span class="p">:</span><span class="s">"Building permit - new"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"fees"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"status"</span><span class="p">:</span><span class="s">"active"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"file_date"</span><span class="p">:</span><span class="s">"2014-04-14"</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"issue_date"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"final_date"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"construction_duration"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"approval_duration"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"inspections_pass_rate"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"contractor_id"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">        </span><span class="s">"address"</span><span class="p">:</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="s">"street_no"</span><span class="p">:</span><span class="s">"123"</span><span class="p">,</span>
+<span class="w">                </span><span class="s">"street"</span><span class="p">:</span><span class="s">"MAIN ST"</span><span class="p">,</span>
+<span class="w">                </span><span class="s">"city"</span><span class="p">:</span><span class="s">"AGAWAM"</span><span class="p">,</span>
+<span class="w">                </span><span class="s">"zip_code"</span><span class="p">:</span><span class="s">"01001"</span><span class="p">,</span>
+<span class="w">                </span><span class="s">"zip_code_ext"</span><span class="p">:</span><span class="nx">null</span><span class="p">,</span>
+<span class="w">                </span><span class="s">"state"</span><span class="p">:</span><span class="s">"MA"</span><span class="p">,</span>
+<span class="w">                </span><span class="s">"latlng"</span><span class="p">:[</span><span class="m m-Double">42.087486267089844</span><span class="p">,</span><span class="o">-</span><span class="m m-Double">72.6227035522461</span><span class="p">]</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">        </span><span class="s">"tags"</span><span class="p">:</span>
+<span class="w">            </span><span class="p">[</span><span class="s">"accessory_structure"</span><span class="p">,</span><span class="s">"residential"</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
 </code></pre></div>
 <p>And there you have it! This information can be exported for whatever outside needs you have, and this process can be easily repeated for any addresses and permits needed. </p>
 <p>The same information is searchable via our Web App at https://app.shovels.ai/.</p>
