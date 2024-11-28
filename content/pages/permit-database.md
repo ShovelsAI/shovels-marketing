@@ -7,7 +7,7 @@ Slug: permit-database
     <h1 class="hero_title text-amber-300">The next generation of permit and contractor search</h1>
     <p class="hero_description text-lime-50">Powered by our more powerful V2 API, explore nationwide building permits with advanced filtering and intelligent contractor matching</p>
     <div class="mt-10 mb-20 flex gap-x-6 justify-start">
-      <a href="{{ APPURL }}"
+      <a href="https://app.shovels.ai"
       class="shovels-button"
       target="_blank">Try Shovels Online <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
