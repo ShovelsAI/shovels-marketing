@@ -1,6 +1,8 @@
 AUTHOR = 'Shovels'
 SITENAME = 'Shovels | '
 SITEURL = 'http://127.0.0.1:8000'
+APPURL = 'https://app.shovels.ai'
+APIDOCSURL = 'https://shovels-v2.redoc.ly'
 
 PATH = 'content'
 

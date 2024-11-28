@@ -7,9 +7,9 @@ slug: api
     <h1 class="hero_title text-amber-300">The building permit and contractor API</h1>
     <p class="hero_description text-lime-50">Ping by address, contractor name, or contractor license. Receive all the data. Our API is intuitive and fast.</p>
     <div class="mt-10 mb-20 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai"
+      <a href="{{ APPURL }}"
         class="shovels-button" target="_blank">Free trial <img src="theme/images/caret-right.svg"></a>
-      <a href="https://shovels-v2.redoc.ly"
+      <a href="{{ APIDOCSURL }}"
         class="shovels-button bg-stone-200" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
     </div>
   </div>

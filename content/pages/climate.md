@@ -8,7 +8,7 @@ slug: climate
       <p class="hero_description">We see every solar, EV charger, heat pump HVAC, water heater, and
         battery installation. Use this data to build lead lists and create installer networks based on contractor service area.</p>
       <div class="mt-10 mb-20 flex gap-x-6 justify-start">
-        <a href="https://app.shovels.ai"
+        <a href="{{ APPURL }}"
         class="shovels-button"
         target="_blank">Register <img class="inline" src="theme/images/caret-right.svg"> </a>
         <a href="{static}/pdfs/White_Paper_Climate.pdf"

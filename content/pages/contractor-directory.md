@@ -7,7 +7,7 @@ slug: contractor-directory
     <h1 class="hero_title text-amber-300">The nationwide building contractor directory</h1>
     <p class="hero_description text-lime-50">Look up contractors by their service area, not their business address. Filter by their permit history, construction speed, and inspection pass rate.</p>
     <div class="mt-10 mb-20">
-      <a href="https://app.shovels.ai"
+      <a href="{{ APPURL }}"
       class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-medium whitespace-nowrap"
       target="_blank">Try it <img class="inline" src="theme/images/caret-right.svg"> </a>
     </div>
