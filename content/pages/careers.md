@@ -2,15 +2,15 @@ Title: Careers at Shovels
 slug: careers
 
 <!-- hero -->
-<section class="bg-emerald-900 py-24">
+<section class="bg-emerald-900 py-12 md:py-24">
   <div class="mx-auto max-w-4xl px-6">
-    <div class="flex items-center justify-center">
-      <div class="flex-1 text-center">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+      <div class="flex-1 text-center md:text-left">
         <h1 class="hero_title text-white">Join Our Team</h1>
         <p class="hero_description !text-white">Help us build the future of construction data.</p>
       </div>
       <div class="flex-1 flex justify-center">
-        <image src="/images/careers/shovels-guy-pose5.png" class="max-w-[25%]">
+        <image src="/images/careers/shovels-guy-pose5.png" class="max-w-[50%] md:max-w-[25%]">
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@ slug: careers
 <!-- position -->
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
-    <h1 class="text-4xl font-bold tracking-tight mb-6">Software/Data/Infrastructure Engineer ‍️👷‍♀️👷</h1>
+    <h1 class="text-4xl font-bold tracking-tight mb-6 break-words text-left">Software / Data / Infrastructure Engineer ‍️👷‍♀️👷</h1>
   </div>
 </section>
 
@@ -45,7 +45,7 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">What Makes Shovels Unique</h2>
-    <div class="flex items-center gap-x-8">
+    <div class="flex flex-col md:flex-row items-center gap-x-8 gap-y-8">
       <div class="flex-1">
         <ul class="list-disc pl-6 space-y-2">
             <li><strong>Exposure to all parts of the company:</strong> We believe in radical transparency. At Shovels, you'll see financial statements, participate in strategic planning, and have a voice in shaping the company's direction. Everyone is part of the conversation about the future.</li>
@@ -80,7 +80,7 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">Our Tech Stack</h2>
-    <div class="flex items-center gap-x-8">
+    <div class="flex flex-col md:flex-row items-center gap-x-8 gap-y-8">
       <ul class="list-disc pl-6 space-y-2">
       <li><strong>Languages & Frameworks:</strong> Python, FastAPI, pandas, DuckDB, dbt, scitkit-learn</li>
       <li><strong>Gen AI:</strong> AWS Bedrock (Anthropic, Meta, etc), OpenAI, AWS SageMaker</li>
@@ -134,7 +134,7 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">How to Apply</h2>
-    <div class="flex items-center gap-x-8">
+    <div class="flex flex-col md:flex-row items-center gap-x-8 gap-y-8">
       <div class="flex-1">
         <p class="mb-4">No lengthy forms, no pointless take-home assignments. Send your resume and a quick note about why you're excited to join us to <a href="mailto:luka@shovels.ai" class="text-blue-600 hover:underline">luka@shovels.ai</a>. We'll set up a friendly chat to dive into your past work and solve a technical challenge together.</p>
         <p class="font-bold">Let's build something amazing!</p>
