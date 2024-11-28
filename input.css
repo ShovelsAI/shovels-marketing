@@ -203,10 +203,13 @@ div.article img {
 
 /* for the Home page's example API responses */
 .hljs {
-  background: #000 !important; 
+  background: #111827 !important;
 }
 .hljs-attr {
-  color: #e04c90 !important
+  color: #fcd34d !important;
+}
+.hljs-number{
+  color: #0ca77c !important;
 }
 .hljs-string,
 .hljs-section,
@@ -214,5 +217,5 @@ div.article img {
 .hljs-template-variable,
 .hljs-deletion,
 .hljs-punctuation {
-  color: white !important;
+  color: #f7fee7 !important;
 }
