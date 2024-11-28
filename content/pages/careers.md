@@ -140,7 +140,7 @@ slug: careers
         <p class="font-bold">Let's build something amazing!</p>
       </div>
       <div class="flex-none">
-        <img src="/images/careers/shovels-guy-pose9.png" class="w-72">
+        <img src="/images/careers/shovels-guy-pose9.png" class="h-[130px]">
       </div>
     </div>
   </div>
