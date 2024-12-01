@@ -36,7 +36,7 @@ slug: careers
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">The Opportunity</h2>
     <p class="mb-4">This is not just another engineer job—it's a chance to <strong>shape the core of a company that's going places fast</strong>. As our <strong>Software/Data/Infra Engineer</strong>, you'll be at the intersection of <strong>data engineering, gen AI, backend systems, and infrastructure</strong>. You'll have the <strong>autonomy to solve challenging problems and build robust systems</strong> while working with a modern tech stack that's constantly evolving.</p>
-    <p>We're not hiring for a narrow, specialized role. You'll join a <strong>small, core team of engineers</strong> who take on <strong>interdisciplinary challenges</strong> and <strong>own all parts of the stack</strong>—from data pipelines to API development and infrastructure.</p>
+    <p class="mb-4">We're not hiring for a narrow, specialized role. You'll join a <strong>small, core team of engineers</strong> who take on <strong>interdisciplinary challenges</strong> and <strong>own all parts of the stack</strong>—from data pipelines to API development and infrastructure.</p>
     <p>Whether you're tuning distributed systems, optimizing data pipelines, or brainstorming with the team, you'll <strong>make a real impact</strong> here.</p>
   </div>
 </section>
