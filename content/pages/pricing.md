@@ -1,4 +1,5 @@
 Title: API Pricing
+Description: Flexible pricing options for Shovels' permit and contractor data APIs, designed to fit businesses of all sizes and budgets.
 slug: pricing
 
 <div class="mx-auto max-w-5xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">

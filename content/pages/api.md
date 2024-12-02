@@ -1,4 +1,5 @@
 Title: Building Contractor and Permit API
+Description: Access our V2 API with enhanced geo-search capabilities, expanded filtering, and lightning-fast response times for building permit and contractor data.
 slug: api
 
 <!-- hero -->
@@ -8,13 +9,9 @@ slug: api
     <p class="hero_description text-lime-50">Access our completely rebuilt V2 API with enhanced geo-search capabilities, expanded filtering, and lightning-fast response times.</p>
     <div class="mt-10 mb-20 flex items-center gap-x-6">
       <a href="https://app.shovels.ai"
-        class="shovels-button inline-flex items-center gap-x-2" target="_blank">
-        Free trial <img src="theme/images/caret-right.svg" class="inline-block">
-      </a>
+        class="shovels-button" target="_blank">Free trial <img src="theme/images/caret-right.svg"></a>
       <a href="https://shovels-v2.redoc.ly"
-        class="shovels-button bg-stone-200 inline-flex items-center gap-x-2" target="_blank">
-        API Documentation <img src="theme/images/caret-right.svg" class="inline-block">
-      </a>
+        class="shovels-button bg-stone-200" target="_blank">API Documentation <img src="theme/images/caret-right.svg"></span></a>
     </div>
   </div>
   <div class="hero_image-container">

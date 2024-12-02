@@ -1,4 +1,11 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    {% if articles_page.number > 1 %}
+        <meta name="robots" content="noindex,follow" />
+    {% endif %}
+{% endblock %}
 
 {% block title %}{{ SITENAME }} - {{ category }} category{% endblock %}
 

@@ -1,4 +1,5 @@
 Title: Property Data for Property Tech Companies
+Description: Enhance your property tech software with contractor segmentation by revenue, permit count, and service area data to better serve your users.
 slug: software
 
 

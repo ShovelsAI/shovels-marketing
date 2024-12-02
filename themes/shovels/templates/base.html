@@ -72,6 +72,16 @@
     href="{{ FEED_DOMAIN }}/{% if TAG_FEED_RSS_URL %}{{ TAG_FEED_RSS_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_RSS.format(slug=tag.slug) }}{% endif %}"
     type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
   {% endif %}
+  <!-- Meta description -->
+  {% if article and article.summary %}
+    <meta name="description" content="{{ article.summary|striptags|truncate(160) }}">
+  {% elif page and page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% elif page and page.summary %}
+    <meta name="description" content="{{ page.summary|striptags|truncate(160) }}">
+  {% else %}
+    <meta name="description" content="Shovels helps you identify qualified contractors, understand their work history, and connect with decision makers. Access rich permit data to power your contractor sales and marketing.">
+  {% endif %}
   {% endblock head %}
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="/output.css" />

@@ -1,4 +1,5 @@
 Title: Nationwide Building Contractor API
+Description: Access our comprehensive contractor directory with service area mapping, permit history, construction speed metrics, and inspection pass rates.
 slug: contractor-directory
 
 <!-- hero -->
@@ -9,7 +10,7 @@ slug: contractor-directory
     <div class="mt-10 mb-20">
       <a href="https://app.shovels.ai"
       class="px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-emerald-900 md:text-lg  font-medium whitespace-nowrap"
-      target="_blank">Try it <img class="inline" src="theme/images/caret-right.svg"> </a>
+      target="_blank">Try it <img class="inline" src="theme/images/caret-right.svg" alt="Right arrow"> </a>
     </div>
   </div>
   <div class="hero_image-container">

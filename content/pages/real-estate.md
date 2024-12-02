@@ -1,4 +1,5 @@
 Title: Find the best building sites using building permits
+Description: Improve site selection with our Neighborhood Vitality Index (NVI) and permit approval speed metrics to identify the most actively improving areas.
 slug: real-estate
 
 <!-- hero -->

@@ -98,4 +98,4 @@ We're coining a new term for this:  **Neighborhood Vitality Index**, or NVI ("en
 
 Want to see for yourself?  [Here's our Esri map](https://shovels.maps.arcgis.com/home/item.html?id=bcaed6407a4c47449ccc0769d9543c17)  of Dallas County!
 
-![Neighborhood Vitality Index in ESRI]({static}/images/esri-nvi-map.jpg)
+![Map of Dallas County showing the Neighborhood Vitality Index visualization in ESRI's mapping software]({static}/images/esri-nvi-map.jpg)

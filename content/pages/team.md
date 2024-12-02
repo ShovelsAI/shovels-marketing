@@ -1,9 +1,10 @@
 Title: The team behind Shovels
 slug: team
+Description: Meet the talented team behind Shovels - experienced leaders in proptech, data engineering, and growth who are revolutionizing how companies connect with contractors.
 
 <div class="py-24">
   <div class="px-6 lg:px-8 text-center mb-10">
-    <h2 class="text-5xl  tracking-tight text-amber-300">Team Shovels</h2>
+    <h1 class="text-5xl  tracking-tight text-amber-300">Team Shovels</h1>
     <p class="mt-6 text-stone-200 text-lg max-w-md mx-auto">Shovels launched in 2022 with the support of a global network of top investors.</p>
   </div>
   <div class="mx-auto max-w-5xl gap-y-20 gap-x-8 px-6 lg:px-8" >

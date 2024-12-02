@@ -1,4 +1,5 @@
 Title: Careers at Shovels
+Description: Join our team of engineers and data enthusiasts revolutionizing the construction industry. Help us build the future of construction data.
 slug: careers
 
 <!-- hero -->
@@ -93,7 +94,7 @@ slug: careers
       <div class="flex-1">
       </div>
       <div class="flex-none">
-        <img src="/images/careers/shovels-guy-cloud.png" class="w-72">
+        <img src="/images/careers/shovels-guy-cloud.png" class="w-72" alt="Illustration of Shovels mascot with cloud computing">
       </div>
     </div>
   </div>
@@ -140,7 +141,7 @@ slug: careers
         <p class="font-bold">Let's build something amazing!</p>
       </div>
       <div class="flex-none">
-        <img src="/images/careers/shovels-guy-pose9.png" class="h-[130px]">
+        <img src="/images/careers/shovels-guy-pose9.png" class="h-[130px]" alt="Shovels mascot in a welcoming pose">
       </div>
     </div>
   </div>

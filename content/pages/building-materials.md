@@ -1,4 +1,5 @@
 Title: Leads for building materials suppliers and building product manufacturers
+Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, CRM enhancement, and fraud prevention.
 slug: building-materials
 
 <!-- hero -->
@@ -8,7 +9,7 @@ slug: building-materials
       <p class="hero_description">Shovels compiles the building permits for every large commercial and residential contractor so we add critical intelligence to your CRM and help you find new contractor relationships.</p>
     </div>
     <div class="hero_image-container">
-      <img class="max-h-[600px]" src="theme/images/finance/hero.svg" alt="Shovels building permit API">
+      <img class="max-h-[600px]" src="theme/images/finance/hero.svg" alt="Illustration showing building materials and construction data analytics">
     </div>
 </section>
 
@@ -56,7 +57,7 @@ slug: building-materials
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/finance/icon_updates.svg">
+          <img src="theme/images/finance/icon_updates.svg" alt="Credit worthiness icon">
         </div>
         <span class="elaboration-card_title">Check credit worthiness for building contractors</span>
       </dt>

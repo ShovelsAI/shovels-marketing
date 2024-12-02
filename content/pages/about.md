@@ -1,4 +1,5 @@
 Title: About Shovels, Inc.
+Description: Learn about Shovels - the building permit intelligence platform helping construction companies leverage data to make better decisions and grow their business.
 slug: about
 
 <div class="py-24">

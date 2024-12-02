@@ -1,4 +1,5 @@
 Title: Building Contractor and Permit Data Feed
+Description: Get nationwide building permit and contractor data directly in your Snowflake, Big Query, or Databricks environment with automatic updates and flexible delivery options.
 slug: data-feed
 
 <!-- hero -->
@@ -12,7 +13,7 @@ slug: data-feed
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg">
+    <img class="max-h-[500px]" src="theme/images/data-feed/hero.svg" alt="Data feed and analytics illustration">
   </div>
 </section>
 
@@ -24,7 +25,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/ping.png">
+          <img src="theme/images/data-feed/ping.png" alt="Real-time data icon">
         </div>
         <span class="elaboration-card_title">Add permits to Snowflake</span>
       </dt>
@@ -79,7 +80,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/terms.png">
+          <img src="theme/images/data-feed/terms.png" alt="Terms and conditions icon">
         </div>
         <span class="elaboration-card_title">Flexible terms</span>
       </dt>

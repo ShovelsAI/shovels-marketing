@@ -1,4 +1,5 @@
 Title: Terms of Use
+Description: Review Shovels' terms of service to understand the rules and conditions for using our building permit and contractor data services.
 slug: terms
 
 

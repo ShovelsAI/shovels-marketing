@@ -1,4 +1,5 @@
 Title: Thank You!
+Description: Thank you for your interest in Shovels' construction data solutions.
 slug: thanks
 
 <div class="mt-24 pb-24">

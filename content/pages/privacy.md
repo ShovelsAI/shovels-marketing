@@ -1,4 +1,5 @@
 Title: Privacy Policy
+Description: Read Shovels' privacy policy to understand how we collect, use, and protect your information when using our services.
 slug: privacy
 
 <section class="py-8 px-4 md:px-0">

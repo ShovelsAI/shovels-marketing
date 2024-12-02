@@ -40,7 +40,7 @@
       {% endif %}
       <div class="block">
         <!-- Image placeholder -->
-        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" class="w-full object-cover">
+        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle }}" class="w-full object-cover">
         <!-- Title and date container -->
         <div class="break-words">
           <h1 class="my-5 text-4xl">

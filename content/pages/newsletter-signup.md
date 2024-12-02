@@ -1,4 +1,5 @@
 Title: Newsletter Sign-up
+Description: Subscribe to Shovels' monthly newsletter for the latest updates on construction data, product features, and industry insights.
 slug: newsletter
 
 

@@ -1,4 +1,5 @@
 Title: Go-to-market data for climate tech
+Description: Leverage building permit data to identify and reach the right buyers for construction projects at the perfect time, with intelligent sales and marketing insights.
 slug: go-to-market
 
 <!-- hero -->

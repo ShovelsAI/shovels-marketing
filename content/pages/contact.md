@@ -1,4 +1,5 @@
 Title: Contact Shovels
+Description: Get in touch with Shovels to learn how our construction data solutions can help your business grow and succeed.
 slug: contact
 
 <div class="mx-auto max-w-4xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
