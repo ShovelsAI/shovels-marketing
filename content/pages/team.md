@@ -9,7 +9,14 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
   </div>
   <div class="mx-auto max-w-5xl gap-y-20 gap-x-8 px-6 lg:px-8" >
     <ul role="list"
-        x-data="{ ryan: false, luka: false, petra: false, betty: false, alex: false, whitney: false}"
+        x-data='{
+          "ryan": false,
+          "luka": false,
+          "petra": false,
+          "betty": false,
+          "alex": false,
+          "whitney": false
+        }'
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
       <li x-on:mouseenter="ryan = true" x-on:mouseleave="ryan = false">
         <div x-show="!ryan">
