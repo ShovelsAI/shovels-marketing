@@ -41,6 +41,7 @@
 <link href="/theme/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/theme/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="/theme/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/theme/images/favicon.ico" rel="icon" sizes="16x16" type="image/png"/>
 <link href="/theme/images/site.webmanifest" rel="manifest"/>
 <link color="#5bbad5" href="/theme/images/safari-pinned-tab.svg" rel="mask-icon"/>
 <script defer="" src="/theme/js/alpine.js"></script>
@@ -50,6 +51,7 @@
 <script>hljs.highlightAll();</script>
 <meta content="#da532c" name="msapplication-TileColor"/>
 <meta content="#ffffff" name="theme-color"/>
+<link href="data:;base64,=" rel="icon"/>
 </link></meta><link href="https://www.shovels.ai/team" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Team", "item": "https://www.shovels.ai/team.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Shovels"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>The team behind Shovels</p>", "about": "pages"}</script></head>
 <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
 <body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }" x-init="inverted = checkInverted()">
@@ -389,7 +391,14 @@ Leaving: "duration-100 ease-in"
 <p class="mt-6 text-stone-200 text-lg max-w-md mx-auto">Shovels launched in 2022 with the support of a global network of top investors.</p>
 </div>
 <div class="mx-auto max-w-5xl gap-y-20 gap-x-8 px-6 lg:px-8">
-<ul class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2" role="list" x-data="{ ryan: false, luka: false, petra: false, betty: false, alex: false, whitney: false}">
+<ul class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2" role="list" x-data='{
+          "ryan": false,
+          "luka": false,
+          "petra": false,
+          "betty": false,
+          "alex": false,
+          "whitney": false
+        }'>
 <li x-on:mouseenter="ryan = true" x-on:mouseleave="ryan = false">
 <div x-show="!ryan">
 <img alt="Ryan Buckley from Shovels" class="w-full" src="theme/images/team/ryan.svg"/>
