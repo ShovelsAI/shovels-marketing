@@ -35,7 +35,9 @@
 <meta content="Pelican" name="generator">
 <link href="https://www.shovels.ai/feeds/all.atom.xml" rel="alternate" title="Shovels |  Full Atom Feed" type="application/atom+xml"/>
 <link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="alternate" title="Shovels |  Categories Atom Feed" type="application/atom+xml"/>
-<meta content="&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;" name="description"/>
+<!-- Meta description -->
+<meta content="The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building..." name="description"/>
+<meta content="&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;" name="description">
 <meta content="/images/api-blog.jpg" property="og:image"/>
 <meta content="/images/api-blog.jpg" property="og:image:url"/>
 <meta content="" property="og:image:alt"/>
@@ -54,7 +56,7 @@
 <script>hljs.highlightAll();</script>
 <meta content="#da532c" name="msapplication-TileColor"/>
 <meta content="#ffffff" name="theme-color"/>
-</link></meta><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.shovels.ai/blog"}, {"@type": "ListItem", "position": 3, "name": "How to use the shovels api", "item": "https://www.shovels.ai/blog/how-to-use-the-shovels-api"}, {"@type": "ListItem", "position": 4, "name": "Index", "item": "https://www.shovels.ai/blog/how-to-use-the-shovels-api/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Ryan Buckley"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>How to use the Shovels API</p>", "about": "Customer Success", "datePublished": "2023-10-13 00:00", "image": "/images/api-blog.jpg"}</script></head>
+</link></meta></meta><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.shovels.ai/blog"}, {"@type": "ListItem", "position": 3, "name": "How to use the shovels api", "item": "https://www.shovels.ai/blog/how-to-use-the-shovels-api"}, {"@type": "ListItem", "position": 4, "name": "Index", "item": "https://www.shovels.ai/blog/how-to-use-the-shovels-api/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Ryan Buckley"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>How to use the Shovels API</p>", "about": "Customer Success", "datePublished": "2023-10-13 00:00", "image": "/images/api-blog.jpg"}</script></head>
 <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
 <body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }" x-init="inverted = checkInverted()">
 <!-- Google Tag Manager (noscript) -->
@@ -66,7 +68,7 @@
 <a href="/">
 <span class="sr-only">Shovels</span>
 <a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
-<img alt="Shovels logo" class="h-10 w-auto sm:h-12" id="navbar-logo" x-bind:src="inverted ? 'https://www.shovels.ai/theme/images/shovels-navbar-logo-inverted.svg' : 'https://www.shovels.ai/theme/images/shovels-navbar-logo.svg'"/>
+<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" x-bind:src="inverted ? 'https://www.shovels.ai/theme/images/shovels-navbar-logo-inverted.svg' : 'https://www.shovels.ai/theme/images/shovels-navbar-logo.svg'"/>
 </a>
 </a>
 </div>
@@ -306,7 +308,7 @@ Leaving: "duration-100 ease-in"
 <div class="px-5 pt-5 pb-6">
 <div class="flex items-center justify-between">
 <div>
-<image class="h-6" src="theme/images/shovels-navbar-logo.svg"/>
+<img alt="Shovels - Building permit and contractor intelligence" class="h-8 w-auto" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
 </div>
 <div class="-mr-2">
 <button @click="mobileOpen = false" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500" type="button">
@@ -396,7 +398,7 @@ Leaving: "duration-100 ease-in"
 </div>
 <div class="block">
 <!-- Image placeholder -->
-<img class="w-full object-cover" src="/images/api-blog.jpg"/>
+<img alt="The definitive guide to getting started with the Shovels API" class="w-full object-cover" src="/images/api-blog.jpg"/>
 <!-- Title and date container -->
 <div class="break-words">
 <h1 class="my-5 text-4xl">

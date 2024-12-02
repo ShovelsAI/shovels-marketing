@@ -1117,6 +1117,10 @@ select {
   height: 1.25rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-16 {
   height: 4rem;
 }
