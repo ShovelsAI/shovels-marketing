@@ -120,7 +120,7 @@ body.inverted {
 
 @layer components {
   .shovels-button {
-    @apply px-5 py-2 md:px-10 md:py-4 bg-[#E8BD51] rounded justify-center items-center gap-2.5 inline-flex text-[#101727] md:text-lg font-medium whitespace-nowrap hover:opacity-[.85];
+    @apply px-6 py-3 bg-[#E8BD51] rounded-lg font-medium text-neutral-900 transition-all duration-200 hover:bg-opacity-90 hover:-translate-y-0.5 active:translate-y-0;
   }
   .pricing-button {
     @apply bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded font-medium text-lg
