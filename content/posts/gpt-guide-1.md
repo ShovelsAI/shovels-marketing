@@ -5,7 +5,7 @@ Modified: 2024-4-13
 Category: Customer Success
 Tags: ai, chatgpt, openai
 Authors: Ryan Buckley
-Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.
+Summary: A comprehensive guide to using Shovels' custom GPT integration with ChatGPT, showing how to search building permits and find contractors across the US using natural language queries. Learn practical examples and tips for getting the most out of this powerful tool.
 Image: /images/shovelsgpt.png
 
 

@@ -25,7 +25,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/ping.png" alt="Real-time data icon">
+          <img src="theme/images/data-feed/ping.png" alt="Snowflake integration icon">
         </div>
         <span class="elaboration-card_title">Add permits to Snowflake</span>
       </dt>
@@ -36,7 +36,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/json.png">
+          <img src="theme/images/data-feed/json.png" alt="Big Query integration icon">
         </div>
         <span class="elaboration-card_title">Add permits to Big Query</span>
       </dt>
@@ -47,7 +47,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/accurate.png">
+          <img src="theme/images/data-feed/accurate.png" alt="Parquet format icon">
         </div>
         <span class="elaboration-card_title">Parquet format</span>
       </dt>
@@ -58,7 +58,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/metrics.png">
+          <img src="theme/images/data-feed/metrics.png" alt="Automatic updates icon">
         </div>
         <span class="elaboration-card_title">Automatic updates</span>
       </dt>
@@ -69,7 +69,7 @@ slug: data-feed
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/data-feed/schema.png">
+          <img src="theme/images/data-feed/schema.png" alt="Custom schema icon">
         </div>
         <span class="elaboration-card_title">Custom schema</span>
       </dt>

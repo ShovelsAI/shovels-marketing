@@ -23,7 +23,7 @@ slug: software
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_permits.svg">
+            <img src="theme/images/finance/icon_permits.svg" alt="Permit data icon">
           </div>
           <span class="elaboration-card_title">Enhance your CRM with permit data</span>
         </dt>
@@ -34,7 +34,7 @@ slug: software
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/software/icon_clock.svg">
+            <img src="theme/images/software/icon_clock.svg" alt="History icon">
           </div>
           <span class="elaboration-card_title">Include permit history as a product feature</span>
         </dt>
@@ -45,7 +45,7 @@ slug: software
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/software/icon_pin.svg">
+            <img src="theme/images/software/icon_pin.svg" alt="Location pin icon">
           </div>
           <span class="elaboration-card_title">Build installer networks by service area</span>
         </dt>
@@ -56,7 +56,7 @@ slug: software
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/builders/icon_star.svg">
+            <img src="theme/images/builders/icon_star.svg" alt="Competition tracking icon">
           </div>
           <span class="elaboration-card_title">Stay ahead of the competition</span>
         </dt>
@@ -67,7 +67,7 @@ slug: software
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_updates.svg">
+            <img src="theme/images/finance/icon_updates.svg" alt="Quality metrics icon">
           </div>
           <span class="elaboration-card_title">Find high quality contractors</span>
         </dt>
@@ -78,7 +78,7 @@ slug: software
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/builders/icon_unbiased.svg">
+            <img src="theme/images/builders/icon_unbiased.svg" alt="Data sharing icon">
           </div>
           <span class="elaboration-card_title">Easy sharing to your data lake</span>
         </dt>

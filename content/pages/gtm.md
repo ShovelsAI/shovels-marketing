@@ -11,7 +11,7 @@ slug: go-to-market
     </p>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="Shovels.ai building permits">
+    <img class="max-h-[400px]" src="theme/images/gtm/hero.svg" alt="Illustration showing building permit data and analytics">
   </div>
 </section>
 <!-- elaboration -->
@@ -25,7 +25,7 @@ slug: go-to-market
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_permits.svg">
+            <img src="theme/images/finance/icon_permits.svg" alt="Recent permits icon">
           </div>
           <span class="elaboration-card_title">Recent permits</span>
         </dt>
@@ -36,7 +36,7 @@ slug: go-to-market
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_metrics.svg">
+            <img src="theme/images/finance/icon_metrics.svg" alt="Data quality icon">
           </div>
           <span class="elaboration-card_title">Super clean data</span>
         </dt>
@@ -47,7 +47,7 @@ slug: go-to-market
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_integrations.svg">
+            <img src="theme/images/finance/icon_integrations.svg" alt="Integrations icon">
           </div>
           <span class="elaboration-card_title">Easy integrations</span>
         </dt>
@@ -58,7 +58,7 @@ slug: go-to-market
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_updates.svg">
+            <img src="theme/images/finance/icon_updates.svg" alt="AI classification icon">
           </div>
           <span class="elaboration-card_title">AI-based classifications</span>
         </dt>
@@ -69,7 +69,7 @@ slug: go-to-market
       <div class="elaboration-card">
         <dt class="">
           <div class="mb-6">
-            <img src="theme/images/finance/icon_heart.svg">
+            <img src="theme/images/finance/icon_heart.svg" alt="Preferred choice icon">
           </div>
           <span class="elaboration-card_title">Preferred by data teams</span>
         </dt>

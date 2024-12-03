@@ -14,7 +14,7 @@ slug: contractor-directory
     </div>
   </div>
   <div class="hero_image-container">
-    <img class="max-h-[500px]" src="theme/images/contractor-directory/shane.png">
+    <img class="max-h-[500px]" src="theme/images/contractor-directory/shane.png" alt="Illustration of contractor directory interface">
   </div>
 </section>
 
@@ -25,7 +25,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/contractor-directory/ping.svg">
+          <img src="theme/images/contractor-directory/ping.svg" alt="Contractor database icon">
         </div>
         <span class="elaboration-card_title">2.5M contractors</span>
       </dt>
@@ -36,7 +36,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/contractor-directory/area.png">
+          <img src="theme/images/contractor-directory/area.png" alt="Service area map icon">
         </div>
         <span class="elaboration-card_title">Look up by service area</span>
       </dt>
@@ -47,7 +47,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/contractor-directory/accurate.png">
+          <img src="theme/images/contractor-directory/accurate.png" alt="Data accuracy icon">
         </div>
         <span class="elaboration-card_title">Always accurate</span>
       </dt>
@@ -58,7 +58,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/contractor-directory/metrics.png">
+          <img src="theme/images/contractor-directory/metrics.png" alt="Quality metrics icon">
         </div>
         <span class="elaboration-card_title">Quality metrics</span>
       </dt>
@@ -69,7 +69,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/contractor-directory/job.png">
+          <img src="theme/images/contractor-directory/job.png" alt="Job availability icon">
         </div>
         <span class="elaboration-card_title">Job availability</span>
       </dt>
@@ -80,7 +80,7 @@ slug: contractor-directory
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/api.png">
+          <img src="theme/images/permit-database/api.png" alt="API and CSV export icon">
         </div>
         <span class="elaboration-card_title">CSVs and APIs</span>
       </dt>

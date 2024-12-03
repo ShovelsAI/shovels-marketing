@@ -5,7 +5,7 @@ Modified: 2024-8-9
 Category: Company
 Tags: construction software, autodesk construction cloud,
 Authors: Ryan Buckley
-Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.
+Summary: Shovels announces official integration partnership with Autodesk Construction Cloud, enabling ACC users to access nationwide permit data, track jurisdiction timelines, and identify development projects directly within their existing workflow.
 Image: /images/autodesk.png
 
 

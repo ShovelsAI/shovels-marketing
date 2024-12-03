@@ -43,7 +43,7 @@ slug: climate
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/climate/icon_worker.svg" alt="Credit worthiness icon">
+          <img src="theme/images/climate/icon_worker.svg" alt="Installer network icon">
         </div>
         <span class="elaboration-card_title">Installer networks</span>
       </dt>
@@ -58,7 +58,7 @@ slug: climate
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/climate/icon_house.svg" alt="Credit worthiness icon">
+          <img src="theme/images/climate/icon_house.svg" alt="Properties icon">
         </div>
         <span class="elaboration-card_title">Properties</span>
       </dt>
@@ -72,7 +72,7 @@ slug: climate
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/climate/icon_historical_data.svg" alt="Credit worthiness icon">
+          <img src="theme/images/climate/icon_historical_data.svg" alt="Historical data icon">
         </div>
         <span class="elaboration-card_title">Historical data</span>
       </dt>

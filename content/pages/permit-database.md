@@ -24,7 +24,7 @@ slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/ping.svg" alt="Shovels building permit API">
+          <img src="theme/images/permit-database/ping.svg" alt="Save progress icon">
         </div>
         <span class="elaboration-card_title">Save Your Progress</span>
       </dt>
@@ -35,7 +35,7 @@ slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/lookup.png">
+          <img src="theme/images/permit-database/lookup.png" alt="Search functionality icon">
         </div>
         <span class="elaboration-card_title">Bi-directional Search</span>
       </dt>
@@ -46,7 +46,7 @@ slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/accurate.png">
+          <img src="theme/images/permit-database/accurate.png" alt="Geo-location accuracy icon">
         </div>
         <span class="elaboration-card_title">Precise Geo-Location</span>
       </dt>
@@ -57,7 +57,7 @@ slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/fees.png">
+          <img src="theme/images/permit-database/fees.png" alt="Advanced filters icon">
         </div>
         <span class="elaboration-card_title">10x More Filters</span>
       </dt>
@@ -68,7 +68,7 @@ slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/timeline.png">
+          <img src="theme/images/permit-database/timeline.png" alt="Modern interface icon">
         </div>
         <span class="elaboration-card_title">Modern Interface</span>
       </dt>
@@ -79,7 +79,7 @@ slug: permit-database
     <div class="elaboration-card">
       <dt class="">
         <div class="mb-6">
-          <img src="theme/images/permit-database/api.png">
+          <img src="theme/images/permit-database/api.png" alt="API version 2 icon">
         </div>
         <span class="elaboration-card_title">Powered by V2</span>
       </dt>
