@@ -2693,6 +2693,11 @@ div.article img {
   background-color: rgb(209 170 73 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-emerald-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-slate-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
