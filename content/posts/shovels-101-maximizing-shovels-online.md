@@ -55,7 +55,7 @@ Now that we’ve got the general use cases covered, let’s dig deep into the lo
 
 The first step is to determine what scale are you looking at, and in what region. If it’s a pretty niche project type, like New England `pool` installations, then you may want to zoom out and look at the `state` level. 
 
-On the othe end of the spectrum, if you’re looking at something very common like `New Construction` and `Residential`, then you may want to get as granular as `zip code`. 
+On the other end of the spectrum, if you’re looking at something very common like `New Construction` and `Residential`, then you may want to get as granular as `zip code`. 
 
 At the end of the day, you have unlimited searches, so there’s no harm in going piecemeal and working through your market area and seeing what volume you’re getting back.
 
