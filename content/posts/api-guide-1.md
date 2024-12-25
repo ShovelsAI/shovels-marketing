@@ -1,5 +1,5 @@
-Title: How to use the Shovels API
-Subtitle: The definitive guide to getting started with the Shovels API
+Title: How to use the Shovels V1 API
+Subtitle: The definitive guide to getting started with the Shovels V1 API
 Date: 2023-10-13
 Modified: 2023-10-13
 Category: Customer Success
