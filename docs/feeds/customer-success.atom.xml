@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2024-12-26T00:00:00-08:00</updated><entry><title>How to use the Shovels V1 API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-v1-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-v1-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;That is excellent news, and we are here to help. &lt;/p&gt;
+&lt;h2&gt;Authentication&lt;/h2&gt;
+&lt;p&gt;We use header key-based authentication. There are two steps to authenticate:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get your API key at &lt;a href="https://app.shovels.ai" target="_blank"&gt;https://app.shovels.ai&lt;/a&gt; . You will see it on your dashboard when you register and log in. &lt;/li&gt;
+&lt;li&gt;Add your key to this HTTP header when you make a request: &lt;code&gt;X-API-Key: YOUR_API_KEY_HERE&lt;/code&gt;. &lt;a href="https://realpython.com/python-requests/#request-headers" target="_blank"&gt;Click here&lt;/a&gt;  for more information about making HTTP requests with headers using Python. &lt;em&gt;(Note: you can use any programming language; we like Python 🐍)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Filters&lt;/h2&gt;
+&lt;p&gt;We learned early on that our customers wanted two types of filters:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;By activity&lt;/strong&gt;: Filter building activity by the &lt;em&gt;type&lt;/em&gt; of activity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;By date&lt;/strong&gt;: Show the activity in between two dates, and always display the most recent activity first&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Tags&lt;/h3&gt;
+&lt;p&gt;Let's look at the building activity filter first. We call types of activity &lt;em&gt;tags&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We offer 33 unique tags as of this publication date in October 2023. That number will increase over time! &lt;/p&gt;
+&lt;p&gt;To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1842205445" target="_blank"&gt;Data Dictionary&lt;/a&gt; . We'll try to keep this updated. &lt;/p&gt;
+&lt;p&gt;To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the &lt;a href="https://shovels-v2.redoc.ly/#operation/List/operation/get_all_available_tags_v1_list_tags_get" target="_blank"&gt;Get All Available Tags&lt;/a&gt;  endpoint.&lt;/p&gt;
+&lt;p&gt;To make this extra super clear, let's go through some examples. I'm going to show the code snippets using Curl, a command-line tool available natively in every operating system. Just open a new command-line prompt (e.g. Terminal on MacOS) to use it. &lt;/p&gt;
+&lt;h4&gt;Get details on every heat pump installation in a zip code&lt;/h4&gt;
+&lt;p&gt;Let's use 94123, my old neighborhood in San Francisco. Start by finding the right tag (using the methodology above) for heat pumps: &lt;code&gt;heat_pump&lt;/code&gt; should do the trick!&lt;/p&gt;
+&lt;p&gt;Next, find the endpoint. &lt;a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get" target="_blank"&gt;Get Permits By Zip Code&lt;/a&gt;  sounds about right! &lt;/p&gt;
+&lt;p&gt;Make the request. Here's the Curl command.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl&lt;span class="w"&gt; &lt;/span&gt;-X&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://api.shovels.ai/v1/permits/zip?zip_code=94123&amp;amp;tags=heat_pump&amp;amp;page=1&amp;amp;size=50&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;-H&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;accept: application/json&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;-H&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And it worked! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;items&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;07ec97288669e01793a9dbb47c352400&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;3550&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;BAKER ST&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;SAN FRANCISCO&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;94123&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;CA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lat&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m m-Double"&gt;37.804016&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;long&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m m-Double"&gt;122.44678&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;179c87dcfa6f499edff389c2272f819b&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;12&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;RICO WAY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;SAN FRANCISCO&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;94123&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;CA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lat&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m m-Double"&gt;37.805016&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;long&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m m-Double"&gt;122.438484&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So what do we do with all those &lt;code&gt;id&lt;/code&gt; values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the &lt;code&gt;id&lt;/code&gt; and pass it into our &lt;a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permit_by_id_v1_permits__id__get" target="_blank"&gt;Get Permit by ID&lt;/a&gt;  endpoint.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl&lt;span class="w"&gt; &lt;/span&gt;-X&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://api.shovels.ai/v1/permits/179c87dcfa6f499edff389c2272f819b&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;-H&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;accept: application/json&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;-H&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And we get this in response:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;jurisdiction&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;San Francisco&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;issue_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;2017-09-07&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;final_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Plumbing&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;inspections_pass_rate&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fees&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;1973404EE7003B21&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Work category: 1m; new rooftop heatpump with ductwork on rooftop, 24,000 btu&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contractor_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;number&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;PMW20170907784&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Active&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;179c87dcfa6f499edff389c2272f819b&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;12&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;RICO WAY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;SAN FRANCISCO&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;94123&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;CA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lat&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m m-Double"&gt;37.805016&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;long&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m m-Double"&gt;122.438484&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;air_source_heat_pump&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;heat_pump&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utilities&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Neato! If we wanted to store all these heat pump installs in a database or spreadsheet, we could write more code for that. I recommend asking ChatGPT to do it for you.&lt;/p&gt;
+&lt;h4&gt;Get all the heat pump HVAC installers in a zip code&lt;/h4&gt;
+&lt;p&gt;What if you don't care about the permits or the homes, and you just want to know who did the install? We can help with that, too! &lt;/p&gt;
+&lt;p&gt;Our handy &lt;a href="https://shovels-v2.redoc.ly/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get" target="_blank"&gt;Get Permits By Activity Zip Code&lt;/a&gt;  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. &lt;/p&gt;
+&lt;p&gt;For this API call, let's find all the heat pump HVAC installers who did work in the first two quarters of 2023. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/contractors/activity/zip?zip_code=94103&amp;amp;tags=heat_pump&amp;amp;start_date=2023-01-01&amp;amp;end_date=2023-07-01&amp;amp;page=1&amp;amp;size=50&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note that our dates take the form &lt;code&gt;YYYY-MM-DD&lt;/code&gt;. This is important!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The response now is:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;id&amp;quot;: &amp;quot;adfbb85fa395444c9516dcfe97ffcfb5&amp;quot;,
+  &amp;quot;name&amp;quot;: &amp;quot;DENIZ SALON&amp;quot;,
+  &amp;quot;business_name&amp;quot;: &amp;quot;KA - BI CONSTRUCTION INC.&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Same deal. The &lt;code&gt;id&lt;/code&gt; shown is our internal Shovels contractor ID. Let's hit our &lt;a href="https://shovels-v2.redoc.ly/#operation/Contractors/operation/get_contractor_by_id_v1_contractors__id__get" target="_blank"&gt;Get Contractor by Id&lt;/a&gt;  endpoint with it to get those contractor details! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/contractors/adfbb85fa395444c9516dcfe97ffcfb5&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And the details are:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;license&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;944398&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;DENIZ SALON&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;email&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;denizsalon@yahoo.com,salon642002@yahoo.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;BAYSHORE HY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;business_name&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;KA - BI CONSTRUCTION INC.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;adfbb85fa395444c9516dcfe97ffcfb5&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;phone&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;6502914299&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;1290&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;BURLINGAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;CA&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Dates&lt;/h3&gt;
+&lt;p&gt;Building permits have dates galore. We show file dates, issue dates, and final dates. File dates are when the permit was sent to the jurisdiction. Issue dates are when the permits are approved for construction, and the final dates is when the jurisdiction finally signs off on the finished work. &lt;/p&gt;
+&lt;p&gt;Our date filters, called &lt;code&gt;start_date&lt;/code&gt; and &lt;code&gt;end_date&lt;/code&gt;, are based solely on the file date.&lt;/p&gt;
+&lt;p&gt;To show how this works, let's look at permits filed in New York in August 2023. We can use our &lt;a href="https://shovels-v2.redoc.ly/#operation/Permits/operation/get_permits_by_state_v1_permits_state_get" target="_blank"&gt;Get Permits by State&lt;/a&gt;  endpoint! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -X &amp;#39;GET&amp;#39; \
+  &amp;#39;https://api.shovels.ai/v1/permits/state?state=NY&amp;amp;start_date=2023-08-01&amp;amp;end_date=2023-08-31&amp;amp;page=1&amp;amp;size=50&amp;#39; \
+  -H &amp;#39;accept: application/json&amp;#39; \
+  -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We could use tags here too, but I chose not to. Here's what the first two permits look like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;e101ca8b62f825a1199fb370365b85d7&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;3&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;NEW HAMPSHIRE AVE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;EAST GREENBUSH&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;12144&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;NY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lat&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m m-Double"&gt;42.625023&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;long&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m m-Double"&gt;73.725845&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;d0c345961c8c446f3e56655c0ddfca8a&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;410&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ROCKAWAY AVE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;HEMPSTEAD&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;11581&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;NY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lat&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m m-Double"&gt;40.658535&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;long&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m m-Double"&gt;73.70126&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I could look up the details on these the same way I described above. No need to repeat! &lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This API is meant to be fast to learn and easy to work with. If you have any questions (really!) we want to know and provide support so we can make it easier to use.&lt;/p&gt;
+&lt;p&gt;And if you find that you're looking for an endpoint that we're not offering yet, let us know. We just might build it. &lt;/p&gt;
+&lt;p&gt;Cheers! &lt;/p&gt;</content><category term="Customer Success"></category><category term="api"></category></entry><entry><title>How to use the Shovels app</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/" rel="alternate"></link><published>2024-02-12T00:00:00-08:00</published><updated>2023-02-12T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-02-12:/blog/how-to-use-the-shovels-app/</id><summary type="html">&lt;p&gt;Shovels app, a web application that provides access to building permit and contractor data, has been launched. The app, built using Google's Flutter technology, allows users to find and profile addresses, permits, and contractors. The application was developed in response to a market need for a user-friendly platform that doesn't require API knowledge. Future updates will include Android and iOS versions of the app, improved geocoding, and additional search and filter options. The app is priced at $499/month per account.&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are very excited to announce the launch of V1 of &lt;a href="https://app.shovels.ai"&gt;the Shovels app&lt;/a&gt;. This is a web application you can access on any desktop or mobile browser. Now you can access our building permit and contractor data without an API standing in the way. &lt;/p&gt;
+&lt;p&gt;I’m going to share the history of how we got here and why building software is a pretty big deal for us. Then I’ll share what we’re releasing today and, importantly, what’s in store for the future. &lt;/p&gt;
+&lt;h2&gt;How the Shovels API became an app&lt;/h2&gt;
+&lt;p&gt;We like data. It’s in our DNA. The founders, me and Luka, met over mobile data. We were both building separate companies, attacking the mobile data market from different angles. We combined the companies so we could offer a more complete picture of the mobile data environment.&lt;/p&gt;
+&lt;p&gt;Our first hire, Petra, is a data engineer. She brought some big company experience with her, largely from the firmographic (company) data market. She also liked the challenge of making real-world data more accessible and useful. &lt;/p&gt;
+&lt;p&gt;Ultimately, that’s what we’re doing here. We’re making government data more accessible and useful. It’s a big challenge. &lt;/p&gt;
+&lt;p&gt;When we started really putting the building blocks for Shovels in place, digging and framing the foundation (to use an apropos building analogy), we understood that there would three core objects in the data structure: addresses, permits, and contractors.&lt;/p&gt;
+&lt;p&gt;It made sense that they would be related. Permits have addresses. Contractors have permits. Therefore, contractors would also have addresses. We knew we could tie them all together in a relational database and help software developers build some really compelling applications.&lt;/p&gt;
+&lt;p&gt;And they did, and they are. We’re really excited to be helping a new crop of property, real estate, climate, and construction entrepreneurs build cool new applications.&lt;/p&gt;
+&lt;p&gt;Still, we kept hearing from our own sales and marketing outreach that there was a product missing. They wanted to be able to browse the permits and contractors in our system. They wanted to be able to download this data without needing to contact us, wait for a reply, and then negotiate a price on a custom report.&lt;/p&gt;
+&lt;p&gt;The answer became clear. We needed to build our own software product. &lt;/p&gt;
+&lt;h2&gt;The need for a building data application&lt;/h2&gt;
+&lt;p&gt;We are not the first to aggregate and sell building permit data. If you look for it, you can find a half dozen other companies that have been doing this long before we started thinking about doing it in October 2022. &lt;/p&gt;
+&lt;p&gt;However, those incumbents are mostly stodgy old data services. They barely have an API and prefer to sell annual licenses to heavy datasets that only data engineers can parse and access. It’s not a startup-friendly approach, and when we looked these guys up, we weren’t impressed. &lt;/p&gt;
+&lt;p&gt;We knew that the first step for Shovels would be to launch an API. We did that for permits in August 2023, and we followed up a couple of months later with our contractor API. &lt;/p&gt;
+&lt;p&gt;But like I said, it wasn’t enough. An API is not user-friendly. Most people in the building trades don’t know what it is. A lot of you reading this may not be familiar with the concept either. We were limited in who we could sell to, and the market continued to be underserved. &lt;/p&gt;
+&lt;p&gt;By late 2023, we had the bandwidth to build our own software application using our own public API. We started building using a relatively new technology called Flutter. I’ll explain why this is important.&lt;/p&gt;
+&lt;p&gt;Flutter is an open-source software development kit released by Google in 2015. Originally intended to be cross-platform, allowing developers to release both Android and iOS applications from a single codebase, it expanded in 2019 to also support web applications. Flutter 3 was released in March 2022. This is what we’re on today, and it will allow us to also release MacOS and Linux applications, in addition to web, Android, and iOS apps.&lt;/p&gt;
+&lt;p&gt;I think Flutter and technologies like it are awesome and I’m glad to be among the first companies to fully embrace it. We know that many people in the building trades live on their smartphones. They’re always on the move, so a mobile application makes sense. Flutter allows us to support our web application and mobile applications from a single codebase so we can develop and release faster than anyone else. &lt;/p&gt;
+&lt;p&gt;We’re launching our web application today, but you can expect us to follow up with Android and iOS apps very soon! &lt;/p&gt;
+&lt;h2&gt;Features of the Shovels app&lt;/h2&gt;
+&lt;p&gt;We are launching with the ability to find and profile each of our three core objects: addresses, permits, and contractors. Let’s go through each one! &lt;/p&gt;
+&lt;h3&gt;Address Permit Profiles&lt;/h3&gt;
+&lt;p&gt;This is straight forward. Look up an address, get the permits! &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Address profile page" src="https://www.shovels.ai/images/5757-permits.png"&gt;&lt;/p&gt;
+&lt;p&gt;Here we see all the permits on 5757 Central Ave, Boulder CO, an office building outside of downtown Boulder. Yes, we cover commercial properties, too! &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Quick note: The address lookup process still needs some TLC. You may find that we don’t return addresses on properties you know have permits. That’s likely a geocoding issue, and we’re working on it.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We are developing profiles on properties and these will become even more useful and robust in the coming months. Soon, you’ll find the standard property details (lot size, stories, square feet, etc) as well as contact info for the occupants. Use this for marketing, analytics, and your own product enhancements! &lt;/p&gt;
+&lt;h3&gt;Permit Database&lt;/h3&gt;
+&lt;p&gt;One way to dig up this 5757 Central Ave property is by finding all commercial permits in the Boulder area. I searched for a downtown Boulder ZIP code and set our tag filter to “commercial” to see it in this list.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Commercial permits in Boulder" src="https://www.shovels.ai/images/boulder-commercial.png"&gt;&lt;/p&gt;
+&lt;p&gt;You can click on any of these addresses to see the same level of detail shown in the previous snapshot. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Permits zoomed in" src="https://www.shovels.ai/images/boulder-commercial-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;A few other notes on our Permit Database:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Search by keyword&lt;/strong&gt;: You can put any text you want in here and we’ll scan the descriptions of over 120M permits to find the ones that match.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search by state or zip&lt;/strong&gt;: Right now you can only limit the geography by ZIP code and state. Soon, you’ll also be able to search by city, county, or the permit jurisdiction.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Filter on permit fees and job value&lt;/strong&gt;: If you want to further refine your search, you can set minimum thresholds of permit fees and job values. The permit fees are collected by the county and the job values are self-reported, usually by the contractor. Note that not every jurisdiction collects these values, but if they do, we’ll have them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Download to a CSV file&lt;/strong&gt;: Each of our tables includes a download feature so you can take this data into your other software products and make magic happen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Contractor Directory&lt;/h3&gt;
+&lt;p&gt;Our third feature is also suitable for personal use. Have you ever needed to find a contractor and wished you could just see who all of your neighbors used for that remodel, or cottage, or solar installation? The benefits of hiring someone who’s been in your neighborhood before are several:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most houses in a neighborhood were built around the same time, often by the same developer. Therefore, they have similar attics, crawl spaces, and wiring. It helps when a contractor knows what your house feels like before he shows up.&lt;/li&gt;
+&lt;li&gt;Permitting can be challenging, so it’s best to hire a contractor who knows what to expect of your local building department. If they know him, they may treat his permit requests differently. These little things matter!&lt;/li&gt;
+&lt;li&gt;Contractors who know your neighborhood are invested. They want to do a good job, because they want you to recommend them. It’s best to hire someone who wants to expand their business in your neighborhood.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Do you know what &lt;em&gt;won’t&lt;/em&gt; tell you who works in your neighborhood? Yelp. Or Google. Or Nextdoor (unless you put up a post and ask.) The only reliable, consistent, accurate way to find which contractors work in your neighborhood is to use building permits. &lt;/p&gt;
+&lt;p&gt;So that’s what we do. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Find building contractors by permit type" src="https://www.shovels.ai/images/find-by-job.png"&gt;&lt;/p&gt;
+&lt;p&gt;Here I’m looking for every commercial contractor in the same Boulder ZIP code. How do we know a contractor is “commercial”? We know by their permits. This feature searches for commercial permits and then returns all of the contractors on those permits.&lt;/p&gt;
+&lt;p&gt;Makes sense, right? Seems like something like this should have been out there long ago, right? We agree.&lt;/p&gt;
+&lt;h2&gt;What’s coming out next?&lt;/h2&gt;
+&lt;p&gt;It’s important to note that everything we’re doing here is available on &lt;a href="https://shovels-v2.redoc.ly"&gt;our public API&lt;/a&gt;. We are building this app using the &lt;em&gt;same&lt;/em&gt; endpoints that our customers can access. This software app is kind of like an API demo, too.&lt;/p&gt;
+&lt;p&gt;We’re already working on V2 of our API. The V2 will have a bunch of cool new stuff like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Searching for permits using lat / long coordinates. That way you can drag the map and we’ll automatically update the permit results!&lt;/li&gt;
+&lt;li&gt;Searching by cities, counties, and jurisdictions. We know it’s frustrating to search by ZIP code. There are reasons why we did it that way to start, and the V2 will fix that!&lt;/li&gt;
+&lt;li&gt;Seeing a jurisdiction dashboard. Wouldn’t it be great to see a dashboard of every permit under review, recently approved, or finalized in any jurisdiction in the country? We’re on it!&lt;/li&gt;
+&lt;li&gt;Get property details with the permit history. We’re going to include tax assessor data in future address profiles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s just a sneak preview! Before we can update our app, we have to update the API. It’s already under development.&lt;/p&gt;
+&lt;h2&gt;Does this cost anything, by the way?&lt;/h2&gt;
+&lt;p&gt;Yes! We are going to charge $499/mo per account for access to all of this amazing data. You’ll get a generous trial period, though, and all of our constant updates. &lt;/p&gt;
+&lt;p&gt;When we release the V2, price will probably go up, but we’ll won’t raise prices on our early customers. &lt;/p&gt;
+&lt;p&gt;Check it out! &lt;a href="https://app.shovels.ai"&gt;https://app.shovels.ai&lt;/a&gt;&lt;/p&gt;</content><category term="Customer Success"></category><category term="app"></category><category term="launch"></category></entry><entry><title>How to use the Shovels AI GPT</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-ai-gpt/" rel="alternate"></link><published>2024-04-24T00:00:00-07:00</published><updated>2024-04-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-04-24:/blog/how-to-use-the-shovels-ai-gpt/</id><summary type="html">&lt;p&gt;A comprehensive guide to using Shovels' custom GPT integration with ChatGPT, showing how to search building permits and find contractors across the US using natural language queries. Learn practical examples and tips for getting the most out of this powerful tool.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Harnessing the Power of Shovels AI Custom GPT for Efficient Permit and Contractor Searches&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;Introduction to Shovels AI Custom GPT&lt;/h2&gt;
+&lt;p&gt;In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The &lt;a href="https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai"&gt;Shovels custom GPT&lt;/a&gt; is a sophisticated tool designed to streamline this process. It interacts with the &lt;a href="https://shovels-v2.redoc.ly"&gt;Shovels API&lt;/a&gt;, providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. &lt;/p&gt;
+&lt;p&gt;This blog post will guide you on how to effectively use this tool, with some cool examples.&lt;/p&gt;
+&lt;h2&gt;Key Features of Shovels AI Custom GPT&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Coverage&lt;/strong&gt;: Access data related to building permits and contractors in nearly every U.S. state.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tag-based Searches&lt;/strong&gt;: Perform searches based on specific types of work such as roofing, windows, pools, or EV chargers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State and Zip Code Filters&lt;/strong&gt;: Limit your search to specific states or zip codes to find localized information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Date Filters&lt;/strong&gt;: Search permits based on the start and end dates of permit filings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Getting Started with Your Query&lt;/h2&gt;
+&lt;p&gt;To get the most out of Shovels AI, start by determining the type of information you need. Here are some steps to follow:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Choose Your Query Type&lt;/strong&gt;: Decide whether you need information on building permits or contractors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Specify Location&lt;/strong&gt;: You can filter your search by state or zip code. For example, if you're interested in construction activities in Texas, mention it in your prompt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Select a Tag (if applicable)&lt;/strong&gt;: If you're looking for specific types of permits, like those for electrical work, you will need to tell the GPT what you want.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Example Queries&lt;/h2&gt;
+&lt;h3&gt;Query 1: Searching for Roofing Permits in a Zip Code&lt;/h3&gt;
+&lt;p&gt;Suppose you want to find all recent roofing permits in the 90210 zip code. Here’s how you can use the tool:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;Show&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;me&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;all&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;roofing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;permits&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;zip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;90210&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The GPT will then provide a list of roofing permits in this area, detailing the permits’ descriptions, filing dates, and associated contractors if available. Sometimes it won't give the contractors, though. If that happens, ask for them. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;List the contractors too
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Query 2: Finding Contractors Specialized in Pool Installations&lt;/h3&gt;
+&lt;p&gt;If you need a contractor for a new pool installation in Orlando, Florida, you need to look up some ZIP codes in Orlando. As of this writing, Shovels does not currently support city-based searches. Once you have the zip code, you can proceed! &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;Show&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;me&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;contractors&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;who&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;did&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;pool&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;permits&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;year&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;32805&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will result in a list of contractors who have recently installed pools in 32805.&lt;/p&gt;
+&lt;h2&gt;Tips for Effective Searches&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ensure Complete Addresses&lt;/strong&gt;: When searching by address, make sure to provide the full address including street number, name, and zip code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Tags&lt;/strong&gt;: Be specific about what types of permits you want. The GPT does a pretty good job of choosing the right Shovels permit tag.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Dates&lt;/strong&gt;: Remember to include a date range if you want one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The Shovels custom GPT is an easy way for anyone looking to access detailed, localized information on permits and contractors quickly. By following the steps outlined in this blog, you can quickly get the data you want.&lt;/p&gt;</content><category term="Customer Success"></category><category term="ai"></category><category term="chatgpt"></category><category term="openai"></category></entry><entry><title>Shovels 101: Finding Address Permit History</title><link href="https://www.shovels.ai/blog/shovels-101-finding-address-permit-history/" rel="alternate"></link><published>2024-08-29T00:00:00-07:00</published><updated>2024-11-04T00:00:00-08:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-08-29:/blog/shovels-101-finding-address-permit-history/</id><summary type="html">&lt;p&gt;The Shovels API gives you insight into permit history by per address. Users can follow these three steps to retrieve this information. This data can help with contractor and jurisdiction analysis.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Understanding a property’s permit history is critical to any project. Whether you’re researching a new property to acquire, or double-checking what previous owners have done to one you already own, it’s important info to have. &lt;/p&gt;
+&lt;p&gt;With the &lt;a href="https://shovels-v2.redoc.ly/"&gt;Shovels API&lt;/a&gt; in your toolbox, finding permits specific to a given address is a breeze. &lt;/p&gt;
+&lt;h2&gt;Authentication and Setup&lt;/h2&gt;
+&lt;p&gt;If you don’t already have a &lt;strong&gt;Shovels Web App&lt;/strong&gt; account (welcome!), then head over and setup a &lt;a href="https://app.shovels.ai"&gt;Free Trial&lt;/a&gt;. Go to the &lt;strong&gt;Settings&lt;/strong&gt; page to get your API Key, read over our API Docs, and open your preferred terminal, shell, or editor. &lt;/p&gt;
+&lt;p&gt;For a more in-depth introduction to using our API, please check out our blog post guide on &lt;a href="https://www.shovels.ai/blog/how-to-use-the-shovels-api/"&gt;How to use the Shovels API&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;This guide will assume a basic familiarity with cURL, JSON parsing, and our API schema. Example query snippets will use cURL, but our API docs have examples in a variety of other languages too.&lt;/p&gt;
+&lt;h2&gt;Using the Shovels API&lt;/h2&gt;
+&lt;p&gt;To set the scene, imagine that you’re a prospective buyer wanting to do your due diligence on an intriguing property. The building was constructed in the last 15 years, and it’s important to you that the previous owners have kept everything above board with the required permits and inspections handled. &lt;/p&gt;
+&lt;p&gt;With the Shovels API, you can get from address to detailed permit history based on the jurisdiction’s own books with three API calls.&lt;/p&gt;
+&lt;h2&gt;Step 1: Finding the Address&lt;/h2&gt;
+&lt;p&gt;Using the &lt;a href="https://shovels-v2.redoc.ly/#operation/search_addresses_v1_addresses_search_get"&gt;GET Search Addresses&lt;/a&gt;  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). &lt;/p&gt;
+&lt;p&gt;A sample query, for a “123 Main St”, should look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nx"&gt;curl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;X&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;GET&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nx"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//api.shovels.ai/v1/addresses/search?q=123%20MAIN%ST&amp;#39; &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;H&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nx"&gt;X&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;API&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;Key&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;YOUR_API_KEY_HERE&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Remember to use &lt;code&gt;%20&lt;/code&gt; to denote any spaces in the address string, and that the correct endpoint here is &lt;em&gt;/addresses/&lt;/em&gt;, NOT ~~/address/~~.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Assuming your other syntax and API key is input correctly, this request should return the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;ST. FRANCISVILLE&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;12345&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;LA&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;SO MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;ST. ALBANS&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:null,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;VT&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;NACOGDOCHES&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;75961&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;TX&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;AGAWAM&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;01001&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;MA&amp;quot;
+    },
+    {
+        &amp;quot;street_no&amp;quot;:&amp;quot;123&amp;quot;,
+        &amp;quot;street&amp;quot;:&amp;quot;MAIN ST&amp;quot;,
+        &amp;quot;city&amp;quot;:&amp;quot;HOPKINTON&amp;quot;,
+        &amp;quot;zip_code&amp;quot;:&amp;quot;02804&amp;quot;,
+        &amp;quot;zip_code_ext&amp;quot;:null,
+        &amp;quot;state&amp;quot;:&amp;quot;RI&amp;quot;
+    }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The returned list of addresses is ordered by relevance and formatted according to USPS standard. In this case, of all the matching addresses in the US, &lt;strong&gt;five of them have relevant permit histories&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Pick which address you want to dig deeper into, and &lt;strong&gt;proceed to step 2&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&amp;amp;county_or_jurisdiction=&amp;amp;state=&amp;amp;tab=133-permit-types&amp;amp;zip_code="&gt;Coverage Map&lt;/a&gt;, or many others). If your desired address isn’t included, then please reach out to us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll take a look. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Step 2: Retrieve Permits for the Address&lt;/h2&gt;
+&lt;p&gt;Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. &lt;/p&gt;
+&lt;p&gt;Using the &lt;a href="https://shovels-v2.redoc.ly/#operation/get_permits_by_address_v1_permits_address_get"&gt;GET Permits by Address&lt;/a&gt; endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. &lt;/p&gt;
+&lt;p&gt;Again, a sample query, for “123 Main St, Agawam, MA 01001”, would look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nx"&gt;curl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;X&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;GET&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nx"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//api.shovels.ai/v1/permits/address?street_no=123&amp;amp;street=MAIN%20ST&amp;amp;state=MA&amp;amp;city=AGAWAM&amp;amp;zip_code=01001&amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;H&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nx"&gt;X&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;API&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;Key&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;YOUR_API_KEY_HERE&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: The multiple parameters required for this endpoint are noted with the AND &lt;code&gt;&amp;amp;&lt;/code&gt; operator.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This second request should return the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+    &amp;quot;items&amp;quot;:
+    [
+        &amp;quot;5c4015a630e941b6&amp;quot;,
+        &amp;quot;0eb49a17aa7e8791&amp;quot;,
+        &amp;quot;77d2073b694190dd&amp;quot;,
+        &amp;quot;cd66d9dda0662b59&amp;quot;,
+        &amp;quot;5575716497ab9bd6&amp;quot;
+    ],
+    &amp;quot;page&amp;quot;:1,
+    &amp;quot;size&amp;quot;:5,
+    &amp;quot;next_page&amp;quot;:null
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;which shows that there are 5 permits on record for this address. These Permit IDs are unique to the Shovels platform, but can be used to retrieve the detailed permit details.&lt;/p&gt;
+&lt;p&gt;To do so, &lt;strong&gt;proceed to Step 3&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Step 3: Return Detailed Permit History&lt;/h2&gt;
+&lt;p&gt;Using the &lt;a href="https://shovels-v2.redoc.ly/#operation/get_permits_by_id_v1_permits_get"&gt;GET Permits by ID&lt;/a&gt; endpoint, you can search for a single (or string array) of permit IDs. &lt;/p&gt;
+&lt;p&gt;In this sample, to request the first permit payload would look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -i -X GET &amp;#39;https://api.shovels.ai/v1/permits?id=5c4015a630e941b6&amp;#39; 
+    -H &amp;#39;X-API-Key: YOUR_API_KEY_HERE&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Searching for multiple permits at once requires a string &lt;strong&gt;array&lt;/strong&gt;, which is denoted in the cURL request by the &lt;code&gt;&amp;amp;id=string&lt;/code&gt; clause for each additional permit ID. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The third request for the single permit should return the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5c4015a630e941b6&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Replace existing 12&amp;#39; x 14&amp;#39; deck with a 20&amp;#39; x 20&amp;#39; deck (estimated cost $8,000), zone res a2, receipt  No.58233&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;number&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;17961&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;jurisdiction&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Agawam Town&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;job_value&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Building&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;subtype&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Building permit - new&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fees&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;active&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;file_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;2014-04-14&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;issue_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;final_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;construction_duration&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;approval_duration&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;inspections_pass_rate&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contractor_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street_no&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;123&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;street&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;MAIN ST&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;city&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;AGAWAM&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;01001&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;zip_code_ext&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;MA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;latlng&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="m m-Double"&gt;42.087486267089844&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m m-Double"&gt;72.6227035522461&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;accessory_structure&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And there you have it! This information can be exported for whatever outside needs you have, and this process can be easily repeated for any addresses and permits needed. &lt;/p&gt;
+&lt;p&gt;The same information is searchable via our Web App at https://app.shovels.ai/.&lt;/p&gt;
+&lt;p&gt;For enterprise-level usage, get our full dataset with deeper insights, dashboards, and flat files. However you need to retrieve this data, we’ll make it happen.&lt;/p&gt;
+&lt;h2&gt;Troubleshooting Tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A full list of our error codes are described in our API docs &lt;a href="https://shovels-v2.redoc.ly/#section/API-Details"&gt;here&lt;/a&gt;. Most errors are 404s, which frequently mean either the address is input incorrectly, or there isn’t a permit record on file to match the search terms.&lt;ul&gt;
+&lt;li&gt;If you are able to find the correct address in our &lt;strong&gt;Web App&lt;/strong&gt;, then double check the syntax of the request. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you run into any other questions, please email us at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt; and we’ll help you!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We hope this guide is helpful (and we’ve got more on the way). Our API is meant to be intuitive and easy to use, so we definitely want to know any and all hiccups you encounter. If there’s an endpoint that we don’t support yet, or any other feedback for our platform, we’d love to hear it. &lt;/p&gt;
+&lt;p&gt;We’re building out Shovels API v2 right now, and your requests might make the next release. &lt;/p&gt;
+&lt;p&gt;Happy Building!&lt;/p&gt;</content><category term="Customer Success"></category><category term="api"></category></entry><entry><title>Shovels 101: Permit Statuses</title><link href="https://www.shovels.ai/blog/shovels-101-permit-statuses/" rel="alternate"></link><published>2024-09-03T00:00:00-07:00</published><updated>2024-09-03T00:00:00-07:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-09-03:/blog/shovels-101-permit-statuses/</id><summary type="html">&lt;p&gt;The Shovels ecosystem breaks down construction permit status based on jurisdiction regulation and construction cycles. Permits can be In Review, Active, Final, or Inactive. Users can investigate permit status via Shovels to analyze wider trends in contractor performance and jurisdiction activity.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Permits are hard enough to acquire on their own, so we want to take the confusion out of understanding a permit’s status. &lt;/p&gt;
+&lt;p&gt;In our mission to make permit data as clean and straightforward as possible, let’s quickly review Permit Statuses and how they map from our ecosystem to the actual construction process.&lt;/p&gt;
+&lt;h2&gt;Permit Status Definitions&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Flowchart describing Shovels permit status lifecycle, going from &amp;quot;In Review&amp;quot; to a cycle of &amp;quot;Active&amp;quot; and &amp;quot;Inactive&amp;quot;, ending with &amp;quot;Final&amp;quot;" src="/images/permit-status-flowchart.png"&gt;&lt;/p&gt;
+&lt;p&gt;In the Shovels ecosystem, there are &lt;strong&gt;four&lt;/strong&gt; statuses that Permits can be in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;in_review&lt;/code&gt;: From the moment the permit is filed with the local jurisdiction, until it is approved. This is defined by the &lt;code&gt;file_date&lt;/code&gt;  object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;active&lt;/code&gt;: From the moment the permit is approved, until project completion or some other intermediate restriction. This is defined by the &lt;code&gt;issue_date&lt;/code&gt;  object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;final&lt;/code&gt;: When the permit is completed, and submitted back to the jurisdiction upon job completion. This is defined by the &lt;code&gt;final_date&lt;/code&gt; object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inactive&lt;/code&gt;: If any part of the process stalls or gets restricted from progression, then the permit status moves to &lt;code&gt;inactive&lt;/code&gt;. Disqualifying reasons and reporting time will vary by jurisdiction and local regulation, but can include failing to meet project inspections, the permit may expire before completion or &lt;a href="https://ecode360.com/6567722#6567722"&gt;inactivity for more than 6 months (180 days)&lt;/a&gt;, and many others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more system definitions (beyond permit statuses), check out our &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=249471341#gid=249471341"&gt;Data Dictionary&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;Timeline&lt;/h2&gt;
+&lt;p&gt;Now that we’ve got the definitions out of the way, let’s put them into practice with a sample project timeline. We’ll add in the relevant variables and objects that our system uses to track the permit progress where relevant.&lt;/p&gt;
+&lt;p&gt;“John and Jane Doe remodeled their house in Agawam, MA and contracted out the work to a local contractor, Acme Construction, LLC.”&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Acme Construction, LLC have gathered all the paperwork and due diligence for the project, and are submitting the permit to the local jurisdiction, the Hampden County Building Department. They receive their permit number and file date, and in the next few days, this permit will show up in the Shovels database as &lt;code&gt;in_review&lt;/code&gt;. &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file_date&lt;/code&gt; would be &lt;strong&gt;2022-05-02&lt;/strong&gt; (May 4th, 2023), for those keeping track at home.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A few weeks later, Acme Construction, LLC’s permit for single-family residence remodel is approved, and they’re cleared to begin construction. Great news, and now, their corresponding permit will show as &lt;code&gt;active&lt;/code&gt;.&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;issue_date&lt;/code&gt; would be &lt;strong&gt;2022-05-26&lt;/strong&gt;, and &lt;code&gt;approval_time&lt;/code&gt; would be 24 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;8 months in to the project, and Acme Construction, LLC has made huge progress. However, they didn’t pass one of their inspections, and aren’t able to resume work until that underlying issue has been fixed. When this data is submitted to the jurisdiction alongside their permit files, the Shovels database will now classify this permit as &lt;code&gt;inactive&lt;/code&gt;. &lt;ul&gt;
+&lt;li&gt;Provisional &lt;code&gt;construction_duration&lt;/code&gt; would be calculated from &lt;code&gt;issue_date&lt;/code&gt; to the date of the failed inspection (&lt;strong&gt;2023-01-29&lt;/strong&gt;), as 250 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;6 months later, and Acme Construction, LLC has fixed the issue and passed their inspection. Once updated with the HC Building Dept, this permit will return to active.&lt;ul&gt;
+&lt;li&gt;Construction resumes on &lt;strong&gt;2023-07-29&lt;/strong&gt; and &lt;code&gt;construction_duration&lt;/code&gt; count will now continue, until project completion. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;7 months later, and everything is completed! All inspections have been passed, and John and Jane have their new remodeled house all ready to move back in. Once that paperwork is completed, then the Shovels database will show the permit as &lt;code&gt;final&lt;/code&gt;. &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;final_date&lt;/code&gt; would be &lt;strong&gt;2024-02-29&lt;/strong&gt;, with a &lt;code&gt;total_duration&lt;/code&gt; of 664 days, and &lt;code&gt;construction_duration&lt;/code&gt; of 465 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Analysis&lt;/h2&gt;
+&lt;p&gt;These data points can be extremely helpful for further analysis of jurisdiction and contractor efficiency. For instance, Acme Construction, LLC’s work for Mr. and Mrs. Doe’s remodel could be compared against other remodel jobs they’ve done in the past, or even against other contractors with the same licensing and job types. &lt;/p&gt;
+&lt;p&gt;At the same time, jurisdiction’s approval times can be compared based on job type or seasonal application windows, which may give further insight into developmental opportunities in that region. &lt;/p&gt;
+&lt;p&gt;The possibilities are endless.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Permit Status is an important data point to everyone involved in the construction and proptech industries, and we want to make sure that our system is as easy to understand as possible. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shovels 101&lt;/strong&gt; will be our tutorial series, and we've got a bunch of topics lined up for future publication. If there's anything you want us to cover, further questions about permit statuses, or any other fields in our dataset, let us know at &lt;a href="mailto:support@shovels.ai"&gt;support@shovels.ai&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Happy Building!&lt;/p&gt;</content><category term="Customer Success"></category><category term="permit status"></category><category term="web app"></category></entry><entry><title>Why Don't All Addresses Have Permit History?</title><link href="https://www.shovels.ai/blog/why-dont-all-addresses-have-permit-history/" rel="alternate"></link><published>2024-10-02T00:00:00-07:00</published><updated>2024-10-02T00:00:00-07:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-10-02:/blog/why-dont-all-addresses-have-permit-history/</id><summary type="html">&lt;p&gt;Not all addresses will have permits, for a variety of reasons. Variance between local requirements and enforcement means that not all projects require permits. Available digitization of permits makes it even more complicated, but Shovels has a plan keep improving data completeness.&lt;/p&gt;</summary><content type="html">&lt;p&gt;If you want an accurate picture of what’s been done to a property, it makes sense to look at the permit history. Theoretically, any project of reasonable size — a kitchen remodel, a new roof, a plug-in EV Charger install — would have some level of sign-off from the city or local jurisdiction, right? It’s up to the government to ensure that construction is done in a safe and legal manner, with inspections and approvals before work even begins as well as prior to completion. There should be a paper trail.&lt;/p&gt;
+&lt;p&gt;However, it’s that bureaucratic red tape that can bog down a project in it’s infancy, especially for understaffed permit departments. It’s not that your paperwork is out of order, there’s just too long of a queue. In some areas, you’d be free to do the work yourself; in others, work done without a permit can mean a hefty fine and teardown. &lt;/p&gt;
+&lt;p&gt;At the end of the day, it all comes down to the local building code. And if we know anything about local regulations, the variance from town to town can be extreme. This is the core of our problem. &lt;strong&gt;There are no standardized rules nationwide that mandate which work does or does not require a permit&lt;/strong&gt;. And even if there were, enforcement is another issue entirely. &lt;/p&gt;
+&lt;h2&gt;Building Codes and Regulations&lt;/h2&gt;
+&lt;p&gt;Consider a homeowner in Agawam, MA that is interested in upgrading their heating solution. Their old furnace finally gave out last winter, and they want to install a new heat pump to handle this winter’s cold and next summer’s heat, all from the same unit. The homeowner considers themselves a handyman, so could he do the installation alone, without a permit? &lt;/p&gt;
+&lt;p&gt;For the State of Massachusetts, that answer is unfortunately &lt;strong&gt;no&lt;/strong&gt;. According to the state’s &lt;a href="https://www.mass.gov/doc/780-cmr-ninth-edition-base-code-chapter-1-scope-and-administration-amendments/download"&gt;building code&lt;/a&gt; (Section 105.2 of the 780 CMR (Code of Massachusetts Regulations)), which the Town of Agawam has adopted wholesale, a permit is required for this new install. The list of exempted projects is small, especially compared to some jurisdictions in some rural Texas counties, that might not have any permitting required at all!&lt;/p&gt;
+&lt;p&gt;The second issue, briefly mentioned above, regards enforcement. In all likelihood, this homeowner could install their own heat pump in secrecy, and no one would even know until the property was sold and the new buyer arranges a house inspection. Even where permits are required, the jurisdiction record office will never have a complete accounting of projects done. &lt;/p&gt;
+&lt;p&gt;(To be clear, Shovels &lt;strong&gt;does not&lt;/strong&gt; endorse such rogue construction. Always consult your local permit department for guidance on which projects you can DIY and which ones you need paperwork for.)&lt;/p&gt;
+&lt;p&gt;The variety of permit regulations across jurisdictions means that some areas will have more permits on file than others, even if equal numbers of equivalent projects were completed. From us at Shovels, we can only provide data on filed permits. And even then, only if those permits have been digitized. &lt;/p&gt;
+&lt;h2&gt;Permit Digitization&lt;/h2&gt;
+&lt;p&gt;The permits themselves are usually kept by either the local permit department or the County Clerk office. The forms are usually paper, but sometimes they’re submitted online. In many cases, the paper forms are later digitized and uploaded for public online access. &lt;/p&gt;
+&lt;p&gt;Ideally, the jurisdictions will also upload their historical records. This can vary even more widely, but for the most part, we generally have ~20 years of permits, where available. &lt;/p&gt;
+&lt;p&gt;These digitized permit records (and the insights gleaned from them) are what Shovels delivers.&lt;/p&gt;
+&lt;p&gt;However, digitization efforts and timelines vary dramatically (sensing a pattern yet?) from one jurisdiction to another. &lt;/p&gt;
+&lt;p&gt;In summary, there are multiple hurdles we have to overcome to access digitized permit data:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Permit Requirements — does the jurisdiction require a permit for this type of project?&lt;/li&gt;
+&lt;li&gt;Regulation Adherence — how capable is the jurisdiction in enforcing that projects have the required permits?&lt;/li&gt;
+&lt;li&gt;Permit Digitization — how quick is the jurisdiction about uploading their filed permits for online access? How many years of permit history have they uploaded?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There’s a reason that few providers are able to effectively deliver these records and insights. Permit data is a mess, and it takes a ton of effort to parse, clean, and categorize it all. &lt;/p&gt;
+&lt;p&gt;But we love a challenge, so we remain undaunted. &lt;/p&gt;
+&lt;h2&gt;What Is Shovels Doing About It?&lt;/h2&gt;
+&lt;p&gt;We knew that permit data was messy when we got into this business, so we have spent the vast majority of our codebase, engineering resources, and brainstorming power on how to solve this problem. &lt;/p&gt;
+&lt;p&gt;Without getting into either the weeds or our secret sauce, we have three ongoing projects to improve the quantity and quality of our available permit data. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Improve the training and quality of our proprietary LLMs (read more about how we built these &lt;a href="https://www.shovels.ai/blog/unlocking-shovelss-potential-with-prolific/"&gt;here&lt;/a&gt;) — this will help us improve the timeliness of our delivery. The faster we can get the permits cleaned and our datasets updated, the fresher the insights. &lt;/li&gt;
+&lt;li&gt;Enhance our relationships with local jurisdiction permitting offices to increase digitization with direct records requests — this will help us target specific jurisdictions with lower-than-usual digitization rates. &lt;/li&gt;
+&lt;li&gt;Improve our personal transparency with what data we have and what we don’t — check out our &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&amp;amp;state=&amp;amp;city=&amp;amp;county_or_jurisdiction=&amp;amp;zip_code=&amp;amp;date_filter="&gt;Coverage Dashboard&lt;/a&gt; to see a high-level view of what we have today. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With every data refresh (which will increase to weekly soon!), we strive to get closer and closer to the truly available permit data ceiling. More permits are filed every day, and more jurisdictions increase their digitization efforts, so that end is in sight. &lt;/p&gt;
+&lt;h2&gt;Get Started Today&lt;/h2&gt;
+&lt;p&gt;We pride ourselves, here at Shovels, on being the best of the bunch when it comes to refining permit data into business intelligence. If there are particular markets or segments that you want to prioritize, reach out to us at &lt;a href="mailto:sales@shovels.ai"&gt;sales@shovels.ai&lt;/a&gt; and we can either affirm that we have coverage there, or increase our timeline on getting them for you. &lt;/p&gt;
+&lt;p&gt;In the meantime, poke around in our &lt;a href="https://app.shovels.ai"&gt;Web App&lt;/a&gt; with a Free Trial to see the “shovel-ready” data we have for you now. &lt;/p&gt;
+&lt;p&gt;Happy Digging!&lt;/p&gt;</content><category term="Customer Success"></category><category term="permits"></category><category term="tutorial"></category><category term="resource"></category><category term="address"></category></entry><entry><title>Understanding Permit Data Fields</title><link href="https://www.shovels.ai/blog/understanding-permit-data-fields/" rel="alternate"></link><published>2024-10-09T00:00:00-07:00</published><updated>2024-10-09T00:00:00-07:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-10-09:/blog/understanding-permit-data-fields/</id><summary type="html">&lt;p&gt;The Shovels permit database has many fields, which are sometimes blank. Use the Data Dictionary to understand what these fields mean, and why some might be null. Review the most important fields for a permit, and filter out what isn't needed.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Permits are incredibly data-dense objects, assuming that they’re filled out correctly and completely. It’s no simple task to keep all the fields straight, and if you have, contact us because we probably want to hire you. &lt;/p&gt;
+&lt;p&gt;In this tutorial, I’ll walk through the vast world of Shovels permit (and other object) data fields, what they mean, why some fields are blank or &lt;code&gt;NULL&lt;/code&gt;, and some tips and tricks for cutting right to the critical fields. &lt;/p&gt;
+&lt;h2&gt;Using the Shovels Data Dictionary&lt;/h2&gt;
+&lt;p&gt;With as many fields available across so many different data types (&lt;strong&gt;Permits&lt;/strong&gt;, &lt;strong&gt;Contractors&lt;/strong&gt;, &lt;strong&gt;Properties&lt;/strong&gt;, and more…), it’s a monumental task to keep track of which ones are where, and what they even mean. &lt;/p&gt;
+&lt;p&gt;That’s where the &lt;a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349"&gt;Data Dictionary&lt;/a&gt; comes in. This publicly-available spreadsheet (check the multiple tabs across the bottom for more info) gives an exhaustive breakdown of all the fields, variables, and parameters that our dataset contains. &lt;/p&gt;
+&lt;p&gt;For the purposes of this tutorial, I’ll include a sample permit payload for a single permit from Agawam, MA. This includes all available fields for permits, beyond just the ones included in the Shovels &lt;strong&gt;Web App&lt;/strong&gt; or &lt;strong&gt;API&lt;/strong&gt;. For definitions of any of these, check out the Data Dictionary.&lt;/p&gt;
+&lt;p&gt;Bear with me please, there are a lot of fields…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ID&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;8ee111a1199934d5&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;PERMIT_NUMBER&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;E-21-99&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;CBSA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Springfield, MA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;CBSA_FIPS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;44140&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;COUNTY_FIPS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;STATE_FIPS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;STATUS_ORIGINAL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;complete&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APN&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;FILE_DATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2021-02-24&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;FINAL_DATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_NAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Agawam Rentals Llc&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_STREET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Po Box 246&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_CITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hadley&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_STATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;MA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_ZIPCODE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1035&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_PHONE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;OWNER_EMAIL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_NAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_STREET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_CITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_STATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_ZIPCODE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_PHONE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPLICANT_EMAIL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_NAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_STREET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_CITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_STATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_ZIPCODE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_PHONE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_EMAIL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ARCHITECT_LICENSE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_NAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_STREET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_CITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_STATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_ZIPCODE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_PHONE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_EMAIL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ENGINEER_LICENSE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_NAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_STREET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_CITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_STATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_ZIPCODE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_PHONE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_EMAIL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESIGNER_LICENSE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NEW_DWELLING&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NEW_ADU&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ACCESSORY_STRUCTURE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;POOL_SPA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ROOM_ADDITION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;KITCHEN_REMODEL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;BATH_REMODEL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;REROOF&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;UTILITIES&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;WINDOW_DOOR&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;FOUNDATION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SITEWORK&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DEMOLITION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;EXTERIOR_REMODEL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;TENANT_IMPROVEMENT&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;RESIDENTIAL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;AIR_SOURCE_HEAT_PUMP&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;GROUND_SOURCE_HEAT_PUMP&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;EV_CHARGER&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR_BATTERY_STORAGE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ELECTRICAL_PANEL_UPGRADE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ELECTRICAL_SERVICE_UPGRADE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;EFFICIENCY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;HEAT_PUMP_WATER_HEATER&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;INDUCTION_STOVE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;WIND&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;COMMERCIAL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;MULTIFAMILY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;PUBLIC_WORK&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_SOLAR_PANELS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR_PANEL_POWER&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR_SYSTEM_CAPACITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;UTILITY_CAPACITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ACCESSORY_STRUCTURE_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ATTACHED_DETACHED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;CONDITION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;BATH_ITEMS_INSTALLED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;REMODEL_MATERIALS_USED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DEMO_FULL_PARTIAL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;EXTERIOR_REMODEL_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;FOUNDATION_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;basement&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;FOUNDATION_WORK_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;KITCHEN_ITEMS_INSTALLED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ADU_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;basement&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;CONSTRUCTION_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ADU_LEGALIZATION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DWELLING_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;POOL_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;REROOF_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;REROOF_MATERIAL&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ROOM_ADDITION_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SITEWORK_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR_INSTALL_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR_BRAND&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SOLAR_BATTERY_INCLUDED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;UTILITY_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;mini split, water heaters&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;WINDOW_DOOR_TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SIZE_SQUARE_FEET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_BEDS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_BATHS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_UNITS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_BUILDINGS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_FLOORS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SIZE_SQUARES&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_ROOMS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_WINDOWS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;NUM_DOORS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;COUNTY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hampden County&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;JURISDICTION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Agawam Town&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;TYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Electrical&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;SUBTYPE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Additions/alterations - residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;STATUS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;final&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ISSUE_DATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DESCRIPTION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Wire mini split system, install bath fan in 2nd floor bath, wire 2 electric water heaters and install 2 receptacles for washing machines in basement&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;JOB_VALUE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;FEES&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APT_NUMBER&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;HEAT_PUMP&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;WATER_HEATER&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;HVAC&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;STREET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;HIGH ST&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;STREET_NO&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;33&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ZIPCODE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ZIPCODE_EXT&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;CITY&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;AGAWAM&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;STATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;MA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;DISTRICT&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;HAMPDEN&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;LONG&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;-72.632972717&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;LAT&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;42.097988129&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ADDRESS_ID&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Jy207ojc0Jk&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;INTL_ADDRESS_NORMALIZED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;CONSTRUCTION_DURATION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;APPROVAL_DURATION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;INSPECTION_PASS_RATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;INSPECTION_PASSED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;INTL_CONTRACTOR_LINKED&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;_META_LOADED_AT&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2024-09-16 01:38:53.371 -0700&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;_META_SOURCE_FILE_NAME&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;nationwide/permits/20240912_224317_00015_ph49q_2c6b1418-b9d6-482e-82aa-570deb28ab0b&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;START_DATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2021-02-24&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;END_DATE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2021-02-24&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;TOTAL_DURATION&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;RNO&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, there’s a lot of detail here. Many of these are the key details that most of our insights are based on, yet still there are a ton of blank fields.&lt;/p&gt;
+&lt;p&gt;Let’s dig in to these unfilled fields. &lt;/p&gt;
+&lt;h2&gt;Why Are These Fields Blank?&lt;/h2&gt;
+&lt;p&gt;For some context, the permit fields we maintain in our database are unlikely to map 1:1 to any given permit if you actually looked at the source permit filing. However, as part of our aggregation methods, we have to combine and cover for all the possible fields that different jurisdictions may offer on their permits. This leads to a lot of empty fields. &lt;/p&gt;
+&lt;p&gt;At first glance the number of empty fields in the sample above might be worrying. But if we take a look at the actual fields themselves, we’ll see that they’re pretty niche details to begin with. &lt;/p&gt;
+&lt;p&gt;These are generally separated into four groups of field “classes”:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Optional professional contact details, like &lt;code&gt;applicant_name&lt;/code&gt;, &lt;code&gt;architect_phone&lt;/code&gt;, &lt;code&gt;engineer_zipcode&lt;/code&gt;, or &lt;code&gt;designer_license&lt;/code&gt; — these are rarely used in general, but are exceedingly rare within the same permit. &lt;/li&gt;
+&lt;li&gt;Project-specific fields like &lt;code&gt;remodel_materials_used&lt;/code&gt; , &lt;code&gt;reroof_type&lt;/code&gt;, or &lt;code&gt;num_windows&lt;/code&gt; — these may be used in a large scale project like an house-wide remodel, but for smaller projects they’ll usually be unrelated and left blank. &lt;/li&gt;
+&lt;li&gt;Commonly unfilled fields like &lt;code&gt;job_value&lt;/code&gt; or &lt;code&gt;fees&lt;/code&gt;, which are infrequently required and even less often accurate. This is especially true for non-contractor permits.&lt;/li&gt;
+&lt;li&gt;Derivative metrics when we’ve calculated and added to the payload, like &lt;code&gt;construction_duration&lt;/code&gt;, &lt;code&gt;approval_duration&lt;/code&gt; , or &lt;code&gt;inspection_pass_rate&lt;/code&gt;  — these are based on other metrics, which are either left off historical records or are incomplete in the permit itself. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Given the variation in jurisdiction requirements for which fields are required, or even included, on their permits, it can be difficult for a single database schema to show only the relevant fields for a given permit. It’s definitely something we’re keeping in mind, but for the moment we trust that you’ll understand that not all fields are equally important. &lt;/p&gt;
+&lt;h2&gt;Top 10 Most Useful Permit Fields&lt;/h2&gt;
+&lt;p&gt;There are 100 (!) different fields on a given permit flat file, but let’s highlight the most important ones. If any of these fields are empty, then &lt;a href="mailto:support@shovels.ai"&gt;let us know&lt;/a&gt; and we’ll investigate.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;File_date&lt;/code&gt; : The date when the permit is filed with the permit department or jurisdiction.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Permit_number&lt;/code&gt;: The local jurisdiction’s record identifier. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Owner_name&lt;/code&gt;: The name of the property owner for the permit work.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Residential&lt;/code&gt;: Whether the permit is done to a commercial or residential property.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Jurisdiction&lt;/code&gt;: The local governmental body which oversees the permit work. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Type&lt;/code&gt;: The type of permit work being done. These types are not standardized at the jurisdiction level, but at Shovels we’ve used LLMs to condense 600k+ variations into 22 project classifications.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Subtype&lt;/code&gt;: The subtype of permit work being done, imported as a string directly from the permit source. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Status&lt;/code&gt;: The status of the permit, one of either &lt;code&gt;in_review&lt;/code&gt;, &lt;code&gt;active&lt;/code&gt;, &lt;code&gt;final&lt;/code&gt;, or &lt;code&gt;inactive&lt;/code&gt;. See our &lt;a href="https://www.shovels.ai/blog/shovels-101-permit-statuses/"&gt;blog post on permit statuses&lt;/a&gt; for more info. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Description&lt;/code&gt;: The description on the permit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Street&lt;/code&gt; (plus &lt;code&gt;street_no&lt;/code&gt;, &lt;code&gt;zipcode&lt;/code&gt;, &lt;code&gt;city&lt;/code&gt;, &lt;code&gt;state&lt;/code&gt; ): These fields collectively represent the permit’s address. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This list above is generalized as a rule, so it’s very likely that the most important fields to your business are slightly different. But that’s ok, because our data is easy to filter to get exacly what you need. &lt;/p&gt;
+&lt;h2&gt;Customize the Data to Your Needs&lt;/h2&gt;
+&lt;p&gt;We have three different delivery methods, which are suited for different business needs. If you want simple data that can be accessed codelessly, then the &lt;a href="https://www.shovels.ai/permit-database"&gt;Web App&lt;/a&gt; will be perfect for you. If you want a bit more, which can be programmatically integrated with your platform or product offering, then our &lt;a href="https://www.shovels.ai/api"&gt;API&lt;/a&gt; would be better. &lt;/p&gt;
+&lt;p&gt;But if you really want to get granular, then our enterprise-ready &lt;a href="https://www.shovels.ai/data-feed"&gt;Data Feed&lt;/a&gt; will be best. You can either access the entire Shovels dataset in your warehouse of choice, or you can get the raw data in flat file and query it yourself. &lt;/p&gt;
+&lt;p&gt;No matter the use case, Shovels can get you what you need. Check out our &lt;a href="https://app.shovels.ai"&gt;Free Trial&lt;/a&gt;, or get in touch with &lt;a href="mailto:sales@shovels.ai"&gt;Sales&lt;/a&gt; for data sample and demo call. &lt;/p&gt;
+&lt;p&gt;Happy Digging!&lt;/p&gt;</content><category term="Customer Success"></category><category term="permits"></category><category term="tutorial"></category><category term="resource"></category></entry><entry><title>Shovels 101: Maximizing Shovels Online</title><link href="https://www.shovels.ai/blog/shovels-101-maximizing-shovels-online/" rel="alternate"></link><published>2024-11-20T00:00:00-08:00</published><updated>2024-11-20T00:00:00-08:00</updated><author><name>Alex Brown</name></author><id>tag:www.shovels.ai,2024-11-20:/blog/shovels-101-maximizing-shovels-online/</id><summary type="html">&lt;p&gt;Learn from the experts how to get the most out of Shovels Online. Unlock use cases, best practices, and insider tips. Subscribe today before prices increase.&lt;/p&gt;</summary><content type="html">&lt;p&gt;We just &lt;a href="https://www.shovels.ai/blog/welcome-to-shovels-online/"&gt;announced&lt;/a&gt; the release of our new-and-improved web application, &lt;a href="https://app.shovels.ai"&gt;Shovels Online&lt;/a&gt;, and it’s time to dig deeper into some best practices, tips and tricks, and other insider guidance from the Shovels team to help you leverage our platform to it’s fullest.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: We’re still technically in early-adopter territory, as far as pricing goes. If you’ve been considering our platform thus far, now’s the best time to get in on the action before prices go up! Black Friday is coming a little early this year 🎁&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Shovels Online Use Cases&lt;/h2&gt;
+&lt;p&gt;Compared with our other products, like our &lt;a href="https://www.shovels.ai/api"&gt;API&lt;/a&gt; and &lt;a href="https://www.shovels.ai/data-feed"&gt;Enterprise data&lt;/a&gt; offering, Shovels Online has the lowest barrier to entry. But just because it’s web-based and codeless doesn’t mean it isn’t powerful in it’s own right. &lt;/p&gt;
+&lt;p&gt;Like any tool, it’s important to know which one to use. Shovels are designed to dig, and Shovels Online is designed to explore opportunities. Let’s get in to a few of our most common use cases.&lt;/p&gt;
+&lt;h3&gt;Homeowner Leads&lt;/h3&gt;
+&lt;p&gt;f you’re a New England regional heat pump retailer (or installer!), then you can use the Shovels Online permit database to find addresses with homeowner contact details in your market that show signals of buyer intent and interest. &lt;/p&gt;
+&lt;p&gt;Those signals might be recently pulled permits for other green or climate-friendly appliances, like solar panels or other electrification projects. This shows that they’re already interested in upgrading. &lt;/p&gt;
+&lt;p&gt;Cross-referencing those results against a list of addresses that recently pulled permits for fossil fuel-based heater installs lets you narrow down your search to those who may have aging heating systems, in need of replacement. Now you’re confident that you wont waste your time selling a heat pump to someone that just replaced their gas heater last year. &lt;/p&gt;
+&lt;p&gt;You now have a lead list complete with contact details and permit contexts, and all that’s left is for your Sales team to start reaching out. &lt;/p&gt;
+&lt;p&gt;It truly is that simple. Replace “heat pump” with “bathroom remodel”, “roof”, or whatever business you’re in, and the rest of the logic will stay the same.&lt;/p&gt;
+&lt;h3&gt;Contractor Leads&lt;/h3&gt;
+&lt;p&gt;Using nearly identical logic to the homeowner section above, you - a completely different New England regional heat pump &lt;em&gt;supplier&lt;/em&gt; - may instead want to search for contractors in your market area. &lt;/p&gt;
+&lt;p&gt;Based on your model, you may want to go after the experienced and proven contractors and offer them a better deal than their existing supplier. Alternatively, you may want to look for brand new contractors, fresh-faced and newly entering the market, and build a relationship with them from the very beginning. The world is your oyster (stew). &lt;/p&gt;
+&lt;p&gt;Using the &lt;code&gt;Building&lt;/code&gt;, &lt;code&gt;Permit&lt;/code&gt;, and &lt;code&gt;Contractor&lt;/code&gt; filters, you can fine-tune your search to the exact specifications of your business model, and export all that data (including contact info) into a CSV and the waiting arms of your outbound Sales team.&lt;/p&gt;
+&lt;h3&gt;Derivative Lead&lt;/h3&gt;
+&lt;p&gt;Homeowner and Contractor leads are by far the most common, but we’ve been routinely surprised by the breadth and width of opportunities that you can glean from public permit data. &lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Permit approval timing: Use Shovels Online to figure out how long it will take to get that heat pump permit in your target jurisdiction!&lt;/li&gt;
+&lt;li&gt;Resident demographics: We just released a new API endpoint for identifying residents of addresses. Now you know who to make that postcard out to 😊&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Build a High-Quality Search&lt;/h2&gt;
+&lt;p&gt;Now that we’ve got the general use cases covered, let’s dig deep into the logic of a Shovels Online search query, how to leverage the entire range of filters, and make sure that the results are actually what you’re looking for. &lt;/p&gt;
+&lt;h3&gt;Specific Geographies&lt;/h3&gt;
+&lt;p&gt;The first step is to determine what scale are you looking at, and in what region. If it’s a pretty niche project type, like New England &lt;code&gt;pool&lt;/code&gt; installations, then you may want to zoom out and look at the &lt;code&gt;state&lt;/code&gt; level. &lt;/p&gt;
+&lt;p&gt;On the other end of the spectrum, if you’re looking at something very common like &lt;code&gt;New Construction&lt;/code&gt; and &lt;code&gt;Residential&lt;/code&gt;, then you may want to get as granular as &lt;code&gt;zip code&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;At the end of the day, you have unlimited searches, so there’s no harm in going piecemeal and working through your market area and seeing what volume you’re getting back.&lt;/p&gt;
+&lt;h3&gt;Permits or Contractors?&lt;/h3&gt;
+&lt;p&gt;Permits and Contractors are the two main axes by which all Shovels data is aligned, and Shovels Online is no different. While there is some overlap, like wanting to know the connected contractor on a given permit, most people will want to search for one or the other. &lt;/p&gt;
+&lt;p&gt;To start, we suggest looking at which persona you’re trying to sell to (a homeowner or a contractor) and choose accordingly.&lt;/p&gt;
+&lt;h3&gt;Focusing on Key Filters&lt;/h3&gt;
+&lt;p&gt;Some of the most important and powerful upgrades to our web application with the release of Shovels Online is the increased number of filters and parameters. You can now specify minimum project details for a given structure across multiple dimensions. Things like &lt;code&gt;minimum market value&lt;/code&gt; , &lt;code&gt;minimum lot size&lt;/code&gt;, or even keywords from the permit &lt;code&gt;description&lt;/code&gt; make it easier than ever to get the exact kind of projects that fit your business model. &lt;/p&gt;
+&lt;p&gt;On the Contractor side, you can filter by performance metrics too: &lt;code&gt;minimum total permits&lt;/code&gt; or &lt;code&gt;maximum [project] duration&lt;/code&gt; and others.&lt;/p&gt;
+&lt;h3&gt;Spot-Check the Results&lt;/h3&gt;
+&lt;p&gt;Now that you’ve built out the perfect query, it’s time to put the results to the test. Once the filters are applied and the results are in, spot check a few by clicking “View Details” and make sure that it matches your expectation. &lt;/p&gt;
+&lt;p&gt;To get the volume you need, you may need to expand or contract your geography or &lt;code&gt;date range&lt;/code&gt;. Adjust those, or any other filters, as needed and re-apply. &lt;/p&gt;
+&lt;p&gt;In any case, once you’re happy with what you’ve found, there’s two final steps: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Save the filters, so you can repeat this search query later. &lt;/li&gt;
+&lt;li&gt;Download the list, so you can run whatever final filters on the CSV file before dividing it up amongst your Sales team. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using all these steps, you’ll set yourself up for the greatest chance of success in curating and delivering a high quality lead list. If you run into any errors, or have other questions about the results you see, don’t hesitate to &lt;a href="mailto:support@shovels.ai"&gt;reach out to us&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Tips and Tricks&lt;/h2&gt;
+&lt;p&gt;The general tutorial above should get most people 95% of the way there. However, there are a few nifty tricks and optimizations that may be useful to you. As the Shovels Online platform grows and matures, and our engineers get to deliver on the functionality they’ve been dreaming up, expect this “Tips and Tricks” list to only grow from here!&lt;/p&gt;
+&lt;h3&gt;Smart Exporting&lt;/h3&gt;
+&lt;p&gt;By default, the “Download List” button caps out at 1000 rows in CSV file. If you want to get more than 1000, then you can slightly adjust the filters (such as geography) to get a new set of 1000 rows. With some quick combination and deduplication, you can easily build a Frankenstein lead list of as many rows as you can find. &lt;/p&gt;
+&lt;p&gt;We will note that this &lt;strong&gt;is not&lt;/strong&gt; suggested at scale. If you’re finding yourself working at such volumes, we highly suggest checkout our our API, which is purpose-built for those kinds of loads. Plus, there are even more filters for even better search results.&lt;/p&gt;
+&lt;h3&gt;Saving Your Work&lt;/h3&gt;
+&lt;p&gt;With Shovels Online we introduced the Saved Profiles feature, which allows you to favorite and save individual permits, contractors, or geographies for easy and convenient future access. Beyond that, you can also save the exact filters and search parameters you’ve been working on already. &lt;/p&gt;
+&lt;p&gt;So once you’ve fine tuned your super query that fits the exact model and needs of your team, never fear of needing to recreate it later. It’ll be there, under &lt;code&gt;Saved Filters&lt;/code&gt;, for next time.&lt;/p&gt;
+&lt;h2&gt;Get In Now!&lt;/h2&gt;
+&lt;p&gt;As we mentioned at the top, this is an exciting time to be using &lt;a href="https://app.shovels.ai"&gt;Shovels Online&lt;/a&gt;. If you want to lock-in our old pricing then be sure to &lt;a href="mailto:sales@shovels.ai"&gt;reach out to our Sales team&lt;/a&gt; for help getting your account set up and your discount confirmed.&lt;/p&gt;
+&lt;p&gt;On the other hand, if you’re new here (welcome!) and interested in our platform, then we’d love to chat more about your specific use case and learn what permit data means to you. &lt;/p&gt;
+&lt;p&gt;We hope that this tutorial is helpful, and Happy Digging!&lt;/p&gt;</content><category term="Customer Success"></category><category term="web application"></category><category term="tutorial"></category></entry><entry><title>How to use the Shovels V2 API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-v2-api/" rel="alternate"></link><published>2024-12-26T00:00:00-08:00</published><updated>2024-12-26T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-12-26:/blog/how-to-use-the-shovels-v2-api/</id><summary type="html">&lt;p&gt;The Shovels V2 REST API enables property, climate, and construction technology developers to access detailed building permit and contractor data. The API provides two primary resources: Permits (official construction documents from local authorities) and Contractors (skilled building trade professionals). Additional endpoints include Lists for predefined values, Addresses for US address validation, and Meta endpoints for API information.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Getting Started with the Shovels API: A How-To Guide&lt;/h1&gt;
+&lt;p&gt;The &lt;a href="https://docs.shovels.ai"&gt;Shovels API&lt;/a&gt; is your gateway to a wealth of construction industry data. Whether you're building property tech, climate solutions, or construction software, our API makes it easy to access detailed information about building permits and licensed contractors. Let's walk through how to get started and make the most of our powerful filtering capabilities.&lt;/p&gt;
+&lt;h2&gt;Overview of the API&lt;/h2&gt;
+&lt;p&gt;The Shovels API revolves around two main resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Permits&lt;/strong&gt; - Official documents issued by cities or counties that track construction and building alterations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contractors&lt;/strong&gt; - Skilled professionals who perform the permitted work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plus some handy additional resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lists&lt;/strong&gt; - Pre-defined values for filtering (like property types and work categories)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Addresses&lt;/strong&gt; - Search and validate US addresses&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Meta&lt;/strong&gt; - Information about the API and data coverage&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Geography&lt;/strong&gt; - Find locations by searching cities, counties, and zip codes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Quick Start: Authentication&lt;/h2&gt;
+&lt;p&gt;Getting started is easy! All API requests need an API key in the &lt;code&gt;X-API-Key&lt;/code&gt; header. Here's how to get one:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sign up for a free account at &lt;a href="https://app.shovels.ai/create-account/"&gt;https://app.shovels.ai/create-account/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Find your API key in your account dashboard (click your email in the top right)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here's a simple Python example to get you going:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;requests&lt;/span&gt;
+
+&lt;span class="n"&gt;API_KEY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;your_api_key_here&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;BASE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://api.shovels.ai/v2&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;BASE_URL&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/permits/search&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;permit_from&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2022-01-01&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;permit_to&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2023-12-31&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+        &lt;span class="s2"&gt;&amp;quot;geo_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;TX&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;property_type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="c1"&gt;# Filter by property type&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;permit_tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;solar&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;hvac&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;  &lt;span class="c1"&gt;# Filter by work type&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+    &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;X-API-Key&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;API_KEY&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Power Filtering with Property Types and Tags&lt;/h2&gt;
+&lt;p&gt;One of the most powerful features of our API is the ability to filter by property types and work categories (tags). This helps you zero in on exactly the data you need.&lt;/p&gt;
+&lt;h3&gt;Property Type Filtering&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;property_type&lt;/code&gt; parameter lets you focus on specific types of buildings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;residential&lt;/li&gt;
+&lt;li&gt;commercial &lt;/li&gt;
+&lt;li&gt;industrial&lt;/li&gt;
+&lt;li&gt;agricultural&lt;/li&gt;
+&lt;li&gt;vacant_land&lt;/li&gt;
+&lt;li&gt;office&lt;/li&gt;
+&lt;li&gt;recreational&lt;/li&gt;
+&lt;li&gt;exempt&lt;/li&gt;
+&lt;li&gt;miscellaneous&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, to find all commercial permits in Texas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_from&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2022-01-01&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_to&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2023-12-31&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;geo_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;TX&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;property_type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;commercial&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Work Category (Tags) Filtering&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;permit_tags&lt;/code&gt; parameter helps you find specific types of work. Some popular tags include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;solar - Solar panel installations&lt;/li&gt;
+&lt;li&gt;hvac - Heating and cooling work&lt;/li&gt;
+&lt;li&gt;reroof - Roofing projects&lt;/li&gt;
+&lt;li&gt;room_addition - Home additions&lt;/li&gt;
+&lt;li&gt;kitchen_remodel - Kitchen renovations&lt;/li&gt;
+&lt;li&gt;bath_remodel - Bathroom renovations&lt;/li&gt;
+&lt;li&gt;new_dwelling - New home construction&lt;/li&gt;
+&lt;li&gt;pool_spa - Pool and spa installations&lt;/li&gt;
+&lt;li&gt;utilities - Utility work&lt;/li&gt;
+&lt;li&gt;window_door - Window and door replacements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find all residential solar projects:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_from&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2022-01-01&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_to&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2023-12-31&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;geo_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;TX&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;property_type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;solar&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Finding Permits&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;/permits/search&lt;/code&gt; endpoint is your main tool for discovering permits. At minimum, you need:
+- A date range (&lt;code&gt;permit_from&lt;/code&gt; and &lt;code&gt;permit_to&lt;/code&gt;)
+- A location (&lt;code&gt;geo_id&lt;/code&gt;)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Pro Tip:&lt;/strong&gt; The &lt;code&gt;geo_id&lt;/code&gt; can be a state ("TX"), zip code ("78701"), city, or county. For cities and counties, you'll need to look up their specific geo_id first using our geography endpoints.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;BASE_URL&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/permits/search&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The response includes a wealth of information about each permit:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;items&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;caf3b9d5ce317d53&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Solar panel installation with battery backup&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;number&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;RE2303928&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;jurisdiction&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Austin&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;property_type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;solar&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;utilities&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="err"&gt;...&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;...&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;page&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;size&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;next_page&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Finding Contractors&lt;/h2&gt;
+&lt;p&gt;The contractor search works similarly to permits. Use &lt;code&gt;/contractors/search&lt;/code&gt; with the same filtering capabilities:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_from&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2022-01-01&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+    &lt;span class="s2"&gt;&amp;quot;permit_to&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2023-12-31&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;geo_id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;TX&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;property_type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;residential&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;permit_tags&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;solar&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;BASE_URL&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/contractors/search&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will find contractors who have done residential solar work in Texas during your date range.&lt;/p&gt;
+&lt;h2&gt;Getting More Details&lt;/h2&gt;
+&lt;p&gt;Once you have a permit or contractor ID, you can get full details:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Get permit details&lt;/span&gt;
+&lt;span class="n"&gt;permit_params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;caf3b9d5ce317d53&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;BASE_URL&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/permits&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;permit_params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Get contractor details&lt;/span&gt;
+&lt;span class="n"&gt;contractor_params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;e79c3393ad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;BASE_URL&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/contractors&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;contractor_params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Beyond the Basics&lt;/h2&gt;
+&lt;p&gt;The API offers many more capabilities:
+- Get contractor performance metrics
+- Look up employee information
+- Search addresses
+- Access geographic data
+- Get market statistics&lt;/p&gt;
+&lt;p&gt;Check out the complete &lt;a href="https://docs.shovels.ai"&gt;API Reference&lt;/a&gt; to explore all the possibilities. And remember to use the &lt;code&gt;/list/*&lt;/code&gt; endpoints to get the latest valid values for tags and other filters.&lt;/p&gt;
+&lt;h2&gt;Need Help?&lt;/h2&gt;
+&lt;p&gt;We're here to help you succeed! Reach out to &lt;code&gt;support@shovels.ai&lt;/code&gt; with any questions. We love seeing what our customers build with the API.&lt;/p&gt;</content><category term="Customer Success"></category><category term="api"></category></entry></feed>
