@@ -5,6 +5,8 @@ Modified: 2024-10-17
 Category: Company
 Tags: data enrichment, API integration, new release 
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Shovels adds more data sources to improve their product. This provides new opportunities for unique insights. This new data needs an upgraded API, which will release soon. 
 Image: /images/harvest-season-hero.jpg
 
@@ -12,7 +14,7 @@ Fall is here. For those of us with actual seasons (cough cough), we only need to
 
 Here at Shovels, we have done a ton of work sharpening our plows, oiling our machinery, and sowing the seeds of a data harvest which will keep us fed through the winter. If you’re curious about some of that prep work, read how we [partnered with Prolific](https://www.shovels.ai/blog/unlocking-shovelss-potential-with-prolific/) to supercharge our LLM-training. 
 
-At the risk of over-extendeding this farming metaphor, the key to a good harvest is crop diversity. And at Shovels, we do not rely on a single data source to deliver our insights. Permit data from local jurisdictions will always be our bread and butter, but that alone is not enough.
+At the risk of over-extending this farming metaphor, the key to a good harvest is crop diversity. And at Shovels, we do not rely on a single data source to deliver our insights. Permit data from local jurisdictions will always be our bread and butter, but that alone is not enough.
 
 ## Hybridization
 

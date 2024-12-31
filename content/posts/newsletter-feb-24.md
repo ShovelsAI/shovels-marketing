@@ -5,6 +5,8 @@ Modified: 2024-2-12
 Category: Company
 Tags: company,newsletter
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We now have a web-based app that people can use to explore our wondrous permit data! 
 Image: /images/shane.png
 

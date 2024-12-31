@@ -5,6 +5,8 @@ Modified: 2023-9-22
 Category: Podcast
 Tags: podcast, no-code, coding
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Proptech startups are like other startups: resource-constrained, we try to move as fast as we can with minimal burn. We take a look at two no-code solutions, Bubble and FlutterFlow, which we used to develop our minimal viable products for Aikito and Shovels.
 Image: /images/podcast1.png
 

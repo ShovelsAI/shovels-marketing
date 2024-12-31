@@ -5,6 +5,8 @@ Modified: 2023-7-10
 Category: GTM
 Tags: gtm, building permits
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Grow your contech startup with this comprehensive guide to go-to-market strategies, covering topics such as identifying target markets, developing an effective plan, and leveraging building permits to identify potential customers. We'll cover key topics such as identifying target markets, developing an effective plan, and leveraging building permits to identify potential customers. With these strategies in hand, you can create a successful go-to-market plan that will help you reach your goals and grow your business.
 Slug: go-to-market-strategies-for-contech-companies
 Image: /theme/images/gtm/hero.svg

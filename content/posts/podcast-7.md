@@ -5,6 +5,8 @@ Modified: 2023-11-08
 Category: Podcast
 Tags: podcast, building permit, building contractor
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: In Episode 7 of "What We Learned This Week in Proptech," Ryan Buckley and Fernando Pizarro explored the complexities of commercial building permits. They discussed the variations in permits across states, the insights gained from analyzing permit data, and the practical implications for businesses and property technology. The episode highlighted the importance of understanding permit trends and regulations in commercial construction and renovation projects.
 Image: /images/podcast7.png
 

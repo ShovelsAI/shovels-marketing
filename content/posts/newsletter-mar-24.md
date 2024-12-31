@@ -5,6 +5,8 @@ Modified: 2024-3-11
 Category: Company
 Tags: company,newsletter
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We launched our Android app in Google Play and made a bunch of data pipeline improvements. We can also now share tables to Snowflake, Big Query, and Databricks.
 Image: /images/screenshots.png
 

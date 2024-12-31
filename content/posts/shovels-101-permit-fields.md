@@ -5,6 +5,8 @@ Modified: 2024-10-09
 Category: Customer Success
 Tags: permits, tutorial, resource
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: The Shovels permit database has many fields, which are sometimes blank. Use the Data Dictionary to understand what these fields mean, and why some might be null. Review the most important fields for a permit, and filter out what isn't needed. 
 Image: /images/shovels-101-permit-fields.png
 

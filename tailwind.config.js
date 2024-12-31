@@ -10,6 +10,14 @@ module.exports = {
       fontFamily: {
         'marble': ['Marble', 'cursive']
       },
+      colors: {
+        'shovels': {
+          'primary': '#01654D',
+          'secondary': '#E9BE51',
+          'dark': '#101727',
+          'light': '#EAE2CF'
+        }
+      }
     },
   },
   plugins: [

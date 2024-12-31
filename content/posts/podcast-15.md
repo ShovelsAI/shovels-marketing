@@ -5,6 +5,8 @@ Modified: 2024-01-29
 Category: Podcast
 Tags: podcast, zoning, proptech, real estate law
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: This week, Ryan Buckley and Fernando Pizarro embarked on an insightful journey through the complexities of zoning and its pivotal role in proptech. They discussed zoning's historical roots, its impact on urban planning and development, and the innovative ways technology is being used to navigate and reshape zoning regulations for a more sustainable and efficient future in real estate.
 Image: /images/podcast15.png
 

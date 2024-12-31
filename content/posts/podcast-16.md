@@ -5,6 +5,8 @@ Modified: 2024-02-05
 Category: Podcast
 Tags: podcast, fundraising, seed, series a, pre-seed
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Ryan Buckley and Fernando Pizarro offer an in-depth look at PropTech fundraising, from understanding different funding stages to analyzing current investment trends. Their discussion, enriched by Buckley's experience with Shovels and insights into investor expectations, provides valuable perspectives for startups navigating the fundraising process amidst a changing economic environment.
 Image: /images/podcast16a.png
 

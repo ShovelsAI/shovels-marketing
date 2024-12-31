@@ -5,6 +5,8 @@ Modified: 2023-8-10
 Category: Data
 Tags: gtm, building permits, ev chargers, permit timeline
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We conducted an in-depth study on electric vehicle (EV) charger permit approval times in California. Our analysis reveals significant variations in approval times across different jurisdictions in the state. While some jurisdictions in Northern California have remarkably fast approval times, many Southern California jurisdictions experience delays of up to two months. Streamlining the permitting process could be a key factor in improving EV charger installation rates. Interestingly, we found no correlation between the volume of permits processed and approval times, suggesting that bureaucratic overload is not the primary cause of delays. This research provides valuable insights for policymakers, businesses, and homeowners looking to navigate the complex landscape of EV charger installations and contribute to the transition to cleaner, more sustainable transportation options.
 Image: /images/top5.png
 

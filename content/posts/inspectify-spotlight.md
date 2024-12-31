@@ -5,6 +5,8 @@ Modified: 2024-11-13
 Category: Case Study
 Tags: spotlight, integration, API, inspectify
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Shovels highlights companies that use their product well. Inspectify integrates with the Shovels API to enrich their home inspection report. All parties involved appreciated the collaboration efforts to achieve the goal.
 Image: /images/shovels-spotlight-inspectify.png
 

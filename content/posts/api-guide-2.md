@@ -5,7 +5,9 @@ Modified: 2024-12-26
 Category: Customer Success
 Tags: api
 Authors: Ryan Buckley
-Summary: The Shovels V2 REST API enables property, climate, and construction technology developers to access detailed building permit and contractor data. The API provides two primary resources: Permits (official construction documents from local authorities) and Contractors (skilled building trade professionals). Additional endpoints include Lists for predefined values, Addresses for US address validation, and Meta endpoints for API information.
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
+Summary: The Shovels V2 REST API enables property, climate, and construction technology developers to access detailed building permit and contractor data. The API provides two primary resources: Permits (official construction documents from local authorities) and Contractors (skilled building trade professionals).
 Image: /images/api-blog.jpg
 
 

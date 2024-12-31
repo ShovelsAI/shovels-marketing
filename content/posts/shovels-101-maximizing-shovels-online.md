@@ -5,6 +5,8 @@ Modified: 2024-11-20
 Category: Customer Success
 Tags: web application, tutorial
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Learn from the experts how to get the most out of Shovels Online. Unlock use cases, best practices, and insider tips. Subscribe today before prices increase.
 Image: /images/maximizing-shovels-online-hero.png
 

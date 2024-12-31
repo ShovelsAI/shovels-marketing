@@ -5,6 +5,8 @@ Modified: 2023-02-12
 Category: Customer Success
 Tags: app, launch
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Shovels app, a web application that provides access to building permit and contractor data, has been launched. The app, built using Google's Flutter technology, allows users to find and profile addresses, permits, and contractors. The application was developed in response to a market need for a user-friendly platform that doesn't require API knowledge. Future updates will include Android and iOS versions of the app, improved geocoding, and additional search and filter options. The app is priced at $499/month per account.
 Image: /images/boulder-commercial.png
 

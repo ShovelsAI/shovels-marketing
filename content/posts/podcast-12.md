@@ -5,6 +5,8 @@ Modified: 2023-12-13
 Category: Podcast
 Tags: podcast, culture, hr, proptech
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Episode 12 of "What We Learned This Week in Proptech" podcast with Ryan Buckley and Fernando Pizarro delves into the intricacies of company culture in proptech. They discuss its impact on decision-making, diversity, and sustainability, underscoring its essential role in shaping company dynamics and future growth.
 Image: /images/podcast12.png
 

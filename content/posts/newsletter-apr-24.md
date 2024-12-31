@@ -5,6 +5,8 @@ Modified: 2024-4-10
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We are very excited about the launch of Shovels V2. We know you are too. This is the start of the killer building permit application. The one that should have existed all along. We also can push 100 million building permits and contractors straight into Snowflake, Big Query, and Databricks.
 Image: /images/explore.png
 

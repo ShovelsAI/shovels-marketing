@@ -5,6 +5,8 @@ Modified: 2024-10-9
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We're gearing up to launch Shovels Online at the end of the month, offering an easier way to access and download building permit data. A launch party is scheduled for October 24 in San Francisco!
 Image: /images/domains.png
 

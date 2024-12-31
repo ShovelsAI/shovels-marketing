@@ -5,6 +5,8 @@ Modified: 2024-6-18
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Shovels has launched a rebuilt web application and updated API documentation, adding city search to both the permit and contractor search APIs, along with license classification filtering. They re-classified every building permit in Texas, added 2 million permits, 1.3 million geo-tagged addresses, and expanded to 19 new jurisdictions. The nationwide contractor license data project is integrating state license files and building electrification rebate program affiliations. A website rewrite is underway, enhancing user experience. The new software build includes enhanced CSV downloads and city-based search functionalities.
 Image: /images/heat-pumps-in-ny.png
 

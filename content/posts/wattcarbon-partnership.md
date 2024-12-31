@@ -5,6 +5,8 @@ Modified: 2024-08-22
 Category: Company
 Tags: EAC, WattCarbon, Decarbonization
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Shovels supports elecrification efforts through their contractor search platform, as well as through supporting WattCarbon. WattCarbon provides a EAC (Energy Attribute Certificate) Marketplace to individuals and corporations alike. Both WattCarbon and Shovels help make climate-friendly and electrification projects accessible for all. 
 Image: /images/shovels-wattcarbon-hero.png
 

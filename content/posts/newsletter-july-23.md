@@ -5,6 +5,8 @@ Modified: 2023-7-24
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We overcame data processing challenges and loaded all of California into our internal database, with an API update coming soon. Additionally, we are actively following up with Florida, Texas, and New York, and we remain on track to expand nationwide by the end of summer. We have also created a dashboard showcasing building electrification permits in Contra Costa County and made predictions for EV charging permits in 2024.
 Image: /images/shovels_ev_prediction.png
 
