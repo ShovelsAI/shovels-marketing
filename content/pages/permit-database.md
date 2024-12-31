@@ -1,3 +1,4 @@
+
 Title: Building Permit Database
 Description: Explore nationwide building permits with advanced filtering and intelligent contractor matching through our powerful V2 API and modern interface.
 slug: permit-database
