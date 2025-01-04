@@ -39,13 +39,13 @@ slug: climate
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <div class="lg:pr-4">
-        <div class="relative overflow-hidden rounded-3xl bg-shovels-dark px-6 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 xl:px-10">
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-shovels-primary via-purple-500 to-shovels-secondary px-6 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 xl:px-10">
           <img class="inset-0 size-full object-cover" src="theme/images/climate/hero.svg" alt="">
         </div>
       </div>
       <div>
         <div class="text-base/7 text-gray-700 lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-shovels-primary">Company values</p>
+          <p class="text-base/7 font-semibold text-shovels-primary">Shovels company values</p>
           <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We care about climate</h2>
           <div class="max-w-xl">
             <p class="mt-6">Shovels is making a deliberate effort to support electrification progress. We're putting engineering and data science resources into supporting the work that climate companies are doing.</p>
@@ -76,12 +76,12 @@ slug: climate
     </div>
   </div>
 </div>
-<div class="bg-white">
+<div class="bg-white mb-24">
   <div class="mx-auto max-w-7xl pt-24 sm:px-2 sm:pt-32 lg:px-4">
     <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
       <div class="max-w-3xl">
-        <h2 class="font-semibold text-gray-500">API and software</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lead generation for climate tech</p>
+        <h2 class="font-semibold text-gray-500">Building permit and contractor data</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lead generation for climate tech companies</p>
         <p class="mt-4 text-gray-500">We provide building permit and contractor data through our API and software to help you find building electrification leads and build your installer network.</p>
       </div>
       <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
@@ -116,11 +116,11 @@ slug: climate
     </div>
   </div>
 </div>
-<div class="bg-white pb-24 sm:pb-32">
+<div class="bg-gray-100 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Climate case studies</h2>
-      <p class="mt-2 text-lg/8 text-gray-600">We write about building permits, contractors, and the future of construction.</p>
+      <p class="mt-2 text-lg/8 text-gray-600">We use our data and models to answer interesting questions about the future of building electrification.</p>
     </div>
     <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <article class="flex flex-col items-start justify-start">
@@ -131,7 +131,7 @@ slug: climate
         <div class="max-w-xl">
           <div class="mt-8 flex items-center gap-x-4 text-xs">
             <time datetime="Jul 24, 2023" class="text-gray-500">Sep 11, 2024</time>
-              <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
+              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -162,7 +162,7 @@ slug: climate
         <div class="max-w-xl">
           <div class="mt-8 flex items-center gap-x-4 text-xs">
             <time datetime="Jul 24, 2023" class="text-gray-500">Nov 19, 2023</time>
-              <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
+              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -193,7 +193,7 @@ slug: climate
         <div class="max-w-xl">
           <div class="mt-8 flex items-center gap-x-4 text-xs">
             <time datetime="Jul 24, 2023" class="text-gray-500">Jul 24, 2023</time>
-              <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
+              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
