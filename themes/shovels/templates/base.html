@@ -95,6 +95,12 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  {% if generator %}
+    {% set climate_articles = get_climate_articles(generator) %}
+  {% else %}
+    {% set climate_articles = [] %}
+  {% endif %}
+
   {% block background_pattern %}{% endblock background_pattern %}
 
   {% include 'header.html' %}
