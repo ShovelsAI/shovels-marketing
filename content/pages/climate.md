@@ -40,7 +40,7 @@ slug: climate
     <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <div class="lg:pr-4">
         <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-shovels-primary via-purple-500 to-shovels-secondary px-6 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 xl:px-10">
-          <img class="inset-0 size-full object-cover" src="theme/images/climate/hero.svg" alt="">
+          <img class="inset-0 size-full object-cover" src="theme/images/climate/hero.svg" alt="Shovels loves climate tech">
         </div>
       </div>
       <div>
