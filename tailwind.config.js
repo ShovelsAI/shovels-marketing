@@ -17,7 +17,10 @@ module.exports = {
           'dark': '#101727',
           'light': '#EAE2CF'
         }
-      }
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
   plugins: [
