@@ -40,7 +40,7 @@
 <link href="data:;base64,=" rel="icon"/>
 </link></meta><link href="https://www.shovels.ai/about" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.shovels.ai/about.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Shovels"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>About Shovels, Inc.</p>", "about": "pages"}</script></head>
 <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
-<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }" x-init="inverted = checkInverted()">
+<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -50,7 +50,7 @@
 <a href="/">
 <span class="sr-only">Shovels</span>
 <a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
-<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" x-bind:src="inverted ? 'https://www.shovels.ai/theme/images/shovels-navbar-logo-inverted.svg' : 'https://www.shovels.ai/theme/images/shovels-navbar-logo.svg'"/>
+<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
 </a>
 </a>
 </div>
@@ -211,15 +211,6 @@
 <p class="mt-1 text-sm text-emerald-800">Use Shovels programmatically using our API and your favorite programming language.</p>
 </div>
 </a>
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/team">
-<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
-<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<div class="ml-4">
-<p class="text-base text-emerald-900">Team</p>
-<p class="mt-1 text-sm text-emerald-800">The people behind Shovels.</p>
-</div>
-</a>
 <a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/about">
 <svg class="h-6 w-6 flex-shrink-0 text-slate-600" stroke="currentColor" stroke-width="1.5" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <path d="m68.75 12.5v-6.25c0-1.7266-1.3984-3.125-3.125-3.125h-31.25c-1.7266 0-3.125 1.3984-3.125 3.125v6.25c0 8.6133 7.0117 15.625 15.625 15.625v28.125h-12.5c-1.7188 0-3.125 1.4062-3.125 3.125v15.438c0 9 5.4062 16.969 13.75 20.312l3.8438 1.5312c0.375 0.15625 0.75 0.21875 1.1562 0.21875s0.78125-0.0625 1.1562-0.21875l3.8438-1.5312c8.3438-3.3438 13.75-11.312 13.75-20.312v-15.438c0-1.7188-1.4062-3.125-3.125-3.125h-12.5v-28.125c8.6133 0 15.625-7.0117 15.625-15.625zm-31.25 0v-3.125h25v3.125c0 5.168-4.207 9.375-9.375 9.375h-6.25c-5.168 0-9.375-4.207-9.375-9.375z" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -356,7 +347,6 @@ Leaving: "duration-100 ease-in"
 </div>
 <div class="space-y-6 py-6 px-5">
 <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/team">Team</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/about">Company</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/careers">Careers</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog">Blog</a>
@@ -371,123 +361,182 @@ Leaving: "duration-100 ease-in"
 </div>
 </div>
 </div>
-<div class="py-24">
-<div class="mx-auto max-w-7xl px-6">
-<div class="max-w-md">
-<h1 class="mt-2 text-4xl tracking-tight text-amber-300">The Shovels One-Pager</h1>
-<p class="mt-10 text-lg leading-6 text-stone-200">Shovels is the building permit intelligence platform for residential and commercial construction. We add millions of new building permits each month and use AI to clean, classify, and connect building permits to addresses, properties, contractors, residents, and building owners to help construction companies sell more products.</p>
+<p><svg aria-hidden="true" class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]">
+<defs>
+<pattern height="200" id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+<path d="M100 200V.5M.5 .5H200" fill="none"></path>
+</pattern>
+</defs>
+<svg class="overflow-visible fill-gray-50" x="50%" y="-1">
+<path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0"></path>
+</svg>
+<rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" height="100%" stroke-width="0" width="100%"></rect>
+</svg></p>
+<div class="overflow-hidden">
+<div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+<div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+<div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+<h1 class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">We’re making construction data accessible</h1>
+<p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">When you can see what's getting built and who's building it, the world opens up. We're fascinated by real-world data, the records that describe the world around us. We've come a long way since we started in 2022 and we still have a long way to go.</p>
+<p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">We hope you'll join us for the ride.</p>
+</div>
+<div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+<div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+<div class="relative">
+<img alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="https://www.shovels.ai/images/about1.png"/>
+<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+</div>
+</div>
+<div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+<div class="relative">
+<img alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="https://www.shovels.ai/images/about2.png"/>
+<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+</div>
+<div class="relative">
+<img alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="https://www.shovels.ai/images/about3.png"/>
+<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+</div>
+</div>
+<div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+<div class="relative">
+<img alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="https://www.shovels.ai/images/about4.png"/>
+<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+</div>
+<div class="relative">
+<img alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="https://www.shovels.ai/images/about5.png"/>
+<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
 </div>
 </div>
 </div>
-<div class="bg-lime-50 py-8" id="about-contentss">
-<div class="mx-auto max-w-7xl px-6">
-<article class="flex flex-col md:flex-row my-12">
-<!-- left -->
-<div class="lg:w-96 mr-10">
-<h2 class="text-lg text-emerald-800 tracking-wide uppercase">What we do</h2>
 </div>
-<!-- right -->
-<div class="max-w-2xl">
-<p class="mt-2 font-medium text-gray-900 max-w-lg">Shovels compiles and analyzes public records on the following objects:</p>
-<table class="min-w-full divide-y divide-gray-300 mt-10 max-w-2xl">
-<thead>
-<tr>
-<th class="text-left text-base text-stone-400 uppercase sm:pl-0" scope="col">Object
-              </th>
-<th class="hidden px-3 text-left text-base text-stone-400 uppercase lg:table-cell" scope="col">
-                Description</th>
-<th class="hidden px-3 text-left text-base text-stone-400 uppercase sm:table-cell" scope="col">
-                Accessibility</th>
-</tr>
-</thead>
-<tbody class="divide-y divide-gray-200">
-<tr>
-<td class="w-full max-w-0 py-4 text-base text-black sm:w-auto sm:max-w-none sm:pl-0">
-                Building permit
-                <dl class="font-normal lg:hidden">
-<dt class="sr-only">Description</dt>
-<dd class="mt-1 text-gray-700">Parsing and granular categorization of building permits</dd>
-<dt class="sr-only sm:hidden">Accessibility</dt>
-<dd class="mt-1 text-gray-500 sm:hidden">Lookup by property address, parcel number, contractor name or license, or filter by attributes</dd>
+</div>
+</div>
+<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+<h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our mission</h2>
+<div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+<div class="lg:w-full lg:max-w-2xl lg:flex-auto">
+<p class="text-xl/8 text-gray-600">We started with a simple mission: make building permit data accessible to everyone. That mission has grown to include building contractors, geospatial data, and property attributes.</p>
+<p class="mt-10 max-w-xl text-base/7 text-gray-700">Fundamentally, we believe in making complex data accessible and ready for analysis. We want to delight data scientists and account executives alike. This is a massive market and we're just getting started.</p>
+</div>
+<div class="lg:flex lg:flex-auto lg:justify-center">
+<dl class="w-64 space-y-8 xl:w-80">
+<div class="flex flex-col-reverse gap-y-4">
+<dt class="text-base/7 text-gray-600">Building permits added monthly</dt>
+<dd class="text-5xl font-semibold tracking-tight text-gray-900">5+ million</dd>
+</div>
+<div class="flex flex-col-reverse gap-y-4">
+<dt class="text-base/7 text-gray-600">Contractors tracked</dt>
+<dd class="text-5xl font-semibold tracking-tight text-gray-900">3 million</dd>
+</div>
+<div class="flex flex-col-reverse gap-y-4">
+<dt class="text-base/7 text-gray-600">Properties with permit history</dt>
+<dd class="text-5xl font-semibold tracking-tight text-gray-900">30+ million</dd>
+</div>
 </dl>
-</td>
-<td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Parsing and granular categorization of building permits by type of work</td>
-<td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by property address, parcel number, contractor name or license, or filter by attributes</td>
-</tr>
-<tr>
-<td class="w-full max-w-0 py-4 text-base text-black sm:w-auto sm:max-w-none sm:pl-0">
-                Building contractor
-                <dl class="font-normal lg:hidden">
-<dt class="sr-only">Description</dt>
-<dd class="mt-1 text-gray-700">Associating contractors to permits and computing quality metrics
-                  </dd>
-<dt class="sr-only sm:hidden">Accessibility</dt>
-<dd class="mt-1 text-gray-500 sm:hidden">Lookup by property address, parcel number, contractor name or license, or filter by attributes</dd>
-</dl>
-</td>
-<td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Associating contractors to permits and computing quality metrics</td>
-<td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by property address, parcel number, contractor name or license, or filter by attributes</td>
-</tr>
-<tr>
-<td class="w-full max-w-0 py-4 text-base text-black sm:w-auto sm:max-w-none sm:pl-0">
-                Property
-                <dl class="font-normal lg:hidden">
-<dt class="sr-only">Description</dt>
-<dd class="mt-1 text-gray-700">Listing of related permits and contractors and property attributes</dd>
-<dt class="sr-only sm:hidden">Accessibility</dt>
-<dd class="mt-1 text-gray-500 sm:hidden">Lookup by address or parcel number, or filter by attributes</dd>
-</dl>
-</td>
-<td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Listing of related permits and contractors
-              </td>
-<td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by address or parcel number, or filter by attributes</td>
-</tr>
-</tbody>
-</table>
-<hr class="border border-stone-200"/>
 </div>
-</article>
-<hr class="border border-gray-900 my-12"/>
-<article class="flex flex-col md:flex-row my-12">
-<!-- left -->
-<div class="lg:w-96 mr-10">
-<h2 class="text-lg text-emerald-800 tracking-wide uppercase">Our geographies</h2>
 </div>
-<!-- right -->
-<div class="max-w-2xl">
-<p class="mt-2 text-base text-gray-700">We have coverage in 48 states. See more detail in our <a class="font-semibold hover:text-amber-500" href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank">Data Dictionary.</a></p>
 </div>
-</article>
-<hr class="border border-gray-900 my-12"/>
-<article class="flex flex-col md:flex-row my-12">
-<!-- left -->
-<div class="lg:w-96 mr-10">
-<h2 class="text-lg text-emerald-800 tracking-wide uppercase">Our advantage</h2>
 </div>
-<!-- right -->
-<div class="max-w-2xl">
-<p class="mt-2 text-base text-gray-700">Our competitive advantage is our focus on data quality and completeness.
-        </p>
-<ul class="list-disc ml-4 max-w-2xl">
-<li class="mt-3 text-base text-gray-700"><span class="font-semibold">Completeness</span>: We use multiple
-            vendors and our own data extraction expertise to ensure that all permits are gathered from every permitting jurisdiction in our geographies.</li>
-<li class="mt-3 text-base text-gray-700"><span class="font-semibold">Quality</span>: Permit data is notoriously messy. We go out of our way to cleanse and normalize data so it is easy to consume.</li>
-<li class="mt-3 text-base text-gray-700"><span class="font-semibold">Science</span>: We layer multiple datasets to discover new statistical relationships between permits, contractors, and properties.</li>
-<li class="mt-3 text-base text-gray-700"><span class="font-semibold">Recency</span>: We process millions of new records every month.</li>
+<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+<img alt="Shovels team dinner" class="aspect-[5/2] w-full object-cover xl:rounded-3xl" src="https://www.shovels.ai/images/about6.png"/>
+</div>
+<div class="bg-white py-24 sm:py-32">
+<div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+<div class="max-w-xl">
+<h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Meet the team</h2>
+<p class="mt-6 text-xl/8 text-gray-600">We're a venture-backed team of AI engineers and data professionals. We're headquartered in California with offices in Washington and Texas.</p>
+<p class="mt-6 text-xl/8 text-gray-600">We like solving hard data problems and enjoy working with real-world data.</p>
+</div>
+<ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2" role="list">
+<li>
+<a href="https://www.linkedin.com/in/rbuckley/" target="_blank">
+<div class="flex items-center gap-x-6">
+<img alt="Ryan Buckley, Shovels" class="size-16 rounded-full" src="theme/images/team/ryan.svg"/>
+<div>
+<h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Ryan Buckley</h3>
+<p class="text-base/6 font-semibold text-shovels-primary">Co-Founder / CEO</p>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/lknix/" target="_blank">
+<div class="flex items-center gap-x-6">
+<img alt="Luka Kacil, Shovels" class="size-16 rounded-full" src="theme/images/team/luka.svg"/>
+<div>
+<h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Luka Kacil</h3>
+<p class="text-base/6 font-semibold text-shovels-primary">Co-Founder / CTO</p>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/petra-kopic/" target="_blank">
+<div class="flex items-center gap-x-6">
+<img alt="Petra Kopic, Shovels" class="size-16 rounded-full" src="theme/images/team/petra.svg"/>
+<div>
+<h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Petra Kopic</h3>
+<p class="text-base/6 font-semibold text-shovels-primary">Data Engineer</p>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/bettywan7/" target="_blank">
+<div class="flex items-center gap-x-6">
+<img alt="Betty Wan, Shovels" class="size-16 rounded-full" src="theme/images/team/betty.svg"/>
+<div>
+<h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Betty Wan</h3>
+<p class="text-base/6 font-semibold text-shovels-primary">VP of Growth</p>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/alex-brown-9a4b0b19a/" target="_blank">
+<div class="flex items-center gap-x-6">
+<img alt="Alex Brown, Shovels" class="size-16 rounded-full" src="theme/images/team/alex.svg"/>
+<div>
+<h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
+<p class="text-base/6 font-semibold text-shovels-primary">Technical Support &amp; Writer</p>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/whitney-house/" target="_blank">
+<div class="flex items-center gap-x-6">
+<img alt="Whitney House, Shovels" class="size-16 rounded-full" src="theme/images/team/whitney.svg"/>
+<div>
+<h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Whitney House</h3>
+<p class="text-base/6 font-semibold text-shovels-primary">Sales</p>
+</div>
+</div>
+</a>
+</li>
 </ul>
 </div>
-</article>
-<hr class="border border-gray-900 my-12"/>
-<article class="flex flex-col md:flex-row my-12">
-<!-- left -->
-<div class="lg:w-96 mr-10">
-<h2 class="text-lg text-emerald-800 tracking-wide uppercase">Pricing</h2>
 </div>
-<!-- right -->
-<div class="max-w-2xl">
-<p class="mt-2 text-base text-gray-700">We sell by geography and pricing depends on whether historical data is included, how often you need updates, and how you consume the data. Contact <a href="mailto:sales@shovels.ai">sales@shovels.ai</a> or call 1-800-511-7457 for more information! </p>
+<div class="bg-white py-12 sm:py-16">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+<img alt="Oracle and Shovels" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" height="48" src="theme/images/home/oracle.svg" width="158"/>
+<img alt="Statamic" class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" height="48" src="theme/images/home/pearl.png" width="158"/>
+<img alt="SavvyCal" class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" height="48" src="theme/images/home/schneider.svg" width="158"/>
+<img alt="TopBuild" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" height="48" src="theme/images/home/topbuild.svg" width="158"/>
+<img alt="Angi" class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" height="48" src="theme/images/home/angi.svg" width="158"/>
+<img alt="BuilderTrend" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" height="48" src="theme/images/home/buildertrend.png" width="158"/>
+<img alt="Beam" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" height="48" src="theme/images/home/beam.svg" width="158"/>
+<img alt="Houzz" class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" height="48" src="theme/images/home/houzz.svg" width="158"/>
+<img alt="Rewiring America" class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" height="48" src="theme/images/home/rewiring.png" width="158"/>
+<img alt="PaintJet" class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" height="48" src="theme/images/home/paintjet.png" width="158"/>
 </div>
-</article>
+<div class="mt-16 flex justify-center">
+<p class="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
+<a class="font-semibold text-shovels-primary" href="/blog/?category=Case%20Study"><span aria-hidden="true" class="absolute inset-0"></span> Read our case studies <span aria-hidden="true">→</span></a>
+</p>
+</div>
 </div>
 </div>
 <footer aria-labelledby="footer-heading" class="bg-gray-900 text-lime-50">
@@ -539,15 +588,12 @@ Leaving: "duration-100 ease-in"
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&amp;state=&amp;city=&amp;county_or_jurisdiction=&amp;zip_code=&amp;date_filter=" target="_blank">Coverage Dashboard</a>
 </li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank">Data Dictionary</a>
-</li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels-v2.redoc.ly" target="_blank">API Documentation</a>
-</li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/team" target="_blank">Team Shovels</a>
-</li>
+<li></li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.shovels.ai" target="_blank">API Documentation</a>
+
+<li></li>
+<a class="text-sm leading-6 hover:text-amber-600" href="https://discord.gg/Nypja3cKDx">Shovels Discord Community</a>
+
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/about" target="_blank">About Shovels</a>
 </li>
@@ -594,44 +640,8 @@ Leaving: "duration-100 ease-in"
 </svg>
 </a>
 </div>
-<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2024 Shovels, Inc. All rights reserved. (800) 511-7457</p>
+<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2025 Shovels, Inc. All rights reserved. (800) 511-7457.</p>
 </div>
 </div>
-</footer> <script>
-    function pathIsPartOfPathsList(list, path) {
-      return list.some(item => path.startsWith(item));
-    }
-    const pathsWithInvertedTheme = [
-      '/permit-database',
-      '/contractor-directory',
-      '/data-feed',
-      '/api',
-      '/team',
-      '/about',
-    ];
-
-    function handleBodyClass() {
-      const path = window.location.pathname;
-      const bodyElement = document.body;
-
-      if (pathIsPartOfPathsList(pathsWithInvertedTheme, path)) {
-        bodyElement.classList.add('inverted');
-      } else {
-        bodyElement.classList.remove('inverted');
-      }
-      
-    }
-
-    handleBodyClass();
-
-    window.addEventListener('popstate', function (event) {
-      handleBodyClass();
-    });
-
-    function checkInverted() {
-      const path = window.location.pathname;
-      return pathsWithInvertedTheme.includes(path)
-    }
-  </script>
-</body>
+</footer></body>
 </html>

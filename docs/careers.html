@@ -40,7 +40,7 @@
 <link href="data:;base64,=" rel="icon"/>
 </link></meta><link href="https://www.shovels.ai/careers" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Careers", "item": "https://www.shovels.ai/careers.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Shovels"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>Careers at Shovels</p>", "about": "pages"}</script></head>
 <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
-<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }" x-init="inverted = checkInverted()">
+<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -50,7 +50,7 @@
 <a href="/">
 <span class="sr-only">Shovels</span>
 <a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
-<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" x-bind:src="inverted ? 'https://www.shovels.ai/theme/images/shovels-navbar-logo-inverted.svg' : 'https://www.shovels.ai/theme/images/shovels-navbar-logo.svg'"/>
+<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
 </a>
 </a>
 </div>
@@ -211,15 +211,6 @@
 <p class="mt-1 text-sm text-emerald-800">Use Shovels programmatically using our API and your favorite programming language.</p>
 </div>
 </a>
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/team">
-<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
-<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<div class="ml-4">
-<p class="text-base text-emerald-900">Team</p>
-<p class="mt-1 text-sm text-emerald-800">The people behind Shovels.</p>
-</div>
-</a>
 <a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/about">
 <svg class="h-6 w-6 flex-shrink-0 text-slate-600" stroke="currentColor" stroke-width="1.5" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <path d="m68.75 12.5v-6.25c0-1.7266-1.3984-3.125-3.125-3.125h-31.25c-1.7266 0-3.125 1.3984-3.125 3.125v6.25c0 8.6133 7.0117 15.625 15.625 15.625v28.125h-12.5c-1.7188 0-3.125 1.4062-3.125 3.125v15.438c0 9 5.4062 16.969 13.75 20.312l3.8438 1.5312c0.375 0.15625 0.75 0.21875 1.1562 0.21875s0.78125-0.0625 1.1562-0.21875l3.8438-1.5312c8.3438-3.3438 13.75-11.312 13.75-20.312v-15.438c0-1.7188-1.4062-3.125-3.125-3.125h-12.5v-28.125c8.6133 0 15.625-7.0117 15.625-15.625zm-31.25 0v-3.125h25v3.125c0 5.168-4.207 9.375-9.375 9.375h-6.25c-5.168 0-9.375-4.207-9.375-9.375z" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -356,7 +347,6 @@ Leaving: "duration-100 ease-in"
 </div>
 <div class="space-y-6 py-6 px-5">
 <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/team">Team</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/about">Company</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/careers">Careers</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog">Blog</a>
@@ -555,15 +545,12 @@ Leaving: "duration-100 ease-in"
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&amp;state=&amp;city=&amp;county_or_jurisdiction=&amp;zip_code=&amp;date_filter=" target="_blank">Coverage Dashboard</a>
 </li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank">Data Dictionary</a>
-</li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels-v2.redoc.ly" target="_blank">API Documentation</a>
-</li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/team" target="_blank">Team Shovels</a>
-</li>
+<li></li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.shovels.ai" target="_blank">API Documentation</a>
+
+<li></li>
+<a class="text-sm leading-6 hover:text-amber-600" href="https://discord.gg/Nypja3cKDx">Shovels Discord Community</a>
+
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/about" target="_blank">About Shovels</a>
 </li>
@@ -610,44 +597,8 @@ Leaving: "duration-100 ease-in"
 </svg>
 </a>
 </div>
-<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2024 Shovels, Inc. All rights reserved. (800) 511-7457</p>
+<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2025 Shovels, Inc. All rights reserved. (800) 511-7457.</p>
 </div>
 </div>
-</footer> <script>
-    function pathIsPartOfPathsList(list, path) {
-      return list.some(item => path.startsWith(item));
-    }
-    const pathsWithInvertedTheme = [
-      '/permit-database',
-      '/contractor-directory',
-      '/data-feed',
-      '/api',
-      '/team',
-      '/about',
-    ];
-
-    function handleBodyClass() {
-      const path = window.location.pathname;
-      const bodyElement = document.body;
-
-      if (pathIsPartOfPathsList(pathsWithInvertedTheme, path)) {
-        bodyElement.classList.add('inverted');
-      } else {
-        bodyElement.classList.remove('inverted');
-      }
-      
-    }
-
-    handleBodyClass();
-
-    window.addEventListener('popstate', function (event) {
-      handleBodyClass();
-    });
-
-    function checkInverted() {
-      const path = window.location.pathname;
-      return pathsWithInvertedTheme.includes(path)
-    }
-  </script>
-</body>
+</footer></body>
 </html>

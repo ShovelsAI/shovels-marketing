@@ -40,7 +40,7 @@
 <link href="data:;base64,=" rel="icon"/>
 </link></meta><link href="https://www.shovels.ai/contact" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.shovels.ai/contact.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Shovels"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>Contact Shovels</p>", "about": "pages"}</script></head>
 <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
-<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }" x-init="inverted = checkInverted()">
+<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -50,7 +50,7 @@
 <a href="/">
 <span class="sr-only">Shovels</span>
 <a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
-<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" x-bind:src="inverted ? 'https://www.shovels.ai/theme/images/shovels-navbar-logo-inverted.svg' : 'https://www.shovels.ai/theme/images/shovels-navbar-logo.svg'"/>
+<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
 </a>
 </a>
 </div>
@@ -211,15 +211,6 @@
 <p class="mt-1 text-sm text-emerald-800">Use Shovels programmatically using our API and your favorite programming language.</p>
 </div>
 </a>
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/team">
-<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
-<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<div class="ml-4">
-<p class="text-base text-emerald-900">Team</p>
-<p class="mt-1 text-sm text-emerald-800">The people behind Shovels.</p>
-</div>
-</a>
 <a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/about">
 <svg class="h-6 w-6 flex-shrink-0 text-slate-600" stroke="currentColor" stroke-width="1.5" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <path d="m68.75 12.5v-6.25c0-1.7266-1.3984-3.125-3.125-3.125h-31.25c-1.7266 0-3.125 1.3984-3.125 3.125v6.25c0 8.6133 7.0117 15.625 15.625 15.625v28.125h-12.5c-1.7188 0-3.125 1.4062-3.125 3.125v15.438c0 9 5.4062 16.969 13.75 20.312l3.8438 1.5312c0.375 0.15625 0.75 0.21875 1.1562 0.21875s0.78125-0.0625 1.1562-0.21875l3.8438-1.5312c8.3438-3.3438 13.75-11.312 13.75-20.312v-15.438c0-1.7188-1.4062-3.125-3.125-3.125h-12.5v-28.125c8.6133 0 15.625-7.0117 15.625-15.625zm-31.25 0v-3.125h25v3.125c0 5.168-4.207 9.375-9.375 9.375h-6.25c-5.168 0-9.375-4.207-9.375-9.375z" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -356,7 +347,6 @@ Leaving: "duration-100 ease-in"
 </div>
 <div class="space-y-6 py-6 px-5">
 <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/team">Team</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/about">Company</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/careers">Careers</a>
 <a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog">Blog</a>
@@ -371,24 +361,67 @@ Leaving: "duration-100 ease-in"
 </div>
 </div>
 </div>
-<div class="mx-auto max-w-4xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
-<h2 class="text-5xl tracking-tight text-emerald-800">Enterprise-ready contractor intelligence</h2>
-<p class="mt-2 text-lg leading-8 text-gray-600">Access enriched permit data, derived quality metrics, and verified contact information to power your sales and marketing workflows.</p>
-<div class="mt-8 flex flex-col space-y-4">
-<div class="mb-8">
-<h3 class="text-xl font-medium text-emerald-800">Schedule a consultation</h3>
-<p class="mt-2 text-gray-600">Meet with Betty Wan, VP of Growth, to discuss how Shovels can help optimize your entire revenue stack.</p>
-<a class="mt-4 inline-block rounded-md bg-emerald-800 px-6 py-2.5 text-center text-sm font-semibold text-white hover:bg-emerald-700" href="https://meetings.hubspot.com/betty-wan/meet-with-betty">
-        Schedule Meeting
-      </a>
+<p><svg aria-hidden="true" class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]">
+<defs>
+<pattern height="200" id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+<path d="M100 200V.5M.5 .5H200" fill="none"></path>
+</pattern>
+</defs>
+<svg class="overflow-visible fill-gray-50" x="50%" y="-1">
+<path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0"></path>
+</svg>
+<rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" height="100%" stroke-width="0" width="100%"></rect>
+</svg></p>
+<div class="relative isolate">
+<div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+<div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+<div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+<h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact us</h2>
+<p class="mt-6 text-lg/8 text-gray-600">Access enriched permit data, derived quality metrics, and verified contact information to power your sales and marketing workflows.</p>
+<dl class="mt-10 space-y-4 text-base/7 text-gray-600">
+<div class="flex gap-x-4">
+<dt class="flex-none">
+<span class="sr-only">Address</span>
+<svg aria-hidden="true" class="h-7 w-6 text-gray-400" data-slot="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</dt>
+<dd>3515 Mount Diablo Blvd, Unit #51, Lafayette, CA 94549</dd>
 </div>
-<div>
-<h3 class="text-xl font-medium text-emerald-800">Or get in touch</h3>
-<p class="mt-2 text-gray-600">Tell us about your data needs and our team will help you identify the right solution.</p>
-<div>
+<div class="flex gap-x-4">
+<dt class="flex-none">
+<span class="sr-only">Telephone</span>
+<svg aria-hidden="true" class="h-7 w-6 text-gray-400" data-slot="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</dt>
+<dd><a class="hover:text-gray-900" href="tel:+1 (800) 511-7457">+1 (800) 511-7457</a></dd>
+</div>
+<div class="flex gap-x-4">
+<dt class="flex-none">
+<span class="sr-only">Email</span>
+<svg aria-hidden="true" class="h-7 w-6 text-gray-400" data-slot="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</dt>
+<dd><a class="hover:text-gray-900" href="mailto:sales@shovels.ai">sales@shovels.ai</a></dd>
+</div>
+<div class="flex gap-x-4">
+<dt class="flex-none">
+<span class="sr-only">Schedule a consultation</span>
+<svg aria-hidden="true" class="h-7 w-6 text-gray-400" data-slot="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</dt>
+<dd><a class="hover:text-gray-900" href="https://meetings.hubspot.com/betty-wan/meet-with-betty">Book a meeting</a></dd>
+</div>
+</dl>
+</div>
+</div>
+<div class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+<div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
 <script defer="" src="https://js.hsforms.net/forms/embed/48146409.js"></script>
 <div class="hs-form-frame" data-form-id="7339497d-832c-42c2-8ea8-0b513af7ae20" data-portal-id="48146409" data-region="na1"></div>
-</div>
 </div>
 </div>
 </div>
@@ -441,15 +474,12 @@ Leaving: "duration-100 ease-in"
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&amp;state=&amp;city=&amp;county_or_jurisdiction=&amp;zip_code=&amp;date_filter=" target="_blank">Coverage Dashboard</a>
 </li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank">Data Dictionary</a>
-</li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels-v2.redoc.ly" target="_blank">API Documentation</a>
-</li>
-<li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/team" target="_blank">Team Shovels</a>
-</li>
+<li></li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.shovels.ai" target="_blank">API Documentation</a>
+
+<li></li>
+<a class="text-sm leading-6 hover:text-amber-600" href="https://discord.gg/Nypja3cKDx">Shovels Discord Community</a>
+
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/about" target="_blank">About Shovels</a>
 </li>
@@ -496,44 +526,8 @@ Leaving: "duration-100 ease-in"
 </svg>
 </a>
 </div>
-<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2024 Shovels, Inc. All rights reserved. (800) 511-7457</p>
+<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2025 Shovels, Inc. All rights reserved. (800) 511-7457.</p>
 </div>
 </div>
-</footer> <script>
-    function pathIsPartOfPathsList(list, path) {
-      return list.some(item => path.startsWith(item));
-    }
-    const pathsWithInvertedTheme = [
-      '/permit-database',
-      '/contractor-directory',
-      '/data-feed',
-      '/api',
-      '/team',
-      '/about',
-    ];
-
-    function handleBodyClass() {
-      const path = window.location.pathname;
-      const bodyElement = document.body;
-
-      if (pathIsPartOfPathsList(pathsWithInvertedTheme, path)) {
-        bodyElement.classList.add('inverted');
-      } else {
-        bodyElement.classList.remove('inverted');
-      }
-      
-    }
-
-    handleBodyClass();
-
-    window.addEventListener('popstate', function (event) {
-      handleBodyClass();
-    });
-
-    function checkInverted() {
-      const path = window.location.pathname;
-      return pathsWithInvertedTheme.includes(path)
-    }
-  </script>
-</body>
+</footer></div></body>
 </html>
