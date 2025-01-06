@@ -69,10 +69,10 @@ slug: permit-database
   </div>
 </div>
 <div class="bg-white">
-  <section aria-labelledby="features-heading" class="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8" x-data="{{ '{' }} activeTab: 1 {{ '}' }}">
+  <section aria-labelledby="features-heading" class="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8" x-data="{ activeTab: 1 }">
     <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
       <div class="max-w-3xl">
-        <h2 id="features-heading" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Software features</h2>
+        <h2 id="features-heading" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Shovels Online features</h2>
         <p class="mt-4 text-gray-500">We built Shovels Online to be the most powerful and flexible tool for exploring nationwide building permits and contractors. These are the key features.</p>
       </div>
       <div class="mt-4">

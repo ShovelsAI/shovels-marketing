@@ -181,21 +181,46 @@ div.article img {
 
 /* end of article classes */
 
-/* for the Home page's example API responses */
-.hljs {
-  background: #111827 !important;
+/* Syntax Highlighting for Pygments */
+.highlight {
+  @apply my-4 rounded-lg bg-gray-900 p-4 overflow-x-auto;
 }
-.hljs-attr {
-  color: #fcd34d !important;
+.highlight pre {
+  @apply text-gray-100;
 }
-.hljs-number{
-  color: #0ca77c !important;
-}
-.hljs-string,
-.hljs-section,
-.hljs-selector-class,
-.hljs-template-variable,
-.hljs-deletion,
-.hljs-punctuation {
-  color: #f7fee7 !important;
-}
+/* Token colors */
+.highlight .hll { @apply bg-gray-700; }
+.highlight .c { @apply text-gray-500; } /* Comment */
+.highlight .err { @apply text-red-500; } /* Error */
+.highlight .k { @apply text-purple-400; } /* Keyword */
+.highlight .l { @apply text-yellow-300; } /* Literal */
+.highlight .n { @apply text-gray-200; } /* Name */
+.highlight .o { @apply text-gray-400; } /* Operator */
+.highlight .p { @apply text-gray-400; } /* Punctuation */
+.highlight .cm { @apply text-gray-500; } /* Comment.Multiline */
+.highlight .cp { @apply text-gray-500; } /* Comment.Preproc */
+.highlight .c1 { @apply text-gray-500; } /* Comment.Single */
+.highlight .cs { @apply text-gray-500; } /* Comment.Special */
+.highlight .kc { @apply text-purple-400; } /* Keyword.Constant */
+.highlight .kd { @apply text-purple-400; } /* Keyword.Declaration */
+.highlight .kn { @apply text-purple-400; } /* Keyword.Namespace */
+.highlight .kp { @apply text-purple-400; } /* Keyword.Pseudo */
+.highlight .kr { @apply text-purple-400; } /* Keyword.Reserved */
+.highlight .kt { @apply text-purple-400; } /* Keyword.Type */
+.highlight .ld { @apply text-yellow-300; } /* Literal.Date */
+.highlight .s { @apply text-green-400; } /* Literal.String */
+.highlight .na { @apply text-blue-400; } /* Name.Attribute */
+.highlight .nb { @apply text-blue-400; } /* Name.Builtin */
+.highlight .nc { @apply text-blue-400; } /* Name.Class */
+.highlight .no { @apply text-red-400; } /* Name.Constant */
+.highlight .nd { @apply text-blue-400; } /* Name.Decorator */
+.highlight .ni { @apply text-red-400; } /* Name.Entity */
+.highlight .ne { @apply text-red-400; } /* Name.Exception */
+.highlight .nf { @apply text-blue-400; } /* Name.Function */
+.highlight .nl { @apply text-gray-200; } /* Name.Label */
+.highlight .nn { @apply text-gray-200; } /* Name.Namespace */
+.highlight .nx { @apply text-blue-400; } /* Name.Other */
+.highlight .py { @apply text-gray-200; } /* Name.Property */
+.highlight .nt { @apply text-purple-400; } /* Name.Tag */
+.highlight .nv { @apply text-red-400; } /* Name.Variable */
+.highlight .w { @apply text-gray-200; } /* Text.Whitespace */ 

@@ -6,17 +6,31 @@
     <meta name="description" content="Read the latest insights from Shovels about proptech, climatetech, and entrepreneurship. Stay updated with our articles on construction technology and industry trends.">
 {% endblock %}
 
+{% block background_pattern %}
+<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+  <defs>
+    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+      <path d="M100 200V.5M.5 .5H200" fill="none" />
+    </pattern>
+  </defs>
+  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+  </svg>
+  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+</svg>
+{% endblock background_pattern %}
+
 {% block content %}
-<section class="py-8 md:py-24">
+<div class="pt-24 sm:pt-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto">
-      <h1 class="text-5xl  leading-tight text-emerald-800">The Shovels Blog</h1>
-      <p class="mt-2 text-lg leading-8 text-gray-900 max-w-lg">We write about proptech, climatetech, and entrepreneurship.</p>
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="mt-2 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">The Shovels Blog</h2>
+      <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We write about prop tech, climate tech, and entrepreneurship.</p>
     </div>
   </div>
-</section>
+</div>
 <!-- categories -->
-<section class="mx-auto max-w-7xl px-6 lg:px-8">
+<section class="mx-auto max-w-7xl px-6 lg:px-8 pt-16 sm:pt-24">
   <ul class="flex flex-row">
     <li data-category="all" class="rounded bg-[#E8BD51] text-gray-900 hover:[#E9E1CE] text-xs px-3 py-2 cursor-pointer mr-3 category-li">
       <a href="/blog">All</a>
@@ -33,29 +47,52 @@
 <!-- article cards -->
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
       {% for article in dates %}
-      <article class="border-2 border-gray-900" x-show="isMatchingCategory('{{ article.category }}')">
-        <a href="{{ SITEURL }}/{{ article.url }}">
-          <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt=""
-            class="object-cover h-48 w-96" />
-        </a>
-        <!-- category -->
-        <div class="p-8">
-          <a href="/blog/?category={{article.category}}"
-            class="relative z-10 rounded bg-[#E9E1CE]  text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{
-            article.category }}</a>
-        </div>
-        <!-- title and date -->
-        <div>
+      <article class="flex flex-col items-start justify-between" x-show="isMatchingCategory('{{ article.category }}')">
+        <div class="relative w-full">
           <a href="{{ SITEURL }}/{{ article.url }}">
-            <div class="pb-8 px-8">
-              <h2 class="my-6 text-[32px] font-medium text-[#01654D] group-hover:text-gray-600 leading-none">
-                {{ article.title }}
-              </h2>
-              <time datetime="{{ article.date }}" class="text-black text-xs">{{ article.locale_date }}</time>
-            </div>
+            <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" 
+                 alt="{{ article.title }}"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="{{ article.date }}" class="text-gray-500">{{ article.locale_date }}</time>
+            <a href="/blog/?category={{article.category}}"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               {{ article.category }}
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="{{ SITEURL }}/{{ article.url }}">
+                <span class="absolute inset-0"></span>
+                {{ article.title }}
+              </a>
+            </h2>
+            {% if article.summary %}
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ article.summary }}</p>
+            {% endif %}
+          </div>
+          <!-- author info -->
+          {% if article.author %}
+          <div class="relative mt-8 flex items-center gap-x-4">
+            {% if article.author_image %}
+            <img src="{{ article.author_image }}" alt="{{ article.author }}" class="size-10 rounded-full bg-gray-100">
+            {% endif %}
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">{{ article.author }}</p>
+              {% if article.author_title %}
+              <p class="text-gray-600">{{ article.author_title }}</p>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
         </div>
       </article>
       {% endfor %}
