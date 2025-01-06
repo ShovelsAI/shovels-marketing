@@ -52,9 +52,6 @@ body {
 }
 
 /* start of Tailwind utility classes */
-body.inverted {
-  @apply bg-emerald-800;
-}
 
 .navbar_item {
   @apply text-emerald-800 inline-flex items-center rounded-md text-base hover:text-emerald-900
@@ -62,14 +59,6 @@ body.inverted {
 
 .navbar_item > svg {
   @apply group-hover:text-emerald-900
-}
-
-.inverted .navbar_item {
-  @apply text-lime-50 hover:text-lime-200
-}
-
-.inverted .navbar_item > svg {
-  @apply group-hover:text-lime-200
 }
 
 .hero_container {
@@ -84,9 +73,7 @@ body.inverted {
 .hero_description {
   @apply mt-6 text-lg leading-8 text-gray-600
 }
-.inverted .hero_description {
-  @apply text-lime-50
-}
+
 .hero_image-container {
   @apply mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow
 }
@@ -106,16 +93,9 @@ body.inverted {
   @apply uppercase text-emerald-800 font-medium;
   font-size: 23px;
 }
-.inverted .elaboration-card_title {
-  @apply text-amber-300
-}
 
 .elaboration-card_text-container {
   @apply mt-3 text-base leading-7 text-gray-900
-}
-
-.inverted .elaboration-card_text-container {
-  @apply text-stone-200
 }
 
 @layer components {

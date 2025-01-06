@@ -2391,11 +2391,6 @@ body {
 
 /* start of Tailwind utility classes */
 
-body.inverted {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 95 70 / var(--tw-bg-opacity, 1));
-}
-
 .navbar_item {
   display: inline-flex;
   align-items: center;
@@ -2414,21 +2409,6 @@ body.inverted {
 .group:hover .navbar_item > svg {
   --tw-text-opacity: 1;
   color: rgb(6 78 59 / var(--tw-text-opacity, 1));
-}
-
-.inverted .navbar_item {
-  --tw-text-opacity: 1;
-  color: rgb(247 254 231 / var(--tw-text-opacity, 1));
-}
-
-.inverted .navbar_item:hover {
-  --tw-text-opacity: 1;
-  color: rgb(217 249 157 / var(--tw-text-opacity, 1));
-}
-
-.group:hover .inverted .navbar_item > svg {
-  --tw-text-opacity: 1;
-  color: rgb(217 249 157 / var(--tw-text-opacity, 1));
 }
 
 .hero_container {
@@ -2477,11 +2457,6 @@ body.inverted {
   line-height: 2rem;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-}
-
-.inverted .hero_description {
-  --tw-text-opacity: 1;
-  color: rgb(247 254 231 / var(--tw-text-opacity, 1));
 }
 
 .hero_image-container {
@@ -2561,22 +2536,12 @@ body.inverted {
   font-size: 23px;
 }
 
-.inverted .elaboration-card_title {
-  --tw-text-opacity: 1;
-  color: rgb(252 211 77 / var(--tw-text-opacity, 1));
-}
-
 .elaboration-card_text-container {
   margin-top: 0.75rem;
   font-size: 1rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
-}
-
-.inverted .elaboration-card_text-container {
-  --tw-text-opacity: 1;
-  color: rgb(231 229 228 / var(--tw-text-opacity, 1));
 }
 
 /* end of Tailwind utility classes */
