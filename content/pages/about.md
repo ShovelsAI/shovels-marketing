@@ -96,7 +96,7 @@ slug: about
       <li>
         <a href="https://www.linkedin.com/in/rbuckley/" target="_blank">
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="theme/images/team/ryan.svg" alt="">
+            <img class="size-16 rounded-full" src="theme/images/team/ryan.svg" alt="Ryan Buckley, Shovels">
             <div>
               <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Ryan Buckley</h3>
               <p class="text-base/6 font-semibold text-shovels-primary">Co-Founder / CEO</p>
@@ -107,7 +107,7 @@ slug: about
       <li>
         <a href="https://www.linkedin.com/in/lknix/" target="_blank">
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="theme/images/team/luka.svg" alt="">
+            <img class="size-16 rounded-full" src="theme/images/team/luka.svg" alt="Luka Kacil, Shovels">
             <div>
               <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Luka Kacil</h3>
               <p class="text-base/6 font-semibold text-shovels-primary">Co-Founder / CTO</p>
@@ -118,7 +118,7 @@ slug: about
       <li>
         <a href="https://www.linkedin.com/in/petra-kopic/" target="_blank">
           <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="Petra Kopic, Shovels">
           <div>
             <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Petra Kopic</h3>
             <p class="text-base/6 font-semibold text-shovels-primary">Data Engineer</p>
@@ -129,7 +129,7 @@ slug: about
       <li>
         <a href="https://www.linkedin.com/in/bettywan7/" target="_blank">
           <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/betty.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/betty.svg" alt="Betty Wan, Shovels">
           <div>
             <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Betty Wan</h3>
             <p class="text-base/6 font-semibold text-shovels-primary">VP of Growth</p>
@@ -140,7 +140,7 @@ slug: about
       <li>
         <a href="https://www.linkedin.com/in/alex-brown-9a4b0b19a/" target="_blank">
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="">
+            <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="Alex Brown, Shovels">
             <div>
               <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
               <p class="text-base/6 font-semibold text-shovels-primary">Technical Support & Writer</p>
@@ -151,7 +151,7 @@ slug: about
       <li>
         <a href="https://www.linkedin.com/in/whitney-house/" target="_blank">
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="theme/images/team/whitney.svg" alt="">
+            <img class="size-16 rounded-full" src="theme/images/team/whitney.svg" alt="Whitney House, Shovels">
             <div>
               <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Whitney House</h3>
               <p class="text-base/6 font-semibold text-shovels-primary">Sales</p>
