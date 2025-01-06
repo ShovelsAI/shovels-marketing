@@ -7,7 +7,7 @@ Tags: podcast, culture, supreme court, proptech
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
-Summary: In Episode 13 of "What We Learned This Week in Proptech," Fernando Pizarro and I delved into the Sitzer Burnett case which challenges the traditional commission-based system in real estate transactions. This lawsuit could potentially lead to a transformative change in the industry, paving the way for more efficient and consumer-friendly proptech innovations.
+Summary: Episode 13 delves into the Sitzer Burnett case which challenges the traditional commission-based system in real estate transactions. This lawsuit could potentially lead to a transformative change in the industry, paving the way for more efficient and consumer-friendly proptech innovations.
 Image: /images/podcast13.png
 
 

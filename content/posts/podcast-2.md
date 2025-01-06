@@ -7,7 +7,7 @@ Tags: proptech, fundraising
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
-Summary: In the second episode of "What We Learned This Week in Proptech," Fernando Pizarro and I explore the complexities of fundraising in the proptech sector. We discuss the convergence of proptech and climate tech, highlighting how their ventures integrate sustainable practices into real estate technology. The episode concludes with insights into the evolving Proptech landscape, stressing the significance of strategic partnerships and a strong commitment to business goals.
+Summary: In the second episode, Fernando Pizarro and I explore the complexities of fundraising in the proptech sector. We discuss the convergence of proptech and climate tech, highlighting how their ventures integrate sustainable practices into real estate technology. The episode concludes with insights into the evolving Proptech landscape, stressing the significance of strategic partnerships and a strong commitment to business goals.
 Image: /images/podcast2.png
 
 

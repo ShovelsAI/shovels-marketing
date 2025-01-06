@@ -7,7 +7,7 @@ Tags: podcast, culture, davos, energy, permit data
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
-Summary: In a compelling episode of "What We Learned This Week in Proptech," Ryan Buckley and Fernando Pizarro shared their unique experiences at Davos and a White House roundtable. Fernando highlighted the networking and insights gained at Davos, focusing on sustainability and AI, while Ryan discussed the complexities of green infrastructure and permits in a White House session. The episode underscored the growing importance of proptech in addressing global challenges.
+Summary: In this compelling episode, Ryan Buckley and Fernando Pizarro shared their unique experiences at Davos and a White House roundtable. Fernando highlighted the networking and insights gained at Davos, focusing on sustainability and AI, while Ryan discussed the complexities of green infrastructure and permits in a White House session. The episode underscored the growing importance of proptech in addressing global challenges.
 Image: /images/podcast14.png
 
 

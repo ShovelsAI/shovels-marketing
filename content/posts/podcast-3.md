@@ -7,7 +7,7 @@ Tags: proptech, positioning
 Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg
 author_title: CEO
-Summary: The third episode of "What We Learned This Week in Proptech" with Fernando and Ryan Buckley dives deep into the concept of positioning in the PropTech industry. Drawing inspiration from April Dunford's book "Obviously Awesome," they explore how positioning can significantly impact the success and perception of a product. The episode uses a compelling analogy of a bakery specializing in chocolate cake to demonstrate how different positioning (cake, muffin, lollipop) can create entirely different market segments and customer perceptions, even with the same product.
+Summary: The third episode, Fernando and Ryan Buckley dives deep into the concept of positioning in the PropTech industry. Drawing inspiration from April Dunford's book, Obviously Awesome, they explore how positioning can significantly impact the success and perception of a product. The episode uses a compelling analogy of a bakery specializing in chocolate cake to demonstrate how different positioning (cake, muffin, lollipop) can create entirely different market segments and customer perceptions, even with the same product.
 Image: /images/podcast3.png
 
 

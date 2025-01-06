@@ -7,7 +7,7 @@ Tags: podcast, downtown, economic development
 Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg
 author_title: CEO
-Summary: In Episode 6 of "What I Learned This Week In Proptech," we explored the transformative trends in urban real estate, particularly in downtown areas like San Francisco. The discussion covered the rising vacancy rates, innovative repurposing of commercial spaces, and the evolving concept of coworking. We highlighted the significance of community in these transformations and contemplated the role of local government in shaping the future of urban landscapes.
+Summary: In Episode 6 we explored the transformative trends in urban real estate, particularly in downtown areas like San Francisco. The discussion covered the rising vacancy rates, innovative repurposing of commercial spaces, and the evolving concept of coworking. We highlighted the significance of community in these transformations and contemplated the role of local government in shaping the future of urban landscapes.
 Image: /images/podcast6.png
 
 
