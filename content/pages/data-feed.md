@@ -19,7 +19,7 @@ slug: data-feed
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Custom reports and full feeds</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Custom reports and data feeds</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We'll push the full nationwide history of building permit and contractor records directly into your Snowflake, BigQuery, or Databricks accounts. We can also provide parquet files.</p>
         <div class="mt-10 flex items-center gap-x-6">

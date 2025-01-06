@@ -38,7 +38,7 @@ slug: real-estate
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
       <div class="mx-auto w-full max-w-xl lg:mx-0">
-        <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Partnerships</h2>
+        <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Partners</h2>
         <p class="mt-6 text-lg/8 text-gray-600">We partner with leading geospatial companies to bring you the best data and tools for your site selection process.</p>
         <!--
         <div class="mt-8 flex items-center gap-x-6">
