@@ -70,7 +70,7 @@ slug: software
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-base/7 font-semibold text-indigo-600">GTM platform for the building trades</h2>
+      <h2 class="text-base/7 font-semibold text-shovels-primary">GTM platform for the building trades</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Fast access to great contractor leads</p>
       <p class="mt-6 text-lg/8 text-gray-600">No more calling contractors who work in the wrong market or closed shop a long time ago. Give your sales team the right leads to sell your software.</p>
     </div>
