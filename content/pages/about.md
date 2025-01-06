@@ -2,126 +2,184 @@ Title: About Shovels, Inc.
 Description: Learn about Shovels - the building permit intelligence platform helping construction companies leverage data to make better decisions and grow their business.
 slug: about
 
-<div class="py-24">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="max-w-md">
-      <h1 class="mt-2 text-4xl tracking-tight text-amber-300">The Shovels One-Pager</h1>
-      <p class="mt-10 text-lg leading-6 text-stone-200">Shovels is the building permit intelligence platform for residential and commercial construction. We add millions of new building permits each month and use AI to clean, classify, and connect building permits to addresses, properties, contractors, residents, and building owners to help construction companies sell more products.</p>
+{% block background_pattern %}
+<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+  <defs>
+    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+      <path d="M100 200V.5M.5 .5H200" fill="none" />
+    </pattern>
+  </defs>
+  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+  </svg>
+  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+</svg>
+{% endblock background_pattern %}
+
+<div class="overflow-hidden">
+  <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+    <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+      <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+        <h1 class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">We’re making construction data accessible</h1>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">When you can see what's getting built and who's building it, the world opens up. We're fascinated by real-world data, the records that describe the world around us. We've come a long way since we started in 2022 and we still have a long way to go.</p>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">We hope you'll join us for the ride.</p>
+      </div>
+      <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+        <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+          <div class="relative">
+            <img src="{static}/images/about1.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+        </div>
+        <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+          <div class="relative">
+            <img src="{static}/images/about2.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+          <div class="relative">
+            <img src="{static}/images/about3.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+        </div>
+        <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+          <div class="relative">
+            <img src="{static}/images/about4.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+          <div class="relative">
+            <img src="{static}/images/about5.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<div id="about-contentss" class="bg-lime-50 py-8">
-  <div class="mx-auto max-w-7xl px-6">
-    <article class="flex flex-col md:flex-row my-12">
-      <!-- left -->
-      <div class="lg:w-96 mr-10">
-        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">What we do</h2>
+<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+  <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+    <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our mission</h2>
+    <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+      <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
+        <p class="text-xl/8 text-gray-600">We started with a simple mission: make building permit data accessible to everyone. That mission has grown to include building contractors, geospatial data, and property attributes.</p>
+        <p class="mt-10 max-w-xl text-base/7 text-gray-700">Fundamentally, we believe in making complex data accessible and ready for analysis. We want to delight data scientists and account executives alike. This is a massive market and we're just getting started.</p>
       </div>
-      <!-- right -->
-      <div class="max-w-2xl">
-        <p class="mt-2 font-medium text-gray-900 max-w-lg">Shovels compiles and analyzes public records on the following objects:</p>
-        <table class="min-w-full divide-y divide-gray-300 mt-10 max-w-2xl">
-          <thead>
-            <tr>
-              <th scope="col" class="text-left text-base  text-stone-400 uppercase sm:pl-0">Object
-              </th>
-              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase lg:table-cell">
-                Description</th>
-              <th scope="col" class="hidden px-3 text-left text-base  text-stone-400 uppercase sm:table-cell">
-                Accessibility</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200">
-            <tr>
-              <td
-                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
-                Building permit
-                <dl class="font-normal lg:hidden">
-                  <dt class="sr-only">Description</dt>
-                  <dd class="mt-1 text-gray-700">Parsing and granular categorization of building permits</dd>
-                  <dt class="sr-only sm:hidden">Accessibility</dt>
-                  <dd class="mt-1 text-gray-500 sm:hidden">Lookup by property address, parcel number, contractor name or license, or filter by attributes</dd>
-                </dl>
-              </td>
-              <td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Parsing and granular categorization of building permits by type of work</td>
-              <td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by property address, parcel number, contractor name or license, or filter by attributes</td>
-            </tr>
-            <tr>
-              <td
-                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
-                Building contractor
-                <dl class="font-normal lg:hidden">
-                  <dt class="sr-only">Description</dt>
-                  <dd class="mt-1 text-gray-700">Associating contractors to permits and computing quality metrics
-                  </dd>
-                  <dt class="sr-only sm:hidden">Accessibility</dt>
-                  <dd class="mt-1 text-gray-500 sm:hidden">Lookup by property address, parcel number, contractor name or license, or filter by attributes</dd>
-                </dl>
-              </td>
-              <td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Associating contractors to permits and computing quality metrics</td>
-              <td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by property address, parcel number, contractor name or license, or filter by attributes</td>
-            </tr>
-            <tr>
-              <td
-                class="w-full max-w-0 py-4 text-base  text-black sm:w-auto sm:max-w-none sm:pl-0">
-                Property
-                <dl class="font-normal lg:hidden">
-                  <dt class="sr-only">Description</dt>
-                  <dd class="mt-1 text-gray-700">Listing of related permits and contractors and property attributes</dd>
-                  <dt class="sr-only sm:hidden">Accessibility</dt>
-                  <dd class="mt-1 text-gray-500 sm:hidden">Lookup by address or parcel number, or filter by attributes</dd>
-                </dl>
-              </td>
-              <td class="hidden px-3 py-4 text-base text-gray-500 lg:table-cell">Listing of related permits and contractors
-              </td>
-              <td class="hidden px-3 py-4 text-base text-gray-500 sm:table-cell">Lookup by address or parcel number, or filter by attributes</td>
-            </tr>
-          </tbody>
-        </table>
-        <hr class="border border-stone-200">
+      <div class="lg:flex lg:flex-auto lg:justify-center">
+        <dl class="w-64 space-y-8 xl:w-80">
+          <div class="flex flex-col-reverse gap-y-4">
+            <dt class="text-base/7 text-gray-600">Building permits added monthly</dt>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">5+ million</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-y-4">
+            <dt class="text-base/7 text-gray-600">Contractors tracked</dt>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">3 million</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-y-4">
+            <dt class="text-base/7 text-gray-600">Properties with permit history</dt>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">30+ million</dd>
+          </div>
+        </dl>
       </div>
-    </article>
-    <hr class="border border-gray-900 my-12">
-    <article class="flex flex-col md:flex-row my-12">
-      <!-- left -->
-      <div class="lg:w-96 mr-10">
-        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our geographies</h2>
-      </div>
-      <!-- right -->
-      <div class="max-w-2xl">
-        <p class="mt-2 text-base text-gray-700">We have coverage in 48 states. See more detail in our <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1818227349" target="_blank" class="font-semibold hover:text-amber-500">Data Dictionary.</a></p>
-      </div>
-    </article>
-    <hr class="border border-gray-900 my-12">
-    <article class="flex flex-col md:flex-row my-12">
-      <!-- left -->
-      <div class="lg:w-96 mr-10">
-        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Our advantage</h2>
-      </div>
-      <!-- right -->
-      <div class="max-w-2xl">
-        <p class="mt-2 text-base text-gray-700">Our competitive advantage is our focus on data quality and completeness.
-        </p>
-        <ul class="list-disc ml-4 max-w-2xl">
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Completeness</span>: We use multiple
-            vendors and our own data extraction expertise to ensure that all permits are gathered from every permitting jurisdiction in our geographies.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Quality</span>: Permit data is notoriously messy. We go out of our way to cleanse and normalize data so it is easy to consume.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Science</span>: We layer multiple datasets to discover new statistical relationships between permits, contractors, and properties.</li>
-          <li class="mt-3 text-base text-gray-700"><span class="font-semibold">Recency</span>: We process millions of new records every month.</li>
-        </ul>
-      </div>
-    </article>
-    <hr class="border border-gray-900 my-12">
-    <article class="flex flex-col md:flex-row my-12">
-      <!-- left -->
-      <div class="lg:w-96 mr-10">
-        <h2 class="text-lg  text-emerald-800 tracking-wide uppercase">Pricing</h2>
-      </div>
-      <!-- right -->
-      <div class="max-w-2xl">
-        <p class="mt-2 text-base text-gray-700">We sell by geography and pricing depends on whether historical data is included, how often you need updates, and how you consume the data. Contact <a href="mailto:sales@shovels.ai">sales@shovels.ai</a> or call 1-800-511-7457 for more information! </p>
-      </div>
-    </article>
+    </div>
+  </div>
+</div>
+<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+  <img src="{static}/images/about6.png" alt="Shovels team dinner" class="aspect-[5/2] w-full object-cover xl:rounded-3xl">
+</div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+    <div class="max-w-xl">
+      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Meet the team</h2>
+      <p class="mt-6 text-xl/8 text-gray-600">We're a venture-backed team of AI engineers and data professionals. We're headquartered in California with offices in Washington and Texas.</p>
+      <p class="mt-6 text-xl/8 text-gray-600">We like solving hard data problems and enjoy working with real-world data.</p>
+    </div>
+    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+      <li>
+        <a href="https://www.linkedin.com/in/rbuckley/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="theme/images/team/ryan.svg" alt="">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Ryan Buckley</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Co-Founder / CEO</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/lknix/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="theme/images/team/luka.svg" alt="">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Luka Kacil</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Co-Founder / CTO</p>
+            </div>
+          </div>
+        </a>
+      </li> 
+      <li>
+        <a href="https://www.linkedin.com/in/petra-kopic/" target="_blank">
+          <div class="flex items-center gap-x-6">
+          <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="">
+          <div>
+            <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Petra Kopic</h3>
+            <p class="text-base/6 font-semibold text-shovels-primary">Data Engineer</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/bettywan7/" target="_blank">
+          <div class="flex items-center gap-x-6">
+          <img class="size-16 rounded-full" src="theme/images/team/betty.svg" alt="">
+          <div>
+            <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Betty Wan</h3>
+            <p class="text-base/6 font-semibold text-shovels-primary">VP of Growth</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/alex-brown-9a4b0b19a/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Technical Support & Writer</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/whitney-house/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="theme/images/team/whitney.svg" alt="">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Whitney House</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Sales</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="bg-white py-12 sm:py-16">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/oracle.svg" alt="Oracle and Shovels" width="158" height="48">
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/pearl.png" alt="Statamic" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/schneider.svg" alt="SavvyCal" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/topbuild.svg" alt="TopBuild" width="158" height="48">
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/angi.svg" alt="Angi" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/buildertrend.png" alt="BuilderTrend" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/beam.svg" alt="Beam" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/houzz.svg" alt="Houzz" width="158" height="48">
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/rewiring.png" alt="Rewiring America" width="158" height="48">
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/paintjet.png" alt="PaintJet" width="158" height="48">
+    </div>
+    <div class="mt-16 flex justify-center">
+      <p class="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
+        <a href="{{ SITEURL }}/blog/?category=Case%20Study" class="font-semibold text-shovels-primary"><span class="absolute inset-0" aria-hidden="true"></span> Read our case studies <span aria-hidden="true">&rarr;</span></a>
+      </p>
+    </div>
   </div>
 </div>

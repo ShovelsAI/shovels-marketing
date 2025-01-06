@@ -5,6 +5,8 @@ Modified: 2024-4-13
 Category: Customer Success
 Tags: ai, chatgpt, openai
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: A comprehensive guide to using Shovels' custom GPT integration with ChatGPT, showing how to search building permits and find contractors across the US using natural language queries. Learn practical examples and tips for getting the most out of this powerful tool.
 Image: /images/shovelsgpt.png
 

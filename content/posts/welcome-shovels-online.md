@@ -5,6 +5,8 @@ Modified: 2024-11-06
 Category: Company
 Tags: product launch, web application
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Shovels launches their brand new web application, Shovels Online. There are updates to functionality and UI/UX. Shovels Online's app and free trial are live today.
 Image: /images/shovels-online-hero.png
 

@@ -5,6 +5,8 @@ Modified: 2023-10-27
 Category: Podcast
 Tags: podcast, sales, crm
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: In the fifth episode of our podcast, we explore the unique challenges of sales and CRM strategies in the proptech industry. We discuss the importance of aligning sales approaches with diverse customer needs and behaviors, and the impact of CRM choices on a company's workflow and culture. The conversation highlights the significance of structured customer relationship management in driving the success of proptech ventures.
 Image: /images/podcast5.png
 

@@ -5,7 +5,9 @@ Modified: 2023-12-07
 Category: Podcast
 Tags: podcast, climatetech, proptech
 Authors: Ryan Buckley
-Summary: In this week's episode of "What We Learned This Week in Proptech," Ryan Buckley and Fernando Pizarro delve into the promising intersection of proptech and climate tech. They discuss the impact of the Inflation Reduction Act, the role of virtual power plants, and the implications of Local Law 97 in New York, highlighting the significant opportunities emerging at this crossroads.
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
+Summary: In this week's episode, Ryan Buckley and Fernando Pizarro delve into the promising intersection of proptech and climate tech. They discuss the impact of the Inflation Reduction Act, the role of virtual power plants, and the implications of Local Law 97 in New York, highlighting the significant opportunities emerging at this crossroads.
 Image: /images/podcast11.png
 
 

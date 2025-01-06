@@ -5,6 +5,8 @@ Modified: 2023-6-28
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Enough with the fundraising blah blah blah. It's time to start talking about building permits! We've been working hard on processing 100 million building permits to provide you with high-quality data. We'll release the permits for California, Florida, Texas, and New York soon, with more to come. In addition, we've identified some really interesting go-to-market (GTM) uses for building permits. 
 Image: /theme/images/climate/hero.svg
 

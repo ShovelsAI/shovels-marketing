@@ -5,6 +5,8 @@ Modified: 2023-10-20
 Category: Podcast
 Tags: podcast, no-code, coding
 Authors: Ryan Buckley
+author_image: /theme/images/team/ryan.svg
+author_title: CEO
 Summary: In the latest episode of our podcast, we explored the nuances of hiring in the proptech industry. We emphasized the importance of attitude, potential, communication skills, and cultural fit over traditional qualifications. Our discussion highlighted how diverse backgrounds, passion, and adaptability are key to building a successful team in the dynamic world of proptech.
 Image: /images/podcast4.png
 

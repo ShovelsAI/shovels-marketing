@@ -5,6 +5,8 @@ Modified: 2024-10-02
 Category: Customer Success
 Tags: permits, tutorial, resource, address
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Not all addresses will have permits, for a variety of reasons. Variance between local requirements and enforcement means that not all projects require permits. Available digitization of permits makes it even more complicated, but Shovels has a plan keep improving data completeness.  
 Image: /images/address-history-hero.jpg
 

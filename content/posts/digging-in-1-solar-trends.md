@@ -5,6 +5,8 @@ Modified: 2024-09-11
 Category: Data
 Tags: RE Plus, Solar, Insights
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: The Shovels dataset and model can highlight key construction trends and patterns. In this blog, we discuss solar construction specifically due to the RE+ clean energy convention. Use Shovels to inform your construction company's business models and strategy.
 Image: /images/digging-in-us-solar-construction-heatmap-watermarked.png
 

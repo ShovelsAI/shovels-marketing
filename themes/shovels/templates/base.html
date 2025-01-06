@@ -88,12 +88,19 @@
 </head>
 <!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
 
-<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif" x-data="{ inverted: false }"
-  x-init="inverted = checkInverted()">
+<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  {% if generator %}
+    {% set climate_articles = get_climate_articles(generator) %}
+  {% else %}
+    {% set climate_articles = [] %}
+  {% endif %}
+
+  {% block background_pattern %}{% endblock background_pattern %}
 
   {% include 'header.html' %}
 
@@ -101,42 +108,6 @@
   {% endblock %}
 
   {% include 'footer.html' %}
-  <script>
-    function pathIsPartOfPathsList(list, path) {
-      return list.some(item => path.startsWith(item));
-    }
-    const pathsWithInvertedTheme = [
-      '/permit-database',
-      '/contractor-directory',
-      '/data-feed',
-      '/api',
-      '/team',
-      '/about',
-    ];
-
-    function handleBodyClass() {
-      const path = window.location.pathname;
-      const bodyElement = document.body;
-
-      if (pathIsPartOfPathsList(pathsWithInvertedTheme, path)) {
-        bodyElement.classList.add('inverted');
-      } else {
-        bodyElement.classList.remove('inverted');
-      }
-      
-    }
-
-    handleBodyClass();
-
-    window.addEventListener('popstate', function (event) {
-      handleBodyClass();
-    });
-
-    function checkInverted() {
-      const path = window.location.pathname;
-      return pathsWithInvertedTheme.includes(path)
-    }
-  </script>
 </body>
 
 </html>

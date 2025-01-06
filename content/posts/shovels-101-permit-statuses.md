@@ -5,6 +5,8 @@ Modified: 2024-09-03
 Category: Customer Success
 Tags: permit status, web app
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: The Shovels ecosystem breaks down construction permit status based on jurisdiction regulation and construction cycles. Permits can be In Review, Active, Final, or Inactive. Users can investigate permit status via Shovels to analyze wider trends in contractor performance and jurisdiction activity. 
 Image: /images/shovels-101-permit-status.png
 

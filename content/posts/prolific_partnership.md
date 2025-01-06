@@ -5,6 +5,8 @@ Modified: 2024-09-29
 Category: Company
 Tags: AI, Machine Learning, Partnership
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: The Shovels data engineering team partnered with Prolific to crowdsource data analysis experts. These experts helped to curate and categorize messy permit data into an organized sample. Shovels used this sample to train their LLM models to unlock their entire data pipeline.
 Image: /images/shovels_prolific_hero.png
 

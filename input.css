@@ -42,7 +42,7 @@ dt {
 }
 
 body {
-  background-color: #F6F1E5;
+  background-color: white;
   /* font-size: 21px; */
 }
 
@@ -52,9 +52,6 @@ body {
 }
 
 /* start of Tailwind utility classes */
-body.inverted {
-  @apply bg-emerald-800;
-}
 
 .navbar_item {
   @apply text-emerald-800 inline-flex items-center rounded-md text-base hover:text-emerald-900
@@ -62,14 +59,6 @@ body.inverted {
 
 .navbar_item > svg {
   @apply group-hover:text-emerald-900
-}
-
-.inverted .navbar_item {
-  @apply text-lime-50 hover:text-lime-200
-}
-
-.inverted .navbar_item > svg {
-  @apply group-hover:text-lime-200
 }
 
 .hero_container {
@@ -84,9 +73,7 @@ body.inverted {
 .hero_description {
   @apply mt-6 text-lg leading-8 text-gray-600
 }
-.inverted .hero_description {
-  @apply text-lime-50
-}
+
 .hero_image-container {
   @apply mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow
 }
@@ -106,16 +93,9 @@ body.inverted {
   @apply uppercase text-emerald-800 font-medium;
   font-size: 23px;
 }
-.inverted .elaboration-card_title {
-  @apply text-amber-300
-}
 
 .elaboration-card_text-container {
   @apply mt-3 text-base leading-7 text-gray-900
-}
-
-.inverted .elaboration-card_text-container {
-  @apply text-stone-200
 }
 
 @layer components {
@@ -201,21 +181,46 @@ div.article img {
 
 /* end of article classes */
 
-/* for the Home page's example API responses */
-.hljs {
-  background: #111827 !important;
+/* Syntax Highlighting for Pygments */
+.highlight {
+  @apply my-4 rounded-lg bg-gray-900 p-4 overflow-x-auto;
 }
-.hljs-attr {
-  color: #fcd34d !important;
+.highlight pre {
+  @apply text-gray-100;
 }
-.hljs-number{
-  color: #0ca77c !important;
-}
-.hljs-string,
-.hljs-section,
-.hljs-selector-class,
-.hljs-template-variable,
-.hljs-deletion,
-.hljs-punctuation {
-  color: #f7fee7 !important;
-}
+/* Token colors */
+.highlight .hll { @apply bg-gray-700; }
+.highlight .c { @apply text-gray-500; } /* Comment */
+.highlight .err { @apply text-red-500; } /* Error */
+.highlight .k { @apply text-purple-400; } /* Keyword */
+.highlight .l { @apply text-yellow-300; } /* Literal */
+.highlight .n { @apply text-gray-200; } /* Name */
+.highlight .o { @apply text-gray-400; } /* Operator */
+.highlight .p { @apply text-gray-400; } /* Punctuation */
+.highlight .cm { @apply text-gray-500; } /* Comment.Multiline */
+.highlight .cp { @apply text-gray-500; } /* Comment.Preproc */
+.highlight .c1 { @apply text-gray-500; } /* Comment.Single */
+.highlight .cs { @apply text-gray-500; } /* Comment.Special */
+.highlight .kc { @apply text-purple-400; } /* Keyword.Constant */
+.highlight .kd { @apply text-purple-400; } /* Keyword.Declaration */
+.highlight .kn { @apply text-purple-400; } /* Keyword.Namespace */
+.highlight .kp { @apply text-purple-400; } /* Keyword.Pseudo */
+.highlight .kr { @apply text-purple-400; } /* Keyword.Reserved */
+.highlight .kt { @apply text-purple-400; } /* Keyword.Type */
+.highlight .ld { @apply text-yellow-300; } /* Literal.Date */
+.highlight .s { @apply text-green-400; } /* Literal.String */
+.highlight .na { @apply text-blue-400; } /* Name.Attribute */
+.highlight .nb { @apply text-blue-400; } /* Name.Builtin */
+.highlight .nc { @apply text-blue-400; } /* Name.Class */
+.highlight .no { @apply text-red-400; } /* Name.Constant */
+.highlight .nd { @apply text-blue-400; } /* Name.Decorator */
+.highlight .ni { @apply text-red-400; } /* Name.Entity */
+.highlight .ne { @apply text-red-400; } /* Name.Exception */
+.highlight .nf { @apply text-blue-400; } /* Name.Function */
+.highlight .nl { @apply text-gray-200; } /* Name.Label */
+.highlight .nn { @apply text-gray-200; } /* Name.Namespace */
+.highlight .nx { @apply text-blue-400; } /* Name.Other */
+.highlight .py { @apply text-gray-200; } /* Name.Property */
+.highlight .nt { @apply text-purple-400; } /* Name.Tag */
+.highlight .nv { @apply text-red-400; } /* Name.Variable */
+.highlight .w { @apply text-gray-200; } /* Text.Whitespace */ 

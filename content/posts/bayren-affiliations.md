@@ -3,8 +3,10 @@ Subtitle: We find that affiliations with rebate programs have an impact on speci
 Date: 2023-11-19
 Modified: 2023-11-10
 Category: Data
-Tags: bayren, rebates
+Tags: bayren, rebates, climate
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We look at the impact of BayREN's initiatives on the Bay Area's energy upgrade trends, revealing a significant increase in heat pump installations by BayREN-affiliated contractors compared to a lesser focus on solar panel installations. It suggests that BayREN is strategically filling gaps in the building electrification market.
 Image: /images/contractors_comparison_chart.png
 

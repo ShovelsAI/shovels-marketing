@@ -5,6 +5,8 @@ Modified: 2024-11-04
 Category: Customer Success
 Tags: api
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: The Shovels API gives you insight into permit history by per address. Users can follow these three steps to retrieve this information. This data can help with contractor and jurisdiction analysis.
 Image: /images/shovels-101-address-permit-history.png
 

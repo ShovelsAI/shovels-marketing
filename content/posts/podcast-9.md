@@ -5,6 +5,8 @@ Modified: 2023-11-21
 Category: Podcast
 Tags: podcast, commercial permit, proptech
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: In our latest podcast episode we discuss the evolving role of artificial intelligence in the proptech industry. We explore AI's applications in content strategy and real estate marketing, highlighting innovations like GPTs for content creation. The episode concludes with insights on the future of AI in proptech, emphasizing its potential to transform real estate and other industries.
 Image: /images/podcast9.png
 

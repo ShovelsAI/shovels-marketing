@@ -5,12 +5,12 @@ Modified: 2023-11-15
 Category: Podcast
 Tags: podcast, commercial permit, proptech
 Authors: Ryan Buckley
-Summary: In Episode 8 of "What We Learned This Week In Proptech," Fernando Pizarro and I explored the intricate process of commercial buildouts, discussing the importance of choosing the right space, the role of brokers, architects, and contractors, and the complexities of permitting. We also highlighted the transformative impact of technology in streamlining these processes, reflecting on the potential efficiencies it brings to the proptech industry.
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
+Summary: In Episode 8 Fernando Pizarro and I explored the intricate process of commercial buildouts, discussing the importance of choosing the right space, the role of brokers, architects, and contractors, and the complexities of permitting. We also highlighted the transformative impact of technology in streamlining these processes, reflecting on the potential efficiencies it brings to the proptech industry.
 Image: /images/podcast8.png
 
-
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/Opening-a-Restaurant-for-Dummies-e2c1bke/a-aakbtbq" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-
 Last week on "What We Learned This Week In Proptech," Fernando and I delved into the intricate world of commercial buildouts. This topic, particularly close to Fernando's heart, unraveled the journey of a chef with a unique restaurant concept, ready to transform vision into reality.
 
 Our discussion began with the initial stages of a commercial buildout, where the focus lies heavily on finding and outfitting a suitable space. "It's all about turning that concept into a tangible reality," said Fernando, highlighting the importance of selecting the right location and designing the space to fit the unique needs of a business, like our chef's innovative chicken finger restaurant.

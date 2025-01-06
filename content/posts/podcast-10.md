@@ -5,6 +5,8 @@ Modified: 2023-11-29
 Category: Podcast
 Tags: podcast, email marketing, proptech
 Authors: Ryan Buckley
+author_image: /theme/images/team/ryan.svg
+author_title: CEO
 Summary: This episode of our podcast delves into the complexities of email marketing, highlighting the challenges of declining effectiveness despite advancements in tools and personalization. We discuss diagnostic approaches to improving campaigns, the significance of SEO in organic marketing strategies, and the importance of selecting the right keywords for successful engagement. The conversation underscores the necessity of adapting marketing strategies to effectively reach and resonate with target audiences in the proptech industry.
 Image: /images/podcast10.png
 

@@ -5,6 +5,8 @@ Modified: 2024-9-17
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Great to meet you at RE+ and Blueprint and we announce our upcoming Shovels Online V2 and new API features.
 Image: /images/login-v2.png
 

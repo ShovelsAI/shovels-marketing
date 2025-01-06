@@ -5,6 +5,8 @@ Modified: 2024-8-17
 Category: Company
 Tags: company
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: We introduce Neighborhood Vitality Index and our partnership with Esri.
 Image: /images/esri-nvi-map.jpg
 

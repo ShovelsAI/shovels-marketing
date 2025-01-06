@@ -5,6 +5,8 @@ Modified: 2024-5-13
 Category: Case Study
 Tags: case,customer
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Discover how Carbon Free Homes, in partnership with Shovels, successfully met 100% of their installation targets for eco-friendly appliances like heat pumps and water heaters in Marin County, CA. Utilizing Shovels' extensive contractor database, Carbon Free Homes streamlined the matching process, greatly enhancing efficiency and customer satisfaction. Learn more about this innovative approach to sustainable home solutions and its impact on the climate tech industry.
 Image: /images/case-study-carbon-free-homes.png
 

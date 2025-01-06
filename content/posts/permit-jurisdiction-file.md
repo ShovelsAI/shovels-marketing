@@ -5,6 +5,8 @@ Modified: 2024-4-6
 Category: Data
 Tags: building permits, AHJ, permit jurisdiction
 Authors: Ryan Buckley
+Author_image: /theme/images/team/ryan.svg
+Author_title: CEO
 Summary: Shovels is open-sourcing of a comprehensive list of building permit jurisdictions that we discovered only recently. Our new database includes over ten thousand building permit jurisdictions and associates each jurisdiction with a county and state.
 Slug: list-of-all-building-permit-jurisdictions
 Image: /images/building-permit-list.png

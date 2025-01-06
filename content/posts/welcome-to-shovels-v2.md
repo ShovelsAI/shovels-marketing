@@ -5,6 +5,8 @@ Modified: 2024-10-22
 Category: Company
 Tags: new release, api, web app
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Shovels is launching their upgraded API and web app product. It has increased functionality, improved UX, and brand new features. It releases October 24th for general availability. 
 Image: /images/welcome-to-shovels-v2-hero.jpg
 
