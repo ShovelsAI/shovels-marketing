@@ -22,7 +22,7 @@ That's top of mind as we move to make Shovels 33% better and grow 33% faster. He
 *  We have a clickable prototype of V2. I need to schedule some [short 15 minute calls](https://shovels.pipedrive.com/scheduler/GXeGebUW/shovels-v2-prototype-test) to watch _you_ click through it. Trade 15 minutes for some permit data? [Let's chat!](https://shovels.pipedrive.com/scheduler/GXeGebUW/shovels-v2-prototype-test)
 *  Our new tagging system is almost ready for launch. Our first AI-enhanced tags will be live before the next newsletter! More on this process below.
 *  More jurisdictions, more duration calculations, and more contractor de-duplication was in our latest batch release, which was processed using way more automation.
-*  Because every day is Earth Day 🌱 we have a new [climate tech case study]({filename}case-carbon-free-homes.md), a new [climate tech white paper]({static}/pdfs/Shovels_Climate.pdf), and identified over 14,000 contractors with green rebate program affiliations (more on this next month!)
+*  Because every day is Earth Day 🌱 we have a new [climate tech case study]({filename}case-carbon-free-homes.md), a new [climate tech one-pager]({static}/pdfs/Shovels_Climate.pdf), and identified over 14,000 contractors with green rebate program affiliations (more on this next month!)
 
 ## First, a primer
 
