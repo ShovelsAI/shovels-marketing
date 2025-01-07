@@ -1367,8 +1367,8 @@ select {
   max-width: 80rem;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-\[100px\] {
+  max-width: 100px;
 }
 
 .max-w-\[50\%\] {
@@ -2098,6 +2098,11 @@ select {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -3953,6 +3958,10 @@ div.article img {
 
   .lg\:max-w-7xl {
     max-width: 80rem;
+  }
+
+  .lg\:max-w-\[200px\] {
+    max-width: 200px;
   }
 
   .lg\:max-w-lg {
