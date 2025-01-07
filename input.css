@@ -179,6 +179,23 @@ div.article img {
   margin-left: 20px !important;
 }
 
+.article table {
+  @apply w-full my-6 border-collapse;
+}
+
+.article table th,
+.article table td {
+  @apply border border-gray-300 px-4 py-2;
+}
+
+.article table th {
+  @apply bg-gray-100 font-medium text-left;
+}
+
+.article table tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
 /* end of article classes */
 
 /* Syntax Highlighting for Pygments */

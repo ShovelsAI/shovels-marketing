@@ -33,7 +33,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
     <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
       <li>
         <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/ryan.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/ryan.svg" alt="Ryan Buckley">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Ryan Buckley</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
@@ -42,7 +42,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
       </li>
       <li>
         <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/luka.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/luka.svg" alt="Luka Kacil">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Luka Kacil</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CTO</p>
@@ -51,7 +51,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
       </li>
       <li>
         <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="Petra Kopic">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Petra Kopic</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">Data Engineer</p>
@@ -60,7 +60,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
       </li>
       <li>
         <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/betty.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/betty.svg" alt="Betty Wan">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Betty Wan</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">VP of Growth</p>
@@ -69,7 +69,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
       </li>
       <li>
         <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="Alex Brown">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">Technical Support & Writer</p>
@@ -78,7 +78,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
       </li>
       <li>
         <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/whitney.svg" alt="">
+          <img class="size-16 rounded-full" src="theme/images/team/whitney.svg" alt="Whitney House">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Whitney House</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">Sales</p>

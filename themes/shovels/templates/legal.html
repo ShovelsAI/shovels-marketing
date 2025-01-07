@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME }} {{ page.title|striptags }}{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="mx-auto max-w-[744px]">
+  <!-- header -->
+  <div class="my-16 px-6 lg:px-8">
+    <div class="mx-auto text-base leading-5 text-gray-700">
+      <div class="block">
+        <div class="text-pretty">
+          <h1 class="my-5 text-5xl">
+            {{ page.title|striptags }}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="my-16 px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl leading-loose text-gray-700">
+      <article class="w-full article">
+        {{ page.content }}
+      </article>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
