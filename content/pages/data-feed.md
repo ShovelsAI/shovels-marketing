@@ -57,7 +57,7 @@ slug: data-feed
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
             <img src="theme/images/data-feed/ping.png" alt="Snowflake integration icon" class="size-5 flex-none">
-            Add permits to Snowflake
+            Add building permit data to Snowflake
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
             <p class="flex-auto">To get our permit data in Snowflake, we just need your public org and account identifiers. No extra engineering or security support required.</p>
@@ -66,16 +66,16 @@ slug: data-feed
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
             <img src="theme/images/data-feed/json.png" alt="Big Query integration icon" class="size-5 flex-none">
-            Add permits to Big Query
+            Add building permit data to BigQuery
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">To get permit data into your Big Query account, we just need a Google service account. The tables will arrive pre-formatted and ready to query.</p>
+            <p class="flex-auto">To get permit data into your BigQuery account, we just need a Google service account. The tables will arrive pre-formatted and ready to query.</p>
           </dd>
         </div>
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
             <img src="theme/images/data-feed/accurate.png" alt="Parquet format icon" class="size-5 flex-none">
-            Parquet format
+            Building permit parquet files
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
             <p class="flex-auto">We know that dealing with CSV files is a massive headache, especially with complex data and confusing serializations. That's why we like parquet and prefer to send building contractor and permit data in this format.</p>
