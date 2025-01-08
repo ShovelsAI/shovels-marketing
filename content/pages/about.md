@@ -61,7 +61,7 @@ slug: about
     <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
       <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
         <p class="text-xl/8 text-gray-600">We started with a simple mission: make building permit data accessible to everyone. That mission has grown to include building contractors, geospatial data, and property attributes.</p>
-        <p class="mt-10 max-w-xl text-base/7 text-gray-700">Fundamentally, we believe in making complex data accessible and ready for analysis. We want to delight data scientists and account executives alike. This is a massive market and we're just getting started.</p>
+        <p class="mt-10 text-xl/8 text-gray-600">Fundamentally, we believe in making complex data accessible and ready for analysis. We want to delight data scientists and account executives alike. This is a massive market and we're just getting started.</p>
       </div>
       <div class="lg:flex lg:flex-auto lg:justify-center">
         <dl class="w-64 space-y-8 xl:w-80">
