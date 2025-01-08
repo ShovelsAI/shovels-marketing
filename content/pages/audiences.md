@@ -19,7 +19,7 @@ slug: audiences
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Use building permit data to activate audiences</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Use building permit data to run ads</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits are the new way to target homeowners based on their home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
         <div class="mt-10 flex items-center gap-x-6">
@@ -49,7 +49,7 @@ slug: audiences
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">Reach in-market homeowners</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Large scale data delivery for modern data teams</h2>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Run your next ad campaign with building permit data</h2>
       <p class="mt-6 text-lg/8 text-gray-300">It's hard to reach people who are in the market <span class="italic">right now</span> for home improvement-related services. With building permit data, we can time this perfectly. We built a tool to help you reach them.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
