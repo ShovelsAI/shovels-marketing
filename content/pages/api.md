@@ -24,7 +24,7 @@ slug: api
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Access our completely rebuilt V2 API with enhanced geo-search capabilities, expanded filtering by property and contractor attributes, and lightning-fast responses.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Get your API key</a>
-          <a href="https://docs.shovels.ai" class="text-sm/6 font-semibold text-gray-900" target="_blank">API documentation <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://docs.shovels.ai/api-reference/" class="text-sm/6 font-semibold text-gray-900" target="_blank">API documentation <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">

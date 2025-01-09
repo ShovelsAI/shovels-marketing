@@ -12,7 +12,7 @@ Image: /images/shovels-101-address-permit-history.png
 
 Understanding a property’s permit history is critical to any project. Whether you’re researching a new property to acquire, or double-checking what previous owners have done to one you already own, it’s important info to have. 
 
-With the [Shovels API](https://shovels-v2.redoc.ly/) in your toolbox, finding permits specific to a given address is a breeze. 
+With the [Shovels API](https://docs.shovels.ai/api-reference/) in your toolbox, finding permits specific to a given address is a breeze. 
 
 ## Authentication and Setup
 
@@ -30,7 +30,7 @@ With the Shovels API, you can get from address to detailed permit history based 
 
 ## Step 1: Finding the Address
 
-Using the [GET Search Addresses](https://shovels-v2.redoc.ly/#operation/search_addresses_v1_addresses_search_get)  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). 
+Using the [GET Search Addresses](https://docs.shovels.ai/api-reference/#operation/search_addresses_v1_addresses_search_get)  endpoint, search for the address to confirm that there are any permits on record (our system goes back ~20 years). 
 
 A sample query, for a “123 Main St”, should look something like this:
 
@@ -98,7 +98,7 @@ Pick which address you want to dig deeper into, and **proceed to step 2**.
 
 Using the data returned in Step 1, we will now retrieve the exact permits themselves for the desired address. 
 
-Using the [GET Permits by Address](https://shovels-v2.redoc.ly/#operation/get_permits_by_address_v1_permits_address_get) endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. 
+Using the [GET Permits by Address](https://docs.shovels.ai/api-reference/#operation/get_permits_by_address_v1_permits_address_get) endpoint, enter the relevant address data to the next query. The list of required parameters are noted in the schema on the API doc linked just above. 
 
 Again, a sample query, for “123 Main St, Agawam, MA 01001”, would look something like this:
 
@@ -133,7 +133,7 @@ To do so, **proceed to Step 3**.
 
 ## Step 3: Return Detailed Permit History
 
-Using the [GET Permits by ID](https://shovels-v2.redoc.ly/#operation/get_permits_by_id_v1_permits_get) endpoint, you can search for a single (or string array) of permit IDs. 
+Using the [GET Permits by ID](https://docs.shovels.ai/api-reference/#operation/get_permits_by_id_v1_permits_get) endpoint, you can search for a single (or string array) of permit IDs. 
 
 In this sample, to request the first permit payload would look something like this:
 
@@ -188,7 +188,7 @@ For enterprise-level usage, get our full dataset with deeper insights, dashboard
 
 ## Troubleshooting Tips
 
-- A full list of our error codes are described in our API docs [here](https://shovels-v2.redoc.ly/#section/API-Details). Most errors are 404s, which frequently mean either the address is input incorrectly, or there isn’t a permit record on file to match the search terms.
+- A full list of our error codes are described in our API docs [here](https://docs.shovels.ai/api-reference/#section/API-Details). Most errors are 404s, which frequently mean either the address is input incorrectly, or there isn’t a permit record on file to match the search terms.
     - If you are able to find the correct address in our **Web App**, then double check the syntax of the request. 
 - If you run into any other questions, please email us at [support@shovels.ai](mailto:support@shovels.ai) and we’ll help you!
 

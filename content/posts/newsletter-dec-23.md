@@ -30,7 +30,7 @@ Yelp et al, therefore, won't recommend the best electrician working in your neig
 
 **But we do!**
 
-Here's the [API endpoint](https://shovels-v2.redoc.ly/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get) to find the most active heat pump (etc, etc) contractor that works in your ZIP code. We'll add a basic interface to the Shovels app to show you this too. Or if you want a sample CSV report, just reply. 
+Here's the [API endpoint](https://docs.shovels.ai/api-reference/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get) to find the most active heat pump (etc, etc) contractor that works in your ZIP code. We'll add a basic interface to the Shovels app to show you this too. Or if you want a sample CSV report, just reply. 
 
 Heat pumps galore ☀️
 ====================

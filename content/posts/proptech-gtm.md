@@ -13,7 +13,7 @@ Image: /theme/images/gtm/hero.svg
 
 Are you a proptech company looking to reach your target audience? It can be a challenge to penetrate the tech landscape and get your message out there. However, with the right strategies in place, you can create an effective go-to-market plan that will make sure your message is heard loud and clear. In this blog post, we'll outline the necessary steps to take for proptech companies to effectively reach their target audiences. We'll cover understanding the proptech landscape, developing target audience personas, creating a go-to-market plan using building permits, choosing the right technologies for your proptech company, and measuring and optimizing your go-to-market success. 
 
-Read on to learn more about how you can maximize your success with these strategies and tools! And don't forget to read our [API docs](https://shovels-v2.redoc.ly) and check out our article on [contech GTM strategies]({filename}contech-gtm.md)!
+Read on to learn more about how you can maximize your success with these strategies and tools! And don't forget to read our [API docs](https://docs.shovels.ai/api-reference) and check out our article on [contech GTM strategies]({filename}contech-gtm.md)!
 
 ## Understanding the proptech landscape
 
