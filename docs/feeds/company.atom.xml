@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Company</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/company.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2024-11-06T00:00:00-08:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Company</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/company.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-01-13T00:00:00-08:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
 &lt;p&gt;&lt;br&gt;
 Hello friends, advisors, and (a few) relatives! &lt;/p&gt;
 &lt;p&gt;After a bit of a hiatus, I'm really excited to launch a new company along with an incredible team. &lt;/p&gt;
@@ -1125,4 +1125,40 @@ This month's update is all about community!&lt;/p&gt;
 &lt;h2&gt;Live Now!&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Shovels Online&lt;/strong&gt; has been a work of love (and sweat and tears), and we’re so proud of it. &lt;/p&gt;
 &lt;p&gt;If you were using our previous version (at &lt;code&gt;beta.shovels.ai&lt;/code&gt;), then your account will be automatically ported over. If you’ve been waiting for the V2 launch to test out the new Shovels Online version, now is your time! Create a &lt;a href="https://app.shovels.ai"&gt;Free Trial&lt;/a&gt; account today, and get digging. &lt;/p&gt;
-&lt;p&gt;And as always, &lt;a href="mailto:support@shovels.ai"&gt;let us know&lt;/a&gt; if there are any questions or issues.&lt;/p&gt;</content><category term="Company"></category><category term="product launch"></category><category term="web application"></category></entry></feed>
+&lt;p&gt;And as always, &lt;a href="mailto:support@shovels.ai"&gt;let us know&lt;/a&gt; if there are any questions or issues.&lt;/p&gt;</content><category term="Company"></category><category term="product launch"></category><category term="web application"></category></entry><entry><title>2024 Shovels Year-End Recap</title><link href="https://www.shovels.ai/blog/2024-shovels-year-end-recap/" rel="alternate"></link><published>2025-01-13T00:00:00-08:00</published><updated>2025-01-13T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2025-01-13:/blog/2024-shovels-year-end-recap/</id><summary type="html">&lt;p&gt;In 2024, Shovels achieved significant growth across multiple fronts - growing revenue more than 10X, doubling the team size to six members, dramatically improving data processing capabilities, establishing strategic partnerships with industry leaders like Esri and Autodesk, and launching major improvements to the software platform including the V2 release.&lt;/p&gt;</summary><content type="html">&lt;p&gt;As we close out 2024, I wanted to look back at the journey we had this year at Shovels. From team expansion to technological breakthroughs, we've hit some important milestones that will carry us through to 2025.&lt;/p&gt;
+&lt;h2&gt;Revenue Growth&lt;/h2&gt;
+&lt;p&gt;We began 2024 with a few thousand in monthly recurring revenue and grew it more than 10X while our subscriber count tripled. Our average contract value increased three-fold in the process. &lt;/p&gt;
+&lt;p&gt;We signed huge public companies and brand new startups. We work with teams of data scientists and single founders. I hope we’ll be able to continue serving a wide variety of customers: a unique feature of being a data business.&lt;/p&gt;
+&lt;h2&gt;Team Expansion&lt;/h2&gt;
+&lt;p&gt;We doubled our team size in 2024, growing from three to six team members. &lt;/p&gt;
+&lt;p&gt;Betty, Alex, and Whitney joined to strengthen our enterprise sales, SMB sales, and customer support capabilities. We’ll grow the product and engineering team in 2025, which has stayed remarkably small since Petra joined us in May 2023.&lt;/p&gt;
+&lt;h2&gt;Product Evolution &amp;amp; Technical Achievements&lt;/h2&gt;
+&lt;p&gt;2024 was a big year for our product development. A major highlight was the dramatic improvement in our data processing capabilities: we reduced our monthly batch processing time from two weeks down to just a few hours.&lt;/p&gt;
+&lt;p&gt;We’re setting the stage for incorporating additional sources to keep enriching our dataset, and we want to make that as smooth and automated as possible. &lt;/p&gt;
+&lt;p&gt;Another big improvement was implementing AI-based permit categorization. We successfully developed the capability to process over 100 million prompts in record time and without breaking the bank. We’re going to do a lot more of this in 2025!&lt;/p&gt;
+&lt;h2&gt;Strategic Partnerships&lt;/h2&gt;
+&lt;p&gt;We also established new partnerships with industry leaders including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Esri:&lt;/strong&gt; Leading provider of geospatial software used by retail, governments, and data center companies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autodesk &amp;amp; Procore:&lt;/strong&gt; Premier construction project management platforms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audience Acuity &amp;amp; Datonics:&lt;/strong&gt; Our first foray into self-serve audiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Software Evolution&lt;/h2&gt;
+&lt;p&gt;Throughout 2024, we remained committed to improving our software platform, &lt;a href="https://app.shovels.ai"&gt;Shovels Online&lt;/a&gt;. We launched multiple iterations of our web application, each bringing new improvements to the user experience. The culmination of these efforts was our &lt;code&gt;V2&lt;/code&gt; release, which includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More geographic identification attributes for improved location-based searching&lt;/li&gt;
+&lt;li&gt;Parity between &lt;code&gt;contractor&lt;/code&gt; and &lt;code&gt;permit&lt;/code&gt; filter parameters&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;property&lt;/code&gt; filters separated from &lt;code&gt;permit&lt;/code&gt; filters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our web app runs on the API endpoints that we make available to our customers, it just has a lower barrier-to-entry. &lt;/p&gt;
+&lt;p&gt;We've created what we believe to be the best building permit and contractor API and software on the market today, and we’re far from done. &lt;/p&gt;
+&lt;h2&gt;Looking Forward to 2025&lt;/h2&gt;
+&lt;p&gt;The momentum we've built in 2024 sets the stage for more important work in 2025. We're focusing on several key initiatives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continuing to optimize our data processing and delivery systems&lt;/li&gt;
+&lt;li&gt;Expanding our partnership network&lt;/li&gt;
+&lt;li&gt;Enhancing our software platform with new contractor discovery features&lt;/li&gt;
+&lt;li&gt;More geographical profile pages, including addresses profiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We're more excited than ever about our mission to make construction permit data more accessible and actionable. &lt;strong&gt;We're deeply grateful to all of you&lt;/strong&gt;: our customers, partners, and team members who made 2024 such a successful year.&lt;/p&gt;
+&lt;p&gt;This has been the most fun we've ever had in business, and we're just getting started.&lt;/p&gt;</content><category term="Company"></category><category term="2024"></category></entry></feed>
