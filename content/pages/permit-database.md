@@ -24,7 +24,7 @@ slug: permit-database
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Quickly download nationwide building permits and contractor data with Shovels Online.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Free trial</a>
-          <a href="https://docs.shovels.ai" class="text-sm/6 font-semibold text-gray-900" target="_blank">Get started <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900" target="_blank">Quickstart guide <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -42,28 +42,28 @@ slug: permit-database
     </div>
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <div>
-        <dt class="font-semibold text-white">Save your progress</dt>
-        <dd class="mt-1 text-gray-300">Save your searches with Saved Filters and bookmark important permits, contractors, and jurisdictions with Saved Profiles for quick access.</dd>
+        <dt class="font-semibold text-white">Nationwide coverage</dt>
+        <dd class="mt-1 text-gray-300">We have the most comprehensive nationwide building permit and contractor data available. With 85% of the country covered, you can find permits and contractors in almost any state or city.</dd>
       </div>
       <div>
-        <dt class="font-semibold text-white">Bi-directional search</dt>
-        <dd class="mt-1 text-gray-300">Find contractors by the types of projects they work on, or find projects by contractor specialties. Our new V2 engine makes connections both ways.</dd>
+        <dt class="font-semibold text-white">Powerful filters</dt>
+        <dd class="mt-1 text-gray-300">Find contractors by the types of projects they work on, or find projects by contractor specialties. Our search engine uses building permit data to connect contractors and projects.</dd>
       </div>
       <div>
-        <dt class="font-semibold text-white">Precise geo-location</dt>
+        <dt class="font-semibold text-white">Precise locations</dt>
         <dd class="mt-1 text-gray-300">Every location has a unique geo_id, from counties down to individual addresses, making geographical filtering more accurate than ever.</dd>
       </div>
       <div>
-        <dt class="font-semibold text-white">10x more filters</dt>
-        <dd class="mt-1 text-gray-300">Our upgraded filtering system exposes more data points from permits, contractors, and properties to help you find exactly what you need.</dd>
+        <dt class="font-semibold text-white">Contact information</dt>
+        <dd class="mt-1 text-gray-300">We have employee contact information for a million contractors, including phone numbers, email addresses, and website URLs. We also have contact information for 30 million residential properties.</dd>
       </div>
       <div>
         <dt class="font-semibold text-white">Modern interface</dt>
         <dd class="mt-1 text-gray-300">Completely redesigned UI with improved maps, better navigation, and a streamlined onboarding process.</dd>
       </div>
       <div>
-        <dt class="font-semibold text-white">Powered by V2</dt>
-        <dd class="mt-1 text-gray-300">Built on our latest API version with enhanced data connections, better performance, and more comprehensive permit information.</dd>
+        <dt class="font-semibold text-white">Powered by AI</dt>
+        <dd class="mt-1 text-gray-300">We use AI to clean and enrich over 150 million building permits and contractors.</dd>
       </div>
     </dl>
   </div>

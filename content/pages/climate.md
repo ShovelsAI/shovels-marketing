@@ -24,7 +24,7 @@ slug: climate
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We see every solar, EV charger, heat pump HVAC, water heater, and battery installation in the country. Use this data to build lead lists and create installer networks based on real building permit data.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Get started</a>
-          <a href="{static}/pdfs/Shovels_Climate.pdf" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://www.canva.com/design/DAGEzJhKtlc/7bTqdjMjY6RDg4vsWZT3ow/view?utm_content=DAGEzJhKtlc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdcd49598a6" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -49,25 +49,25 @@ slug: climate
           <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We care about climate</h2>
           <div class="max-w-xl">
             <p class="mt-6">Shovels is making a deliberate effort to support electrification progress. We're putting engineering and data science resources into supporting the work that climate companies are doing.</p>
-            <p class="mt-8">Here are a few of these projects:</p>
+            <p class="mt-8">Here are some ways we’re helping:</p>
             <ul role="list" class="mt-8 space-y-3">
               <li class="flex gap-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-shovels-primary">
                   <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
                 </svg>
-                Created an AI-enhanced heat pump permit filter
+                Create AI-enhanced filters to identify permits related to heat pumps, solar, and EV installations
               </li>
               <li class="flex gap-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-shovels-primary">
                   <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
                 </svg>
-                Associated contractors with building electrification rebate programs
+                Associate contractors with building electrification rebate programs
               </li>
               <li class="flex gap-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-shovels-primary">
                   <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
                 </svg>
-                Donated 1% of quarterly revenue to WattCarbon
+                Donate 1% of our quarterly revenue to WattCarbon for their energy attribute certificate (EAC) program
               </li>
             </ul>
           </div>
