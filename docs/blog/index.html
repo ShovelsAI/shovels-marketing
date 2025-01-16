@@ -271,13 +271,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/january-2025-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>January 2025 Newsletter</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/2024-shovels-year-end-recap/" class=" text-emerald-900 hover:text-gray-700"><p>2024 Shovels Year-End Recap</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-v2-api/" class=" text-emerald-900 hover:text-gray-700"><p>How to use the Shovels V2 API</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/shovels-101-maximizing-shovels-online/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels 101: Maximizing Shovels Online</p></a>
                   </li>
               </ul>
             </div>
@@ -479,6 +479,47 @@ Leaving: "duration-100 ease-in"
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
       <article class="flex flex-col items-start" 
+               data-summary="<p>Shovels.ai kicks off 2025 with a smooth January release adding 9 new jurisdictions, improved documentation, new profile pages, and employee data. Looking ahead, the company plans major enhancements to permit data coverage and contractor insights, including job value modeling, retail associations, and revenue metrics.</p>"
+               data-title="<p>January 2025 Newsletter</p>"
+               x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/january-2025-newsletter/">
+            <img src="/images/contractor-profile.png" 
+                 alt="<p>January 2025 Newsletter</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-01-15 00:00:00-08:00" class="text-gray-500">Wed 15 January 2025</time>
+            <a href="/blog/?category=Company"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Company
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/january-2025-newsletter/">
+                <span class="absolute inset-0"></span>
+                <p>January 2025 Newsletter</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>Shovels.ai kicks off 2025 with a smooth January release adding 9 new jurisdictions, improved documentation, new profile pages, and employee data. Looking ahead, the company plans major enhancements to permit data coverage and contractor insights, including job value modeling, retail associations, and revenue metrics.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Ryan Buckley</p>
+              <p class="text-gray-600">CEO</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col items-start" 
                data-summary="<p>In 2024, Shovels achieved significant growth across multiple fronts - growing revenue more than 10X, doubling the team size to six members, dramatically improving data processing capabilities, establishing strategic partnerships with industry leaders like Esri and Autodesk, and launching major improvements to the software platform including the V2 release.</p>"
                data-title="<p>2024 Shovels Year-End Recap</p>"
                x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
@@ -549,6 +590,47 @@ Leaving: "duration-100 ease-in"
               </a>
             </h2>
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>The Shovels V2 REST API enables property, climate, and construction technology developers to access detailed building permit and contractor data. The API provides two primary resources: Permits (official construction documents from local authorities) and Contractors (skilled building trade professionals).</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Ryan Buckley</p>
+              <p class="text-gray-600">CEO</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col items-start" 
+               data-summary="<p>We added some new tools to the Shovels web app. We also now have a nationwide contractor directory, so anybody can look up contractors based on their service area, not just their work address. And we're doing a lot of data enrichment!</p>"
+               data-title="<p>December 2024 Newsletter</p>"
+               x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/december-2024-newsletter/">
+            <img src="/images/summerhill.png" 
+                 alt="<p>December 2024 Newsletter</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2024-12-19 00:00:00-08:00" class="text-gray-500">Thu 19 December 2024</time>
+            <a href="/blog/?category=Company"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Company
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/december-2024-newsletter/">
+                <span class="absolute inset-0"></span>
+                <p>December 2024 Newsletter</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>We added some new tools to the Shovels web app. We also now have a nationwide contractor directory, so anybody can look up contractors based on their service area, not just their work address. And we're doing a lot of data enrichment!</p></p>
           </div>
           <!-- author info -->
           <div class="relative mt-8 flex items-center gap-x-4">
