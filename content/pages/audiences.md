@@ -130,7 +130,7 @@ slug: audiences
     <div class="mt-6 max-w-xl xl:col-end-1 xl:row-start-1">
       <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Let us help you build your most effective campaign ever.</p>
     </div>
-    <a href="{static}/pdfs/Shovels_Audiences.pdf"  target="_blank">
+    <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" target="_blank">
       <div class="relative overflow-hidden pt-16">
         <div class="mx-auto max-w-7xl">
           <img src="{static}/images/audiences-one-pager.png" alt="Audiences one-pager" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10 cursor-pointer" width="2432" height="1442">
@@ -140,5 +140,14 @@ slug: audiences
         </div>
       </div>
     </a>
+  </div>
+</div>
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8">
+    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
+    <div class="mt-10 flex items-center gap-x-6">
+      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
+      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
+    </div>
   </div>
 </div>
