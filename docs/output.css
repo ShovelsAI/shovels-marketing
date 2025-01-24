@@ -1260,10 +1260,6 @@ select {
   height: 2rem;
 }
 
-.h-\[130px\] {
-  height: 130px;
-}
-
 .h-full {
   height: 100%;
 }
@@ -2501,11 +2497,6 @@ select {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
-}
-
 .text-emerald-600 {
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity, 1));
@@ -3506,10 +3497,6 @@ div.article img {
 .hover\:text-slate-500:hover {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity, 1));
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
 }
 
 .hover\:no-underline:hover {
