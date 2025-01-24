@@ -271,13 +271,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/analyzing-texas-roofing-permits-by-income-bracket/" class=" text-emerald-900 hover:text-gray-700"><p>Analyzing Texas Roofing Permits by Income Bracket</p></a>
+                  </li>
+                  <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/welcome-to-the-shovels-documentation-hub/" class=" text-emerald-900 hover:text-gray-700"><p>Welcome to the Shovels Documentation Hub</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/january-2025-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>January 2025 Newsletter</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/2024-shovels-year-end-recap/" class=" text-emerald-900 hover:text-gray-700"><p>2024 Shovels Year-End Recap</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-v2-api/" class=" text-emerald-900 hover:text-gray-700"><p>How to use the Shovels V2 API</p></a>
                   </li>
               </ul>
             </div>
@@ -478,6 +478,84 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+      <article class="flex flex-col items-start" 
+               data-summary="<p>Shovels data allows for in-depth analysis of construction trends at any level. Texas roofing permit patterns show higher income areas pull more roofing permits than expected for their household count. This has implications for all homeowners, and should be addressed by policy makers, the market, or both.</p>"
+               data-title="<p>Analyzing Texas Roofing Permits by Income Bracket</p>"
+               x-show="isMatchingCategory('Data') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/analyzing-texas-roofing-permits-by-income-bracket/">
+            <img src="/images/shovels-texas-roofing-trends-hero.jpg" 
+                 alt="<p>Analyzing Texas Roofing Permits by Income Bracket</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-01-23 00:00:00-08:00" class="text-gray-500">Thu 23 January 2025</time>
+            <a href="/blog/?category=Data"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Data
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/analyzing-texas-roofing-permits-by-income-bracket/">
+                <span class="absolute inset-0"></span>
+                <p>Analyzing Texas Roofing Permits by Income Bracket</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>Shovels data allows for in-depth analysis of construction trends at any level. Texas roofing permit patterns show higher income areas pull more roofing permits than expected for their household count. This has implications for all homeowners, and should be addressed by policy makers, the market, or both.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Alex Brown</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col items-start" 
+               data-summary="<p>Breakdown of the new Shovels documentation hub. Includes a feature comparison against the blog, and describes the nature of the content in the docs hub.</p>"
+               data-title="<p>Welcome to the Shovels Documentation Hub</p>"
+               x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/welcome-to-the-shovels-documentation-hub/">
+            <img src="/images/shovels-doc-hub-hero.png" 
+                 alt="<p>Welcome to the Shovels Documentation Hub</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-01-16 00:00:00-08:00" class="text-gray-500">Thu 16 January 2025</time>
+            <a href="/blog/?category=Company"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Company
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/welcome-to-the-shovels-documentation-hub/">
+                <span class="absolute inset-0"></span>
+                <p>Welcome to the Shovels Documentation Hub</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>Breakdown of the new Shovels documentation hub. Includes a feature comparison against the blog, and describes the nature of the content in the docs hub.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Alex Brown</p>
+            </div>
+          </div>
+        </div>
+      </article>
       <article class="flex flex-col items-start" 
                data-summary="<p>Shovels.ai kicks off 2025 with a smooth January release adding 9 new jurisdictions, improved documentation, new profile pages, and employee data. Looking ahead, the company plans major enhancements to permit data coverage and contractor insights, including job value modeling, retail associations, and revenue metrics.</p>"
                data-title="<p>January 2025 Newsletter</p>"
