@@ -4,7 +4,9 @@ Date: 2025-01-23
 Modified: 2025-01-23
 Category: Data
 Tags: texas, roofing permits, analysis
-Authors: Alex Brown, Ryan Buckley
+Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Shovels data allows for in-depth analysis of construction trends at any level. Texas roofing permit patterns show higher income areas pull more roofing permits than expected for their household count. This has implications for all homeowners, and should be addressed by policy makers, the market, or both. 
 Image: /images/shovels-texas-roofing-trends-hero.jpg
 

@@ -5,6 +5,8 @@ Modified: 2025-01-24
 Category: Company
 Tags: Documentation, Tutorials, Release Notes
 Authors: Alex Brown
+Author_image: /theme/images/team/alex.svg
+Author_title: Technical Support & Writer
 Summary: Breakdown of the new Shovels documentation hub. Includes a feature comparison against the blog, and describes the nature of the content in the docs hub. 
 Image: /images/shovels-doc-hub-hero.png
 
