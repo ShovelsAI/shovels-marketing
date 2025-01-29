@@ -2792,7 +2792,7 @@ select {
 
   src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
 
-  font-display: swap;
+  font-display: optional;
 }
 
 /* TODO: add various weights */
@@ -2806,7 +2806,9 @@ select {
 
   font-style: normal;
 
-  font-display: swap;
+  font-display: optional;
+
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -2818,7 +2820,7 @@ select {
 
   font-style: normal;
 
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -2830,7 +2832,7 @@ select {
 
   font-style: normal;
 
-  font-display: swap;
+  font-display: optional;
 }
 
 h1, h2, h3, h4, h5, h6, dt {
