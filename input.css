@@ -5,6 +5,7 @@
 @font-face {
   font-family: "marble";
   src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
+  font-display: swap;
 }
 
 /* TODO: add various weights */
@@ -13,6 +14,7 @@
   src: url("theme/webfonts/Scandia-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   src: url("theme/webfonts/Scandia-Medium.woff") format('woff');
   font-weight: 500; 
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +30,7 @@
   src: url("theme/webfonts/Scandia-Bold.woff") format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 

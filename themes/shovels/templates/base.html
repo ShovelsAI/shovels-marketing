@@ -2,6 +2,11 @@
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}" class="h-full">
 
 <head>
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="/theme/webfonts/Scandia-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/theme/webfonts/Scandia-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/theme/webfonts/Scandia-Bold.woff" as="font" type="font/woff" crossorigin>
+  
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
