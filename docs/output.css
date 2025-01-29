@@ -3610,6 +3610,10 @@ div.article img {
     margin-top: 0px;
   }
 
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .sm\:mt-16 {
     margin-top: 4rem;
   }
