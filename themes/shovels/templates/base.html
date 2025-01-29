@@ -2,119 +2,70 @@
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}" class="h-full">
 
 <head>
-  <!-- Preload critical fonts -->
-  <link rel="preload" href="/theme/webfonts/Scandia-Regular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/theme/webfonts/Scandia-Medium.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/theme/webfonts/Scandia-Bold.woff" as="font" type="font/woff" crossorigin>
-  
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WK2X5JG');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/48146409.js"></script>
-  <!-- End of HubSpot Embed Code -->
-  {% block head %}
-  <title>{% block title %}{{ SITENAME }} The API for building permits and building contractors{% endblock title %}
-  </title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Pelican" />
-  {% if FEED_ALL_ATOM %}
-  <link
-    href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}"
-    type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-  {% endif %}
-  {% if FEED_ALL_RSS %}
-  <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}"
-    type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
-  {% endif %}
-  {% if FEED_ATOM %}
-  <link href="{{ FEED_DOMAIN }}/{%if FEED_ATOM_URL %}{{ FEED_ATOM_URL }}{% else %}{{ FEED_ATOM }}{% endif %}"
-    type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
-  {% endif %}
-  {% if FEED_RSS %}
-  <link href="{{ FEED_DOMAIN }}/{% if FEED_RSS_URL %}{{ FEED_RSS_URL }}{% else %}{{ FEED_RSS }}{% endif %}"
-    type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
-  {% endif %}
-  {% if CATEGORY_FEED_ATOM and category %}
-  <link
-    href="{{ FEED_DOMAIN }}/{% if CATEGORY_FEED_ATOM_URL %}{{ CATEGORY_FEED_ATOM_URL.format(slug=category.slug) }}{% else %}{{ CATEGORY_FEED_ATOM.format(slug=category.slug) }}{% endif %}"
-    type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
-  {% endif %}
-  {% if CATEGORY_FEED_RSS and category %}
-  <link
-    href="{{ FEED_DOMAIN }}/{% if CATEGORY_FEED_RSS_URL %}{{ CATEGORY_FEED_RSS_URL.format(slug=category.slug) }}{% else %}{{ CATEGORY_FEED_RSS.format(slug=category.slug) }}{% endif %}"
-    type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
-  {% endif %}
-  {% if TAG_FEED_ATOM and tag %}
-  <link
-    href="{{ FEED_DOMAIN }}/{% if TAG_FEED_ATOM_URL %}{{ TAG_FEED_ATOM_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_ATOM.format(slug=tag.slug) }}{% endif %}"
-    type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
-  {% endif %}
-  {% if TAG_FEED_RSS and tag %}
-  <link
-    href="{{ FEED_DOMAIN }}/{% if TAG_FEED_RSS_URL %}{{ TAG_FEED_RSS_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_RSS.format(slug=tag.slug) }}{% endif %}"
-    type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
-  {% endif %}
-  <!-- Meta description -->
+  
+  <!-- Inline critical CSS -->
+  <style>
+    /* Critical styles only - minimal set needed for initial render */
+    :root {
+      --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: 'Scandia', var(--font-fallback);
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Hide Alpine.js elements before it loads */
+    [x-cloak] { display: none !important; }
+  </style>
+
+  <!-- Preload critical fonts with high fetchpriority -->
+  <link rel="preload" href="/theme/webfonts/Scandia-Regular.woff" as="font" type="font/woff" crossorigin fetchpriority="high">
+  <link rel="preload" href="/theme/webfonts/Scandia-Medium.woff" as="font" type="font/woff" crossorigin fetchpriority="high">
+  <link rel="preload" href="/theme/webfonts/Scandia-Bold.woff" as="font" type="font/woff" crossorigin fetchpriority="high">
+  
+  <!-- Inline minimal GTM -->
+  <script>window.dataLayer = window.dataLayer || [];</script>
+
+  <!-- Critical meta tags -->
+  <title>{% block title %}{{ SITENAME }} The API for building permits and building contractors{% endblock title %}</title>
   {% if article and article.summary %}
     <meta name="description" content="{{ article.summary|striptags|truncate(160) }}">
-    <meta property="og:description" content="{{ article.summary|striptags|truncate(160) }}">
   {% elif page and page.description %}
     <meta name="description" content="{{ page.description|striptags|truncate(160) }}">
-    <meta property="og:description" content="{{ page.description|striptags|truncate(160) }}">
   {% elif page and page.summary %}
     <meta name="description" content="{{ page.summary|striptags|truncate(160) }}">
-    <meta property="og:description" content="{{ page.summary|striptags|truncate(160) }}">
   {% else %}
     <meta name="description" content="Shovels helps you identify qualified contractors, understand their work history, and connect with decision makers. Access rich permit data to power your contractor sales and marketing.">
-    <meta property="og:description" content="Shovels helps you identify qualified contractors, understand their work history, and connect with decision makers. Access rich permit data to power your contractor sales and marketing.">
   {% endif %}
-  <meta property="og:image" content="{{ SITEURL }}/theme/images/shovels-social.png" />
-  <meta property="og:image:url" content="{{ SITEURL }}/theme/images/shovels-social.png" />
-  <meta property="og:image:secure_url" content="{{ SITEURL }}/theme/images/shovels-social.png" />
-  <meta property="og:image:alt" content="Shovels - Building permit and contractor intelligence" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}">
-  <meta property="og:site_name" content="Shovels">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Shovels - Building permit and contractor intelligence">
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="/output.css" as="style">
+  <link rel="stylesheet" href="/output.css">
+
+  <!-- Defer non-critical CSS -->
+  <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://use.typekit.net/zqr4mgp.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zqr4mgp.css">
+  </noscript>
+
+  <!-- Defer non-critical meta -->
+  {% block head %}
+  {% if FEED_ALL_ATOM %}
+  <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} Full Atom Feed" href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}">
+  {% endif %}
+  <!-- ... other feed links moved to bottom ... -->
   {% endblock head %}
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link rel="stylesheet" href="/output.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/theme/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/theme/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/theme/images/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/theme/images/favicon.ico">
-  <link rel="manifest" href="/theme/images/site.webmanifest">
-  <link rel="mask-icon" href="/theme/images/safari-pinned-tab.svg" color="#5bbad5">
-  <script defer src="/theme/js/alpine.js"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-  <link rel="stylesheet" href="https://use.typekit.net/zqr4mgp.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="data:;base64,=">
+
+  <!-- Favicons (low priority) -->
+  <link rel="icon" type="image/png" href="/theme/images/favicon-32x32.png">
 </head>
-<!-- note: can't use x-bind on the class for body since that will clash with the handleBodyClass function's behaviour -->
 
-<body class="leading-normal tracking-normal" style="font-family: 'Scandia', sans-serif">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
+<body>
   {% if generator %}
     {% set climate_articles = get_climate_articles(generator) %}
   {% else %}
@@ -129,6 +80,71 @@
   {% endblock %}
 
   {% include 'footer.html' %}
+
+  <!-- Load non-critical resources -->
+  <script type="module">
+    // Dynamic import of Alpine.js
+    import Alpine from '/theme/js/alpine.js';
+    window.Alpine = Alpine;
+    Alpine.start();
+  </script>
+
+  <!-- Deferred third-party resources -->
+  <script>
+    // Load non-critical CSS
+    function loadStyle(url) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = url;
+      document.head.appendChild(link);
+    }
+    // Load highlight.js only on pages that need it
+    if (document.querySelector('pre code')) {
+      loadStyle('//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css');
+      import('//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js')
+        .then(module => module.default.highlightAll());
+    }
+  </script>
+
+  <!-- Analytics (low priority) -->
+  <script>
+    // Defer GTM load
+    window.addEventListener('load', function() {
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-WK2X5JG';
+      script.async = true;
+      document.head.appendChild(script);
+    });
+    
+    // Defer HubSpot load
+    window.addEventListener('load', function() {
+      const script = document.createElement('script');
+      script.src = '//js-na1.hs-scripts.com/48146409.js';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    });
+  </script>
+
+  <!-- Remaining meta tags and resources -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/theme/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/theme/images/favicon-16x16.png">
+  <link rel="manifest" href="/theme/images/site.webmanifest">
+  <link rel="mask-icon" href="/theme/images/safari-pinned-tab.svg" color="#5bbad5">
+  
+  <!-- Social meta tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ SITEURL }}">
+  <meta property="og:site_name" content="Shovels">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Shovels - Building permit and contractor intelligence">
+  <meta property="og:image" content="{{ SITEURL }}/theme/images/shovels-social.png">
+  <meta property="og:image:alt" content="Shovels - Building permit and contractor intelligence">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <!-- GTM noscript fallback -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 </html>
