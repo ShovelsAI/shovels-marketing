@@ -82,12 +82,7 @@
   {% include 'footer.html' %}
 
   <!-- Load non-critical resources -->
-  <script type="module">
-    // Dynamic import of Alpine.js
-    import Alpine from '/theme/js/alpine.js';
-    window.Alpine = Alpine;
-    Alpine.start();
-  </script>
+  <script defer src="/theme/js/alpine.js"></script>
 
   <!-- Deferred third-party resources -->
   <script>
