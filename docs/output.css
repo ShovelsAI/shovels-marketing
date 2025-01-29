@@ -2466,10 +2466,6 @@ select {
   line-height: 1.25;
 }
 
-.tracking-normal {
-  letter-spacing: 0em;
-}
-
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -2618,6 +2614,11 @@ select {
 
 .no-underline {
   text-decoration-line: none;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .opacity-0 {
@@ -2790,6 +2791,8 @@ select {
   font-family: "marble";
 
   src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
+
+  font-display: swap;
 }
 
 /* TODO: add various weights */
@@ -2802,6 +2805,8 @@ select {
   font-weight: normal;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -2812,6 +2817,8 @@ select {
   font-weight: 500;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -2822,6 +2829,8 @@ select {
   font-weight: bold;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 h1, h2, h3, h4, h5, h6, dt {
