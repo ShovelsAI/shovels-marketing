@@ -17,8 +17,8 @@
 {% block content %}
 <!-- Hero Section -->
 <div class="relative isolate">
-  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-    <div class="mx-auto min-w-2xl lg:mx-0 lg:flex-auto">
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-32 grid grid-cols-12 gap-x-10 lg:px-8 lg:py-20">
+    <div class="col-span-12 lg:col-span-8">
       <!--
       <div class="flex">
         <div class="relative flex items-center gap-x-4 rounded-full bg-white px-4 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -41,7 +41,7 @@
         <a href="{{ SITEURL }}/permit-database" class="text-sm/6 font-semibold text-gray-900">Find permits <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
-    <div class="mt-16 hidden lg:block lg:mt-0 lg:shrink-0 lg:grow">
+    <div class="mt-16 hidden lg:block lg:mt-0 col-span-12 lg:col-span-4">
       <img src="theme/images/home/hero-home.svg" alt="Shovels building permit data" class="mx-auto w-[30rem] max-w-full drop-shadow-xl">
     </div>
   </div>
