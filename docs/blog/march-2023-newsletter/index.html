@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Inline critical CSS -->
+<style>
+    /* Critical styles only - minimal set needed for initial render */
+    :root {
+      --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: 'Scandia', var(--font-fallback);
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-display: optional;
+    }
+    /* Hide Alpine.js elements before it loads */
+    [x-cloak] { display: none !important; }
+  </style>
+<!-- Preload critical fonts with high fetchpriority -->
+<link as="font" crossorigin="" fetchpriority="high" href="/theme/webfonts/Scandia-Regular.woff" rel="preload" type="font/woff"/>
+<link as="font" crossorigin="" fetchpriority="high" href="/theme/webfonts/Scandia-Medium.woff" rel="preload" type="font/woff"/>
+<link as="font" crossorigin="" fetchpriority="high" href="/theme/webfonts/Scandia-Bold.woff" rel="preload" type="font/woff"/>
+<!-- Inline minimal GTM -->
+<script>window.dataLayer = window.dataLayer || [];</script>
+<!-- Critical meta tags -->
+<title>Shovels |  March 2023 Newsletter</title>
+<meta content="We have raised $610,000 so far, and I'm open to more strategic fundraising calls to help us find product-market fit. We completely revamped our website and..." name="description"/>
+<!-- Preload critical CSS -->
+<link as="style" href="/output.css" rel="preload"/>
+<link href="/output.css" rel="stylesheet"/>
+<!-- Defer non-critical CSS -->
+<link as="style" href="https://rsms.me/inter/inter.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<link as="style" href="https://use.typekit.net/zqr4mgp.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<noscript>
+<link href="https://rsms.me/inter/inter.css" rel="stylesheet"/>
+<link href="https://use.typekit.net/zqr4mgp.css" rel="stylesheet"/>
+</noscript>
+<!-- Defer non-critical meta -->
+<link href="https://www.shovels.ai/feeds/all.atom.xml" rel="alternate" title="Shovels |  Full Atom Feed" type="application/atom+xml"/>
+<!-- ... other feed links moved to bottom ... -->
+<meta content="&lt;p&gt;We have raised $610,000 so far, and I'm open to more strategic fundraising calls to help us find product-market fit. We completely revamped our website and released a prototype of the Green Contractor Directory. We continue to learn and adapt in the evolving permit and contractor data landscape, and we're building strong relationships with our competitors, who may turn out to be partners or potential customers. Our focus is now on contractor data, as we see a significant opportunity in this underserved market.&lt;/p&gt;" name="description">
+<meta content="/theme/images/software/hero.svg" property="og:image">
+<meta content="/theme/images/software/hero.svg" property="og:image:url"/>
+<meta content="" property="og:image:alt"/>
+<meta content="company" name="tags"/>
+<!-- Favicons (low priority) -->
+<link href="/theme/images/favicon-32x32.png" rel="icon" type="image/png"/>
+</meta></meta><link href="https://www.shovels.ai/blog/march-2023-newsletter/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.shovels.ai/blog"}, {"@type": "ListItem", "position": 3, "name": "March 2023 newsletter", "item": "https://www.shovels.ai/blog/march-2023-newsletter"}, {"@type": "ListItem", "position": 4, "name": "Index", "item": "https://www.shovels.ai/blog/march-2023-newsletter/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Ryan Buckley"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>March 2023 Newsletter</p>", "about": "Company", "datePublished": "2023-03-15 00:00", "image": "/theme/images/software/hero.svg"}</script></head>
+<body>
+<div x-data="{ mobileOpen: false }">
+<div class="max-w-7xl mx-auto flex items-center justify-between py-8 px-6 md:justify-start md:space-x-10">
+<div class="flex justify-start lg:w-0 lg:flex-1">
+<a href="/">
+<span class="sr-only">Shovels</span>
+<a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
+<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
+</a>
+</a>
+</div>
+<div class="-my-2 -mr-2 md:hidden">
+<button @click="mobileOpen = true" aria-expanded="false" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500" type="button">
+<span class="sr-only">Open menu</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden space-x-10 md:flex">
+<div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+<button @click="open = ! open" class="navbar_item group" type="button">
+<span>Customers</span>
+<!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2" x-cloak="" x-show="open">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/software">
+<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Construction Technology</p>
+<p class="mt-1 text-sm text-emerald-800">Get your software products in front of the right contractors at the right times.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/climate">
+<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Energy &amp; Climate</p>
+<p class="mt-1 text-sm text-emerald-800">Track building electrification progress and see who does the best work.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/building-materials">
+<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Building Materials Suppliers</p>
+<p class="mt-1 text-sm text-emerald-800">Target the most active contractors and pull permit data directly into your data warehouse.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/real-estate">
+<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Real Estate</p>
+<p class="mt-1 text-sm text-emerald-800">Use building permit data to enhance your site selection process.</p>
+</div>
+</a>
+</div>
+<div class="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+<div class="flow-root">
+<a class="-m-3 flex items-center rounded-md p-3 text-base text-emerald-900 hover:bg-gray-100" href="mailto:sales@shovels.ai">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3">Contact Sales</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+<button @click="open = ! open" class="navbar_item group" type="button">
+<span>Solutions</span>
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-cloak="" x-show="open">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/data-feed">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Enterprise</p>
+<p class="mt-1 text-sm text-emerald-800">Access Shovels in Snowflake, BigQuery, or Databricks, or directly import our database files.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/api">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">API</p>
+<p class="mt-1 text-sm text-emerald-800">Access Shovels programmatically by looking up data by address or contractor name.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/permit-database">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Web App</p>
+<p class="mt-1 text-sm text-emerald-800">Explore and download Shovels data from your desktop and mobile devices.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/audiences">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Audiences</p>
+<p class="mt-1 text-sm text-emerald-800">Target high-signal homeowner, resident, and B2B audiences for your marketing campaigns.</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+<button @click="open = ! open" class="navbar_item group" type="button">
+<span>Resources</span>
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-cloak="" x-show="open">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/blog">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Blog</p>
+<p class="mt-1 text-sm text-emerald-800">All of our posts and announcements about building permit and contractor databases.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://docs.shovels.ai" target="_blank">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Documentation Hub</p>
+<p class="mt-1 text-sm text-emerald-800">Read our technical docs and learn how to get the most out of Shovels.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b" target="_blank">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Data Coverage Dashboard</p>
+<p class="mt-1 text-sm text-emerald-800">See where we have and don't have building permit and contractor coverage.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/about">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" stroke="currentColor" stroke-width="1.5" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="m68.75 12.5v-6.25c0-1.7266-1.3984-3.125-3.125-3.125h-31.25c-1.7266 0-3.125 1.3984-3.125 3.125v6.25c0 8.6133 7.0117 15.625 15.625 15.625v28.125h-12.5c-1.7188 0-3.125 1.4062-3.125 3.125v15.438c0 9 5.4062 16.969 13.75 20.312l3.8438 1.5312c0.375 0.15625 0.75 0.21875 1.1562 0.21875s0.78125-0.0625 1.1562-0.21875l3.8438-1.5312c8.3438-3.3438 13.75-11.312 13.75-20.312v-15.438c0-1.7188-1.4062-3.125-3.125-3.125h-12.5v-28.125c8.6133 0 15.625-7.0117 15.625-15.625zm-31.25 0v-3.125h25v3.125c0 5.168-4.207 9.375-9.375 9.375h-6.25c-5.168 0-9.375-4.207-9.375-9.375z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">About</p>
+<p class="mt-1 text-sm text-emerald-800">The history to date and the history we're making.</p>
+</div>
+</a>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/careers">
+<svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Careers</p>
+<p class="mt-1 text-sm text-emerald-800">Join our team and help us build the future of construction.</p>
+</div>
+</a>
+</div>
+<div class="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
+<div>
+<h3 class="text-base text-emerald-800">Recent Blog Posts</h3>
+<ul class="mt-4 space-y-4" role="list">
+<li class="truncate text-base">
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/shovels-x-cherre-delivering-the-best-insights-for-real-estate-portfolios/"><p>Shovels x Cherre: Delivering the Best Insights for Real Estate Portfolios</p></a>
+</li>
+<li class="truncate text-base">
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/february-2025-newsletter/"><p>February 2025 Newsletter</p></a>
+</li>
+<li class="truncate text-base">
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/analyzing-texas-roofing-permits-by-income-bracket/"><p>Analyzing Texas Roofing Permits by Income Bracket</p></a>
+</li>
+</ul>
+</div>
+<div class="mt-5 text-sm">
+<a class="text-slate-600 hover:text-slate-500" href="https://www.shovels.ai/blog">
+                View all blog posts
+                <span aria-hidden="true"> →</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<a href="https://www.shovels.ai/pricing" class="navbar_item">Pricing</a>-->
+<a class="navbar_item" href="https://app.shovels.ai">Free Trial</a>
+<a class="navbar_item font-semibold" href="https://www.shovels.ai/contact">Contact Us</a>
+</nav>
+<!--
+  <div class="hidden items-center justify-end space-x-8 md:flex md:flex-1 lg:w-0">
+    <a href="#" class="whitespace-nowrap text-base  text-emerald-800 hover:text-emerald-900">Sign in</a>
+    <a href="#" class="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-slate-100 py-2 px-4 text-base  text-slate-700 hover:bg-slate-200">Sign up</a>
+  </div>
+  -->
+</div>
+<!--
+Mobile menu, show/hide based on mobile menu state.
+
+Entering: "duration-200 ease-out"
+  From: "opacity-0 scale-95"
+  To: "opacity-100 scale-100"
+Leaving: "duration-100 ease-in"
+  From: "opacity-100 scale-100"
+  To: "opacity-0 scale-95"
+-->
+<div class="absolute z-10 inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+<div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5" x-show="mobileOpen">
+<div class="px-5 pt-5 pb-6">
+<div class="flex items-center justify-between">
+<div>
+<img alt="Shovels - Building permit and contractor intelligence" class="h-8 w-auto" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
+</div>
+<div class="-mr-2">
+<button @click="mobileOpen = false" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500" type="button">
+<span class="sr-only">Close menu</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+</div>
+<div class="mt-6">
+<nav class="grid gap-y-8">
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/software">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Construction Software</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/climate">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Energy &amp; Climate</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/building-materials">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Building Material Suppliers</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/real-estate">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Real Estate</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/permit-database">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Web App</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/data-feed">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Enterprise</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/api">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">API</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/audiences">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Audiences</span>
+</a>
+</nav>
+</div>
+</div>
+<div class="space-y-6 py-6 px-5">
+<div class="grid grid-cols-2 gap-y-4 gap-x-8">
+<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/about">Company</a>
+<a class="text-base text-emerald-900 hover:text-gray-700" href="https://docs.shovels.ai">Documentation</a>
+<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/careers">Careers</a>
+<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog">Blog</a>
+<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/privacy-center">Privacy Center</a>
+<!--" class="text-base  text-emerald-900 hover:text-gray-700">Pricing</a>-->
+<a class="text-base text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/terms">Terms &amp; Conditions</a>
+</div>
+<div>
+<a class="flex w-full items-center justify-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base text-white shadow-sm hover:bg-slate-700" href="https://app.shovels.ai">Free trial</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mx-auto max-w-[744px]">
+<!-- header -->
+<div class="my-16 px-6 lg:px-8">
+<div class="mx-auto text-base leading-5 text-gray-700">
+<div class="mb-10">
+<a class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2" href="/blog/?category=Company">Company</a>
+</div>
+<div class="block">
+<!-- Image placeholder -->
+<img alt="We raised over $600,000 and have a robust roadmap" class="aspect-[3/2] w-full rounded-2xl bg-gray-100 object-cover" src="/theme/images/software/hero.svg"/>
+<!-- Title and date container -->
+<div class="break-words">
+<h1 class="my-5 text-5xl">
+            March 2023 Newsletter
+          </h1>
+<div class="mt-8 flex items-center gap-x-4 text-sm">
+<time class="text-gray-500" datetime="2023-03-15 00:00:00-07:00">Wed 15 March 2023</time>
+<a class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100" href="/blog/?category=Company">
+               Company
+            </a>
+</div>
+<div class="relative mt-4 flex items-center gap-x-4">
+<img alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100" src="/theme/images/team/ryan.svg"/>
+<div class="text-sm/6">
+<p class="font-semibold text-gray-900">Ryan Buckley</p>
+<p class="text-gray-600">CEO</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- content -->
+<div class="my-16 px-6 lg:px-8">
+<div class="mx-auto max-w-3xl leading-loose text-gray-700">
+<article class="w-full article">
+<h2>Shovels Mar 2023 Newsletter</h2>
+<p><br/></p>
+<p>Greetings!</p>
+<p>Here's the special fundraising update email and other updates since last time.</p>
+<ul>
+<li>We have raised $610,000 so far, with more likely to come in the next few weeks! (Timing likely will be delayed by the Silicon Valley Bank failure and related malaise.) This money is in the bank, so it's official.</li>
+<li>I'm still taking a few very strategic fundraising calls. We don't need more money, but I'm receptive to any investors who could help us find product-market fit.</li>
+<li>Speaking of product-market fit, that's top of mind now and will remain so for the foreseeable future. Expect this to be the central topic of these newsletters going forward!</li>
+<li>And to that end, I completely rewrote <a href="https://www.shovels.ai/">our website</a> a few weeks ago. It still needs some color, but I'm happy with the copy. </li>
+<li>We released a <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff">Green Contractor Directory</a> prototype!</li>
+</ul>
+<h3>Fundraise</h3>
+<p>I'm pleased to share that our lead investor is Zach Coelius from <a href="https://coelius.vc/">Coelius Capital</a>. He's an ideal lead for us. I've known of Zach for years. We've been in the same circles but didn't really connect until late last year after I attended one of his dinners in San Francisco. </p>
+<p>Zach knows the super early stages as well as anybody. He'll be a great sounding board as we come up against critical decisions and can help us raise funds to accelerate growth if needed. We're delighted to have his support!</p>
+<p>The other angel investors, whom I won't name directly but can describe as old friends, new friends, former bosses, and fans of my personal blog, were the first to sign and send their checks. </p>
+<p>Luka and I are humbled and grateful -- and ready to get back to work :) </p>
+<h3>Direction</h3>
+<p>We continue to learn. The permit and contractor data landscape is evolving rapidly, and we are a player in this space. The other companies are aware of us and reacting to our presence. </p>
+<p>One thing I'm good at, perhaps because I enjoy doing it, is getting to know my neighbors. I like to be friendly with my business neighbors, too. I want to know everyone in the market. Not just know their names, but meet them, exchange messages, and (try to) be friends. It doesn't always work, but when it does, it leads to profit. </p>
+<p>Businesses that look like competitors can turn out to be partners, customers, or lead to friendly mergers. This has happened at every company I've run. It happened again recently with Shovels. I'm really happy about this development because it opens up a big opportunity for us in the contractor data market.</p>
+<p>Contractor data is what I said we'd do in the early days of Shovels. Late last year, though, I became very excited about permit data. I saw a huge opportunity there. I still see it. I'd reach out or be introduced to potential customers under the pretense of contractor data and discover that what they really wanted was permits. It's a huge opportunity, but I don't think it's ours to get. We don't have enough value to add there; the incumbents will meet this need well and soon enough. </p>
+<p>Contractor data is a different story. It's underserved, and we have a tremendous opportunity right now to fill the void. I describe the four segments on <a href="https://www.shovels.ai/">our website</a>: software, climate, finance, and builders. I'll write more detail about all four in the coming months.</p>
+<h3>Coming Up</h3>
+<p>We have a very exciting product roadmap! We're going to expand our little <a href="https://shovels.retool.com/embedded/public/e440a465-a280-44be-aa81-5388b8ac20ff">green contractor prototype</a>. We're going to make all of the San Francisco Bay Area available; this demo currently has only 500 records.  </p>
+<p>We're going to release an API (application programming interface -- a way for computer programmers to easily access this data) and put contractor landing pages up on our website. </p>
+<p>Next quarter, we're going to layer on additional datasets to make the contractor information even more insightful. I'll share more details on these data layers soon.</p>
+<p>In short, we're going deep on contractor data and we're starting in the SF Bay Area. I'll share more next month when more products are released! </p>
+</article>
+</div>
+</div>
+</div>
+<footer aria-labelledby="footer-heading" class="bg-gray-900 text-lime-50">
+<h2 class="sr-only" id="footer-heading">Footer</h2>
+<div class="mx-auto max-w-7xl pb-8 pt-10 sm:pt-12 lg:pt-16 px-6 lg:px-8">
+<img alt="shovels logo" class="mb-24" src="/theme/images/shovels-footer-logo.svg"/>
+<div class="xl:grid xl:grid-cols-3 xl:gap-8">
+<div class="grid grid-cols-2 gap-8 xl:col-span-2">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h3 class="text-sm leading-6 text-amber-300">Customers</h3>
+<ul class="mt-6" role="list">
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/software">Construction Technology</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/climate">Energy &amp; Climate</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/building-materials">Building Material Suppliers</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/real-estate">Real Estate</a>
+</li>
+</ul>
+</div>
+<div class="mt-10 md:mt-0">
+<h3 class="text-sm leading-6 text-amber-300">Solutions</h3>
+<ul class="mt-6" role="list">
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/data-feed">Enterprise</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/api">API</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/permit-database">Online</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/audiences">Audiences</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h3 class="text-sm leading-6 text-amber-300">Resources</h3>
+<ul class="mt-6" role="list">
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/blog">Blog</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&amp;state=&amp;city=&amp;county_or_jurisdiction=&amp;zip_code=&amp;date_filter=" target="_blank">Coverage Dashboard</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://docs.shovels.ai/" target="_blank">Documentation Hub</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-600" href="https://discord.gg/Nypja3cKDx">Shovels Discord Community</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/about" target="_blank">About Shovels</a>
+</li>
+</ul>
+</div>
+<div class="mt-10 md:mt-0">
+<h3 class="text-sm leading-6 text-amber-300">Legal</h3>
+<ul class="mt-6" role="list">
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/terms">Terms</a>
+</li>
+<li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/privacy-center">Privacy Center</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-10 xl:mt-0">
+<h3 class="text-[32px] font-medium text-lime-50 leading-none">Subscribe to our newsletter</h3>
+<p class="my-4 leading-6 text-base">We'll share feature releases, data updates, and new products.</p>
+<script defer="" src="https://js.hsforms.net/forms/embed/48146409.js"></script>
+<div class="hs-form-frame" data-form-id="e690afba-355e-48da-9c7a-9877feb6199d" data-portal-id="48146409" data-region="na1"></div>
+</div>
+</div>
+<div class="mt-16 border-t border-stone-200/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+<div class="flex space-x-6 md:order-2">
+<a class="text-gray-400 hover:text-gray-500" href="https://discord.gg/Nypja3cKDx" target="_blank">
+<span class="sr-only">Android</span>
+<svg aria-label="Discord" class="h-6 w-6" fill="currentColor" role="img" version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="m386 137c-24-11-49.5-19-76.3-23.7c-.5 0-1 0-1.2.6c-3.3 5.9-7 13.5-9.5 19.5c-29-4.3-57.5-4.3-85.7 0c-2.6-6.2-6.3-13.7-10-19.5c-.3-.4-.7-.7-1.2-.6c-23 4.6-52.4 13-76 23.7c-.2 0-.4.2-.5.4c-49 73-62 143-55 213c0 .3.2.7.5 1c32 23.6 63 38 93.6 47.3c.5 0 1 0 1.3-.4c7.2-9.8 13.6-20.2 19.2-31.2c.3-.6 0-1.4-.7-1.6c-10-4-20-8.6-29.3-14c-.7-.4-.8-1.5 0-2c2-1.5 4-3 5.8-4.5c.3-.3.8-.3 1.2-.2c61.4 28 128 28 188 0c.4-.2.9-.1 1.2.1c1.9 1.6 3.8 3.1 5.8 4.6c.7.5.6 1.6 0 2c-9.3 5.5-19 10-29.3 14c-.7.3-1 1-.6 1.7c5.6 11 12.1 21.3 19 31c.3.4.8.6 1.3.4c30.6-9.5 61.7-23.8 93.8-47.3c.3-.2.5-.5.5-1c7.8-80.9-13.1-151-55.4-213c0-.2-.3-.4-.5-.4Zm-192 171c-19 0-34-17-34-38c0-21 15-38 34-38c19 0 34 17 34 38c0 21-15 38-34 38zm125 0c-19 0-34-17-34-38c0-21 15-38 34-38c19 0 34 17 34 38c0 21-15 38-34 38z"></path>
+</svg>
+</a>
+<a class="text-gray-400 hover:text-gray-500" href="https://www.linkedin.com/company/shovels/" target="_blank">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
+</svg>
+</a>
+<a class="text-gray-400 hover:text-gray-500" href="https://github.com/shovelsai" target="_blank">
+<span class="sr-only">GitHub</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+<p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">© 2025 Shovels, Inc. All rights reserved. (800) 511-7457.</p>
+</div>
+</div>
+</footer>
+<!-- Load non-critical resources -->
+<script defer="" src="/theme/js/alpine.js"></script>
+<!-- Deferred third-party resources -->
+<script>
+    // Load non-critical CSS
+    function loadStyle(url) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = url;
+      document.head.appendChild(link);
+    }
+    // Load highlight.js only on pages that need it
+    if (document.querySelector('pre code')) {
+      loadStyle('//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css');
+      import('//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js')
+        .then(module => module.default.highlightAll());
+    }
+  </script>
+<!-- Analytics (low priority) -->
+<script>
+    // Defer GTM load
+    window.addEventListener('load', function() {
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-WK2X5JG';
+      script.async = true;
+      document.head.appendChild(script);
+    });
+    
+    // Defer HubSpot load
+    window.addEventListener('load', function() {
+      const script = document.createElement('script');
+      script.src = '//js-na1.hs-scripts.com/48146409.js';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    });
+  </script>
+<!-- Remaining meta tags and resources -->
+<link href="/theme/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/theme/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/theme/images/site.webmanifest" rel="manifest"/>
+<link color="#5bbad5" href="/theme/images/safari-pinned-tab.svg" rel="mask-icon"/>
+<!-- Social meta tags -->
+<meta content="website" property="og:type"/>
+<meta content="https://www.shovels.ai" property="og:url"/>
+<meta content="Shovels" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Shovels - Building permit and contractor intelligence" property="og:title"/>
+<meta content="https://www.shovels.ai/theme/images/shovels-social.png" property="og:image"/>
+<meta content="Shovels - Building permit and contractor intelligence" property="og:image:alt"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- GTM noscript fallback -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+</body>
+</html>
