@@ -99,13 +99,11 @@ We also show derived metrics, like the total value of all the permits pulled on 
 
 Here's a screenshot of a random address in Fremont, CA. 
 
-![CleanShot 2025-02-11 at 21.38.51@2x.png](attachment:7291295c-7851-4ee4-8a00-3b9166e93add:CleanShot_2025-02-11_at_21.38.512x.png)
+![Tesla address profile]({static}/images/tesla.png)
 
 ## A better date picker
 
 We have this saying at Shovels: "the little things are the big things." This is a little thing but it's also a big thing. So yes, old high school friend, it's both.  
-
-![Tesla address profile]({static}/images/tesla.png)
 
 Date ranges max out at 90 days! And in the next release we'll order permits so the most recent ones will always be first. 
 
