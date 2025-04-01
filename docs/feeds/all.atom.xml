@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels |</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/all.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-03-13T00:00:00-07:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels |</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/all.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-04-01T00:00:00-07:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
 &lt;p&gt;&lt;br&gt;
 Hello friends, advisors, and (a few) relatives! &lt;/p&gt;
 &lt;p&gt;After a bit of a hiatus, I'm really excited to launch a new company along with an incredible team. &lt;/p&gt;
@@ -3592,4 +3592,27 @@ Spencer, we're just warming up.&lt;/p&gt;
 &lt;p&gt;These derived metrics are available throughout our entire platform.&lt;/p&gt;
 &lt;p&gt;In it’s simplest form, our &lt;a href="https://app.shovels.ai"&gt;Shovels Online&lt;/a&gt; dashboard and web application allows you to search for Permits or Contractors and then see all the nested details beneath. &lt;/p&gt;
 &lt;p&gt;For a more detailed (and programmatic) view, explore our &lt;a href="https://docs.shovels.ai/docs/shovels-api-introduction"&gt;API&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;If you have any questions, or want a sample dataset for your team to explore, &lt;a href="mailto:sales@shovels.ai"&gt;get in touch today&lt;/a&gt;!&lt;/p&gt;</content><category term="Customer Success"></category><category term="Metrics"></category></entry></feed>
+&lt;p&gt;If you have any questions, or want a sample dataset for your team to explore, &lt;a href="mailto:sales@shovels.ai"&gt;get in touch today&lt;/a&gt;!&lt;/p&gt;</content><category term="Customer Success"></category><category term="Metrics"></category></entry><entry><title>Introducing: The Department of Permit Efficiency (DOPE)</title><link href="https://www.shovels.ai/blog/introducing-the-department-of-permit-efficiency-dope/" rel="alternate"></link><published>2025-04-01T00:00:00-07:00</published><updated>2025-04-01T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2025-04-01:/blog/introducing-the-department-of-permit-efficiency-dope/</id><summary type="html">&lt;p&gt;Introducing DOPE: our groundbreaking partnership with the federal government to eliminate permit delays through AI, blockchain, and executive orders. Now every permit gets approved instantly, inspected by satellites, and recorded on the DOGE blockchain. The future of permitting is here (and it only took one Sharpie).&lt;/p&gt;</summary><content type="html">&lt;p&gt;Did you see this tweet?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DOPE announcement" src="https://www.shovels.ai/images/tweet.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Exciting, right?!&lt;/p&gt;
+&lt;p&gt;As you know, at Shovels, we &lt;em&gt;read&lt;/em&gt; permits. We’ve been working for years to be the very best at understanding and deriving insights from building permits. There was and still is a great need in the market for this work.&lt;/p&gt;
+&lt;p&gt;Case in point, look at this trend of demolition permit approval times in the last 25 years. When we showed this to Elon, he asked a brilliant question: How can DOGE go about dismantling the federal government when it takes 30 days (and climbing!) just to get a demolition permit?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Demo permits" src="https://www.shovels.ai/images/demo.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Yea. Doesn't work.&lt;/p&gt;
+&lt;p&gt;That’s why he tapped Shovels to help the administration Make (Permit) Approvals Great Again.&lt;/p&gt;
+&lt;p&gt;We have the data; now let’s fix it.&lt;/p&gt;
+&lt;p&gt;Starting today, every permit in the country will go through DOPE's AI-driven automated approval process! We call it the Permit Approval Submission System and Generative AI Solution.&lt;/p&gt;
+&lt;p&gt;It works like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The first AI will study your project requirements and generate a building permit application that gives no regard whatsoever to local building or zoning codes&lt;/li&gt;
+&lt;li&gt;A second bot will just approve it -- it's not really an AI&lt;/li&gt;
+&lt;li&gt;A third AI will leverage Starlink's network of low earth orbit satellites that were recently equipped with special gamma ray photography to perform detailed remote “inspections of construction sites” (or not, we don't know)&lt;/li&gt;
+&lt;li&gt;Upon completion, a hash of both the permit documentation and/or certificate of occupancy will be recorded on the DOGE blockchain, ensuring complete transparency and immutability of all permit records nationwide, forever.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;PHEW. So how do we get all 20,000 local permit jurisdictions on board? We don’t! That's what Executive Orders are for. The stroke of a Sharpie is all it takes.&lt;/p&gt;
+&lt;p&gt;The future is now!&lt;/p&gt;
+&lt;p&gt;--&lt;/p&gt;
+&lt;p&gt;If you read this far, please know this is a joke. The only truth in this newsletter is the demolition permit approval time chart.&lt;/p&gt;
+&lt;p&gt;😉&lt;/p&gt;
+&lt;p&gt;Happy April Fools!&lt;/p&gt;
+&lt;p&gt;The Shovels April Fools Day Newsletter Committee&lt;/p&gt;</content><category term="Company"></category><category term="company"></category></entry></feed>
