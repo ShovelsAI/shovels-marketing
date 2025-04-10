@@ -265,13 +265,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/top-5-gtm-strategies-using-shovels-online/" class=" text-emerald-900 hover:text-gray-700"><p>Top 5 GTM Strategies using Shovels Online</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/introducing-the-department-of-permit-efficiency-dope/" class=" text-emerald-900 hover:text-gray-700"><p>Introducing: The Department of Permit Efficiency (DOPE)</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/top-5-most-useful-derived-metrics/" class=" text-emerald-900 hover:text-gray-700"><p>Top 5 Most Useful Derived Metrics</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/march-2025-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>March 2025 Newsletter</p></a>
                   </li>
               </ul>
             </div>
@@ -473,6 +473,47 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+      <article class="flex flex-col items-start" 
+               data-summary="<p>Shovels Online is a powerful tool for enabling your go-to-market strategies. Whether you need to target homeowners, analyze competitor activity, or visualize entire markets, Shovels Online is the place to start.</p>"
+               data-title="<p>Top 5 GTM Strategies using Shovels Online</p>"
+               x-show="isMatchingCategory('Customer Success') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/top-5-gtm-strategies-using-shovels-online/">
+            <img src="/images/shovels-online-gtm-hero.jpg" 
+                 alt="<p>Top 5 GTM Strategies using Shovels Online</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-04-09 00:00:00-07:00" class="text-gray-500">Wed 09 April 2025</time>
+            <a href="/blog/?category=Customer Success"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Customer Success
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/top-5-gtm-strategies-using-shovels-online/">
+                <span class="absolute inset-0"></span>
+                <p>Top 5 GTM Strategies using Shovels Online</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>Shovels Online is a powerful tool for enabling your go-to-market strategies. Whether you need to target homeowners, analyze competitor activity, or visualize entire markets, Shovels Online is the place to start.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/alex.svg" alt="Alex Brown" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Alex Brown</p>
+              <p class="text-gray-600">Technical Support & Writer</p>
+            </div>
+          </div>
+        </div>
+      </article>
       <article class="flex flex-col items-start" 
                data-summary="<p>Introducing DOPE: our groundbreaking partnership with the federal government to eliminate permit delays through AI, blockchain, and executive orders. Now every permit gets approved instantly, inspected by satellites, and recorded on the DOGE blockchain. The future of permitting is here (and it only took one Sharpie).</p>"
                data-title="<p>Introducing: The Department of Permit Efficiency (DOPE)</p>"
