@@ -572,6 +572,20 @@ Leaving: "duration-100 ease-in"
       script.defer = true;
       document.head.appendChild(script);
     });
+
+    // Defer Swan load
+    window.addEventListener('load', function() {
+      var w = window;
+      var swan = (w.swan = w.swan || []);
+      if (swan.isLoaded) return;
+      swan.isLoaded = true;
+      swan.pk = 'cm9h7y0vk0007l805r05sjro4';
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'https://swan-scripts.s3.amazonaws.com/bundle.js';
+      document.head.appendChild(script);
+    });
   </script>
 <!-- Remaining meta tags and resources -->
 <link href="/theme/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
