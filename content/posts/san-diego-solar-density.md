@@ -1,4 +1,4 @@
-Title: Unlocking Urban Electrification
+Title: Unlocking urban electrification in San Diego
 Subtitle: Analyzing Census Tracts in San Diego
 Date: 2025-05-14
 Modified: 2025-05-14
@@ -7,7 +7,7 @@ Tags: solar, building permits, solar density, policy
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
-Summary: A deep dive into solar adoption patterns in San Diego County reveals surprising insights about what drives building electrification. Through analysis of census tract data, we discover that two cities - Poway and Chula Vista - lead in solar adoption despite their contrasting demographics and housing characteristics. The study examines the impact of permitting processes, local policies, and housing stock age on solar adoption rates, challenging conventional assumptions about what factors most influence renewable energy adoption. Key findings include the importance of streamlined permitting processes, the effectiveness of "Solar Ready" ordinances, and the counterintuitive success of older neighborhoods in adopting solar technology.
+Summary: A deep dive into solar adoption patterns in San Diego County reveals surprising insights about what drives building electrification. Through analysis of census tract data, we discover that two cities - Poway and Chula Vista - lead in solar adoption despite their contrasting demographics and housing characteristics.
 Slug: solar-permit-density-san-diego
 Image: /images/pw-and-cv.png
 
