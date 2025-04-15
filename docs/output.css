@@ -3107,6 +3107,12 @@ div.article img {
 
 .article ul > li {
   margin-left: 20px !important;
+  list-style-type: disc;
+}
+
+.article ol > li {
+  margin-left: 20px !important;
+  list-style-type: decimal;
 }
 
 .article table {
