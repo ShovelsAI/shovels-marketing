@@ -1,4 +1,4 @@
-Title: Unlocking urban electrification in San Diego
+Title: Unlocking Urban Electrification in San Diego
 Subtitle: Analyzing Census Tracts in San Diego
 Date: 2025-05-14
 Modified: 2025-05-14
