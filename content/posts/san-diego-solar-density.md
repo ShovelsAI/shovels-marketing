@@ -1,7 +1,7 @@
 Title: Unlocking Urban Electrification in San Diego
 Subtitle: Analyzing Census Tracts in San Diego
-Date: 2025-05-14
-Modified: 2025-05-14
+Date: 2025-04-09
+Modified: 2025-04-09
 Category: Data
 Tags: solar, building permits, solar density, policy
 Authors: Ryan Buckley
