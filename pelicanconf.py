@@ -50,7 +50,7 @@ PAGINATION_PATTERNS = (
 )
 FORMATTED_FIELDS = ['summary', 'title']
 STATIC_PATHS = ['images', 'pages']
-PATH_METADATA = '(?P<dirname>.*)/(?P<basename>.*)\..*'
+PATH_METADATA = r'(?P<dirname>.*)/(?P<basename>.*)\..*'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 FILENAME_METADATA = '(?P<title>.*)'

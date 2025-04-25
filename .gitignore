@@ -21,3 +21,4 @@ venv
 .venv
 seo_report.html
 .vscode
+.venv/pyvenv.cfg
