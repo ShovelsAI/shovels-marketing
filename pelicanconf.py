@@ -50,6 +50,11 @@ PAGINATION_PATTERNS = (
 )
 FORMATTED_FIELDS = ['summary', 'title']
 STATIC_PATHS = ['images', 'pages']
+
+# Theme static files configuration
+THEME_STATIC_DIR = 'theme'
+THEME_STATIC_PATHS = ['static']
+
 PATH_METADATA = r'(?P<dirname>.*)/(?P<basename>.*)\..*'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
