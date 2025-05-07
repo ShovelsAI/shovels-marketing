@@ -54,7 +54,7 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
           <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="Petra Kopic">
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Petra Kopic</h3>
-            <p class="text-sm/6 font-semibold text-indigo-600">Data Engineer</p>
+            <p class="text-sm/6 font-semibold text-indigo-600">VP of Data</p>
           </div>
         </div>
       </li>
@@ -73,15 +73,6 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
           <div>
             <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
             <p class="text-sm/6 font-semibold text-indigo-600">Technical Support & Writer</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/whitney.svg" alt="Whitney House">
-          <div>
-            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Whitney House</h3>
-            <p class="text-sm/6 font-semibold text-indigo-600">Sales</p>
           </div>
         </div>
       </li>
