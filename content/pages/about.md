@@ -121,7 +121,7 @@ slug: about
           <img class="size-16 rounded-full" src="theme/images/team/petra.svg" alt="Petra Kopic, Shovels">
           <div>
             <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Petra Kopic</h3>
-            <p class="text-base/6 font-semibold text-shovels-primary">Data Engineer</p>
+            <p class="text-base/6 font-semibold text-shovels-primary">VP of Data</p>
             </div>
           </div>
         </a>
