@@ -423,8 +423,8 @@ Leaving: "duration-100 ease-in"
 <div class="my-16 px-6 lg:px-8">
 <div class="mx-auto max-w-3xl leading-loose text-gray-700">
 <article class="w-full article">
-<p>Permits are hard enough to acquire on their own, so we want to take the confusion out of understanding a permit’s status. </p>
-<p>In our mission to make permit data as clean and straightforward as possible, let’s quickly review Permit Statuses and how they map from our ecosystem to the actual construction process.</p>
+<p>Permits are hard enough to acquire on their own, so we want to take the confusion out of understanding a permit's status. </p>
+<p>In our mission to make permit data as clean and straightforward as possible, let's quickly review Permit Statuses and how they map from our ecosystem to the actual construction process.</p>
 <h2>Permit Status Definitions</h2>
 <p><img alt='Flowchart describing Shovels permit status lifecycle, going from "In Review" to a cycle of "Active" and "Inactive", ending with "Final"' src="/images/permit-status-flowchart.png"/></p>
 <p>In the Shovels ecosystem, there are <strong>four</strong> statuses that Permits can be in:</p>
@@ -436,18 +436,18 @@ Leaving: "duration-100 ease-in"
 </ul>
 <p>For more system definitions (beyond permit statuses), check out our <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=249471341#gid=249471341">Data Dictionary</a>!</p>
 <h2>Timeline</h2>
-<p>Now that we’ve got the definitions out of the way, let’s put them into practice with a sample project timeline. We’ll add in the relevant variables and objects that our system uses to track the permit progress where relevant.</p>
-<p>“John and Jane Doe remodeled their house in Agawam, MA and contracted out the work to a local contractor, Acme Construction, LLC.”</p>
+<p>Now that we've got the definitions out of the way, let's put them into practice with a sample project timeline. We'll add in the relevant variables and objects that our system uses to track the permit progress where relevant.</p>
+<p>"John and Jane Doe remodeled their house in Agawam, MA and contracted out the work to a local contractor, Acme Construction, LLC."</p>
 <ol>
 <li>Acme Construction, LLC have gathered all the paperwork and due diligence for the project, and are submitting the permit to the local jurisdiction, the Hampden County Building Department. They receive their permit number and file date, and in the next few days, this permit will show up in the Shovels database as <code>in_review</code>. <ul>
 <li><code>file_date</code> would be <strong>2022-05-02</strong> (May 4th, 2023), for those keeping track at home.</li>
 </ul>
 </li>
-<li>A few weeks later, Acme Construction, LLC’s permit for single-family residence remodel is approved, and they’re cleared to begin construction. Great news, and now, their corresponding permit will show as <code>active</code>.<ul>
+<li>A few weeks later, Acme Construction, LLC's permit for single-family residence remodel is approved, and they're cleared to begin construction. Great news, and now, their corresponding permit will show as <code>active</code>.<ul>
 <li><code>issue_date</code> would be <strong>2022-05-26</strong>, and <code>approval_time</code> would be 24 days.</li>
 </ul>
 </li>
-<li>8 months in to the project, and Acme Construction, LLC has made huge progress. However, they didn’t pass one of their inspections, and aren’t able to resume work until that underlying issue has been fixed. When this data is submitted to the jurisdiction alongside their permit files, the Shovels database will now classify this permit as <code>inactive</code>. <ul>
+<li>8 months in to the project, and Acme Construction, LLC has made huge progress. However, they didn't pass one of their inspections, and aren't able to resume work until that underlying issue has been fixed. When this data is submitted to the jurisdiction alongside their permit files, the Shovels database will now classify this permit as <code>inactive</code>. <ul>
 <li>Provisional <code>construction_duration</code> would be calculated from <code>issue_date</code> to the date of the failed inspection (<strong>2023-01-29</strong>), as 250 days.</li>
 </ul>
 </li>
@@ -460,9 +460,12 @@ Leaving: "duration-100 ease-in"
 </ul>
 </li>
 </ol>
+<blockquote>
+<p><strong>Note about derived dates:</strong> The <code>start_date</code> and <code>end_date</code> fields are derived dates created by Shovels to provide consistent date tracking across jurisdictions. <code>start_date</code> is derived by coalescing <code>file_date</code>, <code>issue_date</code>, and <code>final_date</code> in that order. <code>end_date</code> uses the same fields but in reverse order. This means that <code>start_date</code> and <code>end_date</code> can be the same value, and <code>end_date</code> may be populated even when a permit is still active. We recommend using these fields in conjunction with the permit status field for accurate permit lifecycle analysis.</p>
+</blockquote>
 <h2>Analysis</h2>
-<p>These data points can be extremely helpful for further analysis of jurisdiction and contractor efficiency. For instance, Acme Construction, LLC’s work for Mr. and Mrs. Doe’s remodel could be compared against other remodel jobs they’ve done in the past, or even against other contractors with the same licensing and job types. </p>
-<p>At the same time, jurisdiction’s approval times can be compared based on job type or seasonal application windows, which may give further insight into developmental opportunities in that region. </p>
+<p>These data points can be extremely helpful for further analysis of jurisdiction and contractor efficiency. For instance, Acme Construction, LLC's work for Mr. and Mrs. Doe's remodel could be compared against other remodel jobs they've done in the past, or even against other contractors with the same licensing and job types. </p>
+<p>At the same time, jurisdiction's approval times can be compared based on job type or seasonal application windows, which may give further insight into developmental opportunities in that region. </p>
 <p>The possibilities are endless.</p>
 <h2>Conclusion</h2>
 <p>Permit Status is an important data point to everyone involved in the construction and proptech industries, and we want to make sure that our system is as easy to understand as possible. </p>
