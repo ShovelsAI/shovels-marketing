@@ -17,7 +17,7 @@ slug: data-feed
 {% endblock background_pattern %}
 
 <div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 pt-32 pb-24 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
       <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Custom reports and data feeds</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -36,6 +36,116 @@ slug: data-feed
 </div>
 <div class="bg-white pb-12 sm:pb-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <ul role="list" class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8 pb-6 sm:pb-24">
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Permits</h2>
+          <p class="text-sm text-gray-600">Comprehensive building and construction permits data from across the United States, including permit types, values, and status updates.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">170M+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Monthly</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Contractors</h2>
+          <p class="text-sm text-gray-600">Detailed profiles of licensed contractors and construction companies, including business information, specialties, and licensing status.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">3M+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Monthly</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Residents</h2>
+          <p class="text-sm text-gray-600">Property owner and resident information linked to permits via <code>address_id</code>, providing valuable context for construction and renovation projects and B2C ad targeting.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">39M+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Monthly</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Employees</h2>
+          <p class="text-sm text-gray-600">Construction industry employee profiles linked to contractors via <code>contractor_id</code>, enabling workforce analysis and targeted outreach strategies.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">77M+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Monthly</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Contractor State License (CSL)</h2>
+          <p class="text-sm text-gray-600">Comprehensive database of all licensed contractors sourced directly from state licensing boards, including those without permit history, for complete market coverage.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">3M+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Monthly</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Parcels</h2>
+          <p class="text-sm text-gray-600">Available via your Regrid license, get seamless integration between Shovels <code>address_id</code> and Regrid <code>LL_UUID</code> fields for comprehensive property analysis and market insights.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">159M+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Monthly</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+    </ul>
     <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
       <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/oracle.svg" alt="Oracle and Shovels" width="158" height="48">
       <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/kohler.svg" alt="Kohler" width="158">
@@ -161,7 +271,7 @@ slug: data-feed
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
       <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
+      <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349" class="text-sm/6 font-semibold text-gray-900">Data Dictionary <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
