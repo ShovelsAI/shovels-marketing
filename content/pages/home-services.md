@@ -21,30 +21,29 @@ slug: home-services
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
       <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">KYC: Know Your Contractors</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We have the most comprehensive and detailed contractor database and we already serve the largest home services companies in the US. Use Shovels to find new contractors and enrich existing records.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Shovels provides the most comprehensive and authoritative contractor database in the United States, including every licensed contractor in the country. Leading home services companies rely on Shovels to identify, validate, and enrich contractor intelligence at scale. Use Shovels to elevate your contractor strategy.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Get started</a>
-          <!--<a href="{filename}/posts/newsletter-aug-24.md" class="text-sm/6 font-semibold text-gray-900" target="_blank">Read more <span aria-hidden="true">&rarr;</span></a>-->
+          <a href="/contact" class="text-sm/6 font-semibold text-gray-900" target="_blank">Contact Sales <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
+      <div class="mt-10 hidden aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:block lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
         <img class="relative max-h-[500px]" src="/images/shovelsGuy-solar.svg" alt="Illustration showing a contractor installing solar panels">
       </div>
     </div>
   </div>
   <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
 </div>
-<div class="bg-white pb-12 sm:pb-16">
+<div class="bg-white pb-12 sm:pb-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
-      <div class="mx-auto w-full max-w-xl lg:mx-0">
-        <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clients</h2>
-        <p class="mt-6 text-lg/8 text-gray-600">We work with the top home services contractor marketplaces in the United States.</p>
-      </div>
-      <div class="mx-auto grid w-full max-w-xl grid-cols-3 items-center gap-12 sm:gap-16 lg:mx-0 lg:max-w-none lg:pl-8">
-        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/thumbtack.svg" alt="Thumbtack and Shovels">
-        <img class="max-h-12 w-full object-contain object-center" src="{static}/images/angi.svg" alt="Angi and Shovels">
-        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/houzz.svg" alt="Houzz and Shovels">
+    <div class="flex flex-col items-center gap-y-12">
+      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clients</h2>
+      <div class="flex w-full max-w-4xl flex-wrap items-center justify-center gap-x-16 gap-y-8">
+        <img class="max-h-24 w-48 object-contain" src="{static}/images/housecall-pro.png" alt="Housecall Pro and Shovels">
+        <img class="max-h-24 w-48 object-contain" src="{static}/images/home-solutions.svg" alt="Home Solutions and Shovels">
+        <img class="max-h-24 w-48 object-contain" src="{static}/images/houzz.png" alt="Houzz and Shovels">
+        <img class="max-h-24 w-48 object-contain" src="{static}/images/thumbtack.png" alt="Thumbtack and Shovels">
+        <img class="max-h-12 w-48 object-contain" src="{static}/images/angi.svg" alt="Angi and Shovels">
       </div>
     </div>
   </div>
