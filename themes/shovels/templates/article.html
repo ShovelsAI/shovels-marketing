@@ -15,12 +15,6 @@
     <meta name="description" content="{{ article.summary }}" />
   {% endif %}
 
-  {% if article.image %}
-    <meta property="og:image" content="{{ article.image }}" />
-    <meta property="og:image:url" content="{{ article.image }}" />
-    <meta property="og:image:alt" content="{{ article.tagline }}" />
-  {% endif %}
-
   {% for tag in article.tags %}
     <meta name="tags" content="{{tag}}" />
   {% endfor %}
