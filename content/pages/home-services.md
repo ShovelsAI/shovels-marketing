@@ -23,8 +23,7 @@ slug: home-services
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Shovels provides the most comprehensive and authoritative contractor database in the United States, including every licensed contractor in the country. Leading home services companies rely on Shovels to identify, validate, and enrich contractor intelligence at scale. Use Shovels to elevate your contractor strategy.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Get started</a>
-          <a href="/contact" class="text-sm/6 font-semibold text-gray-900" target="_blank">Contact Sales <span aria-hidden="true">&rarr;</span></a>
+          <a href="/contact" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Contact Sales</a>
         </div>
       </div>
       <div class="mt-10 hidden aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:block lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -171,8 +170,7 @@ slug: home-services
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our contractor state license files now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
+      <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
     </div>
   </div>
 </div>
