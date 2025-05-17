@@ -1,4 +1,4 @@
-Title: Leads for building materials suppliers and building product manufacturers
+Title: Leads for building materials and equipment suppliers and building product manufacturers
 Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, CRM enhancement, and fraud prevention.
 slug: building-materials
 
@@ -19,7 +19,7 @@ slug: building-materials
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Boost sales of your building materials</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Boost revenue of your building materials and equipment</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We improve your sales process with nationwide building permit data, enriching your lead program with unique insights on commercial and residential builders.</p>
         <div class="mt-10 flex items-center gap-x-6">
