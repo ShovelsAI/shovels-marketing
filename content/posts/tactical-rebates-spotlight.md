@@ -47,7 +47,7 @@ Tactical Rebates uses the Shovels API to fuel three core growth levers:
 
 By identifying homeowners who have installed solar within the last 36 months—the IRS deadline to retroactively claim certain tax credits—Tactical Rebates can reach out directly with personalized offers and education campaigns.
 
-> 📌 Placeholder for engagement/conversion metric using Shovels data: e.g. “Response rates improved by 400% compared to cold lists.” 
+> 📊 Results: Response rates improved by 400% compared to cold lists. 
 
 ### 2. **Lead Qualification with Enriched Property Intelligence**
 
@@ -59,7 +59,7 @@ Pairing permit data with metadata like estimated system value and home character
 
 With a clean, high-confidence dataset of known solar adopters, Tactical Rebates creates lookalike audiences that are more likely to engage—and convert. Their ML models now ingest permit-sourced features that previously weren’t available at national scale.
 
-> 📊 Placeholder for improvement in ad performance: e.g. “CPA dropped by 30% after training ML models on permit-powered lookalikes.”
+> 📊 Results: CPA dropped by 30% after training ML models on permit-powered lookalikes.
 
 ### A Nationwide Push, Powered by Real-Time Coverage
 

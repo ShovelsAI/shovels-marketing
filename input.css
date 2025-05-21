@@ -208,7 +208,7 @@ div.article img {
 }
 
 .article blockquote {
-  @apply border-l-4 border-blue-300 bg-blue-50 text-shovels-dark italic pl-4 pr-2 py-2 my-4;
+  @apply border-l-4 border-blue-300 bg-blue-50 text-shovels-dark pl-4 pr-2 py-2 my-4;
 }
 
 /* end of article classes */
