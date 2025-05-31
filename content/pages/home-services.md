@@ -27,7 +27,7 @@ slug: home-services
         </div>
       </div>
       <div class="mt-10 hidden aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:block lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="/images/shovelsGuy-solar.svg" alt="Illustration showing a contractor installing solar panels">
+        <img class="relative max-h-[500px]" src="{static}/images/shovels-hvac.svg" alt="Illustration showing a contractor fixing a heat pump HVAC">
       </div>
     </div>
   </div>
@@ -168,9 +168,16 @@ slug: home-services
 </div>
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our contractor state license files now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our contractor state license files now</h2>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
+        </div>
+      </div>
+      <div class="hidden lg:block">
+        <img class="w-full max-h-[500px] object-contain" src="{static}/images/shovels-windows.svg" alt="Illustration showing a window cleaner">
+      </div>
     </div>
   </div>
 </div>
