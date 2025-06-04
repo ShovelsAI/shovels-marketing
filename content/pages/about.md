@@ -138,17 +138,6 @@ slug: about
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/alex-brown-9a4b0b19a/" target="_blank">
-          <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="Alex Brown, Shovels">
-            <div>
-              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
-              <p class="text-base/6 font-semibold text-shovels-primary">Technical Support & Writer</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
         <a href="https://www.linkedin.com/in/draganhr/" target="_blank">
           <div class="flex items-center gap-x-6">
             <img class="size-16 rounded-full" src="theme/images/team/dragan.svg" alt="Dragan">

@@ -67,15 +67,6 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
           </div>
         </div>
       </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="size-16 rounded-full" src="theme/images/team/alex.svg" alt="Alex Brown">
-          <div>
-            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Alex Brown</h3>
-            <p class="text-sm/6 font-semibold text-indigo-600">Technical Support & Writer</p>
-          </div>
-        </div>
-      </li>
     </ul>
   </div>
 </div>
