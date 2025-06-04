@@ -52,4 +52,4 @@ Our data is securely delivered using modern cloud storage and analytics platform
 
 The CSL dataset simplifies the complexity of state licensing data, enabling better business decisions. Let us streamline your data needs so you can focus on core tasks.
 
-Interested in learning more about our Nationwide Contractor State License File? Reach out to our team today.
+Interested in learning more about our Nationwide Contractor State License File? [Reach out to our team today](/contact).

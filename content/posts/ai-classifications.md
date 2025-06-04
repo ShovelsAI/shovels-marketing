@@ -47,4 +47,4 @@ Through rigorous validation with specialized annotators from Prolific, we consis
 
 ### Learn More
 
-For further insights into our data labeling and AI processes, review our detailed [case study with Prolific](https://www.prolific.com/resources/how-shovels-found-high-skilled-annotators-for-data-labeling-with-prolific-s-specialist-participants), or contact us today.
+For further insights into our data labeling and AI processes, review our detailed [case study with Prolific](https://www.prolific.com/resources/how-shovels-found-high-skilled-annotators-for-data-labeling-with-prolific-s-specialist-participants), or [contact us today](/contact).
