@@ -275,13 +275,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/a-deeper-dive-into-shovels-ai-classifications/" class=" text-emerald-900 hover:text-gray-700"><p>A Deeper Dive into Shovels AI Classifications</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/introducing-the-shovels-nationwide-contractor-state-license-file/" class=" text-emerald-900 hover:text-gray-700"><p>Introducing the Shovels Nationwide Contractor State License File</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/shovels-quarterly-permit-index-q1-2025/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels Quarterly Permit Index: Q1 2025</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/shovels-spotlight-how-tactical-rebates-taps-into-building-permits-to-power-smarter-solar-incentive-outreach/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels Spotlight: How Tactical Rebates Taps Into Building Permits to Power Smarter Solar Incentive Outreach</p></a>
                   </li>
               </ul>
             </div>
@@ -490,6 +490,47 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+      <article class="flex flex-col items-start" 
+               data-summary="<p>Discover how Shovels leverages advanced AI to transform permit classification, using a sophisticated multi-layer approach that combines pattern matching, semantic similarity, and entity extraction. Our system accurately categorizes permits into 22 distinct categories, validated by specialized annotators, ensuring precise classification for millions of construction permits nationwide.</p>"
+               data-title="<p>A Deeper Dive into Shovels AI Classifications</p>"
+               x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/a-deeper-dive-into-shovels-ai-classifications/">
+            <img src="/images/ai-classifications.png" 
+                 alt="<p>A Deeper Dive into Shovels AI Classifications</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-06-04 00:00:00-07:00" class="text-gray-500">Wed 04 June 2025</time>
+            <a href="/blog/?category=Company"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Company
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/a-deeper-dive-into-shovels-ai-classifications/">
+                <span class="absolute inset-0"></span>
+                <p>A Deeper Dive into Shovels AI Classifications</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>Discover how Shovels leverages advanced AI to transform permit classification, using a sophisticated multi-layer approach that combines pattern matching, semantic similarity, and entity extraction. Our system accurately categorizes permits into 22 distinct categories, validated by specialized annotators, ensuring precise classification for millions of construction permits nationwide.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/betty.svg" alt="Betty Wan" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Betty Wan</p>
+              <p class="text-gray-600">VP of Growth</p>
+            </div>
+          </div>
+        </div>
+      </article>
       <article class="flex flex-col items-start" 
                data-summary="<p>Shovels announces the Nationwide Contractor State License File (CSL), a comprehensive dataset covering 1.8 million contractors across 37 states. The CSL dataset features standardized classifications, enhanced verification capabilities, and integrated contact information, enabling better fraud detection and entity resolution in the construction industry.</p>"
                data-title="<p>Introducing the Shovels Nationwide Contractor State License File</p>"
@@ -4125,6 +4166,9 @@ Leaving: "duration-100 ease-in"
               </li>
               <li>
                 <a href="https://love.shovels.ai/all" class="text-sm leading-6 hover:text-amber-500">Customer Testimonials</a>
+              </li>
+              <li>
+                <a href="https://forms.gle/JFi4ogNXNZePK77CA" class="text-sm leading-6 hover:text-amber-500">Feature Requests</a>
               </li>
               <li>
                 <a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&state=&city=&county_or_jurisdiction=&zip_code=&date_filter=" class="text-sm leading-6 hover:text-amber-500" target="_blank">Coverage Dashboard</a>
