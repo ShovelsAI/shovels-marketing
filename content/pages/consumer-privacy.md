@@ -196,6 +196,6 @@ Unit #51
 
 Lafayette, California 94549
 
-Telephone: (800) 511-7457
+Telephone: (925) 744-7520
 
 E-mail: <legal@shovels.ai>
