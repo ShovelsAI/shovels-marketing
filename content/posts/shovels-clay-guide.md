@@ -86,13 +86,13 @@ Here's the formula I used: `Shovels City Lookup?.items?.[0]?.geo_id.trim()` but 
 
 Call this column geo_id.
 
-📚 **Understanding Clay Formula fields and being able to use the AI helper is critical to moving fast inside of Clay!**
+> 📚 **Understanding Clay Formula fields and being able to use the AI helper is critical to moving fast inside of Clay!**
 
 ![Clay formulas AI]({static}/images/formulas-ai.png)
 
 Now we have a column with our Shovels geo_id, so we can use it to find contractors! 
 
-💡 **Important note:** if you don't care about cities and are fine searching states or zip codes, the two-character state abbreviation (CA, FL) and the zip code (94123, 33178) are their own geo_id's. You don't need to look them up! 
+> 💡 **Important note:** if you don't care about cities and are fine searching states or zip codes, the two-character state abbreviation (CA, FL) and the zip code (94123, 33178) are their own geo_id's. You don't need to look them up! 
 
 Create a second HTTP API column for contractor discovery. Configure it to make a GET request to the `https://api.shovels.ai/v2/contractors/search` endpoint with these required parameters: `permit_from` set to 90 days ago, `permit_to` as today's date, `geo_id` pulled from the formula field we just made, and `permit_tags` set to **hvac**. This returns all HVAC contractors with recent residential permit activity. 
 
@@ -114,7 +114,7 @@ This is explained in the next step!
 
 Starting with just contractor names, you can build complete profiles with permit history and performance metrics that enable highly personalized outreach icebreakers. This approach works perfectly for targeting specific high-value contractors or building account-based marketing campaigns.
 
-💡 **If you already have contractor_id's you can start with those too!** You'll have these at the end of Example 1. It's much easier to work with contractor_id's than contractor names.
+> 💡 **If you already have contractor_id's you can start with those too!** You'll have these at the end of Example 1. It's much easier to work with contractor_id's than contractor names.
 
 Begin by configuring an HTTP API call to search contractors by name. Use the endpoint `https://api.shovels.ai/v2/contractors/search` with the contractor_name parameter linked to your Clay column. Set a wide date range using the `permit_from` and `permit_to` parameters like we've done before to capture comprehensive permit history, and use a state `geo_id` like CA or FL so you cast a wider net. This search returns matching contractors with their unique contractor_id.
 
@@ -146,4 +146,4 @@ The accuracy improvement is equally dramatic. Manual research relies on outdated
 
 For construction industry sales teams, real estate professionals, and B2B companies targeting contractors or property owners, this integration transforms prospecting from a bottleneck into a competitive advantage. The combination of Shovels' comprehensive permit intelligence and Clay's automation capabilities creates a lead generation system that scales with your business while dramatically reducing cost per lead.
 
-> 🎁  I made some Clay table templates! (Get them here)[https://app.clay.com/shared-workbook/share_0sxht86CPrde37QtkZB].
+> 🎁  I made some Clay table templates! [Get them here](https://app.clay.com/shared-workbook/share_0sxht86CPrde37QtkZB).
