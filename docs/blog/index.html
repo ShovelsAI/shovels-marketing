@@ -275,13 +275,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/how-to-supercharge-lead-generation-with-shovels-api-and-clay/" class=" text-emerald-900 hover:text-gray-700"><p>How to supercharge lead generation with Shovels API and Clay</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/a-deeper-dive-into-shovels-ai-classifications/" class=" text-emerald-900 hover:text-gray-700"><p>A Deeper Dive into Shovels AI Classifications</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/introducing-the-shovels-nationwide-contractor-state-license-file/" class=" text-emerald-900 hover:text-gray-700"><p>Introducing the Shovels Nationwide Contractor State License File</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/shovels-quarterly-permit-index-q1-2025/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels Quarterly Permit Index: Q1 2025</p></a>
                   </li>
               </ul>
             </div>
@@ -490,6 +490,47 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+      <article class="flex flex-col items-start" 
+               data-summary="<p>This article provides a practical guide on integrating Shovels API with Clay to automate construction industry lead generation. It demonstrates how to combine Shovels' database of 170M+ building permits and 3M+ contractors with Clay's no-code platform to create efficient prospecting workflows. The guide includes three real-world examples: finding active HVAC contractors, enriching contractor profiles, and building solar company mailing lists, showing how to reduce manual research costs by 87% while significantly increasing prospect volume.</p>"
+               data-title="<p>How to supercharge lead generation with Shovels API and Clay</p>"
+               x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/how-to-supercharge-lead-generation-with-shovels-api-and-clay/">
+            <img src="/images/shovels-clay.png" 
+                 alt="<p>How to supercharge lead generation with Shovels API and Clay</p>"
+                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-06-07 00:00:00-07:00" class="text-gray-500">Sat 07 June 2025</time>
+            <a href="/blog/?category=Company"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Company
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/how-to-supercharge-lead-generation-with-shovels-api-and-clay/">
+                <span class="absolute inset-0"></span>
+                <p>How to supercharge lead generation with Shovels API and Clay</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>This article provides a practical guide on integrating Shovels API with Clay to automate construction industry lead generation. It demonstrates how to combine Shovels' database of 170M+ building permits and 3M+ contractors with Clay's no-code platform to create efficient prospecting workflows. The guide includes three real-world examples: finding active HVAC contractors, enriching contractor profiles, and building solar company mailing lists, showing how to reduce manual research costs by 87% while significantly increasing prospect volume.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Ryan Buckley</p>
+              <p class="text-gray-600">CEO</p>
+            </div>
+          </div>
+        </div>
+      </article>
       <article class="flex flex-col items-start" 
                data-summary="<p>Discover how Shovels leverages advanced AI to transform permit classification, using a sophisticated multi-layer approach that combines pattern matching, semantic similarity, and entity extraction. Our system accurately categorizes permits into 22 distinct categories, validated by specialized annotators, ensuring precise classification for millions of construction permits nationwide.</p>"
                data-title="<p>A Deeper Dive into Shovels AI Classifications</p>"
@@ -4225,7 +4266,7 @@ Leaving: "duration-100 ease-in"
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">&copy; 2025 Shovels, Inc. All rights reserved. (800) 511-7457.</p>
+      <p class="mt-8 text-xs leading-5 text-amber-300 md:order-1 md:mt-0">&copy; 2025 Shovels, Inc. All rights reserved. (925) 744-7520.</p>
     </div>
   </div>
 </footer>
