@@ -469,10 +469,14 @@ Leaving: "duration-100 ease-in"
 <p><img alt="Clay formulas" src="https://www.shovels.ai/images/formula.png"/></p>
 <p>Here's the formula I used: <code>Shovels City Lookup?.items?.[0]?.geo_id.trim()</code> but Clay also has a nice "Use AI" option where you can describe what you're trying to get. Remember to type the "/" character to be able to reference other columns in the table. </p>
 <p>Call this column geo_id.</p>
+<blockquote>
 <p>📚 <strong>Understanding Clay Formula fields and being able to use the AI helper is critical to moving fast inside of Clay!</strong></p>
+</blockquote>
 <p><img alt="Clay formulas AI" src="https://www.shovels.ai/images/formulas-ai.png"/></p>
 <p>Now we have a column with our Shovels geo_id, so we can use it to find contractors! </p>
+<blockquote>
 <p>💡 <strong>Important note:</strong> if you don't care about cities and are fine searching states or zip codes, the two-character state abbreviation (CA, FL) and the zip code (94123, 33178) are their own geo_id's. You don't need to look them up! </p>
+</blockquote>
 <p>Create a second HTTP API column for contractor discovery. Configure it to make a GET request to the <code>https://api.shovels.ai/v2/contractors/search</code> endpoint with these required parameters: <code>permit_from</code> set to 90 days ago, <code>permit_to</code> as today's date, <code>geo_id</code> pulled from the formula field we just made, and <code>permit_tags</code> set to <strong>hvac</strong>. This returns all HVAC contractors with recent residential permit activity. </p>
 <p>This is how your setup should look.</p>
 <p><img alt="Clay http api setup" src="https://www.shovels.ai/images/clay-setup.png"/></p>
@@ -483,7 +487,9 @@ Leaving: "duration-100 ease-in"
 <p>This is explained in the next step! </p>
 <h2>Example 2: Enriching contractors for personalized cold outreach</h2>
 <p>Starting with just contractor names, you can build complete profiles with permit history and performance metrics that enable highly personalized outreach icebreakers. This approach works perfectly for targeting specific high-value contractors or building account-based marketing campaigns.</p>
+<blockquote>
 <p>💡 <strong>If you already have contractor_id's you can start with those too!</strong> You'll have these at the end of Example 1. It's much easier to work with contractor_id's than contractor names.</p>
+</blockquote>
 <p>Begin by configuring an HTTP API call to search contractors by name. Use the endpoint <code>https://api.shovels.ai/v2/contractors/search</code> with the contractor_name parameter linked to your Clay column. Set a wide date range using the <code>permit_from</code> and <code>permit_to</code> parameters like we've done before to capture comprehensive permit history, and use a state <code>geo_id</code> like CA or FL so you cast a wider net. This search returns matching contractors with their unique contractor_id.</p>
 <p>Create a second API column to fetch detailed contractor metrics using the contractor_id. Call <code>https://api.shovels.ai/v2/contractors/&lt;contractor_id&gt;</code> (but <code>contractor_id</code> should be a reference to your Clay table field with the contractor_id value) to retrieve the complete contractor profile. Key fields include tag_tally (showing permit counts by work type like <code>{roofing: 45, solar: 12, hvac: 28}</code>), status_tally (permit statuses showing completion rates), inspection pass rates, average project durations, and monthly activity trends. These metrics reveal contractor specializations, reliability, and growth patterns.</p>
 <p>Now leverage Clay's AI enrichment capabilities to generate personalized icebreakers. Create a Clay AI column with a prompt like: "Based on this contractor's permit data showing <code>tag_tally</code> and <code>recent projects</code>, write a personalized cold email opening that references their specific work and recent success." The AI analyzes permit patterns to create relevant hooks: "I noticed ABC Roofing completed 12 residential re-roofing projects in Austin last quarter - impressive growth from your 2024 average of 6 per quarter."</p>
@@ -500,7 +506,7 @@ Leaving: "duration-100 ease-in"
 <p>The accuracy improvement is equally dramatic. Manual research relies on outdated directories and incomplete databases. Shovels provides real-time permit data directly from government sources, ensuring you're targeting contractors and homeowners based on actual, recent activity. Clay's enrichment layer adds contact information, company details, and AI-powered personalization - creating ready-to-contact prospect lists that convert at significantly higher rates.</p>
 <p>For construction industry sales teams, real estate professionals, and B2B companies targeting contractors or property owners, this integration transforms prospecting from a bottleneck into a competitive advantage. The combination of Shovels' comprehensive permit intelligence and Clay's automation capabilities creates a lead generation system that scales with your business while dramatically reducing cost per lead.</p>
 <blockquote>
-<p>🎁  I made some Clay table templates! (Get them here)[https://app.clay.com/shared-workbook/share_0sxht86CPrde37QtkZB].</p>
+<p>🎁  I made some Clay table templates! <a href="https://app.clay.com/shared-workbook/share_0sxht86CPrde37QtkZB">Get them here</a>.</p>
 </blockquote>
 </article>
 </div>
