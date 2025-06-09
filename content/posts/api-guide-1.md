@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.
-Image: /images/api-blog.jpg
+image: /images/api-blog.jpg
 
 
 So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product *shine*.

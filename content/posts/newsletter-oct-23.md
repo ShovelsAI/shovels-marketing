@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: You can now sign up for your very own Shovels API key and start building awesome stuff with building permits. Our new web application is going to have more features to find contractors, look up permits, and get all the permits on any address in the country. 
-Image: /images/app-auth-screenshot.png
+image: /images/app-auth-screenshot.png
 
 
 This will be a newsletter about using the Shovels building permit API.

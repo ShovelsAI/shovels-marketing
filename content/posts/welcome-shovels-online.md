@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels launches their brand new web application, Shovels Online. There are updates to functionality and UI/UX. Shovels Online's app and free trial are live today.
-Image: /images/shovels-online-hero.png
+image: /images/shovels-online-hero.png
 
 [Shovels Online](https://app.shovels.ai) (formerly our Web App beta) is the new best way for codeless and scriptless exploration of nationwide permit and contractors. 
 

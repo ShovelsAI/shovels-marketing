@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: The Shovels dataset and model can highlight key construction trends and patterns. In this blog, we discuss solar construction specifically due to the RE+ clean energy convention. Use Shovels to inform your construction company's business models and strategy.
-Image: /images/digging-in-us-solar-construction-heatmap-watermarked.png
+image: /images/digging-in-us-solar-construction-heatmap-watermarked.png
 
 [RE+](https://www.re-plus.com/) is the largest and most comprehensive clean energy conference in the United States. In honor of it’s 20th Anniversary, we’re publishing some insights we’ve gleaned from our datasets and models here at Shovels. 
 

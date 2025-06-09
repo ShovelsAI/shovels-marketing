@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Shovels is entering a new phase with more resources and a focus on rapid growth. This one recaps our journey so far, announces major API and data updates, and introduces the first Shovels Permit Index, offering new insights into national permit trends. Exciting partnerships and more innovations are on the horizon!
-Image: /images/spi-county-map-q1-2025.png
+image: /images/spi-county-map-q1-2025.png
 
 
 Next week the whole team is in Nashville 🤠🪕 for our twice annual big Shovels Summit. It’s when our engineers and account execs get to break bread, brainstorm, and go on whiskey tours together. 

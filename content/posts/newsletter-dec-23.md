@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: We added some new tools to the Shovels web app. We also now have a nationwide contractor directory, so anybody can look up contractors based on their service area, not just their work address. And we're doing a lot of data enrichment! 
-Image: /images/permits-screenshot.jpg
+image: /images/permits-screenshot.jpg
 
 
 You can now look up permits by type and ZIP code or by postal address using [the Shovels app](https://app.shovels.ai).

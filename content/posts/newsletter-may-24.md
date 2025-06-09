@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Shovels has grown by adding Betty Wan to the team, aiming to enhance their revenue efforts and overall growth. They are currently seeking feedback on their clickable prototype for version 2, which integrates comprehensive building permit and contractor data into one app. Additionally, they are advancing their data capabilities with AI-enhanced tagging and climate tech initiatives, emphasizing the importance of building permit data in reducing fossil fuel consumption and promoting sustainable building practices.
-Image: /images/cfh-case-header.png
+image: /images/cfh-case-header.png
 
 
 ## Shovels May 2024 Newsletter

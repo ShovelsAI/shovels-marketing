@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Episode 13 delves into the Sitzer Burnett case which challenges the traditional commission-based system in real estate transactions. This lawsuit could potentially lead to a transformative change in the industry, paving the way for more efficient and consumer-friendly proptech innovations.
-Image: /images/podcast13.png
+image: /images/podcast13.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/The-SitzerBurnett-Decision-e2elt8f/a-aas6e4k" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

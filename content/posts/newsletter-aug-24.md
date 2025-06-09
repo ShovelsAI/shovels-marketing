@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: We introduce Neighborhood Vitality Index and our partnership with Esri.
-Image: /images/esri-nvi-map.jpg
+image: /images/esri-nvi-map.jpg
 
 
 In this newsletter we'll recap the summer (because according to my local school district, it's  *over*) and look ahead to fall.

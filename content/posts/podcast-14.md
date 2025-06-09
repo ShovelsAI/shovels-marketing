@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: In this compelling episode, Ryan Buckley and Fernando Pizarro shared their unique experiences at Davos and a White House roundtable. Fernando highlighted the networking and insights gained at Davos, focusing on sustainability and AI, while Ryan discussed the complexities of green infrastructure and permits in a White House session. The episode underscored the growing importance of proptech in addressing global challenges.
-Image: /images/podcast14.png
+image: /images/podcast14.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/A-week-of-cool-events---Dept--of-Energy-and-WEF-e2er8e8/a-aasmc7f" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Not all addresses will have permits, for a variety of reasons. Variance between local requirements and enforcement means that not all projects require permits. Available digitization of permits makes it even more complicated, but Shovels has a plan keep improving data completeness.  
-Image: /images/address-history-hero.jpg
+image: /images/address-history-hero.jpg
 
 
 If you want an accurate picture of what’s been done to a property, it makes sense to look at the permit history. Theoretically, any project of reasonable size — a kitchen remodel, a new roof, a plug-in EV Charger install — would have some level of sign-off from the city or local jurisdiction, right? It’s up to the government to ensure that construction is done in a safe and legal manner, with inspections and approvals before work even begins as well as prior to completion. There should be a paper trail.

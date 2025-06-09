@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels supports elecrification efforts through their contractor search platform, as well as through supporting WattCarbon. WattCarbon provides a EAC (Energy Attribute Certificate) Marketplace to individuals and corporations alike. Both WattCarbon and Shovels help make climate-friendly and electrification projects accessible for all. 
-Image: /images/shovels-wattcarbon-hero.png
+image: /images/shovels-wattcarbon-hero.png
 
 
 Summer ‘24 continues to heat up here at Shovels, with recently announced partnerships with [Esri](https://www.esri.com/en-us/about/partners/our-partners/startups) and [Autodesk](https://www.linkedin.com/posts/shovels_shovels-integration-autodesk-construction-activity-7216433428143955968-6c-C). Those are important commercial relationships. Today we’re announcing a partnership that’s meaningful for a different reason.

@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: In our latest podcast episode we discuss the evolving role of artificial intelligence in the proptech industry. We explore AI's applications in content strategy and real estate marketing, highlighting innovations like GPTs for content creation. The episode concludes with insights on the future of AI in proptech, emphasizing its potential to transform real estate and other industries.
-Image: /images/podcast9.png
+image: /images/podcast9.png
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/AI-for-Real-Estate-and-Proptech-Startups-e2c9h4q/a-aal605k" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 

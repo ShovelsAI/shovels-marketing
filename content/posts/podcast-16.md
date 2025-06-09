@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Ryan Buckley and Fernando Pizarro offer an in-depth look at PropTech fundraising, from understanding different funding stages to analyzing current investment trends. Their discussion, enriched by Buckley's experience with Shovels and insights into investor expectations, provides valuable perspectives for startups navigating the fundraising process amidst a changing economic environment.
-Image: /images/podcast16a.png
+image: /images/podcast16a.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/The-Proptech-Macro-Investing-Environment-e2fdeda/a-aaubg2b" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

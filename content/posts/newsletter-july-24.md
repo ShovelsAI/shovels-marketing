@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: This month's Shovels newsletter focuses on community engagement and significant updates. We announced new partnerships with Autodesk, Esri, and Deep Sync, and launched a public Discord server for better interaction. We introduced a new Shovels Coverage Dashboard for transparency and made pipeline improvements, including AI-driven permit classifications. Join us at the Esri User Conference, suggest ideas for our SXSW panel, and check out our comprehensive data insights and upcoming features.
-Image: /images/coverage.png
+image: /images/coverage.png
 
 
 ## Shovels July 2024 Newsletter

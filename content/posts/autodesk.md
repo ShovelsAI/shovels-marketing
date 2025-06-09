@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Shovels announces official integration partnership with Autodesk Construction Cloud, enabling ACC users to access nationwide permit data, track jurisdiction timelines, and identify development projects directly within their existing workflow.
-Image: /images/autodesk.png
+image: /images/autodesk.png
 
 
 We had an exciting July here at Shovels. We added new customers, expanded our coverage, and found new use cases for our products. As part of our mission to make permit data useful, we constantly explore ways to integrate into the construction industry’s existing tools and systems –- and in July  we took a major step forward with Autodesk. 

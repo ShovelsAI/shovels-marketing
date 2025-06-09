@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels Online is a powerful tool for enabling your go-to-market strategies. Whether you need to target homeowners, analyze competitor activity, or visualize entire markets, Shovels Online is the place to start. 
-Image: /images/shovels-online-gtm-hero.jpg
+image: /images/shovels-online-gtm-hero.jpg
 
 In today's competitive market, targeting the right audience with precision is everything. Even the most efficient funnels and rockstar SDRs are  bottlenecked by the quality of the leads you can generate. If you're working in the built environment space, from climate-tech startups to nationwide retailers, then [Shovels Online](https://app.shovels.ai) is the best tool to start. 
 

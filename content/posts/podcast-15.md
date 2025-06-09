@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: This week, Ryan Buckley and Fernando Pizarro embarked on an insightful journey through the complexities of zoning and its pivotal role in proptech. They discussed zoning's historical roots, its impact on urban planning and development, and the innovative ways technology is being used to navigate and reshape zoning regulations for a more sustainable and efficient future in real estate.
-Image: /images/podcast15.png
+image: /images/podcast15.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/The-sexiest-topic-weve-done-so-far-Zoning-e2f3k57/a-aateuqt" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

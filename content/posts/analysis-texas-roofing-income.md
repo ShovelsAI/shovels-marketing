@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels data allows for in-depth analysis of construction trends at any level. Texas roofing permit patterns show higher income areas pull more roofing permits than expected for their household count. This has implications for all homeowners, and should be addressed by policy makers, the market, or both. 
-Image: /images/shovels-texas-roofing-trends-hero.png
+image: /images/shovels-texas-roofing-trends-hero.png
 
 Roofs are one of the most important factors in determining (and growing) home value, even if they aren’t as flashy as other remodeling projects. New kitchens or bathrooms can elevate an existing home’s *feel*, but [roofs increase value across the board](https://www.revive.realestate/post/how-much-does-a-new-roof-add-to-home-value-2024-guide){target=_blank}: structural integrity, energy efficiency, and longevity. 
 

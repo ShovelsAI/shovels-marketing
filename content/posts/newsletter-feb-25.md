@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Shovels.ai announces strategic partnerships with Regrid, Clay, and Cherre while rolling out major platform updates including a forever-free plan and improved address profiles. The company expanded its engineering team, added stock ticker tracking for permits, and introduced self-serve subscriptions at $599/mo for both Online and API access.
-Image: /images/tesla.png
+image: /images/tesla.png
 
 
 I want to say that January was kind of a lot, that it was pretty intense. 

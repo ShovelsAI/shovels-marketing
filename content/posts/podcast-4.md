@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg
 author_title: CEO
 Summary: In the latest episode of our podcast, we explored the nuances of hiring in the proptech industry. We emphasized the importance of attitude, potential, communication skills, and cultural fit over traditional qualifications. Our discussion highlighted how diverse backgrounds, passion, and adaptability are key to building a successful team in the dynamic world of proptech.
-Image: /images/podcast4.png
+image: /images/podcast4.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/Is-it-possible-to-hire-well-reliably-e2b26me/a-aaha9b0" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

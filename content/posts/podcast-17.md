@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Ryan Buckley and Fernando Pizarro discuss the significance of having a figurehead in proptech, akin to Taylor Swift in music, to elevate the industry's visibility. They explore the potential for proptech companies to feature in Super Bowl ads, reflecting on the impact of marketing in technology's success. The conversation highlights the importance of storytelling and effective marketing strategies in distinguishing proptech ventures in a crowded market, emphasizing the need for compelling narratives to connect with and captivate audiences.
-Image: /images/podcast17.png
+image: /images/podcast17.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/Super-Bowl-Pregame-Whos-the-Taylor-Swift-of-Proptech-e2fo8rg/a-aav9701" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

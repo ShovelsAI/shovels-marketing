@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: This month's update covers our energy data initiatives, major improvements to contractor license data with 12 new categories, and insights from our solar permit density analysis in San Diego. We're also previewing upcoming enhancements to contractor domains and permit job value modeling.
-Image: /images/pw.png
+image: /images/pw.png
 
 It being Climate Week in San Francisco, and the climate this past week being nothing short of *lovely* (sunny and 72**°**), I give to you a relatively shorter newsletter that's a bit of a recap on where Shovels came from and what energy companies can do with our building permit and contractor data.
 

@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels and Cherre partner to combine construction insights with investment processes to improve real estate decision making. This partnership is the first of its kind, and will unlock portfolio potential quicker than ever. 
-Image: /images/shovels-cherre-announcement-hero.png
+image: /images/shovels-cherre-announcement-hero.png
 
 Earlier this week, we partnered with [Cherre](https://cherre.com/), the leading real estate data management and intelligence platform, to seamlessly integrate our construction intelligence with their existing system. 
 

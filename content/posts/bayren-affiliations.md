@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: We look at the impact of BayREN's initiatives on the Bay Area's energy upgrade trends, revealing a significant increase in heat pump installations by BayREN-affiliated contractors compared to a lesser focus on solar panel installations. It suggests that BayREN is strategically filling gaps in the building electrification market.
-Image: /images/contractors_comparison_chart.png
+image: /images/contractors_comparison_chart.png
 
 
 A key player in the building electrification transformation in the San Francisco Bay Area is the [Bay Area Regional Energy Network](https://www.bayren.org/){:target="_blank"} (BayREN). Over the past decade it has become synonymous with fostering environmentally conscious decisions among communities and building contractors alike. 

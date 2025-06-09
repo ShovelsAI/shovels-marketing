@@ -8,7 +8,7 @@ Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg
 Author_title: VP of Growth
 Summary: Tactical Rebates leverages the Shovels API to access nationwide building permit data, enabling hyper-targeted outreach for solar incentives. By integrating real-time, enriched property intelligence, they streamline lead qualification and improve marketing efficiency. This partnership empowers Tactical Rebates to educate homeowners about valuable, often-overlooked solar tax credits and expand their impact across new markets.
-Image: /images/shovels-spotlight-tactical-rebates.png
+image: /images/shovels-spotlight-tactical-rebates.png
 
 
 ### From Permits to Precision Marketing

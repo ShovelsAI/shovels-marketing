@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Shovels.ai kicks off 2025 with a smooth January release adding 9 new jurisdictions, improved documentation, new profile pages, and employee data. Looking ahead, the company plans major enhancements to permit data coverage and contractor insights, including job value modeling, retail associations, and revenue metrics.
-Image: /images/contractor-profile.png
+image: /images/contractor-profile.png
 
 
 I’m told that it’s mid-January and time for a greeting transition. So — I hope your year is off to a great start! 

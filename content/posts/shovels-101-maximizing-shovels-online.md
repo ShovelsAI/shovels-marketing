@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Learn from the experts how to get the most out of Shovels Online. Unlock use cases, best practices, and insider tips. Subscribe today before prices increase.
-Image: /images/maximizing-shovels-online-hero.png
+image: /images/maximizing-shovels-online-hero.png
 
 We just [announced](https://www.shovels.ai/blog/welcome-to-shovels-online/) the release of our new-and-improved web application, [Shovels Online](https://app.shovels.ai), and it’s time to dig deeper into some best practices, tips and tricks, and other insider guidance from the Shovels team to help you leverage our platform to it’s fullest.
 

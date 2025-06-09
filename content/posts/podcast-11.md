@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: In this week's episode, Ryan Buckley and Fernando Pizarro delve into the promising intersection of proptech and climate tech. They discuss the impact of the Inflation Reduction Act, the role of virtual power plants, and the implications of Local Law 97 in New York, highlighting the significant opportunities emerging at this crossroads.
-Image: /images/podcast11.png
+image: /images/podcast11.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/The-Intersection-of-Climate-and-Real-Estate-e2d4i3c/a-aanqf01" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

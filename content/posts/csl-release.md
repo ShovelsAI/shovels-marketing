@@ -8,7 +8,7 @@ Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg
 Author_title: VP of Growth
 Summary: Shovels announces the Nationwide Contractor State License File (CSL), a comprehensive dataset covering 1.8 million contractors across 37 states. The CSL dataset features standardized classifications, enhanced verification capabilities, and integrated contact information, enabling better fraud detection and entity resolution in the construction industry.
-Image: /images/csl-release.png
+image: /images/csl-release.png
 
 
 At Shovels, our mission is straightforward: provide reliable, actionable construction data. We're excited to announce our latest dataset—the Nationwide Contractor State License File (CSL).

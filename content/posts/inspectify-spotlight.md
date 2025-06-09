@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels highlights companies that use their product well. Inspectify integrates with the Shovels API to enrich their home inspection report. All parties involved appreciated the collaboration efforts to achieve the goal.
-Image: /images/shovels-spotlight-inspectify.png
+image: /images/shovels-spotlight-inspectify.png
 
 Inspectify is an industry-leader in home inspection insights, who’s mission is to make every angle of the home inspection process as easy as possible. Whether it’s the home inspectors using Inspectify to build their in-depth reports, or lender institutions doing their risk analysis diligence, data quality is central to their platform. 
 

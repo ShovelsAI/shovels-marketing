@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels provides a wide variety of construction data, including uniquely derived metrics that aren't available elsewhere. These five metrics are very useful for deeper insights into construction activity. Best practice is to combine these metrics with detailed filters for maximum impact.
-Image: /images/top-5-derived-metrics-hero.png
+image: /images/top-5-derived-metrics-hero.png
 
 Construction data is all about translating how different regulatory bodies define the same data, and then making the analysis from there. Sometimes it’s easy with things like `address` or `assessed market value` or even `homeowner name`. These data points are straightforward and intuitive, which makes the analysis that much easier. 
 

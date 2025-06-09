@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: The Shovels platform is powered by AI, but it isn't a gimmick. We use LLMs to turn messy permit data into a structured dataset. This transformation unlocks the key permit insights and intelligence that you can't get anywhere else. 
-Image: /images/shovels-ai-categories-hero.png
+image: /images/shovels-ai-categories-hero.png
 
 What does the ".ai" in [shovels.ai](https://www.shovels.ai){:target="_blank"} even mean? 
 

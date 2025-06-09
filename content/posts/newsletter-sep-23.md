@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: I'm happy to share that we have processed all 100 million building permits nationwide. With the release of our markets endpoint, you can now see current and historical building permit counts for specific zip codes. We also revamped our API documentation to make it more user-friendly. We also updated our monthly API pricing.
-Image: /images/sql.jpg
+image: /images/sql.jpg
 
 
 Greetings from Las Vegas. I'm on Day 5 and very happy to be heading home now. 😮‍💨

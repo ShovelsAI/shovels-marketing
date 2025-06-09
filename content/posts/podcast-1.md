@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Proptech startups are like other startups: resource-constrained, we try to move as fast as we can with minimal burn. We take a look at two no-code solutions, Bubble and FlutterFlow, which we used to develop our minimal viable products for Aikito and Shovels.
-Image: /images/podcast1.png
+image: /images/podcast1.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/The-Tea-on-Bubble-e29s4k0/a-aadirrd" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

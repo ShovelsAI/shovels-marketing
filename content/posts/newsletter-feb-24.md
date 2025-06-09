@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: We now have a web-based app that people can use to explore our wondrous permit data! 
-Image: /images/shane.png
+image: /images/shane.png
 
 
 I've been looking forward to writing this newsletter for more than a year.

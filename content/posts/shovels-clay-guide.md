@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: This article provides a practical guide on integrating Shovels API with Clay to automate construction industry lead generation. It demonstrates how to combine Shovels' database of 170M+ building permits and 3M+ contractors with Clay's no-code platform to create efficient prospecting workflows. The guide includes three real-world examples: finding active HVAC contractors, enriching contractor profiles, and building solar company mailing lists, showing how to reduce manual research costs by 87% while significantly increasing prospect volume.
-Image: /images/shovels-clay.png
+image: /images/shovels-clay.png
 
 
 Using the Shovels API within Clay transforms construction industry prospecting from manual research into automated data pipelines. This powerful combination gives sales and marketing teams instant access to building permit data, contractor information, and property owner details - all enriched and organized within Clay's no-code platform.

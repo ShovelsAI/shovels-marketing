@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: A custom GPT, millions of new permits and hundreds of thousands of new contractors. This is a major update to our database and the way you can access it!  
-Image: /images/dashboard.png
+image: /images/dashboard.png
 
 
 Nice, I get to be the 32nd person to wish you a happy new year in a marketing newsletter 🤗

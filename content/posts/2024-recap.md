@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: In 2024, Shovels achieved significant growth across multiple fronts - growing revenue more than 10X, doubling the team size to six members, dramatically improving data processing capabilities, establishing strategic partnerships with industry leaders like Esri and Autodesk, and launching major improvements to the software platform including the V2 release.
-Image: /images/2024-recap.png
+image: /images/2024-recap.png
 
 
 As we close out 2024, I wanted to look back at the journey we had this year at Shovels. From team expansion to technological breakthroughs, we've hit some important milestones that will carry us through to 2025.

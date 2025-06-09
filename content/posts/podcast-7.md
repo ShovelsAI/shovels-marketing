@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: In Episode 7, Ryan Buckley and Fernando Pizarro explored the complexities of commercial building permits. They discussed the variations in permits across states, the insights gained from analyzing permit data, and the practical implications for businesses and property technology. The episode highlighted the importance of understanding permit trends and regulations in commercial construction and renovation projects.
-Image: /images/podcast7.png
+image: /images/podcast7.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/Everything-You-Didnt-Know-About-Building-Permits-e2bnefv/a-aajc8k4" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

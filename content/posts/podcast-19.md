@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Ryan Buckley and Fernando Pizarro explore the influence of reading on their professional journey in proptech, discussing key takeaways from books like The Hard Thing About Hard Things and Atomic Habits. They highlight how these books have shaped their understanding of leadership, decision-making, and personal growth, emphasizing the role of reading in acquiring knowledge and insights that are integral to success in the proptech sector.
-Image: /images/podcast19.png
+image: /images/podcast19.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/The-Books-that-Saved-Us-e2gc5gd/a-ab0ru02" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

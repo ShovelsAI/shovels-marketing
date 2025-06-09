@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Ryan Buckley and Fernando Pizarro explore outbound sales tactics in the proptech space, highlighting the evolution of sales tools and strategies over the years. They discuss the transition from manual to automated sales processes, emphasizing the role of technology in enhancing sales efficiency and personalization. Buckley shares his journey in sales and the impact of tech advancements on sales practices, while Pizarro provides insights into the blend of technology and human touch in outbound sales. The discussion includes practical tips on using tools like Clay and Lemlist to streamline outbound sales and the significance of personalized communication in engaging potential clients.
-Image: /images/podcast18.png
+image: /images/podcast18.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/Outbound-Sales-Masterclass-e2g20vq/a-ab01rbf" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

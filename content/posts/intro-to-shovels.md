@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.
-Image: /theme/images/shovels-color-whitebg.svg
+image: /theme/images/shovels-color-whitebg.svg
 
 ## Ryan Buckley sent this newsletter about the launch of Shovels
 <br>

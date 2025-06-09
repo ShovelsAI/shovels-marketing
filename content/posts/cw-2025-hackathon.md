@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Shovels recaps the SF Climate Week Energy Hackathon. Discover innovative climate tech uses of energy & building data from Shovels, Texture & more. Voltiv wins!
-Image: /images/cw-2025.png
+image: /images/cw-2025.png
 
 
 SF Climate Week brought together innovators passionate about tackling the climate crisis, and we at Shovels were thrilled to be right in the mix\! Alongside our friends and fellow data pioneers at [Texture](https://www.texture.energy/), [Bayou Energy](https://bayou.energy/), and [Palmetto](https://www.palmetto.com/), we co-hosted an Energy Hackathon focused on a mission close to our hearts: unleashing the power of data for sustainable solutions.

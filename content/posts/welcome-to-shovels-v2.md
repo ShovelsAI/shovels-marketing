@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels is launching their upgraded API and web app product. It has increased functionality, improved UX, and brand new features. It releases October 24th for general availability. 
-Image: /images/welcome-to-shovels-v2-hero.jpg
+image: /images/welcome-to-shovels-v2-hero.jpg
 
 # Welcome to Shovels V2
 

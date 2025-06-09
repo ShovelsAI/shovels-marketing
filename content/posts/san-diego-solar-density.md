@@ -9,7 +9,7 @@ Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: A deep dive into solar adoption patterns in San Diego County reveals surprising insights about what drives building electrification. Through analysis of census tract data, we discover that two cities - Poway and Chula Vista - lead in solar adoption despite their contrasting demographics and housing characteristics.
 Slug: solar-permit-density-san-diego
-Image: /images/pw-and-cv.png
+image: /images/pw-and-cv.png
 
 
 It's hard to understand precisely why homeowners choose to invest in their homes at certain times. By looking at specific installations at the census tract level, we can begin to develop this understanding.

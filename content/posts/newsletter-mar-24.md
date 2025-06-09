@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: We launched our Android app in Google Play and made a bunch of data pipeline improvements. We can also now share tables to Snowflake, Big Query, and Databricks.
-Image: /images/screenshots.png
+image: /images/screenshots.png
 
 
 Last month we launched [our web app](https:/app.shovels.ai). This month we're offering even more ways to get your hands on our building permit and contractor data!

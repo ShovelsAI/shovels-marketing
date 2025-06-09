@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Our March newsletter highlights exciting opportunities: join our SF Climate Week Energy API Hackathon, connect with sales hackers on our growing Discord, and explore recent Shovels Online and API updates including website search filters, improved sorting, and expanded contractor data fields. Plus, learn how mapping permits to parcels can provide deeper property insights.
-Image: /images/vegas.jpeg 
+image: /images/vegas.jpeg 
 
 
 You know what we all need right now? A shorter newsletter. Quick and to the point. Punchy! That’s what we’re doing this month. 

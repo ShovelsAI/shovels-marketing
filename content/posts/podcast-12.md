@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Episode 12 delves into the intricacies of company culture in proptech. They discuss its impact on decision-making, diversity, and sustainability, underscoring its essential role in shaping company dynamics and future growth.
-Image: /images/podcast12.png
+image: /images/podcast12.png
 
 
 In the 12th episode of "What We Learned This Week in Proptech," Fernando Pizarro and I delved into the nuanced and pivotal role of culture in the proptech industry. We explored how culture underpins decision-making and influences company dynamics, particularly in tech startups.

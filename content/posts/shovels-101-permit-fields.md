@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: The Shovels permit database has many fields, which are sometimes blank. Use the Data Dictionary to understand what these fields mean, and why some might be null. Review the most important fields for a permit, and filter out what isn't needed. 
-Image: /images/shovels-101-permit-fields.png
+image: /images/shovels-101-permit-fields.png
 
 
 Permits are incredibly data-dense objects, assuming that they’re filled out correctly and completely. It’s no simple task to keep all the fields straight, and if you have, contact us because we probably want to hire you. 

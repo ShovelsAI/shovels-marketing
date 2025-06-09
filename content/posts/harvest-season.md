@@ -8,7 +8,7 @@ Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer
 Summary: Shovels adds more data sources to improve their product. This provides new opportunities for unique insights. This new data needs an upgraded API, which will release soon. 
-Image: /images/harvest-season-hero.jpg
+image: /images/harvest-season-hero.jpg
 
 Fall is here. For those of us with actual seasons (cough cough), we only need to look outside 🍁. For Californians, just as everyone else that relies on agriculture, a good harvest is absolutely essential. 
 

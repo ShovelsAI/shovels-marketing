@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: Introducing DOPE: our groundbreaking partnership with the federal government to eliminate permit delays through AI, blockchain, and executive orders. Now every permit gets approved instantly, inspected by satellites, and recorded on the DOGE blockchain. The future of permitting is here (and it only took one Sharpie).
-Image: /images/tweet.jpg
+image: /images/tweet.jpg
 
 Did you see this tweet?
 

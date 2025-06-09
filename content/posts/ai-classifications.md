@@ -8,7 +8,7 @@ Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg
 Author_title: VP of Growth
 Summary: Discover how Shovels leverages advanced AI to transform permit classification, using a sophisticated multi-layer approach that combines pattern matching, semantic similarity, and entity extraction. Our system accurately categorizes permits into 22 distinct categories, validated by specialized annotators, ensuring precise classification for millions of construction permits nationwide.
-Image: /images/ai-classifications.png
+image: /images/ai-classifications.png
 
 
 At Shovels, we aim to simplify the complexity of permitting data through accurate and systematic AI-powered classification. Here's a look at how we use AI to assign permit categories.

@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg
 Author_title: CEO
 Summary: We transformed Beam's lead generation strategy by providing high-quality, regularly updated construction leads enriched with information such as permit type and recent activity, resulting in a 20-30% higher response rate.
-Image: /images/case-study-beam.png
+image: /images/case-study-beam.png
 
 
 [PDF download]({static}/pdfs/Shovels_Beam.pdf)

@@ -8,7 +8,7 @@ Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg
 author_title: CEO
 Summary: In Episode 6 we explored the transformative trends in urban real estate, particularly in downtown areas like San Francisco. The discussion covered the rising vacancy rates, innovative repurposing of commercial spaces, and the evolving concept of coworking. We highlighted the significance of community in these transformations and contemplated the role of local government in shaping the future of urban landscapes.
-Image: /images/podcast6.png
+image: /images/podcast6.png
 
 
 <iframe src="https://podcasters.spotify.com/pod/show/thisweekinproptech/embed/episodes/A-Changing-Real-Estate-Landscape-e2bik2p/a-aaissjg" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
