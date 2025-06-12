@@ -7,11 +7,11 @@ Tags: press-release
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg
 Author_title: VP of Growth
-Summary: Shovels announces a $5M seed round led by Base10 Partners, bringing total funding to $6.5M. The company has built an AI-powered platform that processes 170M+ building permits across 20,000+ jurisdictions, serving customers from startups to public companies. The funding will accelerate expansion of their government data infrastructure, enhance AI capabilities, and extend coverage into additional datasets beyond building permits.
+Summary: Shovels announces a $5M seed round led by Base10 Partners, bringing total funding to $6.5M. The company has built an AI-powered platform that processes 170M+ building permits across thousands of jurisdictions, serving customers from startups to public companies. The funding will accelerate expansion of their government data infrastructure, enhance AI capabilities, and extend coverage into additional datasets beyond building permits.
 image: /images/shovels-base10.png
 
 
-## Base10 Partners leads funding for company processing 170M+ permits across 20,000+ jurisdictions
+## Base10 Partners leads funding for company processing 180M+ permits every month
 
 *Lafayette, CA – June 10, 2025* – We're excited to announce that Shovels has closed a $5 million seed round led by Base10 Partners. This brings our total funding to $6.5 million and accelerates our mission to make building permit data actionable for the construction industry.
 
@@ -23,9 +23,9 @@ Shovels has developed proprietary technology that handles the complexity of gove
 
 ### What We've Built
 
-Our platform processes 170 million building permits across 30 million US addresses. We maintain profiles on 3 million contractors and add 5 million new permits monthly through automated extraction and enrichment.
+Our platform processes 180 million building permits across 30 million US addresses. We maintain profiles on 3 million contractors and add hundreds of thousands of new permits monthly through automated extraction and enrichment.
 
-We offer comprehensive coverage across 20,000+ jurisdictions, real-time processing of new permits, contractor intelligence with detailed work histories, and multiple access points including API, web interface, and direct cloud integrations to Snowflake, BigQuery, and Databricks.
+We offer comprehensive coverage across 85% of the US population, real-time processing of new permits, contractor intelligence with detailed work histories, and multiple access points including API, web interface, and direct cloud integrations to Snowflake, BigQuery, and Databricks.
 
 ### Proven Results
 
@@ -41,7 +41,7 @@ Our data enables precise targeting: solar companies identify homeowners with act
 
 "Shovels has a rare and massive opportunity to become the definitive source of truth for high-value, hard-to-access datasets at the local government level," said Rexhi Dollaku, general partner at Base10 Partners.
 
-Our customer base spans from early-stage startups to publicly-traded companies. We recently launched the [Quarterly Permit Index](https://www.shovels.ai/blog/shovels-quarterly-permit-index-q1-2025/), tracking construction trends nationwide. The Q1 2025 report found 134,000 new construction permits issued nationally, down 7.2% from Q4 2024\.
+Our customer base spans from early-stage startups to publicly-traded companies. We recently launched the [Quarterly Permit Index](https://www.shovels.ai/blog/shovels-quarterly-permit-index-q1-2025/), tracking construction trends nationwide. The Q1 2025 report found 134,000 new construction permits issued nationally, down 7.2% from Q4 2024.
 
 ### Use of Funds
 
@@ -61,7 +61,7 @@ We maintain transparency about our coverage and limitations, providing customers
 
 ### About Shovels
 
-We're an AI-powered building permit intelligence platform that transforms fragmented government data into actionable business intelligence. Founded in 2022 by CEO Ryan Buckley and CTO Luka Kacil, we're based in Lafayette, California, and process over 170 million building permits from more than 20,000 jurisdictions nationwide. We serve customers ranging from early-stage startups to publicly-traded companies across the construction industry value chain. For more information, visit [shovels.ai](https://shovels.ai/).
+We're an AI-powered building permit intelligence platform that transforms fragmented government data into actionable business intelligence. Founded in 2022 by CEO Ryan Buckley and CTO Luka Kacil, we're based in Lafayette, California, and process over 180 million building permits. We serve customers ranging from early-stage startups to publicly-traded companies across the construction industry value chain. For more information, visit [shovels.ai](https://shovels.ai/).
 
 ### About Base10 Partners
 
