@@ -76,7 +76,9 @@ With Shovels and Clay, this becomes a three-step automated process.
 
 First, set up your Clay table and add a text field called City. Write a few city names, one per row. 
 
-Now add an HTTP API column. Set the method to GET and use the endpoint `https://api.shovels.ai/v2/cities/search`. In the query parameters, add one called `q` and in the value choose the City column (press "/" to see a list of columns). This API call returns the unique geo_id for each city - Shovels' geographic identifier system that enables precise location-based searching. You should also add under run settings, “Only run if” {{City}}.
+Now add an HTTP API column. Set the method to GET and use the endpoint `https://api.shovels.ai/v2/cities/search`. In the query parameters, add one called `q` and in the value choose the City column (press "/" to see a list of columns). This API call returns the unique geo_id for each city - Shovels' geographic identifier system that enables precise location-based searching. You should also add under run settings, “Only run if” {{City}}. 
+
+Also, be aware that if your city doesn't include the state, like "Rochester, MN" then you can't be certain which "Rochester" will resolve first.
 
 To isolate this geo_id, make a new column. Go **+ Add Column** and click the Formula option. 
 
