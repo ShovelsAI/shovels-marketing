@@ -74,15 +74,15 @@ Finding HVAC contractors actively pulling permits in your target market traditio
 
 With Shovels and Clay, this becomes a three-step automated process.
 
-First, set up your Clay table and add a text field called Cities. Write a few city names, one per row. 
+First, set up your Clay table and add a text field called City. Write a few city names, one per row. 
 
-Now add an HTTP API column. Set the method to GET and use the endpoint `https://api.shovels.ai/v2/cities/search`. In the query parameters, add one called `q` and in the value choose the City column (press "/" to see a list of columns). This API call returns the unique geo_id for each city - Shovels' geographic identifier system that enables precise location-based searching.
+Now add an HTTP API column. Set the method to GET and use the endpoint `https://api.shovels.ai/v2/cities/search`. In the query parameters, add one called `q` and in the value choose the City column (press "/" to see a list of columns). This API call returns the unique geo_id for each city - Shovels' geographic identifier system that enables precise location-based searching. You should also add under run settings, “Only run if” {{City}}.
 
 To isolate this geo_id, make a new column. Go **+ Add Column** and click the Formula option. 
 
 ![Clay formulas]({static}/images/formula.png)
 
-Here's the formula I used: `Shovels City Lookup?.items?.[0]?.geo_id.trim()` but Clay also has a nice "Use AI" option where you can describe what you're trying to get. Remember to type the "/" character to be able to reference other columns in the table. 
+Here's the formula I used: {% raw %}`{{Shovels City Lookup}}?.items?.[0]?.geo_id.trim()`{% endraw %} but Clay also has a nice "Use AI" option where you can describe what you're trying to get. Remember to type the "/" character to be able to reference other columns in the table. 
 
 Call this column geo_id.
 
