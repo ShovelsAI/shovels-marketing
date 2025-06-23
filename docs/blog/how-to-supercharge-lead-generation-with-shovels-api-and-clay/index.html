@@ -463,11 +463,12 @@ Leaving: "duration-100 ease-in"
 <p>📖 <strong>Permit Tags Reference:</strong> You can use any of our <code>permit_tag</code> values. For convenience, here they are: <code>addition</code>, <code>adu</code>, <code>bathroom</code>, <code>battery</code>, <code>demolition</code>, <code>electric_meter</code>, <code>electrical</code>, <code>ev_charger</code>, <code>fire_sprinkler</code>, <code>gas</code>, <code>generator</code>, <code>grading</code>, <code>heat_pump</code>, <code>hvac</code>, <code>kitchen</code>, <code>new_construction</code>, <code>plumbing</code>, <code>pool_and_hot_tub</code>, <code>remodel</code>, <code>roofing</code>, <code>solar</code>, <code>water_heater</code></p>
 </blockquote>
 <p>With Shovels and Clay, this becomes a three-step automated process.</p>
-<p>First, set up your Clay table and add a text field called Cities. Write a few city names, one per row. </p>
-<p>Now add an HTTP API column. Set the method to GET and use the endpoint <code>https://api.shovels.ai/v2/cities/search</code>. In the query parameters, add one called <code>q</code> and in the value choose the City column (press "/" to see a list of columns). This API call returns the unique geo_id for each city - Shovels' geographic identifier system that enables precise location-based searching.</p>
+<p>First, set up your Clay table and add a text field called City. Write a few city names, one per row. </p>
+<p>Now add an HTTP API column. Set the method to GET and use the endpoint <code>https://api.shovels.ai/v2/cities/search</code>. In the query parameters, add one called <code>q</code> and in the value choose the City column (press "/" to see a list of columns). This API call returns the unique geo_id for each city - Shovels' geographic identifier system that enables precise location-based searching. You should also add under run settings, “Only run if” . </p>
+<p>Also, be aware that if your city doesn't include the state, like "Rochester, MN" then you can't be certain which "Rochester" will resolve first.</p>
 <p>To isolate this geo_id, make a new column. Go <strong>+ Add Column</strong> and click the Formula option. </p>
 <p><img alt="Clay formulas" src="https://www.shovels.ai/images/formula.png"/></p>
-<p>Here's the formula I used: <code>Shovels City Lookup?.items?.[0]?.geo_id.trim()</code> but Clay also has a nice "Use AI" option where you can describe what you're trying to get. Remember to type the "/" character to be able to reference other columns in the table. </p>
+<p>Here's the formula I used: <code>{{Shovels City Lookup}}?.items?.[0]?.geo_id.trim()</code> but Clay also has a nice "Use AI" option where you can describe what you're trying to get. Remember to type the "/" character to be able to reference other columns in the table. </p>
 <p>Call this column geo_id.</p>
 <blockquote>
 <p>📚 <strong>Understanding Clay Formula fields and being able to use the AI helper is critical to moving fast inside of Clay!</strong></p>
