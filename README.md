@@ -82,12 +82,26 @@ Once the .md file is committed and merged into `/shovels-marketing/main`, view t
 
 ## Production
 
-We currently host on GitHub Pages in the ShovelsAI GitHub organization. GitHub requires the output folder to be `docs` so we have to use a different command.
+We currently host on GitHub Pages in the ShovelsAI GitHub organization. The site is automatically deployed using GitHub Actions whenever changes are pushed to the `main` branch.
 
-To publish, simply run:
+### Automatic Deployment
+
+The site is automatically built and deployed when you:
+1. Push changes to the `main` branch
+2. Open a pull request to `main` (for preview)
+
+The GitHub Actions workflow handles:
+- Installing Python and Node.js dependencies
+- Building the Tailwind CSS
+- Generating the static site with Pelican
+- Deploying to GitHub Pages
+
+### Manual Deployment (Legacy)
+
+If you need to deploy manually for any reason, you can still use:
 ```
 make publish
 ```
-The Makefile will deal with the oddities of GitHub pages and make sure certain configs aren't lost in the process.
+However, this is no longer the recommended approach as GitHub Actions provides automated deployment.
 
 You can see the latest version now at https://www.shovels.ai!
