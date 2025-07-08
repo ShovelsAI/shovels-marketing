@@ -7,3 +7,9 @@
     @apply text-shovels-dark;
   }
 } 
+
+@layer components {
+  .navbar_item {
+    @apply inline-flex items-center space-x-1 text-base font-medium text-emerald-900 hover:text-emerald-700;
+  }
+} 
