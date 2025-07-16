@@ -28,7 +28,7 @@ slug: chuck
   </svg> 
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Meet Chuck</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Meet <span class="font-bold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">Chuck</span></h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI-powered construction intelligence agent. Transform building permit data into actionable insights with natural language queries. Get instant construction reports, predictive analytics, and market intelligence.</p>
       </div>
