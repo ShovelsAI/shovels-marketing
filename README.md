@@ -12,6 +12,8 @@ This is a static site generated with [Pelican](https://docs.getpelican.com/en/4.
 
 1. Clone the `shovelsAI/shovels-marketing` githup repo
   i. validate Github user
+  ii. Install Homebrew
+  ii. `brew install node`
 2. Fork a branch of `shovels-marketing/main`
 3. Create a [Virtual Environment](https://code.visualstudio.com/docs/python/environments#_create-a-virtual-environment-in-the-terminal) in the VS Code Terminal
 
