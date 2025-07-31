@@ -23,19 +23,18 @@ slug: gis
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Shovels feeds live, AI-powered building permit data directly into your Esri ArcGIS platform.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Get started</a>
-          <a href="https://docs.shovels.ai/api-reference/" class="text-sm/6 font-semibold text-gray-900" target="_blank">API documentation <span aria-hidden="true">&rarr;</span></a>
+          <a href="mailto:sales@shovels.ai?subject=Interested in GIS" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
         </div>
       </div>
-              <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
+      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
           <img class="relative max-h-[500px]" src="{static}/images/shovels-mapContractors.png" alt="Illustration showing building materials and construction data analytics">
         </div>
       </div>
       <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5 pt-24">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="{static}/images/regrid.svg" alt="Regrid" width="158" height="48">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="{static}/images/regrid.png" alt="Regrid" width="158" height="48">
         <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/pargoai.svg" alt="ParGo AI" width="158">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="{static}/images/esri.svg" alt="Esri" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/ucberkeley.svg" alt="UC Berkeley" width="158">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="{static}/images/esri.png" alt="Esri" width="158" height="48">
+        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/uc-berkeley.png" alt="UC Berkeley" width="158">
         <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/mit.svg" alt="MIT" width="158" height="48">
       </div>
     </div>
@@ -205,8 +204,7 @@ slug: gis
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our geospatial building permit intelligence now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
+      <a href="mailto:sales@shovels.ai?subject=Interested in GIS" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
     </div>
   </div>
 </div>

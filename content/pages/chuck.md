@@ -33,7 +33,7 @@ slug: chuck
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI-powered construction intelligence agent. Transform building permit data into actionable insights with natural language queries. Get instant construction reports, predictive analytics, and market intelligence.</p>
       </div>
       <div class="mt-10 aspect-video w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <iframe class="size-full rounded-2xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/j3_JYppwcyo?si=4cTNKcGkoZjarKFo" title="Chuck AI Agent Demo"></iframe>
+        <iframe class="size-full rounded-2xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/j3_JYppwcyo?si=4cTNKcGkoZjarKFo?rel=0" title="Chuck AI Agent Demo"></iframe>
       </div>
     </div>
   </div>
