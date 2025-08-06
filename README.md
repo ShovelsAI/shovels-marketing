@@ -17,14 +17,14 @@ This is a static site generated with [Pelican](https://docs.getpelican.com/en/4.
 2. Fork a branch of `shovels-marketing/main`
 3. Create a [Virtual Environment](https://code.visualstudio.com/docs/python/environments#_create-a-virtual-environment-in-the-terminal) in the VS Code Terminal
 
-   a. (For Mac) `python3 -m venv .${environment_name}`
+   a. (For Mac) `python3 -m venv .venv`
 
    b. Activate the virtual environment, with the following command:
 
      ```
-     source .${environment_name}/bin/activate
+     source .venv/bin/activate
      ```
-   c. Confirm it's active in the terminal. It should show `(.${environment_name) $ shovels-marketing`
+   c. Confirm it's active in the terminal. It should show `(.venv) $ shovels-marketing`
 
 **Notes**: if your named virtual environment is anything other than `venv` or `.venv`, please ask to have the [Ignore](/.gitignore) page updated accordingly. 
 
@@ -46,7 +46,7 @@ Note that for development purposes, it would be the `themes/shovels` folder that
 
 For pages that have an 'inverted' theme, the logic of that inversion is done via 2 places:
 
-- based on the route, through a <script> in `base.html` which applies a `.inverted` class to the body if it is a route that uses an inverted theme
+- based on the route, through a script tag in `base.html` which applies a `.inverted` class to the body if it is a route that uses an inverted theme
 - through tailwind utility classes using the `.inverted` parent selector in `input.css`
 
 ### New blog post
@@ -80,7 +80,13 @@ Image: /images/autodesk.png
 
 Edit these and put the markdown content below this settings section.
 
-Once the .md file is committed and merged into `/shovels-marketing/main`, view the output locally in your browser at `https://localhost:8000` to verify formatting and rendering. 
+Once the .md file is committed and merged into `/shovels-marketing/main`, view the output locally in your browser at `http://127.0.0.1:8000/` to verify formatting and rendering. 
+
+### Making CSS change
+
+To edit CSS, make changes to the `input.css` file in the root directory. It will get compiled into the final `output.css` file that the website will render locally and in production. 
+
+> This is the only place you should edit CSS!
 
 ## Production
 
@@ -98,12 +104,3 @@ The GitHub Actions workflow handles:
 - Generating the static site with Pelican
 - Deploying to GitHub Pages
 
-### Manual Deployment (Legacy)
-
-If you need to deploy manually for any reason, you can still use:
-```
-make publish
-```
-However, this is no longer the recommended approach as GitHub Actions provides automated deployment.
-
-You can see the latest version now at https://www.shovels.ai!
