@@ -48,8 +48,8 @@ slug: real-estate
         -->
       </div>
       <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-12 sm:gap-16 lg:mx-0 lg:max-w-none lg:pl-8">
-        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/esri.svg" alt="Esri">
-        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/regrid.svg" alt="Regrid">
+        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/esri.png" alt="Esri">
+        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/regrid.png" alt="Regrid">
       </div>
     </div>
   </div>
