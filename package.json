@@ -6,7 +6,7 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build:css": "tailwindcss -o ./themes/shovels/static/css/output.css --watch",
-    "build:css:prod": "tailwindcss -o ./themes/shovels/static/css/output.css --minify"
+    "build:css": "tailwindcss -i ./themes/shovels/static/css/input.css -o ./themes/shovels/static/css/output.css --watch",
+    "build:css:prod": "tailwindcss -i ./themes/shovels/static/css/input.css -o ./themes/shovels/static/css/output.css --minify"
   }
 }
