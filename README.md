@@ -84,9 +84,11 @@ Once the .md file is committed and merged into `/shovels-marketing/main`, view t
 
 ### Making CSS change
 
-To edit CSS, make changes to the `input.css` file in the root directory. It will get compiled into the final `output.css` file that the website will render locally and in production. 
+To edit CSS, make changes to the `input.css` file in the root directory and then copy it over to the `/themes/shovels/static/css/input.css` directory. It will get compiled into the final `output.css` file that the website will render locally and in production. 
 
 > This is the only place you should edit CSS!
+
+As of Aug 6 2025 I don't know why this has to be done, but I couldn't get CSS changes to render locally AND in GitHub any other way. 
 
 ## Production
 
