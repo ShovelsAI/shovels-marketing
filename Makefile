@@ -70,8 +70,9 @@ devserver-global:
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -b 0.0.0.0
 
 publish:
+	npm run build:css:prod
 	pelican content -o docs -s publishconf.py
-	cp output/output.css docs/output.css
+	cp themes/shovels/static/css/output.css docs/output.css
 	echo "www.shovels.ai" > docs/CNAME
 	git add .
 	git commit -am "publishing"

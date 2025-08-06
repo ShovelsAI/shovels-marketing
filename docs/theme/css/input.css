@@ -7,3 +7,46 @@
     @apply text-shovels-dark;
   }
 } 
+
+@layer components {
+  .navbar_item {
+    @apply inline-flex items-center space-x-1 text-base font-medium text-emerald-900 hover:text-emerald-700;
+  }
+  
+  /* Blog post article styling */
+  .article p {
+    @apply mb-6;
+  }
+  
+  .article h2 {
+    @apply text-2xl font-semibold text-gray-900 mt-8 mb-4;
+  }
+  
+  .article h3 {
+    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+  }
+  
+  .article table {
+    @apply table-auto w-full border-collapse border border-gray-300 shadow-sm rounded-lg overflow-hidden my-6;
+  }
+  
+  .article table thead {
+    @apply bg-gray-50;
+  }
+  
+  .article table th {
+    @apply border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900 bg-gray-50;
+  }
+  
+  .article table td {
+    @apply border border-gray-300 px-4 py-3 text-gray-700;
+  }
+  
+  .article table tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+  
+  .article table tbody tr:hover {
+    @apply bg-gray-100;
+  }
+} 
