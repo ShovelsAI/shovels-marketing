@@ -293,13 +293,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/case-study-boldr/" class=" text-emerald-900 hover:text-gray-700"><p>Customer Spotlight: How Boldr Leverages Shovels for Go-to-Market Success</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/virginia-data-center-permit-trends/" class=" text-emerald-900 hover:text-gray-700"><p>Virginia’s Data Center Dominance: A Deep Dive into Permit Trends</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/shovels-spotlight-how-bzail-uses-real-time-permit-intelligence-to-transform-cre-site-selection/" class=" text-emerald-900 hover:text-gray-700"><p>Shovels Spotlight: How BZAiL Uses Real-Time Permit Intelligence To Transform CRE Site Selection</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/july-2025-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>July 2025 Newsletter</p></a>
                   </li>
               </ul>
             </div>
@@ -521,6 +521,47 @@ Leaving: "duration-100 ease-in"
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
       <article class="flex flex-col items-start" 
+               data-summary="<p>Boldr leverages Shovels' permit data to transform their HVAC go-to-market strategy from manual prospecting to data-driven precision targeting. They now identify qualified contractors and target homeowners with compatible systems using real-time permit insights, enabling strategic market expansion and trend analysis.</p>"
+               data-title="<p>Customer Spotlight: How Boldr Leverages Shovels for Go-to-Market Success</p>"
+               x-show="isMatchingCategory('Case Study') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/case-study-boldr/">
+            <img src="/images/case-study-boldr.jpg" 
+                 alt="<p>Customer Spotlight: How Boldr Leverages Shovels for Go-to-Market Success</p>"
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-08-11 00:00:00-07:00" class="text-gray-500">Mon 11 August 2025</time>
+            <a href="/blog/?category=Case Study"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Case Study
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/case-study-boldr/">
+                <span class="absolute inset-0"></span>
+                <p>Customer Spotlight: How Boldr Leverages Shovels for Go-to-Market Success</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>Boldr leverages Shovels' permit data to transform their HVAC go-to-market strategy from manual prospecting to data-driven precision targeting. They now identify qualified contractors and target homeowners with compatible systems using real-time permit insights, enabling strategic market expansion and trend analysis.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/betty.svg" alt="Betty Wan" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Betty Wan</p>
+              <p class="text-gray-600">VP of Growth</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col items-start" 
                data-summary="<p>Explore the latest trends in Virginia’s data center market, uncovering growth areas, infrastructure investment, and hidden market indicators from permit analysis.</p>"
                data-title="<p>Virginia’s Data Center Dominance: A Deep Dive into Permit Trends</p>"
                x-show="isMatchingCategory('Data') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
@@ -528,7 +569,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/virginia-data-center-permit-trends/">
             <img src="/images/blog_images/VA-datacenters.png" 
                  alt="<p>Virginia’s Data Center Dominance: A Deep Dive into Permit Trends</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -569,7 +610,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-spotlight-how-bzail-uses-real-time-permit-intelligence-to-transform-cre-site-selection/">
             <img src="/images/bzail-shovels.png" 
                  alt="<p>Shovels Spotlight: How BZAiL Uses Real-Time Permit Intelligence To Transform CRE Site Selection</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -610,7 +651,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/july-2025-newsletter/">
             <img src="/images/mappy.png" 
                  alt="<p>July 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -651,7 +692,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/integrating-parcel-and-permit-data-in-partnership-with-regrid/">
             <img src="/images/shovels-regrid.png" 
                  alt="<p>Integrating Parcel and Permit Data in Partnership with Regrid</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -692,7 +733,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/june-2025-newsletter/">
             <img src="/images/june-25-newsletter.png" 
                  alt="<p>June 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -733,7 +774,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-raises-5m-seed-round-to-scale-ai-powered-building-permit-platform/">
             <img src="/images/shovels-base10.png" 
                  alt="<p>Shovels Raises $5M Seed Round to Scale AI-Powered Building Permit Platform</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -774,7 +815,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/how-to-supercharge-lead-generation-with-shovels-api-and-clay/">
             <img src="/images/shovels-clay.png" 
                  alt="<p>How to supercharge lead generation with Shovels API and Clay</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -815,7 +856,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/a-deeper-dive-into-shovels-ai-classifications/">
             <img src="/images/ai-classifications.png" 
                  alt="<p>A Deeper Dive into Shovels AI Classifications</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -856,7 +897,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/introducing-the-shovels-nationwide-contractor-state-license-file/">
             <img src="/images/csl-release.png" 
                  alt="<p>Introducing the Shovels Nationwide Contractor State License File</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -897,7 +938,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-quarterly-permit-index-q1-2025/">
             <img src="/images/spi-q1-2025.svg" 
                  alt="<p>Shovels Quarterly Permit Index: Q1 2025</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -938,7 +979,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-spotlight-how-tactical-rebates-taps-into-building-permits-to-power-smarter-solar-incentive-outreach/">
             <img src="/images/shovels-spotlight-tactical-rebates.png" 
                  alt="<p>Shovels Spotlight: How Tactical Rebates Taps Into Building Permits to Power Smarter Solar Incentive Outreach</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -979,7 +1020,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/may-2025-newsletter/">
             <img src="/images/spi-county-map-q1-2025.png" 
                  alt="<p>May 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1020,7 +1061,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/putting-the-ai-in-shovelsai/">
             <img src="/images/shovels-ai-categories-hero.png" 
                  alt="<p>Putting the AI in Shovels.AI</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1061,7 +1102,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/our-recap-of-the-sf-climate-week-energy-hackathon/">
             <img src="/images/cw-2025.png" 
                  alt="<p>Our Recap of the SF Climate Week Energy Hackathon</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1102,7 +1143,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/april-2025-newsletter/">
             <img src="/images/pw.png" 
                  alt="<p>April 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1143,7 +1184,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/solar-permit-density-san-diego/">
             <img src="/images/pw-and-cv.png" 
                  alt="<p>Unlocking Urban Electrification in San Diego</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1184,7 +1225,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/top-5-gtm-strategies-using-shovels-online/">
             <img src="/images/shovels-online-gtm-hero.jpg" 
                  alt="<p>Top 5 GTM Strategies using Shovels Online</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1225,7 +1266,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/introducing-the-department-of-permit-efficiency-dope/">
             <img src="/images/tweet.jpg" 
                  alt="<p>Introducing: The Department of Permit Efficiency (DOPE)</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1266,7 +1307,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/top-5-most-useful-derived-metrics/">
             <img src="/images/top-5-derived-metrics-hero.png" 
                  alt="<p>Top 5 Most Useful Derived Metrics</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1307,7 +1348,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/march-2025-newsletter/">
             <img src="/images/vegas.jpeg" 
                  alt="<p>March 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1348,7 +1389,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-x-cherre-delivering-the-best-insights-for-real-estate-portfolios/">
             <img src="/images/shovels-cherre-announcement-hero.png" 
                  alt="<p>Shovels x Cherre: Delivering the Best Insights for Real Estate Portfolios</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1389,7 +1430,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/february-2025-newsletter/">
             <img src="/images/tesla.png" 
                  alt="<p>February 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1430,7 +1471,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/analyzing-texas-roofing-permits-by-income-bracket/">
             <img src="/images/shovels-texas-roofing-trends-hero.png" 
                  alt="<p>Analyzing Texas Roofing Permits by Income Bracket</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1471,7 +1512,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/welcome-to-the-shovels-documentation-hub/">
             <img src="/images/shovels-doc-hub-hero.png" 
                  alt="<p>Welcome to the Shovels Documentation Hub</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1512,7 +1553,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/january-2025-newsletter/">
             <img src="/images/contractor-profile.png" 
                  alt="<p>January 2025 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1553,7 +1594,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/2024-shovels-year-end-recap/">
             <img src="/images/2024-recap.png" 
                  alt="<p>2024 Shovels Year-End Recap</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1594,7 +1635,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-v2-api/">
             <img src="/images/api-blog.jpg" 
                  alt="<p>How to use the Shovels V2 API</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1635,7 +1676,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/december-2024-newsletter/">
             <img src="/images/summerhill.png" 
                  alt="<p>December 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1676,7 +1717,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-101-maximizing-shovels-online/">
             <img src="/images/maximizing-shovels-online-hero.png" 
                  alt="<p>Shovels 101: Maximizing Shovels Online</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1717,7 +1758,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-spotlight-deep-product-enrichment-with-inspectify/">
             <img src="/images/shovels-spotlight-inspectify.png" 
                  alt="<p>Shovels Spotlight: Deep Product Enrichment with Inspectify</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1758,7 +1799,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/welcome-to-shovels-online/">
             <img src="/images/shovels-online-hero.png" 
                  alt="<p>Welcome to Shovels Online!</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1799,7 +1840,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/welcome-to-shovels-v2/">
             <img src="/images/welcome-to-shovels-v2-hero.jpg" 
                  alt="<p>Welcome to Shovels V2</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1840,7 +1881,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/harvest-season-at-shovels/">
             <img src="/images/harvest-season-hero.jpg" 
                  alt="<p>Harvest Season at Shovels</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1881,7 +1922,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/october-2024-newsletter/">
             <img src="/images/domains.png" 
                  alt="<p>October 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1922,7 +1963,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/understanding-permit-data-fields/">
             <img src="/images/shovels-101-permit-fields.png" 
                  alt="<p>Understanding Permit Data Fields</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -1963,7 +2004,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/why-dont-all-addresses-have-permit-history/">
             <img src="/images/address-history-hero.jpg" 
                  alt="<p>Why Don't All Addresses Have Permit History?</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2004,7 +2045,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/unlocking-shovelss-potential-with-prolific/">
             <img src="/images/shovels_prolific_hero.png" 
                  alt="<p>Unlocking Shovels's Potential with Prolific</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2045,7 +2086,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/september-2024-newsletter/">
             <img src="/images/login-v2.png" 
                  alt="<p>September 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2086,7 +2127,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/us-solar-construction-trends-2024/">
             <img src="/images/digging-in-us-solar-construction-heatmap-watermarked.png" 
                  alt="<p>US Solar Construction Trends (2024)</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2127,7 +2168,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-101-permit-statuses/">
             <img src="/images/shovels-101-permit-status.png" 
                  alt="<p>Shovels 101: Permit Statuses</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2168,7 +2209,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-101-finding-address-permit-history/">
             <img src="/images/shovels-101-address-permit-history.png" 
                  alt="<p>Shovels 101: Finding Address Permit History</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2209,7 +2250,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-partners-with-wattcarbon/">
             <img src="/images/shovels-wattcarbon-hero.png" 
                  alt="<p>Shovels partners with WattCarbon</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2250,7 +2291,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/august-2024-newsletter/">
             <img src="/images/esri-nvi-map.jpg" 
                  alt="<p>August 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2291,7 +2332,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/shovels-partners-with-autodesk-construction-cloud/">
             <img src="/images/autodesk.png" 
                  alt="<p>Shovels partners with Autodesk Construction Cloud</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2332,7 +2373,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/july-2024-newsletter/">
             <img src="/images/coverage.png" 
                  alt="<p>July 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2373,7 +2414,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/june-2024-newsletter/">
             <img src="/images/heat-pumps-in-ny.png" 
                  alt="<p>June 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2414,7 +2455,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/case-study-empowering-carbon-free-homes/">
             <img src="/images/case-study-carbon-free-homes.png" 
                  alt="<p>Case Study: Empowering Carbon Free Homes</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2455,7 +2496,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/may-2024-newsletter/">
             <img src="/images/cfh-case-header.png" 
                  alt="<p>May 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2496,7 +2537,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-ai-gpt/">
             <img src="/images/shovelsgpt.png" 
                  alt="<p>How to use the Shovels AI GPT</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2537,7 +2578,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/april-2024-newsletter/">
             <img src="/images/explore.png" 
                  alt="<p>April 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2578,7 +2619,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/">
             <img src="/images/case-study-beam.png" 
                  alt="<p>Case Study: Revolutionizing Lead Generation for Beam</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2619,7 +2660,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/">
             <img src="/images/building-permit-list.png" 
                  alt="<p>The list of every building permit jurisdiction in the US</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2660,7 +2701,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/march-2024-newsletter/">
             <img src="/images/screenshots.png" 
                  alt="<p>March 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2701,7 +2742,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-19-the-books-that-saved-us/">
             <img src="/images/podcast19.png" 
                  alt="<p>Episode 19: The books that saved us</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2742,7 +2783,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-18-outbound-sales-masterclass/">
             <img src="/images/podcast18.png" 
                  alt="<p>Episode 18: Outbound sales masterclass</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2783,7 +2824,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-17-the-super-bowl-pre-game-show/">
             <img src="/images/podcast17.png" 
                  alt="<p>Episode 17: The Super Bowl pre-game show</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2824,7 +2865,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/february-2024-newsletter/">
             <img src="/images/shane.png" 
                  alt="<p>February 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2865,7 +2906,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-app/">
             <img src="/images/boulder-commercial.png" 
                  alt="<p>How to use the Shovels app</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2906,7 +2947,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-16-the-proptech-macro-investing-environment/">
             <img src="/images/podcast16a.png" 
                  alt="<p>Episode 16: The proptech macro investing environment</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2947,7 +2988,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-15-the-sexiest-topic-weve-done-so-far-zoning/">
             <img src="/images/podcast15.png" 
                  alt="<p>Episode 15: The sexiest topic we've done so far: Zoning</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -2988,7 +3029,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-14-davos-and-the-doe/">
             <img src="/images/podcast14.png" 
                  alt="<p>Episode 14: Davos and the DOE</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3029,7 +3070,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-13-the-sitzerburnett-decision/">
             <img src="/images/podcast13.png" 
                  alt="<p>Episode 13: The Sitzer/Burnett decision</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3070,7 +3111,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/january-2024-newsletter/">
             <img src="/images/dashboard.png" 
                  alt="<p>January 2024 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3111,7 +3152,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-12-navigating-culture-in-proptech/">
             <img src="/images/podcast12.png" 
                  alt="<p>Episode 12: Navigating culture in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3152,7 +3193,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-11-exploring-the-intersection-of-proptech-and-climate-tech/">
             <img src="/images/podcast11.png" 
                  alt="<p>Episode 11: Exploring the intersection of proptech and climate tech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3193,7 +3234,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/december-2023-newsletter/">
             <img src="/images/permits-screenshot.jpg" 
                  alt="<p>December 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3234,7 +3275,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-10-navigating-email-marketing-challenges/">
             <img src="/images/podcast10.png" 
                  alt="<p>Episode 10: Navigating email marketing challenges</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3275,7 +3316,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-9-exploring-ai-in-proptech/">
             <img src="/images/podcast9.png" 
                  alt="<p>Episode 9: Exploring AI in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3316,7 +3357,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/do-rebate-programs-matter-to-contractors-in-the-sf-bay-area/">
             <img src="/images/contractors_comparison_chart.png" 
                  alt="<p>Do rebate programs matter to contractors in the SF Bay Area?</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3357,7 +3398,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-8-navigating-commercial-buildouts/">
             <img src="/images/podcast8.png" 
                  alt="<p>Episode 8: Navigating commercial buildouts</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3398,7 +3439,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-7-exploring-commercial-building-permits/">
             <img src="/images/podcast7.png" 
                  alt="<p>Episode 7: Exploring commercial building permits</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3439,7 +3480,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-6-revitalizing-urban-landscapes-in-the-age-of-proptech/">
             <img src="/images/podcast6.png" 
                  alt="<p>Episode 6: Revitalizing urban landscapes in the age of proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3480,7 +3521,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-5-navigating-the-sales-and-crm-landscape-in-proptech/">
             <img src="/images/podcast5.png" 
                  alt="<p>Episode 5: Navigating the sales and CRM landscape in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3521,7 +3562,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-4-unlocking-hiring-secrets-in-proptech/">
             <img src="/images/podcast4.png" 
                  alt="<p>Episode 4: Unlocking hiring secrets in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3562,7 +3603,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/october-2023-newsletter/">
             <img src="/images/app-auth-screenshot.png" 
                  alt="<p>October 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3603,7 +3644,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-3-positioning-in-proptech/">
             <img src="/images/podcast3.png" 
                  alt="<p>Episode 3: Positioning in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3644,7 +3685,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/how-to-use-the-shovels-v1-api/">
             <img src="/images/api-blog.jpg" 
                  alt="<p>How to use the Shovels V1 API</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3685,7 +3726,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-2-fundraising-in-proptech/">
             <img src="/images/podcast2.png" 
                  alt="<p>Episode 2: Fundraising in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3726,7 +3767,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/the-growth-of-ev-contractors-in-california/">
             <img src="/images/ev-contractors-grid.png" 
                  alt="<p>The growth of EV contractors in California</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3767,7 +3808,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/episode-1-using-no-code-solutions-in-proptech/">
             <img src="/images/podcast1.png" 
                  alt="<p>Episode 1: Using no-code solutions in proptech</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3808,7 +3849,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/september-2023-newsletter/">
             <img src="/images/sql.jpg" 
                  alt="<p>September 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3849,7 +3890,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/august-2023-newsletter/">
             <img src="/images/bottom5.png" 
                  alt="<p>August 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3890,7 +3931,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/ev-charger-permit-processing-times-in-california/">
             <img src="/images/top5.png" 
                  alt="<p>EV charger permit processing times in California</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3931,7 +3972,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/growth-of-ev-charging-in-california/">
             <img src="/images/shovels_ev_prediction.png" 
                  alt="<p>The growth of EV chargers in California</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -3972,7 +4013,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/july-2023-newsletter/">
             <img src="/images/shovels_ev_prediction.png" 
                  alt="<p>July 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4013,7 +4054,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/go-to-market-strategies-for-contech-companies/">
             <img src="/theme/images/gtm/hero.svg" 
                  alt="<p>Go-to-market strategies for contech companies</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4054,7 +4095,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/june-2023-newsletter/">
             <img src="/theme/images/climate/hero.svg" 
                  alt="<p>June 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4095,7 +4136,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/go-to-market-strategies-for-proptech-companies/">
             <img src="/theme/images/gtm/hero.svg" 
                  alt="<p>Go-to-market strategies for proptech companies</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4136,7 +4177,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/may-2023-newsletter/">
             <img src="/theme/images/api/hero.svg" 
                  alt="<p>May 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4177,7 +4218,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/april-2023-newsletter/">
             <img src="/images/san-diego.png" 
                  alt="<p>April 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4218,7 +4259,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/march-2023-newsletter/">
             <img src="/theme/images/software/hero.svg" 
                  alt="<p>March 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4259,7 +4300,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/february-2023-newsletter/">
             <img src="/theme/images/finance/hero.svg" 
                  alt="<p>February 2023 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4300,7 +4341,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/december-2022-newsletter/">
             <img src="/theme/images/home/electrify.svg" 
                  alt="<p>December 2022 Newsletter</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4341,7 +4382,7 @@ Leaving: "duration-100 ease-in"
           <a href="https://www.shovels.ai/blog/introduction-to-shovels/">
             <img src="/theme/images/shovels-color-whitebg.svg" 
                  alt="<p>Introduction to Shovels</p>"
-                 class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           </a>
         </div>
@@ -4505,19 +4546,25 @@ Leaving: "duration-100 ease-in"
               <li>
                 <a href="https://discord.gg/Nypja3cKDx" class="text-sm leading-6 hover:text-amber-600">Discord</a>
               </li>
-              <li>
-                <a href="https://www.shovels.ai/about" class="text-sm leading-6 hover:text-amber-500" target="_blank">About Shovels</a>
-              </li>
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm  leading-6 text-amber-300">Legal</h3>
+            <h3 class="text-sm  leading-6 text-amber-300">Company</h3>
             <ul role="list" class="mt-6">
+              <li>
+                <a href="https://www.shovels.ai/about" class="text-sm leading-6 hover:text-amber-500" target="_blank">About Shovels</a>
+              </li>
+              <li>
+                <a href="https://www.shovels.ai/contact" class="text-sm leading-6 hover:text-amber-500">Contact Us</a>
+              </li>
+              <li>
+                <a href="https://www.shovels.ai/careers" class="text-sm leading-6 hover:text-amber-500">Careers</a>
+              </li>
               <li>
                 <a href="https://www.shovels.ai/terms" class="text-sm leading-6 hover:text-amber-500">Terms</a>
               </li>
               <li>
-                <a href="https://www.shovels.ai/privacy-center" class="text-sm leading-6 hover:text-amber-500">Privacy Center</a>
+                <a href="https://www.shovels.ai/privacy-center" class="text-sm leading-6 hover:text-amber-500">Privacy</a>
               </li>
             </ul>
           </div>

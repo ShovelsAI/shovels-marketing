@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Case Study</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/case-study.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-07-18T00:00:00-07:00</updated><entry><title>Case Study: Revolutionizing Lead Generation for Beam</title><link href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/" rel="alternate"></link><published>2024-04-08T00:00:00-07:00</published><updated>2024-04-08T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-04-08:/blog/case-study-revolutionizing-lead-generation-for-beam/</id><summary type="html">&lt;p&gt;We transformed Beam's lead generation strategy by providing high-quality, regularly updated construction leads enriched with information such as permit type and recent activity, resulting in a 20-30% higher response rate.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.shovels.ai/pdfs/Shovels_Beam.pdf"&gt;PDF download&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Case Study</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/case-study.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-08-11T00:00:00-07:00</updated><entry><title>Case Study: Revolutionizing Lead Generation for Beam</title><link href="https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/" rel="alternate"></link><published>2024-04-08T00:00:00-07:00</published><updated>2024-04-08T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2024-04-08:/blog/case-study-revolutionizing-lead-generation-for-beam/</id><summary type="html">&lt;p&gt;We transformed Beam's lead generation strategy by providing high-quality, regularly updated construction leads enriched with information such as permit type and recent activity, resulting in a 20-30% higher response rate.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.shovels.ai/pdfs/Shovels_Beam.pdf"&gt;PDF download&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Beam is an easy-to-use financial platform whose mission is to empower builders with better financial tools and services. Beam helps contractors take control of their project finances,  improve cash flow, and ultimately earn more money.  One of the ways they grow their business is through cold outreach to contractors. This is an effective customer acquisition strategy provided there is a source of quality leads, and an opportunity to reach out at the right time with a personalized message. When expensive lead lists yielded poor results, Beam turned to Shovels. Shovels' ability to provide high-quality, regularly updated leads enriched with information such as permit type and recent activity proved to be a game changer for Beam’s outreach efforts.&lt;/p&gt;
 &lt;h2&gt;Beam’s Story&lt;/h2&gt;
@@ -164,4 +164,61 @@ Shovels enabled Beam to efficiently and cost effectively generate a lead list, p
 &lt;h3&gt;&lt;strong&gt;🔮 What’s Next&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;“Shovels’ data has unlocked a new level of clarity and speed in early-stage site selection and due diligence for commercial real estate pros—making BZAiL a one-stop destination for uncovering development potential across Nation.”&lt;/p&gt;
 &lt;p&gt;And this is just the beginning. BZAiL plans to expand beyond Florida, launch real-time alerts for new permits, and leverage upcoming Shovels.ai Ai features—like entity extraction to auto-pull square footage, system specs, and more.&lt;/p&gt;
-&lt;p&gt;Together, BZAiL and Shovels are building the future of real estate decision-making—giving CRE teams the power to move faster, act smarter, and eliminate guesswork with confidence. &lt;/p&gt;</content><category term="Case Study"></category><category term="spotlight"></category><category term="integration"></category><category term="API"></category><category term="bzail"></category><category term="site selection"></category><category term="commercial real estate"></category></entry></feed>
+&lt;p&gt;Together, BZAiL and Shovels are building the future of real estate decision-making—giving CRE teams the power to move faster, act smarter, and eliminate guesswork with confidence. &lt;/p&gt;</content><category term="Case Study"></category><category term="spotlight"></category><category term="integration"></category><category term="API"></category><category term="bzail"></category><category term="site selection"></category><category term="commercial real estate"></category></entry><entry><title>Customer Spotlight: How Boldr Leverages Shovels for Go-to-Market Success</title><link href="https://www.shovels.ai/blog/case-study-boldr/" rel="alternate"></link><published>2025-08-11T00:00:00-07:00</published><updated>2025-08-11T00:00:00-07:00</updated><author><name>Betty Wan</name></author><id>tag:www.shovels.ai,2025-08-11:/blog/case-study-boldr/</id><summary type="html">&lt;p&gt;Boldr leverages Shovels' permit data to transform their HVAC go-to-market strategy from manual prospecting to data-driven precision targeting. They now identify qualified contractors and target homeowners with compatible systems using real-time permit insights, enabling strategic market expansion and trend analysis.&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Industry:&lt;/strong&gt; HVAC Technology&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Product Used:&lt;/strong&gt; Shovels API &amp;amp; Dashboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;From Data to Market Intelligence&lt;/h3&gt;
+&lt;p&gt;In the dynamic HVAC solutions market, Boldr is revolutionizing how companies leverage permit data for strategic growth. By partnering with Shovels, they've transformed their go-to-market approach from manual prospecting to data-driven precision targeting.&lt;/p&gt;
+&lt;p&gt;With the rising adoption of mini-split systems across America, Boldr recognized the need for smarter, more efficient ways to reach both contractors and homeowners. &lt;a href="https://shopboldr.com/products/klima"&gt;Klima&lt;/a&gt;, their innovative new thermostat, needed an equally innovative marketing approach—and that's where Shovels came in.&lt;/p&gt;
+&lt;h3&gt;The Challenge: Scaling Market Reach&lt;/h3&gt;
+&lt;p&gt;Boldr needed a comprehensive solution to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Identify and connect with HVAC contractors experienced in mini-split installations&lt;/li&gt;
+&lt;li&gt;Target homeowners who recently installed compatible HVAC systems&lt;/li&gt;
+&lt;li&gt;Track market trends and installation patterns across regions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previously, these objectives required extensive manual research and fragmented data sources.&lt;/p&gt;
+&lt;h3&gt;Leveraging Shovels: Comprehensive HVAC Intelligence&lt;/h3&gt;
+&lt;p&gt;Through Shovels' platform, Boldr now accesses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Real-time permit data for HVAC installations across thousands of jurisdictions&lt;/li&gt;
+&lt;li&gt;Detailed contractor information and installation history&lt;/li&gt;
+&lt;li&gt;Property characteristics and system specifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;div style="border-left: 4px solid #01654d; padding: 20px; background: #F9FAFB; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 20px;"&gt;
+  &lt;img src="/images/case-nicolas-boldr.jpeg" alt="Nícolas Fonteyne" width="100px" style="border-radius: 50px; flex-shrink: 0;"&gt;
+  &lt;div&gt;
+    &lt;p style="margin: 0 0 10px 0;"&gt;"Shovels provides us with actionable insights that we couldn't efficiently gather before. The platform's comprehensive coverage gives us confidence in our targeting strategy."&lt;/p&gt;
+    &lt;strong&gt;Nícolas Fonteyne&lt;/strong&gt;, Founding AI Engineer at Boldr
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Enhanced Features with Real-Time Update&lt;/h3&gt;
+&lt;p&gt;Boldr is particularly excited about upcoming features that will further enhance their capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Advanced Entity Extraction:&lt;/strong&gt; Automatically identify HVAC system types, brands, and specifications from permit descriptions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contractor Intelligence:&lt;/strong&gt; Enhanced contractor profiles with historical installation data and specialization tracking&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-time Alerts:&lt;/strong&gt; Instant notifications for new mini-split installations in target markets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 Coming Soon: Shovels’ enhanced contractor matching will enable Boldr to identify and reach out to the most active mini-split installers in any region.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Strategic Implementation&lt;/h3&gt;
+&lt;p&gt;Boldr's data-driven approach focuses on three key areas:&lt;/p&gt;
+&lt;h3&gt;1. &lt;strong&gt;Contractor Network Development&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Using Shovels' contractor data, Boldr identifies and reaches out to professionals with proven mini-split installation experience, creating a network of qualified partners.&lt;/p&gt;
+&lt;h3&gt;2. &lt;strong&gt;Targeted Homeowner Outreach&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;By analyzing recent permit data, Boldr connects with homeowners who have installed compatible systems, offering them enhanced control through the Boulder Thermostat.&lt;/p&gt;
+&lt;h3&gt;3. &lt;strong&gt;Market Trend Analysis&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Shovels' comprehensive data helps Boldr track installation trends, enabling strategic market entry and expansion decisions.&lt;/p&gt;
+&lt;h3&gt;Looking Ahead&lt;/h3&gt;
+&lt;p&gt;As Boldr continues to expand its market presence, the partnership with Shovels remains crucial to their growth strategy. With the upcoming Wolverine update, they're positioned to leverage even more powerful data insights.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"The combination of comprehensive permit data and advanced analytics will be game-changing for our market approach," Nícolas notes. "We're excited to see how these new capabilities will accelerate our growth."
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;📣 Ready to Transform Your Market Strategy?&lt;/h3&gt;
+&lt;p&gt;Whether you're in HVAC, construction, or any building-related industry, Shovels can help you turn permit data into actionable insights. &lt;a href="https://www.shovels.ai/contact"&gt;Contact us&lt;/a&gt; to learn how our platform can power your growth strategy.&lt;/p&gt;</content><category term="Case Study"></category><category term="spotlight"></category><category term="case"></category><category term="customer"></category><category term="boldr"></category></entry></feed>
