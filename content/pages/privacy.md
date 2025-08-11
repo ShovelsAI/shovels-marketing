@@ -3,7 +3,8 @@ Description: Read Shovels' privacy policy to understand how we collect, use, and
 slug: privacy
 template: legal
 
-**Privacy Policy**
+_Effective Date: January 7, 2025_
+
 Shovels, Inc. (the “Company”) is committed to maintaining robust privacy protections for its users.  Our Privacy Policy (“Privacy Policy”) is designed to help you understand how we collect, use and safeguard the information you provide to us and to assist you in making informed decisions when using our Service. 
 
 For purposes of this Agreement, “Site” refers to the Company’s website, which can be accessed at https://www.shovels.ai.
