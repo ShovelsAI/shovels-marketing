@@ -7,6 +7,7 @@ Tags: spotlight,case,customer,boldr
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg
 Author_title: VP of Growth
+Slug: case-study-boldr
 Summary: Boldr leverages Shovels' permit data to transform their HVAC go-to-market strategy from manual prospecting to data-driven precision targeting. They now identify qualified contractors and target homeowners with compatible systems using real-time permit insights, enabling strategic market expansion and trend analysis.
 image: /images/case-study-boldr.jpg
 
