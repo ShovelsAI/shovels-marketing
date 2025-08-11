@@ -40,7 +40,7 @@ Through Shovels' platform, Boldr now accesses:
 > 
 > 💬 "Shovels provides us with actionable insights that we couldn't efficiently gather before. The platform's comprehensive coverage gives us confidence in our targeting strategy."
 >
-> ![Nícolas Fonteyne]({static}/images/case-nicolas-boldr.jpeg){width=100px} Nícolas Fonteyne, Founding AI Engineer at Boldr
+> ![Nícolas Fonteyne](/images/case-nicolas-boldr.jpeg){width=100px} Nícolas Fonteyne, Founding AI Engineer at Boldr
 > 
 > </div>
 
