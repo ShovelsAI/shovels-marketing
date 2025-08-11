@@ -34,7 +34,7 @@
       {% endif %}
       <div class="block">
         <!-- Image placeholder -->
-        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle }}" class="aspect-[3/2] rounded-2xl bg-gray-100 object-cover">
+        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle }}" class="rounded-2xl bg-gray-100 object-contain">
         <!-- Title and date container -->
         <div class="break-words">
           <h1 class="my-5 text-5xl">
