@@ -36,12 +36,12 @@ Through Shovels' platform, Boldr now accesses:
 - Detailed contractor information and installation history
 - Property characteristics and system specifications
 
-> <div style="border-left: 4px solid #01654d; padding: 20px; background: #F9FAFB; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-> 
-> 💬 "Shovels provides us with actionable insights that we couldn't efficiently gather before. The platform's comprehensive coverage gives us confidence in our targeting strategy."
->
-> ![Nícolas Fonteyne](/images/case-nicolas-boldr.jpeg){width=100px} Nícolas Fonteyne, Founding AI Engineer at Boldr
-> 
+> <div style="border-left: 4px solid #01654d; padding: 20px; background: #F9FAFB; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 20px;">
+>   <img src="/images/case-nicolas-boldr.jpeg" alt="Nícolas Fonteyne" width="100px" style="border-radius: 50px; flex-shrink: 0;">
+>   <div>
+>     <p style="margin: 0 0 10px 0;">💬 "Shovels provides us with actionable insights that we couldn't efficiently gather before. The platform's comprehensive coverage gives us confidence in our targeting strategy."</p>
+>     <strong>Nícolas Fonteyne</strong>, Founding AI Engineer at Boldr
+>   </div>
 > </div>
 
 ### Enhanced Features with Real-Time Update
