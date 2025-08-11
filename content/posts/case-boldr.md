@@ -37,13 +37,11 @@ Through Shovels' platform, Boldr now accesses:
 - Detailed contractor information and installation history
 - Property characteristics and system specifications
 
-> <div style="border-left: 4px solid #01654d; padding: 20px; background: #F9FAFB; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 20px;">
->   <img src="/images/case-nicolas-boldr.jpeg" alt="Nícolas Fonteyne" width="100px" style="border-radius: 50px; flex-shrink: 0;">
->   <div>
->     <p style="margin: 0 0 10px 0;">"Shovels provides us with actionable insights that we couldn't efficiently gather before. The platform's comprehensive coverage gives us confidence in our targeting strategy."</p>
->     <strong>Nícolas Fonteyne</strong>, Founding AI Engineer at Boldr
->   </div>
-> </div>
+![Nícolas Fonteyne]({static}/images/case-nicolas-boldr.jpeg){width=200px}
+
+> **Nícolas Fonteyne**, Founding AI Engineer at Boldr
+> 
+> "Shovels provides us with actionable insights that we couldn't efficiently gather before. The platform's comprehensive coverage gives us confidence in our targeting strategy."
 
 ### Enhanced Features with Real-Time Update
 Boldr is particularly excited about upcoming features that will further enhance their capabilities:
@@ -53,7 +51,6 @@ Boldr is particularly excited about upcoming features that will further enhance 
 * **Real-time Alerts:** Instant notifications for new mini-split installations in target markets
 
 > 📌 Coming Soon: Shovels’ enhanced contractor matching will enable Boldr to identify and reach out to the most active mini-split installers in any region.
-> 
 
 
 ### Strategic Implementation
@@ -76,7 +73,6 @@ Shovels' comprehensive data helps Boldr track installation trends, enabling stra
 As Boldr continues to expand its market presence, the partnership with Shovels remains crucial to their growth strategy. With the upcoming Wolverine update, they're positioned to leverage even more powerful data insights.
 
 > "The combination of comprehensive permit data and advanced analytics will be game-changing for our market approach," Nícolas notes. "We're excited to see how these new capabilities will accelerate our growth."
-> 
 
 ### 📣 Ready to Transform Your Market Strategy?
 
