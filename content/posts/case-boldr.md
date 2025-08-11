@@ -37,7 +37,7 @@ Through Shovels' platform, Boldr now accesses:
 - Detailed contractor information and installation history
 - Property characteristics and system specifications
 
-![Nícolas Fonteyne]({static}/images/case-nicolas-boldr.jpeg){width=200px}
+![Nícolas Fonteyne]({static}/images/case-nicolas-boldr.jpg){width=200px}
 
 > **Nícolas Fonteyne**, Founding AI Engineer at Boldr
 > 
