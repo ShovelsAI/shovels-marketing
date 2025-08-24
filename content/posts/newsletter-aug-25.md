@@ -27,7 +27,7 @@ This month we also got the most government inbounds we've ever had, from Washing
 
 It feels like an exciting time to be aggregating and analyzing local government data. As always, we're glad to be along for the ride. 
 
-*You're getting this email because you reached out to us. We send one big newsletter each month. People seem to like it -- we now have over 4,700 subscribers!*
+*You're getting this email because you reached out to us. We send one big newsletter each month. People seem to like it -- we now have over 6,700 subscribers!*
 
 *Shovels transforms building permit data into actionable insights about contractors, homeowners, and market trends.*
 
