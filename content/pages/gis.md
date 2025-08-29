@@ -23,7 +23,7 @@ slug: gis
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Shovels feeds live, AI-powered building permit data directly into your Esri ArcGIS platform.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="mailto:sales@shovels.ai?subject=Interested in GIS" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
+          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a><a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-sm/6 font-semibold text-gray-900" target="_blank">ArcGIS Web Map<span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -45,12 +45,12 @@ slug: gis
     <div class="mx-auto max-w-2xl sm:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">Geospatial intelligence for the building trades</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">The earliest, most accurate signal of market growth</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Building permits are inherently geospatial objects that provide the earliest signal of market activity. Use them to see future developments first, optimize site selection, and de-risk major investments.</p>
+      <p class="mt-6 text-lg/8 text-gray-300">Building permits are inherently geospatial objects that provide the earliest signal of market activity. Use them to see future developments first, optimize site selection, and de-risk major investments. <a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-sm/6 font-semibold text-gray-300 hover:text-white" target="_blank">ArcGIS Web Map<span aria-hidden="true">&rarr;</span></a></p>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/esri-dashboard.png" alt="Esri ArcGIS permit dashboard" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442">
+      <img src="{static}/images/ArcGIS-map.jpg" alt="Esri ArcGIS permit map" class="mb-[-12%] rounded-2xl shadow-2xl ring-1 ring-white/10 overflow-hidden" width="2432" height="1442">
       <div class="relative" aria-hidden="true">
         <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
       </div>
@@ -204,7 +204,7 @@ slug: gis
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our geospatial building permit intelligence now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="mailto:sales@shovels.ai?subject=Interested in GIS" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
+      <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
     </div>
   </div>
 </div>

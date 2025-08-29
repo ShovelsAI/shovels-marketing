@@ -204,7 +204,7 @@ Given the variation in jurisdiction requirements for which fields are required, 
 
 ## Top 10 Most Useful Permit Fields
 
-There are 100 (!) different fields on a given permit flat file, but let’s highlight the most important ones. If any of these fields are empty, then [let us know](mailto:support@shovels.ai) and we’ll investigate.
+There are 100 (!) different fields on a given permit flat file, but let’s highlight the most important ones. If any of these fields are empty, then [let us know](/contact) and we’ll investigate.
 
 1. `File_date` : The date when the permit is filed with the permit department or jurisdiction.
 2. `Permit_number`: The local jurisdiction’s record identifier. 
@@ -225,6 +225,6 @@ We have three different delivery methods, which are suited for different busines
 
 But if you really want to get granular, then our enterprise-ready [Data Feed](https://www.shovels.ai/data-feed) will be best. You can either access the entire Shovels dataset in your warehouse of choice, or you can get the raw data in flat file and query it yourself. 
 
-No matter the use case, Shovels can get you what you need. Check out our [Free Trial](https://app.shovels.ai), or get in touch with [Sales](mailto:sales@shovels.ai) for data sample and demo call. 
+No matter the use case, Shovels can get you what you need. Check out our [Free Trial](https://app.shovels.ai), or get in touch with [Sales](/contact) for data sample and demo call. 
 
 Happy Digging!

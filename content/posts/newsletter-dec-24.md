@@ -44,7 +44,7 @@ Here are a few features that I personally love.
 - **See contractor permit volume over time**. This is new! We now have helpful charts on contractor profiles that show how permit volumes change over time. Group by month, quarter, or year.
 - **Jurisdiction profiles**. This was one of the major reasons for V2. We needed to refactor our API structure and how we filter by geographies and that led to this idea: profiles for every geography. Every city, every county, every address, every permit jurisdiction. You can see the very start of this now by clicking the **Search** menu in the top navigation.
 
-Note: We’re restricting free trials to one week. If you want to extend or talk about pricing options, please reach out! We’re friendly and want to help. Best email for that is [sales@shovels.ai](mailto:sales@shovels.ai). 
+Note: We’re restricting free trials to one week. If you want to extend or talk about pricing options, please reach out! We’re friendly and want to help. Best way to reach us is through our [contact page](/contact). 
 
 # An even better API
 

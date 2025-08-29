@@ -82,7 +82,7 @@ slug: pricing
           </td>
           <td class="py-8 px-1">
             <a class="pricing-button"
-              href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Bundle%2C%20Low&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
+              href="/contact"  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
               <img class="inline ml-1" src="theme/images/caret-right.svg">
@@ -90,7 +90,7 @@ slug: pricing
           </td>
           <td class="py-8 px-1">
             <a class="pricing-button"
-              href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Bundle%2C%20Medium&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
+              href="/contact"  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
               <img class="inline ml-1" src="theme/images/caret-right.svg">
@@ -98,7 +98,7 @@ slug: pricing
           </td>
           <td class="py-8 px-1">
             <a class="pricing-button"
-              href="mailto:sales@shovels.ai?subject=Inquiry%3A%20Bundle%2C%20High&body=Hi%20there%2C%20%0A%0AI'd%20like%20to%20know%20more%20about%20what%20you%20have%20to%20offer%20for%20the%20package%20mentioned%20in%20the%20subject%20line."  
+              href="/contact"  
             >
               <span class="whitespace-nowrap">Contact Sales</span>
               <img class="inline ml-1" src="theme/images/caret-right.svg">

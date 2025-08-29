@@ -63,7 +63,7 @@ With every data refresh (which will increase to weekly soon!), we strive to get 
 
 ## Get Started Today
 
-We pride ourselves, here at Shovels, on being the best of the bunch when it comes to refining permit data into business intelligence. If there are particular markets or segments that you want to prioritize, reach out to us at [sales@shovels.ai](mailto:sales@shovels.ai) and we can either affirm that we have coverage there, or increase our timeline on getting them for you. 
+We pride ourselves, here at Shovels, on being the best of the bunch when it comes to refining permit data into business intelligence. If there are particular markets or segments that you want to prioritize, [reach out to us](/contact) and we can either affirm that we have coverage there, or increase our timeline on getting them for you. 
 
 In the meantime, poke around in our [Web App](https://app.shovels.ai) with a Free Trial to see the “shovel-ready” data we have for you now. 
 
