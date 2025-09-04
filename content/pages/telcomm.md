@@ -28,7 +28,7 @@ slug: telecommunications
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="{static}/images/shovelsGuy-pose8.png" alt="Telecommunications infrastructure planning using building permit data">
+        <img class="relative max-h-[500px]" src="{static}/images/chuck-electrical2.svg" alt="Telecommunications infrastructure planning using building permit data">
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ slug: telecommunications
             Network Protection & Monitoring
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Monitor construction activities that could impact existing telecom infrastructure. Early detection of construction near network elements for damage prevention and strategic planning.</p>
+            <p class="flex-auto">Monitor construction activities that could impact existing telecom infrastructure. Detect construction near network elements early for damage prevention and strategic planning.</p>
           </dd>
         </div>
         <div class="flex flex-col">
@@ -117,22 +117,22 @@ slug: telecommunications
 
 
 
-<div class="overflow-hidden bg-white py-24 sm:py-32 hidden lg:block">
+<div class="overflow-hidden bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <p class="max-w-2xl text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-6xl">Get the Telecom One-pager</p>
+    <p class="max-w-2xl text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-6xl">Telecommunications permit database</p>
     <div class="mt-6 max-w-xl xl:col-end-1 xl:row-start-1">
       <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Let us help you optimize your telecom infrastructure planning and deployment.</p>
     </div>
-    <a href="https://www.canva.com/design/DAGuqAlsqoo/ouuYHQIhNiHhqmC5vIgPHw/view?utm_content=DAGuqAlsqoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc015198fc0" target="_blank">
-      <div class="relative overflow-hidden pt-16">
-        <div class="mx-auto max-w-7xl">
-          <img src="{static}/images/telecoms-one-pager.png" alt="Telecommunications one-pager" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10 cursor-pointer" width="2432" height="1442">
-          <div class="relative" aria-hidden="true">
-            <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"></div>
+    <div class="relative overflow-hidden pt-16">
+      <div class="mx-auto max-w-7xl">
+        <div class="rounded-xl shadow-2xl ring-1 ring-gray-900/10 mb-[-12%] overflow-hidden">
+          <img src="{static}/images/telecom_permits.png" alt="Telecommunications permits" class="w-full h-auto" width="2432" height="1442">
+        </div>
+        <div class="relative" aria-hidden="true">
+          <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"></div>
           </div>
         </div>
       </div>
-    </a>
   </div>
 </div>
 <div class="bg-gray-50 py-24 sm:py-32">
