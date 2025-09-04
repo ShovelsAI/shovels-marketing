@@ -39,7 +39,7 @@ slug: telecommunications
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">Telecom Infrastructure Intelligence</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Use AI to Predict Fiber Expansion Opportunities</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Shovels uses proprietary LLM strategies to tag and classify hundreds of millions of building permits to identify high-growth areas needing telecom infrastructure, whether that is brownfield or greenfield projects.</p>
+      <p class="mt-6 text-lg/8 text-gray-300">Shovels uses proprietary LLM strategies to tag and classify hundreds of millions of building permits to identify high-growth areas where active or future telecom infrastructure is being deployed.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -51,7 +51,7 @@ slug: telecommunications
             Monitor Competitive Activity
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Our fiber permit classification reveals where competitors like AT&T, Verizon, and Charter are actively building, enabling strategic market entry decisions and investment prioritization.</p>
+            <p class="flex-auto">Our fiber permit classification reveals where ISPs and network providers, from Tier 1s such as AT&T, Verizon, and Charter to Tier 3 providers are actively building, enabling strategic market entry decisions and investment prioritization.</p>
           </dd>
         </div>
         <div class="flex flex-col">
