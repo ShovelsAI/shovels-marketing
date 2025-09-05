@@ -19,9 +19,9 @@ slug: telecommunications
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Find Network Expansion Opportunities Nationwide</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Accelerate internet infrastructure deployment with permit intelligence</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Optimize fiber deployment using building permit data across 2,000+ jurisdictions throughout the country, representing ~90% coverage of the US population.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Pinpoint permit filings for fiber, 5G, data centers, and utility infrastructure—across 2,000+ jurisdictions, covering 90% of the U.S. population.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
           <a href="https://www.canva.com/design/DAGuqAlsqoo/ouuYHQIhNiHhqmC5vIgPHw/view?utm_content=DAGuqAlsqoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc015198fc0" class="text-sm/6 font-semibold text-gray-900" target="_blank">Telecom One-pager <span aria-hidden="true">&rarr;</span></a>
@@ -121,11 +121,11 @@ slug: telecommunications
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <p class="max-w-2xl text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-6xl">Telecommunications permit database</p>
     <div class="mt-6 max-w-xl xl:col-end-1 xl:row-start-1">
-      <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Let us help you optimize your telecom infrastructure planning and deployment.</p>
+      <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Power faster, smarter telecom infrastructure deployment.</p>
     </div>
     <div class="relative overflow-hidden pt-16">
       <div class="mx-auto max-w-7xl">
-        <div class="rounded-xl shadow-2xl ring-1 ring-gray-900/10 mb-[-12%] overflow-hidden">
+        <div class="rounded-lg shadow-2xl ring-1 ring-gray-900/10 mb-[-12%] overflow-hidden">
           <img src="{static}/images/telecom_permits.png" alt="Telecommunications permits" class="w-full h-auto" width="2432" height="1442">
         </div>
         <div class="relative" aria-hidden="true">
@@ -138,7 +138,7 @@ slug: telecommunications
 <div class="bg-gray-50 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Challenges We Solve for Telecoms</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Challenges We Solve for Telecommunications</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Address the unique pain points faced by telecommunications companies in infrastructure planning and deployment.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -171,6 +171,26 @@ slug: telecommunications
     </div>
   </div>
 </div>
+
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+        <div class="max-w-xl lg:max-w-lg">
+          <img src="{static}/images/ArcGIS-map.jpg" alt="ArcGIS map showing building permits nationwide" class="rounded-lg shadow-lg">
+        </div>
+        <div class="max-w-xl lg:max-w-lg">
+          <p class="text-base/7 font-semibold text-shovels-secondary">Geospatial intelligence powering your telecom strategy</p>
+          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">175M Permits Nationwide, Mapped</h2>
+          <p class="mt-6 text-lg/8 text-gray-300">
+            Building permits are inherently geospatial objects that provide the earliest signal of market activity. Through our <a href="{filename}gis.md" class="text-shovels-secondary hover:text-shovels-secondary/80">Esri partnership</a>, empower your GIS team to visualize internet, new construction, and other high-signal permits to strengthen your telecom strategy. <a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-shovels-secondary hover:text-shovels-secondary/80" target="_blank">ArcGIS Web Map <span aria-hidden="true">→</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
