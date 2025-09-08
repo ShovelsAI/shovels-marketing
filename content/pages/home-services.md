@@ -39,9 +39,7 @@ slug: home-services
       <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clients</h2>
       <div class="flex w-full max-w-4xl flex-wrap items-center justify-center gap-x-16 gap-y-8">
         <img class="max-h-24 w-48 object-contain" src="{static}/images/housecall-pro.png" alt="Housecall Pro and Shovels">
-        <img class="max-h-24 w-48 object-contain" src="{static}/images/home-solutions.svg" alt="Home Solutions and Shovels">
         <img class="max-h-24 w-48 object-contain" src="{static}/images/houzz.png" alt="Houzz and Shovels">
-        <img class="max-h-24 w-48 object-contain" src="{static}/images/thumbtack.png" alt="Thumbtack and Shovels">
         <img class="max-h-12 w-48 object-contain" src="{static}/images/angi.svg" alt="Angi and Shovels">
       </div>
     </div>

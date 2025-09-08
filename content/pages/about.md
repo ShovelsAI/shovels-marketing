@@ -165,12 +165,11 @@ slug: about
 <div class="bg-white py-12 sm:py-16">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/oracle.svg" alt="Oracle and Shovels" width="158" height="48">
       <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/pearl.png" alt="Statamic" width="158" height="48">
       <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/schneider.svg" alt="SavvyCal" width="158" height="48">
       <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/topbuild.svg" alt="TopBuild" width="158" height="48">
       <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/angi.svg" alt="Angi" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/buildertrend.png" alt="BuilderTrend" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/boldr.png" alt="Boldr" width="158" height="48">
       <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/beam.svg" alt="Beam" width="158" height="48">
       <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/houzz.svg" alt="Houzz" width="158" height="48">
       <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/rewiring.png" alt="Rewiring America" width="158" height="48">
