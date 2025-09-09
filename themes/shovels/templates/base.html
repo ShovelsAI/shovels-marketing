@@ -23,13 +23,19 @@
     [x-cloak] { display: none !important; }
   </style>
 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KZGJM6CW');</script>
+  <!-- End Google Tag Manager -->
+
   <!-- Preload critical fonts with high fetchpriority -->
   <link rel="preload" href="/theme/webfonts/Scandia-Regular.woff" as="font" type="font/woff" crossorigin fetchpriority="high">
   <link rel="preload" href="/theme/webfonts/Scandia-Medium.woff" as="font" type="font/woff" crossorigin fetchpriority="high">
   <link rel="preload" href="/theme/webfonts/Scandia-Bold.woff" as="font" type="font/woff" crossorigin fetchpriority="high">
   
-  <!-- Inline minimal GTM -->
-  <script>window.dataLayer = window.dataLayer || [];</script>
 
   <!-- Critical meta tags -->
   <title>{% block title %}{{ SITENAME }} The API for building permits and building contractors{% endblock title %}</title>
@@ -68,6 +74,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZGJM6CW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {% if generator %}
     {% set climate_articles = get_climate_articles(generator) %}
   {% else %}
@@ -105,14 +115,6 @@
 
   <!-- Analytics (low priority) -->
   <script>
-    // Defer GTM load
-    window.addEventListener('load', function() {
-      const script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-WK2X5JG';
-      script.async = true;
-      document.head.appendChild(script);
-    });
-    
     // Defer HubSpot load
     window.addEventListener('load', function() {
       const script = document.createElement('script');
@@ -184,8 +186,6 @@
   {% endif %}
   <meta name="twitter:image" content="{% if article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}">
   
-  <!-- GTM noscript fallback -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 </html>
