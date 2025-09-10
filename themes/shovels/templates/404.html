@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}404 - Page Not Found - Shovels{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <meta name="description" content="The page you're looking for doesn't exist. Explore our building permit and contractor intelligence platform.">
+{% endblock %}
+
+{% block content %}
+
+<div class="mx-auto max-w-4xl px-6 py-16 lg:px-8">
+  <div class="text-center">
+    <!-- 404 Icon/Image -->
+    <div class="mb-8">
+      <img src="/images/chuck_distressed.png" alt="404 - Page Not Found" class="mx-auto h-64 w-64">
+    </div>
+    
+    <!-- Error Message -->
+    <h1 class="text-6xl font-bold text-gray-900 mb-4">404</h1>
+    <h2 class="text-2xl font-semibold text-gray-700 mb-6">Oops! We've hit a wall.</h2>
+    <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+      Looks like this page got lost in the construction zone! The page you're looking for might have been moved, deleted, or you might have entered the wrong URL. Let's get you back on track.
+    </p>
+    
+    <!-- Action Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+        🏠 Go Home
+      </a>
+      <a href="/blog/" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+        📊 Browse Content
+      </a>
+      <a href="/contact" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+        💬 Contact Us
+      </a>
+    </div>
+    
+    <!-- Search Box -->
+    <div class="mt-12 max-w-md mx-auto">
+      <h3 class="text-lg font-medium text-gray-900 mb-4">Looking for permit data or reports?</h3>
+      <form action="/blog/" method="get" class="flex">
+        <input type="text" name="q" placeholder="Search permit data, reports..." class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:ring-blue-500 focus:border-blue-500">
+        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700 transition-colors">
+          🔍 Search
+        </button>
+      </form>
+    </div>
+    
+    <!-- Popular Links -->
+    <div class="mt-16">
+      <h3 class="text-lg font-medium text-gray-900 mb-6">Popular Pages</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <a href="/about" class="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+          <h4 class="font-medium text-gray-900">About Shovels</h4>
+          <p class="text-sm text-gray-600 mt-1">Learn about our platform</p>
+        </a>
+        <a href="/api" class="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+          <h4 class="font-medium text-gray-900">API Documentation</h4>
+          <p class="text-sm text-gray-600 mt-1">Developer resources</p>
+        </a>
+        <a href="/contractor-directory" class="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+          <h4 class="font-medium text-gray-900">Contractor Directory</h4>
+          <p class="text-sm text-gray-600 mt-1">Find contractors</p>
+        </a>
+        <a href="/contact" class="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+          <h4 class="font-medium text-gray-900">Contact</h4>
+          <p class="text-sm text-gray-600 mt-1">Get in touch</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
