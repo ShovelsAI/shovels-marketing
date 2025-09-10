@@ -17,7 +17,7 @@ slug: climate
 {% endblock background_pattern %}
 
 <div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-24 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
       <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Reach every building electrification contractor</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -34,6 +34,14 @@ slug: climate
     </div>
   </div>
   <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+</div>
+<div class="bg-white pb-4 sm:pb-8 pt-4 sm:pt-8">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto flex max-w-md items-center justify-center gap-x-8 sm:gap-x-12">
+      <img class="h-8 w-auto object-contain" src="{static}/images/haven-logo.svg" alt="Haven">
+      <img class="h-[30px] w-auto object-contain" src="{static}/images/treehouse_logo_resize.png" alt="Treehouse">
+    </div>
+  </div>
 </div>
 <div class="bg-gray-100 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">

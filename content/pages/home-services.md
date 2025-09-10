@@ -23,7 +23,7 @@ slug: home-services
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">The most complete contractor database in America. Trusted by Angi, Thumbtack, Houzz, and other leading home services companies to find, verify, and enrich contractor data at scale.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">Contact Sales</a>
+          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
         </div>
       </div>
       <div class="mt-10 hidden aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:block lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">

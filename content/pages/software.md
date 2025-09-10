@@ -35,6 +35,15 @@ slug: software
   </div>
   <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
 </div>
+<div class="bg-white pb-4 sm:pb-8 pt-2 sm:pt-4">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto flex max-w-lg items-center justify-center gap-x-8 sm:gap-x-12">
+      <img class="h-12 w-auto object-contain" src="{static}/images/planhub_logo_blue.png" alt="PlanHub">
+      <img class="h-12 w-auto object-contain" src="{static}/images/pulley_logo.svg" alt="Pulley">
+      <img class="h-12 w-auto object-contain" src="{static}/images/billd_logo.svg" alt="Billd">
+    </div>
+  </div>
+</div>
 <section class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
