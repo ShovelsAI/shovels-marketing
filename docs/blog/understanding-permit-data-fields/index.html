@@ -21,12 +21,17 @@
     /* Hide Alpine.js elements before it loads */
     [x-cloak] { display: none !important; }
   </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KZGJM6CW');</script>
+<!-- End Google Tag Manager -->
 <!-- Preload critical fonts with high fetchpriority -->
 <link as="font" crossorigin="" fetchpriority="high" href="/theme/webfonts/Scandia-Regular.woff" rel="preload" type="font/woff"/>
 <link as="font" crossorigin="" fetchpriority="high" href="/theme/webfonts/Scandia-Medium.woff" rel="preload" type="font/woff"/>
 <link as="font" crossorigin="" fetchpriority="high" href="/theme/webfonts/Scandia-Bold.woff" rel="preload" type="font/woff"/>
-<!-- Inline minimal GTM -->
-<script>window.dataLayer = window.dataLayer || [];</script>
 <!-- Critical meta tags -->
 <title>Shovels |  Understanding Permit Data Fields</title>
 <meta content="The Shovels permit database has many fields, which are sometimes blank. Use the Data Dictionary to understand what these fields mean, and why some might be..." name="description"/>
@@ -47,17 +52,26 @@
 <meta content="permits" name="tags">
 <meta content="tutorial" name="tags"/>
 <meta content="resource" name="tags"/>
+<!-- Force Open Graph image priority -->
+<meta content="https://www.shovels.ai/images/shovels-101-permit-fields.png" property="og:image"/>
+<meta content="https://www.shovels.ai/images/shovels-101-permit-fields.png" property="og:image:secure_url"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
 <!-- Favicons (low priority) -->
 <link href="/theme/images/favicon-32x32.png" rel="icon" type="image/png"/>
 </meta></meta><link href="https://www.shovels.ai/blog/understanding-permit-data-fields/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Shovels | ", "item": "https://www.shovels.ai"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.shovels.ai/blog"}, {"@type": "ListItem", "position": 3, "name": "Understanding permit data fields", "item": "https://www.shovels.ai/blog/understanding-permit-data-fields"}, {"@type": "ListItem", "position": 4, "name": "Index", "item": "https://www.shovels.ai/blog/understanding-permit-data-fields/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Alex Brown"}, "publisher": {"@type": "Organization", "name": "Shovels | "}, "headline": "<p>Understanding Permit Data Fields</p>", "about": "Customer Success", "datePublished": "2024-10-09 00:00", "image": "/images/shovels-101-permit-fields.png"}</script></head>
 <body>
-<div x-data="{ mobileOpen: false }">
-<div class="max-w-7xl mx-auto flex items-center justify-between py-8 px-6 md:justify-start md:space-x-10">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KZGJM6CW" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div :class="scrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'" class="sticky top-0 z-50 transition-all duration-300" x-data="{ mobileOpen: false, scrolled: false }" x-init="window.addEventListener('scroll', () =&gt; { scrolled = window.scrollY &gt; 10 })">
+<div :class="scrolled ? 'py-3' : 'py-8'" class="max-w-7xl mx-auto flex items-center justify-between px-6 md:justify-start md:space-x-10 transition-all duration-300">
 <div class="flex justify-start lg:w-0 lg:flex-1">
 <a href="/">
 <span class="sr-only">Shovels</span>
 <a class="no-underline hover:no-underline transform transition hover:scale-105 duration-300 ease-in-out mt-0" href="/">
-<img alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12" id="navbar-logo" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
+<img :class="scrolled ? 'h-6 sm:h-8' : 'h-10 sm:h-12'" alt="Shovels - Building permit and contractor intelligence" class="h-10 w-auto sm:h-12 transition-all duration-300" id="navbar-logo" src="https://www.shovels.ai/theme/images/shovels-navbar-logo.svg"/>
 </a>
 </a>
 </div>
@@ -69,7 +83,7 @@
 </svg>
 </button>
 </div>
-<nav class="hidden space-x-10 md:flex">
+<nav class="hidden space-x-10 md:flex items-center">
 <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
 <button @click="open = ! open" class="navbar_item group" type="button">
 <span>Customers</span>
@@ -81,6 +95,15 @@
 <div class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2" x-cloak="" x-show="open">
 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
 <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/building-materials">
+<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<div class="ml-4">
+<p class="text-base text-emerald-900">Building Materials &amp; Equipment Suppliers</p>
+<p class="mt-1 text-sm text-emerald-800">Target the most active contractors and pull permit data directly into your data warehouse.</p>
+</div>
+</a>
 <a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/software">
 <svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -99,13 +122,13 @@
 <p class="mt-1 text-sm text-emerald-800">Track building electrification progress and see who does the best work.</p>
 </div>
 </a>
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/building-materials">
-<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/home-services">
+<svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 <div class="ml-4">
-<p class="text-base text-emerald-900">Building Materials &amp; Equipment Suppliers</p>
-<p class="mt-1 text-sm text-emerald-800">Target the most active contractors and pull permit data directly into your data warehouse.</p>
+<p class="text-base text-emerald-900">Home Services</p>
+<p class="mt-1 text-sm text-emerald-800">Identify homeowners and contractors who perform home maintenance.</p>
 </div>
 </a>
 <a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/real-estate">
@@ -117,20 +140,19 @@
 <p class="mt-1 text-sm text-emerald-800">Use building permit data to enhance your site selection process.</p>
 </div>
 </a>
-
-<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/home-services">
-<svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"></path>
+<a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/telecommunications">
+<svg class="w-6 h-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 <div class="ml-4">
-<p class="text-base text-emerald-900">Home Services</p>
-<p class="mt-1 text-sm text-emerald-800">Identify homeowners and contractors who perform home maintenance.</p>
+<p class="text-base text-emerald-900">Telecommunications</p>
+<p class="mt-1 text-sm text-emerald-800">Optimize fiber deployment and track competitor activity across 2,000+ jurisdictions.</p>
 </div>
 </a>
 </div>
 <div class="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
 <div class="flow-root">
-<a class="-m-3 flex items-center rounded-md p-3 text-base text-emerald-900 hover:bg-gray-100" href="mailto:sales@shovels.ai">
+<a class="-m-3 flex items-center rounded-md p-3 text-base text-emerald-900 hover:bg-gray-100" href="https://www.shovels.ai/contact">
 <svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
 <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
@@ -206,6 +228,16 @@
 </div>
 </a>
 </div>
+<div class="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+<div class="flow-root">
+<a class="-m-3 flex items-center rounded-md p-3 text-base text-emerald-900 hover:bg-gray-100" href="https://www.shovels.ai/contact">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3">Contact Sales</span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -218,6 +250,16 @@
 </button>
 <div class="absolute z-10 left-1/2 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0" x-cloak="" x-show="open">
 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+<div class="flow-root">
+<a class="-m-3 flex items-center rounded-md p-3 text-base text-emerald-900 hover:bg-gray-100" href="https://www.shovels.ai/contact">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3">Contact Sales</span>
+</a>
+</div>
+</div>
 <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
 <a class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" href="https://www.shovels.ai/blog">
 <svg class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -270,13 +312,13 @@
 <h3 class="text-base text-emerald-800">Recent Blog Posts</h3>
 <ul class="mt-4 space-y-4" role="list">
 <li class="truncate text-base">
-<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/case-study-boldr/"><p>Customer Spotlight: How Boldr Leverages Shovels for Go-to-Market Success</p></a>
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/shovels-quarterly-permit-index-q2-2025/"><p>Shovels Quarterly Permit Index: Q2 2025</p></a>
 </li>
 <li class="truncate text-base">
-<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/virginia-data-center-permit-trends/"><p>Virginia’s Data Center Dominance: A Deep Dive into Permit Trends</p></a>
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/august-2025-newsletter/"><p>August 2025 Newsletter</p></a>
 </li>
 <li class="truncate text-base">
-<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/shovels-spotlight-how-bzail-uses-real-time-permit-intelligence-to-transform-cre-site-selection/"><p>Shovels Spotlight: How BZAiL Uses Real-Time Permit Intelligence To Transform CRE Site Selection</p></a>
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/case-study-copper/"><p>Customer Spotlight: Copper Accelerates Home Electrification with Shovels API</p></a>
 </li>
 </ul>
 </div>
@@ -291,8 +333,8 @@
 </div>
 </div>
 <!--<a href="https://www.shovels.ai/pricing" class="navbar_item">Pricing</a>-->
-<a class="navbar_item" href="https://www.shovels.ai/contact">Contact Us</a>
-<a class="navbar_item font-semibold" href="https://app.shovels.ai">Sign In</a>
+<a class="navbar_item" href="https://app.shovels.ai">Sign In</a>
+<a class="inline-flex items-center justify-center rounded-md bg-shovels-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary" href="https://app.shovels.ai/signup/">Get Started</a>
 </nav>
 <!--
   <div class="hidden items-center justify-end space-x-8 md:flex md:flex-1 lg:w-0">
@@ -311,7 +353,7 @@ Leaving: "duration-100 ease-in"
   From: "opacity-100 scale-100"
   To: "opacity-0 scale-95"
 -->
-<div class="absolute z-10 inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+<div class="fixed z-40 inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
 <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5" x-show="mobileOpen">
 <div class="px-5 pt-5 pb-6">
 <div class="flex items-center justify-between">
@@ -329,11 +371,11 @@ Leaving: "duration-100 ease-in"
 </div>
 <div class="mt-6">
 <nav class="grid gap-y-8">
-<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/software">
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/building-materials">
 <svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
-<path d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<span class="ml-3 text-base text-emerald-900">Construction Software</span>
+<span class="ml-3 text-base text-emerald-900">Building Materials &amp; Equipment Suppliers</span>
 </a>
 <a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/climate">
 <svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
@@ -341,11 +383,11 @@ Leaving: "duration-100 ease-in"
 </svg>
 <span class="ml-3 text-base text-emerald-900">Energy &amp; Climate</span>
 </a>
-<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/building-materials">
-<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
-<path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/home-services">
+<svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<span class="ml-3 text-base text-emerald-900">Building Materials &amp; Equipment Suppliers</span>
+<span class="ml-3 text-base text-emerald-900">Home Services</span>
 </a>
 <a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/real-estate">
 <svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
@@ -353,11 +395,17 @@ Leaving: "duration-100 ease-in"
 </svg>
 <span class="ml-3 text-base text-emerald-900">Real Estate</span>
 </a>
-<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/home-services">
-<svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"></path>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/software">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<span class="ml-3 text-base text-emerald-900">Home Services</span>
+<span class="ml-3 text-base text-emerald-900">Construction Software</span>
+</a>
+<a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/telecommunications">
+<svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="ml-3 text-base text-emerald-900">Telecommunications</span>
 </a>
 <a class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" href="https://www.shovels.ai/permit-database">
 <svg aria-hidden="true" class="h-6 w-6 flex-shrink-0 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
@@ -629,7 +677,7 @@ Leaving: "duration-100 ease-in"
 </ol>
 <p>Given the variation in jurisdiction requirements for which fields are required, or even included, on their permits, it can be difficult for a single database schema to show only the relevant fields for a given permit. It’s definitely something we’re keeping in mind, but for the moment we trust that you’ll understand that not all fields are equally important. </p>
 <h2>Top 10 Most Useful Permit Fields</h2>
-<p>There are 100 (!) different fields on a given permit flat file, but let’s highlight the most important ones. If any of these fields are empty, then <a href="mailto:support@shovels.ai">let us know</a> and we’ll investigate.</p>
+<p>There are 100 (!) different fields on a given permit flat file, but let’s highlight the most important ones. If any of these fields are empty, then <a href="/contact">let us know</a> and we’ll investigate.</p>
 <ol>
 <li><code>File_date</code> : The date when the permit is filed with the permit department or jurisdiction.</li>
 <li><code>Permit_number</code>: The local jurisdiction’s record identifier. </li>
@@ -646,7 +694,7 @@ Leaving: "duration-100 ease-in"
 <h2>Customize the Data to Your Needs</h2>
 <p>We have three different delivery methods, which are suited for different business needs. If you want simple data that can be accessed codelessly, then the <a href="https://www.shovels.ai/permit-database">Web App</a> will be perfect for you. If you want a bit more, which can be programmatically integrated with your platform or product offering, then our <a href="https://www.shovels.ai/api">API</a> would be better. </p>
 <p>But if you really want to get granular, then our enterprise-ready <a href="https://www.shovels.ai/data-feed">Data Feed</a> will be best. You can either access the entire Shovels dataset in your warehouse of choice, or you can get the raw data in flat file and query it yourself. </p>
-<p>No matter the use case, Shovels can get you what you need. Check out our <a href="https://app.shovels.ai">Free Trial</a>, or get in touch with <a href="mailto:sales@shovels.ai">Sales</a> for data sample and demo call. </p>
+<p>No matter the use case, Shovels can get you what you need. Check out our <a href="https://app.shovels.ai">Free Trial</a>, or get in touch with <a href="/contact">Sales</a> for data sample and demo call. </p>
 <p>Happy Digging!</p>
 </article>
 </div>
@@ -663,19 +711,22 @@ Leaving: "duration-100 ease-in"
 <h3 class="text-sm leading-6 text-amber-300">Customers</h3>
 <ul class="mt-6" role="list">
 <li>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/building-materials">Building Material Suppliers</a>
+</li>
+<li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/software">Construction Technology</a>
 </li>
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/climate">Energy &amp; Climate</a>
 </li>
 <li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/building-materials">Building Material Suppliers</a>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/home-services">Home Services</a>
 </li>
 <li>
 <a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/real-estate">Real Estate</a>
 </li>
 <li>
-<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/home-services">Home Services</a>
+<a class="text-sm leading-6 hover:text-amber-500" href="https://www.shovels.ai/telecommunications">Telecommunications</a>
 </li>
 </ul>
 </div>
@@ -754,9 +805,9 @@ Leaving: "duration-100 ease-in"
 </div>
 <div class="mt-10 xl:mt-0">
 <h3 class="text-[32px] font-medium text-lime-50 leading-none">Subscribe to our newsletter</h3>
-<p class="my-4 leading-6 text-base">We'll share feature releases, data updates, and new products.</p>
+<p class="mb-2 mt-4 leading-6 text-base">We'll share feature releases, data updates, and new products.</p>
 <script defer="" src="https://js.hsforms.net/forms/embed/48146409.js"></script>
-<div class="hs-form-frame" data-form-id="e690afba-355e-48da-9c7a-9877feb6199d" data-portal-id="48146409" data-region="na1"></div>
+<div class="hs-form-frame !pl-0 !ml-0" data-form-id="e690afba-355e-48da-9c7a-9877feb6199d" data-portal-id="48146409" data-region="na1" style="padding-left:0;margin-left:0;"></div>
 </div>
 </div>
 <div class="mt-16 border-t border-stone-200/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
@@ -804,14 +855,6 @@ Leaving: "duration-100 ease-in"
   </script>
 <!-- Analytics (low priority) -->
 <script>
-    // Defer GTM load
-    window.addEventListener('load', function() {
-      const script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-WK2X5JG';
-      script.async = true;
-      document.head.appendChild(script);
-    });
-    
     // Defer HubSpot load
     window.addEventListener('load', function() {
       const script = document.createElement('script');
@@ -857,7 +900,5 @@ Leaving: "duration-100 ease-in"
 <meta content="Understanding Permit Data Fields - Shovels" name="twitter:title"/>
 <meta content="The Shovels permit database has many fields, which are sometimes blank. Use the Data Dictionary to understand what these fields mean, and why some might be..." name="twitter:description"/>
 <meta content="https://www.shovels.ai/images/shovels-101-permit-fields.png" name="twitter:image"/>
-<!-- GTM noscript fallback -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK2X5JG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 </body>
 </html>

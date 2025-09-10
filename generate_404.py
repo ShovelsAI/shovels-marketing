@@ -12,7 +12,7 @@ def generate_404():
     """Generate the 404.html page using the template."""
     try:
         # Load Pelican settings
-        settings = read_settings('pelicanconf.py')
+        settings = read_settings('publishconf.py')
         
         # Set up Jinja2 environment
         template_dir = 'themes/shovels/templates'
