@@ -50,6 +50,7 @@ help:
 
 html:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+	python3 generate_404.py
 
 clean:
 	[ ! -d "$(OUTPUTDIR)" ] || rm -rf "$(OUTPUTDIR)"
@@ -73,6 +74,7 @@ publish:
 	npm run build:css:prod
 	pelican content -o docs -s publishconf.py
 	cp themes/shovels/static/css/output.css docs/output.css
+	python3 generate_404.py
 	echo "www.shovels.ai" > docs/CNAME
 	git add .
 	git commit -am "publishing"
