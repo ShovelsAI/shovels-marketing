@@ -46,6 +46,7 @@ jobs:
       run: |
         pelican content -o docs -s publishconf.py
         cp themes/shovels/static/css/output.css docs/output.css
+        python3 generate_404.py
         echo "www.shovels.ai" > docs/CNAME
         touch docs/.nojekyll
     
