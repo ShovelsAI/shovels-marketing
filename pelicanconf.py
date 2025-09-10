@@ -63,4 +63,8 @@ FILENAME_METADATA = '(?P<title>.*)'
 JINJA2CONTENT_TEMPLATES = ['content']
 LOAD_CONTENT_CACHE = False
 
+# 404 page configuration
+ERROR_404_SAVE_AS = '404.html'
+ERROR_404_URL = '404.html'
+
 DELETE_OUTPUT_DIRECTORY = True
