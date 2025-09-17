@@ -24,9 +24,10 @@ Building permits are a goldmine of market intelligence, but they've historically
 
 We solve this problem by using AI to aggregate, clean, and standardize millions of permits into a single, GIS-ready data source. By making this available as a hosted feature layer in ArcGIS, we provide a live feed of future construction activity directly within your existing mapping environment.
 
-Check out our [demo feature layer](https://shovels.maps.arcgis.com/home/item.html?id=4ae603d5b75a432ab924fe794bedcf19) containing construction permit records for Los Angeles County, California, from June 1, 2025 to August 31, 2025. The data provides comprehensive insights into building and construction activities across the county, with enhanced categorization to support analysis and decision-making. The map features detailed project categorization, contractor information, and location data for residential and commercial development activities.
+Check out our [demo feature layer](https://shovels.maps.arcgis.com/home/item.html?id=4ae603d5b75a432ab924fe794bedcf19) containing construction permit records for Los Angeles County, California, from June 1, 2025 to August 31, 2025: 
 
 ![ArcGIS map of Los Angeles County construction permits]({static}/images/blog_images/LA_esri_map.png)
+The data provides comprehensive insights into building and construction activities across the county, with enhanced categorization to support analysis and decision-making. The map features detailed project categorization, contractor information, and location data for residential and commercial development activities.
 
 
 This isn't just about finding leads; it's about fundamentally changing how organizations plan, invest, and compete. Let's look at what this means for key Esri verticals. 
