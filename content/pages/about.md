@@ -164,15 +164,14 @@ slug: about
 </div>
 <div class="bg-white py-12 sm:py-16">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/pearl.png" alt="Statamic" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/schneider.svg" alt="SavvyCal" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/topbuild.svg" alt="TopBuild" width="158" height="48">
-      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/angi.svg" alt="Angi" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="theme/images/home/beam.svg" alt="Beam" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/houzz.svg" alt="Houzz" width="158" height="48">
-      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/rewiring.png" alt="Rewiring America" width="158" height="48">
-      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="theme/images/home/paintjet.png" alt="PaintJet" width="158" height="48">
+    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-8 px-8 py-8 max-w-6xl mx-auto">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/pearl.png" alt="Pearl">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/schneider.svg" alt="Schneider Electric">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/topbuild.svg" alt="TopBuild">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/angi.svg" alt="Angi">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/beam.svg" alt="Beam">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/rewiring.png" alt="Rewiring America">
+      <img class="max-w-[120px] lg:max-w-[140px] max-h-12" src="theme/images/home/paintjet.png" alt="PaintJet">
     </div>
     <div class="mt-16 flex justify-center">
       <p class="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
