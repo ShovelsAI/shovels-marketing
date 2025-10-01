@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels |</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/all.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-09-08T00:00:00-07:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels |</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/all.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-09-16T00:00:00-07:00</updated><entry><title>Introduction to Shovels</title><link href="https://www.shovels.ai/blog/introduction-to-shovels/" rel="alternate"></link><published>2022-11-08T00:00:00-08:00</published><updated>2022-11-10T00:00:00-08:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2022-11-08:/blog/introduction-to-shovels/</id><summary type="html">&lt;p&gt;I'm thrilled to announce the launch of Shovels, a revolutionary platform that aims to transform the way we discover and evaluate building contractors. With Shovels, we address the agency problem in the trades by providing comprehensive data on contractors' permits, inspections, and key metrics across multiple jurisdictions.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Ryan Buckley sent this newsletter about the launch of Shovels&lt;/h2&gt;
 &lt;p&gt;&lt;br&gt;
 Hello friends, advisors, and (a few) relatives! &lt;/p&gt;
 &lt;p&gt;After a bit of a hiatus, I'm really excited to launch a new company along with an incredible team. &lt;/p&gt;
@@ -6273,4 +6273,183 @@ Spencer, we're just warming up.&lt;/p&gt;
   &lt;div style="flex: 0 0 220px; min-width: 180px; text-align: right;"&gt;
     &lt;img src="https://www.shovels.ai/images/shovelsGuy-pose10@2x.png" alt="Chuck the Shovels Guy" style="max-width: 150px; width: 100%; height: auto;"&gt;
   &lt;/div&gt;
-&lt;/div&gt;</content><category term="Data"></category><category term="permit index"></category><category term="contractor index"></category></entry></feed>
+&lt;/div&gt;</content><category term="Data"></category><category term="permit index"></category><category term="contractor index"></category></entry><entry><title>What Is an AHJ in Construction? A Guide to Permits and Jurisdictions in the U.S.</title><link href="https://www.shovels.ai/blog/ahj-in-construction/" rel="alternate"></link><published>2025-09-15T00:00:00-07:00</published><updated>2025-09-15T00:00:00-07:00</updated><author><name>Morgan Friberg</name></author><id>tag:www.shovels.ai,2025-09-15:/blog/ahj-in-construction/</id><summary type="html">&lt;p&gt;Learn what an AHJ in construction is, how Authority Having Jurisdiction impacts permits, and how to streamline AHJ permitting in the United States.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When it comes to construction projects in the United States, one acronym comes up repeatedly: &lt;strong&gt;AHJ&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you’ve ever asked &lt;em&gt;“what is an AHJ in construction?”&lt;/em&gt; or struggled with delays tied to &lt;strong&gt;AHJ permitting&lt;/strong&gt;, you’re not alone. Understanding the role of the &lt;strong&gt;Authority Having Jurisdiction (AHJ)&lt;/strong&gt; is critical for avoiding costly mistakes and keeping your project on schedule. This blog breaks down &lt;strong&gt;AHJ in construction&lt;/strong&gt;, how it affects permits, and what you need to know before you break ground.&lt;/p&gt;
+&lt;h2&gt;What Is an AHJ in Construction?&lt;/h2&gt;
+&lt;p&gt;An &lt;strong&gt;Authority Having Jurisdiction (AHJ)&lt;/strong&gt; is the official body or agency responsible for enforcing building codes, safety standards, and permitting processes in a given area.&lt;/p&gt;
+&lt;p&gt;Depending on your location, the &lt;strong&gt;AHJ in construction&lt;/strong&gt; might be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A local building department&lt;/li&gt;
+&lt;li&gt;A fire marshal or fire prevention office&lt;/li&gt;
+&lt;li&gt;A state agency&lt;/li&gt;
+&lt;li&gt;A federal entity (on government projects)&lt;/li&gt;
+&lt;li&gt;A utility company or zoning board&lt;/li&gt;
+&lt;li&gt;Any or all of the above, depending on the scope and size of your construction project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Simply put: the AHJ is the gatekeeper. They decide whether your project complies with applicable codes and whether you get the green light to proceed.&lt;/p&gt;
+&lt;h2&gt;Why the AHJ Matters for Construction Permits&lt;/h2&gt;
+&lt;p&gt;Before any shovel breaks ground, you’ll likely need approval from your AHJ. This process is known as &lt;strong&gt;AHJ permitting&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Key responsibilities of an AHJ in construction include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reviewing construction documents and designs&lt;/li&gt;
+&lt;li&gt;Issuing (or denying) building permits&lt;/li&gt;
+&lt;li&gt;Conducting site inspections&lt;/li&gt;
+&lt;li&gt;Enforcing safety codes (electrical, fire, structural, etc.)&lt;/li&gt;
+&lt;li&gt;Approving occupancy certificates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Without AHJ approval, your project can be delayed, fined, or even shut down. It's crucial to understand which AHJ governs your specific project or situation. To avoid any issues, contact the relevant AHJ early in the planning process to clarify requirements and avoid delays. Maintain open communication with the AHJ throughout the project and promptly address any concerns or issues raised by the AHJ.&lt;/p&gt;
+&lt;h2&gt;The AHJ Permit Process Explained&lt;/h2&gt;
+&lt;p&gt;Securing an &lt;strong&gt;AHJ permit&lt;/strong&gt; involves several steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Identify the AHJ&lt;/strong&gt; – Determine which authority governs your site. This varies widely across U.S. states, counties, and municipalities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Submit plans&lt;/strong&gt; – Architectural, engineering, and compliance documents go to the AHJ for review.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permit review&lt;/strong&gt; – The AHJ checks your plans against applicable codes and zoning laws.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Revisions (if required)&lt;/strong&gt; – If corrections are needed, your plans are returned for modification.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permit approval&lt;/strong&gt; – Once approved, construction can legally begin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inspections&lt;/strong&gt; – Throughout the build, the AHJ performs scheduled inspections.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final approval&lt;/strong&gt; – A certificate of occupancy or final permit closes the project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This process ensures projects meet safety, environmental, and community standards.&lt;/p&gt;
+&lt;h2&gt;Common Challenges with AHJ Permitting&lt;/h2&gt;
+&lt;p&gt;Contractors and developers often run into issues such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple jurisdictions&lt;/strong&gt; – Large projects may involve multiple AHJs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jurisdiction confusion&lt;/strong&gt; – Identifying the correct AHJ for a project can be challenging because jurisdictional authority varies—cities can either serve as their own permitting jurisdiction or delegate this responsibility to the county. For example, the city of Pasadena, in Los Angeles County, &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;amp;battery=&amp;amp;cbsa=&amp;amp;city=&amp;amp;county_or_jurisdiction=pasadena&amp;amp;date_filter=past12months&amp;amp;electrical=&amp;amp;generator=&amp;amp;hvac=&amp;amp;new_construction=&amp;amp;plumbing=&amp;amp;property_type=&amp;amp;property_type_detail=&amp;amp;remodel=&amp;amp;roofing=&amp;amp;solar=&amp;amp;state=CA&amp;amp;status=&amp;amp;tab=67-jurisdictions&amp;amp;window_%252F_door=&amp;amp;zip_code="&gt;is its own AHJ&lt;/a&gt;. In contrast, Pacific Palisades, also in Los Angeles County, delegates its permitting authority to Los Angeles County.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delays in approval&lt;/strong&gt; – Backlogs or incomplete documentation slow progress.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code interpretation&lt;/strong&gt; – Different AHJs may interpret codes differently.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changing requirements&lt;/strong&gt; – Local ordinances can shift mid-project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Understanding early &lt;em&gt;who your AHJ is&lt;/em&gt; and &lt;em&gt;what their requirements are&lt;/em&gt; is the best way to avoid these pitfalls.&lt;/p&gt;
+&lt;h2&gt;Finding Your AHJ: Jurisdictions Across the U.S.&lt;/h2&gt;
+&lt;p&gt;One of the biggest challenges in construction is simply figuring out &lt;em&gt;which AHJ governs your project site&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the United States, jurisdictions can vary by city, county, or state, and each one may have its own permitting process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For a comprehensive overview, see our &lt;a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/"&gt;&lt;strong&gt;list of all building permit jurisdictions&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For data and analysis purposes, explore this &lt;a href="https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states"&gt;&lt;strong&gt;dataset of U.S. building permit jurisdictions&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Knowing your jurisdiction upfront saves time, prevents misfiled applications, and helps you budget more accurately for your project.&lt;/p&gt;
+&lt;h2&gt;How Shovels Helps AHJ in Construction&lt;/h2&gt;
+&lt;p&gt;The traditional permitting process is notoriously inefficient and paper-heavy. &lt;a href="http://shovels.ai/"&gt;Shovels&lt;/a&gt; helps bring transparency to the process and makes historically messy and confusing data easy to access. Use our data for &lt;strong&gt;AHJ permitting&lt;/strong&gt; by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using Shovels' data to understand the complex AHJ permit landscape more efficiently, monitor active permits in target markets, and make more informed development decisions&lt;/li&gt;
+&lt;li&gt;Searching jurisdictions on our &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;amp;battery=&amp;amp;cbsa=&amp;amp;city=&amp;amp;county_or_jurisdiction=&amp;amp;date_filter=past12months&amp;amp;electrical=&amp;amp;generator=&amp;amp;hvac=&amp;amp;new_construction=&amp;amp;plumbing=&amp;amp;property_type=&amp;amp;property_type_detail=&amp;amp;remodel=&amp;amp;roofing=&amp;amp;solar=&amp;amp;state=&amp;amp;status=&amp;amp;tab=67-jurisdictions&amp;amp;window_%252F_door=&amp;amp;zip_code="&gt;Coverage Dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Creating a free Shovels Online account to &lt;a href="https://app.shovels.ai/search/"&gt;use location search to find any AHJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tracking permits across multiple jurisdictions for improved visibility and planning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We aggregate, clean and organize building insights and construction data across nationwide AHJs into actionable insights. What would historically take a company days or even weeks to access, read through, and make sense of all the permit data for a given AHJ can now take seconds using Shovels.&lt;/p&gt;
+&lt;p&gt;Additionally, you can work with permit expediting services, and Shovel’s friendlies, such as &lt;a href="https://www.withpulley.com/"&gt;Pulley&lt;/a&gt;, &lt;a href="https://www.permitflow.com/"&gt;PermitFlow&lt;/a&gt;, and &lt;a href="https://greenlite.com/"&gt;Greenlite&lt;/a&gt; who have experts and technology that can get your permits approved faster.&lt;/p&gt;
+&lt;h2&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;AHJ in construction&lt;/strong&gt; is the governing body that enforces building codes and approves permits.&lt;/li&gt;
+&lt;li&gt;Knowing &lt;em&gt;“what is an AHJ in construction?”&lt;/em&gt; helps you plan ahead and avoid costly project delays.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;AHJ permit process&lt;/strong&gt; is complex but essential for legal compliance.&lt;/li&gt;
+&lt;li&gt;Modern platforms simplify identifying and working with AHJs across the U.S.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Frequently Asked Questions (FAQ)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Q: What is an AHJ in construction?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: An AHJ, or Authority Having Jurisdiction, is the official agency or authority responsible for enforcing building codes, issuing permits, and approving construction work in a specific area.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: How do I find my AHJ for a construction project?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Your AHJ depends on your project’s location. It may be a city building department, a county office, or even a state or federal agency. Use Shovels to help &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;amp;battery=&amp;amp;cbsa=&amp;amp;city=&amp;amp;county_or_jurisdiction=&amp;amp;date_filter=past12months&amp;amp;electrical=&amp;amp;generator=&amp;amp;hvac=&amp;amp;new_construction=&amp;amp;plumbing=&amp;amp;property_type=&amp;amp;property_type_detail=&amp;amp;remodel=&amp;amp;roofing=&amp;amp;solar=&amp;amp;state=&amp;amp;status=&amp;amp;tab=67-jurisdictions&amp;amp;window_%252F_door=&amp;amp;zip_code="&gt;identify the correct jurisdiction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: Why is AHJ permitting important?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Without AHJ approval, your project cannot legally begin. AHJ permitting ensures compliance with safety codes, zoning laws, and local regulations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: Can there be more than one AHJ on a project?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Yes. Large projects often involve multiple AHJs, such as local building departments, fire marshals, and utility companies, each with its own requirements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: How can technology help with AHJ permitting?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Platforms like Shovels streamline the process by automatically identifying the right AHJ, consolidating disaggregated data, and reducing delays caused by manual research.&lt;/p&gt;
+&lt;!-- JSON-LD FAQ schema for rich results --&gt;
+&lt;script type="application/ld+json"&gt;
+{
+"@context": "[https://schema.org](https://schema.org/)",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "What is an AHJ in construction?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "An AHJ, or Authority Having Jurisdiction, is the official agency or authority responsible for enforcing building codes, issuing permits, and approving construction work in a specific area."
+}
+},
+{
+"@type": "Question",
+"name": "How do I find my AHJ for a construction project?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Your AHJ depends on your project’s location. It may be a city building department, a county office, or even a state or federal agency. Tools like [Shovels](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;battery=&amp;cbsa=&amp;city=&amp;county_or_jurisdiction=&amp;date_filter=past12months&amp;electrical=&amp;generator=&amp;hvac=&amp;new_construction=&amp;plumbing=&amp;property_type=&amp;property_type_detail=&amp;remodel=&amp;roofing=&amp;solar=&amp;state=&amp;status=&amp;tab=67-jurisdictions&amp;window_%252F_door=&amp;zip_code=) and public datasets can help identify the correct jurisdiction."
+}
+},
+{
+"@type": "Question",
+"name": "Why is AHJ permitting important?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Without AHJ approval, your project cannot legally begin. AHJ permitting ensures compliance with safety codes, zoning laws, and local regulations."
+}
+},
+{
+"@type": "Question",
+"name": "Can there be more than one AHJ on a project?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. Large projects often involve multiple AHJs, such as local building departments, fire marshals, and utility companies, each with its own requirements."
+}
+},
+{
+"@type": "Question",
+"name": "How can technology help with AHJ permitting?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Platforms like [Shovels](http://shovels.ai/) streamline the process by automatically identifying the right AHJ, consolidating requirements, and reducing delays caused by manual research."
+}
+}
+]
+}
+&lt;/script&gt;</content><category term="Customer Success"></category><category term="AHJ in construction"></category><category term="AHJ permitting"></category><category term="Authority Having Jurisdiction"></category><category term="construction permits"></category></entry><entry><title>September 2025 Newsletter</title><link href="https://www.shovels.ai/blog/september-2025-newsletter/" rel="alternate"></link><published>2025-09-16T00:00:00-07:00</published><updated>2025-09-16T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2025-09-16:/blog/september-2025-newsletter/</id><summary type="html">&lt;p&gt;This month, we share our impressive growth: doubled revenue, launched geospatial permit mapping, expanded the team with new marketing and sales hires, and achieved SOC 2 compliance milestones. Plus, insights from the Q2 2025 permit index revealing electrical permits lead at 21% and Florida dominates roofing permits.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I want you all to know one thing: Shovels is going great. &lt;/p&gt;
+&lt;p&gt;I wrote my monthly investor update last night. Looking back on the last six months, I’m proud. We doubled revenue again, and during that time, we expanded but we didn’t double our team. We took our new permit data collection infrastructure live. We made geospatial analysis of building permits a lot easier. And for those who care: we launched our SOC 2 compliance. &lt;/p&gt;
+&lt;p&gt;Geospatial, such a cool word. It’s even fun to type. (If there was ever any doubt about whether ChatGPT writes my newsletters, this paragraph should be Exhibit A.) &lt;/p&gt;
+&lt;p&gt;This month’s newsletter will be about all of the above and our new Q2 permit index, in case you missed it. &lt;/p&gt;
+&lt;p&gt;P.S. Find me in the hallways at Blueprint this week! I’ll be the guy wearing the Shovels shirt.&lt;/p&gt;
+&lt;h2&gt;Let’s start with geospatial&lt;/h2&gt;
+&lt;p&gt;This newsletter has not been shy about touting the power of maps. I probably mention this every other newsletter. I’m mentioning it again because a lot of the growth I described earlier comes from big (&lt;strong&gt;BIG!&lt;/strong&gt;) companies using us to put permits on maps. &lt;/p&gt;
+&lt;p&gt;What’s so great about permits on maps? Let’s use an example. &lt;/p&gt;
+&lt;p&gt;You’re a large furniture manufacturer and distributor. You’re constantly scouting locations for new warehouses and retail stores. You have a few criteria:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Proximity to partners (suppliers and other retail)&lt;/li&gt;
+&lt;li&gt;Distance from your warehouses&lt;/li&gt;
+&lt;li&gt;Presence of new residential developments and commercial remodels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can’t help you with the first two bullets (Esri can!) but we’re &lt;em&gt;certainly&lt;/em&gt; a great source for the last one. The presence of new developments and large remodels tells you where future demand is going to be. Building permits are a signal for what’s coming in the future. &lt;/p&gt;
+&lt;p&gt;That’s why we put this on our flyers when we went to the Esri user conference in July:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Shovels permit data on Esri map - back of flyer" src="https://www.shovels.ai/images/blog_images/Esri-Back.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Geospatial permits are a prediction tool. When you see them on a map, you think about them differently. You get more context. &lt;/p&gt;
+&lt;p&gt;Historically, it has been hard to put 170M+ permits into a geodatabase and onto a map. It takes a bit of compute to make it work. Lucky for you, Shovels has already done this for you. Check out our &lt;a href="https://shovels.maps.arcgis.com/home/item.html?id=4ae603d5b75a432ab924fe794bedcf19"&gt;public feature layer of permits since June 2025&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;We’re working with Esri now to add it into their free Living Atlas.&lt;/p&gt;
+&lt;h2&gt;Marketing and Storm&lt;/h2&gt;
+&lt;p&gt;For a long time, Betty and I did all things revenue. We were sales, and marketing, and sales and marketing operations. Luka and Petra did the data and engineering. Over time, we grew the team in order to help ourselves do fewer things, better. &lt;/p&gt;
+&lt;p&gt;That’s the theory once again with our recent expansion in sales, marketing, and operations.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.linkedin.com/in/morganfriberg/"&gt;Morgan Friberg&lt;/a&gt; heads up our new marketing department. Like I said, this department didn’t exist before. To the extent we had a concerted marketing effort, it was Betty making suggestions (and doing some writing of her own) and me trying to keep up with the publishing calendar. In between everything else, obviously. &lt;/p&gt;
+&lt;p&gt;Morgan is so productive, it feels like he has a team, but it’s just him right now. We’ll see how long that lasts. &lt;/p&gt;
+&lt;p&gt;This is a good thing because we also hired two more account executives, &lt;a href="https://www.linkedin.com/in/blainecomeione/"&gt;Blaine Comeione&lt;/a&gt; and &lt;a href="https://www.linkedin.com/in/franktyoderiii/"&gt;Frank Yoder&lt;/a&gt;. If you ping us on any of the sales channels, chances are you’ll reach one of them. Morgan is supplying them with all the sales collateral they need to keep up our pipeline expansion.&lt;/p&gt;
+&lt;p&gt;Finally, &lt;a href="https://www.linkedin.com/in/chloe-harris-841223198/"&gt;Chloe Harris&lt;/a&gt; and &lt;a href="https://www.linkedin.com/in/tori-reyes-53a058188/"&gt;Tori Reyes&lt;/a&gt; joined us from the California Homebuilding Foundation. We are super lucky to have them fully operationalize and scale our offline data collection. (Offline means they don’t have a publicly accessible database.) &lt;/p&gt;
+&lt;p&gt;They are already incredibly productive, activating 20 new offline jurisdictions in their first two weeks.&lt;/p&gt;
+&lt;p&gt;And we’re still looking for more engineers — starting in Europe! &lt;/p&gt;
+&lt;h2&gt;SOC 2&lt;/h2&gt;
+&lt;p&gt;It’s the final stretch before the audit, which will run for most of Q4. I expect to have our official SOC 2 verification certificate in Q1 2026. I hope you’re excited, because most of my team is not! SOC 2, as it turns out, is hard work.&lt;/p&gt;
+&lt;p&gt;We’re doing it, though, and it’ll pay dividends. I believe we’ll be the first permit data provider to be SOC 2 compliant. &lt;/p&gt;
+&lt;p&gt;If you’ve been waiting to find a SOC 2 compliant data vendor… you’ll have to wait another few months, but let’s start talking now! &lt;/p&gt;
+&lt;h2&gt;Things to do with permits: make another quarterly index&lt;/h2&gt;
+&lt;p&gt;I wrote the first one. Morgan wrote the second one. I don’t even need to tell you which one’s better. &lt;/p&gt;
+&lt;p&gt;If you haven’t checked out the Q2 index yet, &lt;a href="https://www.shovels.ai/blog/shovels-quarterly-permit-index-q2-2025/"&gt;take a peak&lt;/a&gt;! &lt;/p&gt;
+&lt;p&gt;Morgan analyzed over 712,000 permits issued between April and June 2025. Here’s a few bullet points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electrical permits lead the way at 21% of all permits issued in Q2&lt;/li&gt;
+&lt;li&gt;Florida, Texas, and California account for nearly half of all nationwide permits&lt;/li&gt;
+&lt;li&gt;West Virginia surprisingly leads in new construction permits (34.7% of its total)&lt;/li&gt;
+&lt;li&gt;Basic permits (plumbing, HVAC) typically approved in just 1 day&lt;/li&gt;
+&lt;li&gt;Complex projects like ADUs and new construction take 18-19 days median turnaround&lt;/li&gt;
+&lt;li&gt;Lennar Homes dominated with 2,390 permits pulled in Q2&lt;/li&gt;
+&lt;li&gt;Florida accounts for 43% of all roofing permits nationwide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There’s more. You’ll just have to read it. &lt;/p&gt;
+&lt;p&gt;We do this type of work because it’s interesting to us, and we suspect it’s interesting to most of you. As we grow into more new territories and start collecting more types of data, these insights will get even deeper and more fascinating. &lt;/p&gt;
+&lt;p&gt;We’ll get there!&lt;/p&gt;</content><category term="Company"></category><category term="geospatial-analysis"></category><category term="building-permits"></category><category term="team-growth"></category><category term="SOC2-compliance"></category><category term="quarterly-index"></category><category term="data-insights"></category><category term="mapping"></category><category term="permit-data"></category></entry></feed>

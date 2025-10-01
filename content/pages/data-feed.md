@@ -45,7 +45,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">170M+</dd>
+            <dd class="text-gray-700 font-medium">185M+</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
@@ -63,7 +63,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">3M+</dd>
+            <dd class="text-gray-700 font-medium">3.3M+</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>

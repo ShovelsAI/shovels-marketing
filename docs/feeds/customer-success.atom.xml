@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-05-13T00:00:00-07:00</updated><entry><title>How to use the Shovels V1 API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-v1-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-v1-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shovels | - Customer Success</title><link href="https://www.shovels.ai/" rel="alternate"></link><link href="https://www.shovels.ai/feeds/customer-success.atom.xml" rel="self"></link><id>https://www.shovels.ai/</id><updated>2025-09-15T00:00:00-07:00</updated><entry><title>How to use the Shovels V1 API</title><link href="https://www.shovels.ai/blog/how-to-use-the-shovels-v1-api/" rel="alternate"></link><published>2023-10-13T00:00:00-07:00</published><updated>2023-10-13T00:00:00-07:00</updated><author><name>Ryan Buckley</name></author><id>tag:www.shovels.ai,2023-10-13:/blog/how-to-use-the-shovels-v1-api/</id><summary type="html">&lt;p&gt;The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So... you want to build something cool in proptech, and you figured out (wisely, I might add) that building permits will make your product &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;That is excellent news, and we are here to help. &lt;/p&gt;
 &lt;h2&gt;Authentication&lt;/h2&gt;
 &lt;p&gt;We use header key-based authentication. There are two steps to authenticate:&lt;/p&gt;
@@ -1046,4 +1046,135 @@
 &lt;/ol&gt;
 &lt;h2&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;Permit data is a goldmine, if you know how to use it. From precision marketing to service outreach and competitive analysis, Shovels is helping businesses turn raw data into actionable go-to-market strategies. We’re excited to keep building alongside our users and uncovering even more ways to unlock value.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Want to explore how Shovels can power your GTM motion? &lt;a href="http://www.shovels.ai/"&gt;Let’s talk.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="Customer Success"></category><category term="Tutorial"></category></entry></feed>
+&lt;p&gt;&lt;strong&gt;Want to explore how Shovels can power your GTM motion? &lt;a href="http://www.shovels.ai/"&gt;Let’s talk.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="Customer Success"></category><category term="Tutorial"></category></entry><entry><title>What Is an AHJ in Construction? A Guide to Permits and Jurisdictions in the U.S.</title><link href="https://www.shovels.ai/blog/ahj-in-construction/" rel="alternate"></link><published>2025-09-15T00:00:00-07:00</published><updated>2025-09-15T00:00:00-07:00</updated><author><name>Morgan Friberg</name></author><id>tag:www.shovels.ai,2025-09-15:/blog/ahj-in-construction/</id><summary type="html">&lt;p&gt;Learn what an AHJ in construction is, how Authority Having Jurisdiction impacts permits, and how to streamline AHJ permitting in the United States.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When it comes to construction projects in the United States, one acronym comes up repeatedly: &lt;strong&gt;AHJ&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you’ve ever asked &lt;em&gt;“what is an AHJ in construction?”&lt;/em&gt; or struggled with delays tied to &lt;strong&gt;AHJ permitting&lt;/strong&gt;, you’re not alone. Understanding the role of the &lt;strong&gt;Authority Having Jurisdiction (AHJ)&lt;/strong&gt; is critical for avoiding costly mistakes and keeping your project on schedule. This blog breaks down &lt;strong&gt;AHJ in construction&lt;/strong&gt;, how it affects permits, and what you need to know before you break ground.&lt;/p&gt;
+&lt;h2&gt;What Is an AHJ in Construction?&lt;/h2&gt;
+&lt;p&gt;An &lt;strong&gt;Authority Having Jurisdiction (AHJ)&lt;/strong&gt; is the official body or agency responsible for enforcing building codes, safety standards, and permitting processes in a given area.&lt;/p&gt;
+&lt;p&gt;Depending on your location, the &lt;strong&gt;AHJ in construction&lt;/strong&gt; might be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A local building department&lt;/li&gt;
+&lt;li&gt;A fire marshal or fire prevention office&lt;/li&gt;
+&lt;li&gt;A state agency&lt;/li&gt;
+&lt;li&gt;A federal entity (on government projects)&lt;/li&gt;
+&lt;li&gt;A utility company or zoning board&lt;/li&gt;
+&lt;li&gt;Any or all of the above, depending on the scope and size of your construction project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Simply put: the AHJ is the gatekeeper. They decide whether your project complies with applicable codes and whether you get the green light to proceed.&lt;/p&gt;
+&lt;h2&gt;Why the AHJ Matters for Construction Permits&lt;/h2&gt;
+&lt;p&gt;Before any shovel breaks ground, you’ll likely need approval from your AHJ. This process is known as &lt;strong&gt;AHJ permitting&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Key responsibilities of an AHJ in construction include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reviewing construction documents and designs&lt;/li&gt;
+&lt;li&gt;Issuing (or denying) building permits&lt;/li&gt;
+&lt;li&gt;Conducting site inspections&lt;/li&gt;
+&lt;li&gt;Enforcing safety codes (electrical, fire, structural, etc.)&lt;/li&gt;
+&lt;li&gt;Approving occupancy certificates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Without AHJ approval, your project can be delayed, fined, or even shut down. It's crucial to understand which AHJ governs your specific project or situation. To avoid any issues, contact the relevant AHJ early in the planning process to clarify requirements and avoid delays. Maintain open communication with the AHJ throughout the project and promptly address any concerns or issues raised by the AHJ.&lt;/p&gt;
+&lt;h2&gt;The AHJ Permit Process Explained&lt;/h2&gt;
+&lt;p&gt;Securing an &lt;strong&gt;AHJ permit&lt;/strong&gt; involves several steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Identify the AHJ&lt;/strong&gt; – Determine which authority governs your site. This varies widely across U.S. states, counties, and municipalities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Submit plans&lt;/strong&gt; – Architectural, engineering, and compliance documents go to the AHJ for review.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permit review&lt;/strong&gt; – The AHJ checks your plans against applicable codes and zoning laws.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Revisions (if required)&lt;/strong&gt; – If corrections are needed, your plans are returned for modification.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permit approval&lt;/strong&gt; – Once approved, construction can legally begin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inspections&lt;/strong&gt; – Throughout the build, the AHJ performs scheduled inspections.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final approval&lt;/strong&gt; – A certificate of occupancy or final permit closes the project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This process ensures projects meet safety, environmental, and community standards.&lt;/p&gt;
+&lt;h2&gt;Common Challenges with AHJ Permitting&lt;/h2&gt;
+&lt;p&gt;Contractors and developers often run into issues such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple jurisdictions&lt;/strong&gt; – Large projects may involve multiple AHJs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jurisdiction confusion&lt;/strong&gt; – Identifying the correct AHJ for a project can be challenging because jurisdictional authority varies—cities can either serve as their own permitting jurisdiction or delegate this responsibility to the county. For example, the city of Pasadena, in Los Angeles County, &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;amp;battery=&amp;amp;cbsa=&amp;amp;city=&amp;amp;county_or_jurisdiction=pasadena&amp;amp;date_filter=past12months&amp;amp;electrical=&amp;amp;generator=&amp;amp;hvac=&amp;amp;new_construction=&amp;amp;plumbing=&amp;amp;property_type=&amp;amp;property_type_detail=&amp;amp;remodel=&amp;amp;roofing=&amp;amp;solar=&amp;amp;state=CA&amp;amp;status=&amp;amp;tab=67-jurisdictions&amp;amp;window_%252F_door=&amp;amp;zip_code="&gt;is its own AHJ&lt;/a&gt;. In contrast, Pacific Palisades, also in Los Angeles County, delegates its permitting authority to Los Angeles County.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delays in approval&lt;/strong&gt; – Backlogs or incomplete documentation slow progress.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code interpretation&lt;/strong&gt; – Different AHJs may interpret codes differently.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changing requirements&lt;/strong&gt; – Local ordinances can shift mid-project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Understanding early &lt;em&gt;who your AHJ is&lt;/em&gt; and &lt;em&gt;what their requirements are&lt;/em&gt; is the best way to avoid these pitfalls.&lt;/p&gt;
+&lt;h2&gt;Finding Your AHJ: Jurisdictions Across the U.S.&lt;/h2&gt;
+&lt;p&gt;One of the biggest challenges in construction is simply figuring out &lt;em&gt;which AHJ governs your project site&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the United States, jurisdictions can vary by city, county, or state, and each one may have its own permitting process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For a comprehensive overview, see our &lt;a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/"&gt;&lt;strong&gt;list of all building permit jurisdictions&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For data and analysis purposes, explore this &lt;a href="https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states"&gt;&lt;strong&gt;dataset of U.S. building permit jurisdictions&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Knowing your jurisdiction upfront saves time, prevents misfiled applications, and helps you budget more accurately for your project.&lt;/p&gt;
+&lt;h2&gt;How Shovels Helps AHJ in Construction&lt;/h2&gt;
+&lt;p&gt;The traditional permitting process is notoriously inefficient and paper-heavy. &lt;a href="http://shovels.ai/"&gt;Shovels&lt;/a&gt; helps bring transparency to the process and makes historically messy and confusing data easy to access. Use our data for &lt;strong&gt;AHJ permitting&lt;/strong&gt; by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using Shovels' data to understand the complex AHJ permit landscape more efficiently, monitor active permits in target markets, and make more informed development decisions&lt;/li&gt;
+&lt;li&gt;Searching jurisdictions on our &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;amp;battery=&amp;amp;cbsa=&amp;amp;city=&amp;amp;county_or_jurisdiction=&amp;amp;date_filter=past12months&amp;amp;electrical=&amp;amp;generator=&amp;amp;hvac=&amp;amp;new_construction=&amp;amp;plumbing=&amp;amp;property_type=&amp;amp;property_type_detail=&amp;amp;remodel=&amp;amp;roofing=&amp;amp;solar=&amp;amp;state=&amp;amp;status=&amp;amp;tab=67-jurisdictions&amp;amp;window_%252F_door=&amp;amp;zip_code="&gt;Coverage Dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Creating a free Shovels Online account to &lt;a href="https://app.shovels.ai/search/"&gt;use location search to find any AHJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tracking permits across multiple jurisdictions for improved visibility and planning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We aggregate, clean and organize building insights and construction data across nationwide AHJs into actionable insights. What would historically take a company days or even weeks to access, read through, and make sense of all the permit data for a given AHJ can now take seconds using Shovels.&lt;/p&gt;
+&lt;p&gt;Additionally, you can work with permit expediting services, and Shovel’s friendlies, such as &lt;a href="https://www.withpulley.com/"&gt;Pulley&lt;/a&gt;, &lt;a href="https://www.permitflow.com/"&gt;PermitFlow&lt;/a&gt;, and &lt;a href="https://greenlite.com/"&gt;Greenlite&lt;/a&gt; who have experts and technology that can get your permits approved faster.&lt;/p&gt;
+&lt;h2&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;AHJ in construction&lt;/strong&gt; is the governing body that enforces building codes and approves permits.&lt;/li&gt;
+&lt;li&gt;Knowing &lt;em&gt;“what is an AHJ in construction?”&lt;/em&gt; helps you plan ahead and avoid costly project delays.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;AHJ permit process&lt;/strong&gt; is complex but essential for legal compliance.&lt;/li&gt;
+&lt;li&gt;Modern platforms simplify identifying and working with AHJs across the U.S.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Frequently Asked Questions (FAQ)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Q: What is an AHJ in construction?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: An AHJ, or Authority Having Jurisdiction, is the official agency or authority responsible for enforcing building codes, issuing permits, and approving construction work in a specific area.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: How do I find my AHJ for a construction project?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Your AHJ depends on your project’s location. It may be a city building department, a county office, or even a state or federal agency. Use Shovels to help &lt;a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;amp;battery=&amp;amp;cbsa=&amp;amp;city=&amp;amp;county_or_jurisdiction=&amp;amp;date_filter=past12months&amp;amp;electrical=&amp;amp;generator=&amp;amp;hvac=&amp;amp;new_construction=&amp;amp;plumbing=&amp;amp;property_type=&amp;amp;property_type_detail=&amp;amp;remodel=&amp;amp;roofing=&amp;amp;solar=&amp;amp;state=&amp;amp;status=&amp;amp;tab=67-jurisdictions&amp;amp;window_%252F_door=&amp;amp;zip_code="&gt;identify the correct jurisdiction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: Why is AHJ permitting important?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Without AHJ approval, your project cannot legally begin. AHJ permitting ensures compliance with safety codes, zoning laws, and local regulations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: Can there be more than one AHJ on a project?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Yes. Large projects often involve multiple AHJs, such as local building departments, fire marshals, and utility companies, each with its own requirements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: How can technology help with AHJ permitting?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A: Platforms like Shovels streamline the process by automatically identifying the right AHJ, consolidating disaggregated data, and reducing delays caused by manual research.&lt;/p&gt;
+&lt;!-- JSON-LD FAQ schema for rich results --&gt;
+&lt;script type="application/ld+json"&gt;
+{
+"@context": "[https://schema.org](https://schema.org/)",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "What is an AHJ in construction?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "An AHJ, or Authority Having Jurisdiction, is the official agency or authority responsible for enforcing building codes, issuing permits, and approving construction work in a specific area."
+}
+},
+{
+"@type": "Question",
+"name": "How do I find my AHJ for a construction project?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Your AHJ depends on your project’s location. It may be a city building department, a county office, or even a state or federal agency. Tools like [Shovels](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&amp;battery=&amp;cbsa=&amp;city=&amp;county_or_jurisdiction=&amp;date_filter=past12months&amp;electrical=&amp;generator=&amp;hvac=&amp;new_construction=&amp;plumbing=&amp;property_type=&amp;property_type_detail=&amp;remodel=&amp;roofing=&amp;solar=&amp;state=&amp;status=&amp;tab=67-jurisdictions&amp;window_%252F_door=&amp;zip_code=) and public datasets can help identify the correct jurisdiction."
+}
+},
+{
+"@type": "Question",
+"name": "Why is AHJ permitting important?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Without AHJ approval, your project cannot legally begin. AHJ permitting ensures compliance with safety codes, zoning laws, and local regulations."
+}
+},
+{
+"@type": "Question",
+"name": "Can there be more than one AHJ on a project?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. Large projects often involve multiple AHJs, such as local building departments, fire marshals, and utility companies, each with its own requirements."
+}
+},
+{
+"@type": "Question",
+"name": "How can technology help with AHJ permitting?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Platforms like [Shovels](http://shovels.ai/) streamline the process by automatically identifying the right AHJ, consolidating requirements, and reducing delays caused by manual research."
+}
+}
+]
+}
+&lt;/script&gt;</content><category term="Customer Success"></category><category term="AHJ in construction"></category><category term="AHJ permitting"></category><category term="Authority Having Jurisdiction"></category><category term="construction permits"></category></entry></feed>

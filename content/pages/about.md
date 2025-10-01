@@ -66,16 +66,16 @@ slug: about
       <div class="lg:flex lg:flex-auto lg:justify-center">
         <dl class="w-64 space-y-8 xl:w-80">
           <div class="flex flex-col-reverse gap-y-4">
-            <dt class="text-base/7 text-gray-600">Building permits added monthly</dt>
-            <dd class="text-5xl font-semibold tracking-tight text-gray-900">5+ million</dd>
-          </div>
-          <div class="flex flex-col-reverse gap-y-4">
-            <dt class="text-base/7 text-gray-600">Contractors tracked</dt>
-            <dd class="text-5xl font-semibold tracking-tight text-gray-900">3 million</dd>
+            <dt class="text-base/7 text-gray-600">Building permits in our database</dt>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">185+ million</dd>
           </div>
           <div class="flex flex-col-reverse gap-y-4">
             <dt class="text-base/7 text-gray-600">Properties with permit history</dt>
-            <dd class="text-5xl font-semibold tracking-tight text-gray-900">30+ million</dd>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">33+ million</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-y-4">
+            <dt class="text-base/7 text-gray-600">Contractors tracked</dt>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">3.3 million</dd>
           </div>
         </dl>
       </div>
