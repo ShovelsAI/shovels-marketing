@@ -1,5 +1,5 @@
-Title: Contact Shovels
-Description: Connect with Shovels to learn how our enterprise-ready contractor intelligence solutions can power your sales and marketing workflows.
+Title: Contact Shovels For Research
+Description: Access comprehensive building permit data for academic research, policy analysis, and institutional studies. Shovels provides researchers with clean, structured datasets to support housing, construction, and urban development research.
 slug: contact/research
 
 {% block background_pattern %}
