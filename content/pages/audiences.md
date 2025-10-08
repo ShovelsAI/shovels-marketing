@@ -24,7 +24,7 @@ slug: audiences
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
-          <a href="{static}/pdfs/Shovels_Audiences.pdf" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">

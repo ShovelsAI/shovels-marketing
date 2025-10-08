@@ -24,7 +24,7 @@ slug: building-materials
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We improve your sales process with nationwide building permit data, enriching your lead program with unique insights on commercial and residential builders.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-          <a href="{static}/pdfs/Shovels_Building_Products.pdf" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://www.canva.com/design/DAG0xKBkIG0/Y6pO23tLga1p_mmOi8m7kw/view?utm_content=DAG0xKBkIG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b8199daba" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
