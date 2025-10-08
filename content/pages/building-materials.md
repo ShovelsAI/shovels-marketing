@@ -89,7 +89,7 @@ slug: building-materials
   <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Built for the data-driven sales team</h2>
-      <p class="mt-4 text-gray-500">Shovels provides comprehensive contractor intelligence that empowers your sales team to identify high-value prospects, verify contractor credentials, and accelerate deal closure with data-driven insights.</p>
+      <p class="mt-4 text-gray-500">We provide comprehensive intelligence empowering your team to identify high-value prospects, verify contractor credentials, and accelerate deal closure with data-driven insights.</p>
     </div>
     <div class="mt-16 space-y-16">
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
