@@ -1,4 +1,5 @@
 Title: Careers at Shovels
+Description: Join our team building the future of construction intelligence. Engineers here command AI agents that write production code across distributed systems, data pipelines, and APIs.
 slug: careers
 
 <!-- hero -->
