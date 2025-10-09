@@ -1,6 +1,7 @@
 AUTHOR = 'Shovels'
 SITENAME = 'Shovels | '
-SITEURL = 'http://127.0.0.1:8000'
+SITEURL = 'http://localhost:8000'
+RELATIVE_URLS = True
 
 PATH = 'content'
 
