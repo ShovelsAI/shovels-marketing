@@ -73,4 +73,4 @@ In the meantime, we use our existing data, a combination of permits and tax asse
 
 To tie this back to the point I opened with about the evolution of Shovels, and to answer the question, “What’s roofs got to do, got to do with it?”, I offer this: It is about combining multiple datasets that maybe haven’t been merged and processed together before at this new scale and with this new technology. The more local government data we add, the more cool stuff like this we can do. 
 
-If you want a roof age sample, [reach out](https://www.shovels.ai/contact-us)!
+If you want a roof age sample, [reach out](https://www.shovels.ai/contact)!
