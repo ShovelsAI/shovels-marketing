@@ -338,13 +338,13 @@
               <h3 class="text-base  text-emerald-800">Recent Blog Posts</h3>
               <ul role="list" class="mt-4 space-y-4">
                   <li class="truncate text-base">
+                    <a href="https://www.shovels.ai/blog/october-2025-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>October 2025 Newsletter</p></a>
+                  </li>
+                  <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/arcgis-permit-insights/" class=" text-emerald-900 hover:text-gray-700"><p>Mapping What's Next: How AI-Powered Permit Data Unlocks Predictive Insights in ArcGIS</p></a>
                   </li>
                   <li class="truncate text-base">
                     <a href="https://www.shovels.ai/blog/september-2025-newsletter/" class=" text-emerald-900 hover:text-gray-700"><p>September 2025 Newsletter</p></a>
-                  </li>
-                  <li class="truncate text-base">
-                    <a href="https://www.shovels.ai/blog/ahj-in-construction/" class=" text-emerald-900 hover:text-gray-700"><p>What Is an AHJ in Construction? A Guide to Permits and Jurisdictions in the U.S.</p></a>
                   </li>
               </ul>
             </div>
@@ -570,6 +570,47 @@ Leaving: "duration-100 ease-in"
 <section class="py-8" x-data="filterComponent()">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+      <article class="flex flex-col items-start" 
+               data-summary="<p>October marks a milestone for Shovels as we add record-setting permit data, bring offline jurisdictions online, and launch dual data teams—Wolverine and Storm. We're also testing a smarter chat interface packed with AI-powered insights, charting tools, and new ways to access local building data—all leading to a more powerful Shovels for our customers.</p>"
+               data-title="<p>October 2025 Newsletter</p>"
+               x-show="isMatchingCategory('Company') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+        <div class="relative w-full">
+          <a href="https://www.shovels.ai/blog/october-2025-newsletter/">
+            <img src="/images/blog_images/Shovels-Newsletter-10-2025.png" 
+                 alt="<p>October 2025 Newsletter</p>"
+                 class="w-full h-48 max-h-48 rounded-2xl bg-gray-100 object-contain" />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </a>
+        </div>
+        <div class="max-w-xl">
+          <!-- date and category -->
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2025-10-15 00:00:00-07:00" class="text-gray-500">Wed 15 October 2025</time>
+            <a href="/blog/?category=Company"
+               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               Company
+            </a>
+          </div>
+          <!-- title and summary -->
+          <div class="group relative">
+            <h2 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="https://www.shovels.ai/blog/october-2025-newsletter/">
+                <span class="absolute inset-0"></span>
+                <p>October 2025 Newsletter</p>
+              </a>
+            </h2>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600"><p>October marks a milestone for Shovels as we add record-setting permit data, bring offline jurisdictions online, and launch dual data teams—Wolverine and Storm. We're also testing a smarter chat interface packed with AI-powered insights, charting tools, and new ways to access local building data—all leading to a more powerful Shovels for our customers.</p></p>
+          </div>
+          <!-- author info -->
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">Ryan Buckley</p>
+              <p class="text-gray-600">CEO</p>
+            </div>
+          </div>
+        </div>
+      </article>
       <article class="flex flex-col items-start" 
                data-summary="<p>Discover how Shovels' AI-powered permit data integration with Esri ArcGIS delivers a live, predictive view of future construction and development. Learn how telecom, real estate, and utility professionals can leverage this data for proactive planning, competitive advantage, and smarter infrastructure investment.</p>"
                data-title="<p>Mapping What's Next: How AI-Powered Permit Data Unlocks Predictive Insights in ArcGIS</p>"
@@ -4902,6 +4943,62 @@ Leaving: "duration-100 ease-in"
     </div>
   </div>
 </footer>
+
+<!-- UTM Persistence Utility -->
+<script>
+(function() {
+  const params = new URLSearchParams(location.search);
+  const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+  const now = new Date().toISOString();
+  const firstTouchKey = 'shv_attrib_first';
+  const lastTouchKey  = 'shv_attrib_last';
+
+  function getReferrer() { try { return document.referrer || null; } catch(e) { return null; } }
+
+  function readUtmFromUrl() {
+    const o = {};
+    utmKeys.forEach(k => { const v = params.get(k); if (v) o[k] = v; });
+    return o;
+  }
+
+  function setCookie(name, value, days) {
+    const d = new Date(); d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${d.toUTCString()}; path=/; domain=.shovels.ai; samesite=Lax`;
+  }
+  function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return m ? decodeURIComponent(m[2]) : null;
+  }
+
+  const urlUtms = readUtmFromUrl();
+  const landing = location.href;
+  const ref = getReferrer();
+
+  // First touch: set once
+  if (!localStorage.getItem(firstTouchKey)) {
+    const first = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(firstTouchKey, JSON.stringify(first));
+    setCookie(firstTouchKey, JSON.stringify(first), 180);
+  }
+
+  // Last touch: update whenever UTMs present (or when arriving with a referrer)
+  if (Object.keys(urlUtms).length || ref) {
+    const last = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(lastTouchKey, JSON.stringify(last));
+    setCookie(lastTouchKey, JSON.stringify(last), 180);
+  }
+})();
+</script>
   <!-- Load non-critical resources -->
   <script defer src="/theme/js/alpine.js"></script>
 

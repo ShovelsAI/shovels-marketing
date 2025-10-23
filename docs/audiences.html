@@ -302,13 +302,13 @@
 <h3 class="text-base text-emerald-800">Recent Blog Posts</h3>
 <ul class="mt-4 space-y-4" role="list">
 <li class="truncate text-base">
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/october-2025-newsletter/"><p>October 2025 Newsletter</p></a>
+</li>
+<li class="truncate text-base">
 <a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/arcgis-permit-insights/"><p>Mapping What's Next: How AI-Powered Permit Data Unlocks Predictive Insights in ArcGIS</p></a>
 </li>
 <li class="truncate text-base">
 <a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/september-2025-newsletter/"><p>September 2025 Newsletter</p></a>
-</li>
-<li class="truncate text-base">
-<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/ahj-in-construction/"><p>What Is an AHJ in Construction? A Guide to Permits and Jurisdictions in the U.S.</p></a>
 </li>
 </ul>
 </div>
@@ -473,7 +473,7 @@ Leaving: "duration-100 ease-in"
 <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
 <div class="mt-10 flex items-center gap-x-6">
 <a class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary" href="https://www.shovels.ai/contact">Contact us</a>
-<a class="text-sm/6 font-semibold text-gray-900" href="https://www.shovels.ai/pdfs/Shovels_Audiences.pdf" target="_blank">One-pager <span aria-hidden="true">→</span></a>
+<a class="text-sm/6 font-semibold text-gray-900" href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h48c3473fe5" target="_blank">One-pager <span aria-hidden="true">→</span></a>
 </div>
 </div>
 <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -724,6 +724,61 @@ Leaving: "duration-100 ease-in"
 </div>
 </div>
 </footer>
+<!-- UTM Persistence Utility -->
+<script>
+(function() {
+  const params = new URLSearchParams(location.search);
+  const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+  const now = new Date().toISOString();
+  const firstTouchKey = 'shv_attrib_first';
+  const lastTouchKey  = 'shv_attrib_last';
+
+  function getReferrer() { try { return document.referrer || null; } catch(e) { return null; } }
+
+  function readUtmFromUrl() {
+    const o = {};
+    utmKeys.forEach(k => { const v = params.get(k); if (v) o[k] = v; });
+    return o;
+  }
+
+  function setCookie(name, value, days) {
+    const d = new Date(); d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${d.toUTCString()}; path=/; domain=.shovels.ai; samesite=Lax`;
+  }
+  function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return m ? decodeURIComponent(m[2]) : null;
+  }
+
+  const urlUtms = readUtmFromUrl();
+  const landing = location.href;
+  const ref = getReferrer();
+
+  // First touch: set once
+  if (!localStorage.getItem(firstTouchKey)) {
+    const first = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(firstTouchKey, JSON.stringify(first));
+    setCookie(firstTouchKey, JSON.stringify(first), 180);
+  }
+
+  // Last touch: update whenever UTMs present (or when arriving with a referrer)
+  if (Object.keys(urlUtms).length || ref) {
+    const last = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(lastTouchKey, JSON.stringify(last));
+    setCookie(lastTouchKey, JSON.stringify(last), 180);
+  }
+})();
+</script>
 <!-- Load non-critical resources -->
 <script defer="" src="/theme/js/alpine.js"></script>
 <!-- Deferred third-party resources -->

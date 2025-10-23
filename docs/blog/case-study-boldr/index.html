@@ -313,13 +313,13 @@
 <h3 class="text-base text-emerald-800">Recent Blog Posts</h3>
 <ul class="mt-4 space-y-4" role="list">
 <li class="truncate text-base">
+<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/october-2025-newsletter/"><p>October 2025 Newsletter</p></a>
+</li>
+<li class="truncate text-base">
 <a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/arcgis-permit-insights/"><p>Mapping What's Next: How AI-Powered Permit Data Unlocks Predictive Insights in ArcGIS</p></a>
 </li>
 <li class="truncate text-base">
 <a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/september-2025-newsletter/"><p>September 2025 Newsletter</p></a>
-</li>
-<li class="truncate text-base">
-<a class="text-emerald-900 hover:text-gray-700" href="https://www.shovels.ai/blog/ahj-in-construction/"><p>What Is an AHJ in Construction? A Guide to Permits and Jurisdictions in the U.S.</p></a>
 </li>
 </ul>
 </div>
@@ -692,6 +692,61 @@ Leaving: "duration-100 ease-in"
 </div>
 </div>
 </footer>
+<!-- UTM Persistence Utility -->
+<script>
+(function() {
+  const params = new URLSearchParams(location.search);
+  const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+  const now = new Date().toISOString();
+  const firstTouchKey = 'shv_attrib_first';
+  const lastTouchKey  = 'shv_attrib_last';
+
+  function getReferrer() { try { return document.referrer || null; } catch(e) { return null; } }
+
+  function readUtmFromUrl() {
+    const o = {};
+    utmKeys.forEach(k => { const v = params.get(k); if (v) o[k] = v; });
+    return o;
+  }
+
+  function setCookie(name, value, days) {
+    const d = new Date(); d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${d.toUTCString()}; path=/; domain=.shovels.ai; samesite=Lax`;
+  }
+  function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return m ? decodeURIComponent(m[2]) : null;
+  }
+
+  const urlUtms = readUtmFromUrl();
+  const landing = location.href;
+  const ref = getReferrer();
+
+  // First touch: set once
+  if (!localStorage.getItem(firstTouchKey)) {
+    const first = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(firstTouchKey, JSON.stringify(first));
+    setCookie(firstTouchKey, JSON.stringify(first), 180);
+  }
+
+  // Last touch: update whenever UTMs present (or when arriving with a referrer)
+  if (Object.keys(urlUtms).length || ref) {
+    const last = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(lastTouchKey, JSON.stringify(last));
+    setCookie(lastTouchKey, JSON.stringify(last), 180);
+  }
+})();
+</script>
 <!-- Load non-critical resources -->
 <script defer="" src="/theme/js/alpine.js"></script>
 <!-- Deferred third-party resources -->
