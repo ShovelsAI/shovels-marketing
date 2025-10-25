@@ -47,7 +47,7 @@ slug: careers
             <li>• Fully remote, competitive salary + equity</li>
           </ul>
         </div>
-        <a href="/careers/senior-engineer/" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+        <a href="/careers/senior-engineer" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
           View Details →
         </a>
       </div>
@@ -65,7 +65,7 @@ slug: careers
             <li>• Work directly with company leadership</li>
           </ul>
         </div>
-        <a href="/careers/account-executive/" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+        <a href="/careers/account-executive" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
           View Details →
         </a>
       </div>
