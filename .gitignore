@@ -24,3 +24,4 @@ seo_report.html
 .venv/pyvenv.cfg
 docs/*
 docs
+themes/shovels/static/css/output.css
