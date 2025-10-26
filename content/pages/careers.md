@@ -30,10 +30,8 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-8">Open Positions</h2>
-
     <!-- job cards grid -->
     <div class="grid md:grid-cols-2 gap-6">
-
       <!-- senior engineer card -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
         <h3 class="text-2xl font-bold mb-3">Senior Engineer - Data, Infra & AI</h3>
@@ -47,11 +45,10 @@ slug: careers
             <li>• Fully remote, competitive salary + equity</li>
           </ul>
         </div>
-        <a href="/careers/senior-engineer" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+        <a href="{filename}careers-senior-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
           View Details →
         </a>
       </div>
-
       <!-- account executive card -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
         <h3 class="text-2xl font-bold mb-3">Enterprise Account Executive</h3>
@@ -65,11 +62,10 @@ slug: careers
             <li>• Work directly with company leadership</li>
           </ul>
         </div>
-        <a href="/careers/account-executive" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+        <a href="{filename}careers-account-executive.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
           View Details →
         </a>
       </div>
-
     </div>
   </div>
 </section>

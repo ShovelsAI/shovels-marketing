@@ -5,7 +5,7 @@ slug: careers/senior-engineer
 <!-- back link -->
 <section class="py-6">
   <div class="mx-auto max-w-4xl px-6">
-    <a href="/careers/" class="text-emerald-900 hover:underline">← Back to Careers</a>
+    <a href="{filename}careers.md" class="text-emerald-900 hover:underline">← Back to Careers</a>
   </div>
 </section>
 
