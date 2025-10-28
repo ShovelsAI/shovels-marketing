@@ -13,7 +13,7 @@ slug: careers/account-executive
 <section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h1 class="text-4xl font-bold tracking-tight mb-6">Enterprise Account Executive (California, Remote)</h1>
-    <p class="text-lg text-gray-600">Full-time Hire | Remote (California) | Sales | $225-250K++ OTE</p>
+    <p class="text-lg text-gray-600">Full-time Hire | Remote (West Coast) | Sales | $225-250K++ OTE + equity</p>
   </div>
 </section>
 
