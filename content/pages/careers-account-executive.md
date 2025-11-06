@@ -126,8 +126,7 @@ slug: careers/account-executive
     <h2 class="text-3xl font-bold tracking-tight mb-6">How to Apply</h2>
     <div class="flex items-center gap-x-8">
       <div class="flex-1">
-        <p class="mb-4">Please submit your resume and a short note about your experience to <a href="mailto:betty@shovels.ai" class="text-blue-600 hover:underline">betty@shovels.ai</a>. We look forward to connecting.</p>
-        <p class="font-bold">Let's build something amazing!</p>
+        <p class="mb-4">Please submit your resume and a short note about your experience to <a href="https://jobs.gusto.com/postings/shovels-enterprise-account-executive-c9d4fe9c-fbbd-4140-b3f4-08ec58cc46bd" class="text-blue-600 hover:underline">our application page</a>. We look forward to connecting!</p>
       </div>
       <div class="flex-none">
         <img src="/images/careers/shovels-guy-pose9.png" class="w-72">
