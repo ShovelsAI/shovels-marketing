@@ -12,7 +12,7 @@ image: /images/case-study-baizel.jpg
 
 ![BAIZEL search interface]({static}/images/BAIZEL_search.png)
 
-### **BAIZEL: The AI Wikipedia of Real Estate Business**
+### **BAIZEL: The Ai Platform Revolutionizing Commercial Real Estate.**
 
 [BAIZEL](https://baizel.ai/) is redefining how commercial real estate professionals—from brokers and developers to engineers and architects—evaluate land and development opportunities. By combining powerful AI search with jurisdiction-normalized permit data from Shovels.ai, BAIZEL turns fragmented government records into lightning-fast insights. What once took weeks of manual research can now be done in minutes—with live permitting activity layered directly into the site selection workflow.
 
