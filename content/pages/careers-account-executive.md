@@ -18,7 +18,7 @@ slug: careers/account-executive
 </section>
 
 <!-- intro section -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <p class="mb-4">
       Shovels is building the Google for local government data: collecting, cleaning, and making useful all of the public government data that is not publicly available. This is a huge mission with a massive upside, and we already know that this data, when properly sold, is very valuable.
@@ -36,7 +36,7 @@ slug: careers/account-executive
 </section>
 
 <!-- about shovels -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">About Shovels</h2>
     <p class="mb-4">At Shovels, we're reshaping the construction and real estate industries by transforming fragmented building permit and contractor data into actionable, game-changing insights. Backed by multi-million-dollar VC funding and a growing customer base, we're taking on one of the world's largest yet most underutilized data-rich sectors - using advanced pipelines and AI to bring structure, clarity, and value to messy, fragmented data.</p>
@@ -45,7 +45,7 @@ slug: careers/account-executive
 </section>
 
 <!-- responsibilities -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">Responsibilities</h2>
     <ul class="list-disc pl-6 space-y-2">
@@ -62,7 +62,7 @@ slug: careers/account-executive
 </section>
 
 <!-- requirements -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">Requirements</h2>
     <ul class="list-disc pl-6 space-y-2">
@@ -80,7 +80,7 @@ slug: careers/account-executive
 </section>
 
 <!-- bonus qualifications -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">Bonus Qualifications</h2>
     <ul class="list-disc pl-6 space-y-2">
@@ -91,7 +91,7 @@ slug: careers/account-executive
 </section>
 
 <!-- what we value -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">What We Value</h2>
     <p>This role demands a strong enterprise skillset, demonstrated by successfully navigating complex deals and driving significant sales. We value creative, adaptable professionals capable of horizontal selling—listening to customers, understanding nuanced use cases, and prescribing tailored Shovels solutions. We thrive on ownership, a bias for action, start-up hustle, and a commitment to delivering impactful results from day one.</p>
@@ -99,7 +99,7 @@ slug: careers/account-executive
 </section>
 
 <!-- why shovels -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">Why Shovels?</h2>
     <ul class="list-disc pl-6 space-y-2">
@@ -113,7 +113,7 @@ slug: careers/account-executive
 </section>
 
 <!-- how we work -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">How We Work</h2>
     <p>We're a small, fully-remote global team, so flexibility and communication are key. Our core hours overlap enough to make collaboration smooth, but we trust you to manage your time and prioritize your work. We stay connected via Slack, bi-weekly calls, with impromptu 1:1s when needed, and keep things casual and fun. Twice a year, we bring everyone together for in-person team summits to connect, strategize, and celebrate our progress.</p>
@@ -121,15 +121,15 @@ slug: careers/account-executive
 </section>
 
 <!-- how to apply -->
-<section class="my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">How to Apply</h2>
-    <div class="flex items-center gap-x-8">
+    <div class="flex items-start gap-x-8">
       <div class="flex-1">
         <p class="mb-4">Please submit your resume and a short note about your experience to <a href="https://jobs.gusto.com/postings/shovels-enterprise-account-executive-c9d4fe9c-fbbd-4140-b3f4-08ec58cc46bd" class="text-blue-600 hover:underline">our application page</a>. We look forward to connecting!</p>
       </div>
       <div class="flex-none">
-        <img src="/images/careers/shovels-guy-pose9.png" class="w-72">
+        <img src="/images/careers/shovels-guy-pose9.png" style="width:60px;" class="w-15">
       </div>
     </div>
   </div>
