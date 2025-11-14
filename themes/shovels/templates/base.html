@@ -38,7 +38,7 @@
   
 
   <!-- Critical meta tags -->
-  <title>{% block title %}{{ SITENAME }} The API for building permits and building contractors{% endblock title %}</title>
+  <title>{% block title %}{{ SITENAME }} The intelligence layer for the built world{% endblock title %}</title>
   {% if article and article.summary %}
     <meta name="description" content="{{ article.summary|striptags|truncate(160) }}">
   {% elif page and page.description %}
@@ -46,7 +46,7 @@
   {% elif page and page.summary %}
     <meta name="description" content="{{ page.summary|striptags|truncate(160) }}">
   {% else %}
-    <meta name="description" content="Shovels helps you identify qualified contractors, understand their work history, and connect with decision makers. Access rich permit data to power your contractor sales and marketing.">
+    <meta name="description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
   {% endif %}
 
   <!-- Preload critical CSS -->
@@ -150,7 +150,7 @@
   <meta property="og:url" content="{{ SITEURL }}{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}">
   <meta property="og:site_name" content="Shovels">
   <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - Building permit and contractor intelligence{% endif %}">
+  <meta property="og:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}">
   {% if article and article.summary %}
     <meta property="og:description" content="{{ article.summary|striptags|truncate(160) }}">
   {% elif article and article.description %}
@@ -160,11 +160,11 @@
   {% elif page and page.summary %}
     <meta property="og:description" content="{{ page.summary|striptags|truncate(160) }}">
   {% else %}
-    <meta property="og:description" content="Shovels helps you identify qualified contractors, understand their work history, and connect with decision makers. Access rich permit data to power your contractor sales and marketing.">
+    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
   {% endif %}
   {% block og_image %}
   <meta property="og:image" content="{% if article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}">
-  <meta property="og:image:alt" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - Building permit and contractor intelligence{% endif %}">
+  <meta property="og:image:alt" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   {% endblock %}
@@ -172,7 +172,7 @@
   <!-- Twitter Card meta tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@shovelsai">
-  <meta name="twitter:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - Building permit and contractor intelligence{% endif %}">
+  <meta name="twitter:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}">
   {% if article and article.summary %}
     <meta name="twitter:description" content="{{ article.summary|striptags|truncate(160) }}">
   {% elif article and article.description %}
@@ -182,7 +182,7 @@
   {% elif page and page.summary %}
     <meta name="twitter:description" content="{{ page.summary|striptags|truncate(160) }}">
   {% else %}
-    <meta name="twitter:description" content="Shovels helps you identify qualified contractors, understand their work history, and connect with decision makers. Access rich permit data to power your contractor sales and marketing.">
+    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
   {% endif %}
   <meta name="twitter:image" content="{% if article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}">
   

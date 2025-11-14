@@ -1,5 +1,5 @@
 Title: Building Contractor and Permit API
-Description: Access our V2 API with enhanced geo-search capabilities, expanded filtering, and lightning-fast response times for building permit and contractor data.
+Description: Access the first signal of construction through our API. Shovel-ready intelligence from thousands of municipalities, delivered via REST API with enhanced geo-search and lightning-fast response times.
 slug: api
 
 {% block background_pattern %}
@@ -19,9 +19,9 @@ slug: api
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">The API for building permits and building contractors</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Access the first signal of construction</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Access our completely rebuilt V2 API with enhanced geo-search capabilities, expanded filtering by property and contractor attributes, and lightning-fast responses.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Get Shovel-ready intelligence delivered via our API. We capture permit, contractor, and property data from thousands of municipalities—using AI to clean, enrich, and unify it into standardized intelligence. Enhanced geo-search, expanded filtering, and lightning-fast responses.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
           <a href="https://docs.shovels.ai/api-reference/" class="text-sm/6 font-semibold text-gray-900" target="_blank">API documentation <span aria-hidden="true">&rarr;</span></a>
@@ -38,8 +38,8 @@ slug: api
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">API for the building trades</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Nationwide building permit and contractor data in an intuitive API</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">We built this API to be the most developer-friendly way to access building permit and contractor data. It is powerful, fast, and easy to understand. It works the way you expect.</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Shovel-ready intelligence, delivered via API</h2>
+      <p class="mt-6 text-lg/8 text-gray-300">Everything built starts with a permit. Our API delivers that first signal—turning fragmented public records from thousands of municipalities into standardized, Shovel-ready intelligence. Built to be powerful, fast, and developer-friendly.</p>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">

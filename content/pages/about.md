@@ -1,5 +1,5 @@
 Title: About Shovels, Inc.
-Description: Learn about Shovels - the building permit intelligence platform helping construction companies leverage data to make better decisions and grow their business.
+Description: The intelligence layer for the built world. Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.
 slug: about
 
 {% block background_pattern %}
@@ -20,8 +20,9 @@ slug: about
   <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
     <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
       <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-        <h1 class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">We’re making construction data accessible</h1>
-        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">When you can see what's getting built and who's building it, the world opens up. We're fascinated by real-world data, the records that describe the world around us. We've come a long way since we started in 2022 and we still have a long way to go.</p>
+        <h1 class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Everything built starts with a permit.</h1>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">Shovels captures that first signal—using AI to clean, enrich, and unify permit, contractor, and property data from thousands of municipalities.</p>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">Delivered through our API, web app, or data warehouse, we turn messy public records into standardized, Shovel-ready intelligence that helps industries anticipate growth and make smarter decisions. From construction companies to electric utilities, real estate firms to government agencies, our customers use Shovel-ready data to anticipate market shifts, identify opportunities, and make decisions ahead of the competition.</p>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">We hope you'll join us for the ride.</p>
       </div>
       <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -60,7 +61,7 @@ slug: about
     <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our mission</h2>
     <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
       <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
-        <p class="text-xl/8 text-gray-600">We started with a simple mission: make building permit data accessible to everyone. That mission has grown to include building contractors, geospatial data, and property attributes.</p>
+        <p class="text-xl/8 text-gray-600">We started in 2022 with a focused mission: make building permit data accessible and usable. That mission has expanded to include contractor intelligence, geospatial analysis, and property attributes—but the core principle remains the same: turn complex, messy public records into standardized intelligence that's ready for analysis.</p>
         <p class="mt-10 text-xl/8 text-gray-600">Fundamentally, we believe in making complex data accessible and ready for analysis. We want to delight data scientists and account executives alike. This is a massive market and we're just getting started.</p>
       </div>
       <div class="lg:flex lg:flex-auto lg:justify-center">
@@ -89,7 +90,7 @@ slug: about
   <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
     <div class="max-w-xl">
       <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Meet the team</h2>
-      <p class="mt-6 text-xl/8 text-gray-600">We're a venture-backed team of AI engineers and data professionals. We're headquartered in California with offices in Washington and Europe.</p>
+      <p class="mt-6 text-xl/8 text-gray-600">We're a venture-backed team of AI engineers and data scientists headquartered in California with offices in Washington and Europe. We process over 185 million permits from thousands of jurisdictions, adding hundreds of thousands of new records monthly. We like solving hard data problems—and we love working with customers who use real-world intelligence to build, plan, and grow.</p>
       <p class="mt-6 text-xl/8 text-gray-600">We like solving hard data problems and enjoy working with real-world data.</p>
     </div>
     <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
