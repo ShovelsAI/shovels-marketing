@@ -67,9 +67,9 @@
     <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
       {% for article in dates %}
       <article class="flex flex-col items-start" 
-               data-summary="{{ article.summary|default('')|replace('\"', '\\"') }}"
-               data-title="{{ article.title|replace('\"', '\\"') }}"
-               x-show="isMatchingCategory('{{ article.category }}') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
+               data-summary='{{ article.summary|default("")|striptags|replace("'", "&#39;") }}'
+               data-title='{{ article.title|striptags|replace("'", "&#39;") }}'
+               x-show="isMatchingCategory('{{ article.category|replace("'", "\\'") }}') && isMatchingSearch($el.dataset.summary, $el.dataset.title)">
         <div class="relative w-full">
           <a href="{{ SITEURL }}/{{ article.url }}">
             <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" 
