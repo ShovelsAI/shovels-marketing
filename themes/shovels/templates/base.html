@@ -67,6 +67,47 @@
   <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} Full Atom Feed" href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}">
   {% endif %}
   <!-- ... other feed links moved to bottom ... -->
+  
+  <!-- Social meta tags -->
+  <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}" />
+  <meta property="og:url" content="{{ SITEURL }}{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
+  <meta property="og:site_name" content="Shovels" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}" />
+  {% if article and article.summary %}
+    <meta property="og:description" content="{{ article.summary|striptags|truncate(160) }}" />
+  {% elif article and article.description %}
+    <meta property="og:description" content="{{ article.description|striptags|truncate(160) }}" />
+  {% elif page and page.description %}
+    <meta property="og:description" content="{{ page.description|striptags|truncate(160) }}" />
+  {% elif page and page.summary %}
+    <meta property="og:description" content="{{ page.summary|striptags|truncate(160) }}" />
+  {% else %}
+    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
+  {% endif %}
+  {% block og_image %}
+  <meta property="og:image" content="{% if article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
+  <meta property="og:image:alt" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  {% endblock %}
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@shovelsai" />
+  <meta name="twitter:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}" />
+  {% if article and article.summary %}
+    <meta name="twitter:description" content="{{ article.summary|striptags|truncate(160) }}" />
+  {% elif article and article.description %}
+    <meta name="twitter:description" content="{{ article.description|striptags|truncate(160) }}" />
+  {% elif page and page.description %}
+    <meta name="twitter:description" content="{{ page.description|striptags|truncate(160) }}" />
+  {% elif page and page.summary %}
+    <meta name="twitter:description" content="{{ page.summary|striptags|truncate(160) }}" />
+  {% else %}
+    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
+  {% endif %}
+  <meta name="twitter:image" content="{% if article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
   {% endblock head %}
 
   <!-- Favicons (low priority) -->
@@ -144,47 +185,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/theme/images/favicon-16x16.png">
   <link rel="manifest" href="/theme/images/site.webmanifest">
   <link rel="mask-icon" href="/theme/images/safari-pinned-tab.svg" color="#5bbad5">
-  
-  <!-- Social meta tags -->
-  <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
-  <meta property="og:url" content="{{ SITEURL }}{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}">
-  <meta property="og:site_name" content="Shovels">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}">
-  {% if article and article.summary %}
-    <meta property="og:description" content="{{ article.summary|striptags|truncate(160) }}">
-  {% elif article and article.description %}
-    <meta property="og:description" content="{{ article.description|striptags|truncate(160) }}">
-  {% elif page and page.description %}
-    <meta property="og:description" content="{{ page.description|striptags|truncate(160) }}">
-  {% elif page and page.summary %}
-    <meta property="og:description" content="{{ page.summary|striptags|truncate(160) }}">
-  {% else %}
-    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
-  {% endif %}
-  {% block og_image %}
-  <meta property="og:image" content="{% if article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}">
-  <meta property="og:image:alt" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  {% endblock %}
-  
-  <!-- Twitter Card meta tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@shovelsai">
-  <meta name="twitter:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}">
-  {% if article and article.summary %}
-    <meta name="twitter:description" content="{{ article.summary|striptags|truncate(160) }}">
-  {% elif article and article.description %}
-    <meta name="twitter:description" content="{{ article.description|striptags|truncate(160) }}">
-  {% elif page and page.description %}
-    <meta name="twitter:description" content="{{ page.description|striptags|truncate(160) }}">
-  {% elif page and page.summary %}
-    <meta name="twitter:description" content="{{ page.summary|striptags|truncate(160) }}">
-  {% else %}
-    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
-  {% endif %}
-  <meta name="twitter:image" content="{% if article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}">
   
 </body>
 

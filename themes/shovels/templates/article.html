@@ -12,20 +12,20 @@
   {% endif %}
 
   {% if article.summary %}
-    <meta name="description" content="{{ article.summary }}" />
+    <meta name="description" content="{{ article.summary|striptags|e }}" />
   {% endif %}
 
   {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
+    <meta name="tags" content="{{ tag|striptags|e }}" />
   {% endfor %}
 
   <!-- Force Open Graph image priority -->
   {% if article.open_graph_image or article.image %}
-  <meta property="og:image" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}">
-  <meta property="og:image:secure_url" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
+  <meta property="og:image:secure_url" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   {% endif %}
 
 {% endblock %}
@@ -43,7 +43,7 @@
       {% endif %}
       <div class="block">
         <!-- Image placeholder -->
-        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle }}" class="rounded-2xl bg-gray-100 object-contain">
+        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
         <!-- Title and date container -->
         <div class="break-words">
           <h1 class="my-5 text-5xl">
@@ -59,7 +59,7 @@
           {% if article.author %}
           <div class="relative mt-4 flex items-center gap-x-4">
             {% if article.author_image %}
-            <img src="{{ article.author_image }}" alt="{{ article.author }}" class="size-10 rounded-full bg-gray-100">
+            <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}" class="size-10 rounded-full bg-gray-100" />
             {% endif %}
             <div class="text-sm/6">
               <p class="font-semibold text-gray-900">{{ article.author }}</p>
