@@ -25,7 +25,7 @@ What we discovered offers crucial insights for anyone involved in construction, 
 
 When Hurricane Harvey stalled over Houston on August 25, 2017, it dropped [more than 50 inches of rain](https://www.weather.gov/hgx/hurricaneharvey#:~:text=Between%204.62%20and%2056%20inches,falling%20in%20the%20Friendswood%20area) on Harris County. The catastrophic flooding that followed wasn't just about water in streets. It was about water in everything. Foundations cracked, electrical systems shorted out, and entire neighborhoods found themselves uninhabitable.
 
-![]({static}/images/blog_images/hurricane-Harvey_radar_landfall_in_Texas.gif)
+![Radar imagery of Hurricane Harvey making landfall in Texas]({static}/images/blog_images/hurricane-Harvey_radar_landfall_in_Texas.gif)
 
 Harris County's pre-Harvey permit activity was modest, averaging around 680 permits per month. This was a functioning but not booming construction market. Then Harvey hit, and the immediate impact was stark: permit activity dropped 77% in the days following the storm. From August 1-24, the county had issued 2,016 permits (about 84 per day). From August 25-31, just 132 permits were issued (only 19 per day).
 
@@ -33,7 +33,7 @@ Harris County's pre-Harvey permit activity was modest, averaging around 680 perm
 
 Five years later, Hurricane Ian made landfall near Fort Myers, Florida as a Category 4-5 storm on September 28, 2022. Unlike Harvey's rain, Ian brought devastating winds that [peeled roofs off homes across Lee County](https://ianprogress.leegov.com/). The storm surge added to the destruction, particularly along the coast.
 
-![]({static}/images/blog_images/hurricane-Radar_Ian.jpg)
+![Radar imagery of Hurricane Ian approaching Florida]({static}/images/blog_images/hurricane-Radar_Ian.jpg)
 
 Lee County's pre-storm context couldn't have been more different from Houston's. Florida's Gulf Coast was in the midst of a construction boom, with permit activity averaging 11,500 per month. That's 17 times higher than Harris County before Harvey. The immediate impact was even more dramatic than Harvey: a 98.8% drop in permit activity in the two days following the storm.
 
@@ -154,7 +154,7 @@ All of this requires time and expertise. But the real delay comes from financing
 
 The July-August 2018 spike, nearly a year post-Harvey, represents the moment when all these pieces finally came together: [insurance settlements arrived](https://www.cbsnews.com/texas/news/harveys-insured-losses-estimated-to-cost-nearly-19-billion/), FEMA grants were disbursed, and homeowners secured financing for complete rebuilds. It's not that people were waiting to rebuild. They were waiting for the means to do so.
 
-![](https://static01.nyt.com/images/2022/08/25/science/25cli-hurricaneharvey-02/25cli-hurricaneharvey-02-videoSixteenByNineJumbo1600.jpg)
+![Aerial view of Houston flooding during Hurricane Harvey](https://static01.nyt.com/images/2022/08/25/science/25cli-hurricaneharvey-02/25cli-hurricaneharvey-02-videoSixteenByNineJumbo1600.jpg)
 
 Ian's recovery moved faster because wind damage is fundamentally different. A missing roof is immediately visible and assessable. Insurance adjusters can inspect it within days or weeks, not months. Standard homeowner's insurance processes wind damage claims much faster than NFIP processes flood claims. And crucially, roof replacement doesn't require the extensive engineering review that foundation work demands.
 
@@ -221,7 +221,7 @@ For site selection, understanding pre-disaster permit baselines helps you distin
 - Monitor infrastructure permits (electrical, plumbing, HVAC) as leading indicators of property value recovery
 - [Sign up for free](https://app.shovels.ai/signup/) to explore permit patterns in your target markets
 
-![](https://media.wired.com/photos/6334d87dd90aafbd66b0c6bc/master/pass/Science_GettyImages-1243577594-(1).jpg)
+![Hurricane Ian storm surge and flooding damage in Florida](https://media.wired.com/photos/6334d87dd90aafbd66b0c6bc/master/pass/Science_GettyImages-1243577594-(1).jpg)
 
 ### For Government and Emergency Management
 
@@ -255,7 +255,7 @@ Post-disaster reconstruction represents the largest forced home improvement cycl
 
 Infrastructure rebuilds after major disasters offer rare opportunities to deploy fiber and broadband to entire neighborhoods simultaneously. The permit data shows you exactly where reconstruction is happening and when—allowing you to coordinate conduit installation with street reconstruction, building upgrades with fiber drops, and new construction with modern connectivity infrastructure.
 
-![](https://cdn.arstechnica.net/wp-content/uploads/2017/09/getty-irma-power-lines-scaled.jpg)
+![Downed power lines after a hurricane](https://cdn.arstechnica.net/wp-content/uploads/2017/09/getty-irma-power-lines-scaled.jpg)
 
 The Harvey data showed sustained infrastructure work over 18 months. The Ian data showed concentrated reconstruction in 3-6 months. These timelines determine whether you can take a strategic, planned approach to infrastructure deployment or need rapid-response crews ready to mobilize immediately.
 
