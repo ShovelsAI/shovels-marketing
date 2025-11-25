@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: "marble";
-  src: url("theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
+  src: url("/theme/webfonts/MarbleCrimsonRegular.woff") format('woff');
   font-display: optional;
 }
 
 /* TODO: add various weights */
 @font-face {
   font-family: "Scandia";
-  src: url("theme/webfonts/Scandia-Regular.woff") format('woff');
+  src: url("/theme/webfonts/Scandia-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: optional;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "Scandia";
-  src: url("theme/webfonts/Scandia-Medium.woff") format('woff');
+  src: url("/theme/webfonts/Scandia-Medium.woff") format('woff');
   font-weight: 500; 
   font-style: normal;
   font-display: optional;
@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: "Scandia";
-  src: url("theme/webfonts/Scandia-Bold.woff") format('woff');
+  src: url("/theme/webfonts/Scandia-Bold.woff") format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: optional;
