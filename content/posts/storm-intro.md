@@ -4,9 +4,9 @@ Date: 2025-11-25
 Modified: 2025-11-25
 Category: Company
 Tags: storm, data, coverage, jurisdictions
-Authors: Ryan Buckley
-Author_image: /theme/images/team/ryan.svg
-Author_title: CEO
+Authors: Chloe Harris
+Author_image: /theme/images/team/chloe.gif
+Author_title: Project Manager
 Summary: Project Storm represents our commitment to comprehensive nationwide coverage through building relationships with thousands of offline jurisdictions. In just three months, we've connected with over 350 jurisdictions and added 10 million new permits to our database.
 image: /images/storm-intro.png
 
