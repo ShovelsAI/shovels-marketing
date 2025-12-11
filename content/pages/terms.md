@@ -5,12 +5,12 @@ template: legal
 
 
 **Terms of Use**
-**Last revised on: August 10, 2023**
+**Last revised on: December 10, 2025**
 
 1\.         Introduction
 ------------------------
 
-Welcome to Shovels, a website ([https://www.shovels.ai/](https://www.google.com/url?q=https://www.shovels.ai/&sa=D&source=editors&ust=1691725862364907&usg=AOvVaw3ON_7a_FkMYtY7LNNtjuHv)) and data service provided by Shovels, Inc. (“Shovels,” “we,” “our,” “us,” or “Company”). This Terms of Service Agreement (the “Agreement”) explains the basic terms and conditions (“Terms and Conditions”) by which you may access and use Shovels’s website, Application Programming Interface (API), and any other web-based tools, data features, functionalities, and other services (collectively, the “Service”). Additional services, including for enterprise clients, may be subject to different terms or additional agreements.
+Welcome to Shovels, a website ([https://www.shovels.ai/](https://www.google.com/url?q=https://www.shovels.ai/&sa=D&source=editors&ust=1691725862364907&usg=AOvVaw3ON_7a_FkMYtY7LNNtjuHv)) and data service provided by Shovels, Inc. (“Shovels,” “we,” “our,” “us,” or “Company”). This Terms of Service Agreement (the “Agreement”) explains the basic terms and conditions (“Terms and Conditions”) by which you may access and use Shovels’s website, Application Programming Interface (API), and any other web-based tools, data features, functionalities, and other services (collectively, the “Service”). Additional services, including for enterprise clients, may be subject to different terms or additional agreements.
 
 YOU SHOULD READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION AND AFFECT YOUR LEGAL RIGHTS. AS OUTLINED IN SECTION 8 BELOW, THEY INCLUDE A MANDATORY ARBITRATION AGREEMENT.
 
@@ -30,7 +30,7 @@ You may not access or use the Service and you may not accept this Agreement if y
 
 Your access or use of the Service may be interrupted from time to time for any of several reasons, including, without limitation, the malfunction of equipment, interruptions to or limitations upon underlying data feeds and sources, periodic updating, maintenance or repair of the Service or other actions that Shovels, in its sole discretion, may elect to take. In no event will Shovels be liable to any party for any loss, cost, or damage that results from any scheduled or unscheduled downtime or for discontinuation of the Service.
 
-To the extent that Shovels provides you with data or Third-Party Content (collectively “Data”), it hereby grants Customer a non-exclusive, royalty-free, worldwide license to utilize such Data (or Third-Party Content) while this Agreement is in effect. Once this Agreement is terminated (for any reason, pursuant to Section 11), you shall immediately discontinue all uses of the Data, remove all copies, portions, and versions of the Data (including from all relevant computers, services, storage devices, databases, or models) and promptly deliver to Shovels all copies, portions, and versions of the Data (and also return Confidential Information of Shovels that may be in its possession).
+To the extent that Shovels provides you with data or Third-Party Content (collectively “Data”), it hereby grants Customer a non-exclusive, royalty-free, worldwide, non-transferable and non-sublicensable license to use such Data (or Third-Party Content) solely for its internal business purposes while this Agreement is in effect. Once this Agreement is terminated (for any reason, pursuant to Section 11), you shall immediately discontinue all uses of the Data, remove all copies, portions, and versions of the Data (including from all relevant computers, services, storage devices, databases, or models) and promptly deliver to Shovels all copies, portions, and versions of the Data (and also return Confidential Information of Shovels that may be in its possession).
 
 Shovels strongly encourages you to back-up all data and information prior to using the Service. YOU ASSUME ALL RISKS AND ALL COSTS ASSOCIATED WITH YOUR ACCESS OR USE OF THE SERVICE, INCLUDING, WITHOUT LIMITATION, ANY INTERNET ACCESS FEES, BACK-UP EXPENSES, COSTS INCURRED FOR THE USE OF YOUR DEVICE, AND ANY DAMAGE TO ANY EQUIPMENT, SOFTWARE, INFORMATION OR DATA, OR FINANCIAL DAMAGE OR LOSS. In addition, Shovels is not obligated to provide any maintenance, technical, or other support for the Service.
 
@@ -39,7 +39,7 @@ Your sole and exclusive remedy for any failure or non-performance of the Service
 (b) Use Restrictions
 --------------------
 
-Customer shall not use the Services for any purposes beyond the scope of the access granted in this Agreement. Customer shall not at any time, directly or indirectly, and shall not permit any of its employees, contractors, agents, or users (“Authorized Users”) to: (i) copy, modify, or create derivative works of the Services, in whole or in part; (ii) reverse engineer, disassemble, decompile, decode, adapt, or otherwise attempt to derive or gain access to any software component of the Services, in whole or in part; (iii) remove any proprietary notices from the Services; (iv) use the Services in any manner or for any purpose that infringes, misappropriates, or otherwise violates any intellectual property right or other right of any person, or that violates any applicable law; or (v) use the Services for the purpose of competing with Shovels’ business or gathering information for a competitor or potential competitor of Shovels’ business.
+Customer shall not use the Services for any purposes beyond the scope of the access granted in this Agreement. Customer shall not at any time, directly or indirectly, and shall not permit any of its employees, contractors, agents, or users (“Authorized Users”) to: (i) copy, modify, or create derivative works of the Services, in whole or in part; (ii) reverse engineer, disassemble, decompile, decode, adapt, or otherwise attempt to derive or gain access to any software component of the Services, in whole or in part; (iii) remove any proprietary notices from the Services; (iv) use the Services in any manner or for any purpose that infringes, misappropriates, or otherwise violates any intellectual property right or other right of any person, or that violates any applicable law; or (v) use the Services for the purpose of competing with Shovels’ business or gathering information for a competitor or potential competitor of Shovels’ business. For clarity, and without limiting any other restriction in this Section 3, Customer’s rights to the Services and the Data are non-transferable and non-sublicensable. Customer shall not, and shall not permit any third party to, resell, transfer, distribute, publish, sublicense, or otherwise make available the Services or the Data (or any portion thereof), nor to copy, modify, translate, or create derivative works of the Services or the Data (including any datasets, models, data products, or other works that are based on or trained on the Data), except as expressly authorized in a separate written agreement with Shovels.
 
 (c) Account Creation
 --------------------
@@ -64,7 +64,7 @@ You acknowledge and agree that Company will have no obligation to provide you w
 (g) Ownership
 -------------
 
-You acknowledge that all the intellectual property rights, including copyrights, patents, trademarks, and trade secrets, in the Site and its content are owned by Company or Company’s suppliers. Neither these Terms (nor your access to the Site) transfers to you or any third party any rights, title, or interest in or to such intellectual property rights, except for the limited access rights expressly set forth in Section 3(a). Company and its suppliers reserve all rights not granted in these Terms. There are no implied licenses granted under these Terms.
+You acknowledge that all the intellectual property rights, including copyrights, patents, trademarks, and trade secrets, in the Site and its content (including the Data) are owned by Company or Company’s suppliers. Neither these Terms (nor your access to the Site) transfers to you or any third party any rights, title, or interest in or to such intellectual property rights, except for the limited access rights expressly set forth in Section 3(a). Company and its suppliers reserve all rights not granted in these Terms. There are no implied licenses granted under these Terms.
 
 (h) Feedback
 ------------
@@ -117,9 +117,11 @@ Electronic alerts and notifications may be sent to a user’s email address, or
 
 The Service may transmit, include, store, or make available certain third-party content or third-party services (the “Third-Party Content”). Third-Party Content may include, without limitation: (1) raw or enriched data related to construction and permitting; (2) any other information, data, content, services, software, analysis, infographics, or products related to construction and permitting; and (3) third-party names, logos, product and service names, trade names, trademarks and services marks.
 
-Shovels does not review, approve, monitor, endorse, prepare, edit, warrant, inspect, verify, or make any representations with respect to Third-Party Content, and does not purport to take responsibility for or guarantee the substance, correctness, timeliness, completeness, usefulness, or delivery of Third-Party Content. Moreover, Shovels is not responsible or liable for any content, advertising, products, or other materials on or available from third-party sites. Specifically, Shovels encourages all users to independently verify messages received through the Service, particularly before engaging in a transaction with financial consequences.
+Shovels does not review, approve, monitor, endorse, prepare, edit, warrant, inspect, verify, or make any representations with respect to Third-Party Content, and does not purport to take responsibility for or guarantee the substance, correctness, timeliness, completeness, usefulness, or delivery of Third-Party Content. Moreover, Shovels is not responsible or liable for any content, advertising, products, or other materials on or available from third-party sites. Specifically, Shovels encourages all users to independently verify Third-Party Content and messages received through the Service, particularly before engaging in a transaction with financial consequences.
 
 You will not hold Shovels liable in any way for (a) any inaccuracy of, error or delay in, or omission of the Third-Party Content; or (b) any loss or damage arising from or occasioned by: (i) any error or delay in the transmission of such Third-Party Content; (ii) interruption in any such Third-Party Content due either to any negligent act or omission by any party to any “force majeure” (e.g., flood, extraordinary weather conditions, earthquake, epidemic, pandemic, public health crisis, or other act of God, fire, war, insurrection, riot, labor dispute, accident, action of government, communications or power failure, equipment or software malfunction), or (iii) to any other cause beyond the reasonable control of Shovels, or iv) non-performance.
+
+In addition, your right to access and use any Third-Party Content or Data is subject to any usage limits, conditions, and restrictions imposed by the applicable third-party provider and communicated to you by Shovels (including through the Service). You agree not to access or use the Service, Data, or Third-Party Content in any manner that would cause Shovels to breach its agreements with any of its third-party providers.
 
 (b)        Your Assumption of Risk
 ----------------------------------
@@ -151,7 +153,7 @@ Arbitration will be conducted by the American Arbitration Association (AAA) befo
 9.        Indemnification
 -------------------------
 
-You will indemnify and hold harmless Shovels and its officers, directors, agents, partners, employees, licensors, distributors, representatives, and affiliates from and against any and all claims, demands, actions, causes of action, suits, proceedings, losses, damages, costs, and expenses, including reasonable attorneys’ fees, arising from or relating to your access and/or use of or interaction with the Third-Party Content, or any act, error, or omission of your use of your account or any user of your account, in connection therewith, including, but not limited to, matters relating to incorrect, incomplete, or misleading information; libel; invasion of privacy; infringement of a copyright, trade name, trademark, service mark, or other intellectual property; any defective product or any injury or damage to person or property caused by any products sold or otherwise distributed through or in connection with the Service; or violation of any applicable law.
+You will indemnify and hold harmless Shovels and its officers, directors, agents, partners, employees, licensors, distributors, representatives, and affiliates from and against any and all claims, demands, actions, causes of action, suits, proceedings, losses, damages, costs, and expenses, including reasonable attorneys’ fees, arising from or relating to your access and/or use of or interaction with the Services and Third-Party Content, your breach or alleged breach of these Terms (including any use restrictions in Section 3), or any act, error, or omission of your use of your account or any user of your account, in connection therewith, including, but not limited to, matters relating to incorrect, incomplete, or misleading information; libel; invasion of privacy; infringement of a copyright, trade name, trademark, service mark, or other intellectual property; any defective product or any injury or damage to person or property caused by any products sold or otherwise distributed through or in connection with the Service; or violation of any applicable law.
 
 10.        Service Fees
 -----------------------
@@ -163,15 +165,20 @@ Certain features of the Service may be provided without charge (for free). These
 
 You agree that, without notice, Shovels may terminate these Terms and Conditions, or suspend your access to the Service or the Third-Party Content, with or without cause at any time and effective immediately. These Terms and Conditions will terminate immediately without notice from Shovels if you, in Shovels’s sole determination, fail to comply with any provision of these Terms and Conditions. Shovels shall not be liable to you or any third party for the termination or suspension of the Service or the Content, or any claims related to such termination or suspension. Shovels may discontinue or modify the Third-Party Content, or any portion thereof, at any time. You release and agree to indemnify and hold harmless Shovels for any loss or damages arising from or relating to such discontinuation or modification. If you are paying for a premium feature or service and Shovels terminates the Service, then your payment obligations will terminate at the end of the applicable subscription period (e.g., monthly / quarterly). For paying customers, no refunds are otherwise available except as required by law.
 
+The following provisions will survive any termination of these Terms and Conditions: Sections 3(a) and 3(b) (Use of the Service), 4 (User Conduct), 6 (Third-Party Content and Assumption of Risk), 7 (Disclaimers and Limitations of Liability), 8 (Arbitration), 9 (Indemnification), 10 (Service Fees), and 12–14.
+
 12.        Applicable Law and Venue
 -----------------------------------
 
 You agree that this Agreement shall be governed by and interpreted in accordance with the laws of the State of California, without giving effect to principles of conflicts of law. To the extent allowable, beyond the arbitration clause below, any legal action or proceeding arising under this Agreement will be brought exclusively in courts located in Contra Costa County, California, and you irrevocably consent to the personal jurisdiction and venue therein.
 
-13.        Severability
+13.        Severability; Order of Precedence
 -----------------------
 
 If any provision of this Agreement is deemed unlawful, void or for any reason unenforceable, then that provision will be deemed severable from every other provision of the Agreement, and will not affect the validity and enforceability of the remaining provisions.
+
+If Customer and Shovels execute a separate statement of work, order form, or other written agreement (each, a “Statement of Work”), the Statement of Work will govern solely with respect to the specific Services described therein and only to the extent it expressly states that it is intended to modify these Terms. In the event of any conflict between a Statement of Work and these Terms, these Terms will control unless expressly stated otherwise in the Statement of Work.
+
 
 14.        Revisions to these Terms and Conditions
 --------------------------------------------------
@@ -181,7 +188,7 @@ Shovels may at any time revise these Terms and Conditions by updating this Agre
 Copyright
 ---------
 
-Copyright © 2023 Shovels, Inc. All rights reserved. All trademarks, logos and service marks (“Marks”) displayed on the Site are our property or the property of other third parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.
+Copyright © 2025 Shovels, Inc. All rights reserved. All trademarks, logos and service marks (“Marks”) displayed on the Site are our property or the property of other third parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.
 
 Contact Information
 -------------------
