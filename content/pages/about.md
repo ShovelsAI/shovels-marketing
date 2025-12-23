@@ -28,27 +28,27 @@ slug: about
       <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
         <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
           <div class="relative">
-            <img src="{static}/images/about1.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <img src="{static}/images/about_page/shovels_team_crop_1.jpg" alt="Shovels team hike" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
           </div>
         </div>
         <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
           <div class="relative">
-            <img src="{static}/images/about2.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <img src="{static}/images/about_page/shovels_team_crop_2.jpg" alt="Shovels team paddel" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
           </div>
           <div class="relative">
-            <img src="{static}/images/about3.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <img src="{static}/images/about_page/shovels_team_crop_3.jpg" alt="Shovels team Golden Gate Bridge" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
           </div>
         </div>
         <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
           <div class="relative">
-            <img src="{static}/images/about4.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <img src="{static}/images/about_page/shovels_team_crop_4.jpg" alt="Shovels team dinner 1" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
           </div>
           <div class="relative">
-            <img src="{static}/images/about5.png" alt="Shovels team" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+            <img src="{static}/images/about_page/shovels_team_crop_5.jpg" alt="Shovels team dinner 2" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
           </div>
         </div>
@@ -83,8 +83,45 @@ slug: about
     </div>
   </div>
 </div>
-<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-  <img src="{static}/images/about6.png" alt="Shovels team dinner" class="aspect-[5/2] w-full object-cover xl:rounded-3xl">
+<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8" x-data="{
+  images: [
+    { src: '/images/about_page/shovels_team_crop_6.jpg', alt: 'Shovels team happy hour' },
+    { src: '/images/about_page/shovels_team_crop_7.jpg', alt: 'Shovels team twilight' },
+    { src: '/images/about_page/shovels_team_crop_8.jpg', alt: 'Shovels team bridge hike' },
+    { src: '/images/about_page/shovels_team_crop_9.jpg', alt: 'Shovels team Cigar Bar' }
+  ],
+  currentIndex: 0,
+  get currentImage() { return this.images[this.currentIndex]; },
+  get nextIndex() { return this.currentIndex === this.images.length - 1 ? 0 : this.currentIndex + 1; },
+  get prevIndex() { return this.currentIndex === 0 ? this.images.length - 1 : this.currentIndex - 1; },
+  goNext() { this.currentIndex = this.nextIndex; },
+  goPrev() { this.currentIndex = this.prevIndex; }
+}">
+  <div class="relative mx-auto max-w-5xl">
+    <!-- Carousel container with arrows on sides -->
+    <div class="flex items-center gap-4">
+      <!-- Left arrow button -->
+      <button @click="goPrev()" class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 transition hover:bg-gray-50 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gray-900/20" aria-label="Previous image">
+        <svg class="h-6 w-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+
+      <!-- Image container -->
+      <div class="flex-1 relative">
+        <div x-show="true" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+          <img :src="currentImage.src" :alt="currentImage.alt" :key="currentIndex" class="aspect-[5/2] w-full object-cover xl:rounded-3xl shadow-xl">
+        </div>
+      </div>
+
+      <!-- Right arrow button -->
+      <button @click="goNext()" class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 transition hover:bg-gray-50 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gray-900/20" aria-label="Next image">
+        <svg class="h-6 w-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+    </div>
+  </div>
 </div>
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
@@ -180,4 +217,5 @@ slug: about
       </p>
     </div>
   </div>
+</div>
 </div>
