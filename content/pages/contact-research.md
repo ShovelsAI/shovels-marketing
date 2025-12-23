@@ -2,7 +2,6 @@ Title: Contact Shovels For Research
 Description: Access comprehensive building permit data for academic research, policy analysis, and institutional studies. Shovels provides researchers with clean, structured datasets to support housing, construction, and urban development research.
 slug: contact/research
 
-{% block background_pattern %}
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
   <defs>
     <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
@@ -14,7 +13,6 @@ slug: contact/research
   </svg>
   <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
 </svg>
-{% endblock background_pattern %}
 
 <div class="relative isolate">
   <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
