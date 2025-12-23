@@ -21,6 +21,7 @@ ordered-set==4.1.0
 pelican==4.10.1
 pelican-jinja2content==1.0.1
 pelican-seo==1.2.2
+pelican-sitemap==1.2.2
 pelican-webassets==2.0.0
 Pygments==2.18.0
 pylint==2.6.0

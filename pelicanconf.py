@@ -69,3 +69,20 @@ ERROR_404_SAVE_AS = '404.html'
 ERROR_404_URL = '404.html'
 
 DELETE_OUTPUT_DIRECTORY = True
+
+# Plugins
+PLUGINS = ['sitemap']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.7
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
