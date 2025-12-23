@@ -68,6 +68,9 @@
   {% endif %}
   <!-- ... other feed links moved to bottom ... -->
   
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ SITEURL }}/{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
+
   <!-- Social meta tags -->
   <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ SITEURL }}{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
