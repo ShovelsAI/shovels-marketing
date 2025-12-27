@@ -121,6 +121,20 @@ slug: about
     </div>
   </div>
 </div>
+<div class="bg-gray-50 py-16 sm:py-24">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p class="text-base/7 font-semibold text-shovels-primary">Expanding our intelligence</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Shovels acquires ReZone</h2>
+      <p class="mt-6 text-lg/8 text-gray-600">In 2025, Shovels acquired ReZone to expand our real estate intelligence capabilities. ReZone tracks all CRE-related city council and planning department decisions nationwide—analyzing zoning changes, development approvals, and regulatory shifts before they hit the market.</p>
+      <p class="mt-4 text-lg/8 text-gray-600">This acquisition brings together permit data intelligence with zoning and regulatory intelligence, giving our customers the most complete picture of what's being built and what's about to change.</p>
+    </div>
+    <div class="mx-auto mt-16 flex max-w-lg items-center justify-center gap-x-8 sm:gap-x-12">
+      <a href="/solutions/acquisition" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Explore ReZone →</a>
+    </div>
+  </div>
+</div>
+
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
     <div class="max-w-xl">
@@ -191,6 +205,17 @@ slug: about
             <div>
               <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Božidar Grgur Drmić</h3>
               <p class="text-base/6 font-semibold text-shovels-primary">Software Engineer</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/daniel-helller/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="{static}/images/rezone/Daniel-Heller.jpg" alt="Daniel Heller">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Daniel Heller</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Founder, ReZone</p>
             </div>
           </div>
         </a>
