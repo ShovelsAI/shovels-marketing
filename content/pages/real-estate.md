@@ -2,7 +2,6 @@ Title: Find the best building sites using building permits
 Description: Improve site selection with our Neighborhood Vitality Index (NVI) and permit approval speed metrics to identify the most actively improving areas.
 slug: real-estate
 
-{% block background_pattern %}
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
   <defs>
     <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
@@ -14,7 +13,6 @@ slug: real-estate
   </svg>
   <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
 </svg>
-{% endblock background_pattern %}
 
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
