@@ -1,5 +1,5 @@
-Title: Charlie AI | Natural Language Permit Intelligence | Shovels
-Description: Meet Charlie, Shovels' AI agent for instant permit intelligence. Search 185M+ building permits using plain English. No SQL required, no false positives. Get started free.
+Title: Charlie | AI Research Assistant for the Shovels Data Network | Shovels
+Description: Meet Charlie, your AI research assistant for the Shovels data network. Search permits, contractors, city decisions, and more using plain English. No SQL required, no false positives. Get started free.
 slug: charlie
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -17,15 +17,15 @@ slug: charlie
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Meet <span class="font-bold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">Charlie</span>: Always on, always digging</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Meet <span class="font-bold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">Charlie</span></h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI agent for instant permit intelligence. No training required, no false leads. Just point Charlie at what you need, and watch him work.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your personal AI research assistant for the Shovels data network. No training required, no software to install. Just point Charlie at what you need, and watch her work.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/signup/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Start Digging</a>
+          <a href="https://charlie.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Start Digging</a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px] rounded-xl shadow-2xl ring-1 ring-gray-900/10" src="{static}/images/charlie-screenshot3.png" alt="Charlie AI analyzing permit types in Los Angeles County">
+        <img class="relative max-h-[500px]" src="{static}/images/shovels-Charlie-pose3.svg" alt="Charlie AI analyzing permit types in Los Angeles County">
       </div>
     </div>
   </div>
@@ -35,14 +35,14 @@ slug: charlie
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">AI-powered permit intelligence</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">What if finding the right permits took minutes, not months?</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Building permit data is messy, scattered across 2,000+ jurisdictions, and buried in inconsistent formats. Charlie changes that. Ask in plain English. Get exactly what you need, instantly. No SQL required, no API calls to learn, no false positives to wade through.</p>
+      <p class="text-base/7 font-semibold text-shovels-secondary">AI-powered data intelligence</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">What if finding the right data took minutes, not months?</h2>
+      <p class="mt-6 text-lg/8 text-gray-300">Construction data is messy—permits scattered across 2,000+ jurisdictions, contractor records in inconsistent formats, city decisions buried in meeting minutes. Charlie changes that. Ask in plain English. Get exactly what you need, instantly. No SQL required, no API calls to learn, no false positives to wade through.</p>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/chuck1-big.png" alt="Charlie AI analyzing permit data" class="mb-[-12%] rounded-2xl shadow-2xl ring-1 ring-white/10 overflow-hidden" width="2432" height="1442">
+      <img src="{static}/images/charlie-screenshot3.png" alt="Charlie AI analyzing permit data" class="mb-[-12%] rounded-2xl shadow-2xl ring-1 ring-white/10 overflow-hidden" width="2432" height="1442">
       <div class="relative" aria-hidden="true">
         <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
       </div>
@@ -66,7 +66,7 @@ slug: charlie
           </svg>
           Intelligent filtering.
         </dt>
-        <dd class="inline">Charlie removes false positives automatically. He knows that "parking stacker" might appear as "automated parking system" or "mechanical parking lift" and searches for all of them.</dd>
+        <dd class="inline">Charlie removes false positives automatically. She knows that "parking stacker" might appear as "automated parking system" or "mechanical parking lift" and searches for all of them.</dd>
       </div>
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
@@ -75,7 +75,7 @@ slug: charlie
           </svg>
           Iterative refinement.
         </dt>
-        <dd class="inline">Not quite right? Tell Charlie to narrow down, expand, or pivot. He sticks with your search until you're satisfied.</dd>
+        <dd class="inline">Not quite right? Tell Charlie to narrow down, expand, or pivot. She sticks with your search until you're satisfied.</dd>
       </div>
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
@@ -84,7 +84,7 @@ slug: charlie
           </svg>
           Data transparency.
         </dt>
-        <dd class="inline">See the SQL behind every query. Charlie shows his work so you understand exactly how he found your results.</dd>
+        <dd class="inline">See the SQL behind every query. Charlie shows her work so you understand exactly how she found your results.</dd>
       </div>
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
@@ -93,7 +93,7 @@ slug: charlie
           </svg>
           Always on.
         </dt>
-        <dd class="inline">24/7 access to nationwide permit data. Charlie never sleeps, never takes vacation, and never forgets what you asked for.</dd>
+        <dd class="inline">24/7 access to the Shovels data network. Charlie never sleeps, never takes vacation, and never forgets what you asked for.</dd>
       </div>
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
@@ -112,7 +112,7 @@ slug: charlie
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-primary">How Charlie works</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Three steps to permit intelligence</h2>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Three steps to data intelligence</h2>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -122,16 +122,16 @@ slug: charlie
             Tell Charlie what to find
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Just ask. "Show me all HVAC replacements in Phoenix from the last 6 months" or "Find the top solar contractors in Texas by permit volume." Charlie understands what you mean, not just what you type. No SQL. No filters to configure. Just plain English.</p>
+            <p class="flex-auto">Just ask. "Show me all HVAC replacements in Phoenix from the last 6 months," "Find the top solar contractors in Texas," or "Which cities approved the most ADU permits last quarter?" Charlie understands what you mean, not just what you type. No SQL. No filters to configure. Just plain English.</p>
           </dd>
         </div>
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900">
             <span class="flex size-10 items-center justify-center rounded-lg bg-shovels-primary text-white font-bold">2</span>
-            Watch him dig
+            Watch her dig
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Charlie searches through millions of permits, filtering out noise and false positives along the way. He knows that "HVAC" might show up as "heating and cooling," "air conditioning replacement," or "furnace install"—and he searches for all of them. He doesn't get tired and doesn't miss patterns.</p>
+            <p class="flex-auto">Charlie searches across the entire Shovels data network—permits, contractors, city decisions, and more—filtering out noise and false positives along the way. She knows that "HVAC" might show up as "heating and cooling" or "furnace install," and she searches for all of them. She doesn't get tired and doesn't miss patterns.</p>
           </dd>
         </div>
         <div class="flex flex-col">
@@ -140,7 +140,7 @@ slug: charlie
             Get exactly what you need
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Clean data, ready to use. Export to CSV, push to your data warehouse, or keep refining until it's perfect. Not quite right? Tell Charlie to narrow down, expand, or pivot. He sticks with your search until you're satisfied.</p>
+            <p class="flex-auto">Clean data, ready to use. Export to CSV, push to your data warehouse, or keep refining until it's perfect. Not quite right? Tell Charlie to narrow down, expand, or pivot. She sticks with your search until you're satisfied.</p>
           </dd>
         </div>
       </dl>
@@ -153,15 +153,15 @@ slug: charlie
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-primary">Charlie vs. traditional search</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Like a great retriever, Charlie brings back only what matters</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">Charlie is Shovels' AI agent built to fetch exactly what you need from millions of data points. He's loyal to your query, relentless in his search, and brings back only what matters. No distractions, no guessing—just the data you asked for, delivered fast.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Charlie is Shovels' AI agent built to fetch exactly what you need from millions of data points. She's loyal to your query, relentless in her search, and brings back only what matters. No distractions, no guessing—just the data you asked for, delivered fast.</p>
     </div>
     <div class="mx-auto mt-16 max-w-4xl">
       <div class="overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
         <table class="min-w-full divide-y divide-gray-200">
           <thead class="bg-gray-900">
             <tr>
-              <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white">Traditional Database Search</th>
-              <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-shovels-secondary">Charlie</th>
+              <th scope="col" class="px-6 py-5 text-left text-xl font-semibold text-white">Traditional Database Search</th>
+              <th scope="col" class="px-6 py-5 text-left text-xl font-bold"><span class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">Charlie</span></th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
@@ -206,7 +206,7 @@ slug: charlie
           </svg>
           <div class="text-gray-600">Founder, 61HAWK</div>
         </div>
-        <p class="mt-4 text-center text-sm text-gray-500">Gary used Charlie to find extremely unique permit types buried in 185M records—filtering false positives, identifying synonyms, and delivering hundreds of qualified leads in just 6 days.</p>
+        <p class="mt-4 text-center text-sm text-gray-500">Gary used Charlie to find extremely specific data buried in millions of records—filtering false positives, identifying synonyms, and delivering hundreds of qualified leads in just 6 days.</p>
       </figcaption>
     </figure>
   </div>
@@ -216,7 +216,7 @@ slug: charlie
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">Who uses Charlie?</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Built for teams that need permit data</h2>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Built for teams that need construction intelligence</h2>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
@@ -227,7 +227,7 @@ slug: charlie
             </svg>
             Construction Technology.
           </dt>
-          <dd class="inline text-gray-300">Find specific project types across thousands of jurisdictions. Stop manually searching permit databases and let Charlie do the heavy lifting.</dd>
+          <dd class="inline text-gray-300">Find specific project types across thousands of jurisdictions. Stop manually searching databases and let Charlie do the heavy lifting.</dd>
         </div>
         <div class="relative pl-9">
           <dt class="inline font-semibold text-white">
@@ -272,7 +272,7 @@ slug: charlie
             </svg>
             Research Teams.
           </dt>
-          <dd class="inline text-gray-300">Analyze permit trends without data engineering overhead. Get the data you need without learning SQL or waiting on IT.</dd>
+          <dd class="inline text-gray-300">Analyze construction trends without data engineering overhead. Get the data you need without learning SQL or waiting on IT.</dd>
         </div>
       </dl>
     </div>
@@ -283,7 +283,7 @@ slug: charlie
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Ready to put Charlie to work?</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/signup/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+      <a href="https://charlie.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
     </div>
   </div>
 </div>
