@@ -143,7 +143,7 @@ This is a big one!
 
 ### A new AI interface
 
-We've been talking about "[Chuck](https://www.shovels.ai/chuck)" for a while. When we launch (soon!) it will have a new name and some killer new features that we couldn't do within Claude Desktop.
+We've been talking about "[Charlie](https://www.shovels.ai/charlie)" for a while. When we launch (soon!) it will have a new name and some killer new features that we couldn't do within Claude Desktop.
 
 This product will be accessible directly through the browser and have all of the power of Shovels Online (CSV exports!) combined with the flexibility of the new AI chat modality. We're battle-testing it internally now and squashing all the bugs. 
 
