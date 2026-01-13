@@ -1,5 +1,5 @@
-Title: Charlie AI Agent - Early Access Waitlist
-Description: Join the waitlist for Charlie, Shovels' revolutionary AI agent that transforms building permit data into actionable insights. Get instant construction reports, predictive analytics, and market intelligence with natural language queries.
+Title: Charlie AI | Natural Language Permit Intelligence | Shovels
+Description: Meet Charlie, Shovels' AI agent for instant permit intelligence. Search 185M+ building permits using plain English. No SQL required, no false positives. Get started free.
 slug: charlie
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -15,132 +15,275 @@ slug: charlie
 </svg>
 
 <div class="relative isolate overflow-hidden">
-  <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
-    <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
-    <defs>
-      <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-        <stop stop-color="#7775D6" />
-        <stop offset="1" stop-color="#E935C1" />
-      </radialGradient>
-    </defs>
-  </svg> 
   <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Meet <span class="font-bold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">Charlie</span></h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Meet <span class="font-bold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">Charlie</span>: Always on, always digging</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI-powered construction intelligence agent. Transform building permit data into actionable insights with natural language queries. Get instant construction reports, predictive analytics, and market intelligence.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI agent for instant permit intelligence. No training required, no false leads. Just point Charlie at what you need, and watch him work.</p>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a href="https://app.shovels.ai/signup/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Start Digging</a>
+        </div>
       </div>
-      <div class="mt-10 aspect-video w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <iframe class="size-full rounded-2xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/j3_JYppwcyo?si=4cTNKcGkoZjarKFo?rel=0" title="Charlie AI Agent Demo"></iframe>
+      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
+        <img class="relative max-h-[500px] rounded-xl shadow-2xl ring-1 ring-gray-900/10" src="{static}/images/charlie-screenshot3.png" alt="Charlie AI analyzing permit types in Los Angeles County">
       </div>
     </div>
   </div>
   <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
 </div>
 
-<div class="bg-gray-900 py-16 sm:py-12 lg:py-24">
-  <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
-    <h2 class="max-w-xl text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:col-span-7 lg:pt-6">Get notified when <span class="font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">Charlie</span> is available.</h2>
-    <div class="w-full max-w-md lg:col-span-5">
-      <script src="https://js.hsforms.net/forms/embed/48146409.js" defer></script>
-      <div class="hs-form-frame" data-region="na1" data-form-id="7d9e1cc4-9dd3-4ebf-aa22-22d7c0c6dfc8" data-portal-id="48146409"></div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-white py-24 sm:pt-32 sm:pb-16">
+<div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-base/7 font-semibold text-shovels-primary">Revolutionary AI Technology</h2>
-      <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">What if construction data analysis took seconds, not months?</p>
-      <p class="mt-6 text-lg/8 text-gray-600">Charlie leverages advanced AI to query our database of 180+ million building permits, turning complex construction data into beautiful reports and actionable insights instantly.</p>
+      <p class="text-base/7 font-semibold text-shovels-secondary">AI-powered permit intelligence</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">What if finding the right permits took minutes, not months?</h2>
+      <p class="mt-6 text-lg/8 text-gray-300">Building permit data is messy, scattered across 2,000+ jurisdictions, and buried in inconsistent formats. Charlie changes that. Ask in plain English. Get exactly what you need, instantly. No SQL required, no API calls to learn, no false positives to wade through.</p>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/chuck1-big.png" alt="Charlie AI analyzing construction data" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10" width="2432" height="1442">
+      <img src="{static}/images/chuck1-big.png" alt="Charlie AI analyzing permit data" class="mb-[-12%] rounded-2xl shadow-2xl ring-1 ring-white/10 overflow-hidden" width="2432" height="1442">
       <div class="relative" aria-hidden="true">
-        <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"></div>
+        <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
       </div>
     </div>
   </div>
   <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
       <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0018 16.5h-2.25m-2.25 0h2.25m-2.25 0h2.25M6 12.75h.008v.008H6v-.008zm12 0h.008v.008H18v-.008z" />
+        <dt class="inline font-semibold text-white">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
           </svg>
-          Construction Reports.
+          Natural language queries.
         </dt>
-        <dd class="inline">Generate comprehensive construction analysis reports instantly. Ask Charlie about residential rebuilding projects, commercial development trends, or contractor performance metrics.</dd>
+        <dd class="inline">Ask questions the way you'd ask a colleague. Charlie understands context, synonyms, and what you actually mean—not just exact keyword matches.</dd>
       </div>
       <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 01-1.196 2.247C10.765 19.747 9.472 21 8.25 21a2.25 2.25 0 01-2.25-2.25z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 9C11.896 9 11.25 8.354 11.25 7.5S11.896 6 12.75 6s1.5.654 1.5 1.5-.654 1.5-1.5 1.5z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M18.894 15.553C20.478 13.42 21 11.969 21 9.309c0-4.883-3.365-8.809-7.5-8.809s-7.5 3.926-7.5 8.809c0 2.66.522 4.111 2.106 6.244" />
+        <dt class="inline font-semibold text-white">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z" />
           </svg>
-          Predictive Analytics.
+          Intelligent filtering.
         </dt>
-        <dd class="inline">Forecast construction trends, identify emerging markets, and predict demand surges. Charlie analyzes patterns across our 20+ year permit history to help you stay ahead.</dd>
+        <dd class="inline">Charlie removes false positives automatically. He knows that "parking stacker" might appear as "automated parking system" or "mechanical parking lift" and searches for all of them.</dd>
       </div>
       <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+        <dt class="inline font-semibold text-white">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
           </svg>
-          Market Intelligence.
+          Iterative refinement.
         </dt>
-        <dd class="inline">Understand local construction markets with geospatial analysis. Charlie can map construction activity, analyze distances to points of interest, and identify optimal locations for your business.</dd>
+        <dd class="inline">Not quite right? Tell Charlie to narrow down, expand, or pivot. He sticks with your search until you're satisfied.</dd>
       </div>
       <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+        <dt class="inline font-semibold text-white">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
           </svg>
-          Natural Language Interface.
+          Data transparency.
         </dt>
-        <dd class="inline">No complex queries or technical knowledge required. Simply ask Charlie questions in plain English and get comprehensive answers with charts, data, and insights.</dd>
+        <dd class="inline">See the SQL behind every query. Charlie shows his work so you understand exactly how he found your results.</dd>
       </div>
       <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+        <dt class="inline font-semibold text-white">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
-          Real-time Analysis.
+          Always on.
         </dt>
-        <dd class="inline">Get instant insights from our database of 180+ million building permits. Research that used to take months now happens in seconds and minutes.</dd>
+        <dd class="inline">24/7 access to nationwide permit data. Charlie never sleeps, never takes vacation, and never forgets what you asked for.</dd>
       </div>
       <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <dt class="inline font-semibold text-white">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
           </svg>
-          Shovel-Ready Data.
+          Ready to export.
         </dt>
-        <dd class="inline">Charlie is powered by Shovels' industry-leading clean permit database. Our AI-powered classification system ensures consistent, accurate data ready for analysis.</dd>
+        <dd class="inline">Download to CSV, push to Snowflake, BigQuery, or Databricks. Your data, your way.</dd>
       </div>
     </dl>
   </div>
 </div>
 
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-    <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-      <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-        <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">Meet the future of construction intelligence.</h2>
-        <p class="mt-6 text-pretty text-lg/8 text-gray-300">Join the waitlist for early access to Charlie, our new AI agent. Transform how you analyze building permit data and gain a competitive edge.</p>
-        <div class="mt-10 justify-start! float-left!">
-          <script src="https://js.hsforms.net/forms/embed/48146409.js" defer></script>
-          <div class="hs-form-frame" data-region="na1" data-form-id="7d9e1cc4-9dd3-4ebf-aa22-22d7c0c6dfc8" data-portal-id="48146409"></div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p class="text-base/7 font-semibold text-shovels-primary">How Charlie works</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Three steps to permit intelligence</h2>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900">
+            <span class="flex size-10 items-center justify-center rounded-lg bg-shovels-primary text-white font-bold">1</span>
+            Tell Charlie what to find
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto">Just ask. "Show me all HVAC replacements in Phoenix from the last 6 months" or "Find the top solar contractors in Texas by permit volume." Charlie understands what you mean, not just what you type. No SQL. No filters to configure. Just plain English.</p>
+          </dd>
         </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900">
+            <span class="flex size-10 items-center justify-center rounded-lg bg-shovels-primary text-white font-bold">2</span>
+            Watch him dig
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto">Charlie searches through millions of permits, filtering out noise and false positives along the way. He knows that "HVAC" might show up as "heating and cooling," "air conditioning replacement," or "furnace install"—and he searches for all of them. He doesn't get tired and doesn't miss patterns.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900">
+            <span class="flex size-10 items-center justify-center rounded-lg bg-shovels-primary text-white font-bold">3</span>
+            Get exactly what you need
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto">Clean data, ready to use. Export to CSV, push to your data warehouse, or keep refining until it's perfect. Not quite right? Tell Charlie to narrow down, expand, or pivot. He sticks with your search until you're satisfied.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-50 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p class="text-base/7 font-semibold text-shovels-primary">Charlie vs. traditional search</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Like a great retriever, Charlie brings back only what matters</h2>
+      <p class="mt-6 text-lg/8 text-gray-600">Charlie is Shovels' AI agent built to fetch exactly what you need from millions of data points. He's loyal to your query, relentless in his search, and brings back only what matters. No distractions, no guessing—just the data you asked for, delivered fast.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-4xl">
+      <div class="overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-900">
+            <tr>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white">Traditional Database Search</th>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-shovels-secondary">Charlie</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 text-sm text-gray-600">Requires exact keywords</td>
+              <td class="px-6 py-4 text-sm text-gray-900 font-medium">Understands natural language</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 text-sm text-gray-600">Returns everything that matches</td>
+              <td class="px-6 py-4 text-sm text-gray-900 font-medium">Filters noise and false positives</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm text-gray-600">One shot, take it or leave it</td>
+              <td class="px-6 py-4 text-sm text-gray-900 font-medium">Iterative refinement until perfect</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 text-sm text-gray-600">Requires SQL or API knowledge</td>
+              <td class="px-6 py-4 text-sm text-gray-900 font-medium">Just talk to Charlie</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm text-gray-600">Raw data retrieved</td>
+              <td class="px-6 py-4 text-sm text-gray-900 font-medium">Database nuances built in</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="relative mt-16 h-80 lg:mt-8">
-        <img class="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="{static}/images/chuck6.png" alt="App screenshot" width="1824" height="1080" />
-      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <figure class="mx-auto max-w-2xl">
+      <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+        <p>"We were shooting an arrow through a hole in the fence and hoping we were hitting a target. Charlie changed that completely."</p>
+      </blockquote>
+      <figcaption class="mt-10">
+        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+          <div class="font-semibold text-gray-900">Gary Stein</div>
+          <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+            <circle cx="1" cy="1" r="1" />
+          </svg>
+          <div class="text-gray-600">Founder, 61HAWK</div>
+        </div>
+        <p class="mt-4 text-center text-sm text-gray-500">Gary used Charlie to find extremely unique permit types buried in 185M records—filtering false positives, identifying synonyms, and delivering hundreds of qualified leads in just 6 days.</p>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p class="text-base/7 font-semibold text-shovels-secondary">Who uses Charlie?</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Built for teams that need permit data</h2>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+            </svg>
+            Construction Technology.
+          </dt>
+          <dd class="inline text-gray-300">Find specific project types across thousands of jurisdictions. Stop manually searching permit databases and let Charlie do the heavy lifting.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+            </svg>
+            Real Estate.
+          </dt>
+          <dd class="inline text-gray-300">Track competitive builds and market activity. Identify emerging development patterns before anyone else sees them.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            Home Services.
+          </dt>
+          <dd class="inline text-gray-300">Identify high-value contractor networks. Find the installers doing the most work in your target markets.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            </svg>
+            Energy & Infrastructure.
+          </dt>
+          <dd class="inline text-gray-300">Monitor power, fiber, and data center expansion. Charlie tracks the permits that signal where infrastructure is heading next.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            Financial Services & Insurance.
+          </dt>
+          <dd class="inline text-gray-300">Assess property risk with permit history. Understand renovation patterns, code compliance, and contractor quality.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+            </svg>
+            Research Teams.
+          </dt>
+          <dd class="inline text-gray-300">Analyze permit trends without data engineering overhead. Get the data you need without learning SQL or waiting on IT.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-100">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Ready to put Charlie to work?</h2>
+    <div class="mt-10 flex items-center gap-x-6">
+      <a href="https://app.shovels.ai/signup/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
     </div>
   </div>
 </div>
