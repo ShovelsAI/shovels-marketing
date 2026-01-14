@@ -98,11 +98,11 @@ slug: charlie
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
           <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
           </svg>
-          Ready to export.
+          Dynamic visualizations.
         </dt>
-        <dd class="inline">Download to CSV, push to Snowflake, BigQuery, or Databricks. Your data, your way.</dd>
+        <dd class="inline">Charlie dynamically creates charts based on your questions and the data she returns. She knows a compelling visual can tell a great story.</dd>
       </div>
     </dl>
   </div>
@@ -140,7 +140,7 @@ slug: charlie
             Get exactly what you need
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Clean data, ready to use. Export to CSV, push to your data warehouse, or keep refining until it's perfect. Not quite right? Tell Charlie to narrow down, expand, or pivot. She sticks with your search until you're satisfied.</p>
+            <p class="flex-auto">Clean data, ready to use. Not quite right? Tell Charlie to narrow down, expand, or pivot. She sticks with your search until you're satisfied. Chats are saved so you can come back and pick up where you left off.</p>
           </dd>
         </div>
       </dl>
@@ -152,8 +152,8 @@ slug: charlie
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-primary">Charlie vs. traditional search</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Like a great retriever, Charlie brings back only what matters</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">Charlie is Shovels' AI agent built to fetch exactly what you need from millions of data points. She's loyal to your query, relentless in her search, and brings back only what matters. No distractions, no guessing—just the data you asked for, delivered fast.</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Charlie retrieves only what matters</h2>
+      <p class="mt-6 text-lg/8 text-gray-600">Charlie is built to fetch exactly what you need from millions of data points. She's loyal to your query, relentless in her search, and brings back only what matters. No distractions, no guessing—just the data you asked for, delivered fast.</p>
     </div>
     <div class="mx-auto mt-16 max-w-4xl">
       <div class="overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
@@ -192,25 +192,30 @@ slug: charlie
   </div>
 </div>
 
-<div class="bg-white py-24 sm:py-32">
+<section class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <figure class="mx-auto max-w-2xl">
-      <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-        <p>"We were shooting an arrow through a hole in the fence and hoping we were hitting a target. Charlie changed that completely."</p>
-      </blockquote>
-      <figcaption class="mt-10">
-        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-          <div class="font-semibold text-gray-900">Gary Stein</div>
-          <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-            <circle cx="1" cy="1" r="1" />
-          </svg>
-          <div class="text-gray-600">Founder, 61HAWK</div>
+    <div class="mx-auto max-w-3xl">
+      <figure class="flex flex-col sm:flex-row items-center sm:items-start gap-x-10 gap-y-6">
+        <div class="flex-shrink-0">
+          <img src="{static}/images/gary-61-hawk.jpeg" alt="Gary Stein" class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover object-top shadow-lg" />
         </div>
-        <p class="mt-4 text-center text-sm text-gray-500">Gary used Charlie to find extremely specific data buried in millions of records—filtering false positives, identifying synonyms, and delivering hundreds of qualified leads in just 6 days.</p>
-      </figcaption>
-    </figure>
+        <div class="relative flex-1 text-center sm:text-left">
+          <svg class="hidden sm:block absolute -top-2 -left-2 h-10 w-10 text-gray-200" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+          </svg>
+          <blockquote class="text-lg font-medium leading-8 text-gray-900 sm:text-xl sm:leading-9 sm:pl-8">
+            <p>"We were shooting an arrow through a hole in the fence and hoping we were hitting a target. Charlie changed that completely."</p>
+          </blockquote>
+          <figcaption class="mt-6 sm:pl-8">
+            <div class="font-semibold text-gray-900">Gary Stein</div>
+            <div class="mt-1 text-gray-500">Founder, 61HAWK</div>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -281,9 +286,14 @@ slug: charlie
 
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Ready to put Charlie to work?</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://charlie.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+      <div>
+        <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Ready to put Charlie to work?</h2>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a href="https://charlie.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+        </div>
+      </div>
+      <img src="{static}/images/shovels-Charlie-pose4.svg" alt="Charlie ready to help" class="w-48 lg:w-64 flex-shrink-0">
     </div>
   </div>
 </div>
