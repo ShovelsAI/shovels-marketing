@@ -57,9 +57,9 @@ Don’t worry, folks. It’s happening at Shovels, too. We’ve been waiting to 
 - Downloads. This is the trickier one — we want to let you download the data without this feature getting out of hand. Fixing the guardrails on this one is a challenge.
 - Generalized MCP. We’re building on top of our Shovels MCP server. Shouldn’t you be able to do the same? I think so. It’s just a matter of, again, choosing the limits and making sure we can enforce them.
 
-We have a small, and already outdated, [page for this offering, named Chuck](https://www.shovels.ai/chuck). Drop your email in the form to let us know you’re interested! 
+We have a small, and already outdated, [page for this offering, named Charlie](https://www.shovels.ai/charlie). Drop your email in the form to let us know you're interested! 
 
-The already new and improved Chuck (I mean, we never really launched the prototype) will get released sometime this quarter. I’m sure you’ll read about it here! 
+The already new and improved Charlie (I mean, we never really launched the prototype) will get released sometime this quarter. I’m sure you’ll read about it here! 
 
 ## Things to do with permits: find roof age
 

@@ -102,11 +102,11 @@ I have to remind people that we got [shovels.ai](http://shovels.ai) before ChatG
 
 The AI in Shovels, though, is quite obvious. We use it everyday, and we will be the first to make conversational AI available to anyone interested in construction activity. 
 
-We’re close. It’s not ready yet, but we have a prototype, a [YouTube video](https://www.youtube.com/watch?v=j3_JYppwcyo), and a [landing page](https://www.shovels.ai/chuck) to get early signups. 
+We're close. It's not ready yet, but we have a prototype, a [YouTube video](https://www.youtube.com/watch?v=j3_JYppwcyo), and a [landing page](https://www.shovels.ai/charlie) to get early signups. 
 
 https://www.youtube.com/watch?v=j3_JYppwcyo
 
-If you want to be one of the first to try it out, sign up for [the waitlist here](https://www.shovels.ai/chuck)!
+If you want to be one of the first to try it out, sign up for [the waitlist here](https://www.shovels.ai/charlie)!
 
 # Things to do with permits: make contractor dashboards with Esri
 
