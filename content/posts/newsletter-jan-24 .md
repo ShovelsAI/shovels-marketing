@@ -17,7 +17,7 @@ With that out of the way, let's get down to business!
 
 *   With the help of ChatGPT, we are officially putting the AI in Shovels.ai. Preview [our custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) before it goes behind a paywall later this month. Tell it to look up some permits! 
 *   We added a bunch of new contractors and then de-duplicated them so searching by name is less confusing. We also improved the way permits are queried by zip code!
-*   And more things to do with permit data: calculate permit approval times (soon with even more granularity). [](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
+*   And more things to do with permit data: calculate permit approval times (soon with even more granularity). 
 
 ✨ Have you heard of ChatGPT? ✨
 ==============================

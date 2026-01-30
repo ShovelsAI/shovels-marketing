@@ -14,7 +14,7 @@ image: /images/vegas.jpeg
 You know what we all need right now? A shorter newsletter. Quick and to the point. Punchy! That’s what we’re doing this month. 
 
 - Check out our [SF Climate Week Energy API Hackathon](https://lu.ma/pwh9o2e8?tk=jYxRHS)!
-- [Our Discord](https://discord.gg/Nypja3cKDx) has a new channel for all you Clay sales hackers
+- [Our Discord](https://discord.com/invite/Nypja3cKDx) has a new channel for all you Clay sales hackers
 - A few cool Shovels Online and API updates and a preview of what’s coming
 - We’re pushing parcels in our monthly “Things to do with permits” feature
 
@@ -49,11 +49,11 @@ It’s [free to sign up](https://lu.ma/pwh9o2e8?tk=jYxRHS)!
 
 I’m seeing more clever marketing and sales people diving into sales hacking. The AI toolkit makes it easy, and we’re here for it. 
 
-We want to build a community specifically for property, construction, and building trades sales hackers. Since we already have [a Shovels Discord server](https://discord.gg/Nypja3cKDx) (which has also been sorta blowing up recently) we created a new channel, #sales-hackers, on it.
+We want to build a community specifically for property, construction, and building trades sales hackers. Since we already have [a Shovels Discord server](https://discord.com/invite/Nypja3cKDx) (which has also been sorta blowing up recently) we created a new channel, #sales-hackers, on it.
 
 I will be nudging our Clay and Shovels API friends over there. The purpose is to share clever ways to use Clay, OpenAI, Shovels, Apollo, and other data providers to automate outreach in the property and construction industries. 
 
-I hope you’ll [join us](https://discord.gg/Nypja3cKDx)! 
+I hope you’ll [join us](https://discord.com/invite/Nypja3cKDx)! 
 
 # 👩🏻‍💻 Recent tech updates
 

@@ -15,7 +15,7 @@ Last month we launched [our web app](https:/app.shovels.ai). This month we're of
 
 And we want to meet you IRL.
 
-*   A few days ago we launched an [Android app](https://play.google.com/store/apps/details?id=com.shovels.shovels1). You can find it now on Google Play. Next month we'll launch on the Apple App Store, too. 
+*   A few days ago we launched an Android app. You can find it now on Google Play. Next month we'll launch on the Apple App Store, too. 
 *   Let's meet! The Shovels team will be in SF from March 18-19 and LA on March 21. We'll come to your office. 
 *   Lots more data and API enhancements. Details below.
 *   We can now push permit and contractor tables into Big Query, Snowflake, Databricks, S3, GCS, and Azure! 
@@ -29,7 +29,7 @@ It's because of Flutter that we can build a web app and a mobile app at the same
 
 You could say it gives us mobility. We're moving fast! 
 
-Here's a few screenshots of our Android app. Get it on [Google Play now](https://play.google.com/store/apps/details?id=com.shovels.shovels1).
+Here's a few screenshots of our Android app. Get it on Google Play.
 
 (We could have launched iOS too, but I gotta save _something_ for April.)
 

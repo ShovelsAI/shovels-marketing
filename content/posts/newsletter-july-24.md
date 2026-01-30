@@ -21,7 +21,7 @@ We have new partnerships. We have a public Discord server. On the data side, we'
 *   And another partnership: [Deep Sync](https://deepsync.com/) for targeting homeowners with ads based on their permit history. I couldn't fit this one into the previous bullet. 
 *   We'll be at the [Esri User Conference](https://www.esri.com/en-us/about/events/uc/overview) in San Diego next week! Reply or join our Discord (see below) if you can meet up. 
 *   How about Austin in March 2025? We need ideas for a SXSW panel. We'll be your data partner. [Submissions are due](https://panelpicker.sxsw.com/) on July 21.
-*   Speaking of reaching out, you can now [chat us up on Discord](https://discord.gg/Nypja3cKDx). We launched a public server! [Hop into our Discord](https://discord.gg/Nypja3cKDx) to chat with us about permits, contractors, data science, or the blink-182 summer concert tour (I went and it was EPIC 🤘)
+*   Speaking of reaching out, you can now [chat us up on Discord](https://discord.com/invite/Nypja3cKDx). We launched a public server! [Hop into our Discord](https://discord.com/invite/Nypja3cKDx) to chat with us about permits, contractors, data science, or the blink-182 summer concert tour (I went and it was EPIC 🤘)
 *   Our customers love our transparency. Here's a big heaping spoonful of it: We released a **very** detailed [Shovels Coverage Dashboard](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b). Now you can see exactly where we have (and don't have) building permit and contractor data! 
 *   Our nationwide AI-driven permit classifications are available to our database and report customers. These are REALLY GOOD. I know because our most skeptical customers said so. We'll roll them out to the API and web app shortly. 
 
@@ -88,4 +88,4 @@ It may not look like much, but this represents a TON of hard work -- pulling dat
 
 That's what I'm looking forward to talking about next week at the Esri conference.
 
-And if you want to nerd out about it online, now you can [find us on Discord](https://discord.gg/Nypja3cKDx) 🤓
+And if you want to nerd out about it online, now you can [find us on Discord](https://discord.com/invite/Nypja3cKDx) 🤓

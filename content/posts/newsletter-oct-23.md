@@ -20,7 +20,7 @@ With that... back to permits. 
 *   Last month, I said we'd work on loading every state into the API. This month, I get to tell you it's done! Yay! 
 *   To celebrate this launch, we're making it easier to get API keys. You don't need to ask us first. Just register an account with [our sweet new app](https://app.shovels.ai) and get your API key 💪
 *   Don't know how to use an API? That's cool, for most of my life, I didn't either. I have a solution for you, too. Read below. 
-*   If you do like APIs, don't forget about our [pretty API docs](https://docs.shovels.ai/api-reference) 😍 and check out our [API starter guide](https://www.shovels.ai/blog/how-to-use-the-shovels-api/).[](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
+*   If you do like APIs, don't forget about our [pretty API docs](https://docs.shovels.ai/api-reference) 😍 and check out our [API introduction](https://docs.shovels.ai/docs/shovels-api-introduction).
 
 🇺🇸 The API is national 🇺🇸
 =============================
@@ -38,7 +38,7 @@ And across all of these permits we applied 33 unique "tags" in order to make it 
 **API wuh? 🤔**
 ===============
 
-Here's my attempt at writing the shortest-ever tutorial on how to use an API. We have a more detailed [tutorial on the blog](https://www.shovels.ai/blog/how-to-use-the-shovels-api/). 
+Here's my attempt at writing the shortest-ever tutorial on how to use an API. We have a more detailed [API introduction](https://docs.shovels.ai/docs/shovels-api-introduction) in our docs. 
 
 An API is like a set of defined questions you can ask a database using your favorite programming language. Each of these questions is called an "endpoint." 
 

@@ -211,7 +211,7 @@ slug: about
     </div>
     <div class="mt-16 flex justify-center">
       <p class="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
-        <a href="{{ SITEURL }}/blog/?category=Case%20Study" class="font-semibold text-shovels-primary"><span class="absolute inset-0" aria-hidden="true"></span> Read our case studies <span aria-hidden="true">&rarr;</span></a>
+        <a href="/blog/?category=Case%20Study" class="font-semibold text-shovels-primary"><span class="absolute inset-0" aria-hidden="true"></span> Read our case studies <span aria-hidden="true">&rarr;</span></a>
       </p>
     </div>
   </div>

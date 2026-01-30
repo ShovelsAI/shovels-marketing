@@ -17,7 +17,7 @@ I've been looking forward to writing this newsletter for more than a year.
 
 *   Anyone can register at [https://app.shovels.ai](https://app.shovels.ai)! All you need is an email address. Here's [a blog post](https://www.shovels.ai/blog/how-to-use-the-shovels-app/) about it!
 *   It's free for now. There still are a few bugs I know about, and you'll find a few more. It's free because I want your feedback. I figure we'll start charging for access before the next newsletter.
-*   Our [custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) is getting LOTS of use too. Who knew making building permit and contractor data accessible would be such a useful thing? (We did 😇)[](https://www.shovels.ai/blog/how-to-use-the-shovels-api/)
+*   Our [custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) is getting LOTS of use too. Who knew making building permit and contractor data accessible would be such a useful thing? (We did 😇)
 
 The case for software
 =====================
