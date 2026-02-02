@@ -18,7 +18,7 @@ Last month was a planning month for us. Luka and Petra joined me in California a
 All of this mingling and meeting helped us set the stage for the next phase of Shovels. We're growing up a bit. I'll explain what I mean. 
 
 *   Shovels V2 is in the works! I'll share more about what exactly this means. In short: a whole bunch of stuff you've told us you need.
-*   Because the V2 is our focus, I've neglected our iOS app development. It's just so V1. We'll get it launched in prep for V2, but it'll take us another month. In the meantime, we've been updating [the Android app](https://play.google.com/store/apps/details?id=com.shovels.shovels1).  
+*   Because the V2 is our focus, I've neglected our iOS app development. It's just so V1. We'll get it launched in prep for V2, but it'll take us another month.  
 *   PSA: We can now share 130M permits and 2.5M contractors directly into your Snowflake, Big Query, or Databricks account. This makes some data scientists VERY happy. 
 *   Ever wanted a list of every building permit jurisdiction? [We released one](https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/). We're working on a V2 of that, too. It will have at least 5,000 more jurisdictions!
 *   Check out how [Beam](https://www.trybeam.com/), one of our happy customers, is using Shovels to [reach out to contractors](https://www.shovels.ai/blog/case-study-revolutionizing-lead-generation-for-beam/). 

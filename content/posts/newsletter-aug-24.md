@@ -28,7 +28,7 @@ Okay, enough looking backward -- here's what's coming up next!
 - We will have a booth at [Blueprint](https://blueprintvegas.com/) in Las Vegas from Sept 17-19. Find us and say hi!
 - We won't have a booth at [RE+](https://www.re-plus.com/) in Anaheim on Sept 9-12, but we will be walking around and meeting a lot of people (and a few of our customers) who do have booths. Reach out if you'll be there!
 - We'll also be in NYC for some of [Climate Week](https://www.climateweeknyc.org/) from Sept 22-29. Lots of climate capital and tech will converge there and we are ready for it.
-- For those of you new to this newsletter, don't forget to [find us on Discord](https://discord.gg/Nypja3cKDx). We're just getting started with our new online Shovels community.
+- For those of you new to this newsletter, don't forget to [find us on Discord](https://discord.com/invite/Nypja3cKDx). We're just getting started with our new online Shovels community.
 - On the tech front, we added *start_date* and *end_date* to our database table shares and they'll launch in the API this week. It's a much better way to filter and query.
 - We added *primary_email* and *primary_phone* to the contractors table. Many of you asked for this. We delivered!
 - We also made more progress on contractor de-duplication. This will continue to be a work in progress -- and we will continue to be the very best at it.
