@@ -108,49 +108,57 @@ slug: solutions/acquisition
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-shovels-primary">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-shovels-primary">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
               </svg>
             </div>
             General Information
           </dt>
-          <dd class="mt-2 text-base text-gray-600">Title, date, location, description, and full context for every decision.</dd>
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+            <p class="flex-auto">Title, date, location, description, and full context for every decision.</p>
+          </dd>
         </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-shovels-primary">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-shovels-primary">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
               </svg>
             </div>
             Stakeholders
           </dt>
-          <dd class="mt-2 text-base text-gray-600">Owner, applicant, representative, developer, and engineer/architect details.</dd>
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+            <p class="flex-auto">Owner, applicant, representative, developer, and engineer/architect details.</p>
+          </dd>
         </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-shovels-primary">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-shovels-primary">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
               </svg>
             </div>
             Zoning and Usage
           </dt>
-          <dd class="mt-2 text-base text-gray-600">Allowed uses, density, maximum building height, parking requirements, lot coverage, and previous zoning.</dd>
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+            <p class="flex-auto">Allowed uses, density, maximum building height, parking requirements, lot coverage, and previous zoning.</p>
+          </dd>
         </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-shovels-primary">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-shovels-primary">
               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg>
             </div>
             Property Details
           </dt>
-          <dd class="mt-2 text-base text-gray-600">Asset class, property type, size, and category classification.</dd>
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+            <p class="flex-auto">Asset class, property type, size, and category classification.</p>
+          </dd>
         </div>
       </dl>
     </div>
@@ -170,13 +178,6 @@ slug: solutions/acquisition
       <p class="mt-8 text-lg text-gray-600">Real Estate is a local game, and awareness of local legislation is crucial for operators and investors.</p>
       <p class="mt-4 text-lg text-gray-600">Currently, there are no good solutions for tracking these changes.</p>
       <p class="mt-4 text-lg font-semibold text-gray-900">That's why we built ReZone.</p>
-      <div class="mt-10 flex items-center gap-x-4">
-        <img src="{static}/images/rezone/Daniel-Heller.jpg" alt="Daniel Heller" class="h-14 w-14 rounded-full">
-        <div>
-          <p class="font-semibold text-gray-900">Daniel Heller</p>
-          <p class="text-gray-600">Founder, ReZone (acquired by Shovels)</p>
-        </div>
-      </div>
       <div class="mt-10 text-center">
         <a href="/pricing" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Get Started →</a>
       </div>

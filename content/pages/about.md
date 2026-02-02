@@ -126,7 +126,7 @@ slug: about
     <div class="mx-auto max-w-2xl lg:text-center">
       <p class="text-base/7 font-semibold text-shovels-primary">Expanding our intelligence</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Shovels acquires ReZone</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">In 2025, Shovels acquired ReZone to expand our real estate intelligence capabilities. ReZone tracks all CRE-related city council and planning department decisions nationwide—analyzing zoning changes, development approvals, and regulatory shifts before they hit the market.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">In 2026, Shovels acquired ReZone to expand our real estate intelligence capabilities. ReZone tracks all CRE-related city council and planning department decisions nationwide—analyzing zoning changes, development approvals, and regulatory shifts before they hit the market.</p>
       <p class="mt-4 text-lg/8 text-gray-600">This acquisition brings together permit data intelligence with zoning and regulatory intelligence, giving our customers the most complete picture of what's being built and what's about to change.</p>
     </div>
     <div class="mx-auto mt-16 flex max-w-lg items-center justify-center gap-x-8 sm:gap-x-12">
