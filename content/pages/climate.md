@@ -149,7 +149,7 @@ slug: climate
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">The Shovels dataset and model can highlight key construction trends and patterns. In this blog, we discuss solar construction specifically due to the RE+ clean energy convention. Use Shovels to inform your construction company's business models and strategy.</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="{{ SITEURL }}/theme/images/team/alex.svg" alt="Alex Brown" class="size-10 rounded-full bg-gray-100">
+            <img src="/theme/images/team/alex.svg" alt="Alex Brown" class="size-10 rounded-full bg-gray-100">
             <div class="text-sm/6">
               <p class="font-semibold text-gray-900">
                 <span class="absolute inset-0"></span>
@@ -180,7 +180,7 @@ slug: climate
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">We look at the impact of BayREN's initiatives on the Bay Area's energy upgrade trends, revealing a significant increase in heat pump installations by BayREN-affiliated contractors compared to a lesser focus on solar panel installations. It suggests that BayREN is strategically filling gaps in the building electrification market.</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="{{ SITEURL }}/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
+            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
             <div class="text-sm/6">
               <p class="font-semibold text-gray-900">
                 <span class="absolute inset-0"></span>
@@ -211,7 +211,7 @@ slug: climate
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">At Shovels, we provide developers with access to monthly EV charger installation data through our building permit API. This data reveals the tremendous growth and geographic distribution of EV charging infrastructure, with insights into the locations and companies involved. Understanding this data is crucial for businesses, developers, and governments to identify areas for expansion and to make informed decisions. With our API, developers can accurately map existing charger locations, analyze infrastructure, and even predict future demand for electric vehicles.</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="{{ SITEURL }}/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
+            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
             <div class="text-sm/6">
               <p class="font-semibold text-gray-900">
                 <span class="absolute inset-0"></span>

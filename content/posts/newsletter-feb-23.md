@@ -74,9 +74,7 @@ If there's one piece of startup advice that I hear over and over again, it's thi
 
 ### Asks
 
-* We're hiring! We'd appreciate any candidate intros. Feel free to share these job descriptions: 
-  * [Marketer](https://broadleaf-leech-f9b.notion.site/Growth-Marketer-4a35d1c91875485eaee25c72b77fedf1)
-  * [Data Engineer](https://broadleaf-leech-f9b.notion.site/Data-Engineer-8c88bef8282d4d0ebdf74178c5e737d4)
+* We're hiring! We'd appreciate any candidate intros. Check out our [careers page](https://www.shovels.ai/careers) for open positions.
 * Intros to construction loan people. I want more interviews. 
 * Intros to developers who do 10+ projects at a time in the Bay Area. I need to learn more from this segment. 
 

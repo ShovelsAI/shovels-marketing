@@ -19,7 +19,7 @@ Luka and I have known Betty for years and we knew she'd be perfect to lead our r
 
 That's top of mind as we move to make Shovels 33% better and grow 33% faster. Here's what's up!  
 
-*  We have a clickable prototype of V2. I need to schedule some [short 15 minute calls](https://shovels.pipedrive.com/scheduler/GXeGebUW/shovels-v2-prototype-test) to watch _you_ click through it. Trade 15 minutes for some permit data? [Let's chat!](https://shovels.pipedrive.com/scheduler/GXeGebUW/shovels-v2-prototype-test)
+*  We have a clickable prototype of V2. I need to schedule some [short 15 minute calls](https://www.shovels.ai/contact) to watch _you_ click through it. Trade 15 minutes for some permit data? [Let's chat!](https://www.shovels.ai/contact)
 *  Our new tagging system is almost ready for launch. Our first AI-enhanced tags will be live before the next newsletter! More on this process below.
 *  More jurisdictions, more duration calculations, and more contractor de-duplication was in our latest batch release, which was processed using way more automation.
 *  Because every day is Earth Day 🌱 we have a new [climate tech case study]({filename}case-carbon-free-homes.md), a new [climate tech one-pager]({static}/pdfs/Shovels_Climate.pdf), and identified over 14,000 contractors with green rebate program affiliations (more on this next month!)
@@ -36,7 +36,7 @@ So, here's the plot so far:
 - We released our nationwide building permit API in August 2023  
 - We followed that with a nationwide building contractor API in Nov 2023  
 - (Lost? Here's [what an API is]({filename}api-guide-1.md))  
-- Then we launched [a custom GPT]({filename}gpt-guide-1.md) and [a web app]({filename}app-guide-1.md) and [a mobile app](https://play.google.com/store/apps/details?id=com.shovels.shovels1)  
+- Then we launched [a custom GPT]({filename}gpt-guide-1.md) and [a web app]({filename}app-guide-1.md)  
 - Now we're making all ☝️ a lot better  
 - And Betty just joined to help me sell this stuff
 
@@ -50,7 +50,7 @@ We're going to give you the ability to look at the permit queue in any jurisdict
 
 We have a clickable prototype and before we really start building it, we'd love to watch you to try to use it.
 
-Can I get [15 mins of your time](https://shovels.pipedrive.com/scheduler/GXeGebUW/shovels-v2-prototype-test)? What you'll get in return is influence, our gratitude, and some free Shovels data.
+Can I get [15 mins of your time](https://www.shovels.ai/contact)? What you'll get in return is influence, our gratitude, and some free Shovels data.
 
 Here's the same sneak peak I shared last month.
 

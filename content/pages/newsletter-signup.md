@@ -14,6 +14,6 @@ slug: newsletter
     <p class="my-4 leading-8 text-lg"><strong>What's in it?</strong></p>
     <p class="my-4 leading-8 text-lg">This newsletter usually includes company and product updates, community events we're participating in, parterships, and anything else that we're excited about that month. Sometimes, we'll throw in special offers or discount codes too!</p>
     <p class="my-4 leading-8 text-lg"><strong>How else can I keep in touch with Shovels?</strong></p>
-    <p class="my-4 leading-8 text-lg">There's a ton of ways! Join our <a href="https://discord.gg/Nypja3cKDx" target="_blank">community Discord channel</a>, follow us on <a href="https://www.linkedin.com/company/shovels/" target="_blank">LinkedIn</a> or check out our <a href="https://github.com/shovelsai" target="_blank">Github</a>.</p>
+    <p class="my-4 leading-8 text-lg">There's a ton of ways! Join our <a href="https://discord.com/invite/Nypja3cKDx" target="_blank">community Discord channel</a>, follow us on <a href="https://www.linkedin.com/company/shovels/" target="_blank">LinkedIn</a> or check out our <a href="https://github.com/shovelsai" target="_blank">Github</a>.</p>
 </div>
 

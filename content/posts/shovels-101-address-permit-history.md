@@ -18,7 +18,7 @@ With the [Shovels API](https://docs.shovels.ai/api-reference/) in your toolbox, 
 
 If you don’t already have a **Shovels Web App** account (welcome!), then head over and setup a [Free Trial](https://app.shovels.ai). Go to the **Settings** page to get your API Key, read over our API Docs, and open your preferred terminal, shell, or editor. 
 
-For a more in-depth introduction to using our API, please check out our blog post guide on [How to use the Shovels API](https://www.shovels.ai/blog/how-to-use-the-shovels-api/). 
+For a more in-depth introduction to using our API, please refer to our [API documentation](https://docs.shovels.ai/docs/shovels-api-introduction). 
 
 This guide will assume a basic familiarity with cURL, JSON parsing, and our API schema. Example query snippets will use cURL, but our API docs have examples in a variety of other languages too.
 
