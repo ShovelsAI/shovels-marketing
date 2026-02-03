@@ -49,20 +49,20 @@ slug: careers
           View Details →
         </a>
       </div>
-      <!-- account executive card -->
+      <!-- vp customer success card -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-        <h3 class="text-2xl font-bold mb-3">Enterprise Account Executive</h3>
-        <p class="text-gray-600 mb-4">Sell Shovels to sophisticated buyers at large enterprises. Own the full sales cycle for six- to seven-figure deals with some of the world's most valuable and recognizable companies.</p>
+        <h3 class="text-2xl font-bold mb-3">VP of Customer Success</h3>
+        <p class="text-gray-600 mb-4">Own and build the post-sale engine that drives retention, expansion, and long-term customer value. A strategic leadership role with direct impact on revenue and company trajectory.</p>
         <div class="mb-4">
           <p class="text-sm font-semibold text-gray-700 mb-2">Key highlights:</p>
           <ul class="text-sm text-gray-600 space-y-1">
-            <li>• 5+ years quota-carrying SaaS/B2B sales experience</li>
-            <li>• Own full sales cycle from lead sourcing to close</li>
-            <li>• Remote (California) | $125-150K base + commission</li>
-            <li>• Work directly with company leadership</li>
+            <li>• 7-10+ years in Customer Success or post-sale leadership</li>
+            <li>• Own full customer lifecycle and revenue retention</li>
+            <li>• Build and scale the Customer Success team</li>
+            <li>• Remote (West Coast preferred), competitive salary + equity</li>
           </ul>
         </div>
-        <a href="{filename}careers-account-executive.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+        <a href="{filename}careers-vp-customer-success.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
           View Details →
         </a>
       </div>
