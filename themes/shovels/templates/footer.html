@@ -2,12 +2,89 @@
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl pb-8 pt-10 sm:pt-12 lg:pt-16 px-6 lg:px-8">
     <img class="mb-6" src="/theme/images/shovels-footer-logo.svg" alt="shovels logo">
-    <p class="mb-24 text-base text-lime-50">The intelligence layer for the built world.</p>
-    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+    <p class="mb-12 md:mb-24 text-base text-lime-50">The intelligence layer for the built world.</p>
+
+    <!-- Mobile Footer Accordions (visible below lg) -->
+    <div class="lg:hidden space-y-0" x-data="{ customersOpen: false, solutionsOpen: false, resourcesOpen: false, companyOpen: false }">
+      <!-- Customers Accordion -->
+      <div class="border-b border-gray-700">
+        <button @click="customersOpen = !customersOpen" class="flex w-full items-center justify-between py-4 text-sm font-medium text-amber-300">
+          <span>Customers</span>
+          <svg class="h-5 w-5 text-amber-300 transition-transform duration-200" :class="{ 'rotate-180': customersOpen }" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        <ul x-show="customersOpen" x-transition role="list" class="pb-4 space-y-3">
+          <li><a href="{{ SITEURL }}/building-materials" class="text-sm leading-6 hover:text-amber-500">Building Material Suppliers</a></li>
+          <li><a href="{{ SITEURL }}/software" class="text-sm leading-6 hover:text-amber-500">Construction Technology</a></li>
+          <li><a href="{{ SITEURL }}/climate" class="text-sm leading-6 hover:text-amber-500">Energy & Climate</a></li>
+          <li><a href="{{ SITEURL }}/home-services" class="text-sm leading-6 hover:text-amber-500">Home Services</a></li>
+          <li><a href="{{ SITEURL }}/real-estate" class="text-sm leading-6 hover:text-amber-500">Real Estate</a></li>
+          <li><a href="{{ SITEURL }}/telecommunications" class="text-sm leading-6 hover:text-amber-500">Telecommunications</a></li>
+        </ul>
+      </div>
+
+      <!-- Solutions Accordion -->
+      <div class="border-b border-gray-700">
+        <button @click="solutionsOpen = !solutionsOpen" class="flex w-full items-center justify-between py-4 text-sm font-medium text-amber-300">
+          <span>Solutions</span>
+          <svg class="h-5 w-5 text-amber-300 transition-transform duration-200" :class="{ 'rotate-180': solutionsOpen }" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        <ul x-show="solutionsOpen" x-transition role="list" class="pb-4 space-y-3">
+          <li><a href="{{ SITEURL }}/data-feed" class="text-sm leading-6 hover:text-amber-500">Enterprise</a></li>
+          <li><a href="{{ SITEURL }}/api" class="text-sm leading-6 hover:text-amber-500">API</a></li>
+          <li><a href="{{ SITEURL }}/permit-database" class="text-sm leading-6 hover:text-amber-500">Online</a></li>
+          <li><a href="{{ SITEURL }}/gis" class="text-sm leading-6 hover:text-amber-500">GIS</a></li>
+          <li><a href="{{ SITEURL }}/audiences" class="text-sm leading-6 hover:text-amber-500">Audiences</a></li>
+          <li><a href="{{ SITEURL }}/charlie" class="text-sm leading-6 hover:text-amber-500">Charlie AI</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Accordion -->
+      <div class="border-b border-gray-700">
+        <button @click="resourcesOpen = !resourcesOpen" class="flex w-full items-center justify-between py-4 text-sm font-medium text-amber-300">
+          <span>Resources</span>
+          <svg class="h-5 w-5 text-amber-300 transition-transform duration-200" :class="{ 'rotate-180': resourcesOpen }" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        <ul x-show="resourcesOpen" x-transition role="list" class="pb-4 space-y-3">
+          <li><a href="{{ SITEURL }}/blog" class="text-sm leading-6 hover:text-amber-500">Blog</a></li>
+          <li><a href="https://docs.shovels.ai/docs/knowledge-base" class="text-sm leading-6 hover:text-amber-500">Knowledge Base</a></li>
+          <li><a href="https://love.shovels.ai/all" class="text-sm leading-6 hover:text-amber-500">Customer Testimonials</a></li>
+          <li><a href="https://forms.gle/JFi4ogNXNZePK77CA" class="text-sm leading-6 hover:text-amber-500">Feature Requests</a></li>
+          <li><a href="https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b" class="text-sm leading-6 hover:text-amber-500" target="_blank">Coverage Dashboard</a></li>
+          <li><a href="https://docs.shovels.ai/" class="text-sm leading-6 hover:text-amber-500" target="_blank">Documentation Hub</a></li>
+          <li><a href="https://discord.com/invite/Nypja3cKDx" class="text-sm leading-6 hover:text-amber-600">Discord</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Accordion -->
+      <div class="border-b border-gray-700">
+        <button @click="companyOpen = !companyOpen" class="flex w-full items-center justify-between py-4 text-sm font-medium text-amber-300">
+          <span>Company</span>
+          <svg class="h-5 w-5 text-amber-300 transition-transform duration-200" :class="{ 'rotate-180': companyOpen }" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        <ul x-show="companyOpen" x-transition role="list" class="pb-4 space-y-3">
+          <li><a href="{{ SITEURL }}/about" class="text-sm leading-6 hover:text-amber-500">About Shovels</a></li>
+          <li><a href="{{ SITEURL }}/contact" class="text-sm leading-6 hover:text-amber-500">Contact Us</a></li>
+          <li><a href="{{ SITEURL }}/careers" class="text-sm leading-6 hover:text-amber-500">Careers</a></li>
+          <li><a href="{{ SITEURL }}/terms" class="text-sm leading-6 hover:text-amber-500">Terms</a></li>
+          <li><a href="{{ SITEURL }}/privacy-center" class="text-sm leading-6 hover:text-amber-500">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Desktop Footer Grid (visible at lg and above) -->
+    <div class="hidden lg:block xl:grid xl:grid-cols-3 xl:gap-8">
       <div class="grid grid-cols-2 gap-8 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm  leading-6 text-amber-300">Customers</h3>
+            <h3 class="text-sm leading-6 text-amber-300">Customers</h3>
             <ul role="list" class="mt-6">
               <li>
                 <a href="{{ SITEURL }}/building-materials" class="text-sm leading-6 hover:text-amber-500">Building Material Suppliers</a>
@@ -24,14 +101,13 @@
               <li>
                 <a href="{{ SITEURL }}/real-estate" class="text-sm leading-6 hover:text-amber-500">Real Estate</a>
               </li>
-            
               <li>
                 <a href="{{ SITEURL }}/telecommunications" class="text-sm leading-6 hover:text-amber-500">Telecommunications</a>
               </li>
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm  leading-6 text-amber-300">Solutions</h3>
+            <h3 class="text-sm leading-6 text-amber-300">Solutions</h3>
             <ul role="list" class="mt-6">
               <li>
                 <a href="{{ SITEURL }}/data-feed" class="text-sm leading-6 hover:text-amber-500">Enterprise</a>
@@ -56,7 +132,7 @@
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm  leading-6 text-amber-300">Resources</h3>
+            <h3 class="text-sm leading-6 text-amber-300">Resources</h3>
             <ul role="list" class="mt-6">
               <li>
                 <a href="{{ SITEURL }}/blog" class="text-sm leading-6 hover:text-amber-500">Blog</a>
@@ -82,7 +158,7 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm  leading-6 text-amber-300">Company</h3>
+            <h3 class="text-sm leading-6 text-amber-300">Company</h3>
             <ul role="list" class="mt-6">
               <li>
                 <a href="{{ SITEURL }}/about" class="text-sm leading-6 hover:text-amber-500" target="_blank">About Shovels</a>
