@@ -57,6 +57,7 @@ EXTRA_PATH_METADATA = {
     'extras/favicon.ico': {'path': 'favicon.ico'},
     'extras/favicon-16x16.png': {'path': 'favicon-16x16.png'},
     'extras/favicon-32x32.png': {'path': 'favicon-32x32.png'},
+    'extras/robots.txt': {'path': 'robots.txt'},
 }
 
 # Theme static files configuration

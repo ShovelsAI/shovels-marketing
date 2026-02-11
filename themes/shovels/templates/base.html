@@ -117,6 +117,83 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai",
+    "logo": "https://www.shovels.ai/theme/images/shovels-social.png",
+    "description": "Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.",
+    "sameAs": [
+      "https://twitter.com/shovelsai",
+      "https://www.linkedin.com/company/shovels-ai"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  }
+  </script>
+
+  <!-- Structured Data: SiteNavigationElement -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SiteNavigationElement",
+        "name": "API",
+        "url": "https://www.shovels.ai/api"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Permit Database",
+        "url": "https://www.shovels.ai/permit-database"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Enterprise Data Feed",
+        "url": "https://www.shovels.ai/enterprise"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "GIS",
+        "url": "https://www.shovels.ai/gis"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Blog",
+        "url": "https://www.shovels.ai/blog/"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "About",
+        "url": "https://www.shovels.ai/about"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Careers",
+        "url": "https://www.shovels.ai/careers"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Contact Sales",
+        "url": "https://www.shovels.ai/contact-sales"
+      }
+    ]
+  }
+  </script>
+
+  {% block structured_data %}{% endblock structured_data %}
 </head>
 
 <body>
