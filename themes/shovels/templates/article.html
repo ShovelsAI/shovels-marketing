@@ -30,6 +30,43 @@
 
 {% endblock %}
 
+{% block structured_data %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ article.title|striptags|e }}",
+    "url": "{{ SITEURL }}/{{ article.url }}",
+    "datePublished": "{{ article.date.isoformat() }}",
+    {% if article.modified %}
+    "dateModified": "{{ article.modified.isoformat() }}",
+    {% else %}
+    "dateModified": "{{ article.date.isoformat() }}",
+    {% endif %}
+    "author": {
+      "@type": "Person",
+      "name": "{{ article.author }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Shovels",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.shovels.ai/theme/images/shovels-social.png"
+      }
+    },
+    {% if article.summary %}
+    "description": "{{ article.summary|striptags|truncate(160)|e }}",
+    {% endif %}
+    "image": "{% if article.image %}{{ SITEURL }}{{ article.image }}{% else %}https://www.shovels.ai/theme/images/shovels-social.png{% endif %}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ SITEURL }}/{{ article.url }}"
+    }
+  }
+  </script>
+{% endblock structured_data %}
+
 {% block content %}
 
 <div class="mx-auto max-w-[744px]">
