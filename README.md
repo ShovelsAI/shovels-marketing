@@ -1,98 +1,123 @@
 # Shovels.ai Marketing Site
 
-This is a static site generated with [Pelican](https://docs.getpelican.com/en/4.5.1/quickstart.html). 
+This is a static site generated with [Pelican](https://docs.getpelican.com/en/4.5.1/quickstart.html).
 
-### Prerequisites (assuming VS Code)
+## Prerequisites
 
-1. Install `Git` for VS Code
-2. Update missing python packages for any missing dependencies (via homebrew, if Mac OS)
-   a. including `npm` for Node.js
+1. Install Git
+2. Install Python 3
+3. Install Node.js (`brew install node` on macOS)
 
 ## Installation
 
-1. Clone the `shovelsAI/shovels-marketing` githup repo
-  i. validate Github user
-  ii. Install Homebrew
-  ii. `brew install node`
-2. Fork a branch of `shovels-marketing/main`
-3. Create a [Virtual Environment](https://code.visualstudio.com/docs/python/environments#_create-a-virtual-environment-in-the-terminal) in the VS Code Terminal
+```bash
+# Clone the repo
+git clone https://github.com/ShovelsAI/shovels-marketing.git
+cd shovels-marketing
 
-   a. (For Mac) `python3 -m venv .venv`
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
 
-   b. Activate the virtual environment, with the following command:
+# Install dependencies
+pip3 install -r requirements.txt
+npm i
+```
 
-     ```
-     source .venv/bin/activate
-     ```
-   c. Confirm it's active in the terminal. It should show `(.venv) $ shovels-marketing`
-
-**Notes**: if your named virtual environment is anything other than `venv` or `.venv`, please ask to have the [Ignore](/.gitignore) page updated accordingly. 
+**Note**: If your virtual environment is named something other than `venv` or `.venv`, update `.gitignore` accordingly.
 
 ## Development
 
-For initial installation, execute these three commands to download required dependencies and Pelican. 
+### Start Development Server
 
-```
-pip3 install -r requirements.txt
-npm i
+```bash
+# Start development server with live reload
 pelican -lr
+
+# Alternative using Makefile
+make devserver
 ```
 
-This will compile the static site into your `output` folder and host a simple HTTP server at that location. The console output will provide you with a link.
+This compiles the site into `./output/` and hosts it at http://127.0.0.1:8000.
 
-This installation process should **not** need to be repeated, unless you rebuild your cloned repo, virtual environment, or editor. 
+### Building
 
-Note that for development purposes, it would be the `themes/shovels` folder that you would need to interact with. `docs/` should not be modified manually. Read more under the Production section below.
+```bash
+# Build for development (outputs to ./output/)
+pelican content -s pelicanconf.py
 
-For pages that have an 'inverted' theme, the logic of that inversion is done via 2 places:
+# Build for production (outputs to ./docs/ for GitHub Pages)
+make publish
 
-- based on the route, through a script tag in `base.html` which applies a `.inverted` class to the body if it is a route that uses an inverted theme
-- through tailwind utility classes using the `.inverted` parent selector in `input.css`
-
-### New blog post
-
-To make changes to interior pages, we use the `/content` folder. This is structured as follows:
-
-```
-/images -- contains the images for the posts
-/pages -- contains the static content
-/pdfs -- contains PDFs for downloading
-/posts -- contains the blog posts
+# Build CSS separately if needed
+npm run build:css              # Development with watch
+npm run build:css:prod         # Production minified
 ```
 
-We'll just use the `/images` and `/posts` folders to make a new blog post.
+## Architecture Overview
 
-Start by adding a new file to the `/posts` folder. I sometimes duplicate an existing file. 
+### Content Structure
 
-All pages in the post folder should have the same headers. 
+- **`/content/`** - All source content
+  - `posts/` - Blog posts in Markdown format
+  - `pages/` - Static pages (about, careers, etc.)
+  - `images/` - Image assets for posts
+  - `pdfs/` - Downloadable PDF resources
 
-```markdown
-Title: Shovels partners with Autodesk Construction Cloud
-Subtitle: Get permit data in Autodesk Construction Cloud
-Date: 2024-8-9
-Modified: 2024-8-9
-Category: Company
-Tags: construction software, autodesk construction cloud,
-Authors: Ryan Buckley
-Summary: The Shovels API provides an intuitive platform for proptech enthusiasts looking to leverage building permit data. Users can access and filter building activities via types or specific date ranges. The API employs 'tags' to categorize 33 distinct types of building activities.
-Image: /images/autodesk.png
+### Theme System
+
+- **`/themes/shovels/`** - Custom Pelican theme
+  - `templates/` - Jinja2 HTML templates
+  - `static/` - CSS, JS, images, fonts
+  - Uses **Tailwind CSS** for styling with custom Shovels brand colors
+  - Supports "inverted" theme pages via CSS classes and route-based logic
+
+For inverted theme pages, the logic is handled in two places:
+- Route-based: A script tag in `base.html` applies `.inverted` class to body
+- Styling: Tailwind utility classes using `.inverted` parent selector in `input.css`
+
+### Configuration Files
+
+- **`pelicanconf.py`** - Development configuration
+- **`publishconf.py`** - Production configuration (GitHub Pages)
+- **`tailwind.config.js`** - Tailwind CSS configuration with Shovels brand colors
+- **`Makefile`** - Build automation commands
+
+### Key Features
+
+- **Dual output paths**: `./output/` for dev, `./docs/` for GitHub Pages
+- **SEO optimized** with pelican-seo plugin
+- **Custom URL structure**: Blog posts at `/blog/{slug}/`
+- **Asset processing**: Tailwind CSS compilation and minification
+- **Live reload** during development
+
+## Blog Post Creation
+
+Add a new file to `/content/posts/`. All blog posts require these frontmatter fields:
+
+```yaml
+Title: Post Title
+Subtitle: Post Subtitle
+Date: YYYY-MM-DD
+Modified: YYYY-MM-DD
+Category: Company|Data|GTM|etc
+Tags: comma, separated, tags
+Authors: Author Name
+Summary: Brief description
+Image: /images/filename.png
 ```
 
-Edit these and put the markdown content below this settings section.
+Put the markdown content below the frontmatter.
 
-Once the .md file is committed and merged into `/shovels-marketing/main`, view the output locally in your browser at `http://127.0.0.1:8000/` to verify formatting and rendering. 
+## Making CSS Changes
 
-### Making CSS change
-
-To edit CSS, make changes to the `input.css` file in the root directory and then copy it over to the `/themes/shovels/static/css/input.css` directory. It will get compiled into the final `output.css` file that the website will render locally and in production. 
+Edit the `input.css` file in the root directory, then copy it to `/themes/shovels/static/css/input.css`. It will compile into the final `output.css` file.
 
 > This is the only place you should edit CSS!
 
-As of Aug 6 2025 I don't know why this has to be done, but I couldn't get CSS changes to render locally AND in GitHub any other way. 
-
 ## Production
 
-We currently host on GitHub Pages in the ShovelsAI GitHub organization. The site is automatically deployed using GitHub Actions whenever changes are pushed to the `main` branch.
+We host on GitHub Pages in the ShovelsAI GitHub organization. The site is automatically deployed using GitHub Actions whenever changes are pushed to the `main` branch.
 
 ### Automatic Deployment
 
@@ -106,3 +131,17 @@ The GitHub Actions workflow handles:
 - Generating the static site with Pelican
 - Deploying to GitHub Pages
 
+### Manual Publishing
+
+The `make publish` command:
+1. Builds site with production config to `./docs/`
+2. Copies CSS assets
+3. Creates CNAME file for custom domain
+4. Auto-commits and pushes to GitHub Pages
+
+## Brand Colors (Tailwind)
+
+- Primary: `#01654D` (shovels-primary)
+- Secondary: `#E9BE51` (shovels-secondary)
+- Dark: `#101727` (shovels-dark)
+- Light: `#EAE2CF` (shovels-light)
