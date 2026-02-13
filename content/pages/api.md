@@ -192,6 +192,45 @@ slug: api
     </div>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What data does the Shovels API provide?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">The Shovels API provides building permit records, contractor profiles, property details, and resident information from thousands of municipalities across the United States. Data is AI-enriched and standardized into a clean JSON format with geographic search, advanced filtering, and derived quality metrics like inspection pass rates.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How do I get started with the API?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Sign up at app.shovels.ai to get your API key. The REST API uses standard HTTP requests and returns JSON responses. Full documentation, including endpoint references and quickstart guides, is available at docs.shovels.ai.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What geographic areas does the Shovels API cover?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">The API covers approximately 85% of the United States, sourcing building permit and contractor data from thousands of municipalities. You can search by address, zip code, city, county, or jurisdiction using the geo_id system.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How often is the API data updated?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels continuously refreshes data from multiple source partners. Permit records, contractor profiles, and derived metrics are updated regularly to ensure accuracy and timeliness.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I resell or redistribute data from the Shovels API?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels offers flexible licensing terms designed to give you the freedom to reuse and even resell API output without lengthy legal negotiations.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
@@ -201,3 +240,87 @@ slug: api
     </div>
   </div>
 </div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Shovels API",
+  "serviceType": "Data API",
+  "description": "REST API providing AI-enriched building permit, contractor, property, and resident data from thousands of US municipalities with geographic search and advanced filtering.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": "https://www.shovels.ai/api"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Shovels API",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Web",
+  "description": "REST API for building permit and contractor intelligence across the United States.",
+  "url": "https://www.shovels.ai/api",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://app.shovels.ai/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What data does the Shovels API provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Shovels API provides building permit records, contractor profiles, property details, and resident information from thousands of municipalities across the United States. Data is AI-enriched and standardized into a clean JSON format with geographic search, advanced filtering, and derived quality metrics like inspection pass rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with the API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sign up at app.shovels.ai to get your API key. The REST API uses standard HTTP requests and returns JSON responses. Full documentation, including endpoint references and quickstart guides, is available at docs.shovels.ai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What geographic areas does the Shovels API cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The API covers approximately 85% of the United States, sourcing building permit and contractor data from thousands of municipalities. You can search by address, zip code, city, county, or jurisdiction using the geo_id system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is the API data updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels continuously refreshes data from multiple source partners. Permit records, contractor profiles, and derived metrics are updated regularly to ensure accuracy and timeliness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I resell or redistribute data from the Shovels API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels offers flexible licensing terms designed to give you the freedom to reuse and even resell API output without lengthy legal negotiations."
+      }
+    }
+  ]
+}
+</script>
