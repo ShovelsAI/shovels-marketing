@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME }} US Permit Coverage{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style>
+    .treemap-rect {
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+    .treemap-label {
+      pointer-events: none;
+      font-family: 'Scandia', system-ui, sans-serif;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .treemap-tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      border: 1px solid #e5e7eb;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      z-index: 50;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+    .treemap-tooltip.visible {
+      opacity: 1;
+    }
+    #treemap {
+      min-height: 450px;
+    }
+    @media (min-width: 1024px) {
+      #treemap {
+        min-height: 600px;
+      }
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero section -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8 pt-10 lg:pt-12 pb-4">
+  <div class="mx-auto max-w-4xl text-center">
+    <h1 class="text-4xl font-medium tracking-tight sm:text-5xl">
+      US Permit Coverage
+    </h1>
+    <p class="mt-2 text-lg leading-8 text-gray-600">
+      Rectangle size reflects permit volume over the last 12 months. Click any state to see county-level detail.
+    </p>
+  </div>
+</div>
+
+<!-- Breadcrumb navigation -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-4">
+  <nav id="treemap-breadcrumb" class="flex items-center text-sm font-medium text-gray-500">
+    <span id="breadcrumb-root" class="text-shovels-primary cursor-pointer hover:underline hidden">United States</span>
+    <span id="breadcrumb-separator" class="mx-2 hidden">/</span>
+    <span id="breadcrumb-state" class="text-gray-900 hidden"></span>
+  </nav>
+</div>
+
+<!-- Treemap container -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-8">
+  <div id="treemap" class="w-full bg-gray-50 rounded-lg overflow-hidden relative">
+    <div id="treemap-loading" class="absolute inset-0 flex items-center justify-center text-gray-400">
+      Loading coverage data...
+    </div>
+  </div>
+</div>
+
+<!-- Tooltip -->
+<div id="treemap-tooltip" class="treemap-tooltip">
+  <div id="tooltip-name" class="font-medium text-gray-900"></div>
+  <div id="tooltip-count" class="text-shovels-primary text-lg font-medium"></div>
+  <div id="tooltip-pct" class="text-gray-500 text-xs"></div>
+</div>
+
+<!-- Summary stats -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-24">
+  <div class="mx-auto max-w-4xl">
+    <dl id="treemap-stats" class="grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-4 text-center">
+      <div>
+        <dt class="text-sm text-gray-500">Total Permits</dt>
+        <dd id="stat-total" class="text-2xl font-medium text-shovels-primary">—</dd>
+      </div>
+      <div>
+        <dt class="text-sm text-gray-500">States Covered</dt>
+        <dd id="stat-states" class="text-2xl font-medium text-shovels-primary">—</dd>
+      </div>
+      <div>
+        <dt class="text-sm text-gray-500">Counties Tracked</dt>
+        <dd id="stat-counties" class="text-2xl font-medium text-shovels-primary">—</dd>
+      </div>
+      <div>
+        <dt class="text-sm text-gray-500">Data Period</dt>
+        <dd id="stat-period" class="text-2xl font-medium text-shovels-primary">—</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<!-- D3.js treemap visualization -->
+<script type="module" src="/theme/js/coverage-treemap.js"></script>
+
+{% endblock %}
