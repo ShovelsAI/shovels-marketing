@@ -176,6 +176,45 @@ slug: permit-database
     </div>
   </section>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What is Shovels Online?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels Online is a web application for exploring nationwide US building permits and contractor data. You can search, filter, and download permit and contractor records to CSV without writing any code.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How much of the US does the permit database cover?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels covers approximately 85% of the United States with building permit and contractor data sourced from thousands of municipalities. Coverage spans nearly every state and major metropolitan area.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What filters are available for searching permits and contractors?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">You can filter by geography (county, city, zip code, or address), permit type, building type, contractor specialty, financial characteristics, and more. The same filtering options apply to both permit and contractor searches.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels Online include contractor contact information?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels has employee contact information for over a million contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I download data from Shovels Online?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. You can download permit and contractor search results to CSV with a single click, and export individual profiles to PDF. The data imports directly into spreadsheets and CRM software.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Are we missing something? Tell us.</h2>
@@ -185,3 +224,90 @@ slug: permit-database
     </div>
   </div>
 </div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Shovels Online",
+  "serviceType": "Database",
+  "description": "Web application for exploring, filtering, and downloading nationwide US building permit and contractor data with advanced geographic search and CSV export.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": "https://www.shovels.ai/permit-database"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Shovels US Building Permit Database",
+  "description": "Nationwide US building permit and contractor database covering 85% of the country, with permit records, contractor profiles, contact information, and geographic search capabilities.",
+  "url": "https://www.shovels.ai/permit-database",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "United States"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels Online is a web application for exploring nationwide US building permits and contractor data. You can search, filter, and download permit and contractor records to CSV without writing any code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much of the US does the permit database cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels covers approximately 85% of the United States with building permit and contractor data sourced from thousands of municipalities. Coverage spans nearly every state and major metropolitan area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What filters are available for searching permits and contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can filter by geography (county, city, zip code, or address), permit type, building type, contractor specialty, financial characteristics, and more. The same filtering options apply to both permit and contractor searches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Shovels Online include contractor contact information?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels has employee contact information for over a million contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I download data from Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can download permit and contractor search results to CSV with a single click, and export individual profiles to PDF. The data imports directly into spreadsheets and CRM software."
+      }
+    }
+  ]
+}
+</script>
