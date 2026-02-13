@@ -7,6 +7,30 @@
   {{ super() }}
 {% endblock %}
 
+{% block structured_data %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{ page.title|striptags|e }}",
+    "url": "https://www.shovels.ai/{{ page.url }}",
+    {% if page.summary %}
+    "description": "{{ page.summary|striptags|truncate(160)|e }}",
+    {% elif page.description %}
+    "description": "{{ page.description|striptags|truncate(160)|e }}",
+    {% endif %}
+    "publisher": {
+      "@type": "Organization",
+      "name": "Shovels",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.shovels.ai/theme/images/shovels-social.png"
+      }
+    }
+  }
+  </script>
+{% endblock structured_data %}
+
 {% block content %}
 
     {{ page.content }}
