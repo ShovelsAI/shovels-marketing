@@ -198,6 +198,45 @@ slug: gis
     </div>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels integrate with Esri ArcGIS?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing 170 million building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What can I do with geospatial permit data?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Geospatial permit data supports site selection, market intelligence, competitive monitoring, and investment risk assessment. Building permits are the earliest signal of market activity, letting you see future developments before construction begins.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How many permits are in the Shovels geodatabase?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">The Shovels geodatabase contains over 170 million geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels include parcel data for GIS users?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Through the Regrid partnership, Shovels integrates parcel data with permit records using linked address identifiers. This enables combined property and permit analysis for enhanced site selection and market intelligence.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Who uses Shovels GIS data?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels GIS data is used by real estate investors, site selection analysts, utility companies, building material suppliers, government agencies, and academic researchers who need geospatial construction activity intelligence.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our geospatial building permit intelligence now</h2>
@@ -206,3 +245,72 @@ slug: gis
     </div>
   </div>
 </div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Shovels GIS",
+  "serviceType": "GIS Integration",
+  "description": "Geospatial building permit intelligence delivered as hosted feature layers for Esri ArcGIS, enabling site selection, market intelligence, and competitive monitoring with 170 million geocoded permits.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": "https://www.shovels.ai/gis"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does Shovels integrate with Esri ArcGIS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing 170 million building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I do with geospatial permit data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geospatial permit data supports site selection, market intelligence, competitive monitoring, and investment risk assessment. Building permits are the earliest signal of market activity, letting you see future developments before construction begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many permits are in the Shovels geodatabase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Shovels geodatabase contains over 170 million geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Shovels include parcel data for GIS users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Through the Regrid partnership, Shovels integrates parcel data with permit records using linked address identifiers. This enables combined property and permit analysis for enhanced site selection and market intelligence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who uses Shovels GIS data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels GIS data is used by real estate investors, site selection analysts, utility companies, building material suppliers, government agencies, and academic researchers who need geospatial construction activity intelligence."
+      }
+    }
+  ]
+}
+</script>
