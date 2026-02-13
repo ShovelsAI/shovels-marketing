@@ -10,6 +10,10 @@
       cursor: pointer;
       transition: opacity 0.15s ease;
     }
+    .treemap-rect.highlighted {
+      stroke: #E9BE51;
+      stroke-width: 3;
+    }
     .treemap-label {
       pointer-events: none;
       font-family: 'Scandia', system-ui, sans-serif;
@@ -40,6 +44,96 @@
         min-height: 600px;
       }
     }
+    /* Location filter dropdown */
+    .filter-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .filter-dropdown-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      background: white;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #374151;
+      cursor: pointer;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      white-space: nowrap;
+    }
+    .filter-dropdown-btn:hover {
+      border-color: #9ca3af;
+    }
+    .filter-dropdown-btn.open {
+      border-color: #01654D;
+      box-shadow: 0 0 0 1px #01654D;
+    }
+    .filter-dropdown-btn .chevron {
+      transition: transform 0.15s ease;
+    }
+    .filter-dropdown-btn.open .chevron {
+      transform: rotate(180deg);
+    }
+    .filter-dropdown-panel {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      width: 280px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      z-index: 40;
+      display: none;
+      overflow: hidden;
+    }
+    .filter-dropdown-panel.open {
+      display: block;
+    }
+    .filter-dropdown-search {
+      width: 100%;
+      padding: 0.625rem 0.75rem 0.625rem 2.25rem;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 0.875rem;
+      outline: none;
+      background: #f9fafb;
+    }
+    .filter-dropdown-search:focus {
+      background: white;
+    }
+    .filter-dropdown-list {
+      max-height: 320px;
+      overflow-y: auto;
+    }
+    .filter-dropdown-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background-color 0.1s ease;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .filter-dropdown-item:last-child {
+      border-bottom: none;
+    }
+    .filter-dropdown-item:hover,
+    .filter-dropdown-item.active {
+      background-color: #f0fdf4;
+    }
+    .filter-dropdown-item .name {
+      color: #111827;
+      font-weight: 500;
+    }
+    .filter-dropdown-item .count {
+      color: #6b7280;
+      font-size: 0.75rem;
+    }
   </style>
 {% endblock %}
 
@@ -57,17 +151,61 @@
   </div>
 </div>
 
-<!-- Breadcrumb navigation -->
+<!-- Summary stats (above treemap, single row) -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-6">
+  <dl id="treemap-stats" class="flex justify-center gap-x-10 text-center">
+    <div>
+      <dt class="text-sm text-gray-500">Total Permits</dt>
+      <dd id="stat-total" class="text-2xl font-medium text-shovels-primary">—</dd>
+    </div>
+    <div>
+      <dt class="text-sm text-gray-500">States Covered</dt>
+      <dd id="stat-states" class="text-2xl font-medium text-shovels-primary">—</dd>
+    </div>
+    <div>
+      <dt class="text-sm text-gray-500">Counties Tracked</dt>
+      <dd id="stat-counties" class="text-2xl font-medium text-shovels-primary">—</dd>
+    </div>
+    <div>
+      <dt class="text-sm text-gray-500">Data Period</dt>
+      <dd id="stat-period" class="text-2xl font-medium text-shovels-primary">—</dd>
+    </div>
+  </dl>
+</div>
+
+<!-- Toolbar: filter dropdown + breadcrumb -->
 <div class="mx-auto max-w-7xl px-6 lg:px-8 pb-4">
-  <nav id="treemap-breadcrumb" class="flex items-center text-sm font-medium text-gray-500">
-    <span id="breadcrumb-root" class="text-shovels-primary cursor-pointer hover:underline hidden">United States</span>
-    <span id="breadcrumb-separator" class="mx-2 hidden">/</span>
-    <span id="breadcrumb-state" class="text-gray-900 hidden"></span>
-  </nav>
+  <div class="flex items-center gap-4">
+    <!-- Filter dropdown button -->
+    <div class="filter-dropdown">
+      <button id="filter-dropdown-btn" class="filter-dropdown-btn" type="button">
+        <span id="filter-dropdown-label">State</span>
+        <svg class="chevron h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="filter-dropdown-panel" class="filter-dropdown-panel">
+        <div class="relative">
+          <svg class="absolute left-2.5 top-3 h-4 w-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input id="location-search-input" type="text" class="filter-dropdown-search" style="padding-left: 2.25rem;" placeholder="Search states..." autocomplete="off" />
+        </div>
+        <div id="location-search-list" class="filter-dropdown-list"></div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb navigation -->
+    <nav id="treemap-breadcrumb" class="flex items-center text-sm font-medium text-gray-500">
+      <span id="breadcrumb-root" class="text-shovels-primary cursor-pointer hover:underline hidden">United States</span>
+      <span id="breadcrumb-separator" class="mx-2 hidden">/</span>
+      <span id="breadcrumb-state" class="text-gray-900 hidden"></span>
+    </nav>
+  </div>
 </div>
 
 <!-- Treemap container -->
-<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-8">
+<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-24">
   <div id="treemap" class="w-full bg-gray-50 rounded-lg overflow-hidden relative">
     <div id="treemap-loading" class="absolute inset-0 flex items-center justify-center text-gray-400">
       Loading coverage data...
@@ -80,30 +218,6 @@
   <div id="tooltip-name" class="font-medium text-gray-900"></div>
   <div id="tooltip-count" class="text-shovels-primary text-lg font-medium"></div>
   <div id="tooltip-pct" class="text-gray-500 text-xs"></div>
-</div>
-
-<!-- Summary stats -->
-<div class="mx-auto max-w-7xl px-6 lg:px-8 pb-24">
-  <div class="mx-auto max-w-4xl">
-    <dl id="treemap-stats" class="grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-4 text-center">
-      <div>
-        <dt class="text-sm text-gray-500">Total Permits</dt>
-        <dd id="stat-total" class="text-2xl font-medium text-shovels-primary">—</dd>
-      </div>
-      <div>
-        <dt class="text-sm text-gray-500">States Covered</dt>
-        <dd id="stat-states" class="text-2xl font-medium text-shovels-primary">—</dd>
-      </div>
-      <div>
-        <dt class="text-sm text-gray-500">Counties Tracked</dt>
-        <dd id="stat-counties" class="text-2xl font-medium text-shovels-primary">—</dd>
-      </div>
-      <div>
-        <dt class="text-sm text-gray-500">Data Period</dt>
-        <dd id="stat-period" class="text-2xl font-medium text-shovels-primary">—</dd>
-      </div>
-    </dl>
-  </div>
 </div>
 
 <!-- D3.js treemap visualization -->

@@ -21,10 +21,53 @@ const breadcrumbRoot = document.getElementById("breadcrumb-root");
 const breadcrumbSep = document.getElementById("breadcrumb-separator");
 const breadcrumbState = document.getElementById("breadcrumb-state");
 const loading = document.getElementById("treemap-loading");
+const searchInput = document.getElementById("location-search-input");
+const searchList = document.getElementById("location-search-list");
+const dropdownBtn = document.getElementById("filter-dropdown-btn");
+const dropdownLabel = document.getElementById("filter-dropdown-label");
+const dropdownPanel = document.getElementById("filter-dropdown-panel");
 
 let currentView = "states"; // "states" or "counties"
 let currentState = null;
 let rootData = null;
+
+// --- Dropdown toggle ---
+function openDropdown() {
+  dropdownBtn.classList.add("open");
+  dropdownPanel.classList.add("open");
+  searchInput.value = "";
+  populateSearchList("");
+  // Focus search input after a frame so the panel is visible
+  requestAnimationFrame(() => searchInput.focus());
+}
+
+function closeDropdown() {
+  dropdownBtn.classList.remove("open");
+  dropdownPanel.classList.remove("open");
+  highlightTreemapItem(null);
+}
+
+function toggleDropdown() {
+  if (dropdownPanel.classList.contains("open")) {
+    closeDropdown();
+  } else {
+    openDropdown();
+  }
+}
+
+dropdownBtn.addEventListener("click", toggleDropdown);
+
+// Close dropdown when clicking outside
+document.addEventListener("mousedown", (e) => {
+  if (!dropdownBtn.contains(e.target) && !dropdownPanel.contains(e.target)) {
+    closeDropdown();
+  }
+});
+
+// Close dropdown on Escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeDropdown();
+});
 
 // Color scale: low → light, high → dark green
 function buildColorScale(children) {
@@ -47,6 +90,95 @@ function labelStrategy(d, totalArea) {
   if (pct > 0.008 && w > 35 && h > 20) return "abbr"; // abbreviation only
   return "none";
 }
+
+// Highlight a treemap rectangle by name (from the dropdown list)
+function highlightTreemapItem(name) {
+  d3.select(container)
+    .selectAll(".treemap-rect")
+    .classed("highlighted", false)
+    .style("opacity", 1);
+
+  if (!name) return;
+
+  d3.select(container)
+    .selectAll("g")
+    .each(function (d) {
+      if (d && d.data && d.data.name === name) {
+        d3.select(this).select("rect").classed("highlighted", true).style("opacity", 0.85);
+      }
+    });
+}
+
+// Populate the dropdown list based on current view
+function populateSearchList(filter) {
+  searchList.innerHTML = "";
+  const query = (filter || "").toLowerCase();
+
+  let items;
+  if (currentView === "states") {
+    items = rootData.children
+      .map((d) => ({ name: d.name, abbreviation: d.abbreviation, value: d.value }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    items = currentState.children
+      .map((d) => ({ name: d.name, value: d.value }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  if (query) {
+    items = items.filter(
+      (d) =>
+        d.name.toLowerCase().includes(query) ||
+        (d.abbreviation && d.abbreviation.toLowerCase().includes(query))
+    );
+  }
+
+  items.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "filter-dropdown-item";
+    const label = item.abbreviation ? `${item.name} (${item.abbreviation})` : item.name;
+    div.innerHTML =
+      `<span class="name">${label}</span>` +
+      `<span class="count">${fmt.format(item.value)}</span>`;
+
+    div.addEventListener("mouseenter", () => {
+      highlightTreemapItem(item.name);
+      div.classList.add("active");
+    });
+    div.addEventListener("mouseleave", () => {
+      highlightTreemapItem(null);
+      div.classList.remove("active");
+    });
+
+    // Click to drill down (states view)
+    if (currentView === "states") {
+      div.addEventListener("click", () => {
+        const original = rootData.children.find((s) => s.name === item.name);
+        if (original && original.children && original.children.length > 0) {
+          closeDropdown();
+          drillDown(original);
+        }
+      });
+    }
+
+    searchList.appendChild(div);
+  });
+}
+
+function updateDropdownLabel() {
+  if (currentView === "states") {
+    dropdownLabel.textContent = "State";
+    searchInput.placeholder = "Search states...";
+  } else {
+    dropdownLabel.textContent = "County";
+    searchInput.placeholder = "Search counties...";
+  }
+}
+
+// Filter list as user types
+searchInput.addEventListener("input", () => {
+  populateSearchList(searchInput.value);
+});
 
 function renderTreemap(data, parentValue) {
   const rect = container.getBoundingClientRect();
@@ -150,7 +282,7 @@ function renderTreemap(data, parentValue) {
   // Interactivity
   cells
     .style("cursor", currentView === "states" ? "pointer" : "default")
-    .on("mouseenter", function (event, d) {
+    .on("mouseenter", function (_, d) {
       const pctOfTotal = ((d.data.value / parentValue) * 100).toFixed(1);
       tooltipName.textContent = d.data.name;
       tooltipCount.textContent = fmt.format(d.data.value) + " permits";
@@ -166,18 +298,22 @@ function renderTreemap(data, parentValue) {
     })
     .on("mouseleave", function () {
       tooltip.classList.remove("visible");
-      d3.select(this).select("rect").style("opacity", 1);
+      d3.select(this).select("rect").classed("highlighted", false).style("opacity", 1);
     });
 
   // Click to drill into state
   if (currentView === "states") {
-    cells.on("click", function (event, d) {
+    cells.on("click", function (_, d) {
       // Look up the original data entry (with children) by name
       const original = data.find((s) => s.name === d.data.name);
       if (!original || !original.children || original.children.length === 0) return;
       drillDown(original);
     });
   }
+
+  // Update dropdown label and list for current view
+  updateDropdownLabel();
+  populateSearchList("");
 }
 
 function drillDown(stateData) {
