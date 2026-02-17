@@ -62,3 +62,63 @@ Permit Status is an important data point to everyone involved in the constructio
 **Shovels 101** will be our tutorial series, and we've got a bunch of topics lined up for future publication. If there's anything you want us to cover, further questions about permit statuses, or any other fields in our dataset, let us know at [support@shovels.ai](mailto:support@shovels.ai)!
 
 Happy Building!
+
+## Frequently Asked Questions
+
+**Q: What are the four permit statuses in the Shovels system?**
+
+A: The four statuses are: in_review (permit has been filed but not yet approved), active (permit is approved and work can proceed), final (work is completed and signed off by the jurisdiction), and inactive (the permit process has stalled due to failed inspections, expiration, or extended inactivity).
+
+**Q: What dates correspond to each permit status in Shovels?**
+
+A: The in_review status is defined by the file_date (when the permit is filed). The active status is defined by the issue_date (when the permit is approved). The final status is defined by the final_date (when the jurisdiction signs off on completed work). The inactive status can occur at any point if the process stalls.
+
+**Q: What are start_date and end_date in the Shovels permit data?**
+
+A: These are derived dates created by Shovels for consistent date tracking. start_date is derived by coalescing file_date, issue_date, and final_date in that order. end_date uses the same fields in reverse order. Because of this, start_date and end_date can be the same value, and end_date may be populated even when a permit is still active. Use these fields together with the permit status for accurate analysis.
+
+**Q: Can a permit move back and forth between statuses?**
+
+A: Yes. A permit can move from active to inactive if the process stalls (for example, due to a failed inspection), and then return to active once the issue is resolved. The construction duration counter pauses during the inactive period and resumes when the permit becomes active again.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the four permit statuses in the Shovels system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The four statuses are: in_review (permit has been filed but not yet approved), active (permit is approved and work can proceed), final (work is completed and signed off by the jurisdiction), and inactive (the permit process has stalled due to failed inspections, expiration, or extended inactivity)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What dates correspond to each permit status in Shovels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The in_review status is defined by the file_date (when the permit is filed). The active status is defined by the issue_date (when the permit is approved). The final status is defined by the final_date (when the jurisdiction signs off on completed work). The inactive status can occur at any point if the process stalls."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are start_date and end_date in the Shovels permit data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These are derived dates created by Shovels for consistent date tracking. start_date is derived by coalescing file_date, issue_date, and final_date in that order. end_date uses the same fields in reverse order. Because of this, start_date and end_date can be the same value, and end_date may be populated even when a permit is still active. Use these fields together with the permit status for accurate analysis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a permit move back and forth between statuses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A permit can move from active to inactive if the process stalls (for example, due to a failed inspection), and then return to active once the issue is resolved. The construction duration counter pauses during the inactive period and resumes when the permit becomes active again."
+      }
+    }
+  ]
+}
+</script>

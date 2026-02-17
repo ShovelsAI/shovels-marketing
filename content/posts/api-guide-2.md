@@ -195,3 +195,63 @@ Check out the complete [API Reference](https://docs.shovels.ai) to explore all t
 ## Need Help?
 
 We're here to help you succeed! Reach out to `support@shovels.ai` with any questions. We love seeing what our customers build with the API.
+
+## Frequently Asked Questions
+
+**Q: What are the two main resources available through the Shovels V2 API?**
+
+A: The two main resources are Permits (official documents issued by cities or counties tracking construction and building alterations) and Contractors (skilled professionals who perform the permitted work). The API also provides Lists, Addresses, Meta, and Geography resources.
+
+**Q: What is a geo_id and what values can it take?**
+
+A: A geo_id is the location parameter used when searching for permits or contractors. It can be a state abbreviation (e.g., TX), a zip code (e.g., 78701), or a city or county identifier. For cities and counties, you need to look up their specific geo_id using the geography endpoints first.
+
+**Q: How do I filter permits by property type and work category?**
+
+A: Use the property_type parameter to filter by building type (e.g., residential, commercial, industrial) and the permit_tags parameter to filter by type of work (e.g., solar, hvac, reroof, kitchen_remodel). Both can be combined in a single search request.
+
+**Q: What is the minimum information required to search for permits?**
+
+A: At minimum, you need a date range (using the permit_from and permit_to parameters) and a location (using the geo_id parameter). You can optionally add property type and tag filters to narrow your results.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the two main resources available through the Shovels V2 API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The two main resources are Permits (official documents issued by cities or counties tracking construction and building alterations) and Contractors (skilled professionals who perform the permitted work). The API also provides Lists, Addresses, Meta, and Geography resources."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a geo_id and what values can it take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A geo_id is the location parameter used when searching for permits or contractors. It can be a state abbreviation (e.g., TX), a zip code (e.g., 78701), or a city or county identifier. For cities and counties, you need to look up their specific geo_id using the geography endpoints first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I filter permits by property type and work category?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the property_type parameter to filter by building type (e.g., residential, commercial, industrial) and the permit_tags parameter to filter by type of work (e.g., solar, hvac, reroof, kitchen_remodel). Both can be combined in a single search request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum information required to search for permits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At minimum, you need a date range (using the permit_from and permit_to parameters) and a location (using the geo_id parameter). You can optionally add property type and tag filters to narrow your results."
+      }
+    }
+  ]
+}
+</script>

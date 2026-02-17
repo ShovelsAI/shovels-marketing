@@ -69,3 +69,75 @@ In it’s simplest form, our [Shovels Online](https://app.shovels.ai) dashboard 
 For a more detailed (and programmatic) view, explore our [API](https://docs.shovels.ai/docs/shovels-api-introduction). 
 
 If you have any questions, or want a sample dataset for your team to explore, [get in touch today](mailto:sales@shovels.ai)!
+
+## Frequently Asked Questions
+
+**Q: What are derived metrics in Shovels?**
+
+A: Derived metrics are data points that Shovels calculates by combining information from the public record. They are not directly reported on individual permits but are extrapolated from underlying data, such as dates, inspection results, and permit counts.
+
+**Q: What is the difference between Average Approval Duration and Average Construction Duration?**
+
+A: Average Approval Duration measures the time between when a permit is filed and when it is approved (issue_date minus file_date). Average Construction Duration measures the broader time between when a permit is filed and when it is marked as finaled (final_date minus file_date), encompassing the entire construction process.
+
+**Q: How is Average Inspection Pass Rate calculated?**
+
+A: It is the percentage of inspections passed compared to total inspections made, multiplied by 100 (so 75% is returned as 75). A higher rate, especially as a contractor's permit count increases, indicates a smoother construction process.
+
+**Q: What does the First Seen Date metric tell me?**
+
+A: For contractors, it shows the first time they appear in the Shovels system on a permit, which is useful for identifying new contractors entering the market. For permits, it shows when the permit was added to the Shovels platform, which helps you understand digitization delays or when historical data was backfilled.
+
+**Q: Where can I access these derived metrics?**
+
+A: These metrics are available across the entire Shovels platform: through Shovels Online (the web application and dashboard), the API (for programmatic access), and the enterprise data feed.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are derived metrics in Shovels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Derived metrics are data points that Shovels calculates by combining information from the public record. They are not directly reported on individual permits but are extrapolated from underlying data, such as dates, inspection results, and permit counts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Average Approval Duration and Average Construction Duration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Average Approval Duration measures the time between when a permit is filed and when it is approved (issue_date minus file_date). Average Construction Duration measures the broader time between when a permit is filed and when it is marked as finaled (final_date minus file_date), encompassing the entire construction process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Average Inspection Pass Rate calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the percentage of inspections passed compared to total inspections made, multiplied by 100 (so 75% is returned as 75). A higher rate, especially as a contractor's permit count increases, indicates a smoother construction process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the First Seen Date metric tell me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For contractors, it shows the first time they appear in the Shovels system on a permit, which is useful for identifying new contractors entering the market. For permits, it shows when the permit was added to the Shovels platform, which helps you understand digitization delays or when historical data was backfilled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I access these derived metrics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These metrics are available across the entire Shovels platform: through Shovels Online (the web application and dashboard), the API (for programmatic access), and the enterprise data feed."
+      }
+    }
+  ]
+}
+</script>

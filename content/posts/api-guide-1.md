@@ -238,4 +238,64 @@ This API is meant to be fast to learn and easy to work with. If you have any que
 
 And if you find that you're looking for an endpoint that we're not offering yet, let us know. We just might build it. 
 
-Cheers! 
+Cheers!
+
+## Frequently Asked Questions
+
+**Q: How do I authenticate with the Shovels V1 API?**
+
+A: You authenticate using header key-based authentication. First, get your API key by registering and logging in at app.shovels.ai. Then include your key in the HTTP header of each request using the format X-API-Key: YOUR_API_KEY_HERE.
+
+**Q: What are tags in the Shovels API and how do I use them?**
+
+A: Tags are how Shovels categorizes types of building activity (e.g., heat_pump, solar, reroof). You can use tags to filter permits or contractors by the type of work performed. The V1 API offers 33 unique tags, and you can list them all programmatically using the Get All Available Tags endpoint.
+
+**Q: What date format does the Shovels API use, and which date do the filters apply to?**
+
+A: The Shovels API uses the YYYY-MM-DD date format (e.g., 2023-08-01). The start_date and end_date filters are based on the permit's file date, which is when the permit was submitted to the jurisdiction.
+
+**Q: Can I look up detailed information about a specific permit or contractor?**
+
+A: Yes. Search results return internal Shovels IDs for permits and contractors. You can pass those IDs into the Get Permit by ID or Get Contractor by ID endpoints to retrieve full details including descriptions, dates, addresses, license numbers, and contact information.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I authenticate with the Shovels V1 API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You authenticate using header key-based authentication. First, get your API key by registering and logging in at app.shovels.ai. Then include your key in the HTTP header of each request using the format X-API-Key: YOUR_API_KEY_HERE."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are tags in the Shovels API and how do I use them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tags are how Shovels categorizes types of building activity (e.g., heat_pump, solar, reroof). You can use tags to filter permits or contractors by the type of work performed. The V1 API offers 33 unique tags, and you can list them all programmatically using the Get All Available Tags endpoint."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What date format does the Shovels API use, and which date do the filters apply to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Shovels API uses the YYYY-MM-DD date format (e.g., 2023-08-01). The start_date and end_date filters are based on the permit's file date, which is when the permit was submitted to the jurisdiction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I look up detailed information about a specific permit or contractor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Search results return internal Shovels IDs for permits and contractors. You can pass those IDs into the Get Permit by ID or Get Contractor by ID endpoints to retrieve full details including descriptions, dates, addresses, license numbers, and contact information."
+      }
+    }
+  ]
+}
+</script> 

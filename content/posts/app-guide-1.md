@@ -122,3 +122,63 @@ Yes! We are going to charge $499/mo per account for access to all of this amazin
 When we release the V2, price will probably go up, but we’ll won’t raise prices on our early customers. 
 
 Check it out! [https://app.shovels.ai](https://app.shovels.ai)
+
+## Frequently Asked Questions
+
+**Q: What is the Shovels app and how is it different from the API?**
+
+A: The Shovels app is a web application accessible on any desktop or mobile browser that lets you browse building permit and contractor data without needing any coding or API knowledge. It provides the same data as the API but through a visual, user-friendly interface.
+
+**Q: What are the three core data objects in the Shovels app?**
+
+A: The three core objects are addresses, permits, and contractors. They are all related: permits have addresses, contractors have permits, and therefore contractors also have addresses. You can search and profile each one in the app.
+
+**Q: How can I find contractors who work in my neighborhood using the Shovels app?**
+
+A: Use the Contractor Directory feature to search by zip code and permit type. The app finds contractors based on their actual permit history in your area, which is more reliable than review sites since it shows who has actually done permitted work in your neighborhood.
+
+**Q: Can I download data from the Shovels app?**
+
+A: Yes. Each table in the Shovels app includes a download feature that lets you export the data to a CSV file, which you can then use in other software products.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Shovels app and how is it different from the API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Shovels app is a web application accessible on any desktop or mobile browser that lets you browse building permit and contractor data without needing any coding or API knowledge. It provides the same data as the API but through a visual, user-friendly interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three core data objects in the Shovels app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The three core objects are addresses, permits, and contractors. They are all related: permits have addresses, contractors have permits, and therefore contractors also have addresses. You can search and profile each one in the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I find contractors who work in my neighborhood using the Shovels app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Contractor Directory feature to search by zip code and permit type. The app finds contractors based on their actual permit history in your area, which is more reliable than review sites since it shows who has actually done permitted work in your neighborhood."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I download data from the Shovels app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Each table in the Shovels app includes a download feature that lets you export the data to a CSV file, which you can then use in other software products."
+      }
+    }
+  ]
+}
+</script>
