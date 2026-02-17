@@ -72,3 +72,63 @@ Accessing building permit data is essential for developers, businesses, governme
 For example, you can query for wall battery permits, heat pump HVAC conversions, solar panel installations, and EV charger networks. The data returned from these queries can be used for construction go-to-market activities, providing highly targeted leads for sales teams. Developers can also use this data to create applications related to energy transition activities, such as mapping out EV charger locations or predicting future demand for electric vehicles.
 
 To learn more about how you can use the Shovels building permit API to access monthly energy transition activity data and build applications related to this area, check out our documentation at [https://docs.shovels.ai/api-reference](https://docs.shovels.ai/api-reference)!
+
+## Frequently Asked Questions
+
+**Q: How fast is EV charger installation growing in California?**
+
+A: The compound annual growth rate (CAGR) for EV charger permits in California from 2012 to 2022 was approximately 38.76%. Based on monthly data, Shovels projected roughly 11,000 permits in 2023 (a 40% increase over 2022) and 13,000 in 2024 (another 20% jump).
+
+**Q: Is there a seasonal pattern to EV charger permit filings in California?**
+
+A: Yes. The months of August, September, and October tend to have the highest average number of permits. Permit volumes are generally lower at the start of the year and increase as the year progresses.
+
+**Q: What types of energy transition data does the Shovels building permit API cover?**
+
+A: Beyond EV charger installations, the Shovels API covers wall battery permits, heat pump HVAC conversions, solar panel installations, and other energy transition activities. Users can query by the type of work involved.
+
+**Q: How can businesses use EV charger permit data?**
+
+A: Businesses can use residential EV charger permit data to identify optimal locations for commercial charging stations, perform stress tests on the electrical grid, generate targeted sales leads, and predict future demand for electric vehicles.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast is EV charger installation growing in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The compound annual growth rate (CAGR) for EV charger permits in California from 2012 to 2022 was approximately 38.76%. Based on monthly data, Shovels projected roughly 11,000 permits in 2023 (a 40% increase over 2022) and 13,000 in 2024 (another 20% jump)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a seasonal pattern to EV charger permit filings in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The months of August, September, and October tend to have the highest average number of permits. Permit volumes are generally lower at the start of the year and increase as the year progresses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of energy transition data does the Shovels building permit API cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beyond EV charger installations, the Shovels API covers wall battery permits, heat pump HVAC conversions, solar panel installations, and other energy transition activities. Users can query by the type of work involved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can businesses use EV charger permit data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Businesses can use residential EV charger permit data to identify optimal locations for commercial charging stations, perform stress tests on the electrical grid, generate targeted sales leads, and predict future demand for electric vehicles."
+      }
+    }
+  ]
+}
+</script>

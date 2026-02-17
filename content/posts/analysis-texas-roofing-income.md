@@ -139,3 +139,75 @@ This narrow study provided some very interesting results, but we can think of ad
 If there’s anything specific that you’d like to see us cover next, please [let us know](mailto:support@shovels.ai)! On the other hand, check out our [Free Trial](https://app.shovels.ai){target=_blank} and either use **Shovels Online** or the **Shovels API** to pull some of this data for yourself. We certainly don’t have time to do it all, and we love to collaborate. 
 
 Happy Digging!
+
+## Frequently Asked Questions
+
+**Q: What is the relationship between household income and roofing permit activity in Texas?**
+
+A: There is a clear positive correlation. Low-income areas (under $30k/year) average 0.21 roofing permits per household, while high-income areas (over $150k/year) average 0.51 permits per household. The wealthiest 28% of areas account for 74% of all roofing permits.
+
+**Q: Why do higher-income areas pull more roofing permits?**
+
+A: Several factors contribute: better access to financial resources and favorable loan terms, a tendency toward regular roof inspections and preventative maintenance, use of higher-quality materials, and viewing home improvements as strategic investments. Essentially, wealthier homeowners can afford to pay more upfront, which is cheaper in the long run.
+
+**Q: What does this data mean for lower-income homeowners?**
+
+A: The data highlights a significant disparity. Over 72% of Texas census tracts fall below the upper-middle income bracket, and these areas are underrepresented in roofing permits relative to their household count. This suggests lower-income homeowners may lack the resources for critical roof maintenance, which affects home value, structural integrity, and energy efficiency.
+
+**Q: How many census tracts were analyzed in this study?**
+
+A: The study examined more than 3,200 census tracts across Texas, combining roofing permit data with owner demographics and income bracket information.
+
+**Q: What policy recommendations emerge from this analysis?**
+
+A: The analysis recommends implementing policy measures to support roofing repairs in lower-income areas, developing contractor education about government-backed programs, providing more accessible financing options, and creating cross-industry partnerships among banks, non-profits, and businesses to help homeowners maintain their homes.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the relationship between household income and roofing permit activity in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is a clear positive correlation. Low-income areas (under $30k/year) average 0.21 roofing permits per household, while high-income areas (over $150k/year) average 0.51 permits per household. The wealthiest 28% of areas account for 74% of all roofing permits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do higher-income areas pull more roofing permits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Several factors contribute: better access to financial resources and favorable loan terms, a tendency toward regular roof inspections and preventative maintenance, use of higher-quality materials, and viewing home improvements as strategic investments. Essentially, wealthier homeowners can afford to pay more upfront, which is cheaper in the long run."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does this data mean for lower-income homeowners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The data highlights a significant disparity. Over 72% of Texas census tracts fall below the upper-middle income bracket, and these areas are underrepresented in roofing permits relative to their household count. This suggests lower-income homeowners may lack the resources for critical roof maintenance, which affects home value, structural integrity, and energy efficiency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many census tracts were analyzed in this study?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The study examined more than 3,200 census tracts across Texas, combining roofing permit data with owner demographics and income bracket information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What policy recommendations emerge from this analysis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The analysis recommends implementing policy measures to support roofing repairs in lower-income areas, developing contractor education about government-backed programs, providing more accessible financing options, and creating cross-industry partnerships among banks, non-profits, and businesses to help homeowners maintain their homes."
+      }
+    }
+  ]
+}
+</script>

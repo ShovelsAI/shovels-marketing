@@ -112,4 +112,76 @@ This result surprised us. We assume that bureaucratic government departments are
 
 The Pearson correlation coefficient here is −0.0730. This value indicates a very weak negative relationship. In other words, there's actually a slight tendency for jurisdictions that process more EV permits to approve them a bit faster, but the relationship is weak.
 
-Phew! That was a lot of information about EV charger approval times. It seems we're still just scratching the surface. If you want to do more analysis, [let us know](https://www.shovels.ai/contact). We have lots of data. 
+Phew! That was a lot of information about EV charger approval times. It seems we're still just scratching the surface. If you want to do more analysis, [let us know](https://www.shovels.ai/contact). We have lots of data.
+
+## Frequently Asked Questions
+
+**Q: Which California jurisdictions have the fastest EV charger permit approval times?**
+
+A: Oakland leads with a median approval time of just 3 days, followed by Dublin (4 days), El Dorado County (5 days), Sacramento (5 days), and San Diego County (5 days). Most of the fastest jurisdictions are in Northern California.
+
+**Q: Which California jurisdictions have the slowest EV charger permit approval times?**
+
+A: Los Angeles has the slowest median approval time at 93 days, followed by San Francisco (70 days), Santa Ana (64 days), Santa Monica (64 days), and Pasadena (60 days). Four of the five slowest jurisdictions are in Southern California.
+
+**Q: Is there a difference in EV charger permit approval times between Northern and Southern California?**
+
+A: Yes. The data shows a clear regional pattern: Northern California jurisdictions issue EV charger permits significantly faster than Southern California jurisdictions.
+
+**Q: Does processing more permits cause longer approval times?**
+
+A: No. The analysis found essentially no correlation between the volume of permits a jurisdiction processes and its approval speed. The Pearson correlation coefficient was -0.073, indicating a very weak relationship. Jurisdictions that handle more permits do not necessarily take longer to approve them.
+
+**Q: Did COVID-19 affect EV charger permit approval times in California?**
+
+A: Surprisingly, permit processing times actually improved after COVID across California jurisdictions. Some areas like Riverside County saw skyrocketing permit volumes during the pandemic but managed to keep processing times down, suggesting they implemented streamlining reforms.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which California jurisdictions have the fastest EV charger permit approval times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oakland leads with a median approval time of just 3 days, followed by Dublin (4 days), El Dorado County (5 days), Sacramento (5 days), and San Diego County (5 days). Most of the fastest jurisdictions are in Northern California."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which California jurisdictions have the slowest EV charger permit approval times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Angeles has the slowest median approval time at 93 days, followed by San Francisco (70 days), Santa Ana (64 days), Santa Monica (64 days), and Pasadena (60 days). Four of the five slowest jurisdictions are in Southern California."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a difference in EV charger permit approval times between Northern and Southern California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The data shows a clear regional pattern: Northern California jurisdictions issue EV charger permits significantly faster than Southern California jurisdictions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does processing more permits cause longer approval times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The analysis found essentially no correlation between the volume of permits a jurisdiction processes and its approval speed. The Pearson correlation coefficient was -0.073, indicating a very weak relationship. Jurisdictions that handle more permits do not necessarily take longer to approve them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Did COVID-19 affect EV charger permit approval times in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Surprisingly, permit processing times actually improved after COVID across California jurisdictions. Some areas like Riverside County saw skyrocketing permit volumes during the pandemic but managed to keep processing times down, suggesting they implemented streamlining reforms."
+      }
+    }
+  ]
+}
+</script> 
