@@ -24,78 +24,6 @@ slug: audiences
           <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
           <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
-
-## Frequently Asked Questions
-
-**Q: What kind of data does Shovels use to build audiences?**
-
-A: Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting.
-
-**Q: What types of audiences can I create with Shovels?**
-
-A: You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage).
-
-**Q: How does Shovels help me reach homeowners at the right time?**
-
-A: Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now -- for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years.
-
-**Q: Can I use Shovels audiences for ad campaigns?**
-
-A: Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs.
-
-**Q: How does Shovels identify homeowners who might need financing?**
-
-A: Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products.
-
-<!-- JSON-LD FAQ schema for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What kind of data does Shovels use to build audiences?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What types of audiences can I create with Shovels?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shovels help me reach homeowners at the right time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now -- for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Shovels audiences for ad campaigns?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shovels identify homeowners who might need financing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products."
-      }
-    }
-  ]
-}
-</script>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
         <img class="relative max-h-[500px]" src="{static}/images/shovelsGuy-pose8.png" alt="Illustration showing audience activation using building permit data">
@@ -201,6 +129,96 @@ A: Shovels identifies homeowners who have active construction projects, since co
     </a>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What kind of data does Shovels use to build audiences?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What types of audiences can I create with Shovels?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage).</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels help me reach homeowners at the right time?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now -- for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I use Shovels audiences for ad campaigns?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels identify homeowners who might need financing?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kind of data does Shovels use to build audiences?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of audiences can I create with Shovels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Shovels help me reach homeowners at the right time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now -- for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Shovels audiences for ad campaigns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Shovels identify homeowners who might need financing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products."
+      }
+    }
+  ]
+}
+</script>
+
 <div class="bg-white">
   <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>

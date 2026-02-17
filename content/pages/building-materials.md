@@ -24,78 +24,6 @@ slug: building-materials
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
           <a href="https://www.canva.com/design/DAG0xKBkIG0/Y6pO23tLga1p_mmOi8m7kw/view?utm_content=DAG0xKBkIG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b8199daba" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
-
-## Frequently Asked Questions
-
-**Q: How does Shovels help building material suppliers find contractors?**
-
-A: Shovels provides nationwide building permit data that lets you segment contractors by revenue, service area, and specialty. This enriches your lead program with unique insights on both commercial and residential builders, and the data integrates directly with Salesforce and HubSpot.
-
-**Q: Can Shovels help prevent fraudulent purchases?**
-
-A: Yes. Shovels can verify that a prospective customer is a licensed contractor by checking their registration information against a database of nearly 3 million contractors. This helps prevent unauthorized or fraudulent purchases of building materials.
-
-**Q: How can building material distributors use Shovels for credit decisions?**
-
-A: Shovels provides trailing revenue, permit history, and service area detail for contractors. This data helps you assess credit risk when deciding whether to open a line of credit for a contractor account.
-
-**Q: What contractor information does Shovels provide?**
-
-A: Shovels offers detailed contractor profiles including revenue estimates, permit history, service area coverage, employee contact information, and license verification data. This helps your sales team qualify leads and close more accounts.
-
-**Q: Which companies use Shovels for building materials sales?**
-
-A: Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter.
-
-<!-- JSON-LD FAQ schema for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How does Shovels help building material suppliers find contractors?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels provides nationwide building permit data that lets you segment contractors by revenue, service area, and specialty. This enriches your lead program with unique insights on both commercial and residential builders, and the data integrates directly with Salesforce and HubSpot."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Shovels help prevent fraudulent purchases?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels can verify that a prospective customer is a licensed contractor by checking their registration information against a database of nearly 3 million contractors. This helps prevent unauthorized or fraudulent purchases of building materials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can building material distributors use Shovels for credit decisions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels provides trailing revenue, permit history, and service area detail for contractors. This data helps you assess credit risk when deciding whether to open a line of credit for a contractor account."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What contractor information does Shovels provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels offers detailed contractor profiles including revenue estimates, permit history, service area coverage, employee contact information, and license verification data. This helps your sales team qualify leads and close more accounts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which companies use Shovels for building materials sales?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter."
-      }
-    }
-  ]
-}
-</script>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
         <img class="relative max-h-[600px]" src="theme/images/finance/hero.svg" alt="Illustration showing building materials and construction data analytics">
@@ -183,6 +111,96 @@ A: Shovels is trusted by companies including Schneider Electric, Beacon, Harvest
     </div>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels help building material suppliers find contractors?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels provides nationwide building permit data that lets you segment contractors by revenue, service area, and specialty. This enriches your lead program with unique insights on both commercial and residential builders, and the data integrates directly with Salesforce and HubSpot.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels help prevent fraudulent purchases?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels can verify that a prospective customer is a licensed contractor by checking their registration information against a database of nearly 3 million contractors. This helps prevent unauthorized or fraudulent purchases of building materials.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can building material distributors use Shovels for credit decisions?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels provides trailing revenue, permit history, and service area detail for contractors. This data helps you assess credit risk when deciding whether to open a line of credit for a contractor account.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What contractor information does Shovels provide?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels offers detailed contractor profiles including revenue estimates, permit history, service area coverage, employee contact information, and license verification data. This helps your sales team qualify leads and close more accounts.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Which companies use Shovels for building materials sales?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does Shovels help building material suppliers find contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels provides nationwide building permit data that lets you segment contractors by revenue, service area, and specialty. This enriches your lead program with unique insights on both commercial and residential builders, and the data integrates directly with Salesforce and HubSpot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Shovels help prevent fraudulent purchases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels can verify that a prospective customer is a licensed contractor by checking their registration information against a database of nearly 3 million contractors. This helps prevent unauthorized or fraudulent purchases of building materials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can building material distributors use Shovels for credit decisions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels provides trailing revenue, permit history, and service area detail for contractors. This data helps you assess credit risk when deciding whether to open a line of credit for a contractor account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What contractor information does Shovels provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels offers detailed contractor profiles including revenue estimates, permit history, service area coverage, employee contact information, and license verification data. This helps your sales team qualify leads and close more accounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which companies use Shovels for building materials sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter."
+      }
+    }
+  ]
+}
+</script>
+
 <div class="bg-white">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>

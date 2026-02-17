@@ -23,78 +23,6 @@ slug: home-services
         <div class="mt-10 flex items-center gap-x-6">
           <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
         </div>
-
-## Frequently Asked Questions
-
-**Q: What makes Shovels the most complete contractor database in America?**
-
-A: Shovels combines two authoritative data sources -- building permits and state contractor license directories -- to create the most comprehensive view of the construction labor market. The data covers 37 states and includes license classifications, permit details, and contact information.
-
-**Q: Who uses Shovels for contractor data?**
-
-A: Leading home services companies including Angi, Thumbtack, Houzz, and Housecall Pro trust Shovels to find, verify, and enrich contractor data at scale.
-
-**Q: How does Shovels standardize contractor license data?**
-
-A: Shovels normalizes over 3,000 messy contractor classifications from 37 different states down to approximately a dozen clean, standardized classifications. The original classifications are also provided alongside the standardized versions.
-
-**Q: How is the data delivered?**
-
-A: Shovels supports all major cloud storage providers (AWS, Azure, GCP) and can push data to Snowflake, BigQuery, and Databricks. Data transfers are done securely via SFTP and HTTPS. Custom reports can be generated in whatever schema and file format your data team prefers.
-
-**Q: How often is the contractor data updated?**
-
-A: The contractor state license files are refreshed monthly, pulled directly from the source, ensuring the data stays current and accurate.
-
-<!-- JSON-LD FAQ schema for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What makes Shovels the most complete contractor database in America?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels combines two authoritative data sources -- building permits and state contractor license directories -- to create the most comprehensive view of the construction labor market. The data covers 37 states and includes license classifications, permit details, and contact information."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who uses Shovels for contractor data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Leading home services companies including Angi, Thumbtack, Houzz, and Housecall Pro trust Shovels to find, verify, and enrich contractor data at scale."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shovels standardize contractor license data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels normalizes over 3,000 messy contractor classifications from 37 different states down to approximately a dozen clean, standardized classifications. The original classifications are also provided alongside the standardized versions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is the data delivered?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels supports all major cloud storage providers (AWS, Azure, GCP) and can push data to Snowflake, BigQuery, and Databricks. Data transfers are done securely via SFTP and HTTPS. Custom reports can be generated in whatever schema and file format your data team prefers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often is the contractor data updated?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The contractor state license files are refreshed monthly, pulled directly from the source, ensuring the data stays current and accurate."
-      }
-    }
-  ]
-}
-</script>
       </div>
       <div class="mt-10 hidden aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:block lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
         <img class="relative max-h-[500px]" src="{static}/images/shovels-hvac.svg" alt="Illustration showing a contractor fixing a heat pump HVAC">
@@ -233,6 +161,96 @@ A: The contractor state license files are refreshed monthly, pulled directly fro
     </div>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What makes Shovels the most complete contractor database in America?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels combines two authoritative data sources -- building permits and state contractor license directories -- to create the most comprehensive view of the construction labor market. The data covers 37 states and includes license classifications, permit details, and contact information.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Who uses Shovels for contractor data?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Leading home services companies including Angi, Thumbtack, Houzz, and Housecall Pro trust Shovels to find, verify, and enrich contractor data at scale.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels standardize contractor license data?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels normalizes over 3,000 messy contractor classifications from 37 different states down to approximately a dozen clean, standardized classifications. The original classifications are also provided alongside the standardized versions.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How is the data delivered?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels supports all major cloud storage providers (AWS, Azure, GCP) and can push data to Snowflake, BigQuery, and Databricks. Data transfers are done securely via SFTP and HTTPS. Custom reports can be generated in whatever schema and file format your data team prefers.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How often is the contractor data updated?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">The contractor state license files are refreshed monthly, pulled directly from the source, ensuring the data stays current and accurate.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes Shovels the most complete contractor database in America?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels combines two authoritative data sources -- building permits and state contractor license directories -- to create the most comprehensive view of the construction labor market. The data covers 37 states and includes license classifications, permit details, and contact information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who uses Shovels for contractor data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Leading home services companies including Angi, Thumbtack, Houzz, and Housecall Pro trust Shovels to find, verify, and enrich contractor data at scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Shovels standardize contractor license data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels normalizes over 3,000 messy contractor classifications from 37 different states down to approximately a dozen clean, standardized classifications. The original classifications are also provided alongside the standardized versions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the data delivered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels supports all major cloud storage providers (AWS, Azure, GCP) and can push data to Snowflake, BigQuery, and Databricks. Data transfers are done securely via SFTP and HTTPS. Custom reports can be generated in whatever schema and file format your data team prefers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is the contractor data updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The contractor state license files are refreshed monthly, pulled directly from the source, ensuring the data stays current and accurate."
+      }
+    }
+  ]
+}
+</script>
+
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
