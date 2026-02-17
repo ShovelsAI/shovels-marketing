@@ -217,3 +217,25 @@ slug: about
   </div>
 </div>
 </div>
+
+<!-- JSON-LD AboutPage schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Shovels, Inc.",
+  "description": "The intelligence layer for the built world. Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.",
+  "url": "https://www.shovels.ai/about",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai",
+    "description": "Shovels captures the first signal of construction—using AI to clean, enrich, and unify permit, contractor, and property data from thousands of municipalities.",
+    "foundingDate": "2022",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": 6
+    }
+  }
+}
+</script>
