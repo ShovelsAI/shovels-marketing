@@ -1,5 +1,5 @@
 Title: Building Contractor and Permit API
-Description: Access the first signal of construction through our API. Shovel-ready intelligence from thousands of municipalities, delivered via REST API with enhanced geo-search and lightning-fast response times.
+Description: Access the first signal of construction through our API. Shovel-ready intelligence from over 2,000 jurisdictions nationwide, delivered via REST API with enhanced geo-search and lightning-fast response times.
 slug: api
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -19,7 +19,7 @@ slug: api
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
       <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Access the first signal of construction</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Get Shovel-ready intelligence delivered via our API. We capture permit, contractor, and property data from thousands of municipalities—using AI to clean, enrich, and unify it into standardized intelligence. Enhanced geo-search, expanded filtering, and lightning-fast responses.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Get Shovel-ready intelligence delivered via our API. We capture permit, contractor, and property data from over 2,000 jurisdictions nationwide—using AI to clean, enrich, and unify it into standardized intelligence. Enhanced geo-search, expanded filtering, and lightning-fast responses.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
           <a href="https://docs.shovels.ai/api-reference/" class="text-sm/6 font-semibold text-gray-900" target="_blank">API documentation <span aria-hidden="true">&rarr;</span></a>
@@ -37,7 +37,7 @@ slug: api
     <div class="mx-auto max-w-2xl sm:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">API for the building trades</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Shovel-ready intelligence, delivered via API</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Everything built starts with a permit. Our API delivers that first signal—turning fragmented public records from thousands of municipalities into standardized, Shovel-ready intelligence. Built to be powerful, fast, and developer-friendly.</p>
+      <p class="mt-6 text-lg/8 text-gray-300">Everything built starts with a permit. Our API delivers that first signal—turning fragmented public records from over 2,000 jurisdictions nationwide into standardized, Shovel-ready intelligence. Built to be powerful, fast, and developer-friendly.</p>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">
@@ -200,7 +200,7 @@ slug: api
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What data does the Shovels API provide?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The Shovels API provides building permit records, contractor profiles, property details, and resident information from thousands of municipalities across the United States. Data is AI-enriched and standardized into a clean JSON format with geographic search, advanced filtering, and derived quality metrics like inspection pass rates.</p>
+            <p class="text-base/7 text-gray-600">The Shovels API provides building permit records, contractor profiles, property details, and resident information from over 2,000 jurisdictions nationwide across the United States. Data is AI-enriched and standardized into a clean JSON format with geographic search, advanced filtering, and derived quality metrics like inspection pass rates.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -212,13 +212,13 @@ slug: api
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What geographic areas does the Shovels API cover?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The API covers approximately 85% of the United States, sourcing building permit and contractor data from thousands of municipalities. You can search by address, zip code, city, county, or jurisdiction using the geo_id system.</p>
+            <p class="text-base/7 text-gray-600">The API covers approximately 85% of the US population, sourcing building permit and contractor data from over 2,000 jurisdictions nationwide. You can search by address, zip code, city, county, or jurisdiction using the geo_id system.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How often is the API data updated?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels continuously refreshes data from multiple source partners. Permit records, contractor profiles, and derived metrics are updated regularly to ensure accuracy and timeliness.</p>
+            <p class="text-base/7 text-gray-600">Shovels updates its database monthly, with changes released on the 1st and 15th of each month. Each update cycle adds 5-10 million new records and 1-5 million status updates. Processing takes up to a week after the database refresh.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -286,7 +286,7 @@ slug: api
       "name": "What data does the Shovels API provide?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Shovels API provides building permit records, contractor profiles, property details, and resident information from thousands of municipalities across the United States. Data is AI-enriched and standardized into a clean JSON format with geographic search, advanced filtering, and derived quality metrics like inspection pass rates."
+        "text": "The Shovels API provides building permit records, contractor profiles, property details, and resident information from over 2,000 jurisdictions nationwide across the United States. Data is AI-enriched and standardized into a clean JSON format with geographic search, advanced filtering, and derived quality metrics like inspection pass rates."
       }
     },
     {
@@ -302,7 +302,7 @@ slug: api
       "name": "What geographic areas does the Shovels API cover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The API covers approximately 85% of the United States, sourcing building permit and contractor data from thousands of municipalities. You can search by address, zip code, city, county, or jurisdiction using the geo_id system."
+        "text": "The API covers approximately 85% of the US population, sourcing building permit and contractor data from over 2,000 jurisdictions nationwide. You can search by address, zip code, city, county, or jurisdiction using the geo_id system."
       }
     },
     {
@@ -310,7 +310,7 @@ slug: api
       "name": "How often is the API data updated?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shovels continuously refreshes data from multiple source partners. Permit records, contractor profiles, and derived metrics are updated regularly to ensure accuracy and timeliness."
+        "text": "Shovels updates its database monthly, with changes released on the 1st and 15th of each month. Each update cycle adds 5-10 million new records and 1-5 million status updates. Processing takes up to a week after the database refresh."
       }
     },
     {

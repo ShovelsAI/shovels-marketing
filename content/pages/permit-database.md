@@ -41,7 +41,7 @@ slug: permit-database
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <div>
         <dt class="font-semibold text-white">Nationwide coverage</dt>
-        <dd class="mt-1 text-gray-300">We have the most comprehensive nationwide building permit and contractor data available. With 85% of the country covered, you can find permits and contractors in almost any state or city.</dd>
+        <dd class="mt-1 text-gray-300">We have the most comprehensive nationwide building permit and contractor data available. With 85% of the US population covered, you can find permits and contractors in almost any state or city.</dd>
       </div>
       <div>
         <dt class="font-semibold text-white">Powerful filters</dt>
@@ -190,7 +190,7 @@ slug: permit-database
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How much of the US does the permit database cover?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels covers approximately 85% of the United States with building permit and contractor data sourced from thousands of municipalities. Coverage spans nearly every state and major metropolitan area.</p>
+            <p class="text-base/7 text-gray-600">Shovels covers approximately 85% of the US population with building permit and contractor data from over 2,000 jurisdictions. Coverage spans nearly every state and major metropolitan area.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -208,7 +208,7 @@ slug: permit-database
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I download data from Shovels Online?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. You can download permit and contractor search results to CSV with a single click, and export individual profiles to PDF. The data imports directly into spreadsheets and CRM software.</p>
+            <p class="text-base/7 text-gray-600">Yes. You can download permit and contractor search results to CSV with a single click (maximum 1,000 records per export), and export individual profiles to PDF. For larger datasets, segment by geography or use the API which has no result limits.</p>
           </dd>
         </div>
       </dl>
@@ -250,7 +250,7 @@ slug: permit-database
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "Shovels US Building Permit Database",
-  "description": "Nationwide US building permit and contractor database covering 85% of the country, with permit records, contractor profiles, contact information, and geographic search capabilities.",
+  "description": "Nationwide US building permit and contractor database covering 85% of the US population, with permit records, contractor profiles, contact information, and geographic search capabilities.",
   "url": "https://www.shovels.ai/permit-database",
   "spatialCoverage": {
     "@type": "Place",
@@ -281,7 +281,7 @@ slug: permit-database
       "name": "How much of the US does the permit database cover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shovels covers approximately 85% of the United States with building permit and contractor data sourced from thousands of municipalities. Coverage spans nearly every state and major metropolitan area."
+        "text": "Shovels covers approximately 85% of the US population with building permit and contractor data from over 2,000 jurisdictions. Coverage spans nearly every state and major metropolitan area."
       }
     },
     {
@@ -305,7 +305,7 @@ slug: permit-database
       "name": "Can I download data from Shovels Online?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. You can download permit and contractor search results to CSV with a single click, and export individual profiles to PDF. The data imports directly into spreadsheets and CRM software."
+        "text": "Yes. You can download permit and contractor search results to CSV with a single click (maximum 1,000 records per export), and export individual profiles to PDF. For larger datasets, segment by geography or use the API which has no result limits."
       }
     }
   ]

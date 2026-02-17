@@ -278,7 +278,7 @@ slug: data-feed
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How are data feed updates handled?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Updates are automatic. When Shovels produces new production data, it flows into your Snowflake, BigQuery, or Databricks account without manual intervention. Monthly cadence ensures your data stays current.</p>
+            <p class="text-base/7 text-gray-600">Updates are automatic and monthly. Shovels refreshes its database on the 1st and 15th of each month, and new production data flows into your Snowflake, BigQuery, or Databricks account automatically. Each cycle adds 5-10 million new records and 1-5 million status updates.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -383,7 +383,7 @@ slug: data-feed
       "name": "How are data feed updates handled?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Updates are automatic. When Shovels produces new production data, it flows into your Snowflake, BigQuery, or Databricks account without manual intervention. Monthly cadence ensures your data stays current."
+        "text": "Updates are automatic and monthly. Shovels refreshes its database on the 1st and 15th of each month, and new production data flows into your Snowflake, BigQuery, or Databricks account automatically. Each cycle adds 5-10 million new records and 1-5 million status updates."
       }
     },
     {

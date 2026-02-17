@@ -90,7 +90,7 @@ slug: gis
           </svg>
           Esri ArcGIS compatibility.
         </dt>
-        <dd class="inline">Access Shovels data as hosted feature layers in ArcGIS. Our geodatabase with 170 million building permits is ready for integration with your existing GIS workflows.</dd>
+        <dd class="inline">Access Shovels data as hosted feature layers in ArcGIS. Our geodatabase with 185M+ building permits is ready for integration with your existing GIS workflows.</dd>
       </div>
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
@@ -156,7 +156,7 @@ slug: gis
             </svg>
             ArcGIS integration
           </dt>
-          <dd class="mt-2">Access Shovels data as hosted feature layers in ArcGIS. Our geodatabase with 170 million building permits is ready for your existing GIS workflows.</dd>
+          <dd class="mt-2">Access Shovels data as hosted feature layers in ArcGIS. Our geodatabase with 185M+ building permits is ready for your existing GIS workflows.</dd>
         </div>
         <div class="relative pl-9">
           <dt class="font-semibold text-gray-900">
@@ -206,7 +206,7 @@ slug: gis
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels integrate with Esri ArcGIS?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing 170 million building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro.</p>
+            <p class="text-base/7 text-gray-600">Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing 185M+ building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -218,7 +218,7 @@ slug: gis
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How many permits are in the Shovels geodatabase?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The Shovels geodatabase contains over 170 million geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records.</p>
+            <p class="text-base/7 text-gray-600">The Shovels geodatabase contains over 185M+ geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -253,7 +253,7 @@ slug: gis
   "@type": "Service",
   "name": "Shovels GIS",
   "serviceType": "GIS Integration",
-  "description": "Geospatial building permit intelligence delivered as hosted feature layers for Esri ArcGIS, enabling site selection, market intelligence, and competitive monitoring with 170 million geocoded permits.",
+  "description": "Geospatial building permit intelligence delivered as hosted feature layers for Esri ArcGIS, enabling site selection, market intelligence, and competitive monitoring with 185M+ geocoded permits.",
   "provider": {
     "@type": "Organization",
     "name": "Shovels",
@@ -276,7 +276,7 @@ slug: gis
       "name": "How does Shovels integrate with Esri ArcGIS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing 170 million building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro."
+        "text": "Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing 185M+ building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro."
       }
     },
     {
@@ -292,7 +292,7 @@ slug: gis
       "name": "How many permits are in the Shovels geodatabase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Shovels geodatabase contains over 170 million geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records."
+        "text": "The Shovels geodatabase contains over 185M+ geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records."
       }
     },
     {
