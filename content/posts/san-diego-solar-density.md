@@ -280,3 +280,75 @@ More research is needed to fully understand these patterns. Future investigation
 - Evaluate the longer-term impact of the 2015 ordinances in both cities
 
 As cities worldwide seek to meet climate goals through building electrification, understanding the success stories of communities like Poway and Chula Vista offers valuable insights for creating policies that accelerate adoption while ensuring accessibility across diverse housing stocks and neighborhoods.
+
+## Frequently Asked Questions
+
+**Q: What is building electrification (BE) density, and how is Shovels measuring it?**
+
+A: Building electrification density is a composite score that measures the cumulative adoption of solar panels, heat pumps, and EV chargers within a census tract. The score consists of a base score (0-100) averaging percentile rankings across all three technologies, plus bonus points for top-10% performance in individual technologies or across all three simultaneously.
+
+**Q: Why do Poway and Chula Vista have similar solar adoption rates despite very different housing stock?**
+
+A: Despite Poway's median build year of 1979 and Chula Vista's of 2002, both cities achieved solar adoption rates above 53%. This suggests that housing age alone does not determine solar adoption. Local policy initiatives, streamlined permitting processes, and lower installation costs appear to play a more significant role than the age of homes.
+
+**Q: How does permitting speed affect residential solar adoption?**
+
+A: The data strongly suggests that faster permitting correlates with higher adoption. Chula Vista has a median approval time of 0 days (same-day approvals) and a 53% solar adoption rate, while San Diego's 84-day median approval time correlates with lower adoption. This indicates that streamlined permitting may be more important than lower fees in driving solar installations.
+
+**Q: What census tracts should solar companies target for the best growth opportunities?**
+
+A: Shovels recommends targeting census tracts with moderate BE scores around 30. These "middle-tier" areas have demonstrated initial receptiveness to solar, have visible proof points, and have not yet reached market saturation. They offer lower competition, lower customer acquisition costs, and strong potential for the "neighborhood effect" where visible installations drive further adoption.
+
+**Q: What policy factors helped drive solar adoption in Chula Vista and Poway?**
+
+A: In 2015, Chula Vista enacted a "Solar Ready" ordinance requiring new residential units to be pre-wired for solar, and also maintains significantly lower permit fees ($458 vs. San Diego's $6,420). Poway established an expedited permitting process for small residential rooftop solar systems. Both cities also benefit from a 2% franchise fee on energy, community network effects, and targeted marketing by solar companies.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is building electrification (BE) density, and how is Shovels measuring it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Building electrification density is a composite score that measures the cumulative adoption of solar panels, heat pumps, and EV chargers within a census tract. The score consists of a base score (0-100) averaging percentile rankings across all three technologies, plus bonus points for top-10% performance in individual technologies or across all three simultaneously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do Poway and Chula Vista have similar solar adoption rates despite very different housing stock?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Despite Poway's median build year of 1979 and Chula Vista's of 2002, both cities achieved solar adoption rates above 53%. This suggests that housing age alone does not determine solar adoption. Local policy initiatives, streamlined permitting processes, and lower installation costs appear to play a more significant role than the age of homes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does permitting speed affect residential solar adoption?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The data strongly suggests that faster permitting correlates with higher adoption. Chula Vista has a median approval time of 0 days (same-day approvals) and a 53% solar adoption rate, while San Diego's 84-day median approval time correlates with lower adoption. This indicates that streamlined permitting may be more important than lower fees in driving solar installations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What census tracts should solar companies target for the best growth opportunities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels recommends targeting census tracts with moderate BE scores around 30. These middle-tier areas have demonstrated initial receptiveness to solar, have visible proof points, and have not yet reached market saturation. They offer lower competition, lower customer acquisition costs, and strong potential for the neighborhood effect where visible installations drive further adoption."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What policy factors helped drive solar adoption in Chula Vista and Poway?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In 2015, Chula Vista enacted a Solar Ready ordinance requiring new residential units to be pre-wired for solar, and also maintains significantly lower permit fees ($458 vs. San Diego's $6,420). Poway established an expedited permitting process for small residential rooftop solar systems. Both cities also benefit from a 2% franchise fee on energy, community network effects, and targeted marketing by solar companies."
+      }
+    }
+  ]
+}
+</script>
