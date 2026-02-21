@@ -33,14 +33,25 @@ slug: climate
   </div>
   <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
 </div>
-<div class="bg-white pb-4 sm:pb-8 pt-4 sm:pt-8">
+<section class="relative isolate overflow-hidden bg-white py-16 sm:py-20">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto flex max-w-md items-center justify-center gap-x-8 sm:gap-x-12">
-      <img class="h-8 w-auto object-contain" src="{static}/images/haven-logo.svg" alt="Haven">
-      <img class="h-[30px] w-auto object-contain" src="{static}/images/treehouse_logo_resize.png" alt="Treehouse">
+    <div class="mx-auto max-w-3xl">
+      <figure class="relative text-center">
+        <svg class="mx-auto mb-4 h-10 w-10 text-gray-200" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+        </svg>
+        <blockquote class="text-lg font-medium leading-8 text-gray-900 sm:text-xl sm:leading-9">
+          <p>"Access to timely, jurisdiction-level data on solar and battery permits has been valuable for our work at Sustainable San Mateo County. The data has allowed us to incorporate a level of insight into our public sustainability dashboard that simply wasn't available elsewhere in the region. When we presented this information to community organizations focused on decarbonization, the feedback was clear: this was data they hadn't seen before and immediately recognized as useful. Since April 2025 alone, solar and battery-related data in our dashboard has been consulted over 50 times, underscoring the strong demand for this kind of transparent, actionable information."</p>
+        </blockquote>
+        <figcaption class="mt-8 flex flex-col items-center gap-y-3">
+          <img class="w-64 object-contain" src="{static}/images/sustainable-san-mateo-logo.png" alt="Sustainable San Mateo County">
+          <div class="font-semibold text-gray-900">Sustainable San Mateo County</div>
+        </figcaption>
+      </figure>
     </div>
   </div>
-</div>
+</section>
 <div class="bg-gray-100 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -225,6 +236,7 @@ slug: climate
     </div>
   </div>
 </div>
+
 <div class="bg-white">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
