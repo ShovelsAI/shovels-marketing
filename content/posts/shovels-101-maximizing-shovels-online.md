@@ -109,3 +109,63 @@ As we mentioned at the top, this is an exciting time to be using [Shovels Online
 On the other hand, if you’re new here (welcome!) and interested in our platform, then we’d love to chat more about your specific use case and learn what permit data means to you. 
 
 We hope that this tutorial is helpful, and Happy Digging!
+
+## Frequently Asked Questions
+
+**Q: What are the main use cases for Shovels Online?**
+
+A: The main use cases are generating homeowner leads (finding addresses with permit activity that signals buyer intent), generating contractor leads (finding contractors by experience level and market area), and derivative analysis like permit approval timing and resident demographics.
+
+**Q: How do I build a high-quality search on Shovels Online?**
+
+A: Start by choosing your geography scale (state level for niche project types, zip code for common ones). Decide whether you are searching for permits or contractors based on your target persona. Apply key filters like minimum market value, lot size, or permit description keywords. Then spot-check results by clicking View Details on a few entries to verify accuracy.
+
+**Q: Is there a limit on how many records I can download from Shovels Online?**
+
+A: The Download List button caps at 1,000 rows per CSV export. To get more, adjust your filters slightly (such as changing geography) to generate a new set of 1,000 rows, then combine and deduplicate. For larger-scale needs, the Shovels API is recommended.
+
+**Q: Can I save my search filters in Shovels Online for later use?**
+
+A: Yes. Shovels Online includes a Saved Filters feature that lets you save your exact search parameters so you can re-run the same query later without rebuilding it. You can also save individual permits, contractors, or geographies as Saved Profiles for quick future access.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the main use cases for Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The main use cases are generating homeowner leads (finding addresses with permit activity that signals buyer intent), generating contractor leads (finding contractors by experience level and market area), and derivative analysis like permit approval timing and resident demographics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I build a high-quality search on Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start by choosing your geography scale (state level for niche project types, zip code for common ones). Decide whether you are searching for permits or contractors based on your target persona. Apply key filters like minimum market value, lot size, or permit description keywords. Then spot-check results by clicking View Details on a few entries to verify accuracy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a limit on how many records I can download from Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Download List button caps at 1,000 rows per CSV export. To get more, adjust your filters slightly (such as changing geography) to generate a new set of 1,000 rows, then combine and deduplicate. For larger-scale needs, the Shovels API is recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save my search filters in Shovels Online for later use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels Online includes a Saved Filters feature that lets you save your exact search parameters so you can re-run the same query later without rebuilding it. You can also save individual permits, contractors, or geographies as Saved Profiles for quick future access."
+      }
+    }
+  ]
+}
+</script>

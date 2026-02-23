@@ -88,3 +88,63 @@ On the other hand, we have a [robust API](https://www.shovels.ai/api) for direct
 Check out our [Free Trial](https://app.shovels.ai) today to see how our platform works, or get in contact with us for a demo and sample dataset of your preferred market at [sales@shovels.ai](mailto:sales@shovels.ai). 
 
 Happy Digging, and let us know how you enjoyed RE+ in Anaheim this year!
+
+## Frequently Asked Questions
+
+**Q: What is the average solar permit approval time in California?**
+
+A: California has an average solar permit approval time of 6.15 days statewide. Some hotspots perform even better, with San Diego County leading at a 1.79-day average.
+
+**Q: Where is most U.S. solar construction activity concentrated?**
+
+A: The vast majority of solar construction activity is in California, which has led the nation in solar adoption for decades. Key hubs include Los Angeles, San Diego, San Jose, and areas in the Central Valley.
+
+**Q: Is solar construction still growing in California?**
+
+A: Solar construction in California saw its biggest peak in March 2023 with over 33,000 solar-inclusive project permits filed in a single month. The trendline since then shows a slight slowdown compared to those highs, but activity remains substantial. Seasonal spikes occur before and after summer.
+
+**Q: What types of solar permit data does Shovels provide?**
+
+A: Shovels aggregates and normalizes solar construction data that can be queried by market, geographic region, address, permit type, contractor, and other fields. The data covers everything from small residential solar panel installations to large commercial solar arrays, and includes metrics like permit volume, approval times, and contractor profiles.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the average solar permit approval time in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California has an average solar permit approval time of 6.15 days statewide. Some hotspots perform even better, with San Diego County leading at a 1.79-day average."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is most U.S. solar construction activity concentrated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The vast majority of solar construction activity is in California, which has led the nation in solar adoption for decades. Key hubs include Los Angeles, San Diego, San Jose, and areas in the Central Valley."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is solar construction still growing in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solar construction in California saw its biggest peak in March 2023 with over 33,000 solar-inclusive project permits filed in a single month. The trendline since then shows a slight slowdown compared to those highs, but activity remains substantial. Seasonal spikes occur before and after summer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of solar permit data does Shovels provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels aggregates and normalizes solar construction data that can be queried by market, geographic region, address, permit type, contractor, and other fields. The data covers everything from small residential solar panel installations to large commercial solar arrays, and includes metrics like permit volume, approval times, and contractor profiles."
+      }
+    }
+  ]
+}
+</script>

@@ -125,7 +125,7 @@ A: Platforms like Shovels streamline the process by automatically identifying th
 <!-- JSON-LD FAQ schema for rich results -->
 <script type="application/ld+json">
 {
-"@context": "[https://schema.org](https://schema.org/)",
+"@context": "https://schema.org",
 "@type": "FAQPage",
 "mainEntity": [
 {

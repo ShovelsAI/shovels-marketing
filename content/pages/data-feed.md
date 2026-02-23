@@ -258,6 +258,45 @@ slug: data-feed
     </div>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What data tables are included in the Shovels data feed?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">The data feed includes six core tables: Permits (185M+ records), Contractors (3.3M+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). All tables are updated monthly.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Which data warehouses does Shovels deliver to?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels delivers directly to Snowflake, BigQuery, and Databricks through private table sharing. We also support delivery to AWS S3, Google Cloud Storage, and Azure blob storage. Parquet files are available as an alternative format.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How are data feed updates handled?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Updates are automatic and monthly. Shovels refreshes its database on the 1st and 15th of each month, and new production data flows into your Snowflake, BigQuery, or Databricks account automatically. Each cycle adds 5-10 million new records and 1-5 million status updates.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I get a custom data schema or report?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. For custom reporting needs, Shovels can run SQL queries and format reports to your exact specifications. Custom reports are available as CSV with one-time or monthly delivery options.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What engineering effort is needed to set up the data feed?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Minimal. For Snowflake, Shovels only needs your public org and account identifiers. For BigQuery, a Google service account is required. Tables arrive pre-formatted and ready to query with no additional engineering or security configuration.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
@@ -267,3 +306,102 @@ slug: data-feed
     </div>
   </div>
 </div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Shovels Data Feed",
+  "serviceType": "Data Feed",
+  "description": "Enterprise data feed delivering nationwide US building permit and contractor records directly to Snowflake, BigQuery, Databricks, or cloud storage with automatic monthly updates.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": "https://www.shovels.ai/data-feed"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Shovels US Building Permit and Contractor Data Feed",
+  "description": "Nationwide US building permit, contractor, resident, and employee data delivered to enterprise data warehouses. Includes 185M+ permits, 3.3M+ contractors, 39M+ residents, and 77M+ employees with monthly updates.",
+  "url": "https://www.shovels.ai/data-feed",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-parquet",
+      "name": "Parquet"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "CSV"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "United States"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Shovels",
+    "url": "https://www.shovels.ai"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What data tables are included in the Shovels data feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The data feed includes six core tables: Permits (185M+ records), Contractors (3.3M+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). All tables are updated monthly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which data warehouses does Shovels deliver to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels delivers directly to Snowflake, BigQuery, and Databricks through private table sharing. We also support delivery to AWS S3, Google Cloud Storage, and Azure blob storage. Parquet files are available as an alternative format."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are data feed updates handled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Updates are automatic and monthly. Shovels refreshes its database on the 1st and 15th of each month, and new production data flows into your Snowflake, BigQuery, or Databricks account automatically. Each cycle adds 5-10 million new records and 1-5 million status updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a custom data schema or report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For custom reporting needs, Shovels can run SQL queries and format reports to your exact specifications. Custom reports are available as CSV with one-time or monthly delivery options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What engineering effort is needed to set up the data feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimal. For Snowflake, Shovels only needs your public org and account identifiers. For BigQuery, a Google service account is required. Tables arrive pre-formatted and ready to query with no additional engineering or security configuration."
+      }
+    }
+  ]
+}
+</script>

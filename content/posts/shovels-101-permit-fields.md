@@ -228,3 +228,63 @@ But if you really want to get granular, then our enterprise-ready [Data Feed](ht
 No matter the use case, Shovels can get you what you need. Check out our [Free Trial](https://app.shovels.ai), or get in touch with [Sales](/contact) for data sample and demo call. 
 
 Happy Digging!
+
+## Frequently Asked Questions
+
+**Q: Why are so many fields blank or NULL on a Shovels permit record?**
+
+A: Shovels aggregates permit data from thousands of jurisdictions, each with different reporting requirements. To cover all possible fields from all jurisdictions, the schema includes many fields that will be irrelevant to any individual permit. Blank fields typically fall into categories like optional professional contacts, project-specific details unrelated to the permit type, commonly unfilled fields like job value, or derived metrics that require data not present on older records.
+
+**Q: What are the most important fields to look at on a Shovels permit?**
+
+A: The top fields are: file_date, permit_number, owner_name, residential (whether it is a commercial or residential property), jurisdiction, type, subtype, status, description, and the address fields (street, street_no, zipcode, city, state). If any of these are empty, you can contact Shovels support to investigate.
+
+**Q: Where can I find definitions for all the Shovels permit data fields?**
+
+A: The Shovels Data Dictionary is a publicly available spreadsheet with exhaustive breakdowns of all fields, variables, and parameters. It has multiple tabs covering permits, contractors, properties, and more.
+
+**Q: What are the different ways to access Shovels permit data?**
+
+A: There are three delivery methods: the Web App (codeless, browser-based access), the API (programmatic integration for your platform or product), and the enterprise Data Feed (full dataset access via your data warehouse or raw flat files).
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are so many fields blank or NULL on a Shovels permit record?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels aggregates permit data from thousands of jurisdictions, each with different reporting requirements. To cover all possible fields from all jurisdictions, the schema includes many fields that will be irrelevant to any individual permit. Blank fields typically fall into categories like optional professional contacts, project-specific details unrelated to the permit type, commonly unfilled fields like job value, or derived metrics that require data not present on older records."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the most important fields to look at on a Shovels permit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The top fields are: file_date, permit_number, owner_name, residential (whether it is a commercial or residential property), jurisdiction, type, subtype, status, description, and the address fields (street, street_no, zipcode, city, state). If any of these are empty, you can contact Shovels support to investigate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find definitions for all the Shovels permit data fields?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Shovels Data Dictionary is a publicly available spreadsheet with exhaustive breakdowns of all fields, variables, and parameters. It has multiple tabs covering permits, contractors, properties, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the different ways to access Shovels permit data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are three delivery methods: the Web App (codeless, browser-based access), the API (programmatic integration for your platform or product), and the enterprise Data Feed (full dataset access via your data warehouse or raw flat files)."
+      }
+    }
+  ]
+}
+</script>

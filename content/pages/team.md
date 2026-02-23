@@ -68,3 +68,53 @@ Description: Meet the talented team behind Shovels - experienced leaders in prop
     </ul>
   </div>
 </div>
+
+<!-- JSON-LD Person schema for key team members -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "Person",
+      "name": "Ryan Buckley",
+      "jobTitle": "Co-Founder / CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Shovels"
+      },
+      "url": "https://www.linkedin.com/in/rbuckley/"
+    },
+    {
+      "@type": "Person",
+      "name": "Luka Kacil",
+      "jobTitle": "Co-Founder / CTO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Shovels"
+      },
+      "url": "https://www.linkedin.com/in/lknix/"
+    },
+    {
+      "@type": "Person",
+      "name": "Petra Kopic",
+      "jobTitle": "VP of Data",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Shovels"
+      },
+      "url": "https://www.linkedin.com/in/petra-kopic/"
+    },
+    {
+      "@type": "Person",
+      "name": "Betty Wan",
+      "jobTitle": "VP of Growth",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Shovels"
+      },
+      "url": "https://www.linkedin.com/in/bettywan7/"
+    }
+  ]
+}
+</script>

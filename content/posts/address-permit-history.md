@@ -68,3 +68,63 @@ We pride ourselves, here at Shovels, on being the best of the bunch when it come
 In the meantime, poke around in our [Web App](https://app.shovels.ai) with a Free Trial to see the “shovel-ready” data we have for you now. 
 
 Happy Digging!
+
+## Frequently Asked Questions
+
+**Q: Why doesn't every address have a permit history in Shovels?**
+
+A: There are three main reasons: (1) the local jurisdiction may not require a permit for the type of work done, (2) even where permits are required, enforcement varies and some work is done without permits, and (3) the jurisdiction may not have digitized its permit records or made them available online yet.
+
+**Q: Do all jurisdictions require permits for the same types of projects?**
+
+A: No. There are no standardized nationwide rules mandating which work requires a permit. Requirements vary dramatically from one jurisdiction to another. Some states like Massachusetts have detailed requirements, while some rural counties may have minimal or no permitting requirements at all.
+
+**Q: How far back does Shovels permit data go?**
+
+A: Shovels generally has approximately 20 years of permit history where available, depending on how far back each jurisdiction has digitized and uploaded its records.
+
+**Q: What is Shovels doing to improve data completeness?**
+
+A: Shovels is pursuing three strategies: improving proprietary LLMs to speed up permit data processing and delivery, building relationships with local jurisdiction offices to increase digitization through direct records requests, and improving transparency about data coverage through a public Coverage Dashboard.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why doesn't every address have a permit history in Shovels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are three main reasons: (1) the local jurisdiction may not require a permit for the type of work done, (2) even where permits are required, enforcement varies and some work is done without permits, and (3) the jurisdiction may not have digitized its permit records or made them available online yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all jurisdictions require permits for the same types of projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There are no standardized nationwide rules mandating which work requires a permit. Requirements vary dramatically from one jurisdiction to another. Some states like Massachusetts have detailed requirements, while some rural counties may have minimal or no permitting requirements at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far back does Shovels permit data go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels generally has approximately 20 years of permit history where available, depending on how far back each jurisdiction has digitized and uploaded its records."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Shovels doing to improve data completeness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels is pursuing three strategies: improving proprietary LLMs to speed up permit data processing and delivery, building relationships with local jurisdiction offices to increase digitization through direct records requests, and improving transparency about data coverage through a public Coverage Dashboard."
+      }
+    }
+  ]
+}
+</script>

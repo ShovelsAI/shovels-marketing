@@ -86,6 +86,78 @@ Example: Your HVAC company's executives need detailed reporting on the performan
 
 ## Final Thoughts
 
-Permit data is a goldmine, if you know how to use it. From precision marketing to service outreach and competitive analysis, Shovels is helping businesses turn raw data into actionable go-to-market strategies. We’re excited to keep building alongside our users and uncovering even more ways to unlock value.
+Permit data is a goldmine, if you know how to use it. From precision marketing to service outreach and competitive analysis, Shovels is helping businesses turn raw data into actionable go-to-market strategies. We're excited to keep building alongside our users and uncovering even more ways to unlock value.
 
-**Want to explore how Shovels can power your GTM motion? [Let’s talk.](http://www.shovels.ai/)**
+## Frequently Asked Questions
+
+**Q: What go-to-market strategies can I execute using Shovels Online?**
+
+A: The top five strategies are: (1) direct mail campaigns to homeowners based on permit activity, (2) post-installation maintenance outreach to homeowners with existing systems, (3) competitor intelligence by analyzing competitor contractor activity, (4) email outreach and lead nurturing using homeowner contact data from permits, and (5) enterprise-grade custom reporting for larger teams.
+
+**Q: How can I use Shovels Online for direct mail campaigns?**
+
+A: Search for homeowners by permit type and date range in your market area. For example, find addresses where HVAC systems were installed 10-15 years ago (likely due for replacement), or find addresses with no HVAC permit history. Download the results with contact details and use them for targeted mailers.
+
+**Q: Does Shovels Online provide homeowner email addresses?**
+
+A: Yes, where available. Shovels Online provides verified personal and business emails for homeowners, which you can use for email campaigns and CRM enrichment. You can also contact Shovels support for help merging homeowner emails with your existing lead lists.
+
+**Q: How do I use Shovels Online for competitor analysis?**
+
+A: Search for contractors in your area and analyze their project activity, volume, busy seasons, and the types of work described in their permits. Use these insights to differentiate your service offerings and pricing from the competition.
+
+**Q: Can I save and re-run searches in Shovels Online on a regular basis?**
+
+A: Yes. Once you have built a search with your desired filters, you can save it and re-run it on a monthly basis when the Shovels platform data refreshes, ensuring you are always working with the freshest available data.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What go-to-market strategies can I execute using Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The top five strategies are: (1) direct mail campaigns to homeowners based on permit activity, (2) post-installation maintenance outreach to homeowners with existing systems, (3) competitor intelligence by analyzing competitor contractor activity, (4) email outreach and lead nurturing using homeowner contact data from permits, and (5) enterprise-grade custom reporting for larger teams."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I use Shovels Online for direct mail campaigns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search for homeowners by permit type and date range in your market area. For example, find addresses where HVAC systems were installed 10-15 years ago (likely due for replacement), or find addresses with no HVAC permit history. Download the results with contact details and use them for targeted mailers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Shovels Online provide homeowner email addresses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, where available. Shovels Online provides verified personal and business emails for homeowners, which you can use for email campaigns and CRM enrichment. You can also contact Shovels support for help merging homeowner emails with your existing lead lists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use Shovels Online for competitor analysis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search for contractors in your area and analyze their project activity, volume, busy seasons, and the types of work described in their permits. Use these insights to differentiate your service offerings and pricing from the competition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save and re-run searches in Shovels Online on a regular basis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Once you have built a search with your desired filters, you can save it and re-run it on a monthly basis when the Shovels platform data refreshes, ensuring you are always working with the freshest available data."
+      }
+    }
+  ]
+}
+</script>
+
+**Want to explore how Shovels can power your GTM motion? [Let's talk.](http://www.shovels.ai/)**

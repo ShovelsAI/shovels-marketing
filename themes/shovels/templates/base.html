@@ -193,6 +193,55 @@
   }
   </script>
 
+  <!-- Structured Data: BreadcrumbList -->
+  {% if article %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.shovels.ai"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.shovels.ai/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ article.title|striptags|e }}"
+      }
+    ]
+  }
+  </script>
+  {% elif page %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.shovels.ai"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ page.title|striptags|e }}"
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+
   {% block structured_data %}{% endblock structured_data %}
 </head>
 

@@ -199,3 +199,63 @@ We hope this guide is helpful (and we’ve got more on the way). Our API is mean
 We’re building out Shovels API v2 right now, and your requests might make the next release. 
 
 Happy Building!
+
+## Frequently Asked Questions
+
+**Q: How do I look up the permit history for a specific address using the Shovels API?**
+
+A: It is a three-step process. First, use the Search Addresses endpoint to find and confirm the address. Second, use the Permits by Address endpoint with the address details to get a list of permit IDs. Third, use the Permits by ID endpoint to retrieve the full details of each permit.
+
+**Q: What format should the address be in when querying the API?**
+
+A: Use %20 to denote spaces in the address string. The address components (street number, street name, city, state, zip code) are passed as separate parameters joined with the & operator. The addresses returned by Shovels are formatted according to USPS standards.
+
+**Q: What should I do if my address does not appear in the Shovels search results?**
+
+A: There are several possible reasons: the address may not have any permits on record, the jurisdiction may not have digitized its permits yet, or the address may not be in Shovels' coverage area. You can check the Shovels Coverage Map to see available jurisdictions, or email support@shovels.ai for help.
+
+**Q: Can I retrieve multiple permits at once from the API?**
+
+A: Yes. The Permits by ID endpoint accepts a string array of permit IDs, allowing you to request multiple permits in a single API call by adding an &id=string clause for each additional permit ID.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I look up the permit history for a specific address using the Shovels API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a three-step process. First, use the Search Addresses endpoint to find and confirm the address. Second, use the Permits by Address endpoint with the address details to get a list of permit IDs. Third, use the Permits by ID endpoint to retrieve the full details of each permit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What format should the address be in when querying the API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use %20 to denote spaces in the address string. The address components (street number, street name, city, state, zip code) are passed as separate parameters joined with the & operator. The addresses returned by Shovels are formatted according to USPS standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if my address does not appear in the Shovels search results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are several possible reasons: the address may not have any permits on record, the jurisdiction may not have digitized its permits yet, or the address may not be in Shovels' coverage area. You can check the Shovels Coverage Map to see available jurisdictions, or email support@shovels.ai for help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I retrieve multiple permits at once from the API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Permits by ID endpoint accepts a string array of permit IDs, allowing you to request multiple permits in a single API call by adding an &id=string clause for each additional permit ID."
+      }
+    }
+  ]
+}
+</script>

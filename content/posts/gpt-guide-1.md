@@ -64,3 +64,63 @@ This will result in a list of contractors who have recently installed pools in 3
 
 ## Conclusion
 The Shovels custom GPT is an easy way for anyone looking to access detailed, localized information on permits and contractors quickly. By following the steps outlined in this blog, you can quickly get the data you want.
+
+## Frequently Asked Questions
+
+**Q: What is the Shovels AI Custom GPT and how does it work?**
+
+A: The Shovels AI Custom GPT is a tool built on ChatGPT that interacts with the Shovels API using natural language. Instead of writing code or API calls, you can type plain-English requests like Show me all roofing permits in zip 90210 and get detailed results on building permits and contractors.
+
+**Q: Do I need to know how to code to use the Shovels GPT?**
+
+A: No. The Shovels Custom GPT accepts natural language queries. You simply describe what you are looking for (permits, contractors, locations, dates) and the GPT handles the API interaction for you.
+
+**Q: What types of searches can I do with the Shovels Custom GPT?**
+
+A: You can search for building permits by type of work (e.g., roofing, pools, EV chargers), filter by state or zip code, set date ranges, and find contractors who specialize in specific types of work. The GPT covers data on over 113 million building permits and 3 million contractors across 48 states.
+
+**Q: What should I do if the GPT does not include contractor information in the results?**
+
+A: If the GPT returns permit data but does not list the associated contractors, simply ask it in a follow-up message. For example, type List the contractors too and the GPT will retrieve and display the contractor details.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Shovels AI Custom GPT and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Shovels AI Custom GPT is a tool built on ChatGPT that interacts with the Shovels API using natural language. Instead of writing code or API calls, you can type plain-English requests like Show me all roofing permits in zip 90210 and get detailed results on building permits and contractors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know how to code to use the Shovels GPT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The Shovels Custom GPT accepts natural language queries. You simply describe what you are looking for (permits, contractors, locations, dates) and the GPT handles the API interaction for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of searches can I do with the Shovels Custom GPT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can search for building permits by type of work (e.g., roofing, pools, EV chargers), filter by state or zip code, set date ranges, and find contractors who specialize in specific types of work. The GPT covers data on over 113 million building permits and 3 million contractors across 48 states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if the GPT does not include contractor information in the results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the GPT returns permit data but does not list the associated contractors, simply ask it in a follow-up message. For example, type List the contractors too and the GPT will retrieve and display the contractor details."
+      }
+    }
+  ]
+}
+</script>

@@ -482,4 +482,76 @@ This analysis enables:
 
 The true scale of data center development in Virginia is significantly larger than what appears in explicit "data center" permit searches. By using these proxy indicators, analysts can uncover 15-20% more data center activity and gain earlier insights into market developments. The concentration of these hidden permits in known data center areas validates these indicators as reliable proxies for data center construction.
 
-Start digging our data with a [free online Shovels account](https://app.shovels.ai/), or [contact us](https://www.shovels.ai/contact) today to get started. 
+Start digging our data with a [free online Shovels account](https://app.shovels.ai/), or [contact us](https://www.shovels.ai/contact) today to get started.
+
+## Frequently Asked Questions
+
+**Q: What share of U.S. data center permits does Virginia account for?**
+
+A: Between July 2024 and July 2025, Virginia issued 1,239 permits explicitly linked to data centers, representing approximately 80.4% of all such permits nationwide.
+
+**Q: Why is Loudoun County the center of data center development?**
+
+A: Loudoun County accounts for nearly 90% of Virginia's data center permits. Its dominance is driven by established infrastructure, proximity to major internet exchange points, robust power availability, and supportive local policies.
+
+**Q: What are proxy indicators for identifying hidden data center permits?**
+
+A: Many data center permits do not explicitly mention data center in their descriptions. Key proxy indicators include high-amperage electrical references (e.g., 4000A service), data hall terminology, critical power infrastructure like UPS systems, specialized cooling systems (CRAH units, chillers), and phased development patterns with sequential electrical buildouts.
+
+**Q: How much data center activity in Virginia is hidden from standard permit searches?**
+
+A: Analysis suggests the true scale of data center construction in Virginia may be 15-20% higher than official counts. At some locations, up to 90% of data center-related permits do not explicitly mention data center. Extrapolating statewide, an additional 185-250 permits may be data center-related but hidden.
+
+**Q: What types of permits dominate Virginia's data center construction?**
+
+A: Infrastructure upgrades account for nearly 50% of all permits, with electrical permits alone comprising over 27% (339 total). The most common permit types are electrical commercial alterations (132), new electrical infrastructure (116), and mechanical upgrades (76). New ground-up construction accounts for about 22.5% of permits.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What share of U.S. data center permits does Virginia account for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Between July 2024 and July 2025, Virginia issued 1,239 permits explicitly linked to data centers, representing approximately 80.4% of all such permits nationwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Loudoun County the center of data center development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Loudoun County accounts for nearly 90% of Virginia's data center permits. Its dominance is driven by established infrastructure, proximity to major internet exchange points, robust power availability, and supportive local policies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are proxy indicators for identifying hidden data center permits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many data center permits do not explicitly mention data center in their descriptions. Key proxy indicators include high-amperage electrical references (e.g., 4000A service), data hall terminology, critical power infrastructure like UPS systems, specialized cooling systems (CRAH units, chillers), and phased development patterns with sequential electrical buildouts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much data center activity in Virginia is hidden from standard permit searches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Analysis suggests the true scale of data center construction in Virginia may be 15-20% higher than official counts. At some locations, up to 90% of data center-related permits do not explicitly mention data center. Extrapolating statewide, an additional 185-250 permits may be data center-related but hidden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of permits dominate Virginia's data center construction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Infrastructure upgrades account for nearly 50% of all permits, with electrical permits alone comprising over 27% (339 total). The most common permit types are electrical commercial alterations (132), new electrical infrastructure (116), and mechanical upgrades (76). New ground-up construction accounts for about 22.5% of permits."
+      }
+    }
+  ]
+}
+</script> 

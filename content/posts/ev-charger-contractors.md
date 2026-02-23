@@ -93,10 +93,70 @@ Finally, we figured that another sign of market growth could be EV contractors e
 
 This geographical expansion is also trending up, with a big surge during COVID that sustained after the pandemic retreated.
 
-Cool stuff, right? This means EV charging is hot. Dare we say *electric*. It’s a good market to work and invest in.
+Cool stuff, right? This means EV charging is hot. Dare we say *electric*. It's a good market to work and invest in.
 
-We’re excited by all of this data, and we want you to be excited too. Want to do your own epic analysis of the building trades? Get in touch: sales@shovels.ai.
+We're excited by all of this data, and we want you to be excited too. Want to do your own epic analysis of the building trades? Get in touch: sales@shovels.ai.
 
--- 
+## Frequently Asked Questions
+
+**Q: Which California jurisdictions have the most active EV charger contractors?**
+
+A: Sacramento County leads with 429 active EV charger contractors since 2022, followed by Berkeley (209), Encinitas (203), Oakland (140), and Anaheim (119).
+
+**Q: Is the number of EV charger contractors in California growing?**
+
+A: Yes. In Sacramento, approximately one new EV charger contractor becomes active each quarter, and in Berkeley the rate is about 1.5 new contractors per quarter. Jurisdictions with fewer contractors are seeing even faster growth rates, with dramatic recent increases in Anaheim, Sacramento, and Oakland.
+
+**Q: What share of US EV chargers are installed in California?**
+
+A: Nearly 30% of all EV chargers in the US are installed in California. The next largest states by share are New York, Florida, Texas, Massachusetts, and Washington, which collectively account for about 25%.
+
+**Q: Are EV charger contractors expanding into multiple jurisdictions?**
+
+A: Yes. The percentage of EV contractors working across multiple jurisdictions has been trending upward, with a significant surge during COVID that sustained even after the pandemic subsided. This geographic expansion is another indicator of market growth.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which California jurisdictions have the most active EV charger contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sacramento County leads with 429 active EV charger contractors since 2022, followed by Berkeley (209), Encinitas (203), Oakland (140), and Anaheim (119)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the number of EV charger contractors in California growing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Sacramento, approximately one new EV charger contractor becomes active each quarter, and in Berkeley the rate is about 1.5 new contractors per quarter. Jurisdictions with fewer contractors are seeing even faster growth rates, with dramatic recent increases in Anaheim, Sacramento, and Oakland."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What share of US EV chargers are installed in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nearly 30% of all EV chargers in the US are installed in California. The next largest states by share are New York, Florida, Texas, Massachusetts, and Washington, which collectively account for about 25%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are EV charger contractors expanding into multiple jurisdictions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The percentage of EV contractors working across multiple jurisdictions has been trending upward, with a significant surge during COVID that sustained even after the pandemic subsided. This geographic expansion is another indicator of market growth."
+      }
+    }
+  ]
+}
+</script>
+
+--
 
 *Special thanks to [David Kim](https://www.linkedin.com/in/daviddkkim/) from [Monterra](https://www.monterra.ai) for contributing to this article!*

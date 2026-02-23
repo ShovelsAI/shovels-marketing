@@ -106,4 +106,64 @@ Here are the links again:
 
 Grab it [on Kaggle](https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states){:target="_blank"} or [download the CSV]({static}/images/jurisdiction_mappings.csv).
 
+## Frequently Asked Questions
+
+**Q: What is a building permit jurisdiction (AHJ)?**
+
+A: An AHJ, or authority-having jurisdiction, is the government entity responsible for issuing building permits in a given area. Some cities issue their own permits, while others delegate permitting to the county. Shovels identified over 10,000 such jurisdictions across the United States.
+
+**Q: How do I know if my city issues its own building permits or if the county handles them?**
+
+A: If a city appears on the Shovels jurisdiction list, it issues its own building permits. If a city is not on the list, the county is likely the authority-having jurisdiction for building permits in that area.
+
+**Q: Where can I download the list of building permit jurisdictions?**
+
+A: The dataset is available for free on Kaggle at the Building Permit Jurisdictions in the United States dataset page, or you can download the CSV file directly from the Shovels website.
+
+**Q: Why does Pennsylvania have so many building permit jurisdictions compared to other states?**
+
+A: Pennsylvania has 1,575 permit jurisdictions, far more than any other state, and roughly 3 times as many as Ohio despite having a similar population. The exact reason for this is unclear, but it stands out as a significant outlier, with 12.15 jurisdictions per 100,000 residents compared to the national average of about 10 jurisdictions per county.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a building permit jurisdiction (AHJ)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AHJ, or authority-having jurisdiction, is the government entity responsible for issuing building permits in a given area. Some cities issue their own permits, while others delegate permitting to the county. Shovels identified over 10,000 such jurisdictions across the United States."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my city issues its own building permits or if the county handles them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a city appears on the Shovels jurisdiction list, it issues its own building permits. If a city is not on the list, the county is likely the authority-having jurisdiction for building permits in that area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I download the list of building permit jurisdictions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The dataset is available for free on Kaggle at the Building Permit Jurisdictions in the United States dataset page, or you can download the CSV file directly from the Shovels website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Pennsylvania have so many building permit jurisdictions compared to other states?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pennsylvania has 1,575 permit jurisdictions, far more than any other state, and roughly 3 times as many as Ohio despite having a similar population. The exact reason for this is unclear, but it stands out as a significant outlier, with 12.15 jurisdictions per 100,000 residents compared to the national average of about 10 jurisdictions per county."
+      }
+    }
+  ]
+}
+</script>
+
 
