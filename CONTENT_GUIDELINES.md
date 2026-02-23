@@ -317,16 +317,6 @@ housing starts or economic reports.
 
 ---
 
-## FAQ Validation Report
-
-A comprehensive validation of all site FAQs was completed on 2026-02-17. See `faq-validation-report.md` for:
-- Accuracy assessment (92.6% accurate)
-- Identified corrections
-- Recommended improvements
-- Validation methodology
-
----
-
 **Last Updated**: February 17, 2026
 **Maintained By**: Marketing Team
 **Questions?** Contact betty@shovels.ai
