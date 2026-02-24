@@ -378,7 +378,7 @@ breadcrumbRoot.addEventListener("click", drillUp);
 // Initialize
 async function init() {
   try {
-    const response = await fetch("/theme/data/permit-coverage.json");
+    const response = await fetch("https://d3kha1895daa88.cloudfront.net/permit-coverage.json");
     rootData = await response.json();
 
     loading.remove();
