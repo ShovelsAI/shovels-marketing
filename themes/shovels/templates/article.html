@@ -28,6 +28,9 @@
   <meta property="og:image:height" content="630" />
   {% endif %}
 
+  <!-- HubSpot Form Embed Script -->
+  <script src="https://js.hsforms.net/forms/embed/48146409.js" defer></script>
+
 {% endblock %}
 
 {% block structured_data %}
@@ -69,54 +72,84 @@
 
 {% block content %}
 
-<div class="mx-auto max-w-[744px]">
-  <!-- header -->
-  <div class="my-16 px-6 lg:px-8">
-    <div class="mx-auto text-base leading-5 text-gray-700">
-      {% if article.category %}
-      <div class="mb-10">
-        <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
+<!-- Container with sidebar and article -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
+
+    <!-- Left Sidebar - Newsletter (hidden on mobile, sticky on desktop) -->
+    <aside class="hidden lg:block lg:w-64 xl:w-72 flex-shrink-0">
+      <div class="sticky top-8">
+        <!-- Back to Blogs Link -->
+        <a href="/blog/" class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 mb-8 transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Back to Blogs
+        </a>
+
+        <!-- Newsletter Subscribe Form -->
+        <div class="mt-8 bg-gray-50 rounded-lg p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Subscribe to our newsletter</h3>
+          <p class="text-sm text-gray-600 mb-6">Get the latest construction intelligence insights delivered to your inbox.</p>
+
+          <!-- HubSpot Form Container -->
+          <div class="hs-form-frame" data-region="na1" data-form-id="ffcfa1b4-f1ad-47ce-827e-b350343b4751" data-portal-id="48146409"></div>
+        </div>
       </div>
-      {% endif %}
-      <div class="block">
-        <!-- Image placeholder -->
-        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
-        <!-- Title and date container -->
-        <div class="break-words">
-          <h1 class="my-5 text-5xl">
-            {{ article.title|striptags }}
-          </h1>
-          <div class="mt-8 flex items-center gap-x-4 text-sm">
-            <time datetime="{{ article.date }}" class="text-gray-500">{{ article.locale_date }}</time>
-            <a href="/blog/?category={{article.category}}"
-               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-               {{ article.category }}
-            </a>
+    </aside>
+
+    <!-- Main Article Content -->
+    <div class="flex-1 max-w-[744px]">
+      <!-- header -->
+      <div class="my-16">
+        <div class="text-base leading-5 text-gray-700">
+          {% if article.category %}
+          <div class="mb-10">
+            <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
           </div>
-          {% if article.author %}
-          <div class="relative mt-4 flex items-center gap-x-4">
-            {% if article.author_image %}
-            <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}" class="size-10 rounded-full bg-gray-100" />
-            {% endif %}
-            <div class="text-sm/6">
-              <p class="font-semibold text-gray-900">{{ article.author }}</p>
-              {% if article.author_title %}
-              <p class="text-gray-600">{{ article.author_title }}</p>
+          {% endif %}
+          <div class="block">
+            <!-- Image placeholder -->
+            <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
+            <!-- Title and date container -->
+            <div class="break-words">
+              <h1 class="my-5 text-5xl">
+                {{ article.title|striptags }}
+              </h1>
+              <div class="mt-8 flex items-center gap-x-4 text-sm">
+                <time datetime="{{ article.date }}" class="text-gray-500">{{ article.locale_date }}</time>
+                <a href="/blog/?category={{article.category}}"
+                   class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                   {{ article.category }}
+                </a>
+              </div>
+              {% if article.author %}
+              <div class="relative mt-4 flex items-center gap-x-4">
+                {% if article.author_image %}
+                <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}" class="size-10 rounded-full bg-gray-100" />
+                {% endif %}
+                <div class="text-sm/6">
+                  <p class="font-semibold text-gray-900">{{ article.author }}</p>
+                  {% if article.author_title %}
+                  <p class="text-gray-600">{{ article.author_title }}</p>
+                  {% endif %}
+                </div>
+              </div>
               {% endif %}
             </div>
           </div>
-          {% endif %}
+        </div>
+      </div>
+      <!-- content -->
+      <div class="my-16">
+        <div class="max-w-3xl leading-loose text-gray-700">
+          <article class="w-full article">
+            {{ article.content }}
+          </article>
         </div>
       </div>
     </div>
-  </div>
-  <!-- content -->
-  <div class="my-16 px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl leading-loose text-gray-700">
-      <article class="w-full article">
-        {{ article.content }}
-      </article>
-    </div>
+
   </div>
 </div>
 
