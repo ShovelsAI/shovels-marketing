@@ -17,9 +17,9 @@ slug: data-feed
 <div class="relative isolate overflow-hidden">
   <div class="mx-auto max-w-7xl px-6 pt-32 pb-24 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Custom reports and data feeds</h1>
+      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Large scale data delivery for modern data teams</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We'll push the full nationwide history of building permit and contractor records directly into your Snowflake, BigQuery, or Databricks accounts. We can also provide parquet files.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We use the latest geospatial and data science techniques to bring you the most accurate and useful data possible. We deliver to Snowflake, BigQuery, and Databricks or directly to your S3, GCS, or Azure buckets.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
           <a href="https://docs.shovels.ai" class="text-sm/6 font-semibold text-gray-900" target="_blank">Documentation Hub<span aria-hidden="true">&rarr;</span></a>
@@ -48,7 +48,7 @@ slug: data-feed
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
             <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Monthly</div>
+              <div class="font-medium text-gray-900">Twice Monthly</div>
             </dd>
           </div>
         </dl>
@@ -66,7 +66,7 @@ slug: data-feed
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
             <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Monthly</div>
+              <div class="font-medium text-gray-900">Twice Monthly</div>
             </dd>
           </div>
         </dl>
@@ -127,6 +127,24 @@ slug: data-feed
       </li>
       <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
         <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
+          <h2 class="text-xl font-semibold text-gray-900">Decisions</h2>
+          <p class="text-sm text-gray-600">Local government meeting intelligence from city councils and planning boards, including zoning changes, project discussions, and approval timelines—giving visibility months before projects break ground.</p>
+        </div>
+        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Record count</dt>
+            <dd class="text-gray-700 font-medium">60K+</dd>
+          </div>
+          <div class="flex justify-between gap-x-4 py-3">
+            <dt class="text-gray-500">Update frequency</dt>
+            <dd class="flex items-start gap-x-2">
+              <div class="font-medium text-gray-900">Real Time</div>
+            </dd>
+          </div>
+        </dl>
+      </li>
+      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
           <h2 class="text-xl font-semibold text-gray-900">Parcels</h2>
           <p class="text-sm text-gray-600">Available via your Regrid license, get seamless integration between Shovels <code>address_id</code> and Regrid <code>LL_UUID</code> fields for comprehensive property analysis and market insights.</p>
         </div>
@@ -150,16 +168,14 @@ slug: data-feed
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Enterprise-grade building permit data</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Large scale data delivery for modern data teams</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">We use the latest geospatial and data science techniques to bring you the most accurate and useful data possible. We deliver to Snowflake, BigQuery, and Databricks or directly to your S3, GCS, or Azure buckets.</p>
+      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Enterprise-grade building permit data</h2>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
             <img src="theme/images/data-feed/ping.png" alt="Snowflake integration icon" class="size-5 flex-none">
-            Add building permit data to Snowflake
+            Snowflake delivery
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
             <p class="flex-auto">To get our permit data in Snowflake, we just need your public org and account identifiers. No extra engineering or security support required.</p>
@@ -168,7 +184,7 @@ slug: data-feed
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
             <img src="theme/images/data-feed/json.png" alt="Big Query integration icon" class="size-5 flex-none">
-            Add building permit data to BigQuery
+            BigQuery delivery
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
             <p class="flex-auto">To get permit data into your BigQuery account, we just need a Google service account. The tables will arrive pre-formatted and ready to query.</p>
@@ -177,10 +193,10 @@ slug: data-feed
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
             <img src="theme/images/data-feed/accurate.png" alt="Parquet format icon" class="size-5 flex-none">
-            Building permit parquet files
+            Parquet delivery
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">We know that dealing with CSV files is a massive headache, especially with complex data and confusing serializations. That's why we like parquet and prefer to send building contractor and permit data in this format.</p>
+            <p class="flex-auto">Parquet files are optimized for complex data structures, making data ingestion faster and more reliable. We also support CSV delivery if needed.</p>
           </dd>
         </div>
         <div class="flex flex-col">
@@ -207,7 +223,7 @@ slug: data-feed
             Flexible terms
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">We won't make your legal team nitpick every line of our terms and conditions. Terms are designed to give you flexibility to reuse and even resell Shovels data.</p>
+            <p class="flex-auto">Our terms give you the flexibility to create derivative works and build robust products using our comprehensive permit and contractor data.</p>
           </dd>
         </div>
       </dl>
