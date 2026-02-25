@@ -357,6 +357,7 @@ function updateStats(data) {
   document.getElementById("stat-states").textContent = data.meta.states_covered;
   document.getElementById("stat-counties").textContent = fmt.format(totalCounties);
   document.getElementById("stat-period").textContent = data.meta.period;
+  document.getElementById("stat-generated").textContent = data.meta.generated;
 }
 
 // Responsive: re-render on resize

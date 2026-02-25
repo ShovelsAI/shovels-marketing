@@ -95,7 +95,8 @@
     }
     .filter-dropdown-search {
       width: 100%;
-      padding: 0.625rem 0.75rem 0.625rem 2.25rem;
+      padding: 0.625rem 0.75rem;
+      padding-left: 2.5rem;
       border: none;
       border-bottom: 1px solid #e5e7eb;
       font-size: 0.875rem;
@@ -170,6 +171,10 @@
       <dt class="text-sm text-gray-500">Data Period</dt>
       <dd id="stat-period" class="text-2xl font-medium text-shovels-primary">—</dd>
     </div>
+    <div>
+      <dt class="text-sm text-gray-500">Data Pulled</dt>
+      <dd id="stat-generated" class="text-2xl font-medium text-shovels-primary">—</dd>
+    </div>
   </dl>
 </div>
 
@@ -186,10 +191,10 @@
       </button>
       <div id="filter-dropdown-panel" class="filter-dropdown-panel">
         <div class="relative">
-          <svg class="absolute left-2.5 top-3 h-4 w-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <input id="location-search-input" type="text" class="filter-dropdown-search" placeholder="Search states..." autocomplete="off" />
+          <svg class="absolute top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" style="left: 0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
-          <input id="location-search-input" type="text" class="filter-dropdown-search" style="padding-left: 2.25rem;" placeholder="Search states..." autocomplete="off" />
         </div>
         <div id="location-search-list" class="filter-dropdown-list"></div>
       </div>
