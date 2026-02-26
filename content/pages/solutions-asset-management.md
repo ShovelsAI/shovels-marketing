@@ -11,11 +11,11 @@ slug: solutions/asset-management
     </defs>
     <rect width="100%" height="100%" stroke-width="0" fill="url(#asset-management-pattern)" />
   </svg>
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 pt-32 pb-24 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 lg:items-center">
       <div class="lg:col-span-1">
         <p class="text-base font-semibold text-shovels-primary">ReZone by Shovels</p>
-        <h1 class="mt-2 max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">Track All Legislative Changes Impacting Your Property</h1>
+        <h1 class="mt-2 max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Track All Legislative Changes Impacting Your Property</h1>
         <p class="mt-6 text-xl text-gray-600">Monitor every city decision impacting your property inside a 1 mile, 3 mile, or 5 mile radius. Stay ahead of rezonings, infrastructure projects, and more.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
@@ -27,21 +27,22 @@ slug: solutions/asset-management
       </div>
     </div>
   </div>
+  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
 </div>
 
-<div class="bg-gray-50 py-24 sm:py-32">
+<div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">How It Works</h2>
-      <p class="mt-6 text-lg text-gray-600">ReZone (acquired by Shovels) listens to all city decisions impacting your property. We scan public records and zoning decisions within a 1-mile, 3-mile, or 5-mile radius of your property. You'll receive alerts about changes that may affect your investment. From rezoning and special use permits to major infrastructure projects and more.</p>
+      <h2 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">How It Works</h2>
+      <p class="mt-6 text-lg text-gray-300">ReZone (acquired by Shovels) listens to all city decisions impacting your property. We scan public records and zoning decisions within a 1-mile, 3-mile, or 5-mile radius of your property. You'll receive alerts about changes that may affect your investment. From rezoning and special use permits to major infrastructure projects and more.</p>
     </div>
   </div>
 </div>
 
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
-      <div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 sm:gap-24 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-x-16">
+      <div class="max-w-lg">
         <img src="{static}/images/rezone/Hero_Section.png" alt="ReZone Dashboard" class="rounded-2xl shadow-xl ring-1 ring-gray-900/10">
       </div>
       <div>
