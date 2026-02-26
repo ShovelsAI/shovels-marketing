@@ -80,7 +80,7 @@ slug: solutions/acquisition
 
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 sm:gap-24 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-x-16">
       <div>
         <figure class="border-l-4 border-shovels-primary pl-8">
           <blockquote class="text-2xl font-medium italic text-gray-900">
@@ -91,7 +91,7 @@ slug: solutions/acquisition
           <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
         </div>
       </div>
-      <div>
+      <div class="max-w-lg">
         <img src="{static}/images/rezone/Denver_Decisions_Demo.png" alt="ReZone Dashboard" class="rounded-2xl shadow-xl ring-1 ring-gray-900/10">
       </div>
     </div>

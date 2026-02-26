@@ -97,13 +97,13 @@ slug: solutions/sister-city-tracker
 
 <div class="bg-gray-50 py-24 sm:py-32" id="exclusive">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 sm:gap-24 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-x-16">
       <div>
         <p class="text-base font-semibold text-shovels-primary uppercase tracking-wide">City Planners</p>
         <h2 class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">*Exclusively for Planners</h2>
         <p class="mt-6 text-lg text-gray-600">At ReZone (acquired by Shovels), we strongly believe that data transparency leads to better decision making. City Planners play a critical role in shaping our cities, and they deserve timely, up-to-date, and meaningful data. We offer <strong>Sister City Tracking</strong> at a steep discount to Planners to ensure they have the tools they need to make informed decisions.</p>
       </div>
-      <div>
+      <div class="max-w-lg">
         <img src="{static}/images/rezone/email_screenshot_thesis.png" alt="Email Summary Example" class="rounded-2xl shadow-xl ring-1 ring-gray-900/10">
       </div>
     </div>

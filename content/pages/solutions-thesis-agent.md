@@ -26,7 +26,7 @@ slug: solutions/thesis-agent
 
 <div class="bg-gray-50 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 sm:gap-24 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-x-16">
       <div>
         <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">How It Works</h2>
         <p class="mt-6 text-lg text-gray-600">Email <a href="mailto:thesis@shovels.ai" class="text-shovels-primary hover:underline font-semibold">thesis@shovels.ai</a> with your investment thesis and target markets. We will set up your personal AI Assistant and provide you with the most relevant city decisions.</p>
