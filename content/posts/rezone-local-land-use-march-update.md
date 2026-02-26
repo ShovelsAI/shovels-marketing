@@ -11,7 +11,7 @@ Slug: local-land-use-march-update
 Summary: Discover the latest city council decisions shaping urban development nationwide
 Image: /images/rezone/Attivo_Trail_Omaha.png
 
-*This article was originally published on ReZone, now part of Shovels.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
 Welcome to **Local Land Use**, our new bi-weekly series where we unpack the most impactful city council decisions across the nation. In this update, we've analyzed 827 real estate-related decisions to bring you the key trends and opportunities shaping urban development. Let's dive in.
 

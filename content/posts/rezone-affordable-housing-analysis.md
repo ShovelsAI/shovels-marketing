@@ -13,7 +13,7 @@ Image: /images/rezone/AffordableHousingDecisionsAsShareofTotalCityActivity.png
 
 ---
 
-*This article was originally published on ReZone, now part of Shovels. ReZone AI tracks real estate-related city decisions nationwide.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>. ReZone AI tracks real estate-related city decisions nationwide.*
 
 At ReZone (acquired by Shovels), we track real estate-related city decisions nationwide, categorizing them into 12 major areas. Today we focus on the first out of the 12 categories - affordable housing.
 

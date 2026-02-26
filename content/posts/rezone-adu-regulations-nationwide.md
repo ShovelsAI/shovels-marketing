@@ -13,7 +13,7 @@ Image: /images/rezone/Detached_ADU.webp
 
 ---
 
-*This article was originally published on ReZone, now part of Shovels. ReZone AI tracks all City Council and Planning Department meetings nationwide.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>. ReZone AI tracks all City Council and Planning Department meetings nationwide.*
 
 Accessory Dwelling Units (ADUs) continue to be one of the most discussed topics in Real Estate. Over the past 10 years, their popularity increased six-fold.
 

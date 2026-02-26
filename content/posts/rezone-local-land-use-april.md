@@ -11,7 +11,7 @@ Slug: local-land-use-april
 Summary: Tracking the latest city council decisions shaping urban development nationwide
 Image: /images/rezone/STAOD.png
 
-*This article was originally published on ReZone, now part of Shovels.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
 *__Local Land Use__ is a monthly feature that spotlights the most interesting city decisions nationwide. Enjoy!*
 

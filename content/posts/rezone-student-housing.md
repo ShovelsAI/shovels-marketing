@@ -11,7 +11,7 @@ Slug: student-housing
 Summary: A six-month review of all student-housing legislation in the largest 200 cities
 Image: /images/rezone/Student_Housing_Decisions_Total.png
 
-*This article was originally published on ReZone, now part of Shovels.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
 Real Estate is a local game and local policy decisions can make or break your investment thesis.
 

@@ -11,7 +11,7 @@ Slug: mixed-use-arizona
 Summary: Analyzing all city decisions in AZ to explore mixed-use developments and gov. initiatives
 Image: /images/rezone/Tempe_From_Parking_lot_to_downtown.png
 
-*This article was originally published on ReZone, now part of Shovels.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
 Yesterday, a friend mentioned that he wants to move back to his home-state Arizona. His conundrum? He wants to live in a walkable community and in his view, there's no walkable mixed-use communities in Arizona. After briefly touching on the great work of [Ryan Johnson](https://www.linkedin.com/in/ryanjohnsonaz/) at [Culdesac](https://www.linkedin.com/company/liveculdesac/posts/?feedView=all), I quickly ran out of positive examples to give.
 

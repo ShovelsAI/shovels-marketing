@@ -11,7 +11,7 @@ Slug: infrastructure-development-analysis
 Summary: Using City Council Data to Examine Trends in Infrastructure Planning
 Image: /images/rezone/Infrastructure_Development_Illustration.png
 
-*This article was originally published on ReZone, now part of Shovels.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
 At ReZone (acquired by Shovels), we track all real estate-related city decisions nationwide, categorizing them into 12 major areas. Last time, we focused on [affordable housing](https://re-zone.ai/blog/affordable_housing_city_council_analysis). Today, we focus on the category that was [given a C-](https://infrastructurereportcard.org/) by the American Society of Civil Engineers (ASCE) - infrastructure development.
 

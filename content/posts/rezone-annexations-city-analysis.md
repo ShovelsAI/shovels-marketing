@@ -11,7 +11,7 @@ Slug: annexations-city-analysis
 Summary: Analyzing City Council Data
 Image: /images/rezone/SanAntonioAnnexationNorthlakePublicImprovementDistrict.png
 
-*This article was originally published on ReZone, now part of Shovels.*
+*This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
 ![Strategic Partnership Agreement for Limited Purpose Annexation with Northlake Public Improvement District]({static}/images/rezone/SanAntonioAnnexationNorthlakePublicImprovementDistrict.png)
 *Strategic Partnership Agreement for Limited Purpose Annexation with Northlake Public Improvement District*
