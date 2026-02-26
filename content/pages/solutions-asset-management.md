@@ -18,8 +18,8 @@ slug: solutions/asset-management
         <h1 class="mt-2 max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">Track All Legislative Changes Impacting Your Property</h1>
         <p class="mt-6 text-xl text-gray-600">Monitor every city decision impacting your property inside a 1 mile, 3 mile, or 5 mile radius. Stay ahead of rezonings, infrastructure projects, and more.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Book a Demo</a>
-          <a href="/pricing" class="text-sm font-semibold text-gray-900">View Pricing <span aria-hidden="true">→</span></a>
+          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+          <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="mt-10 lg:mt-0">
@@ -104,8 +104,8 @@ slug: solutions/asset-management
       <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Ready to Protect Your Property?</h2>
       <p class="mt-6 text-lg text-gray-600">Start receiving updates for any property you own or manage.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Book a Demo</a>
-        <a href="/pricing" class="text-sm font-semibold text-gray-900">View Pricing <span aria-hidden="true">→</span></a>
+        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+        <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>

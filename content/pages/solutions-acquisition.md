@@ -18,8 +18,8 @@ slug: solutions/acquisition
         <h1 class="mt-2 max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Find Properties <em>Before</em> They Become Valuable</h1>
         <p class="mt-6 text-xl text-gray-600">We track all public meetings in your target markets to keep you updated on every real estate-related decision.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Track City Meetings</a>
-          <a href="/contact" class="text-sm font-semibold text-gray-900">Contact us <span aria-hidden="true">→</span></a>
+          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+          <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="mt-10 lg:mt-0">
@@ -88,7 +88,7 @@ slug: solutions/acquisition
           </blockquote>
         </figure>
         <div class="mt-10">
-          <a href="/pricing" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Start Tracking →</a>
+          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
         </div>
       </div>
       <div>
@@ -177,7 +177,7 @@ slug: solutions/acquisition
       <p class="mt-4 text-lg text-gray-600">Currently, there are no good solutions for tracking these changes.</p>
       <p class="mt-4 text-lg font-semibold text-gray-900">That's why we built ReZone.</p>
       <div class="mt-10 text-center">
-        <a href="/pricing" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started →</a>
+        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
       </div>
     </div>
   </div>

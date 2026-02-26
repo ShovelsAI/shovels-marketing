@@ -19,8 +19,8 @@ slug: solutions/sister-city-tracker
         <p class="mt-6 text-xl text-gray-600">Get an email summary every Friday, 8am with all CRE-related decisions in the cities of your choice.</p>
         <p class="mt-4 text-lg text-gray-600">*<a href="#exclusive" class="text-shovels-primary hover:underline">Exclusively for Planners</a></p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Book a Demo</a>
-          <a href="/pricing" class="text-sm font-semibold text-gray-900">View Pricing <span aria-hidden="true">→</span></a>
+          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+          <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="mt-10 lg:mt-0">
@@ -123,7 +123,7 @@ slug: solutions/sister-city-tracker
           <span class="text-base text-gray-500">/mo</span>
         </p>
         <p class="mt-6 text-base text-gray-600">Track 5 Cities of your Choice</p>
-        <a href="/contact" class="mt-8 block rounded-md bg-shovels-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Get Started</a>
+        <a href="https://app.shovels.ai/" class="mt-8 block rounded-md bg-shovels-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
       </div>
       <div class="flex flex-col rounded-3xl bg-white p-8 ring-2 ring-shovels-primary shadow-lg">
         <h3 class="text-lg font-semibold text-gray-900">10 City Bundle</h3>
@@ -132,7 +132,7 @@ slug: solutions/sister-city-tracker
           <span class="text-base text-gray-500">/mo</span>
         </p>
         <p class="mt-6 text-base text-gray-600">Track 10 Cities of your Choice</p>
-        <a href="/contact" class="mt-8 block rounded-md bg-shovels-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Get Started</a>
+        <a href="https://app.shovels.ai/" class="mt-8 block rounded-md bg-shovels-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
       </div>
       <div class="flex flex-col rounded-3xl bg-white p-8 ring-2 ring-shovels-primary shadow-lg">
         <h3 class="text-lg font-semibold text-gray-900">20 City Bundle</h3>
@@ -141,7 +141,7 @@ slug: solutions/sister-city-tracker
           <span class="text-base text-gray-500">/mo</span>
         </p>
         <p class="mt-6 text-base text-gray-600">Track 20 Cities of your Choice</p>
-        <a href="/contact" class="mt-8 block rounded-md bg-shovels-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Get Started</a>
+        <a href="https://app.shovels.ai/" class="mt-8 block rounded-md bg-shovels-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
       </div>
     </div>
   </div>

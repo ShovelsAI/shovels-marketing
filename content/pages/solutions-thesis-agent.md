@@ -17,8 +17,8 @@ slug: solutions/thesis-agent
       <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">ReZone Thesis Agent</h1>
       <p class="mt-6 text-xl text-gray-600">Your personal AI Assistant providing you with all relevant city decisions based on your investment thesis.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="/pricing" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Get Started</a>
-        <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Us <span aria-hidden="true">→</span></a>
+        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+        <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>
@@ -57,27 +57,24 @@ slug: solutions/thesis-agent
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
         <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-shovels-primary text-white font-bold">1</div>
-            Customized Alerts
+          <dt class="text-base font-semibold text-gray-900">
+            1. Customized Alerts
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
             <p class="flex-auto">Receive only the decisions that match your specific investment criteria and target markets.</p>
           </dd>
         </div>
         <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-shovels-primary text-white font-bold">2</div>
-            AI-Powered Filtering
+          <dt class="text-base font-semibold text-gray-900">
+            2. AI-Powered Filtering
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
             <p class="flex-auto">Our AI understands your thesis and automatically surfaces the most relevant zoning and planning decisions.</p>
           </dd>
         </div>
         <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base font-semibold text-gray-900">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-shovels-primary text-white font-bold">3</div>
-            Email Delivery
+          <dt class="text-base font-semibold text-gray-900">
+            3. Email Delivery
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
             <p class="flex-auto">Get curated updates delivered directly to your inbox, formatted for quick review and action.</p>
@@ -114,8 +111,8 @@ slug: solutions/thesis-agent
     <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Ready to Get Started?</h2>
     <p class="mt-6 text-lg text-gray-600">Set up your personal Thesis Agent today and never miss a relevant zoning decision again.</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="mailto:thesis@shovels.ai" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Email thesis@shovels.ai</a>
-      <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Us <span aria-hidden="true">→</span></a>
+      <a href="mailto:thesis@shovels.ai" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Email thesis@shovels.ai</a>
+      <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
