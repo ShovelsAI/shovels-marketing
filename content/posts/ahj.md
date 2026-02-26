@@ -63,7 +63,7 @@ This process ensures projects meet safety, environmental, and community standard
 Contractors and developers often run into issues such as:
 
 - **Multiple jurisdictions** – Large projects may involve multiple AHJs.
-- **Jurisdiction confusion** – Identifying the correct AHJ for a project can be challenging because jurisdictional authority varies—cities can either serve as their own permitting jurisdiction or delegate this responsibility to the county. For example, the city of Pasadena, in Los Angeles County, [is its own AHJ](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&battery=&cbsa=&city=&county_or_jurisdiction=pasadena&date_filter=past12months&electrical=&generator=&hvac=&new_construction=&plumbing=&property_type=&property_type_detail=&remodel=&roofing=&solar=&state=CA&status=&tab=67-jurisdictions&window_%252F_door=&zip_code=). In contrast, Pacific Palisades, also in Los Angeles County, delegates its permitting authority to Los Angeles County.
+- **Jurisdiction confusion** – Identifying the correct AHJ for a project can be challenging because jurisdictional authority varies—cities can either serve as their own permitting jurisdiction or delegate this responsibility to the county. For example, the city of Pasadena, in Los Angeles County, [is its own AHJ](https://www.shovels.ai/coverage). In contrast, Pacific Palisades, also in Los Angeles County, delegates its permitting authority to Los Angeles County.
 - **Delays in approval** – Backlogs or incomplete documentation slow progress.
 - **Code interpretation** – Different AHJs may interpret codes differently.
 - **Changing requirements** – Local ordinances can shift mid-project.
@@ -86,7 +86,7 @@ Knowing your jurisdiction upfront saves time, prevents misfiled applications, an
 The traditional permitting process is notoriously inefficient and paper-heavy. [Shovels](http://shovels.ai/) helps bring transparency to the process and makes historically messy and confusing data easy to access. Use our data for **AHJ permitting** by:
 
 - Using Shovels' data to understand the complex AHJ permit landscape more efficiently, monitor active permits in target markets, and make more informed development decisions
-- Searching jurisdictions on our [Coverage Dashboard](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&battery=&cbsa=&city=&county_or_jurisdiction=&date_filter=past12months&electrical=&generator=&hvac=&new_construction=&plumbing=&property_type=&property_type_detail=&remodel=&roofing=&solar=&state=&status=&tab=67-jurisdictions&window_%252F_door=&zip_code=)
+- Searching jurisdictions on our [Coverage Dashboard](https://www.shovels.ai/coverage)
 - Creating a free Shovels Online account to [use location search to find any AHJ](https://app.shovels.ai/search/)
 - Tracking permits across multiple jurisdictions for improved visibility and planning
 
@@ -108,7 +108,7 @@ A: An AHJ, or Authority Having Jurisdiction, is the official agency or authority
 
 **Q: How do I find my AHJ for a construction project?**
 
-A: Your AHJ depends on your project’s location. It may be a city building department, a county office, or even a state or federal agency. Use Shovels to help [identify the correct jurisdiction](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&battery=&cbsa=&city=&county_or_jurisdiction=&date_filter=past12months&electrical=&generator=&hvac=&new_construction=&plumbing=&property_type=&property_type_detail=&remodel=&roofing=&solar=&state=&status=&tab=67-jurisdictions&window_%252F_door=&zip_code=).
+A: Your AHJ depends on your project's location. It may be a city building department, a county office, or even a state or federal agency. Use Shovels to help [identify the correct jurisdiction](https://www.shovels.ai/coverage).
 
 **Q: Why is AHJ permitting important?**
 
@@ -141,7 +141,7 @@ A: Platforms like Shovels streamline the process by automatically identifying th
 "name": "How do I find my AHJ for a construction project?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Your AHJ depends on your project’s location. It may be a city building department, a county office, or even a state or federal agency. Tools like [Shovels](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?adu=&battery=&cbsa=&city=&county_or_jurisdiction=&date_filter=past12months&electrical=&generator=&hvac=&new_construction=&plumbing=&property_type=&property_type_detail=&remodel=&roofing=&solar=&state=&status=&tab=67-jurisdictions&window_%252F_door=&zip_code=) and public datasets can help identify the correct jurisdiction."
+"text": "Your AHJ depends on your project's location. It may be a city building department, a county office, or even a state or federal agency. Tools like [Shovels](https://www.shovels.ai/coverage) and public datasets can help identify the correct jurisdiction."
 }
 },
 {

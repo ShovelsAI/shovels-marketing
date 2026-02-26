@@ -92,7 +92,7 @@ The returned list of addresses is ordered by relevance and formatted according t
 
 Pick which address you want to dig deeper into, and **proceed to step 2**.
 
-> **Note**: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn’t yet in our jurisdiction [Coverage Map](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?city=&county_or_jurisdiction=&state=&tab=133-permit-types&zip_code=), or many others). If your desired address isn’t included, then please reach out to us at [support@shovels.ai](mailto:support@shovels.ai) and we’ll take a look. 
+> **Note**: Permit availability rates can vary drastically for a number of reasons (offline or infrequently uploaded records, isn't yet in our jurisdiction [Coverage Map](https://www.shovels.ai/coverage), or many others). If your desired address isn't included, then please reach out to us at [support@shovels.ai](mailto:support@shovels.ai) and we'll take a look. 
 
 ## Step 2: Retrieve Permits for the Address
 
