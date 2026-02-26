@@ -1,40 +1,42 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
-{% block title %}{{ SITENAME }} {{ article.title|striptags  }}{% endblock %}
+{% block title %}{{ SITENAME }} {{ article.title|striptags }}{% endblock %}
 
 {% block head %}
-  {{ super() }}
+{{ super() }}
 
-  {% import 'translations.html' as translations with context %}
-  {% if translations.entry_hreflang(article) %}
-    {{ translations.entry_hreflang(article) }}
-  {% endif %}
+{% import 'translations.html' as translations with context %}
+{% if translations.entry_hreflang(article) %}
+{{ translations.entry_hreflang(article) }}
+{% endif %}
 
-  {% if article.summary %}
-    <meta name="description" content="{{ article.summary|striptags|e }}" />
-  {% endif %}
+{% if article.summary %}
+<meta name="description" content="{{ article.summary|striptags|e }}" />
+{% endif %}
 
-  {% for tag in article.tags %}
-    <meta name="tags" content="{{ tag|striptags|e }}" />
-  {% endfor %}
+{% for tag in article.tags %}
+<meta name="tags" content="{{ tag|striptags|e }}" />
+{% endfor %}
 
-  <!-- Force Open Graph image priority -->
-  {% if article.open_graph_image or article.image %}
-  <meta property="og:image" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
-  <meta property="og:image:secure_url" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  {% endif %}
+<!-- Force Open Graph image priority -->
+{% if article.open_graph_image or article.image %}
+<meta property="og:image"
+  content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
+<meta property="og:image:secure_url"
+  content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{% endif %}
 
-  <!-- HubSpot Form Embed Script -->
-  <script src="https://js.hsforms.net/forms/embed/48146409.js" defer></script>
+<!-- HubSpot Form Embed Script -->
+<script src="https://js.hsforms.net/forms/embed/48146409.js" defer></script>
 
 {% endblock %}
 
 {% block structured_data %}
-  <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -77,40 +79,43 @@
   <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
 
     <!-- Left Sidebar - Newsletter (hidden on mobile, sticky on desktop) -->
-    <aside class="hidden lg:block lg:w-64 xl:w-72 flex-shrink-0">
-      <div class="sticky top-8">
+    <aside class="hidden lg:block flex-shrink-0 self-start" style="width: 230px; margin-top: 1120px;">
+      <div class="sticky z-40 text-left" style="top: 100px;">
         <!-- Back to Blogs Link -->
-        <a href="/blog/" class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 mb-8 transition-colors">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <a href="/blog/"
+          class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors mb-6">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
           </svg>
           Back to Blogs
         </a>
 
         <!-- Newsletter Subscribe Form -->
-        <div class="mt-8 bg-gray-50 rounded-lg p-6">
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">Subscribe to our newsletter</h3>
-          <p class="text-sm text-gray-600 mb-6">Get the latest construction intelligence insights delivered to your inbox.</p>
+        <h3 class="text-2xl font-semibold mb-2 leading-tight" style="color: #01654D;">Subscribe to our newsletter</h3>
 
-          <!-- HubSpot Form Container -->
-          <div class="hs-form-frame" data-region="na1" data-form-id="ffcfa1b4-f1ad-47ce-827e-b350343b4751" data-portal-id="48146409"></div>
-        </div>
+        <!-- HubSpot Form Container -->
+        <div class="hs-form-frame" data-region="na1" data-form-id="ffcfa1b4-f1ad-47ce-827e-b350343b4751"
+          data-portal-id="48146409"></div>
       </div>
     </aside>
 
     <!-- Main Article Content -->
     <div class="flex-1 max-w-[744px]">
       <!-- header -->
-      <div class="my-16">
+      <div class="my-16" id="article-header">
         <div class="text-base leading-5 text-gray-700">
           {% if article.category %}
           <div class="mb-10">
-            <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
+            <a href="/blog/?category={{article.category}}"
+              class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{
+              article.category }}</a>
           </div>
           {% endif %}
           <div class="block">
             <!-- Image placeholder -->
-            <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
+            <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}"
+              alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
             <!-- Title and date container -->
             <div class="break-words">
               <h1 class="my-5 text-5xl">
@@ -119,14 +124,15 @@
               <div class="mt-8 flex items-center gap-x-4 text-sm">
                 <time datetime="{{ article.date }}" class="text-gray-500">{{ article.locale_date }}</time>
                 <a href="/blog/?category={{article.category}}"
-                   class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                   {{ article.category }}
+                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                  {{ article.category }}
                 </a>
               </div>
               {% if article.author %}
               <div class="relative mt-4 flex items-center gap-x-4">
                 {% if article.author_image %}
-                <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}" class="size-10 rounded-full bg-gray-100" />
+                <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}"
+                  class="size-10 rounded-full bg-gray-100" />
                 {% endif %}
                 <div class="text-sm/6">
                   <p class="font-semibold text-gray-900">{{ article.author }}</p>
@@ -152,5 +158,78 @@
 
   </div>
 </div>
+
+<style>
+  /* Force HubSpot form container and iframe to span full sidebar width, left-justified */
+  .hs-form-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+    display: block !important;
+  }
+
+  .hs-form-frame iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    display: block !important;
+  }
+
+  .hs-form-frame form,
+  .hs-form-frame .hs-form-field,
+  .hs-form-frame .hs-input,
+  .hs-form-frame input[type="email"],
+  .hs-form-frame input[type="text"],
+  .hs-form-frame .hs-button,
+  .hs-form-frame input[type="submit"],
+  .hs-form-frame button[type="submit"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+</style>
+
+<script>
+  // Watch for HubSpot iframe to load, then force full width
+  function forceHubSpotFormWidth() {
+    const formFrame = document.querySelector('.hs-form-frame');
+    if (!formFrame) return;
+
+    const observer = new MutationObserver(() => {
+      // Style any iframes that HubSpot injects
+      const iframes = formFrame.querySelectorAll('iframe');
+      iframes.forEach(iframe => {
+        iframe.style.width = '100%';
+        iframe.style.maxWidth = '100%';
+        iframe.style.minWidth = '100%';
+        iframe.style.display = 'block';
+      });
+
+      // Also style any direct form elements (non-iframe embed)
+      const form = formFrame.querySelector('form');
+      if (form) {
+        form.style.width = '100%';
+        form.style.maxWidth = '100%';
+        form.style.margin = '0';
+      }
+      formFrame.querySelectorAll('input, button, .hs-input, .hs-button, .hs-form-field').forEach(el => {
+        el.style.width = '100%';
+        el.style.maxWidth = '100%';
+        el.style.boxSizing = 'border-box';
+      });
+    });
+
+    observer.observe(formFrame, { childList: true, subtree: true });
+  }
+
+  window.addEventListener('load', forceHubSpotFormWidth);
+  document.addEventListener('DOMContentLoaded', forceHubSpotFormWidth);
+  // Retry in case HubSpot loads late
+  setTimeout(forceHubSpotFormWidth, 500);
+  setTimeout(forceHubSpotFormWidth, 1500);
+  setTimeout(forceHubSpotFormWidth, 3000);
+</script>
 
 {% endblock %}
