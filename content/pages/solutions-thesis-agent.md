@@ -11,10 +11,10 @@ slug: solutions/thesis-agent
     </defs>
     <rect width="100%" height="100%" stroke-width="0" fill="url(#thesis-agent-pattern)" />
   </svg>
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 pt-32 pb-24 sm:py-40 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <p class="text-base font-semibold text-shovels-primary">ReZone by Shovels</p>
-      <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">ReZone Thesis Agent</h1>
+      <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">ReZone Thesis Agent</h1>
       <p class="mt-6 text-xl text-gray-600">Your personal AI Assistant providing you with all relevant city decisions based on your investment thesis.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
@@ -22,6 +22,7 @@ slug: solutions/thesis-agent
       </div>
     </div>
   </div>
+  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
 </div>
 
 <div class="bg-gray-50 py-24 sm:py-32">
@@ -48,35 +49,35 @@ slug: solutions/thesis-agent
   </div>
 </div>
 
-<div class="bg-white py-24 sm:py-32">
+<div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">What You Get</h2>
-      <p class="mt-4 text-lg text-gray-600">Tailored intelligence for your specific investment strategy</p>
+      <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">What You Get</h2>
+      <p class="mt-4 text-lg text-gray-300">Tailored intelligence for your specific investment strategy</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
         <div class="flex flex-col">
-          <dt class="text-base font-semibold text-gray-900">
+          <dt class="text-base font-semibold text-white">
             1. Customized Alerts
           </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-300">
             <p class="flex-auto">Receive only the decisions that match your specific investment criteria and target markets.</p>
           </dd>
         </div>
         <div class="flex flex-col">
-          <dt class="text-base font-semibold text-gray-900">
+          <dt class="text-base font-semibold text-white">
             2. AI-Powered Filtering
           </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-300">
             <p class="flex-auto">Our AI understands your thesis and automatically surfaces the most relevant zoning and planning decisions.</p>
           </dd>
         </div>
         <div class="flex flex-col">
-          <dt class="text-base font-semibold text-gray-900">
+          <dt class="text-base font-semibold text-white">
             3. Email Delivery
           </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-600">
+          <dd class="mt-4 flex flex-auto flex-col text-base text-gray-300">
             <p class="flex-auto">Get curated updates delivered directly to your inbox, formatted for quick review and action.</p>
           </dd>
         </div>
