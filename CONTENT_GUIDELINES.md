@@ -6,8 +6,9 @@ This document outlines best practices for creating content on the Shovels market
 1. [When to Add FAQs](#when-to-add-faqs)
 2. [FAQ Writing Guidelines](#faq-writing-guidelines)
 3. [Technical Implementation](#technical-implementation)
-4. [Validation Checklist](#validation-checklist)
-5. [Examples](#examples)
+4. [Internal Linking](#internal-linking)
+5. [Validation Checklist](#validation-checklist)
+6. [Examples](#examples)
 
 ---
 
@@ -186,6 +187,45 @@ Add immediately after the HTML FAQ section:
 
 ---
 
+## Internal Linking
+
+Always use Pelican's `{filename}` syntax for links between content files. Never use absolute `https://www.shovels.ai/...` URLs for internal pages — these break in local development and bypass Pelican's URL management.
+
+### Rules by file location
+
+**From a post** (`content/posts/foo.md`) **linking to a page** (`content/pages/bar.md`):
+```markdown
+[link text]({filename}../pages/bar.md)
+```
+
+**From a post linking to another post** (same directory):
+```markdown
+[link text]({filename}other-post.md)
+```
+
+**From a page** (`content/pages/foo.md`) **linking to another page** (same directory):
+```markdown
+[link text]({filename}bar.md)
+```
+
+**From a page linking to a post**:
+```markdown
+[link text]({filename}/posts/foo.md)
+```
+
+### In Jinja2 templates (`.html`)
+
+Use `{{ SITEURL }}/page-slug` — never hardcode `https://www.shovels.ai/`:
+```html
+<a href="{{ SITEURL }}/coverage">Coverage Dashboard</a>
+```
+
+### Exception: JSON-LD schema blocks
+
+URLs inside `<script type="application/ld+json">` are consumed directly by search engines and must be full absolute URLs. Leave these as `https://www.shovels.ai/...`.
+
+---
+
 ## Validation Checklist
 
 Before publishing content with FAQs:
@@ -317,6 +357,6 @@ housing starts or economic reports.
 
 ---
 
-**Last Updated**: February 17, 2026
+**Last Updated**: February 26, 2026
 **Maintained By**: Marketing Team
 **Questions?** Contact betty@shovels.ai

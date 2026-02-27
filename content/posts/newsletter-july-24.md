@@ -22,7 +22,7 @@ We have new partnerships. We have a public Discord server. On the data side, we'
 *   We'll be at the [Esri User Conference](https://www.esri.com/en-us/about/events/uc/overview) in San Diego next week! Reply or join our Discord (see below) if you can meet up. 
 *   How about Austin in March 2025? We need ideas for a SXSW panel. We'll be your data partner. [Submissions are due](https://panelpicker.sxsw.com/) on July 21.
 *   Speaking of reaching out, you can now [chat us up on Discord](https://discord.com/invite/Nypja3cKDx). We launched a public server! [Hop into our Discord](https://discord.com/invite/Nypja3cKDx) to chat with us about permits, contractors, data science, or the blink-182 summer concert tour (I went and it was EPIC 🤘)
-*   Our customers love our transparency. Here's a big heaping spoonful of it: We released a **very** detailed [Shovels Coverage Dashboard](https://www.shovels.ai/coverage). Now you can see exactly where we have (and don't have) building permit and contractor data! 
+*   Our customers love our transparency. Here's a big heaping spoonful of it: We released a **very** detailed [Shovels Coverage Dashboard]({filename}../pages/coverage.md). Now you can see exactly where we have (and don't have) building permit and contractor data! 
 *   Our nationwide AI-driven permit classifications are available to our database and report customers. These are REALLY GOOD. I know because our most skeptical customers said so. We'll roll them out to the API and web app shortly. 
 
 Quick reminder
@@ -76,7 +76,7 @@ Here are a few of the engineering tasks we finished last month. 
 Things to do with permits: make a coverage heat map
 ===================================================
 
-With mapping on my mind, and a new coverage dashboard, I want to specifically call out our [new permit coverage heat map](https://www.shovels.ai/coverage). 
+With mapping on my mind, and a new coverage dashboard, I want to specifically call out our [new permit coverage heat map]({filename}../pages/coverage.md). 
 
 We now have geo-coordinates on most of our permit addresses. We can bin these coordinates in 1 degree blocks to visualize our permit coverage. 
 
