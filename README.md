@@ -31,14 +31,12 @@ npm i
 ### Start Development Server
 
 ```bash
-# Start development server with live reload
-pelican -lr
-
-# Alternative using Makefile
 make devserver
 ```
 
-This compiles the site into `./output/` and hosts it at http://127.0.0.1:8000.
+This runs both the Pelican live-reload server and the Tailwind CSS watcher together, compiling the site into `./output/` and hosting it at http://127.0.0.1:8000.
+
+> **Note**: Running `pelican -lr` alone will not rebuild Tailwind CSS. Always use `make devserver` to ensure CSS changes are picked up.
 
 ### Building
 
