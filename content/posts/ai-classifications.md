@@ -15,7 +15,7 @@ At Shovels, we aim to simplify the complexity of permitting data through accurat
 
 ### How Our AI Classification System Works
 
-Our system categorizes permits into 22 clearly defined labels, including ADDITION, HVAC, SOLAR, and several other specific permit categories. (View the complete permit category list [here](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=528857659#gid=528857659)). Spoiler alert: more tags related to frequently requested projects will be coming soon, e.g. fiber, data center, public utility, to name a few. Got more ideas? Feel free to [leave some ideas here](https://forms.gle/JZBxzcJSM9cT6ca66).
+Our system categorizes permits into 22 clearly defined labels, including ADDITION, HVAC, SOLAR, and several other specific permit categories. (View the complete permit category list [here]({filename}../pages/data-dictionary.md)). Spoiler alert: more tags related to frequently requested projects will be coming soon, e.g. fiber, data center, public utility, to name a few. Got more ideas? Feel free to [leave some ideas here](https://forms.gle/JZBxzcJSM9cT6ca66).
 
 To maintain high accuracy, we collaborated with [Prolific](https://www.prolific.com/resources/how-shovels-found-high-skilled-annotators-for-data-labeling-with-prolific-s-specialist-participants), utilizing their specialized annotators to validate and refine our classifications.
 

@@ -318,7 +318,7 @@ slug: data-feed
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
       <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349" class="text-sm/6 font-semibold text-gray-900">Data Dictionary <span aria-hidden="true">→</span></a>
+      <a href="{filename}data-dictionary.md" class="text-sm/6 font-semibold text-gray-900">Data Dictionary <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>

@@ -19,7 +19,7 @@ In this tutorial, I’ll walk through the vast world of Shovels permit (and othe
 
 With as many fields available across so many different data types (**Permits**, **Contractors**, **Properties**, and more…), it’s a monumental task to keep track of which ones are where, and what they even mean. 
 
-That’s where the [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349) comes in. This publicly-available spreadsheet (check the multiple tabs across the bottom for more info) gives an exhaustive breakdown of all the fields, variables, and parameters that our dataset contains. 
+That’s where the [Data Dictionary]({filename}../pages/data-dictionary.md) comes in. This publicly-available spreadsheet (check the multiple tabs across the bottom for more info) gives an exhaustive breakdown of all the fields, variables, and parameters that our dataset contains. 
 
 For the purposes of this tutorial, I’ll include a sample permit payload for a single permit from Agawam, MA. This includes all available fields for permits, beyond just the ones included in the Shovels **Web App** or **API**. For definitions of any of these, check out the Data Dictionary.
 

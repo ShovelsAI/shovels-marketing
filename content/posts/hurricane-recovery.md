@@ -186,7 +186,7 @@ The Harvey pattern reveals a different opportunity: gradual, sustained demand fo
 
 **Action steps with Shovels data:**
 
-- Track permit volumes by [category (roofing, electrical, plumbing)](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=528857659#gid=528857659) to forecast material demand by product line
+- Track permit volumes by [category (roofing, electrical, plumbing)]({filename}../pages/data-dictionary.md) to forecast material demand by product line
 - Identify top contractors by permit volume to prioritize outreach, foster relationship building, then working with your distributors to accomplish this
 - Monitor permit processing times to predict when materials will actually be needed on site
 - Use geographic permit clustering to optimize distribution center locations and delivery routes
