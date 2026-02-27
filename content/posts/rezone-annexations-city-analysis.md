@@ -34,7 +34,7 @@ Most of the housing annexations we see are pretty straightforward. The city prov
 
 ## 2. Growth-Focused Infrastructure Partnerships
 
-Similar as in our analysis of [infrastructure development](https://re-zone.ai/blog/infrastructure_development_analysis), there's a recurring trend of partnering with utility districts to fund and manage infrastructure in newly annexed areas. Where municipalities might previously have shouldered these costs, we now see more cooperative agreements and special-purpose districts easing the financial and managerial load.
+Similar as in our analysis of infrastructure development, there's a recurring trend of partnering with utility districts to fund and manage infrastructure in newly annexed areas. Where municipalities might previously have shouldered these costs, we now see more cooperative agreements and special-purpose districts easing the financial and managerial load.
 
 For example, Houston authorized expansions of Bridgestone MUD and Harris County WCID No. 119, allowing each district to add acres for water, wastewater, and stormwater services. Rather than financing new infrastructure citywide, Houston's approach helps the utility districts absorb costs and oversee distribution.
 

@@ -28,7 +28,7 @@ On 3/18/25, 3 days after our last Local Land Use letter, the City Council passed
 
 However, housing developments must meet strict conditions, including at least 50% affordable units for 75 years (at 60%-90% AMI) and soundproofing to a maximum interior noise level of 45 dBA.
 
-[Learn more](https://re-zone.ai/decisions/public/20250318-Seattle-20.json?utm_source=re-zone.beehiiv.com&utm_medium=newsletter&utm_campaign=local-land-use-april)
+Learn more
 
 ## Austin Establishes "Life Science Use" Zoning Category
 
@@ -39,7 +39,7 @@ Life science real estate includes labs, R&D, and office space for biotech, pharm
 
 On March 27, 2025, Austin created "Life Science Use" as a new land use classification to simplify applications and promote development around the Dell Medical School.
 
-[Learn more](https://re-zone.ai/decisions/public/20250327-Austin-190.json?utm_source=re-zone.beehiiv.com&utm_medium=newsletter&utm_campaign=local-land-use-april)
+Learn more
 
 ## Long Beach Expands Inclusionary Zoning Citywide
 
@@ -48,7 +48,7 @@ On March 27, 2025, Austin created "Life Science Use" as a new land use classific
 
 Inclusionary Zoning mandates developers rent a percent of new units at below-market rates. On March 18, 2025, Long Beach expanded the requirement citywide: 12% of units in High Resource Submarkets must be affordable, with most at very low-income levels.
 
-[Learn more](https://re-zone.ai/decisions/public/20250318-LongBeach-21.json?utm_source=re-zone.beehiiv.com&utm_medium=newsletter&utm_campaign=local-land-use-april)
+Learn more
 
 ## Biggest Project of the Month: 1470 N. Hague Ave., Columbus, OH
 
@@ -57,7 +57,7 @@ Inclusionary Zoning mandates developers rent a percent of new units at below-mar
 
 This 29.2-acre, 460-unit spot rezoning is the largest we've tracked this month.
 
-[Learn more](https://re-zone.ai/decisions/public/20250324-Columbus-116.json?utm_source=re-zone.beehiiv.com&utm_medium=newsletter&utm_campaign=local-land-use-april)
+Learn more
 
 ## Conclusion
 

@@ -48,8 +48,6 @@ In an exclusive interview with Burhan Azeem, a Cambridge City Council member, he
 >
 > -- Burhan Azeem, Cambridge City Council
 
-*We've had a few conversations with student housing developers who are currently in the planning stage, but haven't seen any concrete projects yet. If you are planning on developing student housing in Cambridge, feel free to reach out and we'd love to interview you for our Q2 edition.*
-
 ![Cambridge, MA's new zoning map. All yellow areas allow multifamily development.]({static}/images/rezone/Cambridge_Zoning_Map.webp)
 *Cambridge, MA's new zoning map. All yellow areas allow multifamily development.*
 
@@ -74,7 +72,7 @@ The final project includes 277 student housing units with 865 bedrooms, designed
 
 ### Skye Tempe, Tempe, AZ
 
-We've covered Skye Tempe in our piece about [mixed-use zoning in Arizona](https://re-zone.ai/blog/mixed_use_arizona), and while it's not exclusively a student housing project, it's location suggests that it's at least in part.
+We've covered Skye Tempe in our piece about mixed-use zoning in Arizona, and while it's not exclusively a student housing project, it's location suggests that it's at least in part.
 
 The 27-story mixed-use development with 306 units and a 5,800 sqft ground-floor commercial space is the last piece of the puzzle that finishes an impressive transformation from parking lots to a vibrant downtown in Tempe.
 

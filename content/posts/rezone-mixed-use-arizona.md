@@ -25,7 +25,7 @@ In total that brings us to 1156 real-estate related city council decisions that 
 
 ## From Parking Lots to Vibrant Downtowns
 
-Sometimes a project kick starts a wave of new development. Sometimes it's the last piece that completes the puzzle. In the case of [Skye Tempe](https://re-zone.ai/decisions/20241001-Tempe-3.json), it's the latter. The 27-Story Mixed-Use development located at 780 S Myrtle Avenue, Tempe was approved for development in October and completes an astonishing area of transformation in the heart of Tempe.
+Sometimes a project kick starts a wave of new development. Sometimes it's the last piece that completes the puzzle. In the case of Skye Tempe, it's the latter. The 27-Story Mixed-Use development located at 780 S Myrtle Avenue, Tempe was approved for development in October and completes an astonishing area of transformation in the heart of Tempe.
 
 ![From Parking Lots to High-rise - Downtown Tempe, AZ transformation from 2016 to 2024]({static}/images/rezone/Tempe_From_Parking_lot_to_downtown.png)
 *From Parking Lots to High-rise - Downtown Tempe, AZ transformation from 2016 to 2024*
@@ -34,14 +34,14 @@ Sometimes a project kick starts a wave of new development. Sometimes it's the la
 
 ## Hawes Crossing
 
-[Hawes Crossing](https://re-zone.ai/decisions/20250127-Mesa-84.json) is a 1,100-acre master-planned community in Mesa, AZ. It includes everything from multifamily to mixed-use to office districts. Key developers include [High Street Residential](https://www.trammellcrow.com/newsroom/high-street-residential-breaks-ground-on-hawes-crossing-multifamily-project-in-mesa-arizona) as well as [Lennar](https://www.lennar.com/new-homes/arizona/phoenix/mesa/hawes-crossing/discovery). While the results are yet to be realized, it's encouraging to see the [planning department of Mesa](https://www.mesaaz.gov/Business-Development/Development-Services/Planning/Hawes-Crossing) put emphasis on walkability and mixed-use districts.
+Hawes Crossing is a 1,100-acre master-planned community in Mesa, AZ. It includes everything from multifamily to mixed-use to office districts. Key developers include [High Street Residential](https://www.trammellcrow.com/newsroom/high-street-residential-breaks-ground-on-hawes-crossing-multifamily-project-in-mesa-arizona) as well as [Lennar](https://www.lennar.com/new-homes/arizona/phoenix/mesa/hawes-crossing/discovery). While the results are yet to be realized, it's encouraging to see the [planning department of Mesa](https://www.mesaaz.gov/Business-Development/Development-Services/Planning/Hawes-Crossing) put emphasis on walkability and mixed-use districts.
 
 ![Zoning District Designations at Hawes Crossing, Mesa, AZ]({static}/images/rezone/Hawes_Crossing_Zoning_Plan.png)
 *Zoning District Designations at Hawes Crossing, Mesa, AZ*
 
 ## Cosanti Commons
 
-[Cosanti Commons](https://re-zone.ai/decisions/20241125-Scottsdale-22.json) is another mixed-use project by [High Street Residential](https://www.highstreetresidential.com/) in Scottsdale, AZ. The city council passed a minor amendment to the Scottsdale General Plan 2035 to change the land use designation of the 8.6-acre site from Commercial to Mixed-Use Neighborhoods, and rezoned the property to Planned Unit Development (PUD) with a Planned Shared Development Overlay (PSD) in December.
+Cosanti Commons is another mixed-use project by [High Street Residential](https://www.highstreetresidential.com/) in Scottsdale, AZ. The city council passed a minor amendment to the Scottsdale General Plan 2035 to change the land use designation of the 8.6-acre site from Commercial to Mixed-Use Neighborhoods, and rezoned the property to Planned Unit Development (PUD) with a Planned Shared Development Overlay (PSD) in December.
 
 The project includes 79,200 sqft of existing commercial buildings and a new 3-story, 345,000 sqft multifamily building with 196 units.
 
@@ -50,9 +50,9 @@ The project includes 79,200 sqft of existing commercial buildings and a new 3-st
 
 ## Noteworthy Mentions
 
-[Mesa Royale](https://re-zone.ai/decisions/20241202-Mesa-48.json) is a high-quality, two three-story building large, and 89 units big affordable housing project located in Mesa, AZ. [Chicanos Por La Causa](https://cplc.org/) (a non-profit) is the developer focused on creating a vibrant, pedestrian-friendly environment near the Mesa Light Rail Corridor.
+Mesa Royale is a high-quality, two three-story building large, and 89 units big affordable housing project located in Mesa, AZ. [Chicanos Por La Causa](https://cplc.org/) (a non-profit) is the developer focused on creating a vibrant, pedestrian-friendly environment near the Mesa Light Rail Corridor.
 
-[Stonebridge Live/Work](https://re-zone.ai/decisions/20241007-Mesa-33.json) development is an organically mixed-use project. The project will consist of three, two-story buildings with a total of 23,148 sqft. The units are designed to integrate residential living quarters with office or commercial spaces.
+Stonebridge Live/Work development is an organically mixed-use project. The project will consist of three, two-story buildings with a total of 23,148 sqft. The units are designed to integrate residential living quarters with office or commercial spaces.
 
 ## Zoning Code Modifications
 
@@ -60,7 +60,7 @@ While individual projects are impactful, the real difference makers usually come
 
 ## Adaptive Reuse Amendments to Mesa Zoning Ordinance
 
-The goal of [Ordinance No. 5904](https://re-zone.ai/decisions/20241209-Mesa-53.json) is to allow redevelopment of existing commercial, office, or mixed-use buildings into multifamily residential units. It's purpose is to revitalize underutilized or vacant buildings and increase housing options through the introduction of adaptive reuse permits which allow conversions without requiring conditional use permits, rezonings, or public hearings. According to estimates, this would include 10% of all commerical, industrial, and office buildings in Mesa.
+The goal of Ordinance No. 5904 is to allow redevelopment of existing commercial, office, or mixed-use buildings into multifamily residential units. It's purpose is to revitalize underutilized or vacant buildings and increase housing options through the introduction of adaptive reuse permits which allow conversions without requiring conditional use permits, rezonings, or public hearings. According to estimates, this would include 10% of all commerical, industrial, and office buildings in Mesa.
 
 **Eligibility Criteria:**
 
@@ -93,12 +93,10 @@ GPLETs are mainly used to encourage revitalizations through redevelopments. One 
 ![Former Chase Bank downtown branch]({static}/images/rezone/Chase_Bank_downtown_GPLET_Tucson_AZ.png)
 *Former Chase Bank downtown branch*
 
-Another example is the [Central Barrio Development](https://re-zone.ai/decisions/20240807-Tucson-30.json) at 941 N. Stone Ave, in Tucson, AZ. This mixed-use development consists of 18 residential units and a small retail space on the ground floor.
+Another example is the Central Barrio Development at 941 N. Stone Ave, in Tucson, AZ. This mixed-use development consists of 18 residential units and a small retail space on the ground floor.
 
 ## Conclusion
 
 While this is only a snapshot of mixed-use developments and initiatives in Arizona, it certainly shows that mixed-use projects are being built and are often supported by local legislation.
-
-If you are interested in more deep dives or want to dig deep into some decisions yourself, feel free to subscribe to ReZone or reach out to me personally (daniel@re-zone.ai).
 
 *For questions about this research, contact the Shovels team.*

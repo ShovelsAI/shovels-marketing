@@ -13,7 +13,7 @@ Image: /images/rezone/Infrastructure_Development_Illustration.png
 
 *This article was originally published on ReZone, <a href="/blog/shovels-acquires-rezone">now part of Shovels</a>.*
 
-At ReZone (acquired by Shovels), we track all real estate-related city decisions nationwide, categorizing them into 12 major areas. Last time, we focused on [affordable housing](https://re-zone.ai/blog/affordable_housing_city_council_analysis). Today, we focus on the category that was [given a C-](https://infrastructurereportcard.org/) by the American Society of Civil Engineers (ASCE) - infrastructure development.
+At ReZone (acquired by Shovels), we track all real estate-related city decisions nationwide, categorizing them into 12 major areas. Last time, we focused on affordable housing. Today, we focus on the category that was [given a C-](https://infrastructurereportcard.org/) by the American Society of Civil Engineers (ASCE) - infrastructure development.
 
 We've analyzed 3140 city decisions in the last 90 days, out of which 142 were related to infrastructure development. Here are the most significant trends:
 
@@ -49,7 +49,7 @@ Cities distinguish between unused land, surplus land, and exempt surplus land. M
 
 Thus, every few months, or sometimes once a year - depending on the city - we see a new ordinance passed that officially labels specific lots or acreage as surplus. Most of these properties are sold "as is, where is, with all faults", with deed restrictions, and reversionary clauses.
 
-Most of the land is being used in [affordable housing](https://re-zone.ai/blog/affordable_housing_city_council_analysis) projects, industrial and commercial redevelopments, or auctioned to the highest qualified bidder. If the buyer fails to develop or deviates from the intended public use, the city can use its reversionary clauses to recoup the property or a portion of costs. Often these parcels are oddly shaped, landlocked, or difficult to maintain.
+Most of the land is being used in affordable housing projects, industrial and commercial redevelopments, or auctioned to the highest qualified bidder. If the buyer fails to develop or deviates from the intended public use, the city can use its reversionary clauses to recoup the property or a portion of costs. Often these parcels are oddly shaped, landlocked, or difficult to maintain.
 
 Cities like Los Angeles, Dallas, El Paso, and Houston have embraced a "surplus land for public gain" strategy. While each jurisdiction's process and state statutes differ, the core approach is similar:
 

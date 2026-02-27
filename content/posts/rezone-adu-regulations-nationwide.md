@@ -42,8 +42,6 @@ ReZone (acquired by Shovels) tracks all City Council and Planning Department mee
 - Provide you a quick history lesson on ADUs, and
 - Give you full access to our dataset for further research
 
-*Note: This article is being updated continuously, so if you have any questions, additions, or comments, feel free to reach out.*
-
 ---
 
 ## Nationwide Insights
