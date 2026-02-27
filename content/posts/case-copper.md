@@ -31,7 +31,7 @@ However, manually sifting through permit records to uncover these nuanced opport
 
 Using Shovels' [Permit Search API](https://www.shovels.ai/api), Copper quickly pinpointed high-value leads based on specific permit activity. Here's how they leveraged Shovels:
 
-- **Focused Permit Categories:** Used Shovels' [permit category data](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=528857659#gid=528857659) to filter for homes undertaking solar installations, electrical upgrades, or setting up EV chargers.
+- **Focused Permit Categories:** Used Shovels' [permit category data]({filename}../pages/data-dictionary.md) to filter for homes undertaking solar installations, electrical upgrades, or setting up EV chargers.
 - **Geographic Targeting:** Narrowed the search to targeted zip codes, ensuring relevance and efficiency in their direct mailer outreach program.
 - **Property Type Filter:** Filter for single family and residential homes vs. commercial properties to accurately capture their target market.
 - **Detailed Contact Information:** Accessed homeowner details through [Shovels' Residents API](https://docs.shovels.ai/api-reference/addresses/get-residents) to personalize outreach effectively.

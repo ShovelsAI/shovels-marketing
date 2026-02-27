@@ -53,7 +53,7 @@ In real estate, timing is everything. Permit data gives you the foresight to act
 Utilities must ensure grid and system reliability in the face of dynamic growth. Permit data provides the granular, bottom-up inputs needed for precise, cost-effective infrastructure planning.
 
 - **Surgical Load Forecasting:** A single permit for a new data center or a 500-home subdivision provides a definitive, geolocated signal of future demand. Overlay these permits on your ArcGIS Utility Network to run load-flow models that pinpoint the exact substation or water main that requires an upgrade, optimizing capital deployment and preventing outages.
-- **Plan for Electrification:** Use [AI-classified permit tags](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=528857659#gid=528857659) to map the adoption of rooftop solar, EV chargers, and electric heat pumps at the address level. This allows you to proactively identify circuits at risk of instability from these new loads and make targeted upgrades before customers are impacted.
+- **Plan for Electrification:** Use [AI-classified permit tags]({filename}../pages/data-dictionary.md) to map the adoption of rooftop solar, EV chargers, and electric heat pumps at the address level. This allows you to proactively identify circuits at risk of instability from these new loads and make targeted upgrades before customers are impacted.
 
 ### **Seamless Parcel Integration via Regrid**
 

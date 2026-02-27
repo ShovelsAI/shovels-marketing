@@ -28,7 +28,7 @@ Here's how you do this with **Shovels Online**:
     - Option 1: Use **Shovels Online** to build a list of homeowners (by address) who installed HVAC systems in the last 10-15 years (based on the average lifespan of an HVAC system) in your market area. It's likely that HVACs installed in this window are due for replacement soon.
     - Option 2: The same as Option 1, but targeting homeowners with NO history of HVAC installations. Once you look into the data, you can see what heat sources they have, like gas furnaces, and adjust your pitch accordingly.
     - Option 3: Use **Shovels Online** to build a list of new construction projects to get in touch with the owners before they sell or move in.
-        - Our [AI Classifications](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349){:target="_blank"} make it very easy to add filters to your **Shovels Online** searches, to pinpoint the exact type of projects you need.
+        - Our [AI Classifications]({filename}../pages/data-dictionary.md) make it very easy to add filters to your **Shovels Online** searches, to pinpoint the exact type of projects you need.
     
 2. **Refine by Geography Segment**: Once you've built your **Search** with all the necessary filters, you can narrow the results by specific geography, down to zip code! Our system allows downloads of up to 1,000 records at a time, so we find that a bunch of smaller nets can be combined to catch all the results. 
 
