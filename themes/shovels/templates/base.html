@@ -89,7 +89,7 @@
     <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
   {% endif %}
   {% block og_image %}
-  <meta property="og:image" content="{% if article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
+  <meta property="og:image" content="{% if page and page.open_graph_image %}{{ SITEURL }}{{ page.open_graph_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif page and page.image %}{{ SITEURL }}{{ page.image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
   <meta property="og:image:alt" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -110,7 +110,7 @@
   {% else %}
     <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
   {% endif %}
-  <meta name="twitter:image" content="{% if article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
+  <meta name="twitter:image" content="{% if page and page.twitter_image %}{{ SITEURL }}{{ page.twitter_image }}{% elif article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif page and page.open_graph_image %}{{ SITEURL }}{{ page.open_graph_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif page and page.image %}{{ SITEURL }}{{ page.image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
   {% endblock head %}
 
   <!-- Favicons (low priority) -->
