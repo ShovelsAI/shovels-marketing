@@ -1,5 +1,5 @@
 Title: Building Permit Database
-Description: Explore nationwide building permits with advanced filtering and intelligent contractor matching through our powerful web software and modern interface.
+Description: Explore nationwide building permits, contractors, and government decisions with advanced filtering and intelligent matching through our powerful web software and modern interface.
 slug: permit-database
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -234,6 +234,12 @@ slug: permit-database
             <p class="text-base/7 text-gray-600">Yes. You can download permit and contractor search results to CSV with a single click (maximum 1,000 records per export), and export individual profiles to PDF. For larger datasets, segment by geography or use the API which has no result limits.</p>
           </dd>
         </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What is Decisions data in Shovels Online?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Decisions data provides intelligence from city council meetings and planning board discussions, including zoning changes, development approvals, and project timelines. This gives you visibility into projects months before permits are filed, helping you identify opportunities earlier than competitors who only track permit activity.</p>
+          </dd>
+        </div>
       </dl>
     </div>
   </div>
@@ -329,6 +335,14 @@ slug: permit-database
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. You can download permit and contractor search results to CSV with a single click (maximum 1,000 records per export), and export individual profiles to PDF. For larger datasets, segment by geography or use the API which has no result limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Decisions data in Shovels Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Decisions data provides intelligence from city council meetings and planning board discussions, including zoning changes, development approvals, and project timelines. This gives you visibility into projects months before permits are filed, helping you identify opportunities earlier than competitors who only track permit activity."
       }
     }
   ]

@@ -1,5 +1,5 @@
 Title: Telecommunications Infrastructure Intelligence | Building Permit Data for Telecom
-Description: Optimize fiber deployment and network expansion using building permit data. Track competitor activity, identify high-growth markets, and streamline telecom infrastructure planning across 2,000+ jurisdictions.
+Description: Optimize fiber deployment and network expansion using building permit and city council data. Track competitor activity, franchise agreements, and broadband initiatives months before permits are filed across 2,000+ jurisdictions.
 slug: telecommunications
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -247,7 +247,83 @@ slug: telecommunications
 </div>
 
 <div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can Shovels help track telecom infrastructure before permits are filed?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels Decisions data provides intelligence from city council meetings and planning boards where broadband expansion, franchise agreements, and right-of-way permissions are discussed. This gives you visibility into telecom infrastructure projects months before permits are filed, allowing you to plan network deployment and identify favorable markets earlier than competitors.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What city council data does Shovels provide for telecom companies?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels tracks franchise agreement discussions, broadband expansion initiatives, right-of-way permit debates, and BEAD funding allocation priorities from city councils and planning boards nationwide. This policy-layer intelligence helps you identify municipalities prioritizing internet infrastructure and understand which projects have council backing.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels identify permit-friendly jurisdictions?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels analyzes historical approval timelines, approval rates, and construction patterns across thousands of jurisdictions. This intelligence helps you route fiber deployment around difficult authorities and streamline your infrastructure planning by focusing on jurisdictions with faster, more predictable permit processes.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels help monitor competitor fiber deployments?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like AT&T and Verizon to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can Shovels help track telecom infrastructure before permits are filed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels Decisions data provides intelligence from city council meetings and planning boards where broadband expansion, franchise agreements, and right-of-way permissions are discussed. This gives you visibility into telecom infrastructure projects months before permits are filed, allowing you to plan network deployment and identify favorable markets earlier than competitors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What city council data does Shovels provide for telecom companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels tracks franchise agreement discussions, broadband expansion initiatives, right-of-way permit debates, and BEAD funding allocation priorities from city councils and planning boards nationwide. This policy-layer intelligence helps you identify municipalities prioritizing internet infrastructure and understand which projects have council backing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Shovels identify permit-friendly jurisdictions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels analyzes historical approval timelines, approval rates, and construction patterns across thousands of jurisdictions. This intelligence helps you route fiber deployment around difficult authorities and streamline your infrastructure planning by focusing on jurisdictions with faster, more predictable permit processes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Shovels help monitor competitor fiber deployments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like AT&T and Verizon to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="bg-gray-100">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
       <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>

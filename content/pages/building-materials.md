@@ -1,5 +1,5 @@
 Title: Leads for building materials and equipment suppliers and building product manufacturers
-Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, CRM enhancement, and fraud prevention.
+Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, project viability assessment, CRM enhancement, and fraud prevention.
 slug: building-materials
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -155,6 +155,12 @@ slug: building-materials
             <p class="text-base/7 text-gray-600">Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter.</p>
           </dd>
         </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can Shovels help assess project viability?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels tracks city council decisions on major development projects, helping you distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation. This Decisions data allows you to prioritize sales efforts on projects more likely to reach completion.</p>
+          </dd>
+        </div>
       </dl>
     </div>
   </div>
@@ -204,6 +210,14 @@ slug: building-materials
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can Shovels help assess project viability?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels tracks city council decisions on major development projects, helping you distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation. This Decisions data allows you to prioritize sales efforts on projects more likely to reach completion."
       }
     }
   ]

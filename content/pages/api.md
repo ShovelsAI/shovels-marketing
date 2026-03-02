@@ -1,5 +1,5 @@
 Title: Building Contractor and Permit API
-Description: Access the first signal of construction through our API. Shovel-ready intelligence from over 2,000 jurisdictions nationwide, delivered via REST API with enhanced geo-search and lightning-fast response times.
+Description: Access the first signal of construction through our API. Building permits, contractors, and government decisions from 2,000+ jurisdictions nationwide, delivered via REST API with enhanced geo-search and lightning-fast response times.
 slug: api
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -236,6 +236,12 @@ slug: api
             <p class="text-base/7 text-gray-600">Yes. Shovels offers flexible licensing terms designed to give you the freedom to reuse and even resell API output without lengthy legal negotiations.</p>
           </dd>
         </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does the Shovels API include government decision data?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. The API provides access to local government meeting intelligence, including city council decisions, planning board approvals, and zoning changes. This Decisions data gives you visibility months before permits are filed, enabling you to identify projects at the earliest stage of development.</p>
+          </dd>
+        </div>
       </dl>
     </div>
   </div>
@@ -328,6 +334,14 @@ slug: api
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Shovels offers flexible licensing terms designed to give you the freedom to reuse and even resell API output without lengthy legal negotiations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Shovels API include government decision data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The API provides access to local government meeting intelligence, including city council decisions, planning board approvals, and zoning changes. This Decisions data gives you visibility months before permits are filed, enabling you to identify projects at the earliest stage of development."
       }
     }
   ]
