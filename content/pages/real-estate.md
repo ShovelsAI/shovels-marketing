@@ -1,5 +1,5 @@
 Title: Find the best building sites using building permits
-Description: Improve site selection with our Neighborhood Vitality Index (NVI) and permit approval speed metrics to identify the most actively improving areas.
+Description: Improve site selection with our Neighborhood Vitality Index (NVI), city council decision tracking, and permit approval metrics to identify actively improving areas and predict development trends.
 slug: real-estate
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -126,6 +126,52 @@ slug: real-estate
       </div>
     </dl>
   </div>
+  <div class="mx-auto mt-16 max-w-4xl px-6 sm:mt-20 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h3 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">The Policy Layer Behind NVI</h3>
+      <p class="mt-6 text-lg/8 text-gray-300">Building permit activity tells you what's happening now. City council decisions tell you what's coming next. Our Decisions data tracks zoning changes, development approvals, and housing policy discussions that predict where permit density will increase. Identify emerging development zones months before the first permit is filed.</p>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-8">
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Spot upzoning discussions.
+          </dt>
+          <dd class="inline text-gray-300">Track upzoning discussions before land values adjust and identify policy changes that enable new development.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Assess political viability.
+          </dt>
+          <dd class="inline text-gray-300">Understand which large developments have council support versus community opposition before committing capital.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Identify pro-development councils.
+          </dt>
+          <dd class="inline text-gray-300">Find cities with councils that support growth versus restrictive policies that limit development opportunities.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Track affordable housing mandates.
+          </dt>
+          <dd class="inline text-gray-300">Monitor inclusionary zoning and affordable housing requirements that affect project economics and feasibility.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
 </div>
 <div class="overflow-hidden bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -171,6 +217,82 @@ slug: real-estate
     </div>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How do city council decisions predict permit density?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">City council decisions on zoning changes, development approvals, and housing policy create the conditions for future permit activity. Our Decisions data tracks upzoning discussions, pro-development council votes, and policy changes that signal where permit density will increase—giving you visibility into emerging development zones months before the first permit is filed.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels track upzoning discussions and development approvals?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels Decisions data monitors city council meetings for upzoning discussions, zoning changes, and development approvals across municipalities. This helps you spot policy changes before land values adjust and assess the political viability of large developments before committing capital.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What is the Neighborhood Vitality Index (NVI)?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">NVI is a metric calculated by Shovels through partnerships with Esri and Regrid. It compares the relative permit density of home improvement projects by census tract in every major metropolitan area, helping you identify the most actively improving neighborhoods for real estate development and investment.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can I identify cities with pro-development policies?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels tracks city council voting patterns, housing policy discussions, and development approval trends to distinguish between councils that support growth and those with restrictive policies. This intelligence helps you focus on markets where development projects are more likely to receive approval and face fewer regulatory obstacles.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do city council decisions predict permit density?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "City council decisions on zoning changes, development approvals, and housing policy create the conditions for future permit activity. Our Decisions data tracks upzoning discussions, pro-development council votes, and policy changes that signal where permit density will increase—giving you visibility into emerging development zones months before the first permit is filed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Shovels track upzoning discussions and development approvals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels Decisions data monitors city council meetings for upzoning discussions, zoning changes, and development approvals across municipalities. This helps you spot policy changes before land values adjust and assess the political viability of large developments before committing capital."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Neighborhood Vitality Index (NVI)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NVI is a metric calculated by Shovels through partnerships with Esri and Regrid. It compares the relative permit density of home improvement projects by census tract in every major metropolitan area, helping you identify the most actively improving neighborhoods for real estate development and investment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I identify cities with pro-development policies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels tracks city council voting patterns, housing policy discussions, and development approval trends to distinguish between councils that support growth and those with restrictive policies. This intelligence helps you focus on markets where development projects are more likely to receive approval and face fewer regulatory obstacles."
+      }
+    }
+  ]
+}
+</script>
+
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>

@@ -1,5 +1,5 @@
 Title: Building Permit Data for Property Tech Software
-Description: Enhance your property tech platform with clean, AI-processed building permit data. Access contractor history, service areas, and decision maker contact information through our API or database.
+Description: Enhance your property tech platform with clean, AI-processed building permit and pre-permit decision data. Access contractor history, service areas, project pipeline intelligence, and decision maker contact information through our API.
 slug: software
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -146,9 +146,94 @@ slug: software
         </dt>
         <dd class="inline">See firmographic data for every building contractor in the US. Get access to company size, revenue, and more.</dd>
       </div>
+      <div class="relative pl-9">
+        <dt class="inline font-semibold text-gray-900">
+          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+          </svg>
+          Pre-permit intelligence.
+        </dt>
+        <dd class="inline">Access city council decision data to identify projects months before permits are filed. Help your customers see project pipeline earlier than competitors.</dd>
+      </div>
     </dl>
   </div>
 </div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels provide pre-permit intelligence data?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels Decisions data provides access to city council meetings and planning board discussions where projects are approved months before permits are filed. This pre-permit intelligence helps your customers identify project pipelines earlier than competitors, giving them a significant timing advantage.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can my customers see project pipeline earlier with Shovels?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">By integrating Shovels Decisions data into your platform, your customers can track development approvals, zoning changes, and project discussions at the city council level. This gives them visibility into upcoming construction projects months before permits are filed, allowing them to engage prospects earlier in the decision-making process.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What contractor information does Shovels provide for software companies?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels provides detailed contractor profiles including firmographic data, revenue estimates, service areas, employee contact information, and permit history. Our data is regularly updated from millions of new permit records each month, ensuring your software platform has access to accurate, current contractor intelligence.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels data integrate with property tech platforms?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Yes. Shovels offers API access and database delivery options to integrate building permit, contractor, and government decision data into your platform. Our clean, AI-processed data includes geographic search capabilities, advanced filtering, and decision maker contact information to enhance your property tech software.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD structured data for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Shovels provide pre-permit intelligence data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels Decisions data provides access to city council meetings and planning board discussions where projects are approved months before permits are filed. This pre-permit intelligence helps your customers identify project pipelines earlier than competitors, giving them a significant timing advantage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can my customers see project pipeline earlier with Shovels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By integrating Shovels Decisions data into your platform, your customers can track development approvals, zoning changes, and project discussions at the city council level. This gives them visibility into upcoming construction projects months before permits are filed, allowing them to engage prospects earlier in the decision-making process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What contractor information does Shovels provide for software companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels provides detailed contractor profiles including firmographic data, revenue estimates, service areas, employee contact information, and permit history. Our data is regularly updated from millions of new permit records each month, ensuring your software platform has access to accurate, current contractor intelligence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Shovels data integrate with property tech platforms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shovels offers API access and database delivery options to integrate building permit, contractor, and government decision data into your platform. Our clean, AI-processed data includes geographic search capabilities, advanced filtering, and decision maker contact information to enhance your property tech software."
+      }
+    }
+  ]
+}
+</script>
+
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>

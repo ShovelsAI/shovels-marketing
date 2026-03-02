@@ -1,5 +1,5 @@
 Title: Leads for building materials and equipment suppliers and building product manufacturers
-Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, CRM enhancement, and fraud prevention.
+Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, project viability assessment, CRM enhancement, and fraud prevention.
 slug: building-materials
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -93,7 +93,7 @@ slug: building-materials
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
         <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
           <h3 class="text-lg font-medium text-gray-900">Detailed contractor profiles</h3>
-          <p class="mt-2 text-sm text-gray-500">Our contractor profiles include revenue, permit history, and service area detail to help you qualify leads, compute credit risk, and close more sales.</p>
+          <p class="mt-2 text-base/7 text-gray-600">Our contractor profiles include revenue, permit history, and service area detail to help you qualify leads, compute credit risk, and close more sales.</p>
         </div>
         <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
           <img src="{static}/images/contractor-profile.png" alt="Shovels offers robust contractor profiles." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
@@ -102,10 +102,19 @@ slug: building-materials
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
         <div class="mt-6 lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:mt-0 xl:col-span-4 xl:col-start-9">
           <h3 class="text-lg font-medium text-gray-900">Employee contact information</h3>
-          <p class="mt-2 text-sm text-gray-500">We provide employee contact information to help your teams reach out to the right contacts.</p>
+          <p class="mt-2 text-base/7 text-gray-600">We provide employee contact information to help your teams reach out to the right contacts.</p>
         </div>
         <div class="flex-auto lg:col-span-7 lg:col-start-1 lg:row-start-1 xl:col-span-8">
           <img src="{static}/images/contractor-employees.png" alt="Shovels provides contractor employee data." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
+        </div>
+      </div>
+      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
+        <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
+          <h3 class="text-lg font-medium text-gray-900">Project viability signals</h3>
+          <p class="mt-2 text-base/7 text-gray-600">Track city council decisions on major development projects. Distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation.</p>
+        </div>
+        <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
+          <img src="{static}/images/demo-online-decision.png" alt="City council decisions showing project viability." class="aspect-[5/2] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg">
         </div>
       </div>
     </div>
@@ -144,6 +153,12 @@ slug: building-materials
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Which companies use Shovels for building materials sales?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
             <p class="text-base/7 text-gray-600">Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter.</p>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can Shovels help assess project viability?</dt>
+          <dd class="mt-4 lg:col-span-7 lg:mt-0">
+            <p class="text-base/7 text-gray-600">Shovels tracks city council decisions on major development projects, helping you distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation. This Decisions data allows you to prioritize sales efforts on projects more likely to reach completion.</p>
           </dd>
         </div>
       </dl>
@@ -195,6 +210,14 @@ slug: building-materials
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can Shovels help assess project viability?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shovels tracks city council decisions on major development projects, helping you distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation. This Decisions data allows you to prioritize sales efforts on projects more likely to reach completion."
       }
     }
   ]
