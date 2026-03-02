@@ -108,6 +108,15 @@ slug: building-materials
           <img src="{static}/images/contractor-employees.png" alt="Shovels provides contractor employee data." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
         </div>
       </div>
+      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
+        <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
+          <h3 class="text-lg font-medium text-gray-900">Project viability signals</h3>
+          <p class="mt-2 text-base/7 text-gray-600">Track city council decisions on major development projects. Distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation.</p>
+        </div>
+        <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
+          <img src="{static}/images/demo-online-decision.png" alt="City council decisions showing project viability." class="aspect-[5/2] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg">
+        </div>
+      </div>
     </div>
   </div>
 </div>
