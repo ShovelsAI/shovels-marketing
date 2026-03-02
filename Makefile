@@ -1,5 +1,6 @@
-PY?=
-PELICAN?=pelican
+VENV=$(CURDIR)/.venv
+PY=$(VENV)/bin/python3
+PELICAN?=$(VENV)/bin/pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -48,33 +49,38 @@ help:
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
 
-html:
+venv: $(VENV)/bin/pelican
+$(VENV)/bin/pelican:
+	uv venv $(VENV)
+	uv pip install -r requirements.txt
+
+html: venv
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
-	python3 generate_404.py
+	$(PY) generate_404.py
 
 clean:
 	[ ! -d "$(OUTPUTDIR)" ] || rm -rf "$(OUTPUTDIR)"
 
-regenerate:
+regenerate: venv
 	"$(PELICAN)" -r "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-serve:
+serve: venv
 	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-serve-global:
+serve-global: venv
 	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b $(SERVER)
 
-devserver:
+devserver: venv
 	npm run build:css & "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-devserver-global:
+devserver-global: venv
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -b 0.0.0.0
 
-publish:
+publish: venv
 	npm run build:css:prod
-	pelican content -o docs -s publishconf.py
+	"$(PELICAN)" content -o docs -s publishconf.py
 	cp themes/shovels/static/css/output.css docs/output.css
-	python3 generate_404.py
+	$(PY) generate_404.py
 	echo "www.shovels.ai" > docs/CNAME
 	git add .
 	git commit -am "publishing"
@@ -85,4 +91,4 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
-.PHONY: html help clean regenerate serve serve-global devserver publish github
+.PHONY: html help clean regenerate serve serve-global devserver publish github venv
