@@ -79,7 +79,9 @@ slug: cli
           <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--geo-id 33139 \ <span class="text-gray-500"># Miami Beach, FL</span></p>
           <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-from 2024-01-01 \</p>
           <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-to 2024-12-31 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags roofing --include-count</p>
+          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags roofing --include-count \</p>
+          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--limit 1 | jq '.meta.total_count.value'</p>
+          <p class="text-shovels-secondary mt-1">490</p>
         </div>
       </div>
 
@@ -107,7 +109,11 @@ slug: cli
           <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-from 2024-01-01 \</p>
           <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-to 2024-12-31 \</p>
           <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags electrical --limit 100 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;| jq -r '.data[] | [.name, .total_permits] | @csv'</p>
+          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;| jq -r '.data[] | [.name, .permit_count] | @csv'</p>
+          <p class="text-gray-300 mt-1">"KENNETH TUMLINSON",554</p>
+          <p class="text-gray-300">"JOSEPH H MARTINEZ",85</p>
+          <p class="text-gray-300">"CDX ELECTRICAL SERVICES",19</p>
+          <p class="text-gray-500">...</p>
         </div>
       </div>
 
@@ -227,7 +233,7 @@ slug: cli
             <p>shovels contractors search --geo-id CA \</p>
             <p>&nbsp;&nbsp;--permit-from 2024-01-01 --permit-to 2024-12-31 \</p>
             <p>&nbsp;&nbsp;--tags solar --limit all \</p>
-            <p>&nbsp;&nbsp;| jq -r '.data[] | [.name, .phone, .total_permits] | @csv' \</p>
+            <p>&nbsp;&nbsp;| jq -r '.data[] | [.name, .phone, .permit_count] | @csv' \</p>
             <p>&nbsp;&nbsp;> solar_contractors_ca.csv</p>
           </div>
         </div>
