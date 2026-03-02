@@ -30,9 +30,6 @@
 <meta property="og:image:height" content="630" />
 {% endif %}
 
-<!-- HubSpot Form Embed Script -->
-<script src="https://js.hsforms.net/forms/embed/48146409.js" defer></script>
-
 {% endblock %}
 
 {% block structured_data %}
@@ -94,9 +91,25 @@
         <!-- Newsletter Subscribe Form -->
         <h3 class="text-2xl font-semibold mb-2 leading-tight" style="color: #01654D;">Subscribe to our newsletter</h3>
 
-        <!-- HubSpot Form Container -->
-        <div class="hs-form-frame" data-region="na1" data-form-id="ffcfa1b4-f1ad-47ce-827e-b350343b4751"
-          data-portal-id="48146409"></div>
+        <!-- Custom Newsletter Form -->
+        <form id="newsletter-sidebar-form" class="newsletter-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01654D] focus:border-[#01654D] mb-2"
+          >
+          <button
+            type="submit"
+            class="w-full px-4 py-2 text-sm font-semibold text-shovels-primary bg-white border-2 border-shovels-primary rounded-md hover:text-emerald-400 hover:border-emerald-400 transition-all duration-200"
+          >
+            Subscribe
+          </button>
+        </form>
+
+        <!-- Success/Error Messages -->
+        <div id="newsletter-message" class="mt-2 text-sm" style="display: none;"></div>
       </div>
     </aside>
 
@@ -159,77 +172,89 @@
   </div>
 </div>
 
-<style>
-  /* Force HubSpot form container and iframe to span full sidebar width, left-justified */
-  .hs-form-frame {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: left !important;
-    display: block !important;
-  }
-
-  .hs-form-frame iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 100% !important;
-    display: block !important;
-  }
-
-  .hs-form-frame form,
-  .hs-form-frame .hs-form-field,
-  .hs-form-frame .hs-input,
-  .hs-form-frame input[type="email"],
-  .hs-form-frame input[type="text"],
-  .hs-form-frame .hs-button,
-  .hs-form-frame input[type="submit"],
-  .hs-form-frame button[type="submit"] {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-</style>
-
 <script>
-  // Watch for HubSpot iframe to load, then force full width
-  function forceHubSpotFormWidth() {
-    const formFrame = document.querySelector('.hs-form-frame');
-    if (!formFrame) return;
+  // HubSpot Forms API Submission
+  (function() {
+    const form = document.querySelector('#newsletter-sidebar-form');
+    const messageDiv = document.querySelector('#newsletter-message');
 
-    const observer = new MutationObserver(() => {
-      // Style any iframes that HubSpot injects
-      const iframes = formFrame.querySelectorAll('iframe');
-      iframes.forEach(iframe => {
-        iframe.style.width = '100%';
-        iframe.style.maxWidth = '100%';
-        iframe.style.minWidth = '100%';
-        iframe.style.display = 'block';
-      });
+    if (!form) return;
 
-      // Also style any direct form elements (non-iframe embed)
-      const form = formFrame.querySelector('form');
-      if (form) {
-        form.style.width = '100%';
-        form.style.maxWidth = '100%';
-        form.style.margin = '0';
+    // Get HubSpot tracking cookie
+    function getCookie(name) {
+      const value = "; " + document.cookie;
+      const parts = value.split("; " + name + "=");
+      if (parts.length === 2) {
+        return parts.pop().split(";").shift();
       }
-      formFrame.querySelectorAll('input, button, .hs-input, .hs-button, .hs-form-field').forEach(el => {
-        el.style.width = '100%';
-        el.style.maxWidth = '100%';
-        el.style.boxSizing = 'border-box';
-      });
+    }
+
+    // Build HubSpot context
+    function buildHSContext() {
+      return {
+        hutk: getCookie('hubspotutk'),
+        pageUri: window.location.href,
+        pageName: document.title
+      };
+    }
+
+    // Show message to user
+    function showMessage(message, isError = false) {
+      messageDiv.textContent = message;
+      messageDiv.style.display = 'block';
+      messageDiv.style.color = isError ? '#DC2626' : '#059669';
+      messageDiv.style.fontWeight = '500';
+    }
+
+    // Submit form to HubSpot
+    async function submitToHubSpot(email) {
+      const portalId = '48146409';
+      const formGuid = 'ffcfa1b4-f1ad-47ce-827e-b350343b4751';
+      const url = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
+
+      const data = {
+        submittedAt: Date.now(),
+        fields: [
+          {
+            name: 'email',
+            value: email
+          }
+        ],
+        context: buildHSContext()
+      };
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          showMessage(result.inlineMessage || 'Thanks for subscribing!');
+          form.reset();
+        } else {
+          showMessage('Something went wrong. Please try again.', true);
+        }
+      } catch (error) {
+        showMessage('Connection error. Please try again.', true);
+      }
+    }
+
+    // Form submit handler
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const emailInput = form.querySelector('input[name="email"]');
+      const email = emailInput.value.trim();
+
+      if (email) {
+        submitToHubSpot(email);
+      }
     });
-
-    observer.observe(formFrame, { childList: true, subtree: true });
-  }
-
-  window.addEventListener('load', forceHubSpotFormWidth);
-  document.addEventListener('DOMContentLoaded', forceHubSpotFormWidth);
-  // Retry in case HubSpot loads late
-  setTimeout(forceHubSpotFormWidth, 500);
-  setTimeout(forceHubSpotFormWidth, 1500);
-  setTimeout(forceHubSpotFormWidth, 3000);
+  })();
 </script>
 
 {% endblock %}
