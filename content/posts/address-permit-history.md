@@ -57,7 +57,7 @@ Without getting into either the weeds or our secret sauce, we have three ongoing
 
 1. Improve the training and quality of our proprietary LLMs (read more about how we built these [here](https://www.shovels.ai/blog/unlocking-shovelss-potential-with-prolific/)) — this will help us improve the timeliness of our delivery. The faster we can get the permits cleaned and our datasets updated, the fresher the insights. 
 2. Enhance our relationships with local jurisdiction permitting offices to increase digitization with direct records requests — this will help us target specific jurisdictions with lower-than-usual digitization rates. 
-3. Improve our personal transparency with what data we have and what we don’t — check out our [Coverage Dashboard](https://shovels.metabaseapp.com/public/dashboard/0573503d-88ac-4ba4-a723-346b55de482b?tab=36-summary&state=&city=&county_or_jurisdiction=&zip_code=&date_filter=) to see a high-level view of what we have today. 
+3. Improve our personal transparency with what data we have and what we don't — check out our [Coverage Dashboard]({filename}../pages/coverage.md) to see a high-level view of what we have today. 
 
 With every data refresh (which will increase to weekly soon!), we strive to get closer and closer to the truly available permit data ceiling. More permits are filed every day, and more jurisdictions increase their digitization efforts, so that end is in sight. 
 

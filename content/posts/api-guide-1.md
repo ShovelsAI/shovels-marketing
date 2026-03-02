@@ -35,7 +35,7 @@ Let's look at the building activity filter first. We call types of activity *tag
 
 We offer 33 unique tags as of this publication date in October 2023. That number will increase over time! 
 
-To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit#gid=1842205445){:target="_blank"} . We'll try to keep this updated. 
+To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the [Data Dictionary]({filename}../pages/data-dictionary.md) . We'll try to keep this updated. 
 
 To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the [Get All Available Tags](https://docs.shovels.ai/api-reference/#operation/List/operation/get_all_available_tags_v1_list_tags_get){:target="_blank"}  endpoint.
 

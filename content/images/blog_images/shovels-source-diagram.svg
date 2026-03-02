@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="125%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0d1b2a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- White background -->
+  <rect width="960" height="360" fill="#ffffff"/>
+
+  <!-- Green header bar -->
+  <rect x="0" y="0" width="960" height="56" fill="#006b45"/>
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="0.5">Where Does Shovels Data Come From?</text>
+
+  <!-- ── Municipality box ── -->
+  <rect x="24" y="110" width="140" height="150" rx="8" fill="#f0ede4" filter="url(#shadow)"/>
+  <text x="94" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b2a">Municipality</text>
+  <line x1="44" y1="150" x2="144" y2="150" stroke="#d8d4c8" stroke-width="1"/>
+  <text x="94" y="170" text-anchor="middle" font-size="11" fill="#444e58">Permit clerk</text>
+  <text x="94" y="186" text-anchor="middle" font-size="11" fill="#444e58">files record</text>
+  <text x="94" y="210" text-anchor="middle" font-size="11" fill="#8a8880">20,000+</text>
+  <text x="94" y="226" text-anchor="middle" font-size="11" fill="#8a8880">jurisdictions</text>
+
+  <!-- Arrow 1 -->
+  <line x1="166" y1="185" x2="196" y2="185" stroke="#b8b4a8" stroke-width="2"/>
+  <polygon points="194,179 206,185 194,191" fill="#b8b4a8"/>
+
+  <!-- ── Provided by jurisdiction ── -->
+  <rect x="208" y="88" width="164" height="194" rx="8" fill="#e8c840" filter="url(#shadow)"/>
+  <text x="290" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b2a">Provided by</text>
+  <text x="290" y="133" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b2a">jurisdiction</text>
+  <line x1="228" y1="144" x2="352" y2="144" stroke="#c8a820" stroke-width="1"/>
+  <text x="290" y="163" text-anchor="middle" font-size="11" fill="#3a3000">Basic cleanup only</text>
+  <rect x="228" y="175" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.45"/>
+  <text x="290" y="190" text-anchor="middle" font-size="11" fill="#0d1b2a">description</text>
+  <rect x="228" y="203" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.45"/>
+  <text x="290" y="218" text-anchor="middle" font-size="11" fill="#0d1b2a">subtype</text>
+  <rect x="228" y="231" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.45"/>
+  <text x="290" y="246" text-anchor="middle" font-size="11" fill="#0d1b2a">permit_number</text>
+
+  <!-- Arrow 2 -->
+  <line x1="374" y1="185" x2="404" y2="185" stroke="#b8b4a8" stroke-width="2"/>
+  <polygon points="402,179 414,185 402,191" fill="#b8b4a8"/>
+
+  <!-- ── Enhanced by Shovels ── -->
+  <rect x="416" y="88" width="164" height="194" rx="8" fill="#e8c840" filter="url(#shadow)"/>
+  <text x="498" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b2a">Enhanced by</text>
+  <text x="498" y="133" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b2a">Shovels</text>
+  <line x1="436" y1="144" x2="560" y2="144" stroke="#c8a820" stroke-width="1"/>
+  <text x="498" y="163" text-anchor="middle" font-size="11" fill="#3a3000">Enriched + standardized</text>
+  <rect x="436" y="175" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.45"/>
+  <text x="498" y="190" text-anchor="middle" font-size="11" fill="#0d1b2a">file_date</text>
+  <rect x="436" y="203" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.45"/>
+  <text x="498" y="218" text-anchor="middle" font-size="11" fill="#0d1b2a">status</text>
+  <rect x="436" y="231" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.45"/>
+  <text x="498" y="246" text-anchor="middle" font-size="11" fill="#0d1b2a">lat / long</text>
+
+  <!-- Arrow 3 -->
+  <line x1="582" y1="185" x2="612" y2="185" stroke="#b8b4a8" stroke-width="2"/>
+  <polygon points="610,179 622,185 610,191" fill="#b8b4a8"/>
+
+  <!-- ── Created by Shovels ── -->
+  <rect x="624" y="88" width="164" height="194" rx="8" fill="#006b45" filter="url(#shadow)"/>
+  <text x="706" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Created by</text>
+  <text x="706" y="133" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Shovels</text>
+  <line x1="644" y1="144" x2="768" y2="144" stroke="#005038" stroke-width="1"/>
+  <text x="706" y="163" text-anchor="middle" font-size="11" fill="#c8e8d8">Proprietary intelligence</text>
+  <rect x="644" y="175" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.15"/>
+  <text x="706" y="190" text-anchor="middle" font-size="11" fill="#ffffff">permit_category</text>
+  <rect x="644" y="203" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.15"/>
+  <text x="706" y="218" text-anchor="middle" font-size="11" fill="#ffffff">solar / adu flags</text>
+  <rect x="644" y="231" width="124" height="22" rx="5" fill="#fff" fill-opacity="0.15"/>
+  <text x="706" y="246" text-anchor="middle" font-size="11" fill="#ffffff">contractor_group_id</text>
+
+  <!-- Arrow 4 -->
+  <line x1="790" y1="185" x2="820" y2="185" stroke="#b8b4a8" stroke-width="2"/>
+  <polygon points="818,179 830,185 818,191" fill="#b8b4a8"/>
+
+  <!-- ── You ── -->
+  <rect x="832" y="110" width="104" height="150" rx="8" fill="#f0ede4" filter="url(#shadow)"/>
+  <text x="884" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b2a">You</text>
+  <line x1="852" y1="150" x2="916" y2="150" stroke="#d8d4c8" stroke-width="1"/>
+  <text x="884" y="171" text-anchor="middle" font-size="11" fill="#444e58">Dashboard</text>
+  <text x="884" y="189" text-anchor="middle" font-size="11" fill="#444e58">API</text>
+  <text x="884" y="207" text-anchor="middle" font-size="11" fill="#444e58">CSV Export</text>
+  <text x="884" y="225" text-anchor="middle" font-size="11" fill="#444e58">Enterprise</text>
+
+
+</svg>

@@ -19,7 +19,7 @@ Parcel data provides essential details about land ownership, boundaries, and usa
 
 ### **Joining Shovels and Regrid Data**
 
-Shovels maintains a [standardized schema](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349) for nationwide building permit data, including latitude and longitude coordinates for each permit. By employing geospatial analysis, we can accurately link each building permit with Regrid's parcels via the Regrid ID.
+Shovels maintains a [standardized schema]({filename}../pages/data-dictionary.md) for nationwide building permit data, including latitude and longitude coordinates for each permit. By employing geospatial analysis, we can accurately link each building permit with Regrid's parcels via the Regrid ID.
 
 This integration enables users to directly associate construction permit activities with specific parcels, enabling enhanced analysis of property boundaries, footprints, and current construction activity. If you're a Regrid and Shovels customer, you can now seamlessly join your parcel and permit datasets to gain more comprehensive visibility into property developments, streamline data analysis, and improve decision-making accuracy.
 

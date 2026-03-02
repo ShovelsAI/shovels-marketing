@@ -133,7 +133,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">60K+</dd>
+            <dd class="text-gray-700 font-medium">25K+</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
@@ -318,7 +318,7 @@ slug: data-feed
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
       <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349" class="text-sm/6 font-semibold text-gray-900">Data Dictionary <span aria-hidden="true">→</span></a>
+      <a href="{filename}data-dictionary.md" class="text-sm/6 font-semibold text-gray-900">Data Dictionary <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>

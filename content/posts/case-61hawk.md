@@ -43,7 +43,7 @@ After initial conversations with Shovels, Gary became a beta tester of [Charlie]
 * **Identify patterns across permit types** that indicate automated parking installations.  
 * **Export qualified leads directly to CSV** for the sales team.
 
-The Shovels team also provided 61HAWK with a list of licensed contractors from our [Contractor Services List (CSL)](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1067709444#gid=1067709444) who are specifically licensed to build or operate automated parking systems.
+The Shovels team also provided 61HAWK with a list of licensed contractors from our [Contractor Services List (CSL)]({filename}../pages/data-dictionary.md) who are specifically licensed to build or operate automated parking systems.
 
 ## **Unexpected Benefits**
 

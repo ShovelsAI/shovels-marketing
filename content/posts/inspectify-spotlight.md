@@ -28,7 +28,7 @@ It’s important to have the full picture, and Shovels’s seamless API integrat
 
 ## The Shovels Integration
 
-Shovels has a simple yet powerful [API](https://www.shovels.ai/api), which gave the Inspectify Product and Engineering teams an easy way to design their product around our data offering. Between the API docs themselves, the [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=1818227349#gid=1818227349) for additional clarity, and live support sessions from the Shovels team, Inspectify was able to easily connect the Shovels data to their existing home inspection report generation pipeline.
+Shovels has a simple yet powerful [API](https://www.shovels.ai/api), which gave the Inspectify Product and Engineering teams an easy way to design their product around our data offering. Between the API docs themselves, the [Data Dictionary]({filename}../pages/data-dictionary.md) for additional clarity, and live support sessions from the Shovels team, Inspectify was able to easily connect the Shovels data to their existing home inspection report generation pipeline.
 
 ![A Screenshot of the Inspectify product, highlighting the section that directly integrates the Shovels permit data.](/images/inspectify-spotlight-report-summary.png)
 

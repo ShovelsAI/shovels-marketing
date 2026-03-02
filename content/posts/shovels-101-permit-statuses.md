@@ -26,7 +26,7 @@ In the Shovels ecosystem, there are **four** statuses that Permits can be in:
 * `final`: When the permit is completed, and submitted back to the jurisdiction upon job completion. This is defined by the `final_date` object.
 * `inactive`: If any part of the process stalls or gets restricted from progression, then the permit status moves to `inactive`. Disqualifying reasons and reporting time will vary by jurisdiction and local regulation, but can include failing to meet project inspections, the permit may expire before completion or [inactivity for more than 6 months (180 days)](https://ecode360.com/6567722#6567722), and many others.
 
-For more system definitions (beyond permit statuses), check out our [Data Dictionary](https://docs.google.com/spreadsheets/d/1qiIxx37_-6vGfGp2i5pXv4w2FdsLsShjCqSVO5v6OMQ/edit?gid=249471341#gid=249471341)!
+For more system definitions (beyond permit statuses), check out our [Data Dictionary]({filename}../pages/data-dictionary.md)!
 
 ## Timeline
 
