@@ -170,6 +170,63 @@ slug: telecommunications
   </div>
 </div>
 
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">City Council Intelligence for Telecom Infrastructure</h2>
+      <p class="mt-6 text-lg/8 text-gray-600">Before fiber permits are filed, city councils debate broadband expansion, right-of-way permissions, and franchise agreements. Shovels Decisions data gives you visibility into these discussions months before ground breaks.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Franchise Agreement Discussions
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Know when cities are reviewing telecom agreements and negotiating terms that will impact your infrastructure deployment timeline.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Broadband Expansion Initiatives
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Identify municipalities prioritizing internet infrastructure and where council support indicates favorable markets for expansion.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Right-of-Way Permits
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Track discussions about utility corridor access and identify potential obstacles or opportunities in your network planning.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            BEAD Funding Priorities
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Monitor where federal broadband dollars are being allocated and understand which cities have council backing for infrastructure projects.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none">

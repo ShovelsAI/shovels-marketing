@@ -126,6 +126,52 @@ slug: real-estate
       </div>
     </dl>
   </div>
+  <div class="mx-auto mt-16 max-w-4xl px-6 sm:mt-20 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h3 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">The Policy Layer Behind NVI</h3>
+      <p class="mt-6 text-lg/8 text-gray-300">Building permit activity tells you what's happening now. City council decisions tell you what's coming next. Our Decisions data tracks zoning changes, development approvals, and housing policy discussions that predict where permit density will increase. Identify emerging development zones months before the first permit is filed.</p>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-8">
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Spot upzoning discussions.
+          </dt>
+          <dd class="inline text-gray-300">Track upzoning discussions before land values adjust and identify policy changes that enable new development.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Assess political viability.
+          </dt>
+          <dd class="inline text-gray-300">Understand which large developments have council support versus community opposition before committing capital.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Identify pro-development councils.
+          </dt>
+          <dd class="inline text-gray-300">Find cities with councils that support growth versus restrictive policies that limit development opportunities.</dd>
+        </div>
+        <div class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Track affordable housing mandates.
+          </dt>
+          <dd class="inline text-gray-300">Monitor inclusionary zoning and affordable housing requirements that affect project economics and feasibility.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
 </div>
 <div class="overflow-hidden bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">

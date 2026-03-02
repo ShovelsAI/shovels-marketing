@@ -93,6 +93,62 @@ slug: climate
     </div>
   </div>
 </div>
+<div class="bg-gray-50 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Track Electrification Policy at the Source</h2>
+      <p class="mt-6 text-lg/8 text-gray-600">Building electrification doesn't start with permits—it starts with city council policy. Shovels Decisions data tracks reach code adoption, gas ban discussions, and heat pump mandate debates across municipalities. Identify markets where policy is creating contractor demand before competition heats up.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Cities adopting electrification ordinances
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Track which municipalities are passing building electrification requirements and identify markets with regulatory tailwinds.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Reach code discussions
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Monitor cities considering reach codes that require heat pump installations or renewable energy systems in new construction.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Local rebate programs
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Identify cities discussing heat pump incentives and EV charger rebates that will drive contractor and consumer demand.</p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Natural gas restriction debates
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Stay ahead of gas ban discussions and understand which markets will require all-electric new construction.</p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 <div class="bg-white mb-24">
   <div class="mx-auto max-w-7xl pt-24 sm:px-2 sm:pt-32 lg:px-4">
     <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
