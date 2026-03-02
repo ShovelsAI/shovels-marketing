@@ -282,7 +282,7 @@ slug: data-feed
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What data tables are included in the Shovels data feed?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The data feed includes six core tables: Permits (185M+ records), Contractors (3.3M+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). All tables are updated monthly.</p>
+            <p class="text-base/7 text-gray-600">The data feed includes seven core tables: Permits (185M+ records), Contractors (3.3M+), Decisions (25K+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -383,7 +383,7 @@ slug: data-feed
       "name": "What data tables are included in the Shovels data feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The data feed includes six core tables: Permits (185M+ records), Contractors (3.3M+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). All tables are updated monthly."
+        "text": "The data feed includes seven core tables: Permits (185M+ records), Contractors (3.3M+), Decisions (25K+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly."
       }
     },
     {

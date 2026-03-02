@@ -188,6 +188,15 @@ slug: api
           </dt>
           <dd class="mt-2">We're here to help you with any questions or issues you might have. We're a small team, but API users are our favorite and we're dedicated to making sure you have a great experience!</dd>
         </div>
+        <div class="relative pl-9">
+          <dt class="font-semibold text-gray-900">
+            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+            </svg>
+            Government decisions
+          </dt>
+          <dd class="mt-2">Access local government meeting intelligence including city council decisions, planning board approvals, and zoning changes—giving you visibility months before permits are filed.</dd>
+        </div>
       </dl>
     </div>
   </div>

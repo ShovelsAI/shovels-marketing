@@ -93,7 +93,7 @@ slug: building-materials
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
         <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
           <h3 class="text-lg font-medium text-gray-900">Detailed contractor profiles</h3>
-          <p class="mt-2 text-sm text-gray-500">Our contractor profiles include revenue, permit history, and service area detail to help you qualify leads, compute credit risk, and close more sales.</p>
+          <p class="mt-2 text-base/7 text-gray-600">Our contractor profiles include revenue, permit history, and service area detail to help you qualify leads, compute credit risk, and close more sales.</p>
         </div>
         <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
           <img src="{static}/images/contractor-profile.png" alt="Shovels offers robust contractor profiles." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
@@ -102,7 +102,7 @@ slug: building-materials
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
         <div class="mt-6 lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:mt-0 xl:col-span-4 xl:col-start-9">
           <h3 class="text-lg font-medium text-gray-900">Employee contact information</h3>
-          <p class="mt-2 text-sm text-gray-500">We provide employee contact information to help your teams reach out to the right contacts.</p>
+          <p class="mt-2 text-base/7 text-gray-600">We provide employee contact information to help your teams reach out to the right contacts.</p>
         </div>
         <div class="flex-auto lg:col-span-7 lg:col-start-1 lg:row-start-1 xl:col-span-8">
           <img src="{static}/images/contractor-employees.png" alt="Shovels provides contractor employee data." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">

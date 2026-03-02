@@ -105,7 +105,7 @@ slug: climate
         <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
           <div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
             <h3 class="text-lg font-medium text-gray-900">B2C heat pump buyer intent</h3>
-            <p class="mt-2 text-sm text-gray-500">Find recent EV charger, solar, battery, and insulation permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.</p>
+            <p class="mt-2 text-base/7 text-gray-600">Find recent EV charger, solar, battery, and insulation permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.</p>
           </div>
           <div class="flex-auto lg:col-span-7 xl:col-span-8">
             <img src="{static}/images/heat-pump-intent.jpg" alt="Heat pump buyer intent" class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
@@ -114,7 +114,7 @@ slug: climate
         <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
           <div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
             <h3 class="text-lg font-medium text-gray-900">B2B building contractor channel development</h3>
-            <p class="mt-2 text-sm text-gray-500">Shovels tracks commercial permits too! Filter for large projects of tens or hundreds of thousands of square feet. Discover who the contractors are and contact them by phone or email.</p>
+            <p class="mt-2 text-base/7 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of tens or hundreds of thousands of square feet. Discover who the contractors are and contact them by phone or email.</p>
           </div>
           <div class="flex-auto lg:col-span-7 xl:col-span-8">
             <img src="{static}/images/brasfield.png" alt="Commercial contractors" class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
@@ -123,7 +123,7 @@ slug: climate
         <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
           <div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
             <h3 class="text-lg font-medium text-gray-900">Green home loan origination</h3>
-            <p class="mt-2 text-sm text-gray-500">Homeowners often pull permits before they have the financing lined up for their building electrification projects. Get a list of recent home permits in any geographic area and share your climate tech products with them.</p>
+            <p class="mt-2 text-base/7 text-gray-600">Homeowners often pull permits before they have the financing lined up for their building electrification projects. Get a list of recent home permits in any geographic area and share your climate tech products with them.</p>
           </div>
           <div class="flex-auto lg:col-span-7 xl:col-span-8">
             <img src="{static}/images/commercial-contractors.png" alt="Commercial contractors for green home loans." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover shadow-sm">
