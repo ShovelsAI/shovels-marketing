@@ -44,7 +44,7 @@ Before building your lead workflow, it's helpful to get familiar with what Shove
 
 Some contractor fields, such as business name and license number, are pulled directly from the permit itself. Others, including contact information like telephone, email, years in business, and historical permit volume, are enriched by Shovels from additional sources. Together, these layers give you the trigger event, the project context, and the contact details needed to reach out at exactly the right moment.
 
-You can learn more about [how our data is sourced here](https://www.shovels.ai/blog/shovels-data-source-column/). To see what fields we currently offer, consult the [Shovels data dictionary](https://www.shovels.ai/data-dictionary#).
+You can learn more about [how our data is sourced here]({filename}shovels-data-source-column-blog.md). To see what fields we currently offer, consult the [Shovels data dictionary](https://www.shovels.ai/data-dictionary#).
 
 > **Did you know:** the U.S. has over 20,000 permitting authorities, including cities, counties, townships, and special districts. Each has its own filing format and publication schedule. [Shovels](https://www.shovels.ai) normalizes records across jurisdictions and standardizes permit type classifications, making building permits easy to search.
 
@@ -88,7 +88,7 @@ For sales teams, this can mean clean territory-level lists. For national organiz
 
 ### 5. Always Look at Permit Status
 
-Permit status shows where a project sits in the municipal approval and construction lifecycle. It's an often underused but powerful signal. For Shovels especially, status is a first-class filter. Learn more about how we define permit statuses [in our status 101 blog](https://www.shovels.ai/blog/shovels-101-permit-statuses/). Here's what each stage means for your outreach timing:
+Permit status shows where a project sits in the municipal approval and construction lifecycle. It's an often underused but powerful signal. For Shovels especially, status is a first-class filter. Learn more about how we define permit statuses [in our status 101 blog]({filename}shovels-101-permit-statuses.md). Here's what each stage means for your outreach timing:
 
 <div style="position: relative; padding-bottom: calc(56.67989417989418% + 41px); height: 0; width: 100%;"><iframe src="https://demo.arcade.software/oF9g1hVAvxmwYkWfcUh9?embed&embed_mobile=tab&embed_desktop=inline" title="Filter by permit status" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;"></iframe></div>
 
@@ -241,3 +241,61 @@ Permit records include a permit type field that categorizes the work being perfo
 ### Can permit data be used to identify homeowner leads as well as contractor leads?
 
 Yes. Permit records contain both the property address, which corresponds to the property owner, and the contractor of record. Depending on the use case, the relevant outreach target may be the contractor (for suppliers of materials, equipment, financing, or software) or the property owner (for services tied to the project type, such as solar installation following a roof replacement). Both signals are accessible from the same permit record.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a construction lead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A construction lead is a prospective customer, typically a contractor, developer, or property owner, who has demonstrated intent to undertake construction or renovation work. In B2B sales, a construction lead is most actionable when it includes a project-level signal, such as a building permit, that confirms the prospect has active, funded work in progress rather than speculative future interest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find contractor leads without purchasing a list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Building permit data is the most reliable alternative to purchased contact lists for contractor prospecting. Permits are filed with local governments when any licensed contractor initiates work requiring approval. Filtering permit records by trade type, geography, permit status, and recency allows you to identify active contractors with considerably greater precision and timeliness than a static directory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is building permit data for lead generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Permit data is highly reliable for project-level signals: the permit was filed, the project is real, and the contractor of record holds a valid license. Contact enrichment accuracy varies by contractor and depends on the enrichment source and the contractor's online presence. A 10-20% bounce rate on enriched email lists is a reasonable planning assumption; list verification prior to large-scale outreach is recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a filed and an approved permit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A filed permit has been submitted to the municipality but has not yet been reviewed or approved. An approved permit has cleared the municipal review process and authorizes the contractor to begin work. For most B2B outreach purposes, approved permits represent higher-intent leads: the project is funded, authorized, and mobilizing. Filed permits are useful for earlier-stage engagement in categories where early specification or relationship-building has value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I filter contractor leads by type?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Permit records include a permit type field that categorizes the work being performed. On platforms like Shovels, permit types are normalized across jurisdictions and queryable by standardized category. These include roofing, HVAC, electrical, solar, new construction, EV charger, ADU, and others. This allows trade-type filtering to be applied at the data retrieval stage rather than through manual post-processing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can permit data be used to identify homeowner leads as well as contractor leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Permit records contain both the property address, which corresponds to the property owner, and the contractor of record. Depending on the use case, the relevant outreach target may be the contractor (for suppliers of materials, equipment, financing, or software) or the property owner (for services tied to the project type, such as solar installation following a roof replacement). Both signals are accessible from the same permit record."
+      }
+    }
+  ]
+}
+</script>
