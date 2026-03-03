@@ -1,37 +1,39 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
-{% block title %}{{ SITENAME }} {{ article.title|striptags  }}{% endblock %}
+{% block title %}{{ SITENAME }} {{ article.title|striptags }}{% endblock %}
 
 {% block head %}
-  {{ super() }}
+{{ super() }}
 
-  {% import 'translations.html' as translations with context %}
-  {% if translations.entry_hreflang(article) %}
-    {{ translations.entry_hreflang(article) }}
-  {% endif %}
+{% import 'translations.html' as translations with context %}
+{% if translations.entry_hreflang(article) %}
+{{ translations.entry_hreflang(article) }}
+{% endif %}
 
-  {% if article.summary %}
-    <meta name="description" content="{{ article.summary|striptags|e }}" />
-  {% endif %}
+{% if article.summary %}
+<meta name="description" content="{{ article.summary|striptags|e }}" />
+{% endif %}
 
-  {% for tag in article.tags %}
-    <meta name="tags" content="{{ tag|striptags|e }}" />
-  {% endfor %}
+{% for tag in article.tags %}
+<meta name="tags" content="{{ tag|striptags|e }}" />
+{% endfor %}
 
-  <!-- Force Open Graph image priority -->
-  {% if article.open_graph_image or article.image %}
-  <meta property="og:image" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
-  <meta property="og:image:secure_url" content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  {% endif %}
+<!-- Force Open Graph image priority -->
+{% if article.open_graph_image or article.image %}
+<meta property="og:image"
+  content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
+<meta property="og:image:secure_url"
+  content="{% if article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% else %}{{ SITEURL }}{{ article.image }}{% endif %}" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{% endif %}
 
 {% endblock %}
 
 {% block structured_data %}
-  <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -69,55 +71,190 @@
 
 {% block content %}
 
-<div class="mx-auto max-w-[744px]">
-  <!-- header -->
-  <div class="my-16 px-6 lg:px-8">
-    <div class="mx-auto text-base leading-5 text-gray-700">
-      {% if article.category %}
-      <div class="mb-10">
-        <a href="/blog/?category={{article.category}}" class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{ article.category }}</a>
+<!-- Container with sidebar and article -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
+
+    <!-- Left Sidebar - Newsletter (hidden on mobile, sticky on desktop) -->
+    <aside class="hidden lg:block flex-shrink-0 self-start" style="width: 230px; margin-top: 1120px;">
+      <div class="sticky z-40 text-left" style="top: 100px;">
+        <!-- Back to Blogs Link -->
+        <a href="/blog/"
+          class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors mb-6">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Back to Blogs
+        </a>
+
+        <!-- Newsletter Subscribe Form -->
+        <h3 class="text-2xl font-semibold mb-2 leading-tight" style="color: #01654D;">Subscribe to our newsletter</h3>
+
+        <!-- Custom Newsletter Form -->
+        <form id="newsletter-sidebar-form" class="newsletter-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01654D] focus:border-[#01654D] mb-2"
+          >
+          <button
+            type="submit"
+            class="w-full px-4 py-2 text-sm font-semibold text-shovels-primary bg-white border-2 border-shovels-primary rounded-md hover:text-emerald-400 hover:border-emerald-400 transition-all duration-200"
+          >
+            Subscribe
+          </button>
+        </form>
+
+        <!-- Success/Error Messages -->
+        <div id="newsletter-message" class="mt-2 text-sm" style="display: none;"></div>
       </div>
-      {% endif %}
-      <div class="block">
-        <!-- Image placeholder -->
-        <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}" alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
-        <!-- Title and date container -->
-        <div class="break-words">
-          <h1 class="my-5 text-5xl">
-            {{ article.title|striptags }}
-          </h1>
-          <div class="mt-8 flex items-center gap-x-4 text-sm">
-            <time datetime="{{ article.date }}" class="text-gray-500">{{ article.locale_date }}</time>
+    </aside>
+
+    <!-- Main Article Content -->
+    <div class="flex-1 max-w-[744px]">
+      <!-- header -->
+      <div class="my-16" id="article-header">
+        <div class="text-base leading-5 text-gray-700">
+          {% if article.category %}
+          <div class="mb-10">
             <a href="/blog/?category={{article.category}}"
-               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-               {{ article.category }}
-            </a>
+              class="relative z-10 rounded bg-[#E9E1CE] text-gray-900 hover:bg-stone-100 text-xs px-3 py-2">{{
+              article.category }}</a>
           </div>
-          {% if article.author %}
-          <div class="relative mt-4 flex items-center gap-x-4">
-            {% if article.author_image %}
-            <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}" class="size-10 rounded-full bg-gray-100" />
-            {% endif %}
-            <div class="text-sm/6">
-              <p class="font-semibold text-gray-900">{{ article.author }}</p>
-              {% if article.author_title %}
-              <p class="text-gray-600">{{ article.author_title }}</p>
+          {% endif %}
+          <div class="block">
+            <!-- Image placeholder -->
+            <img src="{% if article.image %}{{ article.image }}{% else %}/images/blog-card-default.png{% endif %}"
+              alt="{{ article.subtitle|striptags|e }}" class="rounded-2xl bg-gray-100 object-contain" />
+            <!-- Title and date container -->
+            <div class="break-words">
+              <h1 class="my-5 text-5xl">
+                {{ article.title|striptags }}
+              </h1>
+              <div class="mt-8 flex items-center gap-x-4 text-sm">
+                <time datetime="{{ article.date }}" class="text-gray-500">{{ article.locale_date }}</time>
+                <a href="/blog/?category={{article.category}}"
+                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                  {{ article.category }}
+                </a>
+              </div>
+              {% if article.author %}
+              <div class="relative mt-4 flex items-center gap-x-4">
+                {% if article.author_image %}
+                <img src="{{ article.author_image }}" alt="{{ article.author|striptags|e }}"
+                  class="size-10 rounded-full bg-gray-100" />
+                {% endif %}
+                <div class="text-sm/6">
+                  <p class="font-semibold text-gray-900">{{ article.author }}</p>
+                  {% if article.author_title %}
+                  <p class="text-gray-600">{{ article.author_title }}</p>
+                  {% endif %}
+                </div>
+              </div>
               {% endif %}
             </div>
           </div>
-          {% endif %}
+        </div>
+      </div>
+      <!-- content -->
+      <div class="my-16">
+        <div class="max-w-3xl leading-loose text-gray-700">
+          <article class="w-full article">
+            {{ article.content }}
+          </article>
         </div>
       </div>
     </div>
-  </div>
-  <!-- content -->
-  <div class="my-16 px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl leading-loose text-gray-700">
-      <article class="w-full article">
-        {{ article.content }}
-      </article>
-    </div>
+
   </div>
 </div>
+
+<script>
+  // HubSpot Forms API Submission
+  (function() {
+    const form = document.querySelector('#newsletter-sidebar-form');
+    const messageDiv = document.querySelector('#newsletter-message');
+
+    if (!form) return;
+
+    // Get HubSpot tracking cookie
+    function getCookie(name) {
+      const value = "; " + document.cookie;
+      const parts = value.split("; " + name + "=");
+      if (parts.length === 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+
+    // Build HubSpot context
+    function buildHSContext() {
+      return {
+        hutk: getCookie('hubspotutk'),
+        pageUri: window.location.href,
+        pageName: document.title
+      };
+    }
+
+    // Show message to user
+    function showMessage(message, isError = false) {
+      messageDiv.textContent = message;
+      messageDiv.style.display = 'block';
+      messageDiv.style.color = isError ? '#DC2626' : '#059669';
+      messageDiv.style.fontWeight = '500';
+    }
+
+    // Submit form to HubSpot
+    async function submitToHubSpot(email) {
+      const portalId = '48146409';
+      const formGuid = 'ffcfa1b4-f1ad-47ce-827e-b350343b4751';
+      const url = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
+
+      const data = {
+        submittedAt: Date.now(),
+        fields: [
+          {
+            name: 'email',
+            value: email
+          }
+        ],
+        context: buildHSContext()
+      };
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          showMessage(result.inlineMessage || 'Thanks for subscribing!');
+          form.reset();
+        } else {
+          showMessage('Something went wrong. Please try again.', true);
+        }
+      } catch (error) {
+        showMessage('Connection error. Please try again.', true);
+      }
+    }
+
+    // Form submit handler
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const emailInput = form.querySelector('input[name="email"]');
+      const email = emailInput.value.trim();
+
+      if (email) {
+        submitToHubSpot(email);
+      }
+    });
+  })();
+</script>
 
 {% endblock %}
