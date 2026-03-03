@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         'shovels': {
-          'primary': '#01654D',
+          'primary': 'rgb(1 101 77 / <alpha-value>)',
           'secondary': '#E9BE51',
           'dark': '#101727',
           'light': '#EAE2CF'
