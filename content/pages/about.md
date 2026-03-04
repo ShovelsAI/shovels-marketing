@@ -138,9 +138,8 @@ slug: about
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
     <div class="max-w-xl">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Meet the team</h2>
-      <p class="mt-6 text-xl/8 text-gray-600">We're a venture-backed team of AI engineers and data scientists headquartered in California with offices in Washington and Europe. We process over 185 million permits from over 2,000 jurisdictions nationwide, adding 5 million new records monthly. We like solving hard data problems—and we love working with customers who use real-world intelligence to build, plan, and grow.</p>
-      <p class="mt-6 text-xl/8 text-gray-600">We like solving hard data problems and enjoy working with real-world data.</p>
+      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Some of the people behind Shovels</h2>
+      <p class="mt-6 text-xl/8 text-gray-600">We're a venture-backed team of AI engineers, data scientists, and go-to-market specialists with offices in California and Europe. Here are a few of the people building the intelligence layer for the built world.</p>
     </div>
     <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
       <li>
@@ -210,12 +209,34 @@ slug: about
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/daniel-helller/" target="_blank">
+        <a href="https://www.linkedin.com/in/morganfriberg/" target="_blank">
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="{static}/images/rezone/Daniel-Heller.jpg" alt="Daniel Heller">
+            <img class="size-16 rounded-full" src="theme/images/team/morgan.svg" alt="Morgan Friberg, Shovels">
             <div>
-              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Daniel Heller</h3>
-              <p class="text-base/6 font-semibold text-shovels-primary">Founder, ReZone</p>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Morgan Friberg</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">VP of Marketing</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/ruojitang/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="theme/images/team/Ruoji.svg" alt="Ruoji Tang, Shovels">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Ruoji Tang</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Senior Marketing Manager</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/chloe-harris-841223198/" target="_blank">
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="theme/images/team/chloe.png" alt="Chloe Harris, Shovels">
+            <div>
+              <h3 class="text-lg/7 font-semibold tracking-tight text-gray-900">Chloe Harris</h3>
+              <p class="text-base/6 font-semibold text-shovels-primary">Project Manager</p>
             </div>
           </div>
         </a>
