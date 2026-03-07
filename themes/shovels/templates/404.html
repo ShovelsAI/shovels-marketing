@@ -9,6 +9,53 @@
 
 {% block content %}
 
+<script>
+  // Automatic redirect handling for moved pages
+  (function() {
+    const path = window.location.pathname;
+    const redirectMap = {
+      // Old author pages with double "author" path
+      '/author/author/morgan-friberg.html': '/author/morgan-friberg/',
+      '/author/author/ryan-buckley.html': '/author/ryan-buckley/',
+      '/author/author/betty-wan.html': '/author/betty-wan/',
+      '/author/author/alex-brown.html': '/author/alex-brown/',
+      '/author/author/chloe-harris.html': '/author/chloe-harris/',
+
+      // Old landing pages
+      '/banks': '/real-estate',
+      '/banks.html': '/real-estate',
+      '/chuck': '/charlie',
+      '/chuck.html': '/charlie',
+      '/enterprise': '/data-feed',
+      '/enterprise.html': '/data-feed',
+      '/pricing': '/contact',
+      '/pricing.html': '/contact',
+      '/contact-sales': '/contact',
+      '/contact-sales.html': '/contact',
+
+      // Blog post with typo (bzail -> baizel)
+      '/blog/shovels-spotlight-how-bzail-uses-real-time-permit-intelligence-to-transform-cre-site-selection': '/blog/shovels-spotlight-how-baizel-uses-real-time-permit-intelligence-to-transform-cre-site-selection/',
+      '/blog/shovels-spotlight-how-bzail-uses-real-time-permit-intelligence-to-transform-cre-site-selection/': '/blog/shovels-spotlight-how-baizel-uses-real-time-permit-intelligence-to-transform-cre-site-selection/',
+      '/blog/shovels-spotlight-how-bzail-uses-real-time-permit-intelligence-to-transform-cre-site-selection/index.html': '/blog/shovels-spotlight-how-baizel-uses-real-time-permit-intelligence-to-transform-cre-site-selection/',
+    };
+
+    // Check if current path should be redirected
+    if (redirectMap[path]) {
+      window.location.replace(redirectMap[path]);
+      return;
+    }
+
+    // Handle blog post variations (trailing slash and index.html)
+    if (path.endsWith('/index.html')) {
+      const newPath = path.replace('/index.html', '/');
+      if (newPath !== path) {
+        window.location.replace(newPath);
+        return;
+      }
+    }
+  })();
+</script>
+
 <div class="mx-auto max-w-4xl px-6 py-16 lg:px-8">
   <div class="text-center">
     <!-- 404 Icon/Image -->
