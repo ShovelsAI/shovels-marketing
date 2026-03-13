@@ -50,7 +50,7 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/{number}/','{base_name}/{number}/index.html'),
 )
 FORMATTED_FIELDS = ['summary', 'title']
-STATIC_PATHS = ['images', 'pages', 'extras']
+STATIC_PATHS = ['images', 'pages', 'extras', 'pdfs']
 
 # Copy favicon files to site root for browser/crawler compatibility
 EXTRA_PATH_METADATA = {
