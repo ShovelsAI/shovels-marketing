@@ -5,8 +5,8 @@ modified: 2026-03-13
 category: Data
 tags: Tampa, housing market, building permits, Florida, real estate, new construction, Hillsborough County, Manatee County, market forecast
 authors: Ruoji Tang
-author_image: /theme/images/team/ruoji.svg
-author_title: Content Strategist
+author_image: /theme/images/team/Ruoji.svg
+author_title: Senior Marketing Manager
 slug: tampa-housing-market-permit-data
 summary: Our deep dive into Tampa building permits breaks down where construction is growing, where it's pulling back, and what it means for buyers, sellers, and builders.
 image: /images/blog_images/tampa-housing-market-permit-data-hero.png
