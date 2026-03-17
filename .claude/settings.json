@@ -1,4 +1,7 @@
 {
+  "enabledPlugins": {
+    "revenue@shovels-claude-plugins": true
+  },
   "extraKnownMarketplaces": {
     "shovels-claude-plugins": {
       "source": {
@@ -6,8 +9,5 @@
         "repo": "ShovelsAI/shovels-claude-plugins"
       }
     }
-  },
-  "enabledPlugins": {
-    "shovels-claude-plugins@revenue": true
   }
 }
