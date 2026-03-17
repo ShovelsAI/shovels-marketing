@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "shovels-claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ShovelsAI/shovels-claude-plugins"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "shovels-claude-plugins@revenue": true
+  }
+}
