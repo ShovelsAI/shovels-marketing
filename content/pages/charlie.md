@@ -37,7 +37,7 @@ slug: charlie
     <div class="mx-auto max-w-2xl sm:text-center">
       <p class="text-base/7 font-semibold text-shovels-secondary">AI-powered data intelligence</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">What if finding the right data took minutes, not months?</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Construction data is messy—permits scattered across {{ STATS.jurisdictions }} jurisdictions, contractor records in inconsistent formats, city decisions buried in meeting minutes. Charlie changes that. Ask in plain English. Get exactly what you need, instantly. No SQL required, no API calls to learn, no false positives to wade through.</p>
+      <p class="mt-6 text-lg/8 text-gray-300">Construction data is messy—permits scattered across 2,000+ jurisdictions, contractor records in inconsistent formats, city decisions buried in meeting minutes. Charlie changes that. Ask in plain English. Get exactly what you need, instantly. No SQL required, no API calls to learn, no false positives to wade through.</p>
     </div>
   </div>
   <div class="relative overflow-hidden pt-16">
