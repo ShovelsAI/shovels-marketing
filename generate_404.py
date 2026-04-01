@@ -25,6 +25,7 @@ def generate_404():
         html_content = template.render(
             SITENAME=settings['SITENAME'],
             SITEURL=settings['SITEURL'],
+            STATS=settings['STATS'],
             article=None,
             page=None
         )

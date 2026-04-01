@@ -27,7 +27,7 @@ slug: contractor-directory
         <div class="mb-6">
           <img src="theme/images/contractor-directory/ping.svg" alt="Contractor database icon">
         </div>
-        <span class="elaboration-card_title">2.5M contractors</span>
+        <span class="elaboration-card_title">{{ STATS.contractors }} contractors</span>
       </dt>
       <dd class="elaboration-card_text-container">
         <p class="flex-auto">Our contractor directory is derived from our national building permit database. We use advanced data science to clean and deduplicate contractors across over 100M building permits in the United States.</p>
