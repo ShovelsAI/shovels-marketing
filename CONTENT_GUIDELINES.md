@@ -88,7 +88,7 @@ This document outlines best practices for creating content on the Shovels market
 - **Tone**: Professional but conversational
 - **Specificity**: Include numbers, dates, concrete details
 - **Accuracy**: Always verify against docs.shovels.ai
-- **Consistency**: Use official stats from homepage (185M+ permits, 3.3M+ contractors, 33M+ addresses, 5M+ monthly updates)
+- **Consistency**: Use official stats from the `STATS` dict in `pelicanconf.py` — that is the single source of truth
 
 **Answer structure:**
 1. Direct answer to the question (first sentence)
@@ -108,16 +108,16 @@ week after the database refresh.
 ### Source of Truth
 
 **Always verify answers against:**
-1. **Primary**: https://docs.shovels.ai/docs/introduction
-2. **Secondary**: Homepage stats (themes/shovels/templates/index.html)
+1. **Primary**: `STATS` dict in `pelicanconf.py` — canonical source of truth for all published numbers
+2. **Secondary**: `snippets/stats.mdx` in the docs repo — must be kept in sync with `pelicanconf.py`
 3. **Tertiary**: Product pages (api.md, permit-database.md, etc.)
 
-**Official numbers (as of Feb 2026):**
-- Building permits: 185M+
-- Contractors: 3.3M+
-- US addresses covered: 33M+
+**Official numbers** (update `pelicanconf.py` STATS dict when these change, then mirror to the docs repo):
+- Building permits: 130M+
+- Contractors: 2.3M+
+- Jurisdictions covered: 1,800+
 - New permits monthly: 5M+
-- Geographic coverage: 85% of US population, over 2,000 jurisdictions
+- Geographic coverage: 85% of US population
 - Update frequency: Monthly on 1st and 15th
 - Database refresh: 5-10M new records, 1-5M status updates per cycle
 

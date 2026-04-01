@@ -1,5 +1,5 @@
 Title: Telecommunications Infrastructure Intelligence | Building Permit Data for Telecom
-Description: Optimize fiber deployment and network expansion using building permit and city council data. Track competitor activity, franchise agreements, and broadband initiatives months before permits are filed across 2,000+ jurisdictions.
+Description: Optimize fiber deployment and network expansion using building permit and city council data. Track competitor activity, franchise agreements, and broadband initiatives months before permits are filed across {{ STATS.jurisdictions }} jurisdictions.
 slug: telecommunications
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -19,7 +19,7 @@ slug: telecommunications
     <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
       <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Accelerate internet infrastructure deployment with permit intelligence</h1>
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Pinpoint permit filings for fiber, 5G, data centers, and utility infrastructure—across 2,000+ jurisdictions, covering 90% of the U.S. population.</p>
+        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Pinpoint permit filings for fiber, 5G, data centers, and utility infrastructure—across {{ STATS.jurisdictions }} jurisdictions, covering 85% of the U.S. population.</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
           <a href="https://www.canva.com/design/DAGuqAlsqoo/ouuYHQIhNiHhqmC5vIgPHw/view?utm_content=DAGuqAlsqoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc015198fc0" class="text-sm/6 font-semibold text-gray-900" target="_blank">Telecom One-pager <span aria-hidden="true">&rarr;</span></a>
@@ -236,7 +236,7 @@ slug: telecommunications
         </div>
         <div class="max-w-xl lg:max-w-lg">
           <p class="text-base/7 font-semibold text-shovels-secondary">Geospatial intelligence powering your telecom strategy</p>
-          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">175M Permits Nationwide, Mapped</h2>
+          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">{{ STATS.permits }} Permits Nationwide, Mapped</h2>
           <p class="mt-6 text-lg/8 text-gray-300">
             Building permits are inherently geospatial objects that provide the earliest signal of market activity. Through our <a href="{filename}gis.md" class="text-shovels-secondary hover:text-shovels-secondary/80">Esri partnership</a>, empower your GIS team to visualize internet, new construction, and other high-signal permits to strengthen your telecom strategy. <a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-shovels-secondary hover:text-shovels-secondary/80" target="_blank">ArcGIS Web Map <span aria-hidden="true">→</span></a>
           </p>
