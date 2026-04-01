@@ -11,23 +11,21 @@ slug: introducing-red-tag
 summary: What started as a simple product enhancement ended up red-tagging a 89,000-square-foot project in Washington, DC.
 image: /images/blog_images/introducing-red-tag-hero.png
 
-As you know, we've been doing a lot of mapping around here. We like maps, and we're getting better and better at maps.
+As you know, we've been doing a lot of mapping around here. We like maps, and we're getting better and better at making them useful.
 
-At a mapping conference last year we met another startup that was collecting super high resolution satellite imagery.
+True story. We met another startup at a mapping conference that collects super high resolution satellite imagery. Interesting, we thought. Could we use AI to determine how far along a project is once its permit is approved? Is the crane stood up? Has the lumber arrived? All that would be pretty cool.
 
-Interesting, we thought. Could we use AI to determine how far along a project is once its permit is approved? Is the crane stood up? Has the lumber arrived? All that would be pretty cool.
-
-And then another idea came into focus: What if we could do the opposite, use those same satellite images to detect construction *without* a permit? And if indeed the permit doesn't exist, we could file a report, and if it turns out we're right, the project would get red-tagged.
+And then we got to thinking: What if we could do the opposite, use those same satellite images to detect construction *without* a permit? And if indeed the permit didn't exist, we could file a report, and if it turns out we're right, the project would get red-tagged. 
 
 Red. What else is red? Lobsters. What cool new tool uses a lobster emoji? OpenClaw **🦞**. If you're an AI nerd like us, you know where this is going.
 
-Agentic red tagging. Let the AI agents loose, red-tagging all sorts of things, all over the country!
+Agentic red tagging. Let the AI agents loose, red-tagging all sorts of things, all over the country! Not poetic justice -- permitting justice. 
 
-It'll be like that super annoying neighbor who won't even let you hang Christmas lights without calling the building department. Everywhere, all at once. On autopilot!
+It'll be like that super annoying neighbor who won't even let you hang Christmas lights without calling the building department, except 24/7, all over the country. Anywhere and everywhere!
 
 We loved the idea, so we did what any self-respecting AI startup would do: **we vibe-coded it over the weekend**.
 
-We're launching today!
+And we're launching today!
 
 ## What We Built
 
@@ -37,15 +35,15 @@ Introducing **Red Tag**, the first agentic permit-enforcement tool built on top 
 
 Here's how it works:
 
-Red Tag runs on RedClaw, our customized OpenClaw instance that scans satellite images for construction. If we detect construction activity and find no associated permit record, we generate a report and send it to the <a href="https://www.shovels.ai/blog/ahj-in-construction/" target="_blank">Authority Having Jurisdiction (AHJ)</a>.
+Red Tag runs on RedClaw, our customized OpenClaw instance that scans satellite images for construction. If we detect construction activity and find no associated permit record, we generate a report and send it to the <a href="https://www.shovels.ai/blog/ahj-in-construction/" target="_blank">Authority Having Jurisdiction (AHJ)</a> building department as well as the police department, for good measure.
 
-The AHJ is the body empowered to enforce building codes and permit requirements for a given project, and when they receive a complaint of unpermitted construction, they're required to investigate. Just for added weight, we copy the President of the United States and the head of the IRS.
+The AHJ is the body empowered to enforce building codes and permit requirements for a given project, and when they receive a complaint of unpermitted construction, they're required to investigate. 
 
 An investigation on an unpermitted project typically triggers a stop-work order.
 
 A stop-work order means a red tag on the door.
 
-The tool is simple. The data is public. The block parties can get awkward, but hey, we're just making public data useful!
+The tool is simple. The data is public. The block parties can get awkward, but hey, we're trying to help!
 
 ## Red Tag Features
 
@@ -61,12 +59,12 @@ The tool is simple. The data is public. The block parties can get awkward, but h
 
 ## Our First Red Tag
 
-This one got awkward. Real fast.
+Welp, this one got awkward. 
 
 Our very first run scanned the web for large-scale construction projects and one address came back with a massive red tag.
 
 - **Estimated construction footprint:** 89,000 square feet
-- **Estimated job value: $**350 million
+- **Estimated job value:** $350 million
 - **Construction detected via satellite imagery:** Umm.. yea
 - **Permits on file:** ZERO
 
@@ -94,7 +92,7 @@ Oopsies.
 ![Image: Shovels first Red Tag filing. Source: theguardian.com]({static}/images/blog_images/introducing-red-tag-guardian.png)
 *Image: Shovels first Red Tag filing. Source: theguardian.com*
 
-It turns out that our first Red Tag was effective. Just days after submission, the news came out:
+And it worked! Just days after submitting our first Red Tag, this news came out... **😬**
 
 <div style="text-align: center;">
 <img src="{static}/images/blog_images/introducing-red-tag-result.jpeg" alt='Image: News headline "Judge Halts White House Ballroom Construction"' style="max-width: 400px; width: 100%; display: block; margin: 0 auto;">
