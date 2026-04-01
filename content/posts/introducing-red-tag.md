@@ -95,13 +95,13 @@ Oopsies.
 And it worked! Just days after submitting our first Red Tag, this news came out... **😬**
 
 <div style="text-align: center;">
-<img src="{static}/images/blog_images/introducing-red-tag-result.jpeg" alt='Image: News headline "Judge Halts White House Ballroom Construction"' style="max-width: 400px; width: 100%; display: block; margin: 0 auto;">
-<em>Image: News headline "Judge Halts White House Ballroom Construction"</em>
+<img src="{static}/images/blog_images/introducing-red-tag-result.png" alt='Image: News headline "Judge Halts White House Ballroom Construction"' style="max-width: 400px; width: 100%; display: block; margin: 0 auto;">
+<em>Image: News headline "Shovels Red Tag Halts White House Ballroom Construction"</em>
 </div>
 
 > **Note:** *Red Tag is <a href="https://app.shovels.ai/signup/" target="_blank">available</a> to all Shovels users starting today. Free tier includes 3 Red Tag reports per month. Unlimited reporting available on our Pro plan.*
 
-*If you made it this far:* 🍀 H*appy April Fools' Day from everyone at Shovels. Red Tag is not a real product.*
+*If you made it this far:* 🍀 H*appy April Fools' Day from everyone at Shovels. Red Tag is not a real product and that image is a doctored NY Times article.*
 
 *What IS real: Shovels has a ton of data. If you want to know what's being built, where, by whom, and whether it's permitted, that part we can actually help with - <a href="https://www.shovels.ai/contact" target="_blank">reach out to us</a> or <a href="https://app.shovels.ai/signup/" target="_blank">start a free account</a>.*
 
