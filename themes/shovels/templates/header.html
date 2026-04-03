@@ -1,5 +1,5 @@
 <div x-data="{ mobileOpen: false, scrolled: false }"
-     x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })"
+     x-init="window.addEventListener('scroll', () => { if (!scrolled && window.scrollY > 50) scrolled = true; else if (scrolled && window.scrollY <= 5) scrolled = false; })"
      x-effect="document.body.style.overflow = mobileOpen ? 'hidden' : ''"
      class="sticky top-0 z-50 transition-all duration-300"
      :class="scrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'">
