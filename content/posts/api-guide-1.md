@@ -39,7 +39,7 @@ We offer 33 unique tags as of this publication date in October 2023. That number
 
 To use tags, you need to know what they are. We named them to (hopefully) be self-explanatory. If you need clarification, you can check the Tags tab in the [Data Dictionary]({filename}../pages/data-dictionary.md) . We'll try to keep this updated. 
 
-To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the [Get All Available Tags](https://docs.shovels.ai/api-reference/#operation/List/operation/get_all_available_tags_v1_list_tags_get){:target="_blank"}  endpoint.
+To see a list programmatically, perhaps for your own internal dashboard or BI tool, you can always list our tags using the [Get All Available Tags](https://docs.shovels.ai/api-reference/lists/get-all-available-tags){:target="_blank"}  endpoint.
 
 To make this extra super clear, let's go through some examples. I'm going to show the code snippets using Curl, a command-line tool available natively in every operating system. Just open a new command-line prompt (e.g. Terminal on MacOS) to use it. 
 
@@ -47,7 +47,7 @@ To make this extra super clear, let's go through some examples. I'm going to sho
 
 Let's use 94123, my old neighborhood in San Francisco. Start by finding the right tag (using the methodology above) for heat pumps: `heat_pump` should do the trick!
 
-Next, find the endpoint. [Get Permits By Zip Code](https://docs.shovels.ai/api-reference/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get){:target="_blank"}  sounds about right! 
+Next, find the endpoint. [Get Permits By Zip Code](https://docs.shovels.ai/api-reference/permits/search-permits){:target="_blank"}  sounds about right! 
 
 Make the request. Here's the Curl command.
 
@@ -91,7 +91,7 @@ And it worked!
 }
 ```
 
-So what do we do with all those `id` values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the `id` and pass it into our [Get Permit by ID](https://docs.shovels.ai/api-reference/#operation/Permits/operation/get_permit_by_id_v1_permits__id__get){:target="_blank"}  endpoint.
+So what do we do with all those `id` values? Each one is an internal ID for a Shovels permit. To get the details we want (since we probably want more than just the address) let's take the `id` and pass it into our [Get Permit by ID](https://docs.shovels.ai/api-reference/permits/get-permits-by-id){:target="_blank"}  endpoint.
 
 ```bash
 curl -X 'GET' \
@@ -139,7 +139,7 @@ Neato! If we wanted to store all these heat pump installs in a database or sprea
 
 What if you don't care about the permits or the homes, and you just want to know who did the install? We can help with that, too! 
 
-Our handy [Get Permits By Activity Zip Code](https://docs.shovels.ai/api-reference/#operation/Contractors/operation/get_contractors_by_activity_zipcode_v1_contractors_activity_zip_get){:target="_blank"}  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. 
+Our handy [Get Permits By Activity Zip Code](https://docs.shovels.ai/api-reference/contractors/search-contractors){:target="_blank"}  endpoint should be perfect. We can use the same example, and we'll introduce dates this time. 
 
 For this API call, let's find all the heat pump HVAC installers who did work in the first two quarters of 2023. 
 
@@ -162,7 +162,7 @@ The response now is:
 }
 ```
 
-Same deal. The `id` shown is our internal Shovels contractor ID. Let's hit our [Get Contractor by Id](https://docs.shovels.ai/api-reference/#operation/Contractors/operation/get_contractor_by_id_v1_contractors__id__get){:target="_blank"}  endpoint with it to get those contractor details! 
+Same deal. The `id` shown is our internal Shovels contractor ID. Let's hit our [Get Contractor by Id](https://docs.shovels.ai/api-reference/contractors/get-contractors-by-id){:target="_blank"}  endpoint with it to get those contractor details! 
 
 ```
 curl -X 'GET' \
@@ -194,7 +194,7 @@ Building permits have dates galore. We show file dates, issue dates, and final d
 
 Our date filters, called `start_date` and `end_date`, are based solely on the file date.
 
-To show how this works, let's look at permits filed in New York in August 2023. We can use our [Get Permits by State](https://docs.shovels.ai/api-reference/#operation/Permits/operation/get_permits_by_state_v1_permits_state_get){:target="_blank"}  endpoint! 
+To show how this works, let's look at permits filed in New York in August 2023. We can use our [Get Permits by State](https://docs.shovels.ai/api-reference/permits/search-permits){:target="_blank"}  endpoint! 
 
 ```
 curl -X 'GET' \
