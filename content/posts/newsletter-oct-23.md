@@ -42,9 +42,9 @@ Here's my attempt at writing the shortest-ever tutorial on how to use an API. We
 
 An API is like a set of defined questions you can ask a database using your favorite programming language. Each of these questions is called an "endpoint." 
 
-For example, you can ask [this endpoint](https://docs.shovels.ai/api-reference/#operation/Permits/operation/get_permits_by_address_v1_permits_address_get) the question, "What are all the permits on 15 Cherry Lane, Anytown, MD?"
+For example, you can ask [this endpoint](https://docs.shovels.ai/api-reference/permits/search-permits) the question, "What are all the permits on 15 Cherry Lane, Anytown, MD?"
 
-You can ask [this endpoint](https://docs.shovels.ai/api-reference/#operation/Permits/operation/get_permits_by_zip_code_v1_permits_zip_get) the question, "Which homes in the zip code 94123 pulled ADU permits in the last 6 months?"
+You can ask [this endpoint](https://docs.shovels.ai/api-reference/permits/search-permits) the question, "Which homes in the zip code 94123 pulled ADU permits in the last 6 months?"
 
 And so on... each endpoint is purpose-built for you to ask a certain type of question. The questions our endpoints can answer are described in our [lovely API documentation](https://docs.shovels.ai/api-reference). 
 
