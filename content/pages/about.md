@@ -19,7 +19,7 @@ slug: about
     <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
       <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
         <h1 class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Everything built starts with a permit.</h1>
-        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">Shovels captures that first signal—using AI to clean, enrich, and unify permit, contractor, and property data from over 2,000 jurisdictions nationwide.</p>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">Shovels captures that first signal—using AI to clean, enrich, and unify permit, contractor, and property data from over {{ STATS.jurisdictions }} jurisdictions nationwide.</p>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">Delivered through our API, web app, or data warehouse, we turn messy public records into standardized, Shovel-ready intelligence that helps industries anticipate growth and make smarter decisions. From construction companies to electric utilities, real estate firms to government agencies, our customers use Shovel-ready data to anticipate market shifts, identify opportunities, and make decisions ahead of the competition.</p>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">We hope you'll join us for the ride.</p>
       </div>
@@ -66,15 +66,15 @@ slug: about
         <dl class="w-64 space-y-8 xl:w-80">
           <div class="flex flex-col-reverse gap-y-4">
             <dt class="text-base/7 text-gray-600">Building permits in our database</dt>
-            <dd class="text-5xl font-semibold tracking-tight text-gray-900">185+ million</dd>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">{{ STATS.permits }}</dd>
           </div>
           <div class="flex flex-col-reverse gap-y-4">
-            <dt class="text-base/7 text-gray-600">Properties with permit history</dt>
-            <dd class="text-5xl font-semibold tracking-tight text-gray-900">33+ million</dd>
+            <dt class="text-base/7 text-gray-600">Jurisdictions covered</dt>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">{{ STATS.jurisdictions }}</dd>
           </div>
           <div class="flex flex-col-reverse gap-y-4">
             <dt class="text-base/7 text-gray-600">Contractors tracked</dt>
-            <dd class="text-5xl font-semibold tracking-tight text-gray-900">3.3 million</dd>
+            <dd class="text-5xl font-semibold tracking-tight text-gray-900">{{ STATS.contractors }}</dd>
           </div>
         </dl>
       </div>
@@ -276,7 +276,7 @@ slug: about
     "@type": "Organization",
     "name": "Shovels",
     "url": "https://www.shovels.ai",
-    "description": "Shovels captures the first signal of construction—using AI to clean, enrich, and unify permit, contractor, and property data from over 2,000 jurisdictions nationwide.",
+    "description": "Shovels captures the first signal of construction—using AI to clean, enrich, and unify permit, contractor, and property data from over {{ STATS.jurisdictions }} jurisdictions nationwide.",
     "foundingDate": "2022",
     "numberOfEmployees": {
       "@type": "QuantitativeValue",

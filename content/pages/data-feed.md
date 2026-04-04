@@ -43,7 +43,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">185M+</dd>
+            <dd class="text-gray-700 font-medium">{{ STATS.permits }}</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
@@ -61,7 +61,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">3.3M+</dd>
+            <dd class="text-gray-700 font-medium">{{ STATS.contractors }}</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
@@ -79,7 +79,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">39M+</dd>
+            <dd class="text-gray-700 font-medium">{{ STATS.residents }}</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
@@ -151,7 +151,7 @@ slug: data-feed
         <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">159M+</dd>
+            <dd class="text-gray-700 font-medium">{{ STATS.parcels }}</dd>
           </div>
           <div class="flex justify-between gap-x-4 py-3">
             <dt class="text-gray-500">Update frequency</dt>
@@ -282,7 +282,7 @@ slug: data-feed
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What data tables are included in the Shovels data feed?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The data feed includes seven core tables: Permits (185M+ records), Contractors (3.3M+), Decisions (25K+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly.</p>
+            <p class="text-base/7 text-gray-600">The data feed includes seven core tables: Permits ({{ STATS.permits }} records), Contractors ({{ STATS.contractors }}), Decisions (25K+), Residents ({{ STATS.residents }}), Employees (77M+), Contractor State Licenses (3M+), and Parcels ({{ STATS.parcels }} via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -348,7 +348,7 @@ slug: data-feed
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "Shovels US Building Permit and Contractor Data Feed",
-  "description": "Nationwide US building permit, contractor, resident, and employee data delivered to enterprise data warehouses. Includes 185M+ permits, 3.3M+ contractors, 39M+ residents, and 77M+ employees with monthly updates.",
+  "description": "Nationwide US building permit, contractor, resident, and employee data delivered to enterprise data warehouses. Includes {{ STATS.permits }} permits, {{ STATS.contractors }} contractors, {{ STATS.residents }} residents, and 77M+ employees with monthly updates.",
   "url": "https://www.shovels.ai/data-feed",
   "distribution": [
     {
@@ -383,7 +383,7 @@ slug: data-feed
       "name": "What data tables are included in the Shovels data feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The data feed includes seven core tables: Permits (185M+ records), Contractors (3.3M+), Decisions (25K+), Residents (39M+), Employees (77M+), Contractor State Licenses (3M+), and Parcels (159M+ via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly."
+        "text": "The data feed includes seven core tables: Permits ({{ STATS.permits }} records), Contractors ({{ STATS.contractors }}), Decisions (25K+), Residents ({{ STATS.residents }}), Employees (77M+), Contractor State Licenses (3M+), and Parcels ({{ STATS.parcels }} via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly."
       }
     },
     {

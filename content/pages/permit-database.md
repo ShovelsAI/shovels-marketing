@@ -53,7 +53,7 @@ slug: permit-database
       </div>
       <div>
         <dt class="font-semibold text-white">Contact information</dt>
-        <dd class="mt-1 text-gray-300">We have employee contact information for a million contractors, including phone numbers, email addresses, and website URLs. We also have contact information for 30 million residential properties.</dd>
+        <dd class="mt-1 text-gray-300">We have employee contact information for {{ STATS.contractors }} contractors, including phone numbers, email addresses, and website URLs. We also have contact information for 30 million residential properties.</dd>
       </div>
       <div>
         <dt class="font-semibold text-white">Modern interface</dt>
@@ -213,7 +213,7 @@ slug: permit-database
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How much of the US does the permit database cover?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels covers approximately 85% of the US population with building permit and contractor data from over 2,000 jurisdictions. Coverage spans nearly every state and major metropolitan area.</p>
+            <p class="text-base/7 text-gray-600">Shovels covers approximately 85% of the US population with building permit and contractor data from {{ STATS.jurisdictions }} jurisdictions. Coverage spans nearly every state and major metropolitan area.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -225,7 +225,7 @@ slug: permit-database
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels Online include contractor contact information?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels has employee contact information for over a million contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available.</p>
+            <p class="text-base/7 text-gray-600">Yes. Shovels has employee contact information for over {{ STATS.contractors }} contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available.</p>
           </dd>
         </div>
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
@@ -310,7 +310,7 @@ slug: permit-database
       "name": "How much of the US does the permit database cover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shovels covers approximately 85% of the US population with building permit and contractor data from over 2,000 jurisdictions. Coverage spans nearly every state and major metropolitan area."
+        "text": "Shovels covers approximately 85% of the US population with building permit and contractor data from {{ STATS.jurisdictions }} jurisdictions. Coverage spans nearly every state and major metropolitan area."
       }
     },
     {
@@ -326,7 +326,7 @@ slug: permit-database
       "name": "Does Shovels Online include contractor contact information?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Shovels has employee contact information for over a million contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available."
+        "text": "Yes. Shovels has employee contact information for over {{ STATS.contractors }} contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available."
       }
     },
     {

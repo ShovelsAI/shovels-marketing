@@ -80,7 +80,34 @@ ERROR_404_URL = '404.html'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Plugins
-PLUGINS = ['sitemap']
+PLUGINS = ['jinja2content', 'sitemap']
+
+# Canonical stats — update this dict when numbers change.
+# Templates and content pages reference these via {{ STATS.key }}.
+# Mirror updates to the snippets/stats.mdx file in the docs repo.
+STATS = {
+    # Homepage / widely published stats
+    "permits": "130M+",
+    "contractors": "2.3M+",
+    "jurisdictions": "1,800+",
+    "monthly_permits": "5M+",
+
+    # Permit breakdowns
+    "permits_residential": "69M+",
+    "permits_commercial": "16M+",
+    "permits_residential_commercial": "84M+",
+
+    # Data feed table counts
+    "residents": "46M+",
+    "homeowners": "24M+",
+    "addresses": "23M+",
+    "parcels": "160M+",
+}
+
+# Expose STATS to jinja2content so content pages can use {{ STATS.key }}.
+# jinja2content renders content files through Jinja2 with no context by default;
+# JINJA_GLOBALS is the only way to inject variables into that environment.
+JINJA_GLOBALS = {"STATS": STATS}
 
 SITEMAP = {
     'format': 'xml',
