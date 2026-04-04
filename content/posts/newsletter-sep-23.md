@@ -19,7 +19,7 @@ I feel proud today. The Shovels team, all three of us, had a very productive two
 
 *   **🚀 We processed 100M building permits! We can run custom SQL queries and export CSV files for residential and commercial buildings nationwide. 🚀**
 *   States currently available in the API: California, Texas, Florida, and New York. Now that the rest are processed, we'll begin loading them into the API too. 
-*   Speaking of API, we released our [markets endpoint](https://docs.shovels.ai/api-reference/#operation/Markets/operation/get_market_activity_by_zip_code_v1_markets_permits_zip_get). We count current and historical building permit counts on all of our zip codes sliced by any of our tags. I'll describe an interesting application for this data below! 
+*   Speaking of API, we released our [markets endpoint](https://docs.shovels.ai/api-reference/addresses/get-address-metrics-current). We count current and historical building permit counts on all of our zip codes sliced by any of our tags. I'll describe an interesting application for this data below! 
 *   We also released [new prettier API docs](https://docs.shovels.ai/api-reference). Why does this matter? I'll tell you.
 *   Our pricing matrix is good to go. You'll know what cost to expect when you're ready to get on this building permit data bandwagon. 
 
