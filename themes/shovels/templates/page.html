@@ -15,9 +15,9 @@
     "name": "{{ page.title|striptags|e }}",
     "url": "https://www.shovels.ai/{{ page.url }}",
     {% if page.summary %}
-    "description": "{{ page.summary|striptags|truncate(160)|e }}",
+    "description": "{{ page.summary|striptags|e }}",
     {% elif page.description %}
-    "description": "{{ page.description|striptags|truncate(160)|e }}",
+    "description": "{{ page.description|striptags|e }}",
     {% endif %}
     "publisher": {
       "@type": "Organization",
