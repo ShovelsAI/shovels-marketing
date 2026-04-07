@@ -17,7 +17,7 @@ image: /images/top5.png
 
 In keeping with our thinking about EV chargers, which you can [read more about here]({filename}ev-charger-growth.md), we're turning our attention now to how long it takes for jurisdictions to approve EV charger permits.
 
-First, let's take a step back. This analysis is important because California has committed to deploying five million zero-emission vehicles (ZEVs) and building out 250,000 charging stations by 2025. This includes building a network of nearly 20,000 Level 2 and DC fast EV charging stations across the state. Additionally, the state plans to invest $2.5 billion over the next five years to expand the EV charging infrastructure and provide incentives for drivers to purchase electric vehicles.
+First, let's take a step back. This analysis is important because California has committed to deploying five million <a href="https://www.shovels.ai/climate" target="_blank">zero-emission vehicles (ZEVs)</a> and building out 250,000 charging stations by 2025. This includes building a network of nearly 20,000 Level 2 and DC fast EV charging stations across the state. Additionally, the state plans to invest $2.5 billion over the next five years to expand the EV charging infrastructure and provide incentives for drivers to purchase electric vehicles.
 
 Having more residential EV chargers would make it easier for California residents to own and use electric vehicles. This would also relieve the burden on public EV chargers. The more EV chargers we have in homes, the less strain on the public chargers required for people who live in multifamily housing and don't have a dedicated charger.
 
@@ -35,7 +35,7 @@ Okay, with that background, let's look at the data in California.
 
 ## Shovels analysis of EV charger permit approval times
 
-Shovels collects and analyzes building permit data. Two data points that we consistently see are the file date, or when the permit was submitted to the jurisdiction, and the issue date, or when the jurisdiction approved the permit. At this point, work can begin, and we'll eventually see the final date, or when the work was completed. 
+Shovels collects and analyzes <a href="https://www.shovels.ai/permit-database" target="_blank">building permit data</a>. Two data points that we consistently see are the file date, or when the permit was submitted to the jurisdiction, and the issue date, or when the jurisdiction approved the permit. At this point, work can begin, and we'll eventually see the final date, or when the work was completed. 
 
 The file date and the issue date show how long it takes for a jurisdiction to process a permit. As anyone who has had work done knows, this can be an agonizing process. The longer the delay, the more likely your contractor will get busy or supply costs will increase. Homeowners and contractors both want faster permit approval times. 
 

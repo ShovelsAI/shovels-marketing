@@ -12,7 +12,7 @@ Author_title: Technical Support & Writer
 Summary: Shovels provides a wide variety of construction data, including uniquely derived metrics that aren't available elsewhere. These five metrics are very useful for deeper insights into construction activity. Best practice is to combine these metrics with detailed filters for maximum impact.
 image: /images/top-5-derived-metrics-hero.png
 
-Construction data is all about translating how different regulatory bodies define the same data, and then making the analysis from there. Sometimes it’s easy with things like `address` or `assessed market value` or even `homeowner name`. These data points are straightforward and intuitive, which makes the analysis that much easier. 
+Construction data is all about translating how different regulatory bodies define the same data, and then making the analysis from there. Sometimes it’s easy with things like `address` or `assessed market value` or even `homeowner name`. These data points are straightforward and intuitive, which makes the analysis that much easier. For a complete overview of all available data points, see our <a href="https://www.shovels.ai/blog/understanding-permit-data-fields/" target="_blank">guide to understanding permit data fields</a>.
 
 On the other hand are what we call *derived metrics*: data that’s there in the public record if you put the puzzle pieces together. Extrapolation is a core tenet of data science, and today we’re going to highlight the five most useful derived metrics in the Shovels platform. 
 
@@ -64,7 +64,7 @@ However, for all it’s simplicity it’s one that’s difficult to find through
 
 We like to think of ourselves as an insights company more than a raw data company. We make the easy and useful connections internally and deliver them to anyone that wants them. If we can save you the time and effort, then we’re doing our part. 
 
-These derived metrics are available throughout our entire platform.
+These derived metrics are available throughout <a href="https://www.shovels.ai/permit-database" target="_blank">our entire platform</a>.
 
 In it’s simplest form, our [Shovels Online](https://app.shovels.ai) dashboard and web application allows you to search for Permits or Contractors and then see all the nested details beneath. 
 

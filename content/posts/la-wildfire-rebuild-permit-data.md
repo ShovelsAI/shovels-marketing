@@ -296,7 +296,7 @@ Altadena is in the active phase of rebuild. New construction permits in December
 
 Pacific Palisades is earlier in the cycle. Construction activity is steady but has yet to peak. In December 2025, grading permits were running at 73% of new construction volume, indicating that site preparation is still underway. The surge in new construction filings will likely follow in the second half of 2026, leaving a narrow window for contractors to establish relationships.
 
-For **building product suppliers**, permit data defines the scale of demand. More than 440 fire sprinkler permits have been filed across the affected areas, and electrical permits have exceeded pre-fire levels since the first month after the fires. New construction permits average $275,000 in declared job value, a sign of rebuild projects with correspondingly high material requirements.
+For <a href="https://www.shovels.ai/building-materials" target="_blank">**building product suppliers**</a>, permit data defines the scale of demand. More than 440 fire sprinkler permits have been filed across the affected areas, and electrical permits have exceeded pre-fire levels since the first month after the fires. New construction permits average $275,000 in declared job value, a sign of rebuild projects with correspondingly high material requirements.
 
 For **insurers**, the post-fire job value data provides a cost benchmark. The average permitted job value in Altadena before the fire was $67,000. Post-fire, it was $275,000. That four-fold increase reflects the scope of work being filed. <a href="https://uphelp.org/a-broken-system-is-keeping-california-homes-underinsured-millions-have-no-idea-theyre-at-risk/" target="_blank">Research consistently shows that wildfire victims are significantly underinsured</a>, with average payouts falling 35% short of replacement cost. Permit data offers one way to track what actual reconstruction spending looks like.
 
@@ -304,7 +304,7 @@ For all three audiences, timing decides who captures the opportunity. The permit
 
 ## Methodology
 
-The permit data in this analysis comes from the Shovels database, which indexes building permits at the address level across the United States. Permit filings are collected continuously from county and city sources and updated as new records are made available.
+The permit data in this analysis comes from the <a href="https://www.shovels.ai/permit-database" target="_blank">Shovels database</a>, which indexes building permits at the address level across the United States. Permit filings are collected continuously from county and city sources and updated as new records are made available.
 
 The fire impact zone is defined by ZIP codes 90272 (Pacific Palisades) and 91001 and 91003 (Altadena). The pre-fire baseline covers permit activity from the 12 months prior to January 7, 2025. The post-fire period covers January 7, 2025 through February 2026.
 

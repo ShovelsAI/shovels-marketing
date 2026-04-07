@@ -16,7 +16,7 @@ image: /images/case-study-baizel.jpg
 
 ### **BAIZEL: The Ai Platform Revolutionizing Commercial Real Estate.**
 
-[BAIZEL](https://baizel.ai/) is redefining how commercial real estate professionals—from brokers and developers to engineers and architects—evaluate land and development opportunities. By combining powerful AI search with jurisdiction-normalized permit data from Shovels.ai, BAIZEL turns fragmented government records into lightning-fast insights. What once took weeks of manual research can now be done in minutes—with live permitting activity layered directly into the site selection workflow.
+[BAIZEL](https://baizel.ai/) is redefining how <a href="https://www.shovels.ai/real-estate" target="_blank">commercial real estate professionals</a>—from brokers and developers to engineers and architects—evaluate land and development opportunities. By combining powerful AI search with jurisdiction-normalized permit data from Shovels.ai, BAIZEL turns fragmented government records into lightning-fast insights. What once took weeks of manual research can now be done in minutes—with live permitting activity layered directly into the site selection workflow.
 
 ### **⚠️ The Challenge: Legacy Systems Slowed CRE Momentum**
 
@@ -26,7 +26,7 @@ Florida alone has over 400 permitting authorities, each using different formats,
 
 ### **⚡ Enter BAIZEL + Shovels.ai: Real Estate AI Insights, Delivered Instantly**
 
-BAIZEL integrates Shovels’ live, parcel-linked permit data—stacked with [Regrid’s parcel boundaries](https://www.shovels.ai/blog/integrating-parcel-and-permit-data-in-partnership-with-regrid/)—into a single AI-powered map interface. Users can access permits across categories like new construction, plumbing, solar, grading, and demolition, all tagged with key metadata including contractor names, valuation estimates, and dates.
+BAIZEL integrates <a href="https://www.shovels.ai/permit-database" target="_blank">Shovels’ live, parcel-linked permit data</a>—stacked with [Regrid’s parcel boundaries](https://www.shovels.ai/blog/integrating-parcel-and-permit-data-in-partnership-with-regrid/)—into a single AI-powered map interface. Users can access permits across categories like new construction, plumbing, solar, grading, and demolition, all tagged with key metadata including contractor names, valuation estimates, and dates.
 
 “With Shovels.ai, our users see what’s being built before the market reacts. Permit visibility, zoning analysis, and feasibility—all in one tool,” says Don Powell, COO of BAIZEL. “We’ve compressed weeks of research into minutes of insight.”
 
@@ -74,6 +74,6 @@ Users can:
 
 “Shovels’ data has unlocked a new level of clarity and speed in early-stage site selection and due diligence for commercial real estate pros—making BAIZEL a one-stop destination for uncovering development potential across Nation.”
 
-And this is just the beginning. BAIZEL plans to expand beyond Florida, launch real-time alerts for new permits, and leverage upcoming Shovels.ai Ai features—like entity extraction to auto-pull square footage, system specs, and more.
+And this is just the beginning. BAIZEL plans to <a href="https://www.shovels.ai/data-feed" target="_blank">expand beyond Florida</a>, launch real-time alerts for new permits, and leverage upcoming Shovels.ai Ai features—like entity extraction to auto-pull square footage, system specs, and more.
 
 Together, BAIZEL and Shovels are building the future of real estate decision-making—giving CRE teams the power to move faster, act smarter, and eliminate guesswork with confidence. 

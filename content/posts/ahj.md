@@ -39,7 +39,7 @@ Before any shovel breaks ground, you’ll likely need approval from your AHJ. Th
 Key responsibilities of an AHJ in construction include:
 
 - Reviewing construction documents and designs
-- Issuing (or denying) building permits
+- Issuing (or denying) building permits (including <a href="https://www.shovels.ai/blog/over-the-counter-permits/" target="_blank">over-the-counter permits</a>)
 - Conducting site inspections
 - Enforcing safety codes (electrical, fire, structural, etc.)
 - Approving occupancy certificates
@@ -87,7 +87,7 @@ Knowing your jurisdiction upfront saves time, prevents misfiled applications, an
 
 The traditional permitting process is notoriously inefficient and paper-heavy. [Shovels](http://shovels.ai/) helps bring transparency to the process and makes historically messy and confusing data easy to access. Use our data for **AHJ permitting** by:
 
-- Using Shovels' data to understand the complex AHJ permit landscape more efficiently, monitor active permits in target markets, and make more informed development decisions
+- Using Shovels' data to understand the complex AHJ permit landscape more efficiently, <a href="https://www.shovels.ai/permit-database" target="_blank">monitor active permits in target markets</a>, and make more informed development decisions
 - Searching jurisdictions on our [Coverage Dashboard]({filename}../pages/coverage.md)
 - Creating a free Shovels Online account to [use location search to find any AHJ](https://app.shovels.ai/search/)
 - Tracking permits across multiple jurisdictions for improved visibility and planning

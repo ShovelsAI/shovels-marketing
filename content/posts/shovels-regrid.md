@@ -17,11 +17,11 @@ We are pleased to announce our partnership with [Regrid](https://regrid.com/), a
 
 ### **The Importance of Parcel Data**
 
-Parcel data provides essential details about land ownership, boundaries, and usage, playing a critical role in real estate development, urban planning, site selection, and environmental analysis. Regrid provides a nationwide, standardized parcel dataset that includes a persistent and universal unique identifier, the [Regrid ID](https://support.regrid.com/parcel-data/regrid-id). This ID enables accurate tracking of each individual parcel, making it crucial for joining parcel data with other location datasets.
+Parcel data provides essential details about land ownership, boundaries, and usage, playing a critical role in <a href="https://www.shovels.ai/real-estate" target="_blank">real estate development</a>, urban planning, site selection, and environmental analysis. Regrid provides a nationwide, standardized parcel dataset that includes a persistent and universal unique identifier, the [Regrid ID](https://support.regrid.com/parcel-data/regrid-id). This ID enables accurate tracking of each individual parcel, making it crucial for joining parcel data with other location datasets.
 
 ### **Joining Shovels and Regrid Data**
 
-Shovels maintains a [standardized schema]({filename}../pages/data-dictionary.md) for nationwide building permit data, including latitude and longitude coordinates for each permit. By employing geospatial analysis, we can accurately link each building permit with Regrid's parcels via the Regrid ID.
+Shovels maintains a [standardized schema]({filename}../pages/data-dictionary.md) for nationwide building permit data, including latitude and longitude coordinates for each permit. By employing <a href="https://www.shovels.ai/gis" target="_blank">geospatial analysis</a>, we can accurately link each building permit with Regrid's parcels via the Regrid ID.
 
 This integration enables users to directly associate construction permit activities with specific parcels, enabling enhanced analysis of property boundaries, footprints, and current construction activity. If you're a Regrid and Shovels customer, you can now seamlessly join your parcel and permit datasets to gain more comprehensive visibility into property developments, streamline data analysis, and improve decision-making accuracy.
 
@@ -33,11 +33,11 @@ Combining parcel data and permit data delivers substantial advantages:
 * **Enhanced Market Analysis**: Gain deeper insights into properties and neighborhood developments by efficiently correlating permits with property assessment data and land-use changes.  
 * **Risk Assessment**: Improve compliance monitoring by quickly identifying potential zoning and regulatory issues through integrated parcel and permit data analysis.Improve compliance monitoring by quickly identifying potential zoning and regulatory issues through integrated parcel and permit data analysis.  
 * **Operational Efficiency**: Reduce the effort needed to cross-reference datasets.  
-* **Esri ArcGIS Compatibility**: Shovels and Regrid data are available as ArcGIS hosted feature layers.
+* **Esri ArcGIS Compatibility**: Shovels and Regrid data are available as <a href="https://www.shovels.ai/gis" target="_blank">ArcGIS hosted feature layers</a>.
 
 **ParGo AI Location Intelligence with Parcels and Permits**
 
-The partnership between Regrid and Shovels enhances the capabilities of customers such as [ParGo AI](https://www.pargoai.com)'s location intelligence platform.  Powered by advanced location technology and artificial intelligence, ParGo AI provides site selection, retail, and real estate customers with \\ robust property analysis, mapping, and insights through an intuitive web interface. By seamlessly integrating Shovels' building permit data with Regrid's parcel data, ParGo AI allows users to visualize, analyze, and explore spatial relationships more effectively.
+The partnership between Regrid and Shovels enhances the capabilities of customers such as [ParGo AI](https://www.pargoai.com)'s location intelligence platform.  Powered by advanced location technology and artificial intelligence, ParGo AI provides site selection, retail, and real estate customers with \\ robust property analysis, mapping, and insights through an intuitive web interface. By seamlessly integrating Shovels' building permit data with Regrid's parcel data, ParGo AI allows users to <a href="https://www.shovels.ai/blog/arcgis-permit-insights/" target="_blank">visualize, analyze, and explore spatial relationships</a> more effectively.
 
 ### **Looking Ahead**
 

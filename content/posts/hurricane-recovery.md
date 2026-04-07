@@ -19,7 +19,7 @@ The aftermath of a major hurricane is measured in many ways: lives lost, homes d
 
 We analyzed permit data from two catastrophic hurricanes: [Hurricane Harvey](https://www.nhc.noaa.gov/data/tcr/AL092017_Harvey.pdf), which devastated Houston in August 2017, and [Hurricane Ian](https://www.nhc.noaa.gov/data/tcr/AL092022_Ian.pdf), which slammed Florida's Gulf Coast in September 2022. The patterns that emerged reveal something unexpected: not all hurricane recoveries are created equal. The type of damage (flooding versus wind) creates dramatically different reconstruction timelines, each with its own signature in the permit data.
 
-What we discovered offers crucial insights for anyone involved in construction, insurance, real estate, or emergency management in hurricane-prone regions.
+What we discovered offers crucial insights for anyone involved in construction, insurance, <a href="https://www.shovels.ai/real-estate" target="_blank">real estate</a>, or emergency management in hurricane-prone regions.
 
 ## Two Hurricanes, Two Different Stories
 
@@ -178,7 +178,7 @@ For coastal areas facing wind damage risk, the Ian pattern demands rapid mobiliz
 - Use historical permit data to forecast recovery timelines based on disaster type (flood vs. wind)
 - Track competitor activity through our permit and contractor records to understand market share dynamics
 - Identify emerging opportunities in adjacent markets during the recovery normalization phase
-- [Explore Shovels data](https://app.shovels.ai/signup/) to build your disaster response playbook
+- <a href="https://www.shovels.ai/permit-database" target="_blank">Explore Shovels data</a> to build your disaster response playbook
 
 ### For Building Material Suppliers
 
@@ -211,7 +211,7 @@ Permit data provides ground truth for claims validation and fraud detection. Whe
 
 ### For Real Estate and Site Selection
 
-Disaster recovery creates both risk and opportunity in real estate markets. The permit data reveals which neighborhoods are rebuilding and which are being abandoned. Areas with surging new construction permits 12-18 months post-disaster represent communities with strong recovery capital and resident commitment—leading indicators of long-term resilience.
+Disaster recovery creates both risk and opportunity in <a href="https://www.shovels.ai/real-estate" target="_blank">real estate</a> markets. The permit data reveals which neighborhoods are rebuilding and which are being abandoned. Areas with surging new construction permits 12-18 months post-disaster represent communities with strong recovery capital and resident commitment—leading indicators of long-term resilience.
 
 For site selection, understanding pre-disaster permit baselines helps you distinguish between genuine growth markets and temporary recovery spikes. Lee County's 11,500 permits/month before Ian indicated a robust, growing market. That market returned to baseline within 18 months, confirming its fundamental strength.
 
@@ -301,6 +301,8 @@ If you're reading this from a hurricane-prone region, the question isn't whether
 The answer depends partly on factors you can't control: will it be wind or flood, how intense, how long it lasts. But it also depends on factors you can control: your building codes, your permit processing capacity, your contractor networks, and your insurance systems.
 
 The permit data from Harvey and Ian provides a roadmap. Flooding requires long-term capacity and patient capital. Wind damage requires rapid mobilization and surge capacity. Both require strong institutions that can handle 10-20 times their normal workload while maintaining quality and safety.
+
+For a look at how wildfire recovery compares, see our <a href="https://www.shovels.ai/blog/la-wildfire-rebuild-permit-data/" target="_blank">LA wildfire rebuild permit analysis</a>.
 
 Most importantly, both require understanding that recovery isn't measured in news cycles or political timelines. It's measured in permits: those unglamorous bureaucratic documents that represent families moving back into homes, businesses reopening, and communities rebuilding.
 

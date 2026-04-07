@@ -20,7 +20,7 @@ Check out our article on [proptech GTM strategies]({filename}proptech-gtm.md). A
 
 ## Overview of contech and go-to-market strategies
 
-Go-to-market strategies are essential for construction technology (contech) companies to succeed in the competitive market. To reach their goals and grow their business, contech companies must have an effective go-to-market strategy that is tailored to the needs of their target customers.
+Go-to-market strategies are essential for <a href="https://www.shovels.ai/software" target="_blank">construction technology (contech)</a> companies to succeed in the competitive market. To reach their goals and grow their business, contech companies must have an effective go-to-market strategy that is tailored to the needs of their target customers.
 
 Developing and executing an effective go-to-market strategy can be challenging. It requires careful planning, market research, and dedication. To ensure success, contech companies need to identify target markets, develop a plan of action with specific goals and objectives, leverage building permits to identify potential customers, create a marketing plan for reaching those customers, track performance metrics, and finally measure customer sentiment.
 
@@ -58,11 +58,11 @@ Here are some key steps to help you create a successful go-to-market plan:
 
 Leveraging building permits to identify players in your target market can be a very powerful tool.
 
-Building permit data is an invaluable resource for understanding the competitive landscape and identifying potential customers that may need contech services or products. By using this data, you can gain valuable insights into your target market and use that information to better inform your go-to-market strategy.
+Building permit data is an invaluable resource for understanding the competitive landscape and identifying potential customers that may need <a href="https://www.shovels.ai/software" target="_blank">contech services or products</a>. By using this data, you can gain valuable insights into your target market and use that information to better inform your go-to-market strategy.
 
 There are different types of building permits that can provide you with useful insight into your target market. Residential building permits give you a better understanding of the homeowners who might need your services, while commercial building permits provide information about businesses in the area that may benefit from your products. Additionally, local and state ordinances can give you insight into zoning regulations and other rules that could affect the success of your business.
 
-To leverage building permits for market research purposes, first look up what types of permits are available in your area, then search for those specific permit types in Shovels to get additional details about any applicable property or project. Shovels will produce lists of addresses and the contractors working on those projects. Both the building owner and the contractor can be prospective customers.
+To leverage building permits for market research purposes, first look up what types of permits are available in your area, then <a href="https://www.shovels.ai/permit-database" target="_blank">search for those specific permit types in Shovels</a> to get additional details about any applicable property or project. Shovels will produce lists of addresses and the contractors working on those projects. Both the building owner and the contractor can be prospective customers.
 
 You can also track changes in permit activity over time to see if there has been any recent growth or decline in your target geographical markets. By tracking these changes, you can adjust your strategies accordingly and take advantage of new opportunities as they arise.
 

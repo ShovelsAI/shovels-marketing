@@ -36,7 +36,7 @@ The CSL dataset aggregates licensing data from 37 states, covering over 1.8 mill
 
 - **Standardized Classifications**: We streamlined roughly 3,000 diverse state-specific classifications into 12 standardized SHOVELS_DERIVED categories such as plumbing, electrical, and roofing.
 - **Clear License Status Tracking**: Two new fields, `status` and `status_detailed`, provide clear categorization of licenses (Expired, Suspended, Retired, Revoked, Pending).
-- **Integrated Data**: We've linked approximately 200,000 licensed contractors to our existing permit-based dataset, adding about 700,000 phone numbers and roughly 200,000 emails.
+- **Integrated Data**: We've <a href="https://www.shovels.ai/home-services" target="_blank">linked approximately 200,000 licensed contractors</a> to our existing permit-based dataset, adding about 700,000 phone numbers and roughly 200,000 emails.
 
 ### Features and Functionality
 
@@ -52,6 +52,6 @@ Our data is securely delivered using modern cloud storage and analytics platform
 
 ### Enhance Your Operations
 
-The CSL dataset simplifies the complexity of state licensing data, enabling better business decisions. Let us streamline your data needs so you can focus on core tasks.
+The CSL dataset simplifies the complexity of state licensing data, enabling better business decisions. Let us <a href="https://www.shovels.ai/data-feed" target="_blank">streamline your data needs</a> so you can focus on core tasks.
 
 Interested in learning more about our Nationwide Contractor State License File? [Reach out to our team today](/contact).

@@ -100,7 +100,7 @@ For example, Houston's homebuyer assistance program (HbAP 2.0) provides up to $5
 
 While the affordability crisis is widespread, cities approach it differently based on regional real estate conditions, available funding, political priorities, and community needs. Many cities are experimenting with innovative and forward-thinking policy changes.
 
-ReZone (acquired by Shovels) is primarily focused on developers, investors, and real estate professionals, but if you are a policy maker, researcher, or academic and would like to analyze our data, we would love to connect.
+ReZone (acquired by Shovels) is primarily focused on developers, investors, and <a href="https://www.shovels.ai/real-estate" target="_blank">real estate professionals</a>, but if you are a policy maker, researcher, or academic and would like to <a href="https://www.shovels.ai/permit-database" target="_blank">analyze our data</a>, we would love to connect.
 
 ---
 

@@ -61,7 +61,7 @@ The possibilities are endless.
 
 Permit Status is an important data point to everyone involved in the construction and proptech industries, and we want to make sure that our system is as easy to understand as possible. 
 
-**Shovels 101** will be our tutorial series, and we've got a bunch of topics lined up for future publication. If there's anything you want us to cover, further questions about permit statuses, or any other fields in our dataset, let us know at [support@shovels.ai](mailto:support@shovels.ai)!
+**Shovels 101** will be our tutorial series, and we've got a bunch of topics lined up for future publication. If there's anything you want us to cover, further questions about permit statuses, or any other fields in <a href="https://www.shovels.ai/permit-database" target="_blank">our dataset</a>, let us know at [support@shovels.ai](mailto:support@shovels.ai)!
 
 Happy Building!
 

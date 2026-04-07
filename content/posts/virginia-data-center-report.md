@@ -18,7 +18,7 @@ Slug: virginia-data-center-permit-trends
 
 Virginia continues to reinforce its status as the epicenter of data center development in the U.S. Between July 2024 and July 2025, the state issued an impressive 1,239 permits explicitly linked to data centers—an astonishing **80.4% of all such permits nationwide**. The uncontrolled expansion of data centers in Northern Virginia is creating significant conflict, as evidenced by new housing developments now encircled by these facilities. Bloomberg reports this situation is [intensifying calls for stricter regulation](https://www.bloomberg.com/news/features/2025-07-29/loudon-county-data-center-growth-strains-residents-seeking-ai-regulation). This robust activity not only underscores Virginia’s central role in supporting the digital economy but also generated significant local revenue, totaling over $1.6 million in permit fees associated with 57 unique contractors working across 140 different locations.
 
-In this post, we’ll summarize our findings, explore proxy search terms to uncover data center permits, and share raw data pulled directly from the Shovels platform.
+In this post, we’ll summarize our findings, explore proxy search terms to uncover data center permits, and share raw <a href="https://www.shovels.ai/data-feed" target="_blank">data</a> pulled directly from the Shovels platform.
 
 ### Key Findings
 
@@ -43,7 +43,7 @@ The data reveals Loudoun County as the undisputed leader, accounting for nearly 
 | **Prince William** | 16 | 1.46% | 2 | 6 | 4 |
 | Others | 8 | 0.74% | 7 | 8 | 3 |
 
-The dominance of Loudoun County is driven by its established infrastructure, proximity to major internet exchange points, robust power availability, and supportive local policies.
+The dominance of Loudoun County is driven by its established infrastructure, proximity to major <a href="https://www.shovels.ai/telecommunications" target="_blank">internet exchange points</a>, robust power availability, and supportive local policies.
 
 ### The Anatomy of Virginia’s Data Center Boom
 The 1,239 permits mentioned above specifically mention "data center" while there are other permits that we can confidently deduce are infrastructure upgrades related to data centers. 
@@ -74,7 +74,7 @@ Virginia’s data center landscape continues to flourish, driven by concentrated
 **For Developers:**
 
 * Focus on infrastructure efficiency in existing facilities  
-* Consider secondary markets within Virginia  
+* Consider <a href="https://www.shovels.ai/real-estate" target="_blank">secondary markets</a> within Virginia  
 * Plan for phased development approaches
 
 **For Contractors:**
