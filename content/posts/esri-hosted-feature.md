@@ -20,11 +20,11 @@ Today, we're exploring how a new integration between Shovels and the [Esri ArcGI
 
 ### **The Challenge: From Fragmented Records to Strategic Insight**
 
-Building permits are a goldmine of market intelligence, but they've historically been trapped in fragmentation. With over 20,000 permitting jurisdictions in the U.S., each with its own formats, requirements, and systems, creating a clean, standardized, and queryable nationwide dataset has been a monumental challenge. This data chaos has prevented ArcGIS users from realizing the full potential of their powerful spatial analysis tools, forcing them to rely on lagging indicators like census data or sales records.
+Building permits are a goldmine of market intelligence, but they've historically been trapped in fragmentation. With over 20,000 permitting jurisdictions in the U.S., each with its own formats, requirements, and systems, creating a clean, standardized, and <a href="https://www.shovels.ai/permit-database" target="_blank">queryable nationwide dataset</a> has been a monumental challenge. This data chaos has prevented ArcGIS users from realizing the full potential of their powerful spatial analysis tools, forcing them to rely on lagging indicators like census data or sales records.
 
 ### **The Solution: A Live Feed of Future Growth in ArcGIS**
 
-We solve this problem by using AI to aggregate, clean, and standardize millions of permits into a single, GIS-ready data source. By making this available as a hosted feature layer in ArcGIS, we provide a live feed of future construction activity directly within your existing mapping environment.
+We solve this problem by using AI to aggregate, clean, and standardize millions of permits into a single, <a href="https://www.shovels.ai/gis" target="_blank">GIS-ready data source</a>. By making this available as a hosted feature layer in ArcGIS, we provide a live feed of future construction activity directly within your existing mapping environment.
 
 Check out our [demo feature layer](https://shovels.maps.arcgis.com/home/item.html?id=4ae603d5b75a432ab924fe794bedcf19) containing construction permit records for Los Angeles County, California, from June 1, 2025 to August 31, 2025: 
 

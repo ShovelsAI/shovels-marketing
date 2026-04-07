@@ -15,7 +15,7 @@ image: /images/shovels-spotlight-tactical-rebates.png
 
 ### From Permits to Precision Marketing
 
-When it comes to helping homeowners capture every dollar of solar tax credit available to them, Tactical Rebates doesn’t just wait for interest—they generate it. By leveraging public data in a smart, programmatic way, they’ve carved out a powerful niche in the world of solar energy incentives.
+When it comes to helping homeowners capture every dollar of solar tax credit available to them, Tactical Rebates doesn’t just wait for interest—they generate it. By leveraging public data in a smart, programmatic way, they’ve carved out a powerful niche in the world of <a href="https://www.shovels.ai/climate" target="_blank">solar energy incentives</a>.
 
 With millions of Americans installing rooftop solar systems in recent years, many are unaware of smaller, time-sensitive tax credits that supplement the federal solar Investment Tax Credit (ITC). Tactical Rebates exists to close that gap—and now, with the Shovels API, they’re doing it faster, more precisely, and at scale.
 
@@ -31,7 +31,7 @@ Before integrating Shovels, these tasks involved patchy data coverage, manual cl
 
 ### Enter Shovels API: Nationwide Permit Data, Instantly Searchable
 
-By plugging into the Shovels API, Tactical Rebates now taps into permit records from over 20,000 cities and counties. With Shovels, they can programmatically retrieve:
+By plugging into the Shovels API, Tactical Rebates now taps into <a href="https://www.shovels.ai/permit-database" target="_blank">permit records</a> from over 20,000 cities and counties. With Shovels, they can programmatically retrieve:
 
 - Permits explicitly related to solar installations
 - Property addresses and assessor data
@@ -65,7 +65,7 @@ With a clean, high-confidence dataset of known solar adopters, Tactical Rebates 
 
 ### A Nationwide Push, Powered by Real-Time Coverage
 
-Tactical Rebates isn’t standing still. As demand for solar installations continues to rise, they’re scaling their outreach programs across the country—matching the growth in federal and state incentives.
+Tactical Rebates isn’t standing still. As <a href="https://www.shovels.ai/blog/us-solar-construction-trends-2024/" target="_blank">demand for solar installations</a> continues to rise, they’re scaling their outreach programs across the country—matching the growth in federal and state incentives.
 
 With Shovels continually expanding its permit coverage and pushing toward real-time updates in key jurisdictions, the timing couldn’t be better.
 

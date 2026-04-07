@@ -16,7 +16,7 @@ image: /images/shovels_ev_prediction.png
 
 As the world embraces green energy solutions, electric vehicles (EVs) have become increasingly popular. This surge in EV adoption has driven a rapid expansion of the EV charging infrastructure – and now developers can use our [building permit API](https://docs.shovels.ai/api-reference) to access monthly EV charger installation data.
 
-Our EV charger permit data shows tremendous growth of EV charging infrastructure. We see where it's happening and who's doing the installations. To learn more about how to access this valuable data, check out our API documentation at https://docs.shovels.ai/api-reference!
+Our <a href="https://www.shovels.ai/permit-database" target="_blank">EV charger permit data</a> shows tremendous growth of EV charging infrastructure. We see where it's happening and who's doing the installations. To learn more about how to access this valuable data, check out our API documentation at https://docs.shovels.ai/api-reference!
 
 ## Overview of EV charging infrastructure expansion
 
@@ -65,7 +65,7 @@ Seasonality:
 - It's worth noting that the number of permits also seems to be lower in the beginning of the year and tends to increase as the year progresses.
 - The number of permits issued each month varies significantly, indicating the presence of considerable volatility in the data. This could be due to various factors such as changes in governmental policies, market demand, technological advancements, and other external factors.
 
-This is just one slice of our permit data. We also offer a comprehensive overview of current and future trends in all energy transition activities, including heat pumps and solar installations.
+This is just one slice of our permit data. You can also read about <a href="https://www.shovels.ai/blog/ev-charger-permit-processing-times-in-california/" target="_blank">EV charger permit processing times</a> here. We also offer a comprehensive overview of current and future trends in all <a href="https://www.shovels.ai/climate" target="_blank">energy transition activities</a>, including heat pumps and solar installations.
 
 ## How to access building permit data with Shovels
 

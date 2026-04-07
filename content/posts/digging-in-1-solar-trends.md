@@ -16,7 +16,7 @@ image: /images/digging-in-us-solar-construction-heatmap-watermarked.png
 
 (By the way, if you’re reading at the time of publication, we’re at RE+ in Anaheim right now! Come find us on the floor, or reach out directly to coordinate — we want to meet you!)
 
-Solar tech, and clean energy tech generally, is something we’re really passionate about. We’ve recently [partnered with WattCarbon](https://www.shovels.ai/blog/shovels-partners-with-wattcarbon/) to support their decarbonization efforts via their new Energy Attribute Certificate (EAC) Marketplace, and also worked with [Carbon Free Homes](https://www.shovels.ai/blog/case-study-empowering-carbon-free-homes/) to improve their climate-friendly contractor matching platform. 
+Solar tech, and <a href="https://www.shovels.ai/climate" target="_blank">clean energy tech</a> generally, is something we’re really passionate about. We’ve recently [partnered with WattCarbon](https://www.shovels.ai/blog/shovels-partners-with-wattcarbon/) to support their decarbonization efforts via their new Energy Attribute Certificate (EAC) Marketplace, and also worked with [Carbon Free Homes](https://www.shovels.ai/blog/case-study-empowering-carbon-free-homes/) to improve their climate-friendly contractor matching platform. 
 
 But today, we’re shining a light on solar construction trends thus far in 2024.
 
@@ -81,7 +81,7 @@ Derivative metrics that can inform projections and trends are the name of the ga
 
 ## Get Your Own Shovel Today
 
-Building permit data is the foundation of the Shovels platform, and wrangling it at scale can provide actionable business insights, legislative or administrative effectiveness reports, or anything in between. 
+<a href="https://www.shovels.ai/permit-database" target="_blank">Building permit data</a> is the foundation of the Shovels platform, and wrangling it at scale can provide actionable business insights, legislative or administrative effectiveness reports, or anything in between. 
 
 If that kind of scale is what you’re looking for, then our [Enterprise](https://www.shovels.ai/data-feed) product will be the best fit. We’ll send you the files and raw data for consumption into, or in tandem with, existing models. 
 

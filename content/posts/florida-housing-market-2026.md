@@ -152,7 +152,7 @@ Statewide averages can obscure meaningful regional differences. While some Flori
 
 ## Tampa Bay: A Bright Spot for New Construction
 
-Tampa Bay permit data is bucking the trend by showing growth in 2025. Manatee County leads the region with 42% growth in new construction permits, while Pinellas County is up 42% YoY. Hillsborough County is stabilizing, with YoY growth in the 18–19% range after a significant drop off between 2021 and 2024.
+<a href="https://www.shovels.ai/blog/tampa-housing-market-permit-data/" target="_blank">Tampa Bay permit data</a> is bucking the trend by showing growth in 2025. Manatee County leads the region with 42% growth in new construction permits, while Pinellas County is up 42% YoY. Hillsborough County is stabilizing, with YoY growth in the 18–19% range after a significant drop off between 2021 and 2024.
 
 This momentum reflects broader real estate trends. <a href="https://www.tampabayrealtorsean.com/marketupdates/tampa-bay-real-estate-market-forecast-20252030-prices-inventory-amp-investment-opportunities#:~:text=Long%2Dterm%2C%20Tampa%20Bay%20remains%20one%20of%20the%20most%20attractive%20housing%20markets%20in%20the%20U.S.%20due%20to%3A" target="_blank" rel="noopener noreferrer">Tampa Bay remains one of the most attractive housing markets in the country</a>, supported by sustained population growth and economic expansion. Although price appreciation has cooled after several years of rapid gains, the region continues to absorb new supply.
 

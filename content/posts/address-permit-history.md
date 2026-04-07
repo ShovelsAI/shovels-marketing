@@ -13,7 +13,7 @@ Summary: Not all addresses will have permits, for a variety of reasons. Variance
 image: /images/address-history-hero.jpg
 
 
-If you want an accurate picture of what’s been done to a property, it makes sense to look at the permit history. Theoretically, any project of reasonable size — a kitchen remodel, a new roof, a plug-in EV Charger install — would have some level of sign-off from the city or local jurisdiction, right? It’s up to the government to ensure that construction is done in a safe and legal manner, with inspections and approvals before work even begins as well as prior to completion. There should be a paper trail.
+If you want an accurate picture of what’s been done to a property, it makes sense to look at the <a href="https://www.shovels.ai/permit-database" target="_blank">permit history</a>. Theoretically, any project of reasonable size — a kitchen remodel, a new roof, a plug-in EV Charger install — would have some level of sign-off from the city or local jurisdiction, right? It’s up to the government to ensure that construction is done in a safe and legal manner, with inspections and approvals before work even begins as well as prior to completion. There should be a paper trail.
 
 However, it’s that bureaucratic red tape that can bog down a project in it’s infancy, especially for understaffed permit departments. It’s not that your paperwork is out of order, there’s just too long of a queue. In some areas, you’d be free to do the work yourself; in others, work done without a permit can mean a hefty fine and teardown. 
 
@@ -29,7 +29,7 @@ The second issue, briefly mentioned above, regards enforcement. In all likelihoo
 
 (To be clear, Shovels **does not** endorse such rogue construction. Always consult your local permit department for guidance on which projects you can DIY and which ones you need paperwork for.)
 
-The variety of permit regulations across jurisdictions means that some areas will have more permits on file than others, even if equal numbers of equivalent projects were completed. From us at Shovels, we can only provide data on filed permits. And even then, only if those permits have been digitized. 
+The variety of permit regulations across <a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/" target="_blank">jurisdictions</a> means that some areas will have more permits on file than others, even if equal numbers of equivalent projects were completed. From us at Shovels, we can only provide data on filed permits. And even then, only if those permits have been digitized. 
 
 ## Permit Digitization
 

@@ -15,7 +15,7 @@ image: /images/blog_images/5g-beyond-urban-centers-permit-data-hero.png
 
 In the United States, 5G deployment has largely followed a simple rule: build where the people already are. Dense urban corridors reached broadband-speed 5G first. But housing growth is happening outside dense urban corridors. 
 
-New homes are appearing in mountain towns, agricultural counties, foothill suburbs, and smaller communities within commuting distance of major metros. Population is expanding in these places, but telecommunications infrastructure may be lagging.
+New homes are appearing in mountain towns, agricultural counties, foothill suburbs, and smaller communities within commuting distance of major metros. Population is expanding in these places, but <a href="https://www.shovels.ai/telecommunications" target="_blank">telecommunications infrastructure</a> may be lagging.
 
 That creates an interesting gap: networks expand based on existing population centers, but housing growth hints at where people might move next. This is where building permit data is useful. Permits offer an early signal of population shift. A permit filing reflects active developer interest, financing secured or in progress, and construction already underway or soon to begin. These signals can appear in permit data months or years before they show up in infrastructure planning cycles.
 
@@ -265,4 +265,4 @@ Across all five counties, we see similar patterns. Wireless coverage is stronges
 
 As housing continues to spread beyond established urban corridors, the gap between where people already live and where new households are moving (and have moved) is becoming visible, offering a preview of where the next layer of connectivity investment may be needed.
 
-> Working on network planning or site selection? <a href="https://www.shovels.ai/contact" target="_blank">Let us know how we can help</a>. Or, if you’re ready to dive straight into the data, you can <a href="https://app.shovels.ai/signup/" target="_blank">create an account here</a>.
+> Working on network planning or site selection? <a href="https://www.shovels.ai/contact" target="_blank">Let us know how we can help</a>. Or, if you’re ready to dive straight into the data, you can <a href="https://www.shovels.ai/data-feed" target="_blank">explore the data</a>.

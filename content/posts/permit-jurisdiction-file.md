@@ -18,7 +18,7 @@ We are thrilled to announce [another Kaggle dataset](https://www.kaggle.com/data
 
 ## What is this list of building permit jurisdictions?
 
-The file includes over 10,000 building permit jurisdictions (AHJs -- authority-having jurisdictions), and relates each jurisdiction to its respective state and county. 
+The file includes over 10,000 building permit jurisdictions (AHJs -- <a href="https://www.shovels.ai/blog/ahj-in-construction/" target="_blank">authority-having jurisdictions</a>), and relates each jurisdiction to its respective state and county. 
 
 We found this mapping buried in an [obscure government website](https://socds.huduser.gov/permits/){:target="_blank"}. We noticed that when we clicked on a state, a select box appeared with all of the counties in that state. This mapping is widely available from the US Census and many other open data sources. 
 
@@ -102,11 +102,11 @@ And here's a table of every state, its population, number of jurisdictions, and 
 
 ## Conclusion
 
-Our mission is to make government data meaningful and actionable. Our tools and datasets, like the one we're open-sourcing today, are designed to make government data useful. It's a step in the right direction. 
+Our mission is to make government data meaningful and actionable. Our <a href="https://www.shovels.ai/permit-database" target="_blank">tools and datasets</a>, like the one we're open-sourcing today, are designed to make government data useful. It's a step in the right direction. 
 
 Here are the links again: 
 
-Grab it [on Kaggle](https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states){:target="_blank"} or [download the CSV]({static}/images/jurisdiction_mappings.csv).
+Grab it [on Kaggle](https://www.kaggle.com/datasets/rbucks/building-permit-jurisdictions-in-the-united-states){:target="_blank"} or [download the CSV]({static}/images/jurisdiction_mappings.csv). You can also <a href="https://www.shovels.ai/coverage" target="_blank">check data coverage</a> across all jurisdictions in the Shovels platform.
 
 ## Frequently Asked Questions
 

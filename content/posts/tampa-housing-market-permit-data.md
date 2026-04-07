@@ -170,7 +170,7 @@ The permit data points in different directions depending on where you sit in the
 
 **If you're buying:** The jurisdictions with the most new inventory coming, Manatee and outer Hillsborough, are where buyers are likely to have the most options and negotiating room through 2026. New construction pipelines in these areas are active.
 
-**If you're selling:** The competitive environment in Manatee is likely to get more challenging as new inventory arrives. In Polk, price normalization and distressed inventory remain real headwinds. Sarasota tells a different story. Prices are still adjusting, but closed sales are rising, suggesting buyers are engaging with the corrected pricing.
+**If you're selling:** The competitive environment in Manatee is likely to get more challenging as new inventory arrives. In Polk, price normalization and distressed inventory remain real headwinds. Sarasota tells a different story. Prices are still adjusting, but closed sales are rising, suggesting <a href="https://www.shovels.ai/real-estate" target="_blank">buyers</a> are engaging with the corrected pricing.
 
 ![Suburban development in Florida. Credit: Ward Mercer on Unsplash.]({static}/images/blog_images/tampa-housing-market-permit-data-suburban.jpg)
 
@@ -184,7 +184,7 @@ At a high level, Tampa Bay looks like one story: two years of correction, prices
 
 Manatee, Hillsborough, and Tampa (metro) have construction momentum building. Pinellas is constrained by geography but quietly active. Polk is still working through the consequences of overbuilding. Sarasota's housing market is showing early signs of recovery, but new construction remains cautious pending further absorption.
 
-If you'd like to go deeper, Shovels includes Tampa Bay permit data by county, contractor, and permit type. <a href="https://app.shovels.ai/signup/" target="_blank">Sign up</a> to browse or <a href="https://www.shovels.ai/contact" target="_blank">get in touch</a>.
+If you'd like to go deeper, Shovels includes <a href="https://www.shovels.ai/permit-database" target="_blank">Tampa Bay permit data</a> by county, contractor, and permit type. <a href="https://app.shovels.ai/signup/" target="_blank">Sign up</a> to browse or <a href="https://www.shovels.ai/contact" target="_blank">get in touch</a>.
 
 ---
 

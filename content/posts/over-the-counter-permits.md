@@ -88,7 +88,7 @@ Shovels aggregates permit data from over 2,000 U.S. jurisdictions, including per
 
 Whether you're a contractor identifying which markets have the least permitting friction, a data buyer tracking construction activity by permit type, or a fintech company underwriting projects based on permit history, OTC permit data can be a valuable resource.
 
-Start exploring OTC permit data with <a href="https://app.shovels.ai/signup/" target="_blank">Shovels Online</a> or, if you have further questions, <a href="https://www.shovels.ai/contact" target="_blank">contact us.</a>
+Start exploring <a href="https://www.shovels.ai/permit-database" target="_blank">OTC permit data</a> with <a href="https://app.shovels.ai/signup/" target="_blank">Shovels Online</a> or, if you have further questions, <a href="https://www.shovels.ai/contact" target="_blank">contact us.</a>
 
 > **Key Takeaways**
 >

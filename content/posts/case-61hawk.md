@@ -36,7 +36,7 @@ As Gary put it: "We were shooting an arrow through a hole in the fence and hopin
 
 ## **The Solution**
 
-After initial conversations with Shovels, Gary became a beta tester of [Charlie](https://www.shovels.ai/charlie), our Claude MCP (Model Context Protocol) integration. Unlike our standard [online search interface](https://app.shovels.ai/), Claude MCP gave him conversational access to our entire, 185M+ nationwide permit database through natural language queries.
+After initial conversations with Shovels, Gary became a beta tester of [Charlie](https://www.shovels.ai/charlie), our Claude MCP (Model Context Protocol) integration. Unlike our standard [online search interface](https://app.shovels.ai/), Claude MCP gave him conversational access to our entire, 185M+ <a href="https://www.shovels.ai/permit-database" target="_blank">nationwide permit database</a> through natural language queries.
 
 61HAWK used Charlie to:
 
