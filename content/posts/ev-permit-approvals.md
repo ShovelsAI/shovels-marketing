@@ -17,11 +17,11 @@ image: /images/top5.png
 
 In keeping with our thinking about EV chargers, which you can [read more about here]({filename}ev-charger-growth.md), we're turning our attention now to how long it takes for jurisdictions to approve EV charger permits.
 
-First, let's take a step back. This analysis is important because California has committed to deploying five million <a href="https://www.shovels.ai/climate" target="_blank">zero-emission vehicles (ZEVs)</a> and building out 250,000 charging stations by 2025. This includes building a network of nearly 20,000 Level 2 and DC fast EV charging stations across the state. Additionally, the state plans to invest $2.5 billion over the next five years to expand the EV charging infrastructure and provide incentives for drivers to purchase electric vehicles.
+First, let's take a step back. This analysis is important because California has committed to deploying five million zero-emission vehicles (ZEVs) and building out 250,000 charging stations by 2025. This includes building a network of nearly 20,000 Level 2 and DC fast EV charging stations across the state. Additionally, the state plans to invest $2.5 billion over the next five years to expand the EV charging infrastructure and provide incentives for drivers to purchase electric vehicles.
 
 Having more residential EV chargers would make it easier for California residents to own and use electric vehicles. This would also relieve the burden on public EV chargers. The more EV chargers we have in homes, the less strain on the public chargers required for people who live in multifamily housing and don't have a dedicated charger.
 
-More residential EV chargers also creates more jobs and boost the economy. Installation and maintenance of these chargers increases demand for electricians, supporting many local businesses. 
+More residential EV chargers also creates more jobs and boost the economy. Installation and maintenance of these chargers increases demand for electricians, supporting many local businesses. Shovels tracks these installation trends as part of our broader <a href="https://www.shovels.ai/climate" target="_blank">climate and energy permit data</a>, covering solar, heat pumps, and battery storage alongside EV chargers.
 
 ## Potential for building permit reform
 

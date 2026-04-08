@@ -54,7 +54,7 @@ Example: You're the same HVAC company, looking to grow the maintenance arm of yo
 
 **Understanding your competitors isn't optional.** 
 
-Example: You need to know what other HVAC companies and contractors are doing in your area. **Shovels Online** lets you know exactly what they're working on, what they're charging, what <a href="https://www.shovels.ai/building-materials" target="_blank">suppliers</a> they're using, and more. Here's how:
+Example: You need to know what other HVAC companies and contractors are doing in your area. **Shovels Online** lets you know exactly what they're working on, what they're charging, what suppliers they're using, and more. Here's how:
 
 1. **Search for competitors**: Use **Shovels Online** to analyze project activity and behavior in your area. 
 

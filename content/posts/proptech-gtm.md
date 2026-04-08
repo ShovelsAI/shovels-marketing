@@ -23,7 +23,7 @@ Proptech, or property technology, is revolutionizing the <a href="https://www.sh
 
 At its core, proptech consists of software solutions developed to improve efficiency in real estate transactions. It can be divided into three categories; product/service innovation – aimed at improving customer experiences; process automation – aimed at streamlining internal processes; and data-driven analytics – focused on gaining insights from a large amount of data to improve operations. These categories are helping to drive efficiency in both residential and commercial markets across the world.
 
-The impact of proptech has been far-reaching in the <a href="https://www.shovels.ai/real-estate" target="_blank">real estate industry</a>. From streamlining processes for tenants to providing more detailed insights into market trends for buyers - these technological solutions have enabled businesses to make better decisions faster than ever before. Additionally, they have allowed them to provide their customers with a better experience by utilizing tools such as virtual reality tours or digital payment options.
+The impact of proptech has been far-reaching in the real estate industry. From streamlining processes for tenants to providing more detailed insights into market trends for buyers - these technological solutions have enabled businesses to make better decisions faster than ever before. Additionally, they have allowed them to provide their customers with a better experience by utilizing tools such as virtual reality tours or digital payment options.
 
 Some of the most successful proptech companies include [Zillow](https://www.zillow.com/), [WeWork](https://www.wework.com/), [Compass](https://www.compass.com/), [Redfin](https://www.redfin.com/), [OpenDoor](https://www.opendoor.com/), [Divvy](https://www.divvyhomes.com/), and [Reonomy](https://www.reonomy.com/) to name a few. Each company has its own unique strategy for success but all have leveraged technology to create products that make it easier for consumers to access information about properties or facilitate transactions quickly and conveniently online.
 
@@ -51,7 +51,7 @@ For example, if a proptech company is offering a smart home energy management sy
 
 Fortunately, there's a tool available that makes it easier to quickly find homeowners and contractors who have recently submitted or completed a building permit: Shovels. With Shovels, proptech companies can use advanced search tools and filters to narrow down potential customers based on criteria such as location and type of project (residential vs. commercial). This allows them to create targeted marketing strategies tailored specifically towards their target audiences more efficiently than traditional methods like cold calling.
 
-By leveraging <a href="https://www.shovels.ai/permit-database" target="_blank">the right technologies like Shovels</a> and understanding how building permits work as part of their go-to-market strategy, proptech companies can reach their target customers more effectively and maximize their success in this rapidly growing industry.
+By leveraging <a href="https://www.shovels.ai/permit-database" target="_blank">Shovels' building permit database</a> and understanding how building permits work as part of their go-to-market strategy, proptech companies can reach their target customers more effectively and maximize their success in this rapidly growing industry.
 
 ## Choosing the right technologies for your proptech company
 

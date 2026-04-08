@@ -78,4 +78,4 @@ As Boldr continues to expand its market presence, the partnership with Shovels r
 
 ### 📣 Ready to Transform Your Market Strategy?
 
-Whether you're in <a href="https://www.shovels.ai/home-services" target="_blank">HVAC, construction, or any building-related industry</a>, Shovels can help you turn permit data into actionable insights. [Contact us](https://www.shovels.ai/contact) to learn how our platform can power your growth strategy.
+Whether you're in <a href="https://www.shovels.ai/home-services" target="_blank">home services</a>, construction, or any building-related industry, Shovels can help you turn permit data into actionable insights. [Contact us](https://www.shovels.ai/contact) to learn how our platform can power your growth strategy.
