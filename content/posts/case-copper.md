@@ -64,7 +64,7 @@ The power of Shovels API lies in turning detailed, complex permit information in
 
 The success of the initial NYC campaign gave Copper the confidence they needed to continue using Shovels to unlock more markets. Major markets they plan to expand to include Washington, D.C., Portland, Seattle, Chicago, Los Angeles, Boston, and Northern California.
 
-We're proud to support Copper in their mission to simplify electrification and excited to watch their continued growth. As <a href="https://www.shovels.ai/climate" target="_blank">home electrification</a> accelerates nationwide, Shovels remains committed to empowering businesses like Copper with the critical insights they need.
+We're proud to support Copper in their mission to simplify electrification and excited to watch their continued growth. As home electrification accelerates nationwide, Shovels remains committed to empowering businesses like Copper with the critical insights they need.
 
 Ready to see how Shovels can boost your outreach strategy? Explore our [API](https://www.shovels.ai/api) or [reach out to our team](https://www.shovels.ai/contact) today.
 

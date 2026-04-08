@@ -16,7 +16,7 @@ image: /images/shovels_ev_prediction.png
 
 As the world embraces green energy solutions, electric vehicles (EVs) have become increasingly popular. This surge in EV adoption has driven a rapid expansion of the EV charging infrastructure – and now developers can use our [building permit API](https://docs.shovels.ai/api-reference) to access monthly EV charger installation data.
 
-Our <a href="https://www.shovels.ai/permit-database" target="_blank">EV charger permit data</a> shows tremendous growth of EV charging infrastructure. We see where it's happening and who's doing the installations. To learn more about how to access this valuable data, check out our API documentation at https://docs.shovels.ai/api-reference!
+Our EV charger permit data shows tremendous growth of EV charging infrastructure. We see where it's happening and who's doing the installations. To learn more about how to access this valuable data, check out our API documentation at https://docs.shovels.ai/api-reference!
 
 ## Overview of EV charging infrastructure expansion
 
@@ -69,7 +69,7 @@ This is just one slice of our permit data. You can also read about <a href="http
 
 ## How to access building permit data with Shovels
 
-Accessing building permit data is essential for developers, businesses, government, and researchers who want to understand the current state of energy transition infrastructure and identify areas where it needs expansion. To make this process easier, we have a building permit API that enables our customers to query building permits by the type of work involved.
+Accessing building permit data is essential for developers, businesses, government, and researchers who want to understand the current state of energy transition infrastructure and identify areas where it needs expansion. To make this process easier, we have a <a href="https://www.shovels.ai/api" target="_blank">building permit API</a> that enables our customers to query building permits by the type of work involved.
 
 For example, you can query for wall battery permits, heat pump HVAC conversions, solar panel installations, and EV charger networks. The data returned from these queries can be used for construction go-to-market activities, providing highly targeted leads for sales teams. Developers can also use this data to create applications related to energy transition activities, such as mapping out EV charger locations or predicting future demand for electric vehicles.
 

@@ -14,7 +14,7 @@ Summary: An end-to-end guide to contractor lead generation using Shovels. We cov
 Image: /images/blog_images/construction-lead-generation-shovels.png
 
 
-For companies selling to contractors, such as lenders, SaaS providers, and <a href="https://www.shovels.ai/building-materials" target="_blank">building materials</a> and equipment suppliers, finding reliable, timely leads can be a constant challenge. Many rely on buying brokered lists, scraping directories, or subscribing to lead platforms that promise quality but frequently struggle to deliver.
+For companies selling to contractors, such as lenders, SaaS providers, and <a href="https://www.shovels.ai/building-materials" target="_blank">building materials and equipment suppliers</a>, finding reliable, timely leads can be a constant challenge. Many rely on buying brokered lists, scraping directories, or subscribing to lead platforms that promise quality but frequently struggle to deliver.
 
 When these lead sourcing methods fail, it's usually because of poor data quality. [B2B contact data decays at approximately 22–30% per year](https://www.cognism.com/blog/data-decay), according to industry research from Cognism and ZoomInfo. A list sourced six months ago may already be 15% inaccurate before the first outreach campaign launches.
 

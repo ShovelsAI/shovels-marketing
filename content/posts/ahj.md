@@ -87,12 +87,12 @@ Knowing your jurisdiction upfront saves time, prevents misfiled applications, an
 
 The traditional permitting process is notoriously inefficient and paper-heavy. [Shovels](http://shovels.ai/) helps bring transparency to the process and makes historically messy and confusing data easy to access. Use our data for **AHJ permitting** by:
 
-- Using Shovels' data to understand the complex AHJ permit landscape more efficiently, <a href="https://www.shovels.ai/permit-database" target="_blank">monitor active permits in target markets</a>, and make more informed development decisions
+- Using Shovels' data to understand the complex AHJ permit landscape more efficiently, monitor active permits in target markets, and make more informed development decisions
 - Searching jurisdictions on our [Coverage Dashboard]({filename}../pages/coverage.md)
 - Creating a free Shovels Online account to [use location search to find any AHJ](https://app.shovels.ai/search/)
 - Tracking permits across multiple jurisdictions for improved visibility and planning
 
-We aggregate, clean and organize building insights and construction data across nationwide AHJs into actionable insights. What would historically take a company days or even weeks to access, read through, and make sense of all the permit data for a given AHJ can now take seconds using Shovels.
+We aggregate, clean and organize building insights and construction data across nationwide AHJs into actionable insights. What would historically take a company days or even weeks to access, read through, and make sense of all the permit data for a given AHJ can now take seconds using Shovels. Explore permits across every AHJ in the <a href="https://www.shovels.ai/permit-database" target="_blank">Shovels permit database</a>.
 
 Additionally, you can work with permit expediting services, and Shovel’s friendlies, such as [Pulley](https://www.withpulley.com/), [PermitFlow](https://www.permitflow.com/), and [Greenlite](https://greenlite.com/) who have experts and technology that can get your permits approved faster.
 

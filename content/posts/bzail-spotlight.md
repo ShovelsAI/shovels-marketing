@@ -74,6 +74,6 @@ Users can:
 
 “Shovels’ data has unlocked a new level of clarity and speed in early-stage site selection and due diligence for commercial real estate pros—making BAIZEL a one-stop destination for uncovering development potential across Nation.”
 
-And this is just the beginning. BAIZEL plans to <a href="https://www.shovels.ai/data-feed" target="_blank">expand beyond Florida</a>, launch real-time alerts for new permits, and leverage upcoming Shovels.ai Ai features—like entity extraction to auto-pull square footage, system specs, and more.
+And this is just the beginning. BAIZEL plans to expand beyond Florida, launch real-time alerts for new permits, and leverage upcoming Shovels.ai Ai features—like entity extraction to auto-pull square footage, system specs, and more.
 
 Together, BAIZEL and Shovels are building the future of real estate decision-making—giving CRE teams the power to move faster, act smarter, and eliminate guesswork with confidence. 

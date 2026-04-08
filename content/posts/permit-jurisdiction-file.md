@@ -102,7 +102,7 @@ And here's a table of every state, its population, number of jurisdictions, and 
 
 ## Conclusion
 
-Our mission is to make government data meaningful and actionable. Our <a href="https://www.shovels.ai/permit-database" target="_blank">tools and datasets</a>, like the one we're open-sourcing today, are designed to make government data useful. It's a step in the right direction. 
+Our mission is to make government data meaningful and actionable. Our <a href="https://www.shovels.ai/permit-database" target="_blank">permit database</a>, like the one we're open-sourcing today, is designed to make government data useful. It's a step in the right direction. 
 
 Here are the links again: 
 

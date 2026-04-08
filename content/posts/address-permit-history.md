@@ -29,7 +29,7 @@ The second issue, briefly mentioned above, regards enforcement. In all likelihoo
 
 (To be clear, Shovels **does not** endorse such rogue construction. Always consult your local permit department for guidance on which projects you can DIY and which ones you need paperwork for.)
 
-The variety of permit regulations across <a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/" target="_blank">jurisdictions</a> means that some areas will have more permits on file than others, even if equal numbers of equivalent projects were completed. From us at Shovels, we can only provide data on filed permits. And even then, only if those permits have been digitized. 
+The variety of permit regulations across <a href="https://www.shovels.ai/blog/list-of-all-building-permit-jurisdictions/" target="_blank">US building permit jurisdictions</a> means that some areas will have more permits on file than others, even if equal numbers of equivalent projects were completed. From us at Shovels, we can only provide data on filed permits. And even then, only if those permits have been digitized. 
 
 ## Permit Digitization
 

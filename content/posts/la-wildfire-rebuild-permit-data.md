@@ -304,7 +304,7 @@ For all three audiences, timing decides who captures the opportunity. The permit
 
 ## Methodology
 
-The permit data in this analysis comes from the <a href="https://www.shovels.ai/permit-database" target="_blank">Shovels database</a>, which indexes building permits at the address level across the United States. Permit filings are collected continuously from county and city sources and updated as new records are made available.
+The permit data in this analysis comes from the <a href="https://www.shovels.ai/permit-database" target="_blank">Shovels database, which indexes building permits at the address level across the United States</a>. Permit filings are collected continuously from county and city sources and updated as new records are made available.
 
 The fire impact zone is defined by ZIP codes 90272 (Pacific Palisades) and 91001 and 91003 (Altadena). The pre-fire baseline covers permit activity from the 12 months prior to January 7, 2025. The post-fire period covers January 7, 2025 through February 2026.
 

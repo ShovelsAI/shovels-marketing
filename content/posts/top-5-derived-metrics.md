@@ -64,7 +64,7 @@ However, for all it’s simplicity it’s one that’s difficult to find through
 
 We like to think of ourselves as an insights company more than a raw data company. We make the easy and useful connections internally and deliver them to anyone that wants them. If we can save you the time and effort, then we’re doing our part. 
 
-These derived metrics are available throughout <a href="https://www.shovels.ai/permit-database" target="_blank">our entire platform</a>.
+These derived metrics are available throughout <a href="https://www.shovels.ai/permit-database" target="_blank">the Shovels permit database</a>.
 
 In it’s simplest form, our [Shovels Online](https://app.shovels.ai) dashboard and web application allows you to search for Permits or Contractors and then see all the nested details beneath. 
 
