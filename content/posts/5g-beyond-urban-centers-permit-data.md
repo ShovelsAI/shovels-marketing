@@ -265,4 +265,4 @@ Across all five counties, we see similar patterns. Wireless coverage is stronges
 
 As housing continues to spread beyond established urban corridors, the gap between where people already live and where new households are moving (and have moved) is becoming visible, offering a preview of where the next layer of connectivity investment may be needed.
 
-> Working on network planning or site selection? <a href="https://www.shovels.ai/contact" target="_blank">Let us know how we can help</a>. Or, if you need this data at scale, learn about the <a href="https://www.shovels.ai/data-feed" target="_blank">Shovels enterprise data feed</a>.
+> Working on network planning or site selection? <a href="https://www.shovels.ai/contact" target="_blank">Let us know how we can help</a>. Or, if you need this data at scale, learn about the <a href="https://www.shovels.ai/data-feed" target="_blank">Shovels Enterprise</a>.
