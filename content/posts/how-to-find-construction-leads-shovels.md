@@ -3,6 +3,8 @@ Subtitle: An end-to-end guide to contractor lead generation using Shovels
 Date: 2026-03-03
 Modified: 2026-03-03
 Category: Customer Success
+Tag1: Lead Generation
+Tag2: Building Materials & Equipment Suppliers
 Tags: construction leads, contractor leads, contractor lead classification building products supplier, trigger leads, building permit, permit database, construction project leads
 Authors: Ruoji Tang
 Author_image: /theme/images/team/Ruoji.svg

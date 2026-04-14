@@ -3,6 +3,8 @@ Subtitle: Get started accessing Shovels data within ChatGPT
 Date: 2024-4-24
 Modified: 2024-4-13
 Category: Customer Success
+Tag1:
+Tag2:
 Tags: ai, chatgpt, openai
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

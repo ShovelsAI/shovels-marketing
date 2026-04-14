@@ -3,6 +3,8 @@ Subtitle: Our permit data is now accessible to millions of GIS professionals thr
 Date: 2026-01-08
 Modified: 2026-01-08
 Category: Company
+Tag1:
+Tag2:
 Tags: Esri, Living Atlas, GIS, building permits, partnerships, ArcGIS
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg

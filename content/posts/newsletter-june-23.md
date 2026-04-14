@@ -2,7 +2,9 @@ Title: June 2023 Newsletter
 Subtitle: Enough with the fundraising blah blah blah. It's time to start talking about building permits! 
 Date: 2023-6-28
 Modified: 2023-6-28
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

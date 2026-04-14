@@ -2,7 +2,9 @@ Title: January 2026 Newsletter
 Subtitle: Shovels is growing up: ReZone acquisition, Charlie launch, and critical Shovels Online improvements
 Date: 2026-1-14
 Modified: 2026-1-14
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: Combine construction insights with internal financial and operational 
 Date: 2025-02-18
 Modified: 2025-02-20
 Category: Company
+Tag1:
+Tag2: Real Estate
 Tags: Partnership
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

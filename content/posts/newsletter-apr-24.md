@@ -2,7 +2,9 @@ Title: April 2024 Newsletter
 Subtitle: We raised over $600,000 and have a robust roadmap
 Date: 2024-4-10
 Modified: 2024-4-10
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -2,7 +2,9 @@ Title: May 2023 Newsletter
 Subtitle: More on our final fundraising number and how we plan to spend it
 Date: 2023-5-24
 Modified: 2023-5-24
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

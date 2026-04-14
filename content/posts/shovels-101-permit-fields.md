@@ -3,6 +3,8 @@ Subtitle: Learn how to understand the Shovels permit data fields
 Date: 2024-10-09
 Modified: 2024-10-09
 Category: Customer Success
+Tag1: Construction Permits 101
+Tag2:
 Tags: permits, tutorial, resource
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

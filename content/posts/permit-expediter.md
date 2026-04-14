@@ -3,6 +3,8 @@ subtitle: Learn what a permit expediter does, when to hire one, and how much per
 date: 2026-04-06
 modified: 2026-04-06
 category: Customer Success
+tag1: Construction Permits 101
+tag2:
 tags: Customer Success, Construction Permits 101
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg

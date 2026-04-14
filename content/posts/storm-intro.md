@@ -3,6 +3,8 @@ Subtitle: While other permit data companies stop at the internet's edge, we pick
 Date: 2025-11-25
 Modified: 2025-11-25
 Category: Company
+Tag1: Construction Permits 101
+Tag2:
 Tags: storm, data, coverage, jurisdictions
 Authors: Chloe Harris
 Author_image: /theme/images/team/chloe.gif

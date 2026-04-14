@@ -2,7 +2,9 @@ Title: June 2024 Newsletter
 Subtitle: This month we started rebuilding a few things. The results are exciting!
 Date: 2024-6-18
 Modified: 2024-6-18
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

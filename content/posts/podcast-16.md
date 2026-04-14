@@ -3,6 +3,8 @@ Subtitle: Unpacking the complexities and strategies of securing investment in th
 Date: 2024-02-05
 Modified: 2024-02-05
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, fundraising, seed, series a, pre-seed
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

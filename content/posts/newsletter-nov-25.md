@@ -2,7 +2,9 @@ title: November 2025 Newsletter
 subtitle: A retrospective on 2025: Doubled coverage, tripled revenue, and building the intelligence layer for the built world
 date: 2025-11-20
 modified: 2025-11-20
-category: Company
+category: Newsletter
+tag1:
+tag2:
 tags: company,newsletter
 authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

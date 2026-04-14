@@ -3,6 +3,8 @@ Subtitle: Exploring the transformation of urban spaces and the role of technolog
 Date: 2023-11-02
 Modified: 2023-11-02
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, downtown, economic development
 Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

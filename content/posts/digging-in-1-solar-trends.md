@@ -3,6 +3,8 @@ Subtitle: Insights into US Solar Construction Trends using the Shovels platform 
 Date: 2024-09-11
 Modified: 2024-09-11
 Category: Data
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: RE Plus, Solar, Insights
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

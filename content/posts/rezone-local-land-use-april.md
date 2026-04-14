@@ -3,6 +3,8 @@ Subtitle: Tracking the latest city council decisions shaping urban development n
 Date: 2025-04-22
 Modified: 2025-04-22
 Category: Data
+Tag1: Zoning
+Tag2:
 Tags: ReZone, zoning, city council, urban development, Seattle, Austin, Long Beach, inclusionary zoning
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

@@ -3,6 +3,8 @@ Subtitle: Discover the latest city council decisions shaping urban development n
 Date: 2025-03-13
 Modified: 2025-03-13
 Category: Data
+Tag1: Zoning
+Tag2:
 Tags: ReZone, zoning, city council, urban development, Omaha, Newark, Columbus, annexation
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

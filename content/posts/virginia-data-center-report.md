@@ -3,6 +3,8 @@ Subtitle: Virginia’s Dominance in Data Center Development | Industry Trends 20
 Date: 2025-08-05
 Modified: 2025-08-05  
 Category: Data
+Tag1: Data Center
+Tag2:
 Tags: data-centers, virginia, permits, construction, infrastructure, loudoun-county, electrical, market-analysis, commercial-real-estate, technology, sterling-va, leesburg-va, contractors, power-infrastructure, market-trends
 Authors: Betty Wan  
 Author_image: /theme/images/team/betty.svg  

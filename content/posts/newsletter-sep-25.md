@@ -2,7 +2,9 @@ title: September 2025 Newsletter
 subtitle: Expansion, contraction, and government inbounds
 date: 2025-09-16
 modified: 2025-09-16
-category: Company
+category: Newsletter
+tag1:
+tag2:
 tags: geospatial-analysis, building-permits, team-growth, SOC2-compliance, quarterly-index, data-insights, mapping, permit-data
 authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

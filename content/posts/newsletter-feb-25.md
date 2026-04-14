@@ -2,7 +2,9 @@ Title: February 2025 Newsletter
 Subtitle: Revolutionizing construction intelligence with powerful new features and insights
 Date: 2025-02-13
 Modified: 2025-02-13
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: An introductory tour of the new Shovels web app, Shovels Online
 Date: 2024-11-06
 Modified: 2024-11-06
 Category: Company
+Tag1: Shovels Online
+Tag2:
 Tags: product launch, web application
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

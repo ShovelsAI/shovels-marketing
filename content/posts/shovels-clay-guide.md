@@ -3,6 +3,8 @@ Date: 2025-06-07
 Subtitle: Automate construction industry prospecting with Shovels API and Clay
 Modified: 2025-06-07
 Category: Company
+Tag1: Lead Generation
+Tag2:
 Tags: lead-generation, automation, api-integration, clay, construction-industry, sales-automation, prospecting
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

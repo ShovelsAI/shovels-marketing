@@ -2,7 +2,9 @@ Title: January 2024 Newsletter
 Subtitle: With the help of ChatGPT, we are officially putting the AI in Shovels.ai
 Date: 2024-1-4
 Modified: 2024-1-4
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: How 61HAWK used Charlie and Shovels permit intelligence to uncover hun
 Date: 2026-01-28
 Modified: 2026-01-28
 Category: Case Study
+Tag1: Charlie
+Tag2:
 Tags: case, customer, charlie
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg

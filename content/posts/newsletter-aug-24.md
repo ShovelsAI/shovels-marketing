@@ -2,7 +2,9 @@ Title: August 2024 Newsletter
 Subtitle: Lots of API updates and new states are launching this week
 Date: 2024-8-17
 Modified: 2024-8-17
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

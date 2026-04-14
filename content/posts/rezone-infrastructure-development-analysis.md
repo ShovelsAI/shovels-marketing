@@ -3,6 +3,8 @@ Subtitle: Using City Council Data to Examine Trends in Infrastructure Planning
 Date: 2025-01-14
 Modified: 2025-01-14
 Category: Data
+Tag1: Zoning
+Tag2:
 Tags: ReZone, infrastructure, city council, urban development, municipal planning, TIF, water management
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

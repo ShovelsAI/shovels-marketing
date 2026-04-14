@@ -3,6 +3,8 @@ Subtitle: California's EV charging infrastructure is experiencing unprecedented 
 Date: 2023-7-24
 Modified: 2023-7-24
 Category: Data
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: gtm, building permits, ev chargers, climate
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: Support climate-saving initiatives with EACs from WattCarbon
 Date: 2024-08-22
 Modified: 2024-08-22
 Category: Company
+Tag1:
+Tag2: Energy & Climate
 Tags: EAC, WattCarbon, Decarbonization
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

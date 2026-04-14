@@ -3,6 +3,8 @@ Subtitle: Learn how the Shovels team built their LLM training sample.
 Date: 2024-09-26
 Modified: 2024-09-29
 Category: Company
+Tag1:
+Tag2:
 Tags: AI, Machine Learning, Partnership
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

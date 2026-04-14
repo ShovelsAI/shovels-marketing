@@ -3,6 +3,8 @@ Subtitle: The definitive guide to getting started with the Shovels V1 API
 Date: 2023-10-13
 Modified: 2023-10-13
 Category: Customer Success
+Tag1: API
+Tag2:
 Tags: api
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: Exploring the intersection of zoning laws and technology in shaping th
 Date: 2024-01-29
 Modified: 2024-01-29
 Category: Podcast
+Tag1: Zoning
+Tag2: Real Estate
 Tags: podcast, zoning, proptech, real estate law
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

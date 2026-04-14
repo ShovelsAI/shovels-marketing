@@ -3,6 +3,8 @@ Subtitle: Discovering the intersections of technology and real estate through en
 Date: 2024-02-13
 Modified: 2024-02-13
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: super bowl, advertising
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

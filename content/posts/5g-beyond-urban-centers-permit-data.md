@@ -3,6 +3,8 @@ subtitle: People are migrating away from urban centers, but is 5G keeping up?
 date: 2026-03-13
 modified: 2026-03-13
 category: Data
+tag1:
+tag2: Telecommunications
 tags: Telecommunications, Housing Growth, Building Permits, Broadband Coverage, Real Estate Trends, 5G
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg

@@ -2,7 +2,9 @@ Title: April 2025 Newsletter
 Subtitle: It's Climate Week in San Francisco and we are here for it.
 Date: 2025-04-21
 Modified: 2025-04-21
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

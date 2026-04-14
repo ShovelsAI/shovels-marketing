@@ -2,7 +2,9 @@ Title: Go-to-market strategies for proptech companies
 Subtitle: Use building permits to create an effective go-to-market plan for proptech companies
 Date: 2023-6-22
 Modified: 2023-6-22
-Category: GTM
+Category: Customer Success
+Tag1: Lead Generation
+Tag2: Real Estate
 Tags: gtm, building permits
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

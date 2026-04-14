@@ -3,6 +3,8 @@ Subtitle: A deep dive into using AI for enhancing proptech strategies
 Date: 2023-11-21
 Modified: 2023-11-21
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, commercial permit, proptech
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

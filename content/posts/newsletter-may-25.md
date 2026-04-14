@@ -2,7 +2,9 @@ Title: May 2025 Newsletter
 Subtitle: Discover new API features and company milestones!
 Date: 2025-5-16
 Modified: 2025-5-16
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

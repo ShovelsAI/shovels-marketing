@@ -3,6 +3,8 @@ Subtitle: Ryan Buckley and Fernando Pizarro share their favorite business books,
 Date: 2024-02-27
 Modified: 2024-02-27
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: book club, sales books, marketing books, business books
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

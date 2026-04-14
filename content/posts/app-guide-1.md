@@ -3,6 +3,8 @@ Subtitle: The definitive guide to getting started with the Shovels app
 Date: 2024-02-12
 Modified: 2023-02-12
 Category: Customer Success
+Tag1: Shovels Online
+Tag2:
 Tags: app, launch
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

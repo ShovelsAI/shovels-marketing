@@ -3,6 +3,8 @@ Subtitle: As demand for EV chargers grows, so does the need for more contractors
 Date: 2023-10-1
 Modified: 2023-10-1
 Category: Data
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: gtm, building contractors, ev chargers, climate
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: We discuss the opportunities and challenges fundraising in proptech in
 Date: 2023-10-01
 Modified: 2023-10-01
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: proptech, fundraising
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

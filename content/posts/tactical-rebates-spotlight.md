@@ -3,6 +3,8 @@ Subtitle: Learn how to make your construction industry go-to-market more efficie
 Date: 2025-05-20
 Modified: 2025-05-20
 Category: Case Study
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: spotlight, integration, API, tactical rebates
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

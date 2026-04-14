@@ -2,7 +2,9 @@ Title: September 2023 Newsletter
 Subtitle: 100M permits at your disposal 
 Date: 2023-9-17
 Modified: 2023-9-17
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

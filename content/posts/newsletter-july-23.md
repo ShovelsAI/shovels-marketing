@@ -2,7 +2,9 @@ Title: July 2023 Newsletter
 Subtitle: 21M permits are now in California and early bird plans are available! 
 Date: 2023-7-24
 Modified: 2023-7-24
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

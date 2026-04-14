@@ -2,7 +2,9 @@ Title: February 2026 Newsletter
 Subtitle: How Shovels embraces AI tooling and what it means for the future of data startups
 Date: 2026-2-18
 Modified: 2026-2-18
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: A Tale of Two Venues: Insights from Davos and White House Discussions
 Date: 2024-01-18
 Modified: 2024-01-18
 Category: Podcast
+Tag1:
+Tag2: Energy & Climate
 Tags: podcast, culture, davos, energy, permit data
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

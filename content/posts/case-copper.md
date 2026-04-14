@@ -3,6 +3,8 @@ Subtitle: How a Berkeley startup used permit data to identify 4,036 electrificat
 Date: 2025-08-12
 Modified: 2025-08-12
 Category: Case Study
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: spotlight, case study, customer, copper
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

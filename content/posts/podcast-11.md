@@ -3,6 +3,8 @@ Subtitle: Unveiling the opportunities at the crossroads of real estate and envir
 Date: 2023-12-07
 Modified: 2023-12-07
 Category: Podcast
+Tag1:
+Tag2: Energy & Climate
 Tags: podcast, climatetech, proptech
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: The overview of using AI to power the Shovels platform.
 Date: 2025-04-29
 Modified: 2025-04-29
 Category: Company
+Tag1:
+Tag2:
 Tags: AI, permits, data
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

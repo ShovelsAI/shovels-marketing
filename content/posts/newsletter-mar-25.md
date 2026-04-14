@@ -2,7 +2,9 @@ Title: March 2025 Newsletter
 Subtitle: Join our energy hackathon, explore new features, and discover the power of parcel-based permit analysis
 Date: 2025-03-10
 Modified: 2025-03-10
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

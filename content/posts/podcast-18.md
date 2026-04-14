@@ -3,6 +3,8 @@ Subtitle: Ryan Buckley and Fernando Pizarro delve into the intricacies of outbou
 Date: 2024-02-20
 Modified: 2024-02-20
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: outbound sales, cold emails
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

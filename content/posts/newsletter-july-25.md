@@ -2,7 +2,9 @@ title: July 2025 Newsletter
 subtitle: Shovels is now a geospatial business
 date: 2025-07-15
 modified: 2025-07-15
-category: Company
+category: Newsletter
+tag1:
+tag2:
 tags: company, geospatial, esri
 authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

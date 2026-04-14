@@ -3,6 +3,8 @@ Subtitle: Exploring the journey from concept to construction in proptech
 Date: 2023-11-15
 Modified: 2023-11-15
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, commercial permit, proptech
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

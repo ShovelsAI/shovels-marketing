@@ -3,6 +3,8 @@ Subtitle: Learn how to understand the Shovels permit data fields
 Date: 2024-11-13
 Modified: 2024-11-13
 Category: Case Study
+Tag1:
+Tag2: Real Estate
 Tags: spotlight, integration, API, inspectify
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

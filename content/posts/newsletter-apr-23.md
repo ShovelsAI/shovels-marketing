@@ -2,7 +2,9 @@ Title: April 2023 Newsletter
 Subtitle: We've now raised about $1M and we're super close to releasing v2 of our prototype
 Date: 2023-4-20
 Modified: 2023-4-20
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

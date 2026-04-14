@@ -3,6 +3,8 @@ Subtitle: Exploring strategic positioning in proptech through a bakery analogy
 Date: 2023-10-13
 Modified: 2023-10-13
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: proptech, positioning
 Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

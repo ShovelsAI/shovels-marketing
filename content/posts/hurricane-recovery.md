@@ -3,6 +3,8 @@ subtitle: An analysis of Hurricane Harvey and Hurricane Ian through the lens of 
 date: 2025-11-17
 modified: 2025-11-17
 category: Data
+tag1: Natural Disaster
+tag2:
 tags: data, hurricane, permits
 authors: Morgan Friberg
 author_image: /theme/images/team/morgan.svg
