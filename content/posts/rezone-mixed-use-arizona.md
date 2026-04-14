@@ -3,6 +3,8 @@ Subtitle: Analyzing all city decisions in AZ to explore mixed-use developments a
 Date: 2025-02-24
 Modified: 2025-02-24
 Category: Data
+Tag1: Zoning
+Tag2:
 Tags: ReZone, zoning, mixed-use, Arizona, urban development, walkability, adaptive reuse
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

@@ -3,6 +3,8 @@ Subtitle: Using City Council Data to Reveal Trends, Tools, and Tactics in Afford
 Date: 2024-12-20
 Modified: 2024-12-20
 Category: Data
+Tag1: Affordable Housing
+Tag2:
 Tags: affordable housing, zoning, housing policy, city council, PILOT, LIHTC, ReZone
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

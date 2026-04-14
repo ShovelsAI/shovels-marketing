@@ -3,6 +3,8 @@ Subtitle: A deep dive into the relationship between household income levels and 
 Date: 2025-01-23
 Modified: 2025-01-23
 Category: Data
+Tag1:
+Tag2: Home Services
 Tags: texas, roofing permits, analysis
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

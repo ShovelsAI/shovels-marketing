@@ -3,6 +3,8 @@ Subtitle: We find that affiliations with rebate programs have an impact on speci
 Date: 2023-11-19
 Modified: 2023-11-10
 Category: Data
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: bayren, rebates, climate
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

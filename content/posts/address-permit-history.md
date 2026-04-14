@@ -3,6 +3,8 @@ Subtitle: Understand the nuance of why a given address would have a permit on re
 Date: 2024-10-02
 Modified: 2024-10-02
 Category: Customer Success
+Tag1: Construction Permits 101
+Tag2:
 Tags: permits, tutorial, resource, address
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

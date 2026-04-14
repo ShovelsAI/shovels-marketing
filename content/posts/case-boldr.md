@@ -3,6 +3,8 @@ Subtitle: Transforming HVAC Market Intelligence with Data-Driven Permit Insights
 Date: 2025-08-11
 Modified: 2025-08-11
 Category: Case Study
+Tag1: Lead Generation
+Tag2: Home Services
 Tags: spotlight,case,customer,boldr
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

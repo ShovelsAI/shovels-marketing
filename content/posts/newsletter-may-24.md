@@ -2,7 +2,9 @@ Title: May 2024 Newsletter
 Subtitle: We added a new team member and are actively building our next major software release
 Date: 2024-5-13
 Modified: 2024-5-13
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: Unpacking Legal Changes and Their Impact on Proptech
 Date: 2024-01-11
 Modified: 2024-01-11
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, culture, supreme court, proptech
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

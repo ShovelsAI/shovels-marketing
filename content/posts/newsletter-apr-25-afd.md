@@ -2,7 +2,9 @@ Title: Introducing: The Department of Permit Efficiency (DOPE)
 Subtitle: A look at revolutionizing permit approvals through AI, blockchain, and executive orders
 Date: 2025-4-01
 Modified: 2025-04-01
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

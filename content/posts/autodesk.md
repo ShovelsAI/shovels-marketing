@@ -3,6 +3,8 @@ Subtitle: Get permit data in Autodesk Construction Cloud
 Date: 2024-8-9
 Modified: 2024-8-9
 Category: Company
+Tag1:
+Tag2: Construction Technology
 Tags: construction software, autodesk construction cloud,
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: How Shovels combines data streams to improve their product
 Date: 2024-10-17
 Modified: 2024-10-17
 Category: Company
+Tag1:
+Tag2:
 Tags: data enrichment, API integration, new release 
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

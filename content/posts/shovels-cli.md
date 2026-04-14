@@ -3,6 +3,8 @@ subtitle: Built for AI agents, power users, and anyone who prefers a terminal to
 date: 2026-03-04
 modified: 2026-03-04
 category: Product
+tag1: API
+tag2:
 tags: CLI, API, developer, AI agents, permits
 authors: Morgan Friberg
 author_image: /theme/images/team/morgan.svg

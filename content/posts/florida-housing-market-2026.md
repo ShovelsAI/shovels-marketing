@@ -3,6 +3,8 @@ subtitle: We look at construction-side indicators including new construction per
 date: 2026-02-25
 modified: 2026-02-25
 category: Data
+tag1: Florida Housing
+tag2: Real Estate
 tags: Florida housing market, building permit data, data analysis, ADUs, solar panels, Florida housing market crash, florida hurricane preparedness, lennar homes florida, net metering florida, adu florida
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg

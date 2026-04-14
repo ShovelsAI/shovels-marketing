@@ -3,6 +3,8 @@ Subtitle: The definitive guide to using the Shovels API to find address permit h
 Date: 2024-08-29
 Modified: 2024-11-04
 Category: Customer Success
+Tag1: API
+Tag2:
 Tags: api
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

@@ -3,6 +3,8 @@ Subtitle: We are open-sourcing our database of every building permit jurisdictio
 Date: 2024-4-6
 Modified: 2024-4-6
 Category: Data
+Tag1: Construction Permits 101
+Tag2:
 Tags: building permits, AHJ, permit jurisdiction
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

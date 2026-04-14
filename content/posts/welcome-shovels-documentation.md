@@ -3,6 +3,8 @@ Subtitle: A brief introduction to our docs hub, including what content will stay
 Date: 2025-01-16
 Modified: 2025-01-24
 Category: Company
+Tag1:
+Tag2:
 Tags: Documentation, Tutorials, Release Notes
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

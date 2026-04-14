@@ -2,7 +2,9 @@ Title: December 2023 Newsletter
 Subtitle: Cool new permit lookup features in the Shovels app and why we're going long on climate
 Date: 2023-12-5
 Modified: 2023-12-5
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ subtitle: The Palisades and Eaton fires destroyed 16,246 structures. A year of b
 date: 2026-03-17
 modified: 2026-03-17
 category: Data
+tag1: Natural Disaster
+tag2:
 tags: wildfires, California, permits, Los Angeles, construction, recovery
 authors: Morgan Friberg
 author_image: /theme/images/team/morgan.svg

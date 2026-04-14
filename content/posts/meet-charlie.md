@@ -3,6 +3,8 @@ Subtitle: Natural language search for millions of building permits and contracto
 Date: 2026-01-14
 Modified: 2026-01-14
 Category: Company
+Tag1: Charlie
+Tag2:
 Tags: product, AI, Charlie
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg

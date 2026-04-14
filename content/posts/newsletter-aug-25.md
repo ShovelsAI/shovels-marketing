@@ -2,7 +2,9 @@ title: August 2025 Newsletter
 subtitle: Expansion, contraction, and government inbounds
 date: 2025-08-19
 modified: 2025-08-19
-category: Company
+category: Newsletter
+tag1:
+tag2:
 tags: company, expansion, government
 authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

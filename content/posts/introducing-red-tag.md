@@ -3,6 +3,8 @@ subtitle: Launch of our automated permit enforcement product.
 date: 2026-04-01
 modified: 2026-04-01
 category: Company
+tag1: Decisions
+tag2:
 tags: permit data, construction, transparency, product storytelling, April Fools
 authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

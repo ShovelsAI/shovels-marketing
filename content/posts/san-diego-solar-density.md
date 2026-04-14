@@ -3,6 +3,8 @@ Subtitle: Analyzing Census Tracts in San Diego
 Date: 2025-04-09
 Modified: 2025-04-09
 Category: Data
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: solar, building permits, solar density, policy
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Subtitle: Learn best practices for leveraging the Shovels platform to enable you
 Date: 2025-04-09
 Modified: 2025-04-09
 Category: Customer Success
+Tag1: Shovels Online
+Tag2:
 Tags: Tutorial
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

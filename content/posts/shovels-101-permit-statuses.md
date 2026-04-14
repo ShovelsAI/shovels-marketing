@@ -3,6 +3,8 @@ Subtitle: The definitive guide to understanding Shovels Permit Statuses
 Date: 2024-09-03
 Modified: 2025-05-13
 Category: Customer Success
+Tag1: Construction Permits 101
+Tag2:
 Tags: permit status, web app
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

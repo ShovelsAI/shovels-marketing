@@ -3,6 +3,8 @@ Subtitle: A six-month review of all student-housing legislation in the largest 2
 Date: 2025-05-12
 Modified: 2025-05-12
 Category: Data
+Tag1: Affordable Housing
+Tag2:
 Tags: ReZone, student housing, zoning, city council, urban development, PBSA, affordable housing
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

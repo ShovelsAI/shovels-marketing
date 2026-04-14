@@ -3,6 +3,8 @@ subtitle: Learn what an over the counter permit is, which projects qualify, and 
 date: 2026-03-31
 modified: 2026-03-31
 category: Customer Success
+tag1: Construction Permits 101
+tag2:
 tags: over the counter permit, building over the counter, express permit, otc permit
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg

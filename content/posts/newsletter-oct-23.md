@@ -2,7 +2,9 @@ Title: October 2023 Newsletter
 Subtitle: The Shovels API is live and self-serve! 
 Date: 2023-10-17
 Modified: 2023-10-17
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

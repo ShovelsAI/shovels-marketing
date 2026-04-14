@@ -3,6 +3,8 @@ Subtitle: Acquisition expands Shovels' platform to unify government meeting deci
 Date: 2026-01-07
 Modified: 2026-01-07
 Category: Company
+Tag1: Zoning
+Tag2:
 Tags: rezone, acquisition, company news, growth
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg

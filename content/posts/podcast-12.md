@@ -3,6 +3,8 @@ Subtitle: Exploring the vital role of company culture in shaping the future of p
 Date: 2023-12-13
 Modified: 2023-12-13
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, culture, hr, proptech
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

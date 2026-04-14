@@ -4,6 +4,8 @@ Slug: arcgis-permit-insights
 Date: 2025-09-17
 Modified: 2025-09-17
 Category: Company
+Tag1:
+Tag2:
 Tags: ArcGIS, GIS, Permits, Predictive Analytics, Utilities, Real Estate, Telecommunications, Data Integration, Construction, AI
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg

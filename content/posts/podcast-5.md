@@ -3,6 +3,8 @@ Subtitle: Understanding the unique challenges and strategies in proptech sales a
 Date: 2023-10-27
 Modified: 2023-10-27
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, sales, crm
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

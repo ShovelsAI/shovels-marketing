@@ -3,6 +3,8 @@ Subtitle: A guide to understanding the origin of every field in the Shovels data
 Date: 2026-02-27
 Modified: 2026-02-27
 Category: Customer Success
+Tag1: Construction Permits 101
+Tag2:
 Tags: building permit data, data dictionary, permit fields, data transparency, contractor data
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

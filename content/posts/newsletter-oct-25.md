@@ -2,7 +2,9 @@ title: October 2025 Newsletter
 subtitle: Big data, bigger ambitions: Announcing new milestones, teams, and AI at Shovels
 date: 2025-10-15
 modified: 2025-10-15
-category: Company
+category: Newsletter
+tag1:
+tag2:
 tags: company
 authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

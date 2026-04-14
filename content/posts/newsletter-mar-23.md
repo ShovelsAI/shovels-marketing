@@ -2,7 +2,9 @@ Title: March 2023 Newsletter
 Subtitle: We raised over $600,000 and have a robust roadmap
 Date: 2023-3-15
 Modified: 2023-3-15
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

@@ -3,6 +3,8 @@ Date: 2025-06-23
 Subtitle: Strategic partnership enables seamless integration of parcel and permit data for enhanced location intelligence
 Modified: 2025-06-23
 Category: Company
+Tag1:
+Tag2: Real Estate
 Tags: partnership, parcel-data, permit-data, data-integration, location-intelligence, real-estate, site-selection, market-analysis, geospatial-data, property-development
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

@@ -3,6 +3,8 @@ Subtitle: A practical guide to understanding AHJ, permits, and jurisdiction chal
 Date: 2025-09-15
 Modified: 2025-09-15
 Category: Customer Success
+Tag1: Construction Permits 101
+Tag2:
 Tags: AHJ in construction, AHJ permitting, Authority Having Jurisdiction, construction permits
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg

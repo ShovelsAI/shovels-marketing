@@ -2,7 +2,9 @@ Title: January 2025 Newsletter
 Subtitle: A new year, a new website, and a new way to use Shovels.ai
 Date: 2025-1-15
 Modified: 2025-1-15
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

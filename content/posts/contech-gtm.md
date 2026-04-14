@@ -2,7 +2,9 @@ Title: Go-to-market strategies for contech companies
 Subtitle: Use building permits to create an effective go-to-market plan for construction technology (contech) companies
 Date: 2023-7-10
 Modified: 2023-7-10
-Category: GTM
+Category: Customer Success
+Tag1: Lead Generation
+Tag2: Construction Technology
 Tags: gtm, building permits
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

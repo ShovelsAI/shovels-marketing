@@ -2,7 +2,9 @@ Title: February 2023 Newsletter
 Subtitle: We raised money and increased prices!
 Date: 2023-2-16
 Modified: 2023-2-16
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

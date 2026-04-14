@@ -3,6 +3,8 @@ Subtitle: Shovels: The ultimate lead generation solution for Beam and other cons
 Date: 2024-4-8
 Modified: 2024-4-8
 Category: Case Study
+Tag1: Lead Generation
+Tag2: Home Services
 Tags: case,customer
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

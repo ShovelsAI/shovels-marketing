@@ -2,7 +2,9 @@ Title: March 2024 Newsletter
 Subtitle: We launched an Android app and now offer private table sharing
 Date: 2024-3-11
 Modified: 2024-3-11
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

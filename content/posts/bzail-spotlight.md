@@ -3,6 +3,8 @@ Subtitle: Learn how BAIZEL is leveraging Shovels' permit data to revolutionize c
 Date: 2025-07-18
 Modified: 2025-07-18
 Category: Case Study
+Tag1:
+Tag2: Real Estate
 Tags: spotlight, integration, API, BAIZEL, site selection, commercial real estate
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

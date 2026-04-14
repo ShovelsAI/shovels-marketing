@@ -3,6 +3,8 @@ Subtitle: Unraveling the complexities of effective email marketing in the propte
 Date: 2023-11-29
 Modified: 2023-11-29
 Category: Podcast
+Tag1:
+Tag2: Real Estate
 Tags: podcast, email marketing, proptech
 Authors: Ryan Buckley
 author_image: /theme/images/team/ryan.svg

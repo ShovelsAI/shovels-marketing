@@ -2,7 +2,9 @@ Title: December 2022 Newsletter
 Subtitle: We have a better problem statement and understanding of our customers! 
 Date: 2022-12-13
 Modified: 2022-12-14
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

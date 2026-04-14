@@ -2,7 +2,9 @@ Title: February 2024 Newsletter
 Subtitle: Announcing the first major release of our software product!
 Date: 2024-2-12
 Modified: 2024-2-12
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company,newsletter
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

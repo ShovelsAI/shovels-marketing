@@ -3,6 +3,8 @@ Subtitle: Revolutionizing contractor data with AI-powered classifications and co
 Date: 2025-06-04
 Modified: 2025-06-04
 Category: Company
+Tag1:
+Tag2:
 Tags: ai-classification, contractor-licensing, data-processing, machine-learning, permit-categories
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

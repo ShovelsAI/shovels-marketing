@@ -3,6 +3,8 @@ Subtitle: Analyzing City Council Data
 Date: 2025-01-28
 Modified: 2025-01-28
 Category: Data
+Tag1: Zoning
+Tag2:
 Tags: ReZone, annexations, municipal planning, city council, urban development, zoning
 Authors: Daniel Heller
 Author_image: /images/rezone/Daniel-Heller.jpg

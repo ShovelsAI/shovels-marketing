@@ -3,6 +3,8 @@ Subtitle: In-depth tutorial on how to get the most of our your Shovels Online su
 Date: 2024-11-20
 Modified: 2024-11-20
 Category: Customer Success
+Tag1: Shovels Online
+Tag2:
 Tags: web application, tutorial
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

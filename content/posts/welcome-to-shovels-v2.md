@@ -3,6 +3,8 @@ Subtitle: An introduction to our upgraded API and Shovels Online platforms
 Date: 2024-10-22
 Modified: 2024-10-22
 Category: Company
+Tag1: Shovels Online
+Tag2:
 Tags: new release, api, web app
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg

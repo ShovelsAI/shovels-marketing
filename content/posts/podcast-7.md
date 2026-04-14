@@ -3,6 +3,8 @@ Subtitle: Diving into the complexities and insights of commercial building permi
 Date: 2023-11-08
 Modified: 2023-11-08
 Category: Podcast
+Tag1: Construction Permits 101
+Tag2: Real Estate
 Tags: podcast, building permit, building contractor
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

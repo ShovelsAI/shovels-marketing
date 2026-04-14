@@ -3,6 +3,8 @@ Date: 2025-06-10
 Subtitle: Base10 Partners leads funding for Shovels, providing resources for next round of product development
 Modified: 2025-06-10
 Category: Company
+Tag1:
+Tag2:
 Tags: press-release
 Authors: Betty Wan
 Author_image: /theme/images/team/betty.svg

@@ -3,6 +3,8 @@ Subtitle: There's a wide disparity in the time it takes for EV charger permits t
 Date: 2023-8-10
 Modified: 2023-8-10
 Category: Data
+Tag1: Solar & EV
+Tag2: Energy & Climate
 Tags: gtm, building permits, ev chargers, permit timeline, climate
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

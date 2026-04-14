@@ -3,6 +3,8 @@ Date: 2025-01-13
 Subtitle: Quick summary of what we've been up to in 2024
 Modified: 2025-01-13
 Category: Company
+Tag1:
+Tag2:
 Tags: 2024
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

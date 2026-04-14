@@ -2,7 +2,9 @@ Title: June 2025 Newsletter
 Subtitle: We raised $5M and launched Project Wolverine
 Date: 2025-6-10
 Modified: 2025-6-10
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

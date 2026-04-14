@@ -2,7 +2,9 @@ Title: October 2024 Newsletter
 Subtitle: 150M permits at your fingertips 
 Date: 2024-10-9
 Modified: 2024-10-9
-Category: Company
+Category: Newsletter
+Tag1:
+Tag2:
 Tags: company
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

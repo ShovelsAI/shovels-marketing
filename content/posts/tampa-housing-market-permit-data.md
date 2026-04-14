@@ -3,6 +3,8 @@ subtitle: Six jurisdictions, six different stories. Here's what permit data reve
 date: 2026-03-13
 modified: 2026-03-13
 category: Data
+tag1: Florida Housing
+tag2: Real Estate
 tags: Tampa, housing market, building permits, Florida, real estate, new construction, Hillsborough County, Manatee County, market forecast
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg
