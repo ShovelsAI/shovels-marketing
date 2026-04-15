@@ -1,7 +1,7 @@
 title: California Housing Market Outlook: Supply Signals from Building Permit Data
 subtitle: What five years of building permit data reveals about California's housing shortage, regional divergence, and the policies reshaping construction.
-date: 2026-03-20
-modified: 2026-03-20
+date: 2026-04-15
+modified: 2026-04-15
 category: Data
 tag1: California Housing
 tag2: Real Estate
