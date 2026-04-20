@@ -1,4 +1,4 @@
-title: We Passed SOC 2 Type 2 — Here's Why It Matters (and What's Coming Next)
+title: We Passed SOC 2® Type 2 — Here's Why It Matters (and What's Coming Next)
 subtitle: SOC 2 is done — plus a product heads-up and a deep dive on Decisions
 date: 2026-04-16
 modified: 2026-04-16
