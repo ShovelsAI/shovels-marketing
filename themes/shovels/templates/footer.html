@@ -6,10 +6,10 @@
 
     <!-- Mobile Footer Accordions (visible below lg) -->
     <div class="lg:hidden space-y-0" x-data="{ customersOpen: false, solutionsOpen: false, resourcesOpen: false, companyOpen: false }">
-      <!-- Customers Accordion -->
+      <!-- Industries Accordion -->
       <div class="border-b border-gray-700">
         <button @click="customersOpen = !customersOpen" class="flex w-full items-center justify-between py-4 text-sm font-medium text-amber-300">
-          <span>Customers</span>
+          <span>Industries</span>
           <svg class="h-5 w-5 text-amber-300 transition-transform duration-200" :class="{ 'rotate-180': customersOpen }" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg>
@@ -86,7 +86,7 @@
       <div class="grid grid-cols-2 gap-8 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm leading-6 text-amber-300">Customers</h3>
+            <h3 class="text-sm leading-6 text-amber-300">Industries</h3>
             <ul role="list" class="mt-6">
               <li>
                 <a href="{{ SITEURL }}/building-materials" class="text-sm leading-6 hover:text-amber-500">Building Material Suppliers</a>
