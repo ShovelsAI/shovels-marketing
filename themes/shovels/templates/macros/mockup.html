@@ -1,0 +1,55 @@
+{#
+  Reusable mock-up frames for wrapping product screenshots.
+
+  browser_frame(src, alt, title='Shovels.ai', max_width='max-w-5xl',
+                offset='translate-x-3 translate-y-3', wrapper_class='')
+
+  Renders a light browser-style chrome (traffic-light dots + title) around
+  an image, with a solid offset rectangle sitting behind the frame in place
+  of a CSS drop shadow. The backing shape mimics Figma's "card behind a
+  card" style and reads identically on any page background.
+
+  Parameters
+  ----------
+  src           : Image URL (e.g. '/images/mock1.png').
+  alt           : Image alt text. Required for accessibility.
+  title         : Text shown in the chrome title bar. Defaults to 'Shovels.ai'.
+  max_width     : Tailwind max-w-* class controlling outer width. Pass ''
+                  to let the parent container set the width.
+  offset        : Tailwind translate utilities controlling how far the
+                  backing rectangle sits down/right of the frame. Default
+                  'translate-x-3 translate-y-3' (12px each).
+  wrapper_class : Extra classes for the outer wrapper (e.g. 'my-12').
+
+  Note: because the backing rectangle extends past the frame's right and
+  bottom edges, leave room when placing this next to other content.
+
+  Example
+  -------
+    {% import 'macros/mockup.html' as ui %}
+    {{ ui.browser_frame('/images/mock1.png',
+                        'Contractor card mock-up') }}
+#}
+
+{% macro browser_frame(src, alt,
+                       title='Shovels.ai',
+                       max_width='max-w-5xl',
+                       offset='translate-x-3 translate-y-3',
+                       wrapper_class='') %}
+<div class="mx-auto {{ max_width }} {{ wrapper_class }}">
+  <div class="relative">
+    {# Offset backing rectangle in Shovels light sage — replaces box-shadow. #}
+    <div class="absolute inset-0 {{ offset }} rounded-xl bg-[#E1ECE9]" aria-hidden="true"></div>
+    {# Foreground frame — chrome + image. #}
+    <div class="relative rounded-xl bg-white ring-1 ring-gray-300 overflow-hidden">
+      <div class="flex items-center gap-1.5 px-4 py-3 border-b border-gray-200">
+        <span class="size-3 rounded-full bg-red-400"></span>
+        <span class="size-3 rounded-full bg-yellow-400"></span>
+        <span class="size-3 rounded-full bg-green-400"></span>
+        <span class="ml-3 text-sm text-gray-600">{{ title }}</span>
+      </div>
+      <img src="{{ src }}" alt="{{ alt }}" class="block w-full h-auto" loading="lazy" />
+    </div>
+  </div>
+</div>
+{% endmacro %}
