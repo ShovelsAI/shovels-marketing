@@ -15,8 +15,6 @@ image: /images/blog_images/monthly-newsletter-hero.jpg
 
 ---
 
-**From Ryan Buckley, CEO**
-
 ## Things change!
 
 This is a new newsletter format and a new place for my monthly memo.
@@ -27,29 +25,31 @@ That's what tickles me, when I hear that you actually like my newsletters. You t
 
 We've grown up in the last two years. We've hired domain experts and real writers, people with actual insights! You should hear from them too.
 
-My ramblings will still be written (I can't help it) but they'll be set appropriately aside, an appetizer to the main dish. Just a click away. You can read it here. It's about having a bad month.
+My ramblings will still be written (I can't help it) but they'll be set appropriately aside, an appetizer to the main dish. Just a click away. <a href="https://www.shovels.ai/blog/monthly-memo-may-2026/" target="_blank">You can read it here</a>. It's about having a bad month.
 
 Yes, I'll keep writing. That's one thing that won't change.
+
+Ryan Buckley - CEO
 
 ## Content Roundup
 
 ![The Roof Age Problem]({static}/images/blog_images/may-2026-newsletter-roof-problem.png)
-<a href="#" target="_blank">The Roof Age Problem: What Permit Data Reveals About America's Rooftops</a>
+<a href="https://www.shovels.ai/blog/roofing-permit-data-insurance-roof-age/" target="_blank">The Roof Age Problem: What Permit Data Reveals About America's Rooftops</a>
 
 ![Who's Building America?]({static}/images/blog_images/may-2026-newsletter-national-builders.png)
-<a href="#" target="_blank">Who's Building America? The Top 25 National Homebuilders by Permit Activity</a>
+<a href="https://www.shovels.ai/blog/top-25-national-homebuilders/" target="_blank">Who's Building America? The Top 25 National Homebuilders by Permit Activity</a>
 
 ![CRE Daily]({static}/images/blog_images/may-2026-newsletter-cre-permits.png)
-<a href="#" target="_blank">CRE Daily feature: Nationwide CRE New Construction Permits Fell 16% in Q1 2026</a>
+<a href="https://www.credaily.com/briefs/nationwide-cre-new-construction-permits-fell-16-in-q1-2026/" target="_blank">CRE Daily feature: Nationwide CRE New Construction Permits Fell 16% in Q1 2026</a>
 
 ![Florida ADUs]({static}/images/blog_images/may-2026-newsletter-florida-adu.png)
-<a href="#" target="_blank">Florida Wants to Make Building ADUs Easier. Here's Where Things Stand.</a>
+<a href="https://www.shovels.ai/blog/florida-adu-sb-48/" target="_blank">Florida Wants to Make Building ADUs Easier. Here's Where Things Stand.</a>
 
 ![Thesis Driven]({static}/images/blog_images/may-2026-newsletter-land-use.png)
-<a href="#" target="_blank">Thesis Driven feature: What's Happening in Local Land Use | Q1 2026</a>
+<a href="https://www.thesisdriven.com/letters/whats-happening-in-local-land-use-q1-2026-2/" target="_blank">Thesis Driven feature: What's Happening in Local Land Use | Q1 2026</a>
 
 ![Energy Policies California]({static}/images/blog_images/may-2026-newsletter-energy-california.png)
-<a href="#" target="_blank">How Changing Energy Policies Are Transforming California Homes</a>
+<a href="https://www.shovels.ai/blog/energy-policies-changing-california-home/" target="_blank">How Changing Energy Policies Are Transforming California Homes</a>
 
 ## Map of the Month
 
@@ -61,7 +61,7 @@ Florida owns the 2025 HVAC leaderboard 🌴, with four of the top 10 counties an
 
 Plenty of fresh coverage in our May 2nd release. We added 7.5M new permits and 32 new jurisdictions — Portland (OR), Orlando (FL), and a strong cluster of Twin Cities suburbs lead the way. +131K contractors were added too. Total permits grew by +7.19M (+5.4%). Our mid-May release added 223 new jurisdictions - our largest expansion yet.
 
-<a href="https://shovels.ai/releases" target="_blank">Full Shovels release notes →</a>
+<a href="https://docs.shovels.ai/release-notes/release-notes" target="_blank">Full Shovels release notes →</a>
 
 ## Around the Web
 
@@ -93,4 +93,4 @@ To ensure that you have the latest data, we need you to delete prior downloads o
 
 Additionally, you were not able to sublicense or redistribute the Old Building Permit Data. And your license to the Old Building Permit Data has now expired.
 
-Keep an eye on our blog where we add all relevant information for data diggers like you.
+Keep an eye on <a href="https://www.shovels.ai/blog/" target="_blank">our blog</a> where we add all relevant information for data diggers like you.
