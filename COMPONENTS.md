@@ -426,6 +426,50 @@ faq_section(heading, items, intro=None)
 
 ---
 
+### `final_cta` macro
+
+**Location**: `themes/shovels/templates/macros/final_cta.html`
+
+Closing CTA banner for every Industry page. Centered card with
+heading, description, and a primary CTA button. Sits inside the same
+`max-w-6xl` content area as other sections.
+
+#### Signature
+
+```jinja
+final_cta(heading, description,
+          cta_label='Get started',
+          cta_href='https://app.shovels.ai/signup/')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `heading` | _required_ | The closing headline (e.g. "Ready to underwrite what was actually built?") |
+| `description` | _required_ | One- or two-sentence supporting text |
+| `cta_label` | `'Get started'` | Button text |
+| `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination — matches hero default |
+
+#### Example
+
+```jinja
+{% import 'macros/final_cta.html' as ui_cta %}
+
+{{ ui_cta.final_cta(
+    heading='Ready to underwrite what was actually built?',
+    description='See how permit and contractor data fits into your underwriting, claims, and growth workflows.') }}
+```
+
+#### Notes
+
+- **Card**: `rounded-3xl`, tinted-primary background (`bg-shovels-primary/5`),
+  thin primary-tinted border, `p-10 md:p-16` per spec.
+- **Layout**: text and button center-aligned within the card.
+- **Button**: rounded-full, primary background — matches hero CTA exactly.
+
+---
+
 ## Static includes
 
 Static includes are whole HTML chunks that get pulled into a page with

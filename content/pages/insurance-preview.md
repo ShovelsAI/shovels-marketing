@@ -7,6 +7,7 @@ status: hidden
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
 {{ ui_hero.hero(
     eyebrow='FOR INSURANCE',
@@ -123,3 +124,7 @@ status: hidden
             'a': 'Yes, and actively expanding. Our team targets rural and offline jurisdictions underserved by existing data providers. We also prioritize coverage based on customer demand. If you need specific jurisdictions, let us know.',
         },
     ]) }}
+
+{{ ui_cta.final_cta(
+    heading='Ready to underwrite what was actually built?',
+    description='See how permit and contractor data fits into your underwriting, claims, and growth workflows.') }}
