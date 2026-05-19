@@ -373,6 +373,37 @@ is hardcoded inside the include file. Use them for sections that are
 truly identical across pages; when content needs to vary, prefer a
 macro instead.
 
+### `sections/coverage.html`
+
+**Location**: `themes/shovels/templates/sections/coverage.html`
+
+The "Coverage across the U.S." section: light-background two-column
+layout with eyebrow chip, heading, body paragraph, and two checkmarked
+bullets containing inline links. The U.S. coverage illustration sits
+in the right column.
+
+#### Usage
+
+```jinja
+{% include 'sections/coverage.html' %}
+```
+
+Place after the "Built for enterprise teams" section.
+
+#### Notes
+
+- **Copy is hardcoded**, including the two inline-link bullets pointing
+  to the coverage dashboard, release notes, and GIS layer page. Edit
+  here once and every page that includes it updates.
+- **Layout**: text-left / illustration-right on `md+`, single-column on
+  mobile.
+- **Bullets**: same circular check badge as `use_case_section`. Inline
+  links use `text-shovels-primary underline` with a hover opacity dim.
+- **Illustration**: `/images/illustrations/coverage-us.svg` — shared
+  across all Industry pages.
+
+---
+
 ### `sections/enterprise_teams.html`
 
 **Location**: `themes/shovels/templates/sections/enterprise_teams.html`

@@ -91,3 +91,5 @@ status: hidden
     cases=insurance_cases) }}
 
 {% include 'sections/enterprise_teams.html' %}
+
+{% include 'sections/coverage.html' %}
