@@ -365,6 +365,67 @@ after our review).
 
 ---
 
+### `faq_section` macro
+
+**Location**: `themes/shovels/templates/macros/faq.html`
+
+Renders an expandable FAQ list using native `<details>`/`<summary>`
+elements **and** a matching `FAQPage` JSON-LD schema block from the
+same data. AI answer engines (Google, ChatGPT, Perplexity, etc.) read
+the schema to surface Shovels content in answer-style results.
+
+#### Signature
+
+```jinja
+faq_section(heading, items, intro=None)
+```
+
+#### Parameters
+
+| Parameter | Type | Notes |
+|---|---|---|
+| `heading` | string | Section H2 |
+| `items` | list of dicts | One entry per question, see below |
+| `intro` | string (optional) | Short paragraph below the heading |
+
+#### Each item dict
+
+| Key | Notes |
+|---|---|
+| `q` | Question text |
+| `a` | Answer text — **plain text only**, no markdown links (the schema's `Answer.text` field expects plain text) |
+
+#### Example
+
+```jinja
+{% import 'macros/faq.html' as ui_faq %}
+
+{{ ui_faq.faq_section(
+    heading='Frequently asked questions',
+    items=[
+        {'q': 'What data is included?',
+         'a': 'Shovels data includes building permits...'},
+        {'q': 'How is it delivered?',
+         'a': 'You can access Shovels via our online platform...'},
+    ]) }}
+```
+
+#### Notes
+
+- **Single source of truth**: both the human-visible accordion and the
+  FAQPage JSON-LD schema render from the same `items` list. Edit a
+  question once and both stay in sync.
+- **Accordion mechanism**: native `<details>`/`<summary>` — no JS
+  dependency. The default disclosure marker is hidden via
+  `[&::-webkit-details-marker]:hidden` + `list-none`.
+- **Chevron**: `group-open:rotate-180` animates the chevron when the
+  item opens.
+- **AEO**: the JSON-LD block uses schema.org `FAQPage` with a
+  `Question`/`Answer` pair per item. Keep answers plain text — rich
+  text may not index cleanly.
+
+---
+
 ## Static includes
 
 Static includes are whole HTML chunks that get pulled into a page with

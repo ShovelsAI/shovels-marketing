@@ -6,6 +6,7 @@ status: hidden
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
 
 {{ ui_hero.hero(
     eyebrow='FOR INSURANCE',
@@ -93,3 +94,32 @@ status: hidden
 {% include 'sections/enterprise_teams.html' %}
 
 {% include 'sections/coverage.html' %}
+
+{{ ui_faq.faq_section(
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'What data is included?',
+            'a': 'Shovels data includes building permits, contractor profiles, contractor state license (CSL) files, and property metadata including permit type, project description, valuation, dates, contractor information, and parcel ownership records.',
+        },
+        {
+            'q': 'How is it delivered?',
+            'a': 'You can access Shovels via our online platform, REST API, SFTP, or direct cloud integration with Snowflake, BigQuery, or Databricks. Contact us to discuss customized delivery options.',
+        },
+        {
+            'q': 'Is Shovels SOC 2 compliant?',
+            'a': 'Yes, we are SOC 2 Type II certified. Documentation is available on request.',
+        },
+        {
+            'q': 'Is Shovels a BuildFax alternative?',
+            'a': "The core difference is what the data covers and how it's delivered. BuildFax tracks permits. Shovels tracks permits and the contractors who pulled them, including standardized state license (CSL) files across 37 states, so you can verify contractor credentials, not just construction activity. We deliver via modern API or direct cloud integration with no legacy batch formats and no long-term lock-in.",
+        },
+        {
+            'q': 'Do you have roofing-specific data?',
+            'a': 'Yes. We tag roofing permits using AI classification, which lets you query roof replacement activity by address, ZIP, or county. This is useful for risk banding, renewal triggers, and claims verification. Learn more about our roofing data by contacting us.',
+        },
+        {
+            'q': 'Do you cover rural areas?',
+            'a': 'Yes, and actively expanding. Our team targets rural and offline jurisdictions underserved by existing data providers. We also prioritize coverage based on customer demand. If you need specific jurisdictions, let us know.',
+        },
+    ]) }}
