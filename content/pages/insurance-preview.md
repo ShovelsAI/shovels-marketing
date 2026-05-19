@@ -8,7 +8,7 @@ status: hidden
 {% import 'macros/use_case.html' as ui %}
 
 {{ ui_hero.hero(
-    eyebrow='STRATEGIC INSIGHTS',
+    eyebrow='FOR INSURANCE',
     h1='Property intelligence for insurance providers',
     description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
     illustration_src='/images/industries/insurance/hero.svg',
@@ -89,3 +89,5 @@ status: hidden
     eyebrow='USE CASES',
     heading='What insurance teams can do with Shovels',
     cases=insurance_cases) }}
+
+{% include 'sections/enterprise_teams.html' %}

@@ -365,6 +365,45 @@ after our review).
 
 ---
 
+## Static includes
+
+Static includes are whole HTML chunks that get pulled into a page with
+`{% include 'sections/<name>.html' %}`. They take no parameters — copy
+is hardcoded inside the include file. Use them for sections that are
+truly identical across pages; when content needs to vary, prefer a
+macro instead.
+
+### `sections/enterprise_teams.html`
+
+**Location**: `themes/shovels/templates/sections/enterprise_teams.html`
+
+The "Built for enterprise teams" dark section: full-bleed dark
+background, left-aligned eyebrow chip + heading, 3-up grid of
+icon + yellow title + description.
+
+#### Usage
+
+```jinja
+{% include 'sections/enterprise_teams.html' %}
+```
+
+Place after the use-cases section in an Industry page.
+
+#### Notes
+
+- **Background**: `bg-shovels-dark` (`#101727`).
+- **Eyebrow + heading**: left-aligned (not centered) — title aligns with
+  the icons in the grid below.
+- **Titles**: yellow (`text-shovels-secondary`) for accent against the
+  dark background.
+- **Descriptions**: `text-gray-300`.
+- **Icons**: at `size-16` (64px). Source SVGs live in
+  `content/images/illustrations/`.
+- **Copy is hardcoded.** If/when this content needs to vary by industry,
+  convert to a parameterized macro.
+
+---
+
 ## File organization
 
 ### Image assets
