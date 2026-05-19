@@ -1,0 +1,76 @@
+{#
+  Top-of-page hero for Industry pages.
+
+  hero(eyebrow, h1, description, illustration_src, illustration_alt,
+       cta_label='Get started',
+       cta_href='https://app.shovels.ai/signup/',
+       illustration_position='right')
+
+  Renders an eyebrow chip, H1, lead paragraph, primary CTA button, and a
+  side-by-side illustration. A subtle crossing-gradient grid pattern with
+  a radial fade sits behind the content, per the design spec.
+
+  Parameters
+  ----------
+  eyebrow              : Small uppercase label above the H1 (e.g. 'STRATEGIC INSIGHTS').
+  h1                   : Hero headline.
+  description          : One- or two-sentence lead paragraph below the H1.
+  illustration_src     : Path to the SVG illustration.
+  illustration_alt     : Alt text for the illustration.
+  cta_label            : Button text. Default 'Get started'.
+  cta_href             : Button destination. Default 'https://app.shovels.ai/signup/'.
+  illustration_position: 'right' (default) or 'left'.
+
+  Example
+  -------
+    {% import 'macros/hero.html' as ui %}
+
+    {{ ui.hero(
+        eyebrow='STRATEGIC INSIGHTS',
+        h1='Property intelligence for insurance providers',
+        description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
+        illustration_src='/images/industries/insurance/hero.svg',
+        illustration_alt='Insurance hero illustration') }}
+
+  Background grid
+  ---------------
+  The grid uses two crossing CSS gradients with a radial mask that fades
+  the lines toward the edges. The line color (#ebf0ed) approximates the
+  spec's --grid-line token (oklch 0.94 0.01 160). Density and fade are
+  tuned per the spec; change backgroundSize for a denser grid.
+#}
+
+{% macro hero(eyebrow, h1, description, illustration_src, illustration_alt,
+              cta_label='Get started',
+              cta_href='https://app.shovels.ai/signup/',
+              illustration_position='right') %}
+<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
+
+  {# Crossing-gradient grid pattern with radial fade. Sits behind content. #}
+  <div class="pointer-events-none absolute inset-0"
+       style="background-image: linear-gradient(#ebf0ed 1px, transparent 1px), linear-gradient(90deg, #ebf0ed 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);"
+       aria-hidden="true"></div>
+
+  <div class="relative mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+      {# Text column #}
+      <div class="{% if illustration_position == 'left' %}md:order-2{% endif %}">
+        <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
+        <h1 class="mt-4 text-pretty text-4xl font-semibold tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
+        <p class="mt-6 text-lg text-gray-500">{{ description }}</p>
+        <div class="mt-8">
+          <a href="{{ cta_href }}" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">{{ cta_label }}</a>
+        </div>
+      </div>
+
+      {# Illustration column #}
+      <div class="{% if illustration_position == 'left' %}md:order-1{% endif %}">
+        <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="block w-full h-auto" />
+      </div>
+
+    </div>
+  </div>
+
+</section>
+{% endmacro %}

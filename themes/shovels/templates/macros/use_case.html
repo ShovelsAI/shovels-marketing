@@ -11,10 +11,14 @@
     description : One- or two-sentence body paragraph.
     bullets     : List of bullet strings (optional). Each renders with a
                   green checkmark.
-    image_src   : Path to the screenshot.
-    image_alt   : Alt text for the screenshot.
-    caption     : Optional small italic caption rendered below the
-                  screenshot (e.g., "names, and dates").
+    image_src   : Path to the screenshot or illustration.
+    image_alt   : Alt text for the image.
+    framed      : Optional boolean. Default True (image rendered inside
+                  the browser_frame chrome). Set False for non-screenshot
+                  imagery like illustrations — renders the image directly
+                  with no chrome.
+    caption     : Optional small italic caption rendered below the image
+                  (e.g., "names, and dates").
 
   The first case displays image-right; the second image-left; alternating
   thereafter. Alternation is handled internally via loop.index.
@@ -83,9 +87,13 @@
             {% endif %}
           </div>
 
-          {# Image column — wrapped in browser_frame. #}
+          {# Image column — wrapped in browser_frame by default; raw <img> if framed=False. #}
           <div class="{% if image_on_left %}md:order-1{% endif %}">
-            {{ ui_frame.browser_frame(case.image_src, case.image_alt, max_width='') }}
+            {% if case.framed | default(true) %}
+              {{ ui_frame.browser_frame(case.image_src, case.image_alt, max_width='') }}
+            {% else %}
+              <img src="{{ case.image_src }}" alt="{{ case.image_alt }}" class="block w-full h-auto" />
+            {% endif %}
             {% if case.caption %}
             <p class="mt-3 text-xs italic text-gray-500">{{ case.caption }}</p>
             {% endif %}

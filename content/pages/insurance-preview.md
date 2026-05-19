@@ -3,7 +3,15 @@ Description: Sandbox preview of the Insurance Industry page as components come o
 slug: insurance-preview
 status: hidden
 
+{% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/use_case.html' as ui %}
+
+{{ ui_hero.hero(
+    eyebrow='STRATEGIC INSIGHTS',
+    h1='Property intelligence for insurance providers',
+    description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
+    illustration_src='/images/industries/insurance/hero.svg',
+    illustration_alt='Insurance hero illustration') }}
 
 {% set insurance_cases = [
     {
@@ -67,7 +75,8 @@ status: hidden
             'Identify areas where rebuilding lags behind a CAT event',
         ],
         'image_src': '/images/industries/insurance/uc5-catastrophe.png',
-        'image_alt': 'UC5 — catastrophe reconstruction (real image)',
+        'image_alt': 'Catastrophe reconstruction illustration',
+        'framed': False,
     },
 ] %}
 

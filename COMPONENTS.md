@@ -199,9 +199,10 @@ use_case_section(eyebrow, heading, cases, intro=None)
 | `title` | yes | Use case heading (H3) |
 | `description` | yes | One- or two-sentence body |
 | `bullets` | no | List of strings; each renders with a check badge |
-| `image_src` | yes | Path to the screenshot |
+| `image_src` | yes | Path to the screenshot or illustration |
 | `image_alt` | yes | Alt text |
-| `caption` | no | Small italic caption rendered below the screenshot |
+| `framed` | no | Default `True` — image renders inside the browser_frame chrome. Set `False` for non-screenshot imagery like illustrations |
+| `caption` | no | Small italic caption rendered below the image |
 
 #### Example usage
 
