@@ -2,7 +2,9 @@
   Reusable mock-up frames for wrapping product screenshots.
 
   browser_frame(src, alt, title='Shovels.ai', max_width='max-w-5xl',
-                offset='translate-x-3 translate-y-3', wrapper_class='')
+                offset='translate-x-3 translate-y-3',
+                image_padding='p-[30px]',
+                wrapper_class='')
 
   Renders a light browser-style chrome (traffic-light dots + title) around
   an image, with a solid offset rectangle sitting behind the frame in place
@@ -11,7 +13,7 @@
 
   Parameters
   ----------
-  src           : Image URL (e.g. '/images/mock1.png').
+  src           : Image URL (e.g. '/images/industries/insurance/uc1.png').
   alt           : Image alt text. Required for accessibility.
   title         : Text shown in the chrome title bar. Defaults to 'Shovels.ai'.
   max_width     : Tailwind max-w-* class controlling outer width. Pass ''
@@ -19,6 +21,11 @@
   offset        : Tailwind translate utilities controlling how far the
                   backing rectangle sits down/right of the frame. Default
                   'translate-x-3 translate-y-3' (12px each).
+  image_padding : Tailwind padding utility applied around the image inside
+                  the frame. Default 'p-[30px]'. Designer-approved value;
+                  override per call only for unusual cases. Pass '' for no
+                  internal padding (e.g., if a screenshot is intentionally
+                  full-bleed).
   wrapper_class : Extra classes for the outer wrapper (e.g. 'my-12').
 
   Note: because the backing rectangle extends past the frame's right and
@@ -27,28 +34,31 @@
   Example
   -------
     {% import 'macros/mockup.html' as ui %}
-    {{ ui.browser_frame('/images/mock1.png',
-                        'Contractor card mock-up') }}
+    {{ ui.browser_frame('/images/industries/insurance/uc1-underwrite.png',
+                        'Underwriting view in Shovels') }}
 #}
 
 {% macro browser_frame(src, alt,
                        title='Shovels.ai',
                        max_width='max-w-5xl',
                        offset='translate-x-3 translate-y-3',
+                       image_padding='p-[30px]',
                        wrapper_class='') %}
 <div class="mx-auto {{ max_width }} {{ wrapper_class }}">
   <div class="relative">
     {# Offset backing rectangle in Shovels light sage — replaces box-shadow. #}
     <div class="absolute inset-0 {{ offset }} rounded-xl bg-[#E1ECE9]" aria-hidden="true"></div>
     {# Foreground frame — chrome + image. #}
-    <div class="relative rounded-xl bg-white ring-1 ring-gray-300 overflow-hidden">
+    <div class="relative rounded-xl bg-white ring-1 ring-[#111727] overflow-hidden">
       <div class="flex items-center gap-1.5 px-4 py-3 border-b border-gray-200">
-        <span class="size-3 rounded-full bg-red-400"></span>
-        <span class="size-3 rounded-full bg-yellow-400"></span>
-        <span class="size-3 rounded-full bg-green-400"></span>
+        <span class="size-3 rounded-full bg-[#F26662]"></span>
+        <span class="size-3 rounded-full bg-[#F4DA86]"></span>
+        <span class="size-3 rounded-full bg-[#71A78C]"></span>
         <span class="ml-3 text-sm text-gray-600">{{ title }}</span>
       </div>
-      <img src="{{ src }}" alt="{{ alt }}" class="block w-full h-auto" loading="lazy" />
+      <div class="{{ image_padding }}">
+        <img src="{{ src }}" alt="{{ alt }}" class="block w-full h-auto" loading="lazy" />
+      </div>
     </div>
   </div>
 </div>

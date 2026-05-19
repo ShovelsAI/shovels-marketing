@@ -8,34 +8,9 @@ status: hidden
 <div class="bg-white py-16">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <h1 class="text-3xl font-semibold tracking-tight text-gray-900">Browser-frame mock-up sandbox</h1>
-    <p class="mt-3 text-gray-600">Same macro, four different screenshots at different aspect ratios. The frame should look correct in every case.</p>
+    <p class="mt-3 text-gray-600">Same macro at various widths and aspect ratios. 30px internal padding is now the default.</p>
 
-    <div class="mt-12 rounded-lg bg-amber-50 ring-1 ring-amber-200 px-5 py-4">
-      <p class="text-sm font-semibold text-amber-900">Padding review — same Insurance use case at three internal padding values</p>
-      <p class="mt-1 text-sm text-amber-800">For designer comparison. Scroll between A / B / C to see how each padding amount reads inside the frame.</p>
-    </div>
-
-    <h2 class="mt-12 text-xl font-semibold text-gray-900">Padding A — 15px</h2>
-    <div class="mt-6">
-      {{ ui.browser_frame('/images/UC - Insurance 01-15px.png', 'Insurance use case 1 — 15px padding') }}
-    </div>
-
-    <h2 class="mt-16 text-xl font-semibold text-gray-900">Padding B — 30px</h2>
-    <div class="mt-6">
-      {{ ui.browser_frame('/images/UC - Insurance-01-30px.png', 'Insurance use case 1 — 30px padding') }}
-    </div>
-
-    <h2 class="mt-16 text-xl font-semibold text-gray-900">Padding C — 60px</h2>
-    <div class="mt-6">
-      {{ ui.browser_frame('/images/UC - Insurance-01-60px.png', 'Insurance use case 1 — 60px padding') }}
-    </div>
-
-    <hr class="mt-24 border-gray-200" />
-
-    <h2 class="mt-16 text-2xl font-semibold tracking-tight text-gray-900">Original four Figma mocks</h2>
-    <p class="mt-2 text-sm text-gray-500">Kept below for reference at varying widths.</p>
-
-    <h3 class="mt-12 text-xl font-semibold text-gray-900">1. <code>mock1</code> — default <code>max-w-5xl</code></h3>
+    <h2 class="mt-16 text-xl font-semibold text-gray-900">1. <code>mock1</code> — default <code>max-w-5xl</code></h2>
     <p class="mt-2 text-sm text-gray-500">Contractor card. Largest preset width.</p>
     <div class="mt-6">
       {{ ui.browser_frame('/images/mock1.png', 'Contractor card mock-up') }}
