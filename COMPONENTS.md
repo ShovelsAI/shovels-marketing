@@ -168,6 +168,106 @@ browser_frame(src, alt,
 
 ---
 
+### `hero` macro
+
+**Location**: `themes/shovels/templates/macros/hero.html`
+
+Top-of-page hero for Industry pages: eyebrow chip, H1, lead paragraph,
+primary CTA button, and a side illustration. A subtle crossing-gradient
+grid pattern with a radial fade sits behind the content (per the design
+spec).
+
+#### Signature
+
+```jinja
+hero(eyebrow, h1, description, illustration_src, illustration_alt,
+     cta_label='Get started',
+     cta_href='https://app.shovels.ai/signup/',
+     illustration_position='right')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `eyebrow` | _required_ | Small uppercase label above the H1 (e.g. `'STRATEGIC INSIGHTS'`) |
+| `h1` | _required_ | Hero headline |
+| `description` | _required_ | One- or two-sentence lead paragraph below the H1 |
+| `illustration_src` | _required_ | Path to the SVG illustration (typically in the industry folder) |
+| `illustration_alt` | _required_ | Alt text |
+| `cta_label` | `'Get started'` | Button text |
+| `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination — confirm with team for final canonical URL |
+| `illustration_position` | `'right'` | `'right'` or `'left'` |
+
+#### Example
+
+```jinja
+{% import 'macros/hero.html' as ui_hero %}
+
+{{ ui_hero.hero(
+    eyebrow='STRATEGIC INSIGHTS',
+    h1='Property intelligence for insurance providers',
+    description='Underwrite with verified property data…',
+    illustration_src='/images/industries/insurance/hero.svg',
+    illustration_alt='Insurance hero illustration') }}
+```
+
+#### Notes
+
+- **Grid background**: two crossing CSS gradients (1px lines, 56px cells)
+  with a radial mask that fades the pattern toward the edges. Line color
+  is `#ebf0ed` (approximates the spec's `--grid-line` token). The section
+  must be `position: relative` for the absolute grid layer.
+- **Section padding**: `pt-20 pb-24 md:pt-28 md:pb-32` per spec.
+- **Typography**: H1 is `text-4xl md:text-6xl` per spec.
+
+---
+
+### `soc2_trust` macro
+
+**Location**: `themes/shovels/templates/macros/soc2_trust.html`
+
+Horizontal trust banner with the AICPA SOC 2 seal, heading, body, and a
+link CTA on the right. Sits between the hero and the use cases section
+on every Industry page.
+
+#### Signature
+
+```jinja
+soc2_trust(heading, body,
+           cta_label='Read more about our security practices →',
+           cta_href='https://trust.shovels.ai/')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `heading` | _required_ | One-liner like "Shovels is SOC 2® Type II certified" — typically same across industries |
+| `body` | _required_ | Industry-specific descriptive paragraph |
+| `cta_label` | `'Read more about our security practices →'` | Link text |
+| `cta_href` | `'https://trust.shovels.ai/'` | Link destination |
+
+#### Example
+
+```jinja
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of enterprise insurance carriers...') }}
+```
+
+#### Notes
+
+- **Heading vs. body**: per the Notion source of truth, the heading is
+  consistent across Industry pages but the body varies by audience.
+- **Badge**: the SOC 2 seal at `/theme/images/soc2-seal.png`. Rendered
+  at `size-16` (64px).
+- **Layout**: horizontal on `md+`, stacked on mobile.
+
+---
+
 ### `use_case_section` macro
 
 **Location**: `themes/shovels/templates/macros/use_case.html`
@@ -272,19 +372,24 @@ after our review).
 ```
 content/images/
 ├── industries/
-│   ├── insurance/          ← Insurance page-specific assets
 │   ├── building-materials/
+│   ├── climate/
 │   ├── construction-tech/
-│   ├── energy-climate/
 │   ├── home-services/
+│   ├── insurance/          ← Insurance page-specific assets
 │   ├── real-estate/
-│   └── telecomms/
+│   └── telecommunications/
 └── illustrations/          ← Shared assets used on multiple pages
     ├── coverage-us.svg
     ├── enterprise-icon-ai-classified.svg
     ├── enterprise-icon-api-feed.svg
     └── enterprise-icon-updates.svg
 ```
+
+Each folder slug matches the corresponding Pelican page slug, which in
+turn matches the Notion `Slug` field for that industry (e.g.
+`industries/climate/` ↔ `content/pages/climate.md` ↔ Notion slug
+`/climate`).
 
 **When to place where**:
 
@@ -390,12 +495,6 @@ translation. Three paths:
   to semantic utilities. Highest effort, most consistent end state.
 
 Awaiting team decision.
-
-### Spelling: `telecomms`
-
-The folder is `industries/telecomms/` (double-m). The existing page
-is `content/pages/telcomm.md` (truncated, no `e`). Confirm canonical
-spelling before page rename + asset uploads.
 
 ### Eyebrow capitalization
 

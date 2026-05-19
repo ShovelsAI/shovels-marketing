@@ -4,6 +4,7 @@ slug: insurance-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 
 {{ ui_hero.hero(
@@ -12,6 +13,10 @@ status: hidden
     description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
     illustration_src='/images/industries/insurance/hero.svg',
     illustration_alt='Insurance hero illustration') }}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of enterprise insurance carriers. Our SOC 2 Type II certification reflects controls independently audited over a sustained period, not just a point-in-time snapshot.') }}
 
 {% set insurance_cases = [
     {

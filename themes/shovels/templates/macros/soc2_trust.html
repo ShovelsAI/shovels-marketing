@@ -1,0 +1,53 @@
+{#
+  SOC 2 trust banner — sits between the hero and the use cases section
+  on every Industry page.
+
+  soc2_trust(heading, body,
+             cta_label='Read more about our security practices →',
+             cta_href='https://trust.shovels.ai/')
+
+  Horizontal banner with a shield-check icon, a heading + body, and a
+  link CTA on the right. The heading is typically the same on every
+  page ("Shovels is SOC 2® Type II certified"); the body varies by
+  industry to call out the audience-specific compliance angle.
+
+  Parameters
+  ----------
+  heading   : The bold one-liner (e.g. "Shovels is SOC 2® Type II certified").
+  body      : The longer descriptive paragraph — varies per industry.
+  cta_label : Link text. Default includes the arrow character.
+  cta_href  : Link destination. Default 'https://trust.shovels.ai/'.
+
+  Example
+  -------
+    {% import 'macros/soc2_trust.html' as ui_soc2 %}
+
+    {{ ui_soc2.soc2_trust(
+        heading='Shovels is SOC 2® Type II certified',
+        body='We meet the security and compliance requirements of enterprise insurance carriers...') }}
+#}
+
+{% macro soc2_trust(heading, body,
+                    cta_label='Read more about our security practices →',
+                    cta_href='https://trust.shovels.ai/') %}
+<section class="w-full bg-white px-6 md:px-10 pb-8">
+  <div class="mx-auto max-w-6xl">
+    <div class="flex flex-col gap-4 rounded-2xl border border-gray-200 bg-gray-50 px-6 py-5 md:flex-row md:items-center md:gap-6">
+
+      {# Official SOC 2 seal. #}
+      <img src="/theme/images/soc2-seal.png" alt="SOC 2 certification seal" class="size-16 shrink-0" />
+
+
+      {# Heading + body — stacks under the icon on mobile, sits to its right on md+. #}
+      <div class="flex-1">
+        <p class="font-semibold text-gray-900">{{ heading }}</p>
+        <p class="mt-1 text-sm text-gray-500">{{ body }}</p>
+      </div>
+
+      {# CTA link — right-aligned on md+, full-width below text on mobile. #}
+      <a href="{{ cta_href }}" class="shrink-0 text-sm font-semibold text-shovels-primary hover:text-shovels-primary/80">{{ cta_label }}</a>
+
+    </div>
+  </div>
+</section>
+{% endmacro %}
