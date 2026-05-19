@@ -5,7 +5,7 @@ template: legal
 
 
 **Terms of Use**
-**Last revised on: December 10, 2025**
+**Last revised on: May 19, 2026**
 
 1\.         Introduction
 ------------------------
@@ -70,6 +70,11 @@ You acknowledge that all the intellectual property rights, including copyrights,
 ------------
 
 If you provide Company with any feedback or suggestions regarding the Site (“Feedback”), you hereby assign to Company all rights in such Feedback and agree that Company shall have the right to use and fully exploit such Feedback and related information in any manner it deems appropriate. Company will treat any Feedback you provide to Company as non-confidential and non-proprietary. You agree that you will not submit to Company any information or ideas that you consider to be confidential or proprietary.
+
+(i) Publicity
+-------------
+
+By agreeing to these Terms, using the Services, and/or creating an account on behalf of an organization, you grant Shovels a limited, non-exclusive, royalty-free, worldwide license to use your or your organization’s name, logo, and trademarks solely to identify you or your organization as a Shovels customer on Shovels’ website, customer lists, and marketing, sales, investor, and promotional materials. Shovels will not use them in a manner that disparages you or implies any sponsorship, partnership, or relationship beyond a customer-vendor relationship. You may revoke this permission at any time by emailing legal@shovels.ai, and Shovels will cease new uses and remove the marks from then-current website and digital marketing materials within thirty (30) days, but need not recall or modify materials already printed, distributed, or in circulation.
 
 4.        User Conduct
 ----------------------
