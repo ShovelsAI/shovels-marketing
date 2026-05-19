@@ -62,6 +62,29 @@ When the token system lands, these become CSS variable references.
 
 ---
 
+## Section padding convention
+
+Every middle section uses `py-12` (48px top and bottom). Each section
+contributes half the gap on both sides; the total gap between any two
+stacked sections is `48 + 48 = 96px`. This rule applies regardless of
+background color, so transitions to and from the dark section have the
+same rhythm as transitions between white sections — including the
+visible whitespace before the dark background starts, which was the
+specific bug that prompted this convention.
+
+| Section | Padding | Notes |
+|---|---|---|
+| `hero` | `pt-20 pb-24 md:pt-28 md:pb-32` | First section, owns its full vertical balance |
+| `soc2_trust` | `pb-8` only | Hugs the hero; reads as a continuation rather than a new section |
+| Middle sections | `py-12` | Use cases, enterprise teams, coverage, resources, FAQ, final CTA — all the same |
+
+The middle-section rule applies to both content-bearing macros
+(`use_case_section`, `faq_section`, etc.) and static includes
+(`sections/coverage.html`, `sections/enterprise_teams.html`).
+
+Adding or reordering sections requires no thought about adjacent
+padding: every middle section is interchangeable in vertical rhythm.
+
 ## Spacing rhythm
 
 Per the designer's spec — using Tailwind's 4px scale.
@@ -426,6 +449,70 @@ faq_section(heading, items, intro=None)
 
 ---
 
+### `resources_section` macro
+
+**Location**: `themes/shovels/templates/macros/resources.html`
+
+Renders a left-justified "Related content" eyebrow followed by a 3-up
+grid of blog-post cards (rounded featured image + title, whole card
+clickable). Importance flows left to right — the macro renders
+`articles` in the order it receives them.
+
+#### Signature
+
+```jinja
+resources_section(articles, eyebrow='Related content')
+```
+
+#### Parameters
+
+| Parameter | Type | Notes |
+|---|---|---|
+| `articles` | list of dicts | One entry per card |
+| `eyebrow` | string | Default `'Related content'` |
+
+#### Each article dict
+
+| Key | Notes |
+|---|---|
+| `url` | Blog post URL (e.g. `/blog/post-slug/`) |
+| `title` | Post title |
+| `image_src` | Path to the featured image |
+| `image_alt` | Alt text for the image |
+
+#### Example
+
+```jinja
+{% import 'macros/resources.html' as ui_res %}
+
+{{ ui_res.resources_section(
+    articles=[
+        {
+            'url': '/blog/roofing-permit-data-insurance-roof-age/',
+            'title': "The Roof Age Problem: What Permit Data Reveals",
+            'image_src': '/images/blog_images/roofing-permit-data-insurance-roof-age-hero.png',
+            'image_alt': 'Aerial view of a neighborhood',
+        },
+    ]) }}
+```
+
+#### Notes
+
+- **Filtering is the caller's responsibility.** This macro is
+  intentionally agnostic about *which* articles appear. Pass the list
+  in the order you want them shown.
+- **Dynamic filtering is deferred.** The current Insurance preview
+  hardcodes three insurance-relevant posts. The plan is to add a
+  `pelicanconf.py` helper that filters by `tag2` (primary) and `tags`
+  (secondary check), with a most-recent fallback. See **Open
+  questions** below.
+- **Card hover**: image scales 5% and title shifts to
+  `text-shovels-primary` on hover. Whole card is one `<a>` link.
+- **Image aspect ratio**: `aspect-video` (16:9), `object-cover` so any
+  featured image fits cleanly.
+
+---
+
 ### `final_cta` macro
 
 **Location**: `themes/shovels/templates/macros/final_cta.html`
@@ -670,6 +757,34 @@ translation. Three paths:
   to semantic utilities. Highest effort, most consistent end state.
 
 Awaiting team decision.
+
+### Dynamic resources filtering (deferred)
+
+The `resources_section` macro currently takes a hardcoded list of
+articles. To make it dynamic per industry, we need:
+
+1. A signal hook in `pelicanconf.py` that captures `generator.articles`
+   when Pelican finishes processing them (signal:
+   `article_generator_finalized`).
+2. A helper function `get_industry_articles(tag, limit=3)` that filters
+   captured articles by `tag2` (primary) and `tags` (secondary check),
+   sorts by recency, and falls back to most-recent overall if no
+   matches.
+3. The helper exposed via `JINJA_GLOBALS` so the macro can call it
+   from inside a content `.md` page.
+
+Open sub-questions:
+
+- **Canonical tag names per industry.** Insurance → `tag2: Insurance`
+  is confirmed. Need to confirm the exact `tag2` value for each of:
+  Real Estate, Climate, Telecommunications, Construction Tech,
+  Building Materials, Home Services.
+- **Sort order for matches.** Most recent first (default), or is there
+  a "priority/featured" field somewhere?
+- **Architectural sign-off** on modifying `pelicanconf.py` before any
+  edit lands.
+
+Reference: Notion taxonomy doc — Shovels Blog Categories & Tags.
 
 ### Eyebrow capitalization
 

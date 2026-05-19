@@ -7,6 +7,7 @@ status: hidden
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
 {% import 'macros/final_cta.html' as ui_cta %}
 
 {{ ui_hero.hero(
@@ -95,6 +96,30 @@ status: hidden
 {% include 'sections/enterprise_teams.html' %}
 
 {% include 'sections/coverage.html' %}
+
+{# Resources — currently hardcoded with 3 insurance-relevant posts.
+   Dynamic filtering by tag2/tags is a planned follow-up; see COMPONENTS.md "Open questions". #}
+{{ ui_res.resources_section(
+    articles=[
+        {
+            'url': '/blog/roofing-permit-data-insurance-roof-age/',
+            'title': "The Roof Age Problem: What Permit Data Reveals About America's Rooftops",
+            'image_src': '/images/blog_images/roofing-permit-data-insurance-roof-age-hero.png',
+            'image_alt': 'Aerial view of a residential neighborhood',
+        },
+        {
+            'url': '/blog/la-wildfire-rebuild-permit-data/',
+            'title': 'LA Wildfires Recovery: What the Permit Record Shows',
+            'image_src': '/images/blog_images/la-wildfire-rebuild-permit-data-hero.png',
+            'image_alt': 'Aftermath of the LA wildfires',
+        },
+        {
+            'url': '/blog/unpermitted-work/',
+            'title': 'What Is Unpermitted Work? Risks, Disclosure, and What to Do About It',
+            'image_src': '/images/blog_images/unpermitted-work-hero.png',
+            'image_alt': 'Unpermitted construction work',
+        },
+    ]) }}
 
 {{ ui_faq.faq_section(
     heading='Frequently asked questions',
