@@ -11,7 +11,7 @@ status: hidden
 {% import 'macros/final_cta.html' as ui_cta %}
 
 {{ ui_hero.hero(
-    eyebrow='FOR INSURANCE',
+    eyebrow='INSURANCE',
     h1='Property intelligence for insurance providers',
     description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
     illustration_src='/images/industries/insurance/hero.svg',
@@ -32,8 +32,8 @@ status: hidden
             'Enrich COPE data with permit records and surface recent improvements that affect pricing',
             'Refine portfolio pricing with permit activity layered by ZIP or county',
         ],
-        'image_src': '/images/industries/insurance/use-case-placeholder.png',
-        'image_alt': 'UC1 placeholder — final tight crop pending from design',
+        'image_src': '/images/industries/insurance/uc1-underwrite.png',
+        'image_alt': 'Underwriting view in Shovels — property detail with permit history',
     },
     {
         'number': '02',
@@ -44,8 +44,8 @@ status: hidden
             "Target builders and contractors for general liability and workers' comp coverage",
             'Reach homeowners and residents after renovations as high-intent prospects for home insurance and warranties',
         ],
-        'image_src': '/images/industries/insurance/use-case-placeholder.png',
-        'image_alt': 'UC2 placeholder — final tight crop pending from design',
+        'image_src': '/images/industries/insurance/uc2-leads.png',
+        'image_alt': 'Lead generation view — permit search filtered to recent residential permits',
     },
     {
         'number': '03',
@@ -57,8 +57,8 @@ status: hidden
             'Identify discrepancies between reported work and actual permit activity',
             'Run bulk permit validation after catastrophes to prioritize high-risk claims',
         ],
-        'image_src': '/images/industries/insurance/use-case-placeholder.png',
-        'image_alt': 'UC3 placeholder — final tight crop pending from design',
+        'image_src': '/images/industries/insurance/uc3-verify-claims.png',
+        'image_alt': 'Claims verification view — permit record matched against claim',
     },
     {
         'number': '04',
@@ -69,8 +69,8 @@ status: hidden
             'Surface builder customers whose activity exceeds current coverage',
             'Expand revenue within your existing customer base',
         ],
-        'image_src': '/images/industries/insurance/use-case-placeholder.png',
-        'image_alt': 'UC4 placeholder — final tight crop pending from design',
+        'image_src': '/images/industries/insurance/uc4-close-gap.png',
+        'image_alt': 'Revenue-gap analysis — permit search filtered to additions and renovations',
     },
     {
         'number': '05',

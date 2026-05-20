@@ -1,22 +1,27 @@
 {#
   Related-content resources section.
 
-  resources_section(articles, eyebrow='Related content')
+  resources_section(articles,
+                    heading='Related content',
+                    view_all_url='/blog/',
+                    view_all_label='View all posts →')
 
-  Renders a left-justified eyebrow and a 3-column grid of blog-post
-  cards. Each card has a rounded featured image and a title below;
-  the whole card is a single link to the post. Importance flows left
-  to right — the macro renders `articles` in the order it receives
-  them.
+  Renders a left-justified H2 heading with a "View all posts →" link
+  on the right, then a 3-column grid of blog-post cards. Each card has
+  a rounded featured image and a title below; the whole card is a single
+  link to the post. Importance flows left to right — the macro renders
+  `articles` in the order it receives them.
 
   Parameters
   ----------
-  articles : List of dicts, each with:
-                url       : Blog post URL (e.g. '/blog/post-slug/').
-                title     : Post title.
-                image_src : Path to the featured image.
-                image_alt : Alt text for the image.
-  eyebrow  : Eyebrow label. Default 'Related content'.
+  articles       : List of dicts, each with:
+                     url       : Blog post URL (e.g. '/blog/post-slug/').
+                     title     : Post title.
+                     image_src : Path to the featured image.
+                     image_alt : Alt text for the image.
+  heading        : Section heading. Default 'Related content'.
+  view_all_url   : URL for the "View all posts" link. Default '/blog/'.
+  view_all_label : Text for the view-all link. Default 'View all posts →'.
 
   Filtering logic is intentionally OUT of scope for this macro — the
   caller passes whatever articles should appear. Dynamic filtering by
@@ -39,13 +44,17 @@
         ]) }}
 #}
 
-{% macro resources_section(articles, eyebrow='Related content') %}
-<section class="w-full bg-white px-6 md:px-10 py-12">
+{% macro resources_section(articles,
+                           heading='Related content',
+                           view_all_url='/blog/',
+                           view_all_label='View all posts →') %}
+<section class="w-full bg-white px-6 md:px-10 py-24">
   <div class="mx-auto max-w-6xl">
 
-    {# Eyebrow only — left-justified, no centering wrapper. #}
-    <div>
-      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
+    {# Section header — H2 on the left, "View all posts" link on the right. #}
+    <div class="flex items-end justify-between gap-6">
+      <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
+      <a href="{{ view_all_url }}" class="shrink-0 text-sm font-medium text-shovels-primary hover:text-shovels-primary/80 hover:underline">{{ view_all_label }}</a>
     </div>
 
     {# 3-up card grid — importance left to right. #}
@@ -55,7 +64,7 @@
         <div class="aspect-video overflow-hidden rounded-2xl bg-gray-100">
           <img src="{{ article.image_src }}" alt="{{ article.image_alt }}" class="size-full object-cover transition-transform duration-300 group-hover:scale-105" />
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-gray-900 group-hover:text-shovels-primary">{{ article.title }}</h3>
+        <h3 class="mt-4 text-lg font-medium text-gray-900 group-hover:text-shovels-primary">{{ article.title }}</h3>
       </a>
       {% endfor %}
     </div>

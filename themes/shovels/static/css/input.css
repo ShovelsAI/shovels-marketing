@@ -38,19 +38,26 @@
   html {
     @apply text-shovels-dark;
   }
-  
+
+  /* Body copy: system font stack for longer-form reading.
+     Headings (below) keep Scandia for brand identity. */
+  body {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    /* font-size: 21px; */
+  }
+
   h1, h2, h3, h4, h5, h6, dt {
+    font-family: "Scandia", "Scandia Web", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #01654D;
     @apply font-medium;
   }
-  
+
   dt {
     @apply leading-none;
-  }
-  
-  body {
-    background-color: white;
-    /* font-size: 21px; */
   }
   
   /* below prevents the 'flash' on page load */

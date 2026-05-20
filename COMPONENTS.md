@@ -21,6 +21,35 @@ designer's spec, including anything the spec leaves open.
   implementation, then update this doc.
 - When something isn't in the spec, decide here. Log the decision.
 
+## Scope of change: industry pages vs site-wide
+
+The Industry-page redesign is **the spearhead of the broader 2026 site
+refresh**, but the intent is **not** to cascade every Industry-page
+design decision across the entire site automatically. The other pages
+(homepage, blog, audiences, careers, etc.) will be updated as part of
+their own design rounds.
+
+That said, some changes legitimately need to be global (typography
+choices, brand color tokens, base CSS rules). Track those carefully
+here so we know what's been intentionally cascaded vs. what stays
+scoped to the new components.
+
+### Global changes log
+
+Every change that touches `base.html`, `input.css`, or otherwise
+affects pages outside the Industry-page template should be logged
+here with the reason and the date the decision was made. Append new
+entries; don't rewrite old ones.
+
+- **Body copy font: Scandia → system font stack.** Designer
+  recommendation — brand identity is carried by headings; longer-form
+  reading is calmer in a neutral web-oriented typeface. Headings
+  (`h1`-`h6`, `dt`) explicitly retain Scandia via an `@layer base`
+  rule in `input.css`. Affects every page on the site, including blog
+  posts, homepage, audiences, careers. Decision is reversible by
+  putting `'Scandia'` back into the `body` font-family in `base.html`
+  inline CSS and `input.css` base layer.
+
 ---
 
 ## Tokens & colors
@@ -64,26 +93,19 @@ When the token system lands, these become CSS variable references.
 
 ## Section padding convention
 
-Every middle section uses `py-12` (48px top and bottom). Each section
-contributes half the gap on both sides; the total gap between any two
-stacked sections is `48 + 48 = 96px`. This rule applies regardless of
-background color, so transitions to and from the dark section have the
-same rhythm as transitions between white sections — including the
-visible whitespace before the dark background starts, which was the
-specific bug that prompted this convention.
+Every middle section uses `py-24` (96px top and bottom) per the design
+spec. The gap between any two stacked sections is therefore ~192px,
+which the designer prefers for a clean visual chapter break.
 
 | Section | Padding | Notes |
 |---|---|---|
 | `hero` | `pt-20 pb-24 md:pt-28 md:pb-32` | First section, owns its full vertical balance |
 | `soc2_trust` | `pb-8` only | Hugs the hero; reads as a continuation rather than a new section |
-| Middle sections | `py-12` | Use cases, enterprise teams, coverage, resources, FAQ, final CTA — all the same |
+| Middle sections | `py-24` | Use cases, enterprise teams, coverage, resources, FAQ, final CTA — all the same |
 
 The middle-section rule applies to both content-bearing macros
 (`use_case_section`, `faq_section`, etc.) and static includes
 (`sections/coverage.html`, `sections/enterprise_teams.html`).
-
-Adding or reordering sections requires no thought about adjacent
-padding: every middle section is interchangeable in vertical rhythm.
 
 ## Spacing rhythm
 
@@ -108,20 +130,64 @@ Per the designer's spec — using Tailwind's 4px scale.
 
 ## Typography
 
-Headings use Scandia (loaded as a webfont). Body uses the system sans
-stack. Both are applied globally — no per-component font-family classes
-needed.
+**Headings**: Scandia webfont, applied globally to `h1`-`h6` and `dt`
+via input.css `@layer base`. All headings render at weight 500
+(`font-medium`) — the next-lightest Scandia weight available below
+Bold (700). Scandia does not include a Semibold (600) file; using
+`font-medium` is the designer-approved choice.
+
+**Body copy**: system sans stack — `system-ui, -apple-system,
+BlinkMacSystemFont, "Segoe UI", Roboto, ...`. Per the designer, the
+brand identity is carried by the headings; longer-form reading is
+calmer in a neutral web-oriented typeface. Applied globally on `body`
+via input.css.
 
 | Element | Tailwind classes |
 |---|---|
-| Hero H1 | `text-4xl md:text-6xl font-semibold tracking-tight` |
-| Section H2 | `text-3xl md:text-4xl font-semibold tracking-tight` |
-| Use case H3 | `text-2xl md:text-3xl font-semibold tracking-tight` |
+| Hero H1 | `text-4xl md:text-6xl font-medium tracking-tight` |
+| Section H2 | `text-3xl md:text-4xl font-medium tracking-tight` |
+| Use case H3 | `text-2xl md:text-3xl font-medium tracking-tight` |
 | Eyebrow chip | `text-xs font-medium uppercase tracking-wider` |
 | Use case index ("01", "02") | `text-sm font-mono text-gray-500` |
 | Body / lead | `text-base text-gray-500` or `text-lg text-gray-500` |
 | Bullets | `text-sm text-gray-900/90` |
 | Mock-up caption | `text-xs italic text-gray-500` |
+
+### Inline link convention
+
+Inline anchor tags inside body copy (e.g., links in Coverage bullets,
+the "View all posts" link in Resources) use:
+
+```
+text-shovels-primary hover:text-shovels-primary/80 hover:underline
+```
+
+Green color signals "this is a link" by default; the underline only
+appears on hover. Cleaner default state per designer.
+
+### Hero eyebrow convention
+
+Industry-page hero eyebrows use the bare industry name in uppercase
+(rendered automatically by the chip's `uppercase` class).
+
+- Insurance → `eyebrow='INSURANCE'`
+- Real Estate → `eyebrow='REAL ESTATE'`
+- Climate → `eyebrow='CLIMATE'`
+- Construction Tech → `eyebrow='CONSTRUCTION TECH'`
+- etc.
+
+No "FOR" prefix — the industry context is implicit.
+
+### Headline weight history
+
+The design spec originally called for `font-semibold` (600). Scandia
+Web (both self-hosted and Adobe Fonts) does not ship a 600-weight file
+— only 400, 500, and 700 — so `font-semibold` was silently falling
+back to Bold (700) and rendering heavier than the designer intended.
+After confirming the designer's intent was a lighter feel, the
+canonical heading weight is now `font-medium` (500). If Scandia
+Semibold is later licensed and self-hosted, all heading classes can
+flip back to `font-semibold` in one pass.
 
 ---
 
@@ -287,6 +353,8 @@ soc2_trust(heading, body,
   consistent across Industry pages but the body varies by audience.
 - **Badge**: the SOC 2 seal at `/theme/images/soc2-seal.png`. Rendered
   at `size-16` (64px).
+- **Background**: soft green `#F9FCFB` (per designer). Reads as a
+  trust-tinted card rather than a neutral gray notice.
 - **Layout**: horizontal on `md+`, stacked on mobile.
 
 ---
@@ -453,15 +521,18 @@ faq_section(heading, items, intro=None)
 
 **Location**: `themes/shovels/templates/macros/resources.html`
 
-Renders a left-justified "Related content" eyebrow followed by a 3-up
-grid of blog-post cards (rounded featured image + title, whole card
-clickable). Importance flows left to right — the macro renders
-`articles` in the order it receives them.
+Renders a left-justified H2 heading with a "View all posts →" link
+on the right, followed by a 3-up grid of blog-post cards (rounded
+featured image + title, whole card clickable). Importance flows left
+to right — the macro renders `articles` in the order it receives them.
 
 #### Signature
 
 ```jinja
-resources_section(articles, eyebrow='Related content')
+resources_section(articles,
+                  heading='Related content',
+                  view_all_url='/blog/',
+                  view_all_label='View all posts →')
 ```
 
 #### Parameters
@@ -469,7 +540,9 @@ resources_section(articles, eyebrow='Related content')
 | Parameter | Type | Notes |
 |---|---|---|
 | `articles` | list of dicts | One entry per card |
-| `eyebrow` | string | Default `'Related content'` |
+| `heading` | string | Default `'Related content'`. Renders as section H2 |
+| `view_all_url` | string | Default `'/blog/'`. Destination for the upper-right link |
+| `view_all_label` | string | Default `'View all posts →'`. Link text |
 
 #### Each article dict
 
@@ -510,6 +583,10 @@ resources_section(articles, eyebrow='Related content')
   `text-shovels-primary` on hover. Whole card is one `<a>` link.
 - **Image aspect ratio**: `aspect-video` (16:9), `object-cover` so any
   featured image fits cleanly.
+- **Header layout**: H2 left, "View all posts →" link right (flex
+  container with `justify-between`). Both align to the same baseline.
+  The view-all link uses `underline-on-hover` per the inline-link
+  convention.
 
 ---
 
