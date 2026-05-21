@@ -52,20 +52,20 @@
        aria-hidden="true"></div>
 
   <div class="relative mx-auto max-w-6xl">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
 
-      {# Text column #}
-      <div class="{% if illustration_position == 'left' %}md:order-2{% endif %}">
+      {# Text column — 7/12 to give the H1 more breathing room. #}
+      <div class="md:col-span-7 {% if illustration_position == 'left' %}md:order-2{% endif %}">
         <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
-        <h1 class="mt-4 text-pretty text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
+        <h1 class="mt-4 text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
         <p class="mt-6 text-lg text-gray-500">{{ description }}</p>
         <div class="mt-8">
           <a href="{{ cta_href }}" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">{{ cta_label }}</a>
         </div>
       </div>
 
-      {# Illustration column #}
-      <div class="{% if illustration_position == 'left' %}md:order-1{% endif %}">
+      {# Illustration column — 5/12 to balance the wider text column. #}
+      <div class="md:col-span-5 {% if illustration_position == 'left' %}md:order-1{% endif %}">
         <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="block w-full h-auto" />
       </div>
 

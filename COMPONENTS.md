@@ -285,7 +285,7 @@ hero(eyebrow, h1, description, illustration_src, illustration_alt,
 | `illustration_src` | _required_ | Path to the SVG illustration (typically in the industry folder) |
 | `illustration_alt` | _required_ | Alt text |
 | `cta_label` | `'Get started'` | Button text |
-| `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination — confirm with team for final canonical URL |
+| `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination. Canonical signup URL, shared with `final_cta` |
 | `illustration_position` | `'right'` | `'right'` or `'left'` |
 
 #### Example
