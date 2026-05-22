@@ -150,18 +150,18 @@ status: hidden
     <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
       <div>
         <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="API and data feed delivery" class="size-16" />
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access our data via our API or data feed</h3>
+        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access data via API or data feed</h3>
         <p class="mt-2 text-sm text-gray-300">Query directly, or receive structured feeds via SFTP, Snowflake, BigQuery, or Databricks. Customized solutions are also available.</p>
       </div>
       <div>
         <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
         <h3 class="mt-6 text-lg font-medium text-shovels-secondary">AI-classified permits</h3>
-        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required.</p>
+        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required. Check out our <a href="https://www.shovels.ai/data-dictionary#permits" class="text-shovels-secondary hover:underline">data dictionary</a> for details.</p>
       </div>
       <div>
         <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Twice-monthly data updates" class="size-16" />
         <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Updated twice a month</h3>
-        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle.</p>
+        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle, adding online and offline jurisdictions for the most complete dataset possible.</p>
       </div>
     </div>
   </div>
