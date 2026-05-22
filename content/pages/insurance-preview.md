@@ -85,7 +85,7 @@ status: hidden
         'image_src': '/images/industries/insurance/uc5-catastrophe.png',
         'image_alt': 'Catastrophe reconstruction illustration',
         'framed': False,
-        'image_max_width': '612px',
+        'image_max_width': '480px',
     },
 ] %}
 
