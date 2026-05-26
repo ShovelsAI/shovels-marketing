@@ -1,5 +1,5 @@
-Title: Insurance preview — Industry-page template progress
-Description: Sandbox preview of the Insurance Industry page as components come online. Not linked from anywhere; replace with the real insurance.md when shipped.
+Title: Property Intelligence for Insurance Providers
+Description: Permit-backed property risk data for insurance providers. Verify roofs, validate claims, and find new business — a modern BuildFax alternative.
 slug: insurance-preview
 status: hidden
 

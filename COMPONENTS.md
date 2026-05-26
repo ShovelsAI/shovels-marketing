@@ -1143,7 +1143,26 @@ For a brand-new Industry page that doesn't have a live predecessor:
    use cases, enterprise teams, coverage, resources, FAQ, final CTA).
 4. Use `status: hidden` and a unique slug while iterating; remove
    when ready to ship.
-5. Copy is sourced from the "Industry Pages Copy" Notion database.
+5. Copy is sourced from the **"Industry Pages Copy" Notion database**.
+   See *Frontmatter sourcing* below for the field mapping.
+
+### Frontmatter sourcing (Notion DB → Pelican)
+
+The Pelican page's frontmatter fields map to specific Notion DB columns
+on the matching row. **Pull from Notion every time** — don't write
+ad-hoc descriptions inline.
+
+| Pelican frontmatter | Notion column | Notes |
+|---|---|---|
+| `Title:` | (derived from `Page Name` + positioning) | Used in `<title>` tag; matches the H1 positioning |
+| `Description:` | `Meta description` | Becomes `<meta name="description">` — the Google snippet. ~150–160 chars, written for SEO with target-keyword cluster from `SEO: Target Keywords` |
+| `slug:` | (derived from `Slug`) | `<slug>` for production, `<slug>-preview` during build-out |
+| `status:` | n/a | `hidden` during build-out; removed at launch |
+
+The Notion DB rows are the source of truth for all body copy too —
+Hero H1, Hero Description, SOC 2 body, all 5 use cases, FAQ items,
+and Final CTA. See the matching row in the *Industry Pages Copy*
+database.
 
 ---
 

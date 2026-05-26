@@ -1,5 +1,5 @@
 Title: Electrification Intelligence for Energy & Climate Companies
-Description: Generate solar leads from permit data, find active installers, and track new policies driving adoption.
+Description: Solar lead generation from permit data. Find active solar, EV charger, and heat pump installers, reach in-market homeowners, and track electrification policy.
 slug: climate-preview
 status: hidden
 
