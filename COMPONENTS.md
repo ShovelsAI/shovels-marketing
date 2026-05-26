@@ -70,8 +70,11 @@ in `tailwind.config.js`. Components currently use:
 | `text-muted-foreground` | `text-gray-500` | Tailwind default |
 | `border-border` | `border-gray-200` | Tailwind default |
 
-**Open architectural question**: whether to adopt the oklch token
-system site-wide. See **Open questions** below.
+**Architectural decision**: we're staying on the `shovels-*` palette
++ Tailwind defaults indefinitely. The token system would be a one-day
+search-and-replace if dark mode or multi-brand theming ever lands as
+a real product requirement — until then, YAGNI. See Decisions log →
+*"Stay on `shovels-*` palette; defer the oklch token system"*.
 
 ### Raw hex values currently in components
 
@@ -561,11 +564,28 @@ resources_section(articles,
 | `image_src` | Path to the featured image |
 | `image_alt` | Alt text for the image |
 
-#### Example
+#### Recommended usage — dynamic per-industry articles
+
+Industry and Solutions pages should pass the result of
+`get_industry_articles(tag)` rather than hardcoding URLs. The helper
+is exposed as a Jinja global from `pelicanconf.py` — see the
+**`get_industry_articles` helper** section below for details and the
+canonical `tag` values per industry.
 
 ```jinja
 {% import 'macros/resources.html' as ui_res %}
 
+{{ ui_res.resources_section(
+    articles=get_industry_articles('Insurance')) }}
+```
+
+#### Manual override (hardcoded list)
+
+You can still pass an explicit list when curation matters more than
+automation — e.g., a launch announcement page where the three featured
+posts are chosen by hand.
+
+```jinja
 {{ ui_res.resources_section(
     articles=[
         {
@@ -577,16 +597,14 @@ resources_section(articles,
     ]) }}
 ```
 
+Explicit lists beat the helper — pass whichever shape works for the
+page.
+
 #### Notes
 
 - **Filtering is the caller's responsibility.** This macro is
   intentionally agnostic about *which* articles appear. Pass the list
   in the order you want them shown.
-- **Dynamic filtering is deferred.** The current Insurance preview
-  hardcodes three insurance-relevant posts. The plan is to add a
-  `pelicanconf.py` helper that filters by `tag2` (primary) and `tags`
-  (secondary check), with a most-recent fallback. See **Open
-  questions** below.
 - **Card hover**: image scales 5% and title shifts to
   `text-shovels-primary` on hover. Whole card is one `<a>` link.
 - **Image aspect ratio**: `aspect-video` (16:9), `object-cover` so any
@@ -699,6 +717,80 @@ final_cta(heading, description,
   thin primary-tinted border, `p-10 md:p-16` per spec.
 - **Layout**: text and button center-aligned within the card.
 - **Button**: rounded-full, primary background — matches hero CTA exactly.
+
+---
+
+## Build helpers (`pelicanconf.py`)
+
+### `get_industry_articles(tag, limit=3)` helper
+
+**Location**: defined in `pelicanconf.py`, exposed to all content
+pages and templates via `JINJA_GLOBALS`.
+
+Returns up to `limit` blog posts for an industry, with three filter
+tiers that fill remaining slots without duplicates:
+
+1. **Tier 1** — posts whose `tag2` frontmatter exactly matches `tag`.
+2. **Tier 2** — posts whose `tags` list contains `tag`
+   (case-insensitive substring).
+3. **Tier 3** — most-recent topical posts overall. Excludes the
+   `Newsletter` and `Podcast` categories so they don't crowd out
+   industry-relevant content on pages that don't yet have a deep
+   tagged backlog. If you want a newsletter to appear, give it an
+   industry `tag2`.
+
+Posts without an `image:` or `date:` field are skipped during the
+scan, so the resources card never renders a broken image.
+
+#### Output shape
+
+Returns a list of dicts matching the `articles` parameter of
+`resources_section`:
+
+```python
+[
+    {'url': '/blog/<slug>/',
+     'title': '<post title>',
+     'image_src': '<image path from frontmatter>',
+     'image_alt': '<image_alt frontmatter or post title>'},
+    ...
+]
+```
+
+#### Canonical `tag` values per industry
+
+Use these strings exactly (case-sensitive — they match `tag2`
+frontmatter values).
+
+| Industry page | `tag` to pass | Coverage as of latest scan |
+|---|---|---|
+| Insurance | `'Insurance'` | 1 tag2 match; tier 3 fills the rest |
+| Real Estate | `'Real Estate'` | 7 tag2 matches (plenty) |
+| Energy & Climate | `'Energy & Climate'` | 2 tag2 matches (note the ampersand) |
+| Telecommunications | `'Telecommunications'` | 1 tag2 match |
+| Construction Tech | `'Construction Tech'` | 0 tag2 matches → tier 3 fallback |
+| Building Materials | `'Building Materials'` | 0 tag2 matches → tier 3 fallback |
+| Home Services | `'Home Services'` | 0 tag2 matches → tier 3 fallback |
+
+Three industries currently rely entirely on the tier-3 fallback. The
+right long-term fix is to add `tag2: Construction Tech` (etc.) to
+relevant existing posts, not to extend the helper.
+
+#### Why an eager scan rather than a Pelican signal
+
+`jinja2content` renders `.md` page content as a Jinja2 template at
+**read time**, before any article generator runs. Hooking
+`signals.article_generator_finalized` would populate the cache too
+late — the page content would already be rendered with empty results.
+
+So `pelicanconf.py` scans `content/posts/*.md` frontmatter directly at
+config load time. The cache is populated before jinja2content reads
+any page. The parser is a small regex over the metadata block, not a
+full Pelican reader — enough to extract `title`, `slug`, `tag2`,
+`tags`, `image`, `image_alt`, `date`, `category`, and `status`.
+
+The scan reads all 146 posts on a cold start; this adds a few hundred
+milliseconds to the build and runs once.
 
 ---
 
@@ -861,14 +953,16 @@ around the `<img>`.
 files. The same screenshot can be reused at different padding without
 re-export. Designer signed off after comparing 15 / 30 / 60px samples.
 
-### Stand-in for design tokens (deferred adoption)
+### Stand-in for design tokens
 
 We use `shovels-primary` and Tailwind defaults (`text-gray-900`, etc.)
 as stand-ins for the spec's semantic tokens (`bg-primary`, `text-foreground`).
 
-**Why**: adopting the oklch token system fully would require migrating
-~25 existing pages or accepting a two-tone codebase for an indefinite
-period. Decision deferred pending team input. See **Open questions**.
+**Why**: the Shovels brand is five colors. The forcing functions for
+adopting a token system (dark mode, multi-brand theming, an exploding
+palette) aren't on the table. See the later decision *"Stay on
+`shovels-*` palette; defer the oklch token system"* for the full
+reasoning.
 
 ### `use_case_section` takes a list-of-dicts, not multiple macro calls
 
@@ -919,10 +1013,6 @@ banner immediately below already signals "this page is for serious
 buyers." A second chip above the H1 felt redundant. Other eyebrow
 chips on the page (Use Cases, Data Delivery, etc.) are unchanged.
 
-**Status**: decision made; the `hero` macro file is not yet updated.
-`insurance-preview.md` uses inline hero HTML reflecting the new
-decision. See **Open questions** for sequencing.
-
 ### Hero column split: 6/12 + 6/12
 
 The hero text column and illustration column are now equal width.
@@ -932,8 +1022,52 @@ Previously the text column was wider (7/12) than the illustration (5/12).
 without making the text column feel cramped. Reviewed on
 `insurance-preview` side-by-side with the 7/5 variant.
 
-**Status**: decision made; the `hero` macro file is not yet updated.
-`insurance-preview.md` uses inline hero HTML reflecting the new split.
+### Stay on `shovels-*` palette; defer the oklch token system
+
+The designer's spec is built around CSS custom properties in oklch
+(`--primary`, `--foreground`, `--muted-foreground`, `--border`, etc.).
+We use a stand-in translation: `shovels-primary` for `--primary`,
+`text-gray-900` for `--foreground`, `text-gray-500` for
+`--muted-foreground`, `border-gray-200` for `--border`.
+
+**Why we're staying on the stand-in**: the usual forcing functions
+for adopting a token system — dark mode, multi-brand theming, an
+exploding palette — aren't on the table. The Shovels brand is primary
+green, secondary yellow, dark navy, and a handful of grays. Five-line
+config, not a token system.
+
+**The translation table is documented** under *Tokens & colors* above
+so designers and engineers stay aligned when reading specs side by
+side with the code.
+
+**When to revisit**: if dark mode or a second brand theme ever
+becomes a product requirement, switch to Option C (full migration to
+semantic tokens). The mechanical search-and-replace is a one-day
+lift; doing it under deadline pressure is the only thing to avoid.
+YAGNI applies until then.
+
+### Per-industry resources via `get_industry_articles`
+
+Industry and Solutions pages call `get_industry_articles(tag)` to pull
+related blog posts dynamically instead of hardcoding URLs on each
+page. Helper lives in `pelicanconf.py` and is exposed to all templates
+via `JINJA_GLOBALS`. See **Build helpers → `get_industry_articles`**.
+
+**Why an eager scan in `pelicanconf.py` instead of a Pelican signal**:
+`jinja2content` renders `.md` page content at read time, before any
+article generator runs. A signal-based cache would populate too late.
+The eager scan reads `content/posts/*.md` frontmatter once at config
+load with a small regex parser, which is fast enough (≈100ms on the
+current ~150-post backlog).
+
+**Why three filter tiers, with newsletters/podcasts excluded from the
+fallback**: three industries (Construction Tech, Building Materials,
+Home Services) currently have zero `tag2`-tagged blog coverage. Without
+a fallback their resources sections would be empty. Without category
+exclusions the fallback would be dominated by newsletters (29% of the
+post backlog), which dilutes topical focus on industry pages. The fix
+is to add `tag2` values to existing posts — that's a content-team
+task, not a code-team task.
 
 ### Eyebrows are written ALL CAPS at the source
 
@@ -970,50 +1104,7 @@ new layout.
 
 ## Open questions
 
-Things deferred for team input.
-
-### Adopt the spec's oklch token system?
-
-The designer's spec is built around CSS custom properties in oklch.
-We currently use a `shovels-*` palette + Tailwind defaults as a
-translation. Three paths:
-
-- **A**: Status quo. Stand-in translation; works fine, slow drift risk.
-- **B**: Set up tokens for new pages only. Existing pages keep their
-  current classes; new components use semantic names. Low-effort,
-  introduces a transitional two-tone codebase.
-- **C**: Full migration. Tokens for everything; rewrite all 25+ pages
-  to semantic utilities. Highest effort, most consistent end state.
-
-Awaiting team decision.
-
-### Dynamic resources filtering (deferred)
-
-The `resources_section` macro currently takes a hardcoded list of
-articles. To make it dynamic per industry, we need:
-
-1. A signal hook in `pelicanconf.py` that captures `generator.articles`
-   when Pelican finishes processing them (signal:
-   `article_generator_finalized`).
-2. A helper function `get_industry_articles(tag, limit=3)` that filters
-   captured articles by `tag2` (primary) and `tags` (secondary check),
-   sorts by recency, and falls back to most-recent overall if no
-   matches.
-3. The helper exposed via `JINJA_GLOBALS` so the macro can call it
-   from inside a content `.md` page.
-
-Open sub-questions:
-
-- **Canonical tag names per industry.** Insurance → `tag2: Insurance`
-  is confirmed. Need to confirm the exact `tag2` value for each of:
-  Real Estate, Climate, Telecommunications, Construction Tech,
-  Building Materials, Home Services.
-- **Sort order for matches.** Most recent first (default), or is there
-  a "priority/featured" field somewhere?
-- **Architectural sign-off** on modifying `pelicanconf.py` before any
-  edit lands.
-
-Reference: Notion taxonomy doc — Shovels Blog Categories & Tags.
+None at the moment. New open questions will land here as they come up.
 
 ---
 
