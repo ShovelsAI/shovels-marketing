@@ -49,6 +49,7 @@
 #}
 
 {% import 'macros/mockup.html' as ui_frame %}
+{% import 'macros/icons.html' as icons %}
 
 {% macro use_case_section(eyebrow, heading, cases, intro=None) %}
 <section class="w-full bg-white py-24 px-6 md:px-10">
@@ -78,11 +79,9 @@
             <ul class="mt-6 space-y-3">
               {% for bullet in case.bullets %}
               <li class="flex items-start gap-3">
-                {# Bullet check badge — 20x20 tinted-primary circle, Lucide-style Check at 12x12, strokeWidth 3 #}
+                {# Bullet check badge — 20x20 tinted-primary circle, Lucide Check at 12x12, strokeWidth 3 #}
                 <span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-shovels-primary/10">
-                  <svg class="size-3 text-shovels-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
+                  {{ icons.check(class='size-3 text-shovels-primary', stroke_width=3) }}
                 </span>
                 <span class="text-sm text-gray-900/90">{{ bullet }}</span>
               </li>

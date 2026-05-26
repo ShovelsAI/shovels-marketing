@@ -165,18 +165,22 @@ text-shovels-primary hover:text-shovels-primary/80 hover:underline
 Green color signals "this is a link" by default; the underline only
 appears on hover. Cleaner default state per designer.
 
-### Hero eyebrow convention
+### Eyebrow convention
 
-Industry-page hero eyebrows use the bare industry name in uppercase
-(rendered automatically by the chip's `uppercase` class).
+Eyebrow chips appear above the H2 in most sections (Use Cases, Data
+Delivery, Coverage, etc.). The hero deliberately has no eyebrow — see
+**Decisions log** → *"Hero eyebrow chip removed"*.
 
-- Insurance → `eyebrow='INSURANCE'`
-- Real Estate → `eyebrow='REAL ESTATE'`
-- Climate → `eyebrow='CLIMATE'`
-- Construction Tech → `eyebrow='CONSTRUCTION TECH'`
-- etc.
+**Always write eyebrow text in ALL CAPS at the source** — both in
+Notion copy and in macro/include calls. The CSS `uppercase` utility is
+applied to the chip regardless, but writing the source in caps avoids
+any drift between "what the writer typed" and "what renders." Examples
+of correct source values:
 
-No "FOR" prefix — the industry context is implicit.
+- `USE CASES`
+- `DATA DELIVERY`
+- `COVERAGE`
+- `STRATEGIC INSIGHTS`
 
 ### Headline weight history
 
@@ -261,15 +265,17 @@ browser_frame(src, alt,
 
 **Location**: `themes/shovels/templates/macros/hero.html`
 
-Top-of-page hero for Industry pages: eyebrow chip, H1, lead paragraph,
-primary CTA button, and a side illustration. A subtle crossing-gradient
-grid pattern with a radial fade sits behind the content (per the design
-spec).
+Top-of-page hero for Industry and Solutions pages: H1, lead paragraph,
+primary CTA button, and a side illustration. The text column and the
+illustration column are equal width on `md+` (6/12 each). A subtle
+crossing-gradient grid pattern with a radial fade sits behind the
+content (per the design spec). The hero deliberately has no eyebrow
+chip — see Decisions log.
 
 #### Signature
 
 ```jinja
-hero(eyebrow, h1, description, illustration_src, illustration_alt,
+hero(h1, description, illustration_src, illustration_alt,
      cta_label='Get started',
      cta_href='https://app.shovels.ai/signup/',
      illustration_position='right')
@@ -279,7 +285,6 @@ hero(eyebrow, h1, description, illustration_src, illustration_alt,
 
 | Parameter | Default | Notes |
 |---|---|---|
-| `eyebrow` | _required_ | Small uppercase label above the H1 (e.g. `'STRATEGIC INSIGHTS'`) |
 | `h1` | _required_ | Hero headline |
 | `description` | _required_ | One- or two-sentence lead paragraph below the H1 |
 | `illustration_src` | _required_ | Path to the SVG illustration (typically in the industry folder) |
@@ -294,7 +299,6 @@ hero(eyebrow, h1, description, illustration_src, illustration_alt,
 {% import 'macros/hero.html' as ui_hero %}
 
 {{ ui_hero.hero(
-    eyebrow='STRATEGIC INSIGHTS',
     h1='Property intelligence for insurance providers',
     description='Underwrite with verified property data…',
     illustration_src='/images/industries/insurance/hero.svg',
@@ -303,6 +307,10 @@ hero(eyebrow, h1, description, illustration_src, illustration_alt,
 
 #### Notes
 
+- **No eyebrow**: per team decision. Other sections on the page still
+  use eyebrow chips — only the hero opts out.
+- **Column split**: `md:col-span-6` for both the text column and the
+  illustration column. Equal split.
 - **Grid background**: two crossing CSS gradients (1px lines, 56px cells)
   with a radial mask that fades the pattern toward the edges. Line color
   is `#ebf0ed` (approximates the spec's `--grid-line` token). The section
@@ -590,6 +598,66 @@ resources_section(articles,
 
 ---
 
+### `icons` macro module
+
+**Location**: `themes/shovels/templates/macros/icons.html`
+
+Vendored Lucide icons exposed as small parameterized Jinja macros.
+Each macro takes a Tailwind `class` string (for size and color via
+`currentColor`) and an optional `stroke_width` override. SVG markup is
+build-time inlined, so there's no extra HTTP request per icon and no
+JS dependency.
+
+#### Usage
+
+```jinja
+{% import 'macros/icons.html' as icons %}
+
+{{ icons.check(class='size-3 text-shovels-primary', stroke_width=3) }}
+{{ icons.chevron_down(class='size-5 text-gray-400') }}
+```
+
+#### Currently vendored
+
+| Icon | Macro | Used by |
+|---|---|---|
+| Lucide `check` | `icons.check(class, stroke_width=2)` | `use_case_section` bullet check badges (passes `stroke_width=3` for the heavier look) |
+| Lucide `chevron-down` | `icons.chevron_down(class, stroke_width=2)` | `faq_section` accordion (uses `group-open:rotate-180` on the class to animate on open) |
+
+#### Parameters (all macros)
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `class` | `'size-5'` | Tailwind class string. Use `size-*` to set the icon size and `text-*` to color via `currentColor`. Animation utilities (e.g., `group-open:rotate-180`, `transition-transform`) compose normally. |
+| `stroke_width` | `2` | Lucide's default. Pass `3` for a heavier look (matches the bullet check badge's spec'd visual). |
+
+#### How to add a new icon
+
+1. Go to <https://lucide.dev/icons/> and find the icon you need.
+2. Click **Copy SVG** to get the raw SVG markup.
+3. Open `themes/shovels/templates/macros/icons.html` and add a new
+   macro at the bottom following the existing pattern:
+   - Macro name = Lucide icon name in `snake_case`
+   (e.g., `arrow_right`, `shield_check`).
+   - Replace the SVG's hard-coded `class` with `class="{{ class }}"`.
+   - Replace the hard-coded `stroke-width` with `stroke-width="{{ stroke_width }}"`.
+   - Keep `aria-hidden="true"` on purely decorative icons; remove it
+     and add a `<title>` element if the icon conveys standalone
+     meaning.
+4. Document the new icon in the **Currently vendored** table above.
+5. Call it from your template: `{{ icons.<name>(class='size-* text-*') }}`.
+
+#### Notes
+
+- **Visual consistency**: all macros share the Lucide attribute set
+  (`viewBox="0 0 24 24"`, `fill="none"`, `stroke="currentColor"`,
+  rounded line caps + joins), so icons of different sizes still read
+  as a coherent family.
+- **Why macros over SVG sprite or plugin**: see Decisions log →
+  *"Lucide icons as Jinja macros"*.
+
+---
+
 ### `final_cta` macro
 
 **Location**: `themes/shovels/templates/macros/final_cta.html`
@@ -678,8 +746,9 @@ Place after the "Built for enterprise teams" section.
 **Location**: `themes/shovels/templates/sections/enterprise_teams.html`
 
 The "Built for enterprise teams" dark section: full-bleed dark
-background, left-aligned eyebrow chip + heading, 3-up grid of
-icon + yellow title + description.
+background, **centered** eyebrow chip + heading, 3-up grid of subtly
+bordered translucent cards. Each card has a centered icon, a yellow
+title, and a short description.
 
 #### Usage
 
@@ -687,18 +756,22 @@ icon + yellow title + description.
 {% include 'sections/enterprise_teams.html' %}
 ```
 
-Place after the use-cases section in an Industry page.
+Place after the use-cases section in an Industry or Solutions page.
 
 #### Notes
 
 - **Background**: `bg-shovels-dark` (`#101727`).
-- **Eyebrow + heading**: left-aligned (not centered) — title aligns with
-  the icons in the grid below.
+- **Eyebrow + heading**: centered inside a `max-w-3xl` container.
+- **Cards**: `rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm`
+  — subtle translucent panels for visual separation against the dark
+  section background.
+- **Icons**: centered inside each card via a `flex justify-center`
+  wrapper. Rendered at `size-16` (64px). Source SVGs live in
+  `content/images/illustrations/`.
 - **Titles**: yellow (`text-shovels-secondary`) for accent against the
   dark background.
-- **Descriptions**: `text-gray-300`.
-- **Icons**: at `size-16` (64px). Source SVGs live in
-  `content/images/illustrations/`.
+- **Descriptions**: `text-gray-300`. Card 2 contains an inline link to
+  the data dictionary using the standard inline-link convention.
 - **Copy is hardcoded.** If/when this content needs to vary by industry,
   convert to a parameterized macro.
 
@@ -809,10 +882,89 @@ structure is verbose, but it's the same structure every time.
 ### Bullet check badge styling
 
 20×20 circular badge with `bg-shovels-primary/10`, containing a
-Lucide-style stroked Check icon at 12×12 with `stroke-width="3"`.
+Lucide Check icon at 12×12 with `stroke-width="3"`. The Check icon is
+rendered via the `icons.check` macro (see the `icons` macro module).
 
 **Why**: matches the designer's Figma. Originally missing from the
 spec PDF — designer confirmed and is adding it to the spec.
+
+### Lucide icons as Jinja macros
+
+Lucide icons are vendored as small parameterized Jinja macros in
+`themes/shovels/templates/macros/icons.html`, called with a Tailwind
+`class` string and an optional `stroke_width` override. We considered
+three approaches before settling on this one:
+
+| Approach | Why we passed |
+|---|---|
+| Continue inlining raw SVG in each template | Scales poorly — the same SVG ends up duplicated across files, and updating one means hunting them down. Already painful at 2 icons. |
+| SVG sprite sheet (`<svg><use href="#name"/></svg>`) | Slightly worse call-site ergonomics than a macro; `currentColor` plumbing has to be added to every symbol; less greppable. Real upside (single HTTP request) is small for inlined assets. |
+| Pelican plugin / Jinja filter | More moving parts and a new dependency. Magical syntax (`{{ 'check' \| icon }}`) but harder to debug when something doesn't render. |
+
+**Why macros**: zero new dependencies, fully under our control,
+Tailwind classes work natively, `currentColor` makes coloring free,
+build-time inlining keeps the bundle clean, and the call site reads
+exactly like every other macro on the site (`{{ icons.check(...) }}`).
+Adding a new icon is a 30-second copy/paste from lucide.dev. Scales
+fine to ~50 icons for a marketing site this size.
+
+### Hero eyebrow chip removed
+
+The hero no longer renders an eyebrow chip above the H1. After
+reviewing two variants on `insurance-preview` (with and without the
+chip), the team decided the hero reads cleaner without it.
+
+**Why**: the H1 is doing the wayfinding work, and the SOC 2 trust
+banner immediately below already signals "this page is for serious
+buyers." A second chip above the H1 felt redundant. Other eyebrow
+chips on the page (Use Cases, Data Delivery, etc.) are unchanged.
+
+**Status**: decision made; the `hero` macro file is not yet updated.
+`insurance-preview.md` uses inline hero HTML reflecting the new
+decision. See **Open questions** for sequencing.
+
+### Hero column split: 6/12 + 6/12
+
+The hero text column and illustration column are now equal width.
+Previously the text column was wider (7/12) than the illustration (5/12).
+
+**Why**: the equal split gives the illustration enough room to breathe
+without making the text column feel cramped. Reviewed on
+`insurance-preview` side-by-side with the 7/5 variant.
+
+**Status**: decision made; the `hero` macro file is not yet updated.
+`insurance-preview.md` uses inline hero HTML reflecting the new split.
+
+### Eyebrows are written ALL CAPS at the source
+
+Eyebrow chip text is written in uppercase in the source — both in
+Notion copy and in macro/include calls (`USE CASES`, `DATA DELIVERY`,
+`COVERAGE`, etc.). The CSS `uppercase` utility would render lowercase
+source as uppercase visually, but writing the source in caps removes
+ambiguity for editors and keeps the source string and the rendered
+chip identical.
+
+**Why**: a writer scanning the Notion source for "Use cases" and "USE
+CASES" can never be sure which one renders. Forcing the source to
+match the rendered output eliminates that drift.
+
+This decision does not apply to the hero — the hero has no eyebrow.
+
+### "Built for enterprise teams" adopts the card-based layout
+
+`sections/enterprise_teams.html` was updated from a left-aligned
+heading + plain 3-column grid to a centered heading + 3-up grid of
+subtly bordered translucent cards.
+
+**Why**: the team reviewed three variants on `insurance-preview` (V1
+left-aligned plain columns, V2 centered plain columns, V3 centered
+cards) and selected V3. The card treatment gives each feature its own
+visual container without dominating the dark section.
+
+**Status**: shipped. `insurance-preview.md` now uses
+`{% include 'sections/enterprise_teams.html' %}`. Any other Industry
+or Solutions page that includes the section automatically picks up the
+new layout.
 
 ---
 
@@ -862,21 +1014,6 @@ Open sub-questions:
   edit lands.
 
 Reference: Notion taxonomy doc — Shovels Blog Categories & Tags.
-
-### Eyebrow capitalization
-
-Currently using uppercase (`USE CASES`, `STRATEGIC INSIGHTS`) per the
-Figma. CSS adds `uppercase` regardless of source case, but content
-typed in lowercase reads more naturally in the Notion DB. Decide: should
-the Notion source be lowercase ("Use cases") and the CSS uppercase it,
-or should both be uppercase?
-
-### Whether to vendor Lucide icons
-
-The bullet check badge uses an inline SVG version of Lucide's `Check`
-icon. If we need more Lucide icons elsewhere, options are: keep inlining
-(scales poorly past 3–4 icons), copy SVG sources into `themes/shovels/static/icons/`,
-or add a Pelican plugin to embed by name. Decide when the count exceeds three.
 
 ---
 

@@ -1,18 +1,18 @@
 {#
-  Top-of-page hero for Industry pages.
+  Top-of-page hero for Industry and Solutions pages.
 
-  hero(eyebrow, h1, description, illustration_src, illustration_alt,
+  hero(h1, description, illustration_src, illustration_alt,
        cta_label='Get started',
        cta_href='https://app.shovels.ai/signup/',
        illustration_position='right')
 
-  Renders an eyebrow chip, H1, lead paragraph, primary CTA button, and a
-  side-by-side illustration. A subtle crossing-gradient grid pattern with
-  a radial fade sits behind the content, per the design spec.
+  Renders an H1, lead paragraph, primary CTA button, and a side-by-side
+  illustration. The text column and illustration column are equal width
+  on md+ (6/12 each). A subtle crossing-gradient grid pattern with a
+  radial fade sits behind the content, per the design spec.
 
   Parameters
   ----------
-  eyebrow              : Small uppercase label above the H1 (e.g. 'STRATEGIC INSIGHTS').
   h1                   : Hero headline.
   description          : One- or two-sentence lead paragraph below the H1.
   illustration_src     : Path to the SVG illustration.
@@ -26,11 +26,17 @@
     {% import 'macros/hero.html' as ui %}
 
     {{ ui.hero(
-        eyebrow='STRATEGIC INSIGHTS',
         h1='Property intelligence for insurance providers',
         description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
         illustration_src='/images/industries/insurance/hero.svg',
         illustration_alt='Insurance hero illustration') }}
+
+  Note
+  ----
+  The hero deliberately does NOT render an eyebrow chip above the H1.
+  See COMPONENTS.md → Decisions log → "Hero eyebrow chip removed".
+  Other sections on the page (Use Cases, Data Delivery, etc.) still
+  use eyebrow chips.
 
   Background grid
   ---------------
@@ -40,7 +46,7 @@
   tuned per the spec; change backgroundSize for a denser grid.
 #}
 
-{% macro hero(eyebrow, h1, description, illustration_src, illustration_alt,
+{% macro hero(h1, description, illustration_src, illustration_alt,
               cta_label='Get started',
               cta_href='https://app.shovels.ai/signup/',
               illustration_position='right') %}
@@ -54,18 +60,17 @@
   <div class="relative mx-auto max-w-6xl">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
 
-      {# Text column — 7/12 to give the H1 more breathing room. #}
-      <div class="md:col-span-7 {% if illustration_position == 'left' %}md:order-2{% endif %}">
-        <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
-        <h1 class="mt-4 text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
+      {# Text column — 6/12 (equal split with the illustration). #}
+      <div class="md:col-span-6 {% if illustration_position == 'left' %}md:order-2{% endif %}">
+        <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
         <p class="mt-6 text-lg text-gray-500">{{ description }}</p>
         <div class="mt-8">
           <a href="{{ cta_href }}" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">{{ cta_label }}</a>
         </div>
       </div>
 
-      {# Illustration column — 5/12 to balance the wider text column. #}
-      <div class="md:col-span-5 {% if illustration_position == 'left' %}md:order-1{% endif %}">
+      {# Illustration column — 6/12 (equal split with the text). #}
+      <div class="md:col-span-6 {% if illustration_position == 'left' %}md:order-1{% endif %}">
         <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="block w-full h-auto" />
       </div>
 

@@ -3,61 +3,18 @@ Description: Sandbox preview of the Insurance Industry page as components come o
 slug: insurance-preview
 status: hidden
 
+{% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
 {% import 'macros/resources.html' as ui_res %}
 {% import 'macros/final_cta.html' as ui_cta %}
 
-{# ========================================
-   HERO SECTION — THREE WIDTH VARIATIONS
-   ======================================== #}
-
-{# V1: CURRENT LAYOUT (7/12 text, 5/12 illustration at ~640px) #}
-<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
-  <div class="pointer-events-none absolute inset-0"
-       style="background-image: linear-gradient(#ebf0ed 1px, transparent 1px), linear-gradient(90deg, #ebf0ed 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);"
-       aria-hidden="true"></div>
-
-  <div class="relative mx-auto max-w-6xl">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
-      <div class="md:col-span-7">
-        <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">INSURANCE</span>
-        <h1 class="mt-4 text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">Property intelligence for insurance providers</h1>
-        <p class="mt-6 text-lg text-gray-500">Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.</p>
-        <div class="mt-8">
-          <a href="https://app.shovels.ai/signup/" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-        </div>
-      </div>
-      <div class="md:col-span-5">
-        <img src="/images/industries/insurance/hero.svg" alt="Insurance hero illustration" class="block w-full h-auto" />
-      </div>
-    </div>
-  </div>
-</section>
-
-{# V3: EQUAL SPLIT 6/12 + 6/12 (50/50 layout, image at ~768px) #}
-<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
-  <div class="pointer-events-none absolute inset-0"
-       style="background-image: linear-gradient(#ebf0ed 1px, transparent 1px), linear-gradient(90deg, #ebf0ed 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);"
-       aria-hidden="true"></div>
-
-  <div class="relative mx-auto max-w-6xl">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
-      <div class="md:col-span-6">
-        <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">INSURANCE</span>
-        <h1 class="mt-4 text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">Property intelligence for insurance providers</h1>
-        <p class="mt-6 text-lg text-gray-500">Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.</p>
-        <div class="mt-8">
-          <a href="https://app.shovels.ai/signup/" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-        </div>
-      </div>
-      <div class="md:col-span-6">
-        <img src="/images/industries/insurance/hero.svg" alt="Insurance hero illustration" class="block w-full h-auto" />
-      </div>
-    </div>
-  </div>
-</section>
+{{ ui_hero.hero(
+    h1='Property intelligence for insurance providers',
+    description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
+    illustration_src='/images/industries/insurance/hero.svg',
+    illustration_alt='Insurance hero illustration') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',
@@ -136,102 +93,7 @@ status: hidden
     heading='What insurance teams can do with Shovels',
     cases=insurance_cases) }}
 
-{# ========================================
-   ENTERPRISE TEAMS SECTION — THREE LAYOUT VARIATIONS
-   ======================================== #}
-
-{# V1: CURRENT LAYOUT (left-aligned eyebrow, heading, and columns) #}
-<section class="w-full bg-shovels-dark px-6 md:px-10 py-24">
-  <div class="mx-auto max-w-6xl">
-    <div>
-      <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">Data Delivery</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Built for enterprise teams</h2>
-    </div>
-    <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
-      <div>
-        <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="API and data feed delivery" class="size-16" />
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access data via API or data feed</h3>
-        <p class="mt-2 text-sm text-gray-300">Query directly, or receive structured feeds via SFTP, Snowflake, BigQuery, or Databricks. Customized solutions are also available.</p>
-      </div>
-      <div>
-        <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">AI-classified permits</h3>
-        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required. Check out our <a href="https://www.shovels.ai/data-dictionary#permits" class="text-shovels-secondary hover:underline">data dictionary</a> for details.</p>
-      </div>
-      <div>
-        <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Twice-monthly data updates" class="size-16" />
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Updated twice a month</h3>
-        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle, adding online and offline jurisdictions for the most complete dataset possible.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# V2: CENTERED LAYOUT (centered eyebrow, centered heading, centered columns) #}
-<section class="w-full bg-shovels-dark px-6 md:px-10 py-24">
-  <div class="mx-auto max-w-6xl">
-    <div class="mx-auto max-w-3xl text-center">
-      <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">Data Delivery</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Built for enterprise teams</h2>
-    </div>
-    <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
-      <div class="text-center">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="API and data feed delivery" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access data via API or data feed</h3>
-        <p class="mt-2 text-sm text-gray-300">Query directly, or receive structured feeds via SFTP, Snowflake, BigQuery, or Databricks. Customized solutions are also available.</p>
-      </div>
-      <div class="text-center">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">AI-classified permits</h3>
-        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required. Check out our <a href="https://www.shovels.ai/data-dictionary#permits" class="text-shovels-secondary hover:underline">data dictionary</a> for details.</p>
-      </div>
-      <div class="text-center">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Twice-monthly data updates" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Updated twice a month</h3>
-        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle, adding online and offline jurisdictions for the most complete dataset possible.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# V3: CARD-BASED LAYOUT (centered header, cards with subtle background, more visual separation) #}
-<section class="w-full bg-shovels-dark px-6 md:px-10 py-24">
-  <div class="mx-auto max-w-6xl">
-    <div class="mx-auto max-w-3xl text-center">
-      <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">Data Delivery</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Built for enterprise teams</h2>
-    </div>
-    <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
-      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="API and data feed delivery" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access data via API or data feed</h3>
-        <p class="mt-2 text-sm text-gray-300">Query directly, or receive structured feeds via SFTP, Snowflake, BigQuery, or Databricks. Customized solutions are also available.</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">AI-classified permits</h3>
-        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required. Check out our <a href="https://www.shovels.ai/data-dictionary#permits" class="text-shovels-secondary hover:underline">data dictionary</a> for details.</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Twice-monthly data updates" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Updated twice a month</h3>
-        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle, adding online and offline jurisdictions for the most complete dataset possible.</p>
-      </div>
-    </div>
-  </div>
-</section>
+{% include 'sections/enterprise_teams.html' %}
 
 {% include 'sections/coverage.html' %}
 

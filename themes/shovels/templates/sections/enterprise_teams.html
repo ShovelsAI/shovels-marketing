@@ -1,46 +1,54 @@
 {#
   "Built for enterprise teams" section — static include.
 
-  Identical copy across every Industry page, so this lives as a static
-  include rather than a parameterized macro. Edit the copy here and
-  every Industry page that includes it picks up the change.
+  Identical copy across every Industry and Solutions page, so this lives
+  as a static include rather than a parameterized macro. Edit the copy
+  here and every page that includes it picks up the change.
 
   Usage in any content/pages/*.md:
 
       {% include 'sections/enterprise_teams.html' %}
 
-  Layout: full-bleed dark section with a left-aligned eyebrow + heading,
-  followed by a 3-up grid of icon + yellow title + description.
+  Layout: full-bleed dark section with a centered eyebrow + heading,
+  followed by a 3-up grid of subtly-bordered cards on a translucent
+  background. Each card has a centered icon, yellow title, and short
+  description.
 #}
 
 <section class="w-full bg-shovels-dark px-6 md:px-10 py-24">
   <div class="mx-auto max-w-6xl">
 
-    {# Section header — left-aligned, eyebrow chip in shovels-secondary for legibility on dark. #}
-    <div>
-      <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">Data Delivery</span>
+    {# Section header — centered eyebrow chip + heading. #}
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">DATA DELIVERY</span>
       <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Built for enterprise teams</h2>
     </div>
 
-    {# 3-up feature grid — icons on top, yellow titles, white-ish descriptions. #}
+    {# 3-up card grid — subtle translucent cards with centered icon, yellow title, description. #}
     <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
 
-      <div>
-        <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="API and data feed delivery" class="size-16" />
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access our data via our API or data feed</h3>
+      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
+        <div class="flex justify-center">
+          <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="API and data feed delivery" class="size-16" />
+        </div>
+        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Access data via API or data feed</h3>
         <p class="mt-2 text-sm text-gray-300">Query directly, or receive structured feeds via SFTP, Snowflake, BigQuery, or Databricks. Customized solutions are also available.</p>
       </div>
 
-      <div>
-        <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
+      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
+        <div class="flex justify-center">
+          <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
+        </div>
         <h3 class="mt-6 text-lg font-medium text-shovels-secondary">AI-classified permits</h3>
-        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required.</p>
+        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing required. Check out our <a href="https://www.shovels.ai/data-dictionary#permits" class="text-shovels-secondary hover:underline">data dictionary</a> for details.</p>
       </div>
 
-      <div>
-        <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Twice-monthly data updates" class="size-16" />
+      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
+        <div class="flex justify-center">
+          <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Twice-monthly data updates" class="size-16" />
+        </div>
         <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Updated twice a month</h3>
-        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle.</p>
+        <p class="mt-2 text-sm text-gray-300">Millions of new records are added each cycle, adding online and offline jurisdictions for the most complete dataset possible.</p>
       </div>
 
     </div>

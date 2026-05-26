@@ -1,0 +1,46 @@
+{#
+  Icon set — Lucide icons vendored as Jinja macros.
+
+  Each icon is a small parameterized macro. The caller passes a
+  Tailwind `class` string for size + color (using `currentColor`),
+  and may override `stroke_width` if the design calls for a heavier
+  or lighter stroke than the Lucide default (2). SVG markup is
+  build-time inlined.
+
+  Usage
+  -----
+    {% import 'macros/icons.html' as icons %}
+
+    {{ icons.check(class='size-3 text-shovels-primary', stroke_width=3) }}
+    {{ icons.chevron_down(class='size-5 text-gray-400') }}
+
+  Adding a new icon
+  -----------------
+    1. Go to https://lucide.dev/icons/
+    2. Find the icon, click "Copy SVG"
+    3. Paste the inner SVG content into a new macro below
+    4. Replace any hard-coded class with `class="{{ class }}"`
+    5. Replace any hard-coded stroke-width with
+       `stroke-width="{{ stroke_width }}"`
+    6. Keep `aria-hidden="true"` on purely decorative icons; remove
+       it and add a `<title>` element if the icon conveys meaning
+       independent of nearby text.
+
+  Visual consistency
+  ------------------
+  All icons share the Lucide attributes (`viewBox="0 0 24 24"`,
+  `fill="none"`, `stroke="currentColor"`, rounded line caps + joins)
+  so they read as a coherent set even when sized differently.
+#}
+
+{% macro check(class='size-5', stroke_width=2) -%}
+<svg class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ stroke_width }}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <polyline points="20 6 9 17 4 12"/>
+</svg>
+{%- endmacro %}
+
+{% macro chevron_down(class='size-5', stroke_width=2) -%}
+<svg class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ stroke_width }}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <polyline points="6 9 12 15 18 9"/>
+</svg>
+{%- endmacro %}
