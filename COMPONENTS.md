@@ -878,10 +878,10 @@ content/images/
 ├── industries/
 │   ├── building-materials/
 │   ├── climate/
-│   ├── construction-tech/
 │   ├── home-services/
 │   ├── insurance/          ← Insurance page-specific assets
 │   ├── real-estate/
+│   ├── software/           ← Construction Tech audience (page slug is /software/)
 │   └── telecommunications/
 └── illustrations/          ← Shared assets used on multiple pages
     ├── coverage-us.svg
@@ -890,10 +890,11 @@ content/images/
     └── enterprise-icon-updates.svg
 ```
 
-Each folder slug matches the corresponding Pelican page slug, which in
-turn matches the Notion `Slug` field for that industry (e.g.
-`industries/climate/` ↔ `content/pages/climate.md` ↔ Notion slug
-`/climate`).
+Each folder name matches the corresponding Pelican page slug, which
+in turn matches the live URL. The page's editorial framing (H1,
+eyebrow, Notion copy) can differ from the folder name — the
+`software/` folder backs the page that addresses the **Construction
+Tech** audience, because the live URL is `/software/`.
 
 **When to place where**:
 
@@ -916,15 +917,22 @@ The folder name under `industries/` matches the Pelican page slug. The
 page at `content/pages/insurance.md` references images at
 `/images/industries/insurance/...`.
 
-### Sandbox/preview pages
+### Sandbox / preview pages
 
-Sandboxes use `status: hidden` in their front matter. URL exists, but
-they don't appear in nav. Delete or unhide when promoting to production.
+`status: hidden` keeps a page out of nav and the sitemap while its
+URL still resolves. Two use cases:
 
-| Page | URL | Purpose |
-|---|---|---|
-| `content/pages/mockup-test.md` | `/mockup-test` | Stress-test the `browser_frame` macro at varying widths and aspect ratios |
-| `content/pages/insurance-preview.md` | `/insurance-preview` | Preview of the Insurance page as components come online |
+- **Component sandboxes** — pages built to stress-test specific
+  macros at different sizes and configurations.
+- **Redesign previews** — temporary `<page>-preview.md` files that
+  stand alongside a live page during a redesign and get folded back
+  into the canonical filename + slug at launch (see *How to redesign
+  an existing Industry page* below).
+
+| Page | URL | Purpose | Type |
+|---|---|---|---|
+| `content/pages/mockup-test.md` | `/mockup-test` | Stress-test the `browser_frame` macro at varying widths and aspect ratios | Sandbox |
+| `content/pages/insurance-preview.md` | `/insurance-preview` | Preview of the new Insurance page (no legacy predecessor; the page is brand-new). Will be renamed to `insurance.md` with `slug: insurance` at launch. | Greenfield preview |
 
 ---
 
@@ -1124,13 +1132,78 @@ None at the moment. New open questions will land here as they come up.
 
 ---
 
-## How to add a new Industry page
+## How to add a new (greenfield) Industry page
+
+For a brand-new Industry page that doesn't have a live predecessor:
 
 1. Create the image folder at `content/images/industries/<slug>/`.
 2. Drop in `hero.svg` and tight-cropped use-case screenshots.
 3. Create the page at `content/pages/<slug>.md` with front matter
-   metadata and a body that composes the macros (hero, use cases,
-   coverage, FAQ, final CTA, etc.).
+   metadata and a body that composes the macros (hero, SOC 2 trust,
+   use cases, enterprise teams, coverage, resources, FAQ, final CTA).
 4. Use `status: hidden` and a unique slug while iterating; remove
    when ready to ship.
 5. Copy is sourced from the "Industry Pages Copy" Notion database.
+
+---
+
+## How to redesign an existing Industry page
+
+The live pages (`climate.md`, `real-estate.md`, `telecommunications.md`,
+`software.md`, `building-materials.md`, `home-services.md`) need to
+stay live and at the same URL through the entire redesign. The
+workflow uses a **preview-slug page alongside the live one**, then
+swaps at launch.
+
+### Build phase
+
+For each redesigned page, two files coexist on the feature branch:
+
+| File | Slug | URL | Status |
+|---|---|---|---|
+| `content/pages/climate.md` (legacy) | `climate` | `/climate/` | live |
+| `content/pages/climate-preview.md` (new design) | `climate-preview` | `/climate-preview/` | `hidden` |
+
+The preview file must include `status: hidden` so it stays out of nav
+and the sitemap. The URL still resolves — stakeholders can compare
+`/climate/` (legacy) and `/climate-preview/` (new) in the same
+browser session.
+
+Image assets for the new design go in the existing image folder
+(`content/images/industries/climate/`). The legacy page may
+already reference some assets there; new and old can share the
+folder during build-out.
+
+### Launch phase (one PR per page, or one PR for all)
+
+When the preview is approved and ready to flip live:
+
+1. **Delete the legacy file** — `git rm content/pages/climate.md`.
+2. **Rename the preview** — `git mv content/pages/climate-preview.md content/pages/climate.md`.
+3. **Edit the renamed file** — change `slug: climate-preview` →
+   `slug: climate`, and remove `status: hidden` so the page appears
+   in nav.
+4. **Commit, merge, deploy.** The URL `/climate/` now serves the new
+   design. No redirects needed. No SEO impact.
+
+### What to remember at launch
+
+- **The `slug:` change is non-optional.** If you forget to edit it,
+  the page will keep responding at `/climate-preview/` after merge
+  and `/climate/` will 404.
+- **Verify the FAQ schema didn't regress.** Each Industry page emits
+  a `FAQPage` JSON-LD block via `faq_section`. Production rich-results
+  caching can hold the old schema for a few hours; that's expected.
+- **Resources section auto-updates** via `get_industry_articles(...)`,
+  so no per-page maintenance is required after launch.
+- **Look at the live page in prod** for at least the hero, eyebrows,
+  use case alternation, and dark cards before declaring it shipped.
+  Dev mode masks a few production-only behaviors (relative URLs,
+  asset minification).
+
+### Telcomm rename note
+
+`telcomm.md` was renamed to `telecommunications.md` to match the live
+URL (`/telecommunications/`) and the image folder name. The slug was
+already `telecommunications`, so the rename had zero URL impact.
+Other pages don't need a similar rename — they already match.
