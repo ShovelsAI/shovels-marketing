@@ -13,7 +13,7 @@ slug: shovels-partners-with-precisely
 summary: Shovels has joined Precisely's Data Link partner program, connecting 150M+ address-resolved U.S. building permits to Precisely's authoritative location, property, demographic, boundary, and risk datasets via persistent identifiers. The integration helps teams reduce data-wrangling and accelerate underwriting, site selection, competitive intelligence, and lead generation with pre-linked permit and property data.
 image: /images/blog_images/shovels-partners-with-precisely-hero.png
 
-*Full press release here.*
+<a href="https://www.einpresswire.com/article/913853011/precisely-and-shovels-partner-to-connect-building-permit-data-with-the-world-s-leading-property-and-location-datasets" target="_blank">Full press release here</a>
 
 **Concord, CA** — **May 27, 2026** — <a href="https://shovels.ai/" target="_blank">Shovels</a>, the intelligence layer for the built world, today announced that they've partnered with <a href="https://www.precisely.com/" target="_blank">Precisely</a>, the global leader in data integrity, by joining <a href="https://www.precisely.com/solution/data-link/" target="_blank">Data Link</a>, a partnership program that connects complementary datasets from a network of trusted, industry-leading providers.
 
