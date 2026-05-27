@@ -13,8 +13,6 @@ slug: shovels-partners-with-precisely
 summary: Shovels has joined Precisely's Data Link partner program, connecting 150M+ address-resolved U.S. building permits to Precisely's authoritative location, property, demographic, boundary, and risk datasets via persistent identifiers. The integration helps teams reduce data-wrangling and accelerate underwriting, site selection, competitive intelligence, and lead generation with pre-linked permit and property data.
 image: /images/blog_images/shovels-partners-with-precisely-hero.png
 
-![Shovels partners with Precisely to connect building permit data]({static}/images/blog_images/shovels-partners-with-precisely-hero.png)
-
 *Full press release here.*
 
 **Concord, CA** — **May 27, 2026** — <a href="https://shovels.ai/" target="_blank">Shovels</a>, the intelligence layer for the built world, today announced that they've partnered with <a href="https://www.precisely.com/" target="_blank">Precisely</a>, the global leader in data integrity, by joining <a href="https://www.precisely.com/solution/data-link/" target="_blank">Data Link</a>, a partnership program that connects complementary datasets from a network of trusted, industry-leading providers.
@@ -44,4 +42,4 @@ Everything built starts with a permit. Shovels captures that first signal—usin
 
 ## **About Precisely**
 
-As a global leader in data integrity, Precisely ensures that your data is accurate, consistent, and contextual. Our portfolio, featuring the Precisely Data Integrity Suite, brings together software, data, and data strategy consulting services. This unique combination enables organizations to move to Agentic-Ready Data, the highest-quality of data that is integrated, governed, and enriched for AI, automation, and analytics initiatives at enterprise scale. Over 12,000 organizations in more than 100 countries, including 95 of the Fortune 100, trust Precisely to support some of the world's most complex, regulated, and mission-critical data environments. Learn more at www.precisely.com.
+As a global leader in data integrity, Precisely ensures that your data is accurate, consistent, and contextual. Our portfolio, featuring the Precisely Data Integrity Suite, brings together software, data, and data strategy consulting services. This unique combination enables organizations to move to Agentic-Ready Data, the highest-quality of data that is integrated, governed, and enriched for AI, automation, and analytics initiatives at enterprise scale. Over 12,000 organizations in more than 100 countries, including 95 of the Fortune 100, trust Precisely to support some of the world's most complex, regulated, and mission-critical data environments. Learn more at <a href="https://www.precisely.com/" target="_blank">www.precisely.com</a>.
