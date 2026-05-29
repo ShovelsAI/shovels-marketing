@@ -1,19 +1,50 @@
-<svg width="114" height="155" viewBox="0 0 114 155" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_2343_1017)">
-<path d="M114 16.2324H0V154.993H114V16.2324Z" fill="#E9BE51"/>
-<path d="M100.105 30.125H13.8945V141.103H100.105V30.125Z" fill="#EAE2CF" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M67.9688 11.7056C67.9688 11.5706 67.9881 11.4419 67.9881 11.3069C67.9881 5.24219 63.0671 0.322266 57.0011 0.322266C50.9351 0.322266 46.0141 5.24219 46.0141 11.3069C46.0141 11.4419 46.0269 11.5706 46.0334 11.7056H25.6289V35.0125H88.3733V11.7056H67.9688Z" fill="#01654D" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 61.2324H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 77.0137H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 69.123H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 85.6191H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 93.5039H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 109.287H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M25.6289 101.395H88.3733" stroke="#101727" stroke-miterlimit="10"/>
-</g>
-<defs>
-<clipPath id="clip0_2343_1017">
-<rect width="114" height="155" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 114 155">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #101727;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #ecc146;
+      }
+
+      .cls-3 {
+        fill: #09644a;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        fill: #eae2cf;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="114" height="155"/>
+    </clipPath>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g class="cls-6">
+      <g>
+        <path class="cls-5" d="M114,16.23H0v138.76h114V16.23Z"/>
+        <path class="cls-4" d="M100.11,30.12H13.89v110.98h86.21V30.12Z"/>
+        <path class="cls-3" d="M67.97,11.71c0-.14.02-.26.02-.4,0-6.06-4.92-10.98-10.99-10.98s-10.99,4.92-10.99,10.98c0,.14.01.26.02.4h-20.4v23.31h62.74V11.71h-20.4Z"/>
+        <path class="cls-2" d="M25.63,61.23h62.74"/>
+        <path class="cls-2" d="M25.63,77.01h62.74"/>
+        <path class="cls-2" d="M25.63,69.12h62.74"/>
+        <path class="cls-2" d="M25.63,85.62h62.74"/>
+        <path class="cls-2" d="M25.63,93.5h62.74"/>
+        <path class="cls-2" d="M25.63,109.29h62.74"/>
+        <path class="cls-2" d="M25.63,101.39h62.74"/>
+      </g>
+    </g>
+  </g>
 </svg>

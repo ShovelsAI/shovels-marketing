@@ -1,25 +1,55 @@
-<svg width="141" height="149" viewBox="0 0 141 149" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_2343_993)">
-<path d="M141 10.2559H0V148.999H141V10.2559Z" fill="#E9BE51"/>
-<path d="M123.813 50.8926H17.1836V133.302H123.813V50.8926Z" fill="#EAE2CF" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M44.4294 66.3926H29.0898V78.2483H44.4294V66.3926Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M66.9216 66.3926H51.582V78.2483H66.9216V66.3926Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M89.4138 66.7031H74.0742V78.5588H89.4138V66.7031Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M111.906 66.7031H96.5664V78.5588H111.906V66.7031Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M44.4294 85.791H29.0898V97.6467H44.4294V85.791Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M66.9216 85.791H51.582V97.6467H66.9216V85.791Z" fill="#01654D" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M89.4138 86.1016H74.0742V97.9573H89.4138V86.1016Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M111.906 86.1016H96.5664V97.9573H111.906V86.1016Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M44.4294 105.635H29.0898V117.49H44.4294V105.635Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M66.9216 105.635H51.582V117.49H66.9216V105.635Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M89.4138 105.945H74.0742V117.801H89.4138V105.945Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M111.906 105.945H96.5664V117.801H111.906V105.945Z" fill="#E9BE51" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M29.8033 0.398438H17.3359V30.8414H29.8033V0.398438Z" fill="#01654D" stroke="#101727" stroke-miterlimit="10"/>
-<path d="M123.655 0.398438H111.188V30.8414H123.655V0.398438Z" fill="#01654D" stroke="#101727" stroke-miterlimit="10"/>
-</g>
-<defs>
-<clipPath id="clip0_2343_993">
-<rect width="141" height="149" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 141 149">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1, .st2 {
+        fill: #ecc146;
+      }
+
+      .st3 {
+        fill: #09644a;
+      }
+
+      .st3, .st2, .st4 {
+        stroke: #101727;
+        stroke-miterlimit: 10;
+      }
+
+      .st5 {
+        clip-path: url(#clippath);
+      }
+
+      .st4 {
+        fill: #eae2cf;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" y="0" width="141" height="149"/>
+    </clipPath>
+  </defs>
+  <g class="st5">
+    <g>
+      <path class="st1" d="M141,10.3H0v138.7h141V10.3Z"/>
+      <path class="st4" d="M123.8,50.9H17.2v82.4h106.6V50.9Z"/>
+      <path class="st2" d="M44.4,66.4h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M66.9,66.4h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M89.4,66.7h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M111.9,66.7h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M44.4,85.8h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st3" d="M66.9,85.8h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M89.4,86.1h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M111.9,86.1h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M44.4,105.6h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M66.9,105.6h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M89.4,105.9h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M111.9,105.9h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st3" d="M29.8.4h-12.5v30.4h12.5V.4Z"/>
+      <path class="st3" d="M123.7.4h-12.5v30.4h12.5V.4Z"/>
+    </g>
+  </g>
 </svg>
