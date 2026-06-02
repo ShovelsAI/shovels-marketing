@@ -11,8 +11,12 @@
     description : One- or two-sentence body paragraph.
     bullets     : List of bullet strings (optional). Each renders with a
                   green checkmark.
-    image_src   : Path to the screenshot or illustration.
-    image_alt   : Alt text for the image.
+    image_src   : Path to the screenshot or illustration. Pass an empty
+                  string (or omit) when the image has not been delivered
+                  yet — the macro renders a red "TBD" placeholder in its
+                  place and shows image_alt as the intended-image caption.
+    image_alt   : Alt text for the image. Doubles as the description shown
+                  inside the TBD placeholder when image_src is empty.
     framed      : Optional boolean. Default True (image rendered inside
                   the browser_frame chrome). Set False for non-screenshot
                   imagery like illustrations — renders the image directly
@@ -20,9 +24,11 @@
     caption     : Optional small italic caption rendered below the image
                   (e.g., "names, and dates").
     image_max_width : Optional CSS max-width applied to unframed images
-                  (when framed=False). Accepts any CSS length, e.g.
-                  '612px'. Ignored when framed=True (browser_frame has
-                  its own max_width parameter).
+                  (when framed=False). Defaults to '420px' — the canonical
+                  illustration width, applied automatically so illustrations
+                  read consistently across pages. Accepts any CSS length,
+                  e.g. '612px', to override for genuine exceptions. Ignored
+                  when framed=True (browser_frame has its own max_width).
 
   The first case displays image-right; the second image-left; alternating
   thereafter. Alternation is handled internally via loop.index.
@@ -90,12 +96,26 @@
             {% endif %}
           </div>
 
-          {# Image column — wrapped in browser_frame by default; raw <img> if framed=False. #}
+          {# Image column — TBD placeholder when no image is delivered yet;
+             browser_frame by default; raw <img> if framed=False. #}
           <div class="{% if image_on_left %}md:order-1{% endif %}">
-            {% if case.framed | default(true) %}
+            {% if not case.image_src %}
+              {# No image file yet — render a TBD placeholder so the gap is
+                 visible during build-out. The intended image is described in
+                 image_alt so reviewers know what belongs here. #}
+              <div class="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed border-red-400 bg-red-50 p-6 text-center">
+                <span class="text-3xl font-semibold uppercase tracking-widest text-red-500">TBD</span>
+                {% if case.image_alt %}<span class="max-w-sm text-xs text-red-400">{{ case.image_alt }}</span>{% endif %}
+              </div>
+            {% elif case.framed | default(true) %}
               {{ ui_frame.browser_frame(case.image_src, case.image_alt, max_width='') }}
             {% else %}
-              <img src="{{ case.image_src }}" alt="{{ case.image_alt }}" class="mx-auto block w-full h-auto"{% if case.image_max_width %} style="max-width: {{ case.image_max_width }};"{% endif %} />
+              {# Illustrations (framed=False) are capped at a canonical 420px so
+                 they read consistently across pages. Screenshots use the
+                 browser_frame above instead. Override per case with
+                 image_max_width only for genuine exceptions.
+                 See COMPONENTS.md → Decisions log → "Illustration max-width". #}
+              <img src="{{ case.image_src }}" alt="{{ case.image_alt }}" class="mx-auto block w-full h-auto" style="max-width: {{ case.image_max_width | default('420px') }};" />
             {% endif %}
             {% if case.caption %}
             <p class="mt-3 text-xs italic text-gray-500">{{ case.caption }}</p>

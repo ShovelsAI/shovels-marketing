@@ -81,10 +81,9 @@ status: hidden
             'Monitor contractor activity to activate repair networks',
             'Identify areas where rebuilding lags behind a CAT event',
         ],
-        'image_src': '/images/industries/insurance/uc5-catastrophe.png',
+        'image_src': '/images/industries/insurance/uc5-catastrophe.svg',
         'image_alt': 'Catastrophe reconstruction illustration',
         'framed': False,
-        'image_max_width': '420px',
     },
 ] %}
 

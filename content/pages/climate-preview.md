@@ -60,7 +60,6 @@ status: hidden
         'image_src': '/images/industries/climate/uc3-policy.svg',
         'image_alt': 'A city council chamber with a reach code vote underway — an energy analyst capturing the policy signal in real time, months before it drives permit activity',
         'framed': False,
-        'image_max_width': '420px',
     },
     {
         'number': '04',
@@ -85,8 +84,9 @@ status: hidden
             'Measure the impact of policy changes and rebate programs on permit activity',
             'Report on electrification progress with permit-backed data, not surveys',
         ],
-        'image_src': '/images/industries/climate/uc5-contractor-profile.png',
+        'image_src': '/images/industries/climate/uc5-oregon-map.svg',
         'image_alt': 'A region-wide map with solar installs, EV chargers, and heat pumps lighting up in distinct colors — adoption visible at a glance across markets',
+        'framed': False,
     },
 ] %}
 

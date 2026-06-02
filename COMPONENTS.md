@@ -911,6 +911,27 @@ Tech** audience, because the live URL is `/software/`.
 - Extensions: `.svg` for illustrations and icons; `.png` for product
   screenshots; `.jpg` for photos.
 
+### Illustration export spec
+
+Use-case illustrations (the `framed=False` images) are sized by a single
+canonical cap — `max-width: 420px`, applied automatically by the
+`use_case` macro (see Decisions log → *Illustration max-width*). For that
+cap to read consistently across pages, illustrations must be exported to
+a shared standard:
+
+- **SVG format.** Vector, so the 420px cap scales crisply on any display.
+- **Tight-cropped to the artwork.** No baked-in transparent padding /
+  whitespace around the drawing. The macro caps the *canvas*, so any
+  internal margin makes the visible art look smaller than its neighbors.
+- **Consistent canvas across the set.** Export all use-case illustrations
+  at the same width (and ideally a shared aspect ratio) so they line up
+  visually when capped at 420px.
+
+Screenshots follow a different path — exported tight-cropped as `.png`,
+then wrapped in the `browser_frame` chrome (30px internal padding). Do
+not export screenshots as illustrations or vice versa; the macro picks
+the rendering path from the `framed` flag.
+
 ### Page slugs
 
 The folder name under `industries/` matches the Pelican page slug. The
@@ -960,6 +981,27 @@ around the `<img>`.
 **Why**: one canonical value, change once site-wide. Smaller image
 files. The same screenshot can be reused at different padding without
 re-export. Designer signed off after comparing 15 / 30 / 60px samples.
+
+### Illustration max-width (420px, macro-controlled)
+
+Use-case **illustrations** (`framed=False`) are capped at a canonical
+`420px` max-width by the `use_case` macro itself — page authors do not
+set a width per illustration. The `image_max_width` key remains as an
+optional per-case override for genuine exceptions. **Screenshots**
+(`framed=True`) are unaffected; their sizing comes from the
+`browser_frame` chrome.
+
+**Why**: the same reasoning as the 30px padding — one canonical value,
+applied in one place. Per-page widths drifted: some illustrations got
+a 420px cap and others none, so uncapped ones rendered at full column
+width and looked oversized next to their capped siblings.
+
+**Dependency on the export spec**: a uniform 420px cap only reads as
+uniform if the SVGs are exported **tight-cropped to their content** at
+a consistent canvas. An illustration with baked-in whitespace will look
+small inside the 420px box even though the box is identical. The crop
+discipline is the designer's half of this system; the macro cap is the
+code half. See *File organization → Illustration export spec*.
 
 ### Stand-in for design tokens
 

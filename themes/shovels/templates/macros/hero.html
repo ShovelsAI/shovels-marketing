@@ -15,7 +15,9 @@
   ----------
   h1                   : Hero headline.
   description          : One- or two-sentence lead paragraph below the H1.
-  illustration_src     : Path to the SVG illustration.
+  illustration_src     : Path to the SVG illustration. Pass an empty string
+                         when the hero image has not been delivered yet — the
+                         macro renders a red "TBD" placeholder in its place.
   illustration_alt     : Alt text for the illustration.
   cta_label            : Button text. Default 'Get started'.
   cta_href             : Button destination. Default 'https://app.shovels.ai/signup/'.
@@ -69,9 +71,17 @@
         </div>
       </div>
 
-      {# Illustration column — 6/12 (equal split with the text). #}
+      {# Illustration column — 6/12 (equal split with the text). Renders a
+         red TBD placeholder when illustration_src is empty (image not yet
+         delivered) instead of a broken image. #}
       <div class="md:col-span-6 {% if illustration_position == 'left' %}md:order-1{% endif %}">
+        {% if illustration_src %}
         <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="block w-full h-auto" />
+        {% else %}
+        <div class="flex aspect-video w-full items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50 text-center">
+          <span class="text-3xl font-semibold uppercase tracking-widest text-red-500">TBD</span>
+        </div>
+        {% endif %}
       </div>
 
     </div>
