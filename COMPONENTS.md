@@ -104,6 +104,7 @@ which the designer prefers for a clean visual chapter break.
 |---|---|---|
 | `hero` | `pt-20 pb-24 md:pt-28 md:pb-32` | First section, owns its full vertical balance |
 | `soc2_trust` | `pb-8` only | Hugs the hero; reads as a continuation rather than a new section |
+| `logo_strip` | `pb-24` only | Same hero-hugging pattern as `soc2_trust`. The hero's bottom padding provides all the breathing room above; the strip's own bottom padding separates it from the next section |
 | Middle sections | `py-24` | Use cases, enterprise teams, coverage, resources, FAQ, final CTA — all the same |
 
 The middle-section rule applies to both content-bearing macros
@@ -817,6 +818,10 @@ against neighbors.
 
 #### Notes
 
+- **Section padding**: `pb-24` only (no top padding). The strip hugs
+  the hero above — the hero's `pb-24 md:pb-32` provides all the
+  breathing room before the "TRUSTED BY…" heading. Same pattern as
+  `soc2_trust`. See *Section padding convention* up top.
 - **The grey trick**: `filter: brightness(0) invert(0.7)` — `brightness(0)`
   flattens any logo to a black silhouette (alpha preserved), `invert(0.7)`
   lifts it to a uniform 70% grey. One declaration recolors any logo,
