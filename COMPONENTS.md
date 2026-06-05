@@ -720,6 +720,123 @@ final_cta(heading, description,
 
 ---
 
+### `logo_strip` macro
+
+**Location**: `themes/shovels/templates/macros/logo_strip.html`
+
+Infinite-scrolling customer logo marquee ("Trusted by teams at"),
+modeled on streamyard.com's strip. Ships **full-color** logo files;
+the flat-grey treatment is applied at render time with a CSS filter
+(`brightness(0) invert(0.7)`), so logos never need greyscale
+pre-processing. Logos regain full color on hover, and the marquee
+pauses while hovered.
+
+#### Signature
+
+```jinja
+logo_strip(logos,
+           heading='TRUSTED BY TEAMS AT',
+           grey=0.7,
+           duration='40s',
+           wrapper_class='')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `logos` | _required_ | List of logo dicts, see below. Order = display order |
+| `heading` | `'TRUSTED BY TEAMS AT'` | Centered uppercase label above the strip. ALL CAPS at the source per the eyebrow convention |
+| `grey` | `0.7` | Grey level: `0` = black, `1` = white. `0.7` ≈ `#B3B3B3` (StreamYard's value). Designer may tune |
+| `duration` | `'40s'` | Time for one full loop. Lower = faster |
+| `wrapper_class` | `''` | Extra classes on the `<section>` |
+
+#### Each logo dict
+
+| Key | Required | Notes |
+|---|---|---|
+| `src` | yes | Path under `/images/logos/`, e.g. `'/images/logos/aws.svg'` |
+| `alt` | yes | Company name |
+| `height` | no | Display height in px, default `30`. See *height tuning* below |
+
+#### Example
+
+```jinja
+{% import 'macros/logo_strip.html' as ui_logos %}
+
+{% set customer_logos = [
+    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 34},
+    {'src': '/images/logos/google.svg', 'alt': 'Google'},
+    {'src': '/images/logos/oracle.svg', 'alt': 'Oracle', 'height': 22},
+] %}
+
+{{ ui_logos.logo_strip(logos=customer_logos) }}
+```
+
+#### How to swap a logo in or out (the fast path)
+
+Logos are expected to rotate as customers come and go. The process:
+
+1. **Get the logo file.** Best sources in order: Wikimedia Commons
+   (official SVGs for recognizable brands), the company's press/brand
+   page, or an inline SVG extracted from their site header. Prefer SVG;
+   PNG is fine for raster-only brands.
+2. **Clean it.** Tight-crop (no baked-in padding — same rule as the
+   illustration export spec) and knock out any solid background so the
+   file is transparent. The color of the artwork doesn't matter; the
+   CSS filter flattens everything to grey. A white-on-transparent logo
+   works too (`brightness(0)` turns white to black before inverting).
+   ImageMagick one-liners: `convert in.png -trim +repage out.png`,
+   background removal `convert in.png -fuzz 18% -transparent '#f9de7a' out.png`.
+3. **Drop it in `content/images/logos/`** following filename
+   conventions (lowercase, hyphens, company name as slug).
+4. **Edit the `customer_logos` list** on the page — add/remove/reorder
+   the dict. Display order is list order.
+5. **Eyeball the height.** Default 30px; tune per logo (see below).
+
+**Legal gate**: before a logo ships to production, cross-check the
+Notion "Logo Use" column (Approved / Consent Required / Disapprove).
+The ranking sheet (Shovels_Logo_Ranking, Google Sheets) scores
+*importance*; Notion gates *permission*. Both must pass.
+
+#### Height tuning for optical balance
+
+A uniform pixel height makes logos look mismatched — a wide wordmark
+(Oracle) at 30px reads much "bigger" than a compact mark (the Michigan
+M) at 30px. Tune each logo so they carry similar visual weight:
+
+| Logo shape | Typical height |
+|---|---|
+| Very wide wordmark (Oracle, Thumbtack) | 22–28px |
+| Standard wordmark (Google, Angi, Houzz) | 26–30px |
+| Square-ish or stacked mark (Michigan M, AWS, Schneider, D.R. Horton) | 34–36px |
+
+This mirrors what StreamYard does (measured: 18–56px across their
+strip). There's no formula — set the default 30, then adjust by eye
+against neighbors.
+
+#### Notes
+
+- **The grey trick**: `filter: brightness(0) invert(0.7)` — `brightness(0)`
+  flattens any logo to a black silhouette (alpha preserved), `invert(0.7)`
+  lifts it to a uniform 70% grey. One declaration recolors any logo,
+  any source color, including white.
+- **Marquee mechanics**: the logo group renders twice (second copy
+  `aria-hidden`); the track animates `translateX(-50%)` on an infinite
+  linear loop, so the seam is invisible. Keyframes + animation are
+  defined in `tailwind.config.js` (`logo-scroll`); duration comes from
+  the `--logo-scroll-duration` CSS variable set by the macro.
+- **Edge fades**: 96px white gradients on both sides. If the strip
+  ever sits on a non-white background, those gradients (and the hover
+  reveal) need a `from-{color}` adjustment — parameterize when needed.
+- **Logo count**: 12–16 recommended, hard ceiling ~18. Visitors watch
+  a marquee for ~5–10 seconds (6–8 logos at default speed); below-the-
+  threshold logos dilute the recognizable ones. Current set = top 16
+  usable logos by SEMrush Domain Authority from the ranking sheet.
+- **Reduced motion**: not yet handled — see Open questions.
+
+---
+
 ## Build helpers (`pelicanconf.py`)
 
 ### `get_industry_articles(tag, limit=3)` helper
@@ -883,11 +1000,15 @@ content/images/
 │   ├── real-estate/
 │   ├── software/           ← Construction Tech audience (page slug is /software/)
 │   └── telecommunications/
-└── illustrations/          ← Shared assets used on multiple pages
-    ├── coverage-us.svg
-    ├── enterprise-icon-ai-classified.svg
-    ├── enterprise-icon-api-feed.svg
-    └── enterprise-icon-updates.svg
+├── illustrations/          ← Shared assets used on multiple pages
+│   ├── coverage-us.svg
+│   ├── enterprise-icon-ai-classified.svg
+│   ├── enterprise-icon-api-feed.svg
+│   └── enterprise-icon-updates.svg
+└── logos/                  ← Customer logos for the logo_strip macro
+    ├── aws.svg             ← full-color originals; grey applied via CSS
+    ├── google.svg
+    └── ...                 ← one file per customer, named by company slug
 ```
 
 Each folder name matches the corresponding Pelican page slug, which
@@ -954,6 +1075,7 @@ URL still resolves. Two use cases:
 |---|---|---|---|
 | `content/pages/mockup-test.md` | `/mockup-test` | Stress-test the `browser_frame` macro at varying widths and aspect ratios | Sandbox |
 | `content/pages/insurance-preview.md` | `/insurance-preview` | Preview of the new Insurance page (no legacy predecessor; the page is brand-new). Will be renamed to `insurance.md` with `slug: insurance` at launch. | Greenfield preview |
+| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage. Currently hosts the customer `logo_strip`; other homepage sections land here as the redesign progresses. **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template (or the homepage is converted to a page) rather than a simple file rename. Decide at launch time. | Redesign preview |
 
 ---
 
@@ -1150,11 +1272,49 @@ visual container without dominating the dark section.
 or Solutions page that includes the section automatically picks up the
 new layout.
 
+### Logo strip: CSS filter instead of pre-processed grey assets
+
+Customer logos are stored as full-color originals in
+`content/images/logos/` and flattened to grey at render time via
+`filter: brightness(0) invert(0.7)` in the `logo_strip` macro. We
+explicitly rejected pre-processing logos to grey with ImageMagick
+(which works — proven in a spike) in favor of the CSS approach.
+
+**Why**: this is how streamyard.com (the design reference) does it.
+One CSS declaration recolors any logo regardless of source color; the
+grey value is a single variable the designer can tune; reverting to
+full color (or adding the color-on-hover reveal) costs nothing; and
+swapping a logo means dropping in one file + one list edit — no image
+pipeline to re-run. Pre-processed assets would couple every design
+tweak to a batch re-export.
+
+**Tradeoff**: original brand colors ship to the client even though
+they render grey by default (that's what powers the hover reveal).
+File sizes are trivial (most logos < 10KB SVG).
+
+### Logo strip animation keyframes live in `tailwind.config.js`
+
+The marquee's `logo-scroll` keyframes + animation are defined in
+`tailwind.config.js` `theme.extend` rather than `input.css`.
+
+**Why**: Tailwind only emits the animation class when a template
+actually uses it, so the addition has zero effect on pages that don't
+render the strip — unlike `input.css` base-layer rules, which are
+global by nature. Loop duration stays flexible via the
+`--logo-scroll-duration` CSS variable so per-page speed never requires
+a config edit.
+
 ---
 
 ## Open questions
 
-None at the moment. New open questions will land here as they come up.
+- **Logo strip + `prefers-reduced-motion`**: the marquee currently
+  animates for all users. Decide whether to pause it (and show a
+  static wrapped grid?) under `prefers-reduced-motion: reduce` before
+  the homepage launch.
+- **Logo strip on non-white backgrounds**: edge fades and hover reveal
+  assume a white section background. Parameterize the fade color if
+  the homepage design places the strip on a tinted section.
 
 ---
 

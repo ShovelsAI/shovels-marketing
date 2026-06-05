@@ -21,6 +21,15 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
+      keyframes: {
+        'logo-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        'logo-scroll': 'logo-scroll var(--logo-scroll-duration, 40s) linear infinite',
+      },
     },
   },
   plugins: [
