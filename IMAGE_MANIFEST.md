@@ -96,14 +96,14 @@ underscores, no folder-name repetition.
 ## Home Services — `content/images/industries/home-services/`
 
 
-| Status | Slot | Type         | Source | Target filename                  | Depicts                                                                                             |
-| ------ | ---- | ------------ | ------ | -------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [x ]   | Hero | Hero         | Figma  | `hero.svg`                       | Home services hero illustration                                                                     |
-| [ x]   | UC1  | Screenshot   | Notion | `uc1-contractor-marketplace.png` | Contractor detail showing license status, permit history, trade type, and active permit count       |
-| [ x]   | UC2  | Illustration | Notion | `uc2-homeowner-intent.svg`       | Homeowner in a half-demo'd kitchen receiving a perfectly timed message — peak intent, first contact |
-| [ x]   | UC3  | Screenshot   | Notion | `uc3-demand-by-trade.png`        | Map filtered to HVAC permits in a metro, showing ZIP-level density                                  |
+| Status | Slot | Type         | Source | Target filename                  | Depicts                                                                                                                    |
+| ------ | ---- | ------------ | ------ | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [x ]   | Hero | Hero         | Figma  | `hero.svg`                       | Home services hero illustration                                                                                            |
+| [ x]   | UC1  | Screenshot   | Notion | `uc1-contractor-marketplace.png` | Contractor detail showing license status, permit history, trade type, and active permit count                              |
+| [ x]   | UC2  | Illustration | Notion | `uc2-homeowner-intent.svg`       | Homeowner in a half-demo'd kitchen receiving a perfectly timed message — peak intent, first contact                        |
+| [ x]   | UC3  | Screenshot   | Notion | `uc3-demand-by-trade.png`        | Map filtered to HVAC permits in a metro, showing ZIP-level density                                                         |
 | [ x]   | UC4  | Screenshot   | Notion | `uc4-verify-licenses.jpg`        | Contractor search showing license status, trade class, state, and permit count (JPG as shipped; PNG preferred for UI text) |
-| [ x]   | UC5  | Screenshot   | Notion | `uc5-high-intent-homeowners.png` | Permit filter with remodel + status in review                                                       |
+| [ x]   | UC5  | Screenshot   | Notion | `uc5-high-intent-homeowners.png` | Permit filter with remodel + status in review                                                                              |
 
 
 ---
@@ -113,12 +113,12 @@ underscores, no folder-name repetition.
 
 | Status | Slot | Type         | Source | Target filename                 | Depicts                                                                                                    |
 | ------ | ---- | ------------ | ------ | ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [ ]    | Hero | Hero         | Figma  | `hero.svg`                      | Real estate hero illustration                                                                              |
-| [ ]    | UC1  | Screenshot   | Notion | `uc1-property-history.png`      | Property detail showing full permit history with work type, contractor, and status                         |
-| [ ]    | UC2  | Screenshot   | Notion | `uc2-development-pipeline.png`  | Map filtered to demolition and grading permits in a target area                                            |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                      | Real estate hero illustration                                                                              |
+| [x ]   | UC1  | Screenshot   | Notion | `uc1-property-history.png`      | Property detail showing full permit history with work type, contractor, and status                         |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-development-pipeline.png`  | Map filtered to demolition and grading permits in a target area                                            |
 | [ ]    | UC3  | Illustration | Notion | `uc3-neighborhood-momentum.svg` | Street with active renovations and rising NVI score badges — investor spotting momentum before prices move |
-| [ ]    | UC4  | Screenshot   | Notion | `uc4-upzoning-decisions.png`    | Shovels Decisions feed filtered for upzoning and development-approval decisions                            |
-| [ ]    | UC5  | Illustration | Notion | `uc5-market-trends.svg`         | Two analysts — one on a printed report, one on a live permit dashboard — one clearly ahead of the market   |
+| [x ]   | UC4  | Screenshot   | Notion | `uc4-upzoning-decisions.svg`    | Shovels Decisions feed filtered for upzoning and development-approval decisions (shipped SVG into framed slot — verify framing looks right) |
+| [ x]   | UC5  | Illustration | Notion | `uc5-market-trends.png`         | Two analysts — one on a printed report, one on a live permit dashboard — one clearly ahead of the market   |
 
 
 ---

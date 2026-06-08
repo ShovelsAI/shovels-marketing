@@ -43,7 +43,7 @@ status: hidden
             'Use permit records to inform due diligence and appraisal review',
             'Look up APN and parcel records alongside permit history for a complete property profile',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/real-estate/uc1-property-history.png',
         'image_alt': 'Shovels app — property detail showing full permit history with work type, contractor, and status',
     },
     {
@@ -56,7 +56,7 @@ status: hidden
             'Follow individual projects from first permit pull through final inspection',
             'Set alerts for construction activity in your target markets',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/real-estate/uc2-development-pipeline.png',
         'image_alt': 'Shovels app — map filtered to demolition and grading permits in a target area',
     },
     {
@@ -83,7 +83,7 @@ status: hidden
             'Identify pro-development councils versus restrictive planning environments',
             'Track housing decisions that affect project economics',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/real-estate/uc4-upzoning-decisions.svg',
         'image_alt': 'Shovels Decisions — feed filtered for upzoning and development approval decisions',
     },
     {
@@ -96,7 +96,7 @@ status: hidden
             'Quantify renovation activity as a proxy for housing market health',
             'Model construction cycles to inform investment timing and market entry',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/real-estate/uc5-market-trends.png',
         'image_alt': 'Two analysts side by side — one reading a thick printed report, one on a live permit dashboard — one clearly ahead of the market',
         'framed': False,
     },
