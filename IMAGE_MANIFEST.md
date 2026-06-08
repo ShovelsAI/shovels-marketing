@@ -111,14 +111,14 @@ underscores, no folder-name repetition.
 ## Real Estate — `content/images/industries/real-estate/`
 
 
-| Status | Slot | Type         | Source | Target filename                 | Depicts                                                                                                    |
-| ------ | ---- | ------------ | ------ | ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [ x]   | Hero | Hero         | Figma  | `hero.svg`                      | Real estate hero illustration                                                                              |
-| [x ]   | UC1  | Screenshot   | Notion | `uc1-property-history.png`      | Property detail showing full permit history with work type, contractor, and status                         |
-| [ x]   | UC2  | Screenshot   | Notion | `uc2-development-pipeline.png`  | Map filtered to demolition and grading permits in a target area                                            |
-| [ ]    | UC3  | Illustration | Notion | `uc3-neighborhood-momentum.svg` | Street with active renovations and rising NVI score badges — investor spotting momentum before prices move |
+| Status | Slot | Type         | Source | Target filename                 | Depicts                                                                                                                                     |
+| ------ | ---- | ------------ | ------ | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                      | Real estate hero illustration                                                                                                               |
+| [x ]   | UC1  | Screenshot   | Notion | `uc1-property-history.png`      | Property detail showing full permit history with work type, contractor, and status                                                          |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-development-pipeline.png`  | Map filtered to demolition and grading permits in a target area                                                                             |
+| [ ]    | UC3  | Illustration | Notion | `uc3-neighborhood-momentum.svg` | Street with active renovations and rising NVI score badges — investor spotting momentum before prices move                                  |
 | [x ]   | UC4  | Screenshot   | Notion | `uc4-upzoning-decisions.svg`    | Shovels Decisions feed filtered for upzoning and development-approval decisions (shipped SVG into framed slot — verify framing looks right) |
-| [ x]   | UC5  | Illustration | Notion | `uc5-market-trends.svg`         | Two analysts — one on a printed report, one on a live permit dashboard — one clearly ahead of the market   |
+| [ x]   | UC5  | Illustration | Notion | `uc5-market-trends.svg`         | Two analysts — one on a printed report, one on a live permit dashboard — one clearly ahead of the market                                    |
 
 
 ---
@@ -128,11 +128,11 @@ underscores, no folder-name repetition.
 
 | Status | Slot | Type         | Source | Target filename                   | Depicts                                                                                           |
 | ------ | ---- | ------------ | ------ | --------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [ ]    | Hero | Hero         | Figma  | `hero.svg`                        | Construction technology hero illustration                                                         |
-| [ ]    | UC1  | Illustration | Notion | `uc1-integration-ready.svg`       | Developer receiving clean, structured permit data flowing into their platform — no raw parsing    |
-| [ ]    | UC2  | Screenshot   | Notion | `uc2-contractor-verification.png` | Contractor detail showing permit history, license status, and active permits by date              |
-| [ ]    | UC3  | Illustration | Notion | `uc3-upcoming-projects.svg`       | Contractor seeing upcoming projects on a map, reaching out before competitors know the jobs exist |
-| [ ]    | UC4  | Screenshot   | Notion | `uc4-permit-tracking.png`         | Permit detail showing status, filing date, approval date, and inspection milestones               |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                        | Construction technology hero illustration                                                         |
+| [ x]   | UC1  | Illustration | Notion | `uc1-integration-ready.svg`       | Developer receiving clean, structured permit data flowing into their platform — no raw parsing    |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-contractor-verification.png` | Contractor detail showing permit history, license status, and active permits by date              |
+| [ x]   | UC3  | Illustration | Notion | `uc3-upcoming-projects.svg`       | Contractor seeing upcoming projects on a map, reaching out before competitors know the jobs exist |
+| [x ]   | UC4  | Screenshot   | Notion | `uc4-permit-tracking.png`         | Permit detail showing status, filing date, approval date, and inspection milestones               |
 | [ ]    | UC5  | Screenshot   | Notion | `uc5-property-history.png`        | Property detail showing all historical permits by date with work type, contractor, and value      |
 
 
