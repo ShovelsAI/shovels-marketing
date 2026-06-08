@@ -41,7 +41,7 @@ status: hidden
             'Filter by license status, trade type, and active jurisdiction',
             'Onboard contractors with data-backed verification at signup',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/home-services/uc1-contractor-marketplace.png',
         'image_alt': 'Shovels app — contractor detail showing license status, permit history, trade type, and active permit count',
     },
     {
@@ -55,7 +55,7 @@ status: hidden
             'Layer permit data over resident records for direct homeowner outreach',
             'Look up property ownership by address to reach owners directly, not just occupants',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/home-services/uc2-homeowner-intent.svg',
         'image_alt': "A homeowner in a half-demo'd kitchen, phone in hand, receiving a perfectly timed message from a home services platform — peak intent, first contact",
         'framed': False,
     },
@@ -69,7 +69,7 @@ status: hidden
             'Benchmark demand across markets to prioritize expansion',
             'Monitor seasonal permit patterns to optimize marketing spend',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/home-services/uc3-demand-by-trade.png',
         'image_alt': 'Shovels app — map filtered to HVAC permits in a metro, showing ZIP-level density',
     },
     {
@@ -82,7 +82,7 @@ status: hidden
             'Match permit records to license data for multi-signal verification',
             'Standardized trade categories to make filtering and querying easy',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/home-services/uc4-verify-licenses.jpg',
         'image_alt': 'Shovels app — contractor search showing license status, trade class, state, and permit count',
     },
     {
@@ -95,7 +95,7 @@ status: hidden
             'Layer resident contact data for direct homeowner marketing',
             'Build lookalike audiences from renovation permit activity',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/home-services/uc5-high-intent-homeowners.png',
         'image_alt': 'Permit filter with remodel and status in review',
     },
 ] %}

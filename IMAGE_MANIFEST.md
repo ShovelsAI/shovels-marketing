@@ -98,12 +98,12 @@ underscores, no folder-name repetition.
 
 | Status | Slot | Type         | Source | Target filename                  | Depicts                                                                                             |
 | ------ | ---- | ------------ | ------ | -------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [ ]    | Hero | Hero         | Figma  | `hero.svg`                       | Home services hero illustration                                                                     |
-| [ ]    | UC1  | Screenshot   | Notion | `uc1-contractor-marketplace.png` | Contractor detail showing license status, permit history, trade type, and active permit count       |
-| [ ]    | UC2  | Illustration | Notion | `uc2-homeowner-intent.svg`       | Homeowner in a half-demo'd kitchen receiving a perfectly timed message — peak intent, first contact |
-| [ ]    | UC3  | Screenshot   | Notion | `uc3-demand-by-trade.png`        | Map filtered to HVAC permits in a metro, showing ZIP-level density                                  |
-| [ ]    | UC4  | Screenshot   | Notion | `uc4-verify-licenses.png`        | Contractor search showing license status, trade class, state, and permit count                      |
-| [ ]    | UC5  | Screenshot   | Notion | `uc5-high-intent-homeowners.png` | Permit filter with remodel + status in review                                                       |
+| [x ]   | Hero | Hero         | Figma  | `hero.svg`                       | Home services hero illustration                                                                     |
+| [ x]   | UC1  | Screenshot   | Notion | `uc1-contractor-marketplace.png` | Contractor detail showing license status, permit history, trade type, and active permit count       |
+| [ x]   | UC2  | Illustration | Notion | `uc2-homeowner-intent.svg`       | Homeowner in a half-demo'd kitchen receiving a perfectly timed message — peak intent, first contact |
+| [ x]   | UC3  | Screenshot   | Notion | `uc3-demand-by-trade.png`        | Map filtered to HVAC permits in a metro, showing ZIP-level density                                  |
+| [ x]   | UC4  | Screenshot   | Notion | `uc4-verify-licenses.jpg`        | Contractor search showing license status, trade class, state, and permit count (JPG as shipped; PNG preferred for UI text) |
+| [ x]   | UC5  | Screenshot   | Notion | `uc5-high-intent-homeowners.png` | Permit filter with remodel + status in review                                                       |
 
 
 ---
