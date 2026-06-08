@@ -4,6 +4,7 @@ slug: research-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -15,6 +16,19 @@ status: hidden
     description='Study housing, electrification, and permitting policy with clean, AI-classified permit data — at researcher-friendly terms.',
     illustration_src='/images/industries/research/hero.svg',
     illustration_alt='Research hero illustration') }}
+
+{# University logo wall. 5 of 6 sourced from Wikimedia; sixth school
+   (Notion "ned.edu") pending confirmation. Stanford mark came from the
+   "Cardinal logo" file — verify it's the right variant. #}
+{% set research_logos = [
+    {'src': '/images/logos/mit.svg', 'alt': 'MIT', 'height': 28},
+    {'src': '/images/logos/stanford.svg', 'alt': 'Stanford University', 'height': 28},
+    {'src': '/images/logos/princeton.svg', 'alt': 'Princeton University', 'height': 24},
+    {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 28},
+    {'src': '/images/logos/purdue.svg', 'alt': 'Purdue University', 'height': 26},
+] %}
+
+{{ ui_grid.logo_grid(logos=research_logos, heading='TRUSTED BY RESEARCHERS AT') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',

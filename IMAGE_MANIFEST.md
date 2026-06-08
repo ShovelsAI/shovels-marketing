@@ -174,11 +174,13 @@ of re-exporting. Hero and UC3 (external Berkeley figure) need sourcing.
 | [x] | UC4 | Illustration (chart) | Hurricane report | `uc4-disaster-recovery.jpg` | Copied from `blog_images/hurricane-total-storm-permits.jpg` |
 | [x] | UC5 | Illustration (chart) | Florida report | `uc5-construction-markets.png` | Copied from `blog_images/florida-new-construction-permits-by-jurisdiction.png` |
 
-**Logo grid (not yet wired)**: the Social Proof column lists six
-universities — MIT, Stanford, Princeton, Berkeley, Purdue, and one more
-(`ned.edu` — confirm intended school). A `logo_grid` of university marks
-can be added between hero and SOC 2 once those logos are sourced into
-`content/images/logos/`.
+**Logo grid (wired, 5 of 6)**: university wall between hero and SOC 2.
+Sourced from Wikimedia — `mit.svg`, `stanford.svg`, `princeton.svg`,
+`berkeley.svg`, `purdue.svg`. Two flags: (1) the sixth school
+(`ned.edu` in Notion) is unconfirmed — likely Notre Dame (`nd.edu`)?
+— so the grid runs at 5 for now; (2) Stanford came from the Wikimedia
+"Cardinal logo" file — verify it's the academic wordmark, not the
+athletics mark.
 
 ---
 
