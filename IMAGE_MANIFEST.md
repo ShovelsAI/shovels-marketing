@@ -146,12 +146,12 @@ underscores, no folder-name repetition.
 
 | Status | Slot | Type         | Source | Target filename                  | Depicts                                                                                                              |
 | ------ | ---- | ------------ | ------ | -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [ ]    | Hero | Hero         | Figma  | `hero.svg`                       | Telecommunications hero illustration                                                                                 |
-| [ ]    | UC1  | Screenshot   | Notion | `uc1-new-developments.png`       | Map filtered to new construction permits in a metro, showing cluster density                                         |
-| [ ]    | UC2  | Screenshot   | Notion | `uc2-competitor-filings.png`     | Map of permit filings in a defined service area, filtered by date and permit type                                    |
-| [ ]    | UC3  | Illustration | Notion | `uc3-fastest-permits.svg`        | Network planner comparing two regions (fast vs. slow approvals), deciding where to deploy fiber first                |
-| [ ]    | UC4  | Screenshot   | Notion | `uc4-council-intelligence.png`   | Shovels Decisions feed filtered by broadband, infrastructure, or right-of-way keywords                               |
-| [ ]    | UC5  | Illustration | Notion | `uc5-protect-infrastructure.svg` | Excavator near an urban street with underground cable routes highlighted — field engineer coordinating before damage |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                       | Telecommunications hero illustration                                                                                 |
+| [ x]   | UC1  | Screenshot   | Notion | `uc1-new-developments.png`       | Map filtered to new construction permits in a metro, showing cluster density                                         |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-competitor-filings.png`     | Map of permit filings in a defined service area, filtered by date and permit type                                    |
+| [ x]   | UC3  | Illustration | Notion | `uc3-fastest-permits.svg`        | Network planner comparing two regions (fast vs. slow approvals), deciding where to deploy fiber first                |
+| [ x]   | UC4  | Screenshot   | Notion | `uc4-council-intelligence.png`   | Shovels Decisions feed filtered by broadband, infrastructure, or right-of-way keywords                               |
+| [ x]   | UC5  | Illustration | Notion | `uc5-protect-infrastructure.svg` | Excavator near an urban street with underground cable routes highlighted — field engineer coordinating before damage |
 
 
 ---
