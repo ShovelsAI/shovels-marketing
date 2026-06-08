@@ -4,6 +4,7 @@ slug: home-services-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -15,6 +16,15 @@ status: hidden
     description='Generate home improvement leads from active renovation permits and verify contractors at scale.',
     illustration_src='/images/industries/home-services/hero.svg',
     illustration_alt='Home services hero illustration') }}
+
+{# Static logo grid (POC) — 2 of 6 sourced; Pearl Certification, Hawkins
+   Service, Jukebox Health, Peakzi pending. Sparse until more land. #}
+{% set home_services_logos = [
+    {'src': '/images/logos/angi.svg', 'alt': 'Angi'},
+    {'src': '/images/logos/houzz.svg', 'alt': 'Houzz'},
+] %}
+
+{{ ui_grid.logo_grid(logos=home_services_logos, heading='TRUSTED BY HOME SERVICES PLATFORMS') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',

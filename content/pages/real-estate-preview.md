@@ -4,6 +4,7 @@ slug: real-estate-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -15,6 +16,16 @@ status: hidden
     description='Track development pipelines, apply predictive analytics to neighborhood momentum, and identify emerging markets before they show up in listings.',
     illustration_src='/images/industries/real-estate/hero.svg',
     illustration_alt='Real estate hero illustration') }}
+
+{# Static logo grid (POC) — 4 of 6 sourced; TRC Companies + Ownwell pending. #}
+{% set real_estate_logos = [
+    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 34},
+    {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 26},
+    {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 36},
+    {'src': '/images/logos/jll.png', 'alt': 'JLL'},
+] %}
+
+{{ ui_grid.logo_grid(logos=real_estate_logos, heading='TRUSTED BY REAL ESTATE TEAMS') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',

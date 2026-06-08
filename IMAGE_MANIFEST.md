@@ -268,13 +268,17 @@ No logo wall identified. No `logo_grid` on this page for now.
 
 | Page | Logos ready | Grid wired? |
 |---|---|---|
-| Energy & Climate | 4 / 6 | ✅ (4 shown; add Base Power + PermitPower when sourced) |
-| Real Estate | 4 / 6 | ⬜ pending (need TRC, Ownwell) |
-| Home Services | 2 / 6 | ⬜ pending (need Pearl, Hawkins, Jukebox Health, Peakzi) |
-| Building Materials | 3 / 5 | ⬜ pending (need Avenue Roofing, Automate; verify Heidelberg) |
+| Energy & Climate | 4 / 6 | ✅ wired (4 shown; add Base Power + PermitPower when sourced) |
+| Real Estate | 4 / 6 | ✅ wired (4 shown; add TRC, Ownwell when sourced) |
+| Building Materials | 3 / 5 | ✅ wired (3 shown; add Avenue Roofing, Automate; verify Heidelberg) |
+| Home Services | 2 / 6 | ✅ wired (2 shown — sparse; add Pearl, Hawkins, Jukebox Health, Peakzi) |
 | Insurance | 0 / 4 | ⬜ pending (need all 4) |
 | Construction Tech | 0 / 6 | ⬜ pending (need all 6) |
 | Telecommunications | — | n/a (skipped) |
+
+When new logos land in `content/images/logos/`, add a dict to the
+matching `*_logos` list in that page's `-preview.md` (and bump the
+counts here). No macro changes needed.
 
 ### Sourcing legend
 

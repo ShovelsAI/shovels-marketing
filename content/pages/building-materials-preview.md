@@ -4,6 +4,7 @@ slug: building-materials-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -15,6 +16,16 @@ status: hidden
     description='See which contractors are active, track new construction leads in every market, and act before your competitors do.',
     illustration_src='/images/industries/building-materials/hero.svg',
     illustration_alt='Building materials hero illustration') }}
+
+{# Static logo grid (POC) — 3 of 5 sourced; Avenue Roofing + Automate pending,
+   Heidelberg mark needs branding verification (legacy HeidelbergCement file). #}
+{% set building_materials_logos = [
+    {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 26},
+    {'src': '/images/logos/owens-corning.svg', 'alt': 'Owens Corning', 'height': 36},
+    {'src': '/images/logos/heidelberg-materials.svg', 'alt': 'Heidelberg Materials', 'height': 30},
+] %}
+
+{{ ui_grid.logo_grid(logos=building_materials_logos, heading='TRUSTED BY BUILDING MATERIALS SUPPLIERS') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',
