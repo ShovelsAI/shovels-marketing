@@ -61,16 +61,16 @@ status: hidden
     },
     {
         'number': '03',
-        'title': 'Score neighborhood momentum with permit data',
+        'title': 'Track neighborhood momentum with permit data',
         'description': 'See which neighborhoods are improving, and by which parcel-level metrics, before price appreciation catches up.',
         'bullets': [
-            'Access permit-based neighborhood scores by parcel, census tract, and ZIP',
-            'Compare NVI trends across markets for portfolio and acquisition decisions',
+            'Analyze permit activity by parcel, census tract, and ZIP to assess neighborhood momentum',
+            'Compare permit trends across markets to inform portfolio and acquisition decisions',
             'Spot improving neighborhoods before price appreciation reflects permit activity',
             'Distinguish new construction from renovation activity by permit type',
         ],
-        'image_src': '',
-        'image_alt': 'A street where a few homes show active renovation — NVI score badges rising above them, an investor spotting the momentum before prices move',
+        'image_src': '/images/industries/real-estate/uc3-neighborhood-momentum.svg',
+        'image_alt': 'A street where a few homes show active renovation, an investor spotting the momentum before prices move',
         'framed': False,
     },
     {
