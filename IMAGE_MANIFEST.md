@@ -156,6 +156,32 @@ underscores, no folder-name repetition.
 
 ---
 
+## Research — `content/images/industries/research/`
+
+New (greenfield) page, slug `research-preview` → `research` at launch.
+Use-case images are report charts/figures, so all five render
+**unframed** (`framed: False`) — no browser chrome. **Four of the five
+charts already exist in the repo** under `content/images/blog_images/`
+and can be reused (copy into this folder under the Target name) instead
+of re-exporting. Hero and UC3 (external Berkeley figure) need sourcing.
+
+| Status | Slot | Type | Source | Target filename | Notes |
+|---|---|---|---|---|---|
+| [ ] | Hero | Hero | Figma | `hero.svg` | Research hero illustration |
+| [ ] | UC1 | Illustration (chart) | ADU report | `uc1-housing-production.png` | Reuse a blog ADU chart, e.g. `blog_images/ADU-permits-by-year-2024.jpg` |
+| [ ] | UC2 | Illustration (chart) | EV report | `uc2-electrification.png` | Exists: `blog_images/energy-policies-changing-california-home-ev-permits-by-year.png` |
+| [ ] | UC3 | Illustration (chart) | UC Berkeley figure | `uc3-permitting-timelines.png` | External (energyathaas.wordpress.com) — needs download |
+| [ ] | UC4 | Illustration (chart) | Hurricane report | `uc4-disaster-recovery.png` | Exists: `blog_images/hurricane-total-storm-permits.jpg` |
+| [ ] | UC5 | Illustration (chart) | Florida report | `uc5-construction-markets.png` | Exists: `blog_images/florida-new-construction-permits-by-jurisdiction.png` |
+
+**Logo grid (not yet wired)**: the Social Proof column lists six
+universities — MIT, Stanford, Princeton, Berkeley, Purdue, and one more
+(`ned.edu` — confirm intended school). A `logo_grid` of university marks
+can be added between hero and SOC 2 once those logos are sourced into
+`content/images/logos/`.
+
+---
+
 ## Status summary (baseline at manifest creation)
 
 
