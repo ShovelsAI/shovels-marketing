@@ -68,12 +68,12 @@ underscores, no folder-name repetition.
 
 | Status | Slot | Type         | Source | Target filename             | Depicts                                                                                                                    |
 | ------ | ---- | ------------ | ------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [ ]    | Hero | Hero         | Figma  | `hero.svg`                  | Energy & Climate hero illustration                                                                                         |
-| [ ]    | UC1  | Screenshot   | Notion | `uc1-electrification.png`   | Contractor search filtered to solar, EV charger, and heat pump trade types, showing permit count                           |
-| [ ]    | UC2  | Screenshot   | Notion | `uc2-homeowner-permits.png` | Permit search filtered to solar permits in a target ZIP, showing address, filed date, contractor *(rename from `uc2.png`)* |
-| [ ]    | UC3  | Illustration | Notion | `uc3-policy.svg`            | City council chamber with a reach-code vote underway; analyst capturing the policy signal early                            |
-| [ ]    | UC4  | Screenshot   | Notion | `uc4-green-mortgage.png`    | Map filtered to solar permits in a target metro, showing recent filings by location *(rename from `uc4.png`)*              |
-| [ ]    | UC5  | Illustration | Notion | `uc5-oregon-map.svg`        | Region-wide Oregon county map with solar, EV charger, and heat pump installs lighting up by color                          |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                  | Energy & Climate hero illustration                                                                                         |
+| [ x]   | UC1  | Screenshot   | Notion | `uc1-electrification.png`   | Contractor search filtered to solar, EV charger, and heat pump trade types, showing permit count                           |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-solar-permits.png`     | Permit search filtered to solar permits in a target ZIP, showing address, filed date, contractor                          |
+| [ x]   | UC3  | Illustration | Notion | `uc3-policy.svg`            | City council chamber with a reach-code vote underway; analyst capturing the policy signal early                            |
+| [ x]   | UC4  | Screenshot   | Notion | `uc4-solar-map.png`         | Map filtered to solar permits in a target metro, showing recent filings by location                                       |
+| [ x]   | UC5  | Illustration | Notion | `uc5-oregon-map.svg`        | Region-wide Oregon county map with solar, EV charger, and heat pump installs lighting up by color                          |
 
 
 ---

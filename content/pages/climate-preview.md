@@ -69,7 +69,7 @@ status: hidden
             'Layer resident contact data for direct homeowner outreach',
             'Reach homeowners before competitors know a project has started',
         ],
-        'image_src': '/images/industries/climate/uc2.png',
+        'image_src': '/images/industries/climate/uc2-solar-permits.png',
         'image_alt': 'Shovels app — permit search filtered to solar permits in a target ZIP, showing address, filed date, and contractor',
     },
     {
@@ -96,7 +96,7 @@ status: hidden
             'Layer resident data for direct mail, email, and phone outreach',
             'Use permit signals to pre-qualify high-intent borrowers at scale',
         ],
-        'image_src': '/images/industries/climate/uc4.png',
+        'image_src': '/images/industries/climate/uc4-solar-map.png',
         'image_alt': 'Shovels app — map filtered to solar permits in a target metro, showing recent filings by location',
     },
     {
