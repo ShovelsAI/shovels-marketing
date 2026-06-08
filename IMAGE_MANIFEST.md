@@ -212,7 +212,7 @@ hyphens, SVG preferred.
 
 | Status | Company | Domain | Target file | In repo |
 |---|---|---|---|---|
-| [ ] | Amazon ⚠ confirm Amazon vs AWS | amazon.com | `amazon.svg` | ➖ (have `aws.svg`) |
+| [x] | AWS — confirmed: use existing AWS mark for amazon.com | amazon.com | `aws.svg` | ✅ |
 | [x] | Redfin | redfin.com | `redfin.svg` | ✅ |
 | [x] | D.R. Horton | drhorton.com | `dr-horton.svg` | ✅ |
 | [x] | JLL | jll.com | `jll.png` | ✅ |
@@ -223,8 +223,8 @@ hyphens, SVG preferred.
 
 | Status | Company | Domain | Target file | In repo |
 |---|---|---|---|---|
-| [x] | Angi ⚠ (domain mashed w/ Houzz in Notion) | angi.com | `angi.svg` | ✅ |
-| [x] | Houzz ⚠ (domain mashed w/ Angi in Notion) | houzz.com | `houzz.svg` | ✅ |
+| [x] | Angi — confirmed (split from Houzz in Notion) | angi.com | `angi.svg` | ✅ |
+| [x] | Houzz — confirmed (split from Angi in Notion) | houzz.com | `houzz.svg` | ✅ |
 | [ ] | Pearl Certification | pearlcertification.com | `pearl-certification.svg` | ➖ |
 | [ ] | Hawkins Service Co | hawkinsserviceco.com | `hawkins-service.svg` | ➖ |
 | [ ] | Jukebox Health | jukeboxhealth.com | `jukebox-health.svg` | ➖ |
@@ -235,8 +235,8 @@ hyphens, SVG preferred.
 | Status | Company | Domain | Target file | In repo |
 |---|---|---|---|---|
 | [x] | QXO | qxo.com | `qxo.svg` | ✅ |
-| [ ] | Heidelberg Materials | heidelbergmaterials.com | `heidelberg-materials.svg` | ➖ |
-| [ ] | Owens Corning | owenscorning.com | `owens-corning.svg` | ➖ |
+| [~] | Heidelberg Materials ⚠ sourced legacy "HeidelbergCement" mark — verify current branding | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅ (Wikimedia, verify) |
+| [x] | Owens Corning | owenscorning.com | `owens-corning.svg` | ✅ (Wikimedia) |
 | [ ] | Avenue Roofing | avenueroofing.com | `avenue-roofing.svg` | ➖ |
 | [ ] | Automate | automate-works.com | `automate.svg` | ➖ |
 
@@ -268,10 +268,18 @@ No logo wall identified. No `logo_grid` on this page for now.
 
 | Page | Logos ready | Grid wired? |
 |---|---|---|
-| Energy & Climate | 4 / 6 | ✅ (4 shown; add 2 when sourced) |
-| Real Estate | 3 / 6 | ⬜ pending |
-| Home Services | 2 / 6 | ⬜ pending |
-| Building Materials | 1 / 5 | ⬜ pending |
-| Insurance | 0 / 4 | ⬜ pending |
-| Construction Tech | 0 / 6 | ⬜ pending |
+| Energy & Climate | 4 / 6 | ✅ (4 shown; add Base Power + PermitPower when sourced) |
+| Real Estate | 4 / 6 | ⬜ pending (need TRC, Ownwell) |
+| Home Services | 2 / 6 | ⬜ pending (need Pearl, Hawkins, Jukebox Health, Peakzi) |
+| Building Materials | 3 / 5 | ⬜ pending (need Avenue Roofing, Automate; verify Heidelberg) |
+| Insurance | 0 / 4 | ⬜ pending (need all 4) |
+| Construction Tech | 0 / 6 | ⬜ pending (need all 6) |
 | Telecommunications | — | n/a (skipped) |
+
+### Sourcing legend
+
+`[x]` in repo & confirmed · `[~]` in repo, needs verification · `[ ]`
+still to source. Statics that aren't on Wikimedia (most small/private
+companies) need a manual scrape — source an official SVG from the
+company's brand/press page, clean it, and drop it in
+`content/images/logos/` under the Target file name above.
