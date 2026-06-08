@@ -4,6 +4,7 @@ slug: insurance-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -15,6 +16,16 @@ status: hidden
     description='Underwrite with verified property data, validate claims faster, and find new business based on real construction activity.',
     illustration_src='/images/industries/insurance/hero.svg',
     illustration_alt='Insurance hero illustration') }}
+
+{# Static logo grid — 3 of 4 sourced; Trinh Insurance (trinhinsurance.com)
+   pending. comeryx.png has a baked-in background — needs knockout. #}
+{% set insurance_logos = [
+    {'src': '/images/logos/scription.png', 'alt': 'Scription', 'height': 26},
+    {'src': '/images/logos/drodat.png', 'alt': 'Drodat', 'height': 28},
+    {'src': '/images/logos/comeryx.png', 'alt': 'Comeryx', 'height': 28},
+] %}
+
+{{ ui_grid.logo_grid(logos=insurance_logos, heading='TRUSTED BY INSURANCE TEAMS') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',

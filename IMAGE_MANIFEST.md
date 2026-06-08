@@ -206,8 +206,8 @@ hyphens, SVG preferred.
 | [x]    | EnergySage         | energysage.com        | `energysage.svg`         | ✅       |
 | [x]    | Rewiring America   | rewiringamerica.org   | `rewiring-america.png`   | ✅       |
 | [x]    | Frontline Wildfire | frontlinewildfire.com | `frontline-wildfire.svg` | ✅       |
-| [ ]    | Base Power         | basepowercompany.com  | `base-power.svg`         | ➖       |
-| [ ]    | PermitPower        | permitpower.org       | `permitpower.svg`        | ➖       |
+| [x]    | Base Power         | basepowercompany.com  | `base-power.png`         | ✅       |
+| [x]    | PermitPower        | permitpower.org       | `permit-power.svg`       | ✅       |
 
 
 ### Real Estate — `/real-estate`
@@ -219,8 +219,8 @@ hyphens, SVG preferred.
 | [x]    | Redfin                                                | redfin.com       | `redfin.svg`        | ✅       |
 | [x]    | D.R. Horton                                           | drhorton.com     | `dr-horton.svg`     | ✅       |
 | [x]    | JLL                                                   | jll.com          | `jll.png`           | ✅       |
-| [ ]    | TRC Companies                                         | trccompanies.com | `trc-companies.svg` | ➖       |
-| [ ]    | Ownwell                                               | ownwell.com      | `ownwell.svg`       | ➖       |
+| [x]    | TRC Companies                                         | trccompanies.com | `trc-companies.png` | ✅       |
+| [x]    | Ownwell                                               | ownwell.com      | `ownwell.png`       | ✅       |
 
 
 ### Home Services — `/home-services`
@@ -230,10 +230,10 @@ hyphens, SVG preferred.
 | ------ | --------------------------------------------- | ---------------------- | ------------------------- | ------- |
 | [x]    | Angi — confirmed (split from Houzz in Notion) | angi.com               | `angi.svg`                | ✅       |
 | [x]    | Houzz — confirmed (split from Angi in Notion) | houzz.com              | `houzz.svg`               | ✅       |
-| [ ]    | Pearl Certification                           | pearlcertification.com | `pearl-certification.svg` | ➖       |
-| [ ]    | Hawkins Service Co                            | hawkinsserviceco.com   | `hawkins-service.svg`     | ➖       |
-| [ ]    | Jukebox Health                                | jukeboxhealth.com      | `jukebox-health.svg`      | ➖       |
-| [ ]    | Peakzi                                        | peakzi.me              | `peakzi.svg`              | ➖       |
+| [x]    | Pearl Certification                           | pearlcertification.com | `pearl-certification.svg` | ✅       |
+| [x]    | Hawkins Service Co                            | hawkinsserviceco.com   | `hawkins-service.png`     | ✅       |
+| [x]    | Jukebox Health                                | jukeboxhealth.com      | `jukebox-health.png`      | ✅       |
+| [x]    | Peakzi                                        | peakzi.me              | `peakzi.png`              | ✅       |
 
 
 ### Building Materials — `/building-materials`
@@ -242,9 +242,9 @@ hyphens, SVG preferred.
 | Status | Company                                                                                 | Domain                  | Target file                | In repo               |
 | ------ | --------------------------------------------------------------------------------------- | ----------------------- | -------------------------- | --------------------- |
 | [x]    | QXO                                                                                     | qxo.com                 | `qxo.svg`                  | ✅                     |
-| [~]    | Heidelberg Materials ⚠ sourced legacy "HeidelbergCement" mark — verify current branding | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅ (Wikimedia, verify) |
-| [x]    | Owens Corning                                                                           | owenscorning.com        | `owens-corning.svg`        | ✅ (Wikimedia)         |
-| [ ]    | Avenue Roofing                                                                          | avenueroofing.com       | `avenue-roofing.svg`       | ➖                     |
+| [x]    | Heidelberg Materials (current mark, replaced legacy)                                    | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅                     |
+| [x]    | Owens Corning                                                                           | owenscorning.com        | `owens-corning.svg`        | ✅                     |
+| [x]    | Avenue Roofing                                                                          | avenueroofing.com       | `avenue-roofing.svg`       | ✅                     |
 | [ ]    | Automate                                                                                | automate-works.com      | `automate.svg`             | ➖                     |
 
 
@@ -253,10 +253,10 @@ hyphens, SVG preferred.
 
 | Status | Company         | Domain             | Target file           | In repo |
 | ------ | --------------- | ------------------ | --------------------- | ------- |
-| [ ]    | Scription       | scription.com      | `scription.svg`       | ➖       |
+| [x]    | Scription       | scription.com      | `scription.png`       | ✅ (converted from AVIF)       |
 | [ ]    | Trinh Insurance | trinhinsurance.com | `trinh-insurance.svg` | ➖       |
-| [ ]    | Drodat          | drodat.com         | `drodat.svg`          | ➖       |
-| [ ]    | Comeryx         | comeryx.com        | `comeryx.svg`         | ➖       |
+| [x]    | Drodat          | drodat.com         | `drodat.png`          | ✅       |
+| [x]    | Comeryx         | comeryx.com        | `comeryx.png`         | ⚠ baked-in background — needs knockout |
 
 
 ### Construction Technology — `/software`
@@ -264,11 +264,11 @@ hyphens, SVG preferred.
 
 | Status | Company       | Domain           | Target file         | In repo |
 | ------ | ------------- | ---------------- | ------------------- | ------- |
-| [ ]    | PlanHub       | planhub.com      | `planhub.svg`       | ➖       |
-| [ ]    | Fuse Service  | fuseservice.com  | `fuse-service.svg`  | ➖       |
-| [ ]    | Handle        | handle.com       | `handle.svg`        | ➖       |
-| [ ]    | ToolBelt      | toolbelt.work    | `toolbelt.svg`      | ➖       |
-| [ ]    | Algoma        | algoma.co        | `algoma.svg`        | ➖       |
+| [x]    | PlanHub       | planhub.com      | `planhub.png`       | ✅       |
+| [x]    | Fuse Service  | fuseservice.com  | `fuse-service.svg`  | ✅       |
+| [x]    | Handle        | handle.com       | `handle.svg`        | ✅       |
+| [x]    | ToolBelt      | toolbelt.work    | `toolbelt.png`      | ✅ (converted from WebP)      |
+| [x]    | Algoma        | algoma.co        | `algoma.png`        | ✅ (converted from WebP)      |
 | [ ]    | Crown Roofing | crownroofing.com | `crown-roofing.svg` | ➖       |
 
 
@@ -281,12 +281,12 @@ No logo wall identified. No `logo_grid` on this page for now.
 
 | Page               | Logos ready | Grid wired?                                                            |
 | ------------------ | ----------- | ---------------------------------------------------------------------- |
-| Energy & Climate   | 4 / 6       | ✅ wired (4 shown; add Base Power + PermitPower when sourced)           |
-| Real Estate        | 4 / 6       | ✅ wired (4 shown; add TRC, Ownwell when sourced)                       |
-| Building Materials | 3 / 5       | ✅ wired (3 shown; add Avenue Roofing, Automate; verify Heidelberg)     |
-| Home Services      | 2 / 6       | ✅ wired (2 shown — sparse; add Pearl, Hawkins, Jukebox Health, Peakzi) |
-| Insurance          | 0 / 4       | ⬜ pending (need all 4)                                                 |
-| Construction Tech  | 0 / 6       | ⬜ pending (need all 6)                                                 |
+| Energy & Climate   | 6 / 6       | ✅ complete                                                            |
+| Real Estate        | 6 / 6       | ✅ complete                                                            |
+| Home Services      | 6 / 6       | ✅ complete                                                            |
+| Building Materials | 4 / 5       | ✅ wired (4 shown; Automate pending)                                   |
+| Construction Tech  | 5 / 6       | ✅ wired (5 shown; Crown Roofing pending)                              |
+| Insurance          | 3 / 4       | ✅ wired (3 shown; Trinh Insurance pending; comeryx bg knockout)       |
 | Telecommunications | —           | n/a (skipped)                                                          |
 
 

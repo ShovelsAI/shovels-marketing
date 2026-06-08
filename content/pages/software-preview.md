@@ -4,6 +4,7 @@ slug: software-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -15,6 +16,17 @@ status: hidden
     description='Add permit insights and predictive analytics to your product without building your own data pipeline.',
     illustration_src='/images/industries/software/hero.svg',
     illustration_alt='Construction technology hero illustration') }}
+
+{# Static logo grid — 5 of 6 sourced; Crown Roofing (crownroofing.com) pending. #}
+{% set software_logos = [
+    {'src': '/images/logos/planhub.png', 'alt': 'PlanHub', 'height': 28},
+    {'src': '/images/logos/fuse-service.svg', 'alt': 'Fuse Service', 'height': 28},
+    {'src': '/images/logos/handle.svg', 'alt': 'Handle', 'height': 28},
+    {'src': '/images/logos/toolbelt.png', 'alt': 'ToolBelt', 'height': 28},
+    {'src': '/images/logos/algoma.png', 'alt': 'Algoma', 'height': 28},
+] %}
+
+{{ ui_grid.logo_grid(logos=software_logos, heading='TRUSTED BY CONSTRUCTION TECHNOLOGY TEAMS') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',

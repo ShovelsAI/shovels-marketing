@@ -17,12 +17,14 @@ status: hidden
     illustration_src='/images/industries/real-estate/hero.svg',
     illustration_alt='Real estate hero illustration') }}
 
-{# Static logo grid (POC) — 4 of 6 sourced; TRC Companies + Ownwell pending. #}
+{# Static 6-logo industry strip — full set, pending legal sign-off. #}
 {% set real_estate_logos = [
     {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 34},
     {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 26},
     {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 36},
     {'src': '/images/logos/jll.png', 'alt': 'JLL'},
+    {'src': '/images/logos/trc-companies.png', 'alt': 'TRC Companies', 'height': 28},
+    {'src': '/images/logos/ownwell.png', 'alt': 'Ownwell', 'height': 28},
 ] %}
 
 {{ ui_grid.logo_grid(logos=real_estate_logos, heading='TRUSTED BY REAL ESTATE TEAMS') }}
