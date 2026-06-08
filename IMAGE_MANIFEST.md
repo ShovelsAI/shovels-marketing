@@ -176,3 +176,102 @@ placeholder) · `rename` = present but filename will change on replacement.
 The designer's redesign touches **most** existing assets, so `✅` marks a
 baseline file, not a "done" — tick the Status box above once the **new**
 version is in place.
+
+---
+
+# Industry Logo Grids (`logo_grid`)
+
+Per-industry static logo strips (the "companies like you" row). Source
+each logo into `content/images/logos/`, then Claude wires the page's
+`logo_grid` once the set is complete. Telecommunications is **skipped**
+for now — no logo wall identified.
+
+Companies are taken from the **Social Proof** column of the Industry
+Pages Copy Notion DB. Logos are **not fetchable from a domain** — source
+an official SVG (Wikimedia, the company's brand/press page, or a cleaned
+inline SVG from their site), tight-crop it, knock out any background,
+and drop it in. Color doesn't matter; the grey CSS filter flattens it.
+See COMPONENTS.md → `logo_grid` / `logo_strip` for the full process and
+the legal gate (Notion `Logo Use`).
+
+**Naming**: `content/images/logos/{company-slug}.{svg|png}` — lowercase,
+hyphens, SVG preferred.
+
+### Energy & Climate — `/climate` (grid wired with 4 of 6)
+
+| Status | Company | Domain | Target file | In repo |
+|---|---|---|---|---|
+| [x] | Schneider Electric | se.com | `schneider-electric.svg` | ✅ |
+| [x] | EnergySage | energysage.com | `energysage.svg` | ✅ |
+| [x] | Rewiring America | rewiringamerica.org | `rewiring-america.png` | ✅ |
+| [x] | Frontline Wildfire | frontlinewildfire.com | `frontline-wildfire.svg` | ✅ |
+| [ ] | Base Power | basepowercompany.com | `base-power.svg` | ➖ |
+| [ ] | PermitPower | permitpower.org | `permitpower.svg` | ➖ |
+
+### Real Estate — `/real-estate`
+
+| Status | Company | Domain | Target file | In repo |
+|---|---|---|---|---|
+| [ ] | Amazon ⚠ confirm Amazon vs AWS | amazon.com | `amazon.svg` | ➖ (have `aws.svg`) |
+| [x] | Redfin | redfin.com | `redfin.svg` | ✅ |
+| [x] | D.R. Horton | drhorton.com | `dr-horton.svg` | ✅ |
+| [x] | JLL | jll.com | `jll.png` | ✅ |
+| [ ] | TRC Companies | trccompanies.com | `trc-companies.svg` | ➖ |
+| [ ] | Ownwell | ownwell.com | `ownwell.svg` | ➖ |
+
+### Home Services — `/home-services`
+
+| Status | Company | Domain | Target file | In repo |
+|---|---|---|---|---|
+| [x] | Angi ⚠ (domain mashed w/ Houzz in Notion) | angi.com | `angi.svg` | ✅ |
+| [x] | Houzz ⚠ (domain mashed w/ Angi in Notion) | houzz.com | `houzz.svg` | ✅ |
+| [ ] | Pearl Certification | pearlcertification.com | `pearl-certification.svg` | ➖ |
+| [ ] | Hawkins Service Co | hawkinsserviceco.com | `hawkins-service.svg` | ➖ |
+| [ ] | Jukebox Health | jukeboxhealth.com | `jukebox-health.svg` | ➖ |
+| [ ] | Peakzi | peakzi.me | `peakzi.svg` | ➖ |
+
+### Building Materials — `/building-materials`
+
+| Status | Company | Domain | Target file | In repo |
+|---|---|---|---|---|
+| [x] | QXO | qxo.com | `qxo.svg` | ✅ |
+| [ ] | Heidelberg Materials | heidelbergmaterials.com | `heidelberg-materials.svg` | ➖ |
+| [ ] | Owens Corning | owenscorning.com | `owens-corning.svg` | ➖ |
+| [ ] | Avenue Roofing | avenueroofing.com | `avenue-roofing.svg` | ➖ |
+| [ ] | Automate | automate-works.com | `automate.svg` | ➖ |
+
+### Insurance — `/insurance` (only 4 listed; ⚠ confirm target count)
+
+| Status | Company | Domain | Target file | In repo |
+|---|---|---|---|---|
+| [ ] | Scription | scription.com | `scription.svg` | ➖ |
+| [ ] | Trinh Insurance | trinhinsurance.com | `trinh-insurance.svg` | ➖ |
+| [ ] | Drodat | drodat.com | `drodat.svg` | ➖ |
+| [ ] | Comeryx | comeryx.com | `comeryx.svg` | ➖ |
+
+### Construction Technology — `/software`
+
+| Status | Company | Domain | Target file | In repo |
+|---|---|---|---|---|
+| [ ] | PlanHub | planhub.com | `planhub.svg` | ➖ |
+| [ ] | Fuse Service | fuseservice.com | `fuse-service.svg` | ➖ |
+| [ ] | Handle | handle.com | `handle.svg` | ➖ |
+| [ ] | ToolBelt | toolbelt.work | `toolbelt.svg` | ➖ |
+| [ ] | Algoma | algoma.co | `algoma.svg` | ➖ |
+| [ ] | Crown Roofing | crownroofing.com | `crown-roofing.svg` | ➖ |
+
+### Telecommunications — skipped
+
+No logo wall identified. No `logo_grid` on this page for now.
+
+### Logo grid wiring status
+
+| Page | Logos ready | Grid wired? |
+|---|---|---|
+| Energy & Climate | 4 / 6 | ✅ (4 shown; add 2 when sourced) |
+| Real Estate | 3 / 6 | ⬜ pending |
+| Home Services | 2 / 6 | ⬜ pending |
+| Building Materials | 1 / 5 | ⬜ pending |
+| Insurance | 0 / 4 | ⬜ pending |
+| Construction Tech | 0 / 6 | ⬜ pending |
+| Telecommunications | — | n/a (skipped) |
