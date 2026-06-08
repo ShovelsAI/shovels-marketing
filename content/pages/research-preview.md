@@ -31,7 +31,7 @@ status: hidden
             'Validate or extend survey- and text-mining-based estimates with permit-level records',
             'Drill down from national trends to individual jurisdictions and addresses',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/research/uc1-housing-production.jpg',
         'image_alt': 'Chart from the Shovels ADU report — housing and ADU permit production by year',
         'framed': False,
     },
@@ -45,7 +45,7 @@ status: hidden
             'Link permits to contractors to study installer markets and labor effects',
             'Read the research: <a href="https://convention2.allacademic.com/one/appam/appam25/index.php?program_focus=view_paper&selected_paper_id=2260676&cmd=online_program_direct_link&sub_action=online_program" class="font-semibold text-shovels-primary hover:underline">Spatial Diffusion and Neighboring Effects of Residential EV Charger Adoption (APPAM 2025)</a>',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/research/uc2-electrification.png',
         'image_alt': 'Chart from the Shovels EV report — EV charger permits by year',
         'framed': False,
     },
@@ -73,7 +73,7 @@ status: hidden
             'Identify resilience retrofits like roofing, hardening, and elevation projects',
             'Join permits to property attributes for richer risk and recovery models',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/research/uc4-disaster-recovery.jpg',
         'image_alt': 'Chart from the Shovels hurricane report — total storm-recovery permits over time',
         'framed': False,
     },
@@ -87,7 +87,7 @@ status: hidden
             'Combine permit data with survey data for generational and demographic studies',
             'Read the research: <a href="https://arxiv.org/abs/2508.09513" class="font-semibold text-shovels-primary hover:underline">The Market Effects of Algorithms (Raymond, MIT, 2025)</a>',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/research/uc5-construction-markets.png',
         'image_alt': 'Chart from the Shovels Florida report — new construction permits by jurisdiction',
         'framed': False,
     },
@@ -98,41 +98,7 @@ status: hidden
     heading='What researchers can do with Shovels',
     cases=research_cases) }}
 
-{# Data Delivery — research-specific copy, so inlined rather than using the
-   shared sections/enterprise_teams.html include (which is hardcoded to the
-   "Built for enterprise teams" wording). See COMPONENTS.md follow-up on
-   parameterizing that section into a macro. #}
-<section class="w-full bg-shovels-dark px-6 md:px-10 py-24">
-  <div class="mx-auto max-w-6xl">
-    <div class="mx-auto max-w-3xl text-center">
-      <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">DATA DELIVERY</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Built for research teams</h2>
-    </div>
-    <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
-      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-api-feed.svg" alt="Flexible data delivery" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Fits your workflow</h3>
-        <p class="mt-2 text-sm text-gray-300">Access our data via API, CSV, parquet, S3, Snowflake, BigQuery, or Databricks. One-time pulls and recurring feeds available.</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-ai-classified.svg" alt="AI-classified permits" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">AI-classified permits</h3>
-        <p class="mt-2 text-sm text-gray-300">Clean, structured inputs out of the box. No raw text parsing or manual classification required. Check out our <a href="https://www.shovels.ai/data-dictionary#permits" class="text-shovels-secondary hover:underline">data dictionary</a> for details.</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
-        <div class="flex justify-center">
-          <img src="/images/illustrations/enterprise-icon-updates.svg" alt="Academic pricing" class="size-16" />
-        </div>
-        <h3 class="mt-6 text-lg font-medium text-shovels-secondary">Academic pricing</h3>
-        <p class="mt-2 text-sm text-gray-300">Discounted one-time bulk purchases with perpetual licensing for research use, scoped to your budget and study design.</p>
-      </div>
-    </div>
-  </div>
-</section>
+{% include 'sections/enterprise_teams.html' %}
 
 {% include 'sections/coverage.html' %}
 

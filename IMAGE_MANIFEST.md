@@ -168,11 +168,11 @@ of re-exporting. Hero and UC3 (external Berkeley figure) need sourcing.
 | Status | Slot | Type | Source | Target filename | Notes |
 |---|---|---|---|---|---|
 | [x] | Hero | Hero | Figma | `hero.svg` | Research hero illustration |
-| [ ] | UC1 | Illustration (chart) | ADU report | `uc1-housing-production.png` | Reuse a blog ADU chart, e.g. `blog_images/ADU-permits-by-year-2024.jpg` |
-| [ ] | UC2 | Illustration (chart) | EV report | `uc2-electrification.png` | Exists: `blog_images/energy-policies-changing-california-home-ev-permits-by-year.png` |
+| [x] | UC1 | Illustration (chart) | ADU report | `uc1-housing-production.jpg` | Copied from `blog_images/ADU-permits-by-year-2024.jpg` |
+| [x] | UC2 | Illustration (chart) | EV report | `uc2-electrification.png` | Copied from `blog_images/energy-policies-changing-california-home-ev-permits-by-year.png` |
 | [ ] | UC3 | Illustration (chart) | UC Berkeley figure | `uc3-permitting-timelines.png` | External (energyathaas.wordpress.com) — needs download |
-| [ ] | UC4 | Illustration (chart) | Hurricane report | `uc4-disaster-recovery.png` | Exists: `blog_images/hurricane-total-storm-permits.jpg` |
-| [ ] | UC5 | Illustration (chart) | Florida report | `uc5-construction-markets.png` | Exists: `blog_images/florida-new-construction-permits-by-jurisdiction.png` |
+| [x] | UC4 | Illustration (chart) | Hurricane report | `uc4-disaster-recovery.jpg` | Copied from `blog_images/hurricane-total-storm-permits.jpg` |
+| [x] | UC5 | Illustration (chart) | Florida report | `uc5-construction-markets.png` | Copied from `blog_images/florida-new-construction-permits-by-jurisdiction.png` |
 
 **Logo grid (not yet wired)**: the Social Proof column lists six
 universities — MIT, Stanford, Princeton, Berkeley, Purdue, and one more
