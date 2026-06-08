@@ -245,7 +245,7 @@ hyphens, SVG preferred.
 | [x]    | Heidelberg Materials (current mark, replaced legacy)                                    | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅                     |
 | [x]    | Owens Corning                                                                           | owenscorning.com        | `owens-corning.svg`        | ✅                     |
 | [x]    | Avenue Roofing                                                                          | avenueroofing.com       | `avenue-roofing.svg`       | ✅                     |
-| [ ]    | Automate                                                                                | automate-works.com      | `automate.svg`             | ➖                     |
+| [x]    | Automate                                                                                | automate-works.com      | `automate-works.png`       | ✅                     |
 
 
 ### Insurance — `/insurance` (only 4 listed; ⚠ confirm target count)
@@ -256,7 +256,7 @@ hyphens, SVG preferred.
 | [x]    | Scription       | scription.com      | `scription.png`       | ✅ (converted from AVIF)       |
 | [ ]    | Trinh Insurance | trinhinsurance.com | `trinh-insurance.svg` | ➖       |
 | [x]    | Drodat          | drodat.com         | `drodat.png`          | ✅       |
-| [x]    | Comeryx         | comeryx.com        | `comeryx.png`         | ⚠ baked-in background — needs knockout |
+| [x]    | Comeryx         | comeryx.com        | `comeryx.png`         | ✅ (replaced — now transparent) |
 
 
 ### Construction Technology — `/software`
@@ -269,7 +269,7 @@ hyphens, SVG preferred.
 | [x]    | Handle        | handle.com       | `handle.svg`        | ✅       |
 | [x]    | ToolBelt      | toolbelt.work    | `toolbelt.png`      | ✅ (converted from WebP)      |
 | [x]    | Algoma        | algoma.co        | `algoma.png`        | ✅ (converted from WebP)      |
-| [ ]    | Crown Roofing | crownroofing.com | `crown-roofing.svg` | ➖       |
+| [x]    | Crown Roofing | crownroofing.com | `crown-roofing.png` | ✅       |
 
 
 ### Telecommunications — skipped
@@ -284,9 +284,9 @@ No logo wall identified. No `logo_grid` on this page for now.
 | Energy & Climate   | 6 / 6       | ✅ complete                                                            |
 | Real Estate        | 6 / 6       | ✅ complete                                                            |
 | Home Services      | 6 / 6       | ✅ complete                                                            |
-| Building Materials | 4 / 5       | ✅ wired (4 shown; Automate pending)                                   |
-| Construction Tech  | 5 / 6       | ✅ wired (5 shown; Crown Roofing pending)                              |
-| Insurance          | 3 / 4       | ✅ wired (3 shown; Trinh Insurance pending; comeryx bg knockout)       |
+| Building Materials | 5 / 5       | ✅ complete                                                            |
+| Construction Tech  | 6 / 6       | ✅ complete                                                            |
+| Insurance          | 3 / 4       | ✅ wired (3 shown; Trinh Insurance pending)                            |
 | Telecommunications | —           | n/a (skipped)                                                          |
 
 
