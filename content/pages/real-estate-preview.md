@@ -96,7 +96,7 @@ status: hidden
             'Quantify renovation activity as a proxy for housing market health',
             'Model construction cycles to inform investment timing and market entry',
         ],
-        'image_src': '/images/industries/real-estate/uc5-market-trends.png',
+        'image_src': '/images/industries/real-estate/uc5-market-trends.svg',
         'image_alt': 'Two analysts side by side — one reading a thick printed report, one on a live permit dashboard — one clearly ahead of the market',
         'framed': False,
     },

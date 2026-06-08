@@ -118,7 +118,7 @@ underscores, no folder-name repetition.
 | [ x]   | UC2  | Screenshot   | Notion | `uc2-development-pipeline.png`  | Map filtered to demolition and grading permits in a target area                                            |
 | [ ]    | UC3  | Illustration | Notion | `uc3-neighborhood-momentum.svg` | Street with active renovations and rising NVI score badges — investor spotting momentum before prices move |
 | [x ]   | UC4  | Screenshot   | Notion | `uc4-upzoning-decisions.svg`    | Shovels Decisions feed filtered for upzoning and development-approval decisions (shipped SVG into framed slot — verify framing looks right) |
-| [ x]   | UC5  | Illustration | Notion | `uc5-market-trends.png`         | Two analysts — one on a printed report, one on a live permit dashboard — one clearly ahead of the market   |
+| [ x]   | UC5  | Illustration | Notion | `uc5-market-trends.svg`         | Two analysts — one on a printed report, one on a live permit dashboard — one clearly ahead of the market   |
 
 
 ---
