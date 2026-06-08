@@ -4,7 +4,7 @@ slug: climate-preview
 status: hidden
 
 {% import 'macros/hero.html' as ui_hero %}
-{% import 'macros/logo_strip.html' as ui_logos %}
+{% import 'macros/logo_grid.html' as ui_grid %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/use_case.html' as ui %}
 {% import 'macros/faq.html' as ui_faq %}
@@ -17,29 +17,17 @@ status: hidden
     illustration_src='/images/industries/climate/hero.svg',
     illustration_alt='Energy and Climate hero illustration') }}
 
-{# Proof-of-concept logo strip — using the full homepage logo set for
-   sizing/placement review. Final industry-specific Climate logo list
-   lands here before launch. #}
+{# Static 6-logo industry strip (POC). These 4 are the climate-relevant
+   logos currently in the repo; the final set (target 6 — Base Power and
+   one more pending) is identified before launch. #}
 {% set climate_logos = [
-    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 34},
-    {'src': '/images/logos/google.svg', 'alt': 'Google'},
-    {'src': '/images/logos/oracle.svg', 'alt': 'Oracle', 'height': 22},
-    {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 26},
-    {'src': '/images/logos/university-of-michigan.svg', 'alt': 'University of Michigan', 'height': 34},
-    {'src': '/images/logos/houzz.svg', 'alt': 'Houzz'},
-    {'src': '/images/logos/angi.svg', 'alt': 'Angi'},
     {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 36},
-    {'src': '/images/logos/thumbtack.png', 'alt': 'Thumbtack', 'height': 28},
     {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 26},
-    {'src': '/images/logos/jll.png', 'alt': 'JLL'},
-    {'src': '/images/logos/frontline-wildfire.svg', 'alt': 'Frontline Wildfire Defense'},
-    {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 36},
-    {'src': '/images/logos/urbanize.svg', 'alt': 'Urbanize', 'height': 26},
     {'src': '/images/logos/rewiring-america.png', 'alt': 'Rewiring America'},
-    {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 26},
+    {'src': '/images/logos/frontline-wildfire.svg', 'alt': 'Frontline Wildfire Defense'},
 ] %}
 
-{{ ui_logos.logo_strip(logos=climate_logos) }}
+{{ ui_grid.logo_grid(logos=climate_logos, heading='TRUSTED BY ENERGY & CLIMATE TEAMS') }}
 
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',

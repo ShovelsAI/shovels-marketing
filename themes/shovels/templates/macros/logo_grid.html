@@ -1,0 +1,43 @@
+{#
+  logo_grid(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, wrapper_class='')
+
+  Static, centered customer-logo strip for Industry pages — the
+  "companies like you" row. All logos are visible at once (no scroll),
+  so keep the set small: 6 is the target, 5–7 reads cleanly on one row
+  and reflows to 2×3 / 3×2 on mobile without orphans.
+
+  Sibling of `logo_strip` (the scrolling marquee used on the homepage).
+  They share the flat-grey treatment (`brightness(0) invert(<grey>)`,
+  color restored on hover) and the logo-dict shape, but nothing
+  structural: this macro is a single centered flex-wrap row with no
+  animation, no duplicate group, and no edge fades.
+
+  Each logo dict:
+    src    (required) — path under /images/logos/, e.g. '/images/logos/energysage.svg'
+    alt    (required) — company name
+    height (optional) — display height in px, default 30. Tune per logo for
+                        optical balance: wide wordmarks lower, square marks higher.
+
+  Example:
+    {% import 'macros/logo_grid.html' as ui_grid %}
+    {% set climate_logos = [
+        {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 36},
+        {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 26},
+    ] %}
+    {{ ui_grid.logo_grid(logos=climate_logos, heading='TRUSTED BY ENERGY & CLIMATE TEAMS') }}
+
+  See COMPONENTS.md → "logo_grid macro" for static-vs-scrolling guidance
+  and the logo swap process + legal-approval gate (shared with logo_strip).
+#}
+{% macro logo_grid(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, wrapper_class='') %}
+<section class="pb-24 {{ wrapper_class }}" style="--logo-grey: {{ grey }}">
+  <h2 class="text-center text-xs font-medium uppercase tracking-wider text-gray-500">{{ heading }}</h2>
+  <div class="mx-auto mt-10 flex max-w-6xl flex-wrap items-center justify-center gap-x-16 gap-y-10 px-6 md:px-10">
+    {% for logo in logos %}
+    <img src="{{ logo.src }}" alt="{{ logo.alt }}"
+         style="height: {{ logo.height|default(30) }}px"
+         class="w-auto [filter:brightness(0)_invert(var(--logo-grey))] transition-[filter] duration-200 hover:[filter:none]">
+    {% endfor %}
+  </div>
+</section>
+{% endmacro %}

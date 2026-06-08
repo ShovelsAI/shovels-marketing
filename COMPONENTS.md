@@ -105,6 +105,7 @@ which the designer prefers for a clean visual chapter break.
 | `hero` | `pt-20 pb-24 md:pt-28 md:pb-32` | First section, owns its full vertical balance |
 | `soc2_trust` | `pb-8` only | Hugs the hero; reads as a continuation rather than a new section |
 | `logo_strip` | `pb-24` only | Same hero-hugging pattern as `soc2_trust`. The hero's bottom padding provides all the breathing room above; the strip's own bottom padding separates it from the next section |
+| `logo_grid` | `pb-24` only | Static Industry-page sibling of `logo_strip`; same hero-hugging rationale |
 | Middle sections | `py-24` | Use cases, enterprise teams, coverage, resources, FAQ, final CTA — all the same |
 
 The middle-section rule applies to both content-bearing macros
@@ -839,6 +840,84 @@ against neighbors.
   threshold logos dilute the recognizable ones. Current set = top 16
   usable logos by SEMrush Domain Authority from the ranking sheet.
 - **Reduced motion**: not yet handled — see Open questions.
+- **Scrolling vs. static**: `logo_strip` is the scrolling marquee, used
+  on the **homepage** (a large rotating "wall" of customers). For the
+  smaller, targeted, non-scrolling strip on **Industry pages**, use the
+  sibling `logo_grid` macro below.
+
+---
+
+### `logo_grid` macro
+
+**Location**: `themes/shovels/templates/macros/logo_grid.html`
+
+Static, centered customer-logo strip for Industry pages — the
+"companies like you" row. Sibling of `logo_strip`: same flat-grey
+treatment (`brightness(0) invert(<grey>)`, color on hover) and same
+logo-dict shape, but a single centered flex-wrap row — no animation,
+no duplicate group, no edge fades.
+
+#### Signature
+
+```jinja
+logo_grid(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, wrapper_class='')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `logos` | _required_ | List of logo dicts (`src`, `alt`, optional `height`) — same shape as `logo_strip` |
+| `heading` | `'TRUSTED BY TEAMS AT'` | Centered uppercase label. Override per industry, e.g. `'TRUSTED BY ENERGY & CLIMATE TEAMS'`. ALL CAPS at source per the eyebrow convention |
+| `grey` | `0.7` | Grey level, same as `logo_strip` |
+| `wrapper_class` | `''` | Extra classes on the `<section>` |
+
+#### Example
+
+```jinja
+{% import 'macros/logo_grid.html' as ui_grid %}
+
+{% set climate_logos = [
+    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 36},
+    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 26},
+] %}
+
+{{ ui_grid.logo_grid(logos=climate_logos, heading='TRUSTED BY ENERGY & CLIMATE TEAMS') }}
+```
+
+#### Static-vs-scrolling: how many logos?
+
+A static strip shows every logo simultaneously, so the count is driven
+by layout, not dwell time. **Target 6**; 5–7 fits one row on desktop
+(`max-w-6xl`, 64px gaps) and reflows to 2×3 / 3×2 on mobile without
+orphans. More than ~8 and each mark shrinks into "a wall of small
+logos" rather than "a few trusted names." (Contrast `logo_strip`,
+which holds 12–16 because they parade past one at a time.)
+
+#### Per-industry curation
+
+Industry pages show a **filtered subset** — the most recognizable
+customers in that vertical — not the global homepage set. "Companies
+like you" reassures more than a generic AWS/Google row that doesn't
+match the visitor's world. Proposed starting sets:
+
+| Industry | Candidate logos |
+|---|---|
+| Insurance / Real Estate | Redfin, JLL, D.R. Horton, Ownwell, Pretium |
+| Energy & Climate | Schneider Electric, EnergySage, Rewiring America, Base Power, Frontline Wildfire |
+| Construction Tech / Building Materials | QXO, PlanHub, Handle, ToolBelt |
+
+Final per-industry sets + the legal gate (Notion `Logo Use` column)
+are confirmed before launch — same swap process and gate as
+`logo_strip`.
+
+#### Notes
+
+- **Section padding**: `pb-24` only, same hero-hugging pattern as
+  `logo_strip` and `soc2_trust`.
+- **No `tailwind.config.js` dependency**: static, so it needs none of
+  the marquee keyframes `logo_strip` relies on.
+- **Reduced motion**: N/A — nothing animates.
 
 ---
 
