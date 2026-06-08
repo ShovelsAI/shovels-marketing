@@ -167,7 +167,7 @@ of re-exporting. Hero and UC3 (external Berkeley figure) need sourcing.
 
 | Status | Slot | Type | Source | Target filename | Notes |
 |---|---|---|---|---|---|
-| [ ] | Hero | Hero | Figma | `hero.svg` | Research hero illustration |
+| [x] | Hero | Hero | Figma | `hero.svg` | Research hero illustration |
 | [ ] | UC1 | Illustration (chart) | ADU report | `uc1-housing-production.png` | Reuse a blog ADU chart, e.g. `blog_images/ADU-permits-by-year-2024.jpg` |
 | [ ] | UC2 | Illustration (chart) | EV report | `uc2-electrification.png` | Exists: `blog_images/energy-policies-changing-california-home-ev-permits-by-year.png` |
 | [ ] | UC3 | Illustration (chart) | UC Berkeley figure | `uc3-permitting-timelines.png` | External (energyathaas.wordpress.com) — needs download |

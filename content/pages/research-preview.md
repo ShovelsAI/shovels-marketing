@@ -10,12 +10,10 @@ status: hidden
 {% import 'macros/resources.html' as ui_res %}
 {% import 'macros/final_cta.html' as ui_cta %}
 
-{# Hero illustration_src left empty until hero.svg is delivered — renders the
-   red TBD placeholder. Wire to /images/industries/research/hero.svg on drop. #}
 {{ ui_hero.hero(
     h1='Building permit data for academic research',
     description='Study housing, electrification, and permitting policy with clean, AI-classified permit data — at researcher-friendly terms.',
-    illustration_src='',
+    illustration_src='/images/industries/research/hero.svg',
     illustration_alt='Research hero illustration') }}
 
 {{ ui_soc2.soc2_trust(
