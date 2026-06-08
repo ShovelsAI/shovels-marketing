@@ -68,7 +68,7 @@ status: hidden
             'Support dealer QBRs with real market data',
             'Strengthen dealer relationships with up-to-date market insights',
         ],
-        'image_src': '',
+        'image_src': '/images/industries/building-materials/uc3-dealer-intel.svg',
         'image_alt': 'A materials rep and dealer at a showroom counter, reviewing local contractor activity on a tablet — intel flowing from supplier to dealer network',
         'framed': False,
     },

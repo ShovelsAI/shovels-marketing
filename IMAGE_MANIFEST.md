@@ -66,14 +66,14 @@ underscores, no folder-name repetition.
 ## Energy & Climate — `content/images/industries/climate/`
 
 
-| Status | Slot | Type         | Source | Target filename             | Depicts                                                                                                                    |
-| ------ | ---- | ------------ | ------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [ x]   | Hero | Hero         | Figma  | `hero.svg`                  | Energy & Climate hero illustration                                                                                         |
-| [ x]   | UC1  | Screenshot   | Notion | `uc1-electrification.png`   | Contractor search filtered to solar, EV charger, and heat pump trade types, showing permit count                           |
-| [ x]   | UC2  | Screenshot   | Notion | `uc2-solar-permits.png`     | Permit search filtered to solar permits in a target ZIP, showing address, filed date, contractor                          |
-| [ x]   | UC3  | Illustration | Notion | `uc3-policy.svg`            | City council chamber with a reach-code vote underway; analyst capturing the policy signal early                            |
-| [ x]   | UC4  | Screenshot   | Notion | `uc4-solar-map.png`         | Map filtered to solar permits in a target metro, showing recent filings by location                                       |
-| [ x]   | UC5  | Illustration | Notion | `uc5-oregon-map.svg`        | Region-wide Oregon county map with solar, EV charger, and heat pump installs lighting up by color                          |
+| Status | Slot | Type         | Source | Target filename           | Depicts                                                                                           |
+| ------ | ---- | ------------ | ------ | ------------------------- | ------------------------------------------------------------------------------------------------- |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                | Energy & Climate hero illustration                                                                |
+| [ x]   | UC1  | Screenshot   | Notion | `uc1-electrification.png` | Contractor search filtered to solar, EV charger, and heat pump trade types, showing permit count  |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-solar-permits.png`   | Permit search filtered to solar permits in a target ZIP, showing address, filed date, contractor  |
+| [ x]   | UC3  | Illustration | Notion | `uc3-policy.svg`          | City council chamber with a reach-code vote underway; analyst capturing the policy signal early   |
+| [ x]   | UC4  | Screenshot   | Notion | `uc4-solar-map.png`       | Map filtered to solar permits in a target metro, showing recent filings by location               |
+| [ x]   | UC5  | Illustration | Notion | `uc5-oregon-map.svg`      | Region-wide Oregon county map with solar, EV charger, and heat pump installs lighting up by color |
 
 
 ---
@@ -83,12 +83,12 @@ underscores, no folder-name repetition.
 
 | Status | Slot | Type         | Source | Target filename              | Depicts                                                                                        |
 | ------ | ---- | ------------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------- |
-| [ ]    | Hero | Hero         | Figma  | `hero.svg`                   | Building materials hero illustration                                                           |
-| [ ]    | UC1  | Screenshot   | Notion | `uc1-trade-metro.png`        | Contractor search filtered by trade type and metro, sorted by permit count                     |
-| [ ]    | UC2  | Screenshot   | Notion | `uc2-target-metro.png`       | Map showing permit density in a target metro                                                   |
-| [ ]    | UC3  | Illustration | Notion | `uc3-dealer-intel.svg`       | Materials rep and dealer at a showroom counter reviewing local contractor activity on a tablet |
-| [ ]    | UC4  | Illustration | Notion | `uc4-forecast-demand.svg`    | Supply-chain planner seeing permit activity appear ahead on a production calendar              |
-| [ ]    | UC5  | Screenshot   | Notion | `uc5-market-comparative.png` | Bar chart of permit volume by work type across two target metros (Hex/Sheets)                  |
+| [ x]   | Hero | Hero         | Figma  | `hero.svg`                   | Building materials hero illustration                                                           |
+| [ x]   | UC1  | Screenshot   | Notion | `uc1-trade-metro.png`        | Contractor search filtered by trade type and metro, sorted by permit count                     |
+| [ x]   | UC2  | Screenshot   | Notion | `uc2-target-metro.png`       | Map showing permit density in a target metro                                                   |
+| [x ]   | UC3  | Illustration | Notion | `uc3-dealer-intel.svg`       | Materials rep and dealer at a showroom counter reviewing local contractor activity on a tablet |
+| [ x]   | UC4  | Illustration | Notion | `uc4-forecast-demand.svg`    | Supply-chain planner seeing permit activity appear ahead on a production calendar              |
+| [ x]   | UC5  | Screenshot   | Notion | `uc5-market-comparative.png` | Bar chart of permit volume by work type across two target metros (Hex/Sheets)                  |
 
 
 ---
@@ -199,66 +199,78 @@ hyphens, SVG preferred.
 
 ### Energy & Climate — `/climate` (grid wired with 4 of 6)
 
-| Status | Company | Domain | Target file | In repo |
-|---|---|---|---|---|
-| [x] | Schneider Electric | se.com | `schneider-electric.svg` | ✅ |
-| [x] | EnergySage | energysage.com | `energysage.svg` | ✅ |
-| [x] | Rewiring America | rewiringamerica.org | `rewiring-america.png` | ✅ |
-| [x] | Frontline Wildfire | frontlinewildfire.com | `frontline-wildfire.svg` | ✅ |
-| [ ] | Base Power | basepowercompany.com | `base-power.svg` | ➖ |
-| [ ] | PermitPower | permitpower.org | `permitpower.svg` | ➖ |
+
+| Status | Company            | Domain                | Target file              | In repo |
+| ------ | ------------------ | --------------------- | ------------------------ | ------- |
+| [x]    | Schneider Electric | se.com                | `schneider-electric.svg` | ✅       |
+| [x]    | EnergySage         | energysage.com        | `energysage.svg`         | ✅       |
+| [x]    | Rewiring America   | rewiringamerica.org   | `rewiring-america.png`   | ✅       |
+| [x]    | Frontline Wildfire | frontlinewildfire.com | `frontline-wildfire.svg` | ✅       |
+| [ ]    | Base Power         | basepowercompany.com  | `base-power.svg`         | ➖       |
+| [ ]    | PermitPower        | permitpower.org       | `permitpower.svg`        | ➖       |
+
 
 ### Real Estate — `/real-estate`
 
-| Status | Company | Domain | Target file | In repo |
-|---|---|---|---|---|
-| [x] | AWS — confirmed: use existing AWS mark for amazon.com | amazon.com | `aws.svg` | ✅ |
-| [x] | Redfin | redfin.com | `redfin.svg` | ✅ |
-| [x] | D.R. Horton | drhorton.com | `dr-horton.svg` | ✅ |
-| [x] | JLL | jll.com | `jll.png` | ✅ |
-| [ ] | TRC Companies | trccompanies.com | `trc-companies.svg` | ➖ |
-| [ ] | Ownwell | ownwell.com | `ownwell.svg` | ➖ |
+
+| Status | Company                                               | Domain           | Target file         | In repo |
+| ------ | ----------------------------------------------------- | ---------------- | ------------------- | ------- |
+| [x]    | AWS — confirmed: use existing AWS mark for amazon.com | amazon.com       | `aws.svg`           | ✅       |
+| [x]    | Redfin                                                | redfin.com       | `redfin.svg`        | ✅       |
+| [x]    | D.R. Horton                                           | drhorton.com     | `dr-horton.svg`     | ✅       |
+| [x]    | JLL                                                   | jll.com          | `jll.png`           | ✅       |
+| [ ]    | TRC Companies                                         | trccompanies.com | `trc-companies.svg` | ➖       |
+| [ ]    | Ownwell                                               | ownwell.com      | `ownwell.svg`       | ➖       |
+
 
 ### Home Services — `/home-services`
 
-| Status | Company | Domain | Target file | In repo |
-|---|---|---|---|---|
-| [x] | Angi — confirmed (split from Houzz in Notion) | angi.com | `angi.svg` | ✅ |
-| [x] | Houzz — confirmed (split from Angi in Notion) | houzz.com | `houzz.svg` | ✅ |
-| [ ] | Pearl Certification | pearlcertification.com | `pearl-certification.svg` | ➖ |
-| [ ] | Hawkins Service Co | hawkinsserviceco.com | `hawkins-service.svg` | ➖ |
-| [ ] | Jukebox Health | jukeboxhealth.com | `jukebox-health.svg` | ➖ |
-| [ ] | Peakzi | peakzi.me | `peakzi.svg` | ➖ |
+
+| Status | Company                                       | Domain                 | Target file               | In repo |
+| ------ | --------------------------------------------- | ---------------------- | ------------------------- | ------- |
+| [x]    | Angi — confirmed (split from Houzz in Notion) | angi.com               | `angi.svg`                | ✅       |
+| [x]    | Houzz — confirmed (split from Angi in Notion) | houzz.com              | `houzz.svg`               | ✅       |
+| [ ]    | Pearl Certification                           | pearlcertification.com | `pearl-certification.svg` | ➖       |
+| [ ]    | Hawkins Service Co                            | hawkinsserviceco.com   | `hawkins-service.svg`     | ➖       |
+| [ ]    | Jukebox Health                                | jukeboxhealth.com      | `jukebox-health.svg`      | ➖       |
+| [ ]    | Peakzi                                        | peakzi.me              | `peakzi.svg`              | ➖       |
+
 
 ### Building Materials — `/building-materials`
 
-| Status | Company | Domain | Target file | In repo |
-|---|---|---|---|---|
-| [x] | QXO | qxo.com | `qxo.svg` | ✅ |
-| [~] | Heidelberg Materials ⚠ sourced legacy "HeidelbergCement" mark — verify current branding | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅ (Wikimedia, verify) |
-| [x] | Owens Corning | owenscorning.com | `owens-corning.svg` | ✅ (Wikimedia) |
-| [ ] | Avenue Roofing | avenueroofing.com | `avenue-roofing.svg` | ➖ |
-| [ ] | Automate | automate-works.com | `automate.svg` | ➖ |
+
+| Status | Company                                                                                 | Domain                  | Target file                | In repo               |
+| ------ | --------------------------------------------------------------------------------------- | ----------------------- | -------------------------- | --------------------- |
+| [x]    | QXO                                                                                     | qxo.com                 | `qxo.svg`                  | ✅                     |
+| [~]    | Heidelberg Materials ⚠ sourced legacy "HeidelbergCement" mark — verify current branding | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅ (Wikimedia, verify) |
+| [x]    | Owens Corning                                                                           | owenscorning.com        | `owens-corning.svg`        | ✅ (Wikimedia)         |
+| [ ]    | Avenue Roofing                                                                          | avenueroofing.com       | `avenue-roofing.svg`       | ➖                     |
+| [ ]    | Automate                                                                                | automate-works.com      | `automate.svg`             | ➖                     |
+
 
 ### Insurance — `/insurance` (only 4 listed; ⚠ confirm target count)
 
-| Status | Company | Domain | Target file | In repo |
-|---|---|---|---|---|
-| [ ] | Scription | scription.com | `scription.svg` | ➖ |
-| [ ] | Trinh Insurance | trinhinsurance.com | `trinh-insurance.svg` | ➖ |
-| [ ] | Drodat | drodat.com | `drodat.svg` | ➖ |
-| [ ] | Comeryx | comeryx.com | `comeryx.svg` | ➖ |
+
+| Status | Company         | Domain             | Target file           | In repo |
+| ------ | --------------- | ------------------ | --------------------- | ------- |
+| [ ]    | Scription       | scription.com      | `scription.svg`       | ➖       |
+| [ ]    | Trinh Insurance | trinhinsurance.com | `trinh-insurance.svg` | ➖       |
+| [ ]    | Drodat          | drodat.com         | `drodat.svg`          | ➖       |
+| [ ]    | Comeryx         | comeryx.com        | `comeryx.svg`         | ➖       |
+
 
 ### Construction Technology — `/software`
 
-| Status | Company | Domain | Target file | In repo |
-|---|---|---|---|---|
-| [ ] | PlanHub | planhub.com | `planhub.svg` | ➖ |
-| [ ] | Fuse Service | fuseservice.com | `fuse-service.svg` | ➖ |
-| [ ] | Handle | handle.com | `handle.svg` | ➖ |
-| [ ] | ToolBelt | toolbelt.work | `toolbelt.svg` | ➖ |
-| [ ] | Algoma | algoma.co | `algoma.svg` | ➖ |
-| [ ] | Crown Roofing | crownroofing.com | `crown-roofing.svg` | ➖ |
+
+| Status | Company       | Domain           | Target file         | In repo |
+| ------ | ------------- | ---------------- | ------------------- | ------- |
+| [ ]    | PlanHub       | planhub.com      | `planhub.svg`       | ➖       |
+| [ ]    | Fuse Service  | fuseservice.com  | `fuse-service.svg`  | ➖       |
+| [ ]    | Handle        | handle.com       | `handle.svg`        | ➖       |
+| [ ]    | ToolBelt      | toolbelt.work    | `toolbelt.svg`      | ➖       |
+| [ ]    | Algoma        | algoma.co        | `algoma.svg`        | ➖       |
+| [ ]    | Crown Roofing | crownroofing.com | `crown-roofing.svg` | ➖       |
+
 
 ### Telecommunications — skipped
 
@@ -266,15 +278,17 @@ No logo wall identified. No `logo_grid` on this page for now.
 
 ### Logo grid wiring status
 
-| Page | Logos ready | Grid wired? |
-|---|---|---|
-| Energy & Climate | 4 / 6 | ✅ wired (4 shown; add Base Power + PermitPower when sourced) |
-| Real Estate | 4 / 6 | ✅ wired (4 shown; add TRC, Ownwell when sourced) |
-| Building Materials | 3 / 5 | ✅ wired (3 shown; add Avenue Roofing, Automate; verify Heidelberg) |
-| Home Services | 2 / 6 | ✅ wired (2 shown — sparse; add Pearl, Hawkins, Jukebox Health, Peakzi) |
-| Insurance | 0 / 4 | ⬜ pending (need all 4) |
-| Construction Tech | 0 / 6 | ⬜ pending (need all 6) |
-| Telecommunications | — | n/a (skipped) |
+
+| Page               | Logos ready | Grid wired?                                                            |
+| ------------------ | ----------- | ---------------------------------------------------------------------- |
+| Energy & Climate   | 4 / 6       | ✅ wired (4 shown; add Base Power + PermitPower when sourced)           |
+| Real Estate        | 4 / 6       | ✅ wired (4 shown; add TRC, Ownwell when sourced)                       |
+| Building Materials | 3 / 5       | ✅ wired (3 shown; add Avenue Roofing, Automate; verify Heidelberg)     |
+| Home Services      | 2 / 6       | ✅ wired (2 shown — sparse; add Pearl, Hawkins, Jukebox Health, Peakzi) |
+| Insurance          | 0 / 4       | ⬜ pending (need all 4)                                                 |
+| Construction Tech  | 0 / 6       | ⬜ pending (need all 6)                                                 |
+| Telecommunications | —           | n/a (skipped)                                                          |
+
 
 When new logos land in `content/images/logos/`, add a dict to the
 matching `*_logos` list in that page's `-preview.md` (and bump the
