@@ -174,15 +174,14 @@ of re-exporting. Hero and UC3 (external Berkeley figure) need sourcing.
 | [x] | UC4 | Illustration (chart) | Hurricane report | `uc4-disaster-recovery.jpg` | Copied from `blog_images/hurricane-total-storm-permits.jpg` |
 | [x] | UC5 | Illustration (chart) | Florida report | `uc5-construction-markets.png` | Copied from `blog_images/florida-new-construction-permits-by-jurisdiction.png` |
 
-**Logo grid (wired, 4 of 6)**: university wall between hero and SOC 2.
-From Wikimedia — `mit.svg`, `princeton.svg`, `berkeley.svg`,
-`purdue.svg`. Two still needed:
+**Logo grid (wired, 5 of 6)**: university wall between hero and SOC 2.
+`mit.svg`, `princeton.svg`, `berkeley.svg`, `purdue.svg` (Wikimedia) +
+`university-of-michigan.svg` (already in repo; the sixth school was
+confirmed as University of Michigan). One still needed:
 - **Stanford** — the only freely available Wikimedia file was the tall
   portrait "S" emblem (wrong shape for a horizontal row), so it was
   pulled. Source the horizontal wordmark from Stanford's brand portal
   (identity.stanford.edu) → `stanford.svg`.
-- **Sixth school** — Notion lists `ned.edu`; confirm the school
-  (likely Notre Dame, `nd.edu`?) before sourcing.
 
 ---
 
