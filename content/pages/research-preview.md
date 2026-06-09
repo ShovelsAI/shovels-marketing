@@ -17,12 +17,10 @@ status: hidden
     illustration_src='/images/industries/research/hero.svg',
     illustration_alt='Research hero illustration') }}
 
-{# University logo wall. Stanford pulled — the only freely available
-   Wikimedia file was the tall portrait "S" emblem, wrong shape for a
-   horizontal row; needs the wordmark from Stanford's brand portal.
-   Running at 5 (Stanford pending). #}
+{# University logo wall — 6 of 6. #}
 {% set research_logos = [
     {'src': '/images/logos/mit.svg', 'alt': 'MIT', 'height': 28},
+    {'src': '/images/logos/stanford-university.png', 'alt': 'Stanford University', 'height': 26},
     {'src': '/images/logos/princeton.svg', 'alt': 'Princeton University', 'height': 24},
     {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 28},
     {'src': '/images/logos/purdue.svg', 'alt': 'Purdue University', 'height': 26},
