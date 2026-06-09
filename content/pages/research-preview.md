@@ -46,7 +46,7 @@ status: hidden
             'Drill down from national trends to individual jurisdictions and addresses',
         ],
         'image_src': '/images/industries/research/uc1-housing-production.jpg',
-        'image_alt': 'Chart from the Shovels ADU report — housing and ADU permit production by year',
+        'image_alt': 'Chart from the Shovels ADU report — ADU permits by state',
         'framed': False,
     },
     {
@@ -117,7 +117,7 @@ status: hidden
 {% include 'sections/coverage.html' %}
 
 {{ ui_res.resources_section(
-    articles=get_industry_articles('Research'),
+    articles=get_industry_articles('Research', fallback_category='Data'),
     heading='Explore the research') }}
 
 {{ ui_faq.faq_section(

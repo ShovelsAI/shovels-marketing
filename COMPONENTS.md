@@ -923,18 +923,24 @@ are confirmed before launch — same swap process and gate as
 
 ## Build helpers (`pelicanconf.py`)
 
-### `get_industry_articles(tag, limit=3)` helper
+### `get_industry_articles(tag, limit=3, fallback_category=None)` helper
 
 **Location**: defined in `pelicanconf.py`, exposed to all content
 pages and templates via `JINJA_GLOBALS`.
 
-Returns up to `limit` blog posts for an industry, with three filter
-tiers that fill remaining slots without duplicates:
+Returns up to `limit` blog posts for an industry, with filter tiers
+that fill remaining slots without duplicates:
 
 1. **Tier 1** — posts whose `tag2` frontmatter exactly matches `tag`.
 2. **Tier 2** — posts whose `tags` list contains `tag`
    (case-insensitive substring).
-3. **Tier 3** — most-recent topical posts overall. Excludes the
+3. **Tier 3** *(optional)* — if `fallback_category` is passed, posts
+   in that category (most recent first), before going fully generic.
+   Example: the Research page calls
+   `get_industry_articles('Research', fallback_category='Data')` so it
+   prefers Research-tagged posts but defaults to the data-report
+   backlog (`Category: Data`) rather than whatever's newest.
+4. **Tier 4** — most-recent topical posts overall. Excludes the
    `Newsletter` and `Podcast` categories so they don't crowd out
    industry-relevant content on pages that don't yet have a deep
    tagged backlog. If you want a newsletter to appear, give it an

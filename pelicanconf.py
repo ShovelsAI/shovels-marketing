@@ -183,15 +183,19 @@ _posts_cache = _scan_all_posts()
 _FALLBACK_EXCLUDED_CATEGORIES = {'newsletter', 'podcast'}
 
 
-def get_industry_articles(tag, limit=3):
+def get_industry_articles(tag, limit=3, fallback_category=None):
     """Return up to `limit` recent blog posts for an industry tag.
 
-    Three filter tiers, each filling remaining slots without duplicates:
+    Filter tiers, each filling remaining slots without duplicates:
 
       1. Posts whose `tag2` frontmatter exactly matches `tag`.
       2. Posts whose comma-separated `tags` list contains `tag`
          (case-insensitive substring match).
-      3. Most-recent topical posts overall, excluding categories like
+      3. If `fallback_category` is given, posts in that category
+         (most recent first) — e.g. a Research page that prefers its
+         own tags but defaults to the `Data` category before going
+         fully generic.
+      4. Most-recent topical posts overall, excluding categories like
          Newsletter and Podcast (see _FALLBACK_EXCLUDED_CATEGORIES).
          Graceful fallback for industries without tagged coverage yet.
 
@@ -236,7 +240,16 @@ def get_industry_articles(tag, limit=3):
             if any(tag_lower in t for t in tags):
                 _add(m)
 
-    # Tier 3: most-recent topical fallback (newsletters/podcasts excluded).
+    # Tier 3: preferred fallback category (most recent first).
+    if fallback_category and len(out) < limit:
+        fc = fallback_category.lower()
+        for m in _posts_cache:
+            if len(out) >= limit:
+                break
+            if m.get('category', '').lower() == fc:
+                _add(m)
+
+    # Tier 4: most-recent topical fallback (newsletters/podcasts excluded).
     for m in _posts_cache:
         if len(out) >= limit:
             break
