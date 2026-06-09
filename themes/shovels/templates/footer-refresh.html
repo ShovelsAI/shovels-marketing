@@ -1,0 +1,141 @@
+{#
+  Refreshed footer (Website Refresh 2026).
+
+  STAGED: base.html includes this only for `*-preview` pages; the live
+  site keeps footer.html until launch. At launch, this becomes the
+  single global footer (and footer.html is retired).
+
+  Layout: dark section, left newsletter block + five link columns
+  (Industry / Solutions / Features / Data / Resources), slim bottom bar.
+
+  Open items (see REFRESH_PLAN.md):
+  - Link targets use the launch-intent URLs (Solutions/Features under
+    /solutions/ and /features/, Data under /data/). Those pages don't
+    exist yet, so the links 404 in preview — intentional; they double
+    as the page-move / redirect checklist for launch.
+  - Newsletter form is the custom design only — NOT yet wired. Needs
+    the HubSpot custom-form endpoint dropped into the <form action>
+    (replacing the embed). Marked TODO below.
+  - Data column: shown here for layout review. For go-live handling see
+    REFRESH_PLAN.md (omit until Data pages ship, vs. unlinked tease).
+  - Mobile: columns reflow to a 2-up grid (no accordion). Revisit if a
+    collapsible mobile treatment is wanted.
+#}
+<footer class="w-full bg-shovels-dark text-gray-300" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
+
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
+
+      {# ── Left: brand + newsletter ── #}
+      <div class="lg:col-span-4">
+        <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
+        <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
+
+        <div class="mt-10">
+          <h3 class="text-base font-semibold text-white">Subscribe to our newsletter</h3>
+          <p class="mt-2 text-sm text-gray-400">Feature releases, data updates, and new products.</p>
+
+          {# TODO: wire to the HubSpot custom-form endpoint (replaces the
+             embed in footer.html). Visual/markup only for now. #}
+          <form class="mt-4 flex max-w-md items-center gap-x-3" action="#" method="post">
+            <label for="footer-email" class="sr-only">Email address</label>
+            <input id="footer-email" name="email" type="email" autocomplete="email" required
+                   placeholder="you@company.com"
+                   class="min-w-0 flex-auto rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-shovels-secondary focus:outline-none">
+            <button type="submit"
+                    class="shrink-0 rounded-full bg-shovels-secondary px-6 py-3 text-sm font-semibold text-shovels-dark hover:bg-shovels-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-secondary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      {# ── Right: link columns ── #}
+      <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8 lg:grid-cols-5">
+
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Industry</h3>
+          <ul role="list" class="mt-6 space-y-3">
+            <li><a href="/building-materials" class="text-sm text-gray-300 hover:text-white">Building Materials &amp; Equipment Suppliers</a></li>
+            <li><a href="/software" class="text-sm text-gray-300 hover:text-white">Construction Technology</a></li>
+            <li><a href="/climate" class="text-sm text-gray-300 hover:text-white">Energy &amp; Climate</a></li>
+            <li><a href="/home-services" class="text-sm text-gray-300 hover:text-white">Home Services</a></li>
+            <li><a href="/real-estate" class="text-sm text-gray-300 hover:text-white">Real Estate</a></li>
+            <li><a href="/telecommunications" class="text-sm text-gray-300 hover:text-white">Telecommunications</a></li>
+            <li><a href="/research" class="text-sm text-gray-300 hover:text-white">Research</a></li>
+            <li><a href="/insurance" class="text-sm text-gray-300 hover:text-white">Insurance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Solutions</h3>
+          <ul role="list" class="mt-6 space-y-3">
+            <li><a href="/solutions/permit-database" class="text-sm text-gray-300 hover:text-white">Shovels Online</a></li>
+            <li><a href="/solutions/api" class="text-sm text-gray-300 hover:text-white">API</a></li>
+            <li><a href="/solutions/data-feed" class="text-sm text-gray-300 hover:text-white">Enterprise</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Features</h3>
+          <ul role="list" class="mt-6 space-y-3">
+            <li><a href="/features/charlie" class="text-sm text-gray-300 hover:text-white">Charlie AI</a></li>
+            <li><a href="/features/gis" class="text-sm text-gray-300 hover:text-white">GIS</a></li>
+            <li><a href="/features/cli" class="text-sm text-gray-300 hover:text-white">CLI</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Data</h3>
+          <ul role="list" class="mt-6 space-y-3">
+            <li><a href="/data/permits" class="text-sm text-gray-300 hover:text-white">Permits</a></li>
+            <li><a href="/data/decisions" class="text-sm text-gray-300 hover:text-white">Decisions</a></li>
+            <li><a href="/data/contractors" class="text-sm text-gray-300 hover:text-white">Contractors</a></li>
+            <li><a href="/data/residents" class="text-sm text-gray-300 hover:text-white">Residents</a></li>
+            <li><a href="/data/properties" class="text-sm text-gray-300 hover:text-white">Properties</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Resources</h3>
+          <ul role="list" class="mt-6 space-y-3">
+            <li><a href="/blog" class="text-sm text-gray-300 hover:text-white">Blog</a></li>
+            <li><a href="https://docs.shovels.ai/docs/knowledge-base" class="text-sm text-gray-300 hover:text-white">Knowledge Base</a></li>
+            <li><a href="/data-dictionary" class="text-sm text-gray-300 hover:text-white">Data Dictionary</a></li>
+            <li><a href="/coverage" class="text-sm text-gray-300 hover:text-white">Coverage Dashboard</a></li>
+            <li><a href="/about" class="text-sm text-gray-300 hover:text-white">About</a></li>
+            <li><a href="/careers" class="text-sm text-gray-300 hover:text-white">Careers</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    {# ── Bottom bar ── #}
+    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between">
+      <div class="flex items-center space-x-6 md:order-2">
+        <a href="https://www.aicpa-cima.com/resources/download/soc-for-service-organizations-engagements-overview" target="_blank" rel="noopener noreferrer">
+          <img src="/theme/images/soc2-seal.png" alt="SOC 2® for Service Organizations" class="h-14 w-auto opacity-80 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="https://discord.com/invite/Nypja3cKDx" class="text-gray-400 hover:text-white" target="_blank">
+          <span class="sr-only">Discord</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 512 512" aria-hidden="true">
+            <path d="m386 137c-24-11-49.5-19-76.3-23.7c-.5 0-1 0-1.2.6c-3.3 5.9-7 13.5-9.5 19.5c-29-4.3-57.5-4.3-85.7 0c-2.6-6.2-6.3-13.7-10-19.5c-.3-.4-.7-.7-1.2-.6c-23 4.6-52.4 13-76 23.7c-.2 0-.4.2-.5.4c-49 73-62 143-55 213c0 .3.2.7.5 1c32 23.6 63 38 93.6 47.3c.5 0 1 0 1.3-.4c7.2-9.8 13.6-20.2 19.2-31.2c.3-.6 0-1.4-.7-1.6c-10-4-20-8.6-29.3-14c-.7-.4-.8-1.5 0-2c2-1.5 4-3 5.8-4.5c.3-.3.8-.3 1.2-.2c61.4 28 128 28 188 0c.4-.2.9-.1 1.2.1c1.9 1.6 3.8 3.1 5.8 4.6c.7.5.6 1.6 0 2c-9.3 5.5-19 10-29.3 14c-.7.3-1 1-.6 1.7c5.6 11 12.1 21.3 19 31c.3.4.8.6 1.3.4c30.6-9.5 61.7-23.8 93.8-47.3c.3-.2.5-.5.5-1c7.8-80.9-13.1-151-55.4-213c0-.2-.3-.4-.5-.4Zm-192 171c-19 0-34-17-34-38c0-21 15-38 34-38c19 0 34 17 34 38c0 21-15 38-34 38zm125 0c-19 0-34-17-34-38c0-21 15-38 34-38c19 0 34 17 34 38c0 21-15 38-34 38z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/shovels/" class="text-gray-400 hover:text-white" target="_blank">
+          <span class="sr-only">LinkedIn</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/shovelsai" class="text-gray-400 hover:text-white" target="_blank">
+          <span class="sr-only">GitHub</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2026 Shovels, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

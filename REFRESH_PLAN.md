@@ -55,7 +55,7 @@ What the refresh touches, and why.
 | Telecommunications | Staged page | ✅ preview built | Redesign of live `/telecommunications` |
 | Research | Staged page | ✅ preview built | New page; `/research` at launch |
 | Homepage | Staged-ish | ✅ preview built | Lives in theme `index.html`, not a content page — preview content moves into the template at launch (not a simple rename) |
-| Footer | **Global** | ⏳ in progress | Add Insurance + Research; apply refresh treatment; ships site-wide |
+| Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (5 columns: Industry/Solutions/Features/Data/Resources, left newsletter, slim bottom bar). Gated in `base.html` to `*-preview` pages only — live footer untouched. Open: HubSpot form wiring, Data go-live handling, mobile treatment, final link/column curation |
 | Top nav (header) | **Global** | ⬜ to do | Same: add Insurance + Research; refresh treatment; ships site-wide |
 | Typography / base CSS | **Global** | ✅ already cascaded | Scandia headings + system body stack (logged in COMPONENTS.md) |
 | New pages (future) | Staged page | ⬜ to design/build | Build behind `hidden`; may not launch with this wave |

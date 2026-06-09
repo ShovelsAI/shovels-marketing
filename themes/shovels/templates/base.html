@@ -263,7 +263,13 @@
   {% block content %}
   {% endblock %}
 
-  {% include 'footer.html' %}
+  {# Staged refresh footer on *-preview pages only; live pages keep the
+     current footer until launch. See REFRESH_PLAN.md. #}
+  {% if page is defined and page.slug and page.slug.endswith('-preview') %}
+    {% include 'footer-refresh.html' %}
+  {% else %}
+    {% include 'footer.html' %}
+  {% endif %}
 
   <!-- Load non-critical resources -->
   <script defer src="/theme/js/alpine.js"></script>
