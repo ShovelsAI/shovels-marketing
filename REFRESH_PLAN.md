@@ -66,6 +66,56 @@ both.** They must be added when those pages go live.
 
 ---
 
+## Proposed information architecture (refreshed sitemap)
+
+Top nav: **Industry · Solutions · Features · Data · Resources** +
+**Get Started** / **Sign In** (CTAs).
+
+### Industry (8) — slugs unchanged
+Building Materials & Equipment Suppliers, Construction Technology,
+Energy & Climate, Home Services, Real Estate, Telecommunications,
+**Research** (new), **Insurance** (new).
+
+### Solutions (3) — ⚠ NEW URL PREFIXES
+The current flat "Solutions" group is split. These three move under
+`/solutions/`:
+
+| Page | Current URL | New URL |
+|---|---|---|
+| Shovels Online | `/permit-database` | `/solutions/permit-database` |
+| API | `/api` | `/solutions/api` |
+| Enterprise (data feed) | `/data-feed` | `/solutions/data-feed` |
+
+### Features (3) — ⚠ NEW URL PREFIXES, new top-level section
+| Page | Current URL | New URL |
+|---|---|---|
+| Charlie AI | `/charlie` | `/features/charlie` |
+| GIS | `/gis` | `/features/gis` |
+| CLI | `/cli` | `/features/cli` |
+
+**Audiences** (`/audiences`) is NOT in the new nav — confirm whether
+it's deprecated, kept unlinked, or relocated.
+
+**The URL moves require redirects** (old → new) — the first part of
+this refresh that genuinely needs them. Slug changes also mean the
+page files / `Slug:` frontmatter get updated, and any internal links
+(incl. cross-page CTAs) repointed.
+
+### Data (5) — ALL NEW, post-launch
+Permits, Decisions, Contractors, Residents, Properties (Properties
+tentative). Not built yet; ships **after** the main refresh goes live.
+
+### Resources
+Blog, Knowledge Base, Data Dictionary, Data Coverage Dashboard, About,
+Careers. (Note: About + Careers sit under Resources here, vs. the
+current footer's "Company" column.)
+
+### Net-new pages (right rail — own cadence)
+Map Gallery, Brand, Partners, Pricing (tentative). Build behind
+`hidden`; launch independently.
+
+---
+
 ## Phased plan
 
 ### Phase 1 — Refresh template & preview pages ✅ (essentially done)
@@ -124,6 +174,16 @@ production? Recommended given the scope.
   preview content; reconcile `STATS`/helper globals and the `dates`
   blog loop (preview uses `get_recent_articles`).
 - **Which net-new pages** are in scope for Phase 5, and their copy.
+- **Solutions/Features URL moves + redirects** — moving 6 pages under
+  `/solutions/` and `/features/` needs: updated `Slug:` per page,
+  repointed internal links/CTAs, and old→new redirects. New
+  workstream; sequence it with the launch.
+- **Audiences** — deprecate, keep unlinked, or relocate? Not in the
+  new nav.
+- **Data section** — all-new pages, post-launch. Footer/nav for the
+  *this-wave* launch likely omit Data until those pages exist.
+- **Net-new pages** (Map Gallery, Brand, Partners, Pricing?) — scope,
+  copy, and cadence TBD; launch independently.
 - **Stale `main`** — this branch is now well behind `main` (blog posts,
   telecom copy edits merged). Plan a rebase/merge before launch.
 - Trinh Insurance logo; designer logo-height pass; white-on-hover
