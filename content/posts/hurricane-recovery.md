@@ -156,7 +156,7 @@ All of this requires time and expertise. But the real delay comes from financing
 
 The July-August 2018 spike, nearly a year post-Harvey, represents the moment when all these pieces finally came together: [insurance settlements arrived](https://www.cbsnews.com/texas/news/harveys-insured-losses-estimated-to-cost-nearly-19-billion/), FEMA grants were disbursed, and homeowners secured financing for complete rebuilds. It's not that people were waiting to rebuild. They were waiting for the means to do so.
 
-![Aerial view of Houston flooding during Hurricane Harvey](https://static01.nyt.com/images/2022/08/25/science/25cli-hurricaneharvey-02/25cli-hurricaneharvey-02-videoSixteenByNineJumbo1600.jpg)
+![Aerial view of a flooded residential neighborhood after a hurricane]({static}/images/blog_images/hurricane-flooded-neighborhood-aerial.jpg)
 
 Ian's recovery moved faster because wind damage is fundamentally different. A missing roof is immediately visible and assessable. Insurance adjusters can inspect it within days or weeks, not months. Standard homeowner's insurance processes wind damage claims much faster than NFIP processes flood claims. And crucially, roof replacement doesn't require the extensive engineering review that foundation work demands.
 
