@@ -5,29 +5,105 @@
   site keeps footer.html until launch. At launch, this becomes the
   single global footer (and footer.html is retired).
 
-  Layout: dark section. Left newsletter block (fixed width) + a flex-1
-  grid of six link columns (Industry / Solutions / Features / Data /
-  Resources / Company). Flexbox outer split avoids 12-col span math.
-  Slim bottom bar (copyright + social/seal).
+  Layout:
+  - Desktop (lg+): brand + newsletter on the left, a six-column link
+    grid on the right (Industries / Solutions / Features / Data /
+    Resources / Company).
+  - Mobile (below lg): brand + collapsible accordion sections with
+    chevron carats (Alpine, single-open). Newsletter is hidden on
+    mobile — matches the current site's footer behavior.
+
+  Link lists live once in `footer_sections` and render both the mobile
+  accordions and the desktop columns, so the two can't drift.
 
   Open items (see REFRESH_PLAN.md):
   - Link targets use launch-intent URLs (Solutions/Features under
-    /solutions/ and /features/, Data under /data/). Those pages don't
-    exist yet, so links 404 in preview — intentional; they double as
-    the page-move / redirect checklist for launch.
-  - Newsletter form is the custom design only — NOT wired. Needs the
-    HubSpot custom-form endpoint in the <form action> (TODO below).
-  - Data column shown for layout review; go-live handling TBD
-    (omit until Data pages ship, vs. unlinked tease).
-  - Mobile: columns reflow (2-up → 3-up). No accordion yet.
+    /solutions/ and /features/, Data under /data/) — they 404 in
+    preview, intentional; double as the page-move / redirect checklist.
+  - Newsletter form is design-only — needs the HubSpot custom-form
+    endpoint in the <form action> (TODO below).
+  - Data column go-live handling TBD (omit until Data pages ship vs.
+    unlinked tease).
 #}
+{% set footer_sections = [
+  ('Industries', [
+    ('Building Materials &amp; Equipment Suppliers', '/building-materials', ''),
+    ('Construction Technology', '/software', ''),
+    ('Energy &amp; Climate', '/climate', ''),
+    ('Home Services', '/home-services', ''),
+    ('Real Estate', '/real-estate', ''),
+    ('Telecommunications', '/telecommunications', ''),
+    ('Research', '/research', ''),
+    ('Insurance', '/insurance', ''),
+  ]),
+  ('Solutions', [
+    ('Shovels Online', '/solutions/permit-database', ''),
+    ('API', '/solutions/api', ''),
+    ('Enterprise', '/solutions/data-feed', ''),
+  ]),
+  ('Features', [
+    ('Charlie AI', '/features/charlie', ''),
+    ('GIS', '/features/gis', ''),
+    ('CLI', '/features/cli', ''),
+  ]),
+  ('Data', [
+    ('Permits', '/data/permits', ''),
+    ('Decisions', '/data/decisions', ''),
+    ('Contractors', '/data/contractors', ''),
+    ('Residents', '/data/residents', ''),
+    ('Properties', '/data/properties', ''),
+  ]),
+  ('Resources', [
+    ('Blog', '/blog', ''),
+    ('Knowledge Base', 'https://docs.shovels.ai/docs/knowledge-base', '_blank'),
+    ('Data Dictionary', '/data-dictionary', ''),
+    ('Coverage Dashboard', '/coverage', ''),
+    ('Documentation Hub', 'https://docs.shovels.ai/', '_blank'),
+  ]),
+  ('Company', [
+    ('About', '/about', ''),
+    ('Contact', '/contact', ''),
+    ('Careers', '/careers', ''),
+    ('Terms', '/terms', ''),
+    ('Privacy', '/privacy-center', ''),
+    ('Security', 'https://trust.shovels.ai/', '_blank'),
+  ]),
+] %}
+
 <footer class="w-full bg-shovels-dark text-gray-300" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
 
-    <div class="flex flex-col gap-12 lg:flex-row lg:gap-16">
+    {# ===== MOBILE (below lg): brand + accordions, no newsletter ===== #}
+    <div class="lg:hidden">
+      <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
+      <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
 
-      {# ── Left: brand + newsletter (fixed width) ── #}
+      <div class="mt-8" x-data="{ open: null }">
+        {% for title, links in footer_sections %}
+        <div class="border-b border-white/10">
+          <button type="button"
+                  @click="open = open === {{ loop.index }} ? null : {{ loop.index }}"
+                  class="flex w-full items-center justify-between py-4 text-xs font-semibold uppercase tracking-wider text-white">
+            <span>{{ title }}</span>
+            <svg class="h-5 w-5 shrink-0 transition-transform duration-200" :class="{ 'rotate-180': open === {{ loop.index }} }"
+                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <ul x-show="open === {{ loop.index }}" x-transition role="list" class="space-y-3 pb-4">
+            {% for label, href, target in links %}
+            <li><a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="text-sm text-gray-300 hover:text-white">{{ label }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    {# ===== DESKTOP (lg+): brand + newsletter left, six-column grid right ===== #}
+    <div class="hidden lg:flex lg:gap-16">
+
       <div class="lg:w-72 lg:shrink-0">
         <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
         <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
@@ -49,79 +125,21 @@
         </div>
       </div>
 
-      {# ── Right: six link columns ── #}
-      <div class="grid flex-1 grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
-
+      <div class="grid flex-1 grid-cols-6 gap-x-8 gap-y-10">
+        {% for title, links in footer_sections %}
         <div>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Industry</h3>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">{{ title }}</h3>
           <ul role="list" class="mt-6 space-y-3">
-            <li><a href="/building-materials" class="text-sm text-gray-300 hover:text-white">Building Materials &amp; Equipment Suppliers</a></li>
-            <li><a href="/software" class="text-sm text-gray-300 hover:text-white">Construction Technology</a></li>
-            <li><a href="/climate" class="text-sm text-gray-300 hover:text-white">Energy &amp; Climate</a></li>
-            <li><a href="/home-services" class="text-sm text-gray-300 hover:text-white">Home Services</a></li>
-            <li><a href="/real-estate" class="text-sm text-gray-300 hover:text-white">Real Estate</a></li>
-            <li><a href="/telecommunications" class="text-sm text-gray-300 hover:text-white">Telecommunications</a></li>
-            <li><a href="/research" class="text-sm text-gray-300 hover:text-white">Research</a></li>
-            <li><a href="/insurance" class="text-sm text-gray-300 hover:text-white">Insurance</a></li>
+            {% for label, href, target in links %}
+            <li><a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="text-sm text-gray-300 hover:text-white">{{ label }}</a></li>
+            {% endfor %}
           </ul>
         </div>
-
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Solutions</h3>
-          <ul role="list" class="mt-6 space-y-3">
-            <li><a href="/solutions/permit-database" class="text-sm text-gray-300 hover:text-white">Shovels Online</a></li>
-            <li><a href="/solutions/api" class="text-sm text-gray-300 hover:text-white">API</a></li>
-            <li><a href="/solutions/data-feed" class="text-sm text-gray-300 hover:text-white">Enterprise</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Features</h3>
-          <ul role="list" class="mt-6 space-y-3">
-            <li><a href="/features/charlie" class="text-sm text-gray-300 hover:text-white">Charlie AI</a></li>
-            <li><a href="/features/gis" class="text-sm text-gray-300 hover:text-white">GIS</a></li>
-            <li><a href="/features/cli" class="text-sm text-gray-300 hover:text-white">CLI</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Data</h3>
-          <ul role="list" class="mt-6 space-y-3">
-            <li><a href="/data/permits" class="text-sm text-gray-300 hover:text-white">Permits</a></li>
-            <li><a href="/data/decisions" class="text-sm text-gray-300 hover:text-white">Decisions</a></li>
-            <li><a href="/data/contractors" class="text-sm text-gray-300 hover:text-white">Contractors</a></li>
-            <li><a href="/data/residents" class="text-sm text-gray-300 hover:text-white">Residents</a></li>
-            <li><a href="/data/properties" class="text-sm text-gray-300 hover:text-white">Properties</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Resources</h3>
-          <ul role="list" class="mt-6 space-y-3">
-            <li><a href="/blog" class="text-sm text-gray-300 hover:text-white">Blog</a></li>
-            <li><a href="https://docs.shovels.ai/docs/knowledge-base" class="text-sm text-gray-300 hover:text-white">Knowledge Base</a></li>
-            <li><a href="/data-dictionary" class="text-sm text-gray-300 hover:text-white">Data Dictionary</a></li>
-            <li><a href="/coverage" class="text-sm text-gray-300 hover:text-white">Coverage Dashboard</a></li>
-            <li><a href="https://docs.shovels.ai/" class="text-sm text-gray-300 hover:text-white" target="_blank">Documentation Hub</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Company</h3>
-          <ul role="list" class="mt-6 space-y-3">
-            <li><a href="/about" class="text-sm text-gray-300 hover:text-white">About</a></li>
-            <li><a href="/contact" class="text-sm text-gray-300 hover:text-white">Contact</a></li>
-            <li><a href="/careers" class="text-sm text-gray-300 hover:text-white">Careers</a></li>
-            <li><a href="/terms" class="text-sm text-gray-300 hover:text-white">Terms</a></li>
-            <li><a href="/privacy-center" class="text-sm text-gray-300 hover:text-white">Privacy</a></li>
-            <li><a href="https://trust.shovels.ai/" class="text-sm text-gray-300 hover:text-white" target="_blank">Security</a></li>
-          </ul>
-        </div>
-
+        {% endfor %}
       </div>
     </div>
 
-    {# ── Bottom bar ── #}
+    {# ===== Bottom bar (always) ===== #}
     <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between">
       <div class="flex items-center space-x-6 md:order-2">
         <a href="https://www.aicpa-cima.com/resources/download/soc-for-service-organizations-engagements-overview" target="_blank" rel="noopener noreferrer">
