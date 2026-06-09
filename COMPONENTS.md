@@ -292,7 +292,7 @@ hero(h1, description, illustration_src, illustration_alt,
 |---|---|---|
 | `h1` | _required_ | Hero headline |
 | `description` | _required_ | One- or two-sentence lead paragraph below the H1 |
-| `illustration_src` | _required_ | Path to the SVG illustration (typically in the industry folder) |
+| `illustration_src` | _required_ | Path to the SVG illustration (typically in the industry folder). Pass an **empty string** to render a red dashed **TBD placeholder** instead of a broken image — used during build-out before the hero art is delivered. |
 | `illustration_alt` | _required_ | Alt text |
 | `cta_label` | `'Get started'` | Button text |
 | `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination. Canonical signup URL, shared with `final_cta` |
@@ -402,10 +402,11 @@ use_case_section(eyebrow, heading, cases, intro=None)
 | `number` | yes | Label like `'01'`, `'02'` — renders as monospace gray |
 | `title` | yes | Use case heading (H3) |
 | `description` | yes | One- or two-sentence body |
-| `bullets` | no | List of strings; each renders with a check badge |
-| `image_src` | yes | Path to the screenshot or illustration |
-| `image_alt` | yes | Alt text |
-| `framed` | no | Default `True` — image renders inside the browser_frame chrome. Set `False` for non-screenshot imagery like illustrations |
+| `bullets` | no | List of strings; each renders with a check badge. Bullets may contain inline HTML anchors (autoescape is off), e.g. a "Read the research: `<a href=…>`" citation — markdown link syntax does NOT render, use raw `<a>` |
+| `image_src` | yes | Path to the screenshot or illustration. Pass an **empty string** to render a red dashed **TBD placeholder** (labeled with `image_alt`) instead of a broken image — used during build-out before the asset is delivered |
+| `image_alt` | yes | Alt text. Also shown inside the TBD placeholder so reviewers know what belongs in the slot |
+| `framed` | no | Default `True` — image renders inside the browser_frame chrome. Set `False` for non-screenshot imagery like illustrations or report charts |
+| `image_max_width` | no | CSS max-width for unframed images (when `framed=False`), e.g. `'420px'`. Ignored when framed |
 | `caption` | no | Small italic caption rendered below the image |
 
 #### Example usage
@@ -1455,6 +1456,36 @@ The Notion DB rows are the source of truth for all body copy too —
 Hero H1, Hero Description, SOC 2 body, all 5 use cases, FAQ items,
 and Final CTA. See the matching row in the *Industry Pages Copy*
 database.
+
+### Image build-out & the image manifest
+
+Pages can be composed and reviewed before their art is ready. The
+`hero` and `use_case_section` macros render a **red dashed TBD
+placeholder** for any empty `illustration_src` / `image_src` (the
+use-case placeholder is labeled with its `image_alt`), so a half-built
+page reads cleanly instead of showing broken images. Wire each real
+path as the asset lands.
+
+**`IMAGE_MANIFEST.md`** (repo root) is the tracking system for this:
+one checklist per page mapping every image slot → source (Figma hero,
+Notion comment-thread use-case asset, or existing `blog_images` chart)
+→ target folder + filename → status. It also tracks the per-industry
+`logo_grid` sets (company → domain → target file). Update it as assets
+land so the remaining work stays visible.
+
+Convention reminders that came up repeatedly during build-out:
+
+- **Screenshots** → PNG, `framed` (default). **Illustrations / report
+  charts** → SVG preferred, `framed: False`. Match the format to the
+  slot; flip `framed` if a delivered asset's type differs from the
+  slot's original intent.
+- **WebP / AVIF** delivered for logos → convert to PNG with
+  `sips -s format png in.webp --out out.png` (preserves transparency);
+  rename to the `{company-slug}` convention.
+- **University / brand logos** are often trademarked and absent from
+  Wikimedia (only athletics marks or wrong-orientation emblems may be
+  there). When a clean horizontal wordmark isn't freely available,
+  source it from the brand's own identity/press portal.
 
 ---
 
