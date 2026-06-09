@@ -55,7 +55,7 @@ What the refresh touches, and why.
 | Telecommunications | Staged page | ✅ preview built | Redesign of live `/telecommunications` |
 | Research | Staged page | ✅ preview built | New page; `/research` at launch |
 | Homepage | Staged-ish | ✅ preview built | Lives in theme `index.html`, not a content page — preview content moves into the template at launch (not a simple rename) |
-| Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (5 columns: Industry/Solutions/Features/Data/Resources, left newsletter, slim bottom bar). Gated in `base.html` to `*-preview` pages only — live footer untouched. Open: HubSpot form wiring, Data go-live handling, mobile treatment, final link/column curation |
+| Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (6 columns: Industries/Solutions/Features/Data/Resources/Company, left newsletter, mobile accordions w/ carats, newsletter hidden on mobile, slim bottom bar). DRY `footer_sections` data drives both mobile + desktop. Gated in `base.html` to `*-preview` pages only — live footer untouched. Open: HubSpot form wiring, Data go-live handling, final link/column curation |
 | Top nav (header) | **Global** | ⬜ to do | Same: add Insurance + Research; refresh treatment; ships site-wide |
 | Typography / base CSS | **Global** | ✅ already cascaded | Scandia headings + system body stack (logged in COMPONENTS.md) |
 | New pages (future) | Staged page | ⬜ to design/build | Build behind `hidden`; may not launch with this wave |
@@ -163,6 +163,74 @@ The launch is not one atomic action. Rough order of operations:
 Open question: do we want a **staging deploy** of the whole branch
 (so stakeholders see the full new site at real URLs) before flipping
 production? Recommended given the scope.
+
+---
+
+## Pre-launch checklist
+
+The go/no-go list. Tick items as they're done; add your own under
+"More (your ideas)". Nothing here is a one-way door until the final
+production deploy, so we can keep iterating on the branch.
+
+### Content & pages
+- [ ] Designer walkthrough of all 8 industry preview pages
+- [ ] Designer walkthrough of homepage preview
+- [ ] Research page reviewed (UC1 framed vs unframed call confirmed)
+- [ ] Trinh Insurance logo sourced → Insurance grid 4/4
+- [ ] Logo heights tuned across all grids (designer pass)
+- [ ] White-on-hover logos resolved or accepted (Hawkins, Avenue Roofing)
+- [ ] Every page renders with no `TBD` placeholders
+
+### URLs, routing & redirects
+- [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed)
+- [ ] Move Features pages to `/features/*` (charlie, gis, cli)
+- [ ] Old → new redirects for all 6 moved pages
+- [ ] Repoint internal links/CTAs to new URLs (footer, nav, cross-page, blog)
+- [ ] Audiences decision executed (deprecate / keep / relocate)
+- [ ] Industry slug swaps: `*-preview.md` → live slug, drop `-preview`,
+      remove `status: hidden`, delete legacy file (climate, real-estate,
+      building-materials, software, home-services, telecommunications)
+- [ ] Insurance + Research promoted to `/insurance`, `/research`
+- [ ] Homepage: preview content moved into theme `index.html`
+      (reconcile `STATS`/helper globals + the `dates` blog loop vs.
+      `get_recent_articles`)
+
+### Global chrome
+- [ ] Footer: promote `footer-refresh.html` → global `footer.html`
+      (remove the `-preview` gate in `base.html`)
+- [ ] Footer: HubSpot newsletter form wired into the custom design
+- [ ] Footer: Data column go-live handling decided + applied
+- [ ] Top nav rebuilt for new IA (Industry/Solutions/Features/Data/
+      Resources + Get Started / Sign In); add Insurance + Research
+- [ ] Nav mobile menu updated
+
+### Build & technical
+- [ ] Production build passes (`make publish`)
+- [ ] CSS compiled fresh — no missing utilities (the footer-overlap bug)
+- [ ] FAQ `FAQPage` JSON-LD renders on every industry page
+- [ ] Sitemap includes launched pages, excludes `hidden`/`-preview`
+- [ ] Meta descriptions present on all launched pages
+- [ ] Branch rebased/merged with `main` (currently well behind)
+
+### SEO, analytics & legal
+- [ ] Redirects preserve SEO equity for any existing inbound links
+- [ ] Canonical URLs + OG images correct per page
+- [ ] UTM-persistence script present on the new footer/pages
+- [ ] Legal: Notion `Logo Use` cleared for every logo shown (footer +
+      industry grids)
+
+### Sign-off
+- [ ] Staging deploy reviewed at real URLs by stakeholders
+- [ ] Mobile QA (footer accordions, nav, page responsiveness)
+- [ ] Final go/no-go
+
+### More (your ideas)
+- [ ] _(add here — tell Claude or edit directly)_
+
+### Explicitly post-launch (not blocking this wave)
+- [ ] Data section pages: Permits, Decisions, Contractors, Residents,
+      Properties → then add the Data column links + nav entry
+- [ ] Net-new pages: Map Gallery, Brand, Partners, Pricing(?)
 
 ---
 
