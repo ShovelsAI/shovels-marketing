@@ -5,6 +5,7 @@ status: hidden
 
 {% import 'macros/logo_strip.html' as ui_logos %}
 {% import 'macros/resources.html' as ui_res %}
+{% import 'macros/icons.html' as icons %}
 
 {# ── Hero ──────────────────────────────────────────────────────────────
    Redesigned hero treatment from the Industry pages: crossing-gradient
@@ -23,9 +24,8 @@ status: hidden
       <div class="md:col-span-6">
         <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">The intelligence layer for the built world</h1>
         <p class="mt-6 text-lg text-gray-500">Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or direct data warehouse integration.</p>
-        <div class="mt-8 flex items-center gap-x-6">
+        <div class="mt-8">
           <a href="https://app.shovels.ai" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Search for free</a>
-          <a href="/permit-database" class="text-sm font-semibold text-gray-900">Find permits <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
 
@@ -115,9 +115,11 @@ status: hidden
         {% for title, body in differentiators %}
         <div class="relative pl-9">
           <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
+            {# Round-backed check badge — same treatment as the Industry
+               use-case bullets (20x20 tinted-primary circle, Lucide check). #}
+            <span class="absolute left-0 top-0.5 flex size-5 items-center justify-center rounded-full bg-shovels-primary/10">
+              {{ icons.check(class='size-3 text-shovels-primary', stroke_width=3) }}
+            </span>
             {{ title }}
           </dt>
           <dd class="mt-2">{{ body }}</dd>
@@ -184,11 +186,7 @@ status: hidden
   </div>
 </div>
 
-{# ── From the blog ─────────────────────────────────────────────────────
-   The live homepage renders this from Pelican's `dates` article loop,
-   which isn't available to a content page. Using the resources_section
-   macro (get_industry_articles → most-recent topical posts) as the
-   preview stand-in; the launch version will use the article loop. #}
+{# ── From the blog — three most-recent posts ───────────────────────── #}
 {{ ui_res.resources_section(
-    articles=get_industry_articles('Homepage'),
+    articles=get_recent_articles(3),
     heading='From the blog') }}

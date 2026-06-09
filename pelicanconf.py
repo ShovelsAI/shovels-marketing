@@ -260,13 +260,38 @@ def get_industry_articles(tag, limit=3, fallback_category=None):
     return out
 
 
-# Expose STATS and get_industry_articles to jinja2content so content
+def get_recent_articles(limit=3):
+    """Return the `limit` most-recent blog posts (newest first).
+
+    Topical content only — Newsletter and Podcast categories are
+    excluded so the homepage "From the blog" section features
+    substantive posts. Output shape matches resources_section's
+    `articles` parameter. Posts are pre-sorted most-recent-first in
+    `_posts_cache`.
+    """
+    out = []
+    for m in _posts_cache:
+        if len(out) >= limit:
+            break
+        if m.get('category', '').lower() in _FALLBACK_EXCLUDED_CATEGORIES:
+            continue
+        out.append({
+            'url': '/blog/' + m['slug'] + '/',
+            'title': m.get('title', ''),
+            'image_src': m['image'],
+            'image_alt': m.get('image_alt') or m.get('title', ''),
+        })
+    return out
+
+
+# Expose STATS and the article helpers to jinja2content so content
 # pages can use them. jinja2content renders content files through
 # Jinja2 with no context by default; JINJA_GLOBALS is the only way to
 # inject names into that environment.
 JINJA_GLOBALS = {
     "STATS": STATS,
     "get_industry_articles": get_industry_articles,
+    "get_recent_articles": get_recent_articles,
 }
 
 SITEMAP = {
