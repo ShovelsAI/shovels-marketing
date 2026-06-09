@@ -950,10 +950,19 @@ that fill remaining slots without duplicates:
 Posts without an `image:` or `date:` field are skipped during the
 scan, so the resources card never renders a broken image.
 
+#### Sibling: `get_recent_articles(limit=3)`
+
+When a page just wants the **most-recent posts** with no industry
+filtering (e.g. the homepage "From the blog" section), call
+`get_recent_articles(limit)` instead. It returns the newest topical
+posts (Newsletter and Podcast categories excluded, same as Tier 4
+above), in the same output shape, so it drops straight into
+`resources_section(articles=…)`. Also exposed via `JINJA_GLOBALS`.
+
 #### Output shape
 
-Returns a list of dicts matching the `articles` parameter of
-`resources_section`:
+Both helpers return a list of dicts matching the `articles` parameter
+of `resources_section`:
 
 ```python
 [
@@ -1089,14 +1098,16 @@ content/images/
 │   ├── home-services/
 │   ├── insurance/          ← Insurance page-specific assets
 │   ├── real-estate/
+│   ├── research/           ← Research page (academic) assets
 │   ├── software/           ← Construction Tech audience (page slug is /software/)
 │   └── telecommunications/
+├── home/                   ← Homepage redesign assets (hero.svg, product icons)
 ├── illustrations/          ← Shared assets used on multiple pages
 │   ├── coverage-us.svg
 │   ├── enterprise-icon-ai-classified.svg
 │   ├── enterprise-icon-api-feed.svg
 │   └── enterprise-icon-updates.svg
-└── logos/                  ← Customer logos for the logo_strip macro
+└── logos/                  ← Customer logos for the logo_strip / logo_grid macros
     ├── aws.svg             ← full-color originals; grey applied via CSS
     ├── google.svg
     └── ...                 ← one file per customer, named by company slug
@@ -1166,7 +1177,7 @@ URL still resolves. Two use cases:
 |---|---|---|---|
 | `content/pages/mockup-test.md` | `/mockup-test` | Stress-test the `browser_frame` macro at varying widths and aspect ratios | Sandbox |
 | `content/pages/insurance-preview.md` | `/insurance-preview` | Preview of the new Insurance page (no legacy predecessor; the page is brand-new). Will be renamed to `insurance.md` with `slug: insurance` at launch. | Greenfield preview |
-| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage. Currently hosts the customer `logo_strip`; other homepage sections land here as the redesign progresses. **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template (or the homepage is converted to a page) rather than a simple file rename. Decide at launch time. | Redesign preview |
+| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage: redesigned hero (grid background + balanced headline, single CTA, `/images/home/hero.svg`), scrolling `logo_strip`, stats, "how we're different" (round-backed check badges), "Work with us" (new `/images/home/` icons), and "From the blog" (`get_recent_articles`). **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template rather than a file rename. Two things only work as a content page and must be reconciled at launch: `STATS`/helper globals, and "From the blog" — the theme index uses Pelican's `dates` article loop, not `get_recent_articles`. | Redesign preview |
 
 ---
 
