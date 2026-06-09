@@ -46,6 +46,8 @@ status: hidden
         ],
         'image_src': '/images/industries/research/uc1-housing-production.jpg',
         'image_alt': 'Chart from the Shovels ADU report — ADU permits by state',
+        'framed': False,
+        'image_max_width': '100%',
     },
     {
         'number': '02',
@@ -60,6 +62,7 @@ status: hidden
         'image_src': '/images/industries/research/uc2-electrification.png',
         'image_alt': 'Chart from the Shovels EV report — EV charger permits by year',
         'framed': False,
+        'image_max_width': '100%',
     },
     {
         'number': '03',
@@ -74,6 +77,7 @@ status: hidden
         'image_src': '/images/industries/research/uc3-permitting-timelines.png',
         'image_alt': 'Chart from the UC Berkeley Energy Institute analysis of EV charging permit timelines',
         'framed': False,
+        'image_max_width': '100%',
     },
     {
         'number': '04',
@@ -88,6 +92,7 @@ status: hidden
         'image_src': '/images/industries/research/uc4-disaster-recovery.jpg',
         'image_alt': 'Chart from the Shovels hurricane report — total storm-recovery permits over time',
         'framed': False,
+        'image_max_width': '100%',
     },
     {
         'number': '05',
@@ -102,6 +107,7 @@ status: hidden
         'image_src': '/images/industries/research/uc5-construction-markets.png',
         'image_alt': 'Chart from the Shovels Florida report — new construction permits by jurisdiction',
         'framed': False,
+        'image_max_width': '100%',
     },
 ] %}
 
