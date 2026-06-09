@@ -17,12 +17,12 @@ status: hidden
     illustration_src='/images/industries/research/hero.svg',
     illustration_alt='Research hero illustration') }}
 
-{# University logo wall. 5 of 6 sourced from Wikimedia; sixth school
-   (Notion "ned.edu") pending confirmation. Stanford mark came from the
-   "Cardinal logo" file — verify it's the right variant. #}
+{# University logo wall. Stanford pulled — the only freely available
+   Wikimedia file was the tall portrait "S" emblem, wrong shape for a
+   horizontal row; needs the wordmark from Stanford's brand portal.
+   Sixth school (Notion "ned.edu") also pending. Running at 4 for now. #}
 {% set research_logos = [
     {'src': '/images/logos/mit.svg', 'alt': 'MIT', 'height': 28},
-    {'src': '/images/logos/stanford.svg', 'alt': 'Stanford University', 'height': 28},
     {'src': '/images/logos/princeton.svg', 'alt': 'Princeton University', 'height': 24},
     {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 28},
     {'src': '/images/logos/purdue.svg', 'alt': 'Purdue University', 'height': 26},
@@ -47,7 +47,6 @@ status: hidden
         ],
         'image_src': '/images/industries/research/uc1-housing-production.jpg',
         'image_alt': 'Chart from the Shovels ADU report — ADU permits by state',
-        'framed': False,
     },
     {
         'number': '02',
@@ -73,7 +72,7 @@ status: hidden
             'Evaluate permitting reform with before-and-after evidence',
             "Read the research: <a href='https://siepr.stanford.edu/publications/policy-brief/overcoming-roadblocks-californias-public-ev-charging-infrastructure' class='font-semibold text-shovels-primary hover:underline'>Overcoming Roadblocks in California's Public EV Charging Infrastructure (Stanford SIEPR)</a> and <a href='https://energyathaas.wordpress.com/2025/10/27/the-fast-lane-to-electric-vehicle-charging/' class='font-semibold text-shovels-primary hover:underline'>The Fast Lane to Electric Vehicle Charging (UC Berkeley Energy Institute)</a>",
         ],
-        'image_src': '',
+        'image_src': '/images/industries/research/uc3-permitting-timelines.png',
         'image_alt': 'Chart from the UC Berkeley Energy Institute analysis of EV charging permit timelines',
         'framed': False,
     },
