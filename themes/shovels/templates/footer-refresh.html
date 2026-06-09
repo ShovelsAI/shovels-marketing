@@ -5,30 +5,30 @@
   site keeps footer.html until launch. At launch, this becomes the
   single global footer (and footer.html is retired).
 
-  Layout: dark section, left newsletter block + five link columns
-  (Industry / Solutions / Features / Data / Resources), slim bottom bar.
+  Layout: dark section. Left newsletter block (fixed width) + a flex-1
+  grid of six link columns (Industry / Solutions / Features / Data /
+  Resources / Company). Flexbox outer split avoids 12-col span math.
+  Slim bottom bar (copyright + social/seal).
 
   Open items (see REFRESH_PLAN.md):
-  - Link targets use the launch-intent URLs (Solutions/Features under
+  - Link targets use launch-intent URLs (Solutions/Features under
     /solutions/ and /features/, Data under /data/). Those pages don't
-    exist yet, so the links 404 in preview — intentional; they double
-    as the page-move / redirect checklist for launch.
-  - Newsletter form is the custom design only — NOT yet wired. Needs
-    the HubSpot custom-form endpoint dropped into the <form action>
-    (replacing the embed). Marked TODO below.
-  - Data column: shown here for layout review. For go-live handling see
-    REFRESH_PLAN.md (omit until Data pages ship, vs. unlinked tease).
-  - Mobile: columns reflow to a 2-up grid (no accordion). Revisit if a
-    collapsible mobile treatment is wanted.
+    exist yet, so links 404 in preview — intentional; they double as
+    the page-move / redirect checklist for launch.
+  - Newsletter form is the custom design only — NOT wired. Needs the
+    HubSpot custom-form endpoint in the <form action> (TODO below).
+  - Data column shown for layout review; go-live handling TBD
+    (omit until Data pages ship, vs. unlinked tease).
+  - Mobile: columns reflow (2-up → 3-up). No accordion yet.
 #}
 <footer class="w-full bg-shovels-dark text-gray-300" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
 
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
+    <div class="flex flex-col gap-12 lg:flex-row lg:gap-16">
 
-      {# ── Left: brand + newsletter ── #}
-      <div class="lg:col-span-4">
+      {# ── Left: brand + newsletter (fixed width) ── #}
+      <div class="lg:w-72 lg:shrink-0">
         <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
         <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
 
@@ -49,8 +49,8 @@
         </div>
       </div>
 
-      {# ── Right: link columns ── #}
-      <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8 lg:grid-cols-5">
+      {# ── Right: six link columns ── #}
+      <div class="grid flex-1 grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
 
         <div>
           <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Industry</h3>
@@ -102,8 +102,19 @@
             <li><a href="https://docs.shovels.ai/docs/knowledge-base" class="text-sm text-gray-300 hover:text-white">Knowledge Base</a></li>
             <li><a href="/data-dictionary" class="text-sm text-gray-300 hover:text-white">Data Dictionary</a></li>
             <li><a href="/coverage" class="text-sm text-gray-300 hover:text-white">Coverage Dashboard</a></li>
+            <li><a href="https://docs.shovels.ai/" class="text-sm text-gray-300 hover:text-white" target="_blank">Documentation Hub</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">Company</h3>
+          <ul role="list" class="mt-6 space-y-3">
             <li><a href="/about" class="text-sm text-gray-300 hover:text-white">About</a></li>
+            <li><a href="/contact" class="text-sm text-gray-300 hover:text-white">Contact</a></li>
             <li><a href="/careers" class="text-sm text-gray-300 hover:text-white">Careers</a></li>
+            <li><a href="/terms" class="text-sm text-gray-300 hover:text-white">Terms</a></li>
+            <li><a href="/privacy-center" class="text-sm text-gray-300 hover:text-white">Privacy</a></li>
+            <li><a href="https://trust.shovels.ai/" class="text-sm text-gray-300 hover:text-white" target="_blank">Security</a></li>
           </ul>
         </div>
 
