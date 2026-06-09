@@ -87,6 +87,7 @@ status: hidden
         ],
         'image_src': '/images/industries/real-estate/uc4-upzoning-decisions.svg',
         'image_alt': 'Shovels Decisions — feed filtered for upzoning and development approval decisions',
+        'framed': False,
     },
     {
         'number': '05',
