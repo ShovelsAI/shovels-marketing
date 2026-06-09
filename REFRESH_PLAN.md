@@ -219,9 +219,41 @@ production deploy, so we can keep iterating on the branch.
 - [ ] Legal: Notion `Logo Use` cleared for every logo shown (footer +
       industry grids)
 
+### Tracking / analytics integrity (design refresh — keep tracking intact)
+- [x] No tracking code edited on the branch — VERIFIED vs `main`:
+      `base.html` changed only the body-font line + footer include;
+      `footer.html` (HubSpot embed + UTM script) and `gosquared.html`
+      untouched; no GA/gtag changes. (Re-verify just before launch.)
+- [ ] Re-confirm GA / GoSquared / HubSpot / UTM intact at launch
+      (diff the final branch one more time)
+- [ ] Newsletter: new footer form posts to the correct HubSpot
+      endpoint (same list as the current embed)
+
+### URL / link verification
+- [ ] Every link resolves to the correct page — footer, top nav,
+      in-page CTAs, cross-page links, blog — no 404s, correct targets
+      after the `/solutions/` `/features/` moves + redirects
+- [ ] No stale `-preview` URLs left in any link
+
+### Site-wide consistency & global impact
+- [ ] **Rounded CTA rollout** — replace the old `rounded-md` primary
+      buttons with the new `rounded-full` treatment across the whole
+      site (~43 instances on ~21 live pages + `header.html` +
+      `index.html`), not just the redesigned pages
+- [ ] **Body font cascade** — confirm Scandia→system-stack body copy
+      is intended on ALL pages (it already cascades site-wide via
+      `base.html` + `input.css`), incl. untouched legacy pages
+- [ ] Audit other shared changes for unintended reach: `tailwind.config.js`
+      (marquee keyframes — additive, safe), shared macros/`sections`
+      (preview-only today), `pelicanconf.py` globals (opt-in)
+- [ ] Spot-check a few untouched pages (e.g. /about, /terms) render
+      unchanged except the intended global typography
+
 ### Sign-off
 - [ ] Staging deploy reviewed at real URLs by stakeholders
-- [ ] Mobile QA (footer accordions, nav, page responsiveness)
+- [ ] Mobile QA — top nav (mobile menu), footer (accordions, no
+      newsletter), and every redesigned page on a real device / narrow
+      viewport
 - [ ] Final go/no-go
 
 ### More (your ideas)
