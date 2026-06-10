@@ -258,7 +258,13 @@
 
   {% block background_pattern %}{% endblock background_pattern %}
 
-  {% include 'header.html' %}
+  {# Staged refresh header on *-preview pages only; live pages keep the
+     current header until launch. See REFRESH_PLAN.md. #}
+  {% if page is defined and page.slug and page.slug.endswith('-preview') %}
+    {% include 'header-refresh.html' %}
+  {% else %}
+    {% include 'header.html' %}
+  {% endif %}
 
   {% block content %}
   {% endblock %}

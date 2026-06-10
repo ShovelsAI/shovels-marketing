@@ -1,0 +1,198 @@
+{# Staged refresh top nav, gated to *-preview pages in base.html. Mirrors
+   the footer-refresh pattern: one DRY `nav_menus` structure drives both the
+   desktop mega-dropdowns and the mobile accordions, so the two never drift.
+
+   nav_menus entry: (title, align, items)
+     align — 'left' or 'right'; which edge the dropdown panel anchors to so
+             it never overflows the viewport (rightmost menu opens leftward).
+     items — (label, href, icon, target)
+             icon is an icons.html macro name; target '' or '_blank'. Items
+             split into two balanced columns only at >= 6 items (6 -> 3+3,
+             7 -> 4+3, 8 -> 4+4), else one column.
+
+   Each dropdown is just its links plus a Contact Sales row at the bottom.
+   Data top-level is intentionally omitted until the /data/* pages ship
+   (see REFRESH_PLAN.md). Solutions/Features point at the planned
+   /solutions/ and /features/ slugs, which 404 until those pages move at
+   launch. #}
+
+{% import 'macros/icons.html' as icons %}
+
+{% macro nav_link(label, href, icon, target, icons) %}
+<a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %}
+   class="group flex items-center gap-3 text-gray-700 hover:text-shovels-primary">
+  <span class="flex size-9 shrink-0 items-center justify-center rounded-lg bg-gray-100 text-shovels-primary transition-colors group-hover:bg-shovels-primary/10">
+    {{ icons[icon](class='size-5') }}
+  </span>
+  <span class="text-base font-medium">{{ label }}</span>
+</a>
+{% endmacro %}
+
+{% set nav_menus = [
+  ('Industries', 'left', [
+     ('Building Materials &amp; Equipment', '/building-materials', 'hard_hat', ''),
+     ('Construction Technology', '/software', 'wrench', ''),
+     ('Energy &amp; Climate', '/climate', 'leaf', ''),
+     ('Home Services', '/home-services', 'house', ''),
+     ('Real Estate', '/real-estate', 'building', ''),
+     ('Telecommunications', '/telecommunications', 'radio', ''),
+     ('Research', '/research', 'flask', ''),
+     ('Insurance', '/insurance', 'shield', ''),
+   ]),
+  ('Solutions', 'left', [
+     ('Shovels Online', '/solutions/permit-database', 'app_window', ''),
+     ('API', '/solutions/api', 'code', ''),
+     ('Enterprise Data License', '/solutions/data-feed', 'database', ''),
+   ]),
+  ('Features', 'left', [
+     ('Charlie AI', '/features/charlie', 'sparkles', ''),
+     ('GIS', '/features/gis', 'map', ''),
+     ('CLI', '/features/cli', 'terminal', ''),
+   ]),
+  ('Resources', 'right', [
+     ('Blog', '/blog', 'newspaper', ''),
+     ('Knowledge Base', 'https://docs.shovels.ai/docs/knowledge-base', 'book_open', '_blank'),
+     ('Data Dictionary', '/data-dictionary', 'book', ''),
+     ('Coverage Dashboard', '/coverage', 'gauge', ''),
+     ('About', '/about', 'info', ''),
+     ('Careers', '/careers', 'briefcase', ''),
+   ]),
+] %}
+
+<div x-data="{ mobileOpen: false }"
+     x-effect="document.body.style.overflow = mobileOpen ? 'hidden' : ''"
+     class="sticky top-0 z-50 border-b border-gray-100 bg-white">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+
+    {# Logo #}
+    <a href="/" class="flex-shrink-0">
+      <span class="sr-only">Shovels</span>
+      <img src="/theme/images/shovels-navbar-logo.svg" alt="Shovels - Building permit and contractor intelligence" class="h-8 w-auto">
+    </a>
+
+    {# Mobile hamburger #}
+    <button type="button" class="lg:hidden -mr-2 inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-100 hover:text-shovels-primary focus:outline-none"
+            @click="mobileOpen = true" aria-label="Open menu">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+
+    {# Desktop nav #}
+    <nav class="hidden lg:flex lg:items-center lg:gap-8">
+      {% for title, align, items in nav_menus %}
+      {% set wide = items|length >= 6 %}
+      {% set half = (items|length + 1) // 2 %}
+      <div class="relative" x-data="{ open: false }" x-on:click.outside="open = false">
+        <button type="button" @click="open = ! open"
+                class="inline-flex items-center gap-1 text-base font-medium text-gray-700 hover:text-shovels-primary"
+                :class="{ 'text-shovels-primary': open }">
+          <span>{{ title }}</span>
+          <svg class="h-4 w-4 transition-transform duration-200" :class="{ 'rotate-180': open }"
+               fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+
+        {# Dropdown panel — link columns + Contact Sales footer. #}
+        <div x-show="open" x-cloak
+             x-transition:enter="transition ease-out duration-150"
+             x-transition:enter-start="opacity-0 -translate-y-1"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             class="absolute top-full z-50 mt-4 {{ 'right-0' if align == 'right' else 'left-0' }} {{ 'w-[520px]' if wide else 'w-[300px]' }}">
+          {# Beak — small pointer aligned under the trigger. #}
+          <div class="absolute -top-2 h-4 w-4 rotate-45 border-l border-t border-gray-200 bg-white {{ 'right-10' if align == 'right' else 'left-8' }}"></div>
+          <div class="relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xl">
+            <div class="p-6">
+              {% if wide %}
+              <div class="grid grid-cols-2 gap-x-10">
+                <div class="space-y-5">
+                  {% for label, href, icon, target in items[:half] %}{{ nav_link(label, href, icon, target, icons) }}{% endfor %}
+                </div>
+                <div class="space-y-5">
+                  {% for label, href, icon, target in items[half:] %}{{ nav_link(label, href, icon, target, icons) }}{% endfor %}
+                </div>
+              </div>
+              {% else %}
+              <div class="space-y-5">
+                {% for label, href, icon, target in items %}{{ nav_link(label, href, icon, target, icons) }}{% endfor %}
+              </div>
+              {% endif %}
+            </div>
+            {# Contact Sales — bottom of every dropdown. #}
+            <a href="/contact"
+               class="flex items-center justify-between border-t border-gray-100 bg-gray-50 px-6 py-4 text-sm font-semibold text-shovels-primary hover:bg-gray-100">
+              <span class="flex items-center gap-2 whitespace-nowrap">
+                {{ icons.phone(class='size-5 shrink-0') }}
+                <span>Contact Sales</span>
+              </span>
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      {# CTAs #}
+      <a href="https://app.shovels.ai" class="text-base font-medium text-gray-700 hover:text-shovels-primary">Sign In</a>
+      <a href="https://app.shovels.ai/signup/"
+         class="inline-flex items-center justify-center rounded-full bg-shovels-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+    </nav>
+  </div>
+
+  {# Mobile slide-in panel #}
+  <div x-show="mobileOpen" x-cloak class="lg:hidden">
+    <div class="fixed inset-0 z-50 bg-black/30" @click="mobileOpen = false"></div>
+    <div class="fixed inset-y-0 right-0 z-50 w-full max-w-sm overflow-y-auto bg-white px-6 py-6"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0">
+      <div class="flex items-center justify-between">
+        <a href="/"><img src="/theme/images/shovels-navbar-logo.svg" alt="Shovels" class="h-8 w-auto"></a>
+        <button type="button" class="-mr-2 rounded-md p-2 text-gray-500 hover:bg-gray-100" @click="mobileOpen = false" aria-label="Close menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mt-6" x-data="{ open: null }">
+        {% for title, align, items in nav_menus %}
+        <div class="border-b border-gray-100">
+          <button type="button" @click="open = open === {{ loop.index }} ? null : {{ loop.index }}"
+                  class="flex w-full items-center justify-between py-4 text-base font-medium text-gray-900">
+            <span>{{ title }}</span>
+            <svg class="h-5 w-5 shrink-0 transition-transform duration-200" :class="{ 'rotate-180': open === {{ loop.index }} }"
+                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <ul x-show="open === {{ loop.index }}" x-transition role="list" class="space-y-1 pb-4">
+            {% for label, href, icon, target in items %}
+            <li>
+              <a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="flex items-center gap-3 py-1.5 text-sm text-gray-600 hover:text-shovels-primary">
+                <span class="text-shovels-primary">{{ icons[icon](class='size-5') }}</span>
+                <span>{{ label }}</span>
+              </a>
+            </li>
+            {% endfor %}
+            <li>
+              <a href="/contact" class="flex items-center gap-3 py-1.5 text-sm font-semibold text-shovels-primary">
+                <span class="text-shovels-primary">{{ icons.phone(class='size-5') }}</span>
+                <span>Contact Sales</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="mt-8 space-y-4">
+        <a href="https://app.shovels.ai" class="block text-base font-medium text-gray-900">Sign In</a>
+        <a href="https://app.shovels.ai/signup/"
+           class="block w-full rounded-full bg-shovels-primary px-5 py-3 text-center text-sm font-semibold text-white hover:bg-shovels-primary/90">Get Started</a>
+      </div>
+    </div>
+  </div>
+</div>
