@@ -102,7 +102,7 @@ status: hidden
             'Study contractor behavior, industry consolidation, and subcontractor networks',
             'Match permits to firms for market and investment research',
             'Combine permit data with survey data for generational and demographic studies',
-            'Read the research: <a href="https://arxiv.org/abs/2508.09513" class="font-semibold text-shovels-primary hover:underline">The Market Effects of Algorithms (Raymond, MIT, 2025)</a>',
+            'Read the research: <a href="https://arxiv.org/abs/2508.09513" class="font-semibold text-shovels-primary hover:underline">The Market Effects of Algorithms (Raymond, MIT, 2025)</a>, or see the data in the news: <a href="https://www.credaily.com/briefs/nationwide-cre-new-construction-permits-fell-16-in-q1-2026/" class="font-semibold text-shovels-primary hover:underline">Nationwide CRE New Construction Permits Fell 16% in Q1 2026 (CRE Daily, 2026)</a>',
         ],
         'image_src': '/images/industries/research/uc5-construction-markets.png',
         'image_alt': 'Chart from the Shovels Florida report — new construction permits by jurisdiction',
