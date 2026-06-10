@@ -180,6 +180,11 @@ production deploy, so we can keep iterating on the branch.
 - [ ] Logo heights tuned across all grids (designer pass)
 - [ ] White-on-hover logos resolved or accepted (Hawkins, Avenue Roofing)
 - [ ] Every page renders with no `TBD` placeholders
+- [ ] Blog pull-ins use the correct category/tag combo per page —
+      each industry page's `get_industry_articles('<Category>')` matches
+      its industry (and resolves enough posts), and the homepage pulls
+      most-recent via `get_recent_articles`. Confirm Research has a
+      blog pull (no `get_industry_articles` call found yet)
 
 ### URLs, routing & redirects
 - [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed)
