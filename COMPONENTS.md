@@ -50,6 +50,16 @@ entries; don't rewrite old ones.
   putting `'Scandia'` back into the `body` font-family in `base.html`
   inline CSS and `input.css` base layer.
 
+- **Staged refresh chrome gated to `*-preview` pages.** `base.html`
+  switches between the live header/footer and `header-refresh.html` /
+  `footer-refresh.html` based on `page is defined and page.slug and
+  page.slug.endswith('-preview')`, so the redesigned global nav and
+  footer ship invisibly on preview pages while live pages stay
+  untouched until launch. Both refresh templates use a single DRY data
+  structure (`nav_menus` / `footer_sections`) driving desktop +
+  mobile. Reversible / promotable: drop the `{% if %}` gate to make a
+  refresh template global. See REFRESH_PLAN.md.
+
 ---
 
 ## Tokens & colors
@@ -1287,6 +1297,14 @@ build-time inlining keeps the bundle clean, and the call site reads
 exactly like every other macro on the site (`{{ icons.check(...) }}`).
 Adding a new icon is a 30-second copy/paste from lucide.dev. Scales
 fine to ~50 icons for a marketing site this size.
+
+**Dynamic dispatch by name**: data-driven sections store an icon's
+macro name as a string and render it with `{{ icons[name](class=...) }}`
+— Jinja resolves the subscript to the macro attribute. Used by the
+refreshed nav (`nav_menus`) and the homepage data-type cards, so the
+icon travels with the data. Caveat: template-level `{% import %}`s
+aren't visible inside a macro's scope, so when dispatching from within
+a macro (e.g. the nav's `nav_link`), pass `icons` in as a parameter.
 
 ### Hero eyebrow chip removed
 

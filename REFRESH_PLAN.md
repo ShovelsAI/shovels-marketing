@@ -56,7 +56,7 @@ What the refresh touches, and why.
 | Research | Staged page | ✅ preview built | New page; `/research` at launch |
 | Homepage | Staged-ish | ✅ preview built | Lives in theme `index.html`, not a content page — preview content moves into the template at launch (not a simple rename) |
 | Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (6 columns: Industries/Solutions/Features/Data/Resources/Company, left newsletter, mobile accordions w/ carats, newsletter hidden on mobile, slim bottom bar). DRY `footer_sections` data drives both mobile + desktop. Gated in `base.html` to `*-preview` pages only — live footer untouched. Open: HubSpot form wiring, Data go-live handling, final link/column curation |
-| Top nav (header) | **Global** | ⬜ to do | Same: add Insurance + Research; refresh treatment; ships site-wide |
+| Top nav (header) | **Global** | 🟡 preview built | New `header-refresh.html` (Industries/Solutions/Features/Resources + Sign In/Get Started; **Data omitted** until those pages ship). DRY `nav_menus` data drives desktop mega-dropdowns + mobile accordions. Dropdowns are icon link columns + Contact Sales row, two balanced columns at ≥6 items; caret flips up, panel beak points to trigger, rightmost menu right-anchored; rounded-full Get Started. Gated in `base.html` to `*-preview` pages — live header untouched. Open: Solutions/Features links use planned `/solutions/` `/features/` slugs (404 until moved); promo panel intentionally dropped; icons are Lucide stand-ins |
 | Typography / base CSS | **Global** | ✅ already cascaded | Scandia headings + system body stack (logged in COMPONENTS.md) |
 | New pages (future) | Staged page | ⬜ to design/build | Build behind `hidden`; may not launch with this wave |
 
@@ -125,9 +125,9 @@ Map Gallery, Brand, Partners, Pricing (tentative). Build behind
   logo-height tuning; designer walkthrough.
 
 ### Phase 2 — Global chrome (current)
-- **Footer** redesign (in progress) — add Insurance + Research, apply
-  refresh treatment.
-- **Top nav / header** redesign — same additions + treatment.
+- **Footer** redesign (preview built) — `footer-refresh.html`, gated.
+- **Top nav / header** redesign (preview built) — `header-refresh.html`,
+  gated to `*-preview` pages, mirrors the footer pattern.
 - Decide backward-compatibility vs. launch-coupled deploy for each.
 
 ### Phase 3 — Designer review
@@ -205,9 +205,15 @@ production deploy, so we can keep iterating on the branch.
       (remove the `-preview` gate in `base.html`)
 - [ ] Footer: HubSpot newsletter form wired into the custom design
 - [ ] Footer: Data column go-live handling decided + applied
-- [ ] Top nav rebuilt for new IA (Industry/Solutions/Features/Data/
-      Resources + Get Started / Sign In); add Insurance + Research
-- [ ] Nav mobile menu updated
+- [x] Top nav rebuilt for new IA — `header-refresh.html` (Industries/
+      Solutions/Features/Resources + Sign In/Get Started; Insurance +
+      Research included; mobile accordions). Gated to `*-preview`
+- [ ] Header: promote `header-refresh.html` → global `header.html`
+      (remove the `-preview` gate in `base.html`)
+- [ ] Header: repoint Solutions/Features links once those pages move
+      under `/solutions/` `/features/` (currently 404 in preview)
+- [ ] Header: add the Data top-level once the Data pages ship (omitted now)
+- [ ] Header: swap Lucide stand-in icons for final marks (designer)
 
 ### Build & technical
 - [ ] Production build passes (`make publish`)
