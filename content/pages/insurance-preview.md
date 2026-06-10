@@ -17,12 +17,13 @@ status: hidden
     illustration_src='/images/industries/insurance/hero.svg',
     illustration_alt='Insurance hero illustration') }}
 
-{# Static logo grid — 3 of 4 sourced; Trinh Insurance (trinhinsurance.com)
-   pending. comeryx.png has a baked-in background — needs knockout. #}
+{# Static logo grid — Trinh Insurance (trinhinsurance.com) still pending.
+   comeryx.png has a baked-in background — needs knockout. #}
 {% set insurance_logos = [
-    {'src': '/images/logos/scription.png', 'alt': 'Scription', 'height': 26},
-    {'src': '/images/logos/drodat.png', 'alt': 'Drodat', 'height': 28},
-    {'src': '/images/logos/comeryx.png', 'alt': 'Comeryx', 'height': 28},
+    {'src': '/images/logos/scription.png', 'alt': 'Scription', 'height': 28},
+    {'src': '/images/logos/drodat.png', 'alt': 'Drodat', 'height': 22},
+    {'src': '/images/logos/comeryx.png', 'alt': 'Comeryx', 'height': 30},
+    {'src': '/images/logos/maverick.png', 'alt': 'Maverick', 'height': 34},
 ] %}
 
 {{ ui_grid.logo_grid(logos=insurance_logos, heading='TRUSTED BY INSURANCE TEAMS') }}

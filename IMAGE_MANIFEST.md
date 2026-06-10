@@ -271,10 +271,10 @@ hyphens, SVG preferred.
 | [x]    | Heidelberg Materials (current mark, replaced legacy)                                    | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅                     |
 | [x]    | Owens Corning                                                                           | owenscorning.com        | `owens-corning.svg`        | ✅                     |
 | [x]    | Avenue Roofing                                                                          | avenueroofing.com       | `avenue-roofing.svg`       | ✅                     |
-| [x]    | Automate                                                                                | automate-works.com      | `automate-works.png`       | ✅                     |
+| [ ]    | Automate                                                                                | automate-works.com      | `automate-works.png`       | ⚠ opaque cream badge — renders as grey block under the silhouette filter; needs a transparent re-source |
 
 
-### Insurance — `/insurance` (only 4 listed; ⚠ confirm target count)
+### Insurance — `/insurance`
 
 
 | Status | Company         | Domain             | Target file           | In repo |
@@ -282,7 +282,8 @@ hyphens, SVG preferred.
 | [x]    | Scription       | scription.com      | `scription.png`       | ✅ (converted from AVIF)       |
 | [ ]    | Trinh Insurance | trinhinsurance.com | `trinh-insurance.svg` | ➖       |
 | [x]    | Drodat          | drodat.com         | `drodat.png`          | ✅       |
-| [x]    | Comeryx         | comeryx.com        | `comeryx.png`         | ✅ (replaced — now transparent) |
+| [x]    | Comeryx         | comeryx.com        | `comeryx.png`         | ✅ (transparent, trimmed) |
+| [x]    | Maverick        | maverick-risk.com  | `maverick.png`        | ✅ (trimmed) |
 
 
 ### Construction Technology — `/software`
@@ -293,9 +294,10 @@ hyphens, SVG preferred.
 | [x]    | PlanHub       | planhub.com      | `planhub.png`       | ✅       |
 | [x]    | Fuse Service  | fuseservice.com  | `fuse-service.svg`  | ✅       |
 | [x]    | Handle        | handle.com       | `handle.svg`        | ✅       |
+| [x]    | Nuvo          | nuvo.com         | `nuvo.svg`          | ✅       |
 | [x]    | ToolBelt      | toolbelt.work    | `toolbelt.png`      | ✅ (converted from WebP)      |
 | [x]    | Algoma        | algoma.co        | `algoma.png`        | ✅ (converted from WebP)      |
-| [x]    | Crown Roofing | crownroofing.com | `crown-roofing.png` | ✅       |
+| [x]    | Crown Roofing | crownroofing.com | `crown-roofing.png` | ✅ (white plate knocked out, trimmed) |
 
 
 ### Telecommunications — skipped
@@ -311,8 +313,8 @@ No logo wall identified. No `logo_grid` on this page for now.
 | Real Estate        | 6 / 6       | ✅ complete                                                            |
 | Home Services      | 6 / 6       | ✅ complete                                                            |
 | Building Materials | 5 / 5       | ✅ complete                                                            |
-| Construction Tech  | 6 / 6       | ✅ complete                                                            |
-| Insurance          | 3 / 4       | ✅ wired (3 shown; Trinh Insurance pending)                            |
+| Construction Tech  | 7 / 7       | ✅ complete                                                            |
+| Insurance          | 4 / 5       | ✅ wired (4 shown; Trinh Insurance pending)                            |
 | Telecommunications | —           | n/a (skipped)                                                          |
 
 
