@@ -1,0 +1,50 @@
+{#
+  industries_strip(industries=None, heading='USED BY TEAMS IN', wrapper_class='')
+
+  Reusable eyebrow + pill-link row pointing to the Industry pages. A
+  lightweight social-proof / wayfinding strip: "here's who uses Shovels
+  and where you fit." Designed for the homepage but reusable on the
+  Solutions and Features pages, so the industry list lives here as the
+  default rather than being repeated per page.
+
+  Sibling of `logo_strip` / `logo_grid` — same centered eyebrow heading
+  treatment, but the row is interactive pill links rather than logos.
+
+  Parameters
+  ----------
+  industries  : Optional list of (label, href) tuples to override the set.
+                Defaults to all eight industries (kept in sync with the
+                footer's Industries column).
+  heading     : Eyebrow text above the pills. Default 'USED BY DEVELOPERS IN'.
+  wrapper_class : Extra classes on the <section> (e.g. spacing overrides).
+
+  Labels are intentionally short (the footer carries the long forms);
+  '&amp;' is written as an entity because Pelican autoescape is off.
+
+  Example
+  -------
+    {% import 'macros/industries_strip.html' as ui_ind %}
+    {{ ui_ind.industries_strip() }}
+#}
+{% macro industries_strip(industries=None, heading='USED BY TEAMS IN', wrapper_class='') %}
+{% set _default = [
+    ('Building Materials', '/building-materials'),
+    ('Construction Technology', '/software'),
+    ('Energy &amp; Climate', '/climate'),
+    ('Home Services', '/home-services'),
+    ('Real Estate', '/real-estate'),
+    ('Telecommunications', '/telecommunications'),
+    ('Research', '/research'),
+    ('Insurance', '/insurance'),
+] %}
+{% set items = industries if industries is not none else _default %}
+<section class="px-6 py-24 md:px-10 {{ wrapper_class }}">
+  <h2 class="text-center text-xs font-medium uppercase tracking-wider text-gray-500">{{ heading }}</h2>
+  <div class="mx-auto mt-10 flex max-w-4xl flex-wrap items-center justify-center gap-3">
+    {% for label, href in items %}
+    <a href="{{ href }}"
+       class="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-5 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-shovels-primary/30 hover:bg-shovels-primary/5 hover:text-shovels-primary">{{ label }}</a>
+    {% endfor %}
+  </div>
+</section>
+{% endmacro %}

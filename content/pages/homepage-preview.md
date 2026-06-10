@@ -4,6 +4,7 @@ slug: homepage-preview
 status: hidden
 
 {% import 'macros/logo_strip.html' as ui_logos %}
+{% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/resources.html' as ui_res %}
 {% import 'macros/icons.html' as icons %}
 
@@ -92,6 +93,47 @@ status: hidden
   </div>
 </div>
 
+{# ── Data types — the five connected datasets ──────────────────────────
+   Counts pull from the canonical STATS dict (pelicanconf.py). Links point
+   at the future /data/* pages (net-new in the sitemap), wired now so the
+   nav is in place at launch. Copy is a first draft for review. #}
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">DATA TYPES</span>
+      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Five datasets, deeply connected</h2>
+      <p class="mt-6 text-base/7 text-gray-600">Permits, decisions, contractors, residents, and properties—linked together so you can trace a project from its first filing to the people and businesses behind it.</p>
+    </div>
+
+    {# Links point at KB articles until the dedicated /data/* pages ship.
+       First tuple field is the icons.html macro name, dispatched via
+       icons[name] in the loop. #}
+    {% set data_types = [
+        ('file_text', 'Permits', 'Every building permit we can source, AI-classified into clean, structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
+        ('clipboard_check', 'Decisions', 'The approvals, inspections, and status changes that move a project forward.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
+        ('hard_hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
+        ('users', 'Residents', 'Residents and homeowners tied to properties, with contact information.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
+        ('map_pin', 'Properties', 'Parcels and addresses connected to their full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
+    ] %}
+    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-5">
+      {% for icon, title, body, href in data_types %}
+      <div class="flex flex-col rounded-xl bg-gray-50 p-5">
+        <dt class="flex items-center gap-3">
+          <span class="flex size-9 flex-none items-center justify-center rounded-lg bg-shovels-primary/10">
+            {{ icons[icon](class='size-5 text-shovels-primary') }}
+          </span>
+          <span class="text-base font-semibold text-gray-900">{{ title }}</span>
+        </dt>
+        <dd class="mt-4 flex-auto text-sm/6 text-gray-600">{{ body }}</dd>
+        <dd class="mt-4">
+          <a href="{{ href }}" class="text-sm/6 font-semibold text-gray-900 hover:text-shovels-primary">Learn more <span aria-hidden="true">→</span></a>
+        </dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </div>
+</div>
+
 {# ── How we're different ───────────────────────────────────────────── #}
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -134,8 +176,8 @@ status: hidden
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Work with us</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">We offer three interfaces to interact with our building permit, contractor, and government decision data.</p>
+      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Data delivery options</h2>
+      <p class="mt-6 text-lg/8 text-gray-300">Three ways to access our building permit, contractor, and government decision data—self-serve online, via API, or as a licensed enterprise feed.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -170,9 +212,9 @@ status: hidden
         <div class="flex flex-col">
           <dt class="text-base/7 font-semibold text-white">
             <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/images/home/shovels-enterprise.svg" alt="Database Access" class="size-20">
+              <img src="/images/home/shovels-enterprise.svg" alt="Enterprise Data License" class="size-20">
             </div>
-            Database Access
+            Enterprise Data License
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
             <p class="flex-auto">Get parquet files or private table shares into Snowflake, Databricks, or Big Query.</p>
@@ -185,6 +227,11 @@ status: hidden
     </div>
   </div>
 </div>
+
+{# ── Industries strip — eyebrow + pill links to all Industry pages.
+   Drop bottom padding so the following "From the blog" section's top
+   padding owns the single gap (avoids doubled vertical space). #}
+{{ ui_ind.industries_strip(wrapper_class='!pb-0') }}
 
 {# ── From the blog — three most-recent posts ───────────────────────── #}
 {{ ui_res.resources_section(

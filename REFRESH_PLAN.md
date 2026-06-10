@@ -234,6 +234,11 @@ production deploy, so we can keep iterating on the branch.
       in-page CTAs, cross-page links, blog — no 404s, correct targets
       after the `/solutions/` `/features/` moves + redirects
 - [ ] No stale `-preview` URLs left in any link
+- [ ] **Homepage interim links** — Data types cards point at KB
+      articles (`docs.shovels.ai/.../data/*`) until the `/data/*` pages
+      ship; repoint when those launch. Data delivery cards point at
+      `/permit-database`, `/api`, `/data-feed`; repoint if those move
+      under `/solutions/`
 
 ### Site-wide consistency & global impact
 - [ ] **Rounded CTA rollout** — replace the old `rounded-md` primary
@@ -273,6 +278,11 @@ production deploy, so we can keep iterating on the branch.
 - **Homepage launch mechanics** — convert `index.html` to use the
   preview content; reconcile `STATS`/helper globals and the `dates`
   blog loop (preview uses `get_recent_articles`).
+- **Data delivery options layout** — `data-delivery-options-preview`
+  holds three live directions (current dark/illustration, dark bordered
+  cards w/ "best for" tag, light numbered tiers) for designer sign-off.
+  Once a direction is chosen: fold it into the homepage section, drop
+  the other two, and delete the comparison page.
 - **Which net-new pages** are in scope for Phase 5, and their copy.
 - **Solutions/Features URL moves + redirects** — moving 6 pages under
   `/solutions/` and `/features/` needs: updated `Slug:` per page,
