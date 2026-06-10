@@ -120,8 +120,9 @@ status: hidden
 
 {% include 'sections/coverage.html' %}
 
+{# No 'Research' tag exists; this page features the Data category. #}
 {{ ui_res.resources_section(
-    articles=get_industry_articles('Research', fallback_category='Data'),
+    articles=get_category_articles('Data'),
     heading='Explore the research') }}
 
 {{ ui_faq.faq_section(

@@ -284,6 +284,31 @@ def get_recent_articles(limit=3):
     return out
 
 
+def get_category_articles(category, limit=3):
+    """Return up to `limit` most-recent blog posts in `category`.
+
+    Exact, case-insensitive match on a post's `category` (newest
+    first). For pages that should feature a whole content category
+    rather than an industry tag — e.g. the Research page surfacing the
+    Data category. Unlike get_industry_articles, no tag matching, so a
+    post merely tagged "data" but filed under another category never
+    leaks in. Output shape matches resources_section's `articles`.
+    """
+    out = []
+    target = category.lower()
+    for m in _posts_cache:
+        if len(out) >= limit:
+            break
+        if m.get('category', '').lower() == target:
+            out.append({
+                'url': '/blog/' + m['slug'] + '/',
+                'title': m.get('title', ''),
+                'image_src': m['image'],
+                'image_alt': m.get('image_alt') or m.get('title', ''),
+            })
+    return out
+
+
 # Expose STATS and the article helpers to jinja2content so content
 # pages can use them. jinja2content renders content files through
 # Jinja2 with no context by default; JINJA_GLOBALS is the only way to
@@ -292,6 +317,7 @@ JINJA_GLOBALS = {
     "STATS": STATS,
     "get_industry_articles": get_industry_articles,
     "get_recent_articles": get_recent_articles,
+    "get_category_articles": get_category_articles,
 }
 
 SITEMAP = {
