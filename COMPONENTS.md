@@ -784,18 +784,30 @@ Logos are expected to rotate as customers come and go. The process:
    (official SVGs for recognizable brands), the company's press/brand
    page, or an inline SVG extracted from their site header. Prefer SVG;
    PNG is fine for raster-only brands.
-2. **Clean it.** Tight-crop (no baked-in padding — same rule as the
-   illustration export spec) and knock out any solid background so the
-   file is transparent. The color of the artwork doesn't matter; the
-   CSS filter flattens everything to grey. A white-on-transparent logo
-   works too (`brightness(0)` turns white to black before inverting).
-   ImageMagick one-liners: `convert in.png -trim +repage out.png`,
-   background removal `convert in.png -fuzz 18% -transparent '#f9de7a' out.png`.
-3. **Drop it in `content/images/logos/`** following filename
+2. **Drop it in `content/images/logos/`** following filename
    conventions (lowercase, hyphens, company name as slug).
+3. **Normalize it** with `scripts/logo_tools.py` (run via uv so Pillow is
+   gated + reproducible). Two non-negotiables for the grey filter to work:
+   - **Tight-crop** — no baked-in transparent padding, or the logo renders
+     smaller than its neighbors at the same height.
+     `uv run --with "pillow==11.3.0" python scripts/logo_tools.py trim content/images/logos/<file>.png`
+   - **Transparent background** — any opaque fill (white plate, tinted
+     badge) gets flattened to a solid grey block by `brightness(0)`, since
+     it blacks out *every* opaque pixel, background and mark alike. Knock
+     it out: `… python scripts/logo_tools.py knockout content/images/logos/<file>.png`.
+     Bordered "badge" logos (text inside a boxed outline) don't silhouette
+     cleanly even after knockout — re-source a transparent wordmark/mark
+     instead. SVGs: most are tight already, but if one has a background
+     `<rect>`, delete it by hand (the tool only touches raster PNGs).
+
+   `… scripts/logo_tools.py audit` reports padding for every logo at once.
 4. **Edit the `customer_logos` list** on the page — add/remove/reorder
    the dict. Display order is list order.
-5. **Eyeball the height.** Default 30px; tune per logo (see below).
+5. **Preview the wall** the way the macro actually renders it (flat grey on
+   white) before trusting the heights:
+   `… python scripts/logo_tools.py preview <page-slug>` (writes
+   `/tmp/<slug>_wall.png`). A logo that shows as a solid grey block failed
+   step 3. Tune each height for optical balance (see below) and re-preview.
 
 **Legal gate**: before a logo ships to production, cross-check the
 Notion "Logo Use" column (Approved / Consent Required / Disapprove).
