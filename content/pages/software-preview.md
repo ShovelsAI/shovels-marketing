@@ -20,12 +20,11 @@ status: hidden
 {# Static industry strip — full set, pending legal sign-off. #}
 {% set software_logos = [
     {'src': '/images/logos/planhub.png', 'alt': 'PlanHub', 'height': 28},
-    {'src': '/images/logos/fuse-service.svg', 'alt': 'Fuse Service', 'height': 28},
     {'src': '/images/logos/handle.svg', 'alt': 'Handle', 'height': 28},
     {'src': '/images/logos/nuvo.svg', 'alt': 'Nuvo', 'height': 28},
     {'src': '/images/logos/toolbelt.png', 'alt': 'ToolBelt', 'height': 28},
     {'src': '/images/logos/algoma.png', 'alt': 'Algoma', 'height': 28},
-    {'src': '/images/logos/crown-roofing.png', 'alt': 'Crown Roofing', 'height': 36},
+    {'src': '/images/logos/fuse-service.svg', 'alt': 'Fuse Service', 'height': 28},
 ] %}
 
 {{ ui_grid.logo_grid(logos=software_logos, heading='TRUSTED BY CONSTRUCTION TECHNOLOGY TEAMS') }}

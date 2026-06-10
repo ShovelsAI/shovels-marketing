@@ -17,13 +17,14 @@ status: hidden
     illustration_src='/images/industries/building-materials/hero.svg',
     illustration_alt='Building materials hero illustration') }}
 
-{# Static 5-logo industry strip — full set, pending legal sign-off. #}
+{# Static industry strip — full set, pending legal sign-off. #}
 {% set building_materials_logos = [
     {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 26},
     {'src': '/images/logos/owens-corning.svg', 'alt': 'Owens Corning', 'height': 36},
     {'src': '/images/logos/heidelberg-materials.svg', 'alt': 'Heidelberg Materials', 'height': 30},
     {'src': '/images/logos/avenue-roofing.svg', 'alt': 'Avenue Roofing', 'height': 30},
-    {'src': '/images/logos/automate-works.png', 'alt': 'Automate', 'height': 28},
+    {'src': '/images/logos/automate-works.svg', 'alt': 'Automate', 'height': 22},
+    {'src': '/images/logos/crown-roofing.png', 'alt': 'Crown Roofing', 'height': 36},
 ] %}
 
 {{ ui_grid.logo_grid(logos=building_materials_logos, heading='TRUSTED BY BUILDING MATERIALS SUPPLIERS') }}

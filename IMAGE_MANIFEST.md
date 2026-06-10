@@ -271,7 +271,8 @@ hyphens, SVG preferred.
 | [x]    | Heidelberg Materials (current mark, replaced legacy)                                    | heidelbergmaterials.com | `heidelberg-materials.svg` | ✅                     |
 | [x]    | Owens Corning                                                                           | owenscorning.com        | `owens-corning.svg`        | ✅                     |
 | [x]    | Avenue Roofing                                                                          | avenueroofing.com       | `avenue-roofing.svg`       | ✅                     |
-| [ ]    | Automate                                                                                | automate-works.com      | `automate-works.png`       | ⚠ opaque cream badge — renders as grey block under the silhouette filter; needs a transparent re-source |
+| [x]    | Automate                                                                                | automate-works.com      | `automate-works.svg`       | ✅ (transparent outlined wordmark, replaced cream badge) |
+| [x]    | Crown Roofing                                                                           | crownroofing.com        | `crown-roofing.png`        | ✅ (white plate knocked out, trimmed) |
 
 
 ### Insurance — `/insurance`
@@ -297,7 +298,6 @@ hyphens, SVG preferred.
 | [x]    | Nuvo          | nuvo.com         | `nuvo.svg`          | ✅       |
 | [x]    | ToolBelt      | toolbelt.work    | `toolbelt.png`      | ✅ (converted from WebP)      |
 | [x]    | Algoma        | algoma.co        | `algoma.png`        | ✅ (converted from WebP)      |
-| [x]    | Crown Roofing | crownroofing.com | `crown-roofing.png` | ✅ (white plate knocked out, trimmed) |
 
 
 ### Telecommunications — skipped
@@ -312,8 +312,8 @@ No logo wall identified. No `logo_grid` on this page for now.
 | Energy & Climate   | 6 / 6       | ✅ complete                                                            |
 | Real Estate        | 6 / 6       | ✅ complete                                                            |
 | Home Services      | 6 / 6       | ✅ complete                                                            |
-| Building Materials | 5 / 5       | ✅ complete                                                            |
-| Construction Tech  | 7 / 7       | ✅ complete                                                            |
+| Building Materials | 6 / 6       | ✅ complete                                                            |
+| Construction Tech  | 6 / 6       | ✅ complete                                                            |
 | Insurance          | 4 / 5       | ✅ wired (4 shown; Trinh Insurance pending)                            |
 | Telecommunications | —           | n/a (skipped)                                                          |
 
