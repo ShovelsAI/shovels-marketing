@@ -55,7 +55,7 @@ What the refresh touches, and why.
 | Telecommunications | Staged page | ✅ preview built | Redesign of live `/telecommunications` |
 | Research | Staged page | ✅ preview built | New page; `/research` at launch |
 | Homepage | Staged-ish | ✅ preview built | Lives in theme `index.html`, not a content page — preview content moves into the template at launch (not a simple rename) |
-| Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (6 columns: Industries/Solutions/Features/Data/Resources/Company, left newsletter, mobile accordions w/ carats, newsletter hidden on mobile, slim bottom bar). DRY `footer_sections` data drives both mobile + desktop. Gated in `base.html` to `*-preview` pages only — live footer untouched. Open: HubSpot form wiring, Data go-live handling, final link/column curation |
+| Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (6 columns: Industries/Solutions/Features/Data/Resources/Company, left newsletter, mobile accordions w/ carats, newsletter hidden on mobile, slim bottom bar). DRY `footer_sections` data drives both mobile + desktop. Gated in `base.html` to `*-preview` pages only — live footer untouched. HubSpot form wired ✓. Decided: drop the DATA column at launch (pages won't be ready); restore when /data/* ships. Open: final link/column curation |
 | Top nav (header) | **Global** | 🟡 preview built | New `header-refresh.html` (Industries/Solutions/Features/Resources + Sign In/Get Started; **Data omitted** until those pages ship). DRY `nav_menus` data drives desktop mega-dropdowns + mobile accordions. Dropdowns are icon link columns + Contact Sales row, two balanced columns at ≥6 items; caret flips up, panel beak points to trigger, rightmost menu right-anchored; rounded-full Get Started. Gated in `base.html` to `*-preview` pages — live header untouched. Open: Solutions/Features links use planned `/solutions/` `/features/` slugs (404 until moved); promo panel intentionally dropped; icons are Lucide stand-ins |
 | Typography / base CSS | **Global** | ✅ already cascaded | Scandia headings + system body stack (logged in COMPONENTS.md) |
 | New pages (future) | Staged page | ⬜ to design/build | Build behind `hidden`; may not launch with this wave |
@@ -206,7 +206,10 @@ production deploy, so we can keep iterating on the branch.
 - [x] Footer: HubSpot newsletter form wired into the custom design
       (`footer-refresh.html` posts to the Submissions API, "Footer
       Newsletter Signup" form; test submission confirmed in HubSpot)
-- [ ] Footer: Data column go-live handling decided + applied
+- [ ] Footer: **remove the DATA column for launch** — designed with it
+      in, but the /data/* pages likely won't be ready for the initial
+      launch (decided 2026-06-11; double-check before shipping). Restore
+      the column when the Data pages go live (post-launch item below)
 - [x] Top nav rebuilt for new IA — `header-refresh.html` (Industries/
       Solutions/Features/Resources + Sign In/Get Started; Insurance +
       Research included; mobile accordions). Gated to `*-preview`
