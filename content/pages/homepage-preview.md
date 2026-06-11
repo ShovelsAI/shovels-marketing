@@ -96,36 +96,34 @@ status: hidden
    Counts pull from the canonical STATS dict (pelicanconf.py). Links point
    at the future /data/* pages (net-new in the sitemap), wired now so the
    nav is in place at launch. Copy is a first draft for review. #}
-<div class="bg-white py-24 sm:py-32">
+<div class="bg-shovels-dark py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">DATA TYPES</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Five datasets, deeply connected</h2>
-      <p class="mt-6 text-base/7 text-gray-600">Permits, decisions, contractors, residents, and properties—linked together so you can trace a project from its first filing to the people and businesses behind it.</p>
+      <span class="inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-200">DATA TYPES</span>
+      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Five datasets, deeply connected</h2>
+      <p class="mt-6 text-base/7 text-gray-300">Permits, decisions, contractors, residents, and properties—linked together so you can trace a project from its first filing to the people and businesses behind it.</p>
     </div>
 
     {# Links point at KB articles until the dedicated /data/* pages ship.
-       First tuple field is the icons.html macro name, dispatched via
-       icons[name] in the loop. #}
+       First tuple field is the illustration filename in
+       content/images/illustrations/. #}
     {% set data_types = [
-        ('file_text', 'Permits', 'Every building permit we can source, AI-classified into clean, structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
-        ('clipboard_check', 'Decisions', 'The approvals, inspections, and status changes that move a project forward.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
-        ('hard_hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
-        ('users', 'Residents', 'Residents and homeowners tied to properties, with contact information.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
-        ('map_pin', 'Properties', 'Parcels and addresses connected to their full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
+        ('permit-clip-board', 'Permits', 'Every building permit we can source, AI-classified into clean, structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
+        ('check-shield', 'Decisions', 'The approvals, inspections, and status changes that move a project forward.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
+        ('map-hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
+        ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contact information.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
+        ('map-house', 'Properties', 'Parcels and addresses connected to their full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
     ] %}
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-5">
-      {% for icon, title, body, href in data_types %}
-      <div class="flex flex-col rounded-xl bg-gray-50 p-5">
-        <dt class="flex items-center gap-3">
-          <span class="flex size-9 flex-none items-center justify-center rounded-lg bg-shovels-primary/10">
-            {{ icons[icon](class='size-5 text-shovels-primary') }}
-          </span>
-          <span class="text-base font-semibold text-gray-900">{{ title }}</span>
+      {% for illustration, title, body, href in data_types %}
+      <div class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
+        <dt>
+          <img src="/images/illustrations/{{ illustration }}.svg" alt="" class="h-12 w-auto">
+          <span class="mt-5 block text-base font-semibold text-white">{{ title }}</span>
         </dt>
-        <dd class="mt-4 flex-auto text-sm/6 text-gray-600">{{ body }}</dd>
+        <dd class="mt-2 flex-auto text-sm/6 text-gray-400">{{ body }}</dd>
         <dd class="mt-4">
-          <a href="{{ href }}" class="text-sm/6 font-semibold text-gray-900 hover:text-shovels-primary">Learn more <span aria-hidden="true">→</span></a>
+          <a href="{{ href }}" class="text-sm/6 font-semibold text-shovels-secondary hover:text-shovels-secondary/80">Learn more <span aria-hidden="true">→</span></a>
         </dd>
       </div>
       {% endfor %}
