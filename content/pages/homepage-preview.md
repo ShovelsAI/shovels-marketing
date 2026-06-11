@@ -60,7 +60,9 @@ status: hidden
     {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 26},
 ] %}
 
-{{ ui_logos.logo_strip(logos=customer_logos) }}
+{# Zero the strip's bottom padding so the Stats section's top padding owns
+   the single gap below the logos (avoids doubled white-on-white space). #}
+{{ ui_logos.logo_strip(logos=customer_logos, wrapper_class='!pb-0') }}
 
 {# ── Stats ─────────────────────────────────────────────────────────── #}
 <div class="bg-white py-24 sm:py-32">
@@ -167,11 +169,12 @@ status: hidden
 </div>
 
 {# ── Industries strip — eyebrow + pill links to all Industry pages.
-   Drop bottom padding so the following "From the blog" section's top
-   padding owns the single gap (avoids doubled vertical space). #}
-{{ ui_ind.industries_strip(wrapper_class='!pb-0') }}
+   Zero its own vertical padding so the neighbors (Data delivery above,
+   From the blog below) own the gaps, keeping the section rhythm uniform. #}
+{{ ui_ind.industries_strip(wrapper_class='!py-0') }}
 
 {# ── From the blog — three most-recent posts ───────────────────────── #}
 {{ ui_res.resources_section(
     articles=get_recent_articles(3),
-    heading='From the blog') }}
+    heading='From the blog',
+    wrapper_class='sm:py-32') }}

@@ -47,8 +47,9 @@
 {% macro resources_section(articles,
                            heading='Related content',
                            view_all_url='/blog/',
-                           view_all_label='View all posts →') %}
-<section class="w-full bg-white px-6 md:px-10 py-24">
+                           view_all_label='View all posts →',
+                           wrapper_class='') %}
+<section class="w-full bg-white px-6 md:px-10 py-24 {{ wrapper_class }}">
   <div class="mx-auto max-w-6xl">
 
     {# Section header — H2 on the left, "View all posts" link on the right. #}
