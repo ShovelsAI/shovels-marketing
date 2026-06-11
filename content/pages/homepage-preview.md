@@ -64,32 +64,31 @@ status: hidden
 {{ ui_logos.logo_strip(logos=customer_logos) }}
 
 {# ── Stats ─────────────────────────────────────────────────────────── #}
-<div class="bg-gray-900 py-24 sm:py-32">
+<div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div class="text-center">
-        <h2 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">Clean and useful building permit data that's easy to understand</h2>
-        <p class="mt-4 text-lg/8 text-gray-300">Because you want to get insights from building permits, not wrangle with raw data.</p>
-      </div>
-      <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">Building permits in our database</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.permits }}</dd>
-        </div>
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">Contractors in our database</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.contractors }}</dd>
-        </div>
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">Jurisdictions covered</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.jurisdictions }}</dd>
-        </div>
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">New permits added monthly</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.monthly_permits }}</dd>
-        </div>
-      </dl>
+    <div class="mx-auto max-w-3xl text-center">
+      <img src="/images/illustrations/map-hat.svg" alt="" class="mx-auto h-12 w-auto">
+      <h2 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clean and useful building permit data that's easy to understand</h2>
+      <p class="mt-4 text-lg/8 text-gray-600">Because you want to get insights from building permits, not wrangle with raw data.</p>
     </div>
+    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">Building permits in our database</dt>
+        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.permits }}</dd>
+      </div>
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">Contractors in our database</dt>
+        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.contractors }}</dd>
+      </div>
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">Jurisdictions covered</dt>
+        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.jurisdictions }}</dd>
+      </div>
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">New permits added monthly</dt>
+        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.monthly_permits }}</dd>
+      </div>
+    </dl>
   </div>
 </div>
 
