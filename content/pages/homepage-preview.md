@@ -169,59 +169,35 @@ status: hidden
   </div>
 </div>
 
-{# ── Work with us (3 product interfaces) — new icons ───────────────── #}
-<div class="bg-gray-900 py-24 sm:py-32">
+{# ── Data delivery options — numbered tiers (mock option 3). Links use
+   the working flat slugs; repoint to /solutions/ at launch. #}
+<div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Data delivery options</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Three ways to access our building permit, contractor, and government decision data—self-serve online, via API, or as a licensed enterprise feed.</p>
+      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Data delivery options</h2>
     </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-        <div class="flex flex-col">
-          <dt class="text-base/7 font-semibold text-white">
-            <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/images/home/shovels-online.svg" alt="Shovels Online" class="size-20">
-            </div>
-            Shovels Online
-          </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Purchase single or multiple seats to explore and download our building permit, contractor, and local government decision data.</p>
-            <p class="mt-6">
-              <a href="/permit-database" class="text-sm/6 font-semibold text-shovels-secondary">Learn more <span aria-hidden="true">→</span></a>
-            </p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-base/7 font-semibold text-white">
-            <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/images/home/shovels-api.svg" alt="Shovels API" class="size-20">
-            </div>
-            Shovels API
-          </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Automate access and integrate with other applications like CRMs, custom web apps, and more.</p>
-            <p class="mt-6">
-              <a href="/api" class="text-sm/6 font-semibold text-shovels-secondary">Learn more <span aria-hidden="true">→</span></a>
-            </p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-base/7 font-semibold text-white">
-            <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/images/home/shovels-enterprise.svg" alt="Enterprise Data License" class="size-20">
-            </div>
-            Enterprise Data License
-          </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Get parquet files or private table shares into Snowflake, Databricks, or Big Query.</p>
-            <p class="mt-6">
-              <a href="/data-feed" class="text-sm/6 font-semibold text-shovels-secondary">Learn more <span aria-hidden="true">→</span></a>
-            </p>
-          </dd>
-        </div>
-      </dl>
-    </div>
+    {% set delivery = [
+        ('Shovels Online', 'Explore &amp; export', 'Purchase single or multiple seats to explore and download our building permit, contractor, and local government decision data.', '/permit-database'),
+        ('Shovels API', 'Build into your product', 'Automate access and integrate with other applications like CRMs, custom web apps, and more.', '/api'),
+        ('Enterprise Data License', 'Pipe into your warehouse', 'Get parquet files or private table shares into Snowflake, Databricks, or Big Query.', '/data-feed'),
+    ] %}
+    <dl class="mx-auto mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 lg:mt-24 lg:max-w-none lg:grid-cols-3">
+      {% for name, best, body, href in delivery %}
+      <div class="flex flex-col border-t-2 border-shovels-primary pt-6">
+        <dt>
+          <span class="block text-3xl font-semibold text-shovels-primary">0{{ loop.index }}</span>
+          <span class="mt-1 block text-3xl font-semibold text-shovels-primary">{{ name }}</span>
+          <span class="mt-3 block text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ best }}</span>
+        </dt>
+        <dd class="mt-3 flex flex-auto flex-col text-base/7 text-gray-600">
+          <p class="flex-auto">{{ body }}</p>
+          <p class="mt-6">
+            <a href="{{ href }}" class="text-sm/6 font-semibold text-shovels-primary hover:text-shovels-primary/80">Learn more <span aria-hidden="true">→</span></a>
+          </p>
+        </dd>
+      </div>
+      {% endfor %}
+    </dl>
   </div>
 </div>
 
