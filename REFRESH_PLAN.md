@@ -203,7 +203,9 @@ production deploy, so we can keep iterating on the branch.
 ### Global chrome
 - [ ] Footer: promote `footer-refresh.html` → global `footer.html`
       (remove the `-preview` gate in `base.html`)
-- [ ] Footer: HubSpot newsletter form wired into the custom design
+- [x] Footer: HubSpot newsletter form wired into the custom design
+      (`footer-refresh.html` posts to the Submissions API, "Footer
+      Newsletter Signup" form; test submission confirmed in HubSpot)
 - [ ] Footer: Data column go-live handling decided + applied
 - [x] Top nav rebuilt for new IA — `header-refresh.html` (Industries/
       Solutions/Features/Resources + Sign In/Get Started; Insurance +

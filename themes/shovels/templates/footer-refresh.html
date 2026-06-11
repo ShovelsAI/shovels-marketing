@@ -112,9 +112,11 @@
           <h3 class="text-base font-semibold text-white">Subscribe to our newsletter</h3>
           <p class="mt-2 text-sm text-gray-400">Feature releases, data updates, and new products.</p>
 
-          {# TODO: wire to the HubSpot custom-form endpoint (replaces the
-             embed in footer.html). Visual/markup only for now. #}
-          <form class="mt-4 flex max-w-md items-center gap-x-3" action="#" method="post">
+          {# Posts to the HubSpot Forms Submissions API (Footer Newsletter
+             Signup form), mirroring the blog sidebar in article.html. Script
+             at the bottom of this file. The live footer.html embed is
+             untouched. #}
+          <form id="footer-newsletter-form" class="mt-4 flex max-w-md items-center gap-x-3">
             <label for="footer-email" class="sr-only">Email address</label>
             <input id="footer-email" name="email" type="email" autocomplete="email" required
                    placeholder="you@company.com"
@@ -122,6 +124,7 @@
             <button type="submit"
                     class="shrink-0 rounded-full bg-shovels-secondary px-6 py-3 text-sm font-semibold text-shovels-dark hover:bg-shovels-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-secondary">Subscribe</button>
           </form>
+          <p id="footer-newsletter-message" class="mt-3 hidden text-sm font-medium"></p>
         </div>
       </div>
 
@@ -168,3 +171,64 @@
     </div>
   </div>
 </footer>
+
+{# Newsletter signup → HubSpot Forms Submissions API. Mirrors the blog
+   sidebar (article.html): same endpoint, same hutk/pageUri/pageName context
+   so attribution works. Points at the "Footer Newsletter Signup" form.
+   Success/error colors are tuned for the dark footer. #}
+<script>
+  (function () {
+    var form = document.querySelector('#footer-newsletter-form');
+    if (!form) return;
+    var messageEl = document.querySelector('#footer-newsletter-message');
+    var portalId = '48146409';
+    var formGuid = 'fc7837b4-d7df-412b-8daa-9f59fb01b231';
+
+    function getCookie(name) {
+      var value = '; ' + document.cookie;
+      var parts = value.split('; ' + name + '=');
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    function showMessage(text, isError) {
+      messageEl.textContent = text;
+      messageEl.style.color = isError ? '#fca5a5' : '#7fd9bd';
+      messageEl.classList.remove('hidden');
+    }
+
+    async function submit(email) {
+      var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + portalId + '/' + formGuid;
+      var data = {
+        submittedAt: Date.now(),
+        fields: [{ name: 'email', value: email }],
+        context: {
+          hutk: getCookie('hubspotutk'),
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+      try {
+        var response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (response.ok) {
+          var result = await response.json();
+          showMessage(result.inlineMessage || 'Thanks for subscribing!', false);
+          form.reset();
+        } else {
+          showMessage('Something went wrong. Please try again.', true);
+        }
+      } catch (error) {
+        showMessage('Connection error. Please try again.', true);
+      }
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var email = form.querySelector('input[name="email"]').value.trim();
+      if (email) submit(email);
+    });
+  })();
+</script>
