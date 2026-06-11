@@ -6,7 +6,6 @@ status: hidden
 {% import 'macros/logo_strip.html' as ui_logos %}
 {% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/resources.html' as ui_res %}
-{% import 'macros/icons.html' as icons %}
 
 {# ── Hero ──────────────────────────────────────────────────────────────
    Redesigned hero treatment from the Industry pages: crossing-gradient
@@ -131,43 +130,9 @@ status: hidden
   </div>
 </div>
 
-{# ── How we're different ───────────────────────────────────────────── #}
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <div class="col-span-2">
-        <h2 class="text-base/7 font-semibold text-shovels-primary">How we're different</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our data is Shovel-ready</p>
-        <p class="mt-6 text-base/7 text-gray-600">We make building permits easy to understand and use for market research, go-to-market, and sales. No data engineering required.</p>
-      </div>
-      <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-        {% set differentiators = [
-            ('Fanatical customer service', "We're a small company with a big heart. We're here to help you succeed."),
-            ('Constant innovation', 'We ship fast. We ship often. We ship quality. We use the latest technology to make your life easier.'),
-            ('Transparency', "We're not afraid to show you exactly where our coverage gaps are. We're the only company that's fully transparent about our data."),
-            ('Residents and employees', 'We go beyond just the properties and contractors. We also include residents and employees with contact information.'),
-            ('Helpful documentation', 'Our documentation is comprehensive and easy to understand. We keep our API documentation and data dictionary up to date.'),
-            ('AI-powered from the start', 'We run hundreds of millions of records through our AI to make sure our data is accurate.'),
-            ('Pricing for everyone', 'We work with all budgets. Our customers range from climate and proptech startups to publicly-traded companies.'),
-            ('Multiple interfaces', "We're more than just a data provider. We're both a data platform and a software company."),
-        ] %}
-        {% for title, body in differentiators %}
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            {# Round-backed check badge — same treatment as the Industry
-               use-case bullets (20x20 tinted-primary circle, Lucide check). #}
-            <span class="absolute left-0 top-0.5 flex size-5 items-center justify-center rounded-full bg-shovels-primary/10">
-              {{ icons.check(class='size-3 text-shovels-primary', stroke_width=3) }}
-            </span>
-            {{ title }}
-          </dt>
-          <dd class="mt-2">{{ body }}</dd>
-        </div>
-        {% endfor %}
-      </dl>
-    </div>
-  </div>
-</div>
+{# "How we're different" section removed during the homepage redesign
+   (not in the mock; needs rework). Archived at
+   archive/homepage-how-were-different.html. #}
 
 {# ── Data delivery options — numbered tiers (mock option 3). Links use
    the working flat slugs; repoint to /solutions/ at launch. #}
