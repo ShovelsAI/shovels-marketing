@@ -228,6 +228,11 @@ production deploy, so we can keep iterating on the branch.
 ### SEO, analytics & legal
 - [ ] Redirects preserve SEO equity for any existing inbound links
 - [ ] Canonical URLs + OG images correct per page
+- [ ] **Positioning sweep at launch** — base.html's fallback meta /
+      og: / twitter: descriptions and the Organization JSON-LD still
+      say "fragmented permit data"; update to the "fragmented public
+      records" line when the homepage ships (live index.html hero
+      carries the old line too and is replaced at launch anyway)
 - [ ] UTM-persistence script present on the new footer/pages
 - [ ] Legal: Notion `Logo Use` cleared for every logo shown (footer +
       industry grids)

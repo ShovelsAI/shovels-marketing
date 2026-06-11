@@ -1,11 +1,12 @@
 Title: The Intelligence Layer for the Built World
-Description: Shovels turns fragmented permit data into construction intelligence. Access nationwide permit and contractor data via API, web app, or data warehouse.
+Description: Shovels turns fragmented public records into construction intelligence. Access nationwide permit, contractor, and property data via API, web app, or data warehouse.
 slug: homepage-preview
 status: hidden
 
 {% import 'macros/logo_strip.html' as ui_logos %}
 {% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
 {# ── Hero ──────────────────────────────────────────────────────────────
    Redesigned hero treatment from the Industry pages: crossing-gradient
@@ -23,7 +24,7 @@ status: hidden
 
       <div class="md:col-span-6">
         <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">The intelligence layer for the built world</h1>
-        <p class="mt-6 text-lg text-gray-500">Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or direct data warehouse integration.</p>
+        <p class="mt-6 text-lg text-gray-500">Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or direct data warehouse integration.</p>
         <div class="mt-8">
           <a href="https://app.shovels.ai" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Search for free</a>
         </div>
@@ -69,16 +70,16 @@ status: hidden
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <img src="/images/illustrations/map-hat.svg" alt="" class="mx-auto h-12 w-auto">
-      <h2 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clean and useful building permit data that's easy to understand</h2>
-      <p class="mt-4 text-lg/8 text-gray-600">Because you want to get insights from building permits, not wrangle with raw data.</p>
+      <h2 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clean, useful construction data that's easy to put to work</h2>
+      <p class="mt-4 text-lg/8 text-gray-600">You want insights from public records—not a data-wrangling project.</p>
     </div>
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
-        <dt class="text-sm/6 font-medium text-gray-600">Building permits in our database</dt>
+        <dt class="text-sm/6 font-medium text-gray-600">Building permits</dt>
         <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.permits }}</dd>
       </div>
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
-        <dt class="text-sm/6 font-medium text-gray-600">Contractors in our database</dt>
+        <dt class="text-sm/6 font-medium text-gray-600">Licensed contractors</dt>
         <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.contractors }}</dd>
       </div>
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
@@ -110,7 +111,7 @@ status: hidden
        content/images/illustrations/. #}
     {% set data_types = [
         ('permit-clip-board', 'Permits', 'Every building permit we can source, AI-classified into clean, structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
-        ('check-shield', 'Decisions', 'The approvals, inspections, and status changes that move a project forward.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
+        ('check-shield', 'Decisions', 'Zoning and development decisions—early signals captured before a permit is ever filed.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
         ('api-hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
         ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contact information.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
         ('map-house', 'Properties', 'Parcels and addresses connected to their full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
@@ -144,9 +145,9 @@ status: hidden
       <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Data delivery options</h2>
     </div>
     {% set delivery = [
-        ('Shovels Online', 'Explore &amp; export', 'Purchase single or multiple seats to explore and download our building permit, contractor, and local government decision data.', '/permit-database'),
-        ('Shovels API', 'Build into your product', 'Automate access and integrate with other applications like CRMs, custom web apps, and more.', '/api'),
-        ('Enterprise Data License', 'Pipe into your warehouse', 'Get parquet files or private table shares into Snowflake, Databricks, or Big Query.', '/data-feed'),
+        ('Shovels Online', 'Explore &amp; export', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database'),
+        ('Shovels API', 'Build into your product', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api'),
+        ('Enterprise Data License', 'Pipe into your warehouse', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed'),
     ] %}
     <dl class="mx-auto mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 lg:mt-24 lg:max-w-none lg:grid-cols-3">
       {% for name, best, body, href in delivery %}
@@ -173,8 +174,24 @@ status: hidden
    From the blog below) own the gaps, keeping the section rhythm uniform. #}
 {{ ui_ind.industries_strip(wrapper_class='!py-0') }}
 
-{# ── From the blog — three most-recent posts ───────────────────────── #}
+{# ── Coverage — same include as the Industry pages. sm:py-32 joins the
+   homepage rhythm; !pb-0 lets the blog's top padding own the gap below
+   (white-on-white dedup). #}
+{% set coverage_wrapper_class = 'sm:py-32 !pb-0' %}
+{% include 'sections/coverage.html' %}
+
+{# ── From the blog — three most-recent posts. Bottom padding zeroed so
+   the final CTA's top padding owns the closing gap. #}
 {{ ui_res.resources_section(
     articles=get_recent_articles(3),
     heading='From the blog',
+    wrapper_class='sm:py-32 !pb-0') }}
+
+{# ── Final CTA — closing ask, mirrors the hero's self-serve CTA and
+   carries the sales path for enterprise buyers. #}
+{{ ui_cta.final_cta(
+    heading='Ready to put construction data to work?',
+    description='Search permits and contractors for free, or talk to us about API access and enterprise data delivery.',
+    cta_label='Search for free',
+    cta_href='https://app.shovels.ai',
     wrapper_class='sm:py-32') }}

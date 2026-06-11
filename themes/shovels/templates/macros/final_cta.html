@@ -30,8 +30,9 @@
 
 {% macro final_cta(heading, description,
                    cta_label='Get started',
-                   cta_href='https://app.shovels.ai/signup/') %}
-<section class="w-full bg-white px-6 md:px-10 py-24">
+                   cta_href='https://app.shovels.ai/signup/',
+                   wrapper_class='') %}
+<section class="w-full bg-white px-6 md:px-10 py-24 {{ wrapper_class }}">
   <div class="mx-auto max-w-6xl">
     <div class="rounded-3xl border border-shovels-primary/20 bg-gradient-to-b from-[#F6FBF7] from-[25%] to-white to-[45%] p-10 text-center md:p-16">
 
