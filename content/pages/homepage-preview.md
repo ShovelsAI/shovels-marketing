@@ -65,6 +65,14 @@ status: hidden
    the single gap below the logos (avoids doubled white-on-white space). #}
 {{ ui_logos.logo_strip(logos=customer_logos, wrapper_class='!pb-0') }}
 
+{# Divider — hairline in the stats-card border grey (gray-200), fading at
+   both ends. The wrapper mirrors the stats section's container
+   (max-w-7xl + padding) so the fade completes exactly at the outer edge
+   of the stats cards below. #}
+<div class="mx-auto mt-16 max-w-7xl px-6 lg:px-8" aria-hidden="true">
+  <div class="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+</div>
+
 {# ── Stats ─────────────────────────────────────────────────────────── #}
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
