@@ -162,12 +162,12 @@ status: hidden
         ('Shovels API', 'Build into your product', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api'),
         ('Enterprise Data License', 'Pipe into your warehouse', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed'),
     ] %}
-    <dl class="mx-auto mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 lg:mt-24 lg:max-w-none lg:grid-cols-3">
+    <dl class="mx-auto mt-11 grid max-w-xl grid-cols-1 gap-8 sm:mt-14 lg:mt-16 lg:max-w-none lg:grid-cols-3">
       {% for name, best, body, href in delivery %}
-      <div class="flex flex-col border-t-2 border-shovels-primary pt-6">
+      <div class="flex flex-col border-t-2 border-gray-900 pt-10">
         <dt>
-          <span class="block text-3xl font-semibold text-shovels-primary">0{{ loop.index }}</span>
-          <span class="mt-1 block text-3xl font-semibold text-shovels-primary">{{ name }}</span>
+          <span class="block text-4xl font-semibold text-shovels-primary">0{{ loop.index }}</span>
+          <span class="mt-3 block text-3xl font-semibold text-gray-900">{{ name }}</span>
           <span class="mt-3 block text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ best }}</span>
         </dt>
         <dd class="mt-3 flex flex-auto flex-col text-base/7 text-gray-600">
