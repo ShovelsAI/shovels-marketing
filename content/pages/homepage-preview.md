@@ -203,8 +203,8 @@ status: hidden
 {# ── Final CTA — closing ask, mirrors the hero's self-serve CTA and
    carries the sales path for enterprise buyers. #}
 {{ ui_cta.final_cta(
-    heading='Ready to put construction data to work?',
-    description='Search permits and contractors for free, or talk to us about API access and enterprise data delivery.',
+    heading='Ready to put our Shovel-ready data to work?',
+    description='Search our clean and enriched public-record data for free, or talk to us about API access and enterprise data delivery.',
     cta_label='Search for free',
     cta_href='https://app.shovels.ai',
     wrapper_class='sm:py-32') }}
