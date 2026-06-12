@@ -128,7 +128,12 @@ status: hidden
       {% for illustration, title, body, href in data_types %}
       <div class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
         <dt>
-          <img src="/images/illustrations/{{ illustration }}.svg" alt="" class="h-12 w-auto">
+          {# Icons are drawn at a shared 40px width; the 54px-high wrapper
+             centers them vertically so varying icon heights stay aligned
+             (per designer spec — size by width, not height). #}
+          <span class="flex h-[54px] items-center">
+            <img src="/images/illustrations/{{ illustration }}.svg" alt="" class="w-10">
+          </span>
           <span class="mt-5 block text-base font-semibold text-white">{{ title }}</span>
         </dt>
         <dd class="mt-2 flex-auto text-sm/6 text-gray-400">{{ body }}</dd>

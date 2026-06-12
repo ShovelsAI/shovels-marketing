@@ -255,6 +255,9 @@ production deploy, so we can keep iterating on the branch.
       in-page CTAs, cross-page links, blog — no 404s, correct targets
       after the `/solutions/` `/features/` moves + redirects
 - [ ] No stale `-preview` URLs left in any link
+- [ ] Delete `data-delivery-options-preview.md` (designer comparison
+      scaffolding — Option 3 chosen and live on the homepage; kept
+      around for reference until launch)
 - [ ] **Homepage interim links** — Data types cards point at KB
       articles (`docs.shovels.ai/.../data/*`) until the `/data/*` pages
       ship; repoint when those launch. Data delivery cards point at
