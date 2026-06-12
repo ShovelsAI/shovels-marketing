@@ -739,17 +739,19 @@ final_cta(heading, description,
 
 Infinite-scrolling customer logo marquee ("Trusted by teams at"),
 modeled on streamyard.com's strip. Ships **full-color** logo files;
-the flat-grey treatment is applied at render time with a CSS filter
-(`brightness(0) invert(0.7)`), so logos never need greyscale
-pre-processing. Logos regain full color on hover, and the marquee
-pauses while hovered.
+the flat-grey treatment is the shared `.logo-grey` class in
+`input.css` — a filter chain that tints every logo to the cool grey
+`#9CA3AF` (Tailwind `gray-400`) so logo greys sit in the same family
+as the site's blue-tinted text greys. Logos never need greyscale
+pre-processing, regain full color on hover, and the marquee pauses
+while hovered. To change the grey, edit `.logo-grey` once — both this
+macro and `logo_grid` pick it up.
 
 #### Signature
 
 ```jinja
 logo_strip(logos,
            heading='TRUSTED BY TEAMS AT',
-           grey=0.7,
            duration='40s',
            wrapper_class='')
 ```
@@ -760,7 +762,6 @@ logo_strip(logos,
 |---|---|---|
 | `logos` | _required_ | List of logo dicts, see below. Order = display order |
 | `heading` | `'TRUSTED BY TEAMS AT'` | Centered uppercase label above the strip. ALL CAPS at the source per the eyebrow convention |
-| `grey` | `0.7` | Grey level: `0` = black, `1` = white. `0.7` ≈ `#B3B3B3` (StreamYard's value). Designer may tune |
 | `duration` | `'40s'` | Time for one full loop. Lower = faster |
 | `wrapper_class` | `''` | Extra classes on the `<section>` |
 
@@ -846,10 +847,13 @@ against neighbors.
   the hero above — the hero's `pb-24 md:pb-32` provides all the
   breathing room before the "TRUSTED BY…" heading. Same pattern as
   `soc2_trust`. See *Section padding convention* up top.
-- **The grey trick**: `filter: brightness(0) invert(0.7)` — `brightness(0)`
-  flattens any logo to a black silhouette (alpha preserved), `invert(0.7)`
-  lifts it to a uniform 70% grey. One declaration recolors any logo,
-  any source color, including white.
+- **The grey trick**: the `.logo-grey` class (input.css) —
+  `brightness(0)` flattens any logo to a black silhouette (alpha
+  preserved), then an invert/sepia/saturate/hue-rotate chain re-tints
+  it to the cool grey `#9CA3AF` (a plain `invert()` can only produce
+  neutral greys, which read warm next to Tailwind's blue-tinted text
+  greys). One class recolors any logo, any source color, including
+  white; the chain was solved empirically against the rendered pixel.
 - **Marquee mechanics**: the logo group renders twice (second copy
   `aria-hidden`); the track animates `translateX(-50%)` on an infinite
   linear loop, so the seam is invisible. Keyframes + animation are
@@ -876,14 +880,14 @@ against neighbors.
 
 Static, centered customer-logo strip for Industry pages — the
 "companies like you" row. Sibling of `logo_strip`: same flat-grey
-treatment (`brightness(0) invert(<grey>)`, color on hover) and same
+treatment (the shared `.logo-grey` class, color on hover) and same
 logo-dict shape, but a single centered flex-wrap row — no animation,
 no duplicate group, no edge fades.
 
 #### Signature
 
 ```jinja
-logo_grid(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, wrapper_class='')
+logo_grid(logos, heading='TRUSTED BY TEAMS AT', wrapper_class='')
 ```
 
 #### Parameters
@@ -892,7 +896,6 @@ logo_grid(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, wrapper_class='')
 |---|---|---|
 | `logos` | _required_ | List of logo dicts (`src`, `alt`, optional `height`) — same shape as `logo_strip` |
 | `heading` | `'TRUSTED BY TEAMS AT'` | Centered uppercase label. Override per industry, e.g. `'TRUSTED BY ENERGY & CLIMATE TEAMS'`. ALL CAPS at source per the eyebrow convention |
-| `grey` | `0.7` | Grey level, same as `logo_strip` |
 | `wrapper_class` | `''` | Extra classes on the `<section>` |
 
 #### Example
@@ -1407,10 +1410,11 @@ new layout.
 ### Logo strip: CSS filter instead of pre-processed grey assets
 
 Customer logos are stored as full-color originals in
-`content/images/logos/` and flattened to grey at render time via
-`filter: brightness(0) invert(0.7)` in the `logo_strip` macro. We
-explicitly rejected pre-processing logos to grey with ImageMagick
-(which works — proven in a spike) in favor of the CSS approach.
+`content/images/logos/` and flattened to grey at render time via the
+shared `.logo-grey` CSS class (input.css; targets the cool grey
+`#9CA3AF`). We explicitly rejected pre-processing logos to grey with
+ImageMagick (which works — proven in a spike) in favor of the CSS
+approach.
 
 **Why**: this is how streamyard.com (the design reference) does it.
 One CSS declaration recolors any logo regardless of source color; the

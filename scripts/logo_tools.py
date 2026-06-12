@@ -47,9 +47,10 @@ from PIL import Image
 LOGO_DIR = os.path.join("content", "images", "logos")
 PAGES_DIR = os.path.join("content", "pages")
 
-# brightness(0) invert(0.7) on any opaque pixel resolves to this grey;
-# alpha is preserved. Matches the macro's CSS filter.
-GREY = (178, 178, 178)
+# The .logo-grey CSS chain resolves opaque pixels to this cool grey
+# (target #9CA3AF, Tailwind gray-400); alpha is preserved. Keep in sync
+# with the .logo-grey class in themes/shovels/static/css/input.css.
+GREY = (156, 163, 175)
 PAD_FLAG_PCT = 5  # report/trim threshold for "meaningful" padding
 
 

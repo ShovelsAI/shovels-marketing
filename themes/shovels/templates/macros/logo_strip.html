@@ -1,10 +1,11 @@
 {#
-  logo_strip(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, duration='40s', wrapper_class='')
+  logo_strip(logos, heading='TRUSTED BY TEAMS AT', duration='40s', wrapper_class='')
 
   Infinite-scrolling customer logo marquee. Ships full-color logo files;
-  the flat-grey treatment is pure CSS (`brightness(0) invert(<grey>)`),
-  so swapping the grey value — or reverting to full color — costs nothing.
-  Logos regain their color on hover.
+  the flat-grey treatment is the shared `.logo-grey` class (input.css),
+  which tints every logo to the cool grey #9CA3AF so the strip and the
+  Industry-page grids share one base color. Logos regain their color on
+  hover.
 
   Each logo dict:
     src    (required) — path under /images/logos/, e.g. '/images/logos/aws.svg'
@@ -23,8 +24,8 @@
   See COMPONENTS.md → "logo_strip macro" for the logo swap process and
   the legal-approval gate.
 #}
-{% macro logo_strip(logos, heading='TRUSTED BY TEAMS AT', grey=0.7, duration='40s', wrapper_class='') %}
-<section class="pb-24 {{ wrapper_class }}" style="--logo-grey: {{ grey }}; --logo-scroll-duration: {{ duration }}">
+{% macro logo_strip(logos, heading='TRUSTED BY TEAMS AT', duration='40s', wrapper_class='') %}
+<section class="pb-24 {{ wrapper_class }}" style="--logo-scroll-duration: {{ duration }}">
   <h2 class="text-center text-xs font-medium uppercase tracking-wider text-gray-500">{{ heading }}</h2>
   <div class="relative mt-10 overflow-hidden">
     {# edge fades #}
@@ -37,7 +38,7 @@
         {% for logo in logos %}
         <img src="{{ logo.src }}" alt="{{ logo.alt }}"
              style="height: {{ logo.height|default(30) }}px"
-             class="w-auto [filter:brightness(0)_invert(var(--logo-grey))] transition-[filter] duration-200 hover:[filter:none]">
+             class="logo-grey w-auto">
         {% endfor %}
       </div>
       {% endfor %}

@@ -240,6 +240,20 @@
     @apply bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded font-medium text-lg
   }
   
+  /* Logo wall grey treatment — single source of truth for logo_strip and
+     logo_grid. brightness(0) flattens the full-color asset to black (alpha
+     preserved); the chain re-tints it to the cool grey #9CA3AF (Tailwind
+     gray-400) so logo greys match the site's blue-tinted UI greys. Chain
+     was solved empirically (renders rgb(154,163,175)). Full color returns
+     on hover. */
+  .logo-grey {
+    filter: brightness(0) invert(67%) sepia(8%) saturate(400%) hue-rotate(175deg) brightness(93%);
+    transition: filter 200ms;
+  }
+  .logo-grey:hover {
+    filter: none;
+  }
+
   /* Navigation and layout */
   .navbar_item {
     @apply text-emerald-800 inline-flex items-center rounded-md text-base hover:text-emerald-900
