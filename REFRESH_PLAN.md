@@ -180,6 +180,9 @@ production deploy, so we can keep iterating on the branch.
 - [ ] Logo heights tuned across all grids (designer pass)
 - [ ] White-on-hover logos resolved or accepted (Hawkins, Avenue Roofing)
 - [ ] Every page renders with no `TBD` placeholders
+- [ ] FAQ accuracy review — read every FAQ question and answer on each
+      page and verify claims are current and correct (coverage numbers,
+      product names, pricing/delivery details, links)
 - [ ] Blog pull-ins use the correct category/tag combo per page —
       each industry page's `get_industry_articles('<Category>')` matches
       its industry (and resolves enough posts), and the homepage pulls
