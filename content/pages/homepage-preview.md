@@ -78,7 +78,7 @@ status: hidden
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <img src="/images/illustrations/map-hat.svg" alt="" class="mx-auto h-12 w-auto">
-      <h2 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clean, useful construction data that's easy to put to work</h2>
+      <h2 class="mt-6 text-balance text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Clean, useful construction data that's easy to put to work</h2>
       <p class="mt-4 text-lg/8 text-gray-600">You want insights from public records—not a data-wrangling project.</p>
     </div>
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
@@ -150,7 +150,7 @@ status: hidden
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Data delivery options</h2>
+      <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Data delivery options</h2>
     </div>
     {% set delivery = [
         ('Shovels Online', 'Explore &amp; export', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database'),

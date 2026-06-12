@@ -168,6 +168,28 @@ via input.css.
 | Bullets | `text-sm text-gray-900/90` |
 | Mock-up caption | `text-xs italic text-gray-500` |
 
+### Heading rules
+
+The table above is the canonical heading scale for the refresh and the
+source of truth for heading typography in brand guidelines (planned
+Brand page). Rules that keep it consistent:
+
+- **One `h1` per page** — the hero headline. Every other section
+  heading is a semantic `h2` styled as Section H2, regardless of how
+  prominent the section is visually. Sections never out-weigh the hero.
+- **Never `font-semibold` or `font-bold` on headings.** Scandia has no
+  600-weight file, so `font-semibold` silently renders Bold (700) and
+  reads far heavier than intended — this is how off-system headings
+  sneak in when adapting third-party component markup (see *Headline
+  weight history* below). Stat display numbers (`dd` elements, body
+  font stack) may use `font-semibold`; the system stack has a real 600.
+- Logo/industry strip labels ("TRUSTED BY TEAMS AT", "USED BY TEAMS
+  IN") are `h2`s with the eyebrow treatment, not the Section H2 scale —
+  the one sanctioned exception.
+- Scope: applies to all refresh templates and preview pages now, and
+  to each legacy page as it gets redesigned — not retro-applied to
+  untouched live pages.
+
 ### Inline link convention
 
 Inline anchor tags inside body copy (e.g., links in Coverage bullets,
