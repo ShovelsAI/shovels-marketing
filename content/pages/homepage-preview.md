@@ -78,7 +78,7 @@ status: hidden
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <img src="/images/illustrations/map-hat.svg" alt="" class="mx-auto h-12 w-auto">
-      <h2 class="mt-6 text-balance text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Clean, useful construction data that's easy to put to work</h2>
+      <h2 class="mt-6 text-balance text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Nationwide construction data, ready to use</h2>
       <p class="mt-4 text-lg/8 text-gray-600">You want insights from public records—not a data-wrangling project.</p>
     </div>
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
@@ -111,7 +111,7 @@ status: hidden
     <div class="mx-auto max-w-3xl text-center">
       <span class="inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-200">DATA TYPES</span>
       <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Five datasets, deeply connected</h2>
-      <p class="mt-6 text-base/7 text-gray-300">Permits, decisions, contractors, residents, and properties—linked together so you can trace a project from its first filing to the people and businesses behind it.</p>
+      <p class="mt-6 text-base/7 text-gray-300">Every record is linked across datasets, so you see the full picture—the project, the property, and the people behind it. Move from insight to action.</p>
     </div>
 
     {# Links point at KB articles until the dedicated /data/* pages ship.
