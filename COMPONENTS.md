@@ -724,7 +724,8 @@ heading, description, and a primary CTA button. Sits inside the same
 ```jinja
 final_cta(heading, description,
           cta_label='Get started',
-          cta_href='https://app.shovels.ai/signup/')
+          cta_href='https://app.shovels.ai/signup/',
+          wrapper_class='')
 ```
 
 #### Parameters
@@ -735,6 +736,7 @@ final_cta(heading, description,
 | `description` | _required_ | One- or two-sentence supporting text |
 | `cta_label` | `'Get started'` | Button text |
 | `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination — matches hero default |
+| `wrapper_class` | `''` | Extra classes on the `<section>` — used for spacing overrides (e.g. `'sm:py-32'` on the homepage) |
 
 #### Example
 
@@ -1006,10 +1008,21 @@ posts (Newsletter and Podcast categories excluded, same as Tier 4
 above), in the same output shape, so it drops straight into
 `resources_section(articles=…)`. Also exposed via `JINJA_GLOBALS`.
 
+#### Sibling: `get_category_articles(category, limit=3)`
+
+When a page wants the most-recent posts from **one exact Pelican
+category** (e.g. the Research page pulls `Data`), call
+`get_category_articles(category, limit)`. Unlike
+`get_industry_articles` there is no tag-tier waterfall — it matches
+`article.category` exactly (case-insensitive), which prevents
+tag-substring leaks (a Company post tagged "permit data" must not
+surface on a Data pull). Same output shape; exposed via
+`JINJA_GLOBALS`.
+
 #### Output shape
 
-Both helpers return a list of dicts matching the `articles` parameter
-of `resources_section`:
+All three helpers return a list of dicts matching the `articles`
+parameter of `resources_section`:
 
 ```python
 [
@@ -1224,7 +1237,9 @@ URL still resolves. Two use cases:
 |---|---|---|---|
 | `content/pages/mockup-test.md` | `/mockup-test` | Stress-test the `browser_frame` macro at varying widths and aspect ratios | Sandbox |
 | `content/pages/insurance-preview.md` | `/insurance-preview` | Preview of the new Insurance page (no legacy predecessor; the page is brand-new). Will be renamed to `insurance.md` with `slug: insurance` at launch. | Greenfield preview |
-| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage: redesigned hero (grid background + balanced headline, single CTA, `/images/home/hero.svg`), scrolling `logo_strip`, stats, "how we're different" (round-backed check badges), "Work with us" (new `/images/home/` icons), and "From the blog" (`get_recent_articles`). **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template rather than a file rename. Two things only work as a content page and must be reconciled at launch: `STATS`/helper globals, and "From the blog" — the theme index uses Pelican's `dates` article loop, not `get_recent_articles`. | Redesign preview |
+| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage. Section order: hero (grid background, single CTA) → scrolling `logo_strip` → fading divider (gradient `h-px`, fade ends aligned to the stats-card outer edges) → stats (light cards, `map-hat` illustration topper) → data types (dark `shovels-secondary` band, five illustration cards, KB-article Learn more links) → data delivery (three numbered tiers, dark top rules) → `industries_strip` → `sections/coverage.html` include → "From the blog" (`get_recent_articles`) → `final_cta`. "How we're different" was cut from this layout; its markup is parked in `archive/homepage-how-were-different.html`. **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template rather than a file rename. Two things only work as a content page and must be reconciled at launch: `STATS`/helper globals, and "From the blog" — the theme index uses Pelican's `dates` article loop, not `get_recent_articles`. | Redesign preview |
+| `content/pages/research-preview.md` | `/research-preview` | Preview of the new Research page (no legacy predecessor). Blog pull uses `get_category_articles('Data')`. Promoted to `/research` at launch. | Greenfield preview |
+| `content/pages/data-delivery-options-preview.md` | `/data-delivery-options-preview` | Scaffolding page that compared three layout options for the homepage "Data delivery options" section. Option 3 (numbered tiers) was chosen and now lives on the homepage preview; this page is kept for reference and **deleted at launch** (see REFRESH_PLAN checklist). | Sandbox |
 
 ---
 
