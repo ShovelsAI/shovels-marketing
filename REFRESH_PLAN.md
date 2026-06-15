@@ -266,6 +266,11 @@ production deploy, so we can keep iterating on the branch.
       ship; repoint when those launch. Data delivery cards point at
       `/permit-database`, `/api`, `/data-feed`; repoint if those move
       under `/solutions/`
+- [ ] **Solutions page interim links** — on the Shovels Online preview
+      (`permit-database-preview`), the Charlie callout CTA points at
+      `/charlie` and the API callout CTA at `/solutions/api`. Confirm /
+      repoint both when the Charlie and API pages are finalized (the
+      Charlie URL is expected to change as that page is built)
 
 ### Site-wide consistency & global impact
 - [ ] **Rounded CTA rollout** — replace the old `rounded-md` primary
