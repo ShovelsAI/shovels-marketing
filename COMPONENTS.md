@@ -306,8 +306,9 @@ Top-of-page hero for Industry and Solutions pages: H1, lead paragraph,
 primary CTA button, and a side illustration. The text column and the
 illustration column are equal width on `md+` (6/12 each). A subtle
 crossing-gradient grid pattern with a radial fade sits behind the
-content (per the design spec). The hero deliberately has no eyebrow
-chip — see Decisions log.
+content (per the design spec). Industry pages lead with the H1 (no
+eyebrow); Solutions pages opt back in via the optional `eyebrow` param
+— see Decisions log.
 
 #### Signature
 
@@ -315,7 +316,8 @@ chip — see Decisions log.
 hero(h1, description, illustration_src, illustration_alt,
      cta_label='Get started',
      cta_href='https://app.shovels.ai/signup/',
-     illustration_position='right')
+     illustration_position='right',
+     eyebrow=None)
 ```
 
 #### Parameters
@@ -329,6 +331,7 @@ hero(h1, description, illustration_src, illustration_alt,
 | `cta_label` | `'Get started'` | Button text |
 | `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination. Canonical signup URL, shared with `final_cta` |
 | `illustration_position` | `'right'` | `'right'` or `'left'` |
+| `eyebrow` | `None` | Optional small uppercase chip above the H1 (e.g. `'Shovels Online'`). Off by default so industry pages are unchanged; Solutions pages pass a product label |
 
 #### Example
 
@@ -344,8 +347,9 @@ hero(h1, description, illustration_src, illustration_alt,
 
 #### Notes
 
-- **No eyebrow**: per team decision. Other sections on the page still
-  use eyebrow chips — only the hero opts out.
+- **Eyebrow**: industry pages render none (lead with the H1). Solutions
+  pages pass `eyebrow` to label the product, using the same chip style as
+  other sections. See Decisions log → "Hero eyebrow chip removed".
 - **Column split**: `md:col-span-6` for both the text column and the
   illustration column. Equal split.
 - **Grid background**: two crossing CSS gradients (1px lines, 56px cells)
@@ -754,6 +758,116 @@ final_cta(heading, description,
   thin primary-tinted border, `p-10 md:p-16` per spec.
 - **Layout**: text and button center-aligned within the card.
 - **Button**: rounded-full, primary background — matches hero CTA exactly.
+
+---
+
+### `callout` macro
+
+**Location**: `themes/shovels/templates/macros/callout.html`
+
+A contained, single-row promo band for the Solutions pages: heading +
+body on the left, a rounded-full CTA on the right, stacking on mobile.
+Two color variants share one layout. Used on the Shovels Online page
+for the "Just ask Charlie" cross-sell (warm) and the "Explore the
+Shovels API" cross-sell (green).
+
+#### Signature
+
+```jinja
+callout(heading, body, cta_label, cta_href,
+        variant='green', media_src=None, media_alt='')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `heading` | _required_ | Bold lead line |
+| `body` | _required_ | Supporting sentence |
+| `cta_label` | _required_ | Button text (a trailing `→` is added automatically) |
+| `cta_href` | _required_ | Button destination |
+| `variant` | `'green'` | `'green'` (shovels-primary band, white text, white button) or `'warm'` (brand cream `#E9E1CE` band, dark text, green button) |
+| `media_src` | `None` | Optional image left of the text (e.g. the Charlie avatar, which is already circular). Omit for no media |
+| `media_alt` | `''` | Alt text for `media_src` |
+
+#### Example
+
+```jinja
+{% import 'macros/callout.html' as ui_callout %}
+
+{{ ui_callout.callout(
+    variant='warm',
+    heading='Not sure where to start? Just ask Charlie.',
+    body='Charlie, your AI research assistant, finds exactly what you need.',
+    cta_label='Meet Charlie',
+    cta_href='/charlie',
+    media_src='/images/shovels-Charlie-pose1.png',
+    media_alt='Charlie, the Shovels AI research assistant') }}
+```
+
+#### Notes
+
+- **Variants** are the only color switch: `warm` = cream `#E9E1CE`
+  band + green button; `green` = `bg-shovels-primary` band + white
+  button. Both use a `rounded-3xl` band inside `max-w-6xl`.
+- **No search field**: the mock's decorative Charlie search input was
+  intentionally dropped (YAGNI — no working search behind it, and no
+  search glyph in the icon set). Re-add as an optional param if a real
+  use appears.
+
+---
+
+### `how_it_works` macro
+
+**Location**: `themes/shovels/templates/macros/how_it_works.html`
+
+Eyebrow + heading + a numbered step row: N badges on a connecting line
+(desktop) with an icon/title/description card under each, stacking on
+mobile. Built for the Solutions pages ("From search to export in three
+steps").
+
+#### Signature
+
+```jinja
+how_it_works(eyebrow, heading, steps, anchor='how-it-works')
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `eyebrow` | _required_ | Small uppercase chip above the heading |
+| `heading` | _required_ | Section H2 |
+| `steps` | _required_ | List of dicts: `number`, `title`, `description`, and optional `icon` (a macro name from `icons.html`) |
+| `anchor` | `'how-it-works'` | `id` on the `<section>` so in-page links (e.g. a hero "See how it works" CTA) can target it |
+
+#### Example
+
+```jinja
+{% import 'macros/how_it_works.html' as ui_hiw %}
+
+{{ ui_hiw.how_it_works(
+    eyebrow='How it works',
+    heading='From search to export in three steps',
+    steps=[
+        {'number': '1', 'title': 'Sign up for free',
+         'description': 'Create an account at app.shovels.ai.',
+         'icon': 'sparkles'},
+    ]) }}
+```
+
+#### Notes
+
+- **Connecting line**: each non-first badge draws a line back to the
+  previous badge. Its width is `calc(100% + 2rem)` — one column width
+  plus the `md:gap-8` (2rem) grid gap — so it reaches badge centers
+  exactly. Badges are `z-10` over the `z-0` line (a plain `-z-10` hid
+  the line behind the section background).
+- **Equal-height cards**: the cards are `flex-auto` inside `flex-col`
+  list items that the grid stretches to equal height, so a step with
+  shorter copy still matches its neighbors.
+- **Background**: `bg-gray-50` band to set the section apart from the
+  white feature section above it.
 
 ---
 
@@ -1240,6 +1354,7 @@ URL still resolves. Two use cases:
 | `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage. Section order: hero (grid background, single CTA) → scrolling `logo_strip` → fading divider (gradient `h-px`, fade ends aligned to the stats-card outer edges) → stats (light cards, `map-hat` illustration topper) → data types (dark `shovels-secondary` band, five illustration cards, KB-article Learn more links) → data delivery (three numbered tiers, dark top rules) → `industries_strip` → `sections/coverage.html` include → "From the blog" (`get_recent_articles`) → `final_cta`. "How we're different" was cut from this layout; its markup is parked in `archive/homepage-how-were-different.html`. **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template rather than a file rename. Two things only work as a content page and must be reconciled at launch: `STATS`/helper globals, and "From the blog" — the theme index uses Pelican's `dates` article loop, not `get_recent_articles`. | Redesign preview |
 | `content/pages/research-preview.md` | `/research-preview` | Preview of the new Research page (no legacy predecessor). Blog pull uses `get_category_articles('Data')`. Promoted to `/research` at launch. | Greenfield preview |
 | `content/pages/data-delivery-options-preview.md` | `/data-delivery-options-preview` | Scaffolding page that compared three layout options for the homepage "Data delivery options" section. Option 3 (numbered tiers) was chosen and now lives on the homepage preview; this page is kept for reference and **deleted at launch** (see REFRESH_PLAN checklist). | Sandbox |
+| `content/pages/permit-database-preview.md` | `/solutions/permit-database-preview` | Redesign of the live `/permit-database` page as **Shovels Online**, the first of the three Solutions pages (Online / API / Enterprise). Section order: `hero` (eyebrow "Shovels Online") → `use_case_section` (eyebrow "FEATURES", numbered 01–06; reuses industry screenshots, F5 CSV export is TBD) → warm `callout` (Charlie) → `how_it_works` → `industries_strip` → `sections/coverage.html` → green `callout` (API cross-sell) → `faq_section` (FAQ + meta wired to `STATS`) → `final_cta`. Images in `content/images/solutions/permit-database/`. At launch: slug → `solutions/permit-database`, drop `status: hidden`, delete legacy `permit-database.md`, redirect `/permit-database` → `/solutions/permit-database`. Interim links (`/charlie`, `/solutions/api`) tracked in REFRESH_PLAN. | Redesign preview |
 
 ---
 
@@ -1356,6 +1471,11 @@ chip), the team decided the hero reads cleaner without it.
 banner immediately below already signals "this page is for serious
 buyers." A second chip above the H1 felt redundant. Other eyebrow
 chips on the page (Use Cases, Data Delivery, etc.) are unchanged.
+
+**Solutions-page exception**: the chip is reinstated, opt-in, via the
+hero's `eyebrow` param to label the product (e.g. "Shovels Online").
+Industry pages still omit it (the param defaults to `None`), so the
+original decision holds wherever the page doesn't pass a label.
 
 ### Hero column split: 6/12 + 6/12
 
