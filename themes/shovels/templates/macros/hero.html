@@ -4,7 +4,8 @@
   hero(h1, description, illustration_src, illustration_alt,
        cta_label='Get started',
        cta_href='https://app.shovels.ai/signup/',
-       illustration_position='right')
+       illustration_position='right',
+       eyebrow=None)
 
   Renders an H1, lead paragraph, primary CTA button, and a side-by-side
   illustration. The text column and illustration column are equal width
@@ -22,6 +23,9 @@
   cta_label            : Button text. Default 'Get started'.
   cta_href             : Button destination. Default 'https://app.shovels.ai/signup/'.
   illustration_position: 'right' (default) or 'left'.
+  eyebrow              : Optional small uppercase chip above the H1. Off by
+                         default (industry pages render no eyebrow). Solutions
+                         pages pass a product label, e.g. 'Shovels Online'.
 
   Example
   -------
@@ -35,10 +39,10 @@
 
   Note
   ----
-  The hero deliberately does NOT render an eyebrow chip above the H1.
-  See COMPONENTS.md → Decisions log → "Hero eyebrow chip removed".
-  Other sections on the page (Use Cases, Data Delivery, etc.) still
-  use eyebrow chips.
+  The hero renders no eyebrow chip by default — industry pages lead with
+  the H1 (see COMPONENTS.md → Decisions log → "Hero eyebrow chip
+  removed"). Solutions pages opt back in by passing `eyebrow` to label
+  the product, matching the eyebrow chips other sections use.
 
   Background grid
   ---------------
@@ -51,7 +55,8 @@
 {% macro hero(h1, description, illustration_src, illustration_alt,
               cta_label='Get started',
               cta_href='https://app.shovels.ai/signup/',
-              illustration_position='right') %}
+              illustration_position='right',
+              eyebrow=None) %}
 <section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
 
   {# Crossing-gradient grid pattern with radial fade. Sits behind content. #}
@@ -64,6 +69,9 @@
 
       {# Text column — 6/12 (equal split with the illustration). #}
       <div class="md:col-span-6 {% if illustration_position == 'left' %}md:order-2{% endif %}">
+        {% if eyebrow %}
+        <span class="mb-4 inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
+        {% endif %}
         <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
         <p class="mt-6 text-lg text-gray-500">{{ description }}</p>
         <div class="mt-8">
