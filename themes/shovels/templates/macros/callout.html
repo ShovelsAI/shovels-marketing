@@ -1,0 +1,71 @@
+{#
+  callout(heading, body, cta_label, cta_href,
+          variant='green', media_src=None, media_alt='')
+
+  A contained, single-row promo band for the Solutions pages: heading +
+  body on the left, a rounded-full CTA on the right, stacking on mobile.
+  Two color variants share one layout — drop in the heading, body, CTA,
+  and (for the warm variant) an optional avatar.
+
+  Parameters
+  ----------
+  heading   : Bold lead line.
+  body      : Supporting sentence.
+  cta_label : Button text (a trailing arrow is added automatically).
+  cta_href  : Button destination.
+  variant   : 'green' (shovels-primary band, white text, white button) or
+              'warm'  (brand cream #E9E1CE band, dark text, green button).
+  media_src : Optional image left of the text — e.g. the Charlie avatar,
+              which is already circular. Omit for no media.
+  media_alt : Alt text for media_src.
+
+  Example
+  -------
+    {% import 'macros/callout.html' as ui_callout %}
+
+    {{ ui_callout.callout(
+        variant='warm',
+        heading='Not sure where to start? Just ask Charlie.',
+        body='Charlie, your AI research assistant, finds exactly what you need.',
+        cta_label='Meet Charlie',
+        cta_href='/charlie',
+        media_src='/images/shovels-Charlie-pose1.png',
+        media_alt='Charlie, the Shovels AI research assistant') }}
+#}
+
+{% macro callout(heading, body, cta_label, cta_href,
+                 variant='green', media_src=None, media_alt='') %}
+{# Variant palette. 'green' = primary band + white button; 'warm' = cream
+   band + green button. #}
+{% if variant == 'warm' %}
+  {% set band_class = 'bg-[#E9E1CE]' %}
+  {% set heading_class = 'text-gray-900' %}
+  {% set body_class = 'text-gray-700' %}
+  {% set btn_class = 'bg-shovels-primary text-white hover:bg-shovels-primary/90' %}
+{% else %}
+  {% set band_class = 'bg-shovels-primary' %}
+  {% set heading_class = 'text-white' %}
+  {% set body_class = 'text-white/80' %}
+  {% set btn_class = 'bg-white text-shovels-primary hover:bg-white/90' %}
+{% endif %}
+<section class="w-full px-6 md:px-10 py-12">
+  <div class="mx-auto max-w-6xl">
+    <div class="{{ band_class }} flex flex-col gap-6 rounded-3xl p-8 md:flex-row md:items-center md:gap-8 md:p-10">
+
+      {% if media_src %}
+      <img src="{{ media_src }}" alt="{{ media_alt }}" class="size-16 shrink-0 md:size-20">
+      {% endif %}
+
+      <div class="flex-auto">
+        <p class="text-lg font-medium {{ heading_class }} md:text-xl">{{ heading }}</p>
+        <p class="mt-2 text-sm {{ body_class }}">{{ body }}</p>
+      </div>
+
+      <div class="shrink-0">
+        <a href="{{ cta_href }}" class="inline-block whitespace-nowrap rounded-full px-6 py-3 text-sm font-semibold {{ btn_class }} focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current">{{ cta_label }} <span aria-hidden="true">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endmacro %}

@@ -1,0 +1,78 @@
+{#
+  "How it works" section — eyebrow + heading + a numbered step row.
+
+  how_it_works(eyebrow, heading, steps, anchor='how-it-works')
+
+  A compact process strip: N numbered steps laid out left-to-right on a
+  connecting line (desktop) and stacked on mobile. Each step is an icon +
+  title + short description card under its number badge. Built for the
+  Solutions pages ("From search to export in three steps") and reusable
+  across them.
+
+  Parameters
+  ----------
+  eyebrow : Small uppercase chip above the heading (e.g. 'How it works').
+  heading : Section H2.
+  steps   : List of dicts, each with:
+              number      : Step label inside the badge ('1', '2', '3').
+              title       : Step heading.
+              description : One- or two-sentence body.
+              icon        : Optional icon macro name from icons.html
+                            (e.g. 'sparkles'). Omitted → no icon tile.
+  anchor  : id applied to the <section> so in-page links (e.g. a hero
+            "See how it works" CTA) can target it. Default 'how-it-works'.
+
+  Example
+  -------
+    {% import 'macros/how_it_works.html' as ui_hiw %}
+
+    {{ ui_hiw.how_it_works(
+        eyebrow='How it works',
+        heading='From search to export in three steps',
+        steps=[
+            {'number': '1', 'title': 'Sign up for free',
+             'description': 'Create an account at app.shovels.ai.',
+             'icon': 'sparkles'},
+        ]) }}
+#}
+
+{% import 'macros/icons.html' as icons %}
+
+{% macro how_it_works(eyebrow, heading, steps, anchor='how-it-works') %}
+<section id="{{ anchor }}" class="w-full bg-gray-50 px-6 md:px-10 py-24">
+  <div class="mx-auto max-w-6xl">
+
+    {# Section header — eyebrow chip + heading. #}
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
+      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
+    </div>
+
+    {# Numbered steps. Each badge sits on a connecting line (desktop); the
+       line segment is drawn from the previous badge's center to this one. #}
+    <ol class="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+      {% for step in steps %}
+      <li class="relative flex flex-col items-center text-center">
+        {% if not loop.first %}
+        {# Connector spans the full badge-to-badge distance: one column width
+           (100%) plus the grid gap (md:gap-8 = 2rem). Anchored at this
+           badge's center, reaching back to the previous badge's center. #}
+        <span class="absolute right-1/2 top-5 z-0 hidden h-0.5 w-[calc(100%_+_2rem)] bg-gray-200 md:block" aria-hidden="true"></span>
+        {% endif %}
+        <span class="relative z-10 flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ step.number }}</span>
+        <div class="mt-8 flex w-full flex-auto flex-col rounded-2xl border border-gray-200 bg-white p-8">
+          {% if step.icon %}
+          <span class="mx-auto mb-5 flex size-11 items-center justify-center rounded-xl bg-shovels-primary/10">
+            {{ icons[step.icon](class='size-6 text-shovels-primary') }}
+          </span>
+          {% endif %}
+          <h3 class="text-lg font-medium text-gray-900">{{ step.title }}</h3>
+          <p class="mt-3 text-sm text-gray-500">{{ step.description }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+
+  </div>
+</section>
+{% endmacro %}
