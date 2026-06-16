@@ -439,11 +439,12 @@ use_case_section(eyebrow, heading, cases, intro=None)
 | `title` | yes | Use case heading (H3) |
 | `description` | yes | One- or two-sentence body |
 | `bullets` | no | List of strings; each renders with a check badge. Bullets may contain inline HTML anchors (autoescape is off), e.g. a "Read the research: `<a href=…>`" citation — markdown link syntax does NOT render, use raw `<a>` |
-| `image_src` | yes | Path to the screenshot or illustration. Pass an **empty string** to render a red dashed **TBD placeholder** (labeled with `image_alt`) instead of a broken image — used during build-out before the asset is delivered |
+| `image_src` | yes* | Path to the screenshot or illustration. Pass an **empty string** to render a red dashed **TBD placeholder** (labeled with `image_alt`) instead of a broken image — used during build-out before the asset is delivered. *Not needed when `media` is supplied |
 | `image_alt` | yes | Alt text. Also shown inside the TBD placeholder so reviewers know what belongs in the slot |
 | `framed` | no | Default `True` — image renders inside the browser_frame chrome. Set `False` for non-screenshot imagery like illustrations or report charts |
 | `image_max_width` | no | CSS max-width for unframed images (when `framed=False`), e.g. `'420px'`. Ignored when framed |
 | `caption` | no | Small italic caption rendered below the image |
+| `media` | no | Pre-rendered HTML for the visual column, captured with `{% set x %}…{% endset %}` (e.g. a coded `code_window`). When present it replaces `image_src`/TBD entirely. Used by the Solutions pages to show code/JSON/cards instead of screenshots |
 
 #### Example usage
 
@@ -786,7 +787,7 @@ callout(heading, body, cta_label, cta_href,
 | `body` | _required_ | Supporting sentence |
 | `cta_label` | _required_ | Button text (a trailing `→` is added automatically) |
 | `cta_href` | _required_ | Button destination |
-| `variant` | `'green'` | `'green'` (shovels-primary band, white text, white button) or `'warm'` (brand cream `#E9E1CE` band, dark text, green button) |
+| `variant` | `'green'` | `'green'` (shovels-primary band, white text, white button), `'warm'` (brand cream `#E9E1CE` band, dark text, green button), or `'dark'` (gray-900 band, white text, green button — used for the API page's CLI cross-sell) |
 | `media_src` | `None` | Optional image left of the text (e.g. the Charlie avatar, which is already circular). Omit for no media |
 | `media_alt` | `''` | Alt text for `media_src` |
 
@@ -868,6 +869,67 @@ how_it_works(eyebrow, heading, steps, anchor='how-it-works')
   shorter copy still matches its neighbors.
 - **Background**: `bg-gray-50` band to set the section apart from the
   white feature section above it.
+
+---
+
+### `code_window` / `window_header` macros
+
+**Location**: `themes/shovels/templates/macros/code_window.html`
+
+Coded API examples for the Solutions pages — real selectable, themeable
+text instead of screenshots. `window_header` renders the shared window
+chrome (traffic-light dots + optional label + optional copy button) so
+bespoke cards can match the dark code windows. `code_window` is the dark
+terminal specialization: header + a monospace `<pre>` body authored via a
+`{% call %}` block. Matches the live `/cli` page's window treatment.
+
+#### Signatures
+
+```jinja
+window_header(title='', copyable=False, tone='dark')   {# 'dark' | 'light' #}
+code_window(title='', copyable=False)                   {# always dark; wraps a <pre> #}
+```
+
+#### Parameters
+
+| Parameter | Default | Notes |
+|---|---|---|
+| `title` | `''` | Label next to the dots (e.g. `'permits/search'`) |
+| `copyable` | `False` | Renders an Alpine-wired copy button. `code_window` exposes the `x-ref="code"` / `x-data` it needs; for a bespoke card you must provide them |
+| `tone` (window_header) | `'dark'` | `'dark'` (light-on-dark, code windows + dark cards) or `'light'` (dark-on-white UI cards) |
+
+#### Example
+
+```jinja
+{% import 'macros/code_window.html' as ui_code %}
+
+{# dark code window #}
+{% call ui_code.code_window(title='permits/search', copyable=True) %}
+<span class="text-green-400">GET</span> <span class="text-white">/v2/permits/search</span>
+{% endcall %}
+
+{# bespoke light card reusing just the header #}
+<div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+  {{ ui_code.window_header('permit record', tone='light') }}
+  <div class="p-6">…</div>
+</div>
+```
+
+#### Notes
+
+- **Syntax palette** (hand-authored spans): verbs `text-green-400`,
+  paths `text-white`, keys `text-sky-300`, values/numbers
+  `text-amber-300`, comments `text-gray-500`.
+- **Whitespace**: the body is a `<pre>` (preserves indentation, scrolls
+  horizontally). `caller() | trim` strips the leading/trailing newline
+  the `{% call %}` block adds — author intentional code indentation
+  flush-left.
+- **Window consistency**: dark code/diagram visuals use `tone='dark'`;
+  light UI/data cards (endpoint lists, record cards) use `tone='light'`
+  so they read as panels, not terminals. The traffic dots are shared.
+- **Docstring caveat**: never put a nested `{# … #}` inside this file's
+  docstring — the inner `#}` closes the docstring early (Jinja has no
+  comment nesting). Use plain text for in-doc examples.
 
 ---
 
@@ -1355,6 +1417,7 @@ URL still resolves. Two use cases:
 | `content/pages/research-preview.md` | `/research-preview` | Preview of the new Research page (no legacy predecessor). Blog pull uses `get_category_articles('Data')`. Promoted to `/research` at launch. | Greenfield preview |
 | `content/pages/data-delivery-options-preview.md` | `/data-delivery-options-preview` | Scaffolding page that compared three layout options for the homepage "Data delivery options" section. Option 3 (numbered tiers) was chosen and now lives on the homepage preview; this page is kept for reference and **deleted at launch** (see REFRESH_PLAN checklist). | Sandbox |
 | `content/pages/permit-database-preview.md` | `/solutions/permit-database-preview` | Redesign of the live `/permit-database` page as **Shovels Online**, the first of the three Solutions pages (Online / API / Enterprise). Section order: `hero` (eyebrow "Shovels Online") → `use_case_section` (eyebrow "FEATURES", numbered 01–06; reuses industry screenshots, F5 CSV export is TBD) → warm `callout` (Charlie) → `how_it_works` → `industries_strip` → `sections/coverage.html` → green `callout` (API cross-sell) → `faq_section` (FAQ + meta wired to `STATS`) → `final_cta`. Images in `content/images/solutions/permit-database/`. At launch: slug → `solutions/permit-database`, drop `status: hidden`, delete legacy `permit-database.md`, redirect `/permit-database` → `/solutions/permit-database`. Interim links (`/charlie`, `/solutions/api`) tracked in REFRESH_PLAN. | Redesign preview |
+| `content/pages/api-preview.md` | `/solutions/api-preview` | Redesign of the live `/api` page as **Shovels API**, the second Solutions page. Like Shovels Online but with **coded** feature visuals: F1 geo-resolution card, F2 `permits/search` terminal (with copy), F3 light contractor-endpoint list, F4 reuses the `software/uc3` lifecycle illustration, F5 `meta/release` window, F6 light permit-record card — all framed with `window_header`. Every endpoint/param/field is verified against docs.shovels.ai. Dark `callout` (CLI → `/cli`), green `callout` (Enterprise → `/solutions/data-feed`). FAQ + meta wired to `STATS`. Images in `content/images/solutions/api/`. At launch: slug → `solutions/api`, drop `status: hidden`, delete legacy `api.md`, redirect `/api` → `/solutions/api`. | Redesign preview |
 
 ---
 
