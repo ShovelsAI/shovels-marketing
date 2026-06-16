@@ -13,8 +13,9 @@
   body      : Supporting sentence.
   cta_label : Button text (a trailing arrow is added automatically).
   cta_href  : Button destination.
-  variant   : 'green' (shovels-primary band, white text, white button) or
-              'warm'  (brand cream #E9E1CE band, dark text, green button).
+  variant   : 'green' (shovels-primary band, white text, white button),
+              'warm'  (brand cream #E9E1CE band, dark text, green button),
+              or 'dark' (gray-900 band, white text, green button).
   media_src : Optional image left of the text — e.g. the Charlie avatar,
               which is already circular. Omit for no media.
   media_alt : Alt text for media_src.
@@ -41,6 +42,11 @@
   {% set band_class = 'bg-[#E9E1CE]' %}
   {% set heading_class = 'text-gray-900' %}
   {% set body_class = 'text-gray-700' %}
+  {% set btn_class = 'bg-shovels-primary text-white hover:bg-shovels-primary/90' %}
+{% elif variant == 'dark' %}
+  {% set band_class = 'bg-gray-900' %}
+  {% set heading_class = 'text-white' %}
+  {% set body_class = 'text-gray-400' %}
   {% set btn_class = 'bg-shovels-primary text-white hover:bg-shovels-primary/90' %}
 {% else %}
   {% set band_class = 'bg-shovels-primary' %}
