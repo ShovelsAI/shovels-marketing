@@ -15,6 +15,10 @@
                   string (or omit) when the image has not been delivered
                   yet — the macro renders a red "TBD" placeholder in its
                   place and shows image_alt as the intended-image caption.
+    media       : Optional pre-rendered HTML for the visual column (e.g. a
+                  coded `code_window` captured with {% set %}…{% endset %}).
+                  When present it replaces image_src/TBD entirely. Used by
+                  the Solutions pages to show code/JSON instead of images.
     image_alt   : Alt text for the image. Doubles as the description shown
                   inside the TBD placeholder when image_src is empty.
     framed      : Optional boolean. Default True (image rendered inside
@@ -96,10 +100,14 @@
             {% endif %}
           </div>
 
-          {# Image column — TBD placeholder when no image is delivered yet;
-             browser_frame by default; raw <img> if framed=False. #}
+          {# Image column — pre-rendered `media` HTML (e.g. a coded
+             code_window) takes precedence; otherwise a TBD placeholder when
+             no image is delivered yet; browser_frame by default; raw <img>
+             if framed=False. #}
           <div class="{% if image_on_left %}md:order-1{% endif %}">
-            {% if not case.image_src %}
+            {% if case.media %}
+              {{ case.media }}
+            {% elif not case.image_src %}
               {# No image file yet — render a TBD placeholder so the gap is
                  visible during build-out. The intended image is described in
                  image_alt so reviewers know what belongs here. #}

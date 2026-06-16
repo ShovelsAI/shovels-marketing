@@ -1,0 +1,77 @@
+{#
+  window_header(title='', copyable=False, tone='dark')
+  code_window(title='', copyable=False)
+
+  Shared "window" chrome for the Solutions pages — a header bar with
+  traffic-light dots, an optional label, and an optional copy button.
+  `window_header` renders just the bar so bespoke cards (geo-resolution
+  card, endpoint list, permit record) can share the same framing as the
+  dark code windows. `code_window` is the dark terminal specialization:
+  header + a monospace <pre> body authored via a {% call %} block.
+
+  window_header parameters
+  ------------------------
+  title    : Optional label shown next to the dots (e.g. 'permits/search').
+  copyable : When True, render a copy button (Alpine-wired). Requires the
+             body to expose `x-ref="code"` and an `x-data="{ copied: false }"`
+             on the enclosing element (code_window sets both up).
+  tone     : 'dark' (light-on-dark, for code windows / dark cards) or
+             'light' (dark-on-light, for white UI cards).
+
+  code_window parameters
+  ----------------------
+  title, copyable : forwarded to window_header (tone is always 'dark').
+
+  Example
+  -------
+    {% import 'macros/code_window.html' as ui_code %}
+
+    {% call ui_code.code_window(title='permits/search', copyable=True) %}
+<span class="text-green-400">GET</span> <span class="text-white">/v2/permits/search</span>
+    {% endcall %}
+
+    Bespoke light card sharing the same header:
+    <div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+      {{ ui_code.window_header('permit record', tone='light') }}
+      <div class="p-6">…</div>
+    </div>
+
+  Notes
+  -----
+  - `caller() | trim` strips the leading/trailing newline the {% call %}
+    block introduces; author intentional code indentation flush-left.
+  - Suggested code palette: verbs `text-green-400`, paths `text-white`,
+    keys `text-sky-300`, values/numbers `text-amber-300`, comments
+    `text-gray-500`.
+#}
+
+{% macro window_header(title='', copyable=False, tone='dark') %}
+{% if tone == 'light' %}
+  {% set border = 'border-gray-200' %}
+  {% set label = 'text-gray-500' %}
+  {% set btn = 'text-gray-500 ring-gray-200 hover:text-gray-900 hover:ring-gray-300' %}
+{% else %}
+  {% set border = 'border-white/10' %}
+  {% set label = 'text-gray-400' %}
+  {% set btn = 'text-gray-400 ring-white/10 hover:text-white hover:ring-white/20' %}
+{% endif %}
+<div class="flex items-center gap-1.5 border-b {{ border }} px-4 py-3">
+  <span class="size-3 rounded-full bg-red-500"></span>
+  <span class="size-3 rounded-full bg-yellow-500"></span>
+  <span class="size-3 rounded-full bg-green-500"></span>
+  {% if title %}<span class="ml-3 truncate font-mono text-xs {{ label }}">{{ title }}</span>{% endif %}
+  {% if copyable %}
+  <button type="button"
+          @click="navigator.clipboard.writeText($refs.code.innerText); copied = true; setTimeout(() => copied = false, 1500)"
+          class="ml-auto shrink-0 rounded-md px-2 py-1 font-mono text-xs ring-1 transition-colors {{ btn }}"
+          x-text="copied ? 'copied' : 'copy'">copy</button>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro code_window(title='', copyable=False) %}
+<div x-data="{ copied: false }" class="overflow-hidden rounded-xl bg-gray-900 shadow-sm ring-1 ring-white/10">
+  {{ window_header(title, copyable, 'dark') }}
+  <pre class="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed text-gray-300"><code x-ref="code">{{ caller() | trim }}</code></pre>
+</div>
+{% endmacro %}
