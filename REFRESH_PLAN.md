@@ -190,7 +190,12 @@ production deploy, so we can keep iterating on the branch.
       blog pull (no `get_industry_articles` call found yet)
 
 ### URLs, routing & redirects
-- [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed)
+- [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed).
+      Built as redesign previews: `permit-database-preview.md` (Shovels
+      Online) and `api-preview.md` (Shovels API) — promote each (slug →
+      `solutions/<name>`, drop `status: hidden`), delete the legacy
+      `permit-database.md` / `api.md`, add old→new redirects. Enterprise
+      (`data-feed`) page still to build (page 3 of 3)
 - [ ] Move Features pages to `/features/*` (charlie, gis, cli)
 - [ ] Old → new redirects for all 6 moved pages
 - [ ] Repoint internal links/CTAs to new URLs (footer, nav, cross-page, blog)
@@ -266,11 +271,15 @@ production deploy, so we can keep iterating on the branch.
       ship; repoint when those launch. Data delivery cards point at
       `/permit-database`, `/api`, `/data-feed`; repoint if those move
       under `/solutions/`
-- [ ] **Solutions page interim links** — on the Shovels Online preview
-      (`permit-database-preview`), the Charlie callout CTA points at
-      `/charlie` and the API callout CTA at `/solutions/api`. Confirm /
-      repoint both when the Charlie and API pages are finalized (the
-      Charlie URL is expected to change as that page is built)
+- [ ] **Solutions page interim links** — cross-sell CTAs on the built
+      Solutions previews point at not-yet-live targets:
+      - Shovels Online (`permit-database-preview`): Charlie callout →
+        `/charlie` (URL expected to change as that page is built); API
+        callout → `/solutions/api` (404 until promoted)
+      - Shovels API (`api-preview`): CLI callout → `/cli` (resolves
+        today; moves to `/features/cli`); Enterprise callout →
+        `/solutions/data-feed` (404 until page 3 ships)
+      Confirm / repoint each when the target pages are finalized.
 
 ### Site-wide consistency & global impact
 - [ ] **Rounded CTA rollout** — replace the old `rounded-md` primary
