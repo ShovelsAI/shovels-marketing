@@ -166,6 +166,61 @@ production? Recommended given the scope.
 
 ---
 
+## Global changes that reach unrefreshed pages
+
+This refresh is mostly new/redesigned pages staged behind `-preview`
+slugs, but a few decisions cascade to the **untouched** live pages
+(blog, `/about`, `/terms`, careers, audiences, etc.). Consolidated here
+so none are missed. Status: ✅ already live on the branch · 🔧 decided,
+work pending · 🔗 launch-coupled.
+
+1. **Body font — Scandia → system stack** ✅
+   In `base.html` + `input.css`, **ungated**, so every page already
+   renders body copy in the system font on this branch (headings keep
+   Scandia). Ships at merge. *Pre-launch:* spot-check a few legacy pages
+   render cleanly (e.g. `/about`, `/terms`, a blog post).
+
+2. **Global chrome (header + footer)** 🔗
+   Promoting `header-refresh` / `footer-refresh` (dropping the
+   `-preview` gate in `base.html`) swaps nav + footer on **every** page.
+   Launch-coupled — the new nav links to `/solutions/*` `/features/*`,
+   which must exist first.
+
+3. **URL moves + inbound links** 🔧🔗
+   Solutions → `/solutions/*`, Features → `/features/*`. ~72 internal
+   links across `content/` + `themes/` — in ~32 blog posts — point at the
+   old URLs (`/permit-database` ×29, plus `/api`, `/data-feed`,
+   `/charlie`, `/gis`, `/cli`; a mix of absolute `shovels.ai/...` and
+   `{{ SITEURL }}/...`). Needs old→new **redirects** (safety net) and
+   ideally **repointing**. See the site-wide inbound-link audit item.
+
+4. **Rounded CTA rollout** 🔧
+   `rounded-md` → `rounded-full` primary buttons site-wide (~43 primary
+   buttons across ~21 live pages + `header.html` + `index.html`), to
+   match the refreshed pages. Includes:
+   - **Blog sidebar newsletter subscription form** — restyle to the new
+     rounded-button treatment, matching the refreshed footer subscribe
+     form.
+
+5. **Positioning sweep — `base.html` fallback meta + JSON-LD** 🔧
+   Fallback `meta` / `og:` / `twitter:` descriptions and the
+   Organization JSON-LD still say "fragmented permit data"; update to
+   "fragmented public records." Affects the default snippet on every
+   page that doesn't set its own.
+
+**Contained — does NOT reach unrefreshed pages:** the coverage-include
+copy change, the new macros (`callout` / `code_window` / `how_it_works`),
+the marquee keyframes, and the `pelicanconf` STATS / article helpers —
+all preview-only or additive/opt-in.
+
+**Safe to do before launch (no sequencing dependency):** the positioning
+sweep, the rounded-CTA rollout (incl. the blog sidebar newsletter form),
+drafting the redirect map from the link audit, and the legacy-page
+spot-check. **Launch-coupled:** header/footer promotion and activating
+the redirects.
+
+---
+
 ## Pre-launch checklist
 
 The go/no-go list. Tick items as they're done; add your own under
@@ -304,6 +359,10 @@ production deploy, so we can keep iterating on the branch.
       buttons with the new `rounded-full` treatment across the whole
       site (~43 instances on ~21 live pages + `header.html` +
       `index.html`), not just the redesigned pages
+- [ ] **Blog sidebar newsletter form restyle** — update the blog
+      sidebar subscription design to the new rounded-button treatment,
+      matching the refreshed footer subscribe form (part of the rounded
+      CTA rollout)
 - [ ] **Body font cascade** — confirm Scandia→system-stack body copy
       is intended on ALL pages (it already cascades site-wide via
       `base.html` + `input.css`), incl. untouched legacy pages
