@@ -60,6 +60,14 @@ entries; don't rewrite old ones.
   mobile. Reversible / promotable: drop the `{% if %}` gate to make a
   refresh template global. See REFRESH_PLAN.md.
 
+- **Coverage include copy refined.** `sections/coverage.html` is a
+  shared static include, so its copy applies to every page that uses it
+  (the Solutions previews today). Body now reads "based on market trends
+  & customer demand"; the ArcGIS bullet now reads "available as hosted
+  feature layers in Esri's ArcGIS platform". If a page ever needs
+  page-specific coverage copy, parameterize the include rather than
+  forking it.
+
 ---
 
 ## Tokens & colors
@@ -1418,6 +1426,7 @@ URL still resolves. Two use cases:
 | `content/pages/data-delivery-options-preview.md` | `/data-delivery-options-preview` | Scaffolding page that compared three layout options for the homepage "Data delivery options" section. Option 3 (numbered tiers) was chosen and now lives on the homepage preview; this page is kept for reference and **deleted at launch** (see REFRESH_PLAN checklist). | Sandbox |
 | `content/pages/permit-database-preview.md` | `/solutions/permit-database-preview` | Redesign of the live `/permit-database` page as **Shovels Online**, the first of the three Solutions pages (Online / API / Enterprise). Section order: `hero` (eyebrow "Shovels Online") → `use_case_section` (eyebrow "FEATURES", numbered 01–06; reuses industry screenshots, F5 CSV export is TBD) → warm `callout` (Charlie) → `how_it_works` → `industries_strip` → `sections/coverage.html` → green `callout` (API cross-sell) → `faq_section` (FAQ + meta wired to `STATS`) → `final_cta`. Images in `content/images/solutions/permit-database/`. At launch: slug → `solutions/permit-database`, drop `status: hidden`, delete legacy `permit-database.md`, redirect `/permit-database` → `/solutions/permit-database`. Interim links (`/charlie`, `/solutions/api`) tracked in REFRESH_PLAN. | Redesign preview |
 | `content/pages/api-preview.md` | `/solutions/api-preview` | Redesign of the live `/api` page as **Shovels API**, the second Solutions page. Like Shovels Online but with **coded** feature visuals: F1 geo-resolution card, F2 `permits/search` terminal (with copy), F3 light contractor-endpoint list, F4 reuses the `software/uc3` lifecycle illustration, F5 `meta/release` window, F6 light permit-record card — all framed with `window_header`. Every endpoint/param/field is verified against docs.shovels.ai. Dark `callout` (CLI → `/cli`), green `callout` (Enterprise → `/solutions/data-feed`). FAQ + meta wired to `STATS`. Images in `content/images/solutions/api/`. At launch: slug → `solutions/api`, drop `status: hidden`, delete legacy `api.md`, redirect `/api` → `/solutions/api`. | Redesign preview |
+| `content/pages/data-feed-preview.md` | `/solutions/data-feed-preview` | Redesign of the live `/data-feed` page as **Shovels Enterprise**, the third Solutions page. Hero (`hero.svg`) → `soc2_trust` → `use_case_section` (eyebrow "ENTERPRISE", 01–05): F1 coded **live-delivery diagram** (green-outline Shovels source with logo + database icon → connector bus → three warehouse boxes with glyph-only marks `snowflake.svg` / `bigquery.svg` / `databricks.png`; F1 Snowflake & BigQuery copy link to the marketplace listings), F2 coded calendar card, F3 coded schema card, F4 reuses the `building-materials/uc3` illustration, F5 coded dark bar chart → `industries_strip` (all 8, "TRUSTED BY DATA TEAMS IN") → `sections/coverage.html` → `faq_section` (wired to `STATS`) → `final_cta`. No logo wall. Single "Talk to sales" CTA → `/contact`. Images in `content/images/solutions/data-feed/`; warehouse glyphs in `content/images/logos/`. At launch: slug → `solutions/data-feed`, drop `status: hidden`, delete legacy `data-feed.md`, redirect `/data-feed` → `/solutions/data-feed`. | Redesign preview |
 
 ---
 

@@ -191,14 +191,32 @@ production deploy, so we can keep iterating on the branch.
 
 ### URLs, routing & redirects
 - [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed).
-      Built as redesign previews: `permit-database-preview.md` (Shovels
-      Online) and `api-preview.md` (Shovels API) — promote each (slug →
+      All three redesign previews built: `permit-database-preview.md`
+      (Shovels Online), `api-preview.md` (Shovels API), and
+      `data-feed-preview.md` (Shovels Enterprise). Promote each (slug →
       `solutions/<name>`, drop `status: hidden`), delete the legacy
-      `permit-database.md` / `api.md`, add old→new redirects. Enterprise
-      (`data-feed`) page still to build (page 3 of 3)
+      `permit-database.md` / `api.md` / `data-feed.md`, add old→new
+      redirects. Promoting `data-feed` also resolves the API page's
+      Enterprise cross-sell link (`/solutions/data-feed`)
 - [ ] Move Features pages to `/features/*` (charlie, gis, cli)
 - [ ] Old → new redirects for all 6 moved pages
 - [ ] Repoint internal links/CTAs to new URLs (footer, nav, cross-page, blog)
+- [ ] **Site-wide inbound-link audit** — before launch, grep the entire
+      repo for every internal link to a page that is moving or being
+      replaced, so no reference is missed when we add redirects/repoint.
+      Don't rely on the obvious sources — check ALL of them:
+      - `content/posts/*` blog articles (often link to `/api`,
+        `/permit-database`, `/data-feed`, `/charlie`, `/cli`, `/coverage`,
+        industry pages)
+      - other Solutions/Features pages, all Industry pages, Audiences,
+        Research, Data Dictionary, Coverage, About/Careers/Contact
+      - footer + nav (refresh chrome) and the SOC 2 / coverage includes
+      - JSON-LD blocks and meta/canonical/OG URLs in `base.html`
+      Method: `grep -rn` for each old slug (e.g. `/permit-database`,
+      `/api`, `/data-feed`, `/charlie`, `/gis`, `/cli`) across `content/`
+      and `themes/`, build the full list, then confirm each is either
+      repointed or covered by a redirect. Re-run the grep after repointing
+      to prove zero stragglers remain.
 - [ ] Audiences decision executed (deprecate / keep / relocate)
 - [ ] Industry slug swaps: `*-preview.md` → live slug, drop `-preview`,
       remove `status: hidden`, delete legacy file (climate, real-estate,
