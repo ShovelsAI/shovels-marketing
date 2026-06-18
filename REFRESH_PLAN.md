@@ -255,6 +255,13 @@ production deploy, so we can keep iterating on the branch.
       Enterprise cross-sell link (`/solutions/data-feed`)
 - [ ] Move Features pages to `/features/*` (charlie, gis, cli)
 - [ ] Old → new redirects for all 6 moved pages
+- [ ] **Charlie now lives in Shovels Online** — redirect the entire
+      `https://charlie.shovels.ai/` subdomain to `https://app.shovels.ai/`,
+      and point all Charlie page CTAs at `app.shovels.ai` (the
+      `/features/charlie` page is marketing only; the product is in the
+      app). Also 301 the old `/charlie` → `/features/charlie`. Audit for
+      any `charlie.shovels.ai` links in content/themes during the
+      site-wide inbound-link sweep
 - [ ] Repoint internal links/CTAs to new URLs (footer, nav, cross-page, blog)
 - [ ] **Site-wide inbound-link audit** — before launch, grep the entire
       repo for every internal link to a page that is moving or being
