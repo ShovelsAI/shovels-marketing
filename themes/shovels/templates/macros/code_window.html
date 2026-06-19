@@ -62,16 +62,19 @@
   {% if title %}<span class="ml-3 truncate font-mono text-xs {{ label }}">{{ title }}</span>{% endif %}
   {% if copyable %}
   <button type="button"
-          @click="navigator.clipboard.writeText($refs.code.innerText); copied = true; setTimeout(() => copied = false, 1500)"
+          @click="navigator.clipboard.writeText($refs.copy.textContent.trim()); copied = true; setTimeout(() => copied = false, 1500)"
           class="ml-auto shrink-0 rounded-md px-2 py-1 font-mono text-xs ring-1 transition-colors {{ btn }}"
           x-text="copied ? 'copied' : 'copy'">copy</button>
   {% endif %}
 </div>
 {% endmacro %}
 
-{% macro code_window(title='', copyable=False) %}
-<div x-data="{ copied: false }" class="overflow-hidden rounded-xl bg-gray-900 shadow-sm ring-1 ring-white/10">
+{% macro code_window(title='', copyable=False, fill=False, copy_text='') %}
+<div x-data="{ copied: false }" class="overflow-hidden rounded-xl bg-gray-900 shadow-sm ring-1 ring-white/10{% if fill %} flex h-full flex-col{% endif %}">
   {{ window_header(title, copyable, 'dark') }}
-  <pre class="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed text-gray-300"><code x-ref="code">{{ caller() | trim }}</code></pre>
+  <pre class="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed text-gray-300{% if fill %} flex-auto{% endif %}"><code{% if not copy_text %} x-ref="copy"{% endif %}>{{ caller() | trim }}</code></pre>
+  {# When copy_text is set, the copy button grabs only the clean command
+     (no prompt symbol, no output) rather than the full illustrative block. #}
+  {% if copy_text %}<span x-ref="copy" class="hidden">{{ copy_text }}</span>{% endif %}
 </div>
 {% endmacro %}

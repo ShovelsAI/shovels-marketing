@@ -56,7 +56,9 @@
               cta_label='Get started',
               cta_href='https://app.shovels.ai/signup/',
               illustration_position='right',
-              eyebrow=None) %}
+              eyebrow=None,
+              media=None, bg_src=None,
+              secondary_cta_label=None, secondary_cta_href=None) %}
 <section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
 
   {# Crossing-gradient grid pattern with radial fade. Sits behind content. #}
@@ -74,19 +76,27 @@
         {% endif %}
         <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">{{ h1 }}</h1>
         <p class="mt-6 text-lg text-gray-500">{{ description }}</p>
-        <div class="mt-8">
+        <div class="mt-8 flex flex-wrap items-center gap-4">
           <a href="{{ cta_href }}" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">{{ cta_label }}</a>
+          {% if secondary_cta_label %}
+          <a href="{{ secondary_cta_href }}" class="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-900 transition-colors hover:border-gray-400 hover:bg-gray-50">{{ secondary_cta_label }}</a>
+          {% endif %}
         </div>
       </div>
 
       {# Illustration column — 6/12 (equal split with the text). Renders a
          red TBD placeholder when illustration_src is empty (image not yet
          delivered) instead of a broken image. #}
-      <div class="md:col-span-6 {% if illustration_position == 'left' %}md:order-1{% endif %}">
-        {% if illustration_src %}
-        <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="block w-full h-auto" />
+      <div class="relative md:col-span-6 {% if illustration_position == 'left' %}md:order-1{% endif %}">
+        {% if bg_src %}
+        <img src="{{ bg_src }}" alt="" aria-hidden="true" class="pointer-events-none absolute -right-16 top-1/2 z-0 w-2/3 max-w-md -translate-y-1/2 opacity-80" />
+        {% endif %}
+        {% if media %}
+        <div class="relative z-10">{{ media }}</div>
+        {% elif illustration_src %}
+        <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="relative z-10 block w-full h-auto" />
         {% else %}
-        <div class="flex aspect-video w-full items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50 text-center">
+        <div class="relative z-10 flex aspect-video w-full items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50 text-center">
           <span class="text-3xl font-semibold uppercase tracking-widest text-red-500">TBD</span>
         </div>
         {% endif %}
