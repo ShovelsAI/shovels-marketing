@@ -251,19 +251,34 @@ done</code></pre>
       <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">HOW IT WORKS</span>
       <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Up and running in seconds</h2>
     </div>
-    <div class="mt-12 space-y-8">
+    {# Stepper: numbered circles on a left rail, connected by a vertical line
+       (segment runs from below each circle, across the gap, to the next),
+       with a card per step holding the text (left) + terminal (right). #}
+    <div class="mx-auto mt-12 max-w-5xl space-y-6">
       {% for num, title, tagline, term in [
           ('1', 'Install', 'One line, checksum-verified, no runtime to install.', hiw1),
           ('2', 'Set your API key', 'Grab a key from your Shovels account dashboard.', hiw2),
           ('3', 'Run your first query', 'JSON results, instantly.', hiw3),
       ] %}
-      <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-12">
-        <div>
-          <span class="flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ num }}</span>
-          <h3 class="mt-4 text-xl font-medium text-gray-900">{{ title }}</h3>
-          <p class="mt-2 text-base text-gray-500">{{ tagline }}</p>
+      <div class="flex items-stretch gap-5 md:gap-6">
+        <div class="relative flex w-10 shrink-0 flex-col items-center pt-1">
+          {# Runs from this circle's center down to the next circle's center
+             (space-y-6 gap + pt-1 + half-circle = 48px); both circles sit on
+             top (z-10), so it reads flush into each number. #}
+          {% if not loop.last %}
+          <span class="absolute left-1/2 top-6 -bottom-12 w-0.5 -translate-x-1/2 bg-gray-200" aria-hidden="true"></span>
+          {% endif %}
+          <span class="relative z-10 flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ num }}</span>
         </div>
-        <div>{{ term }}</div>
+        <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-xl font-medium text-gray-900">{{ title }}</h3>
+              <p class="mt-2 text-base text-gray-500">{{ tagline }}</p>
+            </div>
+            <div>{{ term }}</div>
+          </div>
+        </div>
       </div>
       {% endfor %}
     </div>
