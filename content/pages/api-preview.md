@@ -187,7 +187,7 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
-    eyebrow='FEATURES',
+    eyebrow='',
     heading='One API for permits, contractors, and local government decisions',
     cases=features) }}
 

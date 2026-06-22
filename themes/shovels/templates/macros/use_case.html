@@ -65,10 +65,12 @@
 <section class="w-full bg-white py-24 px-6 md:px-10">
   <div class="mx-auto max-w-6xl">
 
-    {# Section header — eyebrow chip + heading. #}
+    {# Section header — optional eyebrow chip + heading. Pass an empty
+       eyebrow to omit the chip (and its top margin) when the heading
+       stands on its own. #}
     <div class="mx-auto max-w-3xl text-center">
-      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
+      {% if eyebrow %}<span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ eyebrow }}</span>{% endif %}
+      <h2 class="{% if eyebrow %}mt-4 {% endif %}text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
       {% if intro %}
       <p class="mt-6 text-lg text-gray-500">{{ intro }}</p>
       {% endif %}

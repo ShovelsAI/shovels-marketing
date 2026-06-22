@@ -70,7 +70,7 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
-    eyebrow='FEATURES',
+    eyebrow='',
     heading='Discover more opportunities, faster',
     cases=features) }}
 

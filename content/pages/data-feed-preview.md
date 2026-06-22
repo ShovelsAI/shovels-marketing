@@ -158,7 +158,7 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
-    eyebrow='ENTERPRISE',
+    eyebrow='',
     heading='Enterprise-ready from day one',
     cases=features) }}
 
