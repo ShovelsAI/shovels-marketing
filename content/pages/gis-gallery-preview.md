@@ -3,6 +3,8 @@ Description: A gallery of live Esri ArcGIS web maps built on Shovels building-pe
 slug: features/gis/gallery-preview
 status: hidden
 
+{% import 'macros/final_cta.html' as ui_cta %}
+
 {# Loads Esri's embeddable-components web component, which defines the
    <arcgis-embedded-map> custom element used for each map below. #}
 <script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
@@ -48,3 +50,9 @@ status: hidden
     {% endfor %}
   </div>
 </section>
+
+{{ ui_cta.final_cta(
+    heading='Ready to map our Shovel-ready data?',
+    description='Explore our geospatial building permit intelligence now.',
+    cta_label='Contact Us',
+    cta_href='https://www.shovels.ai/contact') }}
