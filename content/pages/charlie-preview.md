@@ -30,8 +30,8 @@ status: hidden
             'Knows database nuances and trade terminology',
             'Clickable example prompts to get started fast',
         ],
-        'image_src': '',
-        'image_alt': 'Chat frame with a real query typed in; prompt chips below',
+        'image_src': '/images/features/charlie/uc1-plain-english.png',
+        'image_alt': 'Charlie answering a plain-English query in the chat',
     },
     {
         'number': '02',
@@ -42,8 +42,8 @@ status: hidden
             'Shows the SQL behind every answer',
             'Searches permits, contractors, and city decisions in one place',
         ],
-        'image_src': '',
-        'image_alt': "Results table with the 'view SQL' panel expanded",
+        'image_src': '/images/features/charlie/uc2-sql.png',
+        'image_alt': "Charlie's results with the SQL behind the answer shown",
     },
     {
         'number': '03',
@@ -54,8 +54,8 @@ status: hidden
             'Dynamic charts generated from your data',
             'Saved chats, available 24/7',
         ],
-        'image_src': '',
-        'image_alt': 'Chart generated from a query inside the chat',
+        'image_src': '/images/features/charlie/uc3-graph.png',
+        'image_alt': 'A chart Charlie generated from a query inside the chat',
     },
 ] %}
 
