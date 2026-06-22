@@ -111,9 +111,10 @@ Careers. (Note: About + Careers sit under Resources here, vs. the
 current footer's "Company" column.)
 
 ### Net-new pages (right rail — own cadence)
-Map Gallery (`/features/gis/gallery` — the GIS hero's secondary CTA
-target), Brand, Partners, Pricing (tentative). Build behind
-`hidden`; launch independently.
+Map Gallery (built behind `features/gis/gallery-preview` — six live
+Esri ArcGIS embeds; the GIS hero's secondary CTA target), Brand,
+Partners, Pricing (tentative). Build behind `hidden`; launch
+independently.
 
 ---
 
@@ -364,8 +365,9 @@ production deploy, so we can keep iterating on the branch.
 - [ ] **Features page interim links** — built Features previews point
       at not-yet-live targets:
       - GIS (`gis-preview`): hero secondary CTA "View map gallery" →
-        `/features/gis/gallery` (**404 until the net-new Map Gallery
-        page ships**); Enterprise callout → `/data-feed` (moves to
+        `/features/gis/gallery-preview` (the staged gallery, so it's
+        clickable in preview); **repoint to `/features/gis/gallery` at
+        launch**. Enterprise callout → `/data-feed` (moves to
         `/solutions/data-feed`)
       - CLI (`cli-preview`): green callout → `/api` (moves to
         `/solutions/api`)

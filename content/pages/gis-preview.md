@@ -19,7 +19,7 @@ status: hidden
     cta_label='Talk to us',
     cta_href='https://www.shovels.ai/contact',
     secondary_cta_label='View map gallery →',
-    secondary_cta_href='/features/gis/gallery',
+    secondary_cta_href='/features/gis/gallery-preview',
     illustration_src='/images/features/gis/hero.svg',
     illustration_alt='Shovels permit data as map layers in ArcGIS') }}
 
