@@ -111,7 +111,8 @@ Careers. (Note: About + Careers sit under Resources here, vs. the
 current footer's "Company" column.)
 
 ### Net-new pages (right rail — own cadence)
-Map Gallery, Brand, Partners, Pricing (tentative). Build behind
+Map Gallery (`/features/gis/gallery` — the GIS hero's secondary CTA
+target), Brand, Partners, Pricing (tentative). Build behind
 `hidden`; launch independently.
 
 ---
@@ -359,6 +360,17 @@ production deploy, so we can keep iterating on the branch.
       - Shovels API (`api-preview`): CLI callout → `/cli` (resolves
         today; moves to `/features/cli`); Enterprise callout →
         `/solutions/data-feed` (404 until page 3 ships)
+      Confirm / repoint each when the target pages are finalized.
+- [ ] **Features page interim links** — built Features previews point
+      at not-yet-live targets:
+      - GIS (`gis-preview`): hero secondary CTA "View map gallery" →
+        `/features/gis/gallery` (**404 until the net-new Map Gallery
+        page ships**); Enterprise callout → `/data-feed` (moves to
+        `/solutions/data-feed`)
+      - CLI (`cli-preview`): green callout → `/api` (moves to
+        `/solutions/api`)
+      - Charlie (`charlie-preview`): warm callout → Shovels Online
+        (`/permit-database`, moves to `/solutions/permit-database`)
       Confirm / repoint each when the target pages are finalized.
 
 ### Site-wide consistency & global impact
