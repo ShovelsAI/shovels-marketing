@@ -14,6 +14,7 @@ module.exports = {
         'shovels': {
           'primary': 'rgb(1 101 77 / <alpha-value>)',
           'secondary': '#E9BE51',
+          'secondary-text': '#8A6300',
           'dark': '#101727',
           'light': '#EAE2CF'
         }

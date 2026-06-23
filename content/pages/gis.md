@@ -117,7 +117,7 @@ slug: gis
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
       <div class="col-span-2">
-        <p class="text-base/7 font-semibold text-shovels-secondary">Geospatial building permit data</p>
+        <p class="text-base/7 font-semibold text-shovels-secondary-text">Geospatial building permit data</p>
         <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">The construction activity intelligence platform</h2>
         <p class="mt-6 text-base/7 text-gray-600">We built the most comprehensive geospatial database of building permits in the market, enabling you to see what's getting built and where, before anyone else.</p>
       </div>
