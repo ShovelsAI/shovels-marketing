@@ -12,12 +12,15 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "{{ page.title|striptags|e }}",
+    "name": {{ page.title|striptags|tojson }},
     "url": "https://www.shovels.ai/{{ page.url }}",
-    {% if page.summary %}
-    "description": "{{ page.summary|striptags|e }}",
-    {% elif page.description %}
-    "description": "{{ page.description|striptags|e }}",
+    {# Prefer the hand-written front-matter Description; the auto-generated
+       page.summary is the raw HTML body (gibberish for macro-built pages),
+       so it's only a fallback. tojson gives correct, script-safe JSON. #}
+    {% if page.description %}
+    "description": {{ page.description|striptags|tojson }},
+    {% elif page.summary %}
+    "description": {{ page.summary|striptags|tojson }},
     {% endif %}
     "publisher": {
       "@type": "Organization",
