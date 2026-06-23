@@ -229,6 +229,43 @@ The go/no-go list. Tick items as they're done; add your own under
 "More (your ideas)". Nothing here is a one-way door until the final
 production deploy, so we can keep iterating on the branch.
 
+### Sequencing: do now vs. at launch
+Shrink launch day to just the *flip*. Everything below is one of:
+**NOW** (do anytime on the branch) · **PREP** (build now, enable at
+launch) · **LAUNCH** (coupled to the go-live deploy) · ✅ done.
+
+**NOW — front-load these (decoupled from launch):**
+- Rounded-CTA rollout + blog-sidebar form restyle (biggest single reducer)
+- ✅ Inbound-link audit run — targets live in ~15 blog posts + the live
+  chrome; redirects will cover them, so direct repoint is optional
+- Branch rebase on `main` (after PR #146 merges, to pick up the JSON-LD fix)
+- FAQ accuracy review + blog pull-in category/tag check
+- Designer passes (8 industry, homepage, Research), logo sourcing/heights,
+  white-on-hover logos, Trinh Insurance logo (4/4)
+- Verifications: meta descriptions, canonical/OG, UTM script, FAQ JSON-LD,
+  trial `make publish`
+- Cleanups: drop footer DATA column, final header icons, delete
+  `data-delivery-options-preview.md`, legal logo clearance
+- Body-font cascade + shared-change reach audit + spot-check untouched pages
+- Mobile QA + stand up staging for stakeholder review
+
+**PREP now → enable at launch:**
+- Author the 301s (6 moved pages + `/charlie` + the `charlie.shovels.ai`
+  subdomain) so launch just switches them on
+- Draft the homepage `index.html` migration (STATS/helpers + blog-loop reconcile)
+
+**LAUNCH only — the flip:**
+- Slug swaps (industry + Solutions `/solutions/*` + Features `/features/*`),
+  drop `status: hidden`, delete legacy files
+- Promote Insurance + Research; move homepage content into theme `index.html`
+- Un-gate the chrome (promote `footer-refresh`/`header-refresh` → global)
+- Redirects go live + repoint interim links (Solutions/Features/homepage cross-links)
+- Regenerate + resubmit sitemap, positioning sweep, final tracking diff,
+  full link verification (no 404s / no stale `-preview`), go/no-go
+
+**Open dependency:** GIS "how it works" step maps (3 TBDs) — left as TBD
+for now; revisit before launch.
+
 ### Content & pages
 - [ ] Designer walkthrough of all 8 industry preview pages
 - [ ] Designer walkthrough of homepage preview
