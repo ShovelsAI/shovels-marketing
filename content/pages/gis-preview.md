@@ -91,8 +91,9 @@ status: hidden
             'Linked addresses, residents, and contractor records',
             'Built for site selection and de-risking major investments',
         ],
-        'image_src': '',
-        'image_alt': 'Map showing permit points over parcel boundaries',
+        'image_src': '/images/industries/climate/uc5-oregon-map.svg',
+        'image_alt': 'A region-wide map with permit activity lighting up across markets',
+        'framed': False,
     },
     {
         'number': '03',
