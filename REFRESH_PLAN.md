@@ -314,7 +314,16 @@ production deploy, so we can keep iterating on the branch.
 - [ ] Production build passes (`make publish`)
 - [ ] CSS compiled fresh — no missing utilities (the footer-overlap bug)
 - [ ] FAQ `FAQPage` JSON-LD renders on every industry page
-- [ ] Sitemap includes launched pages, excludes `hidden`/`-preview`
+- [ ] **Sitemap reflects the new IA** — after the slug swaps + un-hiding,
+      regenerate `sitemap.xml` (auto-built by the `sitemap` plugin on
+      `make publish`) and confirm it: (a) includes every net-new page
+      (Map Gallery `/features/gis/gallery`, Research, Insurance, …),
+      (b) lists the new `/solutions/*` and `/features/*` URLs — not the
+      old flat slugs (`/permit-database`, `/api`, `/data-feed`, `/charlie`,
+      `/gis`, `/cli`) or any `-preview` slug, and (c) excludes anything
+      still `hidden`. Then resubmit the sitemap in Google Search Console
+      so the moved URLs get recrawled and the old ones de-indexed via the
+      301s.
 - [ ] Meta descriptions present on all launched pages
 - [ ] Branch rebased/merged with `main` (currently well behind)
 
