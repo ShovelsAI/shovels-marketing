@@ -19,7 +19,7 @@ slug: solutions/sister-city-tracker
         <p class="mt-6 text-xl text-gray-600">Get an email summary every Friday, 8am with all CRE-related decisions in the cities of your choice.</p>
         <p class="mt-4 text-lg text-gray-600">*<a href="#exclusive" class="text-shovels-primary hover:underline">Exclusively for Planners</a></p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+          <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
           <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
         </div>
       </div>

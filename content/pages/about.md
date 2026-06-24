@@ -130,7 +130,7 @@ slug: about
       <p class="mt-4 text-lg/8 text-gray-600">This acquisition brings together permit data intelligence with zoning and regulatory intelligence, giving our customers the most complete picture of what's being built and what's about to change.</p>
     </div>
     <div class="mx-auto mt-16 flex max-w-lg items-center justify-center gap-x-8 sm:gap-x-12">
-      <a href="/solutions/acquisition" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Explore ReZone →</a>
+      <a href="/solutions/acquisition" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90">Explore ReZone →</a>
     </div>
   </div>
 </div>

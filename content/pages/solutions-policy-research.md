@@ -18,7 +18,7 @@ slug: solutions/policy-research
         <h1 class="mt-2 max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Nationwide Policy Insights for City Leaders</h1>
         <p class="mt-6 text-xl text-gray-600">Leverage research from 150 major cities to benchmark your policy decisions. Analyze similar real estate measures and connect with experienced officials who've paved the way.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+          <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
           <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -96,7 +96,7 @@ slug: solutions/policy-research
       <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Ready to Transform Your Policy Process?</h2>
       <p class="mt-6 text-lg text-gray-600">Streamline your decision-making with nationwide insights and expert connections.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+        <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
         <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
       </div>
     </div>

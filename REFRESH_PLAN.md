@@ -472,10 +472,22 @@ for now; revisit before launch.
       Confirm / repoint each when the target pages are finalized.
 
 ### Site-wide consistency & global impact
-- [ ] **Rounded CTA rollout** — replace the old `rounded-md` primary
-      buttons with the new `rounded-full` treatment across the whole
-      site (~43 instances on ~21 live pages + `header.html` +
-      `index.html`), not just the redesigned pages
+- [x] **Rounded CTA rollout** — give the old `rounded-md` primary
+      buttons the new `rounded-full` treatment. **Scoped to survivor
+      pages only** — pages with no `-preview` replacement, so they stay
+      live through launch. The 12 legacy industry/feature pages +
+      `index.html` + `header.html` are skipped (replaced at launch by
+      their `-preview` / `*-refresh` versions, which already use
+      `rounded-full`), to avoid churning files that get deleted.
+      Survivor pages (16 CTA buttons total):
+      `about.md`, `contact.md`, `contact-research.md`, `audiences.md`
+      (pending the Audiences keep/deprecate decision),
+      `solutions-policy-research.md`, `solutions-asset-management.md`,
+      `solutions-acquisition.md`, `solutions-sister-city-tracker.md`,
+      `solutions-thesis-agent.md`.
+      Treatment = full refresh button style: `rounded-full` + `px-6 py-3`
+      + drop `shadow-sm` + `hover:bg-shovels-primary/90`. Staged on the
+      branch; goes live with the launch deploy like everything else.
 - [ ] **Blog sidebar newsletter form restyle** — update the blog
       sidebar subscription design to the new rounded-button treatment,
       matching the refreshed footer subscribe form (part of the rounded

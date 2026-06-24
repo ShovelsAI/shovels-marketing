@@ -21,7 +21,7 @@ slug: audiences
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
+          <a href="{filename}contact.md" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
           <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
@@ -223,7 +223,7 @@ slug: audiences
   <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
+      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
       <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
     </div>
   </div>
