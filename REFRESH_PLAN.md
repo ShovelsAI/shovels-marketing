@@ -482,8 +482,9 @@ for now; revisit before launch.
         **visual only**. Revisit post-launch; options are per-post
         `<details>` HTML or normalize the markdown + a build-time
         transform. Blog FAQ markup is inconsistent (`#` vs `##`).
-      - **Small SEO gap:** `content/posts/shovels-data-source-column-blog.md`
-        has an FAQ section but **no `FAQPage` JSON-LD** — add it.
+      - ✅ **SEO gap fixed:** added `FAQPage` JSON-LD to
+        `content/posts/shovels-data-source-column-blog.md` (it was the one
+        FAQ blog missing structured data).
 - [x] **Rounded CTA rollout** — give the old `rounded-md` primary
       buttons the new `rounded-full` treatment. **Scoped to survivor
       pages only** — pages with no `-preview` replacement, so they stay
@@ -529,6 +530,14 @@ for now; revisit before launch.
 - [ ] Data section pages: Permits, Decisions, Contractors, Residents,
       Properties → then add the Data column links + nav entry
 - [ ] Net-new pages: Map Gallery, Brand, Partners, Pricing(?)
+- [ ] **Blog FAQ consistency sweep** — standardize FAQ formatting across
+      all blog posts to match the new `faq_section` styling. Multiple
+      people publish blogs, so the markdown FAQ format has drifted
+      (heading levels `#` vs `##`, question structure). Not
+      launch-blocking; run on its own cadence anytime. Blogs already carry
+      `FAQPage` JSON-LD, so this is the deferred *visual* pass from the FAQ
+      formatting rollout. Likely needs a shared convention (or a
+      build-time transform) so new posts stay consistent.
 
 ---
 
@@ -539,11 +548,6 @@ for now; revisit before launch.
 - **Homepage launch mechanics** — convert `index.html` to use the
   preview content; reconcile `STATS`/helper globals and the `dates`
   blog loop (preview uses `get_recent_articles`).
-- **Data delivery options layout** — `data-delivery-options-preview`
-  holds three live directions (current dark/illustration, dark bordered
-  cards w/ "best for" tag, light numbered tiers) for designer sign-off.
-  Once a direction is chosen: fold it into the homepage section, drop
-  the other two, and delete the comparison page.
 - **Which net-new pages** are in scope for Phase 5, and their copy.
 - **Solutions/Features URL moves + redirects** — moving 6 pages under
   `/solutions/` and `/features/` needs: updated `Slug:` per page,

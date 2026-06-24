@@ -94,3 +94,53 @@ Permit categories like `solar`, `adu`, and `new_construction` are created by Sho
 **Can I see the source for a specific field?**
 
 Yes. Column E of the [Shovels data dictionary](https://www.shovels.ai/data-dictionary#permits) lists the Source value for every field across permits, contractors, and properties.
+
+<!-- JSON-LD FAQ schema for AI answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Source column in the Shovels data dictionary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Source column tells you where each field in the Shovels dataset came from and how much Shovels processed it before it reached you. Every field is labeled one of three ways: Provided by jurisdiction, Enhanced by Shovels, or Created by Shovels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do some fields have missing or inconsistent values?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fields labeled \"Provided by jurisdiction\" are passed through almost exactly as the local government recorded them. With over 20,000 permitting authorities across the US, formatting, completeness, and naming conventions vary widely. The inconsistencies reflect variations in the underlying data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is enhanced data updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the source. Geocoded fields like latitude, longitude, and census tract update in close to real time alongside permit records. Fields derived from tax assessor files, like property type or lot size, update on the assessor's own schedule, which is typically once or twice a year. The Source field helps you know which type you're working with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Shovels' permit categories and how are they generated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Permit categories like solar, adu, and new_construction are created by Shovels. They don't come from jurisdictions. We trained AI models on permit descriptions, type codes, and subtypes to classify permits into standardized categories consistently across all jurisdictions. You can see the full category list in the data dictionary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see the source for a specific field?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Column E of the Shovels data dictionary lists the Source value for every field across permits, contractors, and properties."
+      }
+    }
+  ]
+}
+</script>
