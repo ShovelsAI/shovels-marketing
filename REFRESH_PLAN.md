@@ -373,10 +373,12 @@ for now; revisit before launch.
 - [x] Footer: HubSpot newsletter form wired into the custom design
       (`footer-refresh.html` posts to the Submissions API, "Footer
       Newsletter Signup" form; test submission confirmed in HubSpot)
-- [ ] Footer: **remove the DATA column for launch** — designed with it
+- [x] Footer: **remove the DATA column for launch** — designed with it
       in, but the /data/* pages likely won't be ready for the initial
-      launch (decided 2026-06-11; double-check before shipping). Restore
-      the column when the Data pages go live (post-launch item below)
+      launch (decided 2026-06-11; double-check before shipping). Removed
+      the `Data` tuple from `footer_sections` and dropped the desktop grid
+      to `grid-cols-5`; restore instructions are in the `footer-refresh.html`
+      docstring. Restore the column when the Data pages go live.
 - [x] Top nav rebuilt for new IA — `header-refresh.html` (Industries/
       Solutions/Features/Resources + Sign In/Get Started; Insurance +
       Research included; mobile accordions). Gated to `*-preview`
