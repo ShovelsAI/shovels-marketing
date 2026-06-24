@@ -4,36 +4,34 @@ slug: audiences
 
 {% import 'macros/faq.html' as ui_faq %}
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{# Hero refreshed to the new style (grid-pattern background + font-medium
+   H1 + updated illustration). The page stays live but is dropped from nav
+   at launch — see REFRESH_PLAN. CTAs and lead copy kept as-is. #}
+<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Target your ideal audience using building permit data</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="{filename}contact.md" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
-          <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
+  <div class="pointer-events-none absolute inset-0"
+       style="background-image: linear-gradient(#ebf0ed 1px, transparent 1px), linear-gradient(90deg, #ebf0ed 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);"
+       aria-hidden="true"></div>
+
+  <div class="relative mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
+
+      <div class="md:col-span-6">
+        <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">Target your ideal audience using building permit data</h1>
+        <p class="mt-6 text-lg text-gray-500">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <a href="{filename}contact.md" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
+          <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="{static}/images/shovelsGuy-pose8.png" alt="Illustration showing audience activation using building permit data">
+
+      <div class="md:col-span-6">
+        <img src="{static}/images/audiences/hero.svg" alt="Illustration of a contractor atop a wall of building-permit data blocks" class="block w-full h-auto" />
       </div>
+
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
+</section>
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
