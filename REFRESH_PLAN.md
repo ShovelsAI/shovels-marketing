@@ -392,6 +392,14 @@ for now; revisit before launch.
 ### Build & technical
 - [ ] Production build passes (`make publish`)
 - [ ] CSS compiled fresh — no missing utilities (the footer-overlap bug)
+- [ ] **JavaScript audit** — inventory every script the site loads
+      (inline blocks, theme JS, Alpine.js, HubSpot/newsletter handlers,
+      the UTM-persistence script, any vendor embeds) and confirm: nothing
+      is dead/duplicated after the refresh, no `-preview`-only or debug
+      code ships, no console errors on the launched pages, scripts load
+      in the right place (defer/async, no render-blocking), and nothing
+      double-fires once the chrome goes global (e.g. UTM script included
+      twice). Flag any third-party JS for the GTM audit below.
 - [x] FAQ `FAQPage` JSON-LD renders on every industry page (verified:
       all 14 FAQ pages emit valid `FAQPage` JSON-LD on the production build)
 - [ ] **Sitemap reflects the new IA** — after the slug swaps + un-hiding,
@@ -437,6 +445,15 @@ for now; revisit before launch.
       (diff the final branch one more time)
 - [ ] Newsletter: new footer form posts to the correct HubSpot
       endpoint (same list as the current embed)
+- [ ] **Google Tag Manager audit** — confirm the GTM container snippet is
+      present and fires on every launched page (incl. the net-new and
+      moved URLs), the `<noscript>` fallback is in place, and the data
+      layer is intact. Review the container in the GTM console: which
+      tags/triggers/variables actually fire, whether any reference old
+      slugs or `-preview` URLs (repoint to `/solutions/*` `/features/*`),
+      and prune stale/duplicate tags. Verify GA / conversion events still
+      fire on the redesigned pages and that the refresh didn't strip the
+      container from any template. Coordinate with the JS audit above.
 
 ### URL / link verification
 - [ ] Every link resolves to the correct page — footer, top nav,
