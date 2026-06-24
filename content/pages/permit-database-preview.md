@@ -124,7 +124,7 @@ status: hidden
 {{ ui_callout.callout(
     variant='warm',
     heading='Not sure where to start? Just ask Charlie.',
-    body='Charlie, your AI research assistant, finds exactly what you need from the Shovels data network—just ask in plain English, no SQL or filters required.',
+    body='Charlie, your AI research assistant, finds exactly what you need from the Shovels data network. Just ask in plain English (no SQL or filters required) and watch Charlie dig up the answers you are looking for.',
     cta_label='Meet Charlie',
     cta_href='/charlie',
     media_src='/images/illustrations/charlie-avatar.svg',
