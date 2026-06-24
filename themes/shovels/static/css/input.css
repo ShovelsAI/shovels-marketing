@@ -328,7 +328,7 @@
 
   /* Newsletter Form Styling */
   .newsletter-form input[type="email"] {
-    @apply w-full px-4 py-2.5 text-sm border border-gray-300 rounded-full;
+    @apply w-full px-4 py-2.5 text-sm border border-gray-300 rounded-full placeholder:text-gray-500;
     @apply focus:outline-none focus:ring-2 focus:ring-shovels-primary focus:border-shovels-primary;
   }
 
