@@ -488,10 +488,12 @@ for now; revisit before launch.
       Treatment = full refresh button style: `rounded-full` + `px-6 py-3`
       + drop `shadow-sm` + `hover:bg-shovels-primary/90`. Staged on the
       branch; goes live with the launch deploy like everything else.
-- [ ] **Blog sidebar newsletter form restyle** — update the blog
-      sidebar subscription design to the new rounded-button treatment,
-      matching the refreshed footer subscribe form (part of the rounded
-      CTA rollout)
+- [x] **Blog sidebar newsletter form restyle** — rounded-full pill input
+      + solid green pill Subscribe button, matching the refreshed footer
+      and the rounded-CTA treatment. Note: the real styling lived in the
+      `.newsletter-form` rules in `input.css` (they override the inline
+      classes in `article.html`), so both were updated. Site-wide across
+      all blog posts; live at launch.
 - [ ] **Body font cascade** — confirm Scandia→system-stack body copy
       is intended on ALL pages (it already cascades site-wide via
       `base.html` + `input.css`), incl. untouched legacy pages
