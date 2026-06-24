@@ -147,24 +147,64 @@ independently.
 
 ---
 
-## Launch sequencing (draft — to finalize in Phase 4)
+## Launch runbook — exactly what must happen to go live
 
-The launch is not one atomic action. Rough order of operations:
+The launch is one coupled deploy, but several gates must be green first.
+In order:
 
-1. **Pre-launch**: confirm all preview pages approved; nav + footer
-   updated to include every launching page (incl. Insurance, Research).
-2. **Coupled deploy** (single merge): industry slug swaps + homepage
-   into `index.html` + new global footer/nav. These are
-   interdependent — the new nav/footer link to the redesigned pages,
-   and the redesigned pages assume the new chrome.
-3. **Post-launch**: verify every live URL, FAQ schema, redirects (none
-   needed — slugs unchanged for redesigns), and the homepage.
-4. **Future pages**: launch on their own cadence; add to nav/footer
-   when each goes live.
+### Gate 0 — Merge unblock (NEW; hard blocker, settle this first)
+The refresh branch requires **verified-signature** commits, but `main`
+carries unsigned commits, so a normal branch↔`main` sync/merge is
+rejected by the repository ruleset (`GH013`: "Commits must have verified
+signatures"). The JSON-LD fix was **cherry-picked in as a signed
+stopgap**, but the **final branch→`main` merge at launch will hit the
+same wall.** An admin must resolve this before launch — either grant a
+ruleset **bypass** for the launch merge, or **scope/adjust** the
+verified-signatures rule. Without it, nothing ships. (Review:
+`github.com/ShovelsAI/shovels-marketing/rules`.)
 
-Open question: do we want a **staging deploy** of the whole branch
-(so stakeholders see the full new site at real URLs) before flipping
-production? Recommended given the scope.
+### Gate 1 — Everything green on the branch (the NOW + PREP work)
+- All preview pages approved — designer walkthroughs, FAQ accuracy,
+  **zero TBDs** (only the GIS "how it works" step maps remain)
+- Rounded-CTA rollout done; blog-sidebar newsletter form restyled
+- Redirects authored + homepage `index.html` migration drafted (PREP)
+- Mobile QA passed; staging deploy reviewed by stakeholders at real URLs
+- Branch synced with `main` (depends on Gate 0)
+
+### The flip — one coupled deploy (interdependent; ship together)
+1. **Slug swaps**: industry `*-preview` → live (drop `-preview` +
+   `status: hidden`, delete legacy file); Solutions → `/solutions/*`;
+   Features → `/features/*`; promote Insurance + Research.
+2. **Homepage**: move preview content into theme `index.html` (reconcile
+   `STATS`/helper globals + the `dates` vs `get_recent_articles` blog loop).
+3. **Un-gate chrome**: promote `footer-refresh`/`header-refresh` → global
+   (remove the `-preview` gate); drop the footer DATA column; repoint the
+   header Solutions/Features links (they resolve once pages move); final
+   header icons.
+4. **Repoint interim links**: Solutions/Features cross-sell CTAs, homepage
+   data-type/delivery links, and the GIS hero CTA
+   (`/features/gis/gallery-preview` → `/features/gis/gallery`).
+5. **Enable redirects**: 301s for all 6 moved pages (`/permit-database`,
+   `/api`, `/data-feed`, `/charlie`, `/gis`, `/cli`) + the
+   `charlie.shovels.ai` subdomain → `app.shovels.ai`. (Redirects ARE
+   needed — earlier "none needed" assumed industry-only, slugs-unchanged.)
+6. **Positioning sweep**: `base.html` fallback meta/OG/Twitter + the
+   Organization JSON-LD ("fragmented permit data" → "fragmented public
+   records").
+7. **Build**: `make publish` → regenerate `sitemap.xml` (confirm the
+   `sitemap` plugin is present in the deploy env).
+
+### Right after the flip — verify
+- Every link resolves (no 404s, no stale `-preview`); redirects 301 correctly
+- Sitemap lists the new `/solutions/*` `/features/*` + net-new pages and
+  excludes hidden/preview; **resubmit in Google Search Console**
+- Tracking intact — final diff of GA / GoSquared / HubSpot / UTM
+- Spot-check untouched pages render unchanged except intended typography
+- Future pages (Data, Brand, Partners, Pricing) launch later on their own
+  cadence; add to nav/footer as each ships
+
+A **staging deploy** of the whole branch at real URLs before flipping
+production is strongly recommended given the scope.
 
 ---
 
@@ -365,7 +405,12 @@ for now; revisit before launch.
 - [x] Meta descriptions present on all launched pages (verified: 0
       missing across the full production build; also canonical + OG
       title/image present on every page)
-- [ ] Branch rebased/merged with `main` (currently well behind)
+- [ ] Branch synced with `main` — **blocked by the verified-signatures
+      ruleset** (`main` has unsigned commits → `GH013` rejects the
+      merge/push). The JSON-LD fix (PR #146) was cherry-picked in as a
+      signed stopgap (`0f69a292`); the full sync + the final branch→`main`
+      launch merge need an admin ruleset bypass/adjust first. See **Launch
+      runbook → Gate 0**.
 
 ### SEO, analytics & legal
 - [ ] Redirects preserve SEO equity for any existing inbound links
