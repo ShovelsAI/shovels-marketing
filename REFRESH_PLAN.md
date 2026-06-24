@@ -350,7 +350,8 @@ for now; revisit before launch.
 ### Build & technical
 - [ ] Production build passes (`make publish`)
 - [ ] CSS compiled fresh — no missing utilities (the footer-overlap bug)
-- [ ] FAQ `FAQPage` JSON-LD renders on every industry page
+- [x] FAQ `FAQPage` JSON-LD renders on every industry page (verified:
+      all 14 FAQ pages emit valid `FAQPage` JSON-LD on the production build)
 - [ ] **Sitemap reflects the new IA** — after the slug swaps + un-hiding,
       regenerate `sitemap.xml` (auto-built by the `sitemap` plugin on
       `make publish`) and confirm it: (a) includes every net-new page
@@ -361,7 +362,9 @@ for now; revisit before launch.
       still `hidden`. Then resubmit the sitemap in Google Search Console
       so the moved URLs get recrawled and the old ones de-indexed via the
       301s.
-- [ ] Meta descriptions present on all launched pages
+- [x] Meta descriptions present on all launched pages (verified: 0
+      missing across the full production build; also canonical + OG
+      title/image present on every page)
 - [ ] Branch rebased/merged with `main` (currently well behind)
 
 ### SEO, analytics & legal
@@ -372,7 +375,9 @@ for now; revisit before launch.
       say "fragmented permit data"; update to the "fragmented public
       records" line when the homepage ships (live index.html hero
       carries the old line too and is replaced at launch anyway)
-- [ ] UTM-persistence script present on the new footer/pages
+- [x] UTM-persistence script present on the new footer/pages (ported
+      the utility from `footer.html` into `footer-refresh.html`; verified
+      it renders on preview pages with no double-include)
 - [ ] Legal: Notion `Logo Use` cleared for every logo shown (footer +
       industry grids)
 
