@@ -146,7 +146,7 @@ status: hidden
         'title': 'Dedicated support',
         'description': 'Work directly with a dedicated customer success and solutions architect who helps your team onboard, integrate, and operationalize the data. Get answers from experts, not a support queue.',
         'image_src': '/images/industries/building-materials/uc3-dealer-intel.svg',
-        'image_alt': 'A Shovels solutions architect working alongside a customer data team',
+        'image_alt': 'Two people reviewing building permit data together at a counter',
         'framed': False,
     },
     {
