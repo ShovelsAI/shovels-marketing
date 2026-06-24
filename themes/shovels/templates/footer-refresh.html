@@ -104,13 +104,15 @@
     {# ===== DESKTOP (lg+): brand + newsletter left, six-column grid right ===== #}
     <div class="hidden lg:flex lg:gap-16">
 
-      <div class="lg:w-72 lg:shrink-0">
+      {# Left column widened to w-96 so the brand tagline sits on one line
+         (was orphaning "world." at w-72); narrows the link grid slightly. #}
+      <div class="lg:w-96 lg:shrink-0">
         <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
         <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
 
         <div class="mt-10">
           <h3 class="text-base font-semibold text-white">Subscribe to our newsletter</h3>
-          <p class="mt-2 text-sm text-gray-400">Feature releases, data updates, and new products.</p>
+          <p class="mt-2 text-sm text-gray-400">Releases, updates, and news.</p>
 
           {# Posts to the HubSpot Forms Submissions API (Footer Newsletter
              Signup form), mirroring the blog sidebar in article.html. Script
