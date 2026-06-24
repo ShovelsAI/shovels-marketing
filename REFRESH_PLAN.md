@@ -471,13 +471,19 @@ for now; revisit before launch.
       Confirm / repoint each when the target pages are finalized.
 
 ### Site-wide consistency & global impact
-- [ ] **FAQ formatting rollout** — many pages still use the old FAQ
-      markup; convert them to the new `faq_section` macro styling used on
-      the refreshed pages (which also emits `FAQPage` JSON-LD for AEO).
-      Step 1: audit which pages carry old/inline FAQ markup. Like the
-      rounded-CTA rollout, scope to **survivor pages** — skip the legacy
-      pages replaced at launch, whose `-preview` versions already use
-      `faq_section`. Then convert each survivor's FAQ to the macro.
+- [ ] **FAQ formatting rollout** — audit done. New `faq_section` macro =
+      `<details>` accordion + `FAQPage` JSON-LD from one data block.
+      - **Done:** `audiences.md` converted (the only survivor *page* with
+        old FAQ markup; legacy pages with FAQ are replaced at launch by
+        `-preview` versions that already use the macro).
+      - **Deferred:** the **38 blog posts** with FAQ sections. They're
+        plain markdown (only 1 of 146 posts uses Jinja, so no macro path),
+        and 37/38 already carry `FAQPage` JSON-LD — so the gap is
+        **visual only**. Revisit post-launch; options are per-post
+        `<details>` HTML or normalize the markdown + a build-time
+        transform. Blog FAQ markup is inconsistent (`#` vs `##`).
+      - **Small SEO gap:** `content/posts/shovels-data-source-column-blog.md`
+        has an FAQ section but **no `FAQPage` JSON-LD** — add it.
 - [x] **Rounded CTA rollout** — give the old `rounded-md` primary
       buttons the new `rounded-full` treatment. **Scoped to survivor
       pages only** — pages with no `-preview` replacement, so they stay
