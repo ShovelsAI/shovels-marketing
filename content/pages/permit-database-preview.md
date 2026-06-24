@@ -127,7 +127,7 @@ status: hidden
     body='Charlie, your AI research assistant, finds exactly what you need from the Shovels data network—just ask in plain English, no SQL or filters required.',
     cta_label='Meet Charlie',
     cta_href='/charlie',
-    media_src='/images/shovels-Charlie-pose1.png',
+    media_src='/images/illustrations/charlie-avatar.svg',
     media_alt='Charlie, the Shovels AI research assistant') }}
 
 {{ ui_hiw.how_it_works(
