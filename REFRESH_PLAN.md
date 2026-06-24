@@ -443,9 +443,6 @@ for now; revisit before launch.
       in-page CTAs, cross-page links, blog — no 404s, correct targets
       after the `/solutions/` `/features/` moves + redirects
 - [ ] No stale `-preview` URLs left in any link
-- [ ] Delete `data-delivery-options-preview.md` (designer comparison
-      scaffolding — Option 3 chosen and live on the homepage; kept
-      around for reference until launch)
 - [ ] **Homepage interim links** — Data types cards point at KB
       articles (`docs.shovels.ai/.../data/*`) until the `/data/*` pages
       ship; repoint when those launch. Data delivery cards point at
@@ -474,6 +471,13 @@ for now; revisit before launch.
       Confirm / repoint each when the target pages are finalized.
 
 ### Site-wide consistency & global impact
+- [ ] **FAQ formatting rollout** — many pages still use the old FAQ
+      markup; convert them to the new `faq_section` macro styling used on
+      the refreshed pages (which also emits `FAQPage` JSON-LD for AEO).
+      Step 1: audit which pages carry old/inline FAQ markup. Like the
+      rounded-CTA rollout, scope to **survivor pages** — skip the legacy
+      pages replaced at launch, whose `-preview` versions already use
+      `faq_section`. Then convert each survivor's FAQ to the macro.
 - [x] **Rounded CTA rollout** — give the old `rounded-md` primary
       buttons the new `rounded-full` treatment. **Scoped to survivor
       pages only** — pages with no `-preview` replacement, so they stay
