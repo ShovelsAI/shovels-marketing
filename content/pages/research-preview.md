@@ -19,12 +19,12 @@ status: hidden
 
 {# University logo wall — 6 of 6. #}
 {% set research_logos = [
-    {'src': '/images/logos/mit.svg', 'alt': 'MIT', 'height': 28},
-    {'src': '/images/logos/stanford-university.png', 'alt': 'Stanford University', 'height': 26},
-    {'src': '/images/logos/princeton.svg', 'alt': 'Princeton University', 'height': 24},
-    {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 28},
-    {'src': '/images/logos/purdue.svg', 'alt': 'Purdue University', 'height': 26},
-    {'src': '/images/logos/university-of-michigan.svg', 'alt': 'University of Michigan', 'height': 34},
+    {'src': '/images/logos/mit.svg', 'alt': 'MIT', 'height': 24},
+    {'src': '/images/logos/stanford-university.png', 'alt': 'Stanford University', 'height': 23},
+    {'src': '/images/logos/princeton.svg', 'alt': 'Princeton University', 'height': 21},
+    {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 24},
+    {'src': '/images/logos/purdue.svg', 'alt': 'Purdue University', 'height': 23},
+    {'src': '/images/logos/university-of-michigan.svg', 'alt': 'University of Michigan', 'height': 30},
 ] %}
 
 {{ ui_grid.logo_grid(logos=research_logos, heading='TRUSTED BY RESEARCHERS AT') }}

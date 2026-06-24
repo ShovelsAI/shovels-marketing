@@ -25,11 +25,11 @@ status: hidden
 
 {# Canonical geospatial-partner logo set (matches the live /gis page). #}
 {% set gis_logos = [
-    {'src': '/images/esri.png', 'alt': 'Esri', 'height': 30},
-    {'src': '/images/logos/regrid.png', 'alt': 'Regrid', 'height': 26},
-    {'src': '/images/pargoai.svg', 'alt': 'ParGo AI', 'height': 28},
-    {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 30},
-    {'src': '/images/mit.svg', 'alt': 'MIT', 'height': 26},
+    {'src': '/images/esri.png', 'alt': 'Esri', 'height': 26},
+    {'src': '/images/logos/regrid.png', 'alt': 'Regrid', 'height': 23},
+    {'src': '/images/pargoai.svg', 'alt': 'ParGo AI', 'height': 24},
+    {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 26},
+    {'src': '/images/mit.svg', 'alt': 'MIT', 'height': 23},
 ] %}
 {{ ui_grid.logo_grid(logos=gis_logos, heading='TRUSTED ACROSS THE GEOSPATIAL COMMUNITY') }}
 

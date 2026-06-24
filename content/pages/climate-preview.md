@@ -20,12 +20,12 @@ status: hidden
 {# Static 6-logo industry strip — full set, pending legal sign-off
    (Notion Logo Use column) before launch. #}
 {% set climate_logos = [
-    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 36},
-    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 26},
+    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 31},
+    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 23},
     {'src': '/images/logos/rewiring-america.png', 'alt': 'Rewiring America'},
     {'src': '/images/logos/frontline-wildfire.svg', 'alt': 'Frontline Wildfire Defense'},
-    {'src': '/images/logos/base-power.png', 'alt': 'Base Power', 'height': 28},
-    {'src': '/images/logos/permit-power.svg', 'alt': 'PermitPower', 'height': 28},
+    {'src': '/images/logos/base-power.png', 'alt': 'Base Power', 'height': 24},
+    {'src': '/images/logos/permit-power.svg', 'alt': 'PermitPower', 'height': 24},
 ] %}
 
 {{ ui_grid.logo_grid(logos=climate_logos, heading='TRUSTED BY ENERGY & CLIMATE TEAMS') }}

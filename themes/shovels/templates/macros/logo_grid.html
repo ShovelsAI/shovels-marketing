@@ -16,7 +16,7 @@
   Each logo dict:
     src    (required) — path under /images/logos/, e.g. '/images/logos/energysage.svg'
     alt    (required) — company name
-    height (optional) — display height in px, default 30. Tune per logo for
+    height (optional) — display height in px, default 26. Tune per logo for
                         optical balance: wide wordmarks lower, square marks higher.
 
   Example:
@@ -36,7 +36,7 @@
   <div class="mx-auto mt-10 flex max-w-6xl flex-wrap items-center justify-center gap-x-16 gap-y-10 px-6 md:px-10">
     {% for logo in logos %}
     <img src="{{ logo.src }}" alt="{{ logo.alt }}"
-         style="height: {{ logo.height|default(30) }}px"
+         style="height: {{ logo.height|default(26) }}px"
          class="logo-grey w-auto">
     {% endfor %}
   </div>

@@ -20,10 +20,10 @@ status: hidden
 {# Static logo grid — Trinh Insurance (trinhinsurance.com) still pending.
    comeryx.png has a baked-in background — needs knockout. #}
 {% set insurance_logos = [
-    {'src': '/images/logos/scription.png', 'alt': 'Scription', 'height': 28},
-    {'src': '/images/logos/drodat.png', 'alt': 'Drodat', 'height': 22},
-    {'src': '/images/logos/comeryx.png', 'alt': 'Comeryx', 'height': 30},
-    {'src': '/images/logos/maverick.png', 'alt': 'Maverick', 'height': 34},
+    {'src': '/images/logos/scription.png', 'alt': 'Scription', 'height': 24},
+    {'src': '/images/logos/drodat.png', 'alt': 'Drodat', 'height': 19},
+    {'src': '/images/logos/comeryx.png', 'alt': 'Comeryx', 'height': 26},
+    {'src': '/images/logos/maverick.png', 'alt': 'Maverick', 'height': 30},
 ] %}
 
 {{ ui_grid.logo_grid(logos=insurance_logos, heading='TRUSTED BY INSURANCE TEAMS') }}

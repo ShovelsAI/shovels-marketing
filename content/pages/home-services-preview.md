@@ -21,10 +21,10 @@ status: hidden
 {% set home_services_logos = [
     {'src': '/images/logos/angi.svg', 'alt': 'Angi'},
     {'src': '/images/logos/houzz.svg', 'alt': 'Houzz'},
-    {'src': '/images/logos/pearl-certification.svg', 'alt': 'Pearl Certification', 'height': 28},
-    {'src': '/images/logos/hawkins-service.png', 'alt': 'Hawkins Service Co', 'height': 28},
-    {'src': '/images/logos/jukebox-health.png', 'alt': 'Jukebox Health', 'height': 24},
-    {'src': '/images/logos/peakzi.png', 'alt': 'Peakzi', 'height': 28},
+    {'src': '/images/logos/pearl-certification.svg', 'alt': 'Pearl Certification', 'height': 24},
+    {'src': '/images/logos/hawkins-service.png', 'alt': 'Hawkins Service Co', 'height': 24},
+    {'src': '/images/logos/jukebox-health.png', 'alt': 'Jukebox Health', 'height': 21},
+    {'src': '/images/logos/peakzi.png', 'alt': 'Peakzi', 'height': 24},
 ] %}
 
 {{ ui_grid.logo_grid(logos=home_services_logos, heading='TRUSTED BY HOME SERVICES PLATFORMS') }}
