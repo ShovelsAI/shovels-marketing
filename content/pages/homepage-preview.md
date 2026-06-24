@@ -42,23 +42,25 @@ status: hidden
    Customer logos in Domain Authority order — see the Shovels_Logo_Ranking
    sheet for the ranking and COMPONENTS.md → logo_strip for the swap process.
    Legal gate: cross-check the Notion "Logo Use" column before launch. #}
+{# Heights scaled down ~13% from the original tuning (designer: reduce
+   logo size 10–15%); relative sizing preserved for optical balance. #}
 {% set customer_logos = [
-    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 34},
-    {'src': '/images/logos/google.svg', 'alt': 'Google'},
-    {'src': '/images/logos/oracle.svg', 'alt': 'Oracle', 'height': 22},
-    {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 26},
-    {'src': '/images/logos/owens-corning.svg', 'alt': 'Owens Corning', 'height': 32},
-    {'src': '/images/logos/houzz.svg', 'alt': 'Houzz'},
-    {'src': '/images/logos/angi.svg', 'alt': 'Angi'},
-    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 36},
-    {'src': '/images/logos/thumbtack.png', 'alt': 'Thumbtack', 'height': 28},
-    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 26},
-    {'src': '/images/logos/jll.png', 'alt': 'JLL'},
-    {'src': '/images/logos/generator-supercenter.png', 'alt': 'Generator Supercenter', 'height': 24},
-    {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 36},
-    {'src': '/images/logos/ownwell.png', 'alt': 'Ownwell', 'height': 28},
-    {'src': '/images/logos/pretium.png', 'alt': 'Pretium', 'height': 22},
-    {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 26},
+    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 30},
+    {'src': '/images/logos/google.svg', 'alt': 'Google', 'height': 26},
+    {'src': '/images/logos/oracle.svg', 'alt': 'Oracle', 'height': 19},
+    {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 23},
+    {'src': '/images/logos/owens-corning.svg', 'alt': 'Owens Corning', 'height': 28},
+    {'src': '/images/logos/houzz.svg', 'alt': 'Houzz', 'height': 26},
+    {'src': '/images/logos/angi.svg', 'alt': 'Angi', 'height': 26},
+    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 31},
+    {'src': '/images/logos/thumbtack.png', 'alt': 'Thumbtack', 'height': 24},
+    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 23},
+    {'src': '/images/logos/jll.png', 'alt': 'JLL', 'height': 26},
+    {'src': '/images/logos/generator-supercenter.png', 'alt': 'Generator Supercenter', 'height': 21},
+    {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 31},
+    {'src': '/images/logos/ownwell.png', 'alt': 'Ownwell', 'height': 24},
+    {'src': '/images/logos/pretium.png', 'alt': 'Pretium', 'height': 19},
+    {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 23},
 ] %}
 
 {# Zero the strip's bottom padding so the Stats section's top padding owns
@@ -69,34 +71,36 @@ status: hidden
    both ends. The wrapper mirrors the stats section's container
    (max-w-7xl + padding) so the fade completes exactly at the outer edge
    of the stats cards below. #}
-<div class="mx-auto mt-16 max-w-7xl px-6 lg:px-8" aria-hidden="true">
+<div class="mx-auto mt-14 max-w-7xl px-6 lg:px-8" aria-hidden="true">
   <div class="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 </div>
 
 {# ── Stats ─────────────────────────────────────────────────────────── #}
-<div class="bg-white py-24 sm:py-32">
+{# Top padding reduced (designer: tighten divider→stats gap ~20%); bottom
+   kept on the section rhythm. Heading→stats gap trimmed mt-16→mt-14. #}
+<div class="bg-white pt-16 pb-24 sm:pt-24 sm:pb-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <img src="/images/illustrations/map-hat.svg" alt="" class="mx-auto h-12 w-auto">
       <h2 class="mt-6 text-balance text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Nationwide construction data, ready to use</h2>
       <p class="mt-4 text-lg/8 text-gray-600">You want insights from public records—not a data-wrangling project.</p>
     </div>
-    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
+    <dl class="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
         <dt class="text-sm/6 font-medium text-gray-600">Building permits</dt>
-        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.permits }}</dd>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.permits }}</dd>
       </div>
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
         <dt class="text-sm/6 font-medium text-gray-600">Licensed contractors</dt>
-        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.contractors }}</dd>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.contractors }}</dd>
       </div>
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
         <dt class="text-sm/6 font-medium text-gray-600">Jurisdictions covered</dt>
-        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.jurisdictions }}</dd>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.jurisdictions }}</dd>
       </div>
       <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
         <dt class="text-sm/6 font-medium text-gray-600">New permits added monthly</dt>
-        <dd class="order-first text-4xl font-semibold tracking-tight text-shovels-primary">{{ STATS.monthly_permits }}</dd>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.monthly_permits }}</dd>
       </div>
     </dl>
   </div>
@@ -118,11 +122,11 @@ status: hidden
        First tuple field is the illustration filename in
        content/images/illustrations/. #}
     {% set data_types = [
-        ('permit-clip-board', 'Permits', 'Every building permit we can source, AI-classified into clean, structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
-        ('check-shield', 'Decisions', 'Zoning and development decisions—early signals captured before a permit is ever filed.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
+        ('permit-clip-board', 'Permits', 'Every building permit we can source, AI-classified into structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
+        ('check-shield', 'Decisions', 'Zoning and development decisions, before a permit is filed.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
         ('api-hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
-        ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contact information.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
-        ('map-house', 'Properties', 'Parcels and addresses connected to their full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
+        ('map-house', 'Properties', 'Parcels and addresses with full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
+        ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contacts.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
     ] %}
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-5">
       {% for illustration, title, body, href in data_types %}
@@ -164,9 +168,9 @@ status: hidden
     ] %}
     <dl class="mx-auto mt-11 grid max-w-xl grid-cols-1 gap-8 sm:mt-14 lg:mt-16 lg:max-w-none lg:grid-cols-3">
       {% for name, best, body, href in delivery %}
-      <div class="flex flex-col border-t-2 border-gray-900 pt-10">
+      <div class="flex flex-col border-t border-gray-200 pt-10">
         <dt>
-          <span class="block text-4xl font-semibold text-shovels-primary">0{{ loop.index }}</span>
+          <span class="block text-2xl font-normal text-gray-400">0{{ loop.index }}</span>
           <span class="mt-3 block text-3xl font-semibold text-gray-900">{{ name }}</span>
           <span class="mt-3 block text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ best }}</span>
         </dt>
@@ -182,16 +186,18 @@ status: hidden
   </div>
 </div>
 
-{# ── Industries strip — eyebrow + pill links to all Industry pages.
-   Zero its own vertical padding so the neighbors (Data delivery above,
-   From the blog below) own the gaps, keeping the section rhythm uniform. #}
-{{ ui_ind.industries_strip(wrapper_class='!py-0') }}
-
-{# ── Coverage — same include as the Industry pages. sm:py-32 joins the
-   homepage rhythm; !pb-0 lets the blog's top padding own the gap below
-   (white-on-white dedup). #}
-{% set coverage_wrapper_class = 'sm:py-32 !pb-0' %}
+{# ── Coverage — same include as the Industry pages. Now the first section
+   after Data delivery (designer reorder): !pt-0 lets Data delivery's bottom
+   padding own the gap above; sm:pb-32 provides the gap down to the
+   Industries strip (white-on-white dedup). #}
+{% set coverage_wrapper_class = '!pt-0 sm:pb-32' %}
 {% include 'sections/coverage.html' %}
+
+{# ── Industries strip — eyebrow + pill links to all Industry pages. Moved
+   below Coverage (designer: alternate image/text density for better
+   rhythm). Zero its own vertical padding so the neighbors (Coverage above,
+   From the blog below) own the gaps. #}
+{{ ui_ind.industries_strip(wrapper_class='!py-0') }}
 
 {# ── From the blog — three most-recent posts. Bottom padding zeroed so
    the final CTA's top padding owns the closing gap. #}
