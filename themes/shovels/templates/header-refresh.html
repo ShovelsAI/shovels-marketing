@@ -20,11 +20,11 @@
 
 {% macro nav_link(label, href, icon, target, icons) %}
 <a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %}
-   class="group flex items-center gap-3 text-gray-700 hover:text-shovels-primary">
+   class="group flex items-center gap-3 text-gray-600 hover:text-shovels-primary">
   <span class="flex size-9 shrink-0 items-center justify-center rounded-lg bg-gray-100 text-shovels-primary transition-colors group-hover:bg-shovels-primary/10">
     {{ icons[icon](class='size-5') }}
   </span>
-  <span class="text-base font-medium">{{ label }}</span>
+  <span class="text-base font-normal">{{ label }}</span>
 </a>
 {% endmacro %}
 
@@ -171,7 +171,7 @@
         {% for title, align, items in nav_menus %}
         <div class="border-b border-gray-100">
           <button type="button" @click="open = open === {{ loop.index }} ? null : {{ loop.index }}"
-                  class="flex w-full items-center justify-between py-4 text-base font-medium text-gray-900">
+                  class="flex w-full items-center justify-between py-4 text-base font-medium text-gray-700">
             <span>{{ title }}</span>
             <svg class="h-5 w-5 shrink-0 transition-transform duration-200" :class="{ 'rotate-180': open === {{ loop.index }} }"
                  fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -181,7 +181,7 @@
           <ul x-show="open === {{ loop.index }}" x-transition role="list" class="space-y-1 pb-4">
             {% for label, href, icon, target in items %}
             <li>
-              <a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="flex items-center gap-3 py-1.5 text-sm text-gray-600 hover:text-shovels-primary">
+              <a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="flex items-center gap-3 py-1.5 text-base text-gray-600 hover:text-shovels-primary">
                 <span class="text-shovels-primary">{{ icons[icon](class='size-5') }}</span>
                 <span>{{ label }}</span>
               </a>
@@ -199,7 +199,7 @@
       </div>
 
       <div class="mt-8 space-y-4">
-        <a href="https://app.shovels.ai" class="block text-base font-medium text-gray-900">Sign In</a>
+        <a href="https://app.shovels.ai" class="block text-base font-medium text-gray-700">Sign In</a>
         <a href="https://app.shovels.ai/signup/"
            class="block w-full rounded-full bg-shovels-primary px-5 py-3 text-center text-sm font-semibold text-white hover:bg-shovels-primary/90">Get Started</a>
       </div>
