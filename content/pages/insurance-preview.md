@@ -17,8 +17,7 @@ status: hidden
     illustration_src='/images/industries/insurance/hero.svg',
     illustration_alt='Insurance hero illustration') }}
 
-{# Static logo grid — Trinh Insurance (trinhinsurance.com) still pending.
-   comeryx.png has a baked-in background — needs knockout. #}
+{# Static logo grid. comeryx.png has a baked-in background — needs knockout. #}
 {% set insurance_logos = [
     {'src': '/images/logos/scription.png', 'alt': 'Scription', 'height': 24},
     {'src': '/images/logos/drodat.png', 'alt': 'Drodat', 'height': 19},

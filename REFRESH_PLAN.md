@@ -123,8 +123,7 @@ independently.
 ### Phase 1 — Refresh template & preview pages ✅ (essentially done)
 - Design system locked (COMPONENTS.md), macros + sections built.
 - 8 industry preview pages + homepage preview built and image-complete.
-- Remaining: Trinh Insurance logo (Insurance grid 3/4); first-pass
-  logo-height tuning; designer walkthrough.
+- Remaining: first-pass logo-height tuning; designer walkthrough.
 
 ### Phase 2 — Global chrome (current)
 - **Footer** redesign (preview built) — `footer-refresh.html`, gated.
@@ -281,7 +280,7 @@ launch) · **LAUNCH** (coupled to the go-live deploy) · ✅ done.
 - Branch rebase on `main` (after PR #146 merges, to pick up the JSON-LD fix)
 - FAQ accuracy review + blog pull-in category/tag check
 - Designer passes (8 industry, homepage, Research), logo sourcing/heights,
-  white-on-hover logos, Trinh Insurance logo (4/4)
+  white-on-hover logos
 - Verifications: meta descriptions, canonical/OG, UTM script, FAQ JSON-LD,
   trial `make publish`
 - Cleanups: drop footer DATA column, final header icons, delete
@@ -310,7 +309,6 @@ for now; revisit before launch.
 - [ ] Designer walkthrough of all 8 industry preview pages
 - [ ] Designer walkthrough of homepage preview
 - [ ] Research page reviewed (UC1 framed vs unframed call confirmed)
-- [ ] Trinh Insurance logo sourced → Insurance grid 4/4
 - [ ] Logo heights tuned across all grids (designer pass)
 - [ ] White-on-hover logos resolved or accepted (Hawkins, Avenue Roofing)
 - [ ] Every page renders with no `TBD` placeholders
@@ -322,6 +320,14 @@ for now; revisit before launch.
       its industry (and resolves enough posts), and the homepage pulls
       most-recent via `get_recent_articles`. Confirm Research has a
       blog pull (no `get_industry_articles` call found yet)
+- [ ] **Refresh the `STATS` numbers before launch** — the published
+      metrics (permits, contractors, jurisdictions, monthly permits, plus
+      the breakdown/table counts) live in one place, `STATS` in
+      `pelicanconf.py`, and flow to every page via `{{ STATS.key }}`.
+      They grow over time and will present better with current figures at
+      launch — pull fresh values and update the dict. Mirror the same
+      update to `snippets/stats.mdx` in the docs repo so the two stay in
+      sync (see the note above the `STATS` block).
 
 ### URLs, routing & redirects
 - [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed).
@@ -578,5 +584,5 @@ for now; revisit before launch.
   copy, and cadence TBD; launch independently.
 - **Stale `main`** — this branch is now well behind `main` (blog posts,
   telecom copy edits merged). Plan a rebase/merge before launch.
-- Trinh Insurance logo; designer logo-height pass; white-on-hover
-  logos (Hawkins, Avenue Roofing) — minor, deferred.
+- Designer logo-height pass; white-on-hover logos (Hawkins,
+  Avenue Roofing) — minor, deferred.
