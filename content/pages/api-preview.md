@@ -193,7 +193,7 @@ status: hidden
 
 {# Links to /cli (live today; moves to /features/cli at launch). #}
 {{ ui_callout.callout(
-    variant='dark',
+    variant='warm',
     heading='Prefer working from the terminal?',
     body='The Shovels CLI gives you access to the same data from the command line.',
     cta_label='Check out the Shovels CLI',
