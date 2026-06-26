@@ -339,7 +339,11 @@ for now; revisit before launch.
       redirects. Promoting `data-feed` also resolves the API page's
       Enterprise cross-sell link (`/solutions/data-feed`)
 - [ ] Move Features pages to `/features/*` (charlie, gis, cli)
-- [ ] Old → new redirects for all 6 moved pages
+- [ ] Old → new redirects for all 6 moved pages:
+      `/permit-database` → `/solutions/permit-database`,
+      `/api` → `/solutions/api`, `/data-feed` → `/solutions/data-feed`,
+      `/gis` → `/features/gis`, `/cli` → `/features/cli`,
+      `/charlie` → `/features/charlie`
 - [ ] **Charlie now lives in Shovels Online** — redirect the entire
       `https://charlie.shovels.ai/` subdomain to `https://app.shovels.ai/`,
       and point all Charlie page CTAs at `app.shovels.ai` (the
