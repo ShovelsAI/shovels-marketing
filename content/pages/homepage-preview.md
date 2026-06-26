@@ -158,9 +158,9 @@ status: hidden
    Links use the working flat slugs; repoint to /solutions/ at launch. #}
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
+    <div class="mx-auto max-w-3xl text-center">
       <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Data delivery options</h2>
-      <p class="mt-4 text-lg text-gray-500">One dataset. Three ways to access it. Choose the integration that fits your workflow.</p>
+      <p class="mt-4 text-lg text-gray-500">One unified dataset. Three ways to access it. Choose the integration that fits your workflow.</p>
     </div>
     {% set delivery = [
         ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database', 'shovels-globe'),
