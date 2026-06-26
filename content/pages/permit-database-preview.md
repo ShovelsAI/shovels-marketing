@@ -138,19 +138,19 @@ status: hidden
             'number': '1',
             'title': 'Sign up for free',
             'description': 'Create an account at app.shovels.ai. Start exploring permits and contractors right away.',
-            'icon': 'sparkles',
+            'image': '/images/illustrations/icon-star.svg',
         },
         {
             'number': '2',
             'title': 'Search and filter',
             'description': 'Enter a city, ZIP code, or address. Filter by permit type, contractor specialty, job value, and date range.',
-            'icon': 'map_pin',
+            'image': '/images/illustrations/map-hat.svg',
         },
         {
             'number': '3',
             'title': 'Export to CSV or your CRM',
             'description': 'Download filtered results with one click. Import into Salesforce, HubSpot, or any spreadsheet instantly.',
-            'icon': 'file_text',
+            'image': '/images/illustrations/icon-export.svg',
         },
     ]) }}
 

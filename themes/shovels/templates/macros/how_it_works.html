@@ -17,8 +17,12 @@
               number      : Step label inside the badge ('1', '2', '3').
               title       : Step heading.
               description : One- or two-sentence body.
+              image       : Optional illustration src (e.g. an SVG in
+                            images/illustrations/). Rendered at h-14, no
+                            tile. Takes precedence over icon.
               icon        : Optional icon macro name from icons.html
-                            (e.g. 'sparkles'). Omitted → no icon tile.
+                            (e.g. 'sparkles'), shown in a tinted tile.
+                            Omitted (with no image) → no icon.
   anchor  : id applied to the <section> so in-page links (e.g. a hero
             "See how it works" CTA) can target it. Default 'how-it-works'.
 
@@ -61,7 +65,9 @@
         {% endif %}
         <span class="relative z-10 flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ step.number }}</span>
         <div class="mt-8 flex w-full flex-auto flex-col rounded-2xl border border-gray-200 bg-white p-8">
-          {% if step.icon %}
+          {% if step.image %}
+          <img src="{{ step.image }}" alt="" class="mx-auto mb-5 h-14 w-auto">
+          {% elif step.icon %}
           <span class="mx-auto mb-5 flex size-11 items-center justify-center rounded-xl bg-shovels-primary/10">
             {{ icons[step.icon](class='size-6 text-shovels-primary') }}
           </span>
