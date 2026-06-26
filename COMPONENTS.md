@@ -68,6 +68,33 @@ entries; don't rewrite old ones.
   page-specific coverage copy, parameterize the include rather than
   forking it.
 
+- **Coverage map sizing + position.** `sections/coverage.html` map
+  illustration is capped at `w-[420px]` (centered, `max-w-full`) and the
+  grid is `items-start` with a `md:mt-12` offset so the map sits below
+  the COVERAGE eyebrow on desktop. Shared include → applies everywhere
+  coverage is used.
+
+- **Refresh nav dropdown labels lightened.** `header-refresh.html` `nav_link`
+  labels are `font-normal` / `text-gray-600` (were `font-medium` /
+  `text-gray-700`), and the mobile menu was aligned to match (top-level
+  `text-gray-700`, sub-links `text-base`). Shared chrome — affects every
+  page once the refresh header is promoted.
+
+- **Footer DATA column removed for launch; newsletter form restyled.**
+  `footer-refresh.html` drops the DATA column (grid `grid-cols-6` →
+  `grid-cols-5`); the newsletter form and the blog-sidebar form use
+  rounded-full pill input + solid green pill button via `.newsletter-form`
+  rules in `input.css` (which override inline classes). See REFRESH_PLAN.
+
+- **Rounded-full CTA treatment rolled out to survivor pages.** Old
+  `rounded-md` primary buttons → the refreshed `rounded-full` + `px-6 py-3`
+  treatment across the pages that stay live through launch. Card/callout
+  radius standardized to `rounded-2xl`.
+
+- **GoSquared analytics removed.** The orphaned `gosquared.html` template
+  (never `{% include %}`d, gated on an undefined `GOSQUARED_SITENAME`) was
+  deleted. Analytics consolidates on the GTM container in `base.html`.
+
 ---
 
 ## Tokens & colors
@@ -795,7 +822,7 @@ callout(heading, body, cta_label, cta_href,
 | `body` | _required_ | Supporting sentence |
 | `cta_label` | _required_ | Button text (a trailing `→` is added automatically) |
 | `cta_href` | _required_ | Button destination |
-| `variant` | `'green'` | `'green'` (shovels-primary band, white text, white button), `'warm'` (brand cream `#E9E1CE` band, dark text, green button), or `'dark'` (gray-900 band, white text, green button — used for the API page's CLI cross-sell) |
+| `variant` | `'green'` | `'green'` (shovels-primary band, white text, white button), `'warm'` (brand cream `#E9E1CE` band, dark text, green button — the Shovels Online "Just ask Charlie" and API CLI cross-sell callouts), or `'dark'` (gray-900 band, white text, green button — defined but currently unused) |
 | `media_src` | `None` | Optional image left of the text (e.g. the Charlie avatar, which is already circular). Omit for no media |
 | `media_alt` | `''` | Alt text for `media_src` |
 
@@ -847,7 +874,7 @@ how_it_works(eyebrow, heading, steps, anchor='how-it-works')
 |---|---|---|
 | `eyebrow` | _required_ | Small uppercase chip above the heading |
 | `heading` | _required_ | Section H2 |
-| `steps` | _required_ | List of dicts: `number`, `title`, `description`, and optional `icon` (a macro name from `icons.html`) |
+| `steps` | _required_ | List of dicts: `number`, `title`, `description`, and either `image` (an illustration src, e.g. an SVG in `images/illustrations/`) or `icon` (a glyph macro name from `icons.html`) |
 | `anchor` | `'how-it-works'` | `id` on the `<section>` so in-page links (e.g. a hero "See how it works" CTA) can target it |
 
 #### Example
@@ -867,6 +894,12 @@ how_it_works(eyebrow, heading, steps, anchor='how-it-works')
 
 #### Notes
 
+- **Icon vs. image per step**: `image` takes precedence over `icon`. An
+  `image` renders the illustration at `h-[55px] w-auto` (designer spec),
+  centered, with no tile. An `icon` renders a glyph from `icons.html` at
+  `size-6` inside a `size-11` `bg-shovels-primary/10` rounded tile. The
+  Solutions and Charlie pages use illustration `image`s; the glyph `icon`
+  path stays available but is currently unused.
 - **Connecting line**: each non-first badge draws a line back to the
   previous badge. Its width is `calc(100% + 2rem)` — one column width
   plus the `md:gap-8` (2rem) grid gap — so it reaches badge centers
@@ -1421,9 +1454,8 @@ URL still resolves. Two use cases:
 |---|---|---|---|
 | `content/pages/mockup-test.md` | `/mockup-test` | Stress-test the `browser_frame` macro at varying widths and aspect ratios | Sandbox |
 | `content/pages/insurance-preview.md` | `/insurance-preview` | Preview of the new Insurance page (no legacy predecessor; the page is brand-new). Will be renamed to `insurance.md` with `slug: insurance` at launch. | Greenfield preview |
-| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage. Section order: hero (grid background, single CTA) → scrolling `logo_strip` → fading divider (gradient `h-px`, fade ends aligned to the stats-card outer edges) → stats (light cards, `map-hat` illustration topper) → data types (dark `shovels-secondary` band, five illustration cards, KB-article Learn more links) → data delivery (three numbered tiers, dark top rules) → `industries_strip` → `sections/coverage.html` include → "From the blog" (`get_recent_articles`) → `final_cta`. "How we're different" was cut from this layout; its markup is parked in `archive/homepage-how-were-different.html`. **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template rather than a file rename. Two things only work as a content page and must be reconciled at launch: `STATS`/helper globals, and "From the blog" — the theme index uses Pelican's `dates` article loop, not `get_recent_articles`. | Redesign preview |
+| `content/pages/homepage-preview.md` | `/homepage-preview` | Preview of the redesigned homepage. Section order: hero (grid background, single CTA) → scrolling `logo_strip` → fading divider (gradient `h-px`, fade ends aligned to the stats-card outer edges) → stats (light cards, `map-hat` illustration topper) → data types (dark `shovels-secondary` band, five illustration cards, KB-article Learn more links) → data delivery (three icon cards: globe / API / box) → `industries_strip` → `sections/coverage.html` include → "From the blog" (`get_recent_articles`) → `final_cta`. "How we're different" was cut from this layout; its markup is parked in `archive/homepage-how-were-different.html`. **Launch swap differs from industry pages**: the live homepage is the theme template (`themes/shovels/templates/index.html`), not a content page, so at launch the preview's content moves into that template rather than a file rename. Two things only work as a content page and must be reconciled at launch: `STATS`/helper globals, and "From the blog" — the theme index uses Pelican's `dates` article loop, not `get_recent_articles`. | Redesign preview |
 | `content/pages/research-preview.md` | `/research-preview` | Preview of the new Research page (no legacy predecessor). Blog pull uses `get_category_articles('Data')`. Promoted to `/research` at launch. | Greenfield preview |
-| `content/pages/data-delivery-options-preview.md` | `/data-delivery-options-preview` | Scaffolding page that compared three layout options for the homepage "Data delivery options" section. Option 3 (numbered tiers) was chosen and now lives on the homepage preview; this page is kept for reference and **deleted at launch** (see REFRESH_PLAN checklist). | Sandbox |
 | `content/pages/permit-database-preview.md` | `/solutions/permit-database-preview` | Redesign of the live `/permit-database` page as **Shovels Online**, the first of the three Solutions pages (Online / API / Enterprise). Section order: `hero` (eyebrow "Shovels Online") → `use_case_section` (no eyebrow, numbered 01–06; reuses industry screenshots, F5 CSV export is TBD) → warm `callout` (Charlie) → `how_it_works` → `industries_strip` → `sections/coverage.html` → green `callout` (API cross-sell) → `faq_section` (FAQ + meta wired to `STATS`) → `final_cta`. Images in `content/images/solutions/permit-database/`. At launch: slug → `solutions/permit-database`, drop `status: hidden`, delete legacy `permit-database.md`, redirect `/permit-database` → `/solutions/permit-database`. Interim links (`/charlie`, `/solutions/api`) tracked in REFRESH_PLAN. | Redesign preview |
 | `content/pages/api-preview.md` | `/solutions/api-preview` | Redesign of the live `/api` page as **Shovels API**, the second Solutions page. Like Shovels Online but with **coded** feature visuals: F1 geo-resolution card, F2 `permits/search` terminal (with copy), F3 light contractor-endpoint list, F4 reuses the `software/uc3` lifecycle illustration, F5 `meta/release` window, F6 light permit-record card — all framed with `window_header`. Every endpoint/param/field is verified against docs.shovels.ai. Dark `callout` (CLI → `/cli`), green `callout` (Enterprise → `/solutions/data-feed`). FAQ + meta wired to `STATS`. Images in `content/images/solutions/api/`. At launch: slug → `solutions/api`, drop `status: hidden`, delete legacy `api.md`, redirect `/api` → `/solutions/api`. | Redesign preview |
 | `content/pages/data-feed-preview.md` | `/solutions/data-feed-preview` | Redesign of the live `/data-feed` page as **Shovels Enterprise**, the third Solutions page. Hero (`hero.svg`) → `soc2_trust` → `use_case_section` (no eyebrow, 01–05): F1 coded **live-delivery diagram** (green-outline Shovels source with logo + database icon → connector bus → three warehouse boxes with glyph-only marks `snowflake.svg` / `bigquery.svg` / `databricks.png`; F1 Snowflake & BigQuery copy link to the marketplace listings), F2 coded calendar card, F3 coded schema card, F4 reuses the `building-materials/uc3` illustration, F5 coded dark bar chart → `industries_strip` (all 8, "TRUSTED BY DATA TEAMS IN") → `sections/coverage.html` → `faq_section` (wired to `STATS`) → `final_cta`. No logo wall. Single "Talk to sales" CTA → `/contact`. Images in `content/images/solutions/data-feed/`; warehouse glyphs in `content/images/logos/`. At launch: slug → `solutions/data-feed`, drop `status: hidden`, delete legacy `data-feed.md`, redirect `/data-feed` → `/solutions/data-feed`. | Redesign preview |

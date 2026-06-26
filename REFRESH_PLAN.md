@@ -368,7 +368,10 @@ for now; revisit before launch.
       and `themes/`, build the full list, then confirm each is either
       repointed or covered by a redirect. Re-run the grep after repointing
       to prove zero stragglers remain.
-- [ ] Audiences decision executed (deprecate / keep / relocate)
+- [x] Audiences decision executed — **keep live, drop from nav.** Hero
+      refreshed to the new style; the page is already absent from the
+      `header-refresh` nav, so the nav drop is inherent at launch (no
+      separate action). Reachable via search/bookmarks post-launch.
 - [ ] Industry slug swaps: `*-preview.md` → live slug, drop `-preview`,
       remove `status: hidden`, delete legacy file (climate, real-estate,
       building-materials, software, home-services, telecommunications)
