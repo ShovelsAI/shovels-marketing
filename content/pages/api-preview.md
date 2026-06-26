@@ -206,12 +206,12 @@ status: hidden
         {
             'number': '1',
             'title': 'Sign up and get your API key',
-            'description': 'Create a free account at app.shovels.ai. Access your API key and full documentation from the dashboard.',
+            'description': 'Create a <a href="https://app.shovels.ai/signup/" class="font-semibold text-shovels-primary hover:text-shovels-primary/80 hover:underline">free account</a> to access your API key and full documentation from the dashboard.',
             'image': '/images/illustrations/icon-star.svg',
         },
         {
             'number': '2',
-            'title': 'Query by address, geography, or contractor',
+            'title': 'Query the data',
             'description': 'Use RESTful endpoints to pull exactly the data you need. Filter by permit type, geography, work category, and more.',
             'image': '/images/illustrations/icon-search.svg',
         },
