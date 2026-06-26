@@ -81,19 +81,19 @@ status: hidden
             'number': '1',
             'title': 'Tell Charlie what to find',
             'description': 'Just ask. "Find the top solar contractors in Texas" or "Which cities approved the most ADU permits last quarter?" No filters to configure.',
-            'icon': 'sparkles',
+            'image': '/images/illustrations/icon-star.svg',
         },
         {
             'number': '2',
             'title': 'Watch her find it',
             'description': 'Charlie searches the entire Shovels data network—permits, contractors, city decisions—filtering out noise and false positives along the way.',
-            'icon': 'database',
+            'image': '/images/illustrations/icon-charlie-search.svg',
         },
         {
             'number': '3',
             'title': 'Get exactly what you need',
             'description': "Clean data, ready to use. Tell Charlie to narrow down, expand, or pivot. She sticks with your search until you're satisfied.",
-            'icon': 'gauge',
+            'image': '/images/illustrations/icon-bell.svg',
         },
     ]) }}
 
