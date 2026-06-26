@@ -154,35 +154,33 @@ status: hidden
    (not in the mock; needs rework). Archived at
    archive/homepage-how-were-different.html. #}
 
-{# ── Data delivery options — numbered tiers (mock option 3). Links use
-   the working flat slugs; repoint to /solutions/ at launch. #}
+{# ── Data delivery options — icon cards (one dataset, three access tiers).
+   Links use the working flat slugs; repoint to /solutions/ at launch. #}
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
+    <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Data delivery options</h2>
+      <p class="mt-4 text-lg text-gray-500">One dataset. Three ways to access it. Choose the integration that fits your workflow.</p>
     </div>
     {% set delivery = [
-        ('Shovels Online', 'Explore &amp; export', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database'),
-        ('Shovels API', 'Build into your product', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api'),
-        ('Enterprise Data License', 'Pipe into your warehouse', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed'),
+        ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database', 'shovels-globe'),
+        ('Shovels API', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api', 'data-api'),
+        ('Enterprise', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed', 'enterprise-box'),
     ] %}
-    <dl class="mx-auto mt-11 grid max-w-xl grid-cols-1 gap-8 sm:mt-14 lg:mt-16 lg:max-w-none lg:grid-cols-3">
-      {% for name, best, body, href in delivery %}
-      <div class="flex flex-col border-t border-gray-200 pt-10">
-        <dt>
-          <span class="block text-2xl font-normal text-gray-400">0{{ loop.index }}</span>
-          <span class="mt-3 block text-3xl font-semibold text-gray-900">{{ name }}</span>
-          <span class="mt-3 block text-xs font-medium uppercase tracking-wider text-shovels-primary">{{ best }}</span>
-        </dt>
-        <dd class="mt-3 flex flex-auto flex-col text-base/7 text-gray-600">
-          <p class="flex-auto">{{ body }}</p>
+    <div class="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-8 sm:mt-16 lg:max-w-none lg:grid-cols-3">
+      {% for name, body, href, icon in delivery %}
+      <div class="flex items-start gap-5 rounded-2xl border border-gray-200 bg-white p-8">
+        <img src="/images/illustrations/{{ icon }}.svg" alt="" class="h-20 w-20 shrink-0">
+        <div class="flex flex-col">
+          <h3 class="text-xl font-semibold text-gray-900">{{ name }}</h3>
+          <p class="mt-3 text-base/7 text-gray-600">{{ body }}</p>
           <p class="mt-6">
-            <a href="{{ href }}" class="text-sm/6 font-semibold text-shovels-primary hover:text-shovels-primary/80">Learn more <span aria-hidden="true">→</span></a>
+            <a href="{{ href }}" class="text-sm font-semibold text-shovels-primary hover:text-shovels-primary/80">Learn more <span aria-hidden="true">→</span></a>
           </p>
-        </dd>
+        </div>
       </div>
       {% endfor %}
-    </dl>
+    </div>
   </div>
 </div>
 
