@@ -197,7 +197,7 @@ verified-signatures rule. Without it, nothing ships. (Review:
 - Every link resolves (no 404s, no stale `-preview`); redirects 301 correctly
 - Sitemap lists the new `/solutions/*` `/features/*` + net-new pages and
   excludes hidden/preview; **resubmit in Google Search Console**
-- Tracking intact — final diff of GA / GoSquared / HubSpot / UTM
+- Tracking intact — final diff of GTM / GA / HubSpot / UTM
 - Spot-check untouched pages render unchanged except intended typography
 - Future pages (Data, Brand, Partners, Pricing) launch later on their own
   cadence; add to nav/footer as each ships
@@ -443,11 +443,14 @@ for now; revisit before launch.
       industry grids)
 
 ### Tracking / analytics integrity (design refresh — keep tracking intact)
-- [x] No tracking code edited on the branch — VERIFIED vs `main`:
-      `base.html` changed only the body-font line + footer include;
-      `footer.html` (HubSpot embed + UTM script) and `gosquared.html`
+- [x] No live tracking code altered on the branch — VERIFIED vs `main`:
+      `base.html` changed only the body-font line + footer include; the
+      `footer.html` HubSpot embed + UTM script and the GTM container are
       untouched; no GA/gtag changes. (Re-verify just before launch.)
-- [ ] Re-confirm GA / GoSquared / HubSpot / UTM intact at launch
+- [x] **GoSquared removed** — the `gosquared.html` template was orphaned
+      (never `{% include %}`d, gated on an undefined `GOSQUARED_SITENAME`)
+      and is deleted. Analytics consolidates on the GTM container.
+- [ ] Re-confirm GTM / GA / HubSpot / UTM intact at launch
       (diff the final branch one more time)
 - [ ] Newsletter: new footer form posts to the correct HubSpot
       endpoint (same list as the current embed)
