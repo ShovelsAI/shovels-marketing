@@ -292,7 +292,18 @@ launch) · **LAUNCH** (coupled to the go-live deploy) · ✅ done.
 **PREP now → enable at launch:**
 - Author the 301s (6 moved pages + `/charlie` + the `charlie.shovels.ai`
   subdomain) so launch just switches them on
-- Draft the homepage `index.html` migration (STATS/helpers + blog-loop reconcile)
+- ✅ Homepage `index.html` migration **drafted + proven** — the
+      launch-ready homepage lives at `themes/shovels/templates/index-refresh.html`
+      and renders for review at `/home-refresh-preview` (hidden stub page
+      `home-refresh-preview.md`, `Template: index-refresh`, so it shows
+      with the refresh chrome). Confirmed in template context: STATS and
+      `get_recent_articles` resolve (both JINJA_GLOBALS), the new hero
+      carries its own grid background (base.html's `background_pattern`
+      block left empty), all sections render. **At launch:** replace
+      `index.html` with `index-refresh.html` (`git mv`), repoint the 3
+      data-delivery links to `/solutions/*`, delete the stub +
+      `homepage-preview.md`, and ship coupled with chrome promotion +
+      STATS refresh.
 
 **LAUNCH only — the flip:**
 - Slug swaps (industry + Solutions `/solutions/*` + Features `/features/*`),
