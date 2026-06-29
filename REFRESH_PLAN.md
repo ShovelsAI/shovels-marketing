@@ -165,7 +165,7 @@ verified-signatures rule. Without it, nothing ships. (Review:
 
 ### Gate 1 — Everything green on the branch (the NOW + PREP work)
 - All preview pages approved — designer walkthroughs, FAQ accuracy,
-  **zero TBDs** (only the GIS "how it works" step maps remain)
+  **zero TBDs** (GIS step maps now shipped — no TBDs remain)
 - Rounded-CTA rollout done; blog-sidebar newsletter form restyled
 - Redirects authored + homepage `index.html` migration drafted (PREP)
 - Mobile QA passed; staging deploy reviewed by stakeholders at real URLs
@@ -303,8 +303,9 @@ launch) · **LAUNCH** (coupled to the go-live deploy) · ✅ done.
 - Regenerate + resubmit sitemap, positioning sweep, final tracking diff,
   full link verification (no 404s / no stale `-preview`), go/no-go
 
-**Open dependency:** GIS "how it works" step maps (3 TBDs) — left as TBD
-for now; revisit before launch.
+**Open dependency:** ✅ Resolved — GIS "how it works" step maps shipped
+(`coverage-area` / `provision-layers` / `map-layer`). No known `TBD`
+placeholders remain on any preview page.
 
 ### Content & pages
 - [ ] Designer walkthrough of all 8 industry preview pages
@@ -404,7 +405,10 @@ for now; revisit before launch.
 - [ ] Header: swap Lucide stand-in icons for final marks (designer)
 
 ### Build & technical
-- [ ] Production build passes (`make publish`)
+- [x] Production build passes (`make publish`) — verified 2026-06-29:
+      146 articles + 32 pages built clean, `sitemap` plugin loads, 404
+      generated. (`docs/` is gitignored + CI-built via `deploy.yml`; the
+      Makefile's trailing `git commit` is a harmless no-op locally.)
 - [ ] CSS compiled fresh — no missing utilities (the footer-overlap bug)
 - [ ] **JavaScript audit** — inventory every script the site loads
       (inline blocks, theme JS, Alpine.js, HubSpot/newsletter handlers,
@@ -483,32 +487,31 @@ for now; revisit before launch.
       in-page CTAs, cross-page links, blog — no 404s, correct targets
       after the `/solutions/` `/features/` moves + redirects
 - [ ] No stale `-preview` URLs left in any link
-- [ ] **Homepage interim links** — Data types cards point at KB
-      articles (`docs.shovels.ai/.../data/*`) until the `/data/*` pages
-      ship; repoint when those launch. Data delivery cards point at
-      `/permit-database`, `/api`, `/data-feed`; repoint if those move
-      under `/solutions/`
-- [ ] **Solutions page interim links** — cross-sell CTAs on the built
-      Solutions previews point at not-yet-live targets:
-      - Shovels Online (`permit-database-preview`): Charlie callout →
-        `/charlie` (URL expected to change as that page is built); API
-        callout → `/solutions/api` (404 until promoted)
-      - Shovels API (`api-preview`): CLI callout → `/cli` (resolves
-        today; moves to `/features/cli`); Enterprise callout →
-        `/solutions/data-feed` (404 until page 3 ships)
-      Confirm / repoint each when the target pages are finalized.
-- [ ] **Features page interim links** — built Features previews point
-      at not-yet-live targets:
-      - GIS (`gis-preview`): hero secondary CTA "View map gallery" →
-        `/features/gis/gallery-preview` (the staged gallery, so it's
-        clickable in preview); **repoint to `/features/gis/gallery` at
-        launch**. Enterprise callout → `/data-feed` (moves to
-        `/solutions/data-feed`)
-      - CLI (`cli-preview`): green callout → `/api` (moves to
-        `/solutions/api`)
-      - Charlie (`charlie-preview`): warm callout → Shovels Online
-        (`/permit-database`, moves to `/solutions/permit-database`)
-      Confirm / repoint each when the target pages are finalized.
+- [ ] **Repoint interim in-page links at launch** — verified by sweep
+      (2026-06-29). The refreshed nav + footer **already use** the new
+      `/solutions/*` `/features/*` paths, so the chrome is launch-ready.
+      Only these in-page links point at old flat slugs (they resolve
+      today, so they can't be changed early — repoint each in the launch
+      commit, coupled with the page moves):
+
+      | File:line | Today | → at launch |
+      |---|---|---|
+      | `homepage-preview.md:166` | `/permit-database` | `/solutions/permit-database` |
+      | `homepage-preview.md:167` | `/api` | `/solutions/api` |
+      | `homepage-preview.md:168` | `/data-feed` | `/solutions/data-feed` |
+      | `permit-database-preview.md:129` | `/charlie` | `/features/charlie` |
+      | `charlie-preview.md:74` | `/permit-database` | `/solutions/permit-database` |
+      | `api-preview.md:200` | `/cli` | `/features/cli` |
+      | `cli-preview.md:232` | `/api` | `/solutions/api` |
+      | `gis-preview.md:188` | `/data-feed` | `/solutions/data-feed` |
+      | `gis-preview.md:22` | `/features/gis/gallery-preview` | `/features/gis/gallery` |
+
+      Line numbers drift as pages are edited — re-run the sweep at launch
+      to confirm (grep the previews for `'/permit-database'`, `'/api'`,
+      `'/data-feed'`, `'/charlie'`, `'/gis'`, `'/cli'`, and `-preview`).
+- [ ] **Homepage Data-type cards (separate)** — point at KB articles
+      (`docs.shovels.ai/.../data/*`) until the `/data/*` pages ship;
+      repoint when those launch (post-launch, own cadence).
 
 ### Site-wide consistency & global impact
 - [ ] **FAQ formatting rollout** — audit done. New `faq_section` macro =
