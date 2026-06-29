@@ -119,6 +119,13 @@ STATS = {
 import os
 import re
 
+from pelican.utils import slugify as _pelican_slugify
+from pelican.settings import DEFAULT_CONFIG as _PELICAN_DEFAULTS
+
+# Pelican's default slug substitutions — used to mirror its title→slug
+# derivation when a post has no explicit `Slug:` field.
+_SLUG_REGEX_SUBSTITUTIONS = _PELICAN_DEFAULTS['SLUG_REGEX_SUBSTITUTIONS']
+
 _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 _POSTS_DIR = os.path.join(_BASE_DIR, 'content', 'posts')
 _META_LINE = re.compile(r'^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.*)$')
@@ -153,7 +160,16 @@ def _parse_post_metadata(path):
     if not meta.get('date'):
         return None
     if 'slug' not in meta:
-        meta['slug'] = os.path.splitext(os.path.basename(path))[0]
+        # Derive the slug the same way Pelican does (SLUGIFY_SOURCE =
+        # 'title') so the URLs built here match where each article
+        # actually builds. Using the filename stem silently breaks links
+        # whenever a post's filename differs from its slugified title.
+        title = meta.get('title')
+        if title:
+            meta['slug'] = _pelican_slugify(
+                title, regex_subs=_SLUG_REGEX_SUBSTITUTIONS)
+        else:
+            meta['slug'] = os.path.splitext(os.path.basename(path))[0]
     return meta
 
 
