@@ -540,6 +540,20 @@ Each bullet renders with a small circular badge (20×20, rounded-full,
 badge and bullet text. Per designer's spec (and added to the spec doc
 after our review).
 
+#### Visual height consistency
+
+Keep all of a page's use-case visuals at a **unified — or at least
+similar — rendered height** so the visual column reads consistently down
+the page (rows are `items-center`, so wildly different heights look
+unbalanced). This matters most for **coded `media` blocks**, whose height
+is driven by their content rather than a fixed image. On the Enterprise
+(`data-feed`) page, the four coded visuals were tuned into a ~360px band
+(e.g. the calendar's day cells use a fixed `h-9` instead of
+`aspect-square`, and the history chart bars are `h-64`). When adding or
+editing a coded visual, measure it against its neighbors and adjust
+toward the page's shared height rather than leaving it to fall where the
+content lands.
+
 ---
 
 ### `faq_section` macro
