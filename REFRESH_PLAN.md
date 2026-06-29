@@ -339,10 +339,40 @@ placeholders remain on any preview page.
       page and verify claims are current and correct (coverage numbers,
       product names, pricing/delivery details, links)
 - [ ] Blog pull-ins use the correct category/tag combo per page —
-      each industry page's `get_industry_articles('<Category>')` matches
-      its industry (and resolves enough posts), and the homepage pulls
-      most-recent via `get_recent_articles`. Confirm Research has a
-      blog pull (no `get_industry_articles` call found yet)
+      each industry page's `get_industry_articles('<tag>')` matches its
+      industry (and resolves enough posts), the homepage pulls
+      most-recent via `get_recent_articles`, and Research pulls via
+      `get_category_articles('Data')`. **Audited 2026-06-29: all 9 pages
+      return a full 3 articles.** But three pages were showing the generic
+      tier-3 fallback for lack of tagged posts — see the tagging plan
+      below.
+- [ ] **Blog industry-tagging plan** (improve topical relevance on 3
+      pages that were falling back to generic posts). How matching works:
+      tier 1 = exact `Tag2` == the page's tag; tier 2 = page tag is a
+      substring of the comma-separated `Tags`; tier 3 = recent fallback.
+      `Tag2` is **single-valued**, so to add a post to a *second* industry
+      without removing it from its current one, add the industry name to
+      its `Tags` list (tier 2) rather than overwriting `Tag2`.
+      - ✅ **Done (safe near-miss normalizations, 2026-06-29):** fixed
+        `Tag2` strings that expressed the right intent but didn't match
+        the page tag — `how-to-find-construction-leads-shovels.md`
+        (`Building Materials & Equipment Suppliers` → `Building Materials`),
+        `contech-gtm.md` and `autodesk.md` (`Construction Technology` →
+        `Construction Tech`). Building Materials and Construction Tech now
+        pull topical posts.
+      - [ ] **Building Materials** — still 2/3 fallback. Candidates to add
+        `Building Materials` via the `Tags` field (they keep their current
+        `Tag2`): "Who's Building America? Top 25 National Homebuilders"
+        (Tag2 Real Estate), "California Housing Market Outlook: Supply
+        Signals", the "Shovels Quarterly Permit Index" posts.
+      - [ ] **Insurance** — 2/3 fallback (only the Roof Age post matches).
+        Editorial call for the content team: should the disaster posts —
+        "When Disaster Strikes" (hurricanes), "LA Wildfires Recovery"
+        (both currently `Tag2: Natural Disaster`) and the Inspectify
+        spotlight — carry `Insurance` as `Tag2`, or add it via `Tags`?
+      - [ ] **Construction Tech** — now 2/3 topical; optionally add
+        "Mapping What's Next (AI-Powered Permit Data)" and "How to
+        supercharge lead generation with Shovels API and Clay" via `Tags`.
 - [ ] **Refresh the `STATS` numbers before launch** — the published
       metrics (permits, contractors, jurisdictions, monthly permits, plus
       the breakdown/table counts) live in one place, `STATS` in
