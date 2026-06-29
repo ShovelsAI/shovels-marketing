@@ -191,7 +191,14 @@ verified-signatures rule. Without it, nothing ships. (Review:
 6. **Positioning sweep**: `base.html` fallback meta/OG/Twitter + the
    Organization JSON-LD ("fragmented permit data" → "fragmented public
    records").
-7. **Build**: `make publish` → regenerate `sitemap.xml` (confirm the
+7. **Refresh `STATS` numbers** (REQUIRED before go-live): pull the latest
+   metrics and update the `STATS` dict in `pelicanconf.py` (permits,
+   contractors, jurisdictions, monthly permits + the breakdown/table
+   counts), then mirror the same values to `snippets/stats.mdx` in the
+   docs repo. **A large data release lands this week (after Wed) — these
+   numbers will jump, so pull fresh figures right before launch, not
+   earlier.** One dict edit flows to every `{{ STATS.* }}` on the site.
+8. **Build**: `make publish` → regenerate `sitemap.xml` (confirm the
    `sitemap` plugin is present in the deploy env).
 
 ### Right after the flip — verify
@@ -311,6 +318,9 @@ launch) · **LAUNCH** (coupled to the go-live deploy) · ✅ done.
 - Promote Insurance + Research; move homepage content into theme `index.html`
 - Un-gate the chrome (promote `footer-refresh`/`header-refresh` → global)
 - Redirects go live + repoint interim links (Solutions/Features/homepage cross-links)
+- **Refresh `STATS` with the latest numbers** (large data release lands
+  this week → pull fresh figures right before go-live; mirror to docs
+  `snippets/stats.mdx`)
 - Regenerate + resubmit sitemap, positioning sweep, final tracking diff,
   full link verification (no 404s / no stale `-preview`), go/no-go
 
