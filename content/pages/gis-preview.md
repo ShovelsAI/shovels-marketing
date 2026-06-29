@@ -146,7 +146,7 @@ status: hidden
 </section>
 
 {# How it works — CLI-style numbered stepper (left rail + flush connector),
-   each step a card with text left + map visual right (visuals TBD). #}
+   each step a card with text left + map visual right. #}
 <section id="how-it-works" class="w-full bg-gray-50 px-6 md:px-10 py-24">
   <div class="mx-auto max-w-6xl">
     <div class="mx-auto max-w-3xl text-center">
@@ -154,10 +154,10 @@ status: hidden
       <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">From first call to live layers in three steps</h2>
     </div>
     <div class="mx-auto mt-12 max-w-5xl space-y-6">
-      {% for num, title, desc, imgnote in [
-          ('1', 'Tell us your coverage area', "Talk to our GIS team about the geographies, permit types, and layers you need. We'll scope coverage against your markets.", 'US map with a highlighted coverage area'),
-          ('2', 'We provision your layers', 'We publish your hosted feature layers and share credentials within days, not months.', 'ArcGIS portal item view of a Shovels layer'),
-          ('3', 'Add them to your map', 'Load the layers into ArcGIS or QGIS and start analyzing. Updates ship automatically twice a month.', 'Permit layer rendered on a web map'),
+      {% for num, title, desc, imgnote, img in [
+          ('1', 'Tell us your coverage area', "Talk to our GIS team about the geographies, permit types, and layers you need. We'll scope coverage against your markets.", 'A highlighted coverage area across your markets, dotted with permit locations', 'coverage-area'),
+          ('2', 'We provision your layers', 'We publish your hosted feature layers and share credentials within days, not months.', 'A Shovels hosted feature layer in the ArcGIS portal, ready to open in the map viewer', 'provision-layers'),
+          ('3', 'Add them to your map', 'Load the layers into ArcGIS or QGIS and start analyzing. Updates ship automatically twice a month.', 'Shovels permit data rendered as a live, auto-updated layer on a web map', 'map-layer'),
       ] %}
       <div class="flex items-stretch gap-5 md:gap-6">
         <div class="relative flex w-10 shrink-0 flex-col items-center pt-1">
@@ -170,10 +170,7 @@ status: hidden
               <h3 class="text-xl font-medium text-gray-900">{{ title }}</h3>
               <p class="mt-2 text-base text-gray-500">{{ desc }}</p>
             </div>
-            <div class="flex aspect-video w-full flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-red-400 bg-red-50 p-4 text-center">
-              <span class="text-2xl font-semibold uppercase tracking-widest text-red-500">TBD</span>
-              <span class="text-xs text-red-400">{{ imgnote }}</span>
-            </div>
+            <img src="/images/features/gis/{{ img }}.svg" alt="{{ imgnote }}" class="w-full h-auto rounded-xl border border-gray-200">
           </div>
         </div>
       </div>
