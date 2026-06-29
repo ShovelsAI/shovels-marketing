@@ -181,7 +181,7 @@ status: hidden
 
 {# Links to /data-feed (Shovels Enterprise) — moves to /solutions/data-feed at launch. #}
 {{ ui_callout.callout(
-    variant='green',
+    variant='warm',
     heading='Need the full geodatabase in your warehouse?',
     body='GIS layers are one delivery format. The Shovels Data Feed delivers all seven core tables—permits, contractors, parcels, decisions, and more—to Snowflake, BigQuery, or Databricks.',
     cta_label='Explore Enterprise',
