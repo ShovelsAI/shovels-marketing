@@ -30,7 +30,7 @@ status: hidden
    fields and chart values are illustrative, not an exact data contract. #}
 
 {% set f1_media %}
-<div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+<div class="rounded-xl bg-white p-6 shadow-sm">
   <div class="flex items-stretch">
     {# Source node — boosted green outline box; stretches to the full
        height of the warehouse stack for balance. #}
@@ -73,7 +73,7 @@ status: hidden
     {% for d in ['S','M','T','W','T','F','S'] %}<span class="py-1 font-medium text-gray-400">{{ d }}</span>{% endfor %}
     <span></span>
     {% for day in range(1, 31) %}
-    <span class="flex aspect-square items-center justify-center rounded-md {% if day in [1, 15] %}bg-shovels-primary font-semibold text-white{% else %}text-gray-600{% endif %}">{{ day }}</span>
+    <span class="flex h-9 items-center justify-center rounded-md {% if day in [1, 15] %}bg-shovels-primary font-semibold text-white{% else %}text-gray-600{% endif %}">{{ day }}</span>
     {% endfor %}
   </div>
   <div class="mt-5 grid grid-cols-3 gap-3 border-t border-gray-100 pt-4 text-center">
@@ -111,7 +111,7 @@ status: hidden
     <span class="text-sm font-medium text-white">20+ years of permit history</span>
     <span class="font-mono text-xs text-gray-400">analytics-ready</span>
   </div>
-  <div class="mt-6 flex h-32 items-end gap-1.5">
+  <div class="mt-6 flex h-64 items-end gap-1.5">
     {% for h in [12, 16, 14, 20, 22, 26, 24, 30, 33, 38, 35, 42, 46, 44, 50, 57, 54, 63, 70, 76, 84, 92] %}
     <div class="flex-1 rounded-t {% if loop.index > 19 %}bg-[#E9BE51]{% else %}bg-emerald-400/60{% endif %}" style="height: {{ h }}%"></div>
     {% endfor %}
