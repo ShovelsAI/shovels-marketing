@@ -31,8 +31,8 @@ status: hidden
             'Prioritize network buildout based on construction density',
             'Align network deployment timelines with construction schedules',
         ],
-        'image_src': '/images/industries/telecommunications/uc1-new-developments.png',
-        'image_alt': 'Shovels app — map filtered to new construction permits in a metro, showing cluster density',
+        'image_src': '/images/industries/telecommunications/uc1-new-developments.svg',
+        'image_alt': 'Shovels app — new-construction permit results filtered by location and date, beside a map showing permit clusters across the state',
     },
     {
         'number': '02',
@@ -44,8 +44,8 @@ status: hidden
             'Identify markets where Tier 1 and Tier 3 ISPs are expanding',
             'Prioritize defensive deployments in high-risk areas',
         ],
-        'image_src': '/images/industries/telecommunications/uc2-competitor-filings.png',
-        'image_alt': 'Shovels app — map of permit filings in a defined service area, filtered by date and permit type',
+        'image_src': '/images/industries/telecommunications/uc2-competitor-filings.svg',
+        'image_alt': "Shovels app — a competitor's fiber-optic network permit detail, with location map, timeline, and project description",
     },
     {
         'number': '03',
