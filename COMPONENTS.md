@@ -1297,6 +1297,13 @@ any page. The parser is a small regex over the metadata block, not a
 full Pelican reader — enough to extract `title`, `slug`, `tag2`,
 `tags`, `image`, `image_alt`, `date`, `category`, and `status`.
 
+**Slug derivation (must match Pelican).** When a post has no explicit
+`Slug:` field, the scanner derives the slug from the **title** using
+Pelican's own `slugify` (mirroring `SLUGIFY_SOURCE = 'title'`), so the
+`/blog/<slug>/` URLs these helpers build match where Pelican actually
+publishes each article. Do **not** fall back to the filename stem — that
+silently 404s any post whose filename differs from its slugified title.
+
 The scan reads all 146 posts on a cold start; this adds a few hundred
 milliseconds to the build and runs once.
 

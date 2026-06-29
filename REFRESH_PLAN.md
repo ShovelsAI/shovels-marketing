@@ -378,9 +378,16 @@ placeholders remain on any preview page.
       the breakdown/table counts) live in one place, `STATS` in
       `pelicanconf.py`, and flow to every page via `{{ STATS.key }}`.
       They grow over time and will present better with current figures at
-      launch — pull fresh values and update the dict. Mirror the same
-      update to `snippets/stats.mdx` in the docs repo so the two stay in
-      sync (see the note above the `STATS` block).
+      launch — pull fresh values and update the dict. Docs mirror: the
+      numbers there are embedded in prose (e.g. `release-notes.mdx` in
+      `shovels-docs`), not a central snippet — update those manually.
+      **In progress:** a `/refresh-stats` skill (query Snowflake → round
+      up → update the dict, on a 2nd/16th reminder) is being built;
+      blocked on the data team confirming the query/definition behind 5
+      metrics (jurisdictions, contractors, residents, homeowners,
+      addresses) that don't map to a raw table count. Data-team brief:
+      Notion → "Published Shovels Numbers"
+      (`app.notion.com/p/38e5e14e735280fca44ffc86d6d71156`).
 
 ### URLs, routing & redirects
 - [ ] Move Solutions pages to `/solutions/*` (permit-database, api, data-feed).
