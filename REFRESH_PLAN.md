@@ -5,8 +5,9 @@ page, became an Industry-page template, then a site-wide refresh
 (homepage, footer, nav, and new pages). This doc keeps the moving
 parts and their dependencies in one place.
 
-Companion docs: **COMPONENTS.md** (design system / macros),
-**IMAGE_MANIFEST.md** (per-page image + logo tracking).
+Companion doc: **COMPONENTS.md** (design system / macros). (The former
+`IMAGE_MANIFEST.md` image-build-out checklist is retired — its durable
+guidance now lives in COMPONENTS.md; the file is deleted at launch.)
 
 ---
 
@@ -434,6 +435,12 @@ for now; revisit before launch.
       signed stopgap (`0f69a292`); the full sync + the final branch→`main`
       launch merge need an admin ruleset bypass/adjust first. See **Launch
       runbook → Gate 0**.
+- [ ] **Delete `IMAGE_MANIFEST.md` at launch** — the image-build-out
+      checklist has served its purpose (pages are image-complete) and has
+      drifted out of date. Its durable guidance (source map, naming, and
+      export spec) now lives in COMPONENTS.md. The companion-docs reference
+      in this file and the COMPONENTS.md mention are already updated, so
+      the only remaining step is removing the file.
 
 ### SEO, analytics & legal
 - [ ] Redirects preserve SEO equity for any existing inbound links

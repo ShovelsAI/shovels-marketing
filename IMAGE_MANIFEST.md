@@ -1,5 +1,15 @@
 # Industry Page Image Manifest
 
+> ⚠️ **RETIRED — do not trust as current state.** This was the image
+> build-out checklist for the Industry pages. That phase is done (pages
+> are image-complete; work since moved to Solutions/Features pages), and
+> the rows below have drifted (e.g. the Research charts were swapped to
+> new SVGs; the Trinh logo was cut). The durable guidance — source map,
+> naming, export spec — now lives in **COMPONENTS.md** (File organization,
+> Filename conventions, Illustration export spec, Image build-out). This
+> file is **deleted at launch** (see REFRESH_PLAN.md). Frozen as of
+> 2026-06-10; kept only as a historical record until then.
+
 Tracking system for every image on the redesigned Industry pages. Use it
 as a download checklist: export/download each asset, drop it into the
 listed folder under the listed filename, and tick its box. Claude then

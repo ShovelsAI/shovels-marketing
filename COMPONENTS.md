@@ -1767,7 +1767,7 @@ Hero H1, Hero Description, SOC 2 body, all 5 use cases, FAQ items,
 and Final CTA. See the matching row in the *Industry Pages Copy*
 database.
 
-### Image build-out & the image manifest
+### Image build-out
 
 Pages can be composed and reviewed before their art is ready. The
 `hero` and `use_case_section` macros render a **red dashed TBD
@@ -1776,12 +1776,13 @@ use-case placeholder is labeled with its `image_alt`), so a half-built
 page reads cleanly instead of showing broken images. Wire each real
 path as the asset lands.
 
-**`IMAGE_MANIFEST.md`** (repo root) is the tracking system for this:
-one checklist per page mapping every image slot → source (Figma hero,
-Notion comment-thread use-case asset, or existing `blog_images` chart)
-→ target folder + filename → status. It also tracks the per-industry
-`logo_grid` sets (company → domain → target file). Update it as assets
-land so the remaining work stays visible.
+Each image slot maps to a **source**: **heroes** export from Figma →
+`hero.svg`; **use-case assets** come from the Notion comment thread on
+the page's `UC#: Image` property (Industry Pages Copy DB); **report
+charts** can reuse an existing figure from `content/images/blog_images/`
+(copy it into the page's folder under the target name). Wire each real
+path as the asset lands. Per-industry `logo_grid` sourcing is covered
+under the `logo_grid` / `logo_strip` macros above.
 
 Convention reminders that came up repeatedly during build-out:
 
