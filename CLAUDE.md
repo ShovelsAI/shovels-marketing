@@ -161,6 +161,29 @@ Follow these conventions for organizing shared code:
 
 ---
 
+## CSS / Tailwind
+
+Styles are built with Tailwind. The compiled stylesheet
+`themes/shovels/static/css/output.css` is **committed** and is what the local
+Pelican preview serves. Tailwind only generates rules for the classes it finds
+at build time, so **adding or changing a class in a template/page means
+`output.css` must be recompiled** — editing the template alone is not enough.
+A new class with no recompiled rule does nothing (e.g. an arbitrary value like
+`h-[218px]` silently has no effect).
+
+- **While developing:** run `npm run build:css` — Tailwind watches and
+  recompiles `output.css` on every save, so the local preview is always
+  correct. (One-off: `npm run build:css:prod`.)
+- **Safety net:** a pre-commit hook (`.githooks/pre-commit`, wired up by
+  `npm install` via the `prepare` script) rebuilds `output.css` and re-stages
+  it on every commit, so a stale stylesheet can't be committed. Requires
+  `npm install` to have been run. Per project rules, do not skip or disable it.
+- **Production** rebuilds Tailwind in CI (`deploy.yml` runs `build:css:prod`),
+  so the deployed site is always correct regardless of the committed file — but
+  keep `output.css` in sync anyway so local preview and PR review are accurate.
+
+---
+
 ## Version Control & Git
 
 **Commit frequency:**
