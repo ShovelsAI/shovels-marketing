@@ -30,7 +30,7 @@ status: hidden
    fields and chart values are illustrative, not an exact data contract. #}
 
 {% set f1_media %}
-<div class="rounded-xl bg-white p-6 shadow-sm">
+<div class="rounded-xl bg-white p-6">
   <div class="flex items-stretch">
     {# Source node — boosted green outline box; stretches to the full
        height of the warehouse stack for balance. #}
@@ -111,7 +111,7 @@ status: hidden
     <span class="text-sm font-medium text-white">20+ years of permit history</span>
     <span class="font-mono text-xs text-gray-400">analytics-ready</span>
   </div>
-  <div class="mt-6 flex h-64 items-end gap-1.5">
+  <div class="mt-6 flex h-[218px] items-end gap-1.5">
     {% for h in [12, 16, 14, 20, 22, 26, 24, 30, 33, 38, 35, 42, 46, 44, 50, 57, 54, 63, 70, 76, 84, 92] %}
     <div class="flex-1 rounded-t {% if loop.index > 19 %}bg-[#E9BE51]{% else %}bg-emerald-400/60{% endif %}" style="height: {{ h }}%"></div>
     {% endfor %}
