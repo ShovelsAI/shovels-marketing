@@ -183,6 +183,7 @@ open_graph_image: /images/shovels-data-dictionary.png
  <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">REMODEL</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Improve property aesthetic or functionality but without structural changes or expansions</td></tr>
  <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ROOFING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, replacement, or repair of a roof.</td></tr>
  <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">SOLAR</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation of solar photovoltaic or solar thermal systems.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">TELECOM</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Telecom-related work including fiber, phone/cable drops, utility ROW installs, cell towers, small cells, 5G, antennas, cable installation, conduit, trenching, boring, and related infrastructure.</td></tr>
  <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">WATER_HEATER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a water heater.</td></tr>
           </tbody>
         </table>
