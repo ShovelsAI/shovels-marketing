@@ -171,9 +171,11 @@ at build time, so **adding or changing a class in a template/page means
 A new class with no recompiled rule does nothing (e.g. an arbitrary value like
 `h-[218px]` silently has no effect).
 
-- **While developing:** run `npm run build:css` — Tailwind watches and
-  recompiles `output.css` on every save, so the local preview is always
-  correct. (One-off: `npm run build:css:prod`.)
+- **While developing:** run **`npm run dev`** — one command that starts the
+  Tailwind watcher *and* the live-reload Pelican preview at
+  `http://127.0.0.1:8000` together. Edit, save, see it. Ctrl+C stops both.
+  (CSS-only watch: `npm run build:css`; one-off prod build:
+  `npm run build:css:prod`.)
 - **Safety net:** a pre-commit hook (`.githooks/pre-commit`, wired up by
   `npm install` via the `prepare` script) rebuilds `output.css` and re-stages
   it on every commit, so a stale stylesheet can't be committed. Requires
