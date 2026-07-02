@@ -137,33 +137,38 @@ The `make publish` command:
 3. Creates CNAME file for custom domain
 4. Auto-commits and pushes to GitHub Pages
 
-### Cloudflare Pages
+### Cloudflare (Workers static assets)
 
-The site can also be built and deployed by Cloudflare Pages via Git integration.
-Cloudflare builds the site itself on every push to `main` and creates preview
-deployments for pull requests, running alongside the GitHub Pages deployment.
+The site can also be built and deployed by Cloudflare via Git integration
+(Workers Builds), running alongside the GitHub Pages deployment. Cloudflare
+builds the site on each push and serves the Pelican output as static assets.
 
-Runtime versions are pinned in `.tool-versions` (Python 3.11, Node 18) so
-Cloudflare's build image matches the GitHub Actions toolchain.
+`wrangler.jsonc` defines the Worker: it serves `./docs` as static assets and
+renders the generated `404.html` for unknown paths. Runtime versions are pinned
+in `.tool-versions` (Python 3.11, Node 18) so Cloudflare's build image matches
+the GitHub Actions toolchain.
 
-**One-time setup** — in the Cloudflare dashboard, create a Pages project
-connected to this GitHub repo with these build settings:
+**One-time setup** — in the Cloudflare dashboard, connect this GitHub repo with
+these settings:
 
-| Setting                | Value                                                                                                                                                                        |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Production branch      | `main`                                                                                                                                                                      |
-| Framework preset       | None                                                                                                                                                                        |
-| Build command          | `pip install -r requirements.txt && npm install && npm run build:css:prod && pelican content -o docs -s publishconf.py && cp themes/shovels/static/css/output.css docs/output.css && python3 generate_404.py` |
-| Build output directory | `docs`                                                                                                                                                                      |
-| Root directory         | `/`                                                                                                                                                                         |
+| Setting        | Value                                                                                                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Build command  | `pip install -r requirements.txt && npm install && npm run build:css:prod && pelican content -o docs -s publishconf.py && cp themes/shovels/static/css/output.css docs/output.css && python3 generate_404.py` |
+| Deploy command | `npx --package wrangler@4.105.0 wrangler versions upload` (preview) / `npx --package wrangler@4.105.0 wrangler deploy` (production)                                                                             |
+| Root directory | `/`                                                                                                                                                                                                           |
+
+The `wrangler` version is pinned in the deploy command because `npx` otherwise
+downloads the latest release at build time. `versions upload` publishes a
+preview version without routing production traffic; `deploy` promotes it live.
 
 If Cloudflare's build image does not offer the versions in `.tool-versions`,
 override them with the `PYTHON_VERSION` and `NODE_VERSION` environment variables
 in the project's build settings.
 
-The custom domain (`www.shovels.ai`) is managed in the Cloudflare Pages
-dashboard, not via a `CNAME` file — the `CNAME` file is only used by the GitHub
-Pages deployment.
+The custom domain (`www.shovels.ai`) is managed in the Cloudflare dashboard, not
+via a `CNAME` file — the `CNAME` file is only used by the GitHub Pages
+deployment. Edge 301 redirects for the site relaunch can be added via a
+`_redirects` file in `docs/`.
 
 ## Brand Colors (Tailwind)
 

@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static-assets config for the Pelican site.
+  // Serves the Pelican build output as static assets; 404s render the
+  // generated 404.html rather than falling back to index.html.
+  "name": "shovels-marketing",
+  "compatibility_date": "2026-06-25",
+  "assets": {
+    "directory": "./docs",
+    "not_found_handling": "404-page"
+  }
+}
