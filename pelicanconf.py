@@ -87,20 +87,20 @@ PLUGINS = ['jinja2content', 'sitemap']
 # Mirror updates to the snippets/stats.mdx file in the docs repo.
 STATS = {
     # Homepage / widely published stats
-    "permits": "130M+",
-    "contractors": "2.3M+",
-    "jurisdictions": "1,800+",
+    "permits": "164M+",
+    "contractors": "3.16M+",
+    "jurisdictions": "2,450+",
     "monthly_permits": "5M+",
 
     # Permit breakdowns
-    "permits_residential": "69M+",
-    "permits_commercial": "16M+",
-    "permits_residential_commercial": "84M+",
+    "permits_residential": "87.7M+",
+    "permits_commercial": "19.0M+",
+    "permits_residential_commercial": "107M+",
 
     # Data feed table counts
-    "residents": "46M+",
-    "homeowners": "24M+",
-    "addresses": "23M+",
+    "residents": "29.9M+",
+    "homeowners": "16.7M+",
+    "addresses": "27.9M+",
     "parcels": "160M+",
 }
 
