@@ -137,6 +137,34 @@ The `make publish` command:
 3. Creates CNAME file for custom domain
 4. Auto-commits and pushes to GitHub Pages
 
+### Cloudflare Pages
+
+The site can also be built and deployed by Cloudflare Pages via Git integration.
+Cloudflare builds the site itself on every push to `main` and creates preview
+deployments for pull requests, running alongside the GitHub Pages deployment.
+
+Runtime versions are pinned in `.tool-versions` (Python 3.11, Node 18) so
+Cloudflare's build image matches the GitHub Actions toolchain.
+
+**One-time setup** — in the Cloudflare dashboard, create a Pages project
+connected to this GitHub repo with these build settings:
+
+| Setting                | Value                                                                                                                                                                        |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Production branch      | `main`                                                                                                                                                                      |
+| Framework preset       | None                                                                                                                                                                        |
+| Build command          | `pip install -r requirements.txt && npm install && npm run build:css:prod && pelican content -o docs -s publishconf.py && cp themes/shovels/static/css/output.css docs/output.css && python3 generate_404.py` |
+| Build output directory | `docs`                                                                                                                                                                      |
+| Root directory         | `/`                                                                                                                                                                         |
+
+If Cloudflare's build image does not offer the versions in `.tool-versions`,
+override them with the `PYTHON_VERSION` and `NODE_VERSION` environment variables
+in the project's build settings.
+
+The custom domain (`www.shovels.ai`) is managed in the Cloudflare Pages
+dashboard, not via a `CNAME` file — the `CNAME` file is only used by the GitHub
+Pages deployment.
+
 ## Brand Colors (Tailwind)
 
 - Primary: `#01654D` (shovels-primary)
