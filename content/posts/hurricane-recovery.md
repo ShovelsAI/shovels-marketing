@@ -11,7 +11,7 @@ author_image: /theme/images/team/morgan.svg
 author_title: Head of Marketing
 slug: hurricane-recovery
 summary: Permit data from Hurricane Harvey and Hurricane Ian reveals dramatically different recovery patterns. Harvey's flooding triggered a slow-building reconstruction surge peaking 11 months later with foundation work and complete rebuilds. Ian's wind damage sparked an immediate roofing crisis, with permits peaking in just 3-4 months. The type of disaster—flood versus wind—creates distinct "signatures" in permit activity that reveal how communities actually recover.
-image: /images/blog_images/hurricane-storm-image.jpg
+image: /images/blog_images/hurricane-storm-image.png
 
 **An analysis of Hurricane Harvey and Hurricane Ian through the lens of permit activity.**
 
