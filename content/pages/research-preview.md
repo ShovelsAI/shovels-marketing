@@ -1,5 +1,5 @@
 Title: Building Permit Data for Academic Research
-Description: Building permit data for academic research. 130M+ AI-classified permits across 20,000+ U.S. jurisdictions, with academic pricing and flexible data delivery.
+Description: Building permit data for academic research. {{ STATS.permits }} AI-classified permits across 20,000+ U.S. jurisdictions, with academic pricing and flexible data delivery.
 slug: research-preview
 status: hidden
 
