@@ -84,7 +84,8 @@ PLUGINS = ['jinja2content', 'sitemap']
 
 # Canonical stats — update this dict when numbers change.
 # Templates and content pages reference these via {{ STATS.key }}.
-# Mirror updates to the snippets/stats.mdx file in the docs repo.
+# This dict is the single source of truth for published figures; the docs
+# repo has no stats snippet mirroring it.
 STATS = {
     # Homepage / widely published stats
     "permits": "164M+",
