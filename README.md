@@ -145,8 +145,8 @@ builds the site on each push and serves the Pelican output as static assets.
 
 `wrangler.jsonc` defines the Worker: it serves `./docs` as static assets and
 renders the generated `404.html` for unknown paths. Runtime versions are pinned
-in `.tool-versions` (Python 3.11, Node 18) so Cloudflare's build image matches
-the GitHub Actions toolchain.
+in `.tool-versions` (Python 3.11, Node 22). Node 22 is required because the
+wrangler CLI used by the deploy step needs Node >= 22.
 
 **One-time setup** — in the Cloudflare dashboard, connect this GitHub repo with
 these settings:
