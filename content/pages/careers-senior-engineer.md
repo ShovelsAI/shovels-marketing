@@ -1,5 +1,5 @@
-Title: Senior Engineer - Data, Infra & AI
-Description: Join our team building the future of construction intelligence. Engineers here command AI agents that write production code across distributed systems, data pipelines, and APIs.
+Title: Senior AI-Native Engineer: Data, Platform & Agents
+Description: We're not looking for the traditional 10x engineer. We're looking for the next generation: an engineer who runs a team of AI agents and ships what used to take a team of humans.
 slug: careers/senior-engineer
 
 <!-- back link -->
@@ -12,165 +12,169 @@ slug: careers/senior-engineer
 <!-- position title -->
 <section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
-    <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Senior Engineer - Data, Infra & AI 👷‍♂️👷‍♀️👷</h1>
+    <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Senior AI-Native Engineer: Data, Platform &amp; Agents 👷‍♂️👷‍♀️👷</h1>
   </div>
 </section>
 
-<!-- intro section -->
-<section class="my-12 md:my-24">
+<!-- intro -->
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
-    <div class="flex flex-col md:flex-row items-start gap-6 md:gap-x-8">
-      <div class="flex-1">
-        <p class="mb-4">
-          <strong>We're looking for a Senior Engineer</strong> to join our small, fast-moving team.
-          This isn't a narrow role - you'll work across data pipelines, APIs, distributed infra,
-          and autonomous AI systems. Each engineer commands a team of AI agents that research
-          government portals, build API features, implement ETL pipelines, refactor code,
-          query and reason about data, and accelerate development 10x.
-          We're not using AI as a coding assistant - we're building systems where humans
-          direct strategy and AI agents execute. This is the bleeding edge.
-        </p>
-        <p class="mb-4"><strong>
-          When a trillion-dollar economy leans on building permits as its leading signal,
-          you realize just how powerful our data is - and why we're obsessed with structuring it.
-        </strong></p>
-        <div class="mb-4">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/j3_JYppwcyo?si=gRLk9mIyDK_1DDDu&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="flex-none w-full md:w-96">
-        <img src="/images/careers/li_permits_power.png" class="w-full">
-      </div>
-    </div>
+    <p class="mb-4">
+      <strong>We're not looking for the traditional 10x engineer.</strong> We're looking for the
+      next generation: an engineer who runs a team of AI agents and ships what used to take a team
+      of humans. Every project at Shovels already runs on a mix of humans and agents, and the agent
+      share keeps growing. Where this is heading: one human lead running a mostly-agent team. This
+      role is for someone who wants to build that, not read about it.
+    </p>
+    <p class="mb-4">
+      Your mandate is everything behind the product: the data platform that turns millions of
+      permits into intelligence, the infrastructure it runs on, and the AI harness that runs all
+      of it.
+    </p>
+    <p class="mb-4"><strong>
+      When a trillion-dollar economy leans on building permits as its leading signal, you realize
+      just how powerful our data is - and why we're obsessed with structuring it.
+    </strong></p>
   </div>
 </section>
 
 <!-- about shovels -->
-<section class="my-12 md:my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">About Shovels</h2>
-    <p class="mb-4">At Shovels, we're reshaping the construction and real estate industries by transforming fragmented building permit and contractor data into actionable, game-changing insights. Backed by multi-million-dollar VC funding and a growing customer base, we're taking on one of the world's largest yet most underutilized data-rich sectors - using advanced pipelines and AI to bring structure, clarity, and value to messy, fragmented data. Now we're building the next generation of construction data intelligence: a generative analytics platform that uses AI to understand what customers need and dynamically creates the perfect interface for their specific analysis - from search to visualization to data extraction.</p>
-    <p>What started as two people with a big vision has grown into a team of dedicated engineers and data enthusiasts distributed across the globe. We've come a long way from our pre-seed days, but we're still scrappy, collaborative, and all-in on building something amazing together.</p>
+    <p class="mb-4">Building permits are the leading signal for a trillion-dollar economy. Every renovation, solar install, and commercial build leaves a paper trail, and we turn that trail into intelligence: who builds what, where, and how well. Backed by multi-million-dollar VC funding and a growing customer base, we're building the intelligence layer for the built world.</p>
+    <p class="mb-4">We're a small, fully remote team: engineering in Europe, business in the US. What started as two people with a big vision is still scrappy, still all-in.</p>
   </div>
 </section>
 
-<!-- the opportunity -->
-<section class="my-12 md:my-24">
+<!-- how we actually build -->
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">The Opportunity</h2>
-    <p class="mb-4">This is not just another engineer job - it's a chance to <strong>shape the core of a company that's going places fast</strong>. As a <strong>Senior Engineer</strong>, you'll work across <strong>distributed scraping systems, data pipelines, REST APIs, gen AI tooling, and cloud infrastructure</strong>. Full-stack work with real depth in each area. You'll have the <strong>autonomy to solve challenging problems and build robust systems</strong> while working with a modern tech stack that's constantly evolving.</p>
-    <p class="mb-4">We're not hiring for a narrow, specialized role. You'll join a <strong>small, core team of engineers</strong> who take on <strong>interdisciplinary challenges</strong> and <strong>own all parts of the stack</strong> - from data pipelines to API development and infrastructure.</p>
-    <p>Whether you're tuning distributed systems, optimizing data pipelines, or brainstorming with the team, you'll <strong>make a real impact</strong> here.</p>
-  </div>
-</section>
-
-<!-- what makes shovels unique -->
-<section class="my-12 md:my-24">
-  <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">What Makes Shovels Unique</h2>
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-x-8">
-      <div class="flex-1">
-        <ul class="list-disc pl-6 space-y-2">
-            <li><strong>Exposure to all parts of the company:</strong> We believe in radical transparency. At Shovels, you'll see financial statements, participate in strategic planning, and have a voice in shaping the company's direction. Everyone is part of the conversation about the future.</li>
-            <li><strong>Cutting-edge stack:</strong> From Python frameworks to modern orchestration and data tools, we don't shy away from embracing new technologies. If it makes us faster, better, or more innovative, we're all in.</li>
-            <li><strong>Engineers with AI agent teams:</strong> Each engineer here commands autonomous AI agents. Our agents R&D government portals, build API features, implement ETL pipelines, refactor codebases, and query complex datasets. We use AI for planning, brainstorming, spec writing, code review, and implementation across the entire stack. We're building next-gen generative analytics where AI understands customer intent and dynamically generates custom interfaces. The vision: humans strategize and architect, AI agents build and iterate. We're already living this future.</li>
-        </ul>
-      </div>
-      <div class="flex-none w-full md:w-72">
-        <img src="/images/careers/shovels-robot.jpg" class="w-full">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- engineering multiplied by ai -->
-<section class="my-12 md:my-24">
-  <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Engineering Multiplied by AI</h2>
-    <p class="mb-4">You'll ship faster here than anywhere you've worked. We've built AI agents that write production code. They're trained on our engineering practices and understand our patterns. We use them for distributed scrapers, API endpoints, ETL pipelines, refactoring, data analysis. The architecture? Custom agent orchestration we actively develop. You'll work on evolving these systems while using them to ship.</p>
-  </div>
-</section>
-
-<!-- what you'll do -->
-<section class="my-12 md:my-24">
-  <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">What You'll Do</h2>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><strong>Develop our agentic systems:</strong> R&D new capabilities, improve how agents understand our codebase and implement features, evolve the frameworks. Not just use them - build them. Then use them to ship production code across the stack.</li>
-      <li><strong>Build and scale our data pipelines:</strong> Work with Python, Prefect, DuckDB, Polars, Trino and dbt to process millions of records daily.</li>
-      <li><strong>Design rock-solid infrastructure:</strong> Shape the architecture of our AWS-based stack, deploying solutions with Terraform and containerization using Docker.</li>
-      <li><strong>Power our API platform:</strong> Use FastAPI to deliver blazing-fast insights to our users, backed by PostgreSQL and optimized for growth.</li>
-      <li><strong>Work close to the customer:</strong> At Shovels, engineering lives near the customer, ensuring that what we build directly aligns with their needs and adds value.</li>
-      <li><strong>Collaborate on big decisions:</strong> Your voice will shape our data architecture, scaling strategies, and feature rollouts.</li>
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">How We Actually Build</h2>
+    <p class="mb-4">Everyone says they use AI. Here's what that means at Shovels, concretely:</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>We built our own AI harness</strong> on top of Claude Code: 139 skills across 31 plugins at last count, with ~580 commits to that repo in the past 30 days. More than half of the people shipping to it aren't engineers; sales, finance, and marketing run their own agent workflows too.</li>
+      <li><strong>Agents write production code end to end.</strong> New data adapters get implemented, tested, quality-checked, and PR'd by an agent pipeline. A human reviews and owns the merge.</li>
+      <li><strong>Our morning on-call round is an agent harness.</strong> It scans the whole scraping fleet, investigates suspects with adversarial verification, files the tickets, and writes the report. A human reads it and makes the calls.</li>
+      <li><strong>We plan with evidence.</strong> For a recent API over a 159-million-row dataset, agents generated four rival architectures, we killed two on evidence, built a disposable proof of concept at full production scale overnight, and ran eight rounds of blind multi-agent review before writing any product code. Every load-bearing claim gets verified against live data before a plan is allowed to rely on it.</li>
     </ul>
-  </div>
-</section>
-
-<!-- our tech stack -->
-<section class="my-12 md:my-24">
-  <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Our Tech Stack</h2>
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-x-8">
-      <ul class="list-disc pl-6 space-y-2 flex-1">
-      <li><strong>Languages & Frameworks:</strong> Python, FastAPI, Polars, dbt, scitkit-learn, Scrapy</li>
-      <li><strong>Gen AI:</strong> Anthropic, AWS Bedrock, OpenAI, Gemini, etc</li>
-      <li><strong>AI Engineering:</strong> Claude Code, Codex, Gemini CLI, custom agentic frameworks, proprietary agent orchestration systems</li>
-      <li><strong>Orchestration:</strong> Prefect</li>
-      <li><strong>Storage/Databases/Engines/Warehouses:</strong> Amazon S3, PostgreSQL, DuckDB, AWS Athena (Trino), Snowflake</li>
-      <li><strong>Infrastructure:</strong> Docker, Terraform, AWS Fargate/RDS/EC2/etc</li>
-      <li><strong>Visualization & BI:</strong> Metabase, Athena QE</li>
-      <li><strong>Frontend:</strong> WeWeb / Vue.js</li>
-      </ul>
-      <div class="flex-none w-full md:w-72">
-        <img src="/images/careers/shovels-guy-cloud.png" class="w-full">
-      </div>
+    <div class="mb-4">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/j3_JYppwcyo?si=gRLk9mIyDK_1DDDu&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-  </div>
-</section>
-
-<!-- who we're looking for -->
-<section class="my-12 md:my-24">
-  <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Who We're Looking For</h2>
-    <p class="mb-4">Your <strong>experience in writing good software</strong> is a must, and your <strong>expertise in distributed systems and data wrangling</strong> is a huge plus. We're looking for someone with a good <strong>intuition about modern data and API architecture</strong>. Your contributions will be instrumental in our journey toward success.</p>
-    <p>We like working with <strong>smart people who are comfortable working with challenging data problems and cloud environments</strong>. We're happy to help you get up to speed with anything you haven't seen before. We practice <strong>peer code review and continuous deployment</strong> on all our code and systems.</p>
-  </div>
-</section>
-
-<!-- why shovels -->
-<section class="my-12 md:my-24">
-  <div class="mx-auto max-w-4xl px-6">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Why Shovels?</h2>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><strong>Impact from day one:</strong> Your work will directly shape our product and company.</li>
-      <li><strong>Room to grow:</strong> Early engineers will play leadership roles as the team expands.</li>
-      <li><strong>Flexibility:</strong> Fully remote, async-friendly culture with no strict 9-to-5 rules.</li>
-      <li><strong>Transparency:</strong> You'll see the inner workings of the business and help shape its future.</li>
-      <li><strong>Great pay + stock options:</strong> Competitive salary and meaningful equity in a company that's on the rise.</li>
-    </ul>
+    <p class="mb-4">The principle behind all of it: <strong>generation is cheap, verification is the job.</strong> Humans set direction and own every decision; agents generate, measure, and attack. The bar for shipping is simple: you may only ship work, yours or an agent's, whose errors you could have caught.</p>
+    <p class="mb-4">And don't take our word for any of this. We published the working notes from planning our newest API, rival architectures, refuted claims, prevented incidents and all: <a href="https://shovelsai.github.io/team-notes/2026-07-07-a9e2-how-we-plan-with-agents.html" class="text-emerald-900 underline hover:no-underline">Measure first, then plan (public edition)</a>.</p>
   </div>
 </section>
 
 <!-- how we work -->
-<section class="my-12 md:my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">How We Work</h2>
-    <p>We're a small, fully-remote global team, so flexibility and communication are key. Our core hours overlap enough to make collaboration smooth, but we trust you to manage your time and prioritize your work. We stay connected via Slack, bi-weekly calls, with impromptu 1:1s when needed, and keep things casual and fun. Twice a year, we bring everyone together for in-person team summits to connect, strategize, and celebrate our progress.</p>
+    <p class="mb-4">Written-first, and not as ideology: engineering is in Europe, business is on the US West Coast, so anything important has to survive a 24-hour round trip in writing.</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>Meetings are for decisions, not updates.</strong> Most engineers here have two or three meetings a week.</li>
+      <li><strong>Two-week cycles, planned to about 80%</strong> so reality has room to interrupt.</li>
+      <li><strong>AI Lab every Friday:</strong> 30 minutes of trading agent workflows, prompt patterns, and tool demos with each other.</li>
+      <li><strong>Radical transparency:</strong> you'll see the financials, join strategic planning, and have a real voice in where the company goes.</li>
+      <li><strong>Every engineer leads a real project within their first two quarters.</strong> Full authority, kickoff to ship. It's scheduled, not granted by tenure.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- what you'll do -->
+<section class="my-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">What You'll Do</h2>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>Build and scale the data platform:</strong> Python, Prefect, dbt, DuckDB, Polars, and Trino processing millions of permit records daily.</li>
+      <li><strong>Develop the harness itself:</strong> new skills, multi-agent workflows, agent observability, and the tooling that lets one engineer direct many agents. Not just use it. Build it, then use it to ship.</li>
+      <li><strong>Own the infrastructure:</strong> shape our AWS architecture, deployed with Terraform and Docker.</li>
+      <li><strong>Power the API internals:</strong> FastAPI on PostgreSQL, tuned for a growing customer base.</li>
+      <li><strong>Go where leverage is highest.</strong> This role is deliberately unscoped. If the biggest win this cycle is in the pipeline, you're in the pipeline; if it's in the harness, you're in the harness.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- stack -->
+<section class="my-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Our Stack</h2>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>Languages &amp; frameworks:</strong> Python, FastAPI, Polars, dbt, scikit-learn, Scrapy</li>
+      <li><strong>AI engineering:</strong> Claude Code, Codex, Gemini CLI, and our own harness (skills, hooks, multi-agent workflows)</li>
+      <li><strong>Gen AI:</strong> Anthropic, AWS Bedrock, OpenAI, Gemini</li>
+      <li><strong>Orchestration:</strong> Prefect</li>
+      <li><strong>Storage &amp; warehouses:</strong> Amazon S3, PostgreSQL, DuckDB, AWS Athena (Trino), Snowflake</li>
+      <li><strong>Infrastructure:</strong> Docker, Terraform, AWS (Fargate, RDS, EC2)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- who you are -->
+<section class="my-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Who You Are</h2>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>You've been living AI engineering, not watching it.</strong> Agents are how you work every day. You have opinions about harnesses, context, and verification, and you earned them by shipping.</li>
+      <li><strong>Staff-level taste in system design.</strong> You know what to build, what to kill, and which decisions are two-way doors. You'd rather delete a design than defend it.</li>
+      <li><strong>You can sketch the solution without AI.</strong> That fluency is exactly what qualifies you to review AI's version of it. Strong fundamentals in distributed systems, data wrangling, and cloud environments are the foundation this role stands on.</li>
+      <li><strong>You love to experiment.</strong> New tool, new pattern, new model: you try it, measure it, and share what you learned.</li>
+      <li><strong>Entrepreneurial.</strong> You see a gap, build the tool, ship it, and tell the team. Nobody hands you a spec here; you write them.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- why shovels -->
+<section class="my-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Why Shovels?</h2>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>Impact from day one:</strong> your work directly shapes the product and the company.</li>
+      <li><strong>Room to grow:</strong> early engineers lead projects and shape how a mostly-agent engineering org gets built.</li>
+      <li><strong>Flexibility:</strong> fully remote, async-friendly, no strict 9-to-5.</li>
+      <li><strong>Transparency:</strong> you'll see the inner workings of the business and help steer it.</li>
+      <li><strong>Great pay + stock options:</strong> competitive salary and meaningful equity in a company on the rise.</li>
+    </ul>
+    <p class="mb-4">Twice a year we bring everyone together in person to connect, strategize, and celebrate.</p>
   </div>
 </section>
 
 <!-- how to apply -->
-<section class="my-12 md:my-24">
+<section class="my-12">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">How to Apply</h2>
     <div class="flex flex-col md:flex-row items-center gap-6 md:gap-x-8">
       <div class="flex-1">
-        <p class="mb-4">No lengthy forms, no pointless take-home assignments. Send your resume and a quick note about why you're excited to join us to <a href="mailto:luka@shovels.ai" class="text-blue-600 hover:underline">luka@shovels.ai</a>. We'll set up a friendly chat to dive into your past work and solve a technical challenge together.</p>
+        <p class="mb-4">No lengthy forms, no take-home assignments. Send your resume and a quick note about why this role to <a href="mailto:luka@shovels.ai" class="text-emerald-900 underline hover:no-underline">luka@shovels.ai</a>. We'll set up a friendly chat about your past work, then a live working session on a real problem: you bring your own agent setup and you drive. We're interested in how you operate (direction, spec, verification), not just what comes out.</p>
+        <p class="mb-4">The whole process is those two conversations. It costs you an afternoon, not a month, and you hear back from us either way.</p>
         <p class="font-bold">Let's build something amazing!</p>
       </div>
       <div class="flex-none w-full md:w-72">
         <img src="/images/careers/shovels-guy-pose9.png" class="w-full">
       </div>
     </div>
+  </div>
+</section>
+
+<!-- using AI when you apply -->
+<section class="my-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Using AI When You Apply</h2>
+    <p class="mb-4">Yes, obviously. Most companies pretend candidates don't have agents. You do, and we'd worry if you didn't, so here are the actual rules:</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>The application: use your agents freely,</strong> including on this page.</li>
+      <li><strong>The chat: just you.</strong> It's a conversation between people, not a test.</li>
+      <li><strong>The live session: you and your agents together.</strong> Your setup, your workflow, a real problem. We're watching direction, spec, and verification, not typing speed.</li>
+      <li><strong>The one thing we test raw:</strong> whether you could have caught your agents' errors. That's our shipping bar, so it's the hiring bar too.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- optional challenge -->
+<section class="my-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6">Optional: Skip the Cover Letter</h2>
+    <p class="mb-4">Show us something true instead. Grab a free trial API key at <a href="https://app.shovels.ai" class="text-emerald-900 underline hover:no-underline">app.shovels.ai</a>, point your agents at <a href="https://docs.shovels.ai" class="text-emerald-900 underline hover:no-underline">our API</a>, and send us one true, non-obvious thing about the built world, with the receipts: what you found, the queries that found it, and how you verified it wasn't an artifact of the data.</p>
+    <p class="mb-4">Impress us with the finding or with how you directed your agents to it; the best submissions do both. This replaces the "why this role" note entirely, we read every one, and <strong>"we couldn't verify this" is the only wrong answer.</strong></p>
   </div>
 </section>
