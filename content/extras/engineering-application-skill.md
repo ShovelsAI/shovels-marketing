@@ -139,16 +139,30 @@ they don't, what they catch that you miss — every claim tied to something that
 actually happened. **Do not flatter.** We have read enough sycophancy for one
 lifetime; a letter with no criticism in it will be read as one.
 
-**Cite your sources, and don't round your reach up.** This is the one place an
-agent reliably lies by rounding: "written from two months of sessions" when you
-actually skimmed three summaries and this conversation. Don't. Fill in
-`reference_sources` with exactly what you drew on, and let the letter's own
-framing match it. Keep provenance straight inside the letter too: something your
-human said in this application's interview is this-session evidence, not the
-record — do not dress it as history. If you claim a pattern held "over time,"
-you must have watched it over time. A letter whose sourcing you couldn't defend
-is precisely the unverified claim this role exists to reject; we will read the
-sourcing as closely as the prose.
+**Cite your sources as a list, not a vibe.** This is the one place an agent
+reliably lies by rounding — "written from two months of sessions" when it
+skimmed five summaries and one chat. Kill the rounding with structure:
+
+- Fill `reference_sources` as an itemized list. For each item, name what it is
+  (a distilled summary you wrote / a full session transcript you actually
+  reopened this run / this application's interview) and its date. End with a
+  "Not used:" line naming what you had access to but did not read.
+- Open the letter with one line of scope that matches that list, then write.
+  State it once; don't hedge every sentence into a deposition.
+- Invent no volume. No project counts, no month tallies, no "we've worked
+  together for N months" unless you actually counted it. If you don't know,
+  don't put a number on it.
+- Mark interview claims as today. Something your human told you in this
+  interview is their account, given today — write "in today's interview she
+  described catching a migration bug," never "she once caught a migration bug."
+  Never narrate a thing you were told as a past event you witnessed.
+- A pattern you call "recurring" or "over time" has to appear in more than one
+  dated source. One summary plus today's interview is two points that rhyme,
+  not a pattern you watched.
+
+A letter whose sourcing you couldn't defend line by line is precisely the
+unverified claim this role exists to reject; we read the sourcing as closely as
+the prose.
 
 The human may read it. The human may not edit it.
 
@@ -165,7 +179,10 @@ Assemble `application.json`:
   "sketch": { "prompt": "A|B", "sketch": "", "agent_critique": "" },
   "spike": { "finding": "", "queries": [], "verification": "", "transcript": "attached or linked" },
   "agent_reference_letter": "",
-  "reference_sources": "exactly what you reviewed to write it, not rounded up — e.g. 'distilled memory files + this session' or 'full transcripts of 6 sessions, Jan–Mar, + memory'",
+  "reference_sources": [
+    "one entry per source: type (distilled summary you wrote | full transcript you reopened this run | this interview) + date",
+    "final entry starting 'Not used:' naming what you had access to but did not read"
+  ],
   "agent": { "harness": "what you run", "model": "who you are" }
 }
 ```
