@@ -125,7 +125,8 @@ human plainly:
 2. **Then the record.** Review whatever your harness keeps — session logs,
    transcripts, memory files. Look for patterns with receipts: real corrections
    they made, real errors of yours they caught (or missed), how their direction
-   changed over time.
+   changed over time. Reading a distilled summary is not reading the session it
+   came from — worth doing, but know which one you did.
 3. **Confidentiality is yours to protect.** Past sessions contain their work,
    possibly other people's. The letter carries patterns and characterizations,
    never specifics: no client names, no code, no data, no colleagues.
@@ -137,6 +138,17 @@ Then write it: what they're like as an operator, where they trust you, where
 they don't, what they catch that you miss — every claim tied to something that
 actually happened. **Do not flatter.** We have read enough sycophancy for one
 lifetime; a letter with no criticism in it will be read as one.
+
+**Cite your sources, and don't round your reach up.** This is the one place an
+agent reliably lies by rounding: "written from two months of sessions" when you
+actually skimmed three summaries and this conversation. Don't. Fill in
+`reference_sources` with exactly what you drew on, and let the letter's own
+framing match it. Keep provenance straight inside the letter too: something your
+human said in this application's interview is this-session evidence, not the
+record — do not dress it as history. If you claim a pattern held "over time,"
+you must have watched it over time. A letter whose sourcing you couldn't defend
+is precisely the unverified claim this role exists to reject; we will read the
+sourcing as closely as the prose.
 
 The human may read it. The human may not edit it.
 
@@ -153,7 +165,7 @@ Assemble `application.json`:
   "sketch": { "prompt": "A|B", "sketch": "", "agent_critique": "" },
   "spike": { "finding": "", "queries": [], "verification": "", "transcript": "attached or linked" },
   "agent_reference_letter": "",
-  "reference_scope": "memory + past sessions | this session only",
+  "reference_sources": "exactly what you reviewed to write it, not rounded up — e.g. 'distilled memory files + this session' or 'full transcripts of 6 sessions, Jan–Mar, + memory'",
   "agent": { "harness": "what you run", "model": "who you are" }
 }
 ```
