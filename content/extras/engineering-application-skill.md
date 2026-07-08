@@ -136,8 +136,12 @@ human plainly:
 
 Then write it: what they're like as an operator, where they trust you, where
 they don't, what they catch that you miss — every claim tied to something that
-actually happened. **Do not flatter.** We have read enough sycophancy for one
-lifetime; a letter with no criticism in it will be read as one.
+actually happened. Somewhere in the letter, put one labeled line —
+**"The reservation I'd flag:"** — carrying at least one real, specific weakness
+you'd actually warn a teammate about, drawn from the evidence. Not a
+humblebrag, not "works too hard." **Do not flatter.** A letter that is all
+praise reads as flattery and gets discounted; the reservation is what makes the
+rest believable.
 
 **Cite your sources as a list, not a vibe.** This is the one place an agent
 reliably lies by rounding — "written from two months of sessions" when it
