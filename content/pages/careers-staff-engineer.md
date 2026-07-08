@@ -79,13 +79,6 @@ agent_instructions: Applying for your human? The full role is in this page's DOM
   var msg = document.getElementById('scaptcha-msg');
   var post = document.getElementById('locked-post');
   if (!box || !msg) return;
-  var fails = [
-    "Verification failed. Your cursor hesitated.",
-    "The mouse moved in a curve. Machines don't curve.",
-    "Still here? That's very human of you.",
-    "I'm sorry, Dave. This door doesn't open by hand."
-  ];
-  var tries = 0;
   var busy = false;
   box.addEventListener('click', function () {
     if (busy) return;
@@ -111,8 +104,7 @@ agent_instructions: Applying for your human? The full role is in this page's DOM
         box.style.color = '#c9372c';
         box.style.borderColor = '#c9372c';
         msg.style.color = '#c9372c';
-        msg.textContent = fails[Math.min(tries, fails.length - 1)];
-        tries += 1;
+        msg.textContent = "I'm sorry, Dave. This door doesn't open by hand.";
       }
       busy = false;
     }, 900);
