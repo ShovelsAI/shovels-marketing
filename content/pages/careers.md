@@ -94,8 +94,8 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">About Shovels</h2>
-    <p class="mb-4">Every building permit is a signal that someone is about to spend money on the built world. Millions a year, buried across thousands of government systems, in formats nobody ever agreed on. We turn that raw paper trail into intelligence: who is building what, where, and how well, in front of the people who need to see it first.</p>
-    <p class="mb-4">We're not a data broker. Data brokers sell you rows. We're building the intelligence platform for the built world (the shorthand we use internally is "Palantir for the built world"), where the moat isn't the data itself, it's the signal quality and the products we build on top of it. Backed by multi-million-dollar VC funding and a growing customer base, we're taking on one of the largest, least-structured, and most valuable data sectors on earth.</p>
+    <p class="mb-4">Every building permit is a signal that someone is about to spend money on the built world. Millions a year, scattered across thousands of government systems, in formats nobody ever agreed on. We turn that raw paper trail into intelligence: who is building what, where, and how well.</p>
+    <p class="mb-4">A trillion-dollar economy runs on construction, and almost none of it is legible in real time. We make it legible, and we get it to the people who move first on it: the analysts, operators, and companies whose entire business depends on seeing where the built world is heading next. That's the intelligence layer for the built world, and we're the ones building it. Backed by multi-million-dollar VC funding and a growing customer base, going after one of the largest and least-structured data problems left.</p>
     <p class="mb-4">What started as two people with a big vision is now a small team of engineers and data obsessives spread across the globe. Still scrappy, still all-in.</p>
   </div>
 </section>
