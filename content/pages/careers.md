@@ -1,5 +1,5 @@
 Title: Careers at Shovels
-Description: Join our team building the future of construction intelligence. We're hiring engineers and sales professionals to help transform the construction data industry.
+Description: We're building the intelligence platform for the built world. We're hiring senior AI-native engineers who run teams of agents.
 slug: careers
 
 <!-- hero -->
@@ -8,7 +8,7 @@ slug: careers
     <div class="flex items-center justify-center">
       <div class="flex-1 text-center">
         <h1 class="hero_title text-white">Join Our Team</h1>
-        <p class="hero_description !text-white">Help us build the future of construction data.</p>
+        <p class="hero_description !text-white">Come build the intelligence layer for the built world.</p>
       </div>
       <div class="flex-1 flex justify-center">
         <image src="/images/careers/shovels-guy-pose5.png" class="max-w-[25%]">
@@ -21,8 +21,9 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">About Shovels</h2>
-    <p class="mb-4">At Shovels, we're reshaping the construction and real estate industries by transforming fragmented building permit and contractor data into actionable, game-changing insights. Backed by multi-million-dollar VC funding and a growing customer base, we're taking on one of the world's largest yet most underutilized data-rich sectors - using advanced pipelines and AI to bring structure, clarity, and value to messy, fragmented data.</p>
-    <p class="mb-4">What started as two people with a big vision has grown into a team of dedicated engineers and data enthusiasts distributed across the globe. We've come a long way from our pre-seed days, but we're still scrappy, collaborative, and all-in on building something amazing together.</p>
+    <p class="mb-4">Every building permit is a signal that someone is about to spend money on the built world. Millions a year, buried across thousands of government systems, in formats nobody ever agreed on. We turn that raw paper trail into intelligence: who is building what, where, and how well, in front of the people who need to see it first.</p>
+    <p class="mb-4">We're not a data broker. Data brokers sell you rows. We're building the intelligence platform for the built world (the shorthand we use internally is "Palantir for the built world"), where the moat isn't the data itself, it's the signal quality and the products we build on top of it. Backed by multi-million-dollar VC funding and a growing customer base, we're taking on one of the largest, least-structured, and most valuable data sectors on earth.</p>
+    <p class="mb-4">What started as two people with a big vision is now a small team of engineers and data obsessives spread across the globe. Still scrappy, still all-in.</p>
   </div>
 </section>
 
@@ -57,11 +58,12 @@ slug: careers
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">Why Shovels?</h2>
     <ul class="list-disc pl-6 space-y-2">
-      <li><strong>Impact from day one:</strong> Your work will directly shape our product and company.</li>
-      <li><strong>Room to grow:</strong> Early team members will play leadership roles as the company expands.</li>
-      <li><strong>Flexibility:</strong> Fully remote, async-friendly culture with no strict 9-to-5 rules.</li>
-      <li><strong>Transparency:</strong> You'll see the inner workings of the business and help shape its future.</li>
-      <li><strong>Great pay + stock options:</strong> Competitive salary and meaningful equity in a company that's on the rise.</li>
+      <li><strong>AI-native, not AI hype:</strong> everyone here commands a team of agents. We built our own harness and ship with it every day, and the trajectory is one human lead running a mostly-agent team. If you'd rather live the frontier than read about it, this is where it's happening.</li>
+      <li><strong>Impact from day one:</strong> your work directly shapes the product and the company.</li>
+      <li><strong>Room to grow:</strong> early engineers lead real projects and shape how a mostly-agent org gets built.</li>
+      <li><strong>Flexibility:</strong> fully remote, async-friendly, no strict 9-to-5.</li>
+      <li><strong>Transparency:</strong> you'll see the financials and the inner workings of the business, and help steer it.</li>
+      <li><strong>Great pay + stock options:</strong> competitive salary and meaningful equity in a company on the rise.</li>
     </ul>
   </div>
 </section>
@@ -70,6 +72,7 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">How We Work</h2>
-    <p>We're a small, fully-remote global team, so flexibility and communication are key. Our core hours overlap enough to make collaboration smooth, but we trust you to manage your time and prioritize your work. We stay connected via Slack, bi-weekly calls, with impromptu 1:1s when needed, and keep things casual and fun. Twice a year, we bring everyone together for in-person team summits to connect, strategize, and celebrate our progress.</p>
+    <p class="mb-4">We run on a written-first operating system, and not as ideology: engineering sits in Europe and the business in the US, so anything that matters has to survive a 24-hour round trip in writing. Meetings are for decisions, not updates, and most engineers have two or three a week.</p>
+    <p class="mb-4">Work moves in two-week cycles, planned to about 80% so reality has room to interrupt. Every Friday the team trades agent workflows, prompt patterns, and new tools in our AI Lab. Every engineer leads a real project, kickoff to ship, within their first two quarters: scheduled, not granted by tenure. Twice a year we bring everyone together in person to connect, strategize, and celebrate.</p>
   </div>
 </section>
