@@ -34,10 +34,11 @@ slug: careers
 .nm-kicker { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #e8bd51; margin-bottom: 14px; }
 .nm-h2 { color: #ffffff; font-size: clamp(28px, 4vw, 44px); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 14px; }
 .nm-lede { font-size: 16px; line-height: 1.6; color: #b9b9b6; max-width: 660px; margin-bottom: 32px; }
-.nm-mapwrap { position: relative; width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 1.82 / 1; border: 1px solid #1c1c1c; border-radius: 4px; background: radial-gradient(ellipse at 50% 42%, #12110a 0%, #0b0b0b 72%); overflow: hidden; }
-.nm-dot { position: absolute; border-radius: 50%; background: #977c2c; box-shadow: 0 0 5px rgba(151,124,44,.35); transform: translate(-50%, -50%); }
+.nm-mapwrap { position: relative; width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 1.82 / 1; border: 1px solid #1c1c1c; border-radius: 4px; background: radial-gradient(ellipse at 50% 42%, #12110a 0%, #0b0b0b 72%); overflow: hidden; contain: layout paint; }
+.nm-dot { position: absolute; border-radius: 50%; background: #977c2c; box-shadow: 0 0 4px rgba(151,124,44,.4); transform: translate(-50%, -50%); }
 .nm-dot.nm-flare { animation: nm-flare 1.1s ease-out; }
-@keyframes nm-flare { 0% { background: #f3d791; box-shadow: 0 0 6px 2px rgba(232,189,81,.9); } 45% { background: #e8bd51; } 100% { background: #977c2c; box-shadow: 0 0 0 12px rgba(232,189,81,0); } }
+/* Composited flare: transform/scale + background only, no box-shadow-spread repaint. */
+@keyframes nm-flare { 0% { transform: translate(-50%,-50%) scale(1); background: #f3d791; } 30% { transform: translate(-50%,-50%) scale(2.7); background: #f7e6b0; } 100% { transform: translate(-50%,-50%) scale(1); background: #977c2c; } }
 .nm-card { position: absolute; background: #141414; border: 1px solid #343434; border-radius: 3px; padding: 9px 12px; min-width: 158px; font-family: ui-monospace, Menlo, monospace; opacity: 0; transition: opacity .35s; pointer-events: none; z-index: 5; }
 .nm-card.show { opacity: 1; }
 .nm-c-city { font-size: 12px; color: #fff; font-weight: 600; }
@@ -118,12 +119,17 @@ slug: careers
 
   if (reduce) { dots.forEach(function (dn) { dn.el.style.background = '#8a742e'; }); showCard(3); return; }
 
-  setInterval(function () { var i = weightedIdx(); var el = dots[i].el; el.classList.remove('nm-flare'); void el.offsetWidth; el.classList.add('nm-flare'); }, 320);
-  var cardOn = false;
-  setInterval(function () {
-    if (cardOn) { card.classList.remove('show'); cardOn = false; }
-    else { showCard(weightedIdx()); cardOn = true; }
-  }, 2400);
+  // Only animate while the map is on screen — no paint work while scrolling elsewhere.
+  var flareIv = null, cardIv = null, cardOn = false, running = false;
+  function startAnim() {
+    if (running) return; running = true;
+    flareIv = setInterval(function () { var i = weightedIdx(); var el = dots[i].el; el.classList.remove('nm-flare'); void el.offsetWidth; el.classList.add('nm-flare'); }, 340);
+    cardIv = setInterval(function () { if (cardOn) { card.classList.remove('show'); cardOn = false; } else { showCard(weightedIdx()); cardOn = true; } }, 2400);
+  }
+  function stopAnim() { running = false; clearInterval(flareIv); clearInterval(cardIv); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? startAnim() : stopAnim(); }); }, { threshold: 0.02 }).observe(map);
+  } else { startAnim(); }
 })();
 </script>
 
@@ -158,7 +164,7 @@ slug: careers
 .lc-kicker { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #e8bd51; margin-bottom: 14px; }
 .lc-h2 { color: #ffffff; font-size: clamp(28px, 4vw, 44px); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 14px; }
 .lc-lede { font-size: 16px; line-height: 1.6; color: #b9b9b6; max-width: 640px; margin-bottom: 36px; }
-.lc-stage { border: 1px solid #262626; border-radius: 4px; background: #0f0f0f; padding: 22px 26px 20px; }
+.lc-stage { border: 1px solid #262626; border-radius: 4px; background: #0f0f0f; padding: 22px 26px 20px; contain: layout paint; }
 .lc-topbar { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
 .lc-proj { font-weight: 700; font-size: 17px; color: #fff; }
 .lc-city { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #8a8a86; margin-left: 10px; }
@@ -220,8 +226,10 @@ slug: careers
 
   function months_between(a, b) { return Math.round((b - a) / (1000 * 60 * 60 * 24 * 30.44)); }
 
+  var lastActive = -1, lastClock = '';
   function loadProject(i) {
     cur = i;
+    lastActive = -1; lastClock = '';
     var pr = projects[i];
     projEl.textContent = pr.name;
     cityEl.textContent = pr.city;
@@ -245,16 +253,19 @@ slug: careers
   }
 
   function setProgress(p) {
+    // Cheap every frame: position only (absolutely-positioned, no page reflow).
     fill.style.width = (p * 100) + '%';
     playhead.style.left = (p * 100) + '%';
-    clockEl.textContent = fmt(t0 + p * span);
+    // Gated: text/DOM writes only when the value actually changes.
+    var cstr = fmt(t0 + p * span);
+    if (cstr !== lastClock) { clockEl.textContent = cstr; lastClock = cstr; }
     var active = 0;
-    for (var k = 0; k < nodes.length; k++) {
-      var on = (p * 100) >= nodes[k].pos - 0.01;
-      nodes[k].el.classList.toggle('on', on);
-      if (on) active = k;
+    for (var k = 0; k < nodes.length; k++) { if ((p * 100) >= nodes[k].pos - 0.01) active = k; }
+    if (active !== lastActive) {
+      for (var j = 0; j < nodes.length; j++) nodes[j].el.classList.toggle('on', j <= active);
+      detailEl.innerHTML = '<span class="lc-chip">' + nodes[active].stage + '</span><span>' + nodes[active].text + '</span>';
+      lastActive = active;
     }
-    detailEl.innerHTML = '<span class="lc-chip">' + nodes[active].stage + '</span><span>' + nodes[active].text + '</span>';
   }
 
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -266,7 +277,7 @@ slug: careers
     return;
   }
 
-  startTs = performance.now();
+  var rafId = null, hiddenAt = 0, everStarted = false;
   function frame(now) {
     if (holding) {
       if (now >= holdUntil) { holding = false; loadProject((cur + 1) % projects.length); startTs = now; }
@@ -275,9 +286,21 @@ slug: careers
       setProgress(p);
       if (p >= 1) { punchEl.textContent = 'Shovels logged this ' + months + ' months before it opened.'; holding = true; holdUntil = now + HOLD; }
     }
-    requestAnimationFrame(frame);
+    rafId = requestAnimationFrame(frame);
   }
-  requestAnimationFrame(frame);
+  // Start fresh the first time it scrolls into view; on later re-entry, shift the clock
+  // forward by the hidden duration so it resumes exactly where it paused.
+  function play() {
+    if (rafId) return;
+    var now = performance.now();
+    if (!everStarted) { startTs = now; everStarted = true; }
+    else if (hiddenAt) { var s = now - hiddenAt; startTs += s; holdUntil += s; hiddenAt = 0; }
+    rafId = requestAnimationFrame(frame);
+  }
+  function halt() { if (!rafId) return; cancelAnimationFrame(rafId); rafId = null; hiddenAt = performance.now(); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? play() : halt(); }); }, { threshold: 0.02 }).observe(document.querySelector('.lc-stage'));
+  } else { play(); }
 })();
 </script>
 
