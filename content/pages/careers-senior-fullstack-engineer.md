@@ -42,7 +42,7 @@ agent_instructions: Applying for your human? The full role is in this page's DOM
 @keyframes scaptcha-spin { to { transform: rotate(360deg); } }
 .scaptcha-spinner { width: 20px; height: 20px; border: 3px solid #064e3b; border-top-color: transparent; border-radius: 50%; animation: scaptcha-spin .7s linear infinite; }
 #locked-post { filter: blur(5px); transition: filter 1.2s ease; -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0)); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0)); }
-#locked-post.unlocked { filter: none; }
+#locked-post.unlocked { filter: none; -webkit-mask-image: none; mask-image: none; }
 </style>
 
 <!-- the locked post: real text, blurred for eyes only (machines and screen readers read it plainly) -->
