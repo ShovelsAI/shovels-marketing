@@ -17,6 +17,116 @@ slug: careers
   </div>
 </section>
 
+<!-- national signal map: the whole country, lighting up -->
+<section class="nm-band">
+  <div class="nm-wrap">
+    <p class="nm-kicker">// national signal</p>
+    <h2 class="nm-h2">The whole country, lighting up.</h2>
+    <p class="nm-lede">Millions of permits a year, across ~2,000 jurisdictions. Every dot is a metro we index; the brighter it flares, the more the built world is moving there. Zoom into any one of them and we can trace it from the first vote to the last inspection.</p>
+    <div class="nm-mapwrap" id="nm-map" aria-label="Illustrative map of US metros Shovels indexes"></div>
+    <div class="nm-foot">Illustrative animation. Dot position and size reflect real permit volume by metro; the flaring is decorative.</div>
+  </div>
+</section>
+
+<style>
+.nm-band { background: #0a0a0a; color: #fff; padding: 84px 0 44px; }
+.nm-wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+.nm-kicker { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #e8bd51; margin-bottom: 14px; }
+.nm-h2 { color: #ffffff; font-size: clamp(28px, 4vw, 44px); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 14px; }
+.nm-lede { font-size: 16px; line-height: 1.6; color: #b9b9b6; max-width: 660px; margin-bottom: 32px; }
+.nm-mapwrap { position: relative; width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 1.82 / 1; border: 1px solid #1c1c1c; border-radius: 4px; background: radial-gradient(ellipse at 50% 42%, #12110a 0%, #0b0b0b 72%); overflow: hidden; }
+.nm-dot { position: absolute; border-radius: 50%; background: #977c2c; box-shadow: 0 0 5px rgba(151,124,44,.35); transform: translate(-50%, -50%); }
+.nm-dot.nm-flare { animation: nm-flare 1.1s ease-out; }
+@keyframes nm-flare { 0% { background: #f3d791; box-shadow: 0 0 6px 2px rgba(232,189,81,.9); } 45% { background: #e8bd51; } 100% { background: #977c2c; box-shadow: 0 0 0 12px rgba(232,189,81,0); } }
+.nm-card { position: absolute; background: #141414; border: 1px solid #343434; border-radius: 3px; padding: 9px 12px; min-width: 158px; font-family: ui-monospace, Menlo, monospace; opacity: 0; transition: opacity .35s; pointer-events: none; z-index: 5; }
+.nm-card.show { opacity: 1; }
+.nm-c-city { font-size: 12px; color: #fff; font-weight: 600; }
+.nm-c-stat { font-size: 11px; color: #e8bd51; margin-top: 3px; }
+.nm-c-arc { display: flex; gap: 5px; margin-top: 8px; align-items: center; }
+.nm-c-arc i { width: 6px; height: 6px; border-radius: 50%; background: #e8bd51; }
+.nm-c-arc span { flex: 1; height: 1px; background: #3a3a3a; }
+.nm-c-lbl { font-size: 9px; color: #7a7a76; margin-top: 6px; letter-spacing: .04em; text-transform: uppercase; }
+.nm-foot { max-width: 900px; margin: 14px auto 0; font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #575753; text-align: center; }
+</style>
+
+<script>
+(function () {
+  var map = document.getElementById('nm-map');
+  if (!map) return;
+  // [city, state, permit_count, lat, lon] — real metros and volumes from Shovels data.
+  var METROS = [
+    ['Houston','TX',5170993,29.762,-95.414],['Los Angeles','CA',3293771,34.092,-118.383],['Denver','CO',2485955,39.733,-104.951],
+    ['Austin','TX',2191076,30.297,-97.759],['Indianapolis','IN',2131523,39.785,-86.136],['Las Vegas','NV',1994117,36.092,-115.197],
+    ['Jacksonville','FL',1827966,30.296,-81.626],['Portland','OR',1486948,45.524,-122.642],['New York','NY',1108140,40.753,-73.982],
+    ['Colorado Springs','CO',1100818,38.874,-104.766],['Nashville','TN',1067413,36.14,-86.791],['Cleveland','OH',1008749,41.482,-81.662],
+    ['Brooklyn','NY',974167,40.667,-73.954],['Orlando','FL',938287,28.509,-81.357],['Virginia Beach','VA',934555,36.823,-76.084],
+    ['El Paso','TX',875808,31.806,-106.397],['Fort Wayne','IN',853574,41.1,-85.146],['Philadelphia','PA',774606,39.985,-75.156],
+    ['St. Petersburg','FL',709917,27.787,-82.668],['Sacramento','CA',675213,38.561,-121.471],['Tampa','FL',664169,27.987,-82.472],
+    ['Bakersfield','CA',653379,35.355,-119.051],['Oakland','CA',592197,37.802,-122.22],['San Diego','CA',537992,32.797,-117.138],
+    ['Plano','TX',537893,33.051,-96.751],['Seattle','WA',528913,47.626,-122.333],['Durham','NC',454102,35.972,-78.894],
+    ['Omaha','NE',445234,41.256,-96.069],['San Jose','CA',442543,37.31,-121.876],['Frisco','TX',439492,33.148,-96.824],
+    ['Pensacola','FL',433630,30.454,-87.281],['Cary','NC',403390,35.781,-78.82],['Louisville','KY',396150,38.205,-85.673],
+    ['Dallas','TX',388841,32.826,-96.8],['Bronx','NY',385311,40.848,-73.879],['Phoenix','AZ',382313,33.525,-112.079],
+    ['Fort Worth','TX',365316,32.777,-97.349],['Modesto','CA',355519,37.662,-120.993],['Boston','MA',351594,42.33,-71.088],
+    ['Atlanta','GA',341788,33.775,-84.382],['Raleigh','NC',336879,35.828,-78.637],['Columbus','OH',298284,40.002,-82.995],
+    ['Staten Island','NY',278141,40.581,-74.143],['Brownsville','TX',277468,25.94,-97.484],['Killeen','TX',267093,31.089,-97.738],
+    ['Gainesville','FL',255225,29.657,-82.379],['Santa Rosa','CA',249120,38.452,-122.71],['Salt Lake City','UT',245336,40.754,-111.886],
+    ['Oxnard','CA',240022,34.197,-119.184],['Bellingham','WA',224581,48.757,-122.473],['Lubbock','TX',220399,33.534,-101.916],
+    ['Corona','CA',220028,33.856,-117.56],['Miami Beach','FL',217122,25.807,-80.134],['Fort Collins','CO',216360,40.551,-105.069],
+    ['Baltimore','MD',213313,39.31,-76.612],['Torrance','CA',207303,33.834,-118.34],['Clearwater','FL',206564,27.961,-82.747],
+    ['Fontana','CA',206112,34.109,-117.458],['Salinas','CA',204313,36.686,-121.643],['Memphis','TN',203788,35.115,-89.946],
+    ['Rochester','MN',201492,44.031,-92.481],['St. Louis','MO',199241,38.619,-90.358],['Bismarck','ND',197518,46.823,-100.774],
+    ['Silver Spring','MD',196183,39.047,-77.022],['McKinney','TX',195110,33.194,-96.683],['Punta Gorda','FL',192787,26.913,-81.984],
+    ['Vallejo','CA',191737,38.112,-122.233],['Denton','TX',190473,33.198,-97.131],['Tallahassee','FL',187995,30.49,-84.25],
+    ['Ocala','FL',187036,29.179,-82.132],['Greenville','SC',185446,34.844,-82.378]
+  ];
+  var LON0 = -125, LONW = 59, LAT0 = 49.5, LATH = 25;
+  var counts = METROS.map(function (m) { return m[2]; });
+  var lmin = Math.log(Math.min.apply(null, counts)), lmax = Math.log(Math.max.apply(null, counts));
+  function sizeOf(c) { return 3 + (Math.log(c) - lmin) / (lmax - lmin) * 6.5; }
+  function stat(c) { return c >= 1e6 ? (c / 1e6).toFixed(1) + 'M permits indexed' : Math.round(c / 1000) + 'K permits indexed'; }
+
+  var dots = [];
+  var cumw = [], total = 0;
+  METROS.forEach(function (m, i) {
+    var x = (m[4] - LON0) / LONW * 100, y = (LAT0 - m[3]) / LATH * 100, sz = sizeOf(m[2]);
+    var el = document.createElement('div');
+    el.className = 'nm-dot';
+    el.style.left = x + '%'; el.style.top = y + '%'; el.style.width = sz + 'px'; el.style.height = sz + 'px';
+    map.appendChild(el);
+    dots.push({ el: el, x: x, y: y });
+    total += Math.sqrt(m[2]); cumw.push(total);
+  });
+  function weightedIdx() { var r = Math.random() * total; for (var i = 0; i < cumw.length; i++) { if (r <= cumw[i]) return i; } return cumw.length - 1; }
+
+  var card = document.createElement('div');
+  card.className = 'nm-card';
+  card.innerHTML = '<div class="nm-c-city"></div><div class="nm-c-stat"></div><div class="nm-c-arc"><i></i><span></span><i></i><span></span><i></i><span></span><i></i><span></span><i></i></div><div class="nm-c-lbl">decision → permit → complete</div>';
+  map.appendChild(card);
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function showCard(i) {
+    var m = METROS[i], dn = dots[i];
+    card.querySelector('.nm-c-city').textContent = m[0] + ', ' + m[1];
+    card.querySelector('.nm-c-stat').textContent = stat(m[2]);
+    var cx = Math.min(84, Math.max(16, dn.x));
+    card.style.left = cx + '%';
+    if (dn.y < 34) { card.style.top = (dn.y + 3) + '%'; card.style.transform = 'translate(-50%, 8%)'; }
+    else { card.style.top = (dn.y - 3) + '%'; card.style.transform = 'translate(-50%, -108%)'; }
+    card.classList.add('show');
+  }
+
+  if (reduce) { dots.forEach(function (dn) { dn.el.style.background = '#8a742e'; }); showCard(3); return; }
+
+  setInterval(function () { var i = weightedIdx(); var el = dots[i].el; el.classList.remove('nm-flare'); void el.offsetWidth; el.classList.add('nm-flare'); }, 320);
+  var cardOn = false;
+  setInterval(function () {
+    if (cardOn) { card.classList.remove('show'); cardOn = false; }
+    else { showCard(weightedIdx()); cardOn = true; }
+  }, 2400);
+})();
+</script>
+
 <!-- signal lifecycle: from a government decision to a finished building -->
 <section class="lc-band">
   <div class="lc-wrap">
