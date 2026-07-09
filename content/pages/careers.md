@@ -17,76 +17,157 @@ slug: careers
   </div>
 </section>
 
-<!-- live signal feed: demonstrate the thesis instead of describing it -->
-<section class="sig-band">
-  <div class="sig-wrap">
-    <div class="sig-copy">
-      <p class="sig-kicker">// live signal</p>
-      <h2 class="sig-h2">The built world, streaming.</h2>
-      <p class="sig-lede">Every building permit is a signal that someone is about to spend money on the built world. We index them across ~2,000 US jurisdictions, roughly 85% of the population, and turn the raw stream into intelligence.</p>
-      <div class="sig-counter">
-        <span class="sig-count" id="sig-count">0</span>
-        <span class="sig-count-label">signals observed while you've been reading</span>
+<!-- signal lifecycle: from a government decision to a finished building -->
+<section class="lc-band">
+  <div class="lc-wrap">
+    <p class="lc-kicker">// signal lifecycle</p>
+    <h2 class="lc-h2">We see it before it's built.</h2>
+    <p class="lc-lede">The built world starts as a line item in a government meeting. We capture that decision, then follow it into the ground: the rezoning, the plat, the permits, the build. Watch one go from a vote to the keys.</p>
+
+    <div class="lc-stage">
+      <div class="lc-topbar">
+        <div><span class="lc-proj" id="lc-proj">—</span><span class="lc-city" id="lc-city"></span></div>
+        <div class="lc-clock" id="lc-clock">—</div>
       </div>
-      <p class="sig-foot">Now multiply by a country. That's the job.</p>
-    </div>
-    <div class="sig-feedwrap">
-      <div class="sig-feedhead"><span class="sig-dot"></span> sample feed · illustrative</div>
-      <div class="sig-feed" id="sig-feed" aria-label="Illustrative stream of building permit records"></div>
+      <div class="lc-detail" id="lc-detail">&nbsp;</div>
+      <div class="lc-track" id="lc-track">
+        <div class="lc-line"></div>
+        <div class="lc-fill" id="lc-fill"></div>
+        <div class="lc-playhead" id="lc-playhead"></div>
+      </div>
+      <div class="lc-arc">decision · plat · permit · construction · complete</div>
+      <div class="lc-punch" id="lc-punch">&nbsp;</div>
+      <div class="lc-foot">Illustrative. Built from real Shovels signal types: planning decisions, plats, permits, and inspections.</div>
     </div>
   </div>
 </section>
 
 <style>
-.sig-band { background: #0a0a0a; color: #fff; padding: 80px 0; }
-.sig-wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-.sig-kicker { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #e8bd51; margin-bottom: 16px; }
-.sig-h2 { color: #ffffff; font-size: clamp(30px, 4vw, 44px); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 16px; }
-.sig-lede { font-size: 16px; line-height: 1.6; color: #b9b9b6; max-width: 520px; margin-bottom: 28px; }
-.sig-counter { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
-.sig-count { font-size: 52px; font-weight: 700; color: #e8bd51; line-height: 1; font-variant-numeric: tabular-nums; font-family: ui-monospace, Menlo, monospace; }
-.sig-count-label { font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #8a8a86; }
-.sig-foot { font-size: 14px; color: #8a8a86; }
-.sig-feedwrap { border: 1px solid #262626; border-radius: 3px; background: #0f0f0f; overflow: hidden; }
-.sig-feedhead { font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: .08em; color: #8a8a86; padding: 10px 14px; border-bottom: 1px solid #1e1e1e; display: flex; align-items: center; gap: 8px; }
-.sig-dot { width: 7px; height: 7px; border-radius: 50%; background: #e8bd51; display: inline-block; animation: sig-pulse 1.6s infinite; }
-@keyframes sig-pulse { 0% { box-shadow: 0 0 0 0 rgba(232,189,81,.5); } 70% { box-shadow: 0 0 0 6px rgba(232,189,81,0); } 100% { box-shadow: 0 0 0 0 rgba(232,189,81,0); } }
-.sig-feed { height: 360px; overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: flex-end; -webkit-mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent); }
-.sig-row { display: flex; align-items: baseline; gap: 10px; padding: 9px 14px; border-top: 1px solid #171717; font-family: ui-monospace, Menlo, monospace; font-size: 12.5px; white-space: nowrap; animation: sig-in .5s ease; }
-@keyframes sig-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-.sig-ts { color: #6a6a66; font-size: 11px; }
-.sig-city { color: #efefec; flex: 1; overflow: hidden; text-overflow: ellipsis; }
-.sig-type { color: #b9b9b6; border: 1px solid #2c2c2c; border-radius: 2px; padding: 1px 6px; font-size: 11px; }
-.sig-val { color: #e8bd51; font-weight: 600; }
-@media (max-width: 820px) { .sig-wrap { grid-template-columns: 1fr; gap: 32px; } .sig-feed { height: 280px; } }
-@media (prefers-reduced-motion: reduce) { .sig-dot { animation: none; } .sig-row { animation: none; } }
+.lc-band { background: #0a0a0a; color: #fff; padding: 84px 0; }
+.lc-wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+.lc-kicker { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #e8bd51; margin-bottom: 14px; }
+.lc-h2 { color: #ffffff; font-size: clamp(28px, 4vw, 44px); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 14px; }
+.lc-lede { font-size: 16px; line-height: 1.6; color: #b9b9b6; max-width: 640px; margin-bottom: 36px; }
+.lc-stage { border: 1px solid #262626; border-radius: 4px; background: #0f0f0f; padding: 22px 26px 20px; }
+.lc-topbar { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.lc-proj { font-weight: 700; font-size: 17px; color: #fff; }
+.lc-city { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #8a8a86; margin-left: 10px; }
+.lc-clock { font-family: ui-monospace, Menlo, monospace; font-size: 20px; color: #e8bd51; font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+.lc-detail { min-height: 46px; margin: 20px 0 24px; font-size: 15px; color: #e8e8e5; line-height: 1.5; display: flex; align-items: center; gap: 11px; flex-wrap: wrap; }
+.lc-chip { font-family: ui-monospace, Menlo, monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: #0a0a0a; background: #e8bd51; border-radius: 2px; padding: 3px 8px; white-space: nowrap; }
+.lc-track { position: relative; height: 24px; margin: 6px 0; }
+.lc-line { position: absolute; left: 0; right: 0; top: 11px; height: 2px; background: #232323; }
+.lc-fill { position: absolute; left: 0; top: 11px; height: 2px; width: 0; background: #e8bd51; }
+.lc-playhead { position: absolute; top: 2px; left: 0; width: 2px; height: 20px; background: #fff; box-shadow: 0 0 8px rgba(255,255,255,.55); }
+.lc-node { position: absolute; top: 4px; width: 15px; height: 15px; margin-left: -7px; border-radius: 50%; background: #0f0f0f; border: 2px solid #333; transition: background .2s, border-color .2s, transform .2s; }
+.lc-node.on { background: #e8bd51; border-color: #e8bd51; transform: scale(1.13); }
+.lc-arc { font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: #5f5f5b; margin-top: 12px; }
+.lc-punch { min-height: 24px; margin-top: 22px; font-size: 15px; font-weight: 600; color: #e8bd51; }
+.lc-foot { margin-top: 16px; font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #575753; }
+@media (max-width: 600px) { .lc-clock { font-size: 16px; } }
 </style>
 
 <script>
 (function () {
-  var feed = document.getElementById('sig-feed');
-  var countEl = document.getElementById('sig-count');
-  if (!feed || !countEl) return;
-  var types = [['Solar PV',15000,42000],['Reroof',8000,31000],['ADU',120000,310000],['Kitchen remodel',24000,92000],['New SFR',255000,620000],['Commercial TI',80000,1900000],['Pool',44000,112000],['HVAC replace',6000,18000],['Water heater',1500,5200],['Addition',40000,185000],['Solar + battery',28000,66000],['EV charger',1200,4200],['Deck',8000,26000],['Foundation repair',12000,48000]];
-  var cities = ['Austin, TX','Phoenix, AZ','Denver, CO','Tampa, FL','Columbus, OH','Raleigh, NC','Boise, ID','Nashville, TN','Sacramento, CA','Portland, OR','Charlotte, NC','Mesa, AZ','San Antonio, TX','Fort Worth, TX','Atlanta, GA','Salt Lake City, UT','Reno, NV','Kansas City, MO','Omaha, NE','Tucson, AZ'];
-  function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
-  function money(lo, hi) { var v = Math.round((lo + Math.random() * (hi - lo)) / 100) * 100; return '$' + v.toLocaleString('en-US'); }
-  function ts() { var d = new Date(); function p(n) { return (n < 10 ? '0' : '') + n; } return p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds()); }
-  var CADENCE = 1150, SEED = 10, start = Date.now();
-  function addRow() {
-    var t = pick(types);
-    var row = document.createElement('div');
-    row.className = 'sig-row';
-    row.innerHTML = '<span class="sig-ts">' + ts() + '</span><span class="sig-city">' + pick(cities) + '</span><span class="sig-type">' + t[0] + '</span><span class="sig-val">' + money(t[1], t[2]) + '</span>';
-    feed.appendChild(row);
-    while (feed.children.length > 14) { feed.removeChild(feed.firstChild); }
+  var track = document.getElementById('lc-track');
+  var fill = document.getElementById('lc-fill');
+  var playhead = document.getElementById('lc-playhead');
+  var clockEl = document.getElementById('lc-clock');
+  var detailEl = document.getElementById('lc-detail');
+  var punchEl = document.getElementById('lc-punch');
+  var projEl = document.getElementById('lc-proj');
+  var cityEl = document.getElementById('lc-city');
+  if (!track) return;
+
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function d(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function fmt(ms) { var x = new Date(ms); return MON[x.getMonth()] + ' ' + x.getFullYear(); }
+
+  var projects = [
+    { name: 'Cedar & 8th', city: 'Austin, TX', stages: [
+      { t: '2022-03-14', stage: 'Council decision', text: 'Rezoned R-1 → CAC-1(EX). 240-unit mixed-use approved.' },
+      { t: '2023-01-19', stage: 'Final plat', text: 'Subdivision and site plan approved.' },
+      { t: '2023-08-02', stage: 'Building permit', text: 'New commercial building filed. $38.4M.' },
+      { t: '2024-02-11', stage: 'Construction', text: 'Permit issued. Three structures, 22k sqft retail.' },
+      { t: '2025-11-06', stage: 'Complete', text: 'Certificate of occupancy. 240 homes.' } ] },
+    { name: 'Harbor Logistics Park', city: 'Mesa, AZ', stages: [
+      { t: '2021-09-08', stage: 'Council decision', text: 'Rezoned A-1 → I-1. 1.1M sqft distribution center approved.' },
+      { t: '2022-06-15', stage: 'Plan amendment', text: 'Site plan and traffic study approved.' },
+      { t: '2023-03-30', stage: 'Building permit', text: 'New light-industrial warehouse filed. $61M.' },
+      { t: '2023-11-19', stage: 'Construction', text: 'Permit issued. Two rail spurs.' },
+      { t: '2024-12-02', stage: 'Complete', text: 'Final inspection passed. 1.1M sqft online.' } ] },
+    { name: 'Grove Town Center', city: 'Raleigh, NC', stages: [
+      { t: '2022-05-02', stage: 'Council decision', text: 'Special Use Permit approved. Retail + drive-through, B-2.' },
+      { t: '2023-02-10', stage: 'Final plat', text: 'Lot consolidation approved.' },
+      { t: '2023-09-25', stage: 'Building permit', text: 'New commercial building filed. $9.7M.' },
+      { t: '2024-03-30', stage: 'Construction', text: 'Permit issued. Restaurant + retail shell.' },
+      { t: '2025-04-14', stage: 'Complete', text: 'Certificate of occupancy.' } ] }
+  ];
+
+  var PLAY = 9000, HOLD = 2800;
+  var nodes = [];
+  var cur = -1, t0 = 0, span = 1, months = 0, startTs = 0, holding = false, holdUntil = 0;
+
+  function months_between(a, b) { return Math.round((b - a) / (1000 * 60 * 60 * 24 * 30.44)); }
+
+  function loadProject(i) {
+    cur = i;
+    var pr = projects[i];
+    projEl.textContent = pr.name;
+    cityEl.textContent = pr.city;
+    t0 = d(pr.stages[0].t).getTime();
+    var t1 = d(pr.stages[pr.stages.length - 1].t).getTime();
+    span = t1 - t0;
+    months = months_between(t0, t1);
+    // rebuild nodes
+    for (var k = 0; k < nodes.length; k++) track.removeChild(nodes[k].el);
+    nodes = [];
+    for (var s = 0; s < pr.stages.length; s++) {
+      var pos = (d(pr.stages[s].t).getTime() - t0) / span * 100;
+      var el = document.createElement('div');
+      el.className = 'lc-node';
+      el.style.left = pos + '%';
+      track.appendChild(el);
+      nodes.push({ el: el, pos: pos, stage: pr.stages[s].stage, text: pr.stages[s].text });
+    }
+    setProgress(0);
+    punchEl.innerHTML = '&nbsp;';
   }
-  // Counter is derived from real elapsed time, not tick count: throttle-proof and honest.
-  function updateCount() { countEl.textContent = (SEED + Math.floor((Date.now() - start) / CADENCE)).toLocaleString('en-US'); }
-  for (var i = 0; i < SEED; i++) addRow();
-  updateCount();
+
+  function setProgress(p) {
+    fill.style.width = (p * 100) + '%';
+    playhead.style.left = (p * 100) + '%';
+    clockEl.textContent = fmt(t0 + p * span);
+    var active = 0;
+    for (var k = 0; k < nodes.length; k++) {
+      var on = (p * 100) >= nodes[k].pos - 0.01;
+      nodes[k].el.classList.toggle('on', on);
+      if (on) active = k;
+    }
+    detailEl.innerHTML = '<span class="lc-chip">' + nodes[active].stage + '</span><span>' + nodes[active].text + '</span>';
+  }
+
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduce) { setInterval(function () { addRow(); updateCount(); }, CADENCE); }
+  loadProject(0);
+
+  if (reduce) {
+    setProgress(1);
+    punchEl.textContent = 'Shovels logged this ' + months + ' months before it opened.';
+    return;
+  }
+
+  startTs = performance.now();
+  function frame(now) {
+    if (holding) {
+      if (now >= holdUntil) { holding = false; loadProject((cur + 1) % projects.length); startTs = now; }
+    } else {
+      var p = Math.min(1, (now - startTs) / PLAY);
+      setProgress(p);
+      if (p >= 1) { punchEl.textContent = 'Shovels logged this ' + months + ' months before it opened.'; holding = true; holdUntil = now + HOLD; }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
 })();
 </script>
 
