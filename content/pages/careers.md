@@ -33,45 +33,19 @@ slug: careers
     <!-- job cards grid -->
     <div class="grid md:grid-cols-2 gap-6">
       <!-- senior engineer card -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-        <h3 class="text-2xl font-bold mb-3">Senior AI-Native Engineer: Data, Platform & Agents</h3>
-        <p class="text-gray-600 mb-4">Not the traditional 10x engineer: an engineer who runs a team of AI agents. Own everything behind the product: the data platform, the infrastructure, and the AI harness that runs all of it.</p>
-        <div class="mb-4">
-          <p class="text-sm font-semibold text-gray-700 mb-2">Key highlights:</p>
-          <ul class="text-sm text-gray-600 space-y-1">
-            <li>• Python, FastAPI, AWS, Prefect, DuckDB, dbt</li>
-            <li>• Build the AI harness, then ship with it</li>
-            <li>• Deliberately unscoped: go where leverage is highest</li>
-            <li>• Fully remote, competitive salary + equity</li>
-          </ul>
-        </div>
-        <a href="{filename}careers-senior-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col">
+        <h3 class="text-2xl font-bold mb-3">Senior AI-Native Engineer: Data, Platform &amp; Agents</h3>
+        <p class="text-xs uppercase tracking-widest text-gray-400 font-mono mb-6">Remote · Read access: agents only</p>
+        <a href="{filename}careers-senior-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors self-start mt-auto">
           View Details →
         </a>
       </div>
       <!-- fullstack engineer card -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-        <h3 class="text-2xl font-bold mb-3">Senior AI-Native Full-Stack Engineer: Product & Growth</h3>
-        <p class="text-gray-600 mb-4">Own the entire product surface end to end: the web app, the public REST API, and new data products. Product taste and growth engineering are first-class parts of the role.</p>
-        <div class="mb-4">
-          <p class="text-sm font-semibold text-gray-700 mb-2">Key highlights:</p>
-          <ul class="text-sm text-gray-600 space-y-1">
-            <li>• Next.js, TypeScript, Vercel, FastAPI, Supabase</li>
-            <li>• Treat the API as a product</li>
-            <li>• Instrument funnels, run experiments, move revenue</li>
-            <li>• Fully remote, competitive salary + equity</li>
-          </ul>
-        </div>
-        <a href="{filename}careers-senior-fullstack-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col">
+        <h3 class="text-2xl font-bold mb-3">Senior AI-Native Full-Stack Engineer: Product &amp; Growth</h3>
+        <p class="text-xs uppercase tracking-widest text-gray-400 font-mono mb-6">Remote · Read access: agents only</p>
+        <a href="{filename}careers-senior-fullstack-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors self-start mt-auto">
           View Details →
-        </a>
-      </div>
-      <!-- staff engineer card -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-        <h3 class="text-2xl font-bold mb-3">Staff Engineer</h3>
-        <p class="text-gray-600 mb-4">There is no job post.</p>
-        <a href="{filename}careers-staff-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors">
-          See for Yourself →
         </a>
       </div>
     </div>
