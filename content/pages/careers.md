@@ -1,5 +1,5 @@
 Title: Careers at Shovels
-Description: We're building the intelligence platform for the built world. We're hiring senior AI-native engineers who run teams of agents.
+Description: We're building the intelligence platform for the built world. We're hiring senior engineers who run teams of agents.
 slug: careers
 
 <!-- hero -->
@@ -322,7 +322,7 @@ slug: careers
     <div class="grid md:grid-cols-2 gap-6">
       <!-- senior engineer card -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col">
-        <h3 class="text-2xl font-bold mb-3">Senior AI-Native Engineer: Data, Platform &amp; Agents</h3>
+        <h3 class="text-2xl font-bold mb-3">Senior Data &amp; Platform Engineer</h3>
         <p class="text-xs uppercase tracking-widest text-gray-400 font-mono mb-6">Remote · Read access: agents only</p>
         <a href="{filename}careers-senior-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors self-start mt-auto">
           View Details →
@@ -330,7 +330,7 @@ slug: careers
       </div>
       <!-- fullstack engineer card -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col">
-        <h3 class="text-2xl font-bold mb-3">Senior AI-Native Full-Stack Engineer: Product &amp; Growth</h3>
+        <h3 class="text-2xl font-bold mb-3">Senior Full-Stack Product Engineer</h3>
         <p class="text-xs uppercase tracking-widest text-gray-400 font-mono mb-6">Remote · Read access: agents only</p>
         <a href="{filename}careers-senior-fullstack-engineer.md" class="inline-block bg-emerald-900 text-white px-6 py-2 rounded hover:bg-emerald-800 transition-colors self-start mt-auto">
           View Details →
