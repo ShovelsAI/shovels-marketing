@@ -360,6 +360,6 @@ slug: careers
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">How We Work</h2>
     <p class="mb-4">We run on a written-first operating system, and not as ideology: engineering sits in Europe and the business in the US, so anything that matters has to survive a 24-hour round trip in writing. Meetings are for decisions, not updates, and most engineers have two or three a week.</p>
-    <p class="mb-4">Exactly how we run week to week is still taking shape, and you'll have a hand in it. What's already real: every Friday the team trades agent workflows, prompt patterns, and new tools in our AI Lab. One thing we're pushing hard on is that every engineer leads a real project, kickoff to ship, by design rather than by tenure. And twice a year we bring everyone together in person to connect, strategize, and celebrate.</p>
+    <p class="mb-4">The way we work is deliberately light and always provisional: we add a ritual only when a gap actually hurts, and we change it the moment reality disagrees. A few things we're already sure of, though. Every Friday the team trades agent workflows, prompt patterns, and new tools in our AI Lab. One thing we're pushing hard on is that every engineer leads a real project, kickoff to ship, by design rather than by tenure. And twice a year we bring everyone together in person to connect, strategize, and celebrate.</p>
   </div>
 </section>
