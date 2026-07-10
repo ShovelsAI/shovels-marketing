@@ -22,9 +22,9 @@ slug: careers
   <div class="nm-wrap">
     <p class="nm-kicker">// national signal</p>
     <h2 class="nm-h2">The whole country, lighting up.</h2>
-    <p class="nm-lede">Millions of permits a year, across ~2,000 jurisdictions. Every dot is a metro we index; the brighter it flares, the more the built world is moving there. Zoom into any one of them and we can trace it from the first vote to the last inspection.</p>
+    <p class="nm-lede">Four datasets underpin everything we build: government meeting decisions, permits, addresses, and parcels. Across thousands of US jurisdictions, every dot is a metro; each flare is a signal firing, a council rezoning or a permit filed, often months before the building exists. Zoom into any one and we trace it from the first vote to the last inspection.</p>
     <div class="nm-mapwrap" id="nm-map" aria-label="Illustrative map of US metros Shovels indexes"></div>
-    <div class="nm-foot">Illustrative animation. Dot position and size reflect real permit volume by metro; the flaring is decorative.</div>
+    <div class="nm-foot">Illustrative animation. Dots reflect real permit volume by metro; the flares stand in for the live signal stream, government decisions and permits.</div>
   </div>
 </section>
 
@@ -42,7 +42,11 @@ slug: careers
 .nm-card { position: absolute; background: #141414; border: 1px solid #343434; border-radius: 3px; padding: 9px 12px; min-width: 158px; font-family: ui-monospace, Menlo, monospace; opacity: 0; transition: opacity .35s; pointer-events: none; z-index: 5; }
 .nm-card.show { opacity: 1; }
 .nm-c-city { font-size: 12px; color: #fff; font-weight: 600; }
-.nm-c-stat { font-size: 11px; color: #e8bd51; margin-top: 3px; }
+.nm-c-sig { display: flex; align-items: center; gap: 7px; margin-top: 6px; }
+.nm-c-chip { font-size: 8px; letter-spacing: .08em; text-transform: uppercase; padding: 2px 5px; border-radius: 2px; white-space: nowrap; }
+.nm-c-chip.permit { background: #e8bd51; color: #0a0a0a; }
+.nm-c-chip.decision { color: #e8bd51; border: 1px solid #e8bd51; }
+.nm-c-detail { font-size: 11px; color: #cfcfca; }
 .nm-c-arc { display: flex; gap: 5px; margin-top: 8px; align-items: center; }
 .nm-c-arc i { width: 6px; height: 6px; border-radius: 50%; background: #e8bd51; }
 .nm-c-arc span { flex: 1; height: 1px; background: #3a3a3a; }
@@ -102,14 +106,17 @@ slug: careers
 
   var card = document.createElement('div');
   card.className = 'nm-card';
-  card.innerHTML = '<div class="nm-c-city"></div><div class="nm-c-stat"></div><div class="nm-c-arc"><i></i><span></span><i></i><span></span><i></i><span></span><i></i><span></span><i></i></div><div class="nm-c-lbl">decision → permit → complete</div>';
+  card.innerHTML = '<div class="nm-c-city"></div><div class="nm-c-sig"><span class="nm-c-chip"></span><span class="nm-c-detail"></span></div><div class="nm-c-arc"><i></i><span></span><i></i><span></span><i></i><span></span><i></i><span></span><i></i></div><div class="nm-c-lbl">decision → permit → complete</div>';
   map.appendChild(card);
 
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var DECISIONS = ['Data center rezoning', 'Fiber franchise granted', 'Substation approved', 'Tax abatement approved', 'Rezoning approved', 'Special use permit', 'Site plan approved', 'Final plat'];
   function showCard(i) {
     var m = METROS[i], dn = dots[i];
     card.querySelector('.nm-c-city').textContent = m[0] + ', ' + m[1];
-    card.querySelector('.nm-c-stat').textContent = stat(m[2]);
+    var chip = card.querySelector('.nm-c-chip'), detail = card.querySelector('.nm-c-detail');
+    if (Math.random() < 0.45) { chip.className = 'nm-c-chip decision'; chip.textContent = 'Govt decision'; detail.textContent = DECISIONS[Math.floor(Math.random() * DECISIONS.length)]; }
+    else { chip.className = 'nm-c-chip permit'; chip.textContent = 'Permit'; detail.textContent = stat(m[2]); }
     var cx = Math.min(84, Math.max(16, dn.x));
     card.style.left = cx + '%';
     if (dn.y < 34) { card.style.top = (dn.y + 3) + '%'; card.style.transform = 'translate(-50%, 8%)'; }
@@ -151,7 +158,7 @@ slug: careers
         <div class="lc-fill" id="lc-fill"></div>
         <div class="lc-playhead" id="lc-playhead"></div>
       </div>
-      <div class="lc-arc">decision · plat · permit · construction · complete</div>
+      <div class="lc-arc">decision · approval · permit · construction · complete</div>
       <div class="lc-punch" id="lc-punch">&nbsp;</div>
       <div class="lc-foot">Illustrative. Built from real Shovels signal types: planning decisions, plats, permits, and inspections.</div>
     </div>
@@ -200,24 +207,24 @@ slug: careers
   function fmt(ms) { var x = new Date(ms); return MON[x.getMonth()] + ' ' + x.getFullYear(); }
 
   var projects = [
-    { name: 'Cedar & 8th', city: 'Austin, TX', stages: [
-      { t: '2022-03-14', stage: 'Council decision', text: 'Rezoned R-1 → CAC-1(EX). 240-unit mixed-use approved.' },
-      { t: '2023-01-19', stage: 'Final plat', text: 'Subdivision and site plan approved.' },
-      { t: '2023-08-02', stage: 'Building permit', text: 'New commercial building filed. $38.4M.' },
-      { t: '2024-02-11', stage: 'Construction', text: 'Permit issued. Three structures, 22k sqft retail.' },
-      { t: '2025-11-06', stage: 'Complete', text: 'Certificate of occupancy. 240 homes.' } ] },
-    { name: 'Harbor Logistics Park', city: 'Mesa, AZ', stages: [
-      { t: '2021-09-08', stage: 'Council decision', text: 'Rezoned A-1 → I-1. 1.1M sqft distribution center approved.' },
-      { t: '2022-06-15', stage: 'Plan amendment', text: 'Site plan and traffic study approved.' },
-      { t: '2023-03-30', stage: 'Building permit', text: 'New light-industrial warehouse filed. $61M.' },
-      { t: '2023-11-19', stage: 'Construction', text: 'Permit issued. Two rail spurs.' },
-      { t: '2024-12-02', stage: 'Complete', text: 'Final inspection passed. 1.1M sqft online.' } ] },
-    { name: 'Grove Town Center', city: 'Raleigh, NC', stages: [
-      { t: '2022-05-02', stage: 'Council decision', text: 'Special Use Permit approved. Retail + drive-through, B-2.' },
-      { t: '2023-02-10', stage: 'Final plat', text: 'Lot consolidation approved.' },
-      { t: '2023-09-25', stage: 'Building permit', text: 'New commercial building filed. $9.7M.' },
-      { t: '2024-03-30', stage: 'Construction', text: 'Permit issued. Restaurant + retail shell.' },
-      { t: '2025-04-14', stage: 'Complete', text: 'Certificate of occupancy.' } ] }
+    { name: 'Cascade Data Center Campus', city: 'Ashburn, VA', stages: [
+      { t: '2022-04-12', stage: 'Council decision', text: 'Rezoned A-1 → PD-DC. 900k sqft data center campus approved.' },
+      { t: '2023-01-25', stage: 'Site plan', text: 'Special exception and site plan approved. 150 MW.' },
+      { t: '2023-07-18', stage: 'Building permit', text: 'New data center filed. $1.1B, three halls.' },
+      { t: '2024-01-30', stage: 'Construction', text: 'Permit issued. Dedicated substation underway.' },
+      { t: '2025-12-09', stage: 'Online', text: 'Certificate of occupancy. 150 MW live.' } ] },
+    { name: 'Cross-County Fiber Backbone', city: 'Columbus, OH', stages: [
+      { t: '2022-06-07', stage: 'Council decision', text: 'Franchise and right-of-way approved. 180-mile metro backbone.' },
+      { t: '2022-11-15', stage: 'ROW permit', text: 'Right-of-way and excavation permits filed.' },
+      { t: '2023-04-20', stage: 'Construction', text: 'Permit issued. Trenching and conduit begin.' },
+      { t: '2024-02-28', stage: 'Backbone', text: 'Dark fiber complete across the loop.' },
+      { t: '2024-08-14', stage: 'Live', text: 'Network lit. 180 miles online.' } ] },
+    { name: 'Northgate Semiconductor Fab', city: 'New Albany, OH', stages: [
+      { t: '2021-09-20', stage: 'Council decision', text: 'Rezoned to PUD. 2.8M sqft semiconductor campus approved.' },
+      { t: '2022-05-10', stage: 'Incentive', text: 'Tax abatement and site plan approved.' },
+      { t: '2023-01-16', stage: 'Building permit', text: 'New fab filed. $12B, two modules.' },
+      { t: '2023-06-05', stage: 'Construction', text: 'Permit issued. Cleanroom shell underway.' },
+      { t: '2025-10-20', stage: 'Complete', text: 'Final inspection passed. Tool install begins.' } ] }
   ];
 
   var PLAY = 9000, HOLD = 2800;
@@ -273,7 +280,7 @@ slug: careers
 
   if (reduce) {
     setProgress(1);
-    punchEl.textContent = 'Shovels logged this ' + months + ' months before it opened.';
+    punchEl.textContent = 'Shovels logged this ' + months + ' months before it came online.';
     return;
   }
 
@@ -284,7 +291,7 @@ slug: careers
     } else {
       var p = Math.min(1, (now - startTs) / PLAY);
       setProgress(p);
-      if (p >= 1) { punchEl.textContent = 'Shovels logged this ' + months + ' months before it opened.'; holding = true; holdUntil = now + HOLD; }
+      if (p >= 1) { punchEl.textContent = 'Shovels logged this ' + months + ' months before it came online.'; holding = true; holdUntil = now + HOLD; }
     }
     rafId = requestAnimationFrame(frame);
   }
@@ -308,7 +315,7 @@ slug: careers
 <section class="my-24">
   <div class="mx-auto max-w-4xl px-6">
     <h2 class="text-3xl font-bold tracking-tight mb-6">About Shovels</h2>
-    <p class="mb-4">Every building permit is a signal that someone is about to spend money on the built world. Millions a year, scattered across thousands of government systems, in formats nobody ever agreed on. We turn that raw paper trail into intelligence: who is building what, where, and how well.</p>
+    <p class="mb-4">Every building permit is a signal that someone is about to spend money on the built world, and the council decision that greenlit it comes months earlier. We index both, plus the addresses and parcels underneath, across thousands of government systems in formats nobody ever agreed on, and turn the raw paper trail into intelligence: who is building what, where, and how well.</p>
     <p class="mb-4">A trillion-dollar economy runs on construction, and almost none of it is legible in real time. We make it legible, and we get it to the people who move first on it: the analysts, operators, and companies whose entire business depends on seeing where the built world is heading next. That's the intelligence layer for the built world, and we're the ones building it. Backed by multi-million-dollar VC funding and a growing customer base, going after one of the largest and least-structured data problems left.</p>
     <p class="mb-4">What started as two people with a big vision is now a small team of engineers and data obsessives spread across the globe. Still scrappy, still all-in.</p>
   </div>
