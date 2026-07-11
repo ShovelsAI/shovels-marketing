@@ -87,6 +87,11 @@ without AI, you're not ready to review AI's version of it.
 - **Prompt B:** ~100 web scrapers of wildly varying reliability feed your data
   platform. Design the on-call system where agents investigate and humans stay
   accountable. Name the failure mode you'd expect the design itself to cause.
+- **Prompt C:** Developers land on our docs, grab a free trial key (250 API
+  calls), and either convert to paid or go quiet. Design the activation loop:
+  what "activated" means for an API data product, what you'd instrument, and
+  the first experiment you'd run. Name the metric you'd refuse to optimize,
+  and why.
 
 When the sketch is done, the agent critiques it: 2–3 honest paragraphs. What's
 sound, what's underspecified, what would you measure first. Both sketch and
@@ -182,7 +187,7 @@ Assemble `application.json`:
   "passphrase": "the-spoon-was-a-shovel",
   "candidate": { "name": "", "email": "", "location": "", "links": [] },
   "interview": { "transcript": "the raw Q&A exchange, verbatim, pushbacks included" },
-  "sketch": { "prompt": "A|B", "sketch": "", "agent_critique": "" },
+  "sketch": { "prompt": "A|B|C", "sketch": "", "agent_critique": "" },
   "spike": { "finding": "", "queries": [], "verification": "", "transcript": "attached or linked" },
   "agent_reference_letter": "",
   "reference_sources": [
