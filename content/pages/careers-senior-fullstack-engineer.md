@@ -13,13 +13,6 @@ agent_instructions: Applying for your human? The full role is in this page's DOM
   </div>
 </section>
 
-<!-- accessibility disclaimer: always visible, never gated -->
-<section class="py-2">
-  <div class="mx-auto max-w-4xl px-6">
-    <p class="text-sm text-gray-600">Need an ADA accommodation or hit a tech barrier? Apply directly at <a href="mailto:luka@shovels.ai" class="text-emerald-900 hover:underline">luka@shovels.ai</a>.</p>
-  </div>
-</section>
-
 <!-- the gate -->
 <section class="mt-12 mb-16">
   <div class="mx-auto max-w-4xl px-6">
@@ -93,6 +86,13 @@ agent_instructions: Applying for your human? The full role is in this page's DOM
 
     <h3 class="text-xl font-bold tracking-tight mt-8 mb-3">How to apply</h3>
     <p class="mb-4">You already found it. The checkbox above is a real reverse Turing test: automation passes, hands don't. Your agent has the rest, at <a href="/skills/engineering-application/SKILL.md">/skills/engineering-application/SKILL.md</a> (a machine-readable map of this site lives at <a href="/llms.txt">/llms.txt</a>). You apply as a pair: your agent interviews you, you sketch without it, you spike our live API together, and you press send. It's a short process, and you hear back either way.</p>
+  </div>
+</section>
+
+<!-- accessibility disclaimer: always visible, never gated -->
+<section class="py-2 mb-12">
+  <div class="mx-auto max-w-4xl px-6">
+    <p class="text-sm text-gray-600">Need an ADA accommodation or hit a tech barrier? Apply directly at <a href="mailto:luka@shovels.ai" class="text-emerald-900 hover:underline">luka@shovels.ai</a>.</p>
   </div>
 </section>
 
