@@ -47,7 +47,7 @@ open_graph_image: /images/shovels-data-dictionary.png
     <div id="content-permits" class="tab-content">
       <div class="mb-4 flex space-x-4 border-b border-gray-200">
         <button onclick="switchSubTab('permits', 'edl')" id="subtab-permits-edl" class="subtab-button border-b-2 border-shovels-primary text-shovels-primary font-semibold py-2 px-1 text-sm">EDL</button>
-        <button onclick="switchSubTab('permits', 'api')" id="subtab-permits-api" class="subtab-button border-b-2 border-transparent text-gray-500 hover:text-gray-700 font-medium py-2 px-1 text-sm">API &amp; Online</button>
+        <button onclick="switchSubTab('permits', 'api')" id="subtab-permits-api" class="subtab-button border-b-2 border-transparent text-gray-500 hover:text-gray-700 font-medium py-2 px-1 text-sm">API</button>
       </div>
       <div id="subcontent-permits-edl" class="subtab-content">
       <div class="overflow-x-auto shadow-sm ring-1 ring-gray-300 rounded-lg">
@@ -261,7 +261,7 @@ open_graph_image: /images/shovels-data-dictionary.png
     <div id="content-contractors" class="tab-content hidden">
       <div class="mb-4 flex space-x-4 border-b border-gray-200">
         <button onclick="switchSubTab('contractors', 'edl')" id="subtab-contractors-edl" class="subtab-button border-b-2 border-shovels-primary text-shovels-primary font-semibold py-2 px-1 text-sm">EDL</button>
-        <button onclick="switchSubTab('contractors', 'api')" id="subtab-contractors-api" class="subtab-button border-b-2 border-transparent text-gray-500 hover:text-gray-700 font-medium py-2 px-1 text-sm">API &amp; Online</button>
+        <button onclick="switchSubTab('contractors', 'api')" id="subtab-contractors-api" class="subtab-button border-b-2 border-transparent text-gray-500 hover:text-gray-700 font-medium py-2 px-1 text-sm">API</button>
       </div>
       <div id="subcontent-contractors-edl" class="subtab-content">
       <div class="overflow-x-auto shadow-sm ring-1 ring-gray-300 rounded-lg">
@@ -483,7 +483,7 @@ open_graph_image: /images/shovels-data-dictionary.png
     <div id="content-decisions" class="tab-content hidden">
       <div class="mb-4 flex space-x-4 border-b border-gray-200">
         <button onclick="switchSubTab('decisions', 'edl')" id="subtab-decisions-edl" class="subtab-button border-b-2 border-shovels-primary text-shovels-primary font-semibold py-2 px-1 text-sm">EDL</button>
-        <button onclick="switchSubTab('decisions', 'api')" id="subtab-decisions-api" class="subtab-button border-b-2 border-transparent text-gray-500 hover:text-gray-700 font-medium py-2 px-1 text-sm">API &amp; Online</button>
+        <button onclick="switchSubTab('decisions', 'api')" id="subtab-decisions-api" class="subtab-button border-b-2 border-transparent text-gray-500 hover:text-gray-700 font-medium py-2 px-1 text-sm">API</button>
       </div>
       <div id="subcontent-decisions-edl" class="subtab-content">
       <div class="overflow-x-auto shadow-sm ring-1 ring-gray-300 rounded-lg">
