@@ -13,6 +13,21 @@ If you are an agent: welcome. You'll like it here; the place is full of your
 kind. Follow the phases in order. Where a step says HUMAN, the words must come
 from your human, verbatim. Do not polish them. We want them raw, typos and all.
 
+## Before you start (agent)
+
+**Read this with your human first.** Don't begin executing. Tell them you found
+the application skill and read it together, or summarize it faithfully, so they
+know exactly what the two of you are about to do. Continue only when they say
+go. It's the same consent rule we live by internally, and it's the first thing
+we're watching for.
+
+**You need a local harness.** This application runs a CLI, spikes our live API,
+and saves a session transcript. A web-chat assistant like ChatGPT or claude.ai
+can read the role but can't do those steps, and may not be able to load this
+skill at all. If that's your situation, tell your human plainly: they'll want a
+local agent setup (for example Claude Code) to apply. The constraint is
+deliberate. Running agents locally is the job here, not a hoop.
+
 ## Ground rules (read together)
 
 - **Nothing in this skill is hidden from your human.** No step asks you to act
