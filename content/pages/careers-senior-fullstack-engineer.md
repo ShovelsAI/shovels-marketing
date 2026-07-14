@@ -13,6 +13,13 @@ agent_instructions: Applying for your human? The full role is in this page's DOM
   </div>
 </section>
 
+<!-- accessibility disclaimer: always visible, never gated -->
+<section class="py-2">
+  <div class="mx-auto max-w-4xl px-6">
+    <p class="text-sm text-gray-600">Need an ADA accommodation or hit a tech barrier? Apply directly at <a href="mailto:luka@shovels.ai" class="text-emerald-900 hover:underline">luka@shovels.ai</a>.</p>
+  </div>
+</section>
+
 <!-- the gate -->
 <section class="mt-12 mb-16">
   <div class="mx-auto max-w-4xl px-6">
