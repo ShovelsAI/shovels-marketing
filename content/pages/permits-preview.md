@@ -8,6 +8,7 @@ status: hidden
 {% import 'macros/how_it_works.html' as ui_hiw %}
 {% import 'macros/use_case.html' as ui_uc %}
 {% import 'macros/record_fields.html' as ui_rec %}
+{% import 'macros/data_delivery.html' as ui_dd %}
 {% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/faq.html' as ui_faq %}
 {% import 'macros/final_cta.html' as ui_cta %}
@@ -170,8 +171,16 @@ status: hidden
     heading='Data-driven insights, made easy',
     cases=permit_cases) }}
 
-{# ── §6 DATA DELIVERY (dark, 3 cards) — BUILD FRESH. Slots in here;
-      building in the review round as a reusable section. ────────────── #}
+{# ── §6 DATA DELIVERY (dark, shared macro) ──────────────────────────── #}
+{{ ui_dd.data_delivery(
+    eyebrow='Delivery',
+    heading='One unified dataset, three ways to access it',
+    dark=True,
+    cards=[
+        ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database', 'shovels-globe'),
+        ('Shovels API', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api', 'data-api'),
+        ('Enterprise', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed', 'enterprise-box'),
+    ]) }}
 
 {# ── §7 INDUSTRIES STRIP ────────────────────────────────────────────── #}
 {{ ui_ind.industries_strip() }}

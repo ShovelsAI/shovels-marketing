@@ -1,0 +1,54 @@
+{#
+  Data delivery options — "one dataset, N ways to access it" icon cards.
+  One card per access tier (Shovels Online / API / Enterprise). Shared by
+  the homepage and the Data pages so the delivery story stays in sync.
+
+  data_delivery(heading, cards,
+                description=None, eyebrow=None,
+                dark=False, wrapper_class='')
+
+  Parameters
+  ----------
+  heading       : Section H2.
+  cards         : List of (name, body, href, icon) tuples. `icon` is the
+                  basename of an SVG in /images/illustrations/.
+  description   : Optional lead paragraph under the heading.
+  eyebrow       : Optional uppercase chip above the heading.
+  dark          : When True, renders the dark-navy band treatment (Data
+                  pages). Default False = the light homepage treatment.
+  wrapper_class : Extra classes on the outer <div> (spacing overrides).
+
+  Example
+  -------
+    {% import 'macros/data_delivery.html' as ui_dd %}
+    {{ ui_dd.data_delivery(
+        heading='Data delivery options',
+        description='One unified dataset. Three ways to access it.',
+        cards=[('Shovels Online', 'Explore…', '/permit-database', 'shovels-globe')]) }}
+#}
+
+{% macro data_delivery(heading, cards, description=None, eyebrow=None, dark=False, wrapper_class='') %}
+<div class="{% if dark %}bg-[#101727]{% else %}bg-white{% endif %} py-24 sm:py-32 {{ wrapper_class }}">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      {% if eyebrow %}<span class="inline-block rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wider {% if dark %}border border-shovels-secondary/30 bg-shovels-secondary/10 text-shovels-secondary{% else %}border border-shovels-primary/20 bg-shovels-primary/5 text-shovels-primary{% endif %}">{{ eyebrow }}</span>{% endif %}
+      <h2 class="{% if eyebrow %}mt-4 {% endif %}text-pretty text-3xl font-medium tracking-tight {% if dark %}text-white{% else %}text-gray-900{% endif %} md:text-4xl">{{ heading }}</h2>
+      {% if description %}<p class="mt-4 text-lg {% if dark %}text-gray-300{% else %}text-gray-500{% endif %}">{{ description }}</p>{% endif %}
+    </div>
+    <div class="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-8 sm:mt-16 lg:max-w-none lg:grid-cols-3">
+      {% for name, body, href, icon in cards %}
+      <div class="flex items-start gap-5 rounded-2xl p-8 {% if dark %}border border-white/10 bg-white/[0.04]{% else %}border border-gray-200 bg-white{% endif %}">
+        <img src="/images/illustrations/{{ icon }}.svg" alt="" class="h-20 w-20 shrink-0">
+        <div class="flex flex-col">
+          <h3 class="text-xl font-semibold {% if dark %}text-white{% else %}text-gray-900{% endif %}">{{ name }}</h3>
+          <p class="mt-3 text-base/7 {% if dark %}text-gray-400{% else %}text-gray-600{% endif %}">{{ body }}</p>
+          <p class="mt-6">
+            <a href="{{ href }}" class="text-sm font-semibold {% if dark %}text-shovels-secondary hover:text-shovels-secondary/80{% else %}text-shovels-primary hover:text-shovels-primary/80{% endif %}">Learn more <span aria-hidden="true">→</span></a>
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endmacro %}

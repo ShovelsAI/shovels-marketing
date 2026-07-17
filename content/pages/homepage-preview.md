@@ -7,6 +7,7 @@ status: hidden
 {% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/resources.html' as ui_res %}
 {% import 'macros/final_cta.html' as ui_cta %}
+{% import 'macros/data_delivery.html' as ui_dd %}
 
 {# ── Hero ──────────────────────────────────────────────────────────────
    Redesigned hero treatment from the Industry pages: crossing-gradient
@@ -154,35 +155,16 @@ status: hidden
    (not in the mock; needs rework). Archived at
    archive/homepage-how-were-different.html. #}
 
-{# ── Data delivery options — icon cards (one dataset, three access tiers).
+{# ── Data delivery options — shared macro (icon cards, light variant).
    Links use the working flat slugs; repoint to /solutions/ at launch. #}
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center">
-      <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Data delivery options</h2>
-      <p class="mt-4 text-lg text-gray-500">One unified dataset. Three ways to access it. Choose the integration that fits your workflow.</p>
-    </div>
-    {% set delivery = [
+{{ ui_dd.data_delivery(
+    heading='Data delivery options',
+    description='One unified dataset. Three ways to access it. Choose the integration that fits your workflow.',
+    cards=[
         ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database', 'shovels-globe'),
         ('Shovels API', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api', 'data-api'),
         ('Enterprise', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed', 'enterprise-box'),
-    ] %}
-    <div class="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-8 sm:mt-16 lg:max-w-none lg:grid-cols-3">
-      {% for name, body, href, icon in delivery %}
-      <div class="flex items-start gap-5 rounded-2xl border border-gray-200 bg-white p-8">
-        <img src="/images/illustrations/{{ icon }}.svg" alt="" class="h-20 w-20 shrink-0">
-        <div class="flex flex-col">
-          <h3 class="text-xl font-semibold text-gray-900">{{ name }}</h3>
-          <p class="mt-3 text-base/7 text-gray-600">{{ body }}</p>
-          <p class="mt-6">
-            <a href="{{ href }}" class="text-sm font-semibold text-shovels-primary hover:text-shovels-primary/80">Learn more <span aria-hidden="true">→</span></a>
-          </p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+    ]) }}
 
 {# ── Coverage — same include as the Industry pages. Now the first section
    after Data delivery (designer reorder): !pt-0 lets Data delivery's bottom
