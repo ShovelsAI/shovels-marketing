@@ -103,9 +103,22 @@ this refresh that genuinely needs them. Slug changes also mean the
 page files / `Slug:` frontmatter get updated, and any internal links
 (incl. cross-page CTAs) repointed.
 
-### Data (5) — ALL NEW, post-launch
-Permits, Decisions, Contractors, Residents, Properties (Properties
-tentative). Not built yet; ships **after** the main refresh goes live.
+### Data (5) — ALL NEW, own cadence
+Permits, Decisions, Contractors, Residents, Properties. Each is staged at
+`data/<name>-preview` and promotes to `/data/<name>` (drop `-preview` +
+`status: hidden`) — the same slug-swap + chrome-dependency as any refresh
+page. Add the Data nav entry + footer DATA column when they ship (MAR-166).
+
+- **Permits — built** (`data/permits-preview`), and it's the template.
+  Building it produced reusable macros the other four compose from:
+  `record_fields` (what's-in-every-record table), `data_delivery`
+  (delivery cards; extracted from the homepage, light + dark), and
+  `data_types` (connected-datasets grid; extracted from the homepage,
+  `exclude` drops the current page). `how_it_works` gained a 4-step layout.
+- Remaining four are mostly copy + a hero/record illustration swap.
+- They rely on the refreshed chrome; once the main refresh un-gates chrome
+  globally, a data page just needs its slug swapped. Can ship with the
+  main refresh or after.
 
 ### Resources
 Blog, Knowledge Base, Data Dictionary, Data Coverage Dashboard, About,

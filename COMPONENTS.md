@@ -1202,6 +1202,73 @@ are confirmed before launch — same swap process and gate as
 
 ---
 
+### `record_fields` macro
+
+**Location**: `themes/shovels/templates/macros/record_fields.html`
+
+The "what's in every record" card for the Data pages: an illustration
+badge + intro on the left, a field/definition table on the right, wrapped
+in the CTA-box green treatment (tinted-primary border + faded-green
+gradient). Reusable across all five data pages.
+
+#### Signature
+
+```
+record_fields(heading, fields, description=None,
+              illustration_src=None, illustration_alt='',
+              cta_label=None, cta_href='#', anchor='')
+```
+
+`fields` is a list of `{name, description}` dicts; `name` renders
+monospace. The character SVGs ship without a backing, so the macro wraps
+`illustration_src` in a circular primary-green badge.
+
+### `data_delivery` macro
+
+**Location**: `themes/shovels/templates/macros/data_delivery.html`
+
+"One dataset, N ways to access it" icon cards (Shovels Online / API /
+Enterprise). Extracted from the homepage's former inline block, which was
+duplicated across `index-refresh.html` and `homepage-preview.md`. Shared
+by the homepage (light default) and the Data pages (`dark=True`).
+
+#### Signature
+
+```
+data_delivery(heading, cards, description=None, eyebrow=None,
+              dark=False, wrapper_class='')
+```
+
+`cards` is a list of `(name, body, href, icon)` tuples; `icon` is the
+basename of an SVG in `/images/illustrations/`.
+
+### `data_types` macro
+
+**Location**: `themes/shovels/templates/macros/data_types.html`
+
+The connected Shovels datasets as a dark card grid. Extracted from the
+homepage's former inline "Five datasets, deeply connected" block. The
+homepage shows all five; a data page passes `exclude` to drop its own
+dataset and link to the other four. Column count follows the number shown
+(five → `lg:grid-cols-5`, four → `lg:grid-cols-4`).
+
+#### Signature
+
+```
+data_types(heading, description=None, eyebrow=None,
+           exclude=None, datasets=None, wrapper_class='')
+```
+
+The default `datasets` link to the `/data/*` pages; the homepage passes
+its interim KB-article links explicitly.
+
+#### Note — `how_it_works` supports 4-step pipelines
+
+`how_it_works` now sets its column count from `steps | length` (literal
+`md:grid-cols-3` / `md:grid-cols-4` so Tailwind compiles both): the 3-step
+Solutions flows are unchanged, and the 4-step data-page pipeline
+("From city records to Shovel-ready data") lays out 4-across.
+
 ## Build helpers (`pelicanconf.py`)
 
 ### `get_industry_articles(tag, limit=3, fallback_category=None)` helper
