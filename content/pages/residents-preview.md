@@ -50,6 +50,8 @@ status: hidden
 {# ── §4 WHAT'S IN EVERY RESIDENT RECORD ──────────────────────────────── #}
 {{ ui_rec.record_fields(
     heading="What's in every resident record",
+    illustration_src='/images/illustrations/shovels-guy.svg',
+    illustration_alt='Shovels field worker',
     cta_label='See more in our data dictionary',
     cta_href='/data-dictionary#residents',
     fields=[

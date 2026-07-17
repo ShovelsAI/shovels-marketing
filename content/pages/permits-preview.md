@@ -51,7 +51,7 @@ status: hidden
 {{ ui_rec.record_fields(
     heading="What's in every permit record",
     description='A consistent shape across every jurisdiction — so your team writes one integration, not a thousand.',
-    illustration_src='/images/data/permits/shovels-guy.svg',
+    illustration_src='/images/illustrations/shovels-guy.svg',
     illustration_alt='Shovels field worker',
     cta_label='See more in our data dictionary',
     cta_href='/data-dictionary',
