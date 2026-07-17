@@ -11,10 +11,8 @@
              7 -> 4+3, 8 -> 4+4), else one column.
 
    Each dropdown is just its links plus a Contact Sales row at the bottom.
-   Data top-level is intentionally omitted until the /data/* pages ship
-   (see REFRESH_PLAN.md). Solutions/Features point at the planned
-   /solutions/ and /features/ slugs, which 404 until those pages move at
-   launch. #}
+   Solutions/Features/Data point at the planned /solutions/, /features/,
+   and /data/ slugs, which 404 until those pages move at launch. #}
 
 {% import 'macros/icons.html' as icons %}
 
@@ -48,6 +46,13 @@
      ('Charlie AI', '/features/charlie', 'sparkles', ''),
      ('GIS', '/features/gis', 'map', ''),
      ('CLI', '/features/cli', 'terminal', ''),
+   ]),
+  ('Data', 'left', [
+     ('Permits', '/data/permits', 'file_text', ''),
+     ('Decisions', '/data/decisions', 'clipboard_check', ''),
+     ('Contractors', '/data/contractors', 'hard_hat', ''),
+     ('Properties', '/data/properties', 'building', ''),
+     ('Residents', '/data/residents', 'users', ''),
    ]),
   ('Resources', 'right', [
      ('Blog', '/blog', 'newspaper', ''),

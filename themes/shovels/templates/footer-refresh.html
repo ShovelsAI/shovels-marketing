@@ -22,11 +22,9 @@
     preview, intentional; double as the page-move / redirect checklist.
   - Newsletter form is design-only — needs the HubSpot custom-form
     endpoint in the <form action> (TODO below).
-  - DATA column REMOVED for launch (decided 2026-06-11) — the /data/*
-    pages aren't ready. To restore when they ship: add back a
-    ('Data', [Permits, Decisions, Contractors, Residents, Properties →
-    /data/*]) tuple after Features, and change the desktop grid below
-    from grid-cols-5 back to grid-cols-6.
+  - DATA column present — the /data/* pages are built (staged at
+    data/<name>-preview, promoting to /data/<name> at launch), so the
+    six-column grid is restored.
 #}
 {% set footer_sections = [
   ('Industries', [
@@ -48,6 +46,13 @@
     ('Charlie AI', '/features/charlie', ''),
     ('GIS', '/features/gis', ''),
     ('CLI', '/features/cli', ''),
+  ]),
+  ('Data', [
+    ('Permits', '/data/permits', ''),
+    ('Decisions', '/data/decisions', ''),
+    ('Contractors', '/data/contractors', ''),
+    ('Properties', '/data/properties', ''),
+    ('Residents', '/data/residents', ''),
   ]),
   ('Resources', [
     ('Blog', '/blog', ''),
@@ -127,7 +132,7 @@
         </div>
       </div>
 
-      <div class="grid flex-1 grid-cols-5 gap-x-8 gap-y-10">
+      <div class="grid flex-1 grid-cols-6 gap-x-8 gap-y-10">
         {% for title, links in footer_sections %}
         <div>
           <h3 class="text-xs font-semibold uppercase tracking-wider text-white">{{ title }}</h3>
