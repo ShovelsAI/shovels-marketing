@@ -685,7 +685,7 @@
     root.addEventListener('click', function (e) {
       var swatch = e.target.closest('[data-copy]');
       if (swatch) {
-        var hex = swatch.getAttribute('data-copy').replace(/^#/, '');
+        var hex = swatch.getAttribute('data-copy');
         navigator.clipboard.writeText(hex);
         // Confirm on the clicked element: the Copy button label on hero
         // cards, or the hex label on the smaller chips.
