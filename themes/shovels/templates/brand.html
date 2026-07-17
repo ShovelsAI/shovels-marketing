@@ -290,6 +290,12 @@
   }
   .brand-guide-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+  /* On-element "Copied!" confirmation */
+  .brand-guide .color-chip.copied .color-chip-hex { color: var(--green-primary); font-weight: 700; }
+  .brand-guide .color-chip.copied { border-color: var(--green-primary); }
+  .brand-guide .press-copy-btn.copied { color: var(--green-primary); border-color: var(--green-primary); }
+  .brand-guide .color-copy-btn.copied { opacity: 1; }
+
   @media (max-width: 860px) {
     .brand-guide .sidebar { display: none; }
     .brand-guide .bg-main { padding: 32px 24px; }
@@ -662,13 +668,18 @@
       clearTimeout(toastTimer);
       toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 1400);
     }
-    // Briefly swap a button's label to confirm the copy.
-    function flashLabel(btn) {
-      var original = btn.getAttribute('data-label') || btn.textContent;
-      btn.setAttribute('data-label', original);
-      btn.textContent = 'Copied!';
-      clearTimeout(btn._flash);
-      btn._flash = setTimeout(function () { btn.textContent = original; }, 1400);
+    // Briefly swap an element's label to "Copied!" as inline confirmation.
+    // `flagEl` (optional) gets a .copied class for styling the clicked element.
+    function flash(labelEl, flagEl) {
+      var original = labelEl.getAttribute('data-label');
+      if (original === null) { original = labelEl.textContent; labelEl.setAttribute('data-label', original); }
+      labelEl.textContent = 'Copied!';
+      if (flagEl) flagEl.classList.add('copied');
+      clearTimeout(labelEl._flash);
+      labelEl._flash = setTimeout(function () {
+        labelEl.textContent = labelEl.getAttribute('data-label');
+        if (flagEl) flagEl.classList.remove('copied');
+      }, 1400);
     }
 
     root.addEventListener('click', function (e) {
@@ -676,8 +687,15 @@
       if (swatch) {
         var hex = swatch.getAttribute('data-copy').replace(/^#/, '');
         navigator.clipboard.writeText(hex);
-        var btn = swatch.matches('.color-copy-btn') ? swatch : swatch.querySelector('.color-copy-btn');
-        if (btn) flashLabel(btn);
+        // Confirm on the clicked element: the Copy button label on hero
+        // cards, or the hex label on the smaller chips.
+        var chip = swatch.closest('.color-chip');
+        if (chip) {
+          flash(chip.querySelector('.color-chip-hex'), chip);
+        } else {
+          var btn = swatch.matches('.color-copy-btn') ? swatch : swatch.querySelector('.color-copy-btn');
+          if (btn) flash(btn, btn);
+        }
         showToast('Copied ' + hex + ' to clipboard');
         return;
       }
@@ -686,7 +704,7 @@
         var el = document.getElementById(copyBtn.getAttribute('data-copy-target'));
         if (el) {
           navigator.clipboard.writeText(el.innerText);
-          flashLabel(copyBtn);
+          flash(copyBtn, copyBtn);
           showToast('Copied to clipboard');
         }
       }
