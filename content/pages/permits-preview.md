@@ -9,6 +9,7 @@ status: hidden
 {% import 'macros/use_case.html' as ui_uc %}
 {% import 'macros/record_fields.html' as ui_rec %}
 {% import 'macros/data_delivery.html' as ui_dd %}
+{% import 'macros/data_types.html' as ui_dt %}
 {% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/faq.html' as ui_faq %}
 {% import 'macros/final_cta.html' as ui_cta %}
@@ -188,8 +189,12 @@ status: hidden
 {# ── §8 COVERAGE (shared section; uses the macro's own copy) ─────────── #}
 {% include 'sections/coverage.html' %}
 
-{# ── §9 EXPLORE RELATED DATASETS (4 cards) — BUILD FRESH. Slots in here;
-      building in the review round as a reusable section. ────────────── #}
+{# ── §9 EXPLORE RELATED DATASETS (shared data_types macro, minus Permits) #}
+{{ ui_dt.data_types(
+    eyebrow='Data types',
+    heading='Explore related datasets',
+    description='Every permit is linked across datasets, so you see the full picture — the project, the property, and the people behind it.',
+    exclude='Permits') }}
 
 {# ── §10 FAQ ────────────────────────────────────────────────────────── #}
 {{ ui_faq.faq_section(

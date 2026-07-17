@@ -8,6 +8,7 @@ status: hidden
 {% import 'macros/resources.html' as ui_res %}
 {% import 'macros/final_cta.html' as ui_cta %}
 {% import 'macros/data_delivery.html' as ui_dd %}
+{% import 'macros/data_types.html' as ui_dt %}
 
 {# ── Hero ──────────────────────────────────────────────────────────────
    Redesigned hero treatment from the Industry pages: crossing-gradient
@@ -107,49 +108,20 @@ status: hidden
   </div>
 </div>
 
-{# ── Data types — the five connected datasets ──────────────────────────
-   Counts pull from the canonical STATS dict (pelicanconf.py). Links point
-   at the future /data/* pages (net-new in the sitemap), wired now so the
-   nav is in place at launch. Copy is a first draft for review. #}
-<div class="bg-shovels-dark py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center">
-      <span class="inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-200">DATA TYPES</span>
-      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">Five datasets, deeply connected</h2>
-      <p class="mt-6 text-base/7 text-gray-300">Every record is linked across datasets, so you get the full picture. See the project, property, and people behind it, then move from insight to action.</p>
-    </div>
-
-    {# Links point at KB articles until the dedicated /data/* pages ship.
-       First tuple field is the illustration filename in
-       content/images/illustrations/. #}
-    {% set data_types = [
+{# ── Data types — the five connected datasets (shared macro).
+   Homepage keeps its KB-article links (passed explicitly) until the
+   dedicated /data/* pages ship; the macro default links to /data/*. #}
+{{ ui_dt.data_types(
+    eyebrow='DATA TYPES',
+    heading='Five datasets, deeply connected',
+    description='Every record is linked across datasets, so you get the full picture. See the project, property, and people behind it, then move from insight to action.',
+    datasets=[
         ('permit-clip-board', 'Permits', 'Every building permit we cover, AI-classified into structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
         ('check-shield', 'Decisions', 'Zoning and development decisions, before a permit is filed.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
         ('api-hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
         ('map-house', 'Properties', 'Parcels and addresses with full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
         ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contacts.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
-    ] %}
-    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-5">
-      {% for illustration, title, body, href in data_types %}
-      <div class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
-        <dt>
-          {# Icons are drawn at a shared 40px width; the 54px-high wrapper
-             centers them vertically so varying icon heights stay aligned
-             (per designer spec — size by width, not height). #}
-          <span class="flex h-[54px] items-center">
-            <img src="/images/illustrations/{{ illustration }}.svg" alt="" class="w-10">
-          </span>
-          <span class="mt-5 block text-base font-semibold text-white">{{ title }}</span>
-        </dt>
-        <dd class="mt-2 flex-auto text-sm/6 text-gray-400">{{ body }}</dd>
-        <dd class="mt-4">
-          <a href="{{ href }}" class="text-sm/6 font-semibold text-shovels-secondary hover:text-shovels-secondary/80">Learn more <span aria-hidden="true">→</span></a>
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
-  </div>
-</div>
+    ]) }}
 
 {# "How we're different" section removed during the homepage redesign
    (not in the mock; needs rework). Archived at

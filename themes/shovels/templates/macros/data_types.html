@@ -1,0 +1,72 @@
+{#
+  Data types — the connected Shovels datasets as a dark card grid.
+  Shared by the homepage (all five) and the Data pages (the other four,
+  with the current page's own dataset dropped via `exclude`). Keeping it
+  in one macro means the dataset copy and styling stay in sync.
+
+  data_types(heading, description=None, eyebrow=None,
+             exclude=None, datasets=None, wrapper_class='')
+
+  Parameters
+  ----------
+  heading       : Section H2.
+  description   : Optional lead paragraph.
+  eyebrow       : Optional uppercase chip above the heading.
+  exclude       : Optional dataset title to omit (e.g. 'Permits' on the
+                  Permits page, so it links out to the other four).
+  datasets      : Optional list of (icon, title, body, href) tuples to
+                  override the default set. `icon` is the basename of an
+                  SVG in /images/illustrations/. Defaults to the five
+                  Shovels datasets linking to the /data/* pages.
+  wrapper_class : Extra classes on the outer <div> (spacing overrides).
+
+  The card column count follows the number of datasets shown (five on the
+  homepage, four on a data page). Literal classes so Tailwind compiles both.
+
+  Example
+  -------
+    {% import 'macros/data_types.html' as ui_dt %}
+    {{ ui_dt.data_types(heading='Explore related datasets', exclude='Permits') }}
+#}
+
+{% macro data_types(heading, description=None, eyebrow=None, exclude=None, datasets=None, wrapper_class='') %}
+{% set _default = [
+    ('permit-clip-board', 'Permits', 'Every building permit we cover, AI-classified into structured records.', '/data/permits'),
+    ('check-shield', 'Decisions', 'Zoning and development decisions, before a permit is filed.', '/data/decisions'),
+    ('api-hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', '/data/contractors'),
+    ('map-house', 'Properties', 'Parcels and addresses with full permit and ownership history.', '/data/properties'),
+    ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contacts.', '/data/residents'),
+] %}
+{% set _all = datasets if datasets is not none else _default %}
+{% set ns = namespace(items=[]) %}
+{% for d in _all %}{% if exclude is none or d[1] != exclude %}{% set ns.items = ns.items + [d] %}{% endif %}{% endfor %}
+{% set _cols = 'lg:grid-cols-5' if ns.items | length == 5 else 'lg:grid-cols-4' %}
+<div class="bg-shovels-dark py-24 sm:py-32 {{ wrapper_class }}">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      {% if eyebrow %}<span class="inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-200">{{ eyebrow }}</span>{% endif %}
+      <h2 class="{% if eyebrow %}mt-4 {% endif %}text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">{{ heading }}</h2>
+      {% if description %}<p class="mt-6 text-base/7 text-gray-300">{{ description }}</p>{% endif %}
+    </div>
+
+    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none {{ _cols }}">
+      {% for illustration, title, body, href in ns.items %}
+      <div class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
+        <dt>
+          {# Icons are drawn at a shared 40px width; the 54px-high wrapper
+             centers them vertically so varying icon heights stay aligned. #}
+          <span class="flex h-[54px] items-center">
+            <img src="/images/illustrations/{{ illustration }}.svg" alt="" class="w-10">
+          </span>
+          <span class="mt-5 block text-base font-semibold text-white">{{ title }}</span>
+        </dt>
+        <dd class="mt-2 flex-auto text-sm/6 text-gray-400">{{ body }}</dd>
+        <dd class="mt-4">
+          <a href="{{ href }}" class="text-sm/6 font-semibold text-shovels-secondary hover:text-shovels-secondary/80">Learn more <span aria-hidden="true">→</span></a>
+        </dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </div>
+</div>
+{% endmacro %}
