@@ -91,7 +91,7 @@ status: hidden
             ],
             'image_src': '/images/industries/telecommunications/uc1-new-developments.svg',
             'image_alt': 'New-developments map with pins and a list panel',
-            'framed': False,
+            'framed': True,
         },
         {
             'number': '03',
