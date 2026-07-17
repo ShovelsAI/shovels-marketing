@@ -76,8 +76,10 @@
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
 
-    {# ===== MOBILE (below lg): brand + accordions, no newsletter ===== #}
-    <div class="lg:hidden">
+    {# ===== MOBILE (below xl): brand + accordions, no newsletter =====
+       Switch at xl, not lg: the six-column link grid crowds badly between
+       lg and xl, so the accordion holds until there's room for six. #}
+    <div class="xl:hidden">
       <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
       <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
 
@@ -103,12 +105,12 @@
       </div>
     </div>
 
-    {# ===== DESKTOP (lg+): brand + newsletter left, six-column grid right ===== #}
-    <div class="hidden lg:flex lg:gap-16">
+    {# ===== DESKTOP (xl+): brand + newsletter left, six-column grid right ===== #}
+    <div class="hidden xl:flex xl:gap-16">
 
       {# Left column widened to w-96 so the brand tagline sits on one line
          (was orphaning "world." at w-72); narrows the link grid slightly. #}
-      <div class="lg:w-96 lg:shrink-0">
+      <div class="xl:w-96 xl:shrink-0">
         <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
         <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
 
