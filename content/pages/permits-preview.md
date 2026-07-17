@@ -7,6 +7,7 @@ status: hidden
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/how_it_works.html' as ui_hiw %}
 {% import 'macros/use_case.html' as ui_uc %}
+{% import 'macros/record_fields.html' as ui_rec %}
 {% import 'macros/industries_strip.html' as ui_ind %}
 {% import 'macros/faq.html' as ui_faq %}
 {% import 'macros/final_cta.html' as ui_cta %}
@@ -44,10 +45,72 @@ status: hidden
          'description': 'Millions of new permits and status updates each cycle, documented in our release notes.'},
     ]) }}
 
-{# ── §4 WHAT'S IN EVERY PERMIT RECORD — BUILD FRESH (field table). Slots
-      in here; building in the review round. ─────────────────────────── #}
+{# ── §4 WHAT'S IN EVERY PERMIT RECORD ───────────────────────────────── #}
+{{ ui_rec.record_fields(
+    heading="What's in every permit record",
+    description='A consistent shape across every jurisdiction — so your team writes one integration, not a thousand.',
+    illustration_src='/images/data/permits/shovels-guy.svg',
+    illustration_alt='Shovels field worker',
+    cta_label='See more in our data dictionary',
+    cta_href='/data-dictionary',
+    fields=[
+        {'name': 'Work type', 'description': 'What the permit is for, AI-classified from the permit description: roofing, HVAC, solar, ADU, and hundreds more.'},
+        {'name': 'Contractor', 'description': 'The licensed business that pulled the permit, linked to its full Shovels profile.'},
+        {'name': 'Location', 'description': 'Where the work happened: standardized address, lat/long geocode, and parcel number (APN).'},
+        {'name': 'Status &amp; dates', 'description': 'Where the permit is in its lifecycle (filed, issued, finaled, inactive), with the date of each step.'},
+        {'name': 'Value &amp; description', 'description': 'The reported value of the work and the original permit text.'},
+    ]) }}
 
 {# ── §5 USE CASES ───────────────────────────────────────────────────── #}
+
+{# UC4 visual — coded "export moment": a results panel with a Download CSV
+   button and a download-complete row, in the same browser chrome as the
+   screenshot rows. Reused from the Shovels Online page (Notion calls for
+   the Permit Database CSV-export visual, which is coded, not a file). #}
+{% set uc4_media %}
+<div class="relative">
+  <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-xl bg-[#E1ECE9]" aria-hidden="true"></div>
+  <div class="relative overflow-hidden rounded-xl bg-white ring-1 ring-[#111727]">
+    <div class="flex items-center gap-1.5 border-b border-gray-200 px-4 py-3">
+      <span class="size-3 rounded-full bg-[#F26662]"></span>
+      <span class="size-3 rounded-full bg-[#F4DA86]"></span>
+      <span class="size-3 rounded-full bg-[#71A78C]"></span>
+      <span class="ml-3 text-sm text-gray-600">Shovels.ai</span>
+    </div>
+    <div class="flex items-center justify-between px-5 pt-4">
+      <span class="text-sm font-medium text-gray-500">124 results</span>
+      <span class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-gray-500" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        Download CSV
+      </span>
+    </div>
+    <div class="px-5 pb-5 pt-4">
+      <table class="w-full text-left text-sm">
+        <thead>
+          <tr class="text-xs uppercase tracking-wide text-gray-400">
+            <th class="pb-2 font-medium">Address</th>
+            <th class="pb-2 font-medium">Type</th>
+            <th class="pb-2 text-right font-medium">Value</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr><td class="py-2 text-gray-700">2341 Dusan Dr</td><td class="py-2 text-gray-500">New construction</td><td class="py-2 text-right tabular-nums text-gray-700">$4,000</td></tr>
+          <tr><td class="py-2 text-gray-700">705 Daniel Way</td><td class="py-2 text-gray-500">Solar</td><td class="py-2 text-right tabular-nums text-gray-700">$51,990</td></tr>
+          <tr><td class="py-2 text-gray-700">3818 Baldwin Dr</td><td class="py-2 text-gray-500">Reroof</td><td class="py-2 text-right tabular-nums text-gray-700">$8,400</td></tr>
+          <tr><td class="py-2 text-gray-700">691 Enright Ave</td><td class="py-2 text-gray-500">Addition</td><td class="py-2 text-right tabular-nums text-gray-700">$22,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex items-center gap-2.5 border-t border-gray-100 bg-gray-50 px-5 py-3">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 shrink-0 text-shovels-primary" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v5h5"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>
+      <span class="text-sm font-medium text-gray-700">shovels-permits.csv</span>
+      <span class="text-xs text-gray-400">124 rows</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ml-auto size-4 shrink-0 text-shovels-primary" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+  </div>
+</div>
+{% endset %}
+
 {% set permit_cases = [
     {
         'number': '01',
@@ -97,9 +160,8 @@ status: hidden
             'Match your own address list, or find homes with no recent permits',
             'Receive fresh filings with every data release',
         ],
-        'image_src': '',
-        'image_alt': 'Export data instantly — CSV export panel (reuse Permit Database UC5 screenshot)',
-        'framed': True,
+        'media': uc4_media,
+        'image_alt': 'Export panel with a Download CSV button and a completed shovels-permits.csv row',
     },
 ] %}
 

@@ -1,0 +1,84 @@
+{#
+  "What's in every record" section — a two-column card that pairs an
+  illustration + intro on the left with a field/definition table on the
+  right. Built for the Data pages (Permits, Contractors, Properties, …)
+  where each page describes the shape of one record, so it lives here as
+  a reusable macro rather than being hand-built per page.
+
+  record_fields(heading, fields,
+                description=None,
+                illustration_src=None, illustration_alt='',
+                cta_label=None, cta_href='#',
+                anchor='')
+
+  Parameters
+  ----------
+  heading          : Section H2 (e.g. "What's in every permit record").
+  fields           : List of dicts, each with:
+                       name        : Field label, rendered monospace.
+                       description : One-line explanation.
+  description      : Optional lead paragraph under the heading.
+  illustration_src : Optional avatar/illustration. Rendered inside a
+                     circular primary-green badge (the character SVGs ship
+                     without their own backing).
+  illustration_alt : Alt text for the illustration.
+  cta_label        : Optional link text below the description (arrow added).
+  cta_href         : Link destination. Default '#'.
+  anchor           : Optional id on the <section> for in-page links.
+
+  The card reuses the CTA-box treatment — tinted-primary border and a
+  faded-green gradient backing — so it reads as part of the same system.
+
+  Example
+  -------
+    {% import 'macros/record_fields.html' as ui_rec %}
+    {{ ui_rec.record_fields(
+        heading="What's in every permit record",
+        description='A consistent shape across every jurisdiction.',
+        illustration_src='/images/data/permits/shovels-guy.svg',
+        illustration_alt='Shovels field worker',
+        cta_label='See more in our data dictionary',
+        cta_href='/data-dictionary',
+        fields=[{'name': 'Work type', 'description': 'What the permit is for.'}]) }}
+#}
+
+{% macro record_fields(heading, fields, description=None,
+                       illustration_src=None, illustration_alt='',
+                       cta_label=None, cta_href='#', anchor='') %}
+<section class="w-full bg-white px-6 md:px-10 py-24"{% if anchor %} id="{{ anchor }}"{% endif %}>
+  <div class="mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 overflow-hidden rounded-3xl border border-shovels-primary/20 bg-gradient-to-br from-[#F6FBF7] to-white md:grid-cols-12">
+
+      {# Left — illustration badge, heading, intro, CTA. #}
+      <div class="md:col-span-5 p-8 md:p-12">
+        {% if illustration_src %}
+        <div class="mb-8 flex size-24 items-center justify-center overflow-hidden rounded-full bg-shovels-primary">
+          <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="size-24 object-cover" />
+        </div>
+        {% endif %}
+        <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
+        {% if description %}<p class="mt-5 text-base text-gray-500">{{ description }}</p>{% endif %}
+        {% if cta_label %}
+        <a href="{{ cta_href }}" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-shovels-primary hover:text-shovels-primary/80">{{ cta_label }}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        {% endif %}
+      </div>
+
+      {# Right — field/definition rows, divided. White backing so the
+         table reads cleanly over the card's green wash. #}
+      <div class="bg-white/70 md:col-span-7 md:border-l md:border-shovels-primary/10">
+        <dl class="divide-y divide-gray-200">
+          {% for field in fields %}
+          <div class="grid grid-cols-1 gap-2 px-8 py-6 md:grid-cols-3 md:gap-8 md:px-10">
+            <dt class="font-mono text-sm text-gray-900">{{ field.name }}</dt>
+            <dd class="text-sm leading-relaxed text-gray-500 md:col-span-2">{{ field.description }}</dd>
+          </div>
+          {% endfor %}
+        </dl>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endmacro %}
