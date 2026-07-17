@@ -1,0 +1,665 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} Brand Guide{% endblock title %}
+
+{% block content %}
+<style>
+  /* Brand Guide page styles. Scoped under .brand-guide so the design's
+     reset and element rules never leak into the shared site chrome. Ported
+     from the Claude Design handoff; colors are the canonical brand palette. */
+  .brand-guide {
+    --green: #01654D;
+    --green-primary: #01654D;
+    --amber: #E9BE51;
+    --sand: #EAE2CF;
+    --neutral-dark: #101727;
+    --border: #E5E5E0;
+    --text-body: #2a2a2a;
+    --text-muted: #666;
+    --sidebar-w: 220px;
+    --font-display: 'Scandia', 'DM Sans', ui-rounded, 'Nunito', system-ui, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: var(--text-body);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .brand-guide *, .brand-guide *::before, .brand-guide *::after {
+    box-sizing: border-box;
+  }
+
+  .brand-guide h1, .brand-guide h2, .brand-guide h3,
+  .brand-guide .overview-headline, .brand-guide .section-title,
+  .brand-guide .type-specimen-primary, .brand-guide .type-specimen-secondary {
+    font-family: var(--font-display);
+  }
+
+  /* LAYOUT */
+  .brand-guide .layout-outer { display: flex; justify-content: center; background: #ffffff; }
+  .brand-guide .layout { display: flex; width: 100%; max-width: 1100px; }
+
+  /* SIDEBAR */
+  .brand-guide .sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    border-right: 1px solid var(--border);
+    padding: 28px 20px;
+    position: sticky;
+    top: 84px;
+    align-self: flex-start;
+    max-height: calc(100vh - 84px);
+    overflow-y: auto;
+    background: #ffffff;
+  }
+  .brand-guide .sidebar-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #9ca3af; margin-bottom: 20px;
+  }
+  .brand-guide .sidebar-nav { list-style: none; margin: 0; padding: 0; }
+  .brand-guide .sidebar-nav li { margin-bottom: 4px; }
+  .brand-guide .sidebar-nav a {
+    display: block; padding: 10px 14px; border-radius: 10px;
+    font-size: 15px; font-weight: 400; color: #374151;
+    text-decoration: none; transition: background 0.15s; line-height: 1.3;
+  }
+  .brand-guide .sidebar-nav a:hover { background: #f3f4f6; }
+  .brand-guide .sidebar-nav a.active { background: var(--green-primary); color: white; font-weight: 500; }
+
+  /* MAIN */
+  .brand-guide .bg-main { flex: 1; padding: 40px 60px; max-width: 900px; }
+
+  /* SECTION */
+  .brand-guide .section { margin-bottom: 72px; }
+  .brand-guide .section-eyebrow {
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #9ca3af; font-weight: 600; margin-bottom: 14px;
+  }
+
+  /* OVERVIEW */
+  .brand-guide .overview-headline {
+    font-size: 56px; font-weight: 700; line-height: 1.08; color: #0f1410;
+    margin-bottom: 24px; letter-spacing: -0.02em; max-width: 580px;
+  }
+  .brand-guide .overview-body {
+    font-size: 16px; color: #6b7280; max-width: 500px;
+    margin-bottom: 32px; line-height: 1.65; font-weight: 400;
+  }
+  .brand-guide .overview-actions { display: flex; gap: 12px; align-items: center; }
+
+  .brand-guide .btn-download {
+    background: var(--green-primary); color: white; border: none;
+    border-radius: 50px; padding: 11px 22px; font-size: 14px; font-weight: 500;
+    cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+    gap: 8px; letter-spacing: 0.01em; line-height: 1; text-decoration: none;
+  }
+  .brand-guide .btn-download:hover { background: #014d3a; }
+  .brand-guide .btn-download .icon { display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+  /* SECTION TITLE */
+  .brand-guide .section-title {
+    font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #0f1410;
+    letter-spacing: -0.015em; line-height: 1.15;
+  }
+  .brand-guide .section-desc { font-size: 15px; color: #6b7280; max-width: 416px; margin-bottom: 28px; line-height: 1.65; }
+
+  /* LOGO CARDS */
+  .brand-guide .logo-grid, .brand-guide .logo-grid-row2 {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px;
+  }
+  .brand-guide .logo-grid-row2 { margin-bottom: 28px; }
+  .brand-guide .logo-card { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; }
+  .brand-guide .logo-card-preview {
+    padding: 40px 32px; display: flex; align-items: center; justify-content: center; min-height: 160px;
+  }
+  .brand-guide .logo-card-preview img, .brand-guide .logo-card-preview svg {
+    height: 44px; width: auto; max-width: 72%; object-fit: contain; display: block;
+  }
+  .brand-guide .logo-card-preview.lc-white { background: #ffffff; }
+  .brand-guide .logo-card-preview.lc-green { background: var(--green-primary); }
+  .brand-guide .logo-card-preview.lc-sand  { background: #E9BE51; }
+  .brand-guide .logo-card-preview.lc-icon  { background: #ffffff; }
+  .brand-guide .logo-card-preview.lc-dark {
+    position: relative;
+    background-image: url('/theme/images/brand-photo-bg.jpg');
+    background-size: cover; background-position: center top;
+  }
+  .brand-guide .logo-card-preview.lc-dark::after {
+    content: ''; position: absolute; inset: 0; background: rgba(10, 18, 26, 0.55); pointer-events: none;
+  }
+  .brand-guide .logo-card-preview.lc-dark img, .brand-guide .logo-card-preview.lc-dark svg { position: relative; z-index: 1; }
+
+  .brand-guide .logo-card-body { border-top: 1px solid var(--border); padding: 16px 18px 18px; }
+  .brand-guide .logo-card-title { font-size: 14px; font-weight: 600; color: #111; margin-bottom: 4px; }
+  .brand-guide .logo-card-desc { font-size: 12.5px; color: #6b7280; line-height: 1.55; margin-bottom: 14px; }
+  .brand-guide .logo-dl-btns { display: flex; gap: 8px; }
+  .brand-guide .logo-dl-btn {
+    display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500;
+    color: #374151; border: 1px solid #d1d5db; border-radius: 7px; padding: 5px 11px;
+    cursor: pointer; background: #fff; text-decoration: none; transition: background 0.15s, border-color 0.15s;
+  }
+  .brand-guide .logo-dl-btn:hover { background: #f9fafb; border-color: #aab0ba; }
+  .brand-guide .logo-dl-btn svg { flex-shrink: 0; }
+
+  /* DO / DON'T */
+  .brand-guide .logo-dos-donts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 4px; }
+  .brand-guide .do-box, .brand-guide .dont-box { border-radius: 12px; padding: 20px 22px; font-size: 13px; line-height: 1.65; }
+  .brand-guide .do-box { background: #f7fbf9; border: 1px solid #d0e8df; }
+  .brand-guide .dont-box { background: #fff8f7; border: 1px solid #f5c5c5; }
+  .brand-guide .dobox-header, .brand-guide .dontbox-header {
+    display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #111;
+  }
+  .brand-guide .check-icon {
+    width: 20px; height: 20px; background: var(--green-primary); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 11px;
+  }
+  .brand-guide .x-icon {
+    width: 20px; height: 20px; background: #e03b2c; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 11px; font-weight: 700;
+  }
+  .brand-guide .dolist, .brand-guide .dontlist { list-style: none; padding: 0; margin: 0; }
+  .brand-guide .dolist li, .brand-guide .dontlist li { padding: 3px 0; font-size: 13px; color: #4b5563; line-height: 1.55; }
+
+  /* COLOR */
+  .brand-guide .color-hero-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+  .brand-guide .color-hero-card {
+    border-radius: 14px; padding: 28px 28px 24px; min-height: 160px; display: flex;
+    flex-direction: column; justify-content: space-between; cursor: pointer; transition: opacity 0.15s;
+  }
+  .brand-guide .color-hero-card:hover { opacity: 0.92; }
+  .brand-guide .color-hero-card.green { background: #01654D; }
+  .brand-guide .color-hero-card.amber { background: #E9BE51; }
+  .brand-guide .color-hero-role { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+  .brand-guide .color-hero-card.green .color-hero-role { color: rgba(255,255,255,0.65); }
+  .brand-guide .color-hero-card.amber .color-hero-role { color: rgba(0,0,0,0.45); }
+  .brand-guide .color-hero-name { font-size: 26px; font-weight: 700; font-family: var(--font-display); line-height: 1.15; }
+  .brand-guide .color-hero-card.green .color-hero-name { color: #ffffff; }
+  .brand-guide .color-hero-card.amber .color-hero-name { color: #111; }
+  .brand-guide .color-hero-desc { font-size: 13px; line-height: 1.55; margin-top: 8px; margin-bottom: 20px; }
+  .brand-guide .color-hero-card.green .color-hero-desc { color: rgba(255,255,255,0.75); }
+  .brand-guide .color-hero-card.amber .color-hero-desc { color: rgba(0,0,0,0.55); }
+  .brand-guide .color-hero-footer { display: flex; align-items: center; justify-content: space-between; }
+  .brand-guide .color-hero-hex { font-size: 14px; font-weight: 600; font-family: monospace; }
+  .brand-guide .color-hero-card.green .color-hero-hex { color: #ffffff; }
+  .brand-guide .color-hero-card.amber .color-hero-hex { color: #111; }
+  .brand-guide .color-copy-btn {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 5px; cursor: pointer; border: none; background: transparent; padding: 0;
+  }
+  .brand-guide .color-hero-card.green .color-copy-btn { color: rgba(255,255,255,0.65); }
+  .brand-guide .color-hero-card.amber .color-copy-btn { color: rgba(0,0,0,0.45); }
+  .brand-guide .color-group-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: #9ca3af; margin: 28px 0 12px;
+  }
+  .brand-guide .color-row { display: flex; gap: 10px; margin-bottom: 4px; flex-wrap: wrap; }
+  .brand-guide .color-chip { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); cursor: pointer; transition: transform 0.1s; }
+  .brand-guide .color-chip:hover { transform: scale(1.03); }
+  .brand-guide .color-chip-swatch { height: 52px; width: 96px; position: relative; }
+  .brand-guide .color-chip-hex {
+    background: white; padding: 5px 8px; font-size: 10.5px; font-family: monospace; color: #555;
+    display: flex; align-items: center; justify-content: space-between; gap: 4px;
+  }
+
+  /* TYPOGRAPHY */
+  .brand-guide .type-layout { display: grid; grid-template-columns: 1fr 0.55fr; gap: 20px; align-items: start; }
+  .brand-guide .type-specimen-card { border: 1px solid var(--border); border-radius: 14px; padding: 36px 40px; }
+  .brand-guide .type-specimen-block { margin-bottom: 36px; }
+  .brand-guide .type-specimen-block:last-child { margin-bottom: 0; }
+  .brand-guide .type-specimen-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--green-primary); margin-bottom: 10px;
+  }
+  .brand-guide .type-specimen-primary { font-family: var(--font-display); font-size: 42px; font-weight: 600; color: #101727; line-height: 1.1; letter-spacing: -0.02em; }
+  .brand-guide .type-specimen-secondary { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--green-primary); letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.3; }
+  .brand-guide .type-specimen-body { font-size: 15px; color: #4b5563; line-height: 1.7; }
+  .brand-guide .type-font-cards { display: flex; flex-direction: column; gap: 14px; }
+  .brand-guide .type-font-card { border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+  .brand-guide .type-font-card-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+  .brand-guide .type-font-name { font-size: 18px; font-weight: 700; color: #111; font-family: var(--font-display); }
+  .brand-guide .type-font-role { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #9ca3af; }
+  .brand-guide .type-font-desc { font-size: 12.5px; color: #6b7280; margin-bottom: 12px; line-height: 1.5; }
+  .brand-guide .type-weight-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .brand-guide .type-weight-tag { font-size: 11.5px; color: var(--green-primary); border: 1px solid #c5ddd6; border-radius: 6px; padding: 3px 9px; background: #f4faf8; font-weight: 500; }
+
+  /* VOICE */
+  .brand-guide .voice-section { background: #101727; border-radius: 20px; padding: 48px 48px 52px; }
+  .brand-guide .voice-section .section-eyebrow { color: rgba(255,255,255,0.5); }
+  .brand-guide .voice-section .section-title { color: #ffffff; font-size: 42px; max-width: 520px; letter-spacing: -0.02em; }
+  .brand-guide .voice-section .section-desc { color: rgba(255,255,255,0.7); max-width: 500px; font-size: 15px; margin-bottom: 36px; }
+  .brand-guide .voice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 40px; }
+  .brand-guide .voice-box { border-radius: 12px; padding: 22px 24px; }
+  .brand-guide .voice-box.do-say { background: #14202e; border: 1px solid #1c2f42; }
+  .brand-guide .voice-box.avoid { background: #14202e; border: 1px solid #2a2a2a; }
+  .brand-guide .voice-box-header { display: flex; align-items: center; gap: 7px; margin-bottom: 18px; }
+  .brand-guide .voice-box-icon { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 10px; font-weight: 700; }
+  .brand-guide .voice-box.do-say .voice-box-icon { background: #4ade80; color: #101727; }
+  .brand-guide .voice-box.avoid .voice-box-icon { background: #1c2f42; color: #5a8099; }
+  .brand-guide .voice-box-title { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .brand-guide .voice-box.do-say .voice-box-title { color: #4ade80; }
+  .brand-guide .voice-box.avoid .voice-box-title { color: #888888; }
+  .brand-guide .voice-quote-list { list-style: none; margin: 0; padding: 0; }
+  .brand-guide .voice-quote-list li { font-size: 13.5px; font-style: italic; line-height: 1.6; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .brand-guide .voice-quote-list li:last-child { border-bottom: none; padding-bottom: 0; }
+  .brand-guide .voice-box.do-say .voice-quote-list li { color: rgba(255,255,255,0.85); }
+  .brand-guide .voice-box.avoid .voice-quote-list li { color: #7a7a7a; padding-left: 14px; border-left: 2px solid #1c2f42; margin-left: 2px; }
+  .brand-guide .voice-sig-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 14px; }
+  .brand-guide .voice-sig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .brand-guide .voice-sig-card { background: #14202e; border: 1px solid #1c2f42; border-radius: 12px; padding: 18px 20px; }
+  .brand-guide .voice-sig-phrase { font-size: 14px; font-weight: 700; margin-bottom: 5px; color: #E9BE51; }
+  .brand-guide .voice-sig-card:nth-child(1) .voice-sig-phrase, .brand-guide .voice-sig-card:nth-child(4) .voice-sig-phrase { text-transform: uppercase; }
+  .brand-guide .voice-sig-desc { font-size: 12.5px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+
+  /* PRESS KIT */
+  .brand-guide .press-desc { font-size: 15px; color: #6b7280; max-width: 416px; line-height: 1.65; margin-bottom: 36px; }
+  .brand-guide .press-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .brand-guide .press-boilerplate-card { border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; height: 100%; }
+  .brand-guide .press-card-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--green-primary); margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand-guide .press-copy-btn {
+    background: none; border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; cursor: pointer;
+    color: #9ca3af; font-size: 11px; display: flex; align-items: center; gap: 4px; transition: background 0.15s;
+  }
+  .brand-guide .press-copy-btn:hover { background: #f3f4f6; }
+  .brand-guide .press-boilerplate-text { font-size: 14px; color: #374151; line-height: 1.75; }
+  .brand-guide .press-right-col { display: flex; flex-direction: column; gap: 12px; }
+  .brand-guide .press-oneliner-card { border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; }
+  .brand-guide .press-oneliner-text { font-size: 14px; color: #374151; line-height: 1.7; margin-top: 12px; }
+  .brand-guide .press-tagline-text { font-size: 22px; font-weight: 700; color: var(--green-primary); font-family: var(--font-display); letter-spacing: 0.04em; margin-top: 10px; }
+
+  /* CONTACT */
+  .brand-guide .contact-desc { font-size: 15px; color: #6b7280; max-width: 416px; line-height: 1.65; margin-bottom: 28px; }
+  .brand-guide .contact-desc a { color: var(--text-body); font-weight: 500; }
+
+  /* DIVIDER */
+  .brand-guide .section-divider { border: none; border-top: 1px solid var(--border); margin: 0 0 56px 0; }
+
+  @media (max-width: 860px) {
+    .brand-guide .sidebar { display: none; }
+    .brand-guide .bg-main { padding: 32px 24px; }
+    .brand-guide .overview-headline { font-size: 40px; }
+    .brand-guide .logo-grid, .brand-guide .logo-grid-row2,
+    .brand-guide .color-hero-row, .brand-guide .type-layout,
+    .brand-guide .voice-grid, .brand-guide .voice-sig-grid,
+    .brand-guide .press-layout, .brand-guide .logo-dos-donts { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="brand-guide">
+<div class="layout-outer">
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-label">Brand Guide</div>
+    <ul class="sidebar-nav">
+      <li><a href="#overview" class="active">Overview</a></li>
+      <li><a href="#logo">Logo</a></li>
+      <li><a href="#color">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#voice">Voice</a></li>
+      <li><a href="#presskit">Boilerplate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="bg-main">
+
+    <!-- 01 OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="section-eyebrow">01 — Overview</div>
+      <h1 class="overview-headline">Brand assets for Shovels</h1>
+      <p class="overview-body">This guide details the logo, color, typography, and voice of Shovels. It supplies the assets you need to write about us, partner with us, or co-market a product.</p>
+      <div class="overview-actions">
+        <a class="btn-download" href="/theme/downloads/shovels-brand-assets.zip" download="shovels-brand-assets.zip"><span class="icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v8M7 9l-3-3M7 9l3-3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12h10" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span> Download the brand kit</a>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 02 LOGO -->
+    <section class="section" id="logo">
+      <div class="section-eyebrow">02 — Logo</div>
+      <h2 class="section-title">Logo</h2>
+      <p class="section-desc">Approved variants only. Always leave one logo-height of clear space on every side. Never rotate, skew, or recolor.</p>
+
+      {% set logo_dl_icon %}<svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v8M7 9l-3-3M7 9l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>{% endset %}
+
+      <!-- Row 1: Primary, Reversed, Sand -->
+      <div class="logo-grid">
+        <div class="logo-card">
+          <div class="logo-card-preview lc-white">
+            <img src="/theme/images/shovels-color-whitebg.svg" alt="Shovels primary logo on white">
+          </div>
+          <div class="logo-card-body">
+            <div class="logo-card-title">Primary (on white)</div>
+            <div class="logo-card-desc">Default mark. Use on white or light neutral surfaces.</div>
+            <div class="logo-dl-btns">
+              <a href="/theme/images/shovels-color-whitebg.svg" download class="logo-dl-btn">{{ logo_dl_icon }} SVG</a>
+            </div>
+          </div>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card-preview lc-green">
+            <img src="/theme/images/shovels-color-greenbg.svg" alt="Shovels reversed logo on green">
+          </div>
+          <div class="logo-card-body">
+            <div class="logo-card-title">Reversed (on green)</div>
+            <div class="logo-card-desc">White wordmark with amber V. Use on primary-green surfaces.</div>
+            <div class="logo-dl-btns">
+              <a href="/theme/images/shovels-color-greenbg.svg" download class="logo-dl-btn">{{ logo_dl_icon }} SVG</a>
+            </div>
+          </div>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card-preview lc-sand">
+            <img src="/theme/images/shovels-color-brightbg.svg" alt="Shovels logo on amber or sand">
+          </div>
+          <div class="logo-card-body">
+            <div class="logo-card-title">On amber or sand</div>
+            <div class="logo-card-desc">Softens on warm backgrounds and muted brand blocks.</div>
+            <div class="logo-dl-btns">
+              <a href="/theme/images/shovels-color-brightbg.svg" download class="logo-dl-btn">{{ logo_dl_icon }} SVG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Photography, Icon mark, Icon mark reversed -->
+      <div class="logo-grid-row2">
+        <div class="logo-card">
+          <div class="logo-card-preview lc-dark">
+            <img src="/theme/images/shovels-color-photo.svg" alt="Shovels logo on photography">
+          </div>
+          <div class="logo-card-body">
+            <div class="logo-card-title">On photography</div>
+            <div class="logo-card-desc">Use on clean, low-contrast photography. Avoid busy or high-detail backgrounds.</div>
+            <div class="logo-dl-btns">
+              <a href="/theme/images/shovels-color-photo.svg" download class="logo-dl-btn">{{ logo_dl_icon }} SVG</a>
+            </div>
+          </div>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card-preview lc-icon" style="min-height:160px;">
+            <svg width="64" height="89" viewBox="0 0 54 75" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#e8bd51" stroke="none" d="M 12.753189 5.052299 L 23.899445 2.063583 L 31.498138 30.402523 L 20.351883 33.391239 Z"/>
+              <path fill="#01654D" stroke="none" d="M 38.35 28.74 C 41.74 45.61 37.12 55.81 33.81 61.32 C 28.16 58.18 19.02 51.58 13.55 35 C 21.5 32 30.4 30.5 38.35 28.74 Z"/>
+            </svg>
+          </div>
+          <div class="logo-card-body">
+            <div class="logo-card-title">Icon mark</div>
+            <div class="logo-card-desc">For favicons, app icons, social avatars. Never below 16px tall.</div>
+            <div class="logo-dl-btns">
+              <a href="/theme/images/icon.svg" download class="logo-dl-btn">{{ logo_dl_icon }} SVG</a>
+            </div>
+          </div>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card-preview lc-green" style="min-height:160px;">
+            <svg width="64" height="89" viewBox="0 0 54 75" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#e8bd51" stroke="none" d="M 12.753189 5.052299 L 23.899445 2.063583 L 31.498138 30.402523 L 20.351883 33.391239 Z"/>
+              <path fill="#ffffff" stroke="none" d="M 38.35 28.74 C 41.74 45.61 37.12 55.81 33.81 61.32 C 28.16 58.18 19.02 51.58 13.55 35 C 21.5 32 30.4 30.5 38.35 28.74 Z"/>
+            </svg>
+          </div>
+          <div class="logo-card-body">
+            <div class="logo-card-title">Icon mark (reversed)</div>
+            <div class="logo-card-desc">Amber V with white blade. Use on green or dark brand surfaces.</div>
+            <div class="logo-dl-btns">
+              <a href="/theme/images/icon.svg" download class="logo-dl-btn">{{ logo_dl_icon }} SVG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-dos-donts">
+        <div class="do-box">
+          <div class="dobox-header"><span class="check-icon">✓</span> Do</div>
+          <ul class="dolist">
+            <li>Use approved logo variants only</li>
+            <li>Maintain one logo-height of clear space</li>
+            <li>Use the icon only at sizes below 80 px</li>
+          </ul>
+        </div>
+        <div class="dont-box">
+          <div class="dontbox-header"><span class="x-icon">✕</span> Don't</div>
+          <ul class="dontlist">
+            <li>Rotate, stretch, skew, or add effects</li>
+            <li>Use the color logo on busy or low-contrast backgrounds</li>
+            <li>Change the logo colors or their order</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 03 COLOR -->
+    <section class="section" id="color">
+      <div class="section-eyebrow">03 — Color</div>
+      <h2 class="section-title">Two colors do nearly all the work.</h2>
+      <p class="section-desc">Deep emerald green for everything structural including headings, CTAs, and links. Warm amber as the accent. Everything else is neutrals. Click any swatch to copy the hex.</p>
+
+      <div class="color-hero-row">
+        <div class="color-hero-card green" data-copy="#01654D">
+          <div>
+            <div class="color-hero-role">Primary</div>
+            <div class="color-hero-name">Shovels Green</div>
+            <div class="color-hero-desc">Headings, CTAs, links, eyebrows. The anchor color.</div>
+          </div>
+          <div class="color-hero-footer">
+            <span class="color-hero-hex">#01654D</span>
+            <button class="color-copy-btn" data-copy="#01654D">Copy</button>
+          </div>
+        </div>
+        <div class="color-hero-card amber" data-copy="#E9BE51">
+          <div>
+            <div class="color-hero-role">Secondary</div>
+            <div class="color-hero-name">Shovels Amber</div>
+            <div class="color-hero-desc">Accents on dark, footer headers, the V in the logo mark.</div>
+          </div>
+          <div class="color-hero-footer">
+            <span class="color-hero-hex">#E9BE51</span>
+            <button class="color-copy-btn" data-copy="#E9BE51">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      {% set color_groups = [
+        ('Secondary', ['#EAE2CF', '#A99E53', '#849465']),
+        ('Neutrals', ['#101727', '#9CA3AF', '#E5E7EB']),
+        ('Brand scale', ['#047857', '#FCD34D', '#DDD2B0']),
+        ('Brand extended — Charlie', ['#323A37', '#434746']),
+      ] %}
+      {% for label, chips in color_groups %}
+      <div class="color-group-label">{{ label }}</div>
+      <div class="color-row">
+        {% for hex in chips %}
+        <div class="color-chip" data-copy="{{ hex }}">
+          <div class="color-chip-swatch" style="background:{{ hex }};"></div>
+          <div class="color-chip-hex">{{ hex }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 04 TYPOGRAPHY -->
+    <section class="section" id="typography">
+      <div class="section-eyebrow">04 — Typography</div>
+      <h2 class="section-title">Scandia. Sentence case, always.</h2>
+      <p class="section-desc">Scandia is our production face, licensed from the foundry. Poppins and Inter are the approved public-font fallbacks per the brand guidelines.</p>
+
+      <div class="type-layout">
+        <div class="type-specimen-card">
+          <div class="type-specimen-block">
+            <div class="type-specimen-label">Primary title · Scandia SemiBold</div>
+            <div class="type-specimen-primary">Unbiased building<br>contractor scores.</div>
+          </div>
+          <div class="type-specimen-block">
+            <div class="type-specimen-label">Secondary title · Scandia Bold Upper</div>
+            <div class="type-specimen-secondary">We &lt;3 construction data</div>
+          </div>
+          <div class="type-specimen-block">
+            <div class="type-specimen-label">Body · Inter Regular</div>
+            <div class="type-specimen-body" style="font-family:'Inter',sans-serif;">Permit data can be messy. We aggregate, clean, and normalize permit data into something that's ready to use. With Shovels, you can get the insights you need from building permits without wrangling with raw data.</div>
+          </div>
+        </div>
+
+        <div class="type-font-cards">
+          <div class="type-font-card">
+            <div class="type-font-card-header"><span class="type-font-name">Scandia</span><span class="type-font-role">Production</span></div>
+            <div class="type-font-desc">Licensed foundry face. Ready for production.</div>
+            <div class="type-weight-tags"><span class="type-weight-tag">Light 300</span><span class="type-weight-tag">Regular 400</span><span class="type-weight-tag">Medium 500</span><span class="type-weight-tag">Bold 700</span></div>
+          </div>
+          <div class="type-font-card">
+            <div class="type-font-card-header"><span class="type-font-name">Poppins</span><span class="type-font-role">Display</span></div>
+            <div class="type-font-desc">Approved public-font fallback for primary and secondary titles.</div>
+            <div class="type-weight-tags"><span class="type-weight-tag">SemiBold 600</span><span class="type-weight-tag">Bold 700</span></div>
+          </div>
+          <div class="type-font-card">
+            <div class="type-font-card-header"><span class="type-font-name">Inter</span><span class="type-font-role">Body</span></div>
+            <div class="type-font-desc">Approved public-font fallback for running body text.</div>
+            <div class="type-weight-tags"><span class="type-weight-tag">Regular 400</span><span class="type-weight-tag">Medium 500</span><span class="type-weight-tag">SemiBold 600</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 05 VOICE -->
+    <section class="section" id="voice" style="padding:0; background:transparent;">
+      <div class="voice-section">
+        <div class="section-eyebrow">05 — Voice &amp; Tone</div>
+        <h2 class="section-title">Smart and friendly.<br>Data science, made<br>accessible to everyone.</h2>
+        <p class="section-desc">We're authoritative about data engineering but kind — and always happy to explain things at a basic level. Clear, concise, and friendly. We favor plain language over business jargon, and we don't shy away from being human, personable, welcoming, and a little humorous. Second person. Sentence case. Contractions welcome.</p>
+
+        <div class="voice-grid">
+          <div class="voice-box do-say">
+            <div class="voice-box-header"><span class="voice-box-icon">✓</span><span class="voice-box-title">Do say</span></div>
+            <ul class="voice-quote-list">
+              <li>"Clean and useful building permit data that's easy to understand."</li>
+              <li>"Because you want to get insights from building permits, not wrangle with raw data."</li>
+              <li>"We ship fast. We ship often. We ship quality."</li>
+              <li>"Permit data is notoriously messy. We clean it, so you don't have to."</li>
+            </ul>
+          </div>
+          <div class="voice-box avoid">
+            <div class="voice-box-header"><span class="voice-box-icon">—</span><span class="voice-box-title">Don't say</span></div>
+            <ul class="voice-quote-list">
+              <li>"Unlock the power of AI-driven construction intelligence to 10x your insights."</li>
+              <li>"Revolutionary. Game-changing. Disruptive."</li>
+              <li>"Leverage synergies across the construction data ecosystem."</li>
+              <li>"Harness cutting-edge ML to transform your workflow."</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="voice-sig-label">Signature phrases</div>
+        <div class="voice-sig-grid">
+          <div class="voice-sig-card">
+            <div class="voice-sig-phrase">WE &lt;3 CONSTRUCTION DATA</div>
+            <div class="voice-sig-desc">Canonical tagline. Uppercase, literal &lt;3. Use as eyebrow.</div>
+          </div>
+          <div class="voice-sig-card">
+            <div class="voice-sig-phrase">Shovel-ready intelligence</div>
+            <div class="voice-sig-desc">Proprietary term. Hyphenated. Never reword.</div>
+          </div>
+          <div class="voice-sig-card">
+            <div class="voice-sig-phrase">The first signal of construction</div>
+            <div class="voice-sig-desc">Anchor phrase. Everything built starts with a permit.</div>
+          </div>
+          <div class="voice-sig-card">
+            <div class="voice-sig-phrase">The intelligence layer for the built world</div>
+            <div class="voice-sig-desc">Positioning line.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 06 BOILERPLATE -->
+    <section class="section" id="presskit">
+      <div class="section-eyebrow">06 — Boilerplate</div>
+      <h2 class="section-title">Boilerplate.</h2>
+      <p class="press-desc">Drop-in copy for releases, partnerships, and investor decks. Three lengths, click to copy.</p>
+
+      <div class="press-layout">
+        <div class="press-boilerplate-card">
+          <div class="press-card-label">
+            53-word
+            <button class="press-copy-btn" data-copy-target="boilerplate-text">Copy</button>
+          </div>
+          <p class="press-boilerplate-text" id="boilerplate-text">Everything built starts with a permit. Shovels captures that first signal—using AI to clean, enrich, and unify permit, contractor, and property data from thousands of municipalities. Delivered through our API, web app, or data warehouse, we turn messy public records into standardized, Shovel-ready intelligence that helps industries anticipate growth and make smarter decisions. <a href="https://www.shovels.ai/">https://www.shovels.ai/</a></p>
+        </div>
+
+        <div class="press-right-col">
+          <div class="press-oneliner-card">
+            <div class="press-card-label">
+              Tagline
+              <button class="press-copy-btn" data-copy-target="tagline-text">Copy</button>
+            </div>
+            <p class="press-tagline-text" id="tagline-text">The intelligence layer for the built world.</p>
+          </div>
+          <div class="press-oneliner-card">
+            <div class="press-card-label">
+              25-word
+              <button class="press-copy-btn" data-copy-target="twentyfive-text">Copy</button>
+            </div>
+            <p class="press-oneliner-text" id="twentyfive-text">Shovels uses AI to clean and unify fragmented permit, contractor, and property data—turning public records into Shovel-ready intelligence that helps industries see what's coming next.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 07 CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-eyebrow">07 — Contact</div>
+      <h2 class="section-title">Working with us</h2>
+      <p class="contact-desc">For press inquiries, partnership decks, or any brand-related questions, email <a href="mailto:press@shovels.ai">press@shovels.ai</a>. We answer within two business days.</p>
+    </section>
+
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+  (function () {
+    var root = document.querySelector('.brand-guide');
+    if (!root) return;
+
+    // Copy-to-clipboard for color swatches and boilerplate blocks.
+    root.addEventListener('click', function (e) {
+      var swatch = e.target.closest('[data-copy]');
+      if (swatch) { navigator.clipboard.writeText(swatch.getAttribute('data-copy')); return; }
+      var copyBtn = e.target.closest('[data-copy-target]');
+      if (copyBtn) {
+        var el = document.getElementById(copyBtn.getAttribute('data-copy-target'));
+        if (el) navigator.clipboard.writeText(el.innerText);
+      }
+    });
+
+    // Highlight the sidebar link for the section in view.
+    var navLinks = root.querySelectorAll('.sidebar-nav a');
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (l) { l.classList.remove('active'); });
+          var active = root.querySelector('.sidebar-nav a[href="#' + entry.target.id + '"]');
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    root.querySelectorAll('section[id]').forEach(function (s) { observer.observe(s); });
+  })();
+</script>
+{% endblock content %}
