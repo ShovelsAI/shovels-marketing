@@ -277,6 +277,19 @@
   /* DIVIDER */
   .brand-guide .section-divider { border: none; border-top: 1px solid var(--border); margin: 0 0 56px 0; }
 
+  /* COPY CONFIRMATION TOAST */
+  .brand-guide-toast {
+    position: fixed; bottom: 28px; left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #101727; color: #ffffff; padding: 10px 18px;
+    border-radius: 999px; font-size: 13px; font-weight: 500;
+    font-family: 'Inter', sans-serif; letter-spacing: 0.01em;
+    box-shadow: 0 8px 24px rgba(16,23,39,0.28);
+    opacity: 0; pointer-events: none; z-index: 9999;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .brand-guide-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
   @media (max-width: 860px) {
     .brand-guide .sidebar { display: none; }
     .brand-guide .bg-main { padding: 32px 24px; }
@@ -638,14 +651,44 @@
     var root = document.querySelector('.brand-guide');
     if (!root) return;
 
-    // Copy-to-clipboard for color swatches and boilerplate blocks.
+    // Copy-to-clipboard with visible confirmation.
+    var toast = document.createElement('div');
+    toast.className = 'brand-guide-toast';
+    root.appendChild(toast);
+    var toastTimer;
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 1400);
+    }
+    // Briefly swap a button's label to confirm the copy.
+    function flashLabel(btn) {
+      var original = btn.getAttribute('data-label') || btn.textContent;
+      btn.setAttribute('data-label', original);
+      btn.textContent = 'Copied!';
+      clearTimeout(btn._flash);
+      btn._flash = setTimeout(function () { btn.textContent = original; }, 1400);
+    }
+
     root.addEventListener('click', function (e) {
       var swatch = e.target.closest('[data-copy]');
-      if (swatch) { navigator.clipboard.writeText(swatch.getAttribute('data-copy')); return; }
+      if (swatch) {
+        var hex = swatch.getAttribute('data-copy').replace(/^#/, '');
+        navigator.clipboard.writeText(hex);
+        var btn = swatch.matches('.color-copy-btn') ? swatch : swatch.querySelector('.color-copy-btn');
+        if (btn) flashLabel(btn);
+        showToast('Copied ' + hex + ' to clipboard');
+        return;
+      }
       var copyBtn = e.target.closest('[data-copy-target]');
       if (copyBtn) {
         var el = document.getElementById(copyBtn.getAttribute('data-copy-target'));
-        if (el) navigator.clipboard.writeText(el.innerText);
+        if (el) {
+          navigator.clipboard.writeText(el.innerText);
+          flashLabel(copyBtn);
+          showToast('Copied to clipboard');
+        }
       }
     });
 
