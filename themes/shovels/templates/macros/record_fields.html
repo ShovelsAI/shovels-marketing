@@ -18,9 +18,9 @@
                        name        : Field label, rendered monospace.
                        description : One-line explanation.
   description      : Optional lead paragraph under the heading.
-  illustration_src : Optional avatar/illustration. Rendered inside a
-                     circular primary-green badge (the character SVGs ship
-                     without their own backing).
+  illustration_src : Optional avatar/illustration, rendered at 96px tall
+                     with no mask — the artwork supplies its own shape and
+                     backing (e.g. shovels-guy.svg is a full green circle).
   illustration_alt : Alt text for the illustration.
   cta_label        : Optional link text below the description (arrow added).
   cta_href         : Link destination. Default '#'.
@@ -52,9 +52,7 @@
       {# Left — illustration badge, heading, intro, CTA. #}
       <div class="md:col-span-5 p-8 md:p-12">
         {% if illustration_src %}
-        <div class="mb-8 flex size-24 items-center justify-center overflow-hidden rounded-full bg-shovels-primary">
-          <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="size-24 object-cover" />
-        </div>
+        <img src="{{ illustration_src }}" alt="{{ illustration_alt }}" class="mb-8 h-24 w-auto" />
         {% endif %}
         <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
         {% if description %}<p class="mt-5 text-base text-gray-500">{{ description }}</p>{% endif %}
