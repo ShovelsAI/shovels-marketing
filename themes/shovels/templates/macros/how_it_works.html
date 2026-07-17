@@ -54,7 +54,11 @@
 
     {# Numbered steps. Each badge sits on a connecting line (desktop); the
        line segment is drawn from the previous badge's center to this one. #}
-    <ol class="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+    {# Column count follows the number of steps: 4-step pipelines (data
+       pages) go 4-across on desktop, the 3-step Solutions flows stay
+       3-across. Literal classes so Tailwind compiles both. #}
+    {% set _cols = 'md:grid-cols-4' if steps | length == 4 else 'md:grid-cols-3' %}
+    <ol class="mt-16 grid grid-cols-1 gap-12 {{ _cols }} md:gap-8">
       {% for step in steps %}
       <li class="relative flex flex-col items-center text-center">
         {% if not loop.first %}
