@@ -26,7 +26,7 @@ status: hidden
 {# ── §2 SOC 2 TRUST BANNER ───────────────────────────────────────────── #}
 {{ ui_soc2.soc2_trust(
     heading='Shovels is SOC 2® Type II certified',
-    body='We meet the security and compliance requirements of enterprise insurance carriers. Our SOC 2 Type II certification reflects controls independently audited over a sustained period, not just a point-in-time snapshot.') }}
+    body='Shovels meets enterprise security and compliance requirements. Our SOC 2 Type II certification reflects controls independently audited over a sustained period, not just a point-in-time snapshot.') }}
 
 {# ── §3 PROCESS ─────────────────────────────────────────────────────── #}
 {{ ui_hiw.how_it_works(
@@ -58,8 +58,8 @@ status: hidden
             'Separate residential and commercial new construction from tax assessor records',
             'Review metrics like approval duration and inspection outcomes',
         ],
-        'image_src': '',
-        'image_alt': 'Renovation permit list with tags, statuses, and job values (reuse Home Services UC5 screenshot)',
+        'image_src': '/images/industries/home-services/uc5-high-intent-homeowners.png',
+        'image_alt': 'Permit list with AI tags, statuses, and job values',
         'framed': True,
     },
     {
@@ -84,8 +84,8 @@ status: hidden
             'History back to 2010 for trend and market analysis',
             'Pair with <a href="/data/decisions" class="font-semibold text-shovels-primary hover:underline">Shovels Decisions</a> to see projects before permits are filed',
         ],
-        'image_src': '',
-        'image_alt': 'Permit volume by work type bar chart (reuse Building Materials UC5 screenshot)',
+        'image_src': '/images/industries/building-materials/uc5-market-comparative.png',
+        'image_alt': 'Permit volume by work type bar chart',
         'framed': True,
     },
     {
