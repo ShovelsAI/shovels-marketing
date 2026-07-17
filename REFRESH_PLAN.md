@@ -59,6 +59,7 @@ What the refresh touches, and why.
 | Footer | **Global** | 🟡 preview built | New `footer-refresh.html` (6 columns: Industries/Solutions/Features/Data/Resources/Company, left newsletter, mobile accordions w/ carats, newsletter hidden on mobile, slim bottom bar). DRY `footer_sections` data drives both mobile + desktop. Gated in `base.html` to `*-preview` pages only — live footer untouched. HubSpot form wired ✓. Decided: drop the DATA column at launch (pages won't be ready); restore when /data/* ships. Open: final link/column curation |
 | Top nav (header) | **Global** | 🟡 preview built | New `header-refresh.html` (Industries/Solutions/Features/Resources + Sign In/Get Started; **Data omitted** until those pages ship). DRY `nav_menus` data drives desktop mega-dropdowns + mobile accordions. Dropdowns are icon link columns + Contact Sales row, two balanced columns at ≥6 items; open on hover (and on focus for keyboard users); caret flips up, panel beak points to trigger (seam-merged with the panel border), rightmost menu right-anchored; rounded-full Get Started. Gated in `base.html` to `*-preview` pages — live header untouched. Open: Solutions/Features links use planned `/solutions/` `/features/` slugs (404 until moved); promo panel intentionally dropped; icons are Lucide stand-ins |
 | Typography / base CSS | **Global** | ✅ already cascaded | Scandia headings + system body stack (logged in COMPONENTS.md) |
+| Brand | Staged page | ✅ preview built | New page (brand guide, from Claude Design handoff) on its own `brand.html` template. `brand-preview` → `/brand` at launch (net-new — no legacy file to delete). **Depends on chrome un-gate** — uses the refreshed header/footer only, with no legacy fallback. Footer Company-column "Brand" link added (targets `/brand`; resolves at launch). Ships a committed brand-kit zip + logo/icon assets |
 | New pages (future) | Staged page | ⬜ to design/build | Build behind `hidden`; may not launch with this wave |
 
 **Known content gap (launch dependency):** the live nav AND footer
@@ -174,7 +175,11 @@ verified-signatures rule. Without it, nothing ships. (Review:
 ### The flip — one coupled deploy (interdependent; ship together)
 1. **Slug swaps**: industry `*-preview` → live (drop `-preview` +
    `status: hidden`, delete legacy file); Solutions → `/solutions/*`;
-   Features → `/features/*`; promote Insurance + Research.
+   Features → `/features/*`; promote Insurance + Research; promote Brand
+   (`brand-preview` → `/brand`, net-new — no legacy file to delete). The
+   Brand page has no legacy chrome fallback, so its promotion must ship
+   coupled with the chrome un-gate (step 3) or `/brand` renders with the
+   old header/footer and loses its own footer link.
 2. **Homepage**: move preview content into theme `index.html` (reconcile
    `STATS`/helper globals + the `dates` vs `get_recent_articles` blog loop).
 3. **Un-gate chrome**: promote `footer-refresh`/`header-refresh` → global
