@@ -196,16 +196,31 @@ verified-signatures rule. Without it, nothing ships. (Review:
 2. **Homepage**: move preview content into theme `index.html` (reconcile
    `STATS`/helper globals + the `dates` vs `get_recent_articles` blog loop).
 3. **Un-gate chrome**: promote `footer-refresh`/`header-refresh` → global
-   (remove the `-preview` gate); drop the footer DATA column; repoint the
-   header Solutions/Features links (they resolve once pages move); final
-   header icons.
+   (remove the `-preview` gate); repoint the header Solutions/Features/Data
+   links (they resolve once pages move); final header icons. (The Data nav
+   menu + footer column are already in place — the /data/* pages are built.)
 4. **Repoint interim links**: Solutions/Features cross-sell CTAs, homepage
    data-type/delivery links, and the GIS hero CTA
    (`/features/gis/gallery-preview` → `/features/gis/gallery`).
-5. **Enable redirects**: 301s for all 6 moved pages (`/permit-database`,
-   `/api`, `/data-feed`, `/charlie`, `/gis`, `/cli`) + the
-   `charlie.shovels.ai` subdomain → `app.shovels.ai`. (Redirects ARE
-   needed — earlier "none needed" assumed industry-only, slugs-unchanged.)
+5. **Enable redirects** (301 permanent, preserve query strings) — apply
+   ONLY at launch, coupled with the slug swaps (step 1); applied earlier
+   they point at pages that don't exist yet. Cloudflare **Bulk Redirects**
+   (upload as a list) or **Single Redirect Rules** on the `shovels.ai` zone:
+
+   | # | From (current live) | To (launch) |
+   |---|---|---|
+   | 1 | `/permit-database` | `/solutions/permit-database` |
+   | 2 | `/api` | `/solutions/api` |
+   | 3 | `/data-feed` | `/solutions/data-feed` |
+   | 4 | `/charlie` | `/features/charlie` |
+   | 5 | `/gis` | `/features/gis` |
+   | 6 | `/cli` | `/features/cli` |
+   | 7 | `charlie.shovels.ai/*` (hostname) | `https://app.shovels.ai/` |
+
+   Rows 1–6 are path redirects; row 7 is a hostname redirect (confirm
+   whether to preserve path vs. send to app root). Industry slugs are
+   unchanged, and net-new pages (Research, Insurance, Brand, Data) have no
+   old URL — so none of those need redirects.
 6. **Positioning sweep**: `base.html` fallback meta/OG/Twitter + the
    Organization JSON-LD ("fragmented permit data" → "fragmented public
    records").
