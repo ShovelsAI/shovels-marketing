@@ -61,6 +61,12 @@ status: hidden
         'desc': '83,444 roofing permits pulled across the United States in Q1 2026, with contractor and property detail.',
     },
     {
+        'item_id': 'b0dd9aaf273c4d7aa1c5f54de30368d5',
+        'portal': 'https://shovels.maps.arcgis.com',
+        'title': 'Nationwide Telecom Permits (Q1 2026)',
+        'desc': '15,366 telecom permits pulled across the United States in Q1 2026, covering fiber, broadband, and other telecommunications infrastructure with contractor and location detail.',
+    },
+    {
         'item_id': 'f5827b37eda247498204f98f898f7bed',
         'portal': 'https://shovels.maps.arcgis.com',
         'title': 'LA County Wildfire Recovery',
