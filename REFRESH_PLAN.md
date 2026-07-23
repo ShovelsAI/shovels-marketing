@@ -693,7 +693,14 @@ placeholders remain on any preview page.
   *this-wave* launch likely omit Data until those pages exist.
 - **Net-new pages** (Map Gallery, Brand, Partners, Pricing?) — scope,
   copy, and cadence TBD; launch independently.
-- **Stale `main`** — this branch is now well behind `main` (blog posts,
-  telecom copy edits merged). Plan a rebase/merge before launch.
+- **Stale `main`** — this branch is behind `main` and must be
+  rebased/merged before launch (gated on the verified-signatures
+  ruleset — see Gate 0). As of 2026-07-22 `main` carries the
+  inclusionary-zoning / rezoning / zoning-variance blog posts, the
+  telecom copy edits, and the GIS ArcGIS owner-web-map link change,
+  none of which are on this branch. The Cloudflare preview Worker
+  (`shovels-marketing.ryan-13e.workers.dev`) now builds from this
+  branch, so the review previews intentionally will not show `main`'s
+  newer content until the branch is synced.
 - Designer logo-height pass; white-on-hover logos (Hawkins,
   Avenue Roofing) — minor, deferred.
