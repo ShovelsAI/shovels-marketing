@@ -49,6 +49,7 @@ status: hidden
 
 {# ── §4 WHAT'S IN EVERY PERMIT RECORD ───────────────────────────────── #}
 {{ ui_rec.record_fields(
+    wrapper_class='!pb-[4.5rem]',
     heading="What's in every permit record",
     description='A consistent shape across every jurisdiction — so your team writes one integration, not a thousand.',
     illustration_src='/images/illustrations/shovels-guy.svg',
@@ -168,6 +169,7 @@ status: hidden
 ] %}
 
 {{ ui_uc.use_case_section(
+    wrapper_class='!pt-[4.5rem]',
     eyebrow='The data',
     heading='Data-driven insights, made easy',
     cases=permit_cases) }}
@@ -184,9 +186,10 @@ status: hidden
     ]) }}
 
 {# ── §7 INDUSTRIES STRIP ────────────────────────────────────────────── #}
-{{ ui_ind.industries_strip() }}
+{{ ui_ind.industries_strip(wrapper_class='!pb-[4.8rem]') }}
 
 {# ── §8 COVERAGE (shared section; uses the macro's own copy) ─────────── #}
+{% set coverage_wrapper_class = '!pt-[4.8rem]' %}
 {% include 'sections/coverage.html' %}
 
 {# ── §9 EXPLORE RELATED DATASETS (shared data_types macro, minus Permits) #}
@@ -198,6 +201,7 @@ status: hidden
 
 {# ── §10 FAQ ────────────────────────────────────────────────────────── #}
 {{ ui_faq.faq_section(
+    wrapper_class='!pb-[4.8rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -228,6 +232,7 @@ status: hidden
 
 {# ── §11 FINAL CTA ──────────────────────────────────────────────────── #}
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
     heading='Ready to dig into ' ~ STATS.permits ~ ' permits?',
     description='Search for free, or talk to us about API and enterprise delivery.',
     cta_label='Get started',

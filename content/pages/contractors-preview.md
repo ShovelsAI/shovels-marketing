@@ -49,6 +49,7 @@ status: hidden
 
 {# ── §4 WHAT'S IN EVERY CONTRACTOR RECORD ────────────────────────────── #}
 {{ ui_rec.record_fields(
+    wrapper_class='!pb-[4.5rem]',
     heading="What's in every contractor record",
     illustration_src='/images/illustrations/shovels-guy.svg',
     illustration_alt='Shovels field worker',
@@ -65,6 +66,7 @@ status: hidden
 
 {# ── §5 USE CASES ───────────────────────────────────────────────────── #}
 {{ ui_uc.use_case_section(
+    wrapper_class='!pt-[4.5rem]',
     eyebrow='The data',
     heading="Know who's behind the work",
     cases=[
@@ -130,9 +132,10 @@ status: hidden
     ]) }}
 
 {# ── §7 INDUSTRIES STRIP ────────────────────────────────────────────── #}
-{{ ui_ind.industries_strip() }}
+{{ ui_ind.industries_strip(wrapper_class='!pb-[4.8rem]') }}
 
 {# ── §8 COVERAGE ────────────────────────────────────────────────────── #}
+{% set coverage_wrapper_class = '!pt-[4.8rem]' %}
 {% include 'sections/coverage.html' %}
 
 {# ── §9 EXPLORE THE CONNECTED DATASETS (minus Contractors) ───────────── #}
@@ -144,6 +147,7 @@ status: hidden
 
 {# ── §10 FAQ ────────────────────────────────────────────────────────── #}
 {{ ui_faq.faq_section(
+    wrapper_class='!pb-[4.8rem]',
     heading='Frequently asked questions',
     items=[
         {'q': 'What is contractor data?', 'a': "Contractor data is a profile of a licensed construction business: who they are, what they're licensed to do, and what work they've actually performed. Shovels builds these profiles from permit applications, state licensing boards, and business registrations, then keeps them current with every data release."},
@@ -156,6 +160,7 @@ status: hidden
 
 {# ── §11 FINAL CTA ──────────────────────────────────────────────────── #}
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
     heading='Find the contractors behind the work',
     description='Search for free, or talk to us about API and enterprise delivery.',
     cta_label='Get started',
