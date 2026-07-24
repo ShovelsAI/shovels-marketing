@@ -14,6 +14,7 @@ status: hidden
 {% import 'macros/final_cta.html' as ui_cta %}
 
 {{ ui_hero.hero(
+    wrapper_class='!pb-[4.8rem] md:!pb-[6.4rem]',
     eyebrow='Shovels API',
     h1='Permit and contractor data for developers',
     description='Access construction activity, contractor intelligence, and local government decisions through a single API. Query by address, geography, contractor, or permit type with sub-second response times.',
@@ -187,6 +188,7 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
+    wrapper_class='!pt-[4.8rem]',
     eyebrow='',
     heading='One API for permits, contractors, and local government decisions',
     cases=features) }}
@@ -223,12 +225,14 @@ status: hidden
         },
     ]) }}
 
-{{ ui_ind.industries_strip(heading='USED BY DEVELOPERS IN') }}
+{{ ui_ind.industries_strip(heading='USED BY DEVELOPERS IN', wrapper_class='!pb-[4.5rem]') }}
 
+{% set coverage_wrapper_class = '!py-[4.5rem]' %}
 {% include 'sections/coverage.html' %}
 
 {# Links to /solutions/data-feed — 404 in preview until that page ships. #}
 {{ ui_callout.callout(
+    wrapper_class='!py-[2.25rem]',
     variant='green',
     heading='Need this data delivered directly to Snowflake, BigQuery, or Databricks?',
     body='Shovels Enterprise Data License drops permit and contractor data straight into your warehouse with no ETL required.',
@@ -236,6 +240,7 @@ status: hidden
     cta_href='/solutions/data-feed') }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -265,6 +270,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Start building with Shovels',
     description='Get your API key, read the docs, and make your first query in minutes. No sales call required.',
     cta_label='Get your API key',

@@ -162,13 +162,15 @@ status: hidden
     heading='Enterprise-ready from day one',
     cases=features) }}
 
-{{ ui_ind.industries_strip(heading='TRUSTED BY DATA TEAMS IN') }}
+{{ ui_ind.industries_strip(heading='TRUSTED BY DATA TEAMS IN', wrapper_class='!pb-[4.5rem]') }}
 
 {# Coverage — shared include as a placeholder; Enterprise-specific copy
    updates pending from the team (may need a parameterized variant). #}
+{% set coverage_wrapper_class = '!py-[4.5rem]' %}
 {% include 'sections/coverage.html' %}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -198,6 +200,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Construction intelligence, delivered your way',
     description='The most complete permit dataset available, delivered to your stack.',
     cta_label='Talk to sales',

@@ -11,6 +11,7 @@ status: hidden
 {% import 'macros/final_cta.html' as ui_cta %}
 
 {{ ui_hero.hero(
+    wrapper_class='!pb-[4.8rem] md:!pb-[6.4rem]',
     h1='Meet Charlie',
     description='Your AI research assistant for the Shovels data network. Ask about permits, contractors, city decisions—whatever you need.',
     cta_label='Start digging',
@@ -60,6 +61,7 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
+    wrapper_class='!py-[4.8rem]',
     eyebrow='AI-POWERED DATA INTELLIGENCE',
     heading='See what Charlie can do',
     cases=features) }}
@@ -67,6 +69,7 @@ status: hidden
 {# Links to /permit-database (Shovels Online) — moves to
    /solutions/permit-database at launch; tracked in REFRESH_PLAN. #}
 {{ ui_callout.callout(
+    wrapper_class='!pt-[2.4rem]',
     variant='warm',
     heading='Prefer to browse the data yourself?',
     body='Shovels Online offers construction data with hands-on filters, contractor and geography profiles, and one-click CSV downloads.',
@@ -98,6 +101,7 @@ status: hidden
     ]) }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!pb-[4.5rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -127,6 +131,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Ready to see what Charlie digs up?',
     description='Ask your first question and get answers instantly.',
     cta_label='Try it out',

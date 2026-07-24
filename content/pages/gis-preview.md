@@ -121,12 +121,13 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
+    wrapper_class='!pb-[5.1rem]',
     eyebrow='GEOSPATIAL DATA',
     heading='AI-powered permit data, delivered as a spatial format',
     cases=features) }}
 
 {# Benefit strip — three-up, check icon + label + one line. #}
-<section class="w-full bg-white px-6 md:px-10 py-24">
+<section class="w-full bg-white px-6 md:px-10 pt-[5.1rem] pb-24">
   <div class="mx-auto max-w-6xl">
     <h2 class="text-center text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Hosted layers, zero data engineering</h2>
     <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -181,6 +182,7 @@ status: hidden
 
 {# Links to /data-feed (Shovels Enterprise) — moves to /solutions/data-feed at launch. #}
 {{ ui_callout.callout(
+    wrapper_class='!pb-[2.25rem]',
     variant='warm',
     heading='Need the full geodatabase in your warehouse?',
     body='GIS layers are one delivery format. The Shovels Data Feed delivers all seven core tables—permits, contractors, parcels, decisions, and more—to Snowflake, BigQuery, or Databricks.',
@@ -188,6 +190,7 @@ status: hidden
     cta_href='/data-feed') }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -217,6 +220,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Ready to put permits on the map?',
     description='Talk to our GIS team about coverage, layers, and pricing for your use case.',
     cta_label='Talk to us',

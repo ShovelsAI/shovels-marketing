@@ -245,7 +245,7 @@ done</code></pre>
 <span class="text-gray-300">{ "meta": { "count": <span class="text-shovels-secondary">138</span> }, ... }</span>
 {% endcall %}{% endset %}
 
-<section id="how-it-works" class="w-full bg-white px-6 md:px-10 py-24">
+<section id="how-it-works" class="w-full bg-white px-6 md:px-10 pt-24 pb-[4.5rem]">
   <div class="mx-auto max-w-6xl">
     <div class="mx-auto max-w-3xl text-center">
       <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">HOW IT WORKS</span>
@@ -286,6 +286,7 @@ done</code></pre>
 </section>
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -315,6 +316,7 @@ done</code></pre>
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Get started in 10 seconds',
     description='Install the CLI, set your API key, and run your first query.',
     cta_label='Get your API key',

@@ -87,7 +87,7 @@ status: hidden
   </div>
 </section>
 
-<section class="w-full bg-white px-6 md:px-10 pb-24">
+<section class="w-full bg-white px-6 md:px-10 pb-[4.5rem]">
   <div class="mx-auto max-w-5xl space-y-16">
     {% for m in maps %}
     <div id="map-{{ loop.index }}" class="scroll-mt-24">
@@ -140,6 +140,7 @@ status: hidden
 </script>
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Ready to map our Shovel-ready data?',
     description='Explore our geospatial building permit intelligence now.',
     cta_label='Contact Us',
