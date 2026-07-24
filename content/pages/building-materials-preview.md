@@ -110,12 +110,15 @@ status: hidden
 
 {% include 'sections/enterprise_teams.html' %}
 
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
 {% include 'sections/coverage.html' %}
 
 {{ ui_res.resources_section(
-    articles=get_industry_articles('Building Materials')) }}
+    articles=get_industry_articles('Building Materials'),
+    wrapper_class='!py-[4.8rem]') }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -145,6 +148,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
     heading='Ready to find your next contractor customer?',
     description='See how Shovels helps building materials suppliers turn permit data into pipeline.',
     cta_label='Get Started') }}

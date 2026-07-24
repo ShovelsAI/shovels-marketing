@@ -110,12 +110,15 @@ status: hidden
 
 {% include 'sections/enterprise_teams.html' %}
 
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
 {% include 'sections/coverage.html' %}
 
 {{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
     articles=get_industry_articles('Home Services')) }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -145,6 +148,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
     heading='Ready to build on the most complete contractor dataset in the US?',
     description='See how Shovels helps home services platforms find, verify, and enrich contractor data at scale.',
     cta_label='Get Started') }}

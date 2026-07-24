@@ -97,12 +97,15 @@ status: hidden
 
 {% include 'sections/enterprise_teams.html' %}
 
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
 {% include 'sections/coverage.html' %}
 
 {{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
     articles=get_industry_articles('Telecommunications')) }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -132,6 +135,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
     heading='Ready to improve planning with permit intelligence?',
     description="See how Shovels helps telecom teams plan faster, compete smarter, and protect what's already in the ground.",
     cta_label='Get Started') }}

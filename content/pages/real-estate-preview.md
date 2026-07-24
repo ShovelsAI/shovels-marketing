@@ -112,12 +112,15 @@ status: hidden
 
 {% include 'sections/enterprise_teams.html' %}
 
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
 {% include 'sections/coverage.html' %}
 
 {{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
     articles=get_industry_articles('Real Estate')) }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -147,6 +150,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
     heading='Ready to track development before it shows up in listings?',
     description='See how Shovels gives real estate teams the permit and decisions intelligence to move earlier than the market.',
     cta_label='Get Started') }}
