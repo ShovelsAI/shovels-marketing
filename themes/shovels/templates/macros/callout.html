@@ -35,7 +35,8 @@
 #}
 
 {% macro callout(heading, body, cta_label, cta_href,
-                 variant='green', media_src=None, media_alt='') %}
+                 variant='green', media_src=None, media_alt='',
+                 wrapper_class='') %}
 {# Variant palette. 'green' = primary band + white button; 'warm' = cream
    band + green button. #}
 {% if variant == 'warm' %}
@@ -54,7 +55,7 @@
   {% set body_class = 'text-white/80' %}
   {% set btn_class = 'bg-white text-shovels-primary hover:bg-white/90' %}
 {% endif %}
-<section class="w-full px-6 md:px-10 py-12">
+<section class="w-full px-6 md:px-10 py-12 {{ wrapper_class }}">
   <div class="mx-auto max-w-6xl">
     <div class="{{ band_class }} flex flex-col gap-6 rounded-2xl p-8 md:flex-row md:items-center md:gap-8 md:p-10">
 

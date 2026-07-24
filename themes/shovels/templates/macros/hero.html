@@ -58,8 +58,9 @@
               illustration_position='right',
               eyebrow=None,
               media=None, bg_src=None,
-              secondary_cta_label=None, secondary_cta_href=None) %}
-<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
+              secondary_cta_label=None, secondary_cta_href=None,
+              wrapper_class='') %}
+<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10 {{ wrapper_class }}">
 
   {# Crossing-gradient grid pattern with radial fade. Sits behind content. #}
   <div class="pointer-events-none absolute inset-0"

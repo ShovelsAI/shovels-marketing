@@ -61,8 +61,8 @@
 {% import 'macros/mockup.html' as ui_frame %}
 {% import 'macros/icons.html' as icons %}
 
-{% macro use_case_section(eyebrow, heading, cases, intro=None) %}
-<section class="w-full bg-white py-24 px-6 md:px-10">
+{% macro use_case_section(eyebrow, heading, cases, intro=None, wrapper_class='') %}
+<section class="w-full bg-white py-24 px-6 md:px-10 {{ wrapper_class }}">
   <div class="mx-auto max-w-6xl">
 
     {# Section header — optional eyebrow chip + heading. Pass an empty
