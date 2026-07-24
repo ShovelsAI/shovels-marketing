@@ -12,6 +12,7 @@ status: hidden
 {% import 'macros/final_cta.html' as ui_cta %}
 
 {{ ui_hero.hero(
+    wrapper_class='!pb-[4.8rem] md:!pb-[6.4rem]',
     eyebrow='Shovels Online',
     h1='Permit and contractor data, no code required',
     description='Search permits and contractors from your browser. Spot active projects, track market trends, and export to your CRM. No SQL. Zero dev time.',
@@ -117,11 +118,13 @@ status: hidden
 ] %}
 
 {{ ui.use_case_section(
+    wrapper_class='!py-[4.8rem]',
     eyebrow='',
     heading='Discover more opportunities, faster',
     cases=features) }}
 
 {{ ui_callout.callout(
+    wrapper_class='!pt-[2.4rem]',
     variant='warm',
     heading='Not sure where to start? Just ask Charlie.',
     body='Charlie, your AI research assistant, finds exactly what you need from the Shovels data network. Just ask in plain English (no SQL or filters required) and watch Charlie dig up the answers you are looking for.',
@@ -154,12 +157,14 @@ status: hidden
         },
     ]) }}
 
-{{ ui_ind.industries_strip() }}
+{{ ui_ind.industries_strip(wrapper_class='!pb-[4.5rem]') }}
 
+{% set coverage_wrapper_class = '!py-[4.5rem]' %}
 {% include 'sections/coverage.html' %}
 
 {# Links to /solutions/api — 404 in preview until that page ships. #}
 {{ ui_callout.callout(
+    wrapper_class='!py-[2.25rem]',
     variant='green',
     heading='Need to bring this data into your own product or workflow?',
     body='The Shovels API gives you programmatic access to the same permit and contractor data, queryable by address or contractor name, with no scraping or manual exports required.',
@@ -167,6 +172,7 @@ status: hidden
     cta_href='/solutions/api') }}
 
 {{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
     heading='Frequently asked questions',
     items=[
         {
@@ -196,6 +202,7 @@ status: hidden
     ]) }}
 
 {{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
     heading='Ready to explore construction activity?',
     description="Start your free trial and see what's being built in your market today.",
     cta_label='Get started',
