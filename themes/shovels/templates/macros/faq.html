@@ -1,7 +1,7 @@
 {#
   FAQ section — accordion + FAQPage JSON-LD schema from the same data.
 
-  faq_section(heading, items, intro=None)
+  faq_section(heading, items, intro=None, wrapper_class='')
 
   Renders an expandable FAQ list using native <details>/<summary>
   elements AND a matching FAQPage JSON-LD block that AI answer engines
@@ -19,6 +19,8 @@
                   answers, since they need to map cleanly to schema.org
                   "Answer.text" which is plain text).
   intro   : Optional short paragraph below the heading.
+  wrapper_class : Extra classes on the outer <section>, e.g. spacing
+                  overrides like '!pt-[4.8rem]'.
 
   Example
   -------
@@ -43,8 +45,8 @@
 
 {% import 'macros/icons.html' as icons %}
 
-{% macro faq_section(heading, items, intro=None) %}
-<section class="w-full bg-white px-6 md:px-10 py-24">
+{% macro faq_section(heading, items, intro=None, wrapper_class='') %}
+<section class="w-full bg-white px-6 md:px-10 py-24 {{ wrapper_class }}">
   <div class="mx-auto max-w-6xl">
 
     <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{{ heading }}</h2>
