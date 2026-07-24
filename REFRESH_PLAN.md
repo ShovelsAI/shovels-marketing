@@ -672,6 +672,13 @@ placeholders remain on any preview page.
       `FAQPage` JSON-LD, so this is the deferred *visual* pass from the FAQ
       formatting rollout. Likely needs a shared convention (or a
       build-time transform) so new posts stay consistent.
+- [ ] **Google Search Console indexing** (MAR-219) — once live and the
+      sitemap has been regenerated (MAR-169), resubmit `sitemap.xml` in
+      GSC and Request Indexing for the moved / net-new URLs
+      (`/solutions/*`, `/features/*`, `/features/gis/gallery`, `/research`,
+      `/insurance`, `/brand`, Data pages). Confirm the old flat slugs
+      de-index via their 301s, then monitor the GSC Coverage report over
+      the following days.
 
 ---
 
