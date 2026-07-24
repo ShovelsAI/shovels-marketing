@@ -25,6 +25,8 @@
   cta_label        : Optional link text below the description (arrow added).
   cta_href         : Link destination. Default '#'.
   anchor           : Optional id on the <section> for in-page links.
+  wrapper_class    : Extra classes on the outer <section>, e.g. spacing
+                     overrides like '!pb-[4.5rem]'.
 
   The card reuses the CTA-box treatment — tinted-primary border and a
   faded-green gradient backing — so it reads as part of the same system.
@@ -44,8 +46,9 @@
 
 {% macro record_fields(heading, fields, description=None,
                        illustration_src=None, illustration_alt='',
-                       cta_label=None, cta_href='#', anchor='') %}
-<section class="w-full bg-white px-6 md:px-10 py-24"{% if anchor %} id="{{ anchor }}"{% endif %}>
+                       cta_label=None, cta_href='#', anchor='',
+                       wrapper_class='') %}
+<section class="w-full bg-white px-6 md:px-10 py-24 {{ wrapper_class }}"{% if anchor %} id="{{ anchor }}"{% endif %}>
   <div class="mx-auto max-w-6xl">
     <div class="grid grid-cols-1 overflow-hidden rounded-3xl border border-shovels-primary/20 bg-gradient-to-br from-[#F6FBF7] to-white md:grid-cols-12">
 
