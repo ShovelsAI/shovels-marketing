@@ -40,7 +40,7 @@ status: hidden
         'description': 'Get clean property data via API that supports analytics, location intelligence, and contractor-facing insights.',
         'bullets': [
             'Permit and contractor data delivered via Snowflake, BigQuery, Databricks, or API',
-            'Bi-weekly refresh with millions of new records added each cycle',
+            'Twice-monthly refresh with millions of new records added each cycle',
             'AI-classified permit types with clean, structured data out of the box',
             'Changelog tracking for permit status updates over time',
         ],
@@ -63,8 +63,8 @@ status: hidden
     },
     {
         'number': '03',
-        'title': 'Show your users upcoming projects before permits are filed',
-        'description': 'Use Shovels Decisions data to surface approvals and zoning decisions, giving your users valuable early signals to beat out competitors.',
+        'title': 'Show your customers upcoming projects before permits are filed',
+        'description': 'Use Shovels Decisions data to surface approvals and zoning decisions, giving your customers valuable early signals to beat out competitors.',
         'bullets': [
             'Surface development approvals and zoning decisions before permits are filed',
             'Help your customers engage prospects earlier in the project lifecycle',
@@ -77,10 +77,10 @@ status: hidden
     },
     {
         'number': '04',
-        'title': 'Offer permit tracking features without building the infrastructure',
-        'description': 'Shovels refreshes permit status bi-weekly with changelog tracking. Give your users accurate, current permit data without managing a single scraper.',
+        'title': 'Offer permit tracking features without the upkeep',
+        'description': 'Shovels refreshes permit status twice monthly with changelog tracking. Deliver accurate, current permit data to your customers automatically. No maintenance required.',
         'bullets': [
-            'Bi-weekly permit status refresh across all jurisdictions',
+            'Twice-monthly permit status refresh across all jurisdictions',
             'Changelog tracking for status changes over time',
             'REST API with permit lookup by address, contractor, or jurisdiction',
             'AI-classified permit types eliminate raw text parsing for your team',
@@ -127,7 +127,7 @@ status: hidden
         },
         {
             'q': 'How does Shovels handle permit status updates?',
-            'a': 'Shovels refreshes permit data bi-weekly across 5,000+ jurisdictions and tracks status changes via changelog. Your platform always has current permit status without polling individual jurisdictions.',
+            'a': 'Shovels refreshes permit data twice monthly across 5,000+ jurisdictions and tracks status changes via changelog. Your platform always has current permit status without polling individual jurisdictions.',
         },
         {
             'q': 'Can Shovels data power contractor verification in our product?',
@@ -139,7 +139,7 @@ status: hidden
         },
         {
             'q': 'How can construction technology platforms use predictive analytics in construction workflows?',
-            'a': 'Shovels provides two data layers for predictive analytics: permit data (filed permits with contractor, location, and project details) and Shovels Decisions (pre-permit intelligence from city council agendas and project applications). Together, these let construction technology platforms surface project signals weeks or months before ground breaks, giving users a genuine predictive advantage in project discovery, contractor targeting, and territory planning.',
+            'a': 'Shovels provides two data layers for predictive analytics: permit data (filed permits with contractor, location, and project details) and Shovels Decisions (pre-permit intelligence from city council agendas and project applications). Together, these let construction technology platforms surface project signals weeks or months before ground breaks, giving customers a genuine predictive advantage in project discovery, contractor targeting, and territory planning.',
         },
         {
             'q': 'What geospatial analytics in construction does Shovels permit data enable?',
