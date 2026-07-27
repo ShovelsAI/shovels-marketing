@@ -43,7 +43,7 @@ status: hidden
          'description': 'Every record is deduplicated, USPS-standardized, geocoded, and tagged with 98% accuracy. Every field is documented in our data dictionary.'},
         {'number': '3', 'title': 'Connected across datasets',
          'description': 'Permits link to contractors, properties, and residents. A unified record tells the whole story.'},
-        {'number': '4', 'title': 'Released 2x a month',
+        {'number': '4', 'title': 'Updated twice monthly',
          'description': 'Millions of new permits and status updates each cycle, documented in our release notes.'},
     ]) }}
 

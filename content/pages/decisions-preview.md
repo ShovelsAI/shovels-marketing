@@ -44,7 +44,7 @@ status: hidden
         {'number': '3', 'title': 'Connected across datasets',
          'description': 'Decisions link to permits, properties, and jurisdictions, so you can follow a project from first council mention to certificate of occupancy.'},
         {'number': '4', 'title': 'Constantly expanding',
-         'description': 'New decisions arrive with every twice-monthly release, and jurisdiction coverage grows each month toward our full permit footprint.'},
+         'description': 'New decisions arrive with every twice-monthly update, and jurisdiction coverage grows each month toward our full permit footprint.'},
     ]) }}
 
 {# ── §4 WHAT'S IN EVERY DECISION RECORD ──────────────────────────────── #}
