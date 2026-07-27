@@ -1,5 +1,5 @@
 Title: Infrastructure Intelligence for Telecommunications Companies
-Description: Telecom infrastructure data for fiber network planning. Track competitor builds, monitor city councils, and target markets where permits move fastest.
+Description: Telecom infrastructure data for network planning. Track competitor builds, spot new construction early, and target markets where permits move fastest.
 slug: telecommunications-preview
 status: hidden
 
@@ -12,7 +12,7 @@ status: hidden
 
 {{ ui_hero.hero(
     h1='Infrastructure intelligence for telecommunications companies',
-    description='Access telecom infrastructure data across the US, monitor competitor filings, and identify favorable markets for smarter fiber network planning.',
+    description='Access telecom infrastructure data across the US, monitor competitor filings, and track new construction to see where demand is emerging for fiber, 5G, and other buildouts.',
     illustration_src='/images/industries/telecommunications/hero.svg',
     illustration_alt='Telecommunications hero illustration') }}
 
@@ -24,7 +24,7 @@ status: hidden
     {
         'number': '01',
         'title': 'Identify new commercial, residential, and industrial developments for network planning',
-        'description': 'Get ahead of subscriber demand with the latest residential construction data.',
+        'description': 'Get ahead of subscriber demand and feed your market intelligence with new residential, commercial, and industrial construction data.',
         'bullets': [
             'Identify new commercial, residential, and industrial construction by subdivision, ZIP, and metro',
             'Detect new build zones months before occupancy and service requests',
@@ -45,7 +45,7 @@ status: hidden
             'Prioritize defensive deployments in high-risk areas',
         ],
         'image_src': '/images/industries/telecommunications/uc2-competitor-filings.svg',
-        'image_alt': "Shovels app — a competitor's fiber-optic network permit detail, with location map, timeline, and project description",
+        'image_alt': "Shovels app — a competitor's network infrastructure permit detail, with location map, timeline, and project description",
     },
     {
         'number': '03',
@@ -58,7 +58,7 @@ status: hidden
             'Prioritize markets where permits close fastest',
         ],
         'image_src': '/images/industries/telecommunications/uc3-fastest-permits.svg',
-        'image_alt': 'A network planner comparing two regions — one flagged fast approvals, one slow — deciding where to deploy fiber first',
+        'image_alt': 'A network planner comparing two regions — one flagged fast approvals, one slow — deciding where to build first',
         'framed': False,
     },
     {
@@ -109,28 +109,32 @@ status: hidden
     heading='Frequently asked questions',
     items=[
         {
-            'q': 'How does Shovels classify fiber and telecom permits?',
-            'a': 'Shovels uses proprietary AI models to tag and classify hundreds of millions of permits for fiber, utility, and infrastructure activity, including ISP-specific permit classification that reveals which carriers are actively building in any market.',
+            'q': 'How does Shovels classify telecom infrastructure permits?',
+            'a': 'Shovels uses proprietary AI models to tag and classify hundreds of millions of permits for fiber, cell tower, small-cell, utility, and infrastructure activity, including carrier-specific permit classification that reveals who is actively building in any market.',
         },
         {
             'q': 'What city council data does Shovels provide for telecom companies?',
-            'a': 'Shovels Decisions tracks franchise agreement discussions, broadband expansion initiatives, right-of-way permit debates, and BEAD funding allocation priorities from city councils nationwide, giving you visibility months before permits are filed.',
+            'a': 'Shovels Decisions tracks franchise agreement discussions, broadband expansion initiatives, small-cell siting policies, right-of-way permit debates, and BEAD funding allocation priorities from city councils nationwide, giving you visibility months before permits are filed.',
         },
         {
             'q': 'How does Shovels identify permit-friendly jurisdictions?',
-            'a': 'Shovels analyzes historical approval timelines and approval rates across thousands of jurisdictions, helping you route fiber deployment around difficult authorities and focus on markets with faster, more predictable permit processes.',
+            'a': 'Shovels analyzes historical approval timelines and approval rates across thousands of jurisdictions, helping you route deployments around difficult authorities and focus on markets with faster, more predictable permit processes.',
         },
         {
-            'q': 'Can Shovels help track competitive fiber deployments?',
-            'a': 'Yes. Our AI-enhanced fiber permit classification reveals where ISPs from Tier 1 carriers like AT&T and Verizon to regional Tier 3 providers are actively building, enabling strategic market entry decisions and investment prioritization.',
+            'q': 'Can Shovels help track competitor network deployments?',
+            'a': 'Yes. Our AI-enhanced permit classification reveals where carriers, from Tier 1s like AT&T and Verizon to regional Tier 3 providers, are actively building fiber, towers, and small-cell infrastructure, enabling strategic market entry decisions and investment prioritization.',
         },
         {
-            'q': 'How does permit data improve fiber network planning for ISPs?',
-            'a': 'Shovels gives ISPs and telecom companies advance notice of where new residential and commercial construction is happening, including the exact permit type, contractor, location, and filing date. Teams use this to prioritize fiber network planning and fiber planning and design decisions: where to extend infrastructure, when to file permits, and which markets have the densest near-term subscriber demand. Data is also available for teams building fiber optic network design workflows.',
+            'q': 'How does permit data improve network planning for ISPs and carriers?',
+            'a': 'Shovels gives ISPs and telecom companies advance notice of where new residential and commercial construction is happening, including the exact permit type, contractor, location, and filing date. Teams use this to prioritize network planning and design decisions: where to extend infrastructure, when to file permits, and which markets have the densest near-term subscriber demand, whether the buildout is fiber, towers, or 5G.',
         },
         {
             'q': 'What telecom infrastructure data does Shovels provide?',
-            'a': 'Shovels aggregates permit and construction data from thousands of US jurisdictions, including fiber-related permits (conduit, aerial, underground, right-of-way) as well as multi-family, commercial, and single-family construction signals. Telecom teams use this data to monitor competitive fiber deployment, identify underserved markets, and inform capital planning for new infrastructure.',
+            'a': 'Shovels aggregates permit and construction data from thousands of US jurisdictions, including fiber, tower, and small-cell permits (conduit, aerial, underground, right-of-way) as well as multi-family, commercial, and single-family construction signals. Telecom teams use this data to monitor competitor deployments, identify underserved markets, and inform capital planning for new infrastructure.',
+        },
+        {
+            'q': 'Can telecom teams use Shovels for new construction market intelligence?',
+            'a': 'Yes. Shovels surfaces new residential, commercial, and industrial construction from permit filings months before occupancy, with location, project type, and timeline detail. Data providers and carriers use these signals to anticipate subscriber demand, size markets, and feed market intelligence platforms, independent of any single network technology.',
         },
     ]) }}
 
