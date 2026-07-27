@@ -159,7 +159,10 @@
     display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 11px; font-weight: 700;
   }
   .brand-guide .dolist, .brand-guide .dontlist { list-style: none; padding: 0; margin: 0; }
-  .brand-guide .dolist li, .brand-guide .dontlist li { padding: 3px 0; font-size: 13px; color: #4b5563; line-height: 1.55; }
+  .brand-guide .dolist li, .brand-guide .dontlist li { padding: 3px 0 3px 16px; font-size: 13px; color: #4b5563; line-height: 1.55; position: relative; }
+  .brand-guide .dolist li::before, .brand-guide .dontlist li::before { content: '•'; position: absolute; left: 2px; }
+  .brand-guide .dolist li::before { color: var(--green-primary); }
+  .brand-guide .dontlist li::before { color: #e03b2c; }
 
   /* COLOR */
   .brand-guide .color-hero-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
@@ -240,10 +243,13 @@
   .brand-guide .voice-box.do-say .voice-box-title { color: #4ade80; }
   .brand-guide .voice-box.avoid .voice-box-title { color: #888888; }
   .brand-guide .voice-quote-list { list-style: none; margin: 0; padding: 0; }
-  .brand-guide .voice-quote-list li { font-size: 13.5px; font-style: italic; line-height: 1.6; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .brand-guide .voice-quote-list li:last-child { border-bottom: none; padding-bottom: 0; }
+  .brand-guide .voice-quote-list li { font-size: 13.5px; font-style: italic; line-height: 1.6; padding: 10px 0 10px 16px; position: relative; }
+  .brand-guide .voice-quote-list li:last-child { padding-bottom: 0; }
+  .brand-guide .voice-quote-list li::before { content: '•'; position: absolute; left: 2px; }
   .brand-guide .voice-box.do-say .voice-quote-list li { color: rgba(255,255,255,0.85); }
-  .brand-guide .voice-box.avoid .voice-quote-list li { color: #7a7a7a; padding-left: 14px; border-left: 2px solid #1c2f42; margin-left: 2px; }
+  .brand-guide .voice-box.do-say .voice-quote-list li::before { color: #4ade80; }
+  .brand-guide .voice-box.avoid .voice-quote-list li { color: #7a7a7a; }
+  .brand-guide .voice-box.avoid .voice-quote-list li::before { color: #7a7a7a; }
   .brand-guide .voice-sig-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 14px; }
   .brand-guide .voice-sig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .brand-guide .voice-sig-card { background: #14202e; border: 1px solid #1c2f42; border-radius: 12px; padding: 18px 20px; }
@@ -343,7 +349,7 @@
     <!-- 02 LOGO -->
     <section class="section" id="logo">
       <div class="section-eyebrow">02 — Logo</div>
-      <h2 class="section-title">Logo</h2>
+      <h2 class="section-title">Logo.</h2>
       <p class="section-desc">Approved variants only. Always leave one logo-height of clear space on every side. Never rotate, skew, or recolor.</p>
 
       {% set logo_dl_icon %}<svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v8M7 9l-3-3M7 9l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>{% endset %}
@@ -643,7 +649,7 @@
     <!-- 07 CONTACT -->
     <section class="section" id="contact">
       <div class="section-eyebrow">07 — Contact</div>
-      <h2 class="section-title">Working with us</h2>
+      <h2 class="section-title">Working with us.</h2>
       <p class="contact-desc">For press inquiries, partnership decks, or any brand-related questions, email <a href="mailto:press@shovels.ai">press@shovels.ai</a>. We answer within two business days.</p>
     </section>
 
