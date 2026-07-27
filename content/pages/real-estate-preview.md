@@ -1,5 +1,5 @@
 Title: Development Intelligence for Real Estate Teams
-Description: Real estate data analytics powered by permits. Track development pipelines, score neighborhood momentum, and find emerging markets before listings appear.
+Description: Real estate data analytics powered by permits. Track development pipelines, find pockets of growth, and target emerging markets before listings appear.
 slug: real-estate-preview
 status: hidden
 
@@ -13,7 +13,7 @@ status: hidden
 
 {{ ui_hero.hero(
     h1='Development intelligence for real estate teams',
-    description='Track development pipelines, apply predictive analytics to neighborhood momentum, and identify emerging markets before they show up in listings.',
+    description='Track rezonings and development pipelines across multiple jurisdictions. Spot pockets of growth and identify emerging markets before they show up in listings.',
     illustration_src='/images/industries/real-estate/hero.svg',
     illustration_alt='Real estate hero illustration') }}
 
@@ -63,16 +63,16 @@ status: hidden
     },
     {
         'number': '03',
-        'title': 'Track neighborhood momentum with permit data',
-        'description': 'See which neighborhoods are improving, and by which parcel-level metrics, before price appreciation catches up.',
+        'title': 'Find pockets of growth so you know where to target',
+        'description': 'Instead of validating a site after you find it, work backwards. Use permit and Decisions data to identify up-and-coming neighborhoods and target acquisitions there.',
         'bullets': [
-            'Analyze permit activity by parcel, census tract, and ZIP to assess neighborhood momentum',
-            'Compare permit trends across markets to inform portfolio and acquisition decisions',
-            'Spot improving neighborhoods before price appreciation reflects permit activity',
-            'Distinguish new construction from renovation activity by permit type',
+            'Aggregate permit activity by parcel, census tract, ZIP code, or a region you define',
+            'Rank submarkets by activity to decide where to focus acquisition efforts',
+            'Distinguish new construction from renovation by permit type',
+            'Re-run the same query to catch newly active areas',
         ],
         'image_src': '/images/industries/real-estate/uc3-neighborhood-momentum.svg',
-        'image_alt': 'A street where a few homes show active renovation, an investor spotting the momentum before prices move',
+        'image_alt': 'A street where a few homes show active renovation, an investor spotting a pocket of growth before prices move',
         'framed': False,
     },
     {
@@ -124,12 +124,12 @@ status: hidden
     heading='Frequently asked questions',
     items=[
         {
-            'q': 'What is the Neighborhood Vitality Index?',
-            'a': 'NVI is a permit-based score calculated by Shovels in partnership with Esri and Regrid. It compares permit density for home improvement projects by census tract across major metro areas, giving you a quantifiable measure of neighborhood improvement activity.',
+            'q': 'Can I build a Neighborhood Vitality Index with Shovels data?',
+            'a': 'Yes. A Neighborhood Vitality Index is any permit-based score that measures improvement activity in an area. Shovels gives you the inputs: home improvement permits classified by work type, aggregated to parcel, census tract, or ZIP code, so you can compute and weight the index however your team defines vitality.',
         },
         {
             'q': 'How does Shovels track zoning and entitlement decisions?',
-            'a': 'Shovels Decisions aggregates zoning changes, conditional use permits, upzoning discussions, and development approvals from 200+ city council meetings into a searchable database of 30,000+ decisions nationwide.',
+            'a': 'Shovels Decisions aggregates zoning changes, conditional use permits, upzoning discussions, and development approvals from city council meetings nationwide into a single searchable database.',
         },
         {
             'q': 'Can we use permit data in our existing GIS workflow?',
@@ -137,7 +137,7 @@ status: hidden
         },
         {
             'q': 'How current is the permit data?',
-            'a': 'Permit records are updated bi-weekly, with millions of new records added each cycle. NVI scores are refreshed monthly. Decisions data is updated continuously as city council meetings are processed.',
+            'a': 'Permit records are updated twice monthly, with millions of new records added each cycle. Decisions data is updated continuously as city council meetings are processed.',
         },
         {
             'q': 'How do real estate investors use predictive analytics on permit data?',
@@ -145,12 +145,12 @@ status: hidden
         },
         {
             'q': "What's the market data approach in real estate that Shovels supports?",
-            'a': "Shovels enables a permit-first market data approach in real estate: instead of analyzing closed sales or price trends (lagging data), users identify development momentum from permit filings the moment they're recorded. This gives investors, developers, and data platforms a months-long head start on where capital is flowing and which neighborhoods are on the move.",
+            'a': "Shovels enables a permit-first market data approach in real estate: instead of analyzing closed sales or price trends (lagging data), users spot up-and-coming neighborhoods from permit filings the moment they're recorded. This gives investors, developers, and data platforms a months-long head start on where capital is flowing and which neighborhoods are on the move.",
         },
     ]) }}
 
 {{ ui_cta.final_cta(
     wrapper_class='!pt-[4.8rem]',
     heading='Ready to track development before it shows up in listings?',
-    description='See how Shovels gives real estate teams the permit and decisions intelligence to move earlier than the market.',
+    description='See how Shovels gives real estate teams the permit and Decisions intelligence to move earlier than the market.',
     cta_label='Get Started') }}
