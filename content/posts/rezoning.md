@@ -36,8 +36,8 @@ Rezoning changes that classification. A landowner, developer, or in some cases a
 
 It's worth distinguishing rezoning from two related concepts:
 
-- **A variance** is an exception to existing zoning rules without changing the underlying classification. If your lot's setback requirement is 20 feet and you want to build 15 feet from the property line, you'd apply for a variance, not a rezone.
-- **A special use permit** (sometimes called a conditional use permit) allows a specific use that isn't permitted by right under the current zoning, but without changing the designation itself. For example, a church in a residential zone might require a special use permit rather than a full rezone.
+- **A <a href="https://www.shovels.ai/blog/zoning-variance/" target="_blank">variance</a>** is an exception to existing zoning rules without changing the underlying classification. If your lot's setback requirement is 20 feet and you want to build 15 feet from the property line, you'd apply for a variance, not a rezone.
+- **A special use permit** (sometimes called a <a href="https://www.shovels.ai/blog/conditional-use-permit/" target="_blank">conditional use permit</a>) allows a specific use that isn't permitted by right under the current zoning, but without changing the designation itself. For example, a church in a residential zone might require a special use permit rather than a full rezone.
 
 Rezoning, by contrast, changes the rules that apply to a parcel going forward, for all future owners and uses.
 

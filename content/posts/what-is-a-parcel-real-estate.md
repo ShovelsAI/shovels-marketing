@@ -47,14 +47,14 @@ Each parcel also has a GIS boundary polygon stored in the county's mapping syste
 
 ## Parcel Boundaries and Parcel Maps
 
-Parcel maps are visual representations of these GIS boundaries. They show exactly where one parcel ends and another begins. County assessors publish these maps through their GIS portals, but formats and update schedules differ widely.
+<a href="https://www.shovels.ai/blog/what-is-a-parcel-map/" target="_blank">Parcel maps</a> are visual representations of these GIS boundaries. They show exactly where one parcel ends and another begins. County assessors publish these maps through their GIS portals, but formats and update schedules differ widely.
 
 ![Example of a parcel map from San Diego Geographic Information Source]({static}/images/blog_images/what-is-a-parcel-real-estate-parcel-map.png)
 *Example of a parcel map from <a href="https://www.sangis.org/" target="_blank">San Diego Geographic Information Source</a>.*
 
 Because every county manages its own data, working with parcel information at a national scale can be difficult. Providers like <a href="https://regrid.com/" target="_blank">Regrid</a> solve this by collecting parcel data from thousands of jurisdictions, standardizing the fields, and assigning stable identifiers that remain consistent even when county-issued APNs change. This is especially useful when you need to track a property over time across multiple datasets.
 
-One thing worth knowing: parcel boundaries in consumer mapping tools like Google Maps or Google Earth are often approximate or missing entirely. For legal or analytical work, the authoritative source is the county GIS portal or a specialized parcel data provider.
+One thing worth knowing: parcel boundaries in consumer mapping tools like Google Maps or Google Earth are often approximate or missing entirely. For legal or analytical work, the authoritative source is the county GIS portal or a specialized <a href="https://www.shovels.ai/blog/what-is-parcel-data/" target="_blank">parcel data provider</a>.
 
 ## How Parcels Connect to Building Permits
 

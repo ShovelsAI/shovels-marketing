@@ -46,7 +46,7 @@ Entitlement is an umbrella term covering whatever approvals a project needs. Dep
 
 - **Rezoning.** Changing the property's zoning district if the intended use isn't allowed. The <a href="https://www.shovels.ai/blog/rezoning/" target="_blank">rezoning process</a> is itself a public approval.
 - **Conditional use permits.** Securing a <a href="https://www.shovels.ai/blog/conditional-use-permit/" target="_blank">conditional use permit</a> for a use that is allowed conditionally rather than by right.
-- **Variances.** Relief from dimensional standards like setbacks, height, or density.
+- **<a href="https://www.shovels.ai/blog/zoning-variance/" target="_blank">Variances</a>.** Relief from dimensional standards like setbacks, height, or density.
 - **Subdivision or lot line adjustments.** Dividing or reconfiguring <a href="https://www.shovels.ai/blog/what-is-a-parcel-real-estate/" target="_blank">parcels</a>.
 - **Site plan and design review.** Approval of the project's layout, access, parking, and appearance.
 - **Environmental review.** Studies and approvals required under state or local environmental law.

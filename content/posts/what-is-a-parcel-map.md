@@ -45,7 +45,7 @@ A standard parcel map includes several core elements.
 ![Parcel boundaries on a parcel map of San Bernardino County]({static}/images/blog_images/what-is-a-parcel-map-san-bernardino-boundaries.png)
 *Parcel boundaries on a parcel map of San Bernardino County. Source: <a href="https://open.sbcounty.gov/" target="_blank">San Bernardino County Open Portal</a>*
 
-**Assessor Parcel Numbers (APNs)** are labeled on or adjacent to each parcel. The APN is the unique identifier that connects the parcel to tax records, building permits, title documents, and ownership history. It's the key field for joining parcel data to any other property dataset.
+**Assessor Parcel Numbers (APNs)** are labeled on or adjacent to each parcel. The APN is the unique identifier that connects the parcel to tax records, building permits, title documents, and ownership history. It's the key field for joining <a href="https://www.shovels.ai/blog/what-is-parcel-data/" target="_blank">parcel data</a> to any other property dataset.
 
 **Dimensions and area** are typically shown for each parcel, either directly on the map or in an accompanying data table. These reflect legal dimensions, not necessarily what you'd measure on the ground.
 

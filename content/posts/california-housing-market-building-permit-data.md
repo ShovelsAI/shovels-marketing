@@ -269,7 +269,7 @@ A California home today looks different than it did five years ago, not in layou
 
 ### The NEM 3.0 Effect on California Solar Permits
 
-Solar was the defining feature of a new California home for years, and a strong economic decision. Historically, the state's Net Energy Metering policy let homeowners sell excess solar power back to the grid at near-retail rates, bringing payback periods down to six years or less in many cases.
+Solar was the defining feature of a new California home for years, and a strong economic decision. Historically, the state's <a href="https://www.shovels.ai/blog/energy-policies-changing-california-home/" target="_blank">Net Energy Metering policy</a> let homeowners sell excess solar power back to the grid at near-retail rates, bringing payback periods down to six years or less in many cases.
 
 Policy, however, shifted in the last five years. The California Public Utilities Commission <a href="https://www.energysage.com/blog/net-metering-3-0/" target="_blank">replaced that structure with Net Energy Metering (NEM) 3.0 in April 2023</a>, cutting export rates by roughly 75%. Payback periods effectively doubled overnight. The policy was designed to make the grid more efficient. Its side effect was gutting rooftop solar's value proposition for the typical homeowner.
 
