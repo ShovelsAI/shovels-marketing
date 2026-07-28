@@ -46,7 +46,7 @@ APN formats vary by county, but most follow a numeric pattern based on how the c
 - **12-34-567-890-1234** (longer hyphenated format used in some Midwest counties)
 - **1234567890** (flat numeric string with no separators)
 
-Many counties encode geographic information into the number itself. In Los Angeles County, for example, the APN reflects the map book, page, and parcel position within that page. In other counties, the format is purely sequential. There's no national standard, which is one reason working with parcel data across county lines gets complicated quickly.
+Many counties encode geographic information into the number itself. In Los Angeles County, for example, the APN reflects the map book, page, and parcel position within that page. In other counties, the format is purely sequential. There's no national standard, which is one reason working with <a href="https://www.shovels.ai/blog/what-is-parcel-data/" target="_blank">parcel data</a> across county lines gets complicated quickly.
 
 What matters practically: the APN is unique within a county and stable over time (barring physical parcel changes), making it the most reliable identifier for a specific piece of land.
 

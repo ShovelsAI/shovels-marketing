@@ -62,7 +62,7 @@ These two get confused often, but they solve different problems.
 
 A conditional use permit is about how land is used. It allows a use the code already contemplates as conditional, subject to conditions. The use itself is the question.
 
-A variance is about the physical rules of development. It grants relief from a dimensional standard like a setback, height limit, or lot coverage when strict application would create a hardship. The structure, not the use, is what's being decided.
+A <a href="https://www.shovels.ai/blog/zoning-variance/" target="_blank">variance</a> is about the physical rules of development. It grants relief from a dimensional standard like a setback, height limit, or lot coverage when strict application would create a hardship. The structure, not the use, is what's being decided.
 
 In short: a CUP changes what you can do on the land, while a variance changes how you can build on it. A project occasionally needs both.
 
