@@ -353,6 +353,8 @@ hero(h1, description, illustration_src, illustration_alt,
      cta_href='https://app.shovels.ai/signup/',
      illustration_position='right',
      eyebrow=None,
+     media=None, bg_src=None,
+     secondary_cta_label=None, secondary_cta_href=None,
      wrapper_class='')
 ```
 
@@ -368,6 +370,10 @@ hero(h1, description, illustration_src, illustration_alt,
 | `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination. Canonical signup URL, shared with `final_cta` |
 | `illustration_position` | `'right'` | `'right'` or `'left'` |
 | `eyebrow` | `None` | Optional small uppercase chip above the H1 (e.g. `'Shovels Online'`). Off by default so industry pages are unchanged; Solutions pages pass a product label |
+| `media` | `None` | Pre-rendered HTML for the illustration column, captured with `{% set … %}…{% endset %}` (e.g. a coded `code_window`). When present it replaces `illustration_src` and the TBD placeholder — used by the CLI page to show a terminal instead of an SVG |
+| `bg_src` | `None` | Optional decorative background image behind the illustration column (absolutely positioned, faded, `aria-hidden`). Paired with `media` on the CLI page |
+| `secondary_cta_label` | `None` | Optional second CTA beside the primary button, in an outlined/ghost style. Omit for a single CTA. Used on the CLI, data, and GIS pages |
+| `secondary_cta_href` | `None` | Destination for the secondary CTA (only meaningful when `secondary_cta_label` is set) |
 | `wrapper_class` | `''` | Extra classes on the outer `<section>` (spacing overrides) |
 
 #### Example
