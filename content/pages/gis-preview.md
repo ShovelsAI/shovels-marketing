@@ -161,8 +161,8 @@ status: hidden
           ('3', 'Add them to your map', 'Load the layers into ArcGIS or QGIS and start analyzing. Updates ship automatically twice a month.', 'Shovels permit data rendered as a live, auto-updated layer on a web map', 'map-layer'),
       ] %}
       <div class="flex items-stretch gap-5 md:gap-6">
-        <div class="relative flex w-10 shrink-0 flex-col items-center pt-1">
-          {% if not loop.last %}<span class="absolute left-1/2 top-6 -bottom-12 w-0.5 -translate-x-1/2 bg-gray-200" aria-hidden="true"></span>{% endif %}
+        <div class="relative flex w-10 shrink-0 flex-col items-center justify-center">
+          {% if not loop.last %}<span class="absolute left-1/2 top-1/2 -bottom-[calc(50%_+_1.5rem)] w-0.5 -translate-x-1/2 bg-gray-200" aria-hidden="true"></span>{% endif %}
           <span class="relative z-10 flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ num }}</span>
         </div>
         <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -171,7 +171,7 @@ status: hidden
               <h3 class="text-xl font-medium text-gray-900">{{ title }}</h3>
               <p class="mt-2 text-base text-gray-500">{{ desc }}</p>
             </div>
-            <img src="/images/features/gis/{{ img }}.svg" alt="{{ imgnote }}" class="w-full h-auto rounded-xl border border-gray-200">
+            <img src="/images/features/gis/{{ img }}.svg" alt="{{ imgnote }}" class="w-full h-auto rounded-xl">
           </div>
         </div>
       </div>
