@@ -117,8 +117,8 @@ status: hidden
                 'Pair with Shovels Permits for the complete picture',
                 'Query both from the same API',
             ],
-            'image_src': '',
-            'image_alt': 'NEW illustration: decision → permit → completion lifecycle timeline',
+            'image_src': '/images/data/decisions/uc4.svg',
+            'image_alt': 'Project lifecycle timeline from decision to permit to completion',
             'framed': False,
         },
     ]) }}
