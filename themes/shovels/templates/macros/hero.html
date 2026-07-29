@@ -5,7 +5,10 @@
        cta_label='Get started',
        cta_href='https://app.shovels.ai/signup/',
        illustration_position='right',
-       eyebrow=None)
+       eyebrow=None,
+       media=None, bg_src=None,
+       secondary_cta_label=None, secondary_cta_href=None,
+       wrapper_class='')
 
   Renders an H1, lead paragraph, primary CTA button, and a side-by-side
   illustration. The text column and illustration column are equal width
@@ -26,6 +29,21 @@
   eyebrow              : Optional small uppercase chip above the H1. Off by
                          default (industry pages render no eyebrow). Solutions
                          pages pass a product label, e.g. 'Shovels Online'.
+  media                : Pre-rendered HTML for the illustration column,
+                         captured with {% set … %}…{% endset %} (e.g. a coded
+                         code_window). When present it replaces illustration_src
+                         and the TBD placeholder — used by the CLI page to show
+                         a terminal instead of an SVG.
+  bg_src               : Optional decorative background image behind the
+                         illustration column (absolutely positioned, faded,
+                         aria-hidden). Paired with media on the CLI page.
+  secondary_cta_label  : Optional second CTA beside the primary button, in an
+                         outlined/ghost style. Omit for a single CTA. Used on
+                         the CLI, data, and GIS pages.
+  secondary_cta_href   : Destination for the secondary CTA (only meaningful
+                         when secondary_cta_label is set).
+  wrapper_class        : Extra classes on the outer <section> (spacing
+                         overrides).
 
   Example
   -------
