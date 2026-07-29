@@ -102,8 +102,9 @@ status: hidden
                 'Match your address lists via the API',
                 'Combine with permit history for full context on every address',
             ],
-            'image_src': '/images/data/residents/UC3.svg',
+            'image_src': '/images/data/residents/uc3.svg',
             'image_alt': 'Shovels API console showing an address enrichment call',
+            'framed': False,
         },
     ]) }}
 
