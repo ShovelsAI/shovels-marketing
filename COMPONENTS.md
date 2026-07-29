@@ -352,7 +352,8 @@ hero(h1, description, illustration_src, illustration_alt,
      cta_label='Get started',
      cta_href='https://app.shovels.ai/signup/',
      illustration_position='right',
-     eyebrow=None)
+     eyebrow=None,
+     wrapper_class='')
 ```
 
 #### Parameters
@@ -367,6 +368,7 @@ hero(h1, description, illustration_src, illustration_alt,
 | `cta_href` | `'https://app.shovels.ai/signup/'` | Button destination. Canonical signup URL, shared with `final_cta` |
 | `illustration_position` | `'right'` | `'right'` or `'left'` |
 | `eyebrow` | `None` | Optional small uppercase chip above the H1 (e.g. `'Shovels Online'`). Off by default so industry pages are unchanged; Solutions pages pass a product label |
+| `wrapper_class` | `''` | Extra classes on the outer `<section>` (spacing overrides) |
 
 #### Example
 
@@ -454,7 +456,7 @@ two-column rows (text/image) for each use case.
 #### Signature
 
 ```jinja
-use_case_section(eyebrow, heading, cases, intro=None)
+use_case_section(eyebrow, heading, cases, intro=None, wrapper_class='')
 ```
 
 #### Parameters
@@ -465,6 +467,7 @@ use_case_section(eyebrow, heading, cases, intro=None)
 | `heading` | string | The section H2 |
 | `cases` | list of dicts | One entry per use case, see structure below |
 | `intro` | string (optional) | Lead paragraph below the heading |
+| `wrapper_class` | string (optional) | Extra classes on the outer `<section>` (spacing overrides) |
 
 #### Each case dict
 
@@ -568,7 +571,7 @@ the schema to surface Shovels content in answer-style results.
 #### Signature
 
 ```jinja
-faq_section(heading, items, intro=None)
+faq_section(heading, items, intro=None, wrapper_class='')
 ```
 
 #### Parameters
@@ -578,6 +581,7 @@ faq_section(heading, items, intro=None)
 | `heading` | string | Section H2 |
 | `items` | list of dicts | One entry per question, see below |
 | `intro` | string (optional) | Short paragraph below the heading |
+| `wrapper_class` | string (optional) | Extra classes on the outer `<section>` (spacing overrides) |
 
 #### Each item dict
 
@@ -825,7 +829,8 @@ Shovels API" cross-sell (green).
 
 ```jinja
 callout(heading, body, cta_label, cta_href,
-        variant='green', media_src=None, media_alt='')
+        variant='green', media_src=None, media_alt='',
+        wrapper_class='')
 ```
 
 #### Parameters
@@ -839,6 +844,7 @@ callout(heading, body, cta_label, cta_href,
 | `variant` | `'green'` | `'green'` (shovels-primary band, white text, white button), `'warm'` (brand cream `#E9E1CE` band, dark text, green button — the Shovels Online "Just ask Charlie" and API CLI cross-sell callouts), or `'dark'` (gray-900 band, white text, green button — defined but currently unused) |
 | `media_src` | `None` | Optional image left of the text (e.g. the Charlie avatar, which is already circular). Omit for no media |
 | `media_alt` | `''` | Alt text for `media_src` |
+| `wrapper_class` | `''` | Extra classes on the outer `<section>` (spacing overrides) |
 
 #### Example
 
@@ -1216,7 +1222,8 @@ gradient). Reusable across all five data pages.
 ```
 record_fields(heading, fields, description=None,
               illustration_src=None, illustration_alt='',
-              cta_label=None, cta_href='#', anchor='')
+              cta_label=None, cta_href='#', anchor='',
+              wrapper_class='')
 ```
 
 `fields` is a list of `{name, description}` dicts; `name` renders
