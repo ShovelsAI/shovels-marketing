@@ -2,7 +2,7 @@ title: How Thumbtack Uses Shovels to Streamline Contractor License Verification
 subtitle: Inside Thumbtack's partnership with Shovels to verify contractor licenses at marketplace scale
 date: 2026-07-28
 modified: 2026-07-28
-category: Customer Success
+category: Case Study
 tag1: EDL
 tag2: Home Services
 tags: thumbtack, contractor license verification, CSL, contractor data, home services marketplace
