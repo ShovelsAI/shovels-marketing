@@ -884,11 +884,11 @@ callout(heading, body, cta_label, cta_href,
 **Location**: `themes/shovels/templates/macros/how_it_works.html`
 
 Eyebrow + heading + a numbered step row: N circular badges sit on a
-single horizontal connecting line that fades out at both ends (behind the
-first and last badges), each with an icon/title/description card under it,
-stacking on mobile. Step numbers render zero-padded (01, 02, …). Built for
-the Solutions pages ("From search to export in three steps") and the data
-pages (4-step pipelines).
+single horizontal connecting line that spans the full width of the card
+row below and fades out at both ends, each with an icon/title/description
+card under it, stacking on mobile. Step numbers render zero-padded (01,
+02, …). Built for the Solutions pages ("From search to export in three
+steps") and the data pages (4-step pipelines).
 
 #### Signature
 

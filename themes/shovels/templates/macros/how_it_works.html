@@ -60,14 +60,12 @@
        pages) go 4-across on desktop, the 3-step Solutions flows stay
        3-across. Literal classes so Tailwind compiles both. #}
     {% set _cols = 'md:grid-cols-4' if steps | length == 4 else 'md:grid-cols-3' %}
-    {# Inset = half a column (50% / step count) so the fade lands right at
-       the first and last badge centers. Literal per count so Tailwind
-       compiles both. #}
-    {% set _line_inset = 'md:left-[12.5%] md:right-[12.5%]' if steps | length == 4 else 'md:left-[16.6667%] md:right-[16.6667%]' %}
     <div class="relative mt-16">
-      {# Single connecting line: gray in the middle, transparent at both ends,
-         sitting behind the badges (desktop only). #}
-      <span class="pointer-events-none absolute top-6 z-0 hidden h-0.5 bg-gradient-to-r from-transparent via-gray-200 to-transparent md:block {{ _line_inset }}" aria-hidden="true"></span>
+      {# Single connecting line spanning the full width of the card row below
+         (left-0 right-0). Solid gray-200 across the steps, fading to
+         transparent in the outer 10% so it tapers off near the first and
+         last card edges. Sits behind the badges; desktop only. #}
+      <span class="pointer-events-none absolute left-0 right-0 top-6 z-0 hidden h-0.5 bg-[linear-gradient(to_right,transparent,#e5e7eb_10%,#e5e7eb_90%,transparent)] md:block" aria-hidden="true"></span>
       <ol class="grid grid-cols-1 gap-12 {{ _cols }} md:gap-8">
         {% for step in steps %}
         <li class="relative flex flex-col items-center text-center">
