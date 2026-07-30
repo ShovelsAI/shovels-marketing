@@ -883,10 +883,12 @@ callout(heading, body, cta_label, cta_href,
 
 **Location**: `themes/shovels/templates/macros/how_it_works.html`
 
-Eyebrow + heading + a numbered step row: N badges on a connecting line
-(desktop) with an icon/title/description card under each, stacking on
-mobile. Built for the Solutions pages ("From search to export in three
-steps").
+Eyebrow + heading + a numbered step row: N circular badges sit on a
+single horizontal connecting line that fades out at both ends (behind the
+first and last badges), each with an icon/title/description card under it,
+stacking on mobile. Step numbers render zero-padded (01, 02, …). Built for
+the Solutions pages ("From search to export in three steps") and the data
+pages (4-step pipelines).
 
 #### Signature
 
@@ -900,7 +902,7 @@ how_it_works(eyebrow, heading, steps, anchor='how-it-works')
 |---|---|---|
 | `eyebrow` | _required_ | Small uppercase chip above the heading |
 | `heading` | _required_ | Section H2 |
-| `steps` | _required_ | List of dicts: `number`, `title`, `description`, and either `image` (an illustration src, e.g. an SVG in `images/illustrations/`) or `icon` (a glyph macro name from `icons.html`) |
+| `steps` | _required_ | List of dicts: `number` (rendered zero-padded, e.g. `'1'` → `01`), `title`, `description`, and either `image` (an illustration src, e.g. an SVG in `images/illustrations/`) or `icon` (a glyph macro name from `icons.html`) |
 | `anchor` | `'how-it-works'` | `id` on the `<section>` so in-page links (e.g. a hero "See how it works" CTA) can target it |
 
 #### Example
