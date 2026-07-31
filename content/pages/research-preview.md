@@ -1,5 +1,5 @@
 Title: Building Permit Data for Academic Research
-Description: Building permit data for academic research. {{ STATS.permits }} AI-classified permits across 20,000+ U.S. jurisdictions, with academic pricing and flexible data delivery.
+Description: Building permit data for academic research. {{ STATS.permits }} AI-classified permits across {{ STATS.jurisdictions }} U.S. jurisdictions, with academic pricing and flexible data delivery.
 slug: research-preview
 status: hidden
 
@@ -133,7 +133,7 @@ status: hidden
     items=[
         {
             'q': 'What building permit data does Shovels provide for academic research?',
-            'a': 'Shovels provides more than 130 million geocoded building permits from 20,000+ U.S. jurisdictions, each AI-classified by project type and linked to contractor and property records. Researchers use it to study housing production, electrification, permitting policy, disaster recovery, and construction markets.',
+            'a': 'Shovels provides ' ~ STATS.permits ~ ' geocoded building permits from ' ~ STATS.jurisdictions ~ ' U.S. jurisdictions, each AI-classified by project type and linked to contractor and property records. Researchers use it to study housing production, electrification, permitting policy, disaster recovery, and construction markets.',
         },
         {
             'q': 'Does Shovels offer academic pricing?',

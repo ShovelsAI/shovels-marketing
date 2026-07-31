@@ -127,7 +127,7 @@ status: hidden
         },
         {
             'q': 'How does Shovels handle permit status updates?',
-            'a': 'Shovels refreshes permit data twice monthly across 5,000+ jurisdictions and tracks status changes via changelog. Your platform always has current permit status without polling individual jurisdictions.',
+            'a': 'Shovels refreshes permit data twice monthly across ' ~ STATS.jurisdictions ~ ' jurisdictions and tracks status changes via changelog. Your platform always has current permit status without polling individual jurisdictions.',
         },
         {
             'q': 'Can Shovels data power contractor verification in our product?',
