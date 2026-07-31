@@ -5,7 +5,7 @@ modified: 2025-11-17
 category: Data
 tag1: Natural Disaster
 tag2:
-tags: data, hurricane, permits
+tags: data, hurricane, permits, Insurance
 authors: Morgan Friberg
 author_image: /theme/images/team/morgan.svg
 author_title: Head of Marketing
