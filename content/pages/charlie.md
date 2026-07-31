@@ -21,7 +21,7 @@ slug: charlie
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your personal AI research assistant for the Shovels data network. No training required, no software to install. Just point Charlie at what you need, and watch her work.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://charlie.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Start Digging</a>
+          <a href="https://charlie.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Start Digging</a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -290,7 +290,7 @@ slug: charlie
       <div>
         <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Ready to put Charlie to work?</h2>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://charlie.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+          <a href="https://charlie.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
         </div>
       </div>
       <img src="{static}/images/shovels-Charlie-pose4.svg" alt="Charlie ready to help" class="w-48 lg:w-64 flex-shrink-0">

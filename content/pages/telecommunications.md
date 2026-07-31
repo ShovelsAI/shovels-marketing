@@ -21,7 +21,7 @@ slug: telecommunications
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Pinpoint permit filings for fiber, 5G, data centers, and utility infrastructure—across {{ STATS.jurisdictions }} jurisdictions, covering 85% of the U.S. population.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
+          <a href="{filename}contact.md" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
           <a href="https://www.canva.com/design/DAGuqAlsqoo/ouuYHQIhNiHhqmC5vIgPHw/view?utm_content=DAGuqAlsqoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc015198fc0" class="text-sm/6 font-semibold text-gray-900" target="_blank">Telecom One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
@@ -326,7 +326,7 @@ slug: telecommunications
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
+      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
       <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
     </div>
   </div>

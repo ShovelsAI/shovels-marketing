@@ -22,7 +22,7 @@ slug: cli
         <h1 class="max-w-xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Construction data from your terminal</h1>
         <p class="mt-6 max-w-xl text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI agent's gateway to U.S. construction data.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
+          <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
           <a href="https://github.com/ShovelsAI/shovels-cli" class="text-sm/6 font-semibold text-gray-900">View on GitHub <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
@@ -381,7 +381,7 @@ slug: cli
         </div>
       </div>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
+        <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
         <a href="https://github.com/ShovelsAI/shovels-cli" class="text-sm/6 font-semibold text-gray-900">GitHub <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>

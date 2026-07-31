@@ -21,7 +21,7 @@ slug: gis
       <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
         <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Shovels feeds live, AI-powered building permit data directly into your Esri ArcGIS platform.</p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a><a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-sm/6 font-semibold text-gray-900" target="_blank">ArcGIS Web Map<span aria-hidden="true">&rarr;</span></a>
+          <a href="/contact" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a><a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-sm/6 font-semibold text-gray-900" target="_blank">ArcGIS Web Map<span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
@@ -241,7 +241,7 @@ slug: gis
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our geospatial building permit intelligence now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
+      <a href="/contact" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
     </div>
   </div>
 </div>
