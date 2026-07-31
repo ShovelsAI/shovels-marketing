@@ -5,7 +5,7 @@ modified: 2026-04-15
 category: Data
 tag1: California Housing
 tag2: Real Estate
-tags: California housing market, ADU, new construction, Los Angeles housing market, Bay Area real estate, homebuilders
+tags: California housing market, ADU, new construction, Los Angeles housing market, Bay Area real estate, homebuilders, Building Materials
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg
 author_title: Senior Marketing Manager
