@@ -37,6 +37,15 @@ That added layer is what makes working across states practical. Thumbtack can pu
 
 This data supports Thumbtack's streamlined badging workflow. Thumbtack cross-references professionals against Shovels license data as part of its verification process, and when a pro meets Thumbtack's verification criteria, Thumbtack awards them a "license verified" badge. In some cases, this happens without the pro needing to manually enter license details, removing a step that would otherwise slow down onboarding.
 
+<figure class="my-10 rounded-2xl bg-shovels-light px-8 py-8 sm:px-12 sm:py-10">
+  <div aria-hidden="true" class="font-serif text-7xl leading-none text-shovels-secondary-text">&ldquo;</div>
+  <p class="text-xl sm:text-2xl font-medium leading-relaxed text-shovels-dark" style="margin-top:-1.75rem">Trust is everything for our marketplace. Shovels gives our team reliable, consistently structured licensing data to work from, which makes it easier to support pros as they get up and running.</p>
+  <figcaption class="mt-6">
+    <div class="font-semibold text-shovels-primary">Carmen Rombough</div>
+    <div class="text-sm text-gray-600">Senior Manager, Risk Analytics, Thumbtack</div>
+  </figcaption>
+</figure>
+
 In short, Shovels data serves as an early layer of checking. Thumbtack's team reviews, quality-assures, and continuously refines how the data is applied, and Thumbtack's own verification standards determine the outcome.
 
 ## The Results
@@ -49,6 +58,6 @@ Here's what's on the horizon for the partnership:
 - **Growth beyond licensing.** With data refreshes delivered twice monthly (and weekly updates on the roadmap), Thumbtack is exploring new ways to use permit data. Contractors appearing repeatedly across jurisdictions are often indicators of larger, more established businesses. Permit activity helps identify these active, established contractors and can serve as an additional trust signal.
 - **A long-term investment.** Thumbtack extended the partnership into a multi-year agreement, signaling that Shovels had become foundational infrastructure.
 
-For Thumbtack, working with Shovels delivers more than operational efficiency. It supports homeowner confidence and makes it easier for legitimate contractors to get up and running. This is what trust at marketplace scale looks like.
+For Thumbtack, working with Shovels delivers more than operational efficiency. It supports homeowner confidence and removes friction for legitimate contractors joining the marketplace. This is what trust at marketplace scale looks like.
 
 > Shovels combines building permit and contractor data with local government decisions to help you verify licenses and identify growth opportunities. <a href="https://www.shovels.ai/contact" target="_blank">Talk to us directly about a custom solution</a>.
