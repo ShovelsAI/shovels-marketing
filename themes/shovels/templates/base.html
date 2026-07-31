@@ -73,7 +73,7 @@
 
   <!-- Social meta tags -->
   <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}" />
-  <meta property="og:url" content="{{ SITEURL }}{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
+  <meta property="og:url" content="{{ SITEURL }}/{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
   <meta property="og:site_name" content="Shovels" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}" />
