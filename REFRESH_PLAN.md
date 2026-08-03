@@ -128,8 +128,9 @@ current footer's "Company" column.)
 ### Net-new pages (right rail — own cadence)
 Map Gallery (built behind `features/gis/gallery-preview` — six live
 Esri ArcGIS embeds; the GIS hero's secondary CTA target), Brand,
-Partners, Pricing (tentative). Build behind `hidden`; launch
-independently.
+Partners, Pricing. Build behind `hidden`. Most launch independently,
+but **Pricing is built (`pricing-preview`) and coupled to the main
+launch** — the refreshed header/footer now link to `/pricing`.
 
 ---
 
@@ -192,7 +193,10 @@ verified-signatures rule. Without it, nothing ships. (Review:
    (`brand-preview` → `/brand`, net-new — no legacy file to delete). The
    Brand page has no legacy chrome fallback, so its promotion must ship
    coupled with the chrome un-gate (step 3) or `/brand` renders with the
-   old header/footer and loses its own footer link.
+   old header/footer and loses its own footer link. Promote Pricing
+   (`pricing-preview` → `/pricing`, net-new — no legacy file); the
+   refreshed header + footer now link to `/pricing`, so it **must** ship
+   in this same flip or those links 404 on the live site.
 2. **Homepage**: move preview content into theme `index.html` (reconcile
    `STATS`/helper globals + the `dates` vs `get_recent_articles` blog loop).
 3. **Un-gate chrome**: promote `footer-refresh`/`header-refresh` → global
@@ -469,6 +473,8 @@ placeholders remain on any preview page.
       remove `status: hidden`, delete legacy file (climate, real-estate,
       building-materials, software, home-services, telecommunications)
 - [ ] Insurance + Research promoted to `/insurance`, `/research`
+- [ ] Pricing promoted (`pricing-preview` → `/pricing`, net-new) —
+      required in the flip since the header/footer now link `/pricing`
 - [ ] Homepage: preview content moved into theme `index.html`
       (reconcile `STATS`/helper globals + the `dates` blog loop vs.
       `get_recent_articles`)
