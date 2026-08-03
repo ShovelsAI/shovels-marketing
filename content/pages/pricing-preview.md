@@ -125,7 +125,7 @@ status: hidden
 {% endmacro %}
 {% set ns = namespace(total=0) %}
 {% for g in compare %}{% for r in g.rows %}{% set ns.total = ns.total + 1 %}{% endfor %}{% endfor %}
-<section id="compare" class="w-full bg-white px-6 py-24 md:px-10">
+<section id="compare" class="w-full bg-white px-6 pb-24 md:px-10">
   <div class="mx-auto max-w-6xl">
     <div class="mx-auto max-w-3xl text-center">
       <h2 class="text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Compare every plan</h2>
