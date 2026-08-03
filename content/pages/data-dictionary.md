@@ -18,7 +18,7 @@ open_graph_image: /images/shovels-data-dictionary.png
 <div class="relative isolate overflow-hidden border-b border-gray-200">
   <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
     <h1 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Data Dictionary</h1>
-    <p class="mt-2 text-sm text-gray-600">Complete field definitions for Shovels datasets including permits, contractors, residents, decisions, and enhanced property data.</p>
+    <p class="mt-2 text-sm text-gray-600">Complete field definitions for Shovels datasets including permits, contractors, residents, decisions, and property data.</p>
   </div>
 </div>
 
@@ -34,7 +34,7 @@ open_graph_image: /images/shovels-data-dictionary.png
         <button onclick="switchTab('employees')" id="tab-employees" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Contractor Employees</button>
         <button onclick="switchTab('decisions')" id="tab-decisions" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Decisions</button>
         <button onclick="switchTab('residents')" id="tab-residents" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Residents</button>
-        <button onclick="switchTab('properties')" id="tab-properties" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Enhanced Properties</button>
+        <button onclick="switchTab('properties')" id="tab-properties" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Properties</button>
       </nav>
       </div>
     </div>
