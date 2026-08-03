@@ -28,13 +28,13 @@ open_graph_image: /images/shovels-data-dictionary.png
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <nav class="-mb-px flex space-x-8 overflow-x-auto" aria-label="Tabs">
         <button onclick="switchTab('permits')" id="tab-permits" class="tab-button border-b-4 border-shovels-primary text-shovels-primary font-bold py-4 px-1 text-sm whitespace-nowrap">Permits</button>
+        <button onclick="switchTab('permit-categories')" id="tab-permit-categories" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Permit Categories</button>
         <button onclick="switchTab('properties')" id="tab-properties" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Properties</button>
         <button onclick="switchTab('decisions')" id="tab-decisions" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Decisions</button>
         <button onclick="switchTab('contractors')" id="tab-contractors" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Contractors</button>
         <button onclick="switchTab('csl')" id="tab-csl" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Contractor State License</button>
         <button onclick="switchTab('employees')" id="tab-employees" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Contractor Employees</button>
         <button onclick="switchTab('residents')" id="tab-residents" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Residents</button>
-        <button onclick="switchTab('permit-categories')" id="tab-permit-categories" class="tab-button border-b-4 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 py-4 px-1 text-sm font-medium whitespace-nowrap">Permit Categories</button>
       </nav>
       </div>
     </div>
@@ -216,6 +216,45 @@ open_graph_image: /images/shovels-data-dictionary.png
           </tbody>
         </table>
       </div>
+      </div>
+    </div>
+
+    <!-- Permit Categories Section -->
+    <div id="content-permit-categories" class="tab-content hidden">
+      <div class="overflow-x-auto shadow-sm ring-1 ring-gray-300 rounded-lg">
+        <table class="min-w-full divide-y divide-gray-300">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="w-[25%] py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 uppercase sm:pl-6">Category</th>
+              <th scope="col" class="w-[75%] px-3 py-3.5 text-left text-sm font-semibold text-gray-900 uppercase">Description</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ADDITION</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Increase in square footage of an existing property.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ADU</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Construction of a secondary living unit on a residential property.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">BATHROOM</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Any work on bathroom facilities or utilities.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">BATTERY</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Battery systems related to sustainability projects.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">DEMOLITION</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Removal or destruction of an existing structure or part of a structure.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ELECTRIC_METER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Permit explicitly for new or replaced electric meter.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ELECTRICAL</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Includes electrical work. Subtags: EV_CHARGER, SOLAR, BATTERY, ELECTRIC_METER</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">EV_CHARGER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation of an electric vehicle charging system.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">FIRE_SPRINKLER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, repair or maintenance of a fire sprinkler</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">GAS</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, repair, or maintenance of gas lines, meters, appliances, or gas-related systems.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">GENERATOR</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a generator.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">GRADING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Construction work that includes leveling or reshaping terrain to prepare a site for building.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">HEAT_PUMP</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a heat pump system.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">HVAC</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Heating, ventilation, and air conditioning systems. Subtag: HEAT_PUMP</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">KITCHEN</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Any work on kitchen facilities or utilities.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">NEW_CONSTRUCTION</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Building entirely new homes or buildings. Examples: new office building, new single-family dwelling (SFD), new warehouse construction.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">PLUMBING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Plumbing work including installation, repair, or maintenance of piping, fixtures, and systems. Subtag: WATER_HEATER</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">POOL_AND_HOT_TUB</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Construction, installation, or repair of swimming pools, hot tubs, or spas.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">REMODEL</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Improve property aesthetic or functionality but without structural changes or expansions</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ROOFING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, replacement, or repair of a roof.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">SOLAR</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation of solar photovoltaic or solar thermal systems.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">TELECOM</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Telecom-related work including fiber, phone/cable drops, utility ROW installs, cell towers, small cells, 5G, antennas, cable installation, conduit, trenching, boring, and related infrastructure.</td></tr>
+ <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">WATER_HEATER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a water heater.</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -911,45 +950,6 @@ open_graph_image: /images/shovels-data-dictionary.png
  <tr><td class="py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">COMPANY_DESCRIPTION</td><td class="px-3 py-4 text-sm text-gray-700">Brief description of the company's activities</td><td class="px-3 py-4 text-sm"><span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">String</span></td><td class="px-3 py-4 text-sm text-gray-500">Enhanced by Shovels</td></tr>
  <tr><td class="py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">COMPANY_NAICS</td><td class="px-3 py-4 text-sm text-gray-700">North American Industry Classification System code</td><td class="px-3 py-4 text-sm"><span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">String</span></td><td class="px-3 py-4 text-sm text-gray-500">Enhanced by Shovels</td></tr>
  <tr><td class="py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ADDRESS_ID</td><td class="px-3 py-4 text-sm text-gray-700">Unique Shovels GEO_ID for the residential address</td><td class="px-3 py-4 text-sm"><span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">String</span></td><td class="px-3 py-4 text-sm text-gray-500">Created by Shovels</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Permit Categories Section -->
-    <div id="content-permit-categories" class="tab-content hidden">
-      <div class="overflow-x-auto shadow-sm ring-1 ring-gray-300 rounded-lg">
-        <table class="min-w-full divide-y divide-gray-300">
-          <thead class="bg-gray-50">
-            <tr>
-              <th scope="col" class="w-[25%] py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 uppercase sm:pl-6">Category</th>
-              <th scope="col" class="w-[75%] px-3 py-3.5 text-left text-sm font-semibold text-gray-900 uppercase">Description</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200">
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ADDITION</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Increase in square footage of an existing property.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ADU</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Construction of a secondary living unit on a residential property.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">BATHROOM</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Any work on bathroom facilities or utilities.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">BATTERY</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Battery systems related to sustainability projects.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">DEMOLITION</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Removal or destruction of an existing structure or part of a structure.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ELECTRIC_METER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Permit explicitly for new or replaced electric meter.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ELECTRICAL</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Includes electrical work. Subtags: EV_CHARGER, SOLAR, BATTERY, ELECTRIC_METER</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">EV_CHARGER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation of an electric vehicle charging system.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">FIRE_SPRINKLER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, repair or maintenance of a fire sprinkler</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">GAS</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, repair, or maintenance of gas lines, meters, appliances, or gas-related systems.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">GENERATOR</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a generator.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">GRADING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Construction work that includes leveling or reshaping terrain to prepare a site for building.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">HEAT_PUMP</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a heat pump system.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">HVAC</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Heating, ventilation, and air conditioning systems. Subtag: HEAT_PUMP</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">KITCHEN</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Any work on kitchen facilities or utilities.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">NEW_CONSTRUCTION</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Building entirely new homes or buildings. Examples: new office building, new single-family dwelling (SFD), new warehouse construction.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">PLUMBING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Plumbing work including installation, repair, or maintenance of piping, fixtures, and systems. Subtag: WATER_HEATER</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">POOL_AND_HOT_TUB</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Construction, installation, or repair of swimming pools, hot tubs, or spas.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">REMODEL</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Improve property aesthetic or functionality but without structural changes or expansions</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">ROOFING</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation, replacement, or repair of a roof.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">SOLAR</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation of solar photovoltaic or solar thermal systems.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">TELECOM</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Telecom-related work including fiber, phone/cable drops, utility ROW installs, cell towers, small cells, 5G, antennas, cable installation, conduit, trenching, boring, and related infrastructure.</td></tr>
- <tr><td class="w-[25%] py-4 pl-4 pr-3 text-sm font-mono font-medium text-gray-900 sm:pl-6">WATER_HEATER</td><td class="w-[75%] px-3 py-4 text-sm text-gray-700">Installation or replacement of a water heater.</td></tr>
           </tbody>
         </table>
       </div>
