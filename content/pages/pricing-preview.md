@@ -18,7 +18,7 @@ status: hidden
      'credits': '500 API credits / mo', 'credits_muted': true,
      'support': 'Knowledge Base + email support',
      'cta_label': 'Start free', 'cta_href': 'https://app.shovels.ai/signup/', 'cta_variant': 'outline'},
-    {'name': 'Basic', 'blurb': 'For individuals and independent research.',
+    {'name': 'Basic', 'featured': true, 'blurb': 'For individuals and independent research.',
      'price': '$599', 'per': '/mo',
      'rows': [('on', '25K downloadable records / mo'), ('on', 'Full historical records'),
               ('on', '1,000 results per query'), ('on', '1 seat')],
@@ -48,7 +48,8 @@ status: hidden
 
     <div class="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {% for p in plans %}
-      <div class="relative flex flex-col rounded-2xl border border-gray-200 p-8">
+      <div class="relative flex flex-col rounded-2xl {{ 'border-2 border-shovels-primary' if p.featured else 'border border-gray-200' }} p-8">
+        {% if p.featured %}<span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-shovels-primary px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Most popular</span>{% endif %}
         <h3 class="text-xl font-medium text-gray-900">{{ p.name }}</h3>
         <p class="mt-2 min-h-[40px] text-sm text-gray-500">{{ p.blurb }}</p>
         <p class="mt-6 flex items-baseline gap-1">
