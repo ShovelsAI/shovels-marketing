@@ -19,8 +19,6 @@ status: hidden
     illustration_src='/images/features/charlie/hero.svg',
     illustration_alt='Charlie, the Shovels AI research assistant') }}
 
-{# All feature visuals are TBD placeholders — screenshots to be sourced.
-   image_alt carries the intended-shot note from the copy doc. #}
 {% set features = [
     {
         'number': '01',
