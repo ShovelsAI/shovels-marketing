@@ -1,5 +1,5 @@
 Title: About Shovels, Inc.
-Description: The intelligence layer for the built world. Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.
+Description: The intelligence layer for the built world. Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence.
 slug: about
 
 <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -270,7 +270,7 @@ slug: about
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": "About Shovels, Inc.",
-  "description": "The intelligence layer for the built world. Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.",
+  "description": "The intelligence layer for the built world. Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence.",
   "url": "https://www.shovels.ai/about",
   "mainEntity": {
     "@type": "Organization",

@@ -46,7 +46,7 @@
   {% elif page and page.summary %}
     <meta name="description" content="{{ page.summary|striptags|truncate(160) }}">
   {% else %}
-    <meta name="description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
+    <meta name="description" content="Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
   {% endif %}
 
   <!-- Preload critical CSS -->
@@ -86,7 +86,7 @@
   {% elif page and page.summary %}
     <meta property="og:description" content="{{ page.summary|striptags|truncate(160) }}" />
   {% else %}
-    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
+    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
   {% endif %}
   {% block og_image %}
   <meta property="og:image" content="{% if page and page.open_graph_image %}{{ SITEURL }}{{ page.open_graph_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif page and page.image %}{{ SITEURL }}{{ page.image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
@@ -108,7 +108,7 @@
   {% elif page and page.summary %}
     <meta name="twitter:description" content="{{ page.summary|striptags|truncate(160) }}" />
   {% else %}
-    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
+    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
   {% endif %}
   <meta name="twitter:image" content="{% if page and page.twitter_image %}{{ SITEURL }}{{ page.twitter_image }}{% elif article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif page and page.open_graph_image %}{{ SITEURL }}{{ page.open_graph_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif page and page.image %}{{ SITEURL }}{{ page.image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
   {% endblock head %}
@@ -126,7 +126,7 @@
     "name": "Shovels",
     "url": "https://www.shovels.ai",
     "logo": "https://www.shovels.ai/theme/images/shovels-social.png",
-    "description": "Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.",
+    "description": "Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence.",
     "sameAs": [
       "https://twitter.com/shovelsai",
       "https://www.linkedin.com/company/shovels-ai"
