@@ -15,7 +15,9 @@ image: /images/shovelsgpt.png
 
 # Harnessing the Power of Shovels AI Custom GPT for Efficient Permit and Contractor Searches
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position:relative;width:100%;padding-bottom:56.25%;margin:2rem 0;">
+  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="Searching building permits and contractors with the Shovels AI custom GPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Introduction to Shovels AI Custom GPT
 In the construction and renovation industry, finding accurate and timely information on building permits and contractors is essential. The [Shovels custom GPT](https://chatgpt.com/g/g-zXFhOF8SP-shovels-ai) is a sophisticated tool designed to streamline this process. It interacts with the [Shovels API](https://docs.shovels.ai/api-reference), providing users with easy access to detailed data on over 113 million building permits and 3 million contractors across 48 states in the United States. 
