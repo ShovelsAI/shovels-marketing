@@ -148,6 +148,24 @@
     width: 100%;
   }
   
+  /* Third-party embeds ship fixed pixel width attributes that exceed the
+     article column on narrow screens, which scrolls the entire page
+     horizontally. Cap them regardless of what the provider hard-codes. */
+  .article iframe {
+    max-width: 100%;
+  }
+  
+  /* Percentage padding resolves against the container width, so the box
+     tracks the column while holding 16:9 for video embeds. */
+  .article .video-embed {
+    @apply relative w-full my-8;
+    padding-bottom: 56.25%;
+  }
+  
+  .article .video-embed iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+  
   .article ul > li {
     margin-left: 20px !important;
     list-style-type: disc;
