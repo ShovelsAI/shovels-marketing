@@ -15,8 +15,8 @@ image: /images/shovelsgpt.png
 
 # Harnessing the Power of Shovels AI Custom GPT for Efficient Permit and Contractor Searches
 
-<div style="position:relative;width:100%;padding-bottom:56.25%;margin:2rem 0;">
-  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="Searching building permits and contractors with the Shovels AI custom GPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/jQVkDtJ9HsU?si=Ufe9z4ZgWvS5CLSu" title="Searching building permits and contractors with the Shovels AI custom GPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Introduction to Shovels AI Custom GPT
