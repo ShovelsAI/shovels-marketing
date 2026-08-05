@@ -17,7 +17,9 @@ Using the Shovels API within Clay transforms construction industry prospecting f
 
 To good to be true? Not really. Here's how the pros do it. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IhUpiT_PTWU?si=4OIUY2MHKKS1pR-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position:relative;width:100%;padding-bottom:56.25%;margin:2rem 0;">
+  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/IhUpiT_PTWU?si=4OIUY2MHKKS1pR-L" title="Automating construction lead generation with the Shovels API and Clay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## What makes this integration powerful
 
