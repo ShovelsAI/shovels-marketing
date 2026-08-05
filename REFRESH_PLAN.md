@@ -164,6 +164,11 @@ launch** — the refreshed header/footer now link to `/pricing`.
 
 ## Launch runbook — exactly what must happen to go live
 
+Execution order across the DNS migration and the hosting cutover lives in
+the Linear project document "Launch runbook: DNS migration + website
+refresh cutover". This section holds the content detail; that document
+holds the phase sequencing and the gates between phases.
+
 The launch is one coupled deploy, but several gates must be green first.
 In order:
 
@@ -185,6 +190,20 @@ verified-signatures rule. Without it, nothing ships. (Review:
 - Redirects authored + homepage `index.html` migration drafted (PREP)
 - Mobile QA passed; staging deploy reviewed by stakeholders at real URLs
 - Branch synced with `main` (depends on Gate 0)
+
+### Gate 2 — DNS zone on Cloudflare (hard blocker for redirects)
+`shovels.ai` DNS is hosted at **AWS Route 53**, not Cloudflare — the
+nameservers are `ns-1351.awsdns-40.org` and three siblings. Attaching a
+custom domain to the Worker, and creating the Redirect Rules in step 5
+below, both require the domain to be a **Cloudflare zone**. Getting it
+there is a nameserver migration, not a record edit: every record in the
+zone — Google Workspace `MX`, the SPF and domain-verification `TXT`
+records, and `api` / `app` / `docs` / `charlie` / `email` / `trust` —
+must be recreated on the Cloudflare side or the corresponding service
+breaks. Export the Route 53 zone first; DNS has no version control, so
+that export is the only restore artifact. Run the migration as a no-op
+(`www` still pointing at GitHub Pages) and soak it before the hosting
+cutover, so a DNS fault and a hosting fault are never in flight at once.
 
 ### The flip — one coupled deploy (interdependent; ship together)
 1. **Slug swaps**: industry `*-preview` → live (drop `-preview` +
@@ -209,7 +228,8 @@ verified-signatures rule. Without it, nothing ships. (Review:
 5. **Enable redirects** (301 permanent, preserve query strings) — apply
    ONLY at launch, coupled with the slug swaps (step 1); applied earlier
    they point at pages that don't exist yet. Cloudflare **Bulk Redirects**
-   (upload as a list) or **Single Redirect Rules** on the `shovels.ai` zone:
+   (upload as a list) or **Single Redirect Rules** on the `shovels.ai`
+   zone — available only once Gate 2 is met:
 
    | # | From (current live) | To (launch) |
    |---|---|---|
