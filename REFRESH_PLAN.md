@@ -172,16 +172,14 @@ holds the phase sequencing and the gates between phases.
 The launch is one coupled deploy, but several gates must be green first.
 In order:
 
-### Gate 0 — Merge unblock (NEW; hard blocker, settle this first)
-The refresh branch requires **verified-signature** commits, but `main`
-carries unsigned commits, so a normal branch↔`main` sync/merge is
-rejected by the repository ruleset (`GH013`: "Commits must have verified
-signatures"). The JSON-LD fix was **cherry-picked in as a signed
-stopgap**, but the **final branch→`main` merge at launch will hit the
-same wall.** An admin must resolve this before launch — either grant a
-ruleset **bypass** for the launch merge, or **scope/adjust** the
-verified-signatures rule. Without it, nothing ships. (Review:
-`github.com/ShovelsAI/shovels-marketing/rules`.)
+### Gate 0 — Merge unblock ✅ RESOLVED
+An admin adjusted the ruleset so the verified-signatures rule no longer
+applies to `morgan/website-refresh-2026`. `main` has been merged into the
+branch (merge `c169d91d`) and pushed; the final branch→`main` launch merge
+is no longer blocked. *(History: the branch required verified-signature
+commits while `main` carried unsigned ones, so a normal sync was rejected
+with `GH013`; the JSON-LD fix was cherry-picked in as a signed stopgap
+before the rule was lifted.)*
 
 ### Gate 1 — Everything green on the branch (the NOW + PREP work)
 - All preview pages approved — designer walkthroughs, FAQ accuracy,
@@ -189,7 +187,7 @@ verified-signatures rule. Without it, nothing ships. (Review:
 - Rounded-CTA rollout done; blog-sidebar newsletter form restyled
 - Redirects authored + homepage `index.html` migration drafted (PREP)
 - Mobile QA passed; staging deploy reviewed by stakeholders at real URLs
-- Branch synced with `main` (depends on Gate 0)
+- ✅ Branch synced with `main` (merge `c169d91d`) — Gate 0 resolved
 
 ### Gate 2 — DNS zone on Cloudflare (hard blocker for redirects)
 `shovels.ai` DNS is hosted at **AWS Route 53**, not Cloudflare — the
@@ -550,12 +548,10 @@ placeholders remain on any preview page.
 - [x] Meta descriptions present on all launched pages (verified: 0
       missing across the full production build; also canonical + OG
       title/image present on every page)
-- [ ] Branch synced with `main` — **blocked by the verified-signatures
-      ruleset** (`main` has unsigned commits → `GH013` rejects the
-      merge/push). The JSON-LD fix (PR #146) was cherry-picked in as a
-      signed stopgap (`0f69a292`); the full sync + the final branch→`main`
-      launch merge need an admin ruleset bypass/adjust first. See **Launch
-      runbook → Gate 0**.
+- [x] Branch synced with `main` — Gate 0 resolved (verified-signatures
+      rule lifted from the branch); `main` merged in (`c169d91d`) and
+      pushed. The JSON-LD stopgap cherry-pick (`0f69a292`) is superseded
+      by the full sync. Keep re-syncing periodically until launch.
 - [ ] **Delete `IMAGE_MANIFEST.md` at launch** — the image-build-out
       checklist has served its purpose (pages are image-complete) and has
       drifted out of date. Its durable guidance (source map, naming, and
@@ -726,14 +722,10 @@ placeholders remain on any preview page.
   *this-wave* launch likely omit Data until those pages exist.
 - **Net-new pages** (Map Gallery, Brand, Partners, Pricing?) — scope,
   copy, and cadence TBD; launch independently.
-- **Stale `main`** — this branch is behind `main` and must be
-  rebased/merged before launch (gated on the verified-signatures
-  ruleset — see Gate 0). As of 2026-07-22 `main` carries the
-  inclusionary-zoning / rezoning / zoning-variance blog posts, the
-  telecom copy edits, and the GIS ArcGIS owner-web-map link change,
-  none of which are on this branch. The Cloudflare preview Worker
-  (`shovels-marketing.ryan-13e.workers.dev`) now builds from this
-  branch, so the review previews intentionally will not show `main`'s
-  newer content until the branch is synced.
+- **Stale `main`** — ✅ resolved. `main` was merged into the branch
+  (`c169d91d`), bringing in the inclusionary-zoning / rezoning /
+  zoning-variance blog posts, the telecom copy edits, and the GIS ArcGIS
+  owner-web-map link change. Keep re-syncing `main` periodically until
+  launch so the branch doesn't drift again.
 - Designer logo-height pass; white-on-hover logos (Hawkins,
   Avenue Roofing) — minor, deferred.
