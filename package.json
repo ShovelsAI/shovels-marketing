@@ -8,5 +8,8 @@
   "scripts": {
     "build:css": "tailwindcss -i ./themes/shovels/static/css/input.css -o ./themes/shovels/static/css/output.css --watch",
     "build:css:prod": "tailwindcss -i ./themes/shovels/static/css/input.css -o ./themes/shovels/static/css/output.css --minify"
+  },
+  "overrides": {
+    "postcss": "^8.5.18"
   }
 }
