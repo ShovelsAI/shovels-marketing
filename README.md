@@ -137,38 +137,35 @@ The `make publish` command:
 3. Creates CNAME file for custom domain
 4. Auto-commits and pushes to GitHub Pages
 
-### Cloudflare (Workers static assets)
+### Vercel
 
-The site can also be built and deployed by Cloudflare via Git integration
-(Workers Builds), running alongside the GitHub Pages deployment. Cloudflare
-builds the site on each push and serves the Pelican output as static assets.
+The site is also built and deployed by Vercel via its GitHub integration,
+running alongside the GitHub Pages deployment. Vercel builds on each push and
+creates preview deployments for pull requests.
 
-`wrangler.jsonc` defines the Worker: it serves `./docs` as static assets and
-renders the generated `404.html` for unknown paths. Runtime versions are pinned
-in `.tool-versions` (Python 3.11, Node 22). Node 22 is required because the
-wrangler CLI used by the deploy step needs Node >= 22.
+`vercel.json` holds the build configuration, so it is version-controlled rather
+than kept in the dashboard:
 
-**One-time setup** — in the Cloudflare dashboard, connect this GitHub repo with
-these settings:
+- `framework` is `null` ("Other"). Without it, the `requirements.txt` at the
+  repository root makes Vercel treat the site as a Python application and fail
+  the build looking for a WSGI/ASGI entrypoint.
+- Dependencies install into a virtualenv. The build image's interpreter is
+  uv-managed and marked externally managed, so installing into it directly is
+  refused under PEP 668.
+- `pelican` runs as `.venv/bin/python -m pelican` so the build does not depend
+  on console scripts resolving on `PATH`.
+- `redirects` holds permanent (301) redirects. Add an entry per moved URL:
 
-| Setting        | Value                                                                                                                                                                                                          |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Build command  | `pip install -r requirements.txt && npm install && npm run build:css:prod && pelican content -o docs -s publishconf.py && cp themes/shovels/static/css/output.css docs/output.css && python3 generate_404.py` |
-| Deploy command | `npx --package wrangler@4.105.0 wrangler versions upload` (preview) / `npx --package wrangler@4.105.0 wrangler deploy` (production)                                                                             |
-| Root directory | `/`                                                                                                                                                                                                           |
+  ```json
+  { "source": "/old-path", "destination": "/new-path", "permanent": true }
+  ```
 
-The `wrangler` version is pinned in the deploy command because `npx` otherwise
-downloads the latest release at build time. `versions upload` publishes a
-preview version without routing production traffic; `deploy` promotes it live.
+Python is pinned to 3.12 in `.python-version`. Vercel offers only 3.12 and
+later, and several pinned dependencies publish no wheels for those versions and
+compile from source, so the interpreter is held at the lowest available version.
 
-If Cloudflare's build image does not offer the versions in `.tool-versions`,
-override them with the `PYTHON_VERSION` and `NODE_VERSION` environment variables
-in the project's build settings.
-
-The custom domain (`www.shovels.ai`) is managed in the Cloudflare dashboard, not
-via a `CNAME` file — the `CNAME` file is only used by the GitHub Pages
-deployment. Edge 301 redirects for the site relaunch can be added via a
-`_redirects` file in `docs/`.
+The custom domain (`www.shovels.ai`) is managed in the Vercel dashboard, not via
+a `CNAME` file — the `CNAME` file is only used by the GitHub Pages deployment.
 
 ## Brand Colors (Tailwind)
 
