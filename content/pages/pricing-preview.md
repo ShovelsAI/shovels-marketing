@@ -178,25 +178,7 @@ status: hidden
     <div class="mx-auto max-w-3xl text-center">
       <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">How credits work</span>
       <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">You pay for records, not requests</h2>
-      <p class="mt-6 text-base/7 text-gray-300">1 credit = 1 record retrieved. Search, filtering, exports, and metadata are always free.</p>
-    </div>
-    <div class="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h3 class="text-base font-medium text-white">Always free</h3>
-        <ul role="list" class="mt-6 space-y-4 text-sm/6 text-gray-300">
-          {% for item in ['CSV exports', 'Geo search and autocomplete', 'Metadata and list endpoints', 'Contractor metrics', 'The usage endpoint'] %}
-          <li class="flex gap-3"><span class="text-shovels-secondary">&bull;</span>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h3 class="text-base font-medium text-white">One credit per record</h3>
-        <ul role="list" class="mt-6 space-y-4 text-sm/6 text-gray-300">
-          {% for item in ['Permit, property, and resident records returned', 'Contractor profiles and employee data', 'Decision records returned', 'Charlie AI queries, which pull records to answer', 'CLI calls, which use the same API credits'] %}
-          <li class="flex gap-3"><span class="text-gray-500">&bull;</span>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+      <p class="mt-6 text-base/7 text-gray-300">1 credit = 1 record. Credits are spent just two ways &mdash; API requests and exports from Shovels Online &mdash; each metered by the number of records. Everything else in Shovels Online is free. Credits reset monthly based on your subscription or upgrade date.</p>
     </div>
     <p class="mt-10 text-center"><a href="https://docs.shovels.ai/docs/knowledge-base/api/basics/request-counts#how-do-api-credits-work" class="text-sm font-semibold text-shovels-secondary hover:text-shovels-secondary/80">Learn more <span aria-hidden="true">&rarr;</span></a></p>
   </div>
@@ -245,7 +227,7 @@ status: hidden
     heading='Pricing questions',
     items=[
         {'q': 'What exactly is a credit?',
-         'a': 'A credit is one cleaned, normalized record. Searching, filtering, CSV exports, autocomplete, metadata, and other platform features are free — credits are only used when you retrieve records.'},
+         'a': 'A credit is one cleaned, normalized record. Credits are spent just two ways — API requests and exports from Shovels Online — each metered by the number of records. Everything else in Shovels Online is free, and credits reset monthly based on your subscription or upgrade date.'},
         {'q': 'Do I need separate plans for the web app and the API?',
          'a': 'No. Every plan includes Shovels Online, the API, the CLI, and Charlie AI. They all share the same monthly credit balance, so you can switch between interfaces without changing plans.'},
         {'q': 'Is the free plan really free?',
