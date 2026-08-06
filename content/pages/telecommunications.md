@@ -49,7 +49,7 @@ slug: telecommunications
             Monitor Competitive Activity
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Our fiber permit classification reveals where ISPs and network providers, from Tier 1s such as AT&T, Verizon, and Charter to Tier 3 providers are actively building, enabling strategic market entry decisions and investment prioritization.</p>
+            <p class="flex-auto">Our fiber permit classification reveals where ISPs and network providers, from Tier 1s like Verizon, Comcast, and T-Mobile to Tier 3 providers, are actively building, enabling strategic market entry decisions and investment prioritization.</p>
           </dd>
         </div>
         <div class="flex flex-col">
@@ -272,7 +272,7 @@ slug: telecommunications
         <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels help monitor competitor fiber deployments?</dt>
           <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like AT&T and Verizon to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas.</p>
+            <p class="text-base/7 text-gray-600">Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like Verizon, Comcast, and T-Mobile to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas.</p>
           </dd>
         </div>
       </dl>
@@ -315,7 +315,7 @@ slug: telecommunications
       "name": "Can Shovels help monitor competitor fiber deployments?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like AT&T and Verizon to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas."
+        "text": "Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like Verizon, Comcast, and T-Mobile to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas."
       }
     }
   ]

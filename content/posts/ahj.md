@@ -56,7 +56,7 @@ Securing an **AHJ permit** involves several steps:
 4. **Revisions (if required)** – If corrections are needed, your plans are returned for modification.
 5. **Permit approval** – Once approved, construction can legally begin.
 6. **Inspections** – Throughout the build, the AHJ performs scheduled inspections.
-7. **Final approval** – A certificate of occupancy or final permit closes the project.
+7. **Final approval** – A <a href="https://www.shovels.ai/blog/certificate-of-occupancy/" target="_blank">certificate of occupancy</a> or final permit closes the project.
 
 This process ensures projects meet safety, environmental, and community standards.
 

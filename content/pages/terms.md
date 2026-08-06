@@ -5,7 +5,7 @@ template: legal
 
 
 **Terms of Use**
-**Last revised on: December 10, 2025**
+**Last revised on: May 19, 2026**
 
 1\.         Introduction
 ------------------------
@@ -70,6 +70,11 @@ You acknowledge that all the intellectual property rights, including copyrights,
 ------------
 
 If you provide Company with any feedback or suggestions regarding the Site (“Feedback”), you hereby assign to Company all rights in such Feedback and agree that Company shall have the right to use and fully exploit such Feedback and related information in any manner it deems appropriate. Company will treat any Feedback you provide to Company as non-confidential and non-proprietary. You agree that you will not submit to Company any information or ideas that you consider to be confidential or proprietary.
+
+(i) Publicity
+-------------
+
+By agreeing to these Terms, using the Services, and/or creating an account on behalf of an organization, you grant Shovels a limited, non-exclusive, royalty-free, worldwide license to use your or your organization’s name, logo, and trademarks solely to identify you or your organization as a Shovels customer on Shovels’ website, customer lists, and marketing, sales, investor, and promotional materials. Shovels will not use them in a manner that disparages you or implies any sponsorship, partnership, or relationship beyond a customer-vendor relationship. You may revoke this permission at any time by emailing legal@shovels.ai, and Shovels will cease new uses and remove the marks from then-current website and digital marketing materials within thirty (30) days, but need not recall or modify materials already printed, distributed, or in circulation.
 
 4.        User Conduct
 ----------------------
@@ -163,9 +168,9 @@ Certain features of the Service may be provided without charge (for free). These
 11.        Termination
 ----------------------
 
-You agree that, without notice, Shovels may terminate these Terms and Conditions, or suspend your access to the Service or the Third-Party Content, with or without cause at any time and effective immediately. These Terms and Conditions will terminate immediately without notice from Shovels if you, in Shovels’s sole determination, fail to comply with any provision of these Terms and Conditions. Shovels shall not be liable to you or any third party for the termination or suspension of the Service or the Content, or any claims related to such termination or suspension. Shovels may discontinue or modify the Third-Party Content, or any portion thereof, at any time. You release and agree to indemnify and hold harmless Shovels for any loss or damages arising from or relating to such discontinuation or modification. If you are paying for a premium feature or service and Shovels terminates the Service, then your payment obligations will terminate at the end of the applicable subscription period (e.g., monthly / quarterly). For paying customers, no refunds are otherwise available except as required by law.
+You agree that, without notice, Shovels may terminate these Terms and Conditions, or suspend your access to the Service or the Third-Party Content, with or without cause at any time and effective immediately. These Terms and Conditions will terminate immediately without notice from Shovels if you, in Shovels’s sole determination, fail to comply with any provision of these Terms and Conditions. Shovels shall not be liable to you or any third party for the termination or suspension of the Service or the Content, or any claims related to such termination or suspension. Shovels may discontinue or modify the Third-Party Content, or any portion thereof, at any time. You release and agree to indemnify and hold harmless Shovels for any loss or damages arising from or relating to such discontinuation or modification. If you are paying for a premium feature or service and Shovels terminates the Service, then your payment obligations will terminate at the end of the applicable subscription period (e.g., monthly / quarterly). For paying customers, no refunds are otherwise available except as required by law. Following termination, Shovels’ handling, retention, and deletion of personal information you provided in connection with the Service is governed by the [Privacy Policy](/privacy).
 
-The following provisions will survive any termination of these Terms and Conditions: Sections 3(a) and 3(b) (Use of the Service), 4 (User Conduct), 6 (Third-Party Content and Assumption of Risk), 7 (Disclaimers and Limitations of Liability), 8 (Arbitration), 9 (Indemnification), 10 (Service Fees), and 12–14.
+The following provisions will survive any termination of these Terms and Conditions: Sections 3(a), 3(b), 3(g), 3(h), and 3(i) (Use of the Service), 4 (User Conduct), 6 (Third-Party Content and Assumption of Risk), 7 (Disclaimers and Limitations of Liability), 8 (Arbitration), 9 (Indemnification), 10 (Service Fees), and 12–14.
 
 12.        Applicable Law and Venue
 -----------------------------------

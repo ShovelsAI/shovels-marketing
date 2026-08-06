@@ -111,7 +111,7 @@ slug: api
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
       <div class="col-span-2">
-        <p class="text-base/7 font-semibold text-shovels-secondary">Building permit and contractor data</p>
+        <p class="text-base/7 font-semibold text-shovels-secondary-text">Building permit and contractor data</p>
         <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">The construction activity API</h2>
         <p class="mt-6 text-base/7 text-gray-600">We built, simply put, the best API in the market to identify what's getting built and who's doing it.</p>
       </div>

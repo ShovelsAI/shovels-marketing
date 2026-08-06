@@ -59,6 +59,8 @@ EXTRA_PATH_METADATA = {
     'extras/favicon-32x32.png': {'path': 'favicon-32x32.png'},
     'extras/robots.txt': {'path': 'robots.txt'},
     'extras/install.sh': {'path': 'install.sh'},
+    'extras/llms.txt': {'path': 'llms.txt'},
+    'extras/engineering-application-skill.md': {'path': 'skills/engineering-application/SKILL.md'},
 }
 
 # Theme static files configuration
@@ -84,7 +86,8 @@ PLUGINS = ['jinja2content', 'sitemap']
 
 # Canonical stats — update this dict when numbers change.
 # Templates and content pages reference these via {{ STATS.key }}.
-# Mirror updates to the snippets/stats.mdx file in the docs repo.
+# This dict is the single source of truth for published figures; the docs
+# repo has no stats snippet mirroring it.
 STATS = {
     # Homepage / widely published stats
     "permits": "174M+",

@@ -5,6 +5,9 @@
 
 {% block head %}
   {{ super() }}
+  {% if page.agent_instructions %}
+  <meta name="agent-instructions" content="{{ page.agent_instructions }}">
+  {% endif %}
 {% endblock %}
 
 {% block structured_data %}

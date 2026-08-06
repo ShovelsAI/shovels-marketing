@@ -17,7 +17,9 @@ Using the Shovels API within Clay transforms construction industry prospecting f
 
 To good to be true? Not really. Here's how the pros do it. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IhUpiT_PTWU?si=4OIUY2MHKKS1pR-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/IhUpiT_PTWU?si=4OIUY2MHKKS1pR-L" title="Automating construction lead generation with the Shovels API and Clay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## What makes this integration powerful
 
@@ -130,7 +132,7 @@ Now leverage Clay's AI enrichment capabilities to generate personalized icebreak
 
 Solar installation companies need homeowners who recently invested in roof improvements - a perfect use case for Shovels' permit data combined with Clay's multi-table workflows. This approach identifies pre-qualified prospects based on actual home improvement behavior.
 
-Start by searching for recent roofing permits in your target geography. Configure an HTTP API call to `https://api.shovels.ai/v2/permits/search` with parameters: `permit_from` 60 days ago, `permit_to` today, `geo_id` for your target area (see Example 1 for resolving cities to geo_id's), `property_type` as residential, and `permit_tags` set to roofing. Add `min_job_value` of 5000 to filter for substantial roof projects. This returns permits including the critical address information with each property's unique geo_id.
+Start by searching for recent roofing permits in your target geography. Configure an HTTP API call to `https://api.shovels.ai/v2/permits/search` with parameters: `permit_from` 60 days ago, `permit_to` today, `geo_id` for your target area (see Example 1 for resolving cities to geo_id's), `property_type` as residential, and `permit_tags` set to roofing. Add `permit_min_job_value` of 5000 to filter for substantial roof projects. This returns permits including the critical address information with each property's unique geo_id.
 
 Use the Send to table enrichment to create a new "Roofing Properties" table from the permit results. Map these fields to columns: permit description, job value, file date, property address components (street, city, state, zip), and most importantly, the `address_id` which is in the `geo_ids` key on each permit. This creates individual rows for each property with recent roofing work - your base prospect list.
 
@@ -148,6 +150,6 @@ Consider the cost impact: manual research at $25/hour costs $500 weekly per rep,
 
 The accuracy improvement is equally dramatic. Manual research relies on outdated directories and incomplete databases. Shovels provides real-time permit data directly from government sources, ensuring you're targeting contractors and homeowners based on actual, recent activity. Clay's enrichment layer adds contact information, company details, and AI-powered personalization - creating ready-to-contact prospect lists that convert at significantly higher rates.
 
-For construction industry sales teams, real estate professionals, and B2B companies targeting contractors or property owners, this integration transforms prospecting from a bottleneck into a competitive advantage. The combination of Shovels' comprehensive permit intelligence and Clay's automation capabilities creates a lead generation system that scales with your business while dramatically reducing cost per lead.
+For construction industry sales teams, real estate professionals, and B2B companies targeting contractors or property owners, this integration transforms prospecting from a bottleneck into a competitive advantage. The combination of Shovels' comprehensive permit intelligence and Clay's automation capabilities creates a <a href="https://www.shovels.ai/blog/construction-leads-permit-data/" target="_blank">lead generation system</a> that scales with your business while dramatically reducing cost per lead.
 
 > 🎁  I made some Clay table templates! [Get them here](https://app.clay.com/shared-workbook/share_0sxht86CPrde37QtkZB).

@@ -2,6 +2,8 @@ Title: Nationwide Building Contractor API
 Description: Access our comprehensive contractor directory with service area mapping, permit history, construction speed metrics, and inspection pass rates.
 slug: contractor-directory
 
+<main>
+
 <!-- hero -->
 <section class="hero_container">
   <div class="hero_text-container">
@@ -90,3 +92,5 @@ slug: contractor-directory
     </div>
   </dl>
 </section>
+
+</main>

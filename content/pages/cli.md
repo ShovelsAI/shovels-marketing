@@ -145,7 +145,7 @@ slug: cli
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:grid lg:grid-cols-2 lg:gap-x-16 lg:items-start">
       <div>
-        <p class="text-base/7 font-semibold text-shovels-secondary">Agent-first design</p>
+        <p class="text-base/7 font-semibold text-shovels-secondary-text">Agent-first design</p>
         <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Your AI agent's interface to construction data</h2>
         <p class="mt-6 text-lg/8 text-gray-600">No MCP headaches — no context bloat, no credential juggling, no host lock-in. Claude Code, OpenAI Codex, Cursor, or your own agents shell out to <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">shovels</code> and get structured data back instantly.</p>
         <dl class="mt-10 max-w-xl space-y-6 text-base/7 text-gray-600">
@@ -216,7 +216,7 @@ slug: cli
 <div class="bg-gray-50 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Unix philosophy</p>
+      <p class="text-base/7 font-semibold text-shovels-secondary-text">Unix philosophy</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Pipe it. Chain it. Script it.</h2>
       <p class="mt-6 text-lg/8 text-gray-600">JSON output means you can compose the CLI with any tool in your stack. Build workflows that would take weeks with a GUI.</p>
     </div>
@@ -265,7 +265,7 @@ slug: cli
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Why not just curl?</p>
+      <p class="text-base/7 font-semibold text-shovels-secondary-text">Why not just curl?</p>
       <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Because pagination shouldn't be your problem</h2>
     </div>
 

@@ -140,7 +140,7 @@ A.    As someone that is subject to the VaCDPA, under your Right of Access descr
 B.    Additional Rights for Virginia Residents. In addition to the rights described in Section 9 above, under the VaCDPA, consumers have the following rights:
 
 - The Right to Opt-Out of Sales of Your PI.  You may opt-out of such sales at any time.
-- The Right to Opt-In to the Use of Your Sensitive Personal Information.  Five by Five will not process your sensitive personal information without first obtaining your consent to do so.
+- The Right to Opt-In to the Use of Your Sensitive Personal Information.  Shovels will not process your sensitive personal information without first obtaining your consent to do so.
 - The Right to Opt-Out of Profiling.  You may opt-out of automated processing of PI to make decisions that produce legal or very significant effects on you.
 - The Right to Opt-Out of Targeted Advertising.  As a Virginia consumer, you may also be able to opt-out of targeted advertising based on your activity on websites that we do not  own.  You may still see generic ads, and ads based on what you do on the Internet, even if you exercise this right.
 - Right to Appeal Denial. If we deny your request to exercise rights under the VaCDPA, we will tell you why, and will have the right to appeal our decision by emailing us at <legal@shovels.ai> with “VaCDPA Appeal” in the subject line. If we deny your appeal, you have the right to submit a complaint to the Virginia Attorney General’s Office at <https://www.oag.state.va.us/consumer-protection/index.php/file-a-complaint>.
@@ -177,12 +177,12 @@ A.    As someone that is subject to the UCPA, under your Right of Access describ
 
 B.    Additional Rights for Utah Residents. In addition to the rights described in Section 9 above, under the UCPA, Utah residents have the following rights:
 
-- The Right to Opt-In to the Use of Your Sensitive Personal Information.  Five by Five will not process your sensitive personal information without first obtaining your consent to do so.
+- The Right to Opt-In to the Use of Your Sensitive Personal Information.  Shovels will not process your sensitive personal information without first obtaining your consent to do so.
 - The Right to Opt-Out of Targeted Advertising.  As a Utah consumer, you may also be able to opt-out of targeted advertising based on your activity on non-affiliated websites and services. You may still see generic ads, and ads based on what you do on the Internet, even if you exercise this right.
 
 **16.**  **Changes to this Privacy Policy**
 
-Because our business needs may change over time, we reserve the right to update this Consumer Privacy Policy. If at any time in the future we plan to use your data in a way that is materially different than as described in this Consumer Privacy Policy, we will revise this Consumer Privacy Policy as appropriate. If we do change this Privacy Policy, we will post the updated policy and on our website ([website](https://5x5coop.com/) link).
+Because our business needs may change over time, we reserve the right to update this Consumer Privacy Policy. If at any time in the future we plan to use your data in a way that is materially different than as described in this Consumer Privacy Policy, we will revise this Consumer Privacy Policy as appropriate. If we do change this Privacy Policy, we will post the updated policy and on our website ([website](https://www.shovels.ai/privacy-center) link).
 
 **17.**  **Our Contact Information**
 

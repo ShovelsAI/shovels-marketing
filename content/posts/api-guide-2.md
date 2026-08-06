@@ -145,9 +145,8 @@ The response includes a wealth of information about each permit:
     },
     ...
   ],
-  "page": 1,
   "size": 50,
-  "next_page": 2
+  "next_cursor": "<cursor>"
 }
 ```
 

@@ -25,3 +25,7 @@ seo_report.html
 docs/*
 docs
 themes/shovels/static/css/output.css
+
+# cloudflare / wrangler local dev
+.wrangler
+worktrees

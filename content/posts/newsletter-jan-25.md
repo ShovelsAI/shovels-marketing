@@ -81,7 +81,7 @@ Adding to our prior month's platform improvement of including detailed employee 
 
 The [`/v2/contractors/{id}/employees`](https://docs.shovels.ai/api-reference/contractors/list-contractor-employees) endpoint will allow you to retrieve an array of listed employees, including a wide range of demographic information.
 
-The [`/v2/addresses/{id}/metrics`](https://docs.shovels.ai/api-reference/addresses/get-address-metrics) endpoint will return a detailed monthly digest of construction data for a given address, which will include breakdowns of permit counts across various states, as well as associated contractors, plus extra derived metrics like `avg_construction_duration` or `avg_inspection_pass_rate` to name a few. 
+The [`/v2/addresses/{geo_id}/metrics/monthly`](https://docs.shovels.ai/api-reference/addresses/get-address-metrics-monthly) endpoint will return a detailed monthly digest of construction data for a given address, which will include breakdowns of permit counts across various states, as well as associated contractors, plus extra derived metrics like `avg_construction_duration` or `avg_inspection_pass_rate` to name a few. 
 
 ## Things to do with permits: drop pins onto shapefiles
 
