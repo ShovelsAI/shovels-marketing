@@ -109,19 +109,11 @@
 </div>
 
 {# ── Data types — the five connected datasets (shared macro).
-   Homepage keeps its KB-article links (passed explicitly) until the
-   dedicated /data/* pages ship; the macro default links to /data/*. #}
+   Uses the macro's default datasets, which link to the /data/* pages. #}
 {{ ui_dt.data_types(
     eyebrow='DATA TYPES',
     heading='Five datasets, deeply connected',
-    description='Every record is linked across datasets, so you get the full picture. See the project, property, and people behind it, then move from insight to action.',
-    datasets=[
-        ('permit-clip-board', 'Permits', 'Every building permit we cover, AI-classified into structured records.', 'https://docs.shovels.ai/docs/knowledge-base/data/permits/permit-lifecycle'),
-        ('check-shield', 'Decisions', 'Zoning and development decisions, before a permit is filed.', 'https://docs.shovels.ai/docs/knowledge-base/data/decisions/overview'),
-        ('api-hat', 'Contractors', 'Contractor profiles with licenses, work history, and contact details.', 'https://docs.shovels.ai/docs/knowledge-base/data/contractors/contractor-data-overview'),
-        ('map-house', 'Properties', 'Parcels and addresses with full permit and ownership history.', 'https://docs.shovels.ai/docs/knowledge-base/data/geographic/coverage-areas'),
-        ('avatars', 'Residents', 'Residents and homeowners tied to properties, with contacts.', 'https://docs.shovels.ai/docs/knowledge-base/data/residents/resident-data'),
-    ]) }}
+    description='Every record is linked across datasets, so you get the full picture. See the project, property, and people behind it, then move from insight to action.') }}
 
 {# ── Data delivery options — shared macro (icon cards, light variant).
    LAUNCH: repoint these three links to /solutions/* (see REFRESH_PLAN). #}
