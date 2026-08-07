@@ -178,7 +178,7 @@ status: hidden
     <div class="mx-auto max-w-3xl text-center">
       <span class="inline-block rounded-full border border-shovels-secondary/30 bg-shovels-secondary/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-secondary">How credits work</span>
       <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-white md:text-4xl">You pay for records, not requests</h2>
-      <p class="mt-6 text-base/7 text-gray-300">1 credit = 1 record. Credits are spent just two ways &mdash; API requests and exports from Shovels Online &mdash; each metered by the number of records. Everything else in Shovels Online is free. Credits reset monthly based on your subscription or upgrade date.</p>
+      <p class="mt-6 text-base/7 text-gray-300">1 credit = 1 record, requested via API or an export in Shovels Online. Everything else is free. Credits reset monthly.</p>
     </div>
     <p class="mt-10 text-center"><a href="https://docs.shovels.ai/docs/knowledge-base/api/basics/request-counts#how-do-api-credits-work" class="text-sm font-semibold text-shovels-secondary hover:text-shovels-secondary/80">Learn more <span aria-hidden="true">&rarr;</span></a></p>
   </div>
