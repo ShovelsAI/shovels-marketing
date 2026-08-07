@@ -6,8 +6,20 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-# If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://www.shovels.ai'
+CANONICAL_SITEURL = 'https://www.shovels.ai'
+
+# Absolute URLs are baked in at build time, so a preview deployment built
+# against the canonical domain links away from the very build being reviewed.
+# Preview builds therefore use the domain they are served from. SITEURL in the
+# environment overrides both, and production builds keep the canonical domain.
+SITEURL = os.environ.get('SITEURL')
+if not SITEURL:
+    preview_host = os.environ.get('VERCEL_URL') or os.environ.get('VERCEL_BRANCH_URL')
+    if os.environ.get('VERCEL_ENV') in ('preview', 'development') and preview_host:
+        SITEURL = 'https://' + preview_host
+    else:
+        SITEURL = CANONICAL_SITEURL
+
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
