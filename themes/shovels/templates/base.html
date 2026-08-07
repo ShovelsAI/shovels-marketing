@@ -258,24 +258,12 @@
 
   {% block background_pattern %}{% endblock background_pattern %}
 
-  {# Staged refresh header on *-preview pages only; live pages keep the
-     current header until launch. See REFRESH_PLAN.md. #}
-  {% if page is defined and page.slug and page.slug.endswith('-preview') %}
-    {% include 'header-refresh.html' %}
-  {% else %}
-    {% include 'header.html' %}
-  {% endif %}
+  {% include 'header-refresh.html' %}
 
   {% block content %}
   {% endblock %}
 
-  {# Staged refresh footer on *-preview pages only; live pages keep the
-     current footer until launch. See REFRESH_PLAN.md. #}
-  {% if page is defined and page.slug and page.slug.endswith('-preview') %}
-    {% include 'footer-refresh.html' %}
-  {% else %}
-    {% include 'footer.html' %}
-  {% endif %}
+  {% include 'footer-refresh.html' %}
 
   <!-- Load non-critical resources -->
   <script defer src="/theme/js/alpine.js"></script>
