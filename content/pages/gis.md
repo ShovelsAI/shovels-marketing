@@ -1,316 +1,226 @@
-Title: Geospatial Building Permit Intelligence
-Description: Access building permit data as geospatial objects for site selection, market intelligence, and competitive intelligence. Compatible with Esri ArcGIS and other geospatial platforms.
-slug: gis
+Title: Shovels GIS: Building Permit Data for Esri ArcGIS & QGIS
+Description: Shovels delivers {{ STATS.permits }} geocoded building permits as hosted feature layers for Esri ArcGIS and QGIS. Site selection, market intelligence, and risk analysis—with parcels via Regrid.
+slug: features/gis
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/icons.html' as icons %}
+{% import 'macros/mockup.html' as ui_mockup %}
+{% import 'macros/logo_grid.html' as ui_grid %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/callout.html' as ui_callout %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Building permits as geospatial intelligence</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Shovels feeds live, AI-powered building permit data directly into your Esri ArcGIS platform.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a><a href="https://www.arcgis.com/home/search.html?restrict=false&amp;sortField=relevance&amp;sortOrder=desc&amp;searchTerm=owner%3A%22ianwellskennedy_shovels%22&amp;mode=keyword&amp;focus=maps-webmaps#content" class="text-sm/6 font-semibold text-gray-900" target="_blank">ArcGIS Web Map<span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-          <img class="relative max-h-[500px]" src="{static}/images/shovels-mapContractors.png" alt="Illustration showing building materials and construction data analytics">
-        </div>
-      </div>
-      <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5 pt-24">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="{static}/images/regrid.png" alt="Regrid" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/pargoai.svg" alt="ParGo AI" width="158">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="{static}/images/esri.png" alt="Esri" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/uc-berkeley.png" alt="UC Berkeley" width="158">
-        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/mit.svg" alt="MIT" width="158" height="48">
-      </div>
-    </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Geospatial intelligence for the building trades</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">The earliest, most accurate signal of market growth</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Building permits are inherently geospatial objects that provide the earliest signal of market activity. Use them to see future developments first, optimize site selection, and de-risk major investments. <a href="https://www.arcgis.com/home/search.html?restrict=false&amp;sortField=relevance&amp;sortOrder=desc&amp;searchTerm=owner%3A%22ianwellskennedy_shovels%22&amp;mode=keyword&amp;focus=maps-webmaps#content" class="text-sm/6 font-semibold text-gray-300 hover:text-white" target="_blank">ArcGIS Web Map<span aria-hidden="true">&rarr;</span></a></p>
-    </div>
-  </div>
-  <div class="relative overflow-hidden pt-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/ArcGIS-map.jpg" alt="Esri ArcGIS permit map" class="mb-[-12%] rounded-2xl shadow-2xl ring-1 ring-white/10 overflow-hidden" width="2432" height="1442">
-      <div class="relative" aria-hidden="true">
-        <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-          </svg>
-          See future developments first.
-        </dt>
-        <dd class="inline">Building permits are the earliest signal of market activity. Track permit applications and approvals to identify emerging development patterns before construction begins.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>
-          Optimize site selection.
-        </dt>
-        <dd class="inline">Analyze construction activity patterns to identify optimal locations for your business. Use permit density and contractor activity to understand market dynamics.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd" />
-          </svg>
-          De-risk major investments.
-        </dt>
-        <dd class="inline">Use geospatial permit data to assess market conditions and construction activity before making significant investments in new markets or locations.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
-          </svg>
-          Esri ArcGIS compatibility.
-        </dt>
-        <dd class="inline">Access Shovels data as hosted feature layers in ArcGIS. Our geodatabase with {{ STATS.permits }} building permits is ready for integration with your existing GIS workflows.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-          </svg>
-          Market intelligence.
-        </dt>
-        <dd class="inline">Track construction activity by geography, property type, and contractor to understand market trends and identify emerging opportunities in your target areas.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-          Competitive intelligence.
-        </dt>
-        <dd class="inline">Monitor competitor activity by tracking their permit applications and construction projects. Identify where competitors are expanding and what types of projects they're pursuing.</dd>
-      </div>
-    </dl>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <div class="col-span-2">
-        <p class="text-base/7 font-semibold text-shovels-secondary-text">Geospatial building permit data</p>
-        <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">The construction activity intelligence platform</h2>
-        <p class="mt-6 text-base/7 text-gray-600">We built the most comprehensive geospatial database of building permits in the market, enabling you to see what's getting built and where, before anyone else.</p>
-      </div>
-      <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Geographic search
-          </dt>
-          <dd class="mt-2">Search by zip code, city, county or custom area using our geo_id system. Each geography includes detailed construction metrics and permit density analysis.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Site selection intelligence
-          </dt>
-          <dd class="mt-2">Identify optimal locations by analyzing construction activity patterns, permit density, and contractor presence in your target markets.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Market growth signals
-          </dt>
-          <dd class="mt-2">Track permit applications and approvals to identify emerging development patterns and market growth before construction begins.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            ArcGIS integration
-          </dt>
-          <dd class="mt-2">Access Shovels data as hosted feature layers in ArcGIS. Our geodatabase with {{ STATS.permits }} building permits is ready for your existing GIS workflows.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Competitive monitoring
-          </dt>
-          <dd class="mt-2">Track competitor activity by monitoring their permit applications and construction projects across your target geographies.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Risk assessment
-          </dt>
-          <dd class="mt-2">Use geospatial permit data to assess market conditions and construction activity before making significant investments in new markets.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Parcel integration
-          </dt>
-          <dd class="mt-2">Combine permit data with parcel information through our Regrid partnership for enhanced property analysis and site selection capabilities.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Customer support
-          </dt>
-          <dd class="mt-2">We're here to help you with any questions about integrating geospatial permit data into your workflows. Our team specializes in GIS and location intelligence.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels integrate with Esri ArcGIS?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing {{ STATS.permits }} building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What can I do with geospatial permit data?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Geospatial permit data supports site selection, market intelligence, competitive monitoring, and investment risk assessment. Building permits are the earliest signal of market activity, letting you see future developments before construction begins.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How many permits are in the Shovels geodatabase?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The Shovels geodatabase contains over {{ STATS.permits }} geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels include parcel data for GIS users?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Through the Regrid partnership, Shovels integrates parcel data with permit records using linked address identifiers. This enables combined property and permit analysis for enhanced site selection and market intelligence.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Who uses Shovels GIS data?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels GIS data is used by real estate investors, site selection analysts, utility companies, building material suppliers, government agencies, and academic researchers who need geospatial construction activity intelligence.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our geospatial building permit intelligence now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="/contact" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Talk to us</a>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    eyebrow='Shovels GIS',
+    h1='The earliest signal of market growth',
+    description="Building permits are the first sign of what's getting built, and where. Shovels delivers " ~ STATS.permits ~ " geocoded, AI-enriched permits as hosted feature layers, ready to load into Esri ArcGIS, QGIS, or any modern GIS platform.",
+    cta_label='Talk to us',
+    cta_href='https://www.shovels.ai/contact',
+    secondary_cta_label='View map gallery →',
+    secondary_cta_href='/features/gis/gallery-preview',
+    illustration_src='/images/features/gis/hero.svg',
+    illustration_alt='Shovels permit data as map layers in ArcGIS') }}
 
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Shovels GIS",
-  "serviceType": "GIS Integration",
-  "description": "Geospatial building permit intelligence delivered as hosted feature layers for Esri ArcGIS, enabling site selection, market intelligence, and competitive monitoring with {{ STATS.permits }} geocoded permits.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Shovels",
-    "url": "https://www.shovels.ai"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
-  "url": "https://www.shovels.ai/gis"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+{# Canonical geospatial-partner logo set (matches the live /gis page). #}
+{% set gis_logos = [
+    {'src': '/images/esri.png', 'alt': 'Esri', 'height': 26},
+    {'src': '/images/logos/regrid.png', 'alt': 'Regrid', 'height': 23},
+    {'src': '/images/pargoai.svg', 'alt': 'ParGo AI', 'height': 24},
+    {'src': '/images/logos/berkeley.svg', 'alt': 'UC Berkeley', 'height': 26},
+    {'src': '/images/mit.svg', 'alt': 'MIT', 'height': 23},
+] %}
+{{ ui_grid.logo_grid(logos=gis_logos, heading='TRUSTED ACROSS THE GEOSPATIAL COMMUNITY') }}
+
+{# F3 visual — GIS-stack compatibility cards (not a screenshot). #}
+{% set f3_media %}
+<div class="space-y-3">
+  {% for name, desc in [
+      ('ArcGIS Online', 'Hosted feature layers'),
+      ('ArcGIS Pro', 'Desktop GIS analysis'),
+      ('QGIS', 'Open-source friendly'),
+  ] %}
+  <div class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+    <div>
+      <p class="text-sm font-semibold text-gray-900">{{ name }}</p>
+      <p class="mt-0.5 text-sm text-gray-500">{{ desc }}</p>
+    </div>
+    <span class="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-shovels-primary/10 px-2.5 py-1 text-xs font-medium text-shovels-primary">
+      {{ icons.check(class='size-3.5', stroke_width=3) }} compatible
+    </span>
+  </div>
+  {% endfor %}
+</div>
+{% endset %}
+
+{# F1 / F4 ArcGIS map screenshots wrapped in the browser-chrome frame. #}
+{% set f1_media %}
+{{ ui_mockup.browser_frame(
+    '/images/features/gis/uc1-hvac-map.webp',
+    'HVAC permits styled as a map layer in ArcGIS',
+    title='ArcGIS Pro — HVAC permits',
+    max_width='', image_padding='') }}
+{% endset %}
+{% set f4_media %}
+{{ ui_mockup.browser_frame(
+    '/images/features/gis/uc4-homebuilder-map.webp',
+    'Homebuilder permit activity heat-styled by density in ArcGIS',
+    title='ArcGIS — homebuilder activity',
+    max_width='', image_padding='') }}
+{% endset %}
+
+{% set features = [
     {
-      "@type": "Question",
-      "name": "How does Shovels integrate with Esri ArcGIS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels delivers building permit data as hosted feature layers in ArcGIS. The geodatabase containing {{ STATS.permits }} building permits is accessible directly within your existing ArcGIS workflows, including ArcGIS Online and ArcGIS Pro."
-      }
+        'number': '01',
+        'title': 'See construction activity as map layers',
+        'description': 'Every Shovels permit is geocoded and enriched with AI-derived attributes—project type, value, contractor, inspection outcome.',
+        'bullets': [
+            STATS.permits ~ ' permits as hosted feature layers',
+            'Style, filter, and join like any native layer',
+            'Updated twice monthly, no ETL required',
+        ],
+        'media': f1_media,
     },
     {
-      "@type": "Question",
-      "name": "What can I do with geospatial permit data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Geospatial permit data supports site selection, market intelligence, competitive monitoring, and investment risk assessment. Building permits are the earliest signal of market activity, letting you see future developments before construction begins."
-      }
+        'number': '02',
+        'title': 'Join permits to parcels and properties',
+        'description': 'Through our Regrid partnership, permits connect directly to parcels, bringing site selection and risk analysis into one view.',
+        'bullets': [
+            STATS.parcels ~ ' parcels via Regrid',
+            'Linked addresses, residents, and contractor records',
+            'Built for site selection and de-risking major investments',
+        ],
+        'image_src': '/images/industries/climate/uc5-oregon-map.svg',
+        'image_alt': 'A region-wide map with permit activity lighting up across markets',
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "How many permits are in the Shovels geodatabase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Shovels geodatabase contains over {{ STATS.permits }} geocoded building permits from across the United States, each enriched with AI-derived attributes and linked to contractor and property records."
-      }
+        'number': '03',
+        'title': 'Works in the GIS stack you already use',
+        'description': 'Use our hosted feature layers in ArcGIS Online and ArcGIS Pro, or import the data into QGIS and other GIS platforms.',
+        'bullets': [
+            'Esri ArcGIS Online and ArcGIS Pro compatible',
+            'QGIS and open-source-friendly formats',
+            'No data engineering required',
+        ],
+        'media': f3_media,
     },
     {
-      "@type": "Question",
-      "name": "Does Shovels include parcel data for GIS users?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Through the Regrid partnership, Shovels integrates parcel data with permit records using linked address identifiers. This enables combined property and permit analysis for enhanced site selection and market intelligence."
-      }
+        'number': '04',
+        'title': 'Turn permit layers into market decisions',
+        'description': "Permits are the earliest geospatial signal of what's getting built, so teams can act before construction starts.",
+        'bullets': [
+            'Site selection: rank locations by permit density and contractor activity',
+            'Market-growth signals: spot emerging development patterns first',
+            'Competitive monitoring: track where competitors are pulling permits',
+            'De-risk investments: validate market conditions before you commit',
+        ],
+        'media': f4_media,
     },
-    {
-      "@type": "Question",
-      "name": "Who uses Shovels GIS data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels GIS data is used by real estate investors, site selection analysts, utility companies, building material suppliers, government agencies, and academic researchers who need geospatial construction activity intelligence."
-      }
-    }
-  ]
-}
-</script>
+] %}
+
+{{ ui.use_case_section(
+    wrapper_class='!pb-[5.1rem]',
+    eyebrow='GEOSPATIAL DATA',
+    heading='AI-powered permit data, delivered as a spatial format',
+    cases=features) }}
+
+{# Benefit strip — three-up, check icon + label + one line. #}
+<section class="w-full bg-white px-6 md:px-10 pt-[5.1rem] pb-24">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="text-center text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Hosted layers, zero data engineering</h2>
+    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+      {% for title, body in [
+          ('No ETL', 'Layers load straight into ArcGIS or QGIS—no bulk uploads, no data wrangling.'),
+          ('No storage cost', "We host the geodatabase, so you don't pay to store " ~ STATS.permits ~ " permit records."),
+          ('Always current', 'Permit layers refresh automatically twice a month—no re-importing.'),
+      ] %}
+      <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6">
+        <span class="flex size-9 items-center justify-center rounded-lg bg-shovels-primary/10">{{ icons.check(class='size-5 text-shovels-primary', stroke_width=3) }}</span>
+        <p class="mt-4 text-base font-medium text-gray-900">{{ title }}</p>
+        <p class="mt-1 text-sm text-gray-500">{{ body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# How it works — CLI-style numbered stepper (left rail + flush connector),
+   each step a card with text left + map visual right. #}
+<section id="how-it-works" class="w-full bg-gray-50 px-6 md:px-10 py-24">
+  <div class="mx-auto max-w-6xl">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">HOW IT WORKS</span>
+      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">From first call to live layers in three steps</h2>
+    </div>
+    <div class="mx-auto mt-12 max-w-5xl space-y-6">
+      {% for num, title, desc, imgnote, img in [
+          ('1', 'Tell us your coverage area', "Talk to our GIS team about the geographies, permit types, and layers you need. We'll scope coverage against your markets.", 'A highlighted coverage area across your markets, dotted with permit locations', 'coverage-area'),
+          ('2', 'We provision your layers', 'We publish your hosted feature layers and share credentials within days, not months.', 'A Shovels hosted feature layer in the ArcGIS portal, ready to open in the map viewer', 'provision-layers'),
+          ('3', 'Add them to your map', 'Load the layers into ArcGIS or QGIS and start analyzing. Updates ship automatically twice a month.', 'Shovels permit data rendered as a live, auto-updated layer on a web map', 'map-layer'),
+      ] %}
+      <div class="flex items-stretch gap-5 md:gap-6">
+        <div class="relative flex w-10 shrink-0 flex-col items-center justify-center">
+          {% if not loop.last %}<span class="absolute left-1/2 top-1/2 -bottom-[calc(50%_+_1.5rem)] w-0.5 -translate-x-1/2 bg-gray-200" aria-hidden="true"></span>{% endif %}
+          <span class="relative z-10 flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ num }}</span>
+        </div>
+        <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-xl font-medium text-gray-900">{{ title }}</h3>
+              <p class="mt-2 text-base text-gray-500">{{ desc }}</p>
+            </div>
+            <img src="/images/features/gis/{{ img }}.svg" alt="{{ imgnote }}" class="w-full h-auto rounded-xl">
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Links to /data-feed (Shovels Enterprise) — moves to /solutions/data-feed at launch. #}
+{{ ui_callout.callout(
+    wrapper_class='!pb-[2.25rem]',
+    variant='warm',
+    heading='Need the full geodatabase in your warehouse?',
+    body='GIS layers are one delivery format. The Shovels Data Feed delivers all seven core tables—permits, contractors, parcels, decisions, and more—to Snowflake, BigQuery, or Databricks.',
+    cta_label='Explore Enterprise',
+    cta_href='/data-feed') }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'How does Shovels integrate with Esri ArcGIS?',
+            'a': 'Shovels delivers building permit data as hosted feature layers that work natively in ArcGIS. The geodatabase, which contains ' ~ STATS.permits ~ ' building permits, plugs directly into your existing workflows in both ArcGIS Online and ArcGIS Pro.',
+        },
+        {
+            'q': 'Can I use Shovels data in QGIS?',
+            'a': 'Yes. Shovels data ships in standard geospatial formats that QGIS and other open-source tools read natively. Most teams work with our hosted feature layers in ArcGIS, but file-based delivery is available if your stack is built on open tooling.',
+        },
+        {
+            'q': 'How many permits are in the Shovels geodatabase?',
+            'a': 'The Shovels geodatabase contains ' ~ STATS.permits ~ ' geocoded building permits from across the United States. Each permit is enriched with AI-derived attributes—like project type, value, and inspection outcomes—and linked to its contractor and property records.',
+        },
+        {
+            'q': 'Does Shovels include parcel data for GIS users?',
+            'a': 'Yes. Through our partnership with Regrid, Shovels integrates parcel data with permit records using linked address identifiers. That means you can analyze property and permit information together in one view, which is especially powerful for site selection and market intelligence.',
+        },
+        {
+            'q': 'How often is the GIS data updated?',
+            'a': "Permit layers update twice a month, and the updates flow into your maps automatically. There's no re-importing or manual refreshing required—once your layers are set up, they simply stay current.",
+        },
+        {
+            'q': 'Who uses Shovels GIS data?',
+            'a': 'Shovels GIS data is used by real estate investors, site selection analysts, utility and telecom companies, building material suppliers, government agencies, and academic researchers—anyone who needs to see construction activity as geospatial intelligence.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
+    heading='Ready to put permits on the map?',
+    description='Talk to our GIS team about coverage, layers, and pricing for your use case.',
+    cta_label='Talk to us',
+    cta_href='https://www.shovels.ai/contact') }}

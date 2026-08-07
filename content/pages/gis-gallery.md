@@ -1,8 +1,7 @@
 Title: Building Permit Map Gallery
 Description: Interactive building-permit maps from Shovels — live ArcGIS web maps of U.S. new construction, HVAC, electrical, roofing, data center, and wildfire-recovery activity.
 Summary: A collection of live, interactive Esri ArcGIS web maps built on Shovels building-permit data, covering new construction, HVAC, electrical, roofing, data center, and wildfire-recovery permit activity across the United States.
-slug: features/gis/gallery-preview
-status: hidden
+slug: features/gis/gallery
 
 {% import 'macros/final_cta.html' as ui_cta %}
 
