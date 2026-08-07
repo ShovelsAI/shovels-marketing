@@ -164,10 +164,11 @@ launch** — the refreshed header/footer now link to `/pricing`.
 
 ## Launch runbook — exactly what must happen to go live
 
-Execution order across the DNS migration and the hosting cutover lives in
-the Linear project document "Launch runbook: DNS migration + website
-refresh cutover". This section holds the content detail; that document
-holds the phase sequencing and the gates between phases.
+Phase sequencing lives in the Linear project document "Launch runbook:
+website refresh cutover". This section holds the content detail; that
+document holds the sequence. **Hosting already moved to Vercel
+(2026-08-07)** — DNS stays at Route 53 with the `www` CNAME repointed; the
+former DNS-to-Cloudflare migration and Worker cutover were dropped.
 
 The launch is one coupled deploy, but several gates must be green first.
 In order:
@@ -189,19 +190,13 @@ before the rule was lifted.)*
 - Mobile QA passed; staging deploy reviewed by stakeholders at real URLs
 - ✅ Branch synced with `main` (merge `c169d91d`) — Gate 0 resolved
 
-### Gate 2 — DNS zone on Cloudflare (hard blocker for redirects)
-`shovels.ai` DNS is hosted at **AWS Route 53**, not Cloudflare — the
-nameservers are `ns-1351.awsdns-40.org` and three siblings. Attaching a
-custom domain to the Worker, and creating the Redirect Rules in step 5
-below, both require the domain to be a **Cloudflare zone**. Getting it
-there is a nameserver migration, not a record edit: every record in the
-zone — Google Workspace `MX`, the SPF and domain-verification `TXT`
-records, and `api` / `app` / `docs` / `charlie` / `email` / `trust` —
-must be recreated on the Cloudflare side or the corresponding service
-breaks. Export the Route 53 zone first; DNS has no version control, so
-that export is the only restore artifact. Run the migration as a no-op
-(`www` still pointing at GitHub Pages) and soak it before the hosting
-cutover, so a DNS fault and a hosting fault are never in flight at once.
+### Gate 2 — Hosting on Vercel ✅ RESOLVED
+Hosting moved to **Vercel** on 2026-08-07. DNS stays at **AWS Route 53** —
+only the `www` CNAME was repointed from GitHub Pages to Vercel (a single
+record; no nameserver migration). Cloudflare was dropped entirely (it would
+have forced moving the whole zone and cost ~$200/mo); GitHub Pages was
+decommissioned and the Cloudflare Worker deleted. Redirects no longer depend
+on any DNS/zone gate — they ship in `vercel.json` (step 5).
 
 ### The flip — one coupled deploy (interdependent; ship together)
 1. **Slug swaps**: industry `*-preview` → live (drop `-preview` +
@@ -225,9 +220,10 @@ cutover, so a DNS fault and a hosting fault are never in flight at once.
    (`/features/gis/gallery-preview` → `/features/gis/gallery`).
 5. **Enable redirects** (301 permanent, preserve query strings) — apply
    ONLY at launch, coupled with the slug swaps (step 1); applied earlier
-   they point at pages that don't exist yet. Cloudflare **Bulk Redirects**
-   (upload as a list) or **Single Redirect Rules** on the `shovels.ai`
-   zone — available only once Gate 2 is met:
+   they point at pages that don't exist yet. Add them as entries in the
+   **`vercel.json`** `redirects` array (in-repo; the block doesn't exist
+   yet — see MAR-174). The `charlie.shovels.ai` hostname redirect is
+   handled at the DNS level by Ivana, not in `vercel.json`:
 
    | # | From (current live) | To (launch) |
    |---|---|---|
