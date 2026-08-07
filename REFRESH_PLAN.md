@@ -170,6 +170,13 @@ document holds the sequence. **Hosting already moved to Vercel
 (2026-08-07)** — DNS stays at Route 53 with the `www` CNAME repointed; the
 former DNS-to-Cloudflare migration and Worker cutover were dropped.
 
+**Flip status (2026-08-07):** the content flip below — slug swaps, chrome
+un-gate, homepage swap, and interim link repoints — is **already executed
+on `morgan/website-refresh-2026`**; the branch now *is* the new site
+(previewable on Vercel). Positioning sweep (MAR-169) and the STATS refresh
+(MAR-251) are also done. Remaining for go-live: merge branch→`main`, create
+the `vercel.json` redirects (MAR-174), and final go/no-go (MAR-176).
+
 The launch is one coupled deploy, but several gates must be green first.
 In order:
 
