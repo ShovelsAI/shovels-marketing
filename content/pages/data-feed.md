@@ -1,423 +1,206 @@
-Title: Building Contractor and Permit Data Feed
-Description: Get nationwide building permit and contractor data directly in your Snowflake, Big Query, or Databricks environment with automatic updates and flexible delivery options.
-slug: data-feed
+Title: Shovels Enterprise: Permit Data Native to Snowflake, BigQuery & Databricks
+Description: U.S. building permit and contractor data delivered natively to Snowflake, BigQuery, or Databricks. Custom refresh cadences, SOC 2 Type II, and dedicated support.
+slug: solutions/data-feed
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/icons.html' as icons %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/industries_strip.html' as ui_ind %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 pt-32 pb-24 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Large scale data delivery for modern data teams</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We use the latest geospatial and data science techniques to bring you the most accurate and useful data possible. We deliver to Snowflake, BigQuery, and Databricks or directly to your S3, GCS, or Azure buckets.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
-          <a href="https://docs.shovels.ai" class="text-sm/6 font-semibold text-gray-900" target="_blank">Documentation Hub<span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="theme/images/data-feed/hero.svg" alt="Illustration showing building materials and construction data analytics">
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-white pb-12 sm:pb-24">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <ul role="list" class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8 pb-6 sm:pb-24">
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Permits</h2>
-          <p class="text-sm text-gray-600">Comprehensive building and construction permits data from across the United States, including permit types, values, and status updates.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">{{ STATS.permits }}</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Twice Monthly</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Contractors</h2>
-          <p class="text-sm text-gray-600">Detailed profiles of licensed contractors and construction companies, including business information, specialties, and licensing status.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">{{ STATS.contractors }}</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Twice Monthly</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Residents</h2>
-          <p class="text-sm text-gray-600">Property owner and resident information linked to permits via <code>address_id</code>, providing valuable context for construction and renovation projects and B2C ad targeting.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">{{ STATS.residents }}</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Monthly</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Employees</h2>
-          <p class="text-sm text-gray-600">Construction industry employee profiles linked to contractors via <code>contractor_id</code>, enabling workforce analysis and targeted outreach strategies.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">77M+</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Monthly</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Contractor State License (CSL)</h2>
-          <p class="text-sm text-gray-600">Comprehensive database of all licensed contractors sourced directly from state licensing boards, including those without permit history, for complete market coverage.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">3M+</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Monthly</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Decisions</h2>
-          <p class="text-sm text-gray-600">Local government meeting intelligence from city councils and planning boards, including zoning changes, project discussions, and approval timelines—giving visibility months before projects break ground.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">25K+</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Real Time</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-      <li class="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div class="flex flex-col gap-y-2 border-b border-gray-900/5 bg-gray-50 p-6 min-h-[165px]">
-          <h2 class="text-xl font-semibold text-gray-900">Parcels</h2>
-          <p class="text-sm text-gray-600">Available via your Regrid license, get seamless integration between Shovels <code>address_id</code> and Regrid <code>LL_UUID</code> fields for comprehensive property analysis and market insights.</p>
-        </div>
-        <dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm/6">
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Record count</dt>
-            <dd class="text-gray-700 font-medium">{{ STATS.parcels }}</dd>
-          </div>
-          <div class="flex justify-between gap-x-4 py-3">
-            <dt class="text-gray-500">Update frequency</dt>
-            <dd class="flex items-start gap-x-2">
-              <div class="font-medium text-gray-900">Monthly</div>
-            </dd>
-          </div>
-        </dl>
-      </li>
-    </ul>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Enterprise-grade building permit data</h2>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/data-feed/ping.png" alt="Snowflake integration icon" class="size-5 flex-none">
-            Snowflake delivery
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">To get our permit data in Snowflake, we just need your public org and account identifiers. No extra engineering or security support required.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/data-feed/json.png" alt="Big Query integration icon" class="size-5 flex-none">
-            BigQuery delivery
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">To get permit data into your BigQuery account, we just need a Google service account. The tables will arrive pre-formatted and ready to query.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/data-feed/accurate.png" alt="Parquet format icon" class="size-5 flex-none">
-            Parquet delivery
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Parquet files are optimized for complex data structures, making data ingestion faster and more reliable. We also support CSV delivery if needed.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/data-feed/metrics.png" alt="Automatic updates icon" class="size-5 flex-none">
-            Automatic updates
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">With our private table sharing service, updates are done automatically. When we have new production data, it flows into your Snowflake, Big Query, or Databricks account automatically.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/data-feed/schema.png" alt="Custom schema icon" class="size-5 flex-none">
-            Custom schema
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">For super custom reporting, we can run SQL locally and format your report exactly the way you want it. For these requests, we'll deliver as CSV and offer both one-time and monthly options.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/data-feed/terms.png" alt="Terms and conditions icon" class="size-5 flex-none">
-            Flexible terms
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Our terms give you the flexibility to create derivative works and build robust products using our comprehensive permit and contractor data.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="overflow-hidden bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="lg:pr-8 lg:pt-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-shovels-primary">Enterprise-grade workflows</p>
-          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We ❤️ data warehouses</h2>
-          <p class="mt-6 text-lg/8 text-gray-600">We're used to working with data science teams and integration consultants. Contact us to discuss your use case and get a data sample.</p>
-          <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-                </svg>
-                Push anywhere.
-              </dt>
-              <dd class="inline">We support all major cloud storage providers, including AWS, Azure, and GCP. We also push to Snowflake, BigQuery, and Databricks.</dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-                </svg>
-                Transfer securely.
-              </dt>
-              <dd class="inline">We use SFTP and HTTPS to transfer your data securely. Let us do the data appending so your team can focus on what matters most.</dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                  <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
-                </svg>
-                New models.
-              </dt>
-              <dd class="inline">We use AI and modern data science to derive new insights from permit, parcel, and census tract data.</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-      <img src="{static}/images/nvi.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
-    </div>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What data tables are included in the Shovels data feed?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The data feed includes seven core tables: Permits ({{ STATS.permits }} records), Contractors ({{ STATS.contractors }}), Decisions (25K+), Residents ({{ STATS.residents }}), Employees (77M+), Contractor State Licenses (3M+), and Parcels ({{ STATS.parcels }} via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Which data warehouses does Shovels deliver to?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels delivers directly to Snowflake, BigQuery, and Databricks through private table sharing. We also support delivery to AWS S3, Google Cloud Storage, and Azure blob storage. Parquet files are available as an alternative format.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How are data feed updates handled?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Updates are automatic and monthly. Shovels refreshes its database on the 1st and 15th of each month, and new production data flows into your Snowflake, BigQuery, or Databricks account automatically. Each cycle adds 5-10 million new records and 1-5 million status updates.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I get a custom data schema or report?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. For custom reporting needs, Shovels can run SQL queries and format reports to your exact specifications. Custom reports are available as CSV with one-time or monthly delivery options.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What engineering effort is needed to set up the data feed?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Minimal. For Snowflake, Shovels only needs your public org and account identifiers. For BigQuery, a Google service account is required. Tables arrive pre-formatted and ready to query with no additional engineering or security configuration.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="{filename}data-dictionary.md" class="text-sm/6 font-semibold text-gray-900">Data Dictionary <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    eyebrow='Shovels Enterprise',
+    h1='Permit data, native to your stack',
+    description='U.S. permit and contractor dataset, delivered live to Snowflake, BigQuery, or Databricks. Normalized to one schema, with no pipelines to build or maintain.',
+    cta_label='Talk to sales',
+    cta_href='/contact',
+    illustration_src='/images/solutions/data-feed/hero.svg',
+    illustration_alt='Shovels permit and contractor data delivered to your data warehouse') }}
 
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Shovels Data Feed",
-  "serviceType": "Data Feed",
-  "description": "Enterprise data feed delivering nationwide US building permit and contractor records directly to Snowflake, BigQuery, Databricks, or cloud storage with automatic monthly updates.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Shovels",
-    "url": "https://www.shovels.ai"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
-  "url": "https://www.shovels.ai/data-feed"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "Shovels US Building Permit and Contractor Data Feed",
-  "description": "Nationwide US building permit, contractor, resident, and employee data delivered to enterprise data warehouses. Includes {{ STATS.permits }} permits, {{ STATS.contractors }} contractors, {{ STATS.residents }} residents, and 77M+ employees with monthly updates.",
-  "url": "https://www.shovels.ai/data-feed",
-  "distribution": [
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of enterprise data teams. Our SOC 2 Type II certification reflects controls independently audited over a sustained period—and we complete security questionnaires, sign DPAs, and share audit reports as part of your procurement process.',
+    cta_label='View security documentation →',
+    cta_href='https://trust.shovels.ai/') }}
+
+{# ── Coded feature visuals (light cards + one dark chart). The schema
+   fields and chart values are illustrative, not an exact data contract. #}
+
+{% set f1_media %}
+<div class="rounded-xl bg-white p-6">
+  <div class="flex items-stretch">
+    {# Source node — boosted green outline box; stretches to the full
+       height of the warehouse stack for balance. #}
+    <div class="flex w-44 shrink-0 flex-col items-center justify-center gap-4 rounded-2xl border border-shovels-primary px-6">
+      <img src="/images/shovels-navbar-logo.svg" alt="Shovels" class="h-9 w-auto">
+      {{ icons.database(class='size-8 text-shovels-primary') }}
+    </div>
+    {# Connector — source stub to the vertical bus; per-box stubs + dots.
+       Bus insets (top/bottom-12) = half a box height (h-24), so it spans
+       the first to last box centers. #}
+    <div class="relative w-12 shrink-0" aria-hidden="true">
+      <span class="absolute left-1/2 top-12 bottom-12 w-px -translate-x-1/2 bg-gray-300"></span>
+      <span class="absolute left-0 top-1/2 h-px w-1/2 -translate-y-1/2 bg-gray-300"></span>
+    </div>
+    {# Warehouse boxes — square-ish, centered enlarged glyph #}
+    <div class="flex flex-1 flex-col gap-4">
+      {% for logo, name in [
+          ('snowflake.svg', 'Snowflake'),
+          ('bigquery.svg', 'BigQuery'),
+          ('databricks.png', 'Databricks'),
+      ] %}
+      <div class="relative flex h-24 items-center justify-center rounded-2xl bg-gray-50 ring-1 ring-gray-100">
+        <span class="absolute right-full top-1/2 h-px w-6 -translate-y-1/2 bg-gray-300" aria-hidden="true"></span>
+        <span class="absolute right-full top-1/2 size-2 -translate-y-1/2 translate-x-1/2 rounded-full bg-shovels-primary" aria-hidden="true"></span>
+        <img src="/images/logos/{{ logo }}" alt="{{ name }}" class="size-14 object-contain">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endset %}
+
+{% set f2_media %}
+<div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+  <div class="flex items-center justify-between">
+    <span class="font-medium text-gray-900">June 2026</span>
+    <span class="rounded-full bg-shovels-primary/10 px-2.5 py-1 text-xs font-medium text-shovels-primary">Custom cadence available</span>
+  </div>
+  <div class="mt-4 grid grid-cols-7 gap-1 text-center text-xs">
+    {% for d in ['S','M','T','W','T','F','S'] %}<span class="py-1 font-medium text-gray-400">{{ d }}</span>{% endfor %}
+    <span></span>
+    {% for day in range(1, 31) %}
+    <span class="flex h-9 items-center justify-center rounded-md {% if day in [1, 15] %}bg-shovels-primary font-semibold text-white{% else %}text-gray-600{% endif %}">{{ day }}</span>
+    {% endfor %}
+  </div>
+  <div class="mt-5 grid grid-cols-3 gap-3 border-t border-gray-100 pt-4 text-center">
+    <div><p class="text-sm font-semibold text-gray-900">1st &amp; 15th</p><p class="text-xs text-gray-500">standard delivery</p></div>
+    <div><p class="text-sm font-semibold text-gray-900">+7.2M</p><p class="text-xs text-gray-500">records / cycle</p></div>
+    <div><p class="text-sm font-semibold text-gray-900">SLA</p><p class="text-xs text-gray-500">enterprise terms</p></div>
+  </div>
+</div>
+{% endset %}
+
+{% set f3_media %}
+<div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+  <div class="grid grid-cols-2 gap-3">
+    {% for tbl, fields in [
+        ('permits', ['permit_id', 'status', 'job_value', 'tags[]']),
+        ('contractors', ['license_no', 'trade', 'pass_rate', 'permits[]']),
+        ('property', ['parcel_id', 'use_type', 'year_built', 'sqft']),
+        ('decisions', ['decision_id', 'jurisdiction', 'hearing_at', 'permit_id']),
+    ] %}
+    <div class="rounded-lg border border-gray-200 bg-gray-50 p-3">
+      <p class="font-mono text-xs font-semibold text-shovels-primary">{{ tbl }}</p>
+      <ul class="mt-2 space-y-1">
+        {% for f in fields %}<li class="font-mono text-[11px] text-gray-500">{{ f }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  <p class="mt-4 text-center font-mono text-xs text-gray-400">one unified schema &middot; analytics &amp; AI-ready</p>
+</div>
+{% endset %}
+
+{% set f5_media %}
+<div class="rounded-xl bg-gray-900 p-6 shadow-sm ring-1 ring-white/10">
+  <div class="flex items-center justify-between">
+    <span class="text-sm font-medium text-white">20+ years of permit history</span>
+    <span class="font-mono text-xs text-gray-400">analytics-ready</span>
+  </div>
+  <div class="mt-6 flex h-[218px] items-end gap-1.5">
+    {% for h in [12, 16, 14, 20, 22, 26, 24, 30, 33, 38, 35, 42, 46, 44, 50, 57, 54, 63, 70, 76, 84, 92] %}
+    <div class="flex-1 rounded-t {% if loop.index > 19 %}bg-[#E9BE51]{% else %}bg-emerald-400/60{% endif %}" style="height: {{ h }}%"></div>
+    {% endfor %}
+  </div>
+  <div class="mt-3 flex justify-between font-mono text-xs text-gray-500">
+    <span>2003</span><span>2014</span><span>2026</span>
+  </div>
+</div>
+{% endset %}
+
+{% set features = [
     {
-      "@type": "DataDownload",
-      "encodingFormat": "application/x-parquet",
-      "name": "Parquet"
+        'number': '01',
+        'title': 'Warehouse-native delivery',
+        'description': 'Live data delivered to your environment — <a href="https://app.snowflake.com/marketplace/providers/GZTSZDXJR9D/Shovels" target="_blank" rel="noopener noreferrer" class="font-semibold text-shovels-primary hover:text-shovels-primary/80 hover:underline">Snowflake</a>, <a href="https://console.cloud.google.com/marketplace/product/shovels-b7048/cloud-marketplace-a90e0dec-0ac2-4be6-bc13-15b7c2080b51.cloudpartnerservices.goog?project=shovels-b7048" target="_blank" rel="noopener noreferrer" class="font-semibold text-shovels-primary hover:text-shovels-primary/80 hover:underline">BigQuery</a>, Databricks, or parquet files to S3, GCS, or Azure. We ingest, normalize, and maintain the pipeline so your team can focus on analysis.',
+        'media': f1_media,
     },
     {
-      "@type": "DataDownload",
-      "encodingFormat": "text/csv",
-      "name": "CSV"
-    }
-  ],
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "United States"
-  },
-  "creator": {
-    "@type": "Organization",
-    "name": "Shovels",
-    "url": "https://www.shovels.ai"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What data tables are included in the Shovels data feed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The data feed includes seven core tables: Permits ({{ STATS.permits }} records), Contractors ({{ STATS.contractors }}), Decisions (25K+), Residents ({{ STATS.residents }}), Employees (77M+), Contractor State Licenses (3M+), and Parcels ({{ STATS.parcels }} via Regrid). Permits are updated twice monthly, Decisions are updated in real time, while all other tables are updated monthly."
-      }
+        'number': '02',
+        'title': 'Custom refresh cadences',
+        'description': 'Choose standard twice-monthly updates or a custom delivery schedule aligned to your workflow, reporting needs, and SLA requirements. Receive data when your business needs it.',
+        'media': f2_media,
     },
     {
-      "@type": "Question",
-      "name": "Which data warehouses does Shovels deliver to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels delivers directly to Snowflake, BigQuery, and Databricks through private table sharing. We also support delivery to AWS S3, Google Cloud Storage, and Azure blob storage. Parquet files are available as an alternative format."
-      }
+        'number': '03',
+        'title': 'Full schema access',
+        'description': 'Access every permit, contractor, property, and decision field through a unified analytics and AI-ready schema. No jurisdiction-by-jurisdiction mapping or cleanup required. Put our interconnected tables to work for your specific needs.',
+        'media': f3_media,
     },
     {
-      "@type": "Question",
-      "name": "How are data feed updates handled?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Updates are automatic and monthly. Shovels refreshes its database on the 1st and 15th of each month, and new production data flows into your Snowflake, BigQuery, or Databricks account automatically. Each cycle adds 5-10 million new records and 1-5 million status updates."
-      }
+        'number': '04',
+        'title': 'Dedicated support',
+        'description': 'Work directly with a dedicated customer success and solutions architect who helps your team onboard, integrate, and operationalize the data. Get answers from experts, not a support queue.',
+        'image_src': '/images/industries/building-materials/uc3-dealer-intel.svg',
+        'image_alt': 'Two people reviewing building permit data together at a counter',
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "Can I get a custom data schema or report?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. For custom reporting needs, Shovels can run SQL queries and format reports to your exact specifications. Custom reports are available as CSV with one-time or monthly delivery options."
-      }
+        'number': '05',
+        'title': '20+ years of history',
+        'description': 'Access the complete permit backlog, not just recent records. Train models, analyze long-term trends, and backfill workflows with more than 20 years of construction activity — or use real-time city decisions and net-new permit, contractor, and property data.',
+        'media': f5_media,
     },
-    {
-      "@type": "Question",
-      "name": "What engineering effort is needed to set up the data feed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minimal. For Snowflake, Shovels only needs your public org and account identifiers. For BigQuery, a Google service account is required. Tables arrive pre-formatted and ready to query with no additional engineering or security configuration."
-      }
-    }
-  ]
-}
-</script>
+] %}
+
+{{ ui.use_case_section(
+    eyebrow='',
+    heading='Enterprise-ready from day one',
+    cases=features) }}
+
+{{ ui_ind.industries_strip(heading='TRUSTED BY DATA TEAMS IN', wrapper_class='!pb-[4.5rem]') }}
+
+{# Coverage — shared include as a placeholder; Enterprise-specific copy
+   updates pending from the team (may need a parameterized variant). #}
+{% set coverage_wrapper_class = '!py-[4.5rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'How is data delivered to my warehouse?',
+            'a': 'Shovels delivers data natively to Snowflake, BigQuery, and Databricks. We handle the transfer directly with no ETL pipelines or middleware required on your end. Custom delivery schedules are available for enterprise contracts.',
+        },
+        {
+            'q': 'Can I trial the data before committing?',
+            'a': 'Yes. We can deliver a sample dataset directly to your Snowflake, BigQuery, or Databricks environment so your team can evaluate coverage, schema, and data quality before signing. We also publish public marketplace listings on Snowflake and BigQuery.',
+        },
+        {
+            'q': 'How complete is the coverage?',
+            'a': 'Shovels covers approximately 85% of the U.S. population across ' ~ STATS.jurisdictions ~ " jurisdictions, all normalized to a single schema. You won't need to handle jurisdiction-by-jurisdiction variation. A full coverage dashboard is available at shovels.ai/coverage.",
+        },
+        {
+            'q': 'How often is the data refreshed?',
+            'a': 'Standard delivery includes updates on the 1st and 15th of each month, with 5-10 million new records per cycle. Custom refresh cadences are available for enterprise contracts with specific SLA requirements.',
+        },
+        {
+            'q': 'What does the support model look like?',
+            'a': 'Enterprise customers get a dedicated solutions architect for onboarding, integration, and ongoing support. We also respond to security questionnaires, sign DPAs, and provide SOC 2 Type II documentation as part of any procurement process.',
+        },
+        {
+            'q': 'How do I make the case internally for a permit data subscription?',
+            'a': 'The ROI framing depends on your use case — sales prospecting, market sizing, risk modeling, or network planning. Our team can help you build a business case with sample data in your environment and a coverage report for your target markets.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
+    heading='Construction intelligence, delivered your way',
+    description='The most complete permit dataset available, delivered to your stack.',
+    cta_label='Talk to sales',
+    cta_href='/contact') }}
