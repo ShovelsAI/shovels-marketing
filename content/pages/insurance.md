@@ -1,7 +1,6 @@
 Title: Property Intelligence for Insurance Providers
 Description: Permit-backed property risk data for insurance providers. Verify roofs, validate claims, and find new business — a modern BuildFax alternative.
-slug: insurance-preview
-status: hidden
+slug: insurance
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/logo_grid.html' as ui_grid %}

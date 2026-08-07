@@ -1,333 +1,144 @@
-Title: Telecommunications Infrastructure Intelligence | Building Permit Data for Telecom
-Description: Optimize fiber deployment and network expansion using building permit and city council data. Track competitor activity, franchise agreements, and broadband initiatives months before permits are filed across {{ STATS.jurisdictions }} jurisdictions.
+Title: Infrastructure Intelligence for Telecommunications Companies
+Description: Telecom infrastructure data for network planning. Track competitor builds, spot new construction early, and target markets where permits move fastest.
 slug: telecommunications
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Accelerate internet infrastructure deployment with permit intelligence</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Pinpoint permit filings for fiber, 5G, data centers, and utility infrastructure—across {{ STATS.jurisdictions }} jurisdictions, covering 85% of the U.S. population.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="{filename}contact.md" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
-          <a href="https://www.canva.com/design/DAGuqAlsqoo/ouuYHQIhNiHhqmC5vIgPHw/view?utm_content=DAGuqAlsqoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc015198fc0" class="text-sm/6 font-semibold text-gray-900" target="_blank">Telecom One-pager <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="{static}/images/chuck-electrical2.svg" alt="Telecommunications infrastructure planning using building permit data">
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Telecom Infrastructure Intelligence</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Use AI to Predict Fiber Expansion Opportunities</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Shovels uses proprietary LLM strategies to tag and classify hundreds of millions of building permits to identify high-growth areas where active or future telecom infrastructure is being deployed.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <svg class="flex-none size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Monitor Competitive Activity
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Our fiber permit classification reveals where ISPs and network providers, from Tier 1s like Verizon, Comcast, and T-Mobile to Tier 3 providers, are actively building, enabling strategic market entry decisions and investment prioritization.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <svg class="flex-none size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Target Optimal Route Planning
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">We identify permit-friendly jurisdictions by analyzing historical approval timelines, approval rates, and construction patterns, so you can route around difficult authorities and streamline deployment.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <svg class="flex-none size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Network Protection & Monitoring
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Monitor construction activities that could impact existing telecom infrastructure. Detect construction near network elements early for damage prevention and strategic planning.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <svg class="flex-none size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            New Build Opportunities
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Identify new construction areas where telecom companies can install fiber infrastructure. Find opportunities to be part of new developments as they're being built.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <svg class="flex-none size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Market Prioritization
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Identify high-demand areas with construction density analysis. Focus on construction density rather than population data alone, ensuring optimal network placement.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <svg class="flex-none size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Authority Relations Mapping
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Map contacts and approval patterns across thousands of jurisdictions. Navigate the complex permit landscape with jurisdiction timeline intelligence.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    h1='Infrastructure intelligence for telecommunications companies',
+    description='Access telecom infrastructure data across the US, monitor competitor filings, and track new construction to see where demand is emerging for fiber, 5G, and other buildouts.',
+    illustration_src='/images/industries/telecommunications/hero.svg',
+    illustration_alt='Telecommunications hero illustration') }}
 
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of enterprise telecommunications carriers and infrastructure operators. Our controls are independently audited over time, clearing the bar for vendor security reviews at large carriers and ISPs.') }}
 
-
-
-<div class="overflow-hidden bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <p class="max-w-2xl text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-6xl">Telecommunications permit database</p>
-    <div class="mt-6 max-w-xl xl:col-end-1 xl:row-start-1">
-      <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Power faster, smarter telecom infrastructure deployment.</p>
-    </div>
-    <div class="relative overflow-hidden pt-16">
-      <div class="mx-auto max-w-7xl">
-        <div class="rounded-lg shadow-2xl ring-1 ring-gray-900/10 mb-[-12%] overflow-hidden">
-          <img src="{static}/images/telecom_permits.png" alt="Telecommunications permits" class="w-full h-auto" width="2432" height="1442">
-        </div>
-        <div class="relative" aria-hidden="true">
-          <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"></div>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
-<div class="bg-gray-50 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Challenges We Solve for Telecommunications</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Address the unique pain points faced by telecommunications companies in infrastructure planning and deployment.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-        <div class="flex flex-col">
-          <dt class="text-lg font-semibold leading-7 text-gray-900">Route Optimization</dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Avoid permit bottlenecks with jurisdiction timeline intelligence. Identify permit-friendly jurisdictions and streamline deployment processes.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-lg font-semibold leading-7 text-gray-900">Competitive Intelligence</dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Track fiber builds before market entry decisions. Monitor competitor activity across target markets to inform strategic planning.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-lg font-semibold leading-7 text-gray-900">Market Prioritization</dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Identify high-demand areas with construction density analysis. Focus resources on markets with the highest growth potential.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-lg font-semibold leading-7 text-gray-900">Authority Relations</dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-            <p class="flex-auto">Map contacts and approval patterns across thousands of jurisdictions. Build relationships with key decision-makers in target markets.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">City Council Intelligence for Telecom Infrastructure</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">Before fiber permits are filed, city councils debate broadband expansion, right-of-way permissions, and franchise agreements. Shovels Decisions data gives you visibility into these discussions months before ground breaks.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Franchise Agreement Discussions
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Know when cities are reviewing telecom agreements and negotiating terms that will impact your infrastructure deployment timeline.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Broadband Expansion Initiatives
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Identify municipalities prioritizing internet infrastructure and where council support indicates favorable markets for expansion.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Right-of-Way Permits
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Track discussions about utility corridor access and identify potential obstacles or opportunities in your network planning.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            BEAD Funding Priorities
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Monitor where federal broadband dollars are being allocated and understand which cities have council backing for infrastructure projects.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-        <div class="max-w-xl lg:max-w-lg">
-          <img src="{static}/images/ArcGIS-map.jpg" alt="ArcGIS map showing building permits nationwide" class="rounded-lg shadow-lg">
-        </div>
-        <div class="max-w-xl lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-shovels-secondary">Geospatial intelligence powering your telecom strategy</p>
-          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">{{ STATS.permits }} Permits Nationwide, Mapped</h2>
-          <p class="mt-6 text-lg/8 text-gray-300">
-            Building permits are inherently geospatial objects that provide the earliest signal of market activity. Through our <a href="{filename}gis.md" class="text-shovels-secondary hover:text-shovels-secondary/80">Esri partnership</a>, empower your GIS team to visualize internet, new construction, and other high-signal permits to strengthen your telecom strategy. <a href="https://arcgis.gis.shovels.ai/portal/home/item.html?id=bf62b9e7f387401baf31dab2d1a72765" class="text-shovels-secondary hover:text-shovels-secondary/80" target="_blank">ArcGIS Web Map <span aria-hidden="true">→</span></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can Shovels help track telecom infrastructure before permits are filed?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels Decisions data provides intelligence from city council meetings and planning boards where broadband expansion, franchise agreements, and right-of-way permissions are discussed. This gives you visibility into telecom infrastructure projects months before permits are filed, allowing you to plan network deployment and identify favorable markets earlier than competitors.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What city council data does Shovels provide for telecom companies?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels tracks franchise agreement discussions, broadband expansion initiatives, right-of-way permit debates, and BEAD funding allocation priorities from city councils and planning boards nationwide. This policy-layer intelligence helps you identify municipalities prioritizing internet infrastructure and understand which projects have council backing.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels identify permit-friendly jurisdictions?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels analyzes historical approval timelines, approval rates, and construction patterns across thousands of jurisdictions. This intelligence helps you route fiber deployment around difficult authorities and streamline your infrastructure planning by focusing on jurisdictions with faster, more predictable permit processes.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels help monitor competitor fiber deployments?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like Verizon, Comcast, and T-Mobile to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+{% set telecommunications_cases = [
     {
-      "@type": "Question",
-      "name": "How can Shovels help track telecom infrastructure before permits are filed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels Decisions data provides intelligence from city council meetings and planning boards where broadband expansion, franchise agreements, and right-of-way permissions are discussed. This gives you visibility into telecom infrastructure projects months before permits are filed, allowing you to plan network deployment and identify favorable markets earlier than competitors."
-      }
+        'number': '01',
+        'title': 'Identify new commercial, residential, and industrial developments for network planning',
+        'description': 'Get ahead of subscriber demand and feed your market intelligence with new residential, commercial, and industrial construction data.',
+        'bullets': [
+            'Identify new commercial, residential, and industrial construction by subdivision, ZIP, and metro',
+            'Detect new build zones months before occupancy and service requests',
+            'Prioritize network buildout based on construction density',
+            'Align network deployment timelines with construction schedules',
+        ],
+        'image_src': '/images/industries/telecommunications/uc1-new-developments.svg',
+        'image_alt': 'Shovels app — new-construction permit results filtered by location and date, beside a map showing permit clusters across the state',
     },
     {
-      "@type": "Question",
-      "name": "What city council data does Shovels provide for telecom companies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels tracks franchise agreement discussions, broadband expansion initiatives, right-of-way permit debates, and BEAD funding allocation priorities from city councils and planning boards nationwide. This policy-layer intelligence helps you identify municipalities prioritizing internet infrastructure and understand which projects have council backing."
-      }
+        'number': '02',
+        'title': 'Monitor competitor network permit filings in your service areas',
+        'description': 'Compare competitor filings against your network design to identify gaps, protect territory, and prioritize capital.',
+        'bullets': [
+            'Track competitor network permit filings by geography and carrier',
+            'Detect competitive activity in existing service territories early',
+            'Identify markets where Tier 1 and Tier 3 ISPs are expanding',
+            'Prioritize defensive deployments in high-risk areas',
+        ],
+        'image_src': '/images/industries/telecommunications/uc2-competitor-filings.svg',
+        'image_alt': "Shovels app — a competitor's network infrastructure permit detail, with location map, timeline, and project description",
     },
     {
-      "@type": "Question",
-      "name": "How does Shovels identify permit-friendly jurisdictions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels analyzes historical approval timelines, approval rates, and construction patterns across thousands of jurisdictions. This intelligence helps you route fiber deployment around difficult authorities and streamline your infrastructure planning by focusing on jurisdictions with faster, more predictable permit processes."
-      }
+        'number': '03',
+        'title': 'Target markets where permits move fastest',
+        'description': 'Consider approval durations and focus deployments in the right markets.',
+        'bullets': [
+            'Identify jurisdictions with fast, predictable approval timelines',
+            'Compare jurisdictions by approval rate before committing resources',
+            'Map contacts and approval patterns for right-of-way planning',
+            'Prioritize markets where permits close fastest',
+        ],
+        'image_src': '/images/industries/telecommunications/uc3-fastest-permits.svg',
+        'image_alt': 'A network planner comparing two regions — one flagged fast approvals, one slow — deciding where to build first',
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "Can Shovels help monitor competitor fiber deployments?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our AI-enhanced fiber permit classification reveals where ISPs and network providers—from Tier 1 carriers like Verizon, Comcast, and T-Mobile to Tier 3 providers—are actively building. This competitive intelligence enables strategic market entry decisions and helps you prioritize investment in underserved areas."
-      }
-    }
-  ]
-}
-</script>
+        'number': '04',
+        'title': 'Access city council intelligence before permits are filed',
+        'description': 'Get visibility into broadband expansion, franchise agreements, and right-of-way permissions with Shovels Decisions.',
+        'bullets': [
+            'Track franchise agreement reviews and broadband expansion initiatives',
+            'Monitor BEAD funding allocations and council support for infrastructure projects',
+            'Identify municipalities prioritizing internet infrastructure investment',
+            'Know which markets have council backing before committing capital',
+        ],
+        'image_src': '/images/industries/telecommunications/uc4-council-intelligence.png',
+        'image_alt': 'Shovels Decisions — feed filtered by broadband, infrastructure, or right-of-way keywords',
+    },
+    {
+        'number': '05',
+        'title': 'Protect existing infrastructure from construction damage',
+        'description': 'Monitor construction activity around critical infrastructure before incidents occur.',
+        'bullets': [
+            'Set alerts for permit activity near existing network infrastructure',
+            'Identify construction projects that could impact underground cable routes',
+            'Enable joint trenching by spotting infrastructure work in the same corridors',
+            'Coordinate with utilities and contractors before damage occurs',
+        ],
+        'image_src': '/images/industries/telecommunications/uc5-protect-infrastructure.svg',
+        'image_alt': 'An excavator near an urban street with underground cable routes highlighted as a warning — a field engineer coordinating before damage occurs',
+        'framed': False,
+    },
+] %}
 
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui.use_case_section(
+    eyebrow='USE CASES',
+    heading='What telecom teams can do with Shovels',
+    cases=telecommunications_cases) }}
+
+{% include 'sections/enterprise_teams.html' %}
+
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
+    articles=get_industry_articles('Telecommunications')) }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'How does Shovels classify telecom infrastructure permits?',
+            'a': 'Shovels uses proprietary AI models to tag and classify hundreds of millions of permits for fiber, cell tower, small-cell, utility, and infrastructure activity, including carrier-specific permit classification that reveals who is actively building in any market.',
+        },
+        {
+            'q': 'What city council data does Shovels provide for telecom companies?',
+            'a': 'Shovels Decisions tracks franchise agreement discussions, broadband expansion initiatives, small-cell siting policies, right-of-way permit debates, and BEAD funding allocation priorities from city councils nationwide, giving you visibility months before permits are filed.',
+        },
+        {
+            'q': 'How does Shovels identify permit-friendly jurisdictions?',
+            'a': 'Shovels analyzes historical approval timelines and approval rates across thousands of jurisdictions, helping you route deployments around difficult authorities and focus on markets with faster, more predictable permit processes.',
+        },
+        {
+            'q': 'Can Shovels help track competitor network deployments?',
+            'a': 'Yes. Our AI-enhanced permit classification reveals where carriers, from Tier 1s like AT&T and Verizon to regional Tier 3 providers, are actively building fiber, towers, and small-cell infrastructure, enabling strategic market entry decisions and investment prioritization.',
+        },
+        {
+            'q': 'How does permit data improve network planning for ISPs and carriers?',
+            'a': 'Shovels gives ISPs and telecom companies advance notice of where new residential and commercial construction is happening, including the exact permit type, contractor, location, and filing date. Teams use this to prioritize network planning and design decisions: where to extend infrastructure, when to file permits, and which markets have the densest near-term subscriber demand, whether the buildout is fiber, towers, or 5G.',
+        },
+        {
+            'q': 'What telecom infrastructure data does Shovels provide?',
+            'a': 'Shovels aggregates permit and construction data from thousands of US jurisdictions, including fiber, tower, and small-cell permits (conduit, aerial, underground, right-of-way) as well as multi-family, commercial, and single-family construction signals. Telecom teams use this data to monitor competitor deployments, identify underserved markets, and inform capital planning for new infrastructure.',
+        },
+        {
+            'q': 'Can telecom teams use Shovels for new construction market intelligence?',
+            'a': 'Yes. Shovels surfaces new residential, commercial, and industrial construction from permit filings months before occupancy, with location, project type, and timeline detail. Data providers and carriers use these signals to anticipate subscriber demand, size markets, and feed market intelligence platforms, independent of any single network technology.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
+    heading='Ready to improve planning with permit intelligence?',
+    description="See how Shovels helps telecom teams plan faster, compete smarter, and protect what's already in the ground.",
+    cta_label='Get Started') }}

@@ -1,304 +1,155 @@
-Title: Find the best building sites using building permits
-Description: Improve site selection with our Neighborhood Vitality Index (NVI), city council decision tracking, and permit approval metrics to identify actively improving areas and predict development trends.
+Title: Development Intelligence for Real Estate Teams
+Description: Real estate data analytics powered by permits. Track development pipelines, find pockets of growth, and target emerging markets before listings appear.
 slug: real-estate
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Pick smarter locations</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits tell you what’s changing nearby and how long it takes to put shovels in the ground. Shovels brings these insights to the surface so you can determine the best locations for your next development.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-          <a href="{filename}/posts/newsletter-aug-24.md" class="text-sm/6 font-semibold text-gray-900" target="_blank">Read more <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="theme/images/builders/hero.svg" alt="Illustration showing building materials and construction data analytics">
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-white pb-12 sm:pb-16">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
-      <div class="mx-auto w-full max-w-xl lg:mx-0">
-        <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Partners</h2>
-        <p class="mt-6 text-lg/8 text-gray-600">We partner with leading geospatial companies to bring you the best data and tools for your site selection process.</p>
-        <!--
-        <div class="mt-8 flex items-center gap-x-6">
-          <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Create account</a>
-          <a href="#" class="text-sm font-semibold text-gray-900">Contact us <span aria-hidden="true">&rarr;</span></a>
-        </div>
-        -->
-      </div>
-      <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-12 sm:gap-16 lg:mx-0 lg:max-w-none lg:pl-8">
-        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/esri.png" alt="Esri">
-        <img class="max-h-24 w-full object-contain object-left" src="{static}/images/regrid.png" alt="Regrid">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Shovels data science</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Neighborhood Vitality Index (NVI)</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Through our partnerships with Esri and Regrid, Shovels calculates NVI by comparing the relative permit density of home improvement projects by census tract in every major metropolitan area in the country. Use NVI to find the most actively improving neighborhoods.</p>
-    </div>
-  </div>
-  <div class="relative overflow-hidden pt-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/esri-nvi-map.jpg" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442">
-      <div class="relative" aria-hidden="true">
-        <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-          </svg>
-          Custom reports.
-        </dt>
-        <dd class="inline">Create custom reports in the schema and file format your data team prefers.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>
-          Filter by property type.
-        </dt>
-        <dd class="inline">We use tax assessor data to filter by property type, including commercial, residential, and industrial buildings.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd" />
-          </svg>
-          Refreshed monthly.
-        </dt>
-        <dd class="inline">We add millions of new building permits and dozens of new jurisdictions to our database every month.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
-          </svg>
-          Nationwide coverage.
-        </dt>
-        <dd class="inline">We cover all 48 states and 85% of the US population. Coverage is highest in the populated areas with the most active construction activity.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-          </svg>
-          Commercial and residential.
-        </dt>
-        <dd class="inline">We cover both commercial and residential building permits. Use NVI to find the most actively improving neighborhoods for retail, office, and industrial development.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-          By parcel, census tract, or ZIP.
-        </dt>
-        <dd class="inline">We roll up NVI by parcel, census tract, and ZIP code, giving you the most granular data possible.</dd>
-      </div>
-    </dl>
-  </div>
-  <div class="mx-auto mt-16 max-w-4xl px-6 sm:mt-20 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h3 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">The Policy Layer Behind NVI</h3>
-      <p class="mt-6 text-lg/8 text-gray-300">Building permit activity tells you what's happening now. City council decisions tell you what's coming next. Our Decisions data tracks zoning changes, development approvals, and housing policy discussions that predict where permit density will increase. Identify emerging development zones months before the first permit is filed.</p>
-    </div>
-    <div class="mx-auto mt-10 max-w-2xl lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-8">
-        <div class="relative pl-9">
-          <dt class="inline font-semibold text-white">
-            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Spot upzoning discussions.
-          </dt>
-          <dd class="inline text-gray-300">Track upzoning discussions before land values adjust and identify policy changes that enable new development.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="inline font-semibold text-white">
-            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Assess political viability.
-          </dt>
-          <dd class="inline text-gray-300">Understand which large developments have council support versus community opposition before committing capital.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="inline font-semibold text-white">
-            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Identify pro-development councils.
-          </dt>
-          <dd class="inline text-gray-300">Find cities with councils that support growth versus restrictive policies that limit development opportunities.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="inline font-semibold text-white">
-            <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Track affordable housing mandates.
-          </dt>
-          <dd class="inline text-gray-300">Monitor inclusionary zoning and affordable housing requirements that affect project economics and feasibility.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="overflow-hidden bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="lg:pr-8 lg:pt-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-shovels-primary">Modern workflow</p>
-          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">The latest tech</h2>
-          <p class="mt-6 text-lg/8 text-gray-600">We use modern geospatial and data science techniques to bring you the most accurate and useful data possible.</p>
-          <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-                </svg>
-                Push anywhere.
-              </dt>
-              <dd class="inline">We support all major cloud storage providers, including AWS, Azure, and GCP. We also push to Snowflake, BigQuery, and Databricks.</dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-                </svg>
-                Transfer securely.
-              </dt>
-              <dd class="inline">We use SFTP and HTTPS to transfer your data securely. Let us do the data appending so your team can focus on what matters most.</dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                  <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
-                </svg>
-                New models.
-              </dt>
-              <dd class="inline">We use AI and modern data science to derive new insights from permit, parcel, and census tract data.</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-      <img src="{static}/images/nvi.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
-    </div>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How do city council decisions predict permit density?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">City council decisions on zoning changes, development approvals, and housing policy create the conditions for future permit activity. Our Decisions data tracks upzoning discussions, pro-development council votes, and policy changes that signal where permit density will increase—giving you visibility into emerging development zones months before the first permit is filed.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels track upzoning discussions and development approvals?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels Decisions data monitors city council meetings for upzoning discussions, zoning changes, and development approvals across municipalities. This helps you spot policy changes before land values adjust and assess the political viability of large developments before committing capital.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What is the Neighborhood Vitality Index (NVI)?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">NVI is a metric calculated by Shovels through partnerships with Esri and Regrid. It compares the relative permit density of home improvement projects by census tract in every major metropolitan area, helping you identify the most actively improving neighborhoods for real estate development and investment.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can I identify cities with pro-development policies?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels tracks city council voting patterns, housing policy discussions, and development approval trends to distinguish between councils that support growth and those with restrictive policies. This intelligence helps you focus on markets where development projects are more likely to receive approval and face fewer regulatory obstacles.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    h1='Development intelligence for real estate teams',
+    description='Track rezonings and development pipelines across multiple jurisdictions. Spot pockets of growth and identify emerging markets before they show up in listings.',
+    illustration_src='/images/industries/real-estate/hero.svg',
+    illustration_alt='Real estate hero illustration') }}
 
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+{# Static 6-logo industry strip — full set, pending legal sign-off. #}
+{% set real_estate_logos = [
+    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 30},
+    {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 23},
+    {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 31},
+    {'src': '/images/logos/jll.png', 'alt': 'JLL'},
+    {'src': '/images/logos/trc-companies.png', 'alt': 'TRC Companies', 'height': 24},
+    {'src': '/images/logos/ownwell.png', 'alt': 'Ownwell', 'height': 24},
+] %}
+
+{{ ui_grid.logo_grid(logos=real_estate_logos, heading='TRUSTED BY REAL ESTATE TEAMS') }}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of enterprise real estate firms and proptech platforms. Property data, permit records, and market intelligence are protected by independently audited controls built to hold up to enterprise security reviews.') }}
+
+{% set real_estate_cases = [
     {
-      "@type": "Question",
-      "name": "How do city council decisions predict permit density?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "City council decisions on zoning changes, development approvals, and housing policy create the conditions for future permit activity. Our Decisions data tracks upzoning discussions, pro-development council votes, and policy changes that signal where permit density will increase—giving you visibility into emerging development zones months before the first permit is filed."
-      }
+        'number': '01',
+        'title': 'Verify property history before you close',
+        'description': 'See every remodel, addition, and repair on the property. Know exactly what was permitted and built.',
+        'bullets': [
+            'Pull complete permit history by address in seconds',
+            'Identify unpermitted additions and renovation work',
+            'Verify job values and contractor credentials for past work',
+            'Use permit records to inform due diligence and appraisal review',
+            'Look up APN and parcel records alongside permit history for a complete property profile',
+        ],
+        'image_src': '/images/industries/real-estate/uc1-property-history.png',
+        'image_alt': 'Shovels app — property detail showing full permit history with work type, contractor, and status',
     },
     {
-      "@type": "Question",
-      "name": "Can Shovels track upzoning discussions and development approvals?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels Decisions data monitors city council meetings for upzoning discussions, zoning changes, and development approvals across municipalities. This helps you spot policy changes before land values adjust and assess the political viability of large developments before committing capital."
-      }
+        'number': '02',
+        'title': 'Track development pipelines before listings appear',
+        'description': 'Grading and demolition permits signal early-stage construction months before a project appears on MLS or CoStar. Follow individual developments from start to finish.',
+        'bullets': [
+            'Monitor demolition and grading permits for new developments',
+            'Filter by permit type to track residential, commercial, and mixed-use projects',
+            'Follow individual projects from first permit pull through final inspection',
+            'Set alerts for construction activity in your target markets',
+        ],
+        'image_src': '/images/industries/real-estate/uc2-development-pipeline.png',
+        'image_alt': 'Shovels app — map filtered to demolition and grading permits in a target area',
     },
     {
-      "@type": "Question",
-      "name": "What is the Neighborhood Vitality Index (NVI)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "NVI is a metric calculated by Shovels through partnerships with Esri and Regrid. It compares the relative permit density of home improvement projects by census tract in every major metropolitan area, helping you identify the most actively improving neighborhoods for real estate development and investment."
-      }
+        'number': '03',
+        'title': 'Find pockets of growth so you know where to target',
+        'description': 'Instead of validating a site after you find it, work backwards. Use permit and Decisions data to identify up-and-coming neighborhoods and target acquisitions there.',
+        'bullets': [
+            'Aggregate permit activity by parcel, census tract, ZIP code, or a region you define',
+            'Rank submarkets by activity to decide where to focus acquisition efforts',
+            'Distinguish new construction from renovation by permit type',
+            'Re-run the same query to catch newly active areas',
+        ],
+        'image_src': '/images/industries/real-estate/uc3-neighborhood-momentum.svg',
+        'image_alt': 'A street where a few homes show active renovation, an investor spotting a pocket of growth before prices move',
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "How can I identify cities with pro-development policies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels tracks city council voting patterns, housing policy discussions, and development approval trends to distinguish between councils that support growth and those with restrictive policies. This intelligence helps you focus on markets where development projects are more likely to receive approval and face fewer regulatory obstacles."
-      }
-    }
-  ]
-}
-</script>
+        'number': '04',
+        'title': 'Invest and deploy capital before zoning changes move the market',
+        'description': 'Shovels Decisions offers access to city council decisions on upzoning, development approvals, and housing mandates, so you can see where permit density will rise before land values move.',
+        'bullets': [
+            'Monitor upzoning discussions before land values adjust',
+            'Assess political viability of large developments before committing capital',
+            'Identify pro-development councils versus restrictive planning environments',
+            'Track housing decisions that affect project economics',
+        ],
+        'image_src': '/images/industries/real-estate/uc4-upzoning-decisions.svg',
+        'image_alt': 'Shovels Decisions — feed filtered for upzoning and development approval decisions',
+        'framed': False,
+    },
+    {
+        'number': '05',
+        'title': 'Read market trends from permit filings, not lagging reports',
+        'description': 'Property data analytics tools typically depend on closed transactions and listing history. Shovels gives you real-time construction activity from permit filings.',
+        'bullets': [
+            'Track permit volume trends by geography, property type, and work type',
+            'Identify markets where construction activity is accelerating or slowing',
+            'Quantify renovation activity as a proxy for housing market health',
+            'Model construction cycles to inform investment timing and market entry',
+        ],
+        'image_src': '/images/industries/real-estate/uc5-market-trends.svg',
+        'image_alt': 'Two analysts side by side — one reading a thick printed report, one on a live permit dashboard — one clearly ahead of the market',
+        'framed': False,
+    },
+] %}
 
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui.use_case_section(
+    eyebrow='USE CASES',
+    heading='What real estate teams can do with Shovels',
+    cases=real_estate_cases) }}
+
+{% include 'sections/enterprise_teams.html' %}
+
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
+    articles=get_industry_articles('Real Estate')) }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'Can I build a Neighborhood Vitality Index with Shovels data?',
+            'a': 'Yes. A Neighborhood Vitality Index is any permit-based score that measures improvement activity in an area. Shovels gives you the inputs: home improvement permits classified by work type, aggregated to parcel, census tract, or ZIP code, so you can compute and weight the index however your team defines vitality.',
+        },
+        {
+            'q': 'How does Shovels track zoning and entitlement decisions?',
+            'a': 'Shovels Decisions aggregates zoning changes, conditional use permits, upzoning discussions, and development approvals from city council meetings nationwide into a single searchable database.',
+        },
+        {
+            'q': 'Can we use permit data in our existing GIS workflow?',
+            'a': 'Yes. Shovels integrates with Esri and Regrid for GIS-based workflows, including parcel boundary and ownership data. Deliver via property data API or Snowflake, BigQuery, or Databricks.',
+        },
+        {
+            'q': 'How current is the permit data?',
+            'a': 'Permit records are updated twice monthly, with millions of new records added each cycle. Decisions data is updated continuously as city council meetings are processed.',
+        },
+        {
+            'q': 'How do real estate investors use predictive analytics on permit data?',
+            'a': 'Shovels lets investors and analysts apply a predictive analytics approach to real estate by tracking permit activity as a leading indicator of neighborhood change. Rising permit volume in a ZIP code — especially for ADUs, renovations, or multi-family conversions — often precedes price appreciation by 6–18 months. Shovels surfaces these signals so you can move before the market catches up, whether for investment decisions or commercial real estate lead generation.',
+        },
+        {
+            'q': "What's the market data approach in real estate that Shovels supports?",
+            'a': "Shovels enables a permit-first market data approach in real estate: instead of analyzing closed sales or price trends (lagging data), users spot up-and-coming neighborhoods from permit filings the moment they're recorded. This gives investors, developers, and data platforms a months-long head start on where capital is flowing and which neighborhoods are on the move.",
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
+    heading='Ready to track development before it shows up in listings?',
+    description='See how Shovels gives real estate teams the permit and Decisions intelligence to move earlier than the market.',
+    cta_label='Get Started') }}

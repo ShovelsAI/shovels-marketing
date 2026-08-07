@@ -1,7 +1,6 @@
 Title: Building Permit Data for Academic Research
 Description: Building permit data for academic research. {{ STATS.permits }} AI-classified permits across {{ STATS.jurisdictions }} U.S. jurisdictions, with academic pricing and flexible data delivery.
-slug: research-preview
-status: hidden
+slug: research
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/logo_grid.html' as ui_grid %}

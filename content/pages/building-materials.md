@@ -1,236 +1,153 @@
-Title: Leads for building materials and equipment suppliers and building product manufacturers
-Description: Shovels helps building material suppliers find and connect with commercial contractors through permit intelligence, project viability assessment, CRM enhancement, and fraud prevention.
+Title: Contractor Intelligence for Building Materials Suppliers
+Description: Home builder leads for building materials suppliers. Find the most active contractors, surface new construction leads, and plan territories around real demand.
 slug: building-materials
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Boost revenue of your building materials and equipment</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We improve your sales process with nationwide building permit data, enriching your lead program with unique insights on commercial and residential builders.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-          <a href="https://www.canva.com/design/DAG0xKBkIG0/Y6pO23tLga1p_mmOi8m7kw/view?utm_content=DAG0xKBkIG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b8199daba" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[600px]" src="theme/images/finance/hero.svg" alt="Illustration showing building materials and construction data analytics">
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-white pb-12 sm:pb-24">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="theme/images/home/schneider.svg" alt="Schneider Electric" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/beacon.svg" alt="Beacon" width="158">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/harvest_logo.svg" alt="Harvest Thermal" width="158">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/boldr_logo.svg" alt="Boldr" height="60" style="height:60px; max-height:60px;">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="{static}/images/Generator_Supercenter_Logo.jpg" alt="Generator Supercenter" width="158">
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl lg:text-center">
-      <h2 class="text-base/7 font-semibold text-shovels-secondary">For manufacturers and distributors</h2>
-      <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Find the most active contractors working on the largest projects in your markets</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/finance/icon_permits.svg" class="size-5 flex-none text-shovels-secondary">
-            Permit details for commercial contractors
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Segment contractors by revenue, service area, and specialty. Add this detail to Salesforce and HubSpot to help your field sales team close more accounts.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/finance/icon_metrics.svg" class="size-5 flex-none text-shovels-secondary">
-            Prevent fraudulent purchases
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Use Shovels to confirm that a new customer is a licensed contractor. Verify their registration information against our database of nearly 3 million contractors.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-            <img src="theme/images/finance/icon_updates.svg" class="size-5 flex-none text-shovels-secondary">
-            Credit checks for building contractors
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Determine whether to open a line of credit for a new contractor account. Shovels provides trailing revenue, permit history, and service area detail to help you compute credit risk.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
-    <div class="mx-auto max-w-3xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Built for the data-driven sales team</h2>
-      <p class="mt-4 text-gray-500">We provide comprehensive intelligence empowering your team to identify high-value prospects, verify contractor credentials, and accelerate deal closure with data-driven insights.</p>
-    </div>
-    <div class="mt-16 space-y-16">
-      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-        <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
-          <h3 class="text-lg font-medium text-gray-900">Detailed contractor profiles</h3>
-          <p class="mt-2 text-base/7 text-gray-600">Our contractor profiles include revenue, permit history, and service area detail to help you qualify leads, compute credit risk, and close more sales.</p>
-        </div>
-        <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
-          <img src="{static}/images/contractor-profile.png" alt="Shovels offers robust contractor profiles." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
-        </div>
-      </div>
-      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-        <div class="mt-6 lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:mt-0 xl:col-span-4 xl:col-start-9">
-          <h3 class="text-lg font-medium text-gray-900">Employee contact information</h3>
-          <p class="mt-2 text-base/7 text-gray-600">We provide employee contact information to help your teams reach out to the right contacts.</p>
-        </div>
-        <div class="flex-auto lg:col-span-7 lg:col-start-1 lg:row-start-1 xl:col-span-8">
-          <img src="{static}/images/contractor-employees.png" alt="Shovels provides contractor employee data." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
-        </div>
-      </div>
-      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-        <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
-          <h3 class="text-lg font-medium text-gray-900">Project viability signals</h3>
-          <p class="mt-2 text-base/7 text-gray-600">Track city council decisions on major development projects. Distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation.</p>
-        </div>
-        <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
-          <img src="{static}/images/demo-online-decision.png" alt="City council decisions showing project viability." class="aspect-[5/2] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels help building material suppliers find contractors?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels provides nationwide building permit data that lets you segment contractors by revenue, service area, and specialty. This enriches your lead program with unique insights on both commercial and residential builders, and the data integrates directly with Salesforce and HubSpot.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels help prevent fraudulent purchases?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels can verify that a prospective customer is a licensed contractor by checking their registration information against a database of nearly 3 million contractors. This helps prevent unauthorized or fraudulent purchases of building materials.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can building material distributors use Shovels for credit decisions?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels provides trailing revenue, permit history, and service area detail for contractors. This data helps you assess credit risk when deciding whether to open a line of credit for a contractor account.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What contractor information does Shovels provide?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels offers detailed contractor profiles including revenue estimates, permit history, service area coverage, employee contact information, and license verification data. This helps your sales team qualify leads and close more accounts.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Which companies use Shovels for building materials sales?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can Shovels help assess project viability?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels tracks city council decisions on major development projects, helping you distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation. This Decisions data allows you to prioritize sales efforts on projects more likely to reach completion.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    h1='Contractor intelligence for building materials suppliers',
+    description='See which contractors are active, track new construction leads in every market, and act before your competitors do.',
+    illustration_src='/images/industries/building-materials/hero.svg',
+    illustration_alt='Building materials hero illustration') }}
 
-<!-- JSON-LD FAQ schema for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How does Shovels help building material suppliers find contractors?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels provides nationwide building permit data that lets you segment contractors by revenue, service area, and specialty. This enriches your lead program with unique insights on both commercial and residential builders, and the data integrates directly with Salesforce and HubSpot."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Shovels help prevent fraudulent purchases?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels can verify that a prospective customer is a licensed contractor by checking their registration information against a database of nearly 3 million contractors. This helps prevent unauthorized or fraudulent purchases of building materials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can building material distributors use Shovels for credit decisions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels provides trailing revenue, permit history, and service area detail for contractors. This data helps you assess credit risk when deciding whether to open a line of credit for a contractor account."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What contractor information does Shovels provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels offers detailed contractor profiles including revenue estimates, permit history, service area coverage, employee contact information, and license verification data. This helps your sales team qualify leads and close more accounts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which companies use Shovels for building materials sales?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels is trusted by companies including Schneider Electric, Beacon, Harvest Thermal, Boldr, and Generator Supercenter."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can Shovels help assess project viability?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels tracks city council decisions on major development projects, helping you distinguish between politically-backed builds with high completion probability and controversial projects facing delays or cancellation. This Decisions data allows you to prioritize sales efforts on projects more likely to reach completion."
-      }
-    }
-  ]
-}
-</script>
+{# Static industry strip — full set, pending legal sign-off. #}
+{% set building_materials_logos = [
+    {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 23},
+    {'src': '/images/logos/owens-corning.svg', 'alt': 'Owens Corning', 'height': 31},
+    {'src': '/images/logos/heidelberg-materials.svg', 'alt': 'Heidelberg Materials', 'height': 26},
+    {'src': '/images/logos/avenue-roofing.svg', 'alt': 'Avenue Roofing', 'height': 26},
+    {'src': '/images/logos/automate-works.svg', 'alt': 'Automate', 'height': 19},
+    {'src': '/images/logos/crown-roofing.png', 'alt': 'Crown Roofing', 'height': 31},
+] %}
 
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui_grid.logo_grid(logos=building_materials_logos, heading='TRUSTED BY BUILDING MATERIALS SUPPLIERS') }}
 
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of enterprise building products companies and their procurement teams. Our SOC 2 Type II certification reflects controls independently audited over a sustained period.') }}
+
+{% set building_materials_cases = [
+    {
+        'number': '01',
+        'title': 'Find the most active contractors in your market',
+        'description': 'Find contractor leads and uncover wallet share gaps with contractors you already sell to.',
+        'bullets': [
+            'Identify high-volume contractors in your industry',
+            'Filter by trade, region, and recent permit activity',
+            'Export lists for sales outreach or CRM enrichment',
+            'Track contractor activity over time to prioritize follow-up',
+        ],
+        'image_src': '/images/industries/building-materials/uc1-trade-metro.png',
+        'image_alt': 'Shovels app — contractor search filtered by trade type and metro, sorted by permit count',
+    },
+    {
+        'number': '02',
+        'title': 'Plan territories around real construction activity',
+        'description': 'Map permit density by region to align rep territories with real-time construction activity.',
+        'bullets': [
+            'Map permit volume by trade type and ZIP, county, or metro',
+            'Align sales territories with real construction demand',
+            'Identify underserved markets with high permit activity',
+            'Rebalance coverage as regional activity shifts',
+        ],
+        'image_src': '/images/industries/building-materials/uc2-target-metro.png',
+        'image_alt': 'Shovels app — map showing permit density in a target metro',
+    },
+    {
+        'number': '03',
+        'title': 'Give your dealer network up-to-date builder intel',
+        'description': 'Share leads and market insights with dealers, so they can prioritize outreach to the contractors driving the most home builder leads in their area.',
+        'bullets': [
+            'Surface active local contractors for dealer outreach',
+            'Show dealers which trades are growing in their area',
+            'Support dealer QBRs with real market data',
+            'Strengthen dealer relationships with up-to-date market insights',
+        ],
+        'image_src': '/images/industries/building-materials/uc3-dealer-intel.svg',
+        'image_alt': 'A materials rep and dealer at a showroom counter, reviewing local contractor activity on a tablet — intel flowing from supplier to dealer network',
+        'framed': False,
+    },
+    {
+        'number': '04',
+        'title': 'Forecast demand before it reaches the supply chain',
+        'description': 'Anticipate where demand will grow. See new construction starts to renovation surges before orders hit your supply chain.',
+        'bullets': [
+            'Track permit starts by product category and region',
+            'Detect renovation clusters before demand reaches distributors',
+            'Align inventory and production planning to construction cycles',
+            'Give sales teams early signals on priority areas',
+        ],
+        'image_src': '/images/industries/building-materials/uc4-forecast-demand.svg',
+        'image_alt': 'A supply chain planner looking at permit activity appearing ahead on a production calendar — staging inventory before orders arrive',
+        'framed': False,
+    },
+    {
+        'number': '05',
+        'title': 'Size the market for your products',
+        'description': 'Quantify permit volume by product type to validate expansion decisions, set quotas, and make the case for new market investment.',
+        'bullets': [
+            'Measure addressable permit volume in any market',
+            'Compare opportunity across regions and product categories',
+            'Support board and investor reporting with real market data',
+            'Benchmark your share of wallet against total market activity',
+        ],
+        'image_src': '/images/industries/building-materials/uc5-market-comparative.png',
+        'image_alt': 'Hex/Sheets — bar chart of permit volume by work type across two target metros',
+    },
+] %}
+
+{{ ui.use_case_section(
+    eyebrow='USE CASES',
+    heading='What building materials companies can do with Shovels',
+    cases=building_materials_cases) }}
+
+{% include 'sections/enterprise_teams.html' %}
+
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_res.resources_section(
+    articles=get_industry_articles('Building Materials'),
+    wrapper_class='!py-[4.8rem]') }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'What types of permits does Shovels cover?',
+            'a': 'Shovels covers residential and commercial permits across all major trade categories, including roofing, HVAC, electrical, plumbing, framing, and more, sourced from jurisdictions nationwide.',
+        },
+        {
+            'q': 'How accurate is the contractor contact data?',
+            'a': 'Shovels matches permit records to licensed contractor profiles and enriches them with contact information. Match rates vary by region and trade, with typical rates in the 60-80% range for active contractors.',
+        },
+        {
+            'q': 'Can we use Shovels data in our existing CRM?',
+            'a': 'Yes. Shovels offers a REST API and structured exports that integrate with Salesforce, HubSpot, and other CRM platforms. Your team can enrich existing records or build new outreach lists directly.',
+        },
+        {
+            'q': 'How often is the data updated?',
+            'a': 'Permit data is updated continuously as jurisdictions publish new records, typically within days of issuance. Contractor records are refreshed on a rolling basis.',
+        },
+        {
+            'q': 'How do building materials suppliers find home builder leads using permit data?',
+            'a': 'Building materials companies use Shovels to surface active home builders and contractors by filtering permit activity on trade type, project category, and geography. This turns permit data into a live pipeline of home builder leads and supports ongoing home builder lead generation, connecting your sales team to the builders currently pulling permits for the projects that need your products most.',
+        },
+        {
+            'q': 'How can sales teams identify new construction leads before projects break ground?',
+            'a': 'Building permits are filed 2–6 weeks before ground breaks and months before a project appears in industry reports or distributor surveys. Shovels gives material suppliers early access to this signal, showing which new construction projects are starting, which contractors are active, and where demand will be concentrated well ahead of your competitors.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
+    heading='Ready to find your next contractor customer?',
+    description='See how Shovels helps building materials suppliers turn permit data into pipeline.',
+    cta_label='Get Started') }}
