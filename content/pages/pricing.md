@@ -1,7 +1,6 @@
 Title: Pricing
 Description: Shovels pricing — a free plan, self-serve Basic and Team plans, and custom Enterprise pricing. Every plan includes the web app, API, CLI, and Charlie AI on one shared credit balance.
-slug: pricing-preview
-status: hidden
+slug: pricing
 
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
 {% import 'macros/faq.html' as ui_faq %}
