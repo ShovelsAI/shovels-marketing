@@ -1,0 +1,298 @@
+{#
+  Refreshed footer (Website Refresh 2026).
+
+  STAGED: base.html includes this only for `*-preview` pages; the live
+  site keeps footer.html until launch. At launch, this becomes the
+  single global footer (and footer.html is retired).
+
+  Layout:
+  - Desktop (lg+): brand + newsletter on the left, a six-column link
+    grid on the right (Industries / Solutions / Features / Data /
+    Resources / Company).
+  - Mobile (below lg): brand + collapsible accordion sections with
+    chevron carats (Alpine, single-open). Newsletter is hidden on
+    mobile — matches the current site's footer behavior.
+
+  Link lists live once in `footer_sections` and render both the mobile
+  accordions and the desktop columns, so the two can't drift.
+
+  Open items (see REFRESH_PLAN.md):
+  - Link targets use launch-intent URLs (Solutions/Features under
+    /solutions/ and /features/, Data under /data/) — they 404 in
+    preview, intentional; double as the page-move / redirect checklist.
+  - DATA column present — the /data/* pages are built (staged at
+    data/<name>-preview, promoting to /data/<name> at launch), so the
+    six-column grid is restored.
+#}
+{% set footer_sections = [
+  ('Industries', [
+    ('Building Materials', '/building-materials', ''),
+    ('Construction Tech', '/software', ''),
+    ('Energy &amp; Climate', '/climate', ''),
+    ('Home Services', '/home-services', ''),
+    ('Real Estate', '/real-estate', ''),
+    ('Telecommunications', '/telecommunications', ''),
+    ('Research', '/research', ''),
+    ('Insurance', '/insurance', ''),
+  ]),
+  ('Solutions', [
+    ('Shovels Online', '/solutions/permit-database', ''),
+    ('API', '/solutions/api', ''),
+    ('Enterprise', '/solutions/data-feed', ''),
+  ]),
+  ('Features', [
+    ('Charlie AI', '/features/charlie', ''),
+    ('GIS', '/features/gis', ''),
+    ('CLI', '/features/cli', ''),
+  ]),
+  ('Data', [
+    ('Permits', '/data/permits', ''),
+    ('Decisions', '/data/decisions', ''),
+    ('Contractors', '/data/contractors', ''),
+    ('Properties', '/data/properties', ''),
+    ('Residents', '/data/residents', ''),
+  ]),
+  ('Resources', [
+    ('Pricing', '/pricing', ''),
+    ('Blog', '/blog', ''),
+    ('Knowledge Base', 'https://docs.shovels.ai/docs/knowledge-base', '_blank'),
+    ('Data Dictionary', '/data-dictionary', ''),
+    ('Coverage Dashboard', '/coverage', ''),
+    ('Documentation Hub', 'https://docs.shovels.ai/', '_blank'),
+  ]),
+  ('Company', [
+    ('About', '/about', ''),
+    ('Contact', '/contact', ''),
+    ('Careers', '/careers', ''),
+    ('Terms', '/terms', ''),
+    ('Privacy', '/privacy-center', ''),
+    ('Security', 'https://trust.shovels.ai/', '_blank'),
+    ('Brand', '/brand', ''),
+  ]),
+] %}
+
+<footer class="w-full bg-shovels-dark text-gray-300" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
+
+    {# ===== MOBILE (below xl): brand + accordions, no newsletter =====
+       Switch at xl, not lg: the six-column link grid crowds badly between
+       lg and xl, so the accordion holds until there's room for six. #}
+    <div class="xl:hidden">
+      <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
+      <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
+
+      <div class="mt-8" x-data="{ open: null }">
+        {% for title, links in footer_sections %}
+        <div class="border-b border-white/10">
+          <button type="button"
+                  @click="open = open === {{ loop.index }} ? null : {{ loop.index }}"
+                  class="flex w-full items-center justify-between py-4 text-xs font-semibold uppercase tracking-wider text-white">
+            <span>{{ title }}</span>
+            <svg class="h-5 w-5 shrink-0 transition-transform duration-200" :class="{ 'rotate-180': open === {{ loop.index }} }"
+                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <ul x-show="open === {{ loop.index }}" x-transition role="list" class="space-y-3 pb-4">
+            {% for label, href, target in links %}
+            <li><a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="text-sm text-gray-300 hover:text-white">{{ label }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    {# ===== DESKTOP (xl+): brand + newsletter left, six-column grid right ===== #}
+    <div class="hidden xl:flex xl:gap-16">
+
+      {# Left column widened to w-96 so the brand tagline sits on one line
+         (was orphaning "world." at w-72); narrows the link grid slightly. #}
+      <div class="xl:w-96 xl:shrink-0">
+        <img class="mb-6 h-8 w-auto" src="/theme/images/shovels-footer-logo.svg" alt="Shovels">
+        <p class="text-base text-gray-300">The intelligence layer for the built world.</p>
+
+        <div class="mt-10">
+          <h3 class="text-base font-semibold text-white">Subscribe to our newsletter</h3>
+          <p class="mt-2 text-sm text-gray-400">Releases, updates, and news.</p>
+
+          {# Posts to the HubSpot Forms Submissions API (Footer Newsletter
+             Signup form), mirroring the blog sidebar in article.html. Script
+             at the bottom of this file. The live footer.html embed is
+             untouched. #}
+          <form id="footer-newsletter-form" class="mt-4 flex max-w-md items-center gap-x-3">
+            <label for="footer-email" class="sr-only">Email address</label>
+            <input id="footer-email" name="email" type="email" autocomplete="email" required
+                   placeholder="you@company.com"
+                   class="min-w-0 flex-auto rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-shovels-secondary focus:outline-none">
+            <button type="submit"
+                    class="shrink-0 rounded-full bg-shovels-secondary px-6 py-3 text-sm font-semibold text-shovels-dark hover:bg-shovels-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-secondary">Subscribe</button>
+          </form>
+          <p id="footer-newsletter-message" class="mt-3 hidden text-sm font-medium"></p>
+        </div>
+      </div>
+
+      <div class="grid flex-1 grid-cols-6 gap-x-8 gap-y-10">
+        {% for title, links in footer_sections %}
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-white">{{ title }}</h3>
+          <ul role="list" class="mt-6 space-y-3">
+            {% for label, href, target in links %}
+            <li><a href="{{ href }}"{% if target %} target="{{ target }}"{% endif %} class="text-sm text-gray-300 hover:text-white">{{ label }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    {# ===== Bottom bar (always) ===== #}
+    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between">
+      <div class="flex items-center space-x-6 md:order-2">
+        <a href="https://www.aicpa-cima.com/resources/download/soc-for-service-organizations-engagements-overview" target="_blank" rel="noopener noreferrer">
+          <img src="/theme/images/soc2-seal.png" alt="SOC 2® for Service Organizations" class="h-10 w-auto opacity-80 hover:opacity-100 transition-opacity">
+        </a>
+        {# Each social anchor is an identical fixed box so the gaps between
+           icons read evenly; the glyph sizes inside keep the optical parity
+           tuned to the LinkedIn mark. #}
+        <a href="https://discord.com/invite/Nypja3cKDx" class="flex size-7 items-center justify-center text-gray-400 hover:text-white" target="_blank">
+          <span class="sr-only">Discord</span>
+          <svg class="h-[25px] w-[25px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9554 2.4189-2.1568 2.4189Z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/shovels/" class="flex size-7 items-center justify-center text-gray-400 hover:text-white" target="_blank">
+          <span class="sr-only">LinkedIn</span>
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/shovelsai" class="flex size-7 items-center justify-center text-gray-400 hover:text-white" target="_blank">
+          <span class="sr-only">GitHub</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2026 Shovels, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+{# Newsletter signup → HubSpot Forms Submissions API. Mirrors the blog
+   sidebar (article.html): same endpoint, same hutk/pageUri/pageName context
+   so attribution works. Points at the "Footer Newsletter Signup" form.
+   Success/error colors are tuned for the dark footer. #}
+<script>
+  (function () {
+    var form = document.querySelector('#footer-newsletter-form');
+    if (!form) return;
+    var messageEl = document.querySelector('#footer-newsletter-message');
+    var portalId = '48146409';
+    var formGuid = 'fc7837b4-d7df-412b-8daa-9f59fb01b231';
+
+    function getCookie(name) {
+      var value = '; ' + document.cookie;
+      var parts = value.split('; ' + name + '=');
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    function showMessage(text, isError) {
+      messageEl.textContent = text;
+      messageEl.style.color = isError ? '#fca5a5' : '#7fd9bd';
+      messageEl.classList.remove('hidden');
+    }
+
+    async function submit(email) {
+      var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + portalId + '/' + formGuid;
+      var data = {
+        submittedAt: Date.now(),
+        fields: [{ name: 'email', value: email }],
+        context: {
+          hutk: getCookie('hubspotutk'),
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+      try {
+        var response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (response.ok) {
+          var result = await response.json();
+          showMessage(result.inlineMessage || 'Thanks for subscribing!', false);
+          form.reset();
+        } else {
+          showMessage('Something went wrong. Please try again.', true);
+        }
+      } catch (error) {
+        showMessage('Connection error. Please try again.', true);
+      }
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var email = form.querySelector('input[name="email"]').value.trim();
+      if (email) submit(email);
+    });
+  })();
+</script>
+
+<!-- UTM Persistence Utility -->
+<script>
+(function() {
+  const params = new URLSearchParams(location.search);
+  const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+  const now = new Date().toISOString();
+  const firstTouchKey = 'shv_attrib_first';
+  const lastTouchKey  = 'shv_attrib_last';
+
+  function getReferrer() { try { return document.referrer || null; } catch(e) { return null; } }
+
+  function readUtmFromUrl() {
+    const o = {};
+    utmKeys.forEach(k => { const v = params.get(k); if (v) o[k] = v; });
+    return o;
+  }
+
+  function setCookie(name, value, days) {
+    const d = new Date(); d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${d.toUTCString()}; path=/; domain=.shovels.ai; samesite=Lax`;
+  }
+  function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return m ? decodeURIComponent(m[2]) : null;
+  }
+
+  const urlUtms = readUtmFromUrl();
+  const landing = location.href;
+  const ref = getReferrer();
+
+  // First touch: set once
+  if (!localStorage.getItem(firstTouchKey)) {
+    const first = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(firstTouchKey, JSON.stringify(first));
+    setCookie(firstTouchKey, JSON.stringify(first), 180);
+  }
+
+  // Last touch: update whenever UTMs present (or when arriving with a referrer)
+  if (Object.keys(urlUtms).length || ref) {
+    const last = {
+      ts: now,
+      landing_page: landing,
+      referrer: ref,
+      ...urlUtms
+    };
+    localStorage.setItem(lastTouchKey, JSON.stringify(last));
+    setCookie(lastTouchKey, JSON.stringify(last), 180);
+  }
+})();
+</script>

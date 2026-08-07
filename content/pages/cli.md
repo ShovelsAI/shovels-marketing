@@ -1,414 +1,322 @@
-Title: Shovels CLI — Construction data from your terminal
-Description: Agent-first CLI for the Shovels building permit and contractor API. One binary. JSON output. Zero interactivity. Built for AI agents, scripts, and developers who live in the terminal.
-slug: cli
+Title: Shovels CLI: Construction Data Straight From Your Terminal
+Description: Agent-first CLI for the Shovels building permit and contractor API. One binary, JSON output, zero interactivity—built for AI agents, scripts, and pipelines.
+slug: features/cli
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- HERO                                                                   -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/code_window.html' as ui_code %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/callout.html' as ui_callout %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="cli-grid" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#cli-grid)" />
-</svg>
+{# ── Hero terminal (reused from the live /cli page; validated commands) #}
+{% set hero_terminal %}{% call ui_code.code_window(title='terminal', copyable=True, copy_text="curl -LsSf https://shovels.ai/install.sh | sh") %}
+<span class="text-gray-500">$</span> <span class="text-white">curl -LsSf https://shovels.ai/install.sh | sh</span>
+<span class="text-green-400">Installed shovels to ~/.shovels/bin/shovels</span>
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:grid lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6">
-      <div>
-        <h1 class="max-w-xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Construction data from your terminal</h1>
-        <p class="mt-6 max-w-xl text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your AI agent's gateway to U.S. construction data.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
-          <a href="https://github.com/ShovelsAI/shovels-cli" class="text-sm/6 font-semibold text-gray-900">View on GitHub <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <!-- Terminal mockup -->
-      <div class="mt-10 lg:mt-0">
-        <div class="rounded-xl bg-gray-900 shadow-2xl ring-1 ring-white/10 overflow-hidden">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-white/10">
-            <span class="size-3 rounded-full bg-red-500"></span>
-            <span class="size-3 rounded-full bg-yellow-500"></span>
-            <span class="size-3 rounded-full bg-green-500"></span>
-            <span class="ml-2 text-sm text-gray-400 font-mono">terminal</span>
-          </div>
-          <div class="p-5 font-mono text-sm leading-relaxed">
-            <p class="text-gray-400">$ <span class="text-white">curl -LsSf https://shovels.ai/install.sh | sh</span></p>
-            <p class="text-green-400 mt-1">Installed shovels to ~/.shovels/bin/shovels</p>
-            <p class="text-gray-500 mt-4"># How many solar permits in 92024 (Encinitas, CA) last year?</p>
-            <p class="text-gray-400 mt-1">$ <span class="text-white">shovels permits search --geo-id 92024 \</span></p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-from 2024-01-01 --permit-to 2024-12-31 \</p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags solar --include-count --limit 1 \</p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;| jq '.meta.total_count.value'</p>
-            <p class="text-shovels-secondary mt-1">581</p>
-          </div>
-        </div>
-      </div>
-    </div>
+<span class="text-gray-500"># How many solar permits in 92024 (Encinitas, CA) last year?</span>
+<span class="text-gray-500">$</span> <span class="text-white">shovels permits search --geo-id 92024 \</span>
+<span class="text-white">    --permit-from 2024-01-01 --permit-to 2024-12-31 \</span>
+<span class="text-white">    --tags solar --include-count --limit 1 \</span>
+<span class="text-white">    | jq '.meta.total_count.value'</span>
+<span class="text-shovels-secondary">581</span>
+{% endcall %}{% endset %}
+
+{{ ui_hero.hero(
+    eyebrow='Shovels CLI',
+    h1='Construction data straight from your terminal',
+    description='An agent-first CLI for the Shovels API. One binary, JSON output, zero interactivity. Built for AI agents, scripts, and pipelines.',
+    cta_label='Get your API key',
+    cta_href='https://app.shovels.ai/',
+    secondary_cta_label='View on GitHub →',
+    secondary_cta_href='https://github.com/ShovelsAI/shovels-cli',
+    media=hero_terminal,
+    bg_src='/images/features/cli/gear.svg') }}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='Shovels meets enterprise security and compliance requirements. Our SOC 2 Type II certification reflects controls independently audited over a sustained period, not just a point-in-time snapshot.',
+    cta_label='Read more about our security practices →',
+    cta_href='https://trust.shovels.ai/') }}
+
+{# ── Feature terminals (reused validated commands, re-rendered via code_window) #}
+{% set f1_media %}{% call ui_code.code_window(title='permits search') %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels permits search \</span>
+<span class="text-white">    --geo-id 33139 \</span>          <span class="text-gray-500"># Miami Beach, FL</span>
+<span class="text-white">    --permit-from 2024-01-01 \</span>
+<span class="text-white">    --permit-to 2024-12-31 \</span>
+<span class="text-white">    --tags roofing --include-count \</span>
+<span class="text-white">    --limit 1 | jq '.meta.total_count.value'</span>
+<span class="text-shovels-secondary">490</span>
+{% endcall %}{% endset %}
+
+{% set f2_media %}{% call ui_code.code_window(title='claude code') %}
+<span class="text-gray-500"># Your AI agent runs this:</span>
+<span class="text-gray-500">$</span> <span class="text-white">shovels permits search --help</span>
+<span class="text-gray-400">...</span>
+<span class="text-gray-500"># Reads the help, builds the query:</span>
+<span class="text-gray-500">$</span> <span class="text-white">shovels permits search \</span>
+<span class="text-white">    --geo-id 94110 \</span>          <span class="text-gray-500"># San Francisco, CA</span>
+<span class="text-white">    --permit-from 2024-06-01 \</span>
+<span class="text-white">    --tags roofing \</span>
+<span class="text-white">    --property-type residential \</span>
+<span class="text-white">    --limit 20</span>
+<span class="text-gray-500"># Parses the JSON, reasons about the results...</span>
+{% endcall %}{% endset %}
+
+{% set f3_media %}{% call ui_code.code_window(title='build CSV') %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels contractors search --geo-id CA \</span>
+<span class="text-white">    --permit-from 2024-01-01 --permit-to 2024-12-31 \</span>
+<span class="text-white">    --tags solar --limit all \</span>
+<span class="text-white">    | jq -r '.data[] | [.name, .phone, .permit_count] | @csv' \</span>
+<span class="text-white">    > solar_contractors_ca.csv</span>
+{% endcall %}{% endset %}
+
+{# F4 visual — reliability cards (not a terminal). #}
+{% set f4_media %}
+<div class="space-y-3">
+  {% for title, body in [
+      ('Pagination handled', '--limit all manages cursors, page sizes, and the 100K-record ceiling'),
+      ('Auto-retry on rate limits', 'Backoff + jitter; respects Retry-After'),
+      ('Credit tracking', 'Every response reports credits_used and credits_remaining'),
+  ] %}
+  <div class="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+    <p class="text-sm font-semibold text-gray-900">{{ title }}</p>
+    <p class="mt-1 font-mono text-xs text-gray-500">{{ body }}</p>
   </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+  {% endfor %}
 </div>
+{% endset %}
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- WHAT CAN YOU DO — Command showcase                                     -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+{% set features = [
+    {
+        'number': '01',
+        'title': 'Query everything with one open-source binary',
+        'description': 'No SDKs, no dependencies, no config files. Download one file and query permits, contractors, and addresses in seconds.',
+        'bullets': [
+            'macOS, Linux, and Windows',
+            'Open source (MIT, Go) with checksum-verified installs',
+            '<code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">--limit all</code> handles cursors, page sizes, and rate-limit retries',
+        ],
+        'media': f1_media,
+    },
+    {
+        'number': '02',
+        'title': 'Plug directly into your AI agents',
+        'description': 'Claude Code, Codex, Cursor, or your own agents shell out to <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">shovels</code> and get structured data back. No MCP headaches, no context bloat, no credential juggling.',
+        'bullets': [
+            'JSON to <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">stdout</code>, always; errors to <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">stderr</code>',
+            '<code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">--help</code> text written for LLMs: specific, example-rich, jargon-free',
+            'Meaningful exit codes: 0 = success, 2 = auth error, 3 = rate limited',
+        ],
+        'media': f2_media,
+    },
+    {
+        'number': '03',
+        'title': 'Pipe it, chain it, script it',
+        'description': 'JSON output composes with jq, cron, and everything else in your stack. Build workflows that would take weeks in a GUI.',
+        'bullets': [
+            'Build a solar contractor CSV in one line',
+            'Monitor new permits in your market on a cron job',
+            'Resolve addresses to <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">geo_id</code>s mid-pipeline',
+        ],
+        'media': f3_media,
+    },
+    {
+        'number': '04',
+        'title': 'Move faster with reliability built in',
+        'description': 'The CLI handles the operational plumbing, so jobs run unattended and your agent always knows the cost.',
+        'bullets': [
+            '<code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">--limit all</code> manages cursors, page sizes, and the 100K-record ceiling',
+            'Auto-retry on rate limits with backoff + jitter; respects <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">Retry-After</code>',
+            'Every response reports <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">credits_used</code> and <code class="rounded bg-gray-100 px-1.5 py-0.5 text-sm">credits_remaining</code>',
+        ],
+        'media': f4_media,
+    },
+] %}
 
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Permits, contractors, addresses</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Everything in one binary</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">No SDKs, no dependencies, no configuration files. Download a single binary and start querying construction data in seconds.</p>
+{{ ui.use_case_section(
+    eyebrow='AGENT-FIRST BY DESIGN',
+    heading='Permits, contractors, and addresses. No integration required.',
+    cases=features) }}
+
+{# ── Gallery — four validated command examples across the dataset. #}
+{% set g1 %}{% call ui_code.code_window(title='count permits', fill=True, copyable=True, copy_text="shovels permits search --geo-id 33139 --permit-from 2024-01-01 --permit-to 2024-12-31 --tags roofing --include-count --limit 1 | jq '.meta.total_count.value'") %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels permits search --geo-id 33139 \</span>
+<span class="text-white">    --permit-from 2024-01-01 --permit-to 2024-12-31 \</span>
+<span class="text-white">    --tags roofing --include-count --limit 1 \</span>
+<span class="text-white">    | jq '.meta.total_count.value'</span>
+<span class="text-shovels-secondary">490</span>
+{% endcall %}{% endset %}
+{% set g2 %}{% call ui_code.code_window(title='contractor permits', fill=True, copyable=True, copy_text="shovels contractors permits 03xTGkafsf --limit all | jq '.data | length'") %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels contractors permits 03xTGkafsf \</span>  <span class="text-gray-500"># Cosmic Solar Inc.</span>
+<span class="text-white">    --limit all | jq '.data | length'</span>
+<span class="text-shovels-secondary">2056</span>
+{% endcall %}{% endset %}
+{% set g3 %}{% call ui_code.code_window(title='export CSV', fill=True, copyable=True, copy_text="shovels contractors search --geo-id 78701 --tags electrical --limit 100 | jq -r '.data[] | [.name, .permit_count] | @csv'") %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels contractors search --geo-id 78701 \</span>  <span class="text-gray-500"># Austin, TX</span>
+<span class="text-white">    --tags electrical --limit 100 \</span>
+<span class="text-white">    | jq -r '.data[] | [.name, .permit_count] | @csv'</span>
+<span class="text-gray-300">"KENNETH TUMLINSON",554</span>
+<span class="text-gray-300">"JOSEPH H MARTINEZ",85</span>
+<span class="text-gray-500">...</span>
+{% endcall %}{% endset %}
+{% set g4 %}{% call ui_code.code_window(title='resolve address', fill=True, copyable=True, copy_text="shovels addresses search -q \"1600 Pennsylvania Ave\" | jq '.data[0] | {name, geo_id}'") %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels addresses search \</span>
+<span class="text-white">    -q "1600 Pennsylvania Ave" \</span>
+<span class="text-white">    | jq '.data[0] | {name, geo_id}'</span>
+<span class="text-gray-300">{</span>
+<span class="text-gray-300">  "name": "<span class="text-green-400">1600 Pennsylvania Ave Nw, Washington, DC</span>",</span>
+<span class="text-gray-300">  "geo_id": "<span class="text-shovels-secondary">Kw5MGExoU6Y</span>"</span>
+<span class="text-gray-300">}</span>
+{% endcall %}{% endset %}
+
+<section class="w-full bg-white px-6 md:px-10 py-24">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="text-center text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">See it across the whole dataset</h2>
+    <div class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div>{{ g1 }}</div>
+      <div>{{ g2 }}</div>
+      <div>{{ g3 }}</div>
+      <div>{{ g4 }}</div>
     </div>
   </div>
+</section>
 
-  <!-- Command examples grid -->
-  <div class="mx-auto mt-16 max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-
-      <!-- Example 1: Search permits -->
-      <div class="rounded-xl bg-gray-800/50 ring-1 ring-white/10 overflow-hidden">
-        <div class="px-5 py-3 border-b border-white/10">
-          <p class="text-sm font-semibold text-shovels-secondary">Roofing permits in Miami Beach</p>
+{# ── Why not just curl — comparison (reused from live /cli). #}
+<section class="w-full bg-gray-50 px-6 md:px-10 py-24">
+  <div class="mx-auto max-w-6xl">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">WHY NOT JUST CURL?</span>
+      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Because pagination shouldn't be your problem</h2>
+    </div>
+    <div class="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-2">
+      <div class="flex h-full flex-col overflow-hidden rounded-xl ring-1 ring-red-200">
+        <div class="border-b border-red-200 bg-red-50 px-5 py-3">
+          <p class="text-sm font-semibold text-red-800">✕ With curl — 15+ lines, manual pagination</p>
         </div>
-        <div class="p-5 font-mono text-sm leading-relaxed">
-          <p class="text-gray-400">$ <span class="text-white">shovels permits search \</span></p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--geo-id 33139 \ <span class="text-gray-500"># Miami Beach, FL</span></p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-from 2024-01-01 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-to 2024-12-31 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags roofing --include-count \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--limit 1 | jq '.meta.total_count.value'</p>
-          <p class="text-shovels-secondary mt-1">490</p>
+        <pre class="flex-auto overflow-x-auto bg-gray-900 p-5 font-mono text-xs leading-relaxed text-gray-300"><code>cursor=""
+while true; do
+  resp=$(curl -s -H "X-API-Key: $KEY" \
+    "https://api.shovels.ai/v2/permits/search\
+?geo_id=92024&permit_from=2024-01-01\
+&permit_to=2024-12-31&cursor=$cursor")
+  echo "$resp" | jq '.items[]'
+  cursor=$(echo "$resp" | jq -r '.next_cursor')
+  [ "$cursor" = "null" ] && break
+done</code></pre>
+      </div>
+      <div class="flex h-full flex-col overflow-hidden rounded-xl ring-1 ring-green-200">
+        <div class="border-b border-green-200 bg-green-50 px-5 py-3">
+          <p class="text-sm font-semibold text-green-800">✓ With shovels — one command, all records</p>
+        </div>
+        <pre class="flex-auto overflow-x-auto bg-gray-900 p-5 font-mono text-sm leading-relaxed text-white"><code>shovels permits search \
+  --geo-id 92024 \
+  --permit-from 2024-01-01 \
+  --permit-to 2024-12-31 \
+  --limit all</code></pre>
+      </div>
+    </div>
+    <p class="mx-auto mt-8 max-w-xl text-center text-base text-gray-500">The CLI handles auth headers, cursor pagination, rate-limit retries, and credit tracking. Just say how many records you want.</p>
+  </div>
+</section>
+
+{# Links to /api (Shovels API) — moves to /solutions/api at launch. #}
+{{ ui_callout.callout(
+    variant='green',
+    heading='Building an application?',
+    body='The CLI is built on the Shovels API. For full REST access and integration into your product, use our API directly.',
+    cta_label='Learn more about our API',
+    cta_href='/solutions/api') }}
+
+{# ── How it works — terminal per step (vertical). #}
+{% set hiw1 %}{% call ui_code.code_window(title='install', copyable=True, copy_text="curl -LsSf https://shovels.ai/install.sh | sh") %}
+<span class="text-gray-500">$</span> <span class="text-white">curl -LsSf https://shovels.ai/install.sh | sh</span>
+<span class="text-green-400">Installed shovels (sha256 verified)</span>
+{% endcall %}{% endset %}
+{% set hiw2 %}{% call ui_code.code_window(title='auth', copyable=True, copy_text="export SHOVELS_API_KEY=your-key") %}
+<span class="text-gray-500">$</span> <span class="text-white">export SHOVELS_API_KEY=your-key</span>
+{% endcall %}{% endset %}
+{% set hiw3 %}{% call ui_code.code_window(title='query', copyable=True, copy_text="shovels permits search --geo-id 92024 --permit-from 2025-01-01") %}
+<span class="text-gray-500">$</span> <span class="text-white">shovels permits search --geo-id 92024 \</span>
+<span class="text-white">    --permit-from 2025-01-01</span>
+<span class="text-gray-300">{ "meta": { "count": <span class="text-shovels-secondary">138</span> }, ... }</span>
+{% endcall %}{% endset %}
+
+<section id="how-it-works" class="w-full bg-white px-6 md:px-10 pt-24 pb-[4.5rem]">
+  <div class="mx-auto max-w-6xl">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">HOW IT WORKS</span>
+      <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Up and running in seconds</h2>
+    </div>
+    {# Stepper: numbered circles on a left rail, connected by a vertical line
+       (segment runs from below each circle, across the gap, to the next),
+       with a card per step holding the text (left) + terminal (right). #}
+    <div class="mx-auto mt-12 max-w-5xl space-y-6">
+      {% for num, title, tagline, term in [
+          ('1', 'Install', 'One line, checksum-verified, no runtime to install.', hiw1),
+          ('2', 'Set your API key', 'Grab a key from your Shovels account dashboard.', hiw2),
+          ('3', 'Run your first query', 'JSON results, instantly.', hiw3),
+      ] %}
+      <div class="flex items-stretch gap-5 md:gap-6">
+        <div class="relative flex w-10 shrink-0 flex-col items-center pt-1">
+          {# Runs from this circle's center down to the next circle's center
+             (space-y-6 gap + pt-1 + half-circle = 48px); both circles sit on
+             top (z-10), so it reads flush into each number. #}
+          {% if not loop.last %}
+          <span class="absolute left-1/2 top-6 -bottom-12 w-0.5 -translate-x-1/2 bg-gray-200" aria-hidden="true"></span>
+          {% endif %}
+          <span class="relative z-10 flex size-10 items-center justify-center rounded-full bg-shovels-primary text-sm font-semibold text-white">{{ num }}</span>
+        </div>
+        <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-xl font-medium text-gray-900">{{ title }}</h3>
+              <p class="mt-2 text-base text-gray-500">{{ tagline }}</p>
+            </div>
+            <div>{{ term }}</div>
+          </div>
         </div>
       </div>
-
-      <!-- Example 2: Get contractor details -->
-      <div class="rounded-xl bg-gray-800/50 ring-1 ring-white/10 overflow-hidden">
-        <div class="px-5 py-3 border-b border-white/10">
-          <p class="text-sm font-semibold text-shovels-secondary">How many permits has this contractor filed?</p>
-        </div>
-        <div class="p-5 font-mono text-sm leading-relaxed">
-          <p class="text-gray-400">$ <span class="text-white">shovels contractors permits 03xTGkafsf</span> <span class="text-gray-500"># Cosmic Solar Inc.</span></p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--limit all \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;| jq '.data | length'</p>
-          <p class="text-shovels-secondary mt-1">2056</p>
-        </div>
-      </div>
-
-      <!-- Example 3: Pipeline -->
-      <div class="rounded-xl bg-gray-800/50 ring-1 ring-white/10 overflow-hidden">
-        <div class="px-5 py-3 border-b border-white/10">
-          <p class="text-sm font-semibold text-shovels-secondary">Export electrical contractors to CSV</p>
-        </div>
-        <div class="p-5 font-mono text-sm leading-relaxed">
-          <p class="text-gray-400">$ <span class="text-white">shovels contractors search \</span></p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--geo-id 78701 \ <span class="text-gray-500"># Austin, TX</span></p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-from 2024-01-01 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-to 2024-12-31 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags electrical --limit 100 \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;| jq -r '.data[] | [.name, .permit_count] | @csv'</p>
-          <p class="text-gray-300 mt-1">"KENNETH TUMLINSON",554</p>
-          <p class="text-gray-300">"JOSEPH H MARTINEZ",85</p>
-          <p class="text-gray-300">"CDX ELECTRICAL SERVICES",19</p>
-          <p class="text-gray-500">...</p>
-        </div>
-      </div>
-
-      <!-- Example 4: Address lookup -->
-      <div class="rounded-xl bg-gray-800/50 ring-1 ring-white/10 overflow-hidden">
-        <div class="px-5 py-3 border-b border-white/10">
-          <p class="text-sm font-semibold text-shovels-secondary">Resolve an address to a geo_id</p>
-        </div>
-        <div class="p-5 font-mono text-sm leading-relaxed">
-          <p class="text-gray-400">$ <span class="text-white">shovels addresses search \</span></p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;-q "1600 Pennsylvania Ave" \</p>
-          <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;| jq '.data[0] | {name, geo_id}'</p>
-          <p class="text-gray-300 mt-1">{</p>
-          <p class="text-gray-300">&nbsp;&nbsp;"name": "<span class="text-green-400">1600 Pennsylvania Ave Nw, Washington, DC</span>",</p>
-          <p class="text-gray-300">&nbsp;&nbsp;"geo_id": "<span class="text-shovels-secondary">Kw5MGExoU6Y</span>"</p>
-          <p class="text-gray-300">}</p>
-        </div>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- BUILT FOR AI AGENTS                                                    -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'What is the Shovels CLI?',
+            'a': "The Shovels CLI is a command-line interface for the Shovels construction data API. It's a single open-source binary that lets you query building permits, contractors, and addresses directly from your terminal, returning clean JSON every time. It was designed from the ground up for AI agents, scripts, and data pipelines.",
+        },
+        {
+            'q': 'What platforms does the CLI support?',
+            'a': "The CLI runs on macOS, Linux, and Windows. The install script downloads the binary from GitHub Releases and verifies its SHA256 checksum before anything touches your system, so you always know exactly what you're installing.",
+        },
+        {
+            'q': 'How do AI agents use the CLI?',
+            'a': "AI agents like Claude Code, Codex, and Cursor simply shell out to the shovels command. They read the LLM-friendly --help text to construct the right command, parse the JSON that comes back on stdout, and branch on meaningful exit codes. There's no MCP server to configure and no credential juggling involved.",
+        },
+        {
+            'q': 'How does pricing work?',
+            'a': 'The CLI authenticates with your Shovels API key and draws from the same credit balance as the API. Every response includes credits_used and credits_remaining fields, so you—or your agent—always know exactly what a query cost and how much you have left.',
+        },
+        {
+            'q': 'Is the CLI open source?',
+            'a': "Yes, the CLI is fully open source under the MIT license. It's written in Go using the Cobra framework, and the complete source code is available on GitHub—we welcome issues, feedback, and contributions.",
+        },
+        {
+            'q': 'How is the CLI different from the API?',
+            'a': "They share the same data and the same credits, so the difference comes down to ergonomics. The CLI handles auth headers, cursor pagination, rate-limit retries, and credit tracking for you, which makes it ideal for terminal work and AI agents. If you're building Shovels data into an application, the API gives you direct REST access.",
+        },
+    ]) }}
 
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:grid lg:grid-cols-2 lg:gap-x-16 lg:items-start">
-      <div>
-        <p class="text-base/7 font-semibold text-shovels-secondary-text">Agent-first design</p>
-        <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Your AI agent's interface to construction data</h2>
-        <p class="mt-6 text-lg/8 text-gray-600">No MCP headaches — no context bloat, no credential juggling, no host lock-in. Claude Code, OpenAI Codex, Cursor, or your own agents shell out to <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">shovels</code> and get structured data back instantly.</p>
-        <dl class="mt-10 max-w-xl space-y-6 text-base/7 text-gray-600">
-          <div class="relative pl-9">
-            <dt class="font-semibold text-gray-900">
-              <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" /></svg>
-              JSON to stdout. Always.
-            </dt>
-            <dd class="mt-1">No tables, no colors, no spinners. stdout is always valid JSON. Errors go to stderr. Your parser never breaks.</dd>
-          </div>
-          <div class="relative pl-9">
-            <dt class="font-semibold text-gray-900">
-              <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" /></svg>
-              Help text written for LLMs
-            </dt>
-            <dd class="mt-1">Every <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">--help</code> is specific, example-rich, and jargon-free. An AI agent can read the help and construct the right command on the first try.</dd>
-          </div>
-          <div class="relative pl-9">
-            <dt class="font-semibold text-gray-900">
-              <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" /></svg>
-              Meaningful exit codes
-            </dt>
-            <dd class="mt-1">Exit 0 = success. Exit 2 = auth error. Exit 3 = rate limited. Your agent can branch on the exit code without parsing anything.</dd>
-          </div>
-          <div class="relative pl-9">
-            <dt class="font-semibold text-gray-900">
-              <svg class="absolute left-0 top-1 size-5 text-shovels-secondary" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" /></svg>
-              Zero interactivity
-            </dt>
-            <dd class="mt-1">No prompts, no confirmations, no progress bars. It succeeds and prints JSON, or it fails and prints a JSON error. Nothing in between.</dd>
-          </div>
-        </dl>
-      </div>
-      <!-- AI agent terminal mockup -->
-      <div class="mt-10 lg:mt-0">
-        <div class="rounded-xl bg-gray-900 shadow-2xl ring-1 ring-white/10 overflow-hidden">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-white/10">
-            <span class="size-3 rounded-full bg-red-500"></span>
-            <span class="size-3 rounded-full bg-yellow-500"></span>
-            <span class="size-3 rounded-full bg-green-500"></span>
-            <span class="ml-2 text-sm text-gray-400 font-mono">claude code</span>
-          </div>
-          <div class="p-5 font-mono text-sm leading-relaxed">
-            <p class="text-gray-500 italic"># Your AI agent runs this:</p>
-            <p class="text-gray-400 mt-2">$ <span class="text-white">shovels permits search --help</span></p>
-            <p class="text-gray-400 mt-1">...</p>
-            <p class="text-gray-500 mt-3 italic"># Reads the help, builds the query:</p>
-            <p class="text-gray-400 mt-2">$ <span class="text-white">shovels permits search \</span></p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--geo-id 94110 \ <span class="text-gray-500"># San Francisco, CA</span></p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-from 2024-06-01 \</p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--permit-to 2024-12-31 \</p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--tags roofing \</p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--property-type residential \</p>
-            <p class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;--limit 20</p>
-            <p class="text-gray-500 mt-3 italic"># Parses the JSON, reasons about the results,</p>
-            <p class="text-gray-500 italic"># then asks for contractor details...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- COMPOSABILITY — Pipe it, chain it, script it                           -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-
-<div class="bg-gray-50 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary-text">Unix philosophy</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Pipe it. Chain it. Script it.</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">JSON output means you can compose the CLI with any tool in your stack. Build workflows that would take weeks with a GUI.</p>
-    </div>
-
-    <div class="mx-auto mt-16 max-w-4xl">
-      <div class="space-y-6">
-
-        <!-- Composability example 1 -->
-        <div class="rounded-xl bg-white shadow-sm ring-1 ring-gray-200 overflow-hidden">
-          <div class="px-5 py-3 border-b border-gray-100">
-            <p class="text-sm font-semibold text-gray-900">Build a solar contractor CSV in one line</p>
-          </div>
-          <div class="p-5 font-mono text-sm leading-relaxed bg-gray-900 text-white">
-            <p>shovels contractors search --geo-id CA \</p>
-            <p>&nbsp;&nbsp;--permit-from 2024-01-01 --permit-to 2024-12-31 \</p>
-            <p>&nbsp;&nbsp;--tags solar --limit all \</p>
-            <p>&nbsp;&nbsp;| jq -r '.data[] | [.name, .phone, .permit_count] | @csv' \</p>
-            <p>&nbsp;&nbsp;> solar_contractors_ca.csv</p>
-          </div>
-        </div>
-
-        <!-- Composability example 2 -->
-        <div class="rounded-xl bg-white shadow-sm ring-1 ring-gray-200 overflow-hidden">
-          <div class="px-5 py-3 border-b border-gray-100">
-            <p class="text-sm font-semibold text-gray-900">Monitor new permits in your market (cron job)</p>
-          </div>
-          <div class="p-5 font-mono text-sm leading-relaxed bg-gray-900 text-white">
-            <p><span class="text-gray-500"># crontab: 0 8 * * MON</span></p>
-            <p>shovels permits search --geo-id 94110 \ <span class="text-gray-500"># San Francisco, CA</span></p>
-            <p>&nbsp;&nbsp;--permit-from $(date -v-7d +%Y-%m-%d) \</p>
-            <p>&nbsp;&nbsp;--permit-to $(date +%Y-%m-%d) \</p>
-            <p>&nbsp;&nbsp;| jq '.meta.count' \</p>
-            <p>&nbsp;&nbsp;| xargs -I{} echo "{} new permits this week in 94110"</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- WHY NOT JUST CURL — The comparison                                     -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="text-base/7 font-semibold text-shovels-secondary-text">Why not just curl?</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Because pagination shouldn't be your problem</h2>
-    </div>
-
-    <div class="mx-auto mt-16 max-w-5xl grid grid-cols-1 gap-8 lg:grid-cols-2">
-
-      <!-- curl way -->
-      <div class="rounded-xl overflow-hidden ring-1 ring-red-200">
-        <div class="px-5 py-3 bg-red-50 border-b border-red-200">
-          <p class="text-sm font-semibold text-red-800">With curl: 15+ lines, manual pagination</p>
-        </div>
-        <div class="p-5 font-mono text-xs leading-relaxed bg-gray-900 text-gray-300">
-          <p>cursor=""</p>
-          <p>while true; do</p>
-          <p>&nbsp;&nbsp;resp=$(curl -s -H "X-API-Key: $KEY" \</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;"https://api.shovels.ai/v2/permits/search\</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;?geo_id=92024&permit_from=2024-01-01\</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&permit_to=2024-12-31&cursor=$cursor")</p>
-          <p>&nbsp;&nbsp;echo "$resp" | jq '.items[]'</p>
-          <p>&nbsp;&nbsp;cursor=$(echo "$resp" | jq -r '.next_cursor')</p>
-          <p>&nbsp;&nbsp;[ "$cursor" = "null" ] && break</p>
-          <p>done</p>
-        </div>
-      </div>
-
-      <!-- CLI way -->
-      <div class="rounded-xl overflow-hidden ring-1 ring-green-200">
-        <div class="px-5 py-3 bg-green-50 border-b border-green-200">
-          <p class="text-sm font-semibold text-green-800">With shovels: one command, all records</p>
-        </div>
-        <div class="p-5 font-mono text-sm leading-relaxed bg-gray-900 text-white">
-          <p>shovels permits search \</p>
-          <p>&nbsp;&nbsp;--geo-id 92024 \</p>
-          <p>&nbsp;&nbsp;--permit-from 2024-01-01 \</p>
-          <p>&nbsp;&nbsp;--permit-to 2024-12-31 \</p>
-          <p>&nbsp;&nbsp;--limit all</p>
-        </div>
-      </div>
-
-    </div>
-    <p class="mx-auto mt-8 max-w-xl text-center text-base text-gray-500">The CLI handles auth headers, cursor pagination, rate-limit retries, and credit tracking. You just say how many records you want.</p>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- FEATURE GRID                                                           -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg>
-          Single binary.
-        </dt>
-        <dd class="inline">No runtime, no dependencies. Download one file, put it on your PATH, done. macOS, Linux, and Windows.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" /></svg>
-          Pagination handled.
-        </dt>
-        <dd class="inline"><code class="text-xs bg-white/10 px-1 rounded">--limit all</code> fetches every record. The CLI manages cursors, page sizes, and the 100K ceiling internally.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" /></svg>
-          Auto-retry.
-        </dt>
-        <dd class="inline">Rate-limited? The CLI backs off with jitter and retries automatically. Respects Retry-After headers.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          Credit tracking.
-        </dt>
-        <dd class="inline">Every response includes <code class="text-xs bg-white/10 px-1 rounded">credits_used</code> and <code class="text-xs bg-white/10 px-1 rounded">credits_remaining</code>. Your agent always knows the cost.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
-          Checksum-verified installs.
-        </dt>
-        <dd class="inline">The install script downloads from GitHub Releases and verifies SHA256 checksums before touching your system.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>
-          Open source.
-        </dt>
-        <dd class="inline">MIT licensed. Read the code, fork it, contribute. Built with Go and Cobra.</dd>
-      </div>
-    </dl>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- INSTALL CTA                                                            -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Get started in 10 seconds</h2>
-      <div class="mt-8 rounded-xl bg-gray-900 p-5 shadow-2xl ring-1 ring-white/10">
-        <p class="font-mono text-sm text-white text-center">curl -LsSf https://shovels.ai/install.sh | sh</p>
-      </div>
-      <p class="mt-6 text-base text-gray-600">Then set your API key and start querying:</p>
-      <div class="mt-4 rounded-xl bg-gray-900 p-5 shadow-2xl ring-1 ring-white/10">
-        <div class="font-mono text-sm text-left">
-          <p class="text-gray-400">$ <span class="text-white">export SHOVELS_API_KEY=your-key</span></p>
-          <p class="text-gray-400 mt-1">$ <span class="text-white">shovels permits search --geo-id 92024 --permit-from 2024-01-01 --permit-to 2024-12-31</span></p>
-        </div>
-      </div>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get your API key</a>
-        <a href="https://github.com/ShovelsAI/shovels-cli" class="text-sm/6 font-semibold text-gray-900">GitHub <span aria-hidden="true">&rarr;</span></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Shovels CLI",
-  "applicationCategory": "DeveloperApplication",
-  "operatingSystem": "macOS, Linux, Windows",
-  "description": "Agent-first command-line interface for the Shovels building permit and contractor API. JSON-only output, automatic pagination, and structured error codes designed for AI agents and scripts.",
-  "url": "https://www.shovels.ai/cli",
-  "downloadUrl": "https://github.com/ShovelsAI/shovels-cli/releases/latest",
-  "softwareVersion": "0.1.0",
-  "license": "https://opensource.org/licenses/MIT",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://app.shovels.ai/"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Shovels",
-    "url": "https://www.shovels.ai"
-  }
-}
-</script>
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
+    heading='Get started in 10 seconds',
+    description='Install the CLI, set your API key, and run your first query.',
+    cta_label='Get your API key',
+    cta_href='https://app.shovels.ai/') }}

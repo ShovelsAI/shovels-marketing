@@ -1,0 +1,29 @@
+#!/bin/sh
+# Keep the compiled Tailwind stylesheet in sync on every commit.
+#
+# Tailwind only generates CSS for the classes it finds at build time, and
+# themes/shovels/static/css/output.css is a committed, pre-built file. Editing
+# a template to use a new class (e.g. an arbitrary value like h-[218px])
+# without recompiling leaves output.css stale — the class has no rule, so it
+# does nothing in local preview. This hook rebuilds output.css and re-stages it
+# so a stale stylesheet can never be committed.
+#
+# Activated via `git config core.hooksPath .githooks` (npm `prepare` does this
+# automatically on `npm install`). See CLAUDE.md → "CSS / Tailwind".
+
+TW="node_modules/.bin/tailwindcss"
+CSS="themes/shovels/static/css/output.css"
+
+if [ ! -x "$TW" ]; then
+  echo "pre-commit: tailwindcss not installed (run 'npm install') — skipping CSS rebuild." >&2
+  echo "            output.css may be stale; CI rebuilds it for production regardless." >&2
+  exit 0
+fi
+
+"$TW" -i ./themes/shovels/static/css/input.css -o "$CSS" --minify >/dev/null 2>&1 || {
+  echo "pre-commit: Tailwind build failed — commit aborted. Fix the CSS error and retry." >&2
+  exit 1
+}
+
+git add "$CSS"
+exit 0

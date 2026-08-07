@@ -5,7 +5,7 @@ modified: 2026-03-17
 category: Data
 tag1: Natural Disaster
 tag2:
-tags: wildfires, California, permits, Los Angeles, construction, recovery
+tags: wildfires, California, permits, Los Angeles, construction, recovery, Insurance
 authors: Morgan Friberg
 author_image: /theme/images/team/morgan.svg
 author_title: VP of Marketing

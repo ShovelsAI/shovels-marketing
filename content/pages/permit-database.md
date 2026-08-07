@@ -1,350 +1,208 @@
-Title: Building Permit Database
-Description: Explore nationwide building permits, contractors, and government decisions with advanced filtering and intelligent matching through our powerful web software and modern interface.
-slug: permit-database
+Title: Shovels Online: Permit and Contractor Data, No Code Required
+Description: Search {{ STATS.permits }} U.S. building permits and {{ STATS.contractors }} contractors from your browser. Filter by location, permit type, or specialty. Export to CSV in one click.
+slug: solutions/permit-database
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/how_it_works.html' as ui_hiw %}
+{% import 'macros/industries_strip.html' as ui_ind %}
+{% import 'macros/callout.html' as ui_callout %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Get construction data faster with Shovels Online</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Quickly download nationwide building permits and contractor data with Shovels Online.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Free trial</a>
-          <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900" target="_blank">Quickstart guide <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[600px]" src="{static}/images/shovels-mac.png" alt="Shovels login page">
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-shovels-dark py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Shovels Online</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">Shovels Online is a modern web software that allows you to explore nationwide building permits and contractors and quickly download data to CSV.</p>
-    </div>
-    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <div>
-        <dt class="font-semibold text-white">Nationwide coverage</dt>
-        <dd class="mt-1 text-gray-300">We have the most comprehensive nationwide building permit and contractor data available. With 85% of the US population covered, you can find permits and contractors in almost any state or city.</dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-white">Powerful filters</dt>
-        <dd class="mt-1 text-gray-300">Find contractors by the types of projects they work on, or find projects by contractor specialties. Our search engine uses building permit data to connect contractors and projects.</dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-white">Precise locations</dt>
-        <dd class="mt-1 text-gray-300">Every location has a unique geo_id, from counties down to individual addresses, making geographical filtering more accurate than ever.</dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-white">Contact information</dt>
-        <dd class="mt-1 text-gray-300">We have employee contact information for {{ STATS.contractors }} contractors, including phone numbers, email addresses, and website URLs. We also have contact information for 30 million residential properties.</dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-white">Modern interface</dt>
-        <dd class="mt-1 text-gray-300">Completely redesigned UI with improved maps, better navigation, and a streamlined onboarding process.</dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-white">Powered by AI</dt>
-        <dd class="mt-1 text-gray-300">We use AI to clean and enrich over 150 million building permits and contractors.</dd>
-      </div>
-    </dl>
-  </div>
-</div>
-<div class="bg-white">
-  <section aria-labelledby="features-heading" class="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8" x-data="{ activeTab: 1 }">
-    <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
-      <div class="max-w-3xl">
-        <h2 id="features-heading" class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Shovels Online features</h2>
-        <p class="mt-4 text-gray-500">We built Shovels Online to be the most powerful and flexible tool for exploring nationwide building permits and contractors. These are the key features.</p>
-      </div>
-      <div class="mt-4">
-        <div class="-mx-4 flex overflow-x-auto sm:mx-0">
-          <div class="flex-auto border-b border-gray-200 px-4 sm:px-0">
-            <div class="-mb-px flex space-x-10" aria-orientation="horizontal" role="tablist">
-              <button id="features-tab-1" 
-                      class="whitespace-nowrap border-b-2 py-6 text-sm font-medium"
-                      :class="activeTab === 1 ? 'border-emerald-500 text-emerald-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'"
-                      @click="activeTab = 1"
-                      aria-controls="features-panel-1" 
-                      role="tab" 
-                      type="button">Contractors</button>
-              <button id="features-tab-2"
-                      class="whitespace-nowrap border-b-2 py-6 text-sm font-medium"
-                      :class="activeTab === 2 ? 'border-emerald-500 text-emerald-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'"
-                      @click="activeTab = 2"
-                      aria-controls="features-panel-2"
-                      role="tab"
-                      type="button">Permits</button>
-              <button id="features-tab-3"
-                      class="whitespace-nowrap border-b-2 py-6 text-sm font-medium"
-                      :class="activeTab === 3 ? 'border-emerald-500 text-emerald-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'"
-                      @click="activeTab = 3"
-                      aria-controls="features-panel-3"
-                      role="tab"
-                      type="button">Geographies</button>
-              <button id="features-tab-4"
-                      class="whitespace-nowrap border-b-2 py-6 text-sm font-medium"
-                      :class="activeTab === 4 ? 'border-emerald-500 text-emerald-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'"
-                      @click="activeTab = 4"
-                      aria-controls="features-panel-4"
-                      role="tab"
-                      type="button">Downloads</button>
-              <button id="features-tab-5"
-                      class="whitespace-nowrap border-b-2 py-6 text-sm font-medium"
-                      :class="activeTab === 5 ? 'border-emerald-500 text-emerald-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'"
-                      @click="activeTab = 5"
-                      aria-controls="features-panel-5"
-                      role="tab"
-                      type="button">Decisions</button>
-            </div>
-          </div>
-        </div>
-        <div id="features-panel-1" 
-             class="space-y-16 pt-10 lg:pt-16" 
-             aria-labelledby="features-tab-1" 
-             role="tabpanel" 
-             tabindex="0"
-             x-show="activeTab === 1">
-          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-            <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">A contractor directory</h3>
-              <p class="mt-2 text-base/7 text-gray-600">At its core, Shovels Online is a contractor directory. You can search for contractors by name, city, state, or specialty. Add building type and financial filters to narrow down your results. Click on a contractor to see their profile.</p>
-            </div>
-            <div class="lg:col-span-7">
-              <img src="{static}/images/demo-online-contractor-screen.png" alt="Contractor profile example." class="aspect-[2/1] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg sm:aspect-[5/2]">
-            </div>
-          </div>
-        </div>
-        <div id="features-panel-2" 
-             class="space-y-16 pt-10 lg:pt-16" 
-             aria-labelledby="features-tab-2" 
-             role="tabpanel" 
-             tabindex="0"
-             x-show="activeTab === 2">
-          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-            <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">A permit database</h3>
-              <p class="mt-2 text-base/7 text-gray-600">Shovels Online is also a permit database. You can search for permits by address, city, state, or permit type. Contractors and permits have the same filtering options. Click on a permit to see its profile.</p>
-            </div>
-            <div class="lg:col-span-7">
-              <img src="{static}/images/demo-online-permits.png" alt="Permit search results example." class="aspect-[2/1] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg sm:aspect-[5/2]">
-            </div>
-          </div>
-        </div>
-        <div id="features-panel-3" 
-             class="space-y-16 pt-10 lg:pt-16" 
-             aria-labelledby="features-tab-3" 
-             role="tabpanel" 
-             tabindex="0"
-             x-show="activeTab === 3">
-          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-            <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Search at any level of geography</h3>
-              <p class="mt-2 text-base/7 text-gray-600">Search for permits and contractors at the county, city, or even specific address level. Click on a geography to see its profile, including permit approval and construction times and the count of permits and contractors in the geography.</p>
-            </div>
-            <div class="lg:col-span-7">
-              <img src="{static}/images/demo-online-jurisdiction.png" alt="County profile example." class="aspect-[2/1] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg sm:aspect-[5/2]">
-            </div>
-          </div>
-        </div>
-        <div id="features-panel-4"
-             class="space-y-16 pt-10 lg:pt-16"
-             aria-labelledby="features-tab-4"
-             role="tabpanel"
-             tabindex="0"
-             x-show="activeTab === 4">
-          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-            <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Download data to CSV</h3>
-              <p class="mt-2 text-base/7 text-gray-600">Download permit and contractor data to CSV with a single click. You can also download permit and contractor profiles to PDF. Import Shovels data into your favorite spreadsheet or CRM software.</p>
-            </div>
-            <div class="lg:col-span-7">
-              <img src="{static}/images/demo-online-download.png" alt="Download example." class="aspect-[2/1] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg sm:aspect-[5/2]">
-            </div>
-          </div>
-        </div>
-        <div id="features-panel-5"
-             class="space-y-16 pt-10 lg:pt-16"
-             aria-labelledby="features-tab-5"
-             role="tabpanel"
-             tabindex="0"
-             x-show="activeTab === 5">
-          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-            <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Track projects before they break ground</h3>
-              <p class="mt-2 text-base/7 text-gray-600">Get visibility into local government meetings, city council decisions, and planning board approvals months before permits are filed. Search zoning changes, project discussions, and approval timelines from city councils and planning boards nationwide.</p>
-            </div>
-            <div class="lg:col-span-7">
-              <img src="{static}/images/demo-online-decision.png" alt="Government decisions and planning approvals example." class="aspect-[2/1] w-full rounded-2xl bg-gray-100 object-contain object-left-top shadow-lg sm:aspect-[5/2]">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What is Shovels Online?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels Online is a web application for exploring nationwide US building permits and contractor data. You can search, filter, and download permit and contractor records to CSV without writing any code.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How much of the US does the permit database cover?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels covers approximately 85% of the US population with building permit and contractor data from {{ STATS.jurisdictions }} jurisdictions. Coverage spans nearly every state and major metropolitan area.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What filters are available for searching permits and contractors?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">You can filter by geography (county, city, zip code, or address), permit type, building type, contractor specialty, financial characteristics, and more. The same filtering options apply to both permit and contractor searches.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels Online include contractor contact information?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels has employee contact information for over {{ STATS.contractors }} contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I download data from Shovels Online?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. You can download permit and contractor search results to CSV with a single click (maximum 1,000 records per export), and export individual profiles to PDF. For larger datasets, segment by geography or use the API which has no result limits.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What is Decisions data in Shovels Online?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Decisions data provides intelligence from city council meetings and planning board discussions, including zoning changes, development approvals, and project timelines. This gives you visibility into projects months before permits are filed, helping you identify opportunities earlier than competitors who only track permit activity.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Are we missing something? Tell us.</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://forms.gle/JFi4ogNXNZePK77CA/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Feature requests</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    wrapper_class='!pb-[4.8rem] md:!pb-[6.4rem]',
+    eyebrow='Shovels Online',
+    h1='Permit and contractor data, no code required',
+    description='Search permits and contractors from your browser. Spot active projects, track market trends, and export to your CRM. No SQL. Zero dev time.',
+    cta_label='Get started',
+    cta_href='https://app.shovels.ai/signup/',
+    illustration_src='/images/solutions/permit-database/hero.svg',
+    illustration_alt='Shovels Online — permit and contractor search interface') }}
 
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Shovels Online",
-  "serviceType": "Database",
-  "description": "Web application for exploring, filtering, and downloading nationwide US building permit and contractor data with advanced geographic search and CSV export.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Shovels",
-    "url": "https://www.shovels.ai"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
-  "url": "https://www.shovels.ai/permit-database"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "Shovels US Building Permit Database",
-  "description": "Nationwide US building permit and contractor database covering 85% of the US population, with permit records, contractor profiles, contact information, and geographic search capabilities.",
-  "url": "https://www.shovels.ai/permit-database",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "United States"
-  },
-  "creator": {
-    "@type": "Organization",
-    "name": "Shovels",
-    "url": "https://www.shovels.ai"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+{# F5 visual — coded "export moment": a results panel with the real
+   Download CSV button and a download-complete row. Framed with the same
+   browser chrome (traffic dots + sage offset backing) as the
+   screenshot-based use cases so it sits consistently among them. #}
+{% set f5_media %}
+<div class="relative">
+  <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-xl bg-[#E1ECE9]" aria-hidden="true"></div>
+  <div class="relative overflow-hidden rounded-xl bg-white ring-1 ring-[#111727]">
+    <div class="flex items-center gap-1.5 border-b border-gray-200 px-4 py-3">
+      <span class="size-3 rounded-full bg-[#F26662]"></span>
+      <span class="size-3 rounded-full bg-[#F4DA86]"></span>
+      <span class="size-3 rounded-full bg-[#71A78C]"></span>
+      <span class="ml-3 text-sm text-gray-600">Shovels.ai</span>
+    </div>
+    <div class="flex items-center justify-between px-5 pt-4">
+      <span class="text-sm font-medium text-gray-500">124 results</span>
+      <span class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-gray-500" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        Download CSV
+      </span>
+    </div>
+    <div class="px-5 pb-5 pt-4">
+      <table class="w-full text-left text-sm">
+        <thead>
+          <tr class="text-xs uppercase tracking-wide text-gray-400">
+            <th class="pb-2 font-medium">Address</th>
+            <th class="pb-2 font-medium">Type</th>
+            <th class="pb-2 text-right font-medium">Value</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr><td class="py-2 text-gray-700">2341 Dusan Dr</td><td class="py-2 text-gray-500">New construction</td><td class="py-2 text-right tabular-nums text-gray-700">$4,000</td></tr>
+          <tr><td class="py-2 text-gray-700">705 Daniel Way</td><td class="py-2 text-gray-500">Solar</td><td class="py-2 text-right tabular-nums text-gray-700">$51,990</td></tr>
+          <tr><td class="py-2 text-gray-700">3818 Baldwin Dr</td><td class="py-2 text-gray-500">Reroof</td><td class="py-2 text-right tabular-nums text-gray-700">$8,400</td></tr>
+          <tr><td class="py-2 text-gray-700">691 Enright Ave</td><td class="py-2 text-gray-500">Addition</td><td class="py-2 text-right tabular-nums text-gray-700">$22,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex items-center gap-2.5 border-t border-gray-100 bg-gray-50 px-5 py-3">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 shrink-0 text-shovels-primary" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v5h5"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>
+      <span class="text-sm font-medium text-gray-700">shovels-permits.csv</span>
+      <span class="text-xs text-gray-400">124 rows</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ml-auto size-4 shrink-0 text-shovels-primary" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+  </div>
+</div>
+{% endset %}
+
+{# ── Features (F1–F6) — same layout as industry use cases; numbers are
+   F1…F6 instead of 01…02. Images reuse existing industry-page screenshots
+   where the Notion copy calls for it; F5 (CSV export) is net-new → TBD. #}
+{% set features = [
     {
-      "@type": "Question",
-      "name": "What is Shovels Online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels Online is a web application for exploring nationwide US building permits and contractor data. You can search, filter, and download permit and contractor records to CSV without writing any code."
-      }
+        'number': '01',
+        'title': 'Track construction activity',
+        'description': 'Search nationwide permits by address, city, state, contractor, permit type, project value, and more. Filter large datasets in seconds and uncover the construction activity that matters to your business.',
+        'image_src': '/images/industries/real-estate/uc2-development-pipeline.png',
+        'image_alt': 'Shovels app — permit search results filtered across a target area',
     },
     {
-      "@type": "Question",
-      "name": "How much of the US does the permit database cover?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels covers approximately 85% of the US population with building permit and contractor data from {{ STATS.jurisdictions }} jurisdictions. Coverage spans nearly every state and major metropolitan area."
-      }
+        'number': '02',
+        'title': 'Find the right contractors',
+        'description': 'Find contractors by specialty, location, license, or performance and map them to permits, inspections, and project history. Evaluate companies and identify new opportunities from a single profile.',
+        'image_src': '/images/industries/home-services/uc1-contractor-marketplace.png',
+        'image_alt': 'Shovels app — contractor detail showing license status, permit history, and trade type',
     },
     {
-      "@type": "Question",
-      "name": "What filters are available for searching permits and contractors?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can filter by geography (county, city, zip code, or address), permit type, building type, contractor specialty, financial characteristics, and more. The same filtering options apply to both permit and contractor searches."
-      }
+        'number': '03',
+        'title': 'Understand your market',
+        'description': 'Analyze permit volume, approval times, active contractors, and construction trends across cities, counties, and ZIP codes. Compare markets to understand where activity is growing.',
+        'image_src': '/images/industries/building-materials/uc5-market-comparative.png',
+        'image_alt': 'Bar chart of permit volume by work type across two target metros',
     },
     {
-      "@type": "Question",
-      "name": "Does Shovels Online include contractor contact information?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels has employee contact information for over {{ STATS.contractors }} contractors, including phone numbers, email addresses, and website URLs. Contact information for 30 million residential properties is also available."
-      }
+        'number': '04',
+        'title': 'Reach decision-makers faster',
+        'description': 'Access phone numbers, emails, websites, and property-level contact data for millions of contractors and residential properties. Build prospect lists faster and export directly into your existing workflow.',
+        'image_src': '/images/industries/insurance/uc2-leads.png',
+        'image_alt': 'Lead generation view — permit search with contractor contact data',
     },
     {
-      "@type": "Question",
-      "name": "Can I download data from Shovels Online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You can download permit and contractor search results to CSV with a single click (maximum 1,000 records per export), and export individual profiles to PDF. For larger datasets, segment by geography or use the API which has no result limits."
-      }
+        'number': '05',
+        'title': 'Export data instantly',
+        'description': 'Export permit, contractor, and market data to CSV in seconds. Move data into spreadsheets, CRM systems, BI tools, or internal workflows without writing a single line of code.',
+        'media': f5_media,
     },
     {
-      "@type": "Question",
-      "name": "What is Decisions data in Shovels Online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Decisions data provides intelligence from city council meetings and planning board discussions, including zoning changes, development approvals, and project timelines. This gives you visibility into projects months before permits are filed, helping you identify opportunities earlier than competitors who only track permit activity."
-      }
-    }
-  ]
-}
-</script>
+        'number': '06',
+        'title': 'Track future development',
+        'description': 'Track planning, zoning, and land-use decisions months before permits are filed. Decisions data surfaces development activity early, so you can identify opportunities before competitors do.',
+        'image_src': '/images/solutions/permit-database/development.svg',
+        'image_alt': 'Decisions timeline — zoning and land-use stages ahead of a permit filing',
+        'framed': False,
+    },
+] %}
+
+{{ ui.use_case_section(
+    wrapper_class='!py-[4.8rem]',
+    eyebrow='',
+    heading='Discover more opportunities, faster',
+    cases=features) }}
+
+{{ ui_callout.callout(
+    wrapper_class='!pt-[2.4rem]',
+    variant='warm',
+    heading='Not sure where to start? Just ask Charlie.',
+    body='Charlie, your AI research assistant, finds exactly what you need from the Shovels data network. Just ask in plain English (no SQL or filters required) and watch Charlie dig up the answers you are looking for.',
+    cta_label='Meet Charlie',
+    cta_href='/features/charlie',
+    media_src='/images/illustrations/charlie-avatar.svg',
+    media_alt='Charlie, the Shovels AI research assistant') }}
+
+{{ ui_hiw.how_it_works(
+    eyebrow='How it works',
+    heading='From search to export in three steps',
+    steps=[
+        {
+            'number': '1',
+            'title': 'Sign up for free',
+            'description': 'Create an account at app.shovels.ai. Start exploring permits and contractors right away.',
+            'image': '/images/illustrations/icon-star.svg',
+        },
+        {
+            'number': '2',
+            'title': 'Search and filter',
+            'description': 'Enter a city, ZIP code, or address. Filter by permit type, contractor specialty, job value, and date range.',
+            'image': '/images/illustrations/map-hat.svg',
+        },
+        {
+            'number': '3',
+            'title': 'Export to CSV or your CRM',
+            'description': 'Download filtered results with one click. Import into Salesforce, HubSpot, or any spreadsheet instantly.',
+            'image': '/images/illustrations/icon-export.svg',
+        },
+    ]) }}
+
+{{ ui_ind.industries_strip(wrapper_class='!pb-[4.5rem]') }}
+
+{% set coverage_wrapper_class = '!py-[4.5rem]' %}
+{% include 'sections/coverage.html' %}
+
+{# Links to /solutions/api — 404 in preview until that page ships. #}
+{{ ui_callout.callout(
+    wrapper_class='!py-[2.25rem]',
+    variant='green',
+    heading='Need to bring this data into your own product or workflow?',
+    body='The Shovels API gives you programmatic access to the same permit and contractor data, queryable by address or contractor name, with no scraping or manual exports required.',
+    cta_label='Explore the Shovels API',
+    cta_href='/solutions/api') }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.5rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'What is Shovels Online?',
+            'a': 'Shovels Online is a web application for exploring nationwide U.S. building permits and contractor data without writing any code. Search, filter, and download records by location, permit type, contractor specialty, and more.',
+        },
+        {
+            'q': 'Do I need technical skills to use it?',
+            'a': 'No. Shovels Online is built for sales, operations, and marketing teams who need permit intelligence without SQL or engineering resources. If you can use a spreadsheet, you can use Shovels Online.',
+        },
+        {
+            'q': 'How much of the U.S. is covered?',
+            'a': 'Shovels covers approximately 85% of the U.S. population with permit and contractor data from ' ~ STATS.jurisdictions ~ ' jurisdictions, across every state and most major metro areas. See the full coverage map at shovels.ai/coverage.',
+        },
+        {
+            'q': 'Does it include contractor contact information?',
+            'a': 'Yes. Shovels includes phone numbers, emails, and website URLs for ' ~ STATS.contractors ~ ' contractors, plus contact information for 30M residential properties. All of it is exportable to CSV with one click.',
+        },
+        {
+            'q': 'How do I export data?',
+            'a': 'Download permit or contractor search results to CSV with a single click. You can export up to 1,000 records per export. For larger datasets, segment by geography or upgrade to the API, which has no result limits.',
+        },
+        {
+            'q': 'What is Decisions data?',
+            'a': 'Shovels Decisions provides intelligence from city council meetings and planning board discussions, including zoning changes, development approvals, and project timelines. It gives you visibility into projects months before permits are filed.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.5rem]',
+    heading='Ready to explore construction activity?',
+    description="Start your free trial and see what's being built in your market today.",
+    cta_label='Get started',
+    cta_href='https://app.shovels.ai/signup') }}

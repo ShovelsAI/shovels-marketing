@@ -5,7 +5,7 @@ modified: 2026-05-07
 category: Data
 tag1: National Builders
 tag2: Real Estate
-tags: homebuilders, building permits, new construction, housing supply, permit data, top builders
+tags: homebuilders, building permits, new construction, housing supply, permit data, top builders, Building Materials
 authors: Ruoji Tang
 author_image: /theme/images/team/Ruoji.svg
 author_title: Senior Marketing Manager

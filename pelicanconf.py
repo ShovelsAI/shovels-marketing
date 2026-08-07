@@ -107,10 +107,237 @@ STATS = {
     "parcels": "160M+",
 }
 
-# Expose STATS to jinja2content so content pages can use {{ STATS.key }}.
-# jinja2content renders content files through Jinja2 with no context by default;
-# JINJA_GLOBALS is the only way to inject variables into that environment.
-JINJA_GLOBALS = {"STATS": STATS}
+# --- Dynamic resources filtering for Industry / Solutions pages ---------
+# Industry and Solutions pages call get_industry_articles(tag) from their
+# resources_section to pull a per-industry list of related blog posts
+# instead of hardcoding URLs on every page.
+#
+# Why an eager scan instead of a Pelican signal: jinja2content renders
+# the .md page content as a Jinja2 template at READ time, BEFORE any
+# article generator runs. So `signals.article_generator_finalized` fires
+# too late — by then the page content is already rendered with empty
+# results. Instead we scan content/posts/*.md frontmatter at config
+# load time so the cache is ready before jinja2content reads anything.
+
+import os
+import re
+
+from pelican.utils import slugify as _pelican_slugify
+from pelican.settings import DEFAULT_CONFIG as _PELICAN_DEFAULTS
+
+# Pelican's default slug substitutions — used to mirror its title→slug
+# derivation when a post has no explicit `Slug:` field.
+_SLUG_REGEX_SUBSTITUTIONS = _PELICAN_DEFAULTS['SLUG_REGEX_SUBSTITUTIONS']
+
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_POSTS_DIR = os.path.join(_BASE_DIR, 'content', 'posts')
+_META_LINE = re.compile(r'^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.*)$')
+
+
+def _parse_post_metadata(path):
+    """Parse Pelican-style frontmatter from a blog post.
+
+    Returns a dict of lowercased keys → string values, or None when the
+    post lacks fields the resources_section needs (image, date) or is a
+    draft.
+    """
+    meta = {}
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            for line in f:
+                stripped = line.strip()
+                if not stripped:
+                    break  # blank line ends frontmatter
+                if stripped.startswith('---'):
+                    continue  # YAML-style frontmatter delimiter
+                m = _META_LINE.match(line.rstrip('\n'))
+                if not m:
+                    break  # first non-key line ends frontmatter
+                meta[m.group(1).lower()] = m.group(2).strip()
+    except OSError:
+        return None
+    if meta.get('status', '').lower() == 'draft':
+        return None
+    if not meta.get('image'):
+        return None
+    if not meta.get('date'):
+        return None
+    if 'slug' not in meta:
+        # Derive the slug the same way Pelican does (SLUGIFY_SOURCE =
+        # 'title') so the URLs built here match where each article
+        # actually builds. Using the filename stem silently breaks links
+        # whenever a post's filename differs from its slugified title.
+        title = meta.get('title')
+        if title:
+            meta['slug'] = _pelican_slugify(
+                title, regex_subs=_SLUG_REGEX_SUBSTITUTIONS)
+        else:
+            meta['slug'] = os.path.splitext(os.path.basename(path))[0]
+    return meta
+
+
+def _scan_all_posts():
+    """Eagerly load all blog posts. Most-recent first."""
+    if not os.path.isdir(_POSTS_DIR):
+        return []
+    posts = []
+    for fname in os.listdir(_POSTS_DIR):
+        if not fname.endswith('.md'):
+            continue
+        meta = _parse_post_metadata(os.path.join(_POSTS_DIR, fname))
+        if meta:
+            posts.append(meta)
+    posts.sort(key=lambda m: m.get('date', ''), reverse=True)
+    return posts
+
+
+_posts_cache = _scan_all_posts()
+
+
+# Categories excluded from the tier-3 (most-recent overall) fallback
+# only. Newsletters and Podcasts dominate the recent-post list — they
+# would crowd out topical content on every industry page without their
+# own tagged coverage. If someone explicitly tags a newsletter or
+# podcast post with an industry `tag2`, it still matches at tier 1.
+_FALLBACK_EXCLUDED_CATEGORIES = {'newsletter', 'podcast'}
+
+
+def get_industry_articles(tag, limit=3, fallback_category=None):
+    """Return up to `limit` recent blog posts for an industry tag.
+
+    Filter tiers, each filling remaining slots without duplicates:
+
+      1. Posts whose `tag2` frontmatter exactly matches `tag`.
+      2. Posts whose comma-separated `tags` list contains `tag`
+         (case-insensitive substring match).
+      3. If `fallback_category` is given, posts in that category
+         (most recent first) — e.g. a Research page that prefers its
+         own tags but defaults to the `Data` category before going
+         fully generic.
+      4. Most-recent topical posts overall, excluding categories like
+         Newsletter and Podcast (see _FALLBACK_EXCLUDED_CATEGORIES).
+         Graceful fallback for industries without tagged coverage yet.
+
+    Posts without `image:` or `date:` are skipped during the scan, so
+    the resources card never renders a broken image.
+
+    Output shape matches resources_section's `articles` parameter:
+        {'url', 'title', 'image_src', 'image_alt'}
+
+    The image_alt falls back to the post title when the post doesn't
+    declare an explicit alt — descriptive enough for a featured image.
+    """
+    seen = set()
+    out = []
+
+    def _add(meta):
+        url = '/blog/' + meta['slug'] + '/'
+        if url in seen:
+            return
+        seen.add(url)
+        out.append({
+            'url': url,
+            'title': meta.get('title', ''),
+            'image_src': meta['image'],
+            'image_alt': meta.get('image_alt') or meta.get('title', ''),
+        })
+
+    # Tier 1: tag2 exact match.
+    for m in _posts_cache:
+        if len(out) >= limit:
+            break
+        if m.get('tag2', '') == tag:
+            _add(m)
+
+    # Tier 2: case-insensitive substring of tags.
+    if len(out) < limit:
+        tag_lower = tag.lower()
+        for m in _posts_cache:
+            if len(out) >= limit:
+                break
+            tags = [t.strip().lower() for t in (m.get('tags') or '').split(',')]
+            if any(tag_lower in t for t in tags):
+                _add(m)
+
+    # Tier 3: preferred fallback category (most recent first).
+    if fallback_category and len(out) < limit:
+        fc = fallback_category.lower()
+        for m in _posts_cache:
+            if len(out) >= limit:
+                break
+            if m.get('category', '').lower() == fc:
+                _add(m)
+
+    # Tier 4: most-recent topical fallback (newsletters/podcasts excluded).
+    for m in _posts_cache:
+        if len(out) >= limit:
+            break
+        if m.get('category', '').lower() in _FALLBACK_EXCLUDED_CATEGORIES:
+            continue
+        _add(m)
+
+    return out
+
+
+def get_recent_articles(limit=3):
+    """Return the `limit` most-recent blog posts (newest first).
+
+    Topical content only — Newsletter and Podcast categories are
+    excluded so the homepage "From the blog" section features
+    substantive posts. Output shape matches resources_section's
+    `articles` parameter. Posts are pre-sorted most-recent-first in
+    `_posts_cache`.
+    """
+    out = []
+    for m in _posts_cache:
+        if len(out) >= limit:
+            break
+        if m.get('category', '').lower() in _FALLBACK_EXCLUDED_CATEGORIES:
+            continue
+        out.append({
+            'url': '/blog/' + m['slug'] + '/',
+            'title': m.get('title', ''),
+            'image_src': m['image'],
+            'image_alt': m.get('image_alt') or m.get('title', ''),
+        })
+    return out
+
+
+def get_category_articles(category, limit=3):
+    """Return up to `limit` most-recent blog posts in `category`.
+
+    Exact, case-insensitive match on a post's `category` (newest
+    first). For pages that should feature a whole content category
+    rather than an industry tag — e.g. the Research page surfacing the
+    Data category. Unlike get_industry_articles, no tag matching, so a
+    post merely tagged "data" but filed under another category never
+    leaks in. Output shape matches resources_section's `articles`.
+    """
+    out = []
+    target = category.lower()
+    for m in _posts_cache:
+        if len(out) >= limit:
+            break
+        if m.get('category', '').lower() == target:
+            out.append({
+                'url': '/blog/' + m['slug'] + '/',
+                'title': m.get('title', ''),
+                'image_src': m['image'],
+                'image_alt': m.get('image_alt') or m.get('title', ''),
+            })
+    return out
+
+
+# Expose STATS and the article helpers to jinja2content so content
+# pages can use them. jinja2content renders content files through
+# Jinja2 with no context by default; JINJA_GLOBALS is the only way to
+# inject names into that environment.
+JINJA_GLOBALS = {
+    "STATS": STATS,
+    "get_industry_articles": get_industry_articles,
+    "get_recent_articles": get_recent_articles,
+    "get_category_articles": get_category_articles,
+}
 
 SITEMAP = {
     'format': 'xml',

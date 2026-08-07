@@ -4,7 +4,7 @@ Date: 2023-7-10
 Modified: 2023-7-10
 Category: Customer Success
 Tag1: Lead Generation
-Tag2: Construction Technology
+Tag2: Construction Tech
 Tags: gtm, building permits
 Authors: Ryan Buckley
 Author_image: /theme/images/team/ryan.svg

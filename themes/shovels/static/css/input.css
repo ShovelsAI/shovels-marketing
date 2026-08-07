@@ -38,19 +38,26 @@
   html {
     @apply text-shovels-dark;
   }
-  
+
+  /* Body copy: system font stack for longer-form reading.
+     Headings (below) keep Scandia for brand identity. */
+  body {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    /* font-size: 21px; */
+  }
+
   h1, h2, h3, h4, h5, h6, dt {
+    font-family: "Scandia", "Scandia Web", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #01654D;
     @apply font-medium;
   }
-  
+
   dt {
     @apply leading-none;
-  }
-  
-  body {
-    background-color: white;
-    /* font-size: 21px; */
   }
   
   /* below prevents the 'flash' on page load */
@@ -251,6 +258,20 @@
     @apply bg-[#E9E1CE] flex justify-center bg-opacity-60 py-4 px-4 rounded font-medium text-lg
   }
   
+  /* Logo wall grey treatment — single source of truth for logo_strip and
+     logo_grid. brightness(0) flattens the full-color asset to black (alpha
+     preserved); the chain re-tints it to the cool grey #9CA3AF (Tailwind
+     gray-400) so logo greys match the site's blue-tinted UI greys. Chain
+     was solved empirically (renders rgb(154,163,175)). Full color returns
+     on hover. */
+  .logo-grey {
+    filter: brightness(0) invert(67%) sepia(8%) saturate(400%) hue-rotate(175deg) brightness(93%);
+    transition: filter 200ms;
+  }
+  .logo-grey:hover {
+    filter: none;
+  }
+
   /* Navigation and layout */
   .navbar_item {
     @apply text-emerald-800 inline-flex items-center rounded-md text-base hover:text-emerald-900
@@ -325,12 +346,12 @@
 
   /* Newsletter Form Styling */
   .newsletter-form input[type="email"] {
-    @apply w-full px-3 py-2 text-sm border border-gray-300 rounded-md;
+    @apply w-full px-4 py-2.5 text-sm border border-gray-300 rounded-full placeholder:text-gray-500;
     @apply focus:outline-none focus:ring-2 focus:ring-shovels-primary focus:border-shovels-primary;
   }
 
   .newsletter-form button[type="submit"] {
-    @apply w-full px-4 py-2 text-sm font-semibold text-shovels-primary bg-white border-2 border-shovels-primary rounded-md;
-    @apply hover:text-shovels-primary/90 hover:border-shovels-primary/90 transition-all duration-200 cursor-pointer;
+    @apply w-full rounded-full bg-shovels-primary px-4 py-2.5 text-sm font-semibold text-white;
+    @apply hover:bg-shovels-primary/90 transition-colors cursor-pointer;
   }
 }

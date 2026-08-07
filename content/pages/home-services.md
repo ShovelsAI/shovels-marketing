@@ -1,268 +1,153 @@
-Title: Get all the data on every building contractor
-Description: Discover new contractors and enrich existing contractors using the most comprehensive building contractor and permit dataset in the US.
+Title: Contractor Intelligence for Home Services Platforms
+Description: Home improvement leads for home services platforms. Generate roofing, HVAC, and renovation leads from real permit activity, and verify contractors at scale.
 slug: home-services
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">KYC: Know Your Contractors</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">The most complete contractor database in America. Trusted by Angi, Thumbtack, Houzz, and other leading home services companies to find, verify, and enrich contractor data at scale.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
-        </div>
-      </div>
-      <div class="mt-10 hidden aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:block lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="{static}/images/shovels-hvac.svg" alt="Illustration showing a contractor fixing a heat pump HVAC">
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-white pb-12 sm:pb-24">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="flex flex-col items-center gap-y-12">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Clients</h2>
-      <div class="flex w-full max-w-4xl flex-wrap items-center justify-center gap-x-16 gap-y-8">
-        <img class="max-h-24 w-48 object-contain" src="{static}/images/housecall-pro.png" alt="Housecall Pro and Shovels">
-        <img class="max-h-12 w-48 object-contain" src="{static}/images/angi.svg" alt="Angi and Shovels">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-left">
-      <p class="text-base/7 font-semibold text-shovels-secondary">Contractor database</p>
-      <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-balance sm:text-5xl">Contractor state license files</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">We gather contractor information from two authoritative sources: building permits and state contractor license directories. When combined, they create the most comprehensive view into the construction labor market. We're really good at collecting, processing, and distributing this data.</p>
-    </div>
-  </div>
-  <div class="relative overflow-hidden pt-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/csl-example.jpg" alt="CSL Snowflake screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442">
-      <div class="relative" aria-hidden="true">
-        <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-          </svg>
-          Custom reports.
-        </dt>
-        <dd class="inline">Create custom contractor reports in the schema and file format your data team prefers including permit details, employees, and contact info.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>
-          Filter by property type.
-        </dt>
-        <dd class="inline">We use tax assessor data to filter by property type, including commercial, residential, and industrial buildings, so we can show what types of properties each contractor works on.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd" />
-          </svg>
-          Refreshed monthly.
-        </dt>
-        <dd class="inline">We regularly update our contractor state license files directly from the source.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
-          </svg>
-          Nationwide coverage.
-        </dt>
-        <dd class="inline">We cover all states that offer construction licenses and make their data publicly available: 37 states and counting.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-          </svg>
-          License classifications.
-        </dt>
-        <dd class="inline">We put in the work to standardize over 3,000 messy contractor classifications from 37 states down to just a dozen clean classifications. We give you the originals, too.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-white">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-secondary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-          All of the contact info.
-        </dt>
-        <dd class="inline">We include contact information that is publicly available on the license and building permit records. We also append employee information if you want it.</dd>
-      </div>
-    </dl>
-  </div>
-</div>
-<div class="overflow-hidden bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="lg:pr-8 lg:pt-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-shovels-primary">Modern workflow</p>
-          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">The latest tech</h2>
-          <p class="mt-6 text-lg/8 text-gray-600">We use modern geospatial and data science techniques to bring you the most accurate and useful data possible.</p>
-          <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-                </svg>
-                Push anywhere.
-              </dt>
-              <dd class="inline">We support all major cloud storage providers, including AWS, Azure, and GCP. We also push to Snowflake, BigQuery, and Databricks.</dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-                </svg>
-                Transfer securely.
-              </dt>
-              <dd class="inline">We use SFTP and HTTPS to transfer your data securely. Let us do the data appending so your team can focus on what matters most.</dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                  <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
-                </svg>
-                New models.
-              </dt>
-              <dd class="inline">We use AI and modern data science to derive new insights from permit, parcel, and census tract data.</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-      <img src="{static}/images/nvi.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
-    </div>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What makes Shovels the most complete contractor database in America?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels combines two authoritative data sources -- building permits and state contractor license directories -- to create the most comprehensive view of the construction labor market. The data covers 37 states and includes license classifications, permit details, and contact information.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Who uses Shovels for contractor data?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Leading home services companies including Angi, Thumbtack, Houzz, and Housecall Pro trust Shovels to find, verify, and enrich contractor data at scale.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels standardize contractor license data?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels normalizes over 3,000 messy contractor classifications from 37 different states down to approximately a dozen clean, standardized classifications. The original classifications are also provided alongside the standardized versions.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How is the data delivered?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels supports all major cloud storage providers (AWS, Azure, GCP) and can push data to Snowflake, BigQuery, and Databricks. Data transfers are done securely via SFTP and HTTPS. Custom reports can be generated in whatever schema and file format your data team prefers.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How often is the contractor data updated?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">The contractor state license files are refreshed monthly, pulled directly from the source, ensuring the data stays current and accurate.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    h1='Contractor intelligence for home services platforms',
+    description='Generate home improvement leads from active renovation permits and verify contractors at scale.',
+    illustration_src='/images/industries/home-services/hero.svg',
+    illustration_alt='Home services hero illustration') }}
 
-<!-- JSON-LD FAQ schema for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What makes Shovels the most complete contractor database in America?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels combines two authoritative data sources -- building permits and state contractor license directories -- to create the most comprehensive view of the construction labor market. The data covers 37 states and includes license classifications, permit details, and contact information."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who uses Shovels for contractor data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Leading home services companies including Angi, Thumbtack, Houzz, and Housecall Pro trust Shovels to find, verify, and enrich contractor data at scale."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shovels standardize contractor license data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels normalizes over 3,000 messy contractor classifications from 37 different states down to approximately a dozen clean, standardized classifications. The original classifications are also provided alongside the standardized versions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is the data delivered?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels supports all major cloud storage providers (AWS, Azure, GCP) and can push data to Snowflake, BigQuery, and Databricks. Data transfers are done securely via SFTP and HTTPS. Custom reports can be generated in whatever schema and file format your data team prefers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often is the contractor data updated?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The contractor state license files are refreshed monthly, pulled directly from the source, ensuring the data stays current and accurate."
-      }
-    }
-  ]
-}
-</script>
+{# Static 6-logo industry strip — full set, pending legal sign-off. #}
+{% set home_services_logos = [
+    {'src': '/images/logos/angi.svg', 'alt': 'Angi'},
+    {'src': '/images/logos/houzz.svg', 'alt': 'Houzz'},
+    {'src': '/images/logos/pearl-certification.svg', 'alt': 'Pearl Certification', 'height': 24},
+    {'src': '/images/logos/hawkins-service.png', 'alt': 'Hawkins Service Co', 'height': 24},
+    {'src': '/images/logos/jukebox-health.png', 'alt': 'Jukebox Health', 'height': 21},
+    {'src': '/images/logos/peakzi.png', 'alt': 'Peakzi', 'height': 24},
+] %}
 
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our contractor state license files now</h2>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="/contact" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact Sales</a>
-        </div>
-      </div>
-      <div class="hidden lg:block">
-        <img class="w-full max-h-[500px] object-contain" src="{static}/images/shovels-windows.svg" alt="Illustration showing a window cleaner">
-      </div>
-    </div>
-  </div>
-</div>
+{{ ui_grid.logo_grid(logos=home_services_logos, heading='TRUSTED BY HOME SERVICES PLATFORMS') }}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of home services platforms and enterprise operators. Contractor records, permit data, and lead intelligence are protected by controls independently verified over a sustained period.') }}
+
+{% set home_services_cases = [
+    {
+        'number': '01',
+        'title': 'Build a contractor marketplace on verified permit data',
+        'description': 'Don’t rely on self-reported profiles or stale directories. See which contractors are actively pulling permits, what trades they work in, and where they operate.',
+        'bullets': [
+            'Find active contractors by trade, geography, and permit volume',
+            'Enrich contractor profiles with verified work history and job counts',
+            'Filter by license status, trade type, and active jurisdiction',
+            'Onboard contractors with data-backed verification at signup',
+        ],
+        'image_src': '/images/industries/home-services/uc1-contractor-marketplace.png',
+        'image_alt': 'Shovels app — contractor detail showing license status, permit history, trade type, and active permit count',
+    },
+    {
+        'number': '02',
+        'title': 'Reach homeowners the moment a project starts',
+        'description': 'Home renovation permits are filed before the first contractor arrives. Turn permit filings into home renovation leads so you can reach homeowners at peak intent.',
+        'bullets': [
+            'Identify homeowners with active permits by trade type and geography',
+            'Target renovation projects by job value and permit type',
+            'Reach homeowners before competitors know a project has started',
+            'Layer permit data over resident records for direct homeowner outreach',
+            'Look up property ownership by address to reach owners directly, not just occupants',
+        ],
+        'image_src': '/images/industries/home-services/uc2-homeowner-intent.svg',
+        'image_alt': "A homeowner in a half-demo'd kitchen, phone in hand, receiving a perfectly timed message from a home services platform — peak intent, first contact",
+        'framed': False,
+    },
+    {
+        'number': '03',
+        'title': 'Analyze demand by trade and geography',
+        'description': 'Get a real-time view of where HVAC, roofing, electrical, and plumbing demand is growing. See which ZIP codes have high remodel activity to determine where to expand.',
+        'bullets': [
+            'Track permit volume by trade type across any market or ZIP',
+            'Identify trades with rising activity for supply-side recruitment',
+            'Benchmark demand across markets to prioritize expansion',
+            'Monitor seasonal permit patterns to optimize marketing spend',
+        ],
+        'image_src': '/images/industries/home-services/uc3-demand-by-trade.png',
+        'image_alt': 'Shovels app — map filtered to HVAC permits in a metro, showing ZIP-level density',
+    },
+    {
+        'number': '04',
+        'title': 'Verify contractor licenses at scale',
+        'description': 'Know who is licensed, for what, and where. Shovels standardizes contractor state license throughout the US, normalizing raw classifications into clean, queryable records.',
+        'bullets': [
+            'Access state license files nationwide in a single dataset',
+            'Verify license status, trade classification, and geographic coverage',
+            'Match permit records to license data for multi-signal verification',
+            'Standardized trade categories to make filtering and querying easy',
+        ],
+        'image_src': '/images/industries/home-services/uc4-verify-licenses.jpg',
+        'image_alt': 'Shovels app — contractor search showing license status, trade class, state, and permit count',
+    },
+    {
+        'number': '05',
+        'title': 'Surface high-intent homeowners from renovation permits',
+        'description': 'Identify homeowners pulling permits for roofing, HVAC, additions, and remodels who are actively buying right now.',
+        'bullets': [
+            'Filter permits by renovation type to find high-intent homeowners',
+            'Identify homeowners with completed permits for warranty outreach',
+            'Layer resident contact data for direct homeowner marketing',
+            'Build lookalike audiences from renovation permit activity',
+        ],
+        'image_src': '/images/industries/home-services/uc5-high-intent-homeowners.png',
+        'image_alt': 'Permit filter with remodel and status in review',
+    },
+] %}
+
+{{ ui.use_case_section(
+    eyebrow='USE CASES',
+    heading='What home services teams can do with Shovels',
+    cases=home_services_cases) }}
+
+{% include 'sections/enterprise_teams.html' %}
+
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
+    articles=get_industry_articles('Home Services')) }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'What contractor data does Shovels provide?',
+            'a': 'Shovels combines permit records with state contractor license files to provide permit history, trade classifications, license status, contact information, and employee data for contractors across 37 states.',
+        },
+        {
+            'q': 'Which home services companies use Shovels?',
+            'a': 'Thumbtack, Angi, Houzz, and Housecall Pro use Shovels to find, verify, and enrich contractor data at scale for their contractor marketplace and homeowner products.',
+        },
+        {
+            'q': 'How does Shovels standardize license classifications?',
+            'a': 'Shovels normalizes over 3,000 license classifications from 37 states into approximately a dozen clean, standardized trade categories. Original classifications are also provided alongside the standardized versions.',
+        },
+        {
+            'q': 'How often is the data updated?',
+            'a': 'Permit data is updated bi-weekly. State contractor license files are refreshed monthly, pulled directly from state licensing boards to ensure accuracy.',
+        },
+        {
+            'q': 'How can home services platforms generate home improvement leads from permit data?',
+            'a': 'When a homeowner pulls a permit for a renovation, addition, or replacement — it’s the clearest signal they’re in-market. Shovels makes that signal accessible at scale, so home services platforms can generate home improvement leads based on real project activity rather than intent surveys or ad clicks. Filter by trade type, project value, geography, and permit status to build targeted lead lists updated weekly.',
+        },
+        {
+            'q': 'Can permit data generate roofing leads, HVAC leads, and other trade-specific lists?',
+            'a': 'Yes. Shovels tracks permits at the trade level, including roofing, HVAC, electrical, plumbing, and more. Platforms use this to generate roofing leads, HVAC leads, and trade-specific contractor lists from permit data filtered by geography, license type, and permit volume. This supports roofing lead generation at scale and is especially useful for platforms that need to grow contractor supply and homeowner demand in the same markets simultaneously.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
+    heading='Ready to build on the most complete contractor dataset in the US?',
+    description='See how Shovels helps home services platforms find, verify, and enrich contractor data at scale.',
+    cta_label='Get Started') }}

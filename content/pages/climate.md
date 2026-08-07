@@ -1,381 +1,155 @@
-Title: Building Electrification permits and contractors
-Description: Track solar, EV charger, heat pump installations and electrification policy at the city council level. Build lead lists and identify markets with regulatory tailwinds months before permit activity reflects policy changes.
+Title: Electrification Intelligence for Energy & Climate Companies
+Description: Solar lead generation from permit data. Find active solar, EV charger, and heat pump installers, reach in-market homeowners, and track electrification policy.
 slug: climate
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-24 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Reach every building electrification contractor</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We see every solar, EV charger, heat pump HVAC, water heater, and battery installation in the country. Use this data to build lead lists and create installer networks based on real building permit data.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-          <a href="https://www.canva.com/design/DAGEzJhKtlc/7bTqdjMjY6RDg4vsWZT3ow/view?utm_content=DAGEzJhKtlc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdcd49598a6" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <span class="sr-only">Watch our video to learn more</span>
-        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JnSNd5ojQ5s?si=CheXcd38MINq_yAz" title="YouTube video player" width="560"></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<section class="relative isolate overflow-hidden bg-white py-16 sm:py-20">
-  <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl">
-      <figure class="relative text-center">
-        <svg class="mx-auto mb-4 h-10 w-10 text-gray-200" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
-        </svg>
-        <blockquote class="text-lg font-medium leading-8 text-gray-900 sm:text-xl sm:leading-9">
-          <p>"Access to timely, jurisdiction-level data on solar and battery permits has been valuable for our work at Sustainable San Mateo County. The data has allowed us to incorporate a level of insight into our public sustainability dashboard that simply wasn't available elsewhere in the region. When we presented this information to community organizations focused on decarbonization, the feedback was clear: this was data they hadn't seen before and immediately recognized as useful. In 2025 alone, solar and battery-related data in our dashboard has been consulted over 50 times, underscoring the strong demand for this kind of transparent, actionable information."</p>
-        </blockquote>
-        <figcaption class="mt-8 flex flex-col items-center gap-y-3">
-          <img class="w-64 object-contain" src="{static}/images/sustainable-san-mateo-logo.png" alt="Sustainable San Mateo County">
-          <div class="font-semibold text-gray-900">Sustainable San Mateo County</div>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-<div class="bg-gray-100 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="lg:pr-4">
-        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-shovels-primary via-purple-500 to-shovels-secondary px-6 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 xl:px-10">
-          <img class="inset-0 size-full object-cover" src="theme/images/climate/hero.svg" alt="Shovels loves climate tech">
-        </div>
-      </div>
-      <div>
-        <div class="text-base/7 text-gray-700 lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-shovels-primary">Shovels company values</p>
-          <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We care about climate</h2>
-          <div class="max-w-xl">
-            <p class="mt-6">Shovels is making a deliberate effort to support electrification progress. We're putting engineering and data science resources into supporting the work that climate companies are doing.</p>
-            <p class="mt-8">Here are some ways we’re helping:</p>
-            <ul role="list" class="mt-8 space-y-3">
-              <li class="flex gap-x-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-shovels-primary">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
-                </svg>
-                Create AI-enhanced filters to identify permits related to heat pumps, solar, and EV installations
-              </li>
-              <li class="flex gap-x-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-shovels-primary">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
-                </svg>
-                Associate contractors with building electrification rebate programs
-              </li>
-              <li class="flex gap-x-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-shovels-primary">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
-                </svg>
-                Donate 1% of our quarterly revenue to WattCarbon for their energy attribute certificate (EAC) program
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-50 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Track Electrification Policy at the Source</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">Building electrification doesn't start with permits—it starts with city council policy. Shovels Decisions data tracks reach code adoption, gas ban discussions, and heat pump mandate debates across municipalities. Identify markets where policy is creating contractor demand before competition heats up.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Cities adopting electrification ordinances
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Track which municipalities are passing building electrification requirements and identify markets with regulatory tailwinds.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Reach code discussions
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Monitor cities considering reach codes that require heat pump installations or renewable energy systems in new construction.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Local rebate programs
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Identify cities discussing heat pump incentives and EV charger rebates that will drive contractor and consumer demand.</p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            <svg class="size-5 flex-none text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Natural gas restriction debates
-          </dt>
-          <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Stay ahead of gas ban discussions and understand which markets will require all-electric new construction.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-white mb-24">
-  <div class="mx-auto max-w-7xl pt-24 sm:px-2 sm:pt-32 lg:px-4">
-    <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
-      <div class="max-w-3xl">
-        <h2 class="font-semibold text-gray-500">Building permit and contractor data</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lead generation for climate tech companies</p>
-        <p class="mt-4 text-gray-500">We provide building permit and contractor data through our API and software to help you find building electrification leads and build your installer network.</p>
-      </div>
-      <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-        <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-          <div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
-            <h3 class="text-lg font-medium text-gray-900">B2C heat pump buyer intent</h3>
-            <p class="mt-2 text-base/7 text-gray-600">Find recent EV charger, solar, battery, and insulation permits. Send direct mail to the addresses or use the addresses to find email and phone numbers for your sales teams.</p>
-          </div>
-          <div class="flex-auto lg:col-span-7 xl:col-span-8">
-            <img src="{static}/images/heat-pump-intent.jpg" alt="Heat pump buyer intent" class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
-          </div>
-        </div>
-        <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-          <div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
-            <h3 class="text-lg font-medium text-gray-900">B2B building contractor channel development</h3>
-            <p class="mt-2 text-base/7 text-gray-600">Shovels tracks commercial permits too! Filter for large projects of tens or hundreds of thousands of square feet. Discover who the contractors are and contact them by phone or email.</p>
-          </div>
-          <div class="flex-auto lg:col-span-7 xl:col-span-8">
-            <img src="{static}/images/brasfield.png" alt="Commercial contractors" class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover">
-          </div>
-        </div>
-        <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-          <div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
-            <h3 class="text-lg font-medium text-gray-900">Green home loan origination</h3>
-            <p class="mt-2 text-base/7 text-gray-600">Homeowners often pull permits before they have the financing lined up for their building electrification projects. Get a list of recent home permits in any geographic area and share your climate tech products with them.</p>
-          </div>
-          <div class="flex-auto lg:col-span-7 xl:col-span-8">
-            <img src="{static}/images/commercial-contractors.png" alt="Commercial contractors for green home loans." class="aspect-[5/2] w-full rounded-lg bg-gray-100 object-cover shadow-sm">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-100 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Climate case studies</h2>
-      <p class="mt-2 text-lg/8 text-gray-600">We use our data and models to answer interesting questions about the future of building electrification.</p>
-    </div>
-    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <article class="flex flex-col items-start justify-start">
-        <div class="relative w-full">
-          <img src="{static}/images/digging-in-us-solar-construction-heatmap-watermarked.png" alt="US Solar Construction Trends (2024)" class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-        </div>
-        <div class="max-w-xl">
-          <div class="mt-8 flex items-center gap-x-4 text-xs">
-            <time datetime="Jul 24, 2023" class="text-gray-500">Sep 11, 2024</time>
-              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
-          </div>
-          <div class="group relative">
-            <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-              <a href="{filename}/posts/digging-in-1-solar-trends.md">
-                <span class="absolute inset-0"></span>
-                US Solar Construction Trends (2024)
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">The Shovels dataset and model can highlight key construction trends and patterns. In this blog, we discuss solar construction specifically due to the RE+ clean energy convention. Use Shovels to inform your construction company's business models and strategy.</p>
-          </div>
-          <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="/theme/images/team/alex.svg" alt="Alex Brown" class="size-10 rounded-full bg-gray-100">
-            <div class="text-sm/6">
-              <p class="font-semibold text-gray-900">
-                <span class="absolute inset-0"></span>
-                Alex Brown
-              </p>
-              <p class="text-gray-600">Technical Support & Writer</p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="flex flex-col items-start justify-start">
-        <div class="relative w-full">
-          <img src="{static}/images/contractors_comparison_chart.png" alt="BayREN vs other contractors" class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-        </div>
-        <div class="max-w-xl">
-          <div class="mt-8 flex items-center gap-x-4 text-xs">
-            <time datetime="Jul 24, 2023" class="text-gray-500">Nov 19, 2023</time>
-              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
-          </div>
-          <div class="group relative">
-            <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-              <a href="{filename}/posts/bayren-affiliations.md">
-                <span class="absolute inset-0"></span>
-                Do rebate programs matter to contractors in the SF Bay Area?
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">We look at the impact of BayREN's initiatives on the Bay Area's energy upgrade trends, revealing a significant increase in heat pump installations by BayREN-affiliated contractors compared to a lesser focus on solar panel installations. It suggests that BayREN is strategically filling gaps in the building electrification market.</p>
-          </div>
-          <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
-            <div class="text-sm/6">
-              <p class="font-semibold text-gray-900">
-                <span class="absolute inset-0"></span>
-                Ryan Buckley
-              </p>
-              <p class="text-gray-600">CEO</p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="flex flex-col items-start justify-start">
-        <div class="relative w-full">
-          <img src="{static}/images/shovels_ev_prediction.png" alt="The growth of EV chargers in California" class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-        </div>
-        <div class="max-w-xl">
-          <div class="mt-8 flex items-center gap-x-4 text-xs">
-            <time datetime="Jul 24, 2023" class="text-gray-500">Jul 24, 2023</time>
-              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Climate</span>
-          </div>
-          <div class="group relative">
-            <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-              <a href="{filename}/posts/ev-charger-growth.md">
-                <span class="absolute inset-0"></span>
-                The growth of EV chargers in California
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">At Shovels, we provide developers with access to monthly EV charger installation data through our building permit API. This data reveals the tremendous growth and geographic distribution of EV charging infrastructure, with insights into the locations and companies involved. Understanding this data is crucial for businesses, developers, and governments to identify areas for expansion and to make informed decisions. With our API, developers can accurately map existing charger locations, analyze infrastructure, and even predict future demand for electric vehicles.</p>
-          </div>
-          <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="/theme/images/team/ryan.svg" alt="Ryan Buckley" class="size-10 rounded-full bg-gray-100">
-            <div class="text-sm/6">
-              <p class="font-semibold text-gray-900">
-                <span class="absolute inset-0"></span>
-                Ryan Buckley
-              </p>
-              <p class="text-gray-600">CEO</p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    h1='Electrification intelligence for energy and climate companies',
+    description='Generate solar leads from permit data, find active installers, and track new policies driving adoption.',
+    illustration_src='/images/industries/climate/hero.svg',
+    illustration_alt='Energy and Climate hero illustration') }}
 
-<div class="bg-gray-100 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels track electrification policy at the city council level?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels Decisions data tracks building electrification ordinances, reach code adoption, gas ban discussions, and heat pump mandate debates from city councils and planning boards nationwide. This policy intelligence helps you identify markets where regulatory requirements are creating contractor demand before competition intensifies.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can I identify cities adopting building electrification ordinances?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels monitors city council meetings for discussions on electrification requirements, natural gas restrictions, and heat pump mandates. Our Decisions data tracks which municipalities are passing building electrification ordinances and reach codes, helping you target markets with regulatory tailwinds months before permit activity reflects the policy changes.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What building electrification permits does Shovels track?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels identifies and classifies permits for solar installations, EV chargers, heat pump HVAC systems, heat pump water heaters, and battery storage systems across the country. Our AI-enhanced filters help you build lead lists for both residential and commercial building electrification projects.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels help identify electrification contractor networks?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels tracks contractor specialties and associations with building electrification rebate programs. You can identify active heat pump, solar, and EV charger installers by service area, create installer networks based on real permit data, and find contractors affiliated with programs like BayREN and other regional electrification initiatives.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
+{# Static 6-logo industry strip — full set, pending legal sign-off
+   (Notion Logo Use column) before launch. #}
+{% set climate_logos = [
+    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 31},
+    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 23},
+    {'src': '/images/logos/rewiring-america.png', 'alt': 'Rewiring America'},
+    {'src': '/images/logos/frontline-wildfire.svg', 'alt': 'Frontline Wildfire Defense'},
+    {'src': '/images/logos/base-power.png', 'alt': 'Base Power', 'height': 24},
+    {'src': '/images/logos/permit-power.svg', 'alt': 'PermitPower', 'height': 24},
+] %}
 
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+{{ ui_grid.logo_grid(logos=climate_logos, heading='TRUSTED BY ENERGY & CLIMATE TEAMS') }}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of utilities, energy companies, and climate technology platforms. Our independently audited controls are built to satisfy the expectations of regulated industries and enterprise procurement processes.') }}
+
+{% set climate_cases = [
     {
-      "@type": "Question",
-      "name": "Does Shovels track electrification policy at the city council level?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels Decisions data tracks building electrification ordinances, reach code adoption, gas ban discussions, and heat pump mandate debates from city councils and planning boards nationwide. This policy intelligence helps you identify markets where regulatory requirements are creating contractor demand before competition intensifies."
-      }
+        'number': '01',
+        'title': 'Find every active electrification installer in your market',
+        'description': 'Access solar, EV charger, heat pump, and battery permits at the contractor level to support partnerships, lead generation, or network growth.',
+        'bullets': [
+            'Filter contractors by electrification permit type, geography, and volume',
+            'Identify active solar, heat pump, EV charger, and battery installers',
+            'Access contact information for installer outreach and network recruitment',
+            'Track rebate program affiliations for targeted contractor engagement',
+        ],
+        'image_src': '/images/industries/climate/uc1-electrification.png',
+        'image_alt': 'Shovels app — contractor search filtered to solar, EV charger, and heat pump trade types, showing permit count',
     },
     {
-      "@type": "Question",
-      "name": "How can I identify cities adopting building electrification ordinances?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels monitors city council meetings for discussions on electrification requirements, natural gas restrictions, and heat pump mandates. Our Decisions data tracks which municipalities are passing building electrification ordinances and reach codes, helping you target markets with regulatory tailwinds months before permit activity reflects the policy changes."
-      }
+        'number': '02',
+        'title': 'Reach homeowners with active electrification permits',
+        'description': 'When a homeowner pulls a solar permit, they’re signaling intent for vendors. Turn filings into residential and commercial solar leads, updated weekly.',
+        'bullets': [
+            'Identify homeowners with active electrification permits by type and geography',
+            'Filter by permit type and job value for precise audience targeting',
+            'Layer resident contact data for direct homeowner outreach',
+            'Reach homeowners before competitors know a project has started',
+        ],
+        'image_src': '/images/industries/climate/uc2-solar-permits.png',
+        'image_alt': 'Shovels app — permit search filtered to solar permits in a target ZIP, showing address, filed date, and contractor',
     },
     {
-      "@type": "Question",
-      "name": "What building electrification permits does Shovels track?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels identifies and classifies permits for solar installations, EV chargers, heat pump HVAC systems, heat pump water heaters, and battery storage systems across the country. Our AI-enhanced filters help you build lead lists for both residential and commercial building electrification projects."
-      }
+        'number': '03',
+        'title': 'Track electrification policy before permits are filed',
+        'description': 'Shovels Decisions tracks debates and code updates from municipalities nationwide so you can identify demand before it shows up in permits.',
+        'bullets': [
+            'Monitor reach code adoption and natural gas restriction debates',
+            'Identify markets where electrification policy is creating contractor demand',
+            'Track local rebate and incentive programs before they drive permit activity',
+            'Spot favorable markets months before competition intensifies',
+        ],
+        'image_src': '/images/industries/climate/uc3-policy.svg',
+        'image_alt': 'A city council chamber with a reach code vote underway — an energy analyst capturing the policy signal in real time, months before it drives permit activity',
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "Can Shovels help identify electrification contractor networks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels tracks contractor specialties and associations with building electrification rebate programs. You can identify active heat pump, solar, and EV charger installers by service area, create installer networks based on real permit data, and find contractors affiliated with programs like BayREN and other regional electrification initiatives."
-      }
-    }
-  ]
-}
-</script>
+        'number': '04',
+        'title': 'Find green mortgage candidates before the appraisal',
+        'description': 'Homeowners often pull permits before financing is in place. Surface recent home permits by geography so lenders and financing platforms can reach prospects at exactly the right moment.',
+        'bullets': [
+            'Identify homeowners with active improvement permits who may need financing',
+            'Filter by permit type, job value, and geography for targeted outreach',
+            'Layer resident data for direct mail, email, and phone outreach',
+            'Use permit signals to pre-qualify high-intent borrowers at scale',
+        ],
+        'image_src': '/images/industries/climate/uc4-solar-map.png',
+        'image_alt': 'Shovels app — map filtered to solar permits in a target metro, showing recent filings by location',
+    },
+    {
+        'number': '05',
+        'title': 'Measure electrification progress across any market',
+        'description': 'Don’t wait for annual reports. Know where electrification is accelerating by accessing a real-time view of adoption rates and installation trends.',
+        'bullets': [
+            'Track solar, EV charger, heat pump, and battery permit volume by market',
+            'Compare electrification adoption rates across states, counties, and ZIPs',
+            'Measure the impact of policy changes and rebate programs on permit activity',
+            'Report on electrification progress with permit-backed data, not surveys',
+        ],
+        'image_src': '/images/industries/climate/uc5-oregon-map.svg',
+        'image_alt': 'A region-wide map with solar installs, EV chargers, and heat pumps lighting up in distinct colors — adoption visible at a glance across markets',
+        'framed': False,
+    },
+] %}
 
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui.use_case_section(
+    eyebrow='USE CASES',
+    heading='What energy and climate teams can do with Shovels',
+    cases=climate_cases) }}
 
+{% include 'sections/enterprise_teams.html' %}
+
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
+    articles=get_industry_articles('Energy & Climate'),
+    heading='Further reading') }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'What electrification permit types does Shovels track?',
+            'a': 'Shovels identifies and classifies permits for solar installations, EV chargers, heat pump HVAC systems, heat pump water heaters, and battery storage systems using AI-enhanced classification across jurisdictions nationwide.',
+        },
+        {
+            'q': 'How does Shovels track electrification policy?',
+            'a': 'Shovels Decisions monitors city council meetings for reach code adoption, natural gas restriction debates, heat pump mandate discussions, and local incentive program approvals, giving you visibility into policy-driven demand before it shows up in permits.',
+        },
+        {
+            'q': 'Do homeowners need a permit to install an EV charger?',
+            'a': 'In most US jurisdictions, yes. Shovels tracks EV charger permits nationwide, so energy companies, utilities, and charging network operators can identify properties with active permits, find the installers pulling them, and measure adoption rates by market.',
+        },
+        {
+            'q': 'How current is the electrification permit data?',
+            'a': 'Permit data is updated bi-weekly with millions of new records added each cycle. AI classification is applied continuously so new solar, EV charger, and heat pump permits are tagged and queryable as they are ingested.',
+        },
+        {
+            'q': 'How can energy companies use permit data for solar lead generation?',
+            'a': 'Solar installation permits are the clearest signal that a homeowner or business is installing solar. Shovels aggregates these permits from thousands of US jurisdictions, so energy companies, solar financiers, and hardware manufacturers can power solar lead generation programs based on actual installation activity rather than ad responses or survey-based intent data. Filter by geography, permit recency, system size, and contractor to build targeted solar lead gen lists, updated weekly.',
+        },
+        {
+            'q': 'What data does Shovels provide as a solar lead generation data provider?',
+            'a': 'Shovels delivers structured solar permit data including homeowner address, permit date, contractor of record, permit type (residential vs. commercial), and jurisdiction. Energy companies and solar platforms use this as the core data source for solar lead gen programs — identifying homeowners with active permits, tracking competitor installer activity, and measuring solar adoption rates by market. Data is available via API or bulk delivery into your data warehouse.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
+    heading='Ready to find every electrification contractor and homeowner in your market?',
+    description='See how Shovels helps energy and climate teams track installations, reach buyers, and stay ahead of policy.',
+    cta_label='Get Started') }}

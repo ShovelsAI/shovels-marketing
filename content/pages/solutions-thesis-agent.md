@@ -17,7 +17,7 @@ slug: solutions/thesis-agent
       <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">ReZone Thesis Agent</h1>
       <p class="mt-6 text-xl text-gray-600">Your personal AI Assistant providing you with all relevant city decisions based on your investment thesis.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
+        <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get Started</a>
         <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
       </div>
     </div>
@@ -32,7 +32,7 @@ slug: solutions/thesis-agent
         <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">How It Works</h2>
         <p class="mt-6 text-lg text-gray-600">Email <a href="mailto:thesis@shovels.ai" class="text-shovels-primary hover:underline font-semibold">thesis@shovels.ai</a> with your investment thesis and target markets. We will set up your personal AI Assistant and provide you with the most relevant city decisions.</p>
         <div class="mt-10">
-          <a href="mailto:thesis@shovels.ai" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80">Get Started</a>
+          <a href="mailto:thesis@shovels.ai" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90">Get Started</a>
         </div>
       </div>
       <div>
@@ -112,7 +112,7 @@ slug: solutions/thesis-agent
     <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Ready to Get Started?</h2>
     <p class="mt-6 text-lg text-gray-600">Set up your personal Thesis Agent today and never miss a relevant zoning decision again.</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="mailto:thesis@shovels.ai" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Email thesis@shovels.ai</a>
+      <a href="mailto:thesis@shovels.ai" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Email thesis@shovels.ai</a>
       <a href="/contact" class="text-sm font-semibold text-gray-900">Contact Sales <span aria-hidden="true">→</span></a>
     </div>
   </div>

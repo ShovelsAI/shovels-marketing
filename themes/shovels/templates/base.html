@@ -13,7 +13,7 @@
     }
     body {
       margin: 0;
-      font-family: 'Scandia', var(--font-fallback);
+      font-family: var(--font-fallback);
       -webkit-text-size-adjust: 100%;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
@@ -46,7 +46,7 @@
   {% elif page and page.summary %}
     <meta name="description" content="{{ page.summary|striptags|truncate(160) }}">
   {% else %}
-    <meta name="description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
+    <meta name="description" content="Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or data warehouse.">
   {% endif %}
 
   <!-- Preload critical CSS -->
@@ -73,7 +73,7 @@
 
   <!-- Social meta tags -->
   <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}" />
-  <meta property="og:url" content="{{ SITEURL }}{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
+  <meta property="og:url" content="{{ SITEURL }}/{% if article %}{{ article.url }}{% elif page %}{{ page.url }}{% endif %}" />
   <meta property="og:site_name" content="Shovels" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="{% if article %}{{ article.title|striptags }} - Shovels{% elif page %}{{ page.title|striptags }} - Shovels{% else %}Shovels - The intelligence layer for the built world{% endif %}" />
@@ -86,7 +86,7 @@
   {% elif page and page.summary %}
     <meta property="og:description" content="{{ page.summary|striptags|truncate(160) }}" />
   {% else %}
-    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
+    <meta property="og:description" content="Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
   {% endif %}
   {% block og_image %}
   <meta property="og:image" content="{% if page and page.open_graph_image %}{{ SITEURL }}{{ page.open_graph_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif page and page.image %}{{ SITEURL }}{{ page.image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
@@ -108,7 +108,7 @@
   {% elif page and page.summary %}
     <meta name="twitter:description" content="{{ page.summary|striptags|truncate(160) }}" />
   {% else %}
-    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
+    <meta name="twitter:description" content="Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or data warehouse." />
   {% endif %}
   <meta name="twitter:image" content="{% if page and page.twitter_image %}{{ SITEURL }}{{ page.twitter_image }}{% elif article and article.twitter_image %}{{ SITEURL }}{{ article.twitter_image }}{% elif page and page.open_graph_image %}{{ SITEURL }}{{ page.open_graph_image }}{% elif article and article.open_graph_image %}{{ SITEURL }}{{ article.open_graph_image }}{% elif page and page.image %}{{ SITEURL }}{{ page.image }}{% elif article and article.image %}{{ SITEURL }}{{ article.image }}{% else %}{{ SITEURL }}/theme/images/shovels-social.png{% endif %}" />
   {% endblock head %}
@@ -126,7 +126,7 @@
     "name": "Shovels",
     "url": "https://www.shovels.ai",
     "logo": "https://www.shovels.ai/theme/images/shovels-social.png",
-    "description": "Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence.",
+    "description": "Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence.",
     "sameAs": [
       "https://twitter.com/shovelsai",
       "https://www.linkedin.com/company/shovels-ai"
@@ -258,12 +258,12 @@
 
   {% block background_pattern %}{% endblock background_pattern %}
 
-  {% include 'header.html' %}
+  {% include 'header-refresh.html' %}
 
   {% block content %}
   {% endblock %}
 
-  {% include 'footer.html' %}
+  {% include 'footer-refresh.html' %}
 
   <!-- Load non-critical resources -->
   <script defer src="/theme/js/alpine.js"></script>

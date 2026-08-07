@@ -1,245 +1,153 @@
-Title: Building Permit Data for Property Tech Software
-Description: Enhance your property tech platform with clean, AI-processed building permit and pre-permit decision data. Access contractor history, service areas, project pipeline intelligence, and decision maker contact information through our API.
+Title: Contractor Intelligence for Construction Technology Companies
+Description: Construction data analytics for proptech companies. Add permit data, contractor verification, and predictive intelligence to your platform — via API.
 slug: software
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/hero.html' as ui_hero %}
+{% import 'macros/logo_grid.html' as ui_grid %}
+{% import 'macros/soc2_trust.html' as ui_soc2 %}
+{% import 'macros/use_case.html' as ui %}
+{% import 'macros/faq.html' as ui_faq %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Find contractors to buy your software</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">We provide powerful filters and firmographic information for building contractors that doesn't exist anywhere else. Find the right accounts and drill down to the right people.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-          <a href="{filename}/posts/app-guide-1.md" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <span class="sr-only">Watch our video to learn more</span>
-        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xd1PP_hCElQ?si=LQePAE7KqFHcSBFm" title="YouTube video player" width="560"></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
-<div class="bg-white pb-4 sm:pb-8 pt-2 sm:pt-4">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto flex max-w-lg items-center justify-center gap-x-8 sm:gap-x-12">
-      <img class="h-12 w-auto object-contain" src="{static}/images/planhub_logo_blue.png" alt="PlanHub">
-      <img class="h-12 w-auto object-contain" src="{static}/images/pulley_logo.svg" alt="Pulley">
-      <img class="h-12 w-auto object-contain" src="{static}/images/billd_logo.svg" alt="Billd">
-    </div>
-  </div>
-</div>
-<section class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-        <figure class="flex flex-auto flex-col justify-between">
-          <blockquote class="text-lg/8 text-white">
-            <p>"Shovels transformed our outreach strategy. Their high-quality, regularly updated contractor data led to a 20-30% higher response rate. Being able to reach contractors right when they start new projects and personalize our message based on permit type made all the difference."</p>
-          </blockquote>
-          <figcaption class="mt-10 flex items-center gap-x-6">
-            <div class="text-base">
-              <div class="font-semibold text-white">Beam Team</div>
-              <div class="mt-1 text-gray-400">Financial Platform for Builders</div>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
-        <figure class="flex flex-auto flex-col justify-between">
-          <blockquote class="text-lg/8 text-white">
-            <p>"Shovels has been a great partner to Haven. They've not only provided the permit data we were looking for in a timely manner, but have worked to understand our strategy so they can be a partner in achieving results rather than just a source of raw data."</p>
-          </blockquote>
-          <figcaption class="mt-10 flex items-center gap-x-6">
-            <div class="text-base">
-              <div class="font-semibold text-white">Haven Energy</div>
-              <div class="mt-1 text-gray-400">Solar Power for Home</div>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-base/7 font-semibold text-shovels-primary">GTM platform for the building trades</h2>
-      <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Fast access to great contractor leads</p>
-      <p class="mt-6 text-lg/8 text-gray-600">No more calling contractors who work in the wrong market or closed shop a long time ago. Give your sales team the right leads to sell your software.</p>
-    </div>
-  </div>
-  <div class="relative overflow-hidden pt-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <img src="{static}/images/shovels-online-roofing.png" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10" width="2432" height="1442">
-      <div class="relative" aria-hidden="true">
-        <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"></div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-          </svg>
-          Download to CSV.
-        </dt>
-        <dd class="inline">Download a list of all contractors in your market, 1,000 at a time, lightning fast.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>
-          Filter by property type.
-        </dt>
-        <dd class="inline">We use tax assessor data to filter by property type, including commercial, residential, and industrial buildings.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd" />
-          </svg>
-          Refreshed monthly.
-        </dt>
-        <dd class="inline">Get access to thousands of new building contractors parsed from millions of new building permit records every month.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
-          </svg>
-          Nationwide coverage.
-        </dt>
-        <dd class="inline">We cover all 48 states and 85% of the US population. Coverage is highest in the populated areas with the most active construction activity.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-          </svg>
-          Employee data.
-        </dt>
-        <dd class="inline">Find the right decision makers. Get access to building contractor employee names, titles, and email addresses.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-          Powerful firmographics.
-        </dt>
-        <dd class="inline">See firmographic data for every building contractor in the US. Get access to company size, revenue, and more.</dd>
-      </div>
-      <div class="relative pl-9">
-        <dt class="inline font-semibold text-gray-900">
-          <svg class="absolute left-1 top-1 size-5 text-shovels-primary" viewBox="0 0 24 24" aria-hidden="true" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-          </svg>
-          Pre-permit intelligence.
-        </dt>
-        <dd class="inline">Access city council decision data to identify projects months before permits are filed. Help your customers see project pipeline earlier than competitors.</dd>
-      </div>
-    </dl>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Does Shovels provide pre-permit intelligence data?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels Decisions data provides access to city council meetings and planning board discussions where projects are approved months before permits are filed. This pre-permit intelligence helps your customers identify project pipelines earlier than competitors, giving them a significant timing advantage.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How can my customers see project pipeline earlier with Shovels?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">By integrating Shovels Decisions data into your platform, your customers can track development approvals, zoning changes, and project discussions at the city council level. This gives them visibility into upcoming construction projects months before permits are filed, allowing them to engage prospects earlier in the decision-making process.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What contractor information does Shovels provide for software companies?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels provides detailed contractor profiles including firmographic data, revenue estimates, service areas, employee contact information, and permit history. Our data is regularly updated from millions of new permit records each month, ensuring your software platform has access to accurate, current contractor intelligence.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can Shovels data integrate with property tech platforms?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels offers API access and database delivery options to integrate building permit, contractor, and government decision data into your platform. Our clean, AI-processed data includes geographic search capabilities, advanced filtering, and decision maker contact information to enhance your property tech software.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
+{{ ui_hero.hero(
+    h1='Contractor intelligence for construction technology companies',
+    description='Add permit insights and predictive analytics to your product without building your own data pipeline.',
+    illustration_src='/images/industries/software/hero.svg',
+    illustration_alt='Construction technology hero illustration') }}
 
-<!-- JSON-LD structured data for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+{# Static industry strip — full set, pending legal sign-off. #}
+{% set software_logos = [
+    {'src': '/images/logos/planhub.png', 'alt': 'PlanHub', 'height': 24},
+    {'src': '/images/logos/handle.svg', 'alt': 'Handle', 'height': 24},
+    {'src': '/images/logos/nuvo.svg', 'alt': 'Nuvo', 'height': 24},
+    {'src': '/images/logos/toolbelt.png', 'alt': 'ToolBelt', 'height': 24},
+    {'src': '/images/logos/algoma.png', 'alt': 'Algoma', 'height': 24},
+    {'src': '/images/logos/fuse-service.svg', 'alt': 'Fuse Service', 'height': 24},
+] %}
+
+{{ ui_grid.logo_grid(logos=software_logos, heading='TRUSTED BY CONSTRUCTION TECHNOLOGY TEAMS') }}
+
+{{ ui_soc2.soc2_trust(
+    heading='Shovels is SOC 2® Type II certified',
+    body='We meet the security and compliance requirements of construction technology companies and their enterprise customers. SOC 2 Type II means our controls were audited over time, giving your security team and enterprise buyers the assurance they need to approve us as a vendor.') }}
+
+{% set software_cases = [
     {
-      "@type": "Question",
-      "name": "Does Shovels provide pre-permit intelligence data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels Decisions data provides access to city council meetings and planning board discussions where projects are approved months before permits are filed. This pre-permit intelligence helps your customers identify project pipelines earlier than competitors, giving them a significant timing advantage."
-      }
+        'number': '01',
+        'title': 'Enrich your platform with permit data that’s integration-ready',
+        'description': 'Get clean property data via API that supports analytics, location intelligence, and contractor-facing insights.',
+        'bullets': [
+            'Permit and contractor data delivered via Snowflake, BigQuery, Databricks, or API',
+            'Twice-monthly refresh with millions of new records added each cycle',
+            'AI-classified permit types with clean, structured data out of the box',
+            'Changelog tracking for permit status updates over time',
+        ],
+        'image_src': '/images/industries/software/uc1-integration-ready.svg',
+        'image_alt': 'A developer receiving clean, structured permit data flowing into their platform — labeled fields slotting into place, no raw parsing required',
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "How can my customers see project pipeline earlier with Shovels?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "By integrating Shovels Decisions data into your platform, your customers can track development approvals, zoning changes, and project discussions at the city council level. This gives them visibility into upcoming construction projects months before permits are filed, allowing them to engage prospects earlier in the decision-making process."
-      }
+        'number': '02',
+        'title': 'Add contractor verification to your product',
+        'description': 'Permit history linked to state license data gives your platform a multi-signal view of every contractor. Know who is active, licensed, and where they work.',
+        'bullets': [
+            'Match permit records to state license files across the US',
+            'Verify trade classification, license status, and geographic coverage',
+            'Access employee names and contact info for decision-maker outreach',
+            'Enrich contractor profiles without building a verification pipeline',
+        ],
+        'image_src': '/images/industries/software/uc2-contractor-verification.png',
+        'image_alt': 'Shovels app — contractor detail showing permit history, license status, and active permits by date',
     },
     {
-      "@type": "Question",
-      "name": "What contractor information does Shovels provide for software companies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels provides detailed contractor profiles including firmographic data, revenue estimates, service areas, employee contact information, and permit history. Our data is regularly updated from millions of new permit records each month, ensuring your software platform has access to accurate, current contractor intelligence."
-      }
+        'number': '03',
+        'title': 'Show your customers upcoming projects before permits are filed',
+        'description': 'Use Shovels Decisions data to surface approvals and zoning decisions, giving your customers valuable early signals to beat out competitors.',
+        'bullets': [
+            'Surface development approvals and zoning decisions before permits are filed',
+            'Help your customers engage prospects earlier in the project lifecycle',
+            'Track projects from entitlement through permit issuance',
+            'Access Decisions data and permit records in a single pipeline',
+        ],
+        'image_src': '/images/industries/software/uc3-upcoming-projects.svg',
+        'image_alt': "A contractor using their platform to see upcoming projects on a map — already reaching out while competitors don't know the jobs exist",
+        'framed': False,
     },
     {
-      "@type": "Question",
-      "name": "Can Shovels data integrate with property tech platforms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels offers API access and database delivery options to integrate building permit, contractor, and government decision data into your platform. Our clean, AI-processed data includes geographic search capabilities, advanced filtering, and decision maker contact information to enhance your property tech software."
-      }
-    }
-  ]
-}
-</script>
+        'number': '04',
+        'title': 'Offer permit tracking features without the upkeep',
+        'description': 'Shovels refreshes permit status twice monthly with changelog tracking. Deliver accurate, current permit data to your customers automatically. No maintenance required.',
+        'bullets': [
+            'Twice-monthly permit status refresh across all jurisdictions',
+            'Changelog tracking for status changes over time',
+            'REST API with permit lookup by address, contractor, or jurisdiction',
+            'AI-classified permit types eliminate raw text parsing for your team',
+        ],
+        'image_src': '/images/industries/software/uc4-permit-tracking.png',
+        'image_alt': 'Shovels app — permit detail showing status, filing date, approval date, and inspection milestones',
+    },
+    {
+        'number': '05',
+        'title': 'Surface full property permit history for compliance and due diligence',
+        'description': 'Every permit on record for a given address, with dates, work types, job values, permit status, and APN. Link any address to parcel records in GIS or underwriting workflows.',
+        'bullets': [
+            'Pull full permit history by address in jurisdictions across the US',
+            'Identify unpermitted work gaps and compliance timelines',
+            'Filter by work type, permit status, and date range',
+            'Integrate property history into underwriting, lending, or inspection workflows',
+        ],
+        'image_src': '/images/industries/software/uc5-property-history.png',
+        'image_alt': 'Shovels app — property detail showing all historical permits by date with work type, contractor, and value',
+    },
+] %}
 
-<div class="bg-gray-100">
-  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-    <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
-    <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
-      <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</div>
+{{ ui.use_case_section(
+    eyebrow='USE CASES',
+    heading='What construction technology teams can do with Shovels',
+    cases=software_cases) }}
+
+{% include 'sections/enterprise_teams.html' %}
+
+{% set coverage_wrapper_class = '!pb-[4.8rem]' %}
+{% include 'sections/coverage.html' %}
+
+{{ ui_res.resources_section(
+    wrapper_class='!py-[4.8rem]',
+    articles=get_industry_articles('Construction Tech')) }}
+
+{{ ui_faq.faq_section(
+    wrapper_class='!py-[4.8rem]',
+    heading='Frequently asked questions',
+    items=[
+        {
+            'q': 'Do I need to build a data pipeline to use Shovels?',
+            'a': 'No. Shovels delivers permit and contractor data directly to Snowflake, BigQuery, Databricks, or via API. Your engineering team gets clean, structured data without building or maintaining jurisdiction scrapers.',
+        },
+        {
+            'q': 'How does Shovels handle permit status updates?',
+            'a': 'Shovels refreshes permit data twice monthly across ' ~ STATS.jurisdictions ~ ' jurisdictions and tracks status changes via changelog. Your platform always has current permit status without polling individual jurisdictions.',
+        },
+        {
+            'q': 'Can Shovels data power contractor verification in our product?',
+            'a': 'Yes. Shovels matches permit records to state contractor license files from 37 states, giving you a multi-signal verification layer including trade classification, license status, geographic coverage, and permit history.',
+        },
+        {
+            'q': 'How does Shovels fit into the proptech stack?',
+            'a': 'Shovels is a data layer for proptech companies building on construction and property activity. Proptech companies use Shovels for contractor verification, project discovery, and market analytics. Proptech software development teams get clean data via API or directly into Snowflake, BigQuery, or Databricks.',
+        },
+        {
+            'q': 'How can construction technology platforms use predictive analytics in construction workflows?',
+            'a': 'Shovels provides two data layers for predictive analytics: permit data (filed permits with contractor, location, and project details) and Shovels Decisions (pre-permit intelligence from city council agendas and project applications). Together, these let construction technology platforms surface project signals weeks or months before ground breaks, giving customers a genuine predictive advantage in project discovery, contractor targeting, and territory planning.',
+        },
+        {
+            'q': 'What geospatial analytics in construction does Shovels permit data enable?',
+            'a': 'Shovels permit data is structured for geospatial analysis — each record includes jurisdiction, address, geocode, contractor, trade, and project type. Construction technology platforms use this for geospatial analytics in construction including permit density mapping, territory heat maps, market sizing by region, and location-based project discovery features. Data is available via API or direct delivery into Snowflake, BigQuery, or Databricks for integration into existing geospatial stacks.',
+        },
+    ]) }}
+
+{{ ui_cta.final_cta(
+    wrapper_class='!pt-[4.8rem]',
+    heading='Ready to power your platform with the most complete permit dataset?',
+    description='See how Shovels helps construction technology teams build better products with permit and contractor data.',
+    cta_label='Get Started') }}

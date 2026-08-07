@@ -49,7 +49,7 @@ slug: contact
             <dd><a class="hover:text-gray-900" href="mailto:sales@shovels.ai">sales@shovels.ai</a></dd>
           </div>
           <div class="flex gap-x-4">
-            <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Free trial</a>
+            <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Free trial</a>
           </div>
         </dl>
       </div>

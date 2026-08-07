@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 141 149">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1, .st2 {
+        fill: #ecc146;
+      }
+
+      .st3 {
+        fill: #09644a;
+      }
+
+      .st3, .st2, .st4 {
+        stroke: #101727;
+        stroke-miterlimit: 10;
+      }
+
+      .st5 {
+        clip-path: url(#clippath);
+      }
+
+      .st4 {
+        fill: #eae2cf;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" y="0" width="141" height="149"/>
+    </clipPath>
+  </defs>
+  <g class="st5">
+    <g>
+      <path class="st1" d="M141,10.3H0v138.7h141V10.3Z"/>
+      <path class="st4" d="M123.8,50.9H17.2v82.4h106.6V50.9Z"/>
+      <path class="st2" d="M44.4,66.4h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M66.9,66.4h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M89.4,66.7h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M111.9,66.7h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M44.4,85.8h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st3" d="M66.9,85.8h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M89.4,86.1h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M111.9,86.1h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M44.4,105.6h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M66.9,105.6h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M89.4,105.9h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st2" d="M111.9,105.9h-15.3v11.9h15.3v-11.9Z"/>
+      <path class="st3" d="M29.8.4h-12.5v30.4h12.5V.4Z"/>
+      <path class="st3" d="M123.7.4h-12.5v30.4h12.5V.4Z"/>
+    </g>
+  </g>
+</svg>

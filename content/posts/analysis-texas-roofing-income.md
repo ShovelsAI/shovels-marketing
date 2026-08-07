@@ -5,7 +5,7 @@ Modified: 2025-01-23
 Category: Data
 Tag1:
 Tag2: Home Services
-Tags: texas, roofing permits, analysis
+Tags: texas, roofing permits, analysis, Insurance
 Authors: Alex Brown
 Author_image: /theme/images/team/alex.svg
 Author_title: Technical Support & Writer

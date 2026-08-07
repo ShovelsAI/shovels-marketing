@@ -1,278 +1,149 @@
 {% extends "base.html" %}
 
-{% block background_pattern %}
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
-{% endblock background_pattern %}
+{# Homepage — the site root `/`. Redesigned hero + sections.
+   STATS and get_recent_articles are JINJA_GLOBALS. The background_pattern
+   block is intentionally omitted — the hero carries its own grid background. #}
+
+{% import 'macros/logo_strip.html' as ui_logos %}
+{% import 'macros/industries_strip.html' as ui_ind %}
+{% import 'macros/resources.html' as ui_res %}
+{% import 'macros/final_cta.html' as ui_cta %}
+{% import 'macros/data_delivery.html' as ui_dd %}
+{% import 'macros/data_types.html' as ui_dt %}
 
 {% block content %}
-<!-- Hero Section -->
-<div class="relative isolate">
-  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-32 flex flex-col lg:flex-row gap-x-10 lg:px-8 lg:py-20">
-    <div class="flex-1 lg:flex-[2]">
-      <h1 class="sm:mt-10 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-7xl antialiased" style="text-rendering: optimizeLegibility; font-family: Scandia, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">The intelligence layer for the built world</h1>
-      <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8" style="text-rendering: optimizeLegibility; font-family: Scandia, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Shovels captures the first signal of construction—using AI to turn fragmented permit data into Shovel-ready intelligence. Access via API, web app, or direct data warehouse integration.</p>
-      <div class="mt-10 flex items-center gap-x-6">
-        <a href="https://app.shovels.ai" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:shadow-shovels-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Search for free</a>
-        <a href="{{ SITEURL }}/permit-database" class="text-sm/6 font-semibold text-gray-900">Find permits <span aria-hidden="true">&rarr;</span></a>
+{# ── Hero ──────────────────────────────────────────────────────────────
+   Redesigned hero treatment from the Industry pages: crossing-gradient
+   grid background with a radial fade, balanced font-medium headline.
+   Homepage keeps its two CTAs (primary button + secondary text link)
+   and its side illustration. #}
+<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
+
+  <div class="pointer-events-none absolute inset-0"
+       style="background-image: linear-gradient(#ebf0ed 1px, transparent 1px), linear-gradient(90deg, #ebf0ed 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);"
+       aria-hidden="true"></div>
+
+  <div class="relative mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
+
+      <div class="md:col-span-6">
+        <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">The intelligence layer for the built world</h1>
+        <p class="mt-6 text-lg text-gray-500">Shovels captures the first signal of construction—using AI to turn fragmented public records into Shovel-ready intelligence. Access via API, web app, or direct data warehouse integration.</p>
+        <div class="mt-8">
+          <a href="https://app.shovels.ai" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Search for free</a>
+        </div>
       </div>
-    </div>
-    <div class="mt-16 hidden lg:block lg:mt-0 flex-1">
-      <img src="theme/images/home/hero-home.svg" alt="Shovels building permit data" class="mx-auto w-[30rem] max-w-full drop-shadow-xl">
-    </div>
-  </div>
-</div>
-<div class="bg-white py-6 sm:py-16">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-8 px-8 py-8 max-w-6xl mx-auto">
-      <img src="theme/images/home/pearl.png" alt="Pearl" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-      <img src="theme/images/home/schneider.svg" alt="Schneider Electric" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-      <img src="theme/images/home/topbuild.svg" alt="TopBuild" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-      <img src="theme/images/home/angi.svg" alt="Angi" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-      <img src="theme/images/home/beam.svg" alt="Beam" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-      <img src="theme/images/home/rewiring.png" alt="Rewiring America" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-      <img src="theme/images/home/paintjet.png" alt="PaintJet" class="max-w-[120px] lg:max-w-[140px] max-h-12">
-    </div>
-    <div class="mt-6 lg:mt-16 flex justify-center w-full lg:w-auto">
-      <p class="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
-        <a href="{{ SITEURL }}/blog/?category=Case%20Study" class="font-semibold text-shovels-primary"><span class="absolute inset-0" aria-hidden="true"></span> Read our case studies <span aria-hidden="true">&rarr;</span></a>
-      </p>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div class="text-center">
-        <h2 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">Clean and useful building permit data that's easy to understand</h2>
-        <p class="mt-4 text-lg/8 text-gray-300">Because you want to get insights from building permits, not wrangle with raw data.</p>
+
+      <div class="md:col-span-6">
+        <img src="/images/home/hero.svg" alt="Shovels building permit data" class="block w-full h-auto" />
       </div>
-      <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">Building permits in our database</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.permits }}</dd>
-        </div>
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">Contractors in our database</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.contractors }}</dd>
-        </div>
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">Jurisdictions covered</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.jurisdictions }}</dd>
-        </div>
-        <div class="flex flex-col bg-white/5 p-8">
-          <dt class="text-sm/6 font-semibold text-gray-300">New permits added monthly</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">{{ STATS.monthly_permits }}</dd>
-        </div>
-      </dl>
+
     </div>
   </div>
+</section>
+
+{# ── Customer logo strip (scrolling marquee) ───────────────────────────
+   Customer logos in Domain Authority order — see the Shovels_Logo_Ranking
+   sheet for the ranking and COMPONENTS.md → logo_strip for the swap process.
+   Legal gate: cross-check the Notion "Logo Use" column before launch. #}
+{% set customer_logos = [
+    {'src': '/images/logos/aws.svg', 'alt': 'AWS', 'height': 30},
+    {'src': '/images/logos/google.svg', 'alt': 'Google', 'height': 26},
+    {'src': '/images/logos/oracle.svg', 'alt': 'Oracle', 'height': 19},
+    {'src': '/images/logos/redfin.svg', 'alt': 'Redfin', 'height': 23},
+    {'src': '/images/logos/owens-corning.svg', 'alt': 'Owens Corning', 'height': 28},
+    {'src': '/images/logos/houzz.svg', 'alt': 'Houzz', 'height': 26},
+    {'src': '/images/logos/angi.svg', 'alt': 'Angi', 'height': 26},
+    {'src': '/images/logos/schneider-electric.svg', 'alt': 'Schneider Electric', 'height': 31},
+    {'src': '/images/logos/thumbtack.png', 'alt': 'Thumbtack', 'height': 24},
+    {'src': '/images/logos/energysage.svg', 'alt': 'EnergySage', 'height': 23},
+    {'src': '/images/logos/jll.png', 'alt': 'JLL', 'height': 26},
+    {'src': '/images/logos/generator-supercenter.png', 'alt': 'Generator Supercenter', 'height': 21},
+    {'src': '/images/logos/dr-horton.svg', 'alt': 'D.R. Horton', 'height': 31},
+    {'src': '/images/logos/ownwell.png', 'alt': 'Ownwell', 'height': 24},
+    {'src': '/images/logos/pretium.png', 'alt': 'Pretium', 'height': 19},
+    {'src': '/images/logos/qxo.svg', 'alt': 'QXO', 'height': 23},
+] %}
+
+{# Zero the strip's bottom padding so the Stats section's top padding owns
+   the single gap below the logos (avoids doubled white-on-white space). #}
+{{ ui_logos.logo_strip(logos=customer_logos, wrapper_class='!pb-0') }}
+
+{# Divider — hairline in the stats-card border grey (gray-200), fading at
+   both ends. The wrapper mirrors the stats section's container
+   (max-w-7xl + padding) so the fade completes exactly at the outer edge
+   of the stats cards below. #}
+<div class="mx-auto mt-14 max-w-7xl px-6 lg:px-8" aria-hidden="true">
+  <div class="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 </div>
-<div class="bg-white py-24 sm:py-32">
+
+{# ── Stats ─────────────────────────────────────────────────────────── #}
+{# Top padding reduced (designer: tighten divider→stats gap ~20%); bottom
+   kept on the section rhythm. Heading→stats gap trimmed mt-16→mt-14. #}
+<div class="bg-white pt-16 pb-24 sm:pt-24 sm:pb-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <div class="col-span-2">
-        <h2 class="text-base/7 font-semibold text-shovels-primary">How we're different</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our data is Shovel-ready</p>
-        <p class="mt-6 text-base/7 text-gray-600">We make building permits easy to understand and use for market research, go-to-market, and sales. No data engineering required.</p>
+    <div class="mx-auto max-w-3xl text-center">
+      <img src="/images/illustrations/map-hat.svg" alt="" class="mx-auto h-12 w-auto">
+      <h2 class="mt-6 text-balance text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Nationwide construction data, ready to use</h2>
+      <p class="mt-4 text-lg/8 text-gray-600">Get insights from public records without wrangling raw data.</p>
+    </div>
+    <dl class="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">Building permits</dt>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.permits }}</dd>
       </div>
-      <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Fanatical customer service
-          </dt>
-          <dd class="mt-2">We're a small company with a big heart. We're here to help you succeed.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Constant innovation
-          </dt>
-          <dd class="mt-2">We ship fast. We ship often. We ship quality. We use the latest technology to make your life easier.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Transparency
-          </dt>
-          <dd class="mt-2">We're not afraid to show you exactly where our coverage gaps are. We're the only company that's fully transparent about our data.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Residents and employees
-          </dt>
-          <dd class="mt-2">We go beyond just the properties and contractors. We also include residents and employees with contact information.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Helpful documentation
-          </dt>
-          <dd class="mt-2">Our documentation is comprehensive and easy to understand. We keep our API documentation and data dictionary up to date.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            AI-powered from the start
-          </dt>
-          <dd class="mt-2">We run hundreds of millions of records through our AI to make sure our data is accurate.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Pricing for everyone
-          </dt>
-          <dd class="mt-2">We work with all budgets. Our customers range from climate and proptech startups to publicly-traded companies.</dd>
-        </div>
-        <div class="relative pl-9">
-          <dt class="font-semibold text-gray-900">
-            <svg class="absolute left-0 top-1 size-5 text-shovels-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Multiple interfaces
-          </dt>
-          <dd class="mt-2">We're more than just a data provider. We're both a data platform and a software company.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Work with us</h2>
-      <p class="mt-6 text-lg/8 text-gray-300">We offer three interfaces to interact with our building permit, contractor, and government decision data.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-        <div class="flex flex-col">
-          <dt class="text-base/7 font-semibold text-white">
-            <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/theme/images/shovels-online.svg" alt="Shovels Online" class="size-20">
-            </div>
-            Shovels Online
-          </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Purchase single or multiple seats to explore and download our building permit, contractor, and local government decision data.</p>
-            <p class="mt-6">
-              <a href="{{ SITEURL }}/permit-database" class="text-sm/6 font-semibold text-shovels-secondary">Learn more <span aria-hidden="true">→</span></a>
-            </p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-base/7 font-semibold text-white">
-            <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/theme/images/shovels-api.svg" alt="Shovels API" class="size-20">
-            </div>
-            Shovels API
-          </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Automate access and integrate with other applications like CRMs, custom web apps, and more.</p>
-            <p class="mt-6">
-              <a href="{{ SITEURL }}/api" class="text-sm/6 font-semibold text-shovels-secondary">Learn more <span aria-hidden="true">→</span></a>
-            </p>
-          </dd>
-        </div>
-        <div class="flex flex-col">
-          <dt class="text-base/7 font-semibold text-white">
-            <div class="mb-6 flex size-20 items-center justify-center rounded-lg">
-              <img src="/theme/images/shovels-enterprise.svg" alt="Database Access" class="size-20">
-            </div>
-            Database Access
-          </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-300">
-            <p class="flex-auto">Get parquet files or private table shares into Snowflake, Databricks, or Big Query.</p>
-            <p class="mt-6">
-              <a href="{{ SITEURL }}/data-feed" class="text-sm/6 font-semibold text-shovels-secondary">Learn more <span aria-hidden="true">→</span></a>
-            </p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">From the blog</h2>
-      <p class="mt-2 text-lg/8 text-gray-600">We write about building permits, contractors, government decisions, and the future of the built environment.</p>
-    </div>
-    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      {% for article in dates %}
-        {% if loop.index <= 3 %}
-          <article class="flex flex-col items-start justify-start">
-            <div class="relative w-full">
-              {% if article.image %}
-                <img src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}" class="w-full rounded-2xl bg-gray-100 object-contain">
-              {% endif %}
-              <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-            </div>
-            <div class="max-w-xl">
-              <div class="mt-8 flex items-center gap-x-4 text-xs">
-                <time datetime="{{ article.date.strftime('%Y-%m-%d') }}" class="text-gray-500">{{ article.date.strftime('%b %d, %Y') }}</time>
-                {% if article.category %}
-                  <a href="{{ SITEURL }}/{{ article.category.url }}" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ article.category }}</a>
-                {% endif %}
-              </div>
-              <div class="group relative">
-                <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                  <a href="{{ SITEURL }}/{{ article.url }}">
-                    <span class="absolute inset-0"></span>
-                    {{ article.title }}
-                  </a>
-                </h3>
-                <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ article.summary }}</p>
-              </div>
-              {% if article.author %}
-              <div class="relative mt-8 flex items-center gap-x-4">
-                {% if article.author_image %}
-                  <img src="{{ SITEURL }}/{{ article.author_image }}" alt="{{ article.author }}" class="size-10 rounded-full bg-gray-100">
-                {% endif %}
-                <div class="text-sm/6">
-                  <p class="font-semibold text-gray-900">
-                    <a href="{{ SITEURL }}/{{ article.author.url }}">
-                      <span class="absolute inset-0"></span>
-                      {{ article.author }}
-                    </a>
-                  </p>
-                  {% if article.author_title %}
-                    <p class="text-gray-600">{{ article.author_title }}</p>
-                  {% endif %}
-                </div>
-              </div>
-              {% endif %}
-            </div>
-          </article>
-        {% endif %}
-      {% endfor %}
-    </div>
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">Licensed contractors</dt>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.contractors }}</dd>
+      </div>
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">Jurisdictions covered</dt>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.jurisdictions }}</dd>
+      </div>
+      <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+        <dt class="text-sm/6 font-medium text-gray-600">New permits added monthly</dt>
+        <dd class="order-first text-4xl font-bold tracking-tight text-shovels-primary">{{ STATS.monthly_permits }}</dd>
+      </div>
+    </dl>
   </div>
 </div>
 
+{# ── Data types — the five connected datasets (shared macro).
+   Uses the macro's default datasets, which link to the /data/* pages. #}
+{{ ui_dt.data_types(
+    eyebrow='DATA TYPES',
+    heading='Five datasets, deeply connected',
+    description='Every record is linked across datasets, so you get the full picture. See the project, property, and people behind it, then move from insight to action.') }}
 
+{# ── Data delivery options — shared macro (icon cards, light variant).
+   LAUNCH: repoint these three links to /solutions/* (see REFRESH_PLAN). #}
+{{ ui_dd.data_delivery(
+    heading='Data delivery options',
+    description='One unified dataset. Three ways to access it. Choose the integration that fits your workflow.',
+    cards=[
+        ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/solutions/permit-database', 'shovels-globe'),
+        ('Shovels API', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/solutions/api', 'data-api'),
+        ('Enterprise', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/solutions/data-feed', 'enterprise-box'),
+    ]) }}
+
+{# ── Coverage — same include as the Industry pages. #}
+{% set coverage_wrapper_class = '!pt-0 sm:pb-32' %}
+{% include 'sections/coverage.html' %}
+
+{# ── Industries strip — eyebrow + pill links to all Industry pages. #}
+{{ ui_ind.industries_strip(wrapper_class='!py-0') }}
+
+{# ── From the blog — three most-recent posts. #}
+{{ ui_res.resources_section(
+    articles=get_recent_articles(3),
+    heading='From the blog',
+    wrapper_class='sm:py-32 !pb-0') }}
+
+{# ── Final CTA — closing ask. #}
+{{ ui_cta.final_cta(
+    heading='Ready to put our Shovel-ready data to work?',
+    description='Search our clean and enriched public-record data for free, or talk to us about API access and enterprise data delivery.',
+    cta_label='Search for free',
+    cta_href='https://app.shovels.ai',
+    wrapper_class='sm:py-32') }}
 {% endblock content %}

@@ -6,7 +6,7 @@ Modified: 2025-09-17
 Category: Company
 Tag1:
 Tag2:
-Tags: ArcGIS, GIS, Permits, Predictive Analytics, Utilities, Real Estate, Telecommunications, Data Integration, Construction, AI
+Tags: ArcGIS, GIS, Permits, Predictive Analytics, Utilities, Real Estate, Telecommunications, Data Integration, Construction, AI, Construction Tech
 Authors: Morgan Friberg
 Author_image: /theme/images/team/morgan.svg
 Author_title: Head of Marketing

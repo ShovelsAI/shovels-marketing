@@ -1,0 +1,64 @@
+{#
+  "Coverage across the U.S." section — static include.
+
+  Two-column layout: text on the left (eyebrow chip, heading, body
+  paragraph, two bulleted checkmarks with inline links) and the U.S.
+  coverage illustration on the right.
+
+  Copy is company-level ("we source from thousands of jurisdictions…")
+  not industry-specific, so this is a static include rather than a
+  per-page macro. If/when the copy needs to vary by industry, convert
+  to a parameterized macro.
+
+  Usage in any content/pages/*.md:
+
+      {% include 'sections/coverage.html' %}
+
+  Optional: set `coverage_wrapper_class` before the include for spacing
+  overrides (Jinja includes inherit the caller's context):
+
+      {% set coverage_wrapper_class = 'sm:py-32 !pb-0' %}
+      {% include 'sections/coverage.html' %}
+#}
+
+<section class="w-full bg-white px-6 md:px-10 py-24 {{ coverage_wrapper_class | default('') }}">
+  <div class="mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 items-start gap-10 md:grid-cols-2 md:gap-16">
+
+      {# Text column #}
+      <div>
+        <span class="inline-block rounded-full border border-shovels-primary/20 bg-shovels-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-shovels-primary">COVERAGE</span>
+        <h2 class="mt-4 text-pretty text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">Coverage across the U.S.</h2>
+        <p class="mt-6 text-base text-gray-500">We source data from thousands of jurisdictions online and offline through public records. New jurisdictions are added continuously based on market trends &amp; customer demand, with coverage spanning all major metros and expanding rural markets.</p>
+
+        <ul class="mt-6 space-y-3">
+
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-shovels-primary/10">
+              <svg class="size-3 text-shovels-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </span>
+            <span class="text-sm text-gray-900/90">Explore our <a href="https://www.shovels.ai/coverage" class="font-semibold text-shovels-primary hover:text-shovels-primary/80 hover:underline">coverage dashboard</a> and <a href="https://docs.shovels.ai/release-notes/release-notes" class="font-semibold text-shovels-primary hover:text-shovels-primary/80 hover:underline">release notes</a> for updates</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-shovels-primary/10">
+              <svg class="size-3 text-shovels-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </span>
+            <span class="text-sm text-gray-900/90">Shovels data also <a href="https://www.shovels.ai/gis" class="font-semibold text-shovels-primary hover:text-shovels-primary/80 hover:underline">available as hosted feature layers in Esri's ArcGIS platform</a></span>
+          </li>
+
+        </ul>
+      </div>
+
+      {# Illustration column #}
+      <div>
+        <img src="/images/illustrations/coverage-map.svg" alt="Map of the United States with markers showing Shovels permit data coverage across the country" class="mx-auto block h-auto w-[420px] max-w-full md:mt-12" />
+      </div>
+
+    </div>
+  </div>
+</section>

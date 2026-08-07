@@ -2,36 +2,36 @@ Title: Activate Audiences with Permit Data
 Description: Use building permit data to create unique home remodel and improvement audiences.
 slug: audiences
 
-<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-  <defs>
-    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-      <path d="M100 200V.5M.5 .5H200" fill="none" />
-    </pattern>
-  </defs>
-  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-    <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-  </svg>
-  <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-</svg>
+{% import 'macros/faq.html' as ui_faq %}
 
-<div class="relative isolate overflow-hidden">
-  <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-      <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">Target your ideal audience using building permit data</h1>
-      <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-        <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="{filename}contact.md" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
-          <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm/6 font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
+{# Hero refreshed to the new style (grid-pattern background + font-medium
+   H1 + updated illustration). The page stays live but is dropped from nav
+   at launch — see REFRESH_PLAN. CTAs and lead copy kept as-is. #}
+<section class="relative w-full overflow-hidden bg-white pt-20 pb-24 px-6 md:pt-28 md:pb-32 md:px-10">
+
+  <div class="pointer-events-none absolute inset-0"
+       style="background-image: linear-gradient(#ebf0ed 1px, transparent 1px), linear-gradient(90deg, #ebf0ed 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);"
+       aria-hidden="true"></div>
+
+  <div class="relative mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
+
+      <div class="md:col-span-6">
+        <h1 class="text-balance text-4xl font-medium tracking-tight text-gray-900 md:text-6xl">Target your ideal audience using building permit data</h1>
+        <p class="mt-6 text-lg text-gray-500">Building permits provide deterministic data on home improvement activity. Create unique audiences for home remodelers, home improvement contractors, and more.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <a href="{filename}contact.md" class="inline-block rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Contact us</a>
+          <a href="https://www.canva.com/design/DAGG1zhzCPg/XS_ATV42ProDgwNpuopvqA/view?utm_content=DAGG1zhzCPg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48c3473fe5" class="text-sm font-semibold text-gray-900" target="_blank">One-pager <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-46">
-        <img class="relative max-h-[500px]" src="{static}/images/shovelsGuy-pose8.png" alt="Illustration showing audience activation using building permit data">
+
+      <div class="md:col-span-6">
+        <img src="{static}/images/audiences/hero.svg" alt="Illustration of a contractor atop a wall of building-permit data blocks" class="block w-full h-auto" />
       </div>
+
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-</div>
+</section>
 <div class="bg-gray-900 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
@@ -129,101 +129,21 @@ slug: audiences
     </a>
   </div>
 </div>
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What kind of data does Shovels use to build audiences?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What types of audiences can I create with Shovels?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage).</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels help me reach homeowners at the right time?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now -- for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">Can I use Shovels audiences for ad campaigns?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs.</p>
-          </dd>
-        </div>
-        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-          <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">How does Shovels identify homeowners who might need financing?</dt>
-          <dd class="mt-4 lg:col-span-7 lg:mt-0">
-            <p class="text-base/7 text-gray-600">Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-
-<!-- JSON-LD FAQ schema for AI answer engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What kind of data does Shovels use to build audiences?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What types of audiences can I create with Shovels?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shovels help me reach homeowners at the right time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now -- for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Shovels audiences for ad campaigns?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shovels identify homeowners who might need financing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products."
-      }
-    }
-  ]
-}
-</script>
+{{ ui_faq.faq_section(
+    heading='Frequently Asked Questions',
+    items=[
+        {'q': 'What kind of data does Shovels use to build audiences?', 'a': 'Shovels uses building permit data, which provides deterministic information on home improvement activity. This data shows what work homeowners have done, when it was completed, and what type of project it was, allowing for precise audience targeting.'},
+        {'q': 'What types of audiences can I create with Shovels?', 'a': 'You can create audiences for a wide range of segments, including homeowners in-market for solar panel maintenance, home warranty services, mortgage refinancing, kitchen appliances, furniture and windows, and electric appliance adoption (such as EVs, heat pumps, and battery storage).'},
+        {'q': 'How does Shovels help me reach homeowners at the right time?', 'a': "Building permits include timing data that shows when projects were completed. Shovels uses this to identify homeowners who are likely in-market right now — for example, targeting solar panel owners whose installations are aging and may need maintenance, or homeowners who haven't remodeled their kitchen in over 10 years."},
+        {'q': 'Can I use Shovels audiences for ad campaigns?', 'a': 'Yes. Shovels is designed to help you run ad campaigns by providing building permit-based audience segments. You can target homeowners with ads for products and services that match their recent or upcoming home improvement needs.'},
+        {'q': 'How does Shovels identify homeowners who might need financing?', 'a': "Shovels identifies homeowners who have active construction projects, since construction is expensive and financing isn't always arranged upfront. These homeowners are strong prospects for mortgage refinancing, home equity lines of credit, and other financing products."},
+    ]) }}
 
 <div class="bg-white">
   <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8">
     <h2 class="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Explore our building permit and contractor data now</h2>
     <div class="mt-10 flex items-center gap-x-6">
-      <a href="https://app.shovels.ai/" class="rounded-md bg-shovels-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shovels-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
+      <a href="https://app.shovels.ai/" class="rounded-full bg-shovels-primary px-6 py-3 text-sm font-semibold text-white hover:bg-shovels-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shovels-primary">Get started</a>
       <a href="https://docs.shovels.ai/docs/shovels-online-quickstart-guide" class="text-sm/6 font-semibold text-gray-900">Quickstart guide <span aria-hidden="true">→</span></a>
     </div>
   </div>
