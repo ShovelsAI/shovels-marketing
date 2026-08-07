@@ -160,6 +160,22 @@ than kept in the dashboard:
   { "source": "/old-path", "destination": "/new-path", "permanent": true }
   ```
 
+Pelican bakes absolute URLs into the output at build time, so `publishconf.py`
+resolves `SITEURL` from the environment:
+
+| Build                              | `SITEURL`                     |
+| ---------------------------------- | ----------------------------- |
+| `SITEURL` set in the environment    | that value                    |
+| Vercel preview                     | `https://$VERCEL_URL`         |
+| Vercel production, GitHub Actions   | `https://www.shovels.ai`      |
+
+Preview deployments therefore link within themselves instead of sending
+visitors to production. This relies on Vercel's system environment variables,
+which are enabled per project under Settings → Environment Variables → "Enable
+access to System Environment Variables". Absolute URLs in the JSON-LD structured
+data stay on the canonical domain by design, since they describe the production
+site to search engines.
+
 Python is pinned to 3.12 in `.python-version`. Vercel offers only 3.12 and
 later, and several pinned dependencies publish no wheels for those versions and
 compile from source, so the interpreter is held at the lowest available version.
