@@ -228,7 +228,7 @@ done</code></pre>
     heading='Building an application?',
     body='The CLI is built on the Shovels API. For full REST access and integration into your product, use our API directly.',
     cta_label='Learn more about our API',
-    cta_href='/api') }}
+    cta_href='/solutions/api') }}
 
 {# ── How it works — terminal per step (vertical). #}
 {% set hiw1 %}{% call ui_code.code_window(title='install', copyable=True, copy_text="curl -LsSf https://shovels.ai/install.sh | sh") %}

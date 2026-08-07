@@ -198,7 +198,7 @@ slug: solutions/api
     heading='Prefer working from the terminal?',
     body='The Shovels CLI gives you access to the same data from the command line.',
     cta_label='Check out the Shovels CLI',
-    cta_href='/cli') }}
+    cta_href='/features/cli') }}
 
 {{ ui_hiw.how_it_works(
     eyebrow='How it works',

@@ -113,9 +113,9 @@ slug: data/residents
     heading='One unified dataset, three ways to access it',
     dark=True,
     cards=[
-        ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/permit-database', 'shovels-globe'),
-        ('Shovels API', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/api', 'data-api'),
-        ('Enterprise', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/data-feed', 'enterprise-box'),
+        ('Shovels Online', 'Explore, filter, and export permit, contractor, and decision data in our self-serve web app.', '/solutions/permit-database', 'shovels-globe'),
+        ('Shovels API', 'Build construction intelligence into your product, CRM, or internal tools with our REST API.', '/solutions/api', 'data-api'),
+        ('Enterprise', 'Get the full dataset as parquet files or table shares in Snowflake, Databricks, or BigQuery.', '/solutions/data-feed', 'enterprise-box'),
     ]) }}
 
 {# ── §7 INDUSTRIES STRIP ────────────────────────────────────────────── #}

@@ -71,7 +71,7 @@ slug: features/charlie
     heading='Prefer to browse the data yourself?',
     body='Shovels Online offers construction data with hands-on filters, contractor and geography profiles, and one-click CSV downloads.',
     cta_label='Explore Shovels Online',
-    cta_href='/permit-database') }}
+    cta_href='/solutions/permit-database') }}
 
 {{ ui_hiw.how_it_works(
     eyebrow='How Charlie works',

@@ -18,7 +18,7 @@ slug: features/gis
     cta_label='Talk to us',
     cta_href='https://www.shovels.ai/contact',
     secondary_cta_label='View map gallery →',
-    secondary_cta_href='/features/gis/gallery-preview',
+    secondary_cta_href='/features/gis/gallery',
     illustration_src='/images/features/gis/hero.svg',
     illustration_alt='Shovels permit data as map layers in ArcGIS') }}
 
@@ -186,7 +186,7 @@ slug: features/gis
     heading='Need the full geodatabase in your warehouse?',
     body='GIS layers are one delivery format. The Shovels Data Feed delivers all seven core tables—permits, contractors, parcels, decisions, and more—to Snowflake, BigQuery, or Databricks.',
     cta_label='Explore Enterprise',
-    cta_href='/data-feed') }}
+    cta_href='/solutions/data-feed') }}
 
 {{ ui_faq.faq_section(
     wrapper_class='!py-[4.5rem]',
