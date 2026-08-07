@@ -1,7 +1,6 @@
 Title: Decisions Data
 Description: Track zoning and land use decisions from US city councils and planning boards, months before permits are filed. AI-extracted, structured, and linked to permits.
-slug: data/decisions-preview
-status: hidden
+slug: data/decisions
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}

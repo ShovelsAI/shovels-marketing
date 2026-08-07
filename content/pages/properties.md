@@ -1,7 +1,6 @@
 Title: Properties Data
 Description: Look up any US property's permit history: standardized addresses, parcels, contractors, and residents, with assessor attributes for enterprise customers.
-slug: data/properties-preview
-status: hidden
+slug: data/properties
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}

@@ -1,7 +1,6 @@
 Title: Contractors Data
 Description: Search contractor profiles built from permit history: licenses, verified contacts, specialties, work history, and performance metrics for US contractors.
-slug: data/contractors-preview
-status: hidden
+slug: data/contractors
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}

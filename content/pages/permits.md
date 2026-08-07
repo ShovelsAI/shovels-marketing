@@ -1,7 +1,6 @@
 Title: Permits Data
 Description: Search AI-classified building permits from thousands of US jurisdictions. Standardized, deduplicated, and interconnected between permits, contractors, properties, decisions and residents.
-slug: data/permits-preview
-status: hidden
+slug: data/permits
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}

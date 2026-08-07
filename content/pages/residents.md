@@ -1,7 +1,6 @@
 Title: Residents Data
 Description: Homeowner and resident data linked to US properties and permits: validated contacts, homeowner status, and household attributes.
-slug: data/residents-preview
-status: hidden
+slug: data/residents
 
 {% import 'macros/hero.html' as ui_hero %}
 {% import 'macros/soc2_trust.html' as ui_soc2 %}
