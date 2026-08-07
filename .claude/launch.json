@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "/Users/morgan/Documents/Shovels/shovels-marketing/.venv/bin/pelican",
+      "runtimeArgs": ["-lr", "content", "-o", "output", "-s", "pelicanconf.py", "-p", "8000"],
+      "port": 8000
+    }
+  ]
+}
