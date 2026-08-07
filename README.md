@@ -44,7 +44,7 @@ This runs both the Pelican live-reload server and the Tailwind CSS watcher toget
 # Build for development (outputs to ./output/)
 pelican content -s pelicanconf.py
 
-# Build for production (outputs to ./docs/ for GitHub Pages)
+# Build for production (outputs to ./docs/)
 make publish
 
 # Build CSS separately if needed
@@ -77,13 +77,13 @@ For inverted theme pages, the logic is handled in two places:
 ### Configuration Files
 
 - **`pelicanconf.py`** - Development configuration
-- **`publishconf.py`** - Production configuration (GitHub Pages)
+- **`publishconf.py`** - Production configuration
 - **`tailwind.config.js`** - Tailwind CSS configuration with Shovels brand colors
 - **`Makefile`** - Build automation commands
 
 ### Key Features
 
-- **Dual output paths**: `./output/` for dev, `./docs/` for GitHub Pages
+- **Dual output paths**: `./output/` for dev, `./docs/` for production
 - **SEO optimized** with pelican-seo plugin
 - **Custom URL structure**: Blog posts at `/blog/{slug}/`
 - **Asset processing**: Tailwind CSS compilation and minification
@@ -115,33 +115,9 @@ Edit the `input.css` file in the root directory, then copy it to `/themes/shovel
 
 ## Production
 
-We host on GitHub Pages in the ShovelsAI GitHub organization. The site is automatically deployed using GitHub Actions whenever changes are pushed to the `main` branch.
-
-### Automatic Deployment
-
-The site is automatically built and deployed when you:
-1. Push changes to the `main` branch
-2. Open a pull request to `main` (for preview)
-
-The GitHub Actions workflow handles:
-- Installing Python and Node.js dependencies
-- Building the Tailwind CSS
-- Generating the static site with Pelican
-- Deploying to GitHub Pages
-
-### Manual Publishing
-
-The `make publish` command:
-1. Builds site with production config to `./docs/`
-2. Copies CSS assets
-3. Creates CNAME file for custom domain
-4. Auto-commits and pushes to GitHub Pages
-
-### Vercel
-
-The site is also built and deployed by Vercel via its GitHub integration,
-running alongside the GitHub Pages deployment. Vercel builds on each push and
-creates preview deployments for pull requests.
+`www.shovels.ai` is served by Vercel, which builds the site from this
+repository via its GitHub integration. Pushes to `main` deploy to production
+and pull requests get their own preview deployment.
 
 `vercel.json` holds the build configuration, so it is version-controlled rather
 than kept in the dashboard:
@@ -163,11 +139,11 @@ than kept in the dashboard:
 Pelican bakes absolute URLs into the output at build time, so `publishconf.py`
 resolves `SITEURL` from the environment:
 
-| Build                              | `SITEURL`                     |
-| ---------------------------------- | ----------------------------- |
-| `SITEURL` set in the environment    | that value                    |
-| Vercel preview                     | `https://$VERCEL_URL`         |
-| Vercel production, GitHub Actions   | `https://www.shovels.ai`      |
+| Build                            | `SITEURL`                |
+| -------------------------------- | ------------------------ |
+| `SITEURL` set in the environment | that value               |
+| Vercel preview                   | `https://$VERCEL_URL`    |
+| Vercel production, local builds  | `https://www.shovels.ai` |
 
 Preview deployments therefore link within themselves instead of sending
 visitors to production. This relies on Vercel's system environment variables,
@@ -180,8 +156,8 @@ Python is pinned to 3.12 in `.python-version`. Vercel offers only 3.12 and
 later, and several pinned dependencies publish no wheels for those versions and
 compile from source, so the interpreter is held at the lowest available version.
 
-The custom domain (`www.shovels.ai`) is managed in the Vercel dashboard, not via
-a `CNAME` file — the `CNAME` file is only used by the GitHub Pages deployment.
+The custom domain (`www.shovels.ai`) is managed in the Vercel dashboard, and its
+DNS record is held in Route 53.
 
 ## Brand Colors (Tailwind)
 
