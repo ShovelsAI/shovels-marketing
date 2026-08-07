@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt && npm install",
+  "buildCommand": "npm run build:css:prod && .venv/bin/python -m pelican content -o docs -s publishconf.py && cp themes/shovels/static/css/output.css docs/output.css && .venv/bin/python generate_404.py",
+  "outputDirectory": "docs"
+}
